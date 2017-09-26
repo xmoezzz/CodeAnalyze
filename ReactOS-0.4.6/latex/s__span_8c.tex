@@ -1,0 +1,93 @@
+\hypertarget{s__span_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/swrast/s\+\_\+span.c 文件参考}
+\label{s__span_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/s\+\_\+span.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/s\+\_\+span.\+c}}
+
+
+Span processing functions used by all rasterization functions. \hyperlink{namespace_this}{This} is where all the per-\/fragment tests are performed  
+
+
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{s__span_8c_a9d15ccfc10eeb92e59e949ae441551db}\label{s__span_8c_a9d15ccfc10eeb92e59e949ae441551db}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+H\+I\+F\+T\+\_\+\+A\+R\+R\+AY}(\hyperlink{struct___a_r_r_a_y}{A\+R\+R\+AY},  S\+H\+I\+FT,  L\+EN)~memmove(\hyperlink{struct___a_r_r_a_y}{A\+R\+R\+AY}, \hyperlink{struct___a_r_r_a_y}{A\+R\+R\+AY} + (S\+H\+I\+FT), (L\+EN) $\ast$ sizeof(\hyperlink{struct___a_r_r_a_y}{A\+R\+R\+AY}\mbox{[}0\mbox{]}))
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__span_8c_a17e8ba9f712b736f97621cb0c93a9028}{\+\_\+swrast\+\_\+span\+\_\+default\+\_\+attribs} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{structsw__span}{S\+Wspan} $\ast$span)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__span_8c_a1d983a0d1fcc0e9bd124667b7dd77278}{\+\_\+swrast\+\_\+span\+\_\+interpolate\+\_\+z} (const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{structsw__span}{S\+Wspan} $\ast$span)
+\item 
+G\+Lfloat \hyperlink{s__span_8c_a7343b7351767f8a9f56968832b9d1a51}{\+\_\+swrast\+\_\+compute\+\_\+lambda} (G\+Lfloat dsdx, G\+Lfloat dsdy, G\+Lfloat dtdx, G\+Lfloat dtdy, G\+Lfloat dqdx, G\+Lfloat dqdy, G\+Lfloat texW, G\+Lfloat texH, G\+Lfloat s, G\+Lfloat t, G\+Lfloat q, G\+Lfloat invQ)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__span_8c_a3d869d6f91d5490cbb4f67fea9f0b7f5}{\+\_\+swrast\+\_\+put\+\_\+row} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, \hyperlink{interfacevoid}{G\+Lenum} datatype, G\+Luint count, G\+Lint x, G\+Lint y, const \hyperlink{interfacevoid}{void} $\ast$values, const G\+Lubyte $\ast$mask)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__span_8c_a603e074d040f6b722fe225153574c2e9}{\+\_\+swrast\+\_\+write\+\_\+rgba\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{structsw__span}{S\+Wspan} $\ast$span)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__span_8c_a29022e97c35e01b5af0bc40ed4799502}{\+\_\+swrast\+\_\+read\+\_\+rgba\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, G\+Luint n, G\+Lint x, G\+Lint y, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$rgba)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{s__span_8c_af20c2bc2cf50e64f96fdecedce33b9bf}{\+\_\+swrast\+\_\+get\+\_\+dest\+\_\+rgba} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, \hyperlink{structsw__span}{S\+Wspan} $\ast$span)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Span processing functions used by all rasterization functions. \hyperlink{namespace_this}{This} is where all the per-\/fragment tests are performed 
+
+\begin{DoxyAuthor}{作者}
+Brian Paul 
+\end{DoxyAuthor}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{s__span_8c_a7343b7351767f8a9f56968832b9d1a51}\label{s__span_8c_a7343b7351767f8a9f56968832b9d1a51}} 
+\index{s\+\_\+span.\+c@{s\+\_\+span.\+c}!\+\_\+swrast\+\_\+compute\+\_\+lambda@{\+\_\+swrast\+\_\+compute\+\_\+lambda}}
+\index{\+\_\+swrast\+\_\+compute\+\_\+lambda@{\+\_\+swrast\+\_\+compute\+\_\+lambda}!s\+\_\+span.\+c@{s\+\_\+span.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+compute\+\_\+lambda()}{\_swrast\_compute\_lambda()}}
+{\footnotesize\ttfamily G\+Lfloat \+\_\+swrast\+\_\+compute\+\_\+lambda (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{dsdx,  }\item[{G\+Lfloat}]{dsdy,  }\item[{G\+Lfloat}]{dtdx,  }\item[{G\+Lfloat}]{dtdy,  }\item[{G\+Lfloat}]{dqdx,  }\item[{G\+Lfloat}]{dqdy,  }\item[{G\+Lfloat}]{texW,  }\item[{G\+Lfloat}]{texH,  }\item[{G\+Lfloat}]{s,  }\item[{G\+Lfloat}]{t,  }\item[{G\+Lfloat}]{q,  }\item[{G\+Lfloat}]{invQ }\end{DoxyParamCaption})}
+
+Compute mipmap L\+OD from partial derivatives. \hyperlink{namespace_this}{This} the ideal solution, as given in the Open\+GL spec. \mbox{\Hypertarget{s__span_8c_af20c2bc2cf50e64f96fdecedce33b9bf}\label{s__span_8c_af20c2bc2cf50e64f96fdecedce33b9bf}} 
+\index{s\+\_\+span.\+c@{s\+\_\+span.\+c}!\+\_\+swrast\+\_\+get\+\_\+dest\+\_\+rgba@{\+\_\+swrast\+\_\+get\+\_\+dest\+\_\+rgba}}
+\index{\+\_\+swrast\+\_\+get\+\_\+dest\+\_\+rgba@{\+\_\+swrast\+\_\+get\+\_\+dest\+\_\+rgba}!s\+\_\+span.\+c@{s\+\_\+span.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+get\+\_\+dest\+\_\+rgba()}{\_swrast\_get\_dest\_rgba()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ \+\_\+swrast\+\_\+get\+\_\+dest\+\_\+rgba (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$}]{rb,  }\item[{\hyperlink{structsw__span}{S\+Wspan} $\ast$}]{span }\end{DoxyParamCaption})}
+
+Get R\+G\+BA pixels from the given renderbuffer. Used by blending, logicop and masking functions. \begin{DoxyReturn}{返回}
+pointer to the colors we read. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{s__span_8c_a3d869d6f91d5490cbb4f67fea9f0b7f5}\label{s__span_8c_a3d869d6f91d5490cbb4f67fea9f0b7f5}} 
+\index{s\+\_\+span.\+c@{s\+\_\+span.\+c}!\+\_\+swrast\+\_\+put\+\_\+row@{\+\_\+swrast\+\_\+put\+\_\+row}}
+\index{\+\_\+swrast\+\_\+put\+\_\+row@{\+\_\+swrast\+\_\+put\+\_\+row}!s\+\_\+span.\+c@{s\+\_\+span.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+put\+\_\+row()}{\_swrast\_put\_row()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+put\+\_\+row (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$}]{rb,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{datatype,  }\item[{G\+Luint}]{count,  }\item[{G\+Lint}]{x,  }\item[{G\+Lint}]{y,  }\item[{const \hyperlink{interfacevoid}{void} $\ast$}]{values,  }\item[{const G\+Lubyte $\ast$}]{mask }\end{DoxyParamCaption})}
+
+Put row of colors into renderbuffer \mbox{\Hypertarget{s__span_8c_a29022e97c35e01b5af0bc40ed4799502}\label{s__span_8c_a29022e97c35e01b5af0bc40ed4799502}} 
+\index{s\+\_\+span.\+c@{s\+\_\+span.\+c}!\+\_\+swrast\+\_\+read\+\_\+rgba\+\_\+span@{\+\_\+swrast\+\_\+read\+\_\+rgba\+\_\+span}}
+\index{\+\_\+swrast\+\_\+read\+\_\+rgba\+\_\+span@{\+\_\+swrast\+\_\+read\+\_\+rgba\+\_\+span}!s\+\_\+span.\+c@{s\+\_\+span.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+read\+\_\+rgba\+\_\+span()}{\_swrast\_read\_rgba\_span()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+read\+\_\+rgba\+\_\+span (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$}]{rb,  }\item[{G\+Luint}]{n,  }\item[{G\+Lint}]{x,  }\item[{G\+Lint}]{y,  }\item[{\hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{rgba }\end{DoxyParamCaption})}
+
+Read float R\+G\+BA pixels from a renderbuffer. Clipping will be done to prevent reading ouside the buffer\textquotesingle{}s boundaries. 
+\begin{DoxyParams}{参数}
+{\em rgba} & the returned colors \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{s__span_8c_a17e8ba9f712b736f97621cb0c93a9028}\label{s__span_8c_a17e8ba9f712b736f97621cb0c93a9028}} 
+\index{s\+\_\+span.\+c@{s\+\_\+span.\+c}!\+\_\+swrast\+\_\+span\+\_\+default\+\_\+attribs@{\+\_\+swrast\+\_\+span\+\_\+default\+\_\+attribs}}
+\index{\+\_\+swrast\+\_\+span\+\_\+default\+\_\+attribs@{\+\_\+swrast\+\_\+span\+\_\+default\+\_\+attribs}!s\+\_\+span.\+c@{s\+\_\+span.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+span\+\_\+default\+\_\+attribs()}{\_swrast\_span\_default\_attribs()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+span\+\_\+default\+\_\+attribs (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{structsw__span}{S\+Wspan} $\ast$}]{span }\end{DoxyParamCaption})}
+
+Set default fragment attributes for the span using the current raster values. Used prior to gl\+Draw/\+Copy\+Pixels and gl\+Bitmap. \mbox{\Hypertarget{s__span_8c_a1d983a0d1fcc0e9bd124667b7dd77278}\label{s__span_8c_a1d983a0d1fcc0e9bd124667b7dd77278}} 
+\index{s\+\_\+span.\+c@{s\+\_\+span.\+c}!\+\_\+swrast\+\_\+span\+\_\+interpolate\+\_\+z@{\+\_\+swrast\+\_\+span\+\_\+interpolate\+\_\+z}}
+\index{\+\_\+swrast\+\_\+span\+\_\+interpolate\+\_\+z@{\+\_\+swrast\+\_\+span\+\_\+interpolate\+\_\+z}!s\+\_\+span.\+c@{s\+\_\+span.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+span\+\_\+interpolate\+\_\+z()}{\_swrast\_span\_interpolate\_z()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+span\+\_\+interpolate\+\_\+z (\begin{DoxyParamCaption}\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{structsw__span}{S\+Wspan} $\ast$}]{span }\end{DoxyParamCaption})}
+
+Fill in the span.\+z\+Array array from the span-\/$>$z, z\+Step values. \mbox{\Hypertarget{s__span_8c_a603e074d040f6b722fe225153574c2e9}\label{s__span_8c_a603e074d040f6b722fe225153574c2e9}} 
+\index{s\+\_\+span.\+c@{s\+\_\+span.\+c}!\+\_\+swrast\+\_\+write\+\_\+rgba\+\_\+span@{\+\_\+swrast\+\_\+write\+\_\+rgba\+\_\+span}}
+\index{\+\_\+swrast\+\_\+write\+\_\+rgba\+\_\+span@{\+\_\+swrast\+\_\+write\+\_\+rgba\+\_\+span}!s\+\_\+span.\+c@{s\+\_\+span.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+write\+\_\+rgba\+\_\+span()}{\_swrast\_write\_rgba\_span()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+write\+\_\+rgba\+\_\+span (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{structsw__span}{S\+Wspan} $\ast$}]{span }\end{DoxyParamCaption})}
+
+Apply all the per-\/fragment operations to a span. \hyperlink{namespace_this}{This} now includes texturing (\+\_\+swrast\+\_\+write\+\_\+texture\+\_\+span() is history). \hyperlink{namespace_this}{This} function may modify any of the array values in the span. span-\/$>$interp\+Mask and span-\/$>$array\+Mask may be changed but will be restored to their original values before returning. 

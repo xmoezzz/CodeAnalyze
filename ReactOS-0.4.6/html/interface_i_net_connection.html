@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: INetConnection接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_net_connection-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">INetConnection接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 INetConnection 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_net_connection.png" usemap="#INetConnection_map" alt=""/>
+  <map id="INetConnection_map" name="INetConnection_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,104,24"/>
+<area href="class_c_net_connection.html" alt="CNetConnection" shape="rect" coords="0,112,104,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_net_connection_1_1tag_n_e_t_c_o_n___p_r_o_p_e_r_t_i_e_s.html">tagNETCON_PROPERTIES</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a926b0d07437ca3673f3554097dca9ac0"><td class="memItemLeft" align="right" valign="top"><a id="a926b0d07437ca3673f3554097dca9ac0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagNETCON_CHARACTERISTIC_FLAGS</b> { <br />
+&#160;&#160;<b>NCCF_NONE</b> = 0x0000, 
+<b>NCCF_ALL_USERS</b> = 0x0001, 
+<b>NCCF_ALLOW_DUPLICATION</b> = 0x0002, 
+<b>NCCF_ALLOW_REMOVAL</b> = 0x0004, 
+<br />
+&#160;&#160;<b>NCCF_ALLOW_RENAME</b> = 0x0008, 
+<b>NCCF_INCOMING_ONLY</b> = 0x0020, 
+<b>NCCF_OUTGOING_ONLY</b> = 0x0040, 
+<b>NCCF_BRANDED</b> = 0x0080, 
+<br />
+&#160;&#160;<b>NCCF_SHARED</b> = 0x0100, 
+<b>NCCF_BRIDGED</b> = 0x0200, 
+<b>NCCF_FIREWALLED</b> = 0x0400, 
+<b>NCCF_DEFAULT</b> = 0x0800, 
+<br />
+&#160;&#160;<b>NCCF_HOMENET_CAPABLE</b> = 0x1000, 
+<b>NCCF_SHARED_PRIVATE</b> = 0x2000, 
+<b>NCCF_QUARANTINED</b> = 0x4000, 
+<b>NCCF_RESERVED</b> = 0x8000, 
+<br />
+&#160;&#160;<b>NCCF_BLUETOOTH_MASK</b> = 0x000F0000, 
+<b>NCCF_LAN_MASK</b> = 0x00F00000
+<br />
+ }</td></tr>
+<tr class="separator:a926b0d07437ca3673f3554097dca9ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85847d2adc938e7608ef14eaa1a329a2"><td class="memItemLeft" align="right" valign="top"><a id="a85847d2adc938e7608ef14eaa1a329a2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagNETCON_STATUS</b> { <br />
+&#160;&#160;<b>NCS_DISCONNECTED</b>, 
+<b>NCS_CONNECTING</b>, 
+<b>NCS_CONNECTED</b>, 
+<b>NCS_DISCONNECTING</b>, 
+<br />
+&#160;&#160;<b>NCS_HARDWARE_NOT_PRESENT</b>, 
+<b>NCS_HARDWARE_DISABLED</b>, 
+<b>NCS_HARDWARE_MALFUNCTION</b>, 
+<b>NCS_MEDIA_DISCONNECTED</b>, 
+<br />
+&#160;&#160;<b>NCS_AUTHENTICATING</b>, 
+<b>NCS_AUTHENTICATION_SUCCEEDED</b>, 
+<b>NCS_AUTHENTICATION_FAILED</b>, 
+<b>NCS_INVALID_ADDRESS</b>, 
+<br />
+&#160;&#160;<b>NCS_CREDENTIALS_REQUIRED</b>
+<br />
+ }</td></tr>
+<tr class="separator:a85847d2adc938e7608ef14eaa1a329a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad48c8583739933c107ac2e13a85921e"><td class="memItemLeft" align="right" valign="top"><a id="aad48c8583739933c107ac2e13a85921e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagNETCON_TYPE</b> { <br />
+&#160;&#160;<b>NCT_DIRECT_CONNECT</b>, 
+<b>NCT_INBOUND</b>, 
+<b>NCT_INTERNET</b>, 
+<b>NCT_LAN</b>, 
+<br />
+&#160;&#160;<b>NCT_PHONE</b>, 
+<b>NCT_TUNNEL</b>, 
+<b>NCT_BRIDGE</b>
+<br />
+ }</td></tr>
+<tr class="separator:aad48c8583739933c107ac2e13a85921e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c02f26cef2c2492f28e60a904d698dc"><td class="memItemLeft" align="right" valign="top"><a id="a3c02f26cef2c2492f28e60a904d698dc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagNETCON_MEDIATYPE</b> { <br />
+&#160;&#160;<b>NCM_NONE</b>, 
+<b>NCM_DIRECT</b>, 
+<b>NCM_ISDN</b>, 
+<b>NCM_LAN</b>, 
+<br />
+&#160;&#160;<b>NCM_PHONE</b>, 
+<b>NCM_TUNNEL</b>, 
+<b>NCM_PPPOE</b>, 
+<b>NCM_BRIDGE</b>, 
+<br />
+&#160;&#160;<b>NCM_SHAREDACCESSHOST_LAN</b>, 
+<b>NCM_SHAREDACCESSHOST_RAS</b>
+<br />
+ }</td></tr>
+<tr class="separator:a3c02f26cef2c2492f28e60a904d698dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27209bc9641bb7296eb64956a0ee439f"><td class="memItemLeft" align="right" valign="top"><a id="a27209bc9641bb7296eb64956a0ee439f"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> INetConnection::tagNETCON_CHARACTERISTIC_FLAGS&#160;</td><td class="memItemRight" valign="bottom"><b>NETCON_CHARACTERISTIC_FLAGS</b></td></tr>
+<tr class="separator:a27209bc9641bb7296eb64956a0ee439f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d28ba8038e00cef52999b3b8688fd54"><td class="memItemLeft" align="right" valign="top"><a id="a0d28ba8038e00cef52999b3b8688fd54"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> INetConnection::tagNETCON_STATUS&#160;</td><td class="memItemRight" valign="bottom"><b>NETCON_STATUS</b></td></tr>
+<tr class="separator:a0d28ba8038e00cef52999b3b8688fd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4954a85a2065b50cbcebc5c6123eafb3"><td class="memItemLeft" align="right" valign="top"><a id="a4954a85a2065b50cbcebc5c6123eafb3"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> INetConnection::tagNETCON_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>NETCON_TYPE</b></td></tr>
+<tr class="separator:a4954a85a2065b50cbcebc5c6123eafb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01962f7a1e7ff75a347ae26580f6228"><td class="memItemLeft" align="right" valign="top"><a id="ac01962f7a1e7ff75a347ae26580f6228"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> INetConnection::tagNETCON_MEDIATYPE&#160;</td><td class="memItemRight" valign="bottom"><b>NETCON_MEDIATYPE</b></td></tr>
+<tr class="separator:ac01962f7a1e7ff75a347ae26580f6228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6138562bca8efb24214a02f56d2a937d"><td class="memItemLeft" align="right" valign="top"><a id="a6138562bca8efb24214a02f56d2a937d"></a>
+typedef <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="struct_i_net_connection_1_1tag_n_e_t_c_o_n___p_r_o_p_e_r_t_i_e_s.html">INetConnection::tagNETCON_PROPERTIES</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NETCON_PROPERTIES</b></td></tr>
+<tr class="separator:a6138562bca8efb24214a02f56d2a937d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a198c0c94d8c8a1852a55790daf5f8065"><td class="memItemLeft" align="right" valign="top"><a id="a198c0c94d8c8a1852a55790daf5f8065"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> ()</td></tr>
+<tr class="separator:a198c0c94d8c8a1852a55790daf5f8065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aaeb0f53f878dc1246ecc45699cd0f9"><td class="memItemLeft" align="right" valign="top"><a id="a8aaeb0f53f878dc1246ecc45699cd0f9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Disconnect</b> ()</td></tr>
+<tr class="separator:a8aaeb0f53f878dc1246ecc45699cd0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641ae87388db32acc1af0fd77e77c65a"><td class="memItemLeft" align="right" valign="top"><a id="a641ae87388db32acc1af0fd77e77c65a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Delete</b> ()</td></tr>
+<tr class="separator:a641ae87388db32acc1af0fd77e77c65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab027d2b91fbedb902ccf050edf99ca88"><td class="memItemLeft" align="right" valign="top"><a id="ab027d2b91fbedb902ccf050edf99ca88"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Duplicate</b> ([in, <a class="el" href="structstring.html">string</a>] LPCWSTR pszwDuplicateName, [out] <a class="el" href="interface_i_net_connection.html">INetConnection</a> **ppCon)</td></tr>
+<tr class="separator:ab027d2b91fbedb902ccf050edf99ca88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e41a1aea7e3defb3069be31b651a325"><td class="memItemLeft" align="right" valign="top"><a id="a9e41a1aea7e3defb3069be31b651a325"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetProperties</b> ([out] <a class="el" href="struct_i_net_connection_1_1tag_n_e_t_c_o_n___p_r_o_p_e_r_t_i_e_s.html">NETCON_PROPERTIES</a> **ppProps)</td></tr>
+<tr class="separator:a9e41a1aea7e3defb3069be31b651a325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af324d8c2a91d14d118f6f242edbcac4d"><td class="memItemLeft" align="right" valign="top"><a id="af324d8c2a91d14d118f6f242edbcac4d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetUiObjectClassId</b> ([out, ref] <a class="el" href="struct___i_i_d.html">CLSID</a> *pclsid)</td></tr>
+<tr class="separator:af324d8c2a91d14d118f6f242edbcac4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5458c13f8e2da6b6e44d62b4b90a64"><td class="memItemLeft" align="right" valign="top"><a id="aab5458c13f8e2da6b6e44d62b4b90a64"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Rename</b> ([in, <a class="el" href="structstring.html">string</a>] LPCWSTR pszwNewName)</td></tr>
+<tr class="separator:aab5458c13f8e2da6b6e44d62b4b90a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="netcon_8idl_source.html">netcon.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

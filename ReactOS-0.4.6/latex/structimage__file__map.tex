@@ -1,0 +1,48 @@
+\hypertarget{structimage__file__map}{}\section{image\+\_\+file\+\_\+map结构体 参考}
+\label{structimage__file__map}\index{image\+\_\+file\+\_\+map@{image\+\_\+file\+\_\+map}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structimage__file__map_a41d799919c531b419cfa9a0df24caaf5}\label{structimage__file__map_a41d799919c531b419cfa9a0df24caaf5}} 
+\hyperlink{interfaceenum}{enum} module\+\_\+type {\bfseries modtype}
+\item 
+\mbox{\Hypertarget{structimage__file__map_a9d015a69f26ef6b3c09a2aa73cbd2dc6}\label{structimage__file__map_a9d015a69f26ef6b3c09a2aa73cbd2dc6}} 
+unsigned {\bfseries addr\+\_\+size}
+\item 
+\mbox{\Hypertarget{structimage__file__map_a3a006cfc738e37f653f0e292ca6e5234}\label{structimage__file__map_a3a006cfc738e37f653f0e292ca6e5234}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct {\bfseries elf\_file\_map} \{\\
+\>\>size\_t {\bfseries elf\_size}\\
+\>\>size\_t {\bfseries elf\_start}\\
+\>\>int {\bfseries fd}\\
+\>\>const char $\ast$ {\bfseries shstrtab}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{structimage__file__map}{image\_file\_map} $\ast$ {\bfseries alternate}\\
+\>\>char $\ast$ {\bfseries target\_copy}\\
+\>\} {\bfseries elf}\\
+\>struct {\bfseries macho\_file\_map} \{\\
+\>\>size\_t {\bfseries segs\_size}\\
+\>\>size\_t {\bfseries segs\_start}\\
+\>\>int {\bfseries fd}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{structimage__file__map}{image\_file\_map} $\ast$ {\bfseries dsym}\\
+\>\} {\bfseries macho}\\
+\>struct {\bfseries pe\_file\_map} \{\\
+\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries hMap}\\
+\>\>\hyperlink{struct___i_m_a_g_e___n_t___h_e_a_d_e_r_s}{IMAGE\_NT\_HEADERS} {\bfseries ntheader}\\
+\>\>unsigned {\bfseries full\_count}\\
+\>\>\hyperlink{interfacevoid}{void} $\ast$ {\bfseries full\_map}\\
+\>\>struct \{\\
+\>\>\>\hyperlink{struct___i_m_a_g_e___s_e_c_t_i_o_n___h_e_a_d_e_r}{IMAGE\_SECTION\_HEADER} {\bfseries shdr}\\
+\>\>\>const char $\ast$ {\bfseries mapped}\\
+\>\>\} {\bfseries sect}\\
+\>\>const char $\ast$ {\bfseries strtable}\\
+\>\} {\bfseries pe}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/dbghelp/image\+\_\+private.\+h\end{DoxyCompactItemize}

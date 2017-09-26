@@ -1,0 +1,218 @@
+\hypertarget{swrast_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/swrast/swrast.h 文件参考}
+\label{swrast_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/swrast.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/swrast.\+h}}
+
+
+Public interface to the software rasterization functions.  
+
+
+{\ttfamily \#include \char`\"{}main/mtypes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}swrast/s\+\_\+chan.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_wvertex}{S\+Wvertex}
+\begin{DoxyCompactList}\small\item\em Data-\/structure to handle vertices in the software rasterizer. \end{DoxyCompactList}\item 
+struct \hyperlink{structswrast__device__driver}{swrast\+\_\+device\+\_\+driver}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{swrast_8h_a58c2db3f7ab2ea9c154296d8cc61801b}\label{swrast_8h_a58c2db3f7ab2ea9c154296d8cc61801b}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+CI}~F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+C\+OL
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{swrast_8h_a021673346be5c493b5acc8ffd026ac63}\label{swrast_8h_a021673346be5c493b5acc8ffd026ac63}} 
+G\+Lboolean {\bfseries \+\_\+swrast\+\_\+\+Create\+Context} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{swrast_8h_a7d9f75f4f995ccfe398cb40bfabdfe26}\label{swrast_8h_a7d9f75f4f995ccfe398cb40bfabdfe26}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+\+Destroy\+Context} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{swrast_8h_a7ecee5aa069b5876816bc9f5ced0db4e}\label{swrast_8h_a7ecee5aa069b5876816bc9f5ced0db4e}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structswrast__device__driver}{swrast\+\_\+device\+\_\+driver} $\ast$ {\bfseries \+\_\+swrast\+\_\+\+Get\+Device\+Driver\+Reference} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_ade07dedc8ffd30f5a380992165276336}{\+\_\+swrast\+\_\+\+Bitmap} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint px, G\+Lint py, G\+Lsizei width, G\+Lsizei height, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, const G\+Lubyte $\ast$\hyperlink{structbitmap}{bitmap})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_a463ad9cb62e435bf492cc0bd34732365}{\+\_\+swrast\+\_\+\+Copy\+Pixels} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint srcx, G\+Lint srcy, G\+Lint destx, G\+Lint desty, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} type)
+\item 
+G\+Lboolean \hyperlink{swrast_8h_ae353d031eb33c9e781e11ea23f270047}{swrast\+\_\+fast\+\_\+copy\+\_\+pixels} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint srcX, G\+Lint srcY, G\+Lsizei width, G\+Lsizei height, G\+Lint dstX, G\+Lint dstY, \hyperlink{interfacevoid}{G\+Lenum} type)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_a7f2aed4065475f9196c9744626e0e1a2}{\+\_\+swrast\+\_\+\+Draw\+Pixels} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_a4e4642bf77ac1bc398724ae69d3bf27d}{\+\_\+swrast\+\_\+\+Clear} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lbitfield buffers)
+\item 
+\mbox{\Hypertarget{swrast_8h_af58b48364442a91646d8a1954a82c9d4}\label{swrast_8h_af58b48364442a91646d8a1954a82c9d4}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+\+Reset\+Line\+Stipple} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{swrast_8h_a6971a06b4d2c37be8fa372313a1ea6a4}\label{swrast_8h_a6971a06b4d2c37be8fa372313a1ea6a4}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+\+Point} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v)
+\item 
+\mbox{\Hypertarget{swrast_8h_a6c48bf9777b3be8f23e328bebd939411}\label{swrast_8h_a6c48bf9777b3be8f23e328bebd939411}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+\+Line} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v0, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v1)
+\item 
+\mbox{\Hypertarget{swrast_8h_a70b4b41ca2afcfb66090dee19071d0f5}\label{swrast_8h_a70b4b41ca2afcfb66090dee19071d0f5}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+\+Triangle} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v0, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v1, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v2)
+\item 
+\mbox{\Hypertarget{swrast_8h_a3d1cac49bf9860cf45f358a42a8ce365}\label{swrast_8h_a3d1cac49bf9860cf45f358a42a8ce365}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+\+Quad} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v0, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v1, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v2, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v3)
+\item 
+\mbox{\Hypertarget{swrast_8h_a644fe2a7e4e4dececdc376d071ee920d}\label{swrast_8h_a644fe2a7e4e4dececdc376d071ee920d}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+flush} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{swrast_8h_abac656f5af3a6b509e0ae8cbb0a4ea0d}\label{swrast_8h_abac656f5af3a6b509e0ae8cbb0a4ea0d}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+render\+\_\+primitive} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\mbox{\Hypertarget{swrast_8h_a15fc379e8649e11bfb6c00f77588b479}\label{swrast_8h_a15fc379e8649e11bfb6c00f77588b479}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+render\+\_\+start} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{swrast_8h_a0c5c4ba65ae43cacded16d89f462d2b3}\label{swrast_8h_a0c5c4ba65ae43cacded16d89f462d2b3}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+render\+\_\+finish} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$ \hyperlink{swrast_8h_ad39467c98867af19faa14bb3601b3ac4}{\+\_\+swrast\+\_\+new\+\_\+texture\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_a64c120eff326844bd0326fa4e47633f8}{\+\_\+swrast\+\_\+delete\+\_\+texture\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)
+\item 
+G\+Lboolean \hyperlink{swrast_8h_ae2059860a06d03f3fe8c1f9a85166076}{\+\_\+swrast\+\_\+alloc\+\_\+texture\+\_\+image\+\_\+buffer} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, gl\+\_\+format format, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_a79fc032ed821e1d0055f5e697005d47a}{\+\_\+swrast\+\_\+init\+\_\+texture\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_a07b77e8dca737153ea0161c42f72a6e5}{\+\_\+swrast\+\_\+free\+\_\+texture\+\_\+image\+\_\+buffer} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{swrast_8h_a67f0a5ce7ecf50392df8dda533f227c5}{\+\_\+swrast\+\_\+map\+\_\+teximage} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Luint \hyperlink{classslice}{slice}, G\+Luint x, G\+Luint y, G\+Luint w, G\+Luint h, G\+Lbitfield \hyperlink{interfacevoid}{mode}, G\+Lubyte $\ast$$\ast$map\+Out, G\+Lint $\ast$row\+Stride\+Out)
+\item 
+\mbox{\Hypertarget{swrast_8h_ae0b5d17cee7da8c49d1103496602c715}\label{swrast_8h_ae0b5d17cee7da8c49d1103496602c715}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+unmap\+\_\+teximage} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Luint \hyperlink{classslice}{slice})
+\item 
+\mbox{\Hypertarget{swrast_8h_a77e734d1f577352e30ee7af3caa3891f}\label{swrast_8h_a77e734d1f577352e30ee7af3caa3891f}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+\+Invalidate\+State} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lbitfield new\+\_\+state)
+\item 
+\mbox{\Hypertarget{swrast_8h_a23e14eb9c2aa51b4e02135f0dc31fbb7}\label{swrast_8h_a23e14eb9c2aa51b4e02135f0dc31fbb7}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+allow\+\_\+vertex\+\_\+fog} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lboolean \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{swrast_8h_ab7207a90e15e25639c3610b6e7d27d05}\label{swrast_8h_ab7207a90e15e25639c3610b6e7d27d05}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+allow\+\_\+pixel\+\_\+fog} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lboolean \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{swrast_8h_a304d8a4c8e858542d3f79cc86c07b457}\label{swrast_8h_a304d8a4c8e858542d3f79cc86c07b457}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+print\+\_\+vertex} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$v)
+\item 
+\mbox{\Hypertarget{swrast_8h_a567686b617cb2299c6635feabcfa9745}\label{swrast_8h_a567686b617cb2299c6635feabcfa9745}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+eject\+\_\+texture\+\_\+images} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{swrast_8h_a590246991a4701f0617ae24df385d7f4}\label{swrast_8h_a590246991a4701f0617ae24df385d7f4}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+render\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$fb, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer__attachment}{gl\+\_\+renderbuffer\+\_\+attachment} $\ast$att)
+\item 
+G\+Lboolean \hyperlink{swrast_8h_a965c85196e5b854a8fff5855c004d213}{\+\_\+swrast\+\_\+\+Alloc\+Texture\+Storage} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, G\+Lsizei levels, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Public interface to the software rasterization functions. 
+
+\begin{DoxyAuthor}{作者}
+Keith Whitwell \href{mailto:keith@tungstengraphics.com}{\tt keith@tungstengraphics.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{swrast_8h_ae2059860a06d03f3fe8c1f9a85166076}\label{swrast_8h_ae2059860a06d03f3fe8c1f9a85166076}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+alloc\+\_\+texture\+\_\+image\+\_\+buffer@{\+\_\+swrast\+\_\+alloc\+\_\+texture\+\_\+image\+\_\+buffer}}
+\index{\+\_\+swrast\+\_\+alloc\+\_\+texture\+\_\+image\+\_\+buffer@{\+\_\+swrast\+\_\+alloc\+\_\+texture\+\_\+image\+\_\+buffer}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+alloc\+\_\+texture\+\_\+image\+\_\+buffer()}{\_swrast\_alloc\_texture\_image\_buffer()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+swrast\+\_\+alloc\+\_\+texture\+\_\+image\+\_\+buffer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{tex\+Image,  }\item[{gl\+\_\+format}]{format,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{G\+Lsizei}]{depth }\end{DoxyParamCaption})}
+
+Called via ctx-\/$>$Driver.\+Alloc\+Texture\+Image\+Buffer() \mbox{\Hypertarget{swrast_8h_a965c85196e5b854a8fff5855c004d213}\label{swrast_8h_a965c85196e5b854a8fff5855c004d213}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+\+Alloc\+Texture\+Storage@{\+\_\+swrast\+\_\+\+Alloc\+Texture\+Storage}}
+\index{\+\_\+swrast\+\_\+\+Alloc\+Texture\+Storage@{\+\_\+swrast\+\_\+\+Alloc\+Texture\+Storage}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+\+Alloc\+Texture\+Storage()}{\_swrast\_AllocTextureStorage()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+swrast\+\_\+\+Alloc\+Texture\+Storage (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj,  }\item[{G\+Lsizei}]{levels,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{G\+Lsizei}]{depth }\end{DoxyParamCaption})}
+
+Called via ctx-\/$>$Driver.\+Alloc\+Texture\+Storage() Just have to allocate memory for the texture images. \mbox{\Hypertarget{swrast_8h_ade07dedc8ffd30f5a380992165276336}\label{swrast_8h_ade07dedc8ffd30f5a380992165276336}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+\+Bitmap@{\+\_\+swrast\+\_\+\+Bitmap}}
+\index{\+\_\+swrast\+\_\+\+Bitmap@{\+\_\+swrast\+\_\+\+Bitmap}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+\+Bitmap()}{\_swrast\_Bitmap()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+\+Bitmap (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lint}]{px,  }\item[{G\+Lint}]{py,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$}]{unpack,  }\item[{const G\+Lubyte $\ast$}]{bitmap }\end{DoxyParamCaption})}
+
+Render a bitmap. Called via ctx-\/$>$Driver.\+Bitmap() All parameter error checking will have been done before this is called. \mbox{\Hypertarget{swrast_8h_a4e4642bf77ac1bc398724ae69d3bf27d}\label{swrast_8h_a4e4642bf77ac1bc398724ae69d3bf27d}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+\+Clear@{\+\_\+swrast\+\_\+\+Clear}}
+\index{\+\_\+swrast\+\_\+\+Clear@{\+\_\+swrast\+\_\+\+Clear}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+\+Clear()}{\_swrast\_Clear()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lbitfield}]{buffers }\end{DoxyParamCaption})}
+
+Called via the device driver\textquotesingle{}s ctx-\/$>$Driver.\+Clear() function if the device driver can\textquotesingle{}t clear one or more of the buffers itself. 
+\begin{DoxyParams}{参数}
+{\em buffers} & bitfield of B\+U\+F\+F\+E\+R\+\_\+\+B\+I\+T\+\_\+$\ast$ values indicating which renderbuffers are to be cleared. \\
+\hline
+{\em all} & if G\+L\+\_\+\+T\+R\+UE, clear whole buffer, else clear specified region. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{swrast_8h_a463ad9cb62e435bf492cc0bd34732365}\label{swrast_8h_a463ad9cb62e435bf492cc0bd34732365}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+\+Copy\+Pixels@{\+\_\+swrast\+\_\+\+Copy\+Pixels}}
+\index{\+\_\+swrast\+\_\+\+Copy\+Pixels@{\+\_\+swrast\+\_\+\+Copy\+Pixels}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+\+Copy\+Pixels()}{\_swrast\_CopyPixels()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+\+Copy\+Pixels (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lint}]{srcx,  }\item[{G\+Lint}]{srcy,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{G\+Lint}]{destx,  }\item[{G\+Lint}]{desty,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{type }\end{DoxyParamCaption})}
+
+Do software-\/based gl\+Copy\+Pixels. By time we get here, all parameters will have been error-\/checked. \mbox{\Hypertarget{swrast_8h_a64c120eff326844bd0326fa4e47633f8}\label{swrast_8h_a64c120eff326844bd0326fa4e47633f8}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+delete\+\_\+texture\+\_\+image@{\+\_\+swrast\+\_\+delete\+\_\+texture\+\_\+image}}
+\index{\+\_\+swrast\+\_\+delete\+\_\+texture\+\_\+image@{\+\_\+swrast\+\_\+delete\+\_\+texture\+\_\+image}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+delete\+\_\+texture\+\_\+image()}{\_swrast\_delete\_texture\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+delete\+\_\+texture\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{tex\+Image }\end{DoxyParamCaption})}
+
+Free a \hyperlink{structswrast__texture__image}{swrast\+\_\+texture\+\_\+image} (a subclass of \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}). Called via ctx-\/$>$Driver.\+Delete\+Texture\+Image(). \mbox{\Hypertarget{swrast_8h_a7f2aed4065475f9196c9744626e0e1a2}\label{swrast_8h_a7f2aed4065475f9196c9744626e0e1a2}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+\+Draw\+Pixels@{\+\_\+swrast\+\_\+\+Draw\+Pixels}}
+\index{\+\_\+swrast\+\_\+\+Draw\+Pixels@{\+\_\+swrast\+\_\+\+Draw\+Pixels}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+\+Draw\+Pixels()}{\_swrast\_DrawPixels()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+\+Draw\+Pixels (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lint}]{x,  }\item[{G\+Lint}]{y,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{type,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$}]{unpack,  }\item[{const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{pixels }\end{DoxyParamCaption})}
+
+Execute software-\/based gl\+Draw\+Pixels. By time we get here, all error checking will have been done. \mbox{\Hypertarget{swrast_8h_a07b77e8dca737153ea0161c42f72a6e5}\label{swrast_8h_a07b77e8dca737153ea0161c42f72a6e5}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+free\+\_\+texture\+\_\+image\+\_\+buffer@{\+\_\+swrast\+\_\+free\+\_\+texture\+\_\+image\+\_\+buffer}}
+\index{\+\_\+swrast\+\_\+free\+\_\+texture\+\_\+image\+\_\+buffer@{\+\_\+swrast\+\_\+free\+\_\+texture\+\_\+image\+\_\+buffer}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+free\+\_\+texture\+\_\+image\+\_\+buffer()}{\_swrast\_free\_texture\_image\_buffer()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+free\+\_\+texture\+\_\+image\+\_\+buffer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{tex\+Image }\end{DoxyParamCaption})}
+
+Called via ctx-\/$>$Driver.\+Free\+Texture\+Image\+Buffer() \mbox{\Hypertarget{swrast_8h_a79fc032ed821e1d0055f5e697005d47a}\label{swrast_8h_a79fc032ed821e1d0055f5e697005d47a}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+init\+\_\+texture\+\_\+image@{\+\_\+swrast\+\_\+init\+\_\+texture\+\_\+image}}
+\index{\+\_\+swrast\+\_\+init\+\_\+texture\+\_\+image@{\+\_\+swrast\+\_\+init\+\_\+texture\+\_\+image}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+init\+\_\+texture\+\_\+image()}{\_swrast\_init\_texture\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+init\+\_\+texture\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{tex\+Image,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{G\+Lsizei}]{depth }\end{DoxyParamCaption})}
+
+Code that overrides ctx-\/$>$Driver.\+Alloc\+Texture\+Image\+Buffer may use this to initialize the fields of \hyperlink{structswrast__texture__image}{swrast\+\_\+texture\+\_\+image} without allocating the image buffer or initializing Image\+Offsets or Row\+Stride.
+
+Returns G\+L\+\_\+\+T\+R\+UE on success, G\+L\+\_\+\+F\+A\+L\+SE on memory allocation failure. \mbox{\Hypertarget{swrast_8h_a67f0a5ce7ecf50392df8dda533f227c5}\label{swrast_8h_a67f0a5ce7ecf50392df8dda533f227c5}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+map\+\_\+teximage@{\+\_\+swrast\+\_\+map\+\_\+teximage}}
+\index{\+\_\+swrast\+\_\+map\+\_\+teximage@{\+\_\+swrast\+\_\+map\+\_\+teximage}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+map\+\_\+teximage()}{\_swrast\_map\_teximage()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+map\+\_\+teximage (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{tex\+Image,  }\item[{G\+Luint}]{slice,  }\item[{G\+Luint}]{x,  }\item[{G\+Luint}]{y,  }\item[{G\+Luint}]{w,  }\item[{G\+Luint}]{h,  }\item[{G\+Lbitfield}]{mode,  }\item[{G\+Lubyte $\ast$$\ast$}]{map\+Out,  }\item[{G\+Lint $\ast$}]{row\+Stride\+Out }\end{DoxyParamCaption})}
+
+Map a 2D slice of a texture image into user space. (x,y,w,h) defines a region of interest (R\+OI). Reading/writing texels outside of the R\+OI is undefined.
+
+
+\begin{DoxyParams}{参数}
+{\em tex\+Image} & the texture image \\
+\hline
+{\em slice} & the 3D image slice or array texture slice \\
+\hline
+{\em x,y,w,h} & region of interest \\
+\hline
+{\em mode} & bitmask of G\+L\+\_\+\+M\+A\+P\+\_\+\+R\+E\+A\+D\+\_\+\+B\+IT, G\+L\+\_\+\+M\+A\+P\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+IT \\
+\hline
+{\em map\+Out} & returns start of mapping of region of interest \\
+\hline
+{\em row\+Stride\+Out} & returns row stride (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{swrast_8h_ad39467c98867af19faa14bb3601b3ac4}\label{swrast_8h_ad39467c98867af19faa14bb3601b3ac4}} 
+\index{swrast.\+h@{swrast.\+h}!\+\_\+swrast\+\_\+new\+\_\+texture\+\_\+image@{\+\_\+swrast\+\_\+new\+\_\+texture\+\_\+image}}
+\index{\+\_\+swrast\+\_\+new\+\_\+texture\+\_\+image@{\+\_\+swrast\+\_\+new\+\_\+texture\+\_\+image}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+new\+\_\+texture\+\_\+image()}{\_swrast\_new\_texture\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}$\ast$ \+\_\+swrast\+\_\+new\+\_\+texture\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Functions for mapping/unmapping texture images. Allocate a new \hyperlink{structswrast__texture__image}{swrast\+\_\+texture\+\_\+image} (a subclass of \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}). Called via ctx-\/$>$Driver.\+New\+Texture\+Image(). \mbox{\Hypertarget{swrast_8h_ae353d031eb33c9e781e11ea23f270047}\label{swrast_8h_ae353d031eb33c9e781e11ea23f270047}} 
+\index{swrast.\+h@{swrast.\+h}!swrast\+\_\+fast\+\_\+copy\+\_\+pixels@{swrast\+\_\+fast\+\_\+copy\+\_\+pixels}}
+\index{swrast\+\_\+fast\+\_\+copy\+\_\+pixels@{swrast\+\_\+fast\+\_\+copy\+\_\+pixels}!swrast.\+h@{swrast.\+h}}
+\subsubsection{\texorpdfstring{swrast\+\_\+fast\+\_\+copy\+\_\+pixels()}{swrast\_fast\_copy\_pixels()}}
+{\footnotesize\ttfamily G\+Lboolean swrast\+\_\+fast\+\_\+copy\+\_\+pixels (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lint}]{srcX,  }\item[{G\+Lint}]{srcY,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{G\+Lint}]{dstX,  }\item[{G\+Lint}]{dstY,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{type }\end{DoxyParamCaption})}
+
+Try to do a fast 1\+:1 blit with memcpy. \begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE if successful, G\+L\+\_\+\+F\+A\+L\+SE otherwise. 
+\end{DoxyReturn}

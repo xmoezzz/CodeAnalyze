@@ -1,0 +1,144 @@
+\hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r}{}\section{\+\_\+\+I\+O\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+O\+R结构体 参考}
+\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r}\index{\+\_\+\+I\+O\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR@{\+\_\+\+I\+O\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ad7a47a5ef57e9fe4db440b206ac1243f}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ad7a47a5ef57e9fe4db440b206ac1243f}} 
+U\+C\+H\+AR {\bfseries Option}
+\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ad8e352f006cc2b76e3a4c0d4a952e794}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ad8e352f006cc2b76e3a4c0d4a952e794}} 
+U\+C\+H\+AR {\bfseries Type}
+\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ae338f0a86df4deb72ac5d873dba93f5f}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ae338f0a86df4deb72ac5d873dba93f5f}} 
+U\+C\+H\+AR {\bfseries Share\+Disposition}
+\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_a0526172ec62870c9a02bdb3fc8b82b57}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_a0526172ec62870c9a02bdb3fc8b82b57}} 
+U\+C\+H\+AR {\bfseries Spare1}
+\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_a91efbbc16bee045bdf803eb78299b58d}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_a91efbbc16bee045bdf803eb78299b58d}} 
+U\+S\+H\+O\+RT {\bfseries Flags}
+\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_aa809a7c6b6b3b853e2209f13e01360d8}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_aa809a7c6b6b3b853e2209f13e01360d8}} 
+U\+S\+H\+O\+RT {\bfseries Spare2}
+\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_a48ddc444f8512001145bd66af921a095}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_a48ddc444f8512001145bd66af921a095}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Alignment}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Port}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Alignment}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Memory}\\
+\>struct \{\\
+\>\>ULONG {\bfseries MinimumVector}\\
+\>\>ULONG {\bfseries MaximumVector}\\
+\>\>IRQ\_DEVICE\_POLICY {\bfseries AffinityPolicy}\\
+\>\>IRQ\_PRIORITY {\bfseries PriorityPolicy}\\
+\>\>KAFFINITY {\bfseries TargetedProcessors}\\
+\>\} {\bfseries Interrupt}\\
+\>struct \{\\
+\>\>ULONG {\bfseries MinimumChannel}\\
+\>\>ULONG {\bfseries MaximumChannel}\\
+\>\} {\bfseries Dma}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Alignment}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Generic}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Data} \mbox{[}3\mbox{]}\\
+\>\} {\bfseries DevicePrivate}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries MinBusNumber}\\
+\>\>ULONG {\bfseries MaxBusNumber}\\
+\>\>ULONG {\bfseries Reserved}\\
+\>\} {\bfseries BusNumber}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Priority}\\
+\>\>ULONG {\bfseries Reserved1}\\
+\>\>ULONG {\bfseries Reserved2}\\
+\>\} {\bfseries ConfigData}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length40}\\
+\>\>ULONG {\bfseries Alignment40}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Memory40}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length48}\\
+\>\>ULONG {\bfseries Alignment48}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Memory48}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length64}\\
+\>\>ULONG {\bfseries Alignment64}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Memory64}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ab512fe77cce0be6013da1f3ea5faa9bc}\label{struct___i_o___r_e_s_o_u_r_c_e___d_e_s_c_r_i_p_t_o_r_ab512fe77cce0be6013da1f3ea5faa9bc}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Alignment}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Port}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Alignment}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Memory}\\
+\>struct \{\\
+\>\>ULONG {\bfseries MinimumVector}\\
+\>\>ULONG {\bfseries MaximumVector}\\
+\>\} {\bfseries Interrupt}\\
+\>struct \{\\
+\>\>ULONG {\bfseries MinimumChannel}\\
+\>\>ULONG {\bfseries MaximumChannel}\\
+\>\} {\bfseries Dma}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Alignment}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MinimumAddress}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PHYSICAL\_ADDRESS} {\bfseries MaximumAddress}\\
+\>\} {\bfseries Generic}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Data} \mbox{[}3\mbox{]}\\
+\>\} {\bfseries DevicePrivate}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries MinBusNumber}\\
+\>\>ULONG {\bfseries MaxBusNumber}\\
+\>\>ULONG {\bfseries Reserved}\\
+\>\} {\bfseries BusNumber}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Priority}\\
+\>\>ULONG {\bfseries Reserved1}\\
+\>\>ULONG {\bfseries Reserved2}\\
+\>\} {\bfseries ConfigData}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/ddk/miniport.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/xdk/iotypes.\+h\end{DoxyCompactItemize}

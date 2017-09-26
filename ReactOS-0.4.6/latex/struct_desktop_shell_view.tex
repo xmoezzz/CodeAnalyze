@@ -1,0 +1,95 @@
+\hypertarget{struct_desktop_shell_view}{}\section{Desktop\+Shell\+View结构体 参考}
+\label{struct_desktop_shell_view}\index{Desktop\+Shell\+View@{Desktop\+Shell\+View}}
+
+
+subclassed Shell\+View window  
+
+
+
+
+{\ttfamily \#include $<$desktop.\+h$>$}
+
+类 Desktop\+Shell\+View 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{struct_desktop_shell_view}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a17dabdf28bb281a6f9686a8dc5872c05}\label{struct_desktop_shell_view_a17dabdf28bb281a6f9686a8dc5872c05}} 
+typedef \hyperlink{struct_ext_context_menu_handler_t}{Ext\+Context\+Menu\+HandlerT}$<$ \hyperlink{struct_subclassed_window}{Subclassed\+Window} $>$ {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a79003b85e20e256bccc31715b33e5320}\label{struct_desktop_shell_view_a79003b85e20e256bccc31715b33e5320}} 
+{\bfseries Desktop\+Shell\+View} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, \hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$p\+Shell\+View)
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a8b7182bfb30c7fab7be37df3d7569beb}\label{struct_desktop_shell_view_a8b7182bfb30c7fab7be37df3d7569beb}} 
+bool {\bfseries Init\+Drag\+Drop} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a8bf496bc18329cca0c64c6ff9e47d0fa}\label{struct_desktop_shell_view_a8bf496bc18329cca0c64c6ff9e47d0fa}} 
+L\+R\+E\+S\+U\+LT {\bfseries Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_ae596b151c1dd254913024aab1f14294b}\label{struct_desktop_shell_view_ae596b151c1dd254913024aab1f14294b}} 
+int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a1f9da855ad2d7c4d22b8bd21447b40a5}\label{struct_desktop_shell_view_a1f9da855ad2d7c4d22b8bd21447b40a5}} 
+int {\bfseries Notify} (int id, \hyperlink{structtag_n_m_h_d_r}{N\+M\+H\+DR} $\ast$pnmh)
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a4c1b8801a65211f7115f14aebe3b416c}\label{struct_desktop_shell_view_a4c1b8801a65211f7115f14aebe3b416c}} 
+bool {\bfseries Do\+Context\+Menu} (int x, int y)
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a6da152db4c1e49a95e6e0002ee14cac0}\label{struct_desktop_shell_view_a6da152db4c1e49a95e6e0002ee14cac0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Do\+Desktop\+Context\+Menu} (int x, int y)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_desktop_shell_view_a8899b937d203213479596725802692ac}{Position\+Icons} (int dir=1)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_desktop_shell_view_a4d66e2c55895559db066f9c21de699c0}{refresh} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_aee26543254bae3adfe6af1b0f1d67c6f}\label{struct_desktop_shell_view_aee26543254bae3adfe6af1b0f1d67c6f}} 
+\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$ {\bfseries \+\_\+p\+Shell\+View}
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_ac0a62b182cbdf34d295dc6986ca080e9}\label{struct_desktop_shell_view_ac0a62b182cbdf34d295dc6986ca080e9}} 
+\hyperlink{interfacevoid}{H\+W\+ND} {\bfseries \+\_\+hwnd\+List\+View}
+\item 
+\mbox{\Hypertarget{struct_desktop_shell_view_a6b86eaf2336a92694bd2f2657ca77db1}\label{struct_desktop_shell_view_a6b86eaf2336a92694bd2f2657ca77db1}} 
+int {\bfseries \+\_\+icon\+\_\+algo}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+subclassed Shell\+View window 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_desktop_shell_view_a8899b937d203213479596725802692ac}\label{struct_desktop_shell_view_a8899b937d203213479596725802692ac}} 
+\index{Desktop\+Shell\+View@{Desktop\+Shell\+View}!Position\+Icons@{Position\+Icons}}
+\index{Position\+Icons@{Position\+Icons}!Desktop\+Shell\+View@{Desktop\+Shell\+View}}
+\subsubsection{\texorpdfstring{Position\+Icons()}{PositionIcons()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Desktop\+Shell\+View\+::\+Position\+Icons (\begin{DoxyParamCaption}\item[{int}]{dir = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000013}{待办事项}]\end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_desktop_shell_view_a4d66e2c55895559db066f9c21de699c0}\label{struct_desktop_shell_view_a4d66e2c55895559db066f9c21de699c0}} 
+\index{Desktop\+Shell\+View@{Desktop\+Shell\+View}!refresh@{refresh}}
+\index{refresh@{refresh}!Desktop\+Shell\+View@{Desktop\+Shell\+View}}
+\subsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Desktop\+Shell\+View\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000014}{待办事项}]\end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/desktop/desktop.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/desktop/desktop.\+cpp\end{DoxyCompactItemize}

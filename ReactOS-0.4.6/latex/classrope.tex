@@ -1,0 +1,585 @@
+\hypertarget{classrope}{}\section{rope$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ 模板类 参考}
+\label{classrope}\index{rope$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$@{rope$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a45ffe81bcc165a72f51b5ccbbc62e689}\label{classrope_a45ffe81bcc165a72f51b5ccbbc62e689}} 
+typedef \+\_\+\+CharT {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classrope_a03ad6aa37a82b4fb9a33be00c9160c1b}\label{classrope_a03ad6aa37a82b4fb9a33be00c9160c1b}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classrope_adb17dff084404650e7b5cf6bd9499938}\label{classrope_adb17dff084404650e7b5cf6bd9499938}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classrope_ae9aca093f5340d6eb1511fd98620cde3}\label{classrope_ae9aca093f5340d6eb1511fd98620cde3}} 
+typedef \+\_\+\+CharT {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classrope_ad14a41c86406c2e4df6a709aeaf9b01e}\label{classrope_ad14a41c86406c2e4df6a709aeaf9b01e}} 
+typedef const \+\_\+\+CharT $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classrope_afecace615862f262d691f4317c7682c3}\label{classrope_afecace615862f262d691f4317c7682c3}} 
+typedef \hyperlink{class___rope__iterator}{\+\_\+\+Rope\+\_\+iterator}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classrope_a6b4867f7a989742637fe60b02cbddb4e}\label{classrope_a6b4867f7a989742637fe60b02cbddb4e}} 
+typedef \hyperlink{class___rope__const__iterator}{\+\_\+\+Rope\+\_\+const\+\_\+iterator}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classrope_a29b34908687e2416224dc0ae7dcc5f2b}\label{classrope_a29b34908687e2416224dc0ae7dcc5f2b}} 
+typedef \hyperlink{class___rope__char__ref__proxy}{\+\_\+\+Rope\+\_\+char\+\_\+ref\+\_\+proxy}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classrope_ab47f343d984dadc603f6ecf01e43f581}\label{classrope_ab47f343d984dadc603f6ecf01e43f581}} 
+typedef \hyperlink{class___rope__char__ptr__proxy}{\+\_\+\+Rope\+\_\+char\+\_\+ptr\+\_\+proxy}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classrope_ab74101063816e95510071831ede2f993}\label{classrope_ab74101063816e95510071831ede2f993}} 
+typedef \+\_\+\+Alloc {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{classrope_ab96a64c7359d79fff697387dad327a9c}\label{classrope_ab96a64c7359d79fff697387dad327a9c}} 
+typedef \hyperlink{struct___rope___rope_concatenation}{\+\_\+\+Rope\+\_\+\+Rope\+Concatenation}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Rope\+Concatenation}
+\item 
+\mbox{\Hypertarget{classrope_ac495dc7e6c31d44fc98dd41f646b0fb1}\label{classrope_ac495dc7e6c31d44fc98dd41f646b0fb1}} 
+typedef \hyperlink{struct___rope___rope_leaf}{\+\_\+\+Rope\+\_\+\+Rope\+Leaf}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Rope\+Leaf}
+\item 
+\mbox{\Hypertarget{classrope_a984d963ed5e70a487f66ea4d32098dcc}\label{classrope_a984d963ed5e70a487f66ea4d32098dcc}} 
+typedef \hyperlink{struct___rope___rope_function}{\+\_\+\+Rope\+\_\+\+Rope\+Function}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Rope\+Function}
+\item 
+\mbox{\Hypertarget{classrope_acbda6b8ea841e36fefca7a1ecaa21516}\label{classrope_acbda6b8ea841e36fefca7a1ecaa21516}} 
+typedef \hyperlink{struct___rope___rope_substring}{\+\_\+\+Rope\+\_\+\+Rope\+Substring}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Rope\+Substring}
+\item 
+\mbox{\Hypertarget{classrope_a49820af7ad33f23a6eb363d041ee1a94}\label{classrope_a49820af7ad33f23a6eb363d041ee1a94}} 
+typedef \hyperlink{struct___rope__self__destruct__ptr}{\+\_\+\+Rope\+\_\+self\+\_\+destruct\+\_\+ptr}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Self\+\_\+destruct\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{classrope_af8c98ba9d81593e88751ab1787e959b1}\label{classrope_af8c98ba9d81593e88751ab1787e959b1}} 
+typedef \hyperlink{class___rope__char__consumer}{\+\_\+\+Rope\+\_\+char\+\_\+consumer}$<$ \+\_\+\+CharT $>$ {\bfseries \+\_\+\+Char\+Consumer}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a8a3d1439bd4eb729b5467ab1f5a70f2c}\label{classrope_a8a3d1439bd4eb729b5467ab1f5a70f2c}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{classrope_a0536c4f13f1b53682499d23b4985a0bc}\label{classrope_a0536c4f13f1b53682499d23b4985a0bc}} 
+\hyperlink{interfacevoid}{void} {\bfseries apply\+\_\+to\+\_\+pieces} (size\+\_\+t \+\_\+\+\_\+begin, size\+\_\+t \+\_\+\+\_\+end, \hyperlink{class___rope__char__consumer}{\+\_\+\+Char\+Consumer} \&\+\_\+\+\_\+c) const
+\item 
+\mbox{\Hypertarget{classrope_ac15ad08ab8fc6b046dca86890218a6a2}\label{classrope_ac15ad08ab8fc6b046dca86890218a6a2}} 
+{\bfseries rope} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+t, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_a5b6f175c0f6665df2c253f58529122b6}\label{classrope_a5b6f175c0f6665df2c253f58529122b6}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classrope_a5a95e9e41fe6acec88ba32569e9b47ce}\label{classrope_a5a95e9e41fe6acec88ba32569e9b47ce}} 
+int {\bfseries compare} (const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+y) const
+\item 
+\mbox{\Hypertarget{classrope_a9f1f74feeeb7d395bde2e6f16f17ddd2}\label{classrope_a9f1f74feeeb7d395bde2e6f16f17ddd2}} 
+{\bfseries rope} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+s, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_aae5ee4060ce6962b0c39b17457e4be44}\label{classrope_aae5ee4060ce6962b0c39b17457e4be44}} 
+{\bfseries rope} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+s, size\+\_\+t \+\_\+\+\_\+len, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_ac204fc9f492bf43a5a85f4786a6813b9}\label{classrope_ac204fc9f492bf43a5a85f4786a6813b9}} 
+{\bfseries rope} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+s, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+e, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_aa2898b627b5adde05f52b1a73caf856d}\label{classrope_aa2898b627b5adde05f52b1a73caf856d}} 
+{\bfseries rope} (const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+s, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+e, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_aec0953ca4d57a5851a945a77a5ad62a1}\label{classrope_aec0953ca4d57a5851a945a77a5ad62a1}} 
+{\bfseries rope} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+s, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+e, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_a39914d0f0f0c624c00ed2d3b49fe3363}\label{classrope_a39914d0f0f0c624c00ed2d3b49fe3363}} 
+{\bfseries rope} (\+\_\+\+CharT \+\_\+\+\_\+c, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_a33ade5e98ff60bc502c02a293d84d49a}\label{classrope_a33ade5e98ff60bc502c02a293d84d49a}} 
+{\bfseries rope} (size\+\_\+t \+\_\+\+\_\+n, \+\_\+\+CharT \+\_\+\+\_\+c, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_ad41783eb7bb8252b2468eadff16f545b}\label{classrope_ad41783eb7bb8252b2468eadff16f545b}} 
+{\bfseries rope} (const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_ab3695a4927434694fd3703bee664799d}\label{classrope_ab3695a4927434694fd3703bee664799d}} 
+{\bfseries rope} (\hyperlink{classchar__producer}{char\+\_\+producer}$<$ \+\_\+\+CharT $>$ $\ast$\+\_\+\+\_\+fn, size\+\_\+t \+\_\+\+\_\+len, bool \+\_\+\+\_\+delete\+\_\+fn, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classrope_a6584cff2172d262f36ec934f0b912e6e}\label{classrope_a6584cff2172d262f36ec934f0b912e6e}} 
+{\bfseries rope} (const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classrope_a8ce344727a57e71c2dc96810090fa2ec}\label{classrope_a8ce344727a57e71c2dc96810090fa2ec}} 
+{\bfseries rope} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classrope}{\+\_\+\+Self} $>$ \+\_\+\+\_\+src)
+\item 
+\mbox{\Hypertarget{classrope_a7ebc2545928948857d84f4bfd879b6bf}\label{classrope_a7ebc2545928948857d84f4bfd879b6bf}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classrope_a77297202bb0da275e13f0b54146273c5}\label{classrope_a77297202bb0da275e13f0b54146273c5}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classrope_aee26c5186bc24685f0c638bd79e2a821}\label{classrope_aee26c5186bc24685f0c638bd79e2a821}} 
+\hyperlink{interfacevoid}{void} {\bfseries push\+\_\+back} (\+\_\+\+CharT \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classrope_ab0240a3710e322766ffd7a9e26730366}\label{classrope_ab0240a3710e322766ffd7a9e26730366}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classrope_a9a9db1c445502a5f8c6f7ab37542a255}\label{classrope_a9a9db1c445502a5f8c6f7ab37542a255}} 
+\+\_\+\+CharT {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classrope_a3b7f5e8f19ffb596798a5f79df0e9262}\label{classrope_a3b7f5e8f19ffb596798a5f79df0e9262}} 
+\hyperlink{interfacevoid}{void} {\bfseries push\+\_\+front} (\+\_\+\+CharT \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classrope_ae4fe24594f005194bffadc60ad875870}\label{classrope_ae4fe24594f005194bffadc60ad875870}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+front} ()
+\item 
+\mbox{\Hypertarget{classrope_af1db4c98ea071c4759580e43e6d3464e}\label{classrope_af1db4c98ea071c4759580e43e6d3464e}} 
+\+\_\+\+CharT {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classrope_a5f2261af1122f2d8a3376e8f01064478}\label{classrope_a5f2261af1122f2d8a3376e8f01064478}} 
+\hyperlink{interfacevoid}{void} {\bfseries balance} ()
+\item 
+\mbox{\Hypertarget{classrope_a2d26f0d1598d32bf45891939356e74c3}\label{classrope_a2d26f0d1598d32bf45891939356e74c3}} 
+\hyperlink{interfacevoid}{void} {\bfseries copy} (\+\_\+\+CharT $\ast$\+\_\+\+\_\+buffer) const
+\item 
+\mbox{\Hypertarget{classrope_a30005212e1d2aa20b92c5ebd285f52ac}\label{classrope_a30005212e1d2aa20b92c5ebd285f52ac}} 
+size\+\_\+type {\bfseries copy} (size\+\_\+type \+\_\+\+\_\+pos, size\+\_\+type \+\_\+\+\_\+n, \+\_\+\+CharT $\ast$\+\_\+\+\_\+buffer) const
+\item 
+\mbox{\Hypertarget{classrope_a39046a44dab7458850a5b489c43eb939}\label{classrope_a39046a44dab7458850a5b489c43eb939}} 
+const \+\_\+\+CharT $\ast$ {\bfseries c\+\_\+str} () const
+\item 
+\mbox{\Hypertarget{classrope_a6dd442da926ff7da5ac683c0688f9b42}\label{classrope_a6dd442da926ff7da5ac683c0688f9b42}} 
+const \+\_\+\+CharT $\ast$ {\bfseries replace\+\_\+with\+\_\+c\+\_\+str} ()
+\item 
+\mbox{\Hypertarget{classrope_ae396c49f2874eb6c26031456ab87b8fd}\label{classrope_ae396c49f2874eb6c26031456ab87b8fd}} 
+\hyperlink{interfacevoid}{void} {\bfseries delete\+\_\+c\+\_\+str} ()
+\item 
+\mbox{\Hypertarget{classrope_a80a272c0123ff71120f1085636ecf0ad}\label{classrope_a80a272c0123ff71120f1085636ecf0ad}} 
+\+\_\+\+CharT {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type \+\_\+\+\_\+pos) const
+\item 
+\mbox{\Hypertarget{classrope_a412792bea919dc2d91e0d51f98c700f2}\label{classrope_a412792bea919dc2d91e0d51f98c700f2}} 
+\+\_\+\+CharT {\bfseries at} (size\+\_\+type \+\_\+\+\_\+pos) const
+\item 
+\mbox{\Hypertarget{classrope_a1e9ee877306d00eaee7a036ff0ec4863}\label{classrope_a1e9ee877306d00eaee7a036ff0ec4863}} 
+\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classrope_a4493696a55fc67e7b2820dcf8c8576d7}\label{classrope_a4493696a55fc67e7b2820dcf8c8576d7}} 
+\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} {\bfseries const\+\_\+begin} () const
+\item 
+\mbox{\Hypertarget{classrope_a75667889062d02647d656b48babab25c}\label{classrope_a75667889062d02647d656b48babab25c}} 
+\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classrope_a4f92fbac954113602b008a60e53c2cdc}\label{classrope_a4f92fbac954113602b008a60e53c2cdc}} 
+\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} {\bfseries const\+\_\+end} () const
+\item 
+\mbox{\Hypertarget{classrope_ae8720114c37db5e80d52474c68a4e58d}\label{classrope_ae8720114c37db5e80d52474c68a4e58d}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classrope_a5bbf53b2f777897f55e5d5968ca1a3ff}\label{classrope_a5bbf53b2f777897f55e5d5968ca1a3ff}} 
+size\+\_\+type {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classrope_acfda4ae7e427ed3bed318af88e0c5668}\label{classrope_acfda4ae7e427ed3bed318af88e0c5668}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classrope_a1085f40ffdc927cc67cc70ae978a7bf5}\label{classrope_a1085f40ffdc927cc67cc70ae978a7bf5}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{classrope_a0639fda0bc596ac7df00f994621eb090}\label{classrope_a0639fda0bc596ac7df00f994621eb090}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries const\+\_\+rbegin} () const
+\item 
+\mbox{\Hypertarget{classrope_ae87f6b5d36b9341ecb2079fd78d179a2}\label{classrope_ae87f6b5d36b9341ecb2079fd78d179a2}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rend} () const
+\item 
+\mbox{\Hypertarget{classrope_a6139eee7365d48f7a6bef3c08b9ed2ac}\label{classrope_a6139eee7365d48f7a6bef3c08b9ed2ac}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries const\+\_\+rend} () const
+\item 
+\mbox{\Hypertarget{classrope_ae51d54dff0dfc691183b6bc6acb719f6}\label{classrope_ae51d54dff0dfc691183b6bc6acb719f6}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+iter, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classrope_afad249707a0c5305a26aa9a1137cc4a8}\label{classrope_afad249707a0c5305a26aa9a1137cc4a8}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+c\+\_\+string)
+\item 
+\mbox{\Hypertarget{classrope_a888714ec79e3f72633496f8b43ca3a77}\label{classrope_a888714ec79e3f72633496f8b43ca3a77}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+s, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+e)
+\item 
+\mbox{\Hypertarget{classrope_aaa8301d250e303c8f8a5897c89f0ce06}\label{classrope_aaa8301d250e303c8f8a5897c89f0ce06}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} (\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \+\_\+\+\_\+s, \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \+\_\+\+\_\+e)
+\item 
+\mbox{\Hypertarget{classrope_a5f7a975201e225d4fbe3ab2f92f99c4f}\label{classrope_a5f7a975201e225d4fbe3ab2f92f99c4f}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} (\+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_aa003716298761875b787de9e6dbc1901}\label{classrope_aa003716298761875b787de9e6dbc1901}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} ()
+\item 
+\mbox{\Hypertarget{classrope_a978e5e54009c4860b3e5cb188231b6c7}\label{classrope_a978e5e54009c4860b3e5cb188231b6c7}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} (const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+y)
+\item 
+\mbox{\Hypertarget{classrope_ad0f2ab7cbbe34c9d5d86ff046862a5cc}\label{classrope_ad0f2ab7cbbe34c9d5d86ff046862a5cc}} 
+\hyperlink{classrope}{\+\_\+\+Self} \& {\bfseries append} (size\+\_\+t \+\_\+\+\_\+n, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_a1ee36722f0984835a5a084acb25aac29}\label{classrope_a1ee36722f0984835a5a084acb25aac29}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+b)
+\item 
+\mbox{\Hypertarget{classrope_ac66c6cfeea5fb4ad318d267aee8abef0}\label{classrope_ac66c6cfeea5fb4ad318d267aee8abef0}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_a85319947ca8196684bf49ba899af4fef}\label{classrope_a85319947ca8196684bf49ba899af4fef}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_ac8e5ac9ee36f1da19da2b4ea577ecb95}\label{classrope_ac8e5ac9ee36f1da19da2b4ea577ecb95}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classrope_a08665b9ee1f17435f056cdc49cd09cd8}\label{classrope_a08665b9ee1f17435f056cdc49cd09cd8}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+c\+\_\+string)
+\item 
+\mbox{\Hypertarget{classrope_a9067c1713073575a823417a5afc74f1b}\label{classrope_a9067c1713073575a823417a5afc74f1b}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_aeeae7d02cf0347c0a0349769a711c0fd}\label{classrope_aeeae7d02cf0347c0a0349769a711c0fd}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p)
+\item 
+\mbox{\Hypertarget{classrope_a488286a06e22011867519e808f12fd8d}\label{classrope_a488286a06e22011867519e808f12fd8d}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a81a7b27eda5675d9d377bf7e8de2d996}\label{classrope_a81a7b27eda5675d9d377bf7e8de2d996}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a1d514535a1eb19a45821acb093931cce}\label{classrope_a1d514535a1eb19a45821acb093931cce}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (size\+\_\+t \+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a90e5c2663bde7700afa8ba0c316ab8a5}\label{classrope_a90e5c2663bde7700afa8ba0c316ab8a5}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_a3039135dab20bac8b73be1092d78e8d2}\label{classrope_a3039135dab20bac8b73be1092d78e8d2}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, size\+\_\+t \+\_\+\+\_\+i\+\_\+len)
+\item 
+\mbox{\Hypertarget{classrope_aab15826632cf3802d994eb545e8d314f}\label{classrope_aab15826632cf3802d994eb545e8d314f}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_ad23ca1115f7e5a318be9e6a615143557}\label{classrope_ad23ca1115f7e5a318be9e6a615143557}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+c\+\_\+string)
+\item 
+\mbox{\Hypertarget{classrope_ad422cb0d5134774afc08cd01c0e2a34b}\label{classrope_ad422cb0d5134774afc08cd01c0e2a34b}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_aa6cbe03c6df55cffb0f3befb03ca2931}\label{classrope_aa6cbe03c6df55cffb0f3befb03ca2931}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_aa11a4b1f7e2fd35d4d0e50819226067a}\label{classrope_aa11a4b1f7e2fd35d4d0e50819226067a}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_ae4d8c577a8b78a542998abb54a41dc46}\label{classrope_ae4d8c577a8b78a542998abb54a41dc46}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_ae42111470c520e96b84299eff1b61cbf}\label{classrope_ae42111470c520e96b84299eff1b61cbf}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_a86c45c966fc136191719999478c5a6ab}\label{classrope_a86c45c966fc136191719999478c5a6ab}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, size\+\_\+t \+\_\+\+\_\+i\+\_\+len)
+\item 
+\mbox{\Hypertarget{classrope_aa64d6b38b2063fccb037fe3e4370f048}\label{classrope_aa64d6b38b2063fccb037fe3e4370f048}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+c\+\_\+string)
+\item 
+\mbox{\Hypertarget{classrope_a025fa0e891853f6d210faa53555bf571}\label{classrope_a025fa0e891853f6d210faa53555bf571}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_ae49b3afe014c9dff92d96ce2066c486e}\label{classrope_ae49b3afe014c9dff92d96ce2066c486e}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a28653e3d0fb1e6069cc553b4c73e6ade}\label{classrope_a28653e3d0fb1e6069cc553b4c73e6ade}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (size\+\_\+t \+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_acdf88c4be0eb935de206dc9f9f66a90b}\label{classrope_acdf88c4be0eb935de206dc9f9f66a90b}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (size\+\_\+t \+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classrope_a07ffdfd3697495551e54e1c18f7b9120}\label{classrope_a07ffdfd3697495551e54e1c18f7b9120}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (size\+\_\+t \+\_\+\+\_\+p)
+\item 
+\mbox{\Hypertarget{classrope_a4798d96619d2abde10961549e144175e}\label{classrope_a4798d96619d2abde10961549e144175e}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_ab9a43bcf0a3e8f4f09849b81aa3909b6}\label{classrope_ab9a43bcf0a3e8f4f09849b81aa3909b6}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, size\+\_\+t \+\_\+\+\_\+n, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_ab5677989df21e2ee265531dc1b612167}\label{classrope_ab5677989df21e2ee265531dc1b612167}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_a742a3d2510a2b95b669c4866d4f584e8}\label{classrope_a742a3d2510a2b95b669c4866d4f584e8}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p)
+\item 
+\mbox{\Hypertarget{classrope_aa91391d4f5c1241a1a9045b1bce13021}\label{classrope_aa91391d4f5c1241a1a9045b1bce13021}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$c\+\_\+string)
+\item 
+\mbox{\Hypertarget{classrope_a255568827cf8ce92a79da3921cb25525}\label{classrope_a255568827cf8ce92a79da3921cb25525}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classrope_aedeecc9fcc9d38fffe590024fc4862b6}\label{classrope_aedeecc9fcc9d38fffe590024fc4862b6}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_aed324ebd610ca2abf33eaf003e0e3a0b}\label{classrope_aed324ebd610ca2abf33eaf003e0e3a0b}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a70d0bc482a14d1546c05cdcf19dac536}\label{classrope_a70d0bc482a14d1546c05cdcf19dac536}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries insert} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a5a11e5c0388cf20ee52cf5be53de8848}\label{classrope_a5a11e5c0388cf20ee52cf5be53de8848}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q, const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_ac0fa1d5a44cf6d5c9fa760618e18a0e3}\label{classrope_ac0fa1d5a44cf6d5c9fa760618e18a0e3}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_ac225c576f69a992a8fa4e5f5bdf54d7b}\label{classrope_ac225c576f69a992a8fa4e5f5bdf54d7b}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+c\+\_\+string)
+\item 
+\mbox{\Hypertarget{classrope_ab960148d7f52cda8b840dc7db294c99b}\label{classrope_ab960148d7f52cda8b840dc7db294c99b}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classrope_a04cb68f072b67c03dcc50188085d7561}\label{classrope_a04cb68f072b67c03dcc50188085d7561}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a8a219553daea2fa6ee8b1d85b5207f38}\label{classrope_a8a219553daea2fa6ee8b1d85b5207f38}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a39d0ba2935989f978b6df72938c8d85b}\label{classrope_a39d0ba2935989f978b6df72938c8d85b}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+i, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a6821fdf848f1528b65dd42ecc75dbb57}\label{classrope_a6821fdf848f1528b65dd42ecc75dbb57}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_a01a47c9b4c4fb28347d1071c362a86a5}\label{classrope_a01a47c9b4c4fb28347d1071c362a86a5}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, \+\_\+\+CharT \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classrope_a83ea223821f3810beef91dddcc7dfe2b}\label{classrope_a83ea223821f3810beef91dddcc7dfe2b}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+c\+\_\+string)
+\item 
+\mbox{\Hypertarget{classrope_afee8eabe6ca3b30b2ac9b8e0d9681898}\label{classrope_afee8eabe6ca3b30b2ac9b8e0d9681898}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classrope_a24309c1c45bea4b2cbdec93dfe8ee869}\label{classrope_a24309c1c45bea4b2cbdec93dfe8ee869}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+i, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a0b393b008bea1a0d32549ee804f9605c}\label{classrope_a0b393b008bea1a0d32549ee804f9605c}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \+\_\+\+\_\+i, \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a07e9f5d1f70d84b46da28f61b9550f91}\label{classrope_a07e9f5d1f70d84b46da28f61b9550f91}} 
+\hyperlink{interfacevoid}{void} {\bfseries replace} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, \hyperlink{class___rope__iterator}{iterator} \+\_\+\+\_\+i, \hyperlink{class___rope__iterator}{iterator} \+\_\+\+\_\+j)
+\item 
+\mbox{\Hypertarget{classrope_a26b9ebdcdff2377dbfefba35327b3a84}\label{classrope_a26b9ebdcdff2377dbfefba35327b3a84}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries erase} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p, const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+q)
+\item 
+\mbox{\Hypertarget{classrope_aa0284d2f3308fb054a4f3348f44efec7}\label{classrope_aa0284d2f3308fb054a4f3348f44efec7}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries erase} (const \hyperlink{class___rope__iterator}{iterator} \&\+\_\+\+\_\+p)
+\item 
+\mbox{\Hypertarget{classrope_a63bc23bc5219d5fe32889eadc06e303f}\label{classrope_a63bc23bc5219d5fe32889eadc06e303f}} 
+\hyperlink{classrope}{\+\_\+\+Self} {\bfseries substr} (size\+\_\+t \+\_\+\+\_\+start, size\+\_\+t \+\_\+\+\_\+len=1) const
+\item 
+\mbox{\Hypertarget{classrope_a8309b5fd0218d81ff6e47c39f679ace4}\label{classrope_a8309b5fd0218d81ff6e47c39f679ace4}} 
+\hyperlink{classrope}{\+\_\+\+Self} {\bfseries substr} (\hyperlink{class___rope__iterator}{iterator} \+\_\+\+\_\+start, \hyperlink{class___rope__iterator}{iterator} \+\_\+\+\_\+end) const
+\item 
+\mbox{\Hypertarget{classrope_a845db6671b8665de287442b52cafae2f}\label{classrope_a845db6671b8665de287442b52cafae2f}} 
+\hyperlink{classrope}{\+\_\+\+Self} {\bfseries substr} (\hyperlink{class___rope__iterator}{iterator} \+\_\+\+\_\+start) const
+\item 
+\mbox{\Hypertarget{classrope_a9852ebf675c3bb7a8eb099d506293986}\label{classrope_a9852ebf675c3bb7a8eb099d506293986}} 
+\hyperlink{classrope}{\+\_\+\+Self} {\bfseries substr} (\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \+\_\+\+\_\+start, \hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \+\_\+\+\_\+end) const
+\item 
+\mbox{\Hypertarget{classrope_afe8e5a45ca1e96c84ec2a0e876f747d4}\label{classrope_afe8e5a45ca1e96c84ec2a0e876f747d4}} 
+\hyperlink{classrope}{rope}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries substr} (\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} \+\_\+\+\_\+start)
+\item 
+\mbox{\Hypertarget{classrope_a16406f812147505ed700d6e02d6a6262}\label{classrope_a16406f812147505ed700d6e02d6a6262}} 
+size\+\_\+type {\bfseries find} (const \hyperlink{classrope}{\+\_\+\+Self} \&\+\_\+\+\_\+s, size\+\_\+type \+\_\+\+\_\+pos=0) const
+\item 
+\mbox{\Hypertarget{classrope_a6ecf206315c34a7e375518318936df31}\label{classrope_a6ecf206315c34a7e375518318936df31}} 
+size\+\_\+type {\bfseries find} (\+\_\+\+CharT \+\_\+\+\_\+c, size\+\_\+type \+\_\+\+\_\+pos=0) const
+\item 
+\mbox{\Hypertarget{classrope_a0a252bcfe5e08d4780638700c7ca4405}\label{classrope_a0a252bcfe5e08d4780638700c7ca4405}} 
+size\+\_\+type {\bfseries find} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+s, size\+\_\+type \+\_\+\+\_\+pos=0) const
+\item 
+\mbox{\Hypertarget{classrope_aaf99baaad7b30641b5ecddd3853b30d4}\label{classrope_aaf99baaad7b30641b5ecddd3853b30d4}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries mutable\+\_\+begin} ()
+\item 
+\mbox{\Hypertarget{classrope_adebece1ef53913fd916449d37dad685d}\label{classrope_adebece1ef53913fd916449d37dad685d}} 
+\hyperlink{class___rope__iterator}{iterator} {\bfseries mutable\+\_\+end} ()
+\item 
+\mbox{\Hypertarget{classrope_abd7586efb0196193d0118cc1be147e11}\label{classrope_abd7586efb0196193d0118cc1be147e11}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries mutable\+\_\+rbegin} ()
+\item 
+\mbox{\Hypertarget{classrope_ae52060385b708c72f9e5483da86670ba}\label{classrope_ae52060385b708c72f9e5483da86670ba}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries mutable\+\_\+rend} ()
+\item 
+\mbox{\Hypertarget{classrope_ac8518bb022a5dbff7120b9d5ab22fbd4}\label{classrope_ac8518bb022a5dbff7120b9d5ab22fbd4}} 
+\hyperlink{class___rope__char__ref__proxy}{reference} {\bfseries mutable\+\_\+reference\+\_\+at} (size\+\_\+type \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classrope_a839ea7f76b6d47bf8c6d5b11c4eaa791}\label{classrope_a839ea7f76b6d47bf8c6d5b11c4eaa791}} 
+\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classrope_a3535935d7bc144474122d513fe484f63}\label{classrope_a3535935d7bc144474122d513fe484f63}} 
+\hyperlink{class___rope__const__iterator}{const\+\_\+iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classrope_adcf4c7c9d47df26a5d12e0e3e274f214}\label{classrope_adcf4c7c9d47df26a5d12e0e3e274f214}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{classrope_ad40b653ed290a67d032201d185d50115}\label{classrope_ad40b653ed290a67d032201d185d50115}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rbegin} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a6b48e9df1f3914ee805e18291c9e50b6}\label{classrope_a6b48e9df1f3914ee805e18291c9e50b6}} 
+static \+\_\+\+CharT {\bfseries \+\_\+\+S\+\_\+fetch} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r, size\+\_\+type \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classrope_a5388be6602d0e9386405756e4c246f90}\label{classrope_a5388be6602d0e9386405756e4c246f90}} 
+static \+\_\+\+CharT $\ast$ {\bfseries \+\_\+\+S\+\_\+fetch\+\_\+ptr} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r, size\+\_\+type \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classrope_a26be680829e0d379cf373ccd518cce7d}\label{classrope_a26be680829e0d379cf373ccd518cce7d}} 
+static \hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+S\+\_\+unref} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+t)
+\item 
+\mbox{\Hypertarget{classrope_a5ce5636c4e46826f7e841e7fe848f12e}\label{classrope_a5ce5636c4e46826f7e841e7fe848f12e}} 
+static \hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+S\+\_\+ref} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+t)
+\item 
+\mbox{\Hypertarget{classrope_a2ebfe4741c5946fa55ec6af707dac0dc}\label{classrope_a2ebfe4741c5946fa55ec6af707dac0dc}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries \+\_\+\+S\+\_\+substring} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+base, size\+\_\+t \+\_\+\+\_\+start, size\+\_\+t \+\_\+\+\_\+endp1)
+\item 
+\mbox{\Hypertarget{classrope_a79da8dbd41d6d98bc398d02ea329eb65}\label{classrope_a79da8dbd41d6d98bc398d02ea329eb65}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries \+\_\+\+S\+\_\+concat\+\_\+char\+\_\+iter} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+iter, size\+\_\+t \+\_\+\+\_\+slen)
+\item 
+\mbox{\Hypertarget{classrope_a709af04ae01be1401130b808eab350be}\label{classrope_a709af04ae01be1401130b808eab350be}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries \+\_\+\+S\+\_\+destr\+\_\+concat\+\_\+char\+\_\+iter} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+iter, size\+\_\+t \+\_\+\+\_\+slen)
+\item 
+\mbox{\Hypertarget{classrope_a69820251d382e61bfabc753904046665}\label{classrope_a69820251d382e61bfabc753904046665}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries \+\_\+\+S\+\_\+concat\+\_\+rep} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+left, \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+right)
+\item 
+\mbox{\Hypertarget{classrope_ac5b2f180710a2b6bb619c9b22c948618}\label{classrope_ac5b2f180710a2b6bb619c9b22c948618}} 
+static size\+\_\+t {\bfseries \+\_\+\+S\+\_\+char\+\_\+ptr\+\_\+len} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+s)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_af8ea40014c9254a6e133a2858216a52c}\label{classrope_af8ea40014c9254a6e133a2858216a52c}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+T\+E\+R\+A\+T\+O\+RS}
+\item 
+\mbox{\Hypertarget{classrope_ac349c57339a05be448c054f1224f1093}\label{classrope_ac349c57339a05be448c054f1224f1093}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{class___s_t_l_p__alloc__proxy}{\+\_\+\+S\+T\+L\+P\+\_\+alloc\+\_\+proxy}$<$ \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$, \+\_\+\+CharT, allocator\+\_\+type $>$ {\bfseries \+\_\+\+M\+\_\+tree\+\_\+ptr}
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a38a62ddb9b036364a414aa72c80ea487}\label{classrope_a38a62ddb9b036364a414aa72c80ea487}} 
+static const unsigned long {\bfseries \+\_\+\+S\+\_\+min\+\_\+len} \mbox{[}\+\_\+\+\_\+\+R\+O\+P\+E\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a39b715cc34416f836875cc819b7e8a76}\label{classrope_a39b715cc34416f836875cc819b7e8a76}} 
+enum \{ {\bfseries \+\_\+\+S\+\_\+copy\+\_\+max} = 23
+ \}
+\item 
+\mbox{\Hypertarget{classrope_a34d0eab3b0769c08c268f3a2e82afe2c}\label{classrope_a34d0eab3b0769c08c268f3a2e82afe2c}} 
+typedef \+\_\+\+CharT $\ast$ {\bfseries \+\_\+\+Cstrptr}
+\item 
+\mbox{\Hypertarget{classrope_a88244d58685ab1a10c5bce864b76a236}\label{classrope_a88244d58685ab1a10c5bce864b76a236}} 
+typedef \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+\_\+\+Rope\+Rep}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Rope\+Rep}
+\item 
+\mbox{\Hypertarget{classrope_ac7479e7a45c84fa22620f8ed99726fc3}\label{classrope_ac7479e7a45c84fa22620f8ed99726fc3}} 
+typedef \+\_\+\+Rope\+Rep\+::\+\_\+\+Is\+Basic\+Char\+Type {\bfseries \+\_\+\+Is\+Basic\+Char\+Type}
+\item 
+\mbox{\Hypertarget{classrope_afce1c03d5d04da4ce84e550853b91d5c}\label{classrope_afce1c03d5d04da4ce84e550853b91d5c}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___rope___concat__fn}{\+\_\+\+Rope\+\_\+\+Concat\+\_\+fn}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Concat\+\_\+fn}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a1418f9e3ef70983c6095ddb243a2f022}\label{classrope_a1418f9e3ef70983c6095ddb243a2f022}} 
+\hyperlink{interfacevoid}{void} \+\_\+\+S\+T\+L\+P\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+WS {\bfseries \+\_\+\+M\+\_\+throw\+\_\+out\+\_\+of\+\_\+range} () const
+\item 
+\mbox{\Hypertarget{classrope_a90f6b5016844f6edb584fda1481275ca}\label{classrope_a90f6b5016844f6edb584fda1481275ca}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+reset} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r)
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a9aa45556c2095d2ded9f3537e97b0581}\label{classrope_a9aa45556c2095d2ded9f3537e97b0581}} 
+static size\+\_\+t {\bfseries \+\_\+\+S\+\_\+rounded\+\_\+up\+\_\+size} (size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classrope_aee0b27fbbec9f529443f531b123bbd0a}\label{classrope_aee0b27fbbec9f529443f531b123bbd0a}} 
+static \hyperlink{struct___rope___rope_leaf}{\+\_\+\+Rope\+Leaf} $\ast$ {\bfseries \+\_\+\+S\+\_\+new\+\_\+\+Rope\+Leaf} (\+\_\+\+CharT $\ast$\+\_\+\+\_\+s, size\+\_\+t \+\_\+p\+\_\+size, allocator\+\_\+type \+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{classrope_a8e7135acbd3f8109f872b528113ce150}\label{classrope_a8e7135acbd3f8109f872b528113ce150}} 
+static \hyperlink{struct___rope___rope_concatenation}{\+\_\+\+Rope\+Concatenation} $\ast$ {\bfseries \+\_\+\+S\+\_\+new\+\_\+\+Rope\+Concatenation} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+left, \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+right, allocator\+\_\+type \+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{classrope_a69f88a4f32291b95f53a51946bcaff37}\label{classrope_a69f88a4f32291b95f53a51946bcaff37}} 
+static \hyperlink{struct___rope___rope_function}{\+\_\+\+Rope\+Function} $\ast$ {\bfseries \+\_\+\+S\+\_\+new\+\_\+\+Rope\+Function} (\hyperlink{classchar__producer}{char\+\_\+producer}$<$ \+\_\+\+CharT $>$ $\ast$\+\_\+\+\_\+f, size\+\_\+t \+\_\+p\+\_\+size, bool \+\_\+\+\_\+d, allocator\+\_\+type \+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{classrope_a2e5c2be5a92606307d77e1fa7c5d6e06}\label{classrope_a2e5c2be5a92606307d77e1fa7c5d6e06}} 
+static \hyperlink{struct___rope___rope_substring}{\+\_\+\+Rope\+Substring} $\ast$ {\bfseries \+\_\+\+S\+\_\+new\+\_\+\+Rope\+Substring} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+\_\+\+Rope\+Rep}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ $\ast$\+\_\+\+\_\+b, size\+\_\+t \+\_\+\+\_\+s, size\+\_\+t \+\_\+\+\_\+l, allocator\+\_\+type \+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{classrope_a22f00b8e26a4ac3565ae0b6957c30724}\label{classrope_a22f00b8e26a4ac3565ae0b6957c30724}} 
+static \hyperlink{struct___rope___rope_leaf}{\+\_\+\+Rope\+Leaf} $\ast$ {\bfseries \+\_\+\+S\+\_\+\+Rope\+Leaf\+\_\+from\+\_\+unowned\+\_\+char\+\_\+ptr} (const \+\_\+\+CharT $\ast$\+\_\+\+\_\+s, size\+\_\+t \+\_\+p\+\_\+size, allocator\+\_\+type \+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{classrope_a60e7f5db4756fc2cc11fc0b10625e550}\label{classrope_a60e7f5db4756fc2cc11fc0b10625e550}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries \+\_\+\+S\+\_\+tree\+\_\+concat} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+left, \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+right)
+\item 
+\mbox{\Hypertarget{classrope_af687826222bf424558d96eaf70acfc22}\label{classrope_af687826222bf424558d96eaf70acfc22}} 
+static \hyperlink{struct___rope___rope_leaf}{\+\_\+\+Rope\+Leaf} $\ast$ {\bfseries \+\_\+\+S\+\_\+leaf\+\_\+concat\+\_\+char\+\_\+iter} (\hyperlink{struct___rope___rope_leaf}{\+\_\+\+Rope\+Leaf} $\ast$\+\_\+\+\_\+r, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+iter, size\+\_\+t \+\_\+\+\_\+slen)
+\item 
+\mbox{\Hypertarget{classrope_a0e71f81797cc1045ccf788135e4c708a}\label{classrope_a0e71f81797cc1045ccf788135e4c708a}} 
+static \hyperlink{struct___rope___rope_leaf}{\+\_\+\+Rope\+Leaf} $\ast$ {\bfseries \+\_\+\+S\+\_\+destr\+\_\+leaf\+\_\+concat\+\_\+char\+\_\+iter} (\hyperlink{struct___rope___rope_leaf}{\+\_\+\+Rope\+Leaf} $\ast$\+\_\+\+\_\+r, const \+\_\+\+CharT $\ast$\+\_\+\+\_\+iter, size\+\_\+t \+\_\+\+\_\+slen)
+\item 
+\mbox{\Hypertarget{classrope_abb13c6a472965481fb53c0214f0ae9e2}\label{classrope_abb13c6a472965481fb53c0214f0ae9e2}} 
+static bool {\bfseries \+\_\+\+S\+\_\+is\+\_\+balanced} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_a258d2e6d5c8f291aebb909ab38669f4e}\label{classrope_a258d2e6d5c8f291aebb909ab38669f4e}} 
+static bool {\bfseries \+\_\+\+S\+\_\+is\+\_\+almost\+\_\+balanced} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_ab2c8ce7a71a5337fe8184923705cf385}\label{classrope_ab2c8ce7a71a5337fe8184923705cf385}} 
+static bool {\bfseries \+\_\+\+S\+\_\+is\+\_\+roughly\+\_\+balanced} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_a70d5d98df695bcd4587bcf34fd403d97}\label{classrope_a70d5d98df695bcd4587bcf34fd403d97}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries \+\_\+\+S\+\_\+concat\+\_\+and\+\_\+set\+\_\+balanced} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+left, \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+right)
+\item 
+\mbox{\Hypertarget{classrope_a8bd6a43d37132875ab5318828aac92ee}\label{classrope_a8bd6a43d37132875ab5318828aac92ee}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries \+\_\+\+S\+\_\+balance} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r)
+\item 
+\mbox{\Hypertarget{classrope_afdc31aa8c4716991358e17e7308dadad}\label{classrope_afdc31aa8c4716991358e17e7308dadad}} 
+static \hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+S\+\_\+add\+\_\+to\+\_\+forest} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r, \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$$\ast$\+\_\+\+\_\+forest)
+\item 
+\mbox{\Hypertarget{classrope_ac3317f231f99b11f1a464b59b9192ac0}\label{classrope_ac3317f231f99b11f1a464b59b9192ac0}} 
+static \hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+S\+\_\+add\+\_\+leaf\+\_\+to\+\_\+forest} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r, \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$$\ast$\+\_\+\+\_\+forest)
+\item 
+\mbox{\Hypertarget{classrope_a34814f1774f9aaa22c8003fe580ab6af}\label{classrope_a34814f1774f9aaa22c8003fe580ab6af}} 
+static int {\bfseries \+\_\+\+S\+\_\+compare} (const \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+x, const \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+y)
+\item 
+\mbox{\Hypertarget{classrope_a1ee0e1651f825baaa50c4eaed2fc7238}\label{classrope_a1ee0e1651f825baaa50c4eaed2fc7238}} 
+static \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$ {\bfseries replace} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+old, size\+\_\+t \+\_\+\+\_\+pos1, size\+\_\+t \+\_\+\+\_\+pos2, \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+Rep} $\ast$\+\_\+\+\_\+r)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a29da1781f5d475716a48b919dbf43ccd}\label{classrope_a29da1781f5d475716a48b919dbf43ccd}} 
+friend {\bfseries \+\_\+\+Concat\+\_\+fn}
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_ac0570fa4128d2f8369874b9c7709124b}\label{classrope_ac0570fa4128d2f8369874b9c7709124b}} 
+static \+\_\+\+CharT {\bfseries \+\_\+\+S\+\_\+empty\+\_\+c\+\_\+str} \mbox{[}1\mbox{]} = \{ \+\_\+\+CharT() \}
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrope_a5825d72aa563565af5d7520068cccda0}\label{classrope_a5825d72aa563565af5d7520068cccda0}} 
+class {\bfseries \+\_\+\+Rope\+\_\+iterator$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}
+\item 
+\mbox{\Hypertarget{classrope_a1f420538a50c0bb0627c069d1031a34c}\label{classrope_a1f420538a50c0bb0627c069d1031a34c}} 
+class {\bfseries \+\_\+\+Rope\+\_\+const\+\_\+iterator$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}
+\item 
+\mbox{\Hypertarget{classrope_afa300df0b104fac11b2043003b93a5f7}\label{classrope_afa300df0b104fac11b2043003b93a5f7}} 
+\hyperlink{interfacestruct}{struct} {\bfseries \+\_\+\+Rope\+\_\+\+Rope\+Rep$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}
+\item 
+\mbox{\Hypertarget{classrope_ac2723b2b8cea10d38d4633d137f8fe14}\label{classrope_ac2723b2b8cea10d38d4633d137f8fe14}} 
+class {\bfseries \+\_\+\+Rope\+\_\+iterator\+\_\+base$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}
+\item 
+\mbox{\Hypertarget{classrope_ae1cd406d49c74f72ff2f3867d07dc465}\label{classrope_ae1cd406d49c74f72ff2f3867d07dc465}} 
+class {\bfseries \+\_\+\+Rope\+\_\+char\+\_\+ptr\+\_\+proxy$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}
+\item 
+\mbox{\Hypertarget{classrope_aa766e2447cd90065171dff449cea0994}\label{classrope_aa766e2447cd90065171dff449cea0994}} 
+class {\bfseries \+\_\+\+Rope\+\_\+char\+\_\+ref\+\_\+proxy$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}
+\item 
+\mbox{\Hypertarget{classrope_ade3055718ef9d1a10124cca4c9e60553}\label{classrope_ade3055718ef9d1a10124cca4c9e60553}} 
+\hyperlink{interfacestruct}{struct} {\bfseries \+\_\+\+Rope\+\_\+\+Rope\+Substring$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+rope.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+rope.\+c\end{DoxyCompactItemize}

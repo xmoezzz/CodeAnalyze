@@ -1,0 +1,83 @@
+\hypertarget{interface_i_install_engine}{}\section{I\+Install\+Engine接口 参考}
+\label{interface_i_install_engine}\index{I\+Install\+Engine@{I\+Install\+Engine}}
+类 I\+Install\+Engine 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_install_engine}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a60866c7ffc198a9fbbce5b77586b9b1e}\label{interface_i_install_engine_a60866c7ffc198a9fbbce5b77586b9b1e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Engine\+Status} (D\+W\+O\+RD $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a8a1406d153eebae7ae4b781d07854b25}\label{interface_i_install_engine_a8a1406d153eebae7ae4b781d07854b25}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Cif\+File} (const char $\ast$cab\+\_\+name, const char $\ast$cif\+\_\+name)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a651b0efe496b99d28811f58153284a11}\label{interface_i_install_engine_a651b0efe496b99d28811f58153284a11}} 
+H\+R\+E\+S\+U\+LT {\bfseries Download\+Components} (D\+W\+O\+RD flags)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_af3c915b32452976eb6515b9f90b4bf34}\label{interface_i_install_engine_af3c915b32452976eb6515b9f90b4bf34}} 
+H\+R\+E\+S\+U\+LT {\bfseries Install\+Components} (D\+W\+O\+RD flags)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_ac99c67917a88b94d56b4616d194afa84}\label{interface_i_install_engine_ac99c67917a88b94d56b4616d194afa84}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Install\+I\+Ds} (U\+I\+NT index, char $\ast$$\ast$id)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a0ad3097bfcf29a61d4f00cc9ae520f6a}\label{interface_i_install_engine_a0ad3097bfcf29a61d4f00cc9ae520f6a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Download\+I\+Ds} (U\+I\+NT index, char $\ast$$\ast$id)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a03b453cf2674fc035c61415d87391163}\label{interface_i_install_engine_a03b453cf2674fc035c61415d87391163}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Component\+Installed} (const char $\ast$id, D\+W\+O\+RD $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_acbb7a72a8069555068f072f83113b543}\label{interface_i_install_engine_acbb7a72a8069555068f072f83113b543}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Install\+Engine\+Callback} (\hyperlink{interface_i_install_engine_callback}{I\+Install\+Engine\+Callback} $\ast$callback)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_ad7024ab0c3a876d9f32f012398759e2e}\label{interface_i_install_engine_ad7024ab0c3a876d9f32f012398759e2e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Install\+Engine\+Callback} ()
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_acea7bd99d1cd38a1c20f425f99ab7216}\label{interface_i_install_engine_acea7bd99d1cd38a1c20f425f99ab7216}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Action} (const char $\ast$id, D\+W\+O\+RD action, D\+W\+O\+RD priority)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a56f4682193b2f622f8593107247e9653}\label{interface_i_install_engine_a56f4682193b2f622f8593107247e9653}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Sizes} (const char $\ast$id, \hyperlink{struct_c_o_m_p_o_n_e_n_t___s_i_z_e_s}{C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+S\+I\+Z\+ES} $\ast$sizes)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a19fecda6cd2db6793a6be4eec91c066e}\label{interface_i_install_engine_a19fecda6cd2db6793a6be4eec91c066e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Launch\+Extra\+Command} (const char $\ast$inf\+\_\+name, const char $\ast$\hyperlink{structsection}{section})
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_ae217f883513949327e863ed172064250}\label{interface_i_install_engine_ae217f883513949327e863ed172064250}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Display\+Name} (const char $\ast$id, const char $\ast$\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a9b3190335c4dd55f40c349b53225aaf3}\label{interface_i_install_engine_a9b3190335c4dd55f40c349b53225aaf3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Base\+Url} (const char $\ast$base\+\_\+name)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a6d524361d59c5ae2d8f7b815cccedeaa}\label{interface_i_install_engine_a6d524361d59c5ae2d8f7b815cccedeaa}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Download\+Dir} (const char $\ast$download\+\_\+dir)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_ae982e39597ab3c1939e654b527c85e67}\label{interface_i_install_engine_ae982e39597ab3c1939e654b527c85e67}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Install\+Drive} (char \hyperlink{structdrive}{drive})
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a54c7ce57c193d5692edfe2d52f5963ef}\label{interface_i_install_engine_a54c7ce57c193d5692edfe2d52f5963ef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Install\+Options} (D\+W\+O\+RD flags)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_afb26a6eca7463d6cf6b5c7912b564700}\label{interface_i_install_engine_afb26a6eca7463d6cf6b5c7912b564700}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+H\+W\+ND} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a18a11597627d9a88cb374acf6dc4b2d5}\label{interface_i_install_engine_a18a11597627d9a88cb374acf6dc4b2d5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+I\+Stream} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$\hyperlink{structstream}{stream})
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a11b690456d3b1e433cc7d452811364a9}\label{interface_i_install_engine_a11b690456d3b1e433cc7d452811364a9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Abort} (D\+W\+O\+RD flags)
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a363acb02a7e0f5dc9da18b432a30a6eb}\label{interface_i_install_engine_a363acb02a7e0f5dc9da18b432a30a6eb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Suspend} ()
+\item 
+\mbox{\Hypertarget{interface_i_install_engine_a9860b247f30195d2a1e63ac97cdd16b5}\label{interface_i_install_engine_a9860b247f30195d2a1e63ac97cdd16b5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Resume} ()
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/inseng.\+idl\end{DoxyCompactItemize}

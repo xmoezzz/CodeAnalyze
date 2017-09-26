@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/3rdparty/libxml2/save.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_727636fe2c0c7ad7dfe8f2ab5613e0a0.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_1874f03f02db64bbfa0422a1bf53241c.html">libxml2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">save.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Summary: Internal Interfaces for saving in libxml2</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Description: this module describes a few interfaces which were</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *              addded along with the API changes in 2.9.0</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *              those are private routines at this point</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Copy: See Copyright for the status of this software.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Author: Daniel Veillard</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef __XML_SAVE_H__</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define __XML_SAVE_H__</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;libxml/tree.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifdef LIBXML_OUTPUT_ENABLED</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> xmlBufAttrSerializeTxtContent(<a class="code" href="struct__xml_buf.html">xmlBufPtr</a> buf, <a class="code" href="struct__xml_doc.html">xmlDocPtr</a> doc,</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                   <a class="code" href="struct__xml_attr.html">xmlAttrPtr</a> <a class="code" href="structattr.html">attr</a>, <span class="keyword">const</span> xmlChar * <span class="keywordtype">string</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> xmlBufDumpNotationTable(<a class="code" href="struct__xml_buf.html">xmlBufPtr</a> buf, <a class="code" href="struct__xml_hash_table.html">xmlNotationTablePtr</a> <a class="code" href="structtable.html">table</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> xmlBufDumpElementDecl(<a class="code" href="struct__xml_buf.html">xmlBufPtr</a> buf, <a class="code" href="struct__xml_element.html">xmlElementPtr</a> elem);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> xmlBufDumpAttributeDecl(<a class="code" href="struct__xml_buf.html">xmlBufPtr</a> buf, <a class="code" href="struct__xml_attribute.html">xmlAttributePtr</a> <a class="code" href="structattr.html">attr</a>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> xmlBufDumpEntityDecl(<a class="code" href="struct__xml_buf.html">xmlBufPtr</a> buf, <a class="code" href="struct__xml_entity.html">xmlEntityPtr</a> ent);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;xmlChar *xmlEncodeAttributeEntities(<a class="code" href="struct__xml_doc.html">xmlDocPtr</a> doc, <span class="keyword">const</span> xmlChar *input);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __XML_SAVE_H__ */</span><span class="preprocessor"></span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="ttc" id="struct__xml_doc_html"><div class="ttname"><a href="struct__xml_doc.html">_xmlDoc</a></div><div class="ttdef"><b>Definition:</b> tree.h:551</div></div>
+<div class="ttc" id="struct__xml_buf_html"><div class="ttname"><a href="struct__xml_buf.html">_xmlBuf</a></div><div class="ttdef"><b>Definition:</b> buf.c:43</div></div>
+<div class="ttc" id="struct__xml_element_html"><div class="ttname"><a href="struct__xml_element.html">_xmlElement</a></div><div class="ttdef"><b>Definition:</b> tree.h:346</div></div>
+<div class="ttc" id="structattr_html"><div class="ttname"><a href="structattr.html">attr</a></div><div class="ttdef"><b>Definition:</b> cookie.c:158</div></div>
+<div class="ttc" id="struct__xml_attr_html"><div class="ttname"><a href="struct__xml_attr.html">_xmlAttr</a></div><div class="ttdef"><b>Definition:</b> tree.h:434</div></div>
+<div class="ttc" id="struct__xml_attribute_html"><div class="ttname"><a href="struct__xml_attribute.html">_xmlAttribute</a></div><div class="ttdef"><b>Definition:</b> tree.h:253</div></div>
+<div class="ttc" id="struct__xml_entity_html"><div class="ttname"><a href="struct__xml_entity.html">_xmlEntity</a></div><div class="ttdef"><b>Definition:</b> entities.h:38</div></div>
+<div class="ttc" id="struct__xml_hash_table_html"><div class="ttname"><a href="struct__xml_hash_table.html">_xmlHashTable</a></div><div class="ttdef"><b>Definition:</b> hash.c:67</div></div>
+<div class="ttc" id="structtable_html"><div class="ttname"><a href="structtable.html">table</a></div><div class="ttdef"><b>Definition:</b> wbemprox_private.h:131</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

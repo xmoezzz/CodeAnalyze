@@ -1,0 +1,79 @@
+\hypertarget{structproto}{}\section{proto结构体 参考}
+\label{structproto}\index{proto@{proto}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structproto_ae6df0a46bfe2842c1abc12f78047002e}\label{structproto_ae6df0a46bfe2842c1abc12f78047002e}} 
+uint16 {\bfseries code}
+\item 
+\mbox{\Hypertarget{structproto_af7cf33fe20c478a3b46f5ee623b045e3}\label{structproto_af7cf33fe20c478a3b46f5ee623b045e3}} 
+uint16 {\bfseries val}
+\item 
+\mbox{\Hypertarget{structproto_a56834e9d674b18c03629828634a30a55}\label{structproto_a56834e9d674b18c03629828634a30a55}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries close} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, long \hyperlink{structtimeout}{timeout})
+\item 
+\mbox{\Hypertarget{structproto_a27051e17e879fff7bc4936fcf356d732}\label{structproto_a27051e17e879fff7bc4936fcf356d732}} 
+int($\ast$ {\bfseries connect} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, \hyperlink{interfacestruct}{struct} \hyperlink{structsockaddr}{sockaddr} $\ast$uaddr, int addr\+\_\+len)
+\item 
+\mbox{\Hypertarget{structproto_ae0a67e0977134093d0d9a05a6592217c}\label{structproto_ae0a67e0977134093d0d9a05a6592217c}} 
+int($\ast$ {\bfseries disconnect} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, int flags)
+\item 
+\mbox{\Hypertarget{structproto_a1a86b48139f3e54fd8e960cb9aebdec9}\label{structproto_a1a86b48139f3e54fd8e960cb9aebdec9}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$($\ast$ {\bfseries accept} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, int flags, int $\ast$err)
+\item 
+\mbox{\Hypertarget{structproto_af44a029f1aa3d2cdfc5768c930595bc1}\label{structproto_af44a029f1aa3d2cdfc5768c930595bc1}} 
+int($\ast$ {\bfseries ioctl} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, int \hyperlink{structcmd}{cmd}, unsigned long \hyperlink{interfacevoid}{arg})
+\item 
+\mbox{\Hypertarget{structproto_abc5a4609a8021641199806b4b76a5416}\label{structproto_abc5a4609a8021641199806b4b76a5416}} 
+int($\ast$ {\bfseries init} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\item 
+\mbox{\Hypertarget{structproto_a6a6fca425be64d32117a08bf440a318f}\label{structproto_a6a6fca425be64d32117a08bf440a318f}} 
+int($\ast$ {\bfseries destroy} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\item 
+\mbox{\Hypertarget{structproto_ae6f7255b196c125a64f3bcf3a3d26f04}\label{structproto_ae6f7255b196c125a64f3bcf3a3d26f04}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries shutdown} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, int how)
+\item 
+\mbox{\Hypertarget{structproto_a10ffb126f5fbb920337c3bbc7811257f}\label{structproto_a10ffb126f5fbb920337c3bbc7811257f}} 
+int($\ast$ {\bfseries setsockopt} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, int level, int optname, char $\ast$optval, int optlen)
+\item 
+\mbox{\Hypertarget{structproto_a12b657087ccbe882489003b7e253c2b8}\label{structproto_a12b657087ccbe882489003b7e253c2b8}} 
+int($\ast$ {\bfseries getsockopt} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, int level, int optname, char $\ast$optval, int $\ast$\hyperlink{structoption}{option})
+\item 
+\mbox{\Hypertarget{structproto_a146cb6cae0d7f1e544f8025913ffe69a}\label{structproto_a146cb6cae0d7f1e544f8025913ffe69a}} 
+int($\ast$ {\bfseries sendmsg} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, \hyperlink{interfacestruct}{struct} \hyperlink{structmsghdr}{msghdr} $\ast$msg, int len)
+\item 
+\mbox{\Hypertarget{structproto_a7ad821b7be10a8134235a0ff33cbeeb1}\label{structproto_a7ad821b7be10a8134235a0ff33cbeeb1}} 
+int($\ast$ {\bfseries recvmsg} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, \hyperlink{interfacestruct}{struct} \hyperlink{structmsghdr}{msghdr} $\ast$msg, int len, int noblock, int flags, int $\ast$addr\+\_\+len)
+\item 
+\mbox{\Hypertarget{structproto_a3b6507ea05b3ce88addd236e07bcfcfb}\label{structproto_a3b6507ea05b3ce88addd236e07bcfcfb}} 
+int($\ast$ {\bfseries bind} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, \hyperlink{interfacestruct}{struct} \hyperlink{structsockaddr}{sockaddr} $\ast$uaddr, int addr\+\_\+len)
+\item 
+\mbox{\Hypertarget{structproto_a2293195770345857c70ba07d31d6a2a5}\label{structproto_a2293195770345857c70ba07d31d6a2a5}} 
+int($\ast$ {\bfseries backlog\+\_\+rcv} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, \hyperlink{interfacestruct}{struct} \hyperlink{structsk__buff}{sk\+\_\+buff} $\ast$skb)
+\item 
+\mbox{\Hypertarget{structproto_a6eb87160b0de5d741522329d4c5e81fd}\label{structproto_a6eb87160b0de5d741522329d4c5e81fd}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries hash} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\item 
+\mbox{\Hypertarget{structproto_a6e243cadddb5a7c764d6832ea4bcbd72}\label{structproto_a6e243cadddb5a7c764d6832ea4bcbd72}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries unhash} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\item 
+\mbox{\Hypertarget{structproto_aff21ac0b992324b5d54b7695f6aa8628}\label{structproto_aff21ac0b992324b5d54b7695f6aa8628}} 
+int($\ast$ {\bfseries get\+\_\+port} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, unsigned short snum)
+\item 
+\mbox{\Hypertarget{structproto_a124d95e757f50ccee4b1d858a5044f6b}\label{structproto_a124d95e757f50ccee4b1d858a5044f6b}} 
+char {\bfseries name} \mbox{[}32\mbox{]}
+\item 
+\mbox{\Hypertarget{structproto_ad32669090ebd7d8226a1ad7f2e1640a3}\label{structproto_ad32669090ebd7d8226a1ad7f2e1640a3}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bfseries inuse}\\
+\} {\bfseries stats} \mbox{[}32\mbox{]}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/3rdparty/libtiff/mkg3states.\+c\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/network/tcpip/include/tcpcore.\+h\end{DoxyCompactItemize}

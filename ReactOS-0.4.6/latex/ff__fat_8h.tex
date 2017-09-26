@@ -1,0 +1,183 @@
+\hypertarget{ff__fat_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/fullfat/ff\+\_\+fat.h 文件参考}
+\label{ff__fat_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/fullfat/ff\+\_\+fat.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/fullfat/ff\+\_\+fat.\+h}}
+{\ttfamily \#include \char`\"{}ff\+\_\+config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+fatdef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+ioman.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+blk.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+types.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a844d9247bf95264d48ab74d57c3f7173}\label{ff__fat_8h_a844d9247bf95264d48ab74d57c3f7173}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+get\+Real\+L\+BA} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 L\+BA)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a7bc995ce7ec9e17fc807cb0312499a61}\label{ff__fat_8h_a7bc995ce7ec9e17fc807cb0312499a61}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Cluster2\+L\+BA} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Cluster)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a11cf99a6a9d6636a5cc6eaff2c3655cb}\label{ff__fat_8h_a11cf99a6a9d6636a5cc6eaff2c3655cb}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+L\+B\+A2\+Cluster} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Address)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a19425f7acff6de34090872b7770d5f54}\label{ff__fat_8h_a19425f7acff6de34090872b7770d5f54}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+get\+Fat\+Entry} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 n\+Cluster, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__fat_8h_a1608f237593aa8f1240def38b586e830}{F\+F\+\_\+put\+Fat\+Entry} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 n\+Cluster, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Value)
+\begin{DoxyCompactList}\small\item\em Writes a new \hyperlink{struct_entry}{Entry} to the F\+AT Tables. \end{DoxyCompactList}\item 
+F\+F\+\_\+\+T\+\_\+\+B\+O\+OL \hyperlink{ff__fat_8h_a36531ff5d72f2fbe940a204fceb1bb9a}{F\+F\+\_\+is\+End\+Of\+Chain} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 fat\+Entry)
+\begin{DoxyCompactList}\small\item\em Tests if the fat\+Entry is an End of Chain Marker. \end{DoxyCompactList}\item 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 \hyperlink{ff__fat_8h_af674c00adb2d101f4a07a885d877200b}{F\+F\+\_\+\+Find\+Free\+Cluster} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\begin{DoxyCompactList}\small\item\em Finds a Free Cluster and returns its number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__fat_8h_a7b0a95767df27b36768c0c2292cf0d58}\label{ff__fat_8h_a7b0a95767df27b36768c0c2292cf0d58}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Extend\+Cluster\+Chain} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Start\+Cluster, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Count)
+\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__fat_8h_ae04a8f7d4f4906c218f15b43bb9f0e51}{F\+F\+\_\+\+Unlink\+Cluster\+Chain} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Start\+Cluster, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 Count)
+\begin{DoxyCompactList}\small\item\em Extend a Cluster chain by Count number of Clusters \end{DoxyCompactList}\item 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 \hyperlink{ff__fat_8h_a39558c9770ec32c3fa2d779920bed994}{F\+F\+\_\+\+Traverse\+F\+AT} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Start, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Count, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\begin{DoxyCompactList}\small\item\em Returns the Cluster address of the Cluster number from the beginning of a chain. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__fat_8h_a18bacd2c82a17762653d5ca48a6d9143}\label{ff__fat_8h_a18bacd2c82a17762653d5ca48a6d9143}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 \hyperlink{ff__fat_8h_a18bacd2c82a17762653d5ca48a6d9143}{F\+F\+\_\+\+Create\+Cluster\+Chain} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\begin{DoxyCompactList}\small\item\em Create\textquotesingle{}s a Cluster Chain \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__fat_8h_a831aa7774566910043376b9cd99546cb}\label{ff__fat_8h_a831aa7774566910043376b9cd99546cb}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Get\+Chain\+Length} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 pa\+\_\+n\+Start\+Cluster, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 $\ast$pi\+End\+Of\+Chain, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a200e987fa8b66b64e7fb2ec6041eab9c}\label{ff__fat_8h_a200e987fa8b66b64e7fb2ec6041eab9c}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Find\+End\+Of\+Chain} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Start, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a71427be80a505e141e76967431578444}\label{ff__fat_8h_a71427be80a505e141e76967431578444}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Clear\+Cluster} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 n\+Cluster)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a59b8740b748db0adfbfa1889d1bc1ca5}\label{ff__fat_8h_a59b8740b748db0adfbfa1889d1bc1ca5}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T64 {\bfseries F\+F\+\_\+\+Get\+Free\+Size} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a2d2f710040c348eeb2d976f0ba6038d3}\label{ff__fat_8h_a2d2f710040c348eeb2d976f0ba6038d3}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Count\+Free\+Clusters} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a0c82ae5ecc3f40ca0c5b6d320809e410}\label{ff__fat_8h_a0c82ae5ecc3f40ca0c5b6d320809e410}} 
+\hyperlink{interfacevoid}{void} {\bfseries F\+F\+\_\+lock\+F\+AT} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\item 
+\mbox{\Hypertarget{ff__fat_8h_a872f2df359d6d15be3f538c4c3d173e7}\label{ff__fat_8h_a872f2df359d6d15be3f538c4c3d173e7}} 
+\hyperlink{interfacevoid}{void} {\bfseries F\+F\+\_\+unlock\+F\+AT} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\begin{DoxyAuthor}{作者}
+James Walmsley 
+\end{DoxyAuthor}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{ff__fat_8h_af674c00adb2d101f4a07a885d877200b}\label{ff__fat_8h_af674c00adb2d101f4a07a885d877200b}} 
+\index{ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}!F\+F\+\_\+\+Find\+Free\+Cluster@{F\+F\+\_\+\+Find\+Free\+Cluster}}
+\index{F\+F\+\_\+\+Find\+Free\+Cluster@{F\+F\+\_\+\+Find\+Free\+Cluster}!ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Find\+Free\+Cluster()}{FF\_FindFreeCluster()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 F\+F\+\_\+\+Find\+Free\+Cluster (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{F\+F\+\_\+\+E\+R\+R\+OR $\ast$}]{p\+Error }\end{DoxyParamCaption})}
+
+
+
+Finds a Free Cluster and returns its number. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & I\+O\+M\+AN Object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The number of the cluster found to be free. 
+
+0 on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ff__fat_8h_a36531ff5d72f2fbe940a204fceb1bb9a}\label{ff__fat_8h_a36531ff5d72f2fbe940a204fceb1bb9a}} 
+\index{ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}!F\+F\+\_\+is\+End\+Of\+Chain@{F\+F\+\_\+is\+End\+Of\+Chain}}
+\index{F\+F\+\_\+is\+End\+Of\+Chain@{F\+F\+\_\+is\+End\+Of\+Chain}!ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+is\+End\+Of\+Chain()}{FF\_isEndOfChain()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+T\+\_\+\+B\+O\+OL F\+F\+\_\+is\+End\+Of\+Chain (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32}]{fat\+Entry }\end{DoxyParamCaption})}
+
+
+
+Tests if the fat\+Entry is an End of Chain Marker. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} Object \\
+\hline
+{\em fat\+Entry} & The fat entry from the F\+AT table to be checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+F\+F\+\_\+\+T\+R\+UE if it is an end of chain, otherwise F\+F\+\_\+\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ff__fat_8h_a1608f237593aa8f1240def38b586e830}\label{ff__fat_8h_a1608f237593aa8f1240def38b586e830}} 
+\index{ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}!F\+F\+\_\+put\+Fat\+Entry@{F\+F\+\_\+put\+Fat\+Entry}}
+\index{F\+F\+\_\+put\+Fat\+Entry@{F\+F\+\_\+put\+Fat\+Entry}!ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+put\+Fat\+Entry()}{FF\_putFatEntry()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+put\+Fat\+Entry (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32}]{n\+Cluster,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32}]{Value }\end{DoxyParamCaption})}
+
+
+
+Writes a new \hyperlink{struct_entry}{Entry} to the F\+AT Tables. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & I\+O\+M\+AN object. \\
+\hline
+{\em n\+Cluster} & Cluster Number to be modified. \\
+\hline
+{\em Value} & The Value to store. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ff__fat_8h_a39558c9770ec32c3fa2d779920bed994}\label{ff__fat_8h_a39558c9770ec32c3fa2d779920bed994}} 
+\index{ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}!F\+F\+\_\+\+Traverse\+F\+AT@{F\+F\+\_\+\+Traverse\+F\+AT}}
+\index{F\+F\+\_\+\+Traverse\+F\+AT@{F\+F\+\_\+\+Traverse\+F\+AT}!ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Traverse\+F\+A\+T()}{FF\_TraverseFAT()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 F\+F\+\_\+\+Traverse\+F\+AT (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32}]{Start,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32}]{Count,  }\item[{F\+F\+\_\+\+E\+R\+R\+OR $\ast$}]{p\+Error }\end{DoxyParamCaption})}
+
+
+
+Returns the Cluster address of the Cluster number from the beginning of a chain. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} Object \\
+\hline
+{\em Start} & Cluster address of the first cluster in the chain. \\
+\hline
+{\em Count} & Number of Cluster in the chain, \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ff__fat_8h_ae04a8f7d4f4906c218f15b43bb9f0e51}\label{ff__fat_8h_ae04a8f7d4f4906c218f15b43bb9f0e51}} 
+\index{ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}!F\+F\+\_\+\+Unlink\+Cluster\+Chain@{F\+F\+\_\+\+Unlink\+Cluster\+Chain}}
+\index{F\+F\+\_\+\+Unlink\+Cluster\+Chain@{F\+F\+\_\+\+Unlink\+Cluster\+Chain}!ff\+\_\+fat.\+h@{ff\+\_\+fat.\+h}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Unlink\+Cluster\+Chain()}{FF\_UnlinkClusterChain()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+\+Unlink\+Cluster\+Chain (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32}]{Start\+Cluster,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16}]{Count }\end{DoxyParamCaption})}
+
+
+
+Extend a Cluster chain by Count number of Clusters 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & I\+O\+M\+AN object. \\
+\hline
+{\em Start\+Cluster} & Cluster Number that starts the chain. \\
+\hline
+{\em Count} & Number of clusters to extend the chain with.\\
+\hline
+\end{DoxyParams}
+Free\textquotesingle{}s Disk space by freeing unused links on Cluster Chains
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman,I\+O\+M\+AN} & object. \\
+\hline
+{\em Start\+Cluster} & Cluster Number that starts the chain. \\
+\hline
+{\em Count} & Number of Clusters from the end of the chain to unlink. \\
+\hline
+{\em Count} & 0 Means Free the entire chain (delete file).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 On Success. 
+
+-\/1 If the device driver failed to provide access. 
+\end{DoxyReturn}

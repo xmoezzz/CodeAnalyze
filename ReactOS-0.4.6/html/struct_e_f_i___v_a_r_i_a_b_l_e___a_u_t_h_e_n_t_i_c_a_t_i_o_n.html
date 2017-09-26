@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: EFI_VARIABLE_AUTHENTICATION结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">EFI_VARIABLE_AUTHENTICATION结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_uefi_multi_phase_8h_source.html">UefiMultiPhase.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:afc0e2555963a8a3046a17ddd2c09350e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_processor_bind_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n.html#afc0e2555963a8a3046a17ddd2c09350e">MonotonicCount</a></td></tr>
+<tr class="separator:afc0e2555963a8a3046a17ddd2c09350e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69728a7870afdec21157504b489a6e1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d.html">WIN_CERTIFICATE_UEFI_GUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n.html#a69728a7870afdec21157504b489a6e1b">AuthInfo</a></td></tr>
+<tr class="separator:a69728a7870afdec21157504b489a6e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>AuthInfo is a <a class="el" href="struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e.html">WIN_CERTIFICATE</a> using the wCertificateType <a class="el" href="struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d.html">WIN_CERTIFICATE_UEFI_GUID</a> and the CertType EFI_CERT_TYPE_RSA2048_SHA256_GUID. If the attribute specifies authenticated access, then the <a class="el" href="struct_data.html">Data</a> buffer should begin with an authentication descriptor prior to the data payload and DataSize should reflect the the data.and descriptor size. The caller shall digest the Monotonic Count value and the associated data for the variable update using the SHA-256 1-way hash algorithm. The ensuing the 32-byte digest will be signed using the private key associated w/ the public/private 2048-bit RSA key-pair. The <a class="el" href="struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e.html">WIN_CERTIFICATE</a> shall be used to describe the signature of the Variable data *Data. In addition, the signature will also include the MonotonicCount value to guard against replay attacks. </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a69728a7870afdec21157504b489a6e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69728a7870afdec21157504b489a6e1b">&#9670;&nbsp;</a></span>AuthInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d.html">WIN_CERTIFICATE_UEFI_GUID</a> EFI_VARIABLE_AUTHENTICATION::AuthInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Provides the authorization for the variable access. <a class="el" href="class_it.html">It</a> is a signature across the variable data and the Monotonic Count value. Caller uses Private key that is associated with a public key that has been provisioned via the key exchange. </p>
+
+</div>
+</div>
+<a id="afc0e2555963a8a3046a17ddd2c09350e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0e2555963a8a3046a17ddd2c09350e">&#9670;&nbsp;</a></span>MonotonicCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_processor_bind_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> EFI_VARIABLE_AUTHENTICATION::MonotonicCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Included in the signature of AuthInfo.Used to ensure freshness/no replay. Incremented during each "Write" access. </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/boot/environ/include/efi/<a class="el" href="_uefi_multi_phase_8h_source.html">UefiMultiPhase.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

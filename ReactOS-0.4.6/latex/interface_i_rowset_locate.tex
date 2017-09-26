@@ -1,0 +1,44 @@
+\hypertarget{interface_i_rowset_locate}{}\section{I\+Rowset\+Locate接口 参考}
+\label{interface_i_rowset_locate}\index{I\+Rowset\+Locate@{I\+Rowset\+Locate}}
+类 I\+Rowset\+Locate 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_rowset_locate}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_rowset_locate_ae259661be8898a64db99d30ff874bd97}\label{interface_i_rowset_locate_ae259661be8898a64db99d30ff874bd97}} 
+enum {\bfseries D\+B\+C\+O\+M\+P\+A\+R\+E\+E\+N\+UM} \{ \newline
+{\bfseries D\+B\+C\+O\+M\+P\+A\+R\+E\+\_\+\+LT}, 
+{\bfseries D\+B\+C\+O\+M\+P\+A\+R\+E\+\_\+\+EQ}, 
+{\bfseries D\+B\+C\+O\+M\+P\+A\+R\+E\+\_\+\+GT}, 
+{\bfseries D\+B\+C\+O\+M\+P\+A\+R\+E\+\_\+\+NE}, 
+\newline
+{\bfseries D\+B\+C\+O\+M\+P\+A\+R\+E\+\_\+\+N\+O\+T\+C\+O\+M\+P\+A\+R\+A\+B\+LE}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_rowset_locate_a25046b359d7551fc4d60376432cc968d}\label{interface_i_rowset_locate_a25046b359d7551fc4d60376432cc968d}} 
+typedef D\+W\+O\+RD {\bfseries D\+B\+C\+O\+M\+P\+A\+RE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_rowset_locate_a15f8123149c541decd3f37e921efbe0b}\label{interface_i_rowset_locate_a15f8123149c541decd3f37e921efbe0b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Compare} (\mbox{[}in\mbox{]} H\+C\+H\+A\+P\+T\+ER h\+Reserved, \mbox{[}in\mbox{]} D\+B\+B\+K\+M\+A\+RK cb\+Bookmark1, \mbox{[}in, size\+\_\+is(cb\+Bookmark1)\mbox{]} const B\+Y\+TE $\ast$p\+Bookmark1, \mbox{[}in\mbox{]} D\+B\+B\+K\+M\+A\+RK cb\+Bookmark2, \mbox{[}in, size\+\_\+is(cb\+Bookmark2)\mbox{]} const B\+Y\+TE $\ast$p\+Bookmark2, \mbox{[}out\mbox{]} D\+B\+C\+O\+M\+P\+A\+RE $\ast$p\+Comparison)
+\item 
+\mbox{\Hypertarget{interface_i_rowset_locate_a30b52c92db97e9392b98a453c9ceb6df}\label{interface_i_rowset_locate_a30b52c92db97e9392b98a453c9ceb6df}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Rows\+At} (\mbox{[}in\mbox{]} H\+W\+A\+T\+C\+H\+R\+E\+G\+I\+ON h\+Reserved1, \mbox{[}in\mbox{]} H\+C\+H\+A\+P\+T\+ER h\+Reserved2, \mbox{[}in\mbox{]} D\+B\+B\+K\+M\+A\+RK cb\+Bookmark, \mbox{[}in, size\+\_\+is(cb\+Bookmark)\mbox{]} const B\+Y\+TE $\ast$p\+Bookmark, \mbox{[}in\mbox{]} D\+B\+R\+O\+W\+O\+F\+F\+S\+ET l\+Rows\+Offset, \mbox{[}in\mbox{]} D\+B\+R\+O\+W\+C\+O\+U\+NT c\+Rows, \mbox{[}out\mbox{]} D\+B\+C\+O\+U\+N\+T\+I\+T\+EM $\ast$pc\+Rows\+Obtained, \mbox{[}out, size\+\_\+is(, c\+Rows)\mbox{]} H\+R\+OW $\ast$$\ast$prgh\+Rows)
+\item 
+\mbox{\Hypertarget{interface_i_rowset_locate_a79d14b6c3fd6e4ee89f5e86fc5f96873}\label{interface_i_rowset_locate_a79d14b6c3fd6e4ee89f5e86fc5f96873}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Rows\+By\+Bookmark} (\mbox{[}in\mbox{]} H\+C\+H\+A\+P\+T\+ER h\+Reserved, \mbox{[}in\mbox{]} D\+B\+C\+O\+U\+N\+T\+I\+T\+EM c\+Rows, \mbox{[}in, size\+\_\+is(c\+Rows)\mbox{]} const D\+B\+B\+K\+M\+A\+RK rgcb\+Bookmarks\mbox{[}$\,$\mbox{]}, \mbox{[}in, size\+\_\+is(c\+Rows)\mbox{]} const B\+Y\+TE $\ast$rgp\+Bookmarks\mbox{[}$\,$\mbox{]}, \mbox{[}out, size\+\_\+is(c\+Rows)\mbox{]} H\+R\+OW rgh\+Rows\mbox{[}$\,$\mbox{]}, \mbox{[}out, size\+\_\+is(c\+Rows)\mbox{]} D\+B\+R\+O\+W\+S\+T\+A\+T\+US rg\+Row\+Status\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_rowset_locate_a88184e898c79e3e39b9813f00987d69e}\label{interface_i_rowset_locate_a88184e898c79e3e39b9813f00987d69e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Hash} (\mbox{[}in\mbox{]} H\+C\+H\+A\+P\+T\+ER h\+Reserved, \mbox{[}in\mbox{]} D\+B\+B\+K\+M\+A\+RK c\+Bookmarks, \mbox{[}in, size\+\_\+is(c\+Bookmarks)\mbox{]} const D\+B\+B\+K\+M\+A\+RK rgcb\+Bookmarks\mbox{[}$\,$\mbox{]}, \mbox{[}in, size\+\_\+is(c\+Bookmarks)\mbox{]} const B\+Y\+TE $\ast$rgp\+Bookmarks\mbox{[}$\,$\mbox{]}, \mbox{[}out, size\+\_\+is(c\+Bookmarks)\mbox{]} D\+B\+H\+A\+S\+H\+V\+A\+L\+UE rg\+Hashed\+Values\mbox{[}$\,$\mbox{]}, \mbox{[}out, size\+\_\+is(c\+Bookmarks)\mbox{]} D\+B\+R\+O\+W\+S\+T\+A\+T\+US rg\+Bookmark\+Status\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/rstloc.\+idl\end{DoxyCompactItemize}

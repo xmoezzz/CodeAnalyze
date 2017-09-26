@@ -1,0 +1,80 @@
+\hypertarget{structlwip__callback__msg}{}\section{lwip\+\_\+callback\+\_\+msg结构体 参考}
+\label{structlwip__callback__msg}\index{lwip\+\_\+callback\+\_\+msg@{lwip\+\_\+callback\+\_\+msg}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlwip__callback__msg_a7022c4374dc9a151f520b9949f7daf27}\label{structlwip__callback__msg_a7022c4374dc9a151f520b9949f7daf27}} 
+\hyperlink{struct___k_e_v_e_n_t}{K\+E\+V\+E\+NT} {\bfseries Event}
+\item 
+\mbox{\Hypertarget{structlwip__callback__msg_a217bdc683d11e0be66daa36a27ad7b6b}\label{structlwip__callback__msg_a217bdc683d11e0be66daa36a27ad7b6b}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Arg}\\
+\>\} {\bfseries Socket}\\
+\>struct \{\\
+\>\>\hyperlink{struct___c_o_n_n_e_c_t_i_o_n___e_n_d_p_o_i_n_t}{PCONNECTION\_ENDPOINT} {\bfseries Connection}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{structip__addr}{ip\_addr} $\ast$ {\bfseries IpAddress}\\
+\>\>u16\_t {\bfseries Port}\\
+\>\} {\bfseries Bind}\\
+\>struct \{\\
+\>\>\hyperlink{struct___c_o_n_n_e_c_t_i_o_n___e_n_d_p_o_i_n_t}{PCONNECTION\_ENDPOINT} {\bfseries Connection}\\
+\>\>u8\_t {\bfseries Backlog}\\
+\>\} {\bfseries Listen}\\
+\>struct \{\\
+\>\>\hyperlink{struct___c_o_n_n_e_c_t_i_o_n___e_n_d_p_o_i_n_t}{PCONNECTION\_ENDPOINT} {\bfseries Connection}\\
+\>\>\hyperlink{interfacevoid}{void} $\ast$ {\bfseries Data}\\
+\>\>u16\_t {\bfseries DataLength}\\
+\>\} {\bfseries Send}\\
+\>struct \{\\
+\>\>\hyperlink{struct___c_o_n_n_e_c_t_i_o_n___e_n_d_p_o_i_n_t}{PCONNECTION\_ENDPOINT} {\bfseries Connection}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{structip__addr}{ip\_addr} $\ast$ {\bfseries IpAddress}\\
+\>\>u16\_t {\bfseries Port}\\
+\>\} {\bfseries Connect}\\
+\>struct \{\\
+\>\>\hyperlink{struct___c_o_n_n_e_c_t_i_o_n___e_n_d_p_o_i_n_t}{PCONNECTION\_ENDPOINT} {\bfseries Connection}\\
+\>\>int {\bfseries shut\_rx}\\
+\>\>int {\bfseries shut\_tx}\\
+\>\} {\bfseries Shutdown}\\
+\>struct \{\\
+\>\>\hyperlink{struct___c_o_n_n_e_c_t_i_o_n___e_n_d_p_o_i_n_t}{PCONNECTION\_ENDPOINT} {\bfseries Connection}\\
+\>\>int {\bfseries Callback}\\
+\>\} {\bfseries Close}\\
+\} {\bfseries Input}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structlwip__callback__msg_ae13b6bb8551dfcc09ca40ed0db4edec2}\label{structlwip__callback__msg_ae13b6bb8551dfcc09ca40ed0db4edec2}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\hyperlink{interfacestruct}{struct} tcp\_pcb $\ast$ {\bfseries NewPcb}\\
+\>\} {\bfseries Socket}\\
+\>struct \{\\
+\>\>err\_t {\bfseries Error}\\
+\>\} {\bfseries Bind}\\
+\>struct \{\\
+\>\>\hyperlink{interfacestruct}{struct} tcp\_pcb $\ast$ {\bfseries NewPcb}\\
+\>\} {\bfseries Listen}\\
+\>struct \{\\
+\>\>err\_t {\bfseries Error}\\
+\>\>u32\_t {\bfseries Information}\\
+\>\} {\bfseries Send}\\
+\>struct \{\\
+\>\>err\_t {\bfseries Error}\\
+\>\} {\bfseries Connect}\\
+\>struct \{\\
+\>\>err\_t {\bfseries Error}\\
+\>\} {\bfseries Shutdown}\\
+\>struct \{\\
+\>\>err\_t {\bfseries Error}\\
+\>\} {\bfseries Close}\\
+\} {\bfseries Output}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/include/rosip.\+h\end{DoxyCompactItemize}

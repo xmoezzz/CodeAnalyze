@@ -1,0 +1,67 @@
+\hypertarget{interface_i_s_m_t_p_transport}{}\section{I\+S\+M\+T\+P\+Transport接口 参考}
+\label{interface_i_s_m_t_p_transport}\index{I\+S\+M\+T\+P\+Transport@{I\+S\+M\+T\+P\+Transport}}
+类 I\+S\+M\+T\+P\+Transport 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_s_m_t_p_transport}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_s_m_t_p_transport_1_1tag_s_m_t_p_m_e_s_s_a_g_e}{tag\+S\+M\+T\+P\+M\+E\+S\+S\+A\+GE}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_a9a1c7f16892a26c1c661918b06cc6d8d}\label{interface_i_s_m_t_p_transport_a9a1c7f16892a26c1c661918b06cc6d8d}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_s_m_t_p_transport_1_1tag_s_m_t_p_m_e_s_s_a_g_e}{I\+S\+M\+T\+P\+Transport\+::tag\+S\+M\+T\+P\+M\+E\+S\+S\+A\+GE} {\bfseries S\+M\+T\+P\+M\+E\+S\+S\+A\+GE}
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_ab74e53469cf0919240b6cfe15ae08d35}\label{interface_i_s_m_t_p_transport_ab74e53469cf0919240b6cfe15ae08d35}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_s_m_t_p_transport_1_1tag_s_m_t_p_m_e_s_s_a_g_e}{I\+S\+M\+T\+P\+Transport\+::tag\+S\+M\+T\+P\+M\+E\+S\+S\+A\+GE} $\ast$ {\bfseries L\+P\+S\+M\+T\+P\+M\+E\+S\+S\+A\+GE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_aec15e9b20939f5192a02989e377c483f}\label{interface_i_s_m_t_p_transport_aec15e9b20939f5192a02989e377c483f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Init\+New} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Log\+File\+Path, \mbox{[}in\mbox{]} \hyperlink{interface_i_s_m_t_p_callback}{I\+S\+M\+T\+P\+Callback} $\ast$p\+Callback)
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_a02f4e37bfac5eb0084a81ec675651d2a}\label{interface_i_s_m_t_p_transport_a02f4e37bfac5eb0084a81ec675651d2a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Send\+Message} (\mbox{[}in\mbox{]} \hyperlink{struct_i_s_m_t_p_transport_1_1tag_s_m_t_p_m_e_s_s_a_g_e}{L\+P\+S\+M\+T\+P\+M\+E\+S\+S\+A\+GE} p\+Message)
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_a20e4bed61ead93890b6fddb814af9eb8}\label{interface_i_s_m_t_p_transport_a20e4bed61ead93890b6fddb814af9eb8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+M\+A\+IL} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Email\+From)
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_ae447648614ab2887c29945651b8a2967}\label{interface_i_s_m_t_p_transport_ae447648614ab2887c29945651b8a2967}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+R\+C\+PT} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Email\+To)
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_a902ab0e12192808259c4997501d1245f}\label{interface_i_s_m_t_p_transport_a902ab0e12192808259c4997501d1245f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+E\+H\+LO} ()
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_ab244d47623765835ad8bf93036b21642}\label{interface_i_s_m_t_p_transport_ab244d47623765835ad8bf93036b21642}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+H\+E\+LO} ()
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_aa665d8058ad4fd5c1633b3969a809850}\label{interface_i_s_m_t_p_transport_aa665d8058ad4fd5c1633b3969a809850}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+A\+U\+TH} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Auth\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_a6d3d9cefb09e0a57fd260e0631b6f8c4}\label{interface_i_s_m_t_p_transport_a6d3d9cefb09e0a57fd260e0631b6f8c4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+Q\+U\+IT} ()
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_a3b9dd093251711ee747ec7ef90f00473}\label{interface_i_s_m_t_p_transport_a3b9dd093251711ee747ec7ef90f00473}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+R\+S\+ET} ()
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_aca0f6dbb3cd94f36fce3914459998b11}\label{interface_i_s_m_t_p_transport_aca0f6dbb3cd94f36fce3914459998b11}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+D\+A\+TA} ()
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_a65df29a5cd0806eb7a0959eb3fc0a6fd}\label{interface_i_s_m_t_p_transport_a65df29a5cd0806eb7a0959eb3fc0a6fd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+D\+OT} ()
+\item 
+\mbox{\Hypertarget{interface_i_s_m_t_p_transport_af3cccaca9b51640415779917116d73b9}\label{interface_i_s_m_t_p_transport_af3cccaca9b51640415779917116d73b9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Send\+Data\+Stream} (\mbox{[}in\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream, \mbox{[}in\mbox{]} U\+L\+O\+NG cb\+Size)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/imnxport.\+idl\end{DoxyCompactItemize}

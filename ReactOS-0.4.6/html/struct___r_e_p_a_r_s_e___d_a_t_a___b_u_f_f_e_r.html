@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: _REPARSE_DATA_BUFFER结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">_REPARSE_DATA_BUFFER结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a48f7c20aaa1e9bf48b54bab58c77cee1"><td class="memItemLeft" align="right" valign="top"><a id="a48f7c20aaa1e9bf48b54bab58c77cee1"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>ReparseTag</b></td></tr>
+<tr class="separator:a48f7c20aaa1e9bf48b54bab58c77cee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad604064a54502284ae28a5a101855405"><td class="memItemLeft" align="right" valign="top"><a id="ad604064a54502284ae28a5a101855405"></a>
+USHORT&#160;</td><td class="memItemRight" valign="bottom"><b>ReparseDataLength</b></td></tr>
+<tr class="separator:ad604064a54502284ae28a5a101855405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d7ef1bac95556ac1ffee0a37e8b6d7"><td class="memItemLeft" align="right" valign="top"><a id="ab7d7ef1bac95556ac1ffee0a37e8b6d7"></a>
+USHORT&#160;</td><td class="memItemRight" valign="bottom"><b>Reserved</b></td></tr>
+<tr class="separator:ab7d7ef1bac95556ac1ffee0a37e8b6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5fc5e68e586fbf7f2b69355b095053"><td class="memItemLeft" ><a id="add5fc5e68e586fbf7f2b69355b095053"></a>
+union {</td></tr>
+<tr class="memitem:af4e7fdf4b398e36ddb2b70b941e7262d"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a394c1f15a14c1f5c73f9704afd3c18ff"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameOffset</b></td></tr>
+<tr class="separator:a394c1f15a14c1f5c73f9704afd3c18ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69bdec2328e80d27156c55996b18c26"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameLength</b></td></tr>
+<tr class="separator:aa69bdec2328e80d27156c55996b18c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9baf6ec88adfa451b140d22b9676585b"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameOffset</b></td></tr>
+<tr class="separator:a9baf6ec88adfa451b140d22b9676585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8007de7ee421b8888bb88169d36d2519"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameLength</b></td></tr>
+<tr class="separator:a8007de7ee421b8888bb88169d36d2519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305cd582b4b6d50834fce0aeef4b440d"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;ULONG&#160;&#160;&#160;<b>Flags</b></td></tr>
+<tr class="separator:a305cd582b4b6d50834fce0aeef4b440d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceba3c00bb426b33728dd92c673ab829"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;WCHAR&#160;&#160;&#160;<b>PathBuffer</b> [1]</td></tr>
+<tr class="separator:aceba3c00bb426b33728dd92c673ab829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e7fdf4b398e36ddb2b70b941e7262d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>SymbolicLinkReparseBuffer</b></td></tr>
+<tr class="separator:af4e7fdf4b398e36ddb2b70b941e7262d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d81689212d1c8b23dff9bafd8714cf"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:abefc1afae6e1466ee52543153bde87fd"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameOffset</b></td></tr>
+<tr class="separator:abefc1afae6e1466ee52543153bde87fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089827736793884c01ac26efe8db066a"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameLength</b></td></tr>
+<tr class="separator:a089827736793884c01ac26efe8db066a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cecfca56b5c9a18e2f024068184c61b"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameOffset</b></td></tr>
+<tr class="separator:a3cecfca56b5c9a18e2f024068184c61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3cf4da0ba7c1fe559f851334b8506d"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameLength</b></td></tr>
+<tr class="separator:aec3cf4da0ba7c1fe559f851334b8506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64c54b46b3b23a855ec5e1fb8ec148b"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;WCHAR&#160;&#160;&#160;<b>PathBuffer</b> [1]</td></tr>
+<tr class="separator:ad64c54b46b3b23a855ec5e1fb8ec148b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d81689212d1c8b23dff9bafd8714cf"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>MountPointReparseBuffer</b></td></tr>
+<tr class="separator:a14d81689212d1c8b23dff9bafd8714cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42903e56891a3f264cdb6817dd9126d"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:af204997e415f8abf39ae1507ab5373ba"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UCHAR&#160;&#160;&#160;<b>DataBuffer</b> [1]</td></tr>
+<tr class="separator:af204997e415f8abf39ae1507ab5373ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42903e56891a3f264cdb6817dd9126d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>GenericReparseBuffer</b></td></tr>
+<tr class="separator:af42903e56891a3f264cdb6817dd9126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5fc5e68e586fbf7f2b69355b095053"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:add5fc5e68e586fbf7f2b69355b095053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147503590f71e7c7810a94477a3da674"><td class="memItemLeft" ><a id="a147503590f71e7c7810a94477a3da674"></a>
+union {</td></tr>
+<tr class="memitem:aefa4e12a071eaf98098662eb58a39a28"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a065d2e5dd8eb52219c368f0dbb9481a7"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameOffset</b></td></tr>
+<tr class="separator:a065d2e5dd8eb52219c368f0dbb9481a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe6e6383c1e90b7e0d1883e696dce2c"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameLength</b></td></tr>
+<tr class="separator:acbe6e6383c1e90b7e0d1883e696dce2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c36eddb5d792c8ab4491f200624fc8"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameOffset</b></td></tr>
+<tr class="separator:ae2c36eddb5d792c8ab4491f200624fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22de949e68e5a8862a6e939693485b75"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameLength</b></td></tr>
+<tr class="separator:a22de949e68e5a8862a6e939693485b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a68486b7fbabf63f73c0ac4e4679f64"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;ULONG&#160;&#160;&#160;<b>Flags</b></td></tr>
+<tr class="separator:a7a68486b7fbabf63f73c0ac4e4679f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7004592d740108f5d623198b7e2f860"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;WCHAR&#160;&#160;&#160;<b>PathBuffer</b> [1]</td></tr>
+<tr class="separator:ac7004592d740108f5d623198b7e2f860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa4e12a071eaf98098662eb58a39a28"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>SymbolicLinkReparseBuffer</b></td></tr>
+<tr class="separator:aefa4e12a071eaf98098662eb58a39a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b1b3b1da6f663f6329c16a36d88064"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a2f673114d8034511b7958543d54f3905"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameOffset</b></td></tr>
+<tr class="separator:a2f673114d8034511b7958543d54f3905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9929968ade6f9dda0025643ae61d44d2"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameLength</b></td></tr>
+<tr class="separator:a9929968ade6f9dda0025643ae61d44d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af995c26e63b251ec313da0b1c8465ba7"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameOffset</b></td></tr>
+<tr class="separator:af995c26e63b251ec313da0b1c8465ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce1f4891d9d14b186dc4ed8ac16b4ed"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameLength</b></td></tr>
+<tr class="separator:a6ce1f4891d9d14b186dc4ed8ac16b4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6610e41c5f763ac36473d951d3725925"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;WCHAR&#160;&#160;&#160;<b>PathBuffer</b> [1]</td></tr>
+<tr class="separator:a6610e41c5f763ac36473d951d3725925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b1b3b1da6f663f6329c16a36d88064"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>MountPointReparseBuffer</b></td></tr>
+<tr class="separator:a84b1b3b1da6f663f6329c16a36d88064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab434c138773801fd524cbc5900619d8d"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a961325a4061e0d4d8068218bfb090d68"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UCHAR&#160;&#160;&#160;<b>DataBuffer</b> [1]</td></tr>
+<tr class="separator:a961325a4061e0d4d8068218bfb090d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab434c138773801fd524cbc5900619d8d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>GenericReparseBuffer</b></td></tr>
+<tr class="separator:ab434c138773801fd524cbc5900619d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147503590f71e7c7810a94477a3da674"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a147503590f71e7c7810a94477a3da674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad622f2bf7d4d2829bed07a7a92a414b6"><td class="memItemLeft" ><a id="ad622f2bf7d4d2829bed07a7a92a414b6"></a>
+union {</td></tr>
+<tr class="memitem:a5893fe6af3f8e92a0aaf0eb60ce8a62b"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ae86602e8136488b602f7458213ae5082"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameOffset</b></td></tr>
+<tr class="separator:ae86602e8136488b602f7458213ae5082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cf3383d6c63ba15c71f51d5abf9b26"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameLength</b></td></tr>
+<tr class="separator:a73cf3383d6c63ba15c71f51d5abf9b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d0a4382999be6efb122389137a4942"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameOffset</b></td></tr>
+<tr class="separator:af2d0a4382999be6efb122389137a4942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7df7f09c92c49964cae9f75bbdf606"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameLength</b></td></tr>
+<tr class="separator:aaf7df7f09c92c49964cae9f75bbdf606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7fdc0b1014e316aaea75797b5a3a1b"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;ULONG&#160;&#160;&#160;<b>Flags</b></td></tr>
+<tr class="separator:abe7fdc0b1014e316aaea75797b5a3a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d7eeec240e45322ac369498603529e"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;WCHAR&#160;&#160;&#160;<b>PathBuffer</b> [1]</td></tr>
+<tr class="separator:a86d7eeec240e45322ac369498603529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5893fe6af3f8e92a0aaf0eb60ce8a62b"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>SymbolicLinkReparseBuffer</b></td></tr>
+<tr class="separator:a5893fe6af3f8e92a0aaf0eb60ce8a62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f9d78110eb6d12716876a2b32a6fc9"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ab62f4d6f65a3946b975295dd2a5c3c32"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameOffset</b></td></tr>
+<tr class="separator:ab62f4d6f65a3946b975295dd2a5c3c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebec4727930fa58f94cd46d3e6d41eef"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>SubstituteNameLength</b></td></tr>
+<tr class="separator:aebec4727930fa58f94cd46d3e6d41eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d633f2acdd3c8e57dda24c09406593"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameOffset</b></td></tr>
+<tr class="separator:a24d633f2acdd3c8e57dda24c09406593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af734b712a9eb9f43bbf84d13fe9c66cf"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;USHORT&#160;&#160;&#160;<b>PrintNameLength</b></td></tr>
+<tr class="separator:af734b712a9eb9f43bbf84d13fe9c66cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3e65f65164a73880a1c7c2de2c0c79"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;WCHAR&#160;&#160;&#160;<b>PathBuffer</b> [1]</td></tr>
+<tr class="separator:aba3e65f65164a73880a1c7c2de2c0c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f9d78110eb6d12716876a2b32a6fc9"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>MountPointReparseBuffer</b></td></tr>
+<tr class="separator:a06f9d78110eb6d12716876a2b32a6fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a82bb7118d79eaf517e45f15c2cd682"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ab6170ca9961634c9c2a6afb1f4ce2a4e"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UCHAR&#160;&#160;&#160;<b>DataBuffer</b> [1]</td></tr>
+<tr class="separator:ab6170ca9961634c9c2a6afb1f4ce2a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a82bb7118d79eaf517e45f15c2cd682"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>GenericReparseBuffer</b></td></tr>
+<tr class="separator:a9a82bb7118d79eaf517e45f15c2cd682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad622f2bf7d4d2829bed07a7a92a414b6"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>DUMMYUNIONNAME</b></td></tr>
+<tr class="separator:ad622f2bf7d4d2829bed07a7a92a414b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/win32/kernel32/client/file/create.c</li>
+<li>E:/ReactOS-0.4.6/dll/win32/kernel32/client/file/dir.c</li>
+<li>E:/ReactOS-0.4.6/sdk/include/xdk/<a class="el" href="xdk_2iotypes_8h_source.html">iotypes.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

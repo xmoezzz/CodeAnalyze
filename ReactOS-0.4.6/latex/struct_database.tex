@@ -1,0 +1,83 @@
+\hypertarget{struct_database}{}\section{Database结构体 参考}
+\label{struct_database}\index{Database@{Database}}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_database_afda42eacf125c416c552bc852f3f0d7c}\label{struct_database_afda42eacf125c416c552bc852f3f0d7c}} 
+bool {\bfseries from\+Xml} (const char $\ast$file\+Name)
+\item 
+\mbox{\Hypertarget{struct_database_a363fdbe1184a1688c4fe2e35042c1536}\label{struct_database_a363fdbe1184a1688c4fe2e35042c1536}} 
+bool {\bfseries from\+Xml} (\hyperlink{classtinyxml2_1_1_x_m_l_handle}{X\+M\+L\+Handle} db\+Node)
+\item 
+\mbox{\Hypertarget{struct_database_aa85ba37920b6a3211af8ce2ed1bedc7f}\label{struct_database_aa85ba37920b6a3211af8ce2ed1bedc7f}} 
+bool {\bfseries to\+Sdb} (L\+P\+C\+W\+S\+TR \hyperlink{structpath}{path})
+\item 
+\mbox{\Hypertarget{struct_database_acafa12e1bf28b1a87953c3c4ed6469cf}\label{struct_database_acafa12e1bf28b1a87953c3c4ed6469cf}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write\+String} (\hyperlink{struct___d_b}{P\+DB} pdb, T\+AG \hyperlink{structtag}{tag}, const sdbstring \&str, bool always=false)
+\item 
+\mbox{\Hypertarget{struct_database_aef2d9c88fa1c9d8006febc97cdbe41e9}\label{struct_database_aef2d9c88fa1c9d8006febc97cdbe41e9}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write\+String} (\hyperlink{struct___d_b}{P\+DB} pdb, T\+AG \hyperlink{structtag}{tag}, const std\+::string \&str, bool always=false)
+\item 
+\mbox{\Hypertarget{struct_database_a6a007cf7c9f25c98e3cee829909a06e6}\label{struct_database_a6a007cf7c9f25c98e3cee829909a06e6}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write\+Binary} (\hyperlink{struct___d_b}{P\+DB} pdb, T\+AG \hyperlink{structtag}{tag}, const \hyperlink{interface_g_u_i_d}{G\+U\+ID} \&guid, bool always=false)
+\item 
+\mbox{\Hypertarget{struct_database_a7ba86f8054ca76919e398626a91c49f3}\label{struct_database_a7ba86f8054ca76919e398626a91c49f3}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write\+Binary} (\hyperlink{struct___d_b}{P\+DB} pdb, T\+AG \hyperlink{structtag}{tag}, const std\+::vector$<$ B\+Y\+TE $>$ \&data, bool always=false)
+\item 
+\mbox{\Hypertarget{struct_database_a2dce0fedbf0662a6ab3e5637a54922f9}\label{struct_database_a2dce0fedbf0662a6ab3e5637a54922f9}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write\+D\+Word} (\hyperlink{struct___d_b}{P\+DB} pdb, T\+AG \hyperlink{structtag}{tag}, D\+W\+O\+RD \hyperlink{unionvalue}{value}, bool always=false)
+\item 
+\mbox{\Hypertarget{struct_database_ad89b78f9844dbde9a9d1a2fd1ceaf1ae}\label{struct_database_ad89b78f9844dbde9a9d1a2fd1ceaf1ae}} 
+T\+A\+G\+ID {\bfseries Begin\+Write\+List\+Tag} (\hyperlink{struct___d_b}{P\+DB} db, T\+AG \hyperlink{structtag}{tag})
+\item 
+\mbox{\Hypertarget{struct_database_ad68d3a4accd7797ab999608b7824955d}\label{struct_database_ad68d3a4accd7797ab999608b7824955d}} 
+B\+O\+OL {\bfseries End\+Write\+List\+Tag} (\hyperlink{struct___d_b}{P\+DB} db, T\+A\+G\+ID tagid)
+\item 
+\mbox{\Hypertarget{struct_database_a05f5dd11e652e427a0025cec46b72f9f}\label{struct_database_a05f5dd11e652e427a0025cec46b72f9f}} 
+\hyperlink{interfacevoid}{void} {\bfseries Insert\+Shim\+Tagid} (const sdbstring \&\hyperlink{structname}{name}, T\+A\+G\+ID tagid)
+\item 
+\mbox{\Hypertarget{struct_database_a56f1021298145cbc54981ef729803ca1}\label{struct_database_a56f1021298145cbc54981ef729803ca1}} 
+\hyperlink{interfacevoid}{void} {\bfseries Insert\+Shim\+Tagid} (const std\+::string \&\hyperlink{structname}{name}, T\+A\+G\+ID tagid)
+\item 
+\mbox{\Hypertarget{struct_database_a11a51c1a494a9cf78340abfb7a310def}\label{struct_database_a11a51c1a494a9cf78340abfb7a310def}} 
+T\+A\+G\+ID {\bfseries Find\+Shim\+Tagid} (const sdbstring \&\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{struct_database_a19a1acae4973ecc7667ad59f0162235a}\label{struct_database_a19a1acae4973ecc7667ad59f0162235a}} 
+T\+A\+G\+ID {\bfseries Find\+Shim\+Tagid} (const std\+::string \&\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{struct_database_aaff7f562b07130efe3c9a727e136a4d2}\label{struct_database_aaff7f562b07130efe3c9a727e136a4d2}} 
+\hyperlink{interfacevoid}{void} {\bfseries Insert\+Patch\+Tagid} (const sdbstring \&\hyperlink{structname}{name}, T\+A\+G\+ID tagid)
+\item 
+\mbox{\Hypertarget{struct_database_a005076e7b24c4ea9a8e7b65957cc6931}\label{struct_database_a005076e7b24c4ea9a8e7b65957cc6931}} 
+\hyperlink{interfacevoid}{void} {\bfseries Insert\+Patch\+Tagid} (const std\+::string \&\hyperlink{structname}{name}, T\+A\+G\+ID tagid)
+\item 
+\mbox{\Hypertarget{struct_database_a48eef628fb5c8011f64de0d611c595e1}\label{struct_database_a48eef628fb5c8011f64de0d611c595e1}} 
+T\+A\+G\+ID {\bfseries Find\+Patch\+Tagid} (const sdbstring \&\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{struct_database_a84c00d47cc71fbfdafa6c771307e45f8}\label{struct_database_a84c00d47cc71fbfdafa6c771307e45f8}} 
+T\+A\+G\+ID {\bfseries Find\+Patch\+Tagid} (const std\+::string \&\hyperlink{structname}{name})
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_database_afca9f728383b38e513476c31716d48ae}\label{struct_database_afca9f728383b38e513476c31716d48ae}} 
+std\+::string {\bfseries Name}
+\item 
+\mbox{\Hypertarget{struct_database_a134406831b82198c31b038b51b0d0dba}\label{struct_database_a134406831b82198c31b038b51b0d0dba}} 
+\hyperlink{interface_g_u_i_d}{G\+U\+ID} {\bfseries ID}
+\item 
+\mbox{\Hypertarget{struct_database_a5a427c81e2a301c351deb142e4ac1ab0}\label{struct_database_a5a427c81e2a301c351deb142e4ac1ab0}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct_library}{Library} {\bfseries Library}
+\item 
+\mbox{\Hypertarget{struct_database_adce66a65e885c3654c439f95b4746fd9}\label{struct_database_adce66a65e885c3654c439f95b4746fd9}} 
+std\+::list$<$ \hyperlink{struct_layer}{Layer} $>$ {\bfseries Layers}
+\item 
+\mbox{\Hypertarget{struct_database_a97ae7645a710a8dc39d1d6c595d7f2dc}\label{struct_database_a97ae7645a710a8dc39d1d6c595d7f2dc}} 
+std\+::list$<$ \hyperlink{struct_exe}{Exe} $>$ {\bfseries Exes}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/tools/xml2sdb/xml2sdb.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/tools/xml2sdb/xml2sdb.\+cpp\end{DoxyCompactItemize}

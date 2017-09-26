@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ICorDebugChain接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_cor_debug_chain-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ICorDebugChain接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ICorDebugChain 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_cor_debug_chain.png" usemap="#ICorDebugChain_map" alt=""/>
+  <map id="ICorDebugChain_map" name="ICorDebugChain_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,106,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa40a97556f2919b458328522498257a3"><td class="memItemLeft" align="right" valign="top"><a id="aa40a97556f2919b458328522498257a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CorDebugChainReason</b> { <br />
+&#160;&#160;<b>CHAIN_NONE</b> = 0x000, 
+<b>CHAIN_CLASS_INIT</b> = 0x001, 
+<b>CHAIN_EXCEPTION_FILTER</b> = 0x002, 
+<b>CHAIN_SECURITY</b> = 0x004, 
+<br />
+&#160;&#160;<b>CHAIN_CONTEXT_POLICY</b> = 0x008, 
+<b>CHAIN_INTERCEPTION</b> = 0x010, 
+<b>CHAIN_PROCESS_START</b> = 0x020, 
+<b>CHAIN_THREAD_START</b> = 0x040, 
+<br />
+&#160;&#160;<b>CHAIN_ENTER_MANAGED</b> = 0x080, 
+<b>CHAIN_ENTER_UNMANAGED</b> = 0x100, 
+<b>CHAIN_DEBUGGER_EVAL</b> = 0x200, 
+<b>CHAIN_CONTEXT_SWITCH</b> = 0x400, 
+<br />
+&#160;&#160;<b>CHAIN_FUNC_EVAL</b> = 0x800
+<br />
+ }</td></tr>
+<tr class="separator:aa40a97556f2919b458328522498257a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d47cab5a3b1b6f62d8519575db3e02"><td class="memItemLeft" align="right" valign="top"><a id="a68d47cab5a3b1b6f62d8519575db3e02"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> ICorDebugChain::CorDebugChainReason&#160;</td><td class="memItemRight" valign="bottom"><b>CorDebugChainReason</b></td></tr>
+<tr class="separator:a68d47cab5a3b1b6f62d8519575db3e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a06fb15053e6ae6bb48d0e057ece87289"><td class="memItemLeft" align="right" valign="top"><a id="a06fb15053e6ae6bb48d0e057ece87289"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetThread</b> ([out] <a class="el" href="interface_i_cor_debug_thread.html">ICorDebugThread</a> **ppThread)</td></tr>
+<tr class="separator:a06fb15053e6ae6bb48d0e057ece87289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf440e27f7d1b797695f4b58710089c9"><td class="memItemLeft" align="right" valign="top"><a id="adf440e27f7d1b797695f4b58710089c9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetStackRange</b> ([out] CORDB_ADDRESS *pStart, [out] CORDB_ADDRESS *pEnd)</td></tr>
+<tr class="separator:adf440e27f7d1b797695f4b58710089c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2041514cc48be70e3db3947a64beaf"><td class="memItemLeft" align="right" valign="top"><a id="a1b2041514cc48be70e3db3947a64beaf"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> ([out] <a class="el" href="interface_i_cor_debug_context.html">ICorDebugContext</a> **ppContext)</td></tr>
+<tr class="separator:a1b2041514cc48be70e3db3947a64beaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67796e960b00346170c2a0eb15cb681f"><td class="memItemLeft" align="right" valign="top"><a id="a67796e960b00346170c2a0eb15cb681f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetCaller</b> ([out] <a class="el" href="interface_i_cor_debug_chain.html">ICorDebugChain</a> **ppChain)</td></tr>
+<tr class="separator:a67796e960b00346170c2a0eb15cb681f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f765a28565557992839024ca814d587"><td class="memItemLeft" align="right" valign="top"><a id="a2f765a28565557992839024ca814d587"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetCallee</b> ([out] <a class="el" href="interface_i_cor_debug_chain.html">ICorDebugChain</a> **ppChain)</td></tr>
+<tr class="separator:a2f765a28565557992839024ca814d587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104577dc719f7a7a5c68755e1f4d818d"><td class="memItemLeft" align="right" valign="top"><a id="a104577dc719f7a7a5c68755e1f4d818d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrevious</b> ([out] <a class="el" href="interface_i_cor_debug_chain.html">ICorDebugChain</a> **ppChain)</td></tr>
+<tr class="separator:a104577dc719f7a7a5c68755e1f4d818d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0543dfc7f7dffd06d51a3c4a8fbef2"><td class="memItemLeft" align="right" valign="top"><a id="a0f0543dfc7f7dffd06d51a3c4a8fbef2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetNext</b> ([out] <a class="el" href="interface_i_cor_debug_chain.html">ICorDebugChain</a> **ppChain)</td></tr>
+<tr class="separator:a0f0543dfc7f7dffd06d51a3c4a8fbef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa8249ac3ef17c320bd2219e763809b"><td class="memItemLeft" align="right" valign="top"><a id="abfa8249ac3ef17c320bd2219e763809b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsManaged</b> ([out] BOOL *pManaged)</td></tr>
+<tr class="separator:abfa8249ac3ef17c320bd2219e763809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84c5113636f63ff0cb1230df35cfd7b"><td class="memItemLeft" align="right" valign="top"><a id="ae84c5113636f63ff0cb1230df35cfd7b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateFrames</b> ([out] <a class="el" href="interface_i_cor_debug_frame_enum.html">ICorDebugFrameEnum</a> **ppFrames)</td></tr>
+<tr class="separator:ae84c5113636f63ff0cb1230df35cfd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade93fb132957d608409d1774adabdb43"><td class="memItemLeft" align="right" valign="top"><a id="ade93fb132957d608409d1774adabdb43"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveFrame</b> ([out] <a class="el" href="interface_i_cor_debug_frame.html">ICorDebugFrame</a> **ppFrame)</td></tr>
+<tr class="separator:ade93fb132957d608409d1774adabdb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646a33ce47da2968ec1add7fd9bbc9c6"><td class="memItemLeft" align="right" valign="top"><a id="a646a33ce47da2968ec1add7fd9bbc9c6"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegisterSet</b> ([out] <a class="el" href="interface_i_cor_debug_register_set.html">ICorDebugRegisterSet</a> **ppRegisters)</td></tr>
+<tr class="separator:a646a33ce47da2968ec1add7fd9bbc9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e796bc81a9858973f5bf96ca3ae154f"><td class="memItemLeft" align="right" valign="top"><a id="a9e796bc81a9858973f5bf96ca3ae154f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetReason</b> ([out] CorDebugChainReason *pReason)</td></tr>
+<tr class="separator:a9e796bc81a9858973f5bf96ca3ae154f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="cordebug_8idl_source.html">cordebug.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

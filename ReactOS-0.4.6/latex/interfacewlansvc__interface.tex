@@ -1,0 +1,136 @@
+\hypertarget{interfacewlansvc__interface}{}\section{wlansvc\+\_\+interface接口 参考}
+\label{interfacewlansvc__interface}\index{wlansvc\+\_\+interface@{wlansvc\+\_\+interface}}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_add9385a07be7a53bd00ea17be488d5de}\label{interfacewlansvc__interface_add9385a07be7a53bd00ea17be488d5de}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Open\+Handle} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE sz\+Machine\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Client\+Version, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Negotiated\+Version, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} $\ast$ph\+Client\+Handle)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_acffe0c94dc6094da9006d3015a5eae19}\label{interfacewlansvc__interface_acffe0c94dc6094da9006d3015a5eae19}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Close\+Handle} (\mbox{[}in, out\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} $\ast$ph\+Client\+Handle)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a8e22dc7427e191d26060155767f72deb}\label{interfacewlansvc__interface_a8e22dc7427e191d26060155767f72deb}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Enum\+Interfaces} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}out, ref\mbox{]} \hyperlink{struct___w_l_a_n___i_n_t_e_r_f_a_c_e___i_n_f_o___l_i_s_t}{P\+W\+L\+A\+N\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+I\+N\+F\+O\+\_\+\+L\+I\+ST} $\ast$pp\+Interface\+List)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a1a3c45329d508a7cf15a000161f6a276}\label{interfacewlansvc__interface_a1a3c45329d508a7cf15a000161f6a276}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Auto\+Config\+Parameter} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} long \hyperlink{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}{Op\+Code}, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Data\+Size, \mbox{[}in\mbox{]}\mbox{[}size\+\_\+is(dw\+Data\+Size)\mbox{]} L\+P\+B\+Y\+TE p\+Data)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a0d82ee6d025a8020a481ed77118cc89d}\label{interfacewlansvc__interface_a0d82ee6d025a8020a481ed77118cc89d}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Query\+Auto\+Config\+Parameter} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} D\+W\+O\+RD \hyperlink{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}{Op\+Code}, \mbox{[}in, out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Data\+Size, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}size\+\_\+is($\ast$pdw\+Data\+Size)\mbox{]} char $\ast$$\ast$pp\+Data, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Wlan\+Opcode\+Value\+Type)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a1b6caf086dd10dab3e19f72d25cb5710}\label{interfacewlansvc__interface_a1b6caf086dd10dab3e19f72d25cb5710}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Interface\+Capability} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}out, ref\mbox{]} \hyperlink{struct___w_l_a_n___i_n_t_e_r_f_a_c_e___c_a_p_a_b_i_l_i_t_y}{P\+W\+L\+A\+N\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+TY} $\ast$pp\+Capability)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a0dcd00c516292db7fbf2789e203b7285}\label{interfacewlansvc__interface_a0dcd00c516292db7fbf2789e203b7285}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Interface} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} D\+W\+O\+RD \hyperlink{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}{Op\+Code}, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Data\+Size, \mbox{[}in, size\+\_\+is(dw\+Data\+Size)\mbox{]} L\+P\+B\+Y\+TE p\+Data)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a9eac5dc80a73c45117e37a74786a7721}\label{interfacewlansvc__interface_a9eac5dc80a73c45117e37a74786a7721}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Query\+Interface} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} long \hyperlink{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}{Op\+Code}, \mbox{[}in, out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Data\+Size, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}size\+\_\+is($\ast$pdw\+Data\+Size)\mbox{]} L\+P\+B\+Y\+TE $\ast$pp\+Data, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD p\+Wlan\+Opcode\+Value\+Type)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a3c4ab33174363d5f0ebfceae52879126}\label{interfacewlansvc__interface_a3c4ab33174363d5f0ebfceae52879126}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Ihv\+Control} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} D\+W\+O\+RD Type, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+In\+Buffer\+Size, \mbox{[}in\mbox{]}\mbox{[}size\+\_\+is(dw\+In\+Buffer\+Size)\mbox{]} L\+P\+B\+Y\+TE p\+In\+Buffer, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Out\+Buffer\+Size, \mbox{[}out\mbox{]}\mbox{[}size\+\_\+is(dw\+Out\+Buffer\+Size), length\+\_\+is($\ast$pdw\+Bytes\+Returned)\mbox{]} L\+P\+B\+Y\+TE p\+Out\+Buffer, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Bytes\+Returned)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a12cc4ea94646ca65b3ef8e3e50aefee6}\label{interfacewlansvc__interface_a12cc4ea94646ca65b3ef8e3e50aefee6}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Scan} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct___d_o_t11___s_s_i_d}{P\+D\+O\+T11\+\_\+\+S\+S\+ID} p\+Dot11\+Ssid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct___w_l_a_n___r_a_w___d_a_t_a}{P\+W\+L\+A\+N\+\_\+\+R\+A\+W\+\_\+\+D\+A\+TA} p\+Ie\+Data)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_aafd8737462950ebd25128bb8abfec35c}\label{interfacewlansvc__interface_aafd8737462950ebd25128bb8abfec35c}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Available\+Network\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]} \hyperlink{struct___w_l_a_n___a_v_a_i_l_a_b_l_e___n_e_t_w_o_r_k___l_i_s_t}{W\+L\+A\+N\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+L\+I\+ST} $\ast$$\ast$pp\+Available\+Network\+List)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a4b3f10172df938233bb836a052f07ea1}\label{interfacewlansvc__interface_a4b3f10172df938233bb836a052f07ea1}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Network\+Bss\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct___d_o_t11___s_s_i_d}{P\+D\+O\+T11\+\_\+\+S\+S\+ID} p\+Dot11\+Ssid, \mbox{[}in\mbox{]} short dot11\+Bss\+Type, \mbox{[}in\mbox{]} D\+W\+O\+RD b\+Security\+Enabled, \mbox{[}in, out\mbox{]} L\+P\+D\+W\+O\+RD dw\+Bss\+List\+Size, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}size\+\_\+is($\ast$dw\+Bss\+List\+Size)\mbox{]} L\+P\+B\+Y\+TE $\ast$pp\+Wlan\+Bss\+List)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_aec9f090ee7465128142624c20933ae5f}\label{interfacewlansvc__interface_aec9f090ee7465128142624c20933ae5f}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Connect} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} const \hyperlink{struct___w_l_a_n___c_o_n_n_e_c_t_i_o_n___p_a_r_a_m_e_t_e_r_s}{P\+W\+L\+A\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS} $\ast$p\+Connection\+Parameters)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a83e11c314162f73ad6418e5a5f39f444}\label{interfacewlansvc__interface_a83e11c314162f73ad6418e5a5f39f444}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Disconnect} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+G\+U\+ID)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_aa16100643f655ad30729fe8972d85318}\label{interfacewlansvc__interface_aa16100643f655ad30729fe8972d85318}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Register\+Notification} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} D\+W\+O\+RD arg\+\_\+2, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Prev\+Notif\+Source)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a1e67d97841b2aa2418b1edb1ba191c42}\label{interfacewlansvc__interface_a1e67d97841b2aa2418b1edb1ba191c42}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Async\+Get\+Notification} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]} \hyperlink{struct___l2___n_o_t_i_f_i_c_a_t_i_o_n___d_a_t_a}{P\+W\+L\+A\+N\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+A\+TA} $\ast$Notification\+Data)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_ab35c655d07330f514adf8ae93bc90623}\label{interfacewlansvc__interface_ab35c655d07330f514adf8ae93bc90623}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Profile\+Eap\+User\+Data} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Profile\+Name, \mbox{[}in\mbox{]} \hyperlink{struct___e_a_p___m_e_t_h_o_d___t_y_p_e}{E\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+T\+Y\+PE} Method\+Type, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Eap\+User\+Data\+Size, \mbox{[}in\mbox{]}\mbox{[}size\+\_\+is(dw\+Eap\+User\+Data\+Size)\mbox{]} L\+P\+B\+Y\+TE pb\+Eap\+User\+Data)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_abb09315a5c8bf373ac7e9d5860d1f825}\label{interfacewlansvc__interface_abb09315a5c8bf373ac7e9d5860d1f825}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Profile} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Profile\+Xml, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+All\+User\+Profile\+Security, \mbox{[}in\mbox{]} B\+O\+OL b\+Overwrite, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Reason\+Code)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a73a54098f45066b3219cead8a76ded37}\label{interfacewlansvc__interface_a73a54098f45066b3219cead8a76ded37}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Profile} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Profile\+Name, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$$\ast$pstr\+Profile\+Xml, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Flags, \mbox{[}in, out\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Granted\+Access)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a9375bba075ccd79e6683d03456212fec}\label{interfacewlansvc__interface_a9375bba075ccd79e6683d03456212fec}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Delete\+Profile} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} const wchar\+\_\+t $\ast$str\+Profile\+Name)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a5c7050272f9fddab8ca6ccb469d1b7e5}\label{interfacewlansvc__interface_a5c7050272f9fddab8ca6ccb469d1b7e5}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Rename\+Profile} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} const wchar\+\_\+t $\ast$str\+Old\+Profile\+Name, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} const wchar\+\_\+t $\ast$str\+New\+Profile\+Name)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a3e75e9d5481980be0554d6e2fbdf31e7}\label{interfacewlansvc__interface_a3e75e9d5481980be0554d6e2fbdf31e7}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Profile\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Items, \mbox{[}in\mbox{]} \mbox{[}size\+\_\+is(dw\+Items)\mbox{]} B\+Y\+TE $\ast$$\ast$str\+Profile\+Names)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a7cdd49f14ccc3c6915deeb2d43c8b8d7}\label{interfacewlansvc__interface_a7cdd49f14ccc3c6915deeb2d43c8b8d7}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Profile\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]} \hyperlink{struct___w_l_a_n___p_r_o_f_i_l_e___i_n_f_o___l_i_s_t}{P\+W\+L\+A\+N\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+\_\+\+L\+I\+ST} $\ast$pp\+Profile\+List)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a1b0f67c02052864e7d274e9784d0d6e6}\label{interfacewlansvc__interface_a1b0f67c02052864e7d274e9784d0d6e6}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Profile\+Position} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Profile\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Position)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_ab19ff62dcd0c317616f4c5b45f32a83c}\label{interfacewlansvc__interface_ab19ff62dcd0c317616f4c5b45f32a83c}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Profile\+Custom\+User\+Data} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Profile\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Data\+Size, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]}\mbox{[}size\+\_\+is(dw\+Data\+Size)\mbox{]} L\+P\+B\+Y\+TE p\+Data)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a38534f0b37ba05221e47e2567df17a3e}\label{interfacewlansvc__interface_a38534f0b37ba05221e47e2567df17a3e}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Profile\+Custom\+User\+Data} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Profile\+Name, \mbox{[}in, out\mbox{]} L\+P\+D\+W\+O\+RD dw\+Data\+Size, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}size\+\_\+is($\ast$dw\+Data\+Size)\mbox{]} L\+P\+B\+Y\+TE $\ast$p\+Data)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a75a67ff28b2f883d46927cec9761a3b3}\label{interfacewlansvc__interface_a75a67ff28b2f883d46927cec9761a3b3}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Filter\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} short wlan\+Filter\+List\+Type, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct___d_o_t11___n_e_t_w_o_r_k___l_i_s_t}{P\+D\+O\+T11\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+L\+I\+ST} p\+Network\+List)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a858c8e6cf4c756b9996cdcd87ab79b7f}\label{interfacewlansvc__interface_a858c8e6cf4c756b9996cdcd87ab79b7f}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Filter\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} short wlan\+Filter\+List\+Type, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]} \hyperlink{struct___d_o_t11___n_e_t_w_o_r_k___l_i_s_t}{P\+D\+O\+T11\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+L\+I\+ST} $\ast$p\+Network\+List)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a3872aa1dd1910fe6a897d64734e7fa9c}\label{interfacewlansvc__interface_a3872aa1dd1910fe6a897d64734e7fa9c}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Psd\+I\+E\+Data\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Format, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Data\+List\+Size, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]}\mbox{[}size\+\_\+is(dw\+Data\+List\+Size)\mbox{]} L\+P\+B\+Y\+TE p\+Psd\+I\+E\+Data\+List)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a20a5aebb67154d8d4e02227e9c06e9b5}\label{interfacewlansvc__interface_a20a5aebb67154d8d4e02227e9c06e9b5}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Save\+Temporary\+Profile} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+Profile\+Name, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$str\+All\+User\+Profile\+Security, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} B\+O\+OL b\+Over\+Write)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a5e8a9ea3b7959c490c75c7cebfa63783}\label{interfacewlansvc__interface_a5e8a9ea3b7959c490c75c7cebfa63783}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Is\+U\+I\+Request\+Pending} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]} \hyperlink{structstruct___c}{struct\+\_\+C} $\ast$arg\+\_\+3, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+4)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a7bde6d4eb07978035985df5429f6973b}\label{interfacewlansvc__interface_a7bde6d4eb07978035985df5429f6973b}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+U\+I\+Forwarding\+Network\+List} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]}\mbox{[}size\+\_\+is(dw\+Size)\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$arg\+\_\+2, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Size, \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$arg\+\_\+4)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_ac2e524b05b34657b5f2957157389d9fd}\label{interfacewlansvc__interface_ac2e524b05b34657b5f2957157389d9fd}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Is\+Network\+Suppressed} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} D\+W\+O\+RD arg\+\_\+2, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+4)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a808c104768053366222ebf46c3ace98f}\label{interfacewlansvc__interface_a808c104768053366222ebf46c3ace98f}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Remove\+U\+I\+Forwarding\+Network\+List} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a6e0bb18de6bf93ad53bc344241353e63}\label{interfacewlansvc__interface_a6e0bb18de6bf93ad53bc344241353e63}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Query\+Ext\+U\+I\+Request} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$arg\+\_\+2, \mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$arg\+\_\+3, \mbox{[}in\mbox{]} short arg\+\_\+4, \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]} \hyperlink{structstruct___c}{struct\+\_\+C} $\ast$$\ast$arg\+\_\+6)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_ab6c5fdc06ad205ba314fe1a6937cd87a}\label{interfacewlansvc__interface_ab6c5fdc06ad205ba314fe1a6937cd87a}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+U\+I\+Response} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} \hyperlink{structstruct___c}{struct\+\_\+C} $\ast$arg\+\_\+2, \mbox{[}in\mbox{]} \hyperlink{structstruct___d}{struct\+\_\+D} $\ast$arg\+\_\+3)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_aca97b0b6685d47fb8a25d854b6c44326}\label{interfacewlansvc__interface_aca97b0b6685d47fb8a25d854b6c44326}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Profile\+Key\+Info} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} D\+W\+O\+RD arg\+\_\+2, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$arg\+\_\+4, \mbox{[}in\mbox{]} D\+W\+O\+RD arg\+\_\+5, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+6, \mbox{[}in, out\mbox{]}\mbox{[}\hyperlink{interfaceunique}{unique}\mbox{]}\mbox{[}size\+\_\+is(arg\+\_\+5)\mbox{]} char $\ast$arg\+\_\+7, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+8)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_ab2d24755e8d89c22173fa5d9d0eccd4e}\label{interfacewlansvc__interface_ab2d24755e8d89c22173fa5d9d0eccd4e}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Async\+Do\+Plap} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$arg\+\_\+3, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Size, \mbox{[}in\mbox{]}\mbox{[}size\+\_\+is(dw\+Size)\mbox{]} \hyperlink{structstruct___e}{struct\+\_\+E} arg\+\_\+5\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_aba58163451b5a1bfd42b84dc7feb9e1d}\label{interfacewlansvc__interface_aba58163451b5a1bfd42b84dc7feb9e1d}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Query\+Plap\+Credentials} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in, out\mbox{]} L\+P\+D\+W\+O\+RD dw\+Size, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}size\+\_\+is($\ast$dw\+Size)\mbox{]} \hyperlink{structstruct___e}{struct\+\_\+E} $\ast$$\ast$arg\+\_\+3, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$$\ast$arg\+\_\+4, \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+6, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+7, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+8, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD arg\+\_\+9)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_a835c20245552cec9dff574479025699d}\label{interfacewlansvc__interface_a835c20245552cec9dff574479025699d}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Cancel\+Plap} (\mbox{[}in\mbox{]} W\+L\+A\+N\+S\+V\+C\+\_\+\+H\+A\+N\+D\+LE arg\+\_\+1, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Interface\+Guid)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_abe8f445f00c7b0e4bdefc2b789273b67}\label{interfacewlansvc__interface_abe8f445f00c7b0e4bdefc2b789273b67}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Set\+Security\+Settings} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} W\+L\+A\+N\+\_\+\+S\+E\+C\+U\+R\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+CT Securable\+Object, \mbox{[}in\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} const wchar\+\_\+t $\ast$str\+Modified\+S\+D\+DL)
+\item 
+\mbox{\Hypertarget{interfacewlansvc__interface_abfa69c732029d55e1b9e4d3aa2043e80}\label{interfacewlansvc__interface_abfa69c732029d55e1b9e4d3aa2043e80}} 
+D\+W\+O\+RD {\bfseries \+\_\+\+Rpc\+Get\+Security\+Settings} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{W\+L\+A\+N\+S\+V\+C\+\_\+\+R\+P\+C\+\_\+\+H\+A\+N\+D\+LE} h\+Client\+Handle, \mbox{[}in\mbox{]} W\+L\+A\+N\+\_\+\+S\+E\+C\+U\+R\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+CT Securable\+Object, \mbox{[}out\mbox{]} W\+L\+A\+N\+\_\+\+O\+P\+C\+O\+D\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+T\+Y\+PE $\ast$p\+Value\+Type, \mbox{[}out\mbox{]}\mbox{[}ref\mbox{]}\mbox{[}\hyperlink{structstring}{string}\mbox{]} wchar\+\_\+t $\ast$$\ast$pstr\+Current\+S\+D\+DL, \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Granted\+Access)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/idl/wlansvc.\+idl\end{DoxyCompactItemize}

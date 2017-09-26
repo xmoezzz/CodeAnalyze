@@ -1,0 +1,70 @@
+\hypertarget{structufs1__dinode}{}\section{ufs1\+\_\+dinode结构体 参考}
+\label{structufs1__dinode}\index{ufs1\+\_\+dinode@{ufs1\+\_\+dinode}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a1194f04404015f7da26bd1932773df6a}\label{structufs1__dinode_a1194f04404015f7da26bd1932773df6a}} 
+u\+\_\+int16\+\_\+t {\bfseries di\+\_\+mode}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a588b5e9341bb7c148047efff0ee220a7}\label{structufs1__dinode_a588b5e9341bb7c148047efff0ee220a7}} 
+int16\+\_\+t {\bfseries di\+\_\+nlink}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_aaf4c73c0be060802c940c5175914cb69}\label{structufs1__dinode_aaf4c73c0be060802c940c5175914cb69}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u\_int16\_t {\bfseries oldids} \mbox{[}2\mbox{]}\\
+\>u\_int32\_t {\bfseries inumber}\\
+\} {\bfseries di\_u}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structufs1__dinode_aeb1915f50d8bd4ef7e10fc68a965bdc7}\label{structufs1__dinode_aeb1915f50d8bd4ef7e10fc68a965bdc7}} 
+u\+\_\+int64\+\_\+t {\bfseries di\+\_\+size}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a595f269b878c850fbe7970292fbf0ec2}\label{structufs1__dinode_a595f269b878c850fbe7970292fbf0ec2}} 
+int32\+\_\+t {\bfseries di\+\_\+atime}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_adeba42b56bad1b46746b76a261a28ef1}\label{structufs1__dinode_adeba42b56bad1b46746b76a261a28ef1}} 
+int32\+\_\+t {\bfseries di\+\_\+atimensec}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_addd8686290d360fe1ff97e47b25df5d6}\label{structufs1__dinode_addd8686290d360fe1ff97e47b25df5d6}} 
+int32\+\_\+t {\bfseries di\+\_\+mtime}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_ae1a12b1b2308f6feb92b210b3fd32c37}\label{structufs1__dinode_ae1a12b1b2308f6feb92b210b3fd32c37}} 
+int32\+\_\+t {\bfseries di\+\_\+mtimensec}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_adb27793d0c34f01326474401ddde1c43}\label{structufs1__dinode_adb27793d0c34f01326474401ddde1c43}} 
+int32\+\_\+t {\bfseries di\+\_\+ctime}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a0094b1e1cac8ca65a970968ad2ad0237}\label{structufs1__dinode_a0094b1e1cac8ca65a970968ad2ad0237}} 
+int32\+\_\+t {\bfseries di\+\_\+ctimensec}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_aba522ede56ca985e89ad355f237020ba}\label{structufs1__dinode_aba522ede56ca985e89ad355f237020ba}} 
+int32\+\_\+t {\bfseries di\+\_\+db} \mbox{[}N\+D\+A\+D\+DR\mbox{]}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a72ce78f5e3e15ab662d4dc60c27a2acd}\label{structufs1__dinode_a72ce78f5e3e15ab662d4dc60c27a2acd}} 
+int32\+\_\+t {\bfseries di\+\_\+ib} \mbox{[}N\+I\+A\+D\+DR\mbox{]}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_ade495b4b40c68ac16fa32c58befcd8c0}\label{structufs1__dinode_ade495b4b40c68ac16fa32c58befcd8c0}} 
+u\+\_\+int32\+\_\+t {\bfseries di\+\_\+flags}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_ab49dd1a83545228c8ada9d637a6e5a76}\label{structufs1__dinode_ab49dd1a83545228c8ada9d637a6e5a76}} 
+u\+\_\+int32\+\_\+t {\bfseries di\+\_\+blocks}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a0c83844df5375d0d7e3bf70b1fd20762}\label{structufs1__dinode_a0c83844df5375d0d7e3bf70b1fd20762}} 
+int32\+\_\+t {\bfseries di\+\_\+gen}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_af748891980bbd2bd0d3eb22abca89688}\label{structufs1__dinode_af748891980bbd2bd0d3eb22abca89688}} 
+u\+\_\+int32\+\_\+t {\bfseries di\+\_\+uid}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a3bead46ad3a23368d9986df416d5c7e2}\label{structufs1__dinode_a3bead46ad3a23368d9986df416d5c7e2}} 
+u\+\_\+int32\+\_\+t {\bfseries di\+\_\+gid}
+\item 
+\mbox{\Hypertarget{structufs1__dinode_a91a277e4cb6f822b1bd692f5cd06fb97}\label{structufs1__dinode_a91a277e4cb6f822b1bd692f5cd06fb97}} 
+int32\+\_\+t {\bfseries di\+\_\+spare} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/ffs/inc/dinode.\+h\end{DoxyCompactItemize}

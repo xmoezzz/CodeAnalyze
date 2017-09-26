@@ -1,0 +1,51 @@
+\hypertarget{interfaceepm}{}\section{epm接口 参考}
+\label{interfaceepm}\index{epm@{epm}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structepm_1_1ept__entry__t}{ept\+\_\+entry\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceepm_a50f0ee336aeaaa5b1fed93bb39e63a8e}\label{interfaceepm_a50f0ee336aeaaa5b1fed93bb39e63a8e}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structepm_1_1ept__entry__t}{epm\+::ept\+\_\+entry\+\_\+t} $\ast$ {\bfseries ept\+\_\+entry\+\_\+p\+\_\+t}
+\item 
+\mbox{\Hypertarget{interfaceepm_a28f8daa92cc8ecb02283cfaf5d8e5d66}\label{interfaceepm_a28f8daa92cc8ecb02283cfaf5d8e5d66}} 
+typedef \hyperlink{interfacevoid}{void} $\ast$ {\bfseries ept\+\_\+lookup\+\_\+handle\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceepm_a60394e4aeadf34ac922f81f2950dc4c7}\label{interfaceepm_a60394e4aeadf34ac922f81f2950dc4c7}} 
+\hyperlink{interfacevoid}{void} {\bfseries ept\+\_\+insert} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{handle\+\_\+t} h, \mbox{[}in\mbox{]} unsigned32 num\+\_\+ents, \mbox{[}in, size\+\_\+is(num\+\_\+ents)\mbox{]} \hyperlink{structepm_1_1ept__entry__t}{ept\+\_\+entry\+\_\+t} entries\mbox{[}$\,$\mbox{]}, \mbox{[}in\mbox{]} boolean32 replace, \mbox{[}out\mbox{]} error\+\_\+status\+\_\+t $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interfaceepm_a5c89ac83dbaa05e366c88149b9bffb86}\label{interfaceepm_a5c89ac83dbaa05e366c88149b9bffb86}} 
+\hyperlink{interfacevoid}{void} {\bfseries ept\+\_\+delete} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{handle\+\_\+t} h, \mbox{[}in\mbox{]} unsigned32 num\+\_\+ents, \mbox{[}in, size\+\_\+is(num\+\_\+ents)\mbox{]} \hyperlink{structepm_1_1ept__entry__t}{ept\+\_\+entry\+\_\+t} entries\mbox{[}$\,$\mbox{]}, \mbox{[}out\mbox{]} error\+\_\+status\+\_\+t $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interfaceepm_a409b2be128843f25059a8392f8249bb1}\label{interfaceepm_a409b2be128843f25059a8392f8249bb1}} 
+\hyperlink{interfacevoid}{void} {\bfseries ept\+\_\+lookup} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{handle\+\_\+t} h, \mbox{[}in\mbox{]} unsigned32 inquiry\+\_\+type, \mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{uuid\+\_\+p\+\_\+t} \hyperlink{structobject}{object}, \mbox{[}in\mbox{]} \hyperlink{structrpc__if__id__t}{rpc\+\_\+if\+\_\+id\+\_\+p\+\_\+t} interface\+\_\+id, \mbox{[}in\mbox{]} unsigned32 vers\+\_\+option, \mbox{[}in, out\mbox{]} \hyperlink{interfacevoid}{ept\+\_\+lookup\+\_\+handle\+\_\+t} $\ast$entry\+\_\+handle, \mbox{[}in\mbox{]} unsigned32 max\+\_\+ents, \mbox{[}out\mbox{]} unsigned32 $\ast$num\+\_\+ents, \mbox{[}out, length\+\_\+is($\ast$num\+\_\+ents), size\+\_\+is(max\+\_\+ents)\mbox{]} \hyperlink{structepm_1_1ept__entry__t}{ept\+\_\+entry\+\_\+t} entries\mbox{[}$\,$\mbox{]}, \mbox{[}out\mbox{]} error\+\_\+status\+\_\+t $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interfaceepm_a938a8ec7bf13b5f1f65f6a7df9593ac4}\label{interfaceepm_a938a8ec7bf13b5f1f65f6a7df9593ac4}} 
+\hyperlink{interfacevoid}{void} {\bfseries ept\+\_\+map} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{handle\+\_\+t} h, \mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{uuid\+\_\+p\+\_\+t} \hyperlink{structobject}{object}, \mbox{[}in\mbox{]} \hyperlink{structtwr__t}{twr\+\_\+p\+\_\+t} map\+\_\+tower, \mbox{[}in, out\mbox{]} \hyperlink{interfacevoid}{ept\+\_\+lookup\+\_\+handle\+\_\+t} $\ast$entry\+\_\+handle, \mbox{[}in\mbox{]} unsigned32 max\+\_\+towers, \mbox{[}out\mbox{]} unsigned32 $\ast$num\+\_\+towers, \mbox{[}out, length\+\_\+is($\ast$num\+\_\+towers), size\+\_\+is(max\+\_\+towers)\mbox{]} \hyperlink{structtwr__t}{twr\+\_\+p\+\_\+t} $\ast$towers, \mbox{[}out\mbox{]} error\+\_\+status\+\_\+t $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interfaceepm_aedbb058545bb05be53e6979683ebf83b}\label{interfaceepm_aedbb058545bb05be53e6979683ebf83b}} 
+\hyperlink{interfacevoid}{void} {\bfseries ept\+\_\+lookup\+\_\+handle\+\_\+free} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{handle\+\_\+t} h, \mbox{[}in, out\mbox{]} \hyperlink{interfacevoid}{ept\+\_\+lookup\+\_\+handle\+\_\+t} $\ast$entry\+\_\+handle, \mbox{[}out\mbox{]} error\+\_\+status\+\_\+t $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interfaceepm_a552fde881f9afc441bc5a4386bb6b2a7}\label{interfaceepm_a552fde881f9afc441bc5a4386bb6b2a7}} 
+\hyperlink{interfacevoid}{void} {\bfseries ept\+\_\+inq\+\_\+object} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{handle\+\_\+t} h, \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$ept\+\_\+object, \mbox{[}out\mbox{]} error\+\_\+status\+\_\+t $\ast$\hyperlink{structstatus}{status})
+\item 
+\mbox{\Hypertarget{interfaceepm_ade4c49e39130c88178a95645e2704565}\label{interfaceepm_ade4c49e39130c88178a95645e2704565}} 
+\hyperlink{interfacevoid}{void} {\bfseries ept\+\_\+mgmt\+\_\+delete} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{handle\+\_\+t} h, \mbox{[}in\mbox{]} boolean32 object\+\_\+speced, \mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{uuid\+\_\+p\+\_\+t} \hyperlink{structobject}{object}, \mbox{[}in\mbox{]} \hyperlink{structtwr__t}{twr\+\_\+p\+\_\+t} tower, \mbox{[}out\mbox{]} error\+\_\+status\+\_\+t $\ast$\hyperlink{structstatus}{status})
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceepm_a3ff45d19ac6e785dcc783bdaf69a29e1}\label{interfaceepm_a3ff45d19ac6e785dcc783bdaf69a29e1}} 
+const long {\bfseries ept\+\_\+max\+\_\+annotation\+\_\+size} = 64
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/wine/epm.\+idl\end{DoxyCompactItemize}

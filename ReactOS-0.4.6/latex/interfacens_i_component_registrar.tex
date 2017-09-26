@@ -1,0 +1,52 @@
+\hypertarget{interfacens_i_component_registrar}{}\section{ns\+I\+Component\+Registrar接口 参考}
+\label{interfacens_i_component_registrar}\index{ns\+I\+Component\+Registrar@{ns\+I\+Component\+Registrar}}
+类 ns\+I\+Component\+Registrar 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacens_i_component_registrar}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_a58026c1912935600d1465732d568fec2}\label{interfacens_i_component_registrar_a58026c1912935600d1465732d568fec2}} 
+nsresult {\bfseries Auto\+Register} (\hyperlink{interfacens_i_file}{ns\+I\+File} $\ast$a\+Spec)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_a409f4514429d4b5e39567df8f455d84d}\label{interfacens_i_component_registrar_a409f4514429d4b5e39567df8f455d84d}} 
+nsresult {\bfseries Auto\+Unregister} (\hyperlink{interfacens_i_file}{ns\+I\+File} $\ast$a\+Spec)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_ac3d33c5ffcf410ceda3f06ac7e2bdf0a}\label{interfacens_i_component_registrar_ac3d33c5ffcf410ceda3f06ac7e2bdf0a}} 
+nsresult {\bfseries Register\+Factory} (const \hyperlink{struct___i_i_d}{ns\+C\+ID} $\ast$a\+Class, const char $\ast$a\+Class\+Name, const char $\ast$a\+Contract\+ID, \hyperlink{interfacens_i_factory}{ns\+I\+Factory} $\ast$a\+Factory)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_ab92118bfc4599eb39d8d4d085f096051}\label{interfacens_i_component_registrar_ab92118bfc4599eb39d8d4d085f096051}} 
+nsresult {\bfseries Unregister\+Factory} (const \hyperlink{struct___i_i_d}{ns\+C\+ID} $\ast$a\+Class, \hyperlink{interfacens_i_factory}{ns\+I\+Factory} $\ast$a\+Factory)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_acc45f4f696c18ecaaeeea7079d80a1a6}\label{interfacens_i_component_registrar_acc45f4f696c18ecaaeeea7079d80a1a6}} 
+nsresult {\bfseries Register\+Factory\+Location} (const \hyperlink{struct___i_i_d}{ns\+C\+ID} $\ast$a\+Class, const char $\ast$a\+Class\+Name, const char $\ast$a\+Contract\+ID, \hyperlink{interfacens_i_file}{ns\+I\+File} $\ast$a\+File, const char $\ast$a\+Loader\+Str, const char $\ast$a\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_a82d79d49286d158bba6d5ec1eb8e994e}\label{interfacens_i_component_registrar_a82d79d49286d158bba6d5ec1eb8e994e}} 
+nsresult {\bfseries Unregister\+Factory\+Location} (const \hyperlink{struct___i_i_d}{ns\+C\+ID} $\ast$a\+Class, \hyperlink{interfacens_i_file}{ns\+I\+File} $\ast$a\+File)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_a3969cf9e8d2209d43512bef694384ae3}\label{interfacens_i_component_registrar_a3969cf9e8d2209d43512bef694384ae3}} 
+nsresult {\bfseries Is\+C\+I\+D\+Registered} (const \hyperlink{struct___i_i_d}{ns\+C\+ID} $\ast$a\+Class, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_a8dc4d6a879ba94488ff9e9a25a9e07c3}\label{interfacens_i_component_registrar_a8dc4d6a879ba94488ff9e9a25a9e07c3}} 
+nsresult {\bfseries Is\+Contract\+I\+D\+Registered} (const char $\ast$a\+Contract\+ID, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_add9725abde92876f7d8e07bd740c042f}\label{interfacens_i_component_registrar_add9725abde92876f7d8e07bd740c042f}} 
+nsresult {\bfseries Enumerate\+C\+I\+Ds} (\hyperlink{interfacens_i_simple_enumerator}{ns\+I\+Simple\+Enumerator} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_aad5422aed980318e98b6a2d510dbc30c}\label{interfacens_i_component_registrar_aad5422aed980318e98b6a2d510dbc30c}} 
+nsresult {\bfseries Enumerate\+Contract\+I\+Ds} (\hyperlink{interfacens_i_simple_enumerator}{ns\+I\+Simple\+Enumerator} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_a971465315160294ac42f903a6eb1d9d6}\label{interfacens_i_component_registrar_a971465315160294ac42f903a6eb1d9d6}} 
+nsresult {\bfseries C\+I\+D\+To\+Contract\+ID} (const \hyperlink{struct___i_i_d}{ns\+C\+ID} $\ast$a\+Class, char $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_component_registrar_abab8b737597cfd4a27c310f01a7836df}\label{interfacens_i_component_registrar_abab8b737597cfd4a27c310f01a7836df}} 
+nsresult {\bfseries Contract\+I\+D\+To\+C\+ID} (const char $\ast$a\+Contract\+ID, \hyperlink{struct___i_i_d}{ns\+C\+ID} $\ast$$\ast$\+\_\+retval)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

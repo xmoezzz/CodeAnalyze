@@ -1,0 +1,276 @@
+\hypertarget{pack_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/pack.c 文件参考}
+\label{pack_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/pack.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/pack.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}pack\+\_\+tmp.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pack_8c_a23a851b89e33314daf986f8835067004}\label{pack_8c_a23a851b89e33314daf986f8835067004}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+R\+C\+\_\+\+T\+Y\+PE}~G\+Luint
+\item 
+\mbox{\Hypertarget{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}\label{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+S\+T\+\_\+\+T\+Y\+PE}~G\+Luint
+\item 
+\mbox{\Hypertarget{pack_8c_aa16292c4778fec5b503694e92b4835af}\label{pack_8c_aa16292c4778fec5b503694e92b4835af}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+R\+C\+\_\+\+C\+O\+N\+V\+E\+RT}(x)~(x)
+\item 
+\mbox{\Hypertarget{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}\label{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+N\+\_\+\+N\+A\+ME}~pack\+\_\+uint\+\_\+from\+\_\+uint\+\_\+rgba
+\item 
+\mbox{\Hypertarget{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}\label{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+S\+T\+\_\+\+T\+Y\+PE}~G\+Lushort
+\item 
+\mbox{\Hypertarget{pack_8c_aa16292c4778fec5b503694e92b4835af}\label{pack_8c_aa16292c4778fec5b503694e92b4835af}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+R\+C\+\_\+\+C\+O\+N\+V\+E\+RT}(x)~\hyperlink{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{M\+I\+N2}(x, 0xffff)
+\item 
+\mbox{\Hypertarget{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}\label{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+N\+\_\+\+N\+A\+ME}~pack\+\_\+ushort\+\_\+from\+\_\+uint\+\_\+rgba
+\item 
+\mbox{\Hypertarget{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}\label{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+S\+T\+\_\+\+T\+Y\+PE}~G\+Lshort
+\item 
+\mbox{\Hypertarget{pack_8c_aa16292c4778fec5b503694e92b4835af}\label{pack_8c_aa16292c4778fec5b503694e92b4835af}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+R\+C\+\_\+\+C\+O\+N\+V\+E\+RT}(x)~\hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}((int)x, -\/32768, 32767)
+\item 
+\mbox{\Hypertarget{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}\label{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+N\+\_\+\+N\+A\+ME}~pack\+\_\+short\+\_\+from\+\_\+uint\+\_\+rgba
+\item 
+\mbox{\Hypertarget{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}\label{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+S\+T\+\_\+\+T\+Y\+PE}~G\+Lubyte
+\item 
+\mbox{\Hypertarget{pack_8c_aa16292c4778fec5b503694e92b4835af}\label{pack_8c_aa16292c4778fec5b503694e92b4835af}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+R\+C\+\_\+\+C\+O\+N\+V\+E\+RT}(x)~\hyperlink{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{M\+I\+N2}(x, 0xff)
+\item 
+\mbox{\Hypertarget{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}\label{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+N\+\_\+\+N\+A\+ME}~pack\+\_\+ubyte\+\_\+from\+\_\+uint\+\_\+rgba
+\item 
+\mbox{\Hypertarget{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}\label{pack_8c_ada5ca21164a9b5ccee1cba063354e4ac}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+S\+T\+\_\+\+T\+Y\+PE}~G\+Lbyte
+\item 
+\mbox{\Hypertarget{pack_8c_aa16292c4778fec5b503694e92b4835af}\label{pack_8c_aa16292c4778fec5b503694e92b4835af}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+R\+C\+\_\+\+C\+O\+N\+V\+E\+RT}(x)~\hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}((int)x, -\/128, 127)
+\item 
+\mbox{\Hypertarget{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}\label{pack_8c_a6d87a329fc97abaef56c38e987bc0ea7}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+N\+\_\+\+N\+A\+ME}~pack\+\_\+byte\+\_\+from\+\_\+uint\+\_\+rgba
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries S\+W\+A\+P2\+B\+Y\+TE}(V\+A\+L\+UE)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries S\+W\+A\+P4\+B\+Y\+TE}(V\+A\+L\+UE)
+\item 
+\mbox{\Hypertarget{pack_8c_a148e220d3c7f5db3bcee1f33da5c0f81}\label{pack_8c_a148e220d3c7f5db3bcee1f33da5c0f81}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+R\+O\+C\+E\+SS}(S\+R\+C\+\_\+\+I\+N\+D\+EX,  D\+S\+T\+\_\+\+I\+N\+D\+EX,  D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+LT,  D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+NT,  T\+Y\+PE,  C\+O\+N\+V\+E\+R\+S\+I\+ON)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries P\+R\+O\+C\+E\+SS}(S\+R\+C\+\_\+\+I\+N\+D\+EX,  D\+S\+T\+\_\+\+I\+N\+D\+EX,  D\+E\+F\+A\+U\+LT,  T\+Y\+PE,  C\+O\+N\+V\+E\+R\+S\+I\+ON)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+P\+T\+H\+\_\+\+V\+A\+L\+U\+ES}(G\+L\+T\+Y\+PE,  G\+L\+T\+Y\+P\+E2\+F\+L\+O\+AT)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pack_8c_a34f48e6caa4e4bc4e46c2e4d73b87fef}\label{pack_8c_a34f48e6caa4e4bc4e46c2e4d73b87fef}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+unpack\+\_\+polygon\+\_\+stipple} (const G\+Lubyte $\ast$pattern, G\+Luint dest\mbox{[}32\mbox{]}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpacking)
+\item 
+\mbox{\Hypertarget{pack_8c_ac7fa885d714464a7945039ec68154729}\label{pack_8c_ac7fa885d714464a7945039ec68154729}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+pack\+\_\+polygon\+\_\+stipple} (const G\+Luint pattern\mbox{[}32\mbox{]}, G\+Lubyte $\ast$dest, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)
+\item 
+\mbox{\Hypertarget{pack_8c_a0f02b90b525bef798b9fd4e99878f57a}\label{pack_8c_a0f02b90b525bef798b9fd4e99878f57a}} 
+\hyperlink{interfacevoid}{G\+Lvoid} $\ast$ {\bfseries \+\_\+mesa\+\_\+unpack\+\_\+bitmap} (G\+Lint width, G\+Lint height, const G\+Lubyte $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)
+\item 
+\mbox{\Hypertarget{pack_8c_aa0009656790f2c19ae72ced46bf6d62b}\label{pack_8c_aa0009656790f2c19ae72ced46bf6d62b}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+pack\+\_\+bitmap} (G\+Lint width, G\+Lint height, const G\+Lubyte $\ast$\hyperlink{structsource}{source}, G\+Lubyte $\ast$dest, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)
+\item 
+\mbox{\Hypertarget{pack_8c_a2ceffca95ade08e87079dfe1a83515b3}\label{pack_8c_a2ceffca95ade08e87079dfe1a83515b3}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+int} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, G\+Luint rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]}, \hyperlink{interfacevoid}{G\+Lenum} dst\+Format, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dst\+Addr)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pack_8c_a32815d4c8d83c314c1fa464308dd642b}{\+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, G\+Lfloat rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]}, \hyperlink{interfacevoid}{G\+Lenum} dst\+Format, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dst\+Addr, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$dst\+Packing, G\+Lbitfield transfer\+Ops)
+\item 
+\mbox{\Hypertarget{pack_8c_a3f9b88f3c4a94633c1053c06479dfa7c}\label{pack_8c_a3f9b88f3c4a94633c1053c06479dfa7c}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+ubyte} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Format, G\+Lubyte dest\mbox{[}$\,$\mbox{]}, \hyperlink{interfacevoid}{G\+Lenum} src\+Format, \hyperlink{interfacevoid}{G\+Lenum} src\+Type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$src\+Packing, G\+Lbitfield transfer\+Ops)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pack_8c_a010abb27a740ff01c3b04891286d6cd1}{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+float} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Format, G\+Lfloat dest\mbox{[}$\,$\mbox{]}, \hyperlink{interfacevoid}{G\+Lenum} src\+Format, \hyperlink{interfacevoid}{G\+Lenum} src\+Type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$src\+Packing, G\+Lbitfield transfer\+Ops)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pack_8c_a4262157421f110cf5c91c5a0c69f2199}{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+uint} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Format, G\+Luint $\ast$dest, \hyperlink{interfacevoid}{G\+Lenum} src\+Format, \hyperlink{interfacevoid}{G\+Lenum} src\+Type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$src\+Packing)
+\item 
+\mbox{\Hypertarget{pack_8c_abe8a7ad55d6f35be003742a7bd721a5d}\label{pack_8c_abe8a7ad55d6f35be003742a7bd721a5d}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+unpack\+\_\+index\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest, \hyperlink{interfacevoid}{G\+Lenum} src\+Type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$src\+Packing, G\+Lbitfield transfer\+Ops)
+\item 
+\mbox{\Hypertarget{pack_8c_a3dfb8d9c9fdd7c6301dabb22266c9f75}\label{pack_8c_a3dfb8d9c9fdd7c6301dabb22266c9f75}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+pack\+\_\+index\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest, const G\+Luint $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$dst\+Packing, G\+Lbitfield transfer\+Ops)
+\item 
+\mbox{\Hypertarget{pack_8c_a33dd779e0e4d2bdc0b719d4cdc6af9ed}\label{pack_8c_a33dd779e0e4d2bdc0b719d4cdc6af9ed}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+unpack\+\_\+stencil\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest, \hyperlink{interfacevoid}{G\+Lenum} src\+Type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$src\+Packing, G\+Lbitfield transfer\+Ops)
+\item 
+\mbox{\Hypertarget{pack_8c_a2692f147ac6ecb686ce956f303452434}\label{pack_8c_a2692f147ac6ecb686ce956f303452434}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+pack\+\_\+stencil\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest, const G\+Lubyte $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$dst\+Packing)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pack_8c_a6641f487e36e3ea391fd06e1a1fc09a2}{\+\_\+mesa\+\_\+unpack\+\_\+depth\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest, G\+Luint depth\+Max, \hyperlink{interfacevoid}{G\+Lenum} src\+Type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$\hyperlink{structsource}{source}, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$src\+Packing)
+\item 
+\mbox{\Hypertarget{pack_8c_a8458796fb3a05bf89ed789b799d050e0}\label{pack_8c_a8458796fb3a05bf89ed789b799d050e0}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+pack\+\_\+depth\+\_\+span} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint n, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest, \hyperlink{interfacevoid}{G\+Lenum} dst\+Type, const G\+Lfloat $\ast$depth\+Span, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$dst\+Packing)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{pack_8c_a407beb79396c5d9eff558da70aba0150}{\+\_\+mesa\+\_\+unpack\+\_\+image} (G\+Luint dimensions, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pack_8c_a448517355ff198b1eebea445ec2ab5f2}{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+float} (G\+Luint n, G\+Lfloat rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]}, \hyperlink{interfacevoid}{G\+Lenum} base\+Format)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pack_8c_a6a9ca372e8760d5859a43077fa9e5c16}{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+uint} (G\+Luint n, G\+Luint rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]}, \hyperlink{interfacevoid}{G\+Lenum} base\+Format)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{class_image}{Image} and pixel span packing and unpacking. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{pack_8c_aab85c353c83323e4fc48b9bfeef4c893}\label{pack_8c_aab85c353c83323e4fc48b9bfeef4c893}} 
+\index{pack.\+c@{pack.\+c}!D\+E\+P\+T\+H\+\_\+\+V\+A\+L\+U\+ES@{D\+E\+P\+T\+H\+\_\+\+V\+A\+L\+U\+ES}}
+\index{D\+E\+P\+T\+H\+\_\+\+V\+A\+L\+U\+ES@{D\+E\+P\+T\+H\+\_\+\+V\+A\+L\+U\+ES}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{D\+E\+P\+T\+H\+\_\+\+V\+A\+L\+U\+ES}{DEPTH\_VALUES}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+P\+T\+H\+\_\+\+V\+A\+L\+U\+ES(\begin{DoxyParamCaption}\item[{}]{G\+L\+T\+Y\+PE,  }\item[{}]{G\+L\+T\+Y\+P\+E2\+F\+L\+O\+AT }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                                \(\backslash\)
+        GLuint i;                                                       \(\backslash\)
+        const GLTYPE *src = (\textcolor{keyword}{const} GLTYPE *)\hyperlink{structsource}{source};                     \(\backslash\)
+        for (i = 0; i < n; i++) \{                                       \(\backslash\)
+            GLTYPE \hyperlink{unionvalue}{value} = src[i];                                      \(\backslash\)
+            if (srcPacking->SwapBytes) \{                                \(\backslash\)
+                if (\textcolor{keyword}{sizeof}(GLTYPE) == 2) \{                              \(\backslash\)
+                    SWAP2BYTE(value);                                   \(\backslash\)
+                \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{keyword}{sizeof}(GLTYPE) == 4) \{                       \(\backslash\)
+                    SWAP4BYTE(value);                                   \(\backslash\)
+                \}                                                       \(\backslash\)
+            \}                                                           \(\backslash\)
+            depthValues[i] = GLTYPE2FLOAT(value);                       \(\backslash\)
+        \}                                                               \(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{pack_8c_aa5d606ba61e82caa9bee2fd9ec2630d0}\label{pack_8c_aa5d606ba61e82caa9bee2fd9ec2630d0}} 
+\index{pack.\+c@{pack.\+c}!P\+R\+O\+C\+E\+SS@{P\+R\+O\+C\+E\+SS}}
+\index{P\+R\+O\+C\+E\+SS@{P\+R\+O\+C\+E\+SS}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{P\+R\+O\+C\+E\+SS}{PROCESS}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} P\+R\+O\+C\+E\+SS(\begin{DoxyParamCaption}\item[{}]{S\+R\+C\+\_\+\+I\+N\+D\+EX,  }\item[{}]{D\+S\+T\+\_\+\+I\+N\+D\+EX,  }\item[{}]{D\+E\+F\+A\+U\+LT,  }\item[{}]{T\+Y\+PE,  }\item[{}]{C\+O\+N\+V\+E\+R\+S\+I\+ON }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} ((SRC\_INDEX) < 0) \{                      \(\backslash\)
+      GLuint i;                             \(\backslash\)
+      for (i = 0; i < n; i++) \{                     \(\backslash\)
+         rgba[i][DST\_INDEX] = DEFAULT;                  \(\backslash\)
+      \}                                 \(\backslash\)
+   \}                                    \(\backslash\)
+   else \textcolor{keywordflow}{if} (swapBytes) \{                        \(\backslash\)
+      const TYPE *s = (\textcolor{keyword}{const} TYPE *) src;               \(\backslash\)
+      GLuint i;                             \(\backslash\)
+      for (i = 0; i < n; i++) \{                     \(\backslash\)
+         TYPE \hyperlink{unionvalue}{value} = s[SRC\_INDEX];                    \(\backslash\)
+         if (\textcolor{keyword}{sizeof}(TYPE) == 2) \{                   \(\backslash\)
+            SWAP2BYTE(value);                       \(\backslash\)
+         \}                              \(\backslash\)
+         else \textcolor{keywordflow}{if} (\textcolor{keyword}{sizeof}(TYPE) == 4) \{                  \(\backslash\)
+            SWAP4BYTE(value);                       \(\backslash\)
+         \}                              \(\backslash\)
+         rgba[i][DST\_INDEX] = CONVERSION(value);                        \(\backslash\)
+         s += stride;                           \(\backslash\)
+      \}                                 \(\backslash\)
+   \}                                    \(\backslash\)
+   else \{                               \(\backslash\)
+      const TYPE *s = (\textcolor{keyword}{const} TYPE *) src;               \(\backslash\)
+      GLuint i;                             \(\backslash\)
+      for (i = 0; i < n; i++) \{                     \(\backslash\)
+         rgba[i][DST\_INDEX] = CONVERSION(s[SRC\_INDEX]);         \(\backslash\)
+         s += stride;                           \(\backslash\)
+      \}                                 \(\backslash\)
+   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{pack_8c_ac59dae757bca38ac2664aae2e0fab71a}\label{pack_8c_ac59dae757bca38ac2664aae2e0fab71a}} 
+\index{pack.\+c@{pack.\+c}!S\+W\+A\+P2\+B\+Y\+TE@{S\+W\+A\+P2\+B\+Y\+TE}}
+\index{S\+W\+A\+P2\+B\+Y\+TE@{S\+W\+A\+P2\+B\+Y\+TE}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{S\+W\+A\+P2\+B\+Y\+TE}{SWAP2BYTE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+W\+A\+P2\+B\+Y\+TE(\begin{DoxyParamCaption}\item[{}]{V\+A\+L\+UE }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+      GLubyte *bytes = (GLubyte *) &(VALUE);    \(\backslash\)
+      GLubyte tmp = bytes[0];           \(\backslash\)
+      bytes[0] = bytes[1];          \(\backslash\)
+      bytes[1] = tmp;               \(\backslash\)
+   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{pack_8c_aa6395b884271145aa57ff3939ff5620a}\label{pack_8c_aa6395b884271145aa57ff3939ff5620a}} 
+\index{pack.\+c@{pack.\+c}!S\+W\+A\+P4\+B\+Y\+TE@{S\+W\+A\+P4\+B\+Y\+TE}}
+\index{S\+W\+A\+P4\+B\+Y\+TE@{S\+W\+A\+P4\+B\+Y\+TE}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{S\+W\+A\+P4\+B\+Y\+TE}{SWAP4BYTE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+W\+A\+P4\+B\+Y\+TE(\begin{DoxyParamCaption}\item[{}]{V\+A\+L\+UE }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\{                       \(\backslash\)
+      GLubyte *bytes = (GLubyte *) &(VALUE);    \(\backslash\)
+      GLubyte tmp = bytes[0];           \(\backslash\)
+      bytes[0] = bytes[3];          \(\backslash\)
+      bytes[3] = tmp;               \(\backslash\)
+      tmp = bytes[1];               \(\backslash\)
+      bytes[1] = bytes[2];          \(\backslash\)
+      bytes[2] = tmp;               \(\backslash\)
+   \}
+\end{DoxyCode}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{pack_8c_a32815d4c8d83c314c1fa464308dd642b}\label{pack_8c_a32815d4c8d83c314c1fa464308dd642b}} 
+\index{pack.\+c@{pack.\+c}!\+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float@{\+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float}}
+\index{\+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float@{\+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float()}{\_mesa\_pack\_rgba\_span\_float()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{n,  }\item[{G\+Lfloat}]{rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]},  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{dst\+Format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{dst\+Type,  }\item[{\hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{dst\+Addr,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$}]{dst\+Packing,  }\item[{G\+Lbitfield}]{transfer\+Ops }\end{DoxyParamCaption})}
+
+Used to pack an array \mbox{[}\mbox{]}\mbox{[}4\mbox{]} of R\+G\+BA float colors as specified by the dst\+Format, dst\+Type and dst\+Packing. Used by gl\+Read\+Pixels. Historically, the R\+G\+BA values were in \mbox{[}0,1\mbox{]} and rescaled to fit into G\+Lubytes, etc. But with new integer formats, the R\+G\+BA values may have any value and we don\textquotesingle{}t always rescale when converting to integers.
+
+Note\+: the rgba values will be modified by this function when any pixel transfer ops are enabled. \mbox{\Hypertarget{pack_8c_a448517355ff198b1eebea445ec2ab5f2}\label{pack_8c_a448517355ff198b1eebea445ec2ab5f2}} 
+\index{pack.\+c@{pack.\+c}!\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+float@{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+float}}
+\index{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+float@{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+float}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+float()}{\_mesa\_rebase\_rgba\_float()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+float (\begin{DoxyParamCaption}\item[{G\+Luint}]{n,  }\item[{G\+Lfloat}]{rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]},  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{base\+Format }\end{DoxyParamCaption})}
+
+If we unpack colors from a luminance surface, we\textquotesingle{}ll get pixel colors such as (l, l, l, a). When we call \+\_\+mesa\+\_\+pack\+\_\+rgba\+\_\+span\+\_\+float(format=G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE), that function will compute L=R+\+G+B before packing. The net effect is we\textquotesingle{}ll accidentally store luminance values = 3$\ast$l. \hyperlink{namespace_this}{This} function compensates for that by converting (aka rebasing) (l,l,l,a) to be (l,0,0,a). \hyperlink{class_it}{It}\textquotesingle{}s a similar story for other formats such as L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA, A\+L\+P\+HA and I\+N\+T\+E\+N\+S\+I\+TY.
+
+Finally, we also need to do this when the actual surface format does not match the logical surface format. For example, suppose the user requests a G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE texture but the driver stores it as R\+G\+BA. Again, we\textquotesingle{}ll get pixel values like (l,l,l,a). \mbox{\Hypertarget{pack_8c_a6a9ca372e8760d5859a43077fa9e5c16}\label{pack_8c_a6a9ca372e8760d5859a43077fa9e5c16}} 
+\index{pack.\+c@{pack.\+c}!\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+uint@{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+uint}}
+\index{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+uint@{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+uint}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+uint()}{\_mesa\_rebase\_rgba\_uint()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+rebase\+\_\+rgba\+\_\+uint (\begin{DoxyParamCaption}\item[{G\+Luint}]{n,  }\item[{G\+Luint}]{rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]},  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{base\+Format }\end{DoxyParamCaption})}
+
+As above, but G\+Luint components. \mbox{\Hypertarget{pack_8c_a010abb27a740ff01c3b04891286d6cd1}\label{pack_8c_a010abb27a740ff01c3b04891286d6cd1}} 
+\index{pack.\+c@{pack.\+c}!\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+float@{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+float}}
+\index{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+float@{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+float}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+float()}{\_mesa\_unpack\_color\_span\_float()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+float (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{n,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{dst\+Format,  }\item[{G\+Lfloat}]{dest\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{src\+Format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{src\+Type,  }\item[{const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{source,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$}]{src\+Packing,  }\item[{G\+Lbitfield}]{transfer\+Ops }\end{DoxyParamCaption})}
+
+Same as \+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+ubyte(), but return G\+Lfloat data instead of G\+Lubyte. \mbox{\Hypertarget{pack_8c_a4262157421f110cf5c91c5a0c69f2199}\label{pack_8c_a4262157421f110cf5c91c5a0c69f2199}} 
+\index{pack.\+c@{pack.\+c}!\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+uint@{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+uint}}
+\index{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+uint@{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+uint}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+uint()}{\_mesa\_unpack\_color\_span\_uint()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+uint (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{n,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{dst\+Format,  }\item[{G\+Luint $\ast$}]{dest,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{src\+Format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{src\+Type,  }\item[{const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{source,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$}]{src\+Packing }\end{DoxyParamCaption})}
+
+Same as \+\_\+mesa\+\_\+unpack\+\_\+color\+\_\+span\+\_\+ubyte(), but return G\+Luint data instead of G\+Lubyte. No pixel transfer ops are applied. \mbox{\Hypertarget{pack_8c_a6641f487e36e3ea391fd06e1a1fc09a2}\label{pack_8c_a6641f487e36e3ea391fd06e1a1fc09a2}} 
+\index{pack.\+c@{pack.\+c}!\+\_\+mesa\+\_\+unpack\+\_\+depth\+\_\+span@{\+\_\+mesa\+\_\+unpack\+\_\+depth\+\_\+span}}
+\index{\+\_\+mesa\+\_\+unpack\+\_\+depth\+\_\+span@{\+\_\+mesa\+\_\+unpack\+\_\+depth\+\_\+span}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+unpack\+\_\+depth\+\_\+span()}{\_mesa\_unpack\_depth\_span()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+unpack\+\_\+depth\+\_\+span (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{n,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{dst\+Type,  }\item[{\hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{dest,  }\item[{G\+Luint}]{depth\+Max,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{src\+Type,  }\item[{const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{source,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$}]{src\+Packing }\end{DoxyParamCaption})}
+
+Unpack a row of depth/z values from memory, returning G\+Lushort, G\+Luint or G\+Lfloat values. The gl\+Pixel\+Transfer (scale/bias) params will be applied.
+
+
+\begin{DoxyParams}{参数}
+{\em dst\+Type} & one of G\+L\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+S\+H\+O\+RT, G\+L\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+I\+NT, G\+L\+\_\+\+F\+L\+O\+AT \\
+\hline
+{\em depth\+Max} & max value for returned G\+Lushort or G\+Luint values (ignored for G\+Lfloat). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pack_8c_a407beb79396c5d9eff558da70aba0150}\label{pack_8c_a407beb79396c5d9eff558da70aba0150}} 
+\index{pack.\+c@{pack.\+c}!\+\_\+mesa\+\_\+unpack\+\_\+image@{\+\_\+mesa\+\_\+unpack\+\_\+image}}
+\index{\+\_\+mesa\+\_\+unpack\+\_\+image@{\+\_\+mesa\+\_\+unpack\+\_\+image}!pack.\+c@{pack.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+unpack\+\_\+image()}{\_mesa\_unpack\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ \+\_\+mesa\+\_\+unpack\+\_\+image (\begin{DoxyParamCaption}\item[{G\+Luint}]{dimensions,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{G\+Lsizei}]{depth,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{type,  }\item[{const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$}]{pixels,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$}]{unpack }\end{DoxyParamCaption})}
+
+Unpack image data. Apply byte swapping, byte flipping (bitmap). Return all image data in a contiguous block. \hyperlink{namespace_this}{This} is used when we compile gl\+Draw\+Pixels, gl\+Tex\+Image, etc into a display list. We need a copy of the data in a standard format. 

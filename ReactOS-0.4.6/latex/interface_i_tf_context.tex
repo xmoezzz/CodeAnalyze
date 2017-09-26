@@ -1,0 +1,122 @@
+\hypertarget{interface_i_tf_context}{}\section{I\+Tf\+Context接口 参考}
+\label{interface_i_tf_context}\index{I\+Tf\+Context@{I\+Tf\+Context}}
+类 I\+Tf\+Context 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_tf_context}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_tf_context_1_1_t_f___s_e_l_e_c_t_i_o_n}{T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}
+\item 
+struct \hyperlink{struct_i_tf_context_1_1_t_f___s_e_l_e_c_t_i_o_n_s_t_y_l_e}{T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+S\+T\+Y\+LE}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_ac34987581c6929b11d837385617e318a}\label{interface_i_tf_context_ac34987581c6929b11d837385617e318a}} 
+enum {\bfseries Tf\+Active\+Sel\+End} \{ {\bfseries T\+F\+\_\+\+A\+E\+\_\+\+N\+O\+NE}, 
+{\bfseries T\+F\+\_\+\+A\+E\+\_\+\+S\+T\+A\+RT}, 
+{\bfseries T\+F\+\_\+\+A\+E\+\_\+\+E\+ND}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_ada9c1201a2353de3afc32559b1d5d7ef}\label{interface_i_tf_context_ada9c1201a2353de3afc32559b1d5d7ef}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_tf_context_1_1_t_f___s_e_l_e_c_t_i_o_n_s_t_y_l_e}{I\+Tf\+Context\+::\+T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+S\+T\+Y\+LE} {\bfseries T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+S\+T\+Y\+LE}
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a3c613f8d54f3954efd30ef78be1ce96f}\label{interface_i_tf_context_a3c613f8d54f3954efd30ef78be1ce96f}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_tf_context_1_1_t_f___s_e_l_e_c_t_i_o_n}{I\+Tf\+Context\+::\+T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON} {\bfseries T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_ae57e25bae3ce27b8696d0dea86641303}\label{interface_i_tf_context_ae57e25bae3ce27b8696d0dea86641303}} 
+typedef \hyperlink{struct_t_s___s_t_a_t_u_s}{T\+S\+\_\+\+S\+T\+A\+T\+US} {\bfseries T\+F\+\_\+\+S\+T\+A\+T\+US}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a1088313ab33e4de3be49cae622574dd9}\label{interface_i_tf_context_a1088313ab33e4de3be49cae622574dd9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request\+Edit\+Session} (\mbox{[}in\mbox{]} Tf\+Client\+Id tid, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_edit_session}{I\+Tf\+Edit\+Session} $\ast$pes, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}out\mbox{]} H\+R\+E\+S\+U\+LT $\ast$phr\+Session)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a047ad4e99969c962779a6235f362e0a8}\label{interface_i_tf_context_a047ad4e99969c962779a6235f362e0a8}} 
+H\+R\+E\+S\+U\+LT {\bfseries In\+Write\+Session} (\mbox{[}in\mbox{]} Tf\+Client\+Id tid, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Write\+Session)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a994ce529bcb1e68ac0e81646a8a75b90}\label{interface_i_tf_context_a994ce529bcb1e68ac0e81646a8a75b90}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Selection} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Index, \mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Count, \mbox{[}out, size\+\_\+is(ul\+Count), length\+\_\+is($\ast$pc\+Fetched)\mbox{]} \hyperlink{struct_i_tf_context_1_1_t_f___s_e_l_e_c_t_i_o_n}{T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON} $\ast$p\+Selection, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pc\+Fetched)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a599bb46f09e13010894231f50e1702f4}\label{interface_i_tf_context_a599bb46f09e13010894231f50e1702f4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Selection} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Count, \mbox{[}in, size\+\_\+is(ul\+Count)\mbox{]} const \hyperlink{struct_i_tf_context_1_1_t_f___s_e_l_e_c_t_i_o_n}{T\+F\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON} $\ast$p\+Selection)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a3230d8a2beb31790e89c975e04cd101b}\label{interface_i_tf_context_a3230d8a2beb31790e89c975e04cd101b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Start} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}out\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$$\ast$pp\+Start)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a3711dcbf5f2b2af5fbafaef6e2a6e915}\label{interface_i_tf_context_a3711dcbf5f2b2af5fbafaef6e2a6e915}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+End} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}out\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$$\ast$pp\+End)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a8e8ecca9754c9843c0d8a3b2e31091aa}\label{interface_i_tf_context_a8e8ecca9754c9843c0d8a3b2e31091aa}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Active\+View} (\mbox{[}out\mbox{]} \hyperlink{interface_i_tf_context_view}{I\+Tf\+Context\+View} $\ast$$\ast$pp\+View)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a6be842f6ff034a42130b23877e383764}\label{interface_i_tf_context_a6be842f6ff034a42130b23877e383764}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Views} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_tf_context_views}{I\+Enum\+Tf\+Context\+Views} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a6e90194c707c610ebb6ff05e3d7d0d1a}\label{interface_i_tf_context_a6e90194c707c610ebb6ff05e3d7d0d1a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Status} (\mbox{[}out\mbox{]} \hyperlink{struct_t_s___s_t_a_t_u_s}{T\+F\+\_\+\+S\+T\+A\+T\+US} $\ast$pdcs)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a1821d8b3b3517ec2ef29eab9f0037f4e}\label{interface_i_tf_context_a1821d8b3b3517ec2ef29eab9f0037f4e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Property} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Prop, \mbox{[}out\mbox{]} \hyperlink{interface_i_tf_property}{I\+Tf\+Property} $\ast$$\ast$pp\+Prop)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a16b72f67d748db1cad0ae4f023ed31eb}\label{interface_i_tf_context_a16b72f67d748db1cad0ae4f023ed31eb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+App\+Property} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Prop, \mbox{[}out\mbox{]} \hyperlink{interface_i_tf_read_only_property}{I\+Tf\+Read\+Only\+Property} $\ast$$\ast$pp\+Prop)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a44f67b2bec505c4cd995e666b445f3d9}\label{interface_i_tf_context_a44f67b2bec505c4cd995e666b445f3d9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Track\+Properties} (\mbox{[}in, size\+\_\+is(c\+Prop)\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$$\ast$prg\+Prop, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Prop, \mbox{[}in, size\+\_\+is(c\+App\+Prop)\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$$\ast$prg\+App\+Prop, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+App\+Prop, \mbox{[}out\mbox{]} \hyperlink{interface_i_tf_read_only_property}{I\+Tf\+Read\+Only\+Property} $\ast$$\ast$pp\+Property)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a99a3872d52210ce70c68c367db30c5b3}\label{interface_i_tf_context_a99a3872d52210ce70c68c367db30c5b3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Properties} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_tf_properties}{I\+Enum\+Tf\+Properties} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_ac66f8fe51fb6158c84bbe40ccfcf8470}\label{interface_i_tf_context_ac66f8fe51fb6158c84bbe40ccfcf8470}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Document\+Mgr} (\mbox{[}out\mbox{]} \hyperlink{interface_i_tf_document_mgr}{I\+Tf\+Document\+Mgr} $\ast$$\ast$pp\+Dm)
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a892bafcc66cf787af79e926be20f0918}\label{interface_i_tf_context_a892bafcc66cf787af79e926be20f0918}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Range\+Backup} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$p\+Range, \mbox{[}out\mbox{]} \hyperlink{interface_i_tf_range_backup}{I\+Tf\+Range\+Backup} $\ast$$\ast$pp\+Backup)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a7178715c930e81abd8a0c8d912a2aca9}\label{interface_i_tf_context_a7178715c930e81abd8a0c8d912a2aca9}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+E\+S\+\_\+\+A\+S\+Y\+N\+C\+D\+O\+N\+T\+C\+A\+RE} = 0x0
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_aff90d1e65d055cbbb54582f0ed7a4e48}\label{interface_i_tf_context_aff90d1e65d055cbbb54582f0ed7a4e48}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+E\+S\+\_\+\+S\+Y\+NC} = 0x1
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a87823bfbd5a94895506781040bc9e13b}\label{interface_i_tf_context_a87823bfbd5a94895506781040bc9e13b}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+E\+S\+\_\+\+R\+E\+AD} = 0x2
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_aa92c574a4495c920e915ace5c5cde9dc}\label{interface_i_tf_context_aa92c574a4495c920e915ace5c5cde9dc}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+E\+S\+\_\+\+R\+E\+A\+D\+W\+R\+I\+TE} = 0x6
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a4542147840203bd967a187e2fd1c1857}\label{interface_i_tf_context_a4542147840203bd967a187e2fd1c1857}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+E\+S\+\_\+\+A\+S\+Y\+NC} = 0x8
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a313cff53cf7955891c3b188a3553d33f}\label{interface_i_tf_context_a313cff53cf7955891c3b188a3553d33f}} 
+const U\+L\+O\+NG {\bfseries T\+F\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON} = T\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a365f91d0250544ab4d626c12a46d1598}\label{interface_i_tf_context_a365f91d0250544ab4d626c12a46d1598}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+S\+D\+\_\+\+R\+E\+A\+D\+O\+N\+LY} = T\+S\+\_\+\+S\+D\+\_\+\+R\+E\+A\+D\+O\+N\+LY
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a3adee79388789d5b05161b7aa583b442}\label{interface_i_tf_context_a3adee79388789d5b05161b7aa583b442}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+S\+D\+\_\+\+L\+O\+A\+D\+I\+NG} = T\+S\+\_\+\+S\+D\+\_\+\+L\+O\+A\+D\+I\+NG
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a024e6874d2b51af350ed70763ce86b1d}\label{interface_i_tf_context_a024e6874d2b51af350ed70763ce86b1d}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+S\+S\+\_\+\+D\+I\+S\+J\+O\+I\+N\+T\+S\+EL} = T\+S\+\_\+\+S\+S\+\_\+\+D\+I\+S\+J\+O\+I\+N\+T\+S\+EL
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_a509e8f334c818d9276396a4b6d479a06}\label{interface_i_tf_context_a509e8f334c818d9276396a4b6d479a06}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+S\+S\+\_\+\+R\+E\+G\+I\+O\+NS} = T\+S\+\_\+\+S\+S\+\_\+\+R\+E\+G\+I\+O\+NS
+\item 
+\mbox{\Hypertarget{interface_i_tf_context_ac6ba4383f3f3c70bf779e5c3c1067ac0}\label{interface_i_tf_context_ac6ba4383f3f3c70bf779e5c3c1067ac0}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+S\+S\+\_\+\+T\+R\+A\+N\+S\+I\+T\+O\+RY} = T\+S\+\_\+\+S\+S\+\_\+\+T\+R\+A\+N\+S\+I\+T\+O\+RY
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/msctf.\+idl\end{DoxyCompactItemize}

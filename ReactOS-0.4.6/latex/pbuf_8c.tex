@@ -1,0 +1,433 @@
+\hypertarget{pbuf_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/pbuf.c 文件参考}
+\label{pbuf_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/pbuf.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/pbuf.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/stats.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/mem.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/memp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/pbuf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/sys.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}arch/perf.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pbuf_8c_a8357a994e45ff94c9494aa55b6c3ecb3}\label{pbuf_8c_a8357a994e45ff94c9494aa55b6c3ecb3}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+I\+Z\+E\+O\+F\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+P\+B\+UF}~L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+\_\+\+S\+I\+ZE(sizeof(\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf}))
+\item 
+\mbox{\Hypertarget{pbuf_8c_a3dad81a8286ee8e9a7c70a74f9f4bb0f}\label{pbuf_8c_a3dad81a8286ee8e9a7c70a74f9f4bb0f}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+B\+U\+F\+\_\+\+P\+O\+O\+L\+\_\+\+B\+U\+F\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+G\+N\+ED}~L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+\_\+\+S\+I\+ZE(\hyperlink{opt_8h_ae61f4491d56e805e79b79eb5d35a00e5}{P\+B\+U\+F\+\_\+\+P\+O\+O\+L\+\_\+\+B\+U\+F\+S\+I\+ZE})
+\item 
+\mbox{\Hypertarget{pbuf_8c_aed70c61e971683736c569a1a99b76569}\label{pbuf_8c_aed70c61e971683736c569a1a99b76569}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+B\+U\+F\+\_\+\+P\+O\+O\+L\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY}()
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$ \hyperlink{pbuf_8c_acfcb0a2af918658ba0afe36499c65f47}{pbuf\+\_\+alloc} (pbuf\+\_\+layer layer, u16\+\_\+t length, pbuf\+\_\+type type)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pbuf_8c_a50abfe830a33a1a47a562febee66015d}{pbuf\+\_\+realloc} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, u16\+\_\+t new\+\_\+len)
+\item 
+u8\+\_\+t \hyperlink{pbuf_8c_a0f81deff4a0e6e8e0ff161a7b9871449}{pbuf\+\_\+header} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, s16\+\_\+t header\+\_\+size\+\_\+increment)
+\item 
+u8\+\_\+t \hyperlink{pbuf_8c_ab0dd696fb4b6bc65e548944584f1738b}{pbuf\+\_\+free} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p)
+\item 
+u8\+\_\+t \hyperlink{pbuf_8c_a949a13a7cfdf9241c9e7b859af1bd15c}{pbuf\+\_\+clen} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pbuf_8c_a77f6bbd69e45e542014d9c547c7da74e}{pbuf\+\_\+ref} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pbuf_8c_a82429084fe29015509c9b4a072707cd4}{pbuf\+\_\+cat} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$h, \hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$t)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{pbuf_8c_a831c9a72bda1d3bd4c7b96f5a0e3b891}{pbuf\+\_\+chain} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$h, \hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$t)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$ \hyperlink{pbuf_8c_abf3d29c4f43986b4cb5eb314d5b9729d}{pbuf\+\_\+dechain} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p)
+\item 
+err\+\_\+t \hyperlink{pbuf_8c_aee9cfb728d91302f068b5c6bd581e3e5}{pbuf\+\_\+copy} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p\+\_\+to, \hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p\+\_\+from)
+\item 
+u16\+\_\+t \hyperlink{pbuf_8c_a9efc1f3148d6c0236e40b41242bda4df}{pbuf\+\_\+copy\+\_\+partial} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$buf, \hyperlink{interfacevoid}{void} $\ast$dataptr, u16\+\_\+t len, u16\+\_\+t offset)
+\item 
+err\+\_\+t \hyperlink{pbuf_8c_ad1e31e370271335b197272af2724ca85}{pbuf\+\_\+take} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$buf, const \hyperlink{interfacevoid}{void} $\ast$dataptr, u16\+\_\+t len)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$ \hyperlink{pbuf_8c_a54ac7b116c6f53c704cbf74f35a8b35c}{pbuf\+\_\+coalesce} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, pbuf\+\_\+layer layer)
+\item 
+u8\+\_\+t \hyperlink{pbuf_8c_a9e0f4c31d059984a431c96bf27b763e6}{pbuf\+\_\+get\+\_\+at} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, u16\+\_\+t offset)
+\item 
+u16\+\_\+t \hyperlink{pbuf_8c_a9c958b2d670dc831a982ea836c6bdfdb}{pbuf\+\_\+memcmp} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, u16\+\_\+t offset, const \hyperlink{interfacevoid}{void} $\ast$s2, u16\+\_\+t n)
+\item 
+u16\+\_\+t \hyperlink{pbuf_8c_ab5a23dd5534f69e34de05c624b91aa65}{pbuf\+\_\+memfind} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, const \hyperlink{interfacevoid}{void} $\ast$\hyperlink{structmem}{mem}, u16\+\_\+t mem\+\_\+len, u16\+\_\+t start\+\_\+offset)
+\item 
+u16\+\_\+t \hyperlink{pbuf_8c_ad88642dbb9d8396e11c4da8d08854df7}{pbuf\+\_\+strstr} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, const char $\ast$substr)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Packet buffer management
+
+Packets are built from the pbuf data structure. \hyperlink{class_it}{It} supports dynamic memory allocation for packet contents or can reference externally managed packet contents both in R\+AM and R\+OM. Quick allocation for incoming packets is provided through pools with fixed sized pbufs.
+
+\hyperlink{struct_a}{A} packet may span over multiple pbufs, chained as a singly linked list. \hyperlink{namespace_this}{This} is called a \char`\"{}pbuf chain\char`\"{}.
+
+Multiple packets may be queued, also using this singly linked list. \hyperlink{namespace_this}{This} is called a \char`\"{}packet queue\char`\"{}.
+
+So, a packet queue consists of one or more pbuf chains, each of which consist of one or more pbufs. C\+U\+R\+R\+E\+N\+T\+LY, P\+A\+C\+K\+ET Q\+U\+E\+U\+ES A\+RE N\+OT S\+U\+P\+P\+O\+R\+T\+E\+D!!! Use helper structs to queue multiple packets.
+
+The differences between a pbuf chain and a packet queue are very precise but subtle.
+
+The last pbuf of a packet has a -\/$>$tot\+\_\+len field that equals the -\/$>$len field. \hyperlink{class_it}{It} can be found by traversing the list. If the last pbuf of a packet has a -\/$>$next field other than N\+U\+LL, more packets are on the queue.
+
+Therefore, looping through a pbuf of a single packet, has an loop end condition (tot\+\_\+len == p-\/$>$len), N\+OT (next == N\+U\+LL). 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{pbuf_8c_acfcb0a2af918658ba0afe36499c65f47}\label{pbuf_8c_acfcb0a2af918658ba0afe36499c65f47}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+alloc@{pbuf\+\_\+alloc}}
+\index{pbuf\+\_\+alloc@{pbuf\+\_\+alloc}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+alloc()}{pbuf\_alloc()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf}$\ast$ pbuf\+\_\+alloc (\begin{DoxyParamCaption}\item[{pbuf\+\_\+layer}]{layer,  }\item[{u16\+\_\+t}]{length,  }\item[{pbuf\+\_\+type}]{type }\end{DoxyParamCaption})}
+
+Allocates a pbuf of the given type (possibly a chain for P\+B\+U\+F\+\_\+\+P\+O\+OL type).
+
+The actual memory allocated for the pbuf is determined by the layer at which the pbuf is allocated and the requested size (from the size parameter).
+
+
+\begin{DoxyParams}{参数}
+{\em layer} & flag to define header size \\
+\hline
+{\em length} & size of the pbuf\textquotesingle{}s payload \\
+\hline
+{\em type} & this parameter decides how and where the pbuf should be allocated as follows\+:\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyItemize}
+\item P\+B\+U\+F\+\_\+\+R\+AM\+: buffer memory for pbuf is allocated as one large chunk. \hyperlink{namespace_this}{This} includes protocol headers as well.
+\item P\+B\+U\+F\+\_\+\+R\+OM\+: no buffer memory is allocated for the pbuf, even for protocol headers. Additional headers must be prepended by allocating another pbuf and chain in to the front of the R\+OM pbuf. \hyperlink{class_it}{It} is assumed that the memory used is really similar to R\+OM in that it is immutable and will not be changed. Memory which is dynamic should generally not be attached to P\+B\+U\+F\+\_\+\+R\+OM pbufs. Use P\+B\+U\+F\+\_\+\+R\+EF instead.
+\item P\+B\+U\+F\+\_\+\+R\+EF\+: no buffer memory is allocated for the pbuf, even for protocol headers. \hyperlink{class_it}{It} is assumed that the pbuf is only being used in a single thread. If the pbuf gets queued, then pbuf\+\_\+take should be called to copy the buffer.
+\item P\+B\+U\+F\+\_\+\+P\+O\+OL\+: the pbuf is allocated as a pbuf chain, with pbufs from the pbuf pool that is allocated during pbuf\+\_\+init().
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{返回}
+the allocated pbuf. If multiple pbufs where allocated, this is the first pbuf of a pbuf chain. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_a82429084fe29015509c9b4a072707cd4}\label{pbuf_8c_a82429084fe29015509c9b4a072707cd4}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+cat@{pbuf\+\_\+cat}}
+\index{pbuf\+\_\+cat@{pbuf\+\_\+cat}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+cat()}{pbuf\_cat()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} pbuf\+\_\+cat (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{h,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{t }\end{DoxyParamCaption})}
+
+Concatenate two pbufs (each may be a pbuf chain) and take over the caller\textquotesingle{}s reference of the tail pbuf.
+
+\begin{DoxyNote}{注解}
+The caller M\+AY N\+OT reference the tail pbuf afterwards. Use \hyperlink{pbuf_8c_a831c9a72bda1d3bd4c7b96f5a0e3b891}{pbuf\+\_\+chain()} for that purpose.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{pbuf_8c_a831c9a72bda1d3bd4c7b96f5a0e3b891}{pbuf\+\_\+chain()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{pbuf_8c_a831c9a72bda1d3bd4c7b96f5a0e3b891}\label{pbuf_8c_a831c9a72bda1d3bd4c7b96f5a0e3b891}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+chain@{pbuf\+\_\+chain}}
+\index{pbuf\+\_\+chain@{pbuf\+\_\+chain}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+chain()}{pbuf\_chain()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} pbuf\+\_\+chain (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{h,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{t }\end{DoxyParamCaption})}
+
+Chain two pbufs (or pbuf chains) together.
+
+The caller M\+U\+ST call pbuf\+\_\+free(t) once it has stopped using it. Use \hyperlink{pbuf_8c_a82429084fe29015509c9b4a072707cd4}{pbuf\+\_\+cat()} instead if you no longer use t.
+
+
+\begin{DoxyParams}{参数}
+{\em h} & head pbuf (chain) \\
+\hline
+{\em t} & tail pbuf (chain) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+The pbufs M\+U\+ST belong to the same packet. 
+
+M\+AY N\+OT be called on a packet queue.
+\end{DoxyNote}
+The -\/$>$tot\+\_\+len fields of all pbufs of the head chain are adjusted. The -\/$>$next field of the last pbuf of the head chain is adjusted. The -\/$>$ref field of the first pbuf of the tail chain is adjusted. \mbox{\Hypertarget{pbuf_8c_a949a13a7cfdf9241c9e7b859af1bd15c}\label{pbuf_8c_a949a13a7cfdf9241c9e7b859af1bd15c}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+clen@{pbuf\+\_\+clen}}
+\index{pbuf\+\_\+clen@{pbuf\+\_\+clen}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+clen()}{pbuf\_clen()}}
+{\footnotesize\ttfamily u8\+\_\+t pbuf\+\_\+clen (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Count number of pbufs in a chain
+
+
+\begin{DoxyParams}{参数}
+{\em p} & first pbuf of chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the number of pbufs in a chain 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_a54ac7b116c6f53c704cbf74f35a8b35c}\label{pbuf_8c_a54ac7b116c6f53c704cbf74f35a8b35c}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+coalesce@{pbuf\+\_\+coalesce}}
+\index{pbuf\+\_\+coalesce@{pbuf\+\_\+coalesce}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+coalesce()}{pbuf\_coalesce()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf}$\ast$ pbuf\+\_\+coalesce (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{pbuf\+\_\+layer}]{layer }\end{DoxyParamCaption})}
+
+Creates a single pbuf out of a queue of pbufs.
+
+\begin{DoxyRemark}{备注}
+\+: Either the source pbuf \textquotesingle{}p\textquotesingle{} is freed by this function or the original pbuf \textquotesingle{}p\textquotesingle{} is returned, therefore the caller has to check the result!
+\end{DoxyRemark}
+
+\begin{DoxyParams}{参数}
+{\em p} & the source pbuf \\
+\hline
+{\em layer} & pbuf\+\_\+layer of the new pbuf\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+a new, single pbuf (p-\/$>$next is N\+U\+LL) or the old pbuf if allocation fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_aee9cfb728d91302f068b5c6bd581e3e5}\label{pbuf_8c_aee9cfb728d91302f068b5c6bd581e3e5}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+copy@{pbuf\+\_\+copy}}
+\index{pbuf\+\_\+copy@{pbuf\+\_\+copy}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+copy()}{pbuf\_copy()}}
+{\footnotesize\ttfamily err\+\_\+t pbuf\+\_\+copy (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p\+\_\+to,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p\+\_\+from }\end{DoxyParamCaption})}
+
+Create P\+B\+U\+F\+\_\+\+R\+AM copies of pbufs.
+
+Used to queue packets on behalf of the lw\+IP stack, such as A\+RP based queueing.
+
+\begin{DoxyNote}{注解}
+You M\+U\+ST explicitly use p = pbuf\+\_\+take(p);
+
+Only one packet is copied, no packet queue!
+\end{DoxyNote}
+
+\begin{DoxyParams}{参数}
+{\em p\+\_\+to} & pbuf destination of the copy \\
+\hline
+{\em p\+\_\+from} & pbuf source of the copy\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+E\+R\+R\+\_\+\+OK if pbuf was copied E\+R\+R\+\_\+\+A\+RG if one of the pbufs is N\+U\+LL or p\+\_\+to is not big enough to hold p\+\_\+from 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_a9efc1f3148d6c0236e40b41242bda4df}\label{pbuf_8c_a9efc1f3148d6c0236e40b41242bda4df}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+copy\+\_\+partial@{pbuf\+\_\+copy\+\_\+partial}}
+\index{pbuf\+\_\+copy\+\_\+partial@{pbuf\+\_\+copy\+\_\+partial}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+copy\+\_\+partial()}{pbuf\_copy\_partial()}}
+{\footnotesize\ttfamily u16\+\_\+t pbuf\+\_\+copy\+\_\+partial (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{buf,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{dataptr,  }\item[{u16\+\_\+t}]{len,  }\item[{u16\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+Copy (part of) the contents of a packet buffer to an application supplied buffer.
+
+
+\begin{DoxyParams}{参数}
+{\em buf} & the pbuf from which to copy data \\
+\hline
+{\em dataptr} & the application supplied buffer \\
+\hline
+{\em len} & length of data to copy (dataptr must be big enough). No more than buf-\/$>$tot\+\_\+len will be copied, irrespective of len \\
+\hline
+{\em offset} & offset into the packet buffer from where to begin copying len bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the number of bytes copied, or 0 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_abf3d29c4f43986b4cb5eb314d5b9729d}\label{pbuf_8c_abf3d29c4f43986b4cb5eb314d5b9729d}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+dechain@{pbuf\+\_\+dechain}}
+\index{pbuf\+\_\+dechain@{pbuf\+\_\+dechain}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+dechain()}{pbuf\_dechain()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf}$\ast$ pbuf\+\_\+dechain (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Dechains the first pbuf from its succeeding pbufs in the chain.
+
+Makes p-\/$>$tot\+\_\+len field equal to p-\/$>$len. 
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to dechain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+remainder of the pbuf chain, or N\+U\+LL if it was de-\/allocated. 
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+May not be called on a packet queue. 
+\end{DoxyNote}
+\mbox{\Hypertarget{pbuf_8c_ab0dd696fb4b6bc65e548944584f1738b}\label{pbuf_8c_ab0dd696fb4b6bc65e548944584f1738b}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+free@{pbuf\+\_\+free}}
+\index{pbuf\+\_\+free@{pbuf\+\_\+free}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+free()}{pbuf\_free()}}
+{\footnotesize\ttfamily u8\+\_\+t pbuf\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Dereference a pbuf chain or queue and deallocate any no-\/longer-\/used pbufs at the head of this chain or queue.
+
+Decrements the pbuf reference count. If it reaches zero, the pbuf is deallocated.
+
+For a pbuf chain, this is repeated for each pbuf in the chain, up to the first pbuf which has a non-\/zero reference count after decrementing. So, when all reference counts are one, the whole chain is free\textquotesingle{}d.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The pbuf (chain) to be dereferenced.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the number of pbufs that were de-\/allocated from the head of the chain.
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+M\+U\+ST N\+OT be called on a packet queue (Not verified to work yet). 
+
+the reference counter of a pbuf equals the number of pointers that refer to the pbuf (or into the pbuf). 
+\end{DoxyNote}
+\mbox{\Hypertarget{pbuf_8c_a9e0f4c31d059984a431c96bf27b763e6}\label{pbuf_8c_a9e0f4c31d059984a431c96bf27b763e6}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+get\+\_\+at@{pbuf\+\_\+get\+\_\+at}}
+\index{pbuf\+\_\+get\+\_\+at@{pbuf\+\_\+get\+\_\+at}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+get\+\_\+at()}{pbuf\_get\_at()}}
+{\footnotesize\ttfamily u8\+\_\+t pbuf\+\_\+get\+\_\+at (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{u16\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+Get one byte from the specified position in a pbuf W\+A\+R\+N\+I\+NG\+: returns zero for offset $>$= p-\/$>$tot\+\_\+len
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to parse \\
+\hline
+{\em offset} & offset into p of the byte to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+byte at an offset into p OR Z\+E\+RO IF \textquotesingle{}offset\textquotesingle{} $>$= p-\/$>$tot\+\_\+len 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_a0f81deff4a0e6e8e0ff161a7b9871449}\label{pbuf_8c_a0f81deff4a0e6e8e0ff161a7b9871449}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+header@{pbuf\+\_\+header}}
+\index{pbuf\+\_\+header@{pbuf\+\_\+header}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+header()}{pbuf\_header()}}
+{\footnotesize\ttfamily u8\+\_\+t pbuf\+\_\+header (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{s16\+\_\+t}]{header\+\_\+size\+\_\+increment }\end{DoxyParamCaption})}
+
+Adjusts the payload pointer to hide or reveal headers in the payload.
+
+Adjusts the -\/$>$payload pointer so that space for a header (dis)appears in the pbuf payload.
+
+The -\/$>$payload, -\/$>$tot\+\_\+len and -\/$>$len fields are adjusted.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to change the header size. \\
+\hline
+{\em header\+\_\+size\+\_\+increment} & Number of bytes to increment header size which increases the size of the pbuf. New space is on the front. (Using a negative value decreases the header size.) If hdr\+\_\+size\+\_\+inc is 0, this function does nothing and returns succesful.\\
+\hline
+\end{DoxyParams}
+P\+B\+U\+F\+\_\+\+R\+OM and P\+B\+U\+F\+\_\+\+R\+EF type buffers cannot have their sizes increased, so the call will fail. \hyperlink{struct_a}{A} check is made that the increase in header size does not move the payload pointer in front of the start of the buffer. \begin{DoxyReturn}{返回}
+non-\/zero on failure, zero on success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_a9c958b2d670dc831a982ea836c6bdfdb}\label{pbuf_8c_a9c958b2d670dc831a982ea836c6bdfdb}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+memcmp@{pbuf\+\_\+memcmp}}
+\index{pbuf\+\_\+memcmp@{pbuf\+\_\+memcmp}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+memcmp()}{pbuf\_memcmp()}}
+{\footnotesize\ttfamily u16\+\_\+t pbuf\+\_\+memcmp (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{u16\+\_\+t}]{offset,  }\item[{const \hyperlink{interfacevoid}{void} $\ast$}]{s2,  }\item[{u16\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Compare pbuf contents at specified offset with memory s2, both of length n
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to compare \\
+\hline
+{\em offset} & offset into p at wich to start comparing \\
+\hline
+{\em s2} & buffer to compare \\
+\hline
+{\em n} & length of buffer to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+zero if equal, nonzero otherwise (0xffff if p is too short, diffoffset+1 otherwise) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_ab5a23dd5534f69e34de05c624b91aa65}\label{pbuf_8c_ab5a23dd5534f69e34de05c624b91aa65}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+memfind@{pbuf\+\_\+memfind}}
+\index{pbuf\+\_\+memfind@{pbuf\+\_\+memfind}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+memfind()}{pbuf\_memfind()}}
+{\footnotesize\ttfamily u16\+\_\+t pbuf\+\_\+memfind (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{const \hyperlink{interfacevoid}{void} $\ast$}]{mem,  }\item[{u16\+\_\+t}]{mem\+\_\+len,  }\item[{u16\+\_\+t}]{start\+\_\+offset }\end{DoxyParamCaption})}
+
+Find occurrence of mem (with length mem\+\_\+len) in pbuf p, starting at offset start\+\_\+offset.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to search, maximum length is 0x\+F\+F\+FE since 0x\+F\+F\+FF is used as return value \textquotesingle{}not found\textquotesingle{} \\
+\hline
+{\em mem} & search for the contents of this buffer \\
+\hline
+{\em mem\+\_\+len} & length of \textquotesingle{}mem\textquotesingle{} \\
+\hline
+{\em start\+\_\+offset} & offset into p at which to start searching \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0x\+F\+F\+FF if substr was not found in p or the index where it was found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_a50abfe830a33a1a47a562febee66015d}\label{pbuf_8c_a50abfe830a33a1a47a562febee66015d}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+realloc@{pbuf\+\_\+realloc}}
+\index{pbuf\+\_\+realloc@{pbuf\+\_\+realloc}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+realloc()}{pbuf\_realloc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} pbuf\+\_\+realloc (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{u16\+\_\+t}]{new\+\_\+len }\end{DoxyParamCaption})}
+
+Shrink a pbuf chain to a desired length.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to shrink. \\
+\hline
+{\em new\+\_\+len} & desired new length of pbuf chain\\
+\hline
+\end{DoxyParams}
+Depending on the desired length, the first few pbufs in a chain might be skipped and left unchanged. The new last pbuf in the chain will be resized, and any remaining pbufs will be freed.
+
+\begin{DoxyNote}{注解}
+If the pbuf is R\+O\+M/\+R\+EF, only the -\/$>$tot\+\_\+len and -\/$>$len fields are adjusted. 
+
+May not be called on a packet queue.
+
+Despite its name, pbuf\+\_\+realloc cannot grow the size of a pbuf (chain). 
+\end{DoxyNote}
+\mbox{\Hypertarget{pbuf_8c_a77f6bbd69e45e542014d9c547c7da74e}\label{pbuf_8c_a77f6bbd69e45e542014d9c547c7da74e}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+ref@{pbuf\+\_\+ref}}
+\index{pbuf\+\_\+ref@{pbuf\+\_\+ref}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+ref()}{pbuf\_ref()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} pbuf\+\_\+ref (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Increment the reference count of the pbuf.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to increase reference counter of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pbuf_8c_ad88642dbb9d8396e11c4da8d08854df7}\label{pbuf_8c_ad88642dbb9d8396e11c4da8d08854df7}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+strstr@{pbuf\+\_\+strstr}}
+\index{pbuf\+\_\+strstr@{pbuf\+\_\+strstr}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+strstr()}{pbuf\_strstr()}}
+{\footnotesize\ttfamily u16\+\_\+t pbuf\+\_\+strstr (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{const char $\ast$}]{substr }\end{DoxyParamCaption})}
+
+Find occurrence of substr with length substr\+\_\+len in pbuf p, start at offset start\+\_\+offset W\+A\+R\+N\+I\+NG\+: in contrast to strstr(), this one does not stop at the first \textbackslash{}0 in the pbuf/source string!
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf to search, maximum length is 0x\+F\+F\+FE since 0x\+F\+F\+FF is used as return value \textquotesingle{}not found\textquotesingle{} \\
+\hline
+{\em substr} & string to search for in p, maximum length is 0x\+F\+F\+FE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0x\+F\+F\+FF if substr was not found in p or the index where it was found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pbuf_8c_ad1e31e370271335b197272af2724ca85}\label{pbuf_8c_ad1e31e370271335b197272af2724ca85}} 
+\index{pbuf.\+c@{pbuf.\+c}!pbuf\+\_\+take@{pbuf\+\_\+take}}
+\index{pbuf\+\_\+take@{pbuf\+\_\+take}!pbuf.\+c@{pbuf.\+c}}
+\subsubsection{\texorpdfstring{pbuf\+\_\+take()}{pbuf\_take()}}
+{\footnotesize\ttfamily err\+\_\+t pbuf\+\_\+take (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{buf,  }\item[{const \hyperlink{interfacevoid}{void} $\ast$}]{dataptr,  }\item[{u16\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Copy application supplied data into a pbuf. \hyperlink{namespace_this}{This} function can only be used to copy the equivalent of buf-\/$>$tot\+\_\+len data.
+
+
+\begin{DoxyParams}{参数}
+{\em buf} & pbuf to fill with data \\
+\hline
+{\em dataptr} & application supplied data buffer \\
+\hline
+{\em len} & length of the application supplied data buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+E\+R\+R\+\_\+\+OK if successful, E\+R\+R\+\_\+\+M\+EM if the pbuf is not big enough 
+\end{DoxyReturn}

@@ -1,0 +1,526 @@
+\hypertarget{interfacens_i_doc_shell}{}\section{ns\+I\+Doc\+Shell接口 参考}
+\label{interfacens_i_doc_shell}\index{ns\+I\+Doc\+Shell@{ns\+I\+Doc\+Shell}}
+类 ns\+I\+Doc\+Shell 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfacens_i_doc_shell}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a72992d3fb915fd40d8b8e72e91249b92}\label{interfacens_i_doc_shell_a72992d3fb915fd40d8b8e72e91249b92}} 
+nsresult {\bfseries Load\+U\+RI} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$uri, \hyperlink{interfacens_i_doc_shell_load_info}{ns\+I\+Doc\+Shell\+Load\+Info} $\ast$load\+Info, uint32\+\_\+t a\+Load\+Flags, bool first\+Party)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a13616578ed265801fd6cc0464797a67a}\label{interfacens_i_doc_shell_a13616578ed265801fd6cc0464797a67a}} 
+nsresult {\bfseries Load\+Stream} (\hyperlink{interfacens_i_input_stream}{ns\+I\+Input\+Stream} $\ast$a\+Stream, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Content\+Type, const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Content\+Charset, \hyperlink{interfacens_i_doc_shell_load_info}{ns\+I\+Doc\+Shell\+Load\+Info} $\ast$a\+Load\+Info)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab645058ca868a0bb4ae724ca9735cf42}\label{interfacens_i_doc_shell_ab645058ca868a0bb4ae724ca9735cf42}} 
+nsresult {\bfseries Internal\+Load} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+Referrer, uint32\+\_\+t a\+Referrer\+Policy, \hyperlink{interfacens_i_supports}{ns\+I\+Supports} $\ast$a\+Owner, uint32\+\_\+t a\+Flags, const P\+R\+Unichar $\ast$a\+Window\+Target, const char $\ast$a\+Type\+Hint, \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+File\+Name, \hyperlink{interfacens_i_input_stream}{ns\+I\+Input\+Stream} $\ast$a\+Post\+Data\+Stream, \hyperlink{interfacens_i_input_stream}{ns\+I\+Input\+Stream} $\ast$a\+Headers\+Stream, uint32\+\_\+t a\+Load\+Flags, \hyperlink{interfacens_i_supports}{ns\+I\+S\+H\+Entry} $\ast$a\+S\+H\+Entry, bool first\+Party, const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+Srcdoc, \hyperlink{interfacens_i_doc_shell}{ns\+I\+Doc\+Shell} $\ast$a\+Source\+Doc\+Shell, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+Base\+U\+RI, \hyperlink{interfacens_i_doc_shell}{ns\+I\+Doc\+Shell} $\ast$$\ast$a\+Doc\+Shell, \hyperlink{interfacens_i_request}{ns\+I\+Request} $\ast$$\ast$a\+Request)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a6b1efbc673011c39e368148a1896ec17}\label{interfacens_i_doc_shell_a6b1efbc673011c39e368148a1896ec17}} 
+nsresult {\bfseries Add\+State} (jsval $\ast$a\+Data, const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+Title, const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+U\+RL, bool a\+Replace, \hyperlink{interfacevoid}{J\+S\+Context} $\ast$cx)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a1826af46f28ae4a3bb280757c93496e5}\label{interfacens_i_doc_shell_a1826af46f28ae4a3bb280757c93496e5}} 
+nsresult {\bfseries Create\+Load\+Info} (\hyperlink{interfacens_i_doc_shell_load_info}{ns\+I\+Doc\+Shell\+Load\+Info} $\ast$$\ast$load\+Info)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a84f523219564e4acf77e9e7d26e6397e}\label{interfacens_i_doc_shell_a84f523219564e4acf77e9e7d26e6397e}} 
+nsresult {\bfseries Prepare\+For\+New\+Content\+Model} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7da7bb183af6c7637f44e0806d3aeb55}\label{interfacens_i_doc_shell_a7da7bb183af6c7637f44e0806d3aeb55}} 
+nsresult {\bfseries Set\+Current\+U\+RI} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7ba1f12166d3f76217143450aa15f2b6}\label{interfacens_i_doc_shell_a7ba1f12166d3f76217143450aa15f2b6}} 
+nsresult {\bfseries Fire\+Page\+Hide\+Notification} (bool is\+Unload)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa8918c6b8a220ccb4a75649d83945aae}\label{interfacens_i_doc_shell_aa8918c6b8a220ccb4a75649d83945aae}} 
+nsresult {\bfseries Get\+Pres\+Context} (\hyperlink{interfacevoid}{void} $\ast$$\ast$a\+Pres\+Context)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a6210aac89b1c8480f485fd3befb377a3}\label{interfacens_i_doc_shell_a6210aac89b1c8480f485fd3befb377a3}} 
+\hyperlink{interfacens_i_supports}{ns\+I\+Pres\+Shell} $\ast$ {\bfseries Get\+Pres\+Shell} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7c7e6fc0d29142872b9b427b998ad5f8}\label{interfacens_i_doc_shell_a7c7e6fc0d29142872b9b427b998ad5f8}} 
+nsresult {\bfseries Get\+Eldest\+Pres\+Shell} (\hyperlink{interfacens_i_supports}{ns\+I\+Pres\+Shell} $\ast$$\ast$a\+Eldest\+Pres\+Shell)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a66033d2591032464cf5a83554fc030ad}\label{interfacens_i_doc_shell_a66033d2591032464cf5a83554fc030ad}} 
+nsresult {\bfseries Get\+Content\+Viewer} (\hyperlink{interfacens_i_content_viewer}{ns\+I\+Content\+Viewer} $\ast$$\ast$a\+Content\+Viewer)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ada684ca7f738351e012be7f4a7d27468}\label{interfacens_i_doc_shell_ada684ca7f738351e012be7f4a7d27468}} 
+nsresult {\bfseries Get\+Chrome\+Event\+Handler} (\hyperlink{interfacens_i_d_o_m_event_target}{ns\+I\+D\+O\+M\+Event\+Target} $\ast$$\ast$a\+Chrome\+Event\+Handler)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab51bae6bd3842e84fe997cfbd52dd381}\label{interfacens_i_doc_shell_ab51bae6bd3842e84fe997cfbd52dd381}} 
+nsresult {\bfseries Set\+Chrome\+Event\+Handler} (\hyperlink{interfacens_i_d_o_m_event_target}{ns\+I\+D\+O\+M\+Event\+Target} $\ast$a\+Chrome\+Event\+Handler)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ade8b97244218400542859d62fd6dd4e9}\label{interfacens_i_doc_shell_ade8b97244218400542859d62fd6dd4e9}} 
+nsresult {\bfseries Get\+Allow\+Plugins} (bool $\ast$a\+Allow\+Plugins)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a5c0a4e34c14daa09ea1e419206dafe74}\label{interfacens_i_doc_shell_a5c0a4e34c14daa09ea1e419206dafe74}} 
+nsresult {\bfseries Set\+Allow\+Plugins} (bool a\+Allow\+Plugins)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a2b5f6a66943e655ff2fb3a8affcede60}\label{interfacens_i_doc_shell_a2b5f6a66943e655ff2fb3a8affcede60}} 
+nsresult {\bfseries Get\+Allow\+Javascript} (bool $\ast$a\+Allow\+Javascript)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aedbb6170d06bdc718f8bcd2a650a43e5}\label{interfacens_i_doc_shell_aedbb6170d06bdc718f8bcd2a650a43e5}} 
+nsresult {\bfseries Set\+Allow\+Javascript} (bool a\+Allow\+Javascript)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa1e8de405e98ff9430602221974de212}\label{interfacens_i_doc_shell_aa1e8de405e98ff9430602221974de212}} 
+nsresult {\bfseries Get\+Disable\+No\+Script} (bool $\ast$a\+Disable\+No\+Script)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a398dcef33b37221329b07b99e0e7e162}\label{interfacens_i_doc_shell_a398dcef33b37221329b07b99e0e7e162}} 
+nsresult {\bfseries Set\+Disable\+No\+Script} (bool a\+Disable\+No\+Script)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a2aa8323c89c9df6655c365b4d3dd4d0c}\label{interfacens_i_doc_shell_a2aa8323c89c9df6655c365b4d3dd4d0c}} 
+nsresult {\bfseries Get\+Allow\+Meta\+Redirects} (bool $\ast$a\+Allow\+Meta\+Redirects)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a38f0dfee57eddcb3ee028f2e2da428d6}\label{interfacens_i_doc_shell_a38f0dfee57eddcb3ee028f2e2da428d6}} 
+nsresult {\bfseries Set\+Allow\+Meta\+Redirects} (bool a\+Allow\+Meta\+Redirects)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a0ad05613868bb45b2749fe3a64b8ef44}\label{interfacens_i_doc_shell_a0ad05613868bb45b2749fe3a64b8ef44}} 
+nsresult {\bfseries Get\+Allow\+Subframes} (bool $\ast$a\+Allow\+Subframes)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab824217dd142a2f9af55df1b849b2781}\label{interfacens_i_doc_shell_ab824217dd142a2f9af55df1b849b2781}} 
+nsresult {\bfseries Set\+Allow\+Subframes} (bool a\+Allow\+Subframes)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a42d54390ba4284f08246fdb5e93529ff}\label{interfacens_i_doc_shell_a42d54390ba4284f08246fdb5e93529ff}} 
+nsresult {\bfseries Get\+Allow\+Images} (bool $\ast$a\+Allow\+Images)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a971bda8b15f191d7ab1d7563e1145b2f}\label{interfacens_i_doc_shell_a971bda8b15f191d7ab1d7563e1145b2f}} 
+nsresult {\bfseries Set\+Allow\+Images} (bool a\+Allow\+Images)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a4a897a1ead2028c31a3bbe4b88508a93}\label{interfacens_i_doc_shell_a4a897a1ead2028c31a3bbe4b88508a93}} 
+nsresult {\bfseries Get\+Allow\+Media} (bool $\ast$a\+Allow\+Media)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a4d78626394fd60e8eb350ae8af3aac76}\label{interfacens_i_doc_shell_a4d78626394fd60e8eb350ae8af3aac76}} 
+nsresult {\bfseries Set\+Allow\+Media} (bool a\+Allow\+Media)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa02e233c64a5d302916b30d9c165767e}\label{interfacens_i_doc_shell_aa02e233c64a5d302916b30d9c165767e}} 
+nsresult {\bfseries Get\+Allow\+D\+N\+S\+Prefetch} (bool $\ast$a\+Allow\+D\+N\+S\+Prefetch)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ae5a8aff32b68d48ed823536881b3b4f2}\label{interfacens_i_doc_shell_ae5a8aff32b68d48ed823536881b3b4f2}} 
+nsresult {\bfseries Set\+Allow\+D\+N\+S\+Prefetch} (bool a\+Allow\+D\+N\+S\+Prefetch)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a67334b1d68fb99ce1a403321e5a33931}\label{interfacens_i_doc_shell_a67334b1d68fb99ce1a403321e5a33931}} 
+nsresult {\bfseries Get\+Allow\+Window\+Control} (bool $\ast$a\+Allow\+Window\+Control)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab7cab1e7d84b8e87753d59dce2354dfe}\label{interfacens_i_doc_shell_ab7cab1e7d84b8e87753d59dce2354dfe}} 
+nsresult {\bfseries Set\+Allow\+Window\+Control} (bool a\+Allow\+Window\+Control)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab9427c7db3fe46dbffd545e33d3bfd6b}\label{interfacens_i_doc_shell_ab9427c7db3fe46dbffd545e33d3bfd6b}} 
+nsresult {\bfseries Get\+Allow\+Content\+Retargeting} (bool $\ast$a\+Allow\+Content\+Retargeting)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a40a96fee0cf524a61b25e9979cd3e9c8}\label{interfacens_i_doc_shell_a40a96fee0cf524a61b25e9979cd3e9c8}} 
+nsresult {\bfseries Set\+Allow\+Content\+Retargeting} (bool a\+Allow\+Content\+Retargeting)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a57267ac6ef2e72fc30859cc6c345e788}\label{interfacens_i_doc_shell_a57267ac6ef2e72fc30859cc6c345e788}} 
+nsresult {\bfseries Get\+Allow\+Content\+Retargeting\+On\+Children} (bool $\ast$a\+Allow\+Content\+Retargeting\+On\+Children)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac12106463b5d26f23734d1af6e63388c}\label{interfacens_i_doc_shell_ac12106463b5d26f23734d1af6e63388c}} 
+nsresult {\bfseries Set\+Allow\+Content\+Retargeting\+On\+Children} (bool a\+Allow\+Content\+Retargeting\+On\+Children)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ae1a31af54bdd6b0bb0d56e5c7bf2adcf}\label{interfacens_i_doc_shell_ae1a31af54bdd6b0bb0d56e5c7bf2adcf}} 
+nsresult {\bfseries Get\+Doc\+Shell\+Enumerator} (int32\+\_\+t a\+Item\+Type, int32\+\_\+t a\+Direction, \hyperlink{interfacens_i_simple_enumerator}{ns\+I\+Simple\+Enumerator} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a9ad0f215cca7c7333b678b49e5149ecd}\label{interfacens_i_doc_shell_a9ad0f215cca7c7333b678b49e5149ecd}} 
+nsresult {\bfseries Get\+App\+Type} (uint32\+\_\+t $\ast$a\+App\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a6440f55a0dcc6309a970504f7c47253a}\label{interfacens_i_doc_shell_a6440f55a0dcc6309a970504f7c47253a}} 
+nsresult {\bfseries Set\+App\+Type} (uint32\+\_\+t a\+App\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_abdd4a126332c91368c705d739775e443}\label{interfacens_i_doc_shell_abdd4a126332c91368c705d739775e443}} 
+nsresult {\bfseries Get\+Allow\+Auth} (bool $\ast$a\+Allow\+Auth)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a60ec8b41e6c183c650f8ca0e190c88c0}\label{interfacens_i_doc_shell_a60ec8b41e6c183c650f8ca0e190c88c0}} 
+nsresult {\bfseries Set\+Allow\+Auth} (bool a\+Allow\+Auth)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a6cdeb2330e3abb42df4cf3cb196df813}\label{interfacens_i_doc_shell_a6cdeb2330e3abb42df4cf3cb196df813}} 
+nsresult {\bfseries Get\+Zoom} (float $\ast$a\+Zoom)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_af39b296793a2d15792d605177b80b34d}\label{interfacens_i_doc_shell_af39b296793a2d15792d605177b80b34d}} 
+nsresult {\bfseries Set\+Zoom} (float a\+Zoom)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a0cd9a47075ad5592262df936364e2610}\label{interfacens_i_doc_shell_a0cd9a47075ad5592262df936364e2610}} 
+nsresult {\bfseries Get\+Margin\+Width} (int32\+\_\+t $\ast$a\+Margin\+Width)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa7042b956a2ff73cb1ecb144a5807c66}\label{interfacens_i_doc_shell_aa7042b956a2ff73cb1ecb144a5807c66}} 
+nsresult {\bfseries Set\+Margin\+Width} (int32\+\_\+t a\+Margin\+Width)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ad83e7e6b1da2fe4b0b3a43ddf1a84e04}\label{interfacens_i_doc_shell_ad83e7e6b1da2fe4b0b3a43ddf1a84e04}} 
+nsresult {\bfseries Get\+Margin\+Height} (int32\+\_\+t $\ast$a\+Margin\+Height)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_acbf1142831df9665a3ba11009b3e2c33}\label{interfacens_i_doc_shell_acbf1142831df9665a3ba11009b3e2c33}} 
+nsresult {\bfseries Set\+Margin\+Height} (int32\+\_\+t a\+Margin\+Height)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a17b4e4179d15f447e2a9f08365f9c4e3}\label{interfacens_i_doc_shell_a17b4e4179d15f447e2a9f08365f9c4e3}} 
+nsresult {\bfseries Tab\+To\+Tree\+Owner} (bool forward, bool $\ast$took\+Focus)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a16d749136b512af39a34198c69cee865}\label{interfacens_i_doc_shell_a16d749136b512af39a34198c69cee865}} 
+nsresult {\bfseries Get\+Busy\+Flags} (uint32\+\_\+t $\ast$a\+Busy\+Flags)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac5010d72e06308d663758e40aa66eb70}\label{interfacens_i_doc_shell_ac5010d72e06308d663758e40aa66eb70}} 
+nsresult {\bfseries Get\+Load\+Type} (uint32\+\_\+t $\ast$a\+Load\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a186f95aa3b956feee3a44efad6483e05}\label{interfacens_i_doc_shell_a186f95aa3b956feee3a44efad6483e05}} 
+nsresult {\bfseries Set\+Load\+Type} (uint32\+\_\+t a\+Load\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a3b645fd916042b7279bf78a29e1e901a}\label{interfacens_i_doc_shell_a3b645fd916042b7279bf78a29e1e901a}} 
+nsresult {\bfseries Get\+Default\+Load\+Flags} (ns\+Load\+Flags $\ast$a\+Default\+Load\+Flags)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7548ec3dec4bd777b30d329de93f44cf}\label{interfacens_i_doc_shell_a7548ec3dec4bd777b30d329de93f44cf}} 
+nsresult {\bfseries Set\+Default\+Load\+Flags} (ns\+Load\+Flags a\+Default\+Load\+Flags)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aba00085dd2f2bcea6154fb59064b19cb}\label{interfacens_i_doc_shell_aba00085dd2f2bcea6154fb59064b19cb}} 
+nsresult {\bfseries Is\+Being\+Destroyed} (bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a8c79037e129b51cbfcc746d243e61624}\label{interfacens_i_doc_shell_a8c79037e129b51cbfcc746d243e61624}} 
+nsresult {\bfseries Get\+Is\+Executing\+On\+Load\+Handler} (bool $\ast$a\+Is\+Executing\+On\+Load\+Handler)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7833f40b9e30d43d3692709fa9a52612}\label{interfacens_i_doc_shell_a7833f40b9e30d43d3692709fa9a52612}} 
+nsresult {\bfseries Get\+Layout\+History\+State} (\hyperlink{interfacens_i_supports}{ns\+I\+Layout\+History\+State} $\ast$$\ast$a\+Layout\+History\+State)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a0653f354bace9e90389d901b40b8c20a}\label{interfacens_i_doc_shell_a0653f354bace9e90389d901b40b8c20a}} 
+nsresult {\bfseries Set\+Layout\+History\+State} (\hyperlink{interfacens_i_supports}{ns\+I\+Layout\+History\+State} $\ast$a\+Layout\+History\+State)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7a5c48bae583ac39aa9b9f705f1591a5}\label{interfacens_i_doc_shell_a7a5c48bae583ac39aa9b9f705f1591a5}} 
+nsresult {\bfseries Get\+Should\+Save\+Layout\+State} (bool $\ast$a\+Should\+Save\+Layout\+State)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aeab04770c27460a9ba6c56cbb9cc0c56}\label{interfacens_i_doc_shell_aeab04770c27460a9ba6c56cbb9cc0c56}} 
+nsresult {\bfseries Get\+Security\+UI} (\hyperlink{interfacens_i_supports}{ns\+I\+Secure\+Browser\+UI} $\ast$$\ast$a\+Security\+UI)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a1c90693854ffa4da07a698e5855f61a1}\label{interfacens_i_doc_shell_a1c90693854ffa4da07a698e5855f61a1}} 
+nsresult {\bfseries Set\+Security\+UI} (\hyperlink{interfacens_i_supports}{ns\+I\+Secure\+Browser\+UI} $\ast$a\+Security\+UI)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a091e72c8de750fcdda343b38921d718f}\label{interfacens_i_doc_shell_a091e72c8de750fcdda343b38921d718f}} 
+nsresult {\bfseries Suspend\+Refresh\+U\+R\+Is} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ad44b1788ae1221ee3543734e2b6aa398}\label{interfacens_i_doc_shell_ad44b1788ae1221ee3543734e2b6aa398}} 
+nsresult {\bfseries Resume\+Refresh\+U\+R\+Is} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ae7ffac5d51a341b4e8140d433e65a1a3}\label{interfacens_i_doc_shell_ae7ffac5d51a341b4e8140d433e65a1a3}} 
+nsresult {\bfseries Begin\+Restore} (\hyperlink{interfacens_i_content_viewer}{ns\+I\+Content\+Viewer} $\ast$viewer, bool top)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a5e678bfea5655927dd8b33ff2230d544}\label{interfacens_i_doc_shell_a5e678bfea5655927dd8b33ff2230d544}} 
+nsresult {\bfseries Finish\+Restore} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a5e59b8091003bbd1d13b7c87734a189b}\label{interfacens_i_doc_shell_a5e59b8091003bbd1d13b7c87734a189b}} 
+nsresult {\bfseries Get\+Restoring\+Document} (bool $\ast$a\+Restoring\+Document)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aab4c70b371f65d4b8cef00132d36875d}\label{interfacens_i_doc_shell_aab4c70b371f65d4b8cef00132d36875d}} 
+nsresult {\bfseries Get\+Use\+Error\+Pages} (bool $\ast$a\+Use\+Error\+Pages)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a5647ac42c8448793b11d59291e815299}\label{interfacens_i_doc_shell_a5647ac42c8448793b11d59291e815299}} 
+nsresult {\bfseries Set\+Use\+Error\+Pages} (bool a\+Use\+Error\+Pages)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a46978afabce580d28ebd44b584d69e94}\label{interfacens_i_doc_shell_a46978afabce580d28ebd44b584d69e94}} 
+nsresult {\bfseries Display\+Load\+Error} (nsresult a\+Error, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, const P\+R\+Unichar $\ast$a\+U\+RL, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$a\+Failed\+Channel)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac9f6ff4f55237c468619bf4831bd83b2}\label{interfacens_i_doc_shell_ac9f6ff4f55237c468619bf4831bd83b2}} 
+nsresult {\bfseries Get\+Failed\+Channel} (\hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$a\+Failed\+Channel)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_acc3d54522015217768220cf4d54f44fb}\label{interfacens_i_doc_shell_acc3d54522015217768220cf4d54f44fb}} 
+nsresult {\bfseries Get\+Previous\+Trans\+Index} (int32\+\_\+t $\ast$a\+Previous\+Trans\+Index)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aebd1206bf801c6fbf14d3a442088603e}\label{interfacens_i_doc_shell_aebd1206bf801c6fbf14d3a442088603e}} 
+nsresult {\bfseries Get\+Loaded\+Trans\+Index} (int32\+\_\+t $\ast$a\+Loaded\+Trans\+Index)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a979d488ea488db64e9b98aec31550141}\label{interfacens_i_doc_shell_a979d488ea488db64e9b98aec31550141}} 
+nsresult {\bfseries History\+Purged} (int32\+\_\+t num\+Entries)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a3e0fd835247048d36de2a90f1ff8c5c2}\label{interfacens_i_doc_shell_a3e0fd835247048d36de2a90f1ff8c5c2}} 
+nsresult {\bfseries Get\+Session\+Storage\+For\+Principal} (\hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$principal, const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$document\+U\+RI, bool create, \hyperlink{interfacens_i_supports}{ns\+I\+D\+O\+M\+Storage} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa1401369cedf703d00fe5c4ee75219b9}\label{interfacens_i_doc_shell_aa1401369cedf703d00fe5c4ee75219b9}} 
+nsresult {\bfseries Add\+Session\+Storage} (\hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$principal, \hyperlink{interfacens_i_supports}{ns\+I\+D\+O\+M\+Storage} $\ast$storage)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a44f51d4f65ce137caeb57b7b37af3d10}\label{interfacens_i_doc_shell_a44f51d4f65ce137caeb57b7b37af3d10}} 
+nsresult {\bfseries Get\+Current\+Document\+Channel} (\hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$a\+Current\+Document\+Channel)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aff30a1e5da044abba29479eeae3d84e3}\label{interfacens_i_doc_shell_aff30a1e5da044abba29479eeae3d84e3}} 
+nsresult {\bfseries Set\+Child\+Offset} (uint32\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a84d35e5eccd6594bb2f8b59f6bc5dc5e}\label{interfacens_i_doc_shell_a84d35e5eccd6594bb2f8b59f6bc5dc5e}} 
+nsresult {\bfseries Get\+Is\+In\+Unload} (bool $\ast$a\+Is\+In\+Unload)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a9eb6c06b435790aabb679364b62b9805}\label{interfacens_i_doc_shell_a9eb6c06b435790aabb679364b62b9805}} 
+nsresult {\bfseries Get\+Channel\+Is\+Unsafe} (bool $\ast$a\+Channel\+Is\+Unsafe)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_af16746b60c1d3c36b90e0d755cfa2e94}\label{interfacens_i_doc_shell_af16746b60c1d3c36b90e0d755cfa2e94}} 
+nsresult {\bfseries Get\+Has\+Mixed\+Active\+Content\+Loaded} (bool $\ast$a\+Has\+Mixed\+Active\+Content\+Loaded)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa46a5d16c5e46627df66ab12b8f31e4a}\label{interfacens_i_doc_shell_aa46a5d16c5e46627df66ab12b8f31e4a}} 
+nsresult {\bfseries Get\+Has\+Mixed\+Active\+Content\+Blocked} (bool $\ast$a\+Has\+Mixed\+Active\+Content\+Blocked)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab6f5ac85cdaa9631c0e767f8cbc2691f}\label{interfacens_i_doc_shell_ab6f5ac85cdaa9631c0e767f8cbc2691f}} 
+nsresult {\bfseries Get\+Has\+Mixed\+Display\+Content\+Loaded} (bool $\ast$a\+Has\+Mixed\+Display\+Content\+Loaded)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a00a1b1b64b7e5ddbfeb81d8645f8f64e}\label{interfacens_i_doc_shell_a00a1b1b64b7e5ddbfeb81d8645f8f64e}} 
+nsresult {\bfseries Get\+Has\+Mixed\+Display\+Content\+Blocked} (bool $\ast$a\+Has\+Mixed\+Display\+Content\+Blocked)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ad6747878b9aa547f47c472183d2d8fb4}\label{interfacens_i_doc_shell_ad6747878b9aa547f47c472183d2d8fb4}} 
+nsresult {\bfseries Get\+Has\+Tracking\+Content\+Blocked} (bool $\ast$a\+Has\+Tracking\+Content\+Blocked)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a9a53174d19b088190aeeac010c32fcce}\label{interfacens_i_doc_shell_a9a53174d19b088190aeeac010c32fcce}} 
+nsresult {\bfseries Get\+Has\+Tracking\+Content\+Loaded} (bool $\ast$a\+Has\+Tracking\+Content\+Loaded)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab7c84b8db5b9dbc84bc7c1d1012a383f}\label{interfacens_i_doc_shell_ab7c84b8db5b9dbc84bc7c1d1012a383f}} 
+\hyperlink{interfacevoid}{void} {\bfseries Detach\+Editor\+From\+Window} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a8eb87ae636058b411ab88fe02383b742}\label{interfacens_i_doc_shell_a8eb87ae636058b411ab88fe02383b742}} 
+nsresult {\bfseries Get\+Is\+Off\+Screen\+Browser} (bool $\ast$a\+Is\+Off\+Screen\+Browser)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a8817d8b76fb8e07eca6a125124da17bf}\label{interfacens_i_doc_shell_a8817d8b76fb8e07eca6a125124da17bf}} 
+nsresult {\bfseries Set\+Is\+Off\+Screen\+Browser} (bool a\+Is\+Off\+Screen\+Browser)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_abd34f304e43b0df668a274d2d6ce9844}\label{interfacens_i_doc_shell_abd34f304e43b0df668a274d2d6ce9844}} 
+nsresult {\bfseries Get\+Print\+Preview} (\hyperlink{interfacens_i_web_browser_print}{ns\+I\+Web\+Browser\+Print} $\ast$$\ast$a\+Print\+Preview)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a6d6117aa832d0921da1c3461d438dc19}\label{interfacens_i_doc_shell_a6d6117aa832d0921da1c3461d438dc19}} 
+nsresult {\bfseries Get\+Can\+Execute\+Scripts} (bool $\ast$a\+Can\+Execute\+Scripts)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_abfa6b02ec2088eda002c32bb14d169db}\label{interfacens_i_doc_shell_abfa6b02ec2088eda002c32bb14d169db}} 
+nsresult {\bfseries Get\+Is\+Active} (bool $\ast$a\+Is\+Active)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a68588d3d1b41703a6937ec19b81c825c}\label{interfacens_i_doc_shell_a68588d3d1b41703a6937ec19b81c825c}} 
+nsresult {\bfseries Set\+Is\+Active} (bool a\+Is\+Active)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a53a5f3f1ff5554237c856eb873d2a249}\label{interfacens_i_doc_shell_a53a5f3f1ff5554237c856eb873d2a249}} 
+nsresult {\bfseries Set\+Is\+Prerendered} (bool prerendered)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_af024232447daf9ca836eabd5f28a55e3}\label{interfacens_i_doc_shell_af024232447daf9ca836eabd5f28a55e3}} 
+nsresult {\bfseries Get\+Is\+Prerendered} (bool $\ast$a\+Is\+Prerendered)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a9110fcb130cf318b4780dfd553d0cb8b}\label{interfacens_i_doc_shell_a9110fcb130cf318b4780dfd553d0cb8b}} 
+nsresult {\bfseries Get\+History\+ID} (uint64\+\_\+t $\ast$a\+History\+ID)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a799e6ea2ca5814c84d9424016de1b474}\label{interfacens_i_doc_shell_a799e6ea2ca5814c84d9424016de1b474}} 
+nsresult {\bfseries Get\+Is\+App\+Tab} (bool $\ast$a\+Is\+App\+Tab)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa9b845470e66e95f0585145dbbcc8901}\label{interfacens_i_doc_shell_aa9b845470e66e95f0585145dbbcc8901}} 
+nsresult {\bfseries Set\+Is\+App\+Tab} (bool a\+Is\+App\+Tab)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a74c3cb3554a9092a635aa0bacf7ef221}\label{interfacens_i_doc_shell_a74c3cb3554a9092a635aa0bacf7ef221}} 
+nsresult {\bfseries Create\+About\+Blank\+Content\+Viewer} (\hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$a\+Principal)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a3b0b28c844504e214ace3b7b61ace32b}\label{interfacens_i_doc_shell_a3b0b28c844504e214ace3b7b61ace32b}} 
+nsresult {\bfseries Get\+Charset} (\hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Charset)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa5fd925f68a4378022005736f7f0443b}\label{interfacens_i_doc_shell_aa5fd925f68a4378022005736f7f0443b}} 
+nsresult {\bfseries Set\+Charset} (\hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Charset)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a5869a8d431f17d841cab3b697f4e471d}\label{interfacens_i_doc_shell_a5869a8d431f17d841cab3b697f4e471d}} 
+nsresult {\bfseries Gather\+Charset\+Menu\+Telemetry} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a380dbbae160a60109cda7cede34223a9}\label{interfacens_i_doc_shell_a380dbbae160a60109cda7cede34223a9}} 
+nsresult {\bfseries Get\+Forced\+Charset} (\hyperlink{interfacens_i_supports}{ns\+I\+Atom} $\ast$$\ast$a\+Forced\+Charset)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a40d73625f3cd9154d7554bf626d3fe76}\label{interfacens_i_doc_shell_a40d73625f3cd9154d7554bf626d3fe76}} 
+nsresult {\bfseries Set\+Forced\+Charset} (\hyperlink{interfacens_i_supports}{ns\+I\+Atom} $\ast$a\+Forced\+Charset)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a8f8a22c9b94fea128703e6f09e95ee1a}\label{interfacens_i_doc_shell_a8f8a22c9b94fea128703e6f09e95ee1a}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Parent\+Charset} (const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$parent\+Charset, int32\+\_\+t parent\+Charset\+Source, \hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$parent\+Charset\+Principal)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a18c16c20c50c082e400f94e1d52ba459}\label{interfacens_i_doc_shell_a18c16c20c50c082e400f94e1d52ba459}} 
+\hyperlink{interfacevoid}{void} {\bfseries Get\+Parent\+Charset} (\hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$parent\+Charset, int32\+\_\+t $\ast$parent\+Charset\+Source, \hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$$\ast$parent\+Charset\+Principal)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aef5333c293b1d29504271a9d1d23e9a6}\label{interfacens_i_doc_shell_aef5333c293b1d29504271a9d1d23e9a6}} 
+nsresult {\bfseries Get\+Record\+Profile\+Timeline\+Markers} (bool $\ast$a\+Record\+Profile\+Timeline\+Markers)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ab7d65bea80931ee93b959f160f5cb7d9}\label{interfacens_i_doc_shell_ab7d65bea80931ee93b959f160f5cb7d9}} 
+nsresult {\bfseries Set\+Record\+Profile\+Timeline\+Markers} (bool a\+Record\+Profile\+Timeline\+Markers)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac681d851c1942d298ea30cc7499a0771}\label{interfacens_i_doc_shell_ac681d851c1942d298ea30cc7499a0771}} 
+nsresult {\bfseries Now} (int $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa452c759401c723f7550384e48e1d852}\label{interfacens_i_doc_shell_aa452c759401c723f7550384e48e1d852}} 
+nsresult {\bfseries Pop\+Profile\+Timeline\+Markers} (\hyperlink{interfacevoid}{J\+S\+Context} $\ast$cx, \hyperlink{interfacevoid}{void} $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a5cb752f674b0a1bb6b71a51da7c92016}\label{interfacens_i_doc_shell_a5cb752f674b0a1bb6b71a51da7c92016}} 
+nsresult {\bfseries Add\+Weak\+Privacy\+Transition\+Observer} (\hyperlink{interfacens_i_supports}{ns\+I\+Privacy\+Transition\+Observer} $\ast$obs)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a3244b084eb6944e69bc47d0fbb93ff20}\label{interfacens_i_doc_shell_a3244b084eb6944e69bc47d0fbb93ff20}} 
+nsresult {\bfseries Add\+Weak\+Reflow\+Observer} (\hyperlink{interfacens_i_supports}{ns\+I\+Supports} $\ast$obs)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7e5d71e22a16e4832a941102f3e3c000}\label{interfacens_i_doc_shell_a7e5d71e22a16e4832a941102f3e3c000}} 
+nsresult {\bfseries Remove\+Weak\+Reflow\+Observer} (\hyperlink{interfacens_i_supports}{ns\+I\+Supports} $\ast$obs)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a0b90b2a04d153381e8ba5998982503e0}\label{interfacens_i_doc_shell_a0b90b2a04d153381e8ba5998982503e0}} 
+nsresult {\bfseries Notify\+Reflow\+Observers} (bool interruptible, int start, int end)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a9ba00907af41756cd0e96c2a8e77e1c0}\label{interfacens_i_doc_shell_a9ba00907af41756cd0e96c2a8e77e1c0}} 
+nsresult {\bfseries Add\+Weak\+Scroll\+Observer} (\hyperlink{interfacevoid}{void} $\ast$obs)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a1d68e4feb0878c4dcfcf6aafdf64965d}\label{interfacens_i_doc_shell_a1d68e4feb0878c4dcfcf6aafdf64965d}} 
+nsresult {\bfseries Remove\+Weak\+Scroll\+Observer} (\hyperlink{interfacevoid}{void} $\ast$obs)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa28d05418fac837ed724de0ce45cbfdb}\label{interfacens_i_doc_shell_aa28d05418fac837ed724de0ce45cbfdb}} 
+nsresult {\bfseries Notify\+Scroll\+Observers} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a94e69b01561bf4ee3206deedaaecdc71}\label{interfacens_i_doc_shell_a94e69b01561bf4ee3206deedaaecdc71}} 
+nsresult {\bfseries Get\+Is\+Browser\+Element} (bool $\ast$a\+Is\+Browser\+Element)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a27ca015da44d48cccb8c2584bff42804}\label{interfacens_i_doc_shell_a27ca015da44d48cccb8c2584bff42804}} 
+nsresult {\bfseries Get\+Is\+App} (bool $\ast$a\+Is\+App)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ad35a1dbc3e925f876098b0ace02935ab}\label{interfacens_i_doc_shell_ad35a1dbc3e925f876098b0ace02935ab}} 
+nsresult {\bfseries Get\+Is\+Browser\+Or\+App} (bool $\ast$a\+Is\+Browser\+Or\+App)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a56862003bb96c8b9402b4e2bf7cecc36}\label{interfacens_i_doc_shell_a56862003bb96c8b9402b4e2bf7cecc36}} 
+nsresult {\bfseries Get\+Is\+In\+Browser\+Element} (bool $\ast$a\+Is\+In\+Browser\+Element)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_af21b1b1065b9d6c938480b61c15b7fd7}\label{interfacens_i_doc_shell_af21b1b1065b9d6c938480b61c15b7fd7}} 
+nsresult {\bfseries Get\+Is\+In\+Browser\+Or\+App} (bool $\ast$a\+Is\+In\+Browser\+Or\+App)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_af2e78ead88135fbc89df3c6394a37799}\label{interfacens_i_doc_shell_af2e78ead88135fbc89df3c6394a37799}} 
+nsresult {\bfseries Set\+Is\+App} (uint32\+\_\+t own\+App\+Id)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac13130ddfe6497768666bd7543907671}\label{interfacens_i_doc_shell_ac13130ddfe6497768666bd7543907671}} 
+nsresult {\bfseries Set\+Is\+Browser\+Inside\+App} (uint32\+\_\+t containing\+App\+Id)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a9b49d3ac081b88ecb044c8050f15abe2}\label{interfacens_i_doc_shell_a9b49d3ac081b88ecb044c8050f15abe2}} 
+nsresult {\bfseries Get\+App\+Id} (uint32\+\_\+t $\ast$a\+App\+Id)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a70c1050c232b82e6115a44f0118308b3}\label{interfacens_i_doc_shell_a70c1050c232b82e6115a44f0118308b3}} 
+nsresult {\bfseries Get\+App\+Manifest\+U\+RL} (\hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+App\+Manifest\+U\+RL)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a9d0f8e9783f8ccf6ff76e779939251ae}\label{interfacens_i_doc_shell_a9d0f8e9783f8ccf6ff76e779939251ae}} 
+nsresult {\bfseries Get\+Same\+Type\+Parent\+Ignore\+Browser\+And\+App\+Boundaries} (\hyperlink{interfacens_i_doc_shell}{ns\+I\+Doc\+Shell} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac122bc1f9d49a380e2be6fa54066458f}\label{interfacens_i_doc_shell_ac122bc1f9d49a380e2be6fa54066458f}} 
+nsresult {\bfseries Get\+Async\+Pan\+Zoom\+Enabled} (bool $\ast$a\+Async\+Pan\+Zoom\+Enabled)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a28c1f69e43f984a079a9d8f844656978}\label{interfacens_i_doc_shell_a28c1f69e43f984a079a9d8f844656978}} 
+nsresult {\bfseries Get\+Sandbox\+Flags} (uint32\+\_\+t $\ast$a\+Sandbox\+Flags)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aaf05e1f590d09e2a4eb341cdb329b2a5}\label{interfacens_i_doc_shell_aaf05e1f590d09e2a4eb341cdb329b2a5}} 
+nsresult {\bfseries Set\+Sandbox\+Flags} (uint32\+\_\+t a\+Sandbox\+Flags)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a46814d4ae839199dc7244113875f0831}\label{interfacens_i_doc_shell_a46814d4ae839199dc7244113875f0831}} 
+nsresult {\bfseries Get\+One\+Permitted\+Sandboxed\+Navigator} (\hyperlink{interfacens_i_doc_shell}{ns\+I\+Doc\+Shell} $\ast$$\ast$a\+One\+Permitted\+Sandboxed\+Navigator)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aff24c27d38861022747e0ecb139ebbc3}\label{interfacens_i_doc_shell_aff24c27d38861022747e0ecb139ebbc3}} 
+nsresult {\bfseries Set\+One\+Permitted\+Sandboxed\+Navigator} (\hyperlink{interfacens_i_doc_shell}{ns\+I\+Doc\+Shell} $\ast$a\+One\+Permitted\+Sandboxed\+Navigator)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a578cbe641167037e384e450767cd4b4a}\label{interfacens_i_doc_shell_a578cbe641167037e384e450767cd4b4a}} 
+bool {\bfseries Is\+Sandboxed\+From} (\hyperlink{interfacens_i_doc_shell}{ns\+I\+Doc\+Shell} $\ast$a\+Target\+Doc\+Shell)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a733f8ad0e1ac6ac67b2ef611b6e29633}\label{interfacens_i_doc_shell_a733f8ad0e1ac6ac67b2ef611b6e29633}} 
+nsresult {\bfseries Get\+Mixed\+Content\+Channel} (\hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$a\+Mixed\+Content\+Channel)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a26e300cce696363eff6a3e80885bf9bb}\label{interfacens_i_doc_shell_a26e300cce696363eff6a3e80885bf9bb}} 
+nsresult {\bfseries Set\+Mixed\+Content\+Channel} (\hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$a\+Mixed\+Content\+Channel)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a1785adf2f0a67787333395a659302116}\label{interfacens_i_doc_shell_a1785adf2f0a67787333395a659302116}} 
+nsresult {\bfseries Get\+Allow\+Mixed\+Content\+And\+Connection\+Data} (bool $\ast$root\+Has\+Secure\+Connection, bool $\ast$allow\+Mixed\+Content, bool $\ast$is\+Root\+Doc\+Shell)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a04748e85a338a3f3a45359dfeb189718}\label{interfacens_i_doc_shell_a04748e85a338a3f3a45359dfeb189718}} 
+bool {\bfseries Plugins\+Allowed\+In\+Current\+Doc} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7414368ef96b97a6a3a7769afe308c57}\label{interfacens_i_doc_shell_a7414368ef96b97a6a3a7769afe308c57}} 
+nsresult {\bfseries Get\+Fullscreen\+Allowed} (bool $\ast$a\+Fullscreen\+Allowed)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a86ad956b1769d21f16002987982c180e}\label{interfacens_i_doc_shell_a86ad956b1769d21f16002987982c180e}} 
+nsresult {\bfseries Set\+Fullscreen\+Allowed} (bool allowed)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7f336f67e8f5d0fcfff4698eb3b39696}\label{interfacens_i_doc_shell_a7f336f67e8f5d0fcfff4698eb3b39696}} 
+nsresult {\bfseries Get\+Affect\+Private\+Session\+Lifetime} (bool $\ast$a\+Affect\+Private\+Session\+Lifetime)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ae6ab25350534eac412ca67d3b37889c8}\label{interfacens_i_doc_shell_ae6ab25350534eac412ca67d3b37889c8}} 
+nsresult {\bfseries Set\+Affect\+Private\+Session\+Lifetime} (bool a\+Affect\+Private\+Session\+Lifetime)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a30c9e26374a33c9befba56e6c65ca12f}\label{interfacens_i_doc_shell_a30c9e26374a33c9befba56e6c65ca12f}} 
+nsresult {\bfseries Get\+May\+Enable\+Character\+Encoding\+Menu} (bool $\ast$a\+May\+Enable\+Character\+Encoding\+Menu)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_af6b5dea9cc03b1c830f57b6c7edeffff}\label{interfacens_i_doc_shell_af6b5dea9cc03b1c830f57b6c7edeffff}} 
+nsresult {\bfseries Get\+Editor} (\hyperlink{interfacens_i_editor}{ns\+I\+Editor} $\ast$$\ast$a\+Editor)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a2b29f858ebac6fff6179a33d1abde56b}\label{interfacens_i_doc_shell_a2b29f858ebac6fff6179a33d1abde56b}} 
+nsresult {\bfseries Set\+Editor} (\hyperlink{interfacens_i_editor}{ns\+I\+Editor} $\ast$a\+Editor)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac08c846f6f648f50bc5dd8368ab239d4}\label{interfacens_i_doc_shell_ac08c846f6f648f50bc5dd8368ab239d4}} 
+nsresult {\bfseries Get\+Editable} (bool $\ast$a\+Editable)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a2d0528b90e17997e4803eacc486ac08b}\label{interfacens_i_doc_shell_a2d0528b90e17997e4803eacc486ac08b}} 
+nsresult {\bfseries Get\+Has\+Editing\+Session} (bool $\ast$a\+Has\+Editing\+Session)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a4a3545c7f65cd044136489b0f2a63aba}\label{interfacens_i_doc_shell_a4a3545c7f65cd044136489b0f2a63aba}} 
+nsresult {\bfseries Make\+Editable} (bool in\+Wait\+For\+Uri\+Load)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aedbd65e3c367149b748500885b530853}\label{interfacens_i_doc_shell_aedbd65e3c367149b748500885b530853}} 
+nsresult {\bfseries Get\+Child\+S\+H\+Entry} (int32\+\_\+t a\+Child\+Offset, \hyperlink{interfacens_i_supports}{ns\+I\+S\+H\+Entry} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_af461102fdf19055b2d56d766587721ab}\label{interfacens_i_doc_shell_af461102fdf19055b2d56d766587721ab}} 
+nsresult {\bfseries Add\+Child\+S\+H\+Entry} (\hyperlink{interfacens_i_supports}{ns\+I\+S\+H\+Entry} $\ast$a\+Clone\+Reference, \hyperlink{interfacens_i_supports}{ns\+I\+S\+H\+Entry} $\ast$a\+History\+Entry, int32\+\_\+t a\+Child\+Offset, uint32\+\_\+t a\+Load\+Type, bool a\+Clone\+Children)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa6f333595629039dfd4066abe605269b}\label{interfacens_i_doc_shell_aa6f333595629039dfd4066abe605269b}} 
+nsresult {\bfseries Get\+Use\+Global\+History} (bool $\ast$a\+Use\+Global\+History)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a28b03261a0ab5a8903c1ea9a22fe0752}\label{interfacens_i_doc_shell_a28b03261a0ab5a8903c1ea9a22fe0752}} 
+nsresult {\bfseries Set\+Use\+Global\+History} (bool a\+Use\+Global\+History)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a430897d762bf1dcd2f86827ad4a3b738}\label{interfacens_i_doc_shell_a430897d762bf1dcd2f86827ad4a3b738}} 
+nsresult {\bfseries Remove\+From\+Session\+History} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ac5c8032a3363f99dacccbe16c3d1941f}\label{interfacens_i_doc_shell_ac5c8032a3363f99dacccbe16c3d1941f}} 
+nsresult {\bfseries Get\+Created\+Dynamically} (bool $\ast$a\+Created\+Dynamically)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7c52a675385181b79effe429403f4ced}\label{interfacens_i_doc_shell_a7c52a675385181b79effe429403f4ced}} 
+nsresult {\bfseries Set\+Created\+Dynamically} (bool a\+Created\+Dynamically)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a7b0c5c0d26d70a81b94c518f0457021a}\label{interfacens_i_doc_shell_a7b0c5c0d26d70a81b94c518f0457021a}} 
+nsresult {\bfseries Get\+Current\+S\+H\+Entry} (\hyperlink{interfacens_i_supports}{ns\+I\+S\+H\+Entry} $\ast$$\ast$a\+Entry, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ae5ecfdaaced3ee27afcdd654f958301b}\label{interfacens_i_doc_shell_ae5ecfdaaced3ee27afcdd654f958301b}} 
+nsresult {\bfseries Is\+Command\+Enabled} (const char $\ast$\hyperlink{structcommand}{command}, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ad08c45a47a8fa8100fd83c73371eb8f1}\label{interfacens_i_doc_shell_ad08c45a47a8fa8100fd83c73371eb8f1}} 
+nsresult {\bfseries Do\+Command} (const char $\ast$\hyperlink{structcommand}{command})
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa72d9f48cb0522971b4a1a5a0a832596}\label{interfacens_i_doc_shell_aa72d9f48cb0522971b4a1a5a0a832596}} 
+bool {\bfseries Is\+Invisible} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a0109953713422aee8cf56da8d9f9c9c1}\label{interfacens_i_doc_shell_a0109953713422aee8cf56da8d9f9c9c1}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Invisible} (bool a\+Is\+Invisible\+Dochsell)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a2c03c410b6fb64294befa049b9be7a99}\label{interfacens_i_doc_shell_a2c03c410b6fb64294befa049b9be7a99}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries Get\+Script\+Global\+Object} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a2ac784ef51cd771a5badda22a6684d6c}\label{interfacens_i_doc_shell_a2ac784ef51cd771a5badda22a6684d6c}} 
+nsresult {\bfseries Get\+Device\+Size\+Is\+Page\+Size} (bool $\ast$a\+Device\+Size\+Is\+Page\+Size)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a6f575ecb095cc649678abe106181f00e}\label{interfacens_i_doc_shell_a6f575ecb095cc649678abe106181f00e}} 
+nsresult {\bfseries Set\+Device\+Size\+Is\+Page\+Size} (bool a\+Device\+Size\+Is\+Page\+Size)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a86fce369ec236d3b1544b49865ef3450}\label{interfacens_i_doc_shell_a86fce369ec236d3b1544b49865ef3450}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Opener} (\hyperlink{interfacevoid}{void} $\ast$a\+Opener)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ada1279ff3c42fdcbb6b097210964f410}\label{interfacens_i_doc_shell_ada1279ff3c42fdcbb6b097210964f410}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries Get\+Opener} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a899c4466e988578231406ce3b2d017da}\label{interfacens_i_doc_shell_a899c4466e988578231406ce3b2d017da}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries Get\+U\+R\+L\+Search\+Params} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_ad6acfd64a1aa134e7f2ccd3aed3b3ed4}\label{interfacens_i_doc_shell_ad6acfd64a1aa134e7f2ccd3aed3b3ed4}} 
+\hyperlink{interfacevoid}{void} {\bfseries Notify\+J\+S\+Run\+To\+Completion\+Start} (const char $\ast$a\+Reason, const char16\+\_\+t $\ast$function\+Name, const char16\+\_\+t $\ast$file\+Name, uint32\+\_\+t line\+Number)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a0b2f8aa24cd87dbdda0c5106040ded7b}\label{interfacens_i_doc_shell_a0b2f8aa24cd87dbdda0c5106040ded7b}} 
+\hyperlink{interfacevoid}{void} {\bfseries Notify\+J\+S\+Run\+To\+Completion\+Stop} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aa65d02d6f65bbd4010669593eb4df5af}\label{interfacens_i_doc_shell_aa65d02d6f65bbd4010669593eb4df5af}} 
+nsresult {\bfseries Get\+Has\+Loaded\+Non\+Blank\+U\+RI} (bool $\ast$a\+Has\+Loaded\+Non\+Blank\+U\+RI)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a22677fc1524e5f46fefaff9884d1193b}\label{interfacens_i_doc_shell_a22677fc1524e5f46fefaff9884d1193b}} 
+nsresult {\bfseries Get\+Payment\+Request\+Id} (\hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+Payment\+Request\+Id)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a1031994890ac2f939d7f84f9e9526f07}\label{interfacens_i_doc_shell_a1031994890ac2f939d7f84f9e9526f07}} 
+nsresult {\bfseries Set\+Payment\+Request\+Id} (const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+Payment\+Request\+Id)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_a1d681a401b9aa855a9a8b4912185ea9a}\label{interfacens_i_doc_shell_a1d681a401b9aa855a9a8b4912185ea9a}} 
+nsresult {\bfseries Get\+Window\+Dragging\+Allowed} (bool $\ast$a\+Window\+Dragging\+Allowed)
+\item 
+\mbox{\Hypertarget{interfacens_i_doc_shell_aab70096ac9064d520353227fd37e0770}\label{interfacens_i_doc_shell_aab70096ac9064d520353227fd37e0770}} 
+nsresult {\bfseries Set\+Window\+Dragging\+Allowed} (bool a\+Window\+Dragging\+Allowed)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

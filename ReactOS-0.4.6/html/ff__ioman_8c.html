@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/3rdparty/fullfat/ff_ioman.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_727636fe2c0c7ad7dfe8f2ab5613e0a0.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_6cb9f7560c55d47c4bfbf955832ffee6.html">fullfat</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">ff_ioman.c 文件参考<div class="ingroups"><a class="el" href="group___i_o_m_a_n.html">I/O Manager</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="ff__ioman_8h_source.html">ff_ioman.h</a>&quot;</code><br />
+<code>#include &quot;ff_fatdef.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ff__crc_8h_source.html">ff_crc.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a979eac11eb231f5438f056a32edf798e"><td class="memItemLeft" align="right" valign="top"><a id="a979eac11eb231f5438f056a32edf798e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GPT_HEAD_ENTRY_SIZE</b>&#160;&#160;&#160;0x54</td></tr>
+<tr class="separator:a979eac11eb231f5438f056a32edf798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae757c1e719cd3d55374fcdefafe085"><td class="memItemLeft" align="right" valign="top"><a id="a2ae757c1e719cd3d55374fcdefafe085"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GPT_HEAD_TOTAL_ENTRIES</b>&#160;&#160;&#160;0x50</td></tr>
+<tr class="separator:a2ae757c1e719cd3d55374fcdefafe085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5e3c4d7c9dbeb80c0948a5af16b83a"><td class="memItemLeft" align="right" valign="top"><a id="aaa5e3c4d7c9dbeb80c0948a5af16b83a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GPT_HEAD_PART_ENTRY_LBA</b>&#160;&#160;&#160;0x48</td></tr>
+<tr class="separator:aaa5e3c4d7c9dbeb80c0948a5af16b83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2648745742e1ff949acdc409cbd7bd5"><td class="memItemLeft" align="right" valign="top"><a id="aa2648745742e1ff949acdc409cbd7bd5"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GPT_ENTRY_FIRST_SECTOR_LBA</b>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:aa2648745742e1ff949acdc409cbd7bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e1ba780ba0e22870e72da70b738491"><td class="memItemLeft" align="right" valign="top"><a id="a32e1ba780ba0e22870e72da70b738491"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GPT_HEAD_CRC</b>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a32e1ba780ba0e22870e72da70b738491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48adb3b08623479527bac74d7e1b1b3b"><td class="memItemLeft" align="right" valign="top"><a id="a48adb3b08623479527bac74d7e1b1b3b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GPT_HEAD_LENGTH</b>&#160;&#160;&#160;0x0C</td></tr>
+<tr class="separator:a48adb3b08623479527bac74d7e1b1b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2d2f710040c348eeb2d976f0ba6038d3"><td class="memItemLeft" align="right" valign="top"><a id="a2d2f710040c348eeb2d976f0ba6038d3"></a>
+FF_T_UINT32&#160;</td><td class="memItemRight" valign="bottom"><b>FF_CountFreeClusters</b> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_ERROR *pError)</td></tr>
+<tr class="separator:a2d2f710040c348eeb2d976f0ba6038d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927ed90ba0df23750609840d05938ef4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff__ioman_8c.html#a927ed90ba0df23750609840d05938ef4">FF_CreateIOMAN</a> (FF_T_UINT8 *pCacheMem, FF_T_UINT32 Size, FF_T_UINT16 BlkSize, FF_ERROR *pError)</td></tr>
+<tr class="memdesc:a927ed90ba0df23750609840d05938ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object, to initialise FullFAT  <a href="#a927ed90ba0df23750609840d05938ef4">更多...</a><br /></td></tr>
+<tr class="separator:a927ed90ba0df23750609840d05938ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac481cd59e88e192d0e03f7f4872e96a"><td class="memItemLeft" align="right" valign="top">FF_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff__ioman_8c.html#aac481cd59e88e192d0e03f7f4872e96a">FF_DestroyIOMAN</a> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman)</td></tr>
+<tr class="memdesc:aac481cd59e88e192d0e03f7f4872e96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object, and frees all assigned memory.  <a href="#aac481cd59e88e192d0e03f7f4872e96a">更多...</a><br /></td></tr>
+<tr class="separator:aac481cd59e88e192d0e03f7f4872e96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b28fa12974666e441d3bd6bfbb7fb1c"><td class="memItemLeft" align="right" valign="top"><a id="a1b28fa12974666e441d3bd6bfbb7fb1c"></a>
+FF_BUFFER *&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GetBuffer</b> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_T_UINT32 Sector, FF_T_UINT8 Mode)</td></tr>
+<tr class="separator:a1b28fa12974666e441d3bd6bfbb7fb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac730db857825e1b0070a9769a26bbc3b"><td class="memItemLeft" align="right" valign="top">FF_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff__ioman_8c.html#ac730db857825e1b0070a9769a26bbc3b">FF_RegisterBlkDevice</a> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_T_UINT16 BlkSize, FF_WRITE_BLOCKS fnWriteBlocks, FF_READ_BLOCKS fnReadBlocks, <a class="el" href="interfacevoid.html">void</a> *pParam)</td></tr>
+<tr class="memdesc:ac730db857825e1b0070a9769a26bbc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a device driver with FullFAT  <a href="#ac730db857825e1b0070a9769a26bbc3b">更多...</a><br /></td></tr>
+<tr class="separator:ac730db857825e1b0070a9769a26bbc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065eb06ea88fe0669f50469c2081fe39"><td class="memItemLeft" align="right" valign="top"><a id="a065eb06ea88fe0669f50469c2081fe39"></a>
+FF_T_SINT32&#160;</td><td class="memItemRight" valign="bottom"><b>FF_BlockRead</b> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_T_UINT32 ulSectorLBA, FF_T_UINT32 ulNumSectors, <a class="el" href="interfacevoid.html">void</a> *pBuffer)</td></tr>
+<tr class="separator:a065eb06ea88fe0669f50469c2081fe39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d45404a3d9d3f468e0baf5c24dab41"><td class="memItemLeft" align="right" valign="top"><a id="a95d45404a3d9d3f468e0baf5c24dab41"></a>
+FF_T_SINT32&#160;</td><td class="memItemRight" valign="bottom"><b>FF_BlockWrite</b> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_T_UINT32 ulSectorLBA, FF_T_UINT32 ulNumSectors, <a class="el" href="interfacevoid.html">void</a> *pBuffer)</td></tr>
+<tr class="separator:a95d45404a3d9d3f468e0baf5c24dab41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc359415c92544fffb30c14da2b2927d"><td class="memItemLeft" align="right" valign="top">FF_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff__ioman_8c.html#acc359415c92544fffb30c14da2b2927d">FF_MountPartition</a> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_T_UINT8 PartitionNumber)</td></tr>
+<tr class="memdesc:acc359415c92544fffb30c14da2b2927d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mounts the Specified partition, the volume specified by the <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object provided.  <a href="#acc359415c92544fffb30c14da2b2927d">更多...</a><br /></td></tr>
+<tr class="separator:acc359415c92544fffb30c14da2b2927d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b905b4f181bb20e690eac6af44f97b2"><td class="memItemLeft" align="right" valign="top">FF_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff__ioman_8c.html#a5b905b4f181bb20e690eac6af44f97b2">FF_UnregisterBlkDevice</a> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman)</td></tr>
+<tr class="memdesc:a5b905b4f181bb20e690eac6af44f97b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a Blockdevice, so that the IOMAN can be re-used for another device.  <a href="#a5b905b4f181bb20e690eac6af44f97b2">更多...</a><br /></td></tr>
+<tr class="separator:a5b905b4f181bb20e690eac6af44f97b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0937a9e9ec98706b9ca089621b625c5b"><td class="memItemLeft" align="right" valign="top">FF_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff__ioman_8c.html#a0937a9e9ec98706b9ca089621b625c5b">FF_UnmountPartition</a> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman)</td></tr>
+<tr class="memdesc:a0937a9e9ec98706b9ca089621b625c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmounts the active partition.  <a href="#a0937a9e9ec98706b9ca089621b625c5b">更多...</a><br /></td></tr>
+<tr class="separator:a0937a9e9ec98706b9ca089621b625c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b026fab125d2ce4d93d13c94b08c48"><td class="memItemLeft" align="right" valign="top"><a id="ac0b026fab125d2ce4d93d13c94b08c48"></a>
+FF_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>FF_IncreaseFreeClusters</b> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_T_UINT32 Count)</td></tr>
+<tr class="separator:ac0b026fab125d2ce4d93d13c94b08c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8d9a3090d231f2fe20cba3ace74c0e"><td class="memItemLeft" align="right" valign="top"><a id="a0f8d9a3090d231f2fe20cba3ace74c0e"></a>
+FF_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>FF_DecreaseFreeClusters</b> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman, FF_T_UINT32 Count)</td></tr>
+<tr class="separator:a0f8d9a3090d231f2fe20cba3ace74c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabcdec87a868138e049ee82aa0d63f58"><td class="memItemLeft" align="right" valign="top">FF_T_SINT32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff__ioman_8c.html#aabcdec87a868138e049ee82aa0d63f58">FF_GetPartitionBlockSize</a> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman)</td></tr>
+<tr class="memdesc:aabcdec87a868138e049ee82aa0d63f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Block-size of a mounted Partition  <a href="#aabcdec87a868138e049ee82aa0d63f58">更多...</a><br /></td></tr>
+<tr class="separator:aabcdec87a868138e049ee82aa0d63f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6be153062fb720ab5c2c5cf74e17f8"><td class="memItemLeft" align="right" valign="top"><a id="a6e6be153062fb720ab5c2c5cf74e17f8"></a>
+FF_T_UINT32&#160;</td><td class="memItemRight" valign="bottom"><b>FF_GetVolumeSize</b> (<a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *pIoman)</td></tr>
+<tr class="separator:a6e6be153062fb720ab5c2c5cf74e17f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><dl class="section author"><dt>作者</dt><dd>James Walmsley </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a927ed90ba0df23750609840d05938ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927ed90ba0df23750609840d05938ef4">&#9670;&nbsp;</a></span>FF_CreateIOMAN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a>* FF_CreateIOMAN </td>
+          <td>(</td>
+          <td class="paramtype">FF_T_UINT8 *&#160;</td>
+          <td class="paramname"><em>pCacheMem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FF_T_UINT32&#160;</td>
+          <td class="paramname"><em>Size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FF_T_UINT16&#160;</td>
+          <td class="paramname"><em>BlkSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FF_ERROR *&#160;</td>
+          <td class="paramname"><em>pError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object, to initialise FullFAT </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCacheMem</td><td>Pointer to a buffer for the cache. (NULL if ok to Malloc). </td></tr>
+    <tr><td class="paramname">Size</td><td>The size of the provided buffer, or size of the cache to be created. (Must be atleast 2 * BlkSize). Always a multiple of BlkSize. </td></tr>
+    <tr><td class="paramname">BlkSize</td><td>The block size of devices to be attached. If in doubt use 512. </td></tr>
+    <tr><td class="paramname">pError</td><td>Pointer to a signed byte for error checking. Can be NULL if not required. </td></tr>
+    <tr><td class="paramname">pError</td><td>To be checked when a NULL pointer is returned.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Returns a pointer to an <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> type object. NULL on Error, check the contents of </dd>
+<dd>
+pError </dd></dl>
+
+</div>
+</div>
+<a id="aac481cd59e88e192d0e03f7f4872e96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac481cd59e88e192d0e03f7f4872e96a">&#9670;&nbsp;</a></span>FF_DestroyIOMAN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FF_ERROR FF_DestroyIOMAN </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *&#160;</td>
+          <td class="paramname"><em>pIoman</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys an <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object, and frees all assigned memory. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIoman</td><td>Pointer to an <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object, as returned from FF_CreateIOMAN.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>FF_ERR_NONE on sucess, or a documented error code on failure. (FF_ERR_NULL_POINTER) </dd></dl>
+
+</div>
+</div>
+<a id="aabcdec87a868138e049ee82aa0d63f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabcdec87a868138e049ee82aa0d63f58">&#9670;&nbsp;</a></span>FF_GetPartitionBlockSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FF_T_SINT32 FF_GetPartitionBlockSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *&#160;</td>
+          <td class="paramname"><em>pIoman</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Block-size of a mounted Partition </p>
+<p>The purpose of this function is to provide API access to information that might be useful in special cases. Like USB sticks that require a sector knocking sequence for security. After the sector knock, some secure USB sticks then present a different BlockSize.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIoman</td><td><a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> Object returned from <a class="el" href="ff__ioman_8c.html#a927ed90ba0df23750609840d05938ef4" title="Creates an FF_IOMAN object, to initialise FullFAT ">FF_CreateIOMAN()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The blocksize of the partition. <a class="el" href="struct_a.html">A</a> value less than 0 when an error occurs. </dd>
+<dd>
+Any negative value can be cast to the FF_ERROR type. </dd></dl>
+
+</div>
+</div>
+<a id="acc359415c92544fffb30c14da2b2927d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc359415c92544fffb30c14da2b2927d">&#9670;&nbsp;</a></span>FF_MountPartition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FF_ERROR FF_MountPartition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *&#160;</td>
+          <td class="paramname"><em>pIoman</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FF_T_UINT8&#160;</td>
+          <td class="paramname"><em>PartitionNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mounts the Specified partition, the volume specified by the <a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object provided. </p>
+<p>The device drivers must adhere to the specification provided by FF_WRITE_BLOCKS and FF_READ_BLOCKS.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIoman</td><td><a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object. </td></tr>
+    <tr><td class="paramname">PartitionNumber</td><td>The primary partition number to be mounted. (0 - 3).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. </dd>
+<dd>
+FF_ERR_NULL_POINTER if a pIoman object wasn't provided. </dd>
+<dd>
+FF_ERR_IOMAN_INVALID_PARTITION_NUM if the partition number is out of range. </dd>
+<dd>
+FF_ERR_IOMAN_NO_MOUNTABLE_PARTITION if no partition was found. </dd>
+<dd>
+FF_ERR_IOMAN_INVALID_FORMAT if the master boot record or partition boot block didn't provide sensible data. </dd>
+<dd>
+FF_ERR_IOMAN_NOT_FAT_FORMATTED if the volume or partition couldn't be determined to be FAT. (</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="ff__config_8h_source.html">ff_config.h</a>) </dd></dl>
+
+</div>
+</div>
+<a id="ac730db857825e1b0070a9769a26bbc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac730db857825e1b0070a9769a26bbc3b">&#9670;&nbsp;</a></span>FF_RegisterBlkDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FF_ERROR FF_RegisterBlkDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *&#160;</td>
+          <td class="paramname"><em>pIoman</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FF_T_UINT16&#160;</td>
+          <td class="paramname"><em>BlkSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FF_WRITE_BLOCKS&#160;</td>
+          <td class="paramname"><em>fnWriteBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FF_READ_BLOCKS&#160;</td>
+          <td class="paramname"><em>fnReadBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>pParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a device driver with FullFAT </p>
+<p>The device drivers must adhere to the specification provided by FF_WRITE_BLOCKS and FF_READ_BLOCKS.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIoman</td><td><a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object. </td></tr>
+    <tr><td class="paramname">BlkSize</td><td>Block Size that the driver deals in. (Minimum 512, larger values must be a multiple of 512). </td></tr>
+    <tr><td class="paramname">fnWriteBlocks</td><td>Pointer to the Write Blocks to device function, as described by FF_WRITE_BLOCKS. </td></tr>
+    <tr><td class="paramname">fnReadBlocks</td><td>Pointer to the Read Blocks from device function, as described by FF_READ_BLOCKS. </td></tr>
+    <tr><td class="paramname">pParam</td><td>Pointer to a parameter for use in the functions.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success, FF_ERR_IOMAN_DEV_ALREADY_REGD if a device was already hooked, FF_ERR_IOMAN_NULL_POINTER if a pIoman object wasn't provided. </dd></dl>
+
+</div>
+</div>
+<a id="a0937a9e9ec98706b9ca089621b625c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0937a9e9ec98706b9ca089621b625c5b">&#9670;&nbsp;</a></span>FF_UnmountPartition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FF_ERROR FF_UnmountPartition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *&#160;</td>
+          <td class="paramname"><em>pIoman</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmounts the active partition. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIoman</td><td><a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> Object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>FF_ERR_NONE on success. </dd></dl>
+
+</div>
+</div>
+<a id="a5b905b4f181bb20e690eac6af44f97b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b905b4f181bb20e690eac6af44f97b2">&#9670;&nbsp;</a></span>FF_UnregisterBlkDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FF_ERROR FF_UnregisterBlkDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_f_f___i_o_m_a_n.html">FF_IOMAN</a> *&#160;</td>
+          <td class="paramname"><em>pIoman</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a Blockdevice, so that the IOMAN can be re-used for another device. </p>
+<p>Any active partitions must be Unmounted first.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIoman</td><td><a class="el" href="struct_f_f___i_o_m_a_n.html" title="FF_IOMAN Object. A developer should not touch these values. ">FF_IOMAN</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>FF_ERR_NONE on success. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

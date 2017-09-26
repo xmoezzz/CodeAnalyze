@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/dll/directx/d3d9/d3d9_baseobject.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c938f8a9ae7e172e1ee48b60f4a9b17a.html">dll</a></li><li class="navelem"><a class="el" href="dir_82ab37be22bb005b90dce92ece75eebd.html">directx</a></li><li class="navelem"><a class="el" href="dir_942a84e739efc9c14a42d08db3ebce84.html">d3d9</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">d3d9_baseobject.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * COPYRIGHT:       See COPYING in the top level directory</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * PROJECT:         ReactOS ReactX</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * FILE:            dll/directx/d3d9/d3d9_baseobject.h</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * PURPOSE:         Direct3D9&#39;s base object</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * PROGRAMERS:      Gregor Gullwi &lt;gbrunmar (dot) ros (at) gmail (dot) com&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _D3D9_BASEOBJECT_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _D3D9_BASEOBJECT_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;d3d9_common.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;d3d9.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span><a class="code" href="struct___d3_d9_base_object.html">_D3D9BaseObject</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span><a class="code" href="struct___direct3_d_device9___i_n_t.html">_Direct3DDevice9_INT</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">enum</span> REF_TYPE</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    RT_EXTERNAL,</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    RT_BUILTIN,</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    RT_INTERNAL,</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct___d3_d9_base_object_vtbl.html">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___d3_d9_base_object_vtbl.html">_D3D9BaseObjectVtbl</a></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="interfacevoid.html">VOID</a> (*Destroy)(<span class="keyword">struct </span><a class="code" href="struct___d3_d9_base_object.html">_D3D9BaseObject</a>* pBaseObject, BOOL bFreeThis);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <a class="code" href="struct___d3_d9_base_object_vtbl.html">ID3D9BaseObjectVtbl</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct___d3_d9_base_object.html">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___d3_d9_base_object.html">_D3D9BaseObject</a></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* 0x0000 */</span>    <a class="code" href="struct___d3_d9_base_object_vtbl.html">ID3D9BaseObjectVtbl</a>* lpVtbl;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* 0x0004 */</span>    LONG lRefCnt;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/* 0x0008 */</span>    DWORD dwNumUsed;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* 0x000c */</span>    <a class="code" href="interface_i_unknown.html">IUnknown</a>* pUnknown;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* 0x0010 */</span>    DWORD dwUnknown0010;    <span class="comment">// Index? Unique id?</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* 0x0014 */</span>    <a class="code" href="interfacevoid.html">HANDLE</a> hKernelHandle;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* 0x0018 */</span>    LPDWORD dwUnknown0018;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* 0x001c */</span>    <span class="keyword">enum</span> REF_TYPE RefType;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> InitD3D9BaseObject(<a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>* pBaseObject, <span class="keyword">enum</span> REF_TYPE RefType, <a class="code" href="interface_i_unknown.html">IUnknown</a>* pUnknown);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;ULONG D3D9BaseObject_AddRef(<a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>* pBaseObject);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;ULONG D3D9BaseObject_Release(<a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>* pBaseObject);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;HRESULT D3D9BaseObject_GetDevice(<a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>* pBaseObject, IDirect3DDevice9** ppDevice);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;HRESULT D3D9BaseObject_GetDeviceInt(<a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>* pBaseObject, <span class="keyword">struct</span> <a class="code" href="struct___direct3_d_device9___i_n_t.html">_Direct3DDevice9_INT</a>** ppDevice);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> D3D9BaseObject_LockDevice(<a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>* pBaseObject);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> D3D9BaseObject_UnlockDevice(<a class="code" href="struct___d3_d9_base_object.html">D3D9BaseObject</a>* pBaseObject);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // _D3D9_BASEOBJECT_H_</span></div><div class="ttc" id="struct___d3_d9_base_object_vtbl_html"><div class="ttname"><a href="struct___d3_d9_base_object_vtbl.html">_D3D9BaseObjectVtbl</a></div><div class="ttdef"><b>Definition:</b> d3d9_baseobject.h:24</div></div>
+<div class="ttc" id="struct___d3_d9_base_object_html"><div class="ttname"><a href="struct___d3_d9_base_object.html">_D3D9BaseObject</a></div><div class="ttdef"><b>Definition:</b> d3d9_baseobject.h:29</div></div>
+<div class="ttc" id="struct___direct3_d_device9___i_n_t_html"><div class="ttname"><a href="struct___direct3_d_device9___i_n_t.html">_Direct3DDevice9_INT</a></div><div class="ttdef"><b>Definition:</b> d3d9_device.h:86</div></div>
+<div class="ttc" id="interface_i_unknown_html"><div class="ttname"><a href="interface_i_unknown.html">IUnknown</a></div><div class="ttdef"><b>Definition:</b> unknwn.idl:31</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

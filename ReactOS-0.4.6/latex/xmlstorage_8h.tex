@@ -1,0 +1,341 @@
+\hypertarget{xmlstorage_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/modules/rosapps/applications/explorer-\/old/utility/xmlstorage.h 文件参考}
+\label{xmlstorage_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/xmlstorage.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/xmlstorage.\+h}}
+{\ttfamily \#include $<$wchar.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+M\+L\+Storage\+::\+X\+S\+\_\+\+String}
+\begin{DoxyCompactList}\small\item\em string class for T\+C\+H\+AR strings \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1tifstream}{X\+M\+L\+Storage\+::tifstream}
+\item 
+struct \hyperlink{struct_x_m_l_storage_1_1tofstream}{X\+M\+L\+Storage\+::tofstream}
+\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_error}{X\+M\+L\+Storage\+::\+X\+M\+L\+Error}
+\begin{DoxyCompactList}\small\item\em X\+ML Error with message and location \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_error_list}{X\+M\+L\+Storage\+::\+X\+M\+L\+Error\+List}
+\begin{DoxyCompactList}\small\item\em list of \hyperlink{struct_x_m_l_storage_1_1_x_m_l_error}{X\+M\+L\+Error} entries \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_style_sheet}{X\+M\+L\+Storage\+::\+Style\+Sheet}
+\begin{DoxyCompactList}\small\item\em X\+ML Stylesheet entry \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_style_sheet_list}{X\+M\+L\+Storage\+::\+Style\+Sheet\+List}
+\begin{DoxyCompactList}\small\item\em list of \hyperlink{struct_x_m_l_storage_1_1_style_sheet}{Style\+Sheet} entries \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_doc_type}{X\+M\+L\+Storage\+::\+Doc\+Type}
+\begin{DoxyCompactList}\small\item\em X\+ML document type description \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Storage\+::\+X\+M\+L\+Format}
+\begin{DoxyCompactList}\small\item\em Management of X\+ML file headers and formating \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_path_element}{X\+M\+L\+Storage\+::\+X\+Path\+Element}
+\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_path}{X\+M\+L\+Storage\+::\+X\+Path}
+\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_node}{X\+M\+L\+Storage\+::\+X\+M\+L\+Node}
+\begin{DoxyCompactList}\small\item\em in memory representation of an X\+ML node \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_node_1_1_attribute_map}{X\+M\+L\+Storage\+::\+X\+M\+L\+Node\+::\+Attribute\+Map}
+\begin{DoxyCompactList}\small\item\em map of X\+ML node attributes \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_node_1_1_children}{X\+M\+L\+Storage\+::\+X\+M\+L\+Node\+::\+Children}
+\begin{DoxyCompactList}\small\item\em internal children node list \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_children_filter}{X\+M\+L\+Storage\+::\+X\+M\+L\+Children\+Filter}
+\begin{DoxyCompactList}\small\item\em iterator access to children nodes with name filtering \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_children_filter_1_1iterator}{X\+M\+L\+Storage\+::\+X\+M\+L\+Children\+Filter\+::iterator}
+\begin{DoxyCompactList}\small\item\em internal iterator class \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1const___x_m_l_children_filter}{X\+M\+L\+Storage\+::const\+\_\+\+X\+M\+L\+Children\+Filter}
+\begin{DoxyCompactList}\small\item\em read only iterator access to children nodes with name filtering \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1const___x_m_l_children_filter_1_1const__iterator}{X\+M\+L\+Storage\+::const\+\_\+\+X\+M\+L\+Children\+Filter\+::const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em internal iterator class \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_pos}{X\+M\+L\+Storage\+::\+X\+M\+L\+Pos}
+\begin{DoxyCompactList}\small\item\em iterator for X\+ML trees \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1const___x_m_l_pos}{X\+M\+L\+Storage\+::const\+\_\+\+X\+M\+L\+Pos}
+\begin{DoxyCompactList}\small\item\em iterator for X\+ML trees \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_bool}{X\+M\+L\+Storage\+::\+X\+M\+L\+Bool}
+\begin{DoxyCompactList}\small\item\em type converter for boolean data \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_bool_ref}{X\+M\+L\+Storage\+::\+X\+M\+L\+Bool\+Ref}
+\begin{DoxyCompactList}\small\item\em type converter for boolean data with write access \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_int}{X\+M\+L\+Storage\+::\+X\+M\+L\+Int}
+\begin{DoxyCompactList}\small\item\em type converter for integer data \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_int_ref}{X\+M\+L\+Storage\+::\+X\+M\+L\+Int\+Ref}
+\begin{DoxyCompactList}\small\item\em type converter for integer data with write access \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_double}{X\+M\+L\+Storage\+::\+X\+M\+L\+Double}
+\begin{DoxyCompactList}\small\item\em type converter for numeric data \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_double_ref}{X\+M\+L\+Storage\+::\+X\+M\+L\+Double\+Ref}
+\begin{DoxyCompactList}\small\item\em type converter for numeric data with write access \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_string}{X\+M\+L\+Storage\+::\+X\+M\+L\+String}
+\begin{DoxyCompactList}\small\item\em type converter for string data \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_string_ref}{X\+M\+L\+Storage\+::\+X\+M\+L\+String\+Ref}
+\begin{DoxyCompactList}\small\item\em type converter for string data with write access \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_property}{X\+M\+L\+Storage\+::\+X\+M\+L\+Property}
+\begin{DoxyCompactList}\small\item\em a key/value pair for property data access \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_property_reader}{X\+M\+L\+Storage\+::\+X\+M\+L\+Property\+Reader}
+\begin{DoxyCompactList}\small\item\em utility class to read property settings from a X\+ML tree \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_property_reader_1_1const__iterator}{X\+M\+L\+Storage\+::\+X\+M\+L\+Property\+Reader\+::const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em internal iterator class \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader_base}{X\+M\+L\+Storage\+::\+X\+M\+L\+Reader\+Base}
+\begin{DoxyCompactList}\small\item\em X\+ML reader base class \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader}{X\+M\+L\+Storage\+::\+X\+M\+L\+Reader}
+\begin{DoxyCompactList}\small\item\em X\+ML file reader \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_doc}{X\+M\+L\+Storage\+::\+X\+M\+L\+Doc}
+\begin{DoxyCompactList}\small\item\em X\+ML document holder \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_message}{X\+M\+L\+Storage\+::\+X\+M\+L\+Message}
+\begin{DoxyCompactList}\small\item\em X\+ML message wrapper \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_message_from_string}{X\+M\+L\+Storage\+::\+X\+M\+L\+Message\+From\+String}
+\begin{DoxyCompactList}\small\item\em helper structure to read X\+ML messages from strings \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_message_reader}{X\+M\+L\+Storage\+::\+X\+M\+L\+Message\+Reader}
+\begin{DoxyCompactList}\small\item\em Reader for X\+ML Messages \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer}{X\+M\+L\+Storage\+::\+X\+M\+L\+Writer}
+\begin{DoxyCompactList}\small\item\em on the fly X\+ML writer \end{DoxyCompactList}\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry}{X\+M\+L\+Storage\+::\+X\+M\+L\+Writer\+::\+Stack\+Entry}
+\begin{DoxyCompactList}\small\item\em container for \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer}{X\+M\+L\+Writer} state information \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a6047b56818c357e5386c51c58b90808d}\label{xmlstorage_8h_a6047b56818c357e5386c51c58b90808d}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+U\+T\+F8}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a2978f60d40d64f3605b5a99f66f292a9}\label{xmlstorage_8h_a2978f60d40d64f3605b5a99f66f292a9}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+E\+XT}(x)~x
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a493d8925a19bc687f8f6b693aefebc34}\label{xmlstorage_8h_a493d8925a19bc687f8f6b693aefebc34}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+ttoi}~atoi
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a65d483a46d24b40308cab4b44d147d7f}\label{xmlstorage_8h_a65d483a46d24b40308cab4b44d147d7f}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+tfopen}~fopen
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ab013b2108c1bd9d00dba51373e6572ff}\label{xmlstorage_8h_ab013b2108c1bd9d00dba51373e6572ff}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+tcstod}~strtod
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ad253c68ce58b12b277fedc2d785d7977}\label{xmlstorage_8h_ad253c68ce58b12b277fedc2d785d7977}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+tcslen}~strlen
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_acc80dac9ea1b6e6d7a5b973298f60150}\label{xmlstorage_8h_acc80dac9ea1b6e6d7a5b973298f60150}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+tcsstr}~strstr
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_aabb8b876e7495cfb11a152cdf728815c}\label{xmlstorage_8h_aabb8b876e7495cfb11a152cdf728815c}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+snprintf}~snprintf
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_aad0cc0637768c5eda50cb458f023066a}\label{xmlstorage_8h_aad0cc0637768c5eda50cb458f023066a}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+sntprintf}~snprintf
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a1b75ef7f799a84b01d28530d06c53daf}\label{xmlstorage_8h_a1b75ef7f799a84b01d28530d06c53daf}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+vsnprintf}~vsnprintf
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ac83037e2bca4efd02d8da78b2725a100}\label{xmlstorage_8h_ac83037e2bca4efd02d8da78b2725a100}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+vsntprintf}~vsnprintf
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a3a35e08b2dedf0975d11794eb8de4805}\label{xmlstorage_8h_a3a35e08b2dedf0975d11794eb8de4805}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+stricmp}~strcasecmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ae21f4013c5b4809d681426a52e3a9187}\label{xmlstorage_8h_ae21f4013c5b4809d681426a52e3a9187}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+tcsicmp}~strcasecmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a16a19b1831112e876b010468ec15916f}\label{xmlstorage_8h_a16a19b1831112e876b010468ec15916f}} 
+\#\hyperlink{structdefine}{define} {\bfseries strnicmp}~strncasecmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_aa73bb733e1922cfb964b0ff6228e3089}\label{xmlstorage_8h_aa73bb733e1922cfb964b0ff6228e3089}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+tcsnicmp}~strncasecmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a46130dc86f2322714bba26960b64e7bb}\label{xmlstorage_8h_a46130dc86f2322714bba26960b64e7bb}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}~2048
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a361523ff05245ab33123b7b110165c9c}\label{xmlstorage_8h_a361523ff05245ab33123b7b110165c9c}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+C\+H\+AR}~char
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a6bb3768481b97aa18d61a30a5f9e4ad0}\label{xmlstorage_8h_a6bb3768481b97aa18d61a30a5f9e4ad0}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+T\+E\+XT}(x)~x
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_abdcdd695052e2f61b0458251b6086cc3}\label{xmlstorage_8h_abdcdd695052e2f61b0458251b6086cc3}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+P\+X\+S\+S\+TR}~L\+P\+S\+TR
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a61f634aa526b00fb66b430de768c6943}\label{xmlstorage_8h_a61f634aa526b00fb66b430de768c6943}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+P\+C\+X\+S\+S\+TR}~L\+P\+C\+S\+TR
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_abd6d3969b8dfad4cfe8c7fa962853a64}\label{xmlstorage_8h_abd6d3969b8dfad4cfe8c7fa962853a64}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+cmp}~strcmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ada71b3a0baa5e412cec4857cc3d8c95c}\label{xmlstorage_8h_ada71b3a0baa5e412cec4857cc3d8c95c}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+icmp}~\+\_\+stricmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ae38fbd721bb09418c8ce7b4a246c0ed2}\label{xmlstorage_8h_ae38fbd721bb09418c8ce7b4a246c0ed2}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+ncmp}~strncmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a32276474cd0c53dfa71ffc8aa1aa846d}\label{xmlstorage_8h_a32276474cd0c53dfa71ffc8aa1aa846d}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+nicmp}~strnicmp
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a4519b71e2a95c1f67d95e39dd9297979}\label{xmlstorage_8h_a4519b71e2a95c1f67d95e39dd9297979}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+toi}~atoi
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a012559f0519852ef9e7f2862a290fa9c}\label{xmlstorage_8h_a012559f0519852ef9e7f2862a290fa9c}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+tod}~strtod
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a8842e03141fc5a2fce977963f0fb4ced}\label{xmlstorage_8h_a8842e03141fc5a2fce977963f0fb4ced}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+len}~strlen
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ac14f262bc19afeed86d4784d3ddb4446}\label{xmlstorage_8h_ac14f262bc19afeed86d4784d3ddb4446}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+snprintf}~\+\_\+snprintf
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a90fecb5fa1d29635d488e2a7d256d672}\label{xmlstorage_8h_a90fecb5fa1d29635d488e2a7d256d672}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+vsnprintf}~\+\_\+vsnprintf
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ad836fd6f9eb4ba5a3b92c6346cae7199}\label{xmlstorage_8h_ad836fd6f9eb4ba5a3b92c6346cae7199}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+strstr}~strstr
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_aeaec5a1a05fc8c491579deaf1a6da21d}\label{xmlstorage_8h_aeaec5a1a05fc8c491579deaf1a6da21d}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+O\+U\+N\+T\+OF}(b)~(sizeof(b)/sizeof(b\mbox{[}0\mbox{]}))
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a18fa839aa8403d4a56c1c0f332db0b95}\label{xmlstorage_8h_a18fa839aa8403d4a56c1c0f332db0b95}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a4431838b48b79cca66984de25a2971ca}\label{xmlstorage_8h_a4431838b48b79cca66984de25a2971ca}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+T\+R\+U\+E\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}true\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a5fa2016460edb99a57c503b3b9423a51}\label{xmlstorage_8h_a5fa2016460edb99a57c503b3b9423a51}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+F\+A\+L\+S\+E\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}false\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ac846812eea7d254a9139781c918e79c5}\label{xmlstorage_8h_ac846812eea7d254a9139781c918e79c5}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+I\+N\+T\+F\+M\+T\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}\%d\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a1bc652954a112ee2129b6715a86cb287}\label{xmlstorage_8h_a1bc652954a112ee2129b6715a86cb287}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+F\+L\+O\+A\+T\+F\+M\+T\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}\%f\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a5be59764ab9e45541b5fbedd2667ee7d}\label{xmlstorage_8h_a5be59764ab9e45541b5fbedd2667ee7d}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+K\+E\+Y\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}key\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a4d0f63c7d99f466d02a2ffd4662d9c60}\label{xmlstorage_8h_a4d0f63c7d99f466d02a2ffd4662d9c60}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}value\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a2a35c0b2fb12bd4afbd85af429d47024}\label{xmlstorage_8h_a2a35c0b2fb12bd4afbd85af429d47024}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+S\+TR}~X\+S\+\_\+\+T\+E\+XT(\char`\"{}property\char`\"{})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a691e796d4f9de815bf58a0f56717f2b3}\label{xmlstorage_8h_a691e796d4f9de815bf58a0f56717f2b3}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+E\+M\+P\+TY}~X\+S\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+S\+TR
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a4d73068a789bcafdbdf101266ffe458c}\label{xmlstorage_8h_a4d73068a789bcafdbdf101266ffe458c}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+T\+R\+UE}~X\+S\+\_\+\+T\+R\+U\+E\+\_\+\+S\+TR
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ae77f931b7b16f03200f28b4067778d81}\label{xmlstorage_8h_ae77f931b7b16f03200f28b4067778d81}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+F\+A\+L\+SE}~X\+S\+\_\+\+F\+A\+L\+S\+E\+\_\+\+S\+TR
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a7c5c2629e4afa8327c5b65bc7da813e9}\label{xmlstorage_8h_a7c5c2629e4afa8327c5b65bc7da813e9}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+I\+N\+T\+F\+MT}~X\+S\+\_\+\+I\+N\+T\+F\+M\+T\+\_\+\+S\+TR
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_aa375f9c6a165aae67ec0e5a194750530}\label{xmlstorage_8h_aa375f9c6a165aae67ec0e5a194750530}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+\_\+\+F\+L\+O\+A\+T\+F\+MT}~X\+S\+\_\+\+F\+L\+O\+A\+T\+F\+M\+T\+\_\+\+S\+TR
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a0213fdba9ddee7074346bb69c637f42e}\label{xmlstorage_8h_a0213fdba9ddee7074346bb69c637f42e}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+D\+A\+T\+A\+\_\+\+S\+T\+A\+RT}~\char`\"{}$<$!\mbox{[}C\+D\+A\+TA\mbox{[}\char`\"{}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_af2cde77e5cbeeaaddde303fe2cca3aac}\label{xmlstorage_8h_af2cde77e5cbeeaaddde303fe2cca3aac}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+D\+A\+T\+A\+\_\+\+E\+ND}~\char`\"{}\mbox{]}\mbox{]}$>$\char`\"{}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a2822ecbbb65989ad365aa1082274a019}\label{xmlstorage_8h_a2822ecbbb65989ad365aa1082274a019}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+M\+L\+\_\+\+I\+N\+D\+E\+N\+T\+\_\+\+S\+P\+A\+CE}~\char`\"{}  \char`\"{}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_acd76457f513559e5d9ccaee73fb0c1ba}\label{xmlstorage_8h_acd76457f513559e5d9ccaee73fb0c1ba}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+X\+M\+L\+S\+T\+O\+R\+A\+G\+E\+\_\+H}
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_aebb9e13210d88d43e32e735ada43a425}\label{xmlstorage_8h_aebb9e13210d88d43e32e735ada43a425}} 
+typedef char {\bfseries C\+H\+AR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a58a55157af863ed18b326cbb1df248ae}\label{xmlstorage_8h_a58a55157af863ed18b326cbb1df248ae}} 
+typedef \+\_\+\+\_\+wchar\+\_\+t {\bfseries W\+C\+H\+AR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}\label{xmlstorage_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}} 
+typedef unsigned char {\bfseries U\+C\+H\+AR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a4b8ad456b40595d5a6179c5a52f7539b}\label{xmlstorage_8h_a4b8ad456b40595d5a6179c5a52f7539b}} 
+typedef char $\ast$ {\bfseries L\+P\+S\+TR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_adbea528b1294c9a1dfda3dfa33ff1472}\label{xmlstorage_8h_adbea528b1294c9a1dfda3dfa33ff1472}} 
+typedef const char $\ast$ {\bfseries L\+P\+C\+S\+TR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a0e55464ecbbed26711caa219bdac4b01}\label{xmlstorage_8h_a0e55464ecbbed26711caa219bdac4b01}} 
+typedef W\+C\+H\+AR $\ast$ {\bfseries L\+P\+W\+S\+TR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a953ac8f1ccdf4601c2f44fc9a10fc232}\label{xmlstorage_8h_a953ac8f1ccdf4601c2f44fc9a10fc232}} 
+typedef const W\+C\+H\+AR $\ast$ {\bfseries L\+P\+C\+W\+S\+TR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a03bdb8ce5895c7e261aadc2529637546}\label{xmlstorage_8h_a03bdb8ce5895c7e261aadc2529637546}} 
+typedef char {\bfseries T\+C\+H\+AR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_adac2e99f75daf890cfe2f9fa06c57026}\label{xmlstorage_8h_adac2e99f75daf890cfe2f9fa06c57026}} 
+typedef unsigned char {\bfseries \+\_\+\+T\+U\+C\+H\+AR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a5efb6efbf3faf21b4bd1f2271e05e47c}\label{xmlstorage_8h_a5efb6efbf3faf21b4bd1f2271e05e47c}} 
+typedef C\+H\+AR $\ast$ {\bfseries P\+T\+S\+TR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ac2e8865a2c66502edd8e96f101035fec}\label{xmlstorage_8h_ac2e8865a2c66502edd8e96f101035fec}} 
+typedef C\+H\+AR $\ast$ {\bfseries L\+P\+T\+S\+TR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_aa909047731271086e62ce749a5371db4}\label{xmlstorage_8h_aa909047731271086e62ce749a5371db4}} 
+typedef const C\+H\+AR $\ast$ {\bfseries L\+P\+C\+T\+S\+TR}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a286a0cccd94509e1f87b529e26cb47e2}\label{xmlstorage_8h_a286a0cccd94509e1f87b529e26cb47e2}} 
+typedef std\+::ostringstream {\bfseries X\+M\+L\+Storage\+::fast\+\_\+ostringstream}
+\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_ab9024cb3c12e28d126a06aec400aec65}\label{xmlstorage_8h_ab9024cb3c12e28d126a06aec400aec65}} 
+enum {\bfseries P\+R\+E\+T\+T\+Y\+\_\+\+F\+L\+A\+GS} \{ {\bfseries P\+R\+E\+T\+T\+Y\+\_\+\+P\+L\+A\+IN} = 0, 
+{\bfseries P\+R\+E\+T\+T\+Y\+\_\+\+L\+I\+N\+E\+F\+E\+ED} = 1, 
+{\bfseries P\+R\+E\+T\+T\+Y\+\_\+\+I\+N\+D\+E\+NT} = 2
+ \}
+\item 
+enum \hyperlink{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462}{X\+M\+L\+Storage\+::\+W\+R\+I\+T\+E\+\_\+\+M\+O\+DE} \{ {\bfseries F\+O\+R\+M\+A\+T\+\_\+\+P\+L\+A\+IN}, 
+\hyperlink{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462a6fc91ad7679a875b652e0bd6f710cd3a}{X\+M\+L\+Storage\+::\+F\+O\+R\+M\+A\+T\+\_\+\+S\+M\+A\+RT}, 
+\hyperlink{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462a80ae5c96d76425b4112e8f1395e3fbba}{X\+M\+L\+Storage\+::\+F\+O\+R\+M\+A\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL}, 
+\hyperlink{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462aed36ca07a8158f58c46e6a7c1ecf3c83}{X\+M\+L\+Storage\+::\+F\+O\+R\+M\+A\+T\+\_\+\+P\+R\+E\+T\+TY}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{xmlstorage_8cpp_ad61b72de0d363937c9eb52cd9e2bb2b5}\label{xmlstorage_8cpp_ad61b72de0d363937c9eb52cd9e2bb2b5}} 
+const char $\ast$ {\bfseries X\+M\+L\+Storage\+::get\+\_\+xmlsym\+\_\+end\+\_\+utf8} (const char $\ast$p)
+\item 
+\mbox{\Hypertarget{xmlstorage_8cpp_ac5263a0e06dc978ac40c4dfcc215e851}\label{xmlstorage_8cpp_ac5263a0e06dc978ac40c4dfcc215e851}} 
+std\+::string \hyperlink{xmlstorage_8cpp_ac5263a0e06dc978ac40c4dfcc215e851}{X\+M\+L\+Storage\+::\+Encode\+X\+M\+L\+String} (const X\+S\+\_\+\+String \&str, bool cdata)
+\begin{DoxyCompactList}\small\item\em encode X\+ML string literals \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{xmlstorage_8cpp_afe2ead828244be01a4a5e4822b60eeb0}\label{xmlstorage_8cpp_afe2ead828244be01a4a5e4822b60eeb0}} 
+X\+S\+\_\+\+String \hyperlink{xmlstorage_8cpp_afe2ead828244be01a4a5e4822b60eeb0}{X\+M\+L\+Storage\+::\+Decode\+X\+M\+L\+String} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em decode X\+ML string literals \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{xmlstorage_8h_a6283065f367b140bbf11b1485e1dcd78}\label{xmlstorage_8h_a6283065f367b140bbf11b1485e1dcd78}} 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{interfacevoid}{void} {\bfseries X\+M\+L\+Storage\+::read\+\_\+option} (T \&var, const\+\_\+\+X\+M\+L\+Pos \&cfg, L\+P\+C\+X\+S\+S\+TR \hyperlink{structkey}{key})
+\item 
+\mbox{\Hypertarget{xmlstorage_8h_a83e0c748e4d92558fac7ba4337962364}\label{xmlstorage_8h_a83e0c748e4d92558fac7ba4337962364}} 
+{\footnotesize template$<$$>$ }\\\hyperlink{interfacevoid}{void} {\bfseries X\+M\+L\+Storage\+::read\+\_\+option} (int \&var, const\+\_\+\+X\+M\+L\+Pos \&cfg, L\+P\+C\+X\+S\+S\+TR \hyperlink{structkey}{key})
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+X\+M\+L\+Storage header file 
+
+\subsection{枚举类型说明}
+\mbox{\Hypertarget{xmlstorage_8h_file_a384e8ed47866fe059e3ad92b8d89d462}\label{xmlstorage_8h_file_a384e8ed47866fe059e3ad92b8d89d462}} 
+\index{xmlstorage.\+h@{xmlstorage.\+h}!W\+R\+I\+T\+E\+\_\+\+M\+O\+DE@{W\+R\+I\+T\+E\+\_\+\+M\+O\+DE}}
+\index{W\+R\+I\+T\+E\+\_\+\+M\+O\+DE@{W\+R\+I\+T\+E\+\_\+\+M\+O\+DE}!xmlstorage.\+h@{xmlstorage.\+h}}
+\subsubsection{\texorpdfstring{W\+R\+I\+T\+E\+\_\+\+M\+O\+DE}{WRITE\_MODE}}
+{\footnotesize\ttfamily \hyperlink{interfaceenum}{enum} \hyperlink{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462}{X\+M\+L\+Storage\+::\+W\+R\+I\+T\+E\+\_\+\+M\+O\+DE}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+R\+M\+A\+T\+\_\+\+S\+M\+A\+RT@{F\+O\+R\+M\+A\+T\+\_\+\+S\+M\+A\+RT}!xmlstorage.\+h@{xmlstorage.\+h}}\index{xmlstorage.\+h@{xmlstorage.\+h}!F\+O\+R\+M\+A\+T\+\_\+\+S\+M\+A\+RT@{F\+O\+R\+M\+A\+T\+\_\+\+S\+M\+A\+RT}}}\mbox{\Hypertarget{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462a6fc91ad7679a875b652e0bd6f710cd3a}\label{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462a6fc91ad7679a875b652e0bd6f710cd3a}} 
+F\+O\+R\+M\+A\+T\+\_\+\+S\+M\+A\+RT&write X\+ML without any white space \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+R\+M\+A\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL@{F\+O\+R\+M\+A\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL}!xmlstorage.\+h@{xmlstorage.\+h}}\index{xmlstorage.\+h@{xmlstorage.\+h}!F\+O\+R\+M\+A\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL@{F\+O\+R\+M\+A\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL}}}\mbox{\Hypertarget{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462a80ae5c96d76425b4112e8f1395e3fbba}\label{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462a80ae5c96d76425b4112e8f1395e3fbba}} 
+F\+O\+R\+M\+A\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL&preserve original white space and comments if present; pretty print otherwise \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+R\+M\+A\+T\+\_\+\+P\+R\+E\+T\+TY@{F\+O\+R\+M\+A\+T\+\_\+\+P\+R\+E\+T\+TY}!xmlstorage.\+h@{xmlstorage.\+h}}\index{xmlstorage.\+h@{xmlstorage.\+h}!F\+O\+R\+M\+A\+T\+\_\+\+P\+R\+E\+T\+TY@{F\+O\+R\+M\+A\+T\+\_\+\+P\+R\+E\+T\+TY}}}\mbox{\Hypertarget{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462aed36ca07a8158f58c46e6a7c1ecf3c83}\label{xmlstorage_8h_a384e8ed47866fe059e3ad92b8d89d462aed36ca07a8158f58c46e6a7c1ecf3c83}} 
+F\+O\+R\+M\+A\+T\+\_\+\+P\+R\+E\+T\+TY&write X\+ML stream preserving original white space and comments pretty print node to stream without preserving original white space \\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,115 @@
+\hypertarget{structreiserfs__sb__info}{}\section{reiserfs\+\_\+sb\+\_\+info结构体 参考}
+\label{structreiserfs__sb__info}\index{reiserfs\+\_\+sb\+\_\+info@{reiserfs\+\_\+sb\+\_\+info}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_adb9d2be731b19dfcb1be8f90e3a9521b}\label{structreiserfs__sb__info_adb9d2be731b19dfcb1be8f90e3a9521b}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structbuffer__head}{buffer\+\_\+head} $\ast$ {\bfseries s\+\_\+sbh}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a06ce31d699e52c3c13f527bc50f54f98}\label{structreiserfs__sb__info_a06ce31d699e52c3c13f527bc50f54f98}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__super__block}{reiserfs\+\_\+super\+\_\+block} $\ast$ {\bfseries s\+\_\+rs}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_abb3eb74c219233dbee19bdc773eecfb2}\label{structreiserfs__sb__info_abb3eb74c219233dbee19bdc773eecfb2}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__bitmap__info}{reiserfs\+\_\+bitmap\+\_\+info} $\ast$ {\bfseries s\+\_\+ap\+\_\+bitmap}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a336c4d67914767441651aa41966a82ca}\label{structreiserfs__sb__info_a336c4d67914767441651aa41966a82ca}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal}{reiserfs\+\_\+journal} $\ast$ {\bfseries s\+\_\+journal}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_ace6e93f639e2f6479c54cc3a8b43f015}\label{structreiserfs__sb__info_ace6e93f639e2f6479c54cc3a8b43f015}} 
+unsigned short {\bfseries s\+\_\+mount\+\_\+state}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_abf071ceefc3d8fd70b3e883060efb809}\label{structreiserfs__sb__info_abf071ceefc3d8fd70b3e883060efb809}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries end\+\_\+io\+\_\+handler} )(\hyperlink{interfacestruct}{struct} \hyperlink{structbuffer__head}{buffer\+\_\+head} $\ast$, int)
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a2d10bddd60b623475686d2cb0bb1808c}\label{structreiserfs__sb__info_a2d10bddd60b623475686d2cb0bb1808c}} 
+hashf\+\_\+t {\bfseries s\+\_\+hash\+\_\+function}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a3e902b029dcc81fa8d9b10b59aed247d}\label{structreiserfs__sb__info_a3e902b029dcc81fa8d9b10b59aed247d}} 
+unsigned long {\bfseries s\+\_\+mount\+\_\+opt}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a2cff1dbb65ced6eb7917b61a643993d3}\label{structreiserfs__sb__info_a2cff1dbb65ced6eb7917b61a643993d3}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned long {\bfseries bits}\\
+\>unsigned long {\bfseries large\_file\_size}\\
+\>int {\bfseries border}\\
+\>int {\bfseries preallocmin}\\
+\>int {\bfseries preallocsize}\\
+\} {\bfseries s\_alloc\_options}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a5c0085c15ece0dea445a0614604a2d7b}\label{structreiserfs__sb__info_a5c0085c15ece0dea445a0614604a2d7b}} 
+\hyperlink{struct____wait__queue__head}{wait\+\_\+queue\+\_\+head\+\_\+t} {\bfseries s\+\_\+wait}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a536081b8b9693365468274b2f8b07007}\label{structreiserfs__sb__info_a536081b8b9693365468274b2f8b07007}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries s\+\_\+generation\+\_\+counter}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a2129eee6bd959e8602f15081fed4d059}\label{structreiserfs__sb__info_a2129eee6bd959e8602f15081fed4d059}} 
+unsigned long {\bfseries s\+\_\+properties}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a8dbca64d09a787c5938511a1d938eaef}\label{structreiserfs__sb__info_a8dbca64d09a787c5938511a1d938eaef}} 
+int {\bfseries s\+\_\+kmallocs}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_accb3b002b63b76fd072246c3c72ba0ec}\label{structreiserfs__sb__info_accb3b002b63b76fd072246c3c72ba0ec}} 
+int {\bfseries s\+\_\+disk\+\_\+reads}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_aa9be28cdbc60b73b91267c51bbfd516d}\label{structreiserfs__sb__info_aa9be28cdbc60b73b91267c51bbfd516d}} 
+int {\bfseries s\+\_\+disk\+\_\+writes}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a97f48be742bb3b33edd6b63561e6701e}\label{structreiserfs__sb__info_a97f48be742bb3b33edd6b63561e6701e}} 
+int {\bfseries s\+\_\+fix\+\_\+nodes}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_adcad24d25a8bdf6fdd52511c028a5404}\label{structreiserfs__sb__info_adcad24d25a8bdf6fdd52511c028a5404}} 
+int {\bfseries s\+\_\+do\+\_\+balance}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_ae20a49593fe1e5b03b9999b6f3236119}\label{structreiserfs__sb__info_ae20a49593fe1e5b03b9999b6f3236119}} 
+int {\bfseries s\+\_\+unneeded\+\_\+left\+\_\+neighbor}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_abdcebcd505f633ee7332680a57c3a6d1}\label{structreiserfs__sb__info_abdcebcd505f633ee7332680a57c3a6d1}} 
+int {\bfseries s\+\_\+good\+\_\+search\+\_\+by\+\_\+key\+\_\+reada}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a62112edc64000ce2979fadcd5401984b}\label{structreiserfs__sb__info_a62112edc64000ce2979fadcd5401984b}} 
+int {\bfseries s\+\_\+bmaps}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_ae156eb95410d05ca2d969a7fb4ffb955}\label{structreiserfs__sb__info_ae156eb95410d05ca2d969a7fb4ffb955}} 
+int {\bfseries s\+\_\+bmaps\+\_\+without\+\_\+search}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a113cc4454f01cf38d600d83475682799}\label{structreiserfs__sb__info_a113cc4454f01cf38d600d83475682799}} 
+int {\bfseries s\+\_\+direct2indirect}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_afc33b967bef86fd629293f55590fa163}\label{structreiserfs__sb__info_afc33b967bef86fd629293f55590fa163}} 
+int {\bfseries s\+\_\+indirect2direct}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a373af6da8c8f988c92e9aaa974dfa30d}\label{structreiserfs__sb__info_a373af6da8c8f988c92e9aaa974dfa30d}} 
+int {\bfseries s\+\_\+is\+\_\+unlinked\+\_\+ok}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_ae4f51636b9abaad4fb30a39181534443}\label{structreiserfs__sb__info_ae4f51636b9abaad4fb30a39181534443}} 
+\hyperlink{structreiserfs__proc__info__data}{reiserfs\+\_\+proc\+\_\+info\+\_\+data\+\_\+t} {\bfseries s\+\_\+proc\+\_\+info\+\_\+data}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a24f55651511a31e70b1aa0048b2fc8a3}\label{structreiserfs__sb__info_a24f55651511a31e70b1aa0048b2fc8a3}} 
+\hyperlink{interfacestruct}{struct} proc\+\_\+dir\+\_\+entry $\ast$ {\bfseries procdir}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a6668f6b75f77612a1e427cbc93f39d67}\label{structreiserfs__sb__info_a6668f6b75f77612a1e427cbc93f39d67}} 
+int {\bfseries reserved\+\_\+blocks}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_acd36942730ec79c111c68dd36ff2699e}\label{structreiserfs__sb__info_acd36942730ec79c111c68dd36ff2699e}} 
+\hyperlink{structspinlock__t}{spinlock\+\_\+t} {\bfseries bitmap\+\_\+lock}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_aee26edc42ec0d179110d074f1441b26a}\label{structreiserfs__sb__info_aee26edc42ec0d179110d074f1441b26a}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structdentry}{dentry} $\ast$ {\bfseries priv\+\_\+root}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a21b95f2f99e3fb29be7902b89f2e7304}\label{structreiserfs__sb__info_a21b95f2f99e3fb29be7902b89f2e7304}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structdentry}{dentry} $\ast$ {\bfseries xattr\+\_\+root}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_adfdf3b3c7096bcb8d29dcc0637988d47}\label{structreiserfs__sb__info_adfdf3b3c7096bcb8d29dcc0637988d47}} 
+\hyperlink{interfacestruct}{struct} rw\+\_\+semaphore {\bfseries xattr\+\_\+dir\+\_\+sem}
+\item 
+\mbox{\Hypertarget{structreiserfs__sb__info_a91522b8b92104e95d06896529dfb288d}\label{structreiserfs__sb__info_a91522b8b92104e95d06896529dfb288d}} 
+int {\bfseries j\+\_\+errno}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/reiserfs/inc/linux/reiserfs\+\_\+fs\+\_\+sb.\+h\end{DoxyCompactItemize}

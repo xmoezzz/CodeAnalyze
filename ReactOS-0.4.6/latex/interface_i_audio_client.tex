@@ -1,0 +1,53 @@
+\hypertarget{interface_i_audio_client}{}\section{I\+Audio\+Client接口 参考}
+\label{interface_i_audio_client}\index{I\+Audio\+Client@{I\+Audio\+Client}}
+类 I\+Audio\+Client 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_audio_client}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_afee0701a49a99e43259a7661e1c5ed38}\label{interface_i_audio_client_afee0701a49a99e43259a7661e1c5ed38}} 
+H\+R\+E\+S\+U\+LT {\bfseries Initialize} (\mbox{[}in\mbox{]} A\+U\+D\+C\+L\+N\+T\+\_\+\+S\+H\+A\+R\+E\+M\+O\+DE Share\+Mode, \mbox{[}in\mbox{]} D\+W\+O\+RD Stream\+Flags, \mbox{[}in\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME hns\+Buffer\+Duration, \mbox{[}in\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME hns\+Periodicity, \mbox{[}in\mbox{]} const \hyperlink{struct_w_a_v_e_f_o_r_m_a_t_e_x}{W\+A\+V\+E\+F\+O\+R\+M\+A\+T\+EX} $\ast$p\+Format, \mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} Audio\+Session\+Guid)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a4e9563d4426770670c29fceba13abcea}\label{interface_i_audio_client_a4e9563d4426770670c29fceba13abcea}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Buffer\+Size} (\mbox{[}out\mbox{]} \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} $\ast$p\+Num\+Buffer\+Frames)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a3cd4db025d640b7bc41a362745fb60c2}\label{interface_i_audio_client_a3cd4db025d640b7bc41a362745fb60c2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Stream\+Latency} (\mbox{[}out\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$phns\+Latency)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a130df1eee9f244b76875921bd802fa43}\label{interface_i_audio_client_a130df1eee9f244b76875921bd802fa43}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Current\+Padding} (\mbox{[}out\mbox{]} \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} $\ast$p\+Num\+Padding\+Frames)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a0aa1c8f272a6e624abe0925739f3f287}\label{interface_i_audio_client_a0aa1c8f272a6e624abe0925739f3f287}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Format\+Supported} (\mbox{[}in\mbox{]} A\+U\+D\+C\+L\+N\+T\+\_\+\+S\+H\+A\+R\+E\+M\+O\+DE Share\+Mode, \mbox{[}in\mbox{]} const \hyperlink{struct_w_a_v_e_f_o_r_m_a_t_e_x}{W\+A\+V\+E\+F\+O\+R\+M\+A\+T\+EX} $\ast$p\+Format, \mbox{[}out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct_w_a_v_e_f_o_r_m_a_t_e_x}{W\+A\+V\+E\+F\+O\+R\+M\+A\+T\+EX} $\ast$$\ast$pp\+Closest\+Match)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_aa9edaa0cbb1fb2508240ff5e0e878b85}\label{interface_i_audio_client_aa9edaa0cbb1fb2508240ff5e0e878b85}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Mix\+Format} (\mbox{[}out\mbox{]} \hyperlink{struct_w_a_v_e_f_o_r_m_a_t_e_x}{W\+A\+V\+E\+F\+O\+R\+M\+A\+T\+EX} $\ast$$\ast$pp\+Device\+Format)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_aabe7ca3c0291f15daf27c488ed1feb4a}\label{interface_i_audio_client_aabe7ca3c0291f15daf27c488ed1feb4a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Device\+Period} (\mbox{[}out\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$phns\+Default\+Device\+Period, \mbox{[}out\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$phns\+Minimum\+Device\+Period)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a0282814a2eb6bdcdc9c683250ebe5c92}\label{interface_i_audio_client_a0282814a2eb6bdcdc9c683250ebe5c92}} 
+H\+R\+E\+S\+U\+LT {\bfseries Start} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_ab260e4f001dd171e5565e73dc5ba1f99}\label{interface_i_audio_client_ab260e4f001dd171e5565e73dc5ba1f99}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stop} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a6c30535148583afa749b2ca546857d15}\label{interface_i_audio_client_a6c30535148583afa749b2ca546857d15}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reset} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a734392ceb0cdc4737429e6a390c5fb08}\label{interface_i_audio_client_a734392ceb0cdc4737429e6a390c5fb08}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Event\+Handle} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} event\+Handle)
+\item 
+\mbox{\Hypertarget{interface_i_audio_client_a418385f15a98fb1dc6f1bf6eedc8e069}\label{interface_i_audio_client_a418385f15a98fb1dc6f1bf6eedc8e069}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Service} (\mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}iid\+\_\+is(riid), out\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/audioclient.\+idl\end{DoxyCompactItemize}

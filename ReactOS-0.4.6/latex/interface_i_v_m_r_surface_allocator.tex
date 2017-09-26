@@ -1,0 +1,41 @@
+\hypertarget{interface_i_v_m_r_surface_allocator}{}\section{I\+V\+M\+R\+Surface\+Allocator接口 参考}
+\label{interface_i_v_m_r_surface_allocator}\index{I\+V\+M\+R\+Surface\+Allocator@{I\+V\+M\+R\+Surface\+Allocator}}
+类 I\+V\+M\+R\+Surface\+Allocator 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_v_m_r_surface_allocator}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_a61976f8954a43cc09cf20fd8b8ea7aab}\label{interface_i_v_m_r_surface_allocator_a61976f8954a43cc09cf20fd8b8ea7aab}} 
+H\+R\+E\+S\+U\+LT {\bfseries Allocate\+Surface} (\mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR dw\+User\+ID, \mbox{[}in\mbox{]} \hyperlink{structtag_v_m_r_a_l_l_o_c_a_t_i_o_n_i_n_f_o}{V\+M\+R\+A\+L\+L\+O\+C\+A\+T\+I\+O\+N\+I\+N\+FO} $\ast$lp\+Alloc\+Info, \mbox{[}in\mbox{]} \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$lpdw\+Actual\+Buffers, \mbox{[}out\mbox{]} L\+P\+D\+I\+R\+E\+C\+T\+D\+R\+A\+W\+S\+U\+R\+F\+A\+C\+E7 $\ast$lplp\+Surface)
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_a3d281594ccabd6ae75f3d2c1b96a9471}\label{interface_i_v_m_r_surface_allocator_a3d281594ccabd6ae75f3d2c1b96a9471}} 
+H\+R\+E\+S\+U\+LT {\bfseries Free\+Surface} (\mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR dw\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_a739cc7c54d2a443669c9698663b05ad1}\label{interface_i_v_m_r_surface_allocator_a739cc7c54d2a443669c9698663b05ad1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Prepare\+Surface} (\mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR dw\+User\+ID, \mbox{[}in\mbox{]} L\+P\+D\+I\+R\+E\+C\+T\+D\+R\+A\+W\+S\+U\+R\+F\+A\+C\+E7 lp\+Surface, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Surface\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_a2a3d41455d4a7fa3c041d7b568fe072a}\label{interface_i_v_m_r_surface_allocator_a2a3d41455d4a7fa3c041d7b568fe072a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Advise\+Notify} (\mbox{[}in\mbox{]} \hyperlink{interface_i_v_m_r_surface_allocator_notify}{I\+V\+M\+R\+Surface\+Allocator\+Notify} $\ast$lp\+I\+V\+M\+R\+Surf\+Alloc\+Notify)
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_afe7fb1569edd2ba6d1e6d4a28d58b94d}\label{interface_i_v_m_r_surface_allocator_afe7fb1569edd2ba6d1e6d4a28d58b94d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Allocate\+Surface} (\mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR id, \mbox{[}in\mbox{]} \hyperlink{structtag_v_m_r_a_l_l_o_c_a_t_i_o_n_i_n_f_o}{V\+M\+R\+A\+L\+L\+O\+C\+A\+T\+I\+O\+N\+I\+N\+FO} $\ast$allocinfo, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$buffers, I\+Direct\+Draw\+Surface7 $\ast$$\ast$surface)
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_a742286290567d48276a54a748bb623fd}\label{interface_i_v_m_r_surface_allocator_a742286290567d48276a54a748bb623fd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Free\+Surface} (\mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR id)
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_ac73037f83c732e5d8d569d26dc1b1c89}\label{interface_i_v_m_r_surface_allocator_ac73037f83c732e5d8d569d26dc1b1c89}} 
+H\+R\+E\+S\+U\+LT {\bfseries Prepare\+Surface} (\mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR id, \mbox{[}in\mbox{]} I\+Direct\+Draw\+Surface7 $\ast$surface, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Surface\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_v_m_r_surface_allocator_a9e2b57193f7421fb0c46559d90e07183}\label{interface_i_v_m_r_surface_allocator_a9e2b57193f7421fb0c46559d90e07183}} 
+H\+R\+E\+S\+U\+LT {\bfseries Advise\+Notify} (\mbox{[}in\mbox{]} \hyperlink{interface_i_v_m_r_surface_allocator_notify}{I\+V\+M\+R\+Surface\+Allocator\+Notify} $\ast$notify)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/vmrender.\+idl\end{DoxyCompactItemize}

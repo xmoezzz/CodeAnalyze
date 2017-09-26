@@ -1,0 +1,73 @@
+\hypertarget{structconnection__ops}{}\section{connection\+\_\+ops结构体 参考}
+\label{structconnection__ops}\index{connection\+\_\+ops@{connection\+\_\+ops}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structconnection__ops_acc81922ba39384831bac8f5cb6f71a2c}\label{structconnection__ops_acc81922ba39384831bac8f5cb6f71a2c}} 
+const char $\ast$ {\bfseries name}
+\item 
+\mbox{\Hypertarget{structconnection__ops_a273062d8372e3d7135b82ed605d4f3d9}\label{structconnection__ops_a273062d8372e3d7135b82ed605d4f3d9}} 
+unsigned char {\bfseries epm\+\_\+protocols} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{structconnection__ops_acb8869a1f40eecf242093cc02f27ef39}\label{structconnection__ops_acb8869a1f40eecf242093cc02f27ef39}} 
+\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$($\ast$ {\bfseries alloc} )(\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{structconnection__ops_aa91d77c6eb875b4dc66497c54f6625e2}\label{structconnection__ops_aa91d77c6eb875b4dc66497c54f6625e2}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries open\+\_\+connection\+\_\+client} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_ac6f6569786a0cf662f1b3dcd1cda83e8}\label{structconnection__ops_ac6f6569786a0cf662f1b3dcd1cda83e8}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries handoff} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$old\+\_\+conn, \hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$new\+\_\+conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_a1e784479387e2921cc5d598a94243610}\label{structconnection__ops_a1e784479387e2921cc5d598a94243610}} 
+int($\ast$ {\bfseries read} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn, \hyperlink{interfacevoid}{void} $\ast$buffer, unsigned int len)
+\item 
+\mbox{\Hypertarget{structconnection__ops_a6d0f01ccf30a5a00aaff142dcbe32857}\label{structconnection__ops_a6d0f01ccf30a5a00aaff142dcbe32857}} 
+int($\ast$ {\bfseries write} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn, const \hyperlink{interfacevoid}{void} $\ast$buffer, unsigned int len)
+\item 
+\mbox{\Hypertarget{structconnection__ops_ac1db4bf639b4b543307e62369f9ab90f}\label{structconnection__ops_ac1db4bf639b4b543307e62369f9ab90f}} 
+int($\ast$ {\bfseries close} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_ac9fc9219fd8555f1701ece1a558115e3}\label{structconnection__ops_ac9fc9219fd8555f1701ece1a558115e3}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries close\+\_\+read} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_af97b47838198b05d696f2abd24fbddf7}\label{structconnection__ops_af97b47838198b05d696f2abd24fbddf7}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries cancel\+\_\+call} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_ad4dfe4a1b6e0cd09ee8d47bca5f1d618}\label{structconnection__ops_ad4dfe4a1b6e0cd09ee8d47bca5f1d618}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries is\+\_\+server\+\_\+listening} )(const char $\ast$\hyperlink{structendpoint}{endpoint})
+\item 
+\mbox{\Hypertarget{structconnection__ops_abb4445d84a31b5c2595500be0d1b7926}\label{structconnection__ops_abb4445d84a31b5c2595500be0d1b7926}} 
+int($\ast$ {\bfseries wait\+\_\+for\+\_\+incoming\+\_\+data} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_a0b73a10123c5eab82cfc8788a06fc64b}\label{structconnection__ops_a0b73a10123c5eab82cfc8788a06fc64b}} 
+size\+\_\+t($\ast$ {\bfseries get\+\_\+top\+\_\+of\+\_\+tower} )(unsigned char $\ast$tower\+\_\+data, const char $\ast$networkaddr, const char $\ast$\hyperlink{structendpoint}{endpoint})
+\item 
+\mbox{\Hypertarget{structconnection__ops_aa6375a463365627883d4cefea6f0e8a6}\label{structconnection__ops_aa6375a463365627883d4cefea6f0e8a6}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries parse\+\_\+top\+\_\+of\+\_\+tower} )(const unsigned char $\ast$tower\+\_\+data, size\+\_\+t tower\+\_\+size, char $\ast$$\ast$networkaddr, char $\ast$$\ast$\hyperlink{structendpoint}{endpoint})
+\item 
+\mbox{\Hypertarget{structconnection__ops_aac96908ccb1abc5b0debe85d3ccc0fdb}\label{structconnection__ops_aac96908ccb1abc5b0debe85d3ccc0fdb}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries receive\+\_\+fragment} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn, \hyperlink{union_rpc_pkt_hdr}{Rpc\+Pkt\+Hdr} $\ast$$\ast$\hyperlink{class_header}{Header}, \hyperlink{interfacevoid}{void} $\ast$$\ast$Payload)
+\item 
+\mbox{\Hypertarget{structconnection__ops_ac460ba448a2a0befc41f7a627f00e795}\label{structconnection__ops_ac460ba448a2a0befc41f7a627f00e795}} 
+B\+O\+OL($\ast$ {\bfseries is\+\_\+authorized} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_a387bc77e6eaf89ce9b3f76daae1df048}\label{structconnection__ops_a387bc77e6eaf89ce9b3f76daae1df048}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries authorize} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn, B\+O\+OL first\+\_\+time, unsigned char $\ast$in\+\_\+buffer, unsigned int in\+\_\+len, unsigned char $\ast$out\+\_\+buffer, unsigned int $\ast$out\+\_\+len)
+\item 
+\mbox{\Hypertarget{structconnection__ops_a278b757a36c56d30f6bb8282db6e2ac5}\label{structconnection__ops_a278b757a36c56d30f6bb8282db6e2ac5}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries secure\+\_\+packet} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$Connection, \hyperlink{interfaceenum}{enum} secure\+\_\+packet\+\_\+direction dir, \hyperlink{union_rpc_pkt_hdr}{Rpc\+Pkt\+Hdr} $\ast$hdr, unsigned int hdr\+\_\+size, unsigned char $\ast$stub\+\_\+data, unsigned int stub\+\_\+data\+\_\+size, \hyperlink{struct_rpc_auth_verifier}{Rpc\+Auth\+Verifier} $\ast$auth\+\_\+hdr, unsigned char $\ast$auth\+\_\+value, unsigned int auth\+\_\+value\+\_\+size)
+\item 
+\mbox{\Hypertarget{structconnection__ops_ac1632e4db8047aeea6d21a41b8490027}\label{structconnection__ops_ac1632e4db8047aeea6d21a41b8490027}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries impersonate\+\_\+client} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_a9dbe5bb396520af2a57cfb14eceaa527}\label{structconnection__ops_a9dbe5bb396520af2a57cfb14eceaa527}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries revert\+\_\+to\+\_\+self} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$conn)
+\item 
+\mbox{\Hypertarget{structconnection__ops_a9e822716d8dfce83938a6977a858f88b}\label{structconnection__ops_a9e822716d8dfce83938a6977a858f88b}} 
+R\+P\+C\+\_\+\+S\+T\+A\+T\+US($\ast$ {\bfseries inquire\+\_\+auth\+\_\+client} )(\hyperlink{struct___rpc_connection}{Rpc\+Connection} $\ast$, \hyperlink{interfacevoid}{R\+P\+C\+\_\+\+A\+U\+T\+H\+Z\+\_\+\+H\+A\+N\+D\+LE} $\ast$, R\+P\+C\+\_\+\+W\+S\+TR $\ast$, U\+L\+O\+NG $\ast$, U\+L\+O\+NG $\ast$, U\+L\+O\+NG $\ast$, U\+L\+O\+NG)
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/rpcrt4/rpc\+\_\+binding.\+h\end{DoxyCompactItemize}

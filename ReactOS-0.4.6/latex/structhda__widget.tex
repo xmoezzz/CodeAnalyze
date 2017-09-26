@@ -1,0 +1,58 @@
+\hypertarget{structhda__widget}{}\section{hda\+\_\+widget结构体 参考}
+\label{structhda__widget}\index{hda\+\_\+widget@{hda\+\_\+widget}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structhda__widget_a2a471b2a01402fdf29ec321cadf999bb}\label{structhda__widget_a2a471b2a01402fdf29ec321cadf999bb}} 
+uint32 {\bfseries node\+\_\+id}
+\item 
+\mbox{\Hypertarget{structhda__widget_a11202a99a4107d5f10c334d280cf51f2}\label{structhda__widget_a11202a99a4107d5f10c334d280cf51f2}} 
+uint32 {\bfseries num\+\_\+inputs}
+\item 
+\mbox{\Hypertarget{structhda__widget_a8e3bec3c0abdd94cd2b0044ca3e7c6ed}\label{structhda__widget_a8e3bec3c0abdd94cd2b0044ca3e7c6ed}} 
+int32 {\bfseries active\+\_\+input}
+\item 
+\mbox{\Hypertarget{structhda__widget_a58e84ac13642664520ce04edc8911d64}\label{structhda__widget_a58e84ac13642664520ce04edc8911d64}} 
+uint32 {\bfseries inputs} \mbox{[}M\+A\+X\+\_\+\+I\+N\+P\+U\+TS\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__widget_a9a1faeb8b895fcb3d3b0cca5b50507ff}\label{structhda__widget_a9a1faeb8b895fcb3d3b0cca5b50507ff}} 
+uint32 {\bfseries flags}
+\item 
+\mbox{\Hypertarget{structhda__widget_a384ee3898fb947d353ae0e15ea48b163}\label{structhda__widget_a384ee3898fb947d353ae0e15ea48b163}} 
+hda\+\_\+widget\+\_\+type {\bfseries type}
+\item 
+\mbox{\Hypertarget{structhda__widget_af70f4a42b323ced7f1bc1feee3f487c0}\label{structhda__widget_af70f4a42b323ced7f1bc1feee3f487c0}} 
+uint32 {\bfseries pm}
+\item 
+\mbox{\Hypertarget{structhda__widget_a38df353e4d4634cac57c521f48473f35}\label{structhda__widget_a38df353e4d4634cac57c521f48473f35}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32 {\bfseries audio}\\
+\>uint32 {\bfseries output\_amplifier}\\
+\>uint32 {\bfseries input\_amplifier}\\
+\} {\bfseries capabilities}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structhda__widget_aaf396695003014fa722a458c65ff13f3}\label{structhda__widget_aaf396695003014fa722a458c65ff13f3}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint32 {\bfseries formats}\\
+\>\>uint32 {\bfseries rates}\\
+\>\} {\bfseries io}\\
+\>struct \{\\
+\>\} {\bfseries mixer}\\
+\>struct \{\\
+\>\>uint32 {\bfseries capabilities}\\
+\>\>uint32 {\bfseries config}\\
+\>\} {\bfseries pin}\\
+\} {\bfseries d}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/wdm/audio/hdaudbus/driver.\+h\end{DoxyCompactItemize}

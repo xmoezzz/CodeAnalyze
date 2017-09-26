@@ -1,0 +1,87 @@
+\hypertarget{interface_i_storage}{}\section{I\+Storage接口 参考}
+\label{interface_i_storage}\index{I\+Storage@{I\+Storage}}
+类 I\+Storage 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_storage}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_storage_1_1tag_rem_s_n_b}{tag\+Rem\+S\+NB}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_storage_a50cef0f0ae84686c8127ef3c13f9f440}\label{interface_i_storage_a50cef0f0ae84686c8127ef3c13f9f440}} 
+typedef \hyperlink{interface_i_storage}{I\+Storage} $\ast$ {\bfseries L\+P\+S\+T\+O\+R\+A\+GE}
+\item 
+\mbox{\Hypertarget{interface_i_storage_a4e28567dd48dc7845d7fa9db5bd13336}\label{interface_i_storage_a4e28567dd48dc7845d7fa9db5bd13336}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_storage_1_1tag_rem_s_n_b}{I\+Storage\+::tag\+Rem\+S\+NB} {\bfseries Rem\+S\+NB}
+\item 
+\mbox{\Hypertarget{interface_i_storage_a1ff0c825db9ee1c751eefca4599c5376}\label{interface_i_storage_a1ff0c825db9ee1c751eefca4599c5376}} 
+typedef \hyperlink{struct_i_storage_1_1tag_rem_s_n_b}{Rem\+S\+NB} $\ast$ {\bfseries wire\+S\+NB}
+\item 
+\mbox{\Hypertarget{interface_i_storage_a60ce37abd38485653df3ba6a45aa19aa}\label{interface_i_storage_a60ce37abd38485653df3ba6a45aa19aa}} 
+typedef O\+L\+E\+C\+H\+AR $\ast$$\ast$ {\bfseries S\+NB}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_storage_ad9bb925fa7b2dc9a3fdc8663e49f359a}\label{interface_i_storage_ad9bb925fa7b2dc9a3fdc8663e49f359a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Stream} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved1, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved2, \mbox{[}out\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$$\ast$ppstm)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a520f663b5ee45bf8d9ad71e3fe11ab95}\label{interface_i_storage_a520f663b5ee45bf8d9ad71e3fe11ab95}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open\+Stream} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interfacevoid}{void} $\ast$reserved1, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved2, \mbox{[}out\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$$\ast$ppstm)
+\item 
+\mbox{\Hypertarget{interface_i_storage_af5b6c23fe4e46d2fd6219de66b290dc3}\label{interface_i_storage_af5b6c23fe4e46d2fd6219de66b290dc3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Open\+Stream} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name, \mbox{[}in\mbox{]} unsigned long cb\+Reserved1, \mbox{[}in, \hyperlink{interfaceunique}{unique}, size\+\_\+is(cb\+Reserved1)\mbox{]} byte $\ast$reserved1, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved2, \mbox{[}out\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$$\ast$ppstm)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a6beac3ecd8551efcb5deaeeb89bebbe9}\label{interface_i_storage_a6beac3ecd8551efcb5deaeeb89bebbe9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Storage} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Stg\+Fmt, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved2, \mbox{[}out\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$$\ast$ppstg)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a7caa761eb4e8bb1919b7a96f63389e3d}\label{interface_i_storage_a7caa761eb4e8bb1919b7a96f63389e3d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open\+Storage} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$pstg\+Priority, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} S\+NB snb\+Exclude, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved, \mbox{[}out\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$$\ast$ppstg)
+\item 
+\mbox{\Hypertarget{interface_i_storage_aa49e76d6a719ec5cb93b8abf93dbbac8}\label{interface_i_storage_aa49e76d6a719ec5cb93b8abf93dbbac8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Copy\+To} (\mbox{[}in\mbox{]} D\+W\+O\+RD ciid\+Exclude, \mbox{[}in, \hyperlink{interfaceunique}{unique}, size\+\_\+is(ciid\+Exclude)\mbox{]} const \hyperlink{struct___i_i_d}{I\+ID} $\ast$rgiid\+Exclude, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} S\+NB snb\+Exclude, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$pstg\+Dest)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a44cb66472d34b31c0b0bfe560de44d30}\label{interface_i_storage_a44cb66472d34b31c0b0bfe560de44d30}} 
+H\+R\+E\+S\+U\+LT {\bfseries Move\+Element\+To} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$pstg\+Dest, \mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+New\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_storage_aed6d95134bfad85b8d21b9fd475d7934}\label{interface_i_storage_aed6d95134bfad85b8d21b9fd475d7934}} 
+H\+R\+E\+S\+U\+LT {\bfseries Commit} (\mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Commit\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_storage_ac853e4e1e476600ecc735c677a557789}\label{interface_i_storage_ac853e4e1e476600ecc735c677a557789}} 
+H\+R\+E\+S\+U\+LT {\bfseries Revert} ()
+\item 
+\mbox{\Hypertarget{interface_i_storage_ab42f95c778fe02f97f6f5cfafea80ec8}\label{interface_i_storage_ab42f95c778fe02f97f6f5cfafea80ec8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Elements} (\mbox{[}in\mbox{]} D\+W\+O\+RD reserved1, \mbox{[}in, \hyperlink{interfaceunique}{unique}, size\+\_\+is(1)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$reserved2, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved3, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_s_t_a_t_s_t_g}{I\+Enum\+S\+T\+A\+T\+S\+TG} $\ast$$\ast$ppenum)
+\item 
+\mbox{\Hypertarget{interface_i_storage_ac944b1dc6d98e65502eda0513bd7c6fb}\label{interface_i_storage_ac944b1dc6d98e65502eda0513bd7c6fb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Enum\+Elements} (\mbox{[}in\mbox{]} D\+W\+O\+RD reserved1, \mbox{[}in\mbox{]} unsigned long cb\+Reserved2, \mbox{[}in, \hyperlink{interfaceunique}{unique}, size\+\_\+is(cb\+Reserved2)\mbox{]} byte $\ast$reserved2, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved3, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_s_t_a_t_s_t_g}{I\+Enum\+S\+T\+A\+T\+S\+TG} $\ast$$\ast$ppenum)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a24a3cecf549fefdf89a1c179a9de4fab}\label{interface_i_storage_a24a3cecf549fefdf89a1c179a9de4fab}} 
+H\+R\+E\+S\+U\+LT {\bfseries Destroy\+Element} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a05cf8803b1ec14088f98a25d2228da31}\label{interface_i_storage_a05cf8803b1ec14088f98a25d2228da31}} 
+H\+R\+E\+S\+U\+LT {\bfseries Rename\+Element} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Old\+Name, \mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+New\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_storage_aa8d26df49640063747ed297b2b95a0e0}\label{interface_i_storage_aa8d26df49640063747ed297b2b95a0e0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Element\+Times} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pwcs\+Name, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} $\ast$pctime, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} $\ast$patime, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} $\ast$pmtime)
+\item 
+\mbox{\Hypertarget{interface_i_storage_aaceb37acd3ae4dfa4ca2297cb07b3e8a}\label{interface_i_storage_aaceb37acd3ae4dfa4ca2297cb07b3e8a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Class} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID clsid)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a23bf448b9bd1fbdd96d300f761849f6d}\label{interface_i_storage_a23bf448b9bd1fbdd96d300f761849f6d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+State\+Bits} (\mbox{[}in\mbox{]} D\+W\+O\+RD grf\+State\+Bits, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mask)
+\item 
+\mbox{\Hypertarget{interface_i_storage_a7a7eb8a7f00f42de04019d282391fbe7}\label{interface_i_storage_a7a7eb8a7f00f42de04019d282391fbe7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stat} (\mbox{[}out\mbox{]} S\+T\+A\+T\+S\+TG $\ast$pstatstg, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Stat\+Flag)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{structswrast__texture__image}{}\section{swrast\+\_\+texture\+\_\+image结构体 参考}
+\label{structswrast__texture__image}\index{swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}}
+
+
+{\ttfamily \#include $<$s\+\_\+context.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structswrast__texture__image_a1c6fa112049bb682bf47888587040905}\label{structswrast__texture__image_a1c6fa112049bb682bf47888587040905}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} {\bfseries Base}
+\item 
+G\+Lboolean \hyperlink{structswrast__texture__image_ae1f243dbb7397e242b6a7ab9b172a6bc}{\+\_\+\+Is\+Power\+Of\+Two}
+\item 
+G\+Lfloat \hyperlink{structswrast__texture__image_a9ad1382e2571cffcc1f7ecf9e458e9c5}{Width\+Scale}
+\item 
+\mbox{\Hypertarget{structswrast__texture__image_aa3eec83c579cbb6ce0ee1950ce353de5}\label{structswrast__texture__image_aa3eec83c579cbb6ce0ee1950ce353de5}} 
+G\+Lfloat {\bfseries Height\+Scale}
+\item 
+\mbox{\Hypertarget{structswrast__texture__image_ab27a58a3da2b85294479582b71016936}\label{structswrast__texture__image_ab27a58a3da2b85294479582b71016936}} 
+G\+Lfloat {\bfseries Depth\+Scale}
+\item 
+G\+Lint \hyperlink{structswrast__texture__image_a7f30a547544356e195fdd06d2d79c526}{Row\+Stride}
+\item 
+G\+Luint $\ast$ \hyperlink{structswrast__texture__image_a2727269aecf550bc87fb7af9831ca90b}{Image\+Offsets}
+\item 
+G\+Lubyte $\ast$ \hyperlink{structswrast__texture__image_a0fc3eaf6b6f176c2aaa6f0a8c221e65d}{Map}
+\item 
+G\+Lubyte $\ast$ \hyperlink{structswrast__texture__image_a543f7bbe2a4d9c54b60c05c9dc6bbf78}{Buffer}
+\item 
+\mbox{\Hypertarget{structswrast__texture__image_a463a44d23bf59c3b3bdd429f717f92b6}\label{structswrast__texture__image_a463a44d23bf59c3b3bdd429f717f92b6}} 
+\hyperlink{s__context_8h_a83698752aabb7ffd9baabd0e72618393}{Fetch\+Texel\+Func} {\bfseries Fetch\+Texel}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Subclass of \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}. We need extra fields/info to keep tracking of mapped texture buffers, strides and Fetch functions. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structswrast__texture__image_ae1f243dbb7397e242b6a7ab9b172a6bc}\label{structswrast__texture__image_ae1f243dbb7397e242b6a7ab9b172a6bc}} 
+\index{swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}!\+\_\+\+Is\+Power\+Of\+Two@{\+\_\+\+Is\+Power\+Of\+Two}}
+\index{\+\_\+\+Is\+Power\+Of\+Two@{\+\_\+\+Is\+Power\+Of\+Two}!swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{\+\_\+\+Is\+Power\+Of\+Two}{\_IsPowerOfTwo}}
+{\footnotesize\ttfamily G\+Lboolean swrast\+\_\+texture\+\_\+image\+::\+\_\+\+Is\+Power\+Of\+Two}
+
+Are all dimensions powers of two? \mbox{\Hypertarget{structswrast__texture__image_a543f7bbe2a4d9c54b60c05c9dc6bbf78}\label{structswrast__texture__image_a543f7bbe2a4d9c54b60c05c9dc6bbf78}} 
+\index{swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily G\+Lubyte$\ast$ swrast\+\_\+texture\+\_\+image\+::\+Buffer}
+
+Malloc\textquotesingle{}d texture memory \mbox{\Hypertarget{structswrast__texture__image_a2727269aecf550bc87fb7af9831ca90b}\label{structswrast__texture__image_a2727269aecf550bc87fb7af9831ca90b}} 
+\index{swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}!Image\+Offsets@{Image\+Offsets}}
+\index{Image\+Offsets@{Image\+Offsets}!swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Image\+Offsets}{ImageOffsets}}
+{\footnotesize\ttfamily G\+Luint$\ast$ swrast\+\_\+texture\+\_\+image\+::\+Image\+Offsets}
+
+if 3D texture\+: array \mbox{[}Depth\mbox{]} of offsets to each 2D slice in \textquotesingle{}\hyperlink{struct_data}{Data}\textquotesingle{}, in texels \mbox{\Hypertarget{structswrast__texture__image_a0fc3eaf6b6f176c2aaa6f0a8c221e65d}\label{structswrast__texture__image_a0fc3eaf6b6f176c2aaa6f0a8c221e65d}} 
+\index{swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}!Map@{Map}}
+\index{Map@{Map}!swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily G\+Lubyte$\ast$ swrast\+\_\+texture\+\_\+image\+::\+Map}
+
+Pointer to mapped image memory \mbox{\Hypertarget{structswrast__texture__image_a7f30a547544356e195fdd06d2d79c526}\label{structswrast__texture__image_a7f30a547544356e195fdd06d2d79c526}} 
+\index{swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}!Row\+Stride@{Row\+Stride}}
+\index{Row\+Stride@{Row\+Stride}!swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Row\+Stride}{RowStride}}
+{\footnotesize\ttfamily G\+Lint swrast\+\_\+texture\+\_\+image\+::\+Row\+Stride}
+
+These fields only valid when texture memory is mapped Padded width in units of texels \mbox{\Hypertarget{structswrast__texture__image_a9ad1382e2571cffcc1f7ecf9e458e9c5}\label{structswrast__texture__image_a9ad1382e2571cffcc1f7ecf9e458e9c5}} 
+\index{swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}!Width\+Scale@{Width\+Scale}}
+\index{Width\+Scale@{Width\+Scale}!swrast\+\_\+texture\+\_\+image@{swrast\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Width\+Scale}{WidthScale}}
+{\footnotesize\ttfamily G\+Lfloat swrast\+\_\+texture\+\_\+image\+::\+Width\+Scale}
+
+used for mipmap L\+OD computation 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/\hyperlink{s__context_8h}{s\+\_\+context.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{interface_i_client_security}{}\section{I\+Client\+Security接口 参考}
+\label{interface_i_client_security}\index{I\+Client\+Security@{I\+Client\+Security}}
+类 I\+Client\+Security 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_client_security}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_client_security_1_1tag_s_o_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n___i_n_f_o}{tag\+S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+FO}
+\item 
+struct \hyperlink{struct_i_client_security_1_1tag_s_o_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n___l_i_s_t}{tag\+S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+L\+I\+ST}
+\item 
+struct \hyperlink{struct_i_client_security_1_1tag_s_o_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n___s_e_r_v_i_c_e}{tag\+S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+E\+R\+V\+I\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_add86e0bf4eac5be037b0418ab5b6e4d0}\label{interface_i_client_security_add86e0bf4eac5be037b0418ab5b6e4d0}} 
+enum {\bfseries tag\+E\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES} \{ \newline
+{\bfseries E\+O\+A\+C\+\_\+\+N\+O\+NE} = 0x0, 
+{\bfseries E\+O\+A\+C\+\_\+\+M\+U\+T\+U\+A\+L\+\_\+\+A\+U\+TH} = 0x1, 
+{\bfseries E\+O\+A\+C\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+R\+E\+FS} = 0x2, 
+{\bfseries E\+O\+A\+C\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+C\+O\+N\+T\+R\+OL} = 0x4, 
+\newline
+{\bfseries E\+O\+A\+C\+\_\+\+A\+P\+P\+ID} = 0x8, 
+{\bfseries E\+O\+A\+C\+\_\+\+D\+Y\+N\+A\+M\+IC} = 0x10, 
+{\bfseries E\+O\+A\+C\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+L\+O\+A\+K\+I\+NG} = 0x20, 
+{\bfseries E\+O\+A\+C\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+C\+L\+O\+A\+K\+I\+NG} = 0x40, 
+\newline
+{\bfseries E\+O\+A\+C\+\_\+\+A\+N\+Y\+\_\+\+A\+U\+T\+H\+O\+R\+I\+TY} = 0x80, 
+{\bfseries E\+O\+A\+C\+\_\+\+M\+A\+K\+E\+\_\+\+F\+U\+L\+L\+S\+IC} = 0x100, 
+{\bfseries E\+O\+A\+C\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+F\+U\+L\+L\+S\+IC} = 0x200, 
+{\bfseries E\+O\+A\+C\+\_\+\+A\+U\+T\+O\+\_\+\+I\+M\+P\+E\+R\+S\+O\+N\+A\+TE} = 0x400, 
+\newline
+{\bfseries E\+O\+A\+C\+\_\+\+D\+E\+F\+A\+U\+LT} = 0x800, 
+{\bfseries E\+O\+A\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+A\+AA} = 0x1000, 
+{\bfseries E\+O\+A\+C\+\_\+\+N\+O\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+M\+A\+R\+S\+H\+AL} = 0x2000
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a190246da2485537cff7a6cfabb3d2ee6}\label{interface_i_client_security_a190246da2485537cff7a6cfabb3d2ee6}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_client_security_1_1tag_s_o_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n___s_e_r_v_i_c_e}{I\+Client\+Security\+::tag\+S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+E\+R\+V\+I\+CE} {\bfseries S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+E\+R\+V\+I\+CE}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a049691065638a51f456e5fcce507b8eb}\label{interface_i_client_security_a049691065638a51f456e5fcce507b8eb}} 
+typedef \hyperlink{struct_i_client_security_1_1tag_s_o_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n___s_e_r_v_i_c_e}{S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+E\+R\+V\+I\+CE} $\ast$ {\bfseries P\+S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+E\+R\+V\+I\+CE}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a3c8923694a14251eeb38aca0706a6433}\label{interface_i_client_security_a3c8923694a14251eeb38aca0706a6433}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_client_security_1_1tag_s_o_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n___i_n_f_o}{I\+Client\+Security\+::tag\+S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+FO} {\bfseries S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+FO}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a0a4bcf4188525c41a5e5b697dc458401}\label{interface_i_client_security_a0a4bcf4188525c41a5e5b697dc458401}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_client_security_1_1tag_s_o_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n___l_i_s_t}{I\+Client\+Security\+::tag\+S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+L\+I\+ST} {\bfseries S\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+L\+I\+ST}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a6a580fa7001b29e372a8a59a49aea892}\label{interface_i_client_security_a6a580fa7001b29e372a8a59a49aea892}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Client\+Security\+::tag\+E\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES {\bfseries E\+O\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a9ec3bb23d57d9005a69c87503d6e63d7}\label{interface_i_client_security_a9ec3bb23d57d9005a69c87503d6e63d7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Blanket} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Proxy, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Authn\+Svc, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Authz\+Svc, \mbox{[}out\mbox{]} O\+L\+E\+C\+H\+AR $\ast$$\ast$p\+Server\+Princ\+Name, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Authn\+Level, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Imp\+Level, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$p\+Auth\+Info, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Capabilities)
+\item 
+\mbox{\Hypertarget{interface_i_client_security_ae54230b7f725615728a800949c9786e6}\label{interface_i_client_security_ae54230b7f725615728a800949c9786e6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Blanket} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Proxy, \mbox{[}in\mbox{]} D\+W\+O\+RD Authn\+Svc, \mbox{[}in\mbox{]} D\+W\+O\+RD Authz\+Svc, \mbox{[}in\mbox{]} O\+L\+E\+C\+H\+AR $\ast$p\+Server\+Princ\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD Authn\+Level, \mbox{[}in\mbox{]} D\+W\+O\+RD Imp\+Level, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Auth\+Info, \mbox{[}in\mbox{]} D\+W\+O\+RD Capabilities)
+\item 
+\mbox{\Hypertarget{interface_i_client_security_ab25816ab9e2bae0ee3721ac55218cb58}\label{interface_i_client_security_ab25816ab9e2bae0ee3721ac55218cb58}} 
+H\+R\+E\+S\+U\+LT {\bfseries Copy\+Proxy} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Proxy, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$pp\+Copy)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a42481df472f40ee27baccc77c28e1d0b}\label{interface_i_client_security_a42481df472f40ee27baccc77c28e1d0b}} 
+const O\+L\+E\+C\+H\+AR $\ast$ {\bfseries C\+O\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+N\+C\+I\+P\+AL} = (O\+L\+E\+C\+H\+AR$\ast$) -\/1
+\item 
+\mbox{\Hypertarget{interface_i_client_security_a804127cf710d7b7ba15835050013d296}\label{interface_i_client_security_a804127cf710d7b7ba15835050013d296}} 
+const \hyperlink{interfacevoid}{void} $\ast$ {\bfseries C\+O\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+U\+T\+H\+I\+N\+FO} = (\hyperlink{interfacevoid}{void}$\ast$) -\/1
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

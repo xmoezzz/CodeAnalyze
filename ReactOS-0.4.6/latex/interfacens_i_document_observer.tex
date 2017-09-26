@@ -1,0 +1,69 @@
+\hypertarget{interfacens_i_document_observer}{}\section{ns\+I\+Document\+Observer接口 参考}
+\label{interfacens_i_document_observer}\index{ns\+I\+Document\+Observer@{ns\+I\+Document\+Observer}}
+类 ns\+I\+Document\+Observer 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfacens_i_document_observer}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structns_i_document_observer_1_1_event_states}{Event\+States}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a622e0b8b36baa0fab139f543d4ed5bd1}\label{interfacens_i_document_observer_a622e0b8b36baa0fab139f543d4ed5bd1}} 
+typedef uint32\+\_\+t {\bfseries ns\+Update\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_aa2db8e82b965c6e6b18e89124695a267}\label{interfacens_i_document_observer_aa2db8e82b965c6e6b18e89124695a267}} 
+\hyperlink{interfacevoid}{void} {\bfseries Begin\+Update} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, ns\+Update\+Type a\+Update\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_acb29eb00d92641fb23994c1cdf7fa4d9}\label{interfacens_i_document_observer_acb29eb00d92641fb23994c1cdf7fa4d9}} 
+\hyperlink{interfacevoid}{void} {\bfseries End\+Update} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, ns\+Update\+Type a\+Update\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a3528542ce76a25dbb1067badbb4eacbe}\label{interfacens_i_document_observer_a3528542ce76a25dbb1067badbb4eacbe}} 
+\hyperlink{interfacevoid}{void} {\bfseries Begin\+Load} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a0fce632c608c91aac03e8921968f72d1}\label{interfacens_i_document_observer_a0fce632c608c91aac03e8921968f72d1}} 
+\hyperlink{interfacevoid}{void} {\bfseries End\+Load} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_ab7a9cb48ba683868d340d77eab440746}\label{interfacens_i_document_observer_ab7a9cb48ba683868d340d77eab440746}} 
+\hyperlink{interfacevoid}{void} {\bfseries Content\+States\+Changed} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_content}{ns\+I\+Content} $\ast$a\+Content, \hyperlink{structns_i_document_observer_1_1_event_states}{Event\+States} a\+State\+Mask)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a191f4842032bce6197e0eb375ff12806}\label{interfacens_i_document_observer_a191f4842032bce6197e0eb375ff12806}} 
+\hyperlink{interfacevoid}{void} {\bfseries Document\+States\+Changed} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{structns_i_document_observer_1_1_event_states}{Event\+States} a\+State\+Mask)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a0651638f74fe2fd080a24e024e638b65}\label{interfacens_i_document_observer_a0651638f74fe2fd080a24e024e638b65}} 
+\hyperlink{interfacevoid}{void} {\bfseries Style\+Sheet\+Added} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Sheet} $\ast$a\+Style\+Sheet, bool a\+Document\+Sheet)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a7ef9b1f43b61bee8fe0b17e0759ba5f5}\label{interfacens_i_document_observer_a7ef9b1f43b61bee8fe0b17e0759ba5f5}} 
+\hyperlink{interfacevoid}{void} {\bfseries Style\+Sheet\+Removed} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Sheet} $\ast$a\+Style\+Sheet, bool a\+Document\+Sheet)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a9ab110cee87465fec337098389960635}\label{interfacens_i_document_observer_a9ab110cee87465fec337098389960635}} 
+\hyperlink{interfacevoid}{void} {\bfseries Style\+Sheet\+Applicable\+State\+Changed} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Sheet} $\ast$a\+Style\+Sheet, bool a\+Applicable)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a241f13b433ea8f1e684c96484c822ab3}\label{interfacens_i_document_observer_a241f13b433ea8f1e684c96484c822ab3}} 
+\hyperlink{interfacevoid}{void} {\bfseries Style\+Rule\+Changed} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Sheet} $\ast$a\+Style\+Sheet, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Rule} $\ast$a\+Old\+Style\+Rule, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Rule} $\ast$a\+New\+Style\+Rule)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_aced96cd65bdf614b7a1c5c019e8fda23}\label{interfacens_i_document_observer_aced96cd65bdf614b7a1c5c019e8fda23}} 
+\hyperlink{interfacevoid}{void} {\bfseries Style\+Rule\+Added} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Sheet} $\ast$a\+Style\+Sheet, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Rule} $\ast$a\+Style\+Rule)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_a193984aed449b5059ff18d56caefa118}\label{interfacens_i_document_observer_a193984aed449b5059ff18d56caefa118}} 
+\hyperlink{interfacevoid}{void} {\bfseries Style\+Rule\+Removed} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Sheet} $\ast$a\+Style\+Sheet, \hyperlink{interfacens_i_supports}{ns\+I\+Style\+Rule} $\ast$a\+Style\+Rule)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_aa305aa0b5dab23c3147aa11d396f9b63}\label{interfacens_i_document_observer_aa305aa0b5dab23c3147aa11d396f9b63}} 
+\hyperlink{interfacevoid}{void} {\bfseries Bind\+To\+Document} (\hyperlink{interfacens_i_document}{ns\+I\+Document} $\ast$a\+Document, \hyperlink{interfacens_i_content}{ns\+I\+Content} $\ast$a\+Content)
+\item 
+\mbox{\Hypertarget{interfacens_i_document_observer_afb86bba2f557f5b53473a84f99621ad7}\label{interfacens_i_document_observer_afb86bba2f557f5b53473a84f99621ad7}} 
+\hyperlink{interfacevoid}{void} {\bfseries Attempt\+To\+Execute\+Script} (\hyperlink{interfacens_i_content}{ns\+I\+Content} $\ast$a\+Content, \hyperlink{interfacens_i_parser}{ns\+I\+Parser} $\ast$a\+Parser, bool $\ast$a\+Block)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

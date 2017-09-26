@@ -1,0 +1,50 @@
+\hypertarget{interface_i_a_v_i_stream}{}\section{I\+A\+V\+I\+Stream接口 参考}
+\label{interface_i_a_v_i_stream}\index{I\+A\+V\+I\+Stream@{I\+A\+V\+I\+Stream}}
+类 I\+A\+V\+I\+Stream 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_a_v_i_stream}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_aa28ae8ae88e6fcda0f56161f49589657}\label{interface_i_a_v_i_stream_aa28ae8ae88e6fcda0f56161f49589657}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create} (L\+P\+A\+R\+AM l\+Param1, L\+P\+A\+R\+AM l\+Param2)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a3869e5f9224d3b7c897fbd3d0404ec88}\label{interface_i_a_v_i_stream_a3869e5f9224d3b7c897fbd3d0404ec88}} 
+H\+R\+E\+S\+U\+LT {\bfseries Info} (\hyperlink{struct___a_v_i_s_t_r_e_a_m_i_n_f_o_w}{A\+V\+I\+S\+T\+R\+E\+A\+M\+I\+N\+F\+OW} $\ast$psi, L\+O\+NG l\+Size)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a88b6aa5f46fd822441310efe95c32ef3}\label{interface_i_a_v_i_stream_a88b6aa5f46fd822441310efe95c32ef3}} 
+L\+O\+NG {\bfseries Find\+Sample} (L\+O\+NG l\+Pos, L\+O\+NG l\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a3dd62c9d2a936b7ed62edc7ba67db846}\label{interface_i_a_v_i_stream_a3dd62c9d2a936b7ed62edc7ba67db846}} 
+H\+R\+E\+S\+U\+LT {\bfseries Read\+Format} (L\+O\+NG l\+Pos, \mbox{[}out, size\+\_\+is($\ast$lpcb\+Format)\mbox{]} char $\ast$lp\+Format, \mbox{[}in, out\mbox{]} L\+O\+NG $\ast$lpcb\+Format)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a6b7ccd73549b8858148fe27fe4ca8256}\label{interface_i_a_v_i_stream_a6b7ccd73549b8858148fe27fe4ca8256}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Format} (L\+O\+NG l\+Pos, \mbox{[}in, size\+\_\+is(cb\+Format)\mbox{]} char $\ast$lp\+Format, L\+O\+NG cb\+Format)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a961779bed0499988541d6035efa0eec7}\label{interface_i_a_v_i_stream_a961779bed0499988541d6035efa0eec7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Read} (L\+O\+NG l\+Start, L\+O\+NG l\+Samples, \mbox{[}out, size\+\_\+is(cb\+Buffer)\mbox{]} char $\ast$lp\+Buffer, L\+O\+NG cb\+Buffer, L\+O\+NG $\ast$pl\+Bytes, L\+O\+NG $\ast$pl\+Samples)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a0bd69128dabbf86909855ea6a1e771d6}\label{interface_i_a_v_i_stream_a0bd69128dabbf86909855ea6a1e771d6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Write} (L\+O\+NG l\+Start, L\+O\+NG l\+Samples, \mbox{[}in, size\+\_\+is(cb\+Buffer)\mbox{]} char $\ast$lp\+Buffer, L\+O\+NG cb\+Buffer, D\+W\+O\+RD dw\+Flags, L\+O\+NG $\ast$pl\+Samp\+Written, L\+O\+NG $\ast$pl\+Bytes\+Written)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a3ac06d98bfc6f75bacdafdef1499b53e}\label{interface_i_a_v_i_stream_a3ac06d98bfc6f75bacdafdef1499b53e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete} (L\+O\+NG l\+Start, L\+O\+NG l\+Samples)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a69a82ef577a169ec37679669e2175b40}\label{interface_i_a_v_i_stream_a69a82ef577a169ec37679669e2175b40}} 
+H\+R\+E\+S\+U\+LT {\bfseries Read\+Data} (D\+W\+O\+RD fcc, \mbox{[}out, size\+\_\+is($\ast$lpcb\+Buffer)\mbox{]} char $\ast$lp\+Buffer, \mbox{[}in, out\mbox{]} L\+O\+NG $\ast$lpcb\+Buffer)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_af06cefce5311aae0a86c6b5d9819a6c3}\label{interface_i_a_v_i_stream_af06cefce5311aae0a86c6b5d9819a6c3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Write\+Data} (D\+W\+O\+RD fcc, \mbox{[}in, size\+\_\+is(cb\+Buffer)\mbox{]} char $\ast$lp\+Buffer, L\+O\+NG cb\+Buffer)
+\item 
+\mbox{\Hypertarget{interface_i_a_v_i_stream_a45717d1709e9ed561538f219caafff7a}\label{interface_i_a_v_i_stream_a45717d1709e9ed561538f219caafff7a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Info} (\hyperlink{struct___a_v_i_s_t_r_e_a_m_i_n_f_o_w}{A\+V\+I\+S\+T\+R\+E\+A\+M\+I\+N\+F\+OW} $\ast$pl\+Info, L\+O\+NG cb\+Info)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/avifil32/avifile\+\_\+ifaces.\+idl\end{DoxyCompactItemize}

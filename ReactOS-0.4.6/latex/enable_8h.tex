@@ -1,0 +1,99 @@
+\hypertarget{enable_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/enable.h 文件参考}
+\label{enable_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/enable.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/enable.\+h}}
+{\ttfamily \#include \char`\"{}glheader.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{enable_8h_a80625db26b5102ebcb7a47a883380b28}{\+\_\+mesa\+\_\+set\+\_\+enable} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap}, G\+Lboolean state)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{enable_8h_a2cd53cc2db3c852b7ceab3e464b3b89c}{\+\_\+mesa\+\_\+\+Disable} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap})
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{enable_8h_a903ae3dab03223f9685040e0abe5cc99}{\+\_\+mesa\+\_\+\+Enable} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap})
+\item 
+G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{enable_8h_a36ff4c508540a1a4612babc66c5cd33b}{\+\_\+mesa\+\_\+\+Is\+Enabled} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap})
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{enable_8h_aeb2d04af65d5e77c5a814b168c4f1fda}{\+\_\+mesa\+\_\+\+Enable\+Client\+State} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap})
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{enable_8h_a44ab7c6afdccd77977f657f9bdc299b2}{\+\_\+mesa\+\_\+\+Disable\+Client\+State} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap})
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Enable/disable/query GL capabilities. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{enable_8h_a2cd53cc2db3c852b7ceab3e464b3b89c}\label{enable_8h_a2cd53cc2db3c852b7ceab3e464b3b89c}} 
+\index{enable.\+h@{enable.\+h}!\+\_\+mesa\+\_\+\+Disable@{\+\_\+mesa\+\_\+\+Disable}}
+\index{\+\_\+mesa\+\_\+\+Disable@{\+\_\+mesa\+\_\+\+Disable}!enable.\+h@{enable.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Disable()}{\_mesa\_Disable()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Disable (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{cap }\end{DoxyParamCaption})}
+
+Disable GL capability. Called by gl\+Disable() 
+\begin{DoxyParams}{参数}
+{\em cap} & state to disable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{enable_8h_a44ab7c6afdccd77977f657f9bdc299b2}\label{enable_8h_a44ab7c6afdccd77977f657f9bdc299b2}} 
+\index{enable.\+h@{enable.\+h}!\+\_\+mesa\+\_\+\+Disable\+Client\+State@{\+\_\+mesa\+\_\+\+Disable\+Client\+State}}
+\index{\+\_\+mesa\+\_\+\+Disable\+Client\+State@{\+\_\+mesa\+\_\+\+Disable\+Client\+State}!enable.\+h@{enable.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Disable\+Client\+State()}{\_mesa\_DisableClientState()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Disable\+Client\+State (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{cap }\end{DoxyParamCaption})}
+
+Disable GL capability. 
+\begin{DoxyParams}{参数}
+{\em cap} & state to enable/disable.\\
+\hline
+\end{DoxyParams}
+Get\textquotesingle{}s the current context, assures that we\textquotesingle{}re outside gl\+Begin()/gl\+End() and calls \hyperlink{structclient__state}{client\+\_\+state()}. \mbox{\Hypertarget{enable_8h_a903ae3dab03223f9685040e0abe5cc99}\label{enable_8h_a903ae3dab03223f9685040e0abe5cc99}} 
+\index{enable.\+h@{enable.\+h}!\+\_\+mesa\+\_\+\+Enable@{\+\_\+mesa\+\_\+\+Enable}}
+\index{\+\_\+mesa\+\_\+\+Enable@{\+\_\+mesa\+\_\+\+Enable}!enable.\+h@{enable.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Enable()}{\_mesa\_Enable()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Enable (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{cap }\end{DoxyParamCaption})}
+
+Enable GL capability. Called by gl\+Enable() 
+\begin{DoxyParams}{参数}
+{\em cap} & state to enable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{enable_8h_aeb2d04af65d5e77c5a814b168c4f1fda}\label{enable_8h_aeb2d04af65d5e77c5a814b168c4f1fda}} 
+\index{enable.\+h@{enable.\+h}!\+\_\+mesa\+\_\+\+Enable\+Client\+State@{\+\_\+mesa\+\_\+\+Enable\+Client\+State}}
+\index{\+\_\+mesa\+\_\+\+Enable\+Client\+State@{\+\_\+mesa\+\_\+\+Enable\+Client\+State}!enable.\+h@{enable.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Enable\+Client\+State()}{\_mesa\_EnableClientState()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Enable\+Client\+State (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{cap }\end{DoxyParamCaption})}
+
+Enable GL capability. 
+\begin{DoxyParams}{参数}
+{\em cap} & state to enable/disable.\\
+\hline
+\end{DoxyParams}
+Get\textquotesingle{}s the current context, assures that we\textquotesingle{}re outside gl\+Begin()/gl\+End() and calls \hyperlink{structclient__state}{client\+\_\+state()}. \mbox{\Hypertarget{enable_8h_a36ff4c508540a1a4612babc66c5cd33b}\label{enable_8h_a36ff4c508540a1a4612babc66c5cd33b}} 
+\index{enable.\+h@{enable.\+h}!\+\_\+mesa\+\_\+\+Is\+Enabled@{\+\_\+mesa\+\_\+\+Is\+Enabled}}
+\index{\+\_\+mesa\+\_\+\+Is\+Enabled@{\+\_\+mesa\+\_\+\+Is\+Enabled}!enable.\+h@{enable.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Is\+Enabled()}{\_mesa\_IsEnabled()}}
+{\footnotesize\ttfamily G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Is\+Enabled (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{cap }\end{DoxyParamCaption})}
+
+Return simple enable/disable state.
+
+
+\begin{DoxyParams}{参数}
+{\em cap} & state variable to query.\\
+\hline
+\end{DoxyParams}
+Returns the state of the specified capability from the current GL context. For the capabilities associated with extensions verifies that those extensions are effectively present before reporting. \mbox{\Hypertarget{enable_8h_a80625db26b5102ebcb7a47a883380b28}\label{enable_8h_a80625db26b5102ebcb7a47a883380b28}} 
+\index{enable.\+h@{enable.\+h}!\+\_\+mesa\+\_\+set\+\_\+enable@{\+\_\+mesa\+\_\+set\+\_\+enable}}
+\index{\+\_\+mesa\+\_\+set\+\_\+enable@{\+\_\+mesa\+\_\+set\+\_\+enable}!enable.\+h@{enable.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+set\+\_\+enable()}{\_mesa\_set\_enable()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+set\+\_\+enable (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{cap,  }\item[{G\+Lboolean}]{state }\end{DoxyParamCaption})}
+
+Helper function to enable or disable state.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em cap} & the state to enable/disable \\
+\hline
+{\em state} & whether to enable or disable the specified capability.\\
+\hline
+\end{DoxyParams}
+Updates the current context and flushes the vertices as needed. For capabilities associated with extensions it verifies that those extensions are effectivly present before updating. Notifies the driver via \hyperlink{structdd__function__table_ae22e641c2c7458248f00b64a289c2655}{dd\+\_\+function\+\_\+table\+::\+Enable}. 

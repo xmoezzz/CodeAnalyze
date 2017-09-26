@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/include/reactos/subsys/iolog/iolog.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_f392f966fdfa958006dd89b2d26c104a.html">include</a></li><li class="navelem"><a class="el" href="dir_1fa98287edbac1d069b3283b7ba87594.html">reactos</a></li><li class="navelem"><a class="el" href="dir_39525d7b9484e2bdfc3ac3f482afaefb.html">subsys</a></li><li class="navelem"><a class="el" href="dir_cb9ac3cef8c1d4867704a48a1ae2ebad.html">iolog</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">iolog.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * PROJECT:         ReactOS EventLog Service</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * LICENSE:         GPL - See COPYING in the top level directory</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * FILE:            include/reactos/subsys/iolog/iolog.h</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * PURPOSE:         EventLog LPC API definitions</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _IOLOG_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _IOLOG_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// #include &lt;iotypes.h&gt; // For IO_ERROR_LOG_MESSAGE and associated</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define ELF_PORT_NAME   L&quot;\\ErrorLogPort&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct___e_l_f___a_p_i___m_s_g.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___e_l_f___a_p_i___m_s_g.html">_ELF_API_MSG</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="struct___p_o_r_t___m_e_s_s_a_g_e___h_e_a_d_e_r.html">PORT_MESSAGE</a> <a class="code" href="class_header.html">Header</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ULONG Unknown[2]; <span class="comment">// FIXME</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="struct___i_o___e_r_r_o_r___l_o_g___m_e_s_s_a_g_e.html">IO_ERROR_LOG_MESSAGE</a> IoErrorMessage;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <a class="code" href="struct___e_l_f___a_p_i___m_s_g.html">ELF_API_MSG</a>, *<a class="code" href="struct___e_l_f___a_p_i___m_s_g.html">PELF_API_MSG</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * NOTE: The maximum data size sent to the EventLog LPC port</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * is equal to: PORT_MAXIMUM_MESSAGE_LENGTH == 0x100 .</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // _IOLOG_H</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* EOF */</span></div><div class="ttc" id="struct___p_o_r_t___m_e_s_s_a_g_e___h_e_a_d_e_r_html"><div class="ttname"><a href="struct___p_o_r_t___m_e_s_s_a_g_e___h_e_a_d_e_r.html">_PORT_MESSAGE_HEADER</a></div><div class="ttdef"><b>Definition:</b> winternl.h:1715</div></div>
+<div class="ttc" id="struct___i_o___e_r_r_o_r___l_o_g___m_e_s_s_a_g_e_html"><div class="ttname"><a href="struct___i_o___e_r_r_o_r___l_o_g___m_e_s_s_a_g_e.html">_IO_ERROR_LOG_MESSAGE</a></div><div class="ttdef"><b>Definition:</b> iotypes.h:1967</div></div>
+<div class="ttc" id="struct___e_l_f___a_p_i___m_s_g_html"><div class="ttname"><a href="struct___e_l_f___a_p_i___m_s_g.html">_ELF_API_MSG</a></div><div class="ttdef"><b>Definition:</b> iolog.h:17</div></div>
+<div class="ttc" id="class_header_html"><div class="ttname"><a href="class_header.html">Header</a></div><div class="ttdef"><b>Definition:</b> Header.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

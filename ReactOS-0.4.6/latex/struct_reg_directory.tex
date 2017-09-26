@@ -1,0 +1,62 @@
+\hypertarget{struct_reg_directory}{}\section{Reg\+Directory结构体 参考}
+\label{struct_reg_directory}\index{Reg\+Directory@{Reg\+Directory}}
+
+
+Registry key entry  
+
+
+
+
+{\ttfamily \#include $<$regfs.\+h$>$}
+
+类 Reg\+Directory 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_reg_directory}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_reg_directory_a877d80bf3f694f00c9129bde53f87939}\label{struct_reg_directory_a877d80bf3f694f00c9129bde53f87939}} 
+{\bfseries Reg\+Directory} (\hyperlink{struct_entry}{Entry} $\ast$parent, L\+P\+C\+T\+S\+TR \hyperlink{structpath}{path}, \hyperlink{interfacevoid}{H\+K\+EY} h\+Key\+Root)
+\item 
+virtual \hyperlink{interfacevoid}{void} \hyperlink{struct_reg_directory_a48c2c8255423b0bcaca17bbb2fda20b0}{read\+\_\+directory} (int scan\+\_\+flags=0)
+\item 
+\mbox{\Hypertarget{struct_reg_directory_a4de1ce077d1db4d267de1f3760ddb49c}\label{struct_reg_directory_a4de1ce077d1db4d267de1f3760ddb49c}} 
+virtual const \hyperlink{interfacevoid}{void} $\ast$ {\bfseries get\+\_\+next\+\_\+path\+\_\+component} (const \hyperlink{interfacevoid}{void} $\ast$) const
+\item 
+\mbox{\Hypertarget{struct_reg_directory_a23b8c0edb3e9fb70f04ad387765fc618}\label{struct_reg_directory_a23b8c0edb3e9fb70f04ad387765fc618}} 
+virtual \hyperlink{struct_entry}{Entry} $\ast$ {\bfseries find\+\_\+entry} (const \hyperlink{interfacevoid}{void} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_reg_directory_a00f15e624ca00c32596c5c329d048006}\label{struct_reg_directory_a00f15e624ca00c32596c5c329d048006}} 
+\hyperlink{interfacevoid}{H\+K\+EY} {\bfseries \+\_\+h\+Key\+Root}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Registry key entry 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_reg_directory_a48c2c8255423b0bcaca17bbb2fda20b0}\label{struct_reg_directory_a48c2c8255423b0bcaca17bbb2fda20b0}} 
+\index{Reg\+Directory@{Reg\+Directory}!read\+\_\+directory@{read\+\_\+directory}}
+\index{read\+\_\+directory@{read\+\_\+directory}!Reg\+Directory@{Reg\+Directory}}
+\subsubsection{\texorpdfstring{read\+\_\+directory()}{read\_directory()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Reg\+Directory\+::read\+\_\+directory (\begin{DoxyParamCaption}\item[{int}]{scan\+\_\+flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000043}{待办事项}]\hyperlink{namespace_this}{This} can also be done in the Reg\+Enum\+Value() call if we dynamically adjust the return buffer size. \end{DoxyRefDesc}
+
+
+重载 \hyperlink{struct_entry}{Entry} .
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/regfs.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/regfs.\+cpp\end{DoxyCompactItemize}

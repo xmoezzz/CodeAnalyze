@@ -1,0 +1,62 @@
+\hypertarget{class_c_hci_round_trip}{}\section{C\+Hci\+Round\+Trip类 参考}
+\label{class_c_hci_round_trip}\index{C\+Hci\+Round\+Trip@{C\+Hci\+Round\+Trip}}
+类 C\+Hci\+Round\+Trip 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_hci_round_trip}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_ace58a11f87dd893e3117ff270943bbdc}\label{class_c_hci_round_trip_ace58a11f87dd893e3117ff270943bbdc}} 
+virtual D\+W\+O\+RD {\bfseries Queue\+Event} (B\+Y\+TE Event\+Code, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Parameters, D\+W\+O\+RD dw\+Parameter\+Length)
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a74fd8f81fc83c560a1c0d0c0bcf403de}\label{class_c_hci_round_trip_a74fd8f81fc83c560a1c0d0c0bcf403de}} 
+virtual D\+W\+O\+RD {\bfseries Wait\+For\+Event} ()
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a4094d5b03d7a4d646100833da8c858a3}\label{class_c_hci_round_trip_a4094d5b03d7a4d646100833da8c858a3}} 
+virtual D\+W\+O\+RD {\bfseries On\+Event} (\hyperlink{struct_f_b_t___h_c_i___e_v_e_n_t___h_e_a_d_e_r}{P\+F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+H\+E\+A\+D\+ER} p\+Event, D\+W\+O\+RD Length)
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a3d408335e4b59ca966d8dd6d7f75ecba}\label{class_c_hci_round_trip_a3d408335e4b59ca966d8dd6d7f75ecba}} 
+virtual D\+W\+O\+RD {\bfseries Read\+B\+D\+A\+D\+DR} (B\+Y\+TE $\ast$B\+D\+A\+D\+DR)
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a795a1c07f02486376444c67c7dbade5e}\label{class_c_hci_round_trip_a795a1c07f02486376444c67c7dbade5e}} 
+virtual D\+W\+O\+RD {\bfseries Read\+Class\+Of\+Device} (B\+Y\+TE $\ast$Class\+Of\+Device)
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a0e657f247290a5fba97f3f162abb9319}\label{class_c_hci_round_trip_a0e657f247290a5fba97f3f162abb9319}} 
+virtual D\+W\+O\+RD {\bfseries Read\+Local\+Name} (B\+Y\+TE $\ast$\hyperlink{struct_name_rec__}{Name})
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a25d6b76d53a77585eb5bf239363d60ca}\label{class_c_hci_round_trip_a25d6b76d53a77585eb5bf239363d60ca}} 
+virtual D\+W\+O\+RD {\bfseries Create\+Connection} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, U\+S\+H\+O\+RT Packet\+Type, B\+Y\+TE Page\+Scan\+Repetition\+Mode, B\+Y\+TE Page\+Scan\+Mode, U\+S\+H\+O\+RT Clock\+Offset, B\+Y\+TE Allow\+Role\+Switch, U\+S\+H\+O\+RT \&Connection\+Handle)
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a933fe5e03b1b859ab2c17011b92775a1}\label{class_c_hci_round_trip_a933fe5e03b1b859ab2c17011b92775a1}} 
+virtual D\+W\+O\+RD {\bfseries Disconnect} (U\+S\+H\+O\+RT Connection\+Handler, B\+Y\+TE Reason)
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a697595b4c3eee8f682cced984beff45e}\label{class_c_hci_round_trip_a697595b4c3eee8f682cced984beff45e}} 
+virtual D\+W\+O\+RD {\bfseries Switch\+Role} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Role)
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_ac20bc640a68dc05f7fe13ec64d31bd24}\label{class_c_hci_round_trip_ac20bc640a68dc05f7fe13ec64d31bd24}} 
+virtual D\+W\+O\+RD {\bfseries Remote\+Name\+Request} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Page\+Scan\+Repetition\+Mode, B\+Y\+TE Page\+Scan\+Mode, U\+S\+H\+O\+RT Clock\+Offset, B\+Y\+TE \hyperlink{struct_name_rec__}{Name}\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_aca8683e768f3c1e18c53aa44f98705a0}\label{class_c_hci_round_trip_aca8683e768f3c1e18c53aa44f98705a0}} 
+B\+Y\+TE {\bfseries m\+\_\+\+Pending\+Event}
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_aa82773336df383bcc3652e477182e59d}\label{class_c_hci_round_trip_aa82773336df383bcc3652e477182e59d}} 
+\hyperlink{interfacevoid}{L\+P\+V\+O\+ID} {\bfseries m\+\_\+p\+Event\+Parameters}
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_a75a9a7914ffbb545776caa03786a8083}\label{class_c_hci_round_trip_a75a9a7914ffbb545776caa03786a8083}} 
+D\+W\+O\+RD {\bfseries m\+\_\+dw\+Event\+Parameter\+Length}
+\item 
+\mbox{\Hypertarget{class_c_hci_round_trip_abe050f98a938f9b5a71305ff73594bc9}\label{class_c_hci_round_trip_abe050f98a938f9b5a71305ff73594bc9}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Event\+Signal}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/bluetooth/fbtusb/include/fbt\+Hci\+Round\+Trip.\+h\end{DoxyCompactItemize}

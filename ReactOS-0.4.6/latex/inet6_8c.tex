@@ -1,0 +1,38 @@
+\hypertarget{inet6_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/ipv6/inet6.c 文件参考}
+\label{inet6_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/ipv6/inet6.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/ipv6/inet6.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/inet.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{inet6_8c_af3d36da67e72e759cc465423d98638d5}\label{inet6_8c_af3d36da67e72e759cc465423d98638d5}} 
+u16\+\_\+t {\bfseries inet\+\_\+chksum\+\_\+pseudo} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, \hyperlink{interfacestruct}{struct} \hyperlink{structip__addr}{ip\+\_\+addr} $\ast$src, \hyperlink{interfacestruct}{struct} \hyperlink{structip__addr}{ip\+\_\+addr} $\ast$dest, u8\+\_\+t \hyperlink{structproto}{proto}, u32\+\_\+t proto\+\_\+len)
+\item 
+\mbox{\Hypertarget{inet6_8c_a79a71bd87fb7af82cbd72901d2b0f147}\label{inet6_8c_a79a71bd87fb7af82cbd72901d2b0f147}} 
+u16\+\_\+t {\bfseries inet\+\_\+chksum} (\hyperlink{interfacevoid}{void} $\ast$dataptr, u16\+\_\+t len)
+\item 
+u16\+\_\+t \hyperlink{inet6_8c_ab35967a50418358e194e8f80fdc3c865}{inet\+\_\+chksum\+\_\+pbuf} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions common to all T\+C\+P/\+I\+Pv6 modules, such as the \hyperlink{class_internet}{Internet} checksum and the byte order functions. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{inet6_8c_ab35967a50418358e194e8f80fdc3c865}\label{inet6_8c_ab35967a50418358e194e8f80fdc3c865}} 
+\index{inet6.\+c@{inet6.\+c}!inet\+\_\+chksum\+\_\+pbuf@{inet\+\_\+chksum\+\_\+pbuf}}
+\index{inet\+\_\+chksum\+\_\+pbuf@{inet\+\_\+chksum\+\_\+pbuf}!inet6.\+c@{inet6.\+c}}
+\subsubsection{\texorpdfstring{inet\+\_\+chksum\+\_\+pbuf()}{inet\_chksum\_pbuf()}}
+{\footnotesize\ttfamily u16\+\_\+t inet\+\_\+chksum\+\_\+pbuf (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Calculate a checksum over a chain of pbufs (without pseudo-\/header, much like inet\+\_\+chksum only pbufs are used).
+
+
+\begin{DoxyParams}{参数}
+{\em p} & pbuf chain over that the checksum should be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+checksum (as u16\+\_\+t) to be saved directly in the protocol header 
+\end{DoxyReturn}

@@ -1,0 +1,1213 @@
+\hypertarget{macros_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/macros.h 文件参考}
+\label{macros_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/macros.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/macros.\+h}}
+{\ttfamily \#include \char`\"{}imports.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_add27014ec804db8c2b0eb0124fe0a3e6}{S\+T\+R\+I\+D\+E\+\_\+F}(p,  i)~(p = (G\+Lfloat $\ast$)((G\+Lubyte $\ast$)p + i))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aaa0f27eaf5f9a22802727c682dd1c116}{S\+T\+R\+I\+D\+E\+\_\+\+UI}(p,  i)~(p = (G\+Luint $\ast$)((G\+Lubyte $\ast$)p + i))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a25cba6b1f46db2f3303787fc80df20ff}{S\+T\+R\+I\+D\+E\+\_\+4\+UB}(p,  i)~(p = (G\+Lubyte ($\ast$)\mbox{[}4\mbox{]})((G\+Lubyte $\ast$)p + i))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a80a975a900fc6343c46a4e5993b53b94}{S\+T\+R\+I\+D\+E\+\_\+4F}(p,  i)~(p = (G\+Lfloat ($\ast$)\mbox{[}4\mbox{]})((G\+Lubyte $\ast$)p + i))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a70eb0b7d8f92a90f87167a13fe980ed7}{S\+T\+R\+I\+D\+E\+\_\+T}(p,  t,  i)~(p = (t)((G\+Lubyte $\ast$)p + i))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}(\hyperlink{class_x}{X},  \hyperlink{boot_2environ_2include_2efi_2_base_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN},  \hyperlink{boot_2environ_2include_2efi_2_base_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX})~( (\hyperlink{class_x}{X})$<$(\hyperlink{boot_2environ_2include_2efi_2_base_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN}) ? (\hyperlink{boot_2environ_2include_2efi_2_base_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN}) \+: ((\hyperlink{class_x}{X})$>$(\hyperlink{boot_2environ_2include_2efi_2_base_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX}) ? (\hyperlink{boot_2environ_2include_2efi_2_base_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX}) \+: (\hyperlink{class_x}{X})) )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{M\+I\+N2}(\hyperlink{struct_a}{A},  B)~( (\hyperlink{struct_a}{A})$<$(B) ? (\hyperlink{struct_a}{A}) \+: (B) )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a33297b3679c713b0c4d897cd0fe3b122}{M\+A\+X2}(\hyperlink{struct_a}{A},  B)~( (\hyperlink{struct_a}{A})$>$(B) ? (\hyperlink{struct_a}{A}) \+: (B) )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a721b8d5f3abef17f10293f1f7f8c958e}{M\+I\+N3}(\hyperlink{struct_a}{A},  B,  \hyperlink{struct_c}{C})~((\hyperlink{struct_a}{A}) $<$ (B) ? \hyperlink{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{M\+I\+N2}(\hyperlink{struct_a}{A}, \hyperlink{struct_c}{C}) \+: \hyperlink{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{M\+I\+N2}(B, \hyperlink{struct_c}{C}))
+\item 
+\mbox{\Hypertarget{macros_8h_a8d577123d2e66d2b7d0bf9af6e172b93}\label{macros_8h_a8d577123d2e66d2b7d0bf9af6e172b93}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+X3}(\hyperlink{struct_a}{A},  B,  \hyperlink{struct_c}{C})~((\hyperlink{struct_a}{A}) $>$ (B) ? \hyperlink{macros_8h_a33297b3679c713b0c4d897cd0fe3b122}{M\+A\+X2}(\hyperlink{struct_a}{A}, \hyperlink{struct_c}{C}) \+: \hyperlink{macros_8h_a33297b3679c713b0c4d897cd0fe3b122}{M\+A\+X2}(B, \hyperlink{struct_c}{C}))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a6f830dce7c52388865343596733191c0}{D\+O\+T2}(a,  b)~( (a)\mbox{[}0\mbox{]}$\ast$(b)\mbox{[}0\mbox{]} + (a)\mbox{[}1\mbox{]}$\ast$(b)\mbox{[}1\mbox{]} )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aeaf9029d9b8aba8e9b0ed2303ada907d}{D\+O\+T3}(a,  b)~( (a)\mbox{[}0\mbox{]}$\ast$(b)\mbox{[}0\mbox{]} + (a)\mbox{[}1\mbox{]}$\ast$(b)\mbox{[}1\mbox{]} + (a)\mbox{[}2\mbox{]}$\ast$(b)\mbox{[}2\mbox{]} )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a2073bfc2043b688a94f3c4ee675521f3}{D\+O\+T4}(a,  b)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a53aaa15376a3b0a14538d66a498fcaa4}{C\+R\+O\+S\+S3}(n,  u,  v)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries N\+O\+R\+M\+A\+L\+I\+Z\+E\+\_\+3\+FV}(\hyperlink{struct_v}{V})
+\item 
+\mbox{\Hypertarget{macros_8h_a101f0aa891d5c6da68714feba56dac49}\label{macros_8h_a101f0aa891d5c6da68714feba56dac49}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+E\+N\+\_\+3\+FV}(\hyperlink{struct_v}{V})~(S\+Q\+R\+TF((\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}+(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]}+(\hyperlink{struct_v}{V})\mbox{[}2\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}2\mbox{]}))
+\item 
+\mbox{\Hypertarget{macros_8h_a55810d5df6e4239acf9a227cdaf32877}\label{macros_8h_a55810d5df6e4239acf9a227cdaf32877}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+E\+N\+\_\+2\+FV}(\hyperlink{struct_v}{V})~(S\+Q\+R\+TF((\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}+(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]}))
+\item 
+\mbox{\Hypertarget{macros_8h_a1ded95a45dbf8480d5b4b298fdfa84e0}\label{macros_8h_a1ded95a45dbf8480d5b4b298fdfa84e0}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+E\+N\+\_\+\+S\+Q\+U\+A\+R\+E\+D\+\_\+3\+FV}(\hyperlink{struct_v}{V})~((\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}+(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]}+(\hyperlink{struct_v}{V})\mbox{[}2\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}2\mbox{]})
+\item 
+\mbox{\Hypertarget{macros_8h_a93d5fc14052f57d4ad9e0db936f27761}\label{macros_8h_a93d5fc14052f57d4ad9e0db936f27761}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+E\+N\+\_\+\+S\+Q\+U\+A\+R\+E\+D\+\_\+2\+FV}(\hyperlink{struct_v}{V})~((\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}0\mbox{]}+(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]}$\ast$(\hyperlink{struct_v}{V})\mbox{[}1\mbox{]})
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ae6f47cf9efe9ec9be0d4624e53c2fb0b}{C\+E\+I\+L\+I\+NG}(\hyperlink{struct_a}{A},  B)~( (\hyperlink{struct_a}{A}) \% (B) == 0 ? (\hyperlink{struct_a}{A})/(B) \+: (\hyperlink{struct_a}{A})/(B)+1 )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a597382d6de2e2c09d4913e9da512e02c}{E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+I\+NT}(E)~((G\+Lint)(E))
+\item 
+\mbox{\Hypertarget{macros_8h_a825824e94bb596e68d950c647d772e75}\label{macros_8h_a825824e94bb596e68d950c647d772e75}} 
+\#\hyperlink{structdefine}{define} {\bfseries E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}(E)~((G\+Lfloat)(G\+Lint)(E))
+\item 
+\mbox{\Hypertarget{macros_8h_aff9b2f5d62ac4587da4eba89e86eede6}\label{macros_8h_aff9b2f5d62ac4587da4eba89e86eede6}} 
+\#\hyperlink{structdefine}{define} {\bfseries E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+D\+O\+U\+B\+LE}(E)~((G\+Ldouble)(G\+Lint)(E))
+\item 
+\mbox{\Hypertarget{macros_8h_a901b6def584359c7e184c03ed74dcaaa}\label{macros_8h_a901b6def584359c7e184c03ed74dcaaa}} 
+\#\hyperlink{structdefine}{define} {\bfseries E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+B\+O\+O\+L\+E\+AN}(E)~((E) ? G\+L\+\_\+\+T\+R\+UE \+: G\+L\+\_\+\+F\+A\+L\+SE)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ 4-\/element vector operations}\par
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a693ce23ac42fc5969c7eb7a07507299c}{Z\+E\+R\+O\+\_\+4V}(D\+ST)~(D\+ST)\mbox{[}0\mbox{]} = (D\+ST)\mbox{[}1\mbox{]} = (D\+ST)\mbox{[}2\mbox{]} = (D\+ST)\mbox{[}3\mbox{]} = 0
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a835791c13fa6c59d810fda0305dc16ce}{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V}(a,  b)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a81cb13a25c7097e6df3aa7a054b253c2}{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4\+U\+BV}(D\+ST,  S\+RC)~\hyperlink{macros_8h_a835791c13fa6c59d810fda0305dc16ce}{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V}(D\+ST, S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_af96cb9f6b14206dd6269c356a00a1058}{C\+O\+P\+Y\+\_\+4V}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_af3616e05abb0439f075ff9b5f24bcc64}{C\+O\+P\+Y\+\_\+4\+V\+\_\+\+C\+A\+ST}(D\+ST,  S\+RC,  C\+A\+ST)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aeec583d50978a39e4de071af050217e9}{C\+O\+P\+Y\+\_\+4\+U\+BV}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a300174ee54407e48d2c306c42add300d}{C\+O\+P\+Y\+\_\+4\+FV}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ab902c649c990a5d84bba6846cb9cb66b}{C\+O\+P\+Y\+\_\+\+S\+Z\+\_\+4V}(D\+ST,  SZ,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_acc7e991cc939c14ed26dd5edcfb9f9a6}{C\+O\+P\+Y\+\_\+\+C\+L\+E\+A\+N\+\_\+4V}(D\+ST,  SZ,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a5ea61bc5544d0cecd4184beae9f9384c}{S\+U\+B\+\_\+4V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a1e48b37442cd1b4eb9aa4a6eb7b25388}{A\+D\+D\+\_\+4V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a8ab4b3c7858fa8b2db028ba7e323853f}{S\+C\+A\+L\+E\+\_\+4V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a64dd29dd1c658d35ba7828b51076255c}{A\+C\+C\+\_\+4V}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a25b16e05d4f3cf7c7b3f95af36d3e56c}{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ad8ff1e09a31a17886710485e4539adeb}{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}(D\+ST,  \hyperlink{struct_s}{S},  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a51ee8bcc007dfa2412c96771957a404b}{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}(D\+ST,  \hyperlink{struct_s}{S},  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a16b293b22a2b1ea4598a1f108a4805fa}{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}(D\+ST,  \hyperlink{struct_s}{S})
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a2f815f0f288640d4b267aa9e91ac87b6}{A\+S\+S\+I\+G\+N\+\_\+4V}(\hyperlink{struct_v}{V},  V0,  V1,  V2,  V3)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ 3-\/element vector operations}\par
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a60ed9d864cd8cf8bf2d60431d2400071}{Z\+E\+R\+O\+\_\+3V}(D\+ST)~(D\+ST)\mbox{[}0\mbox{]} = (D\+ST)\mbox{[}1\mbox{]} = (D\+ST)\mbox{[}2\mbox{]} = 0
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_adb182b60d425a1148dffd97f75b4ff9c}{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+3V}(a,  b)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ae1e66b97c214aee7d871ac68f40c0a91}{C\+O\+P\+Y\+\_\+3V}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ab18a36e5615ce29dc747d7df88df34c1}{C\+O\+P\+Y\+\_\+3\+V\+\_\+\+C\+A\+ST}(D\+ST,  S\+RC,  C\+A\+ST)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a7444b5054bd5caddc04f1213072fb39f}{C\+O\+P\+Y\+\_\+3\+FV}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_af89eb4396116bce0f77ac1d1762de43d}{S\+U\+B\+\_\+3V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a6cb2586ad29148281e6b79ea9f8f7d3e}{A\+D\+D\+\_\+3V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aceeed08f48339ca06c4e301090ba12c1}{S\+C\+A\+L\+E\+\_\+3V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ac3d7fd28ad6fa119234fadf5f749bacc}{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a98287ad4276cf32d474b5ff21b4119d3}{A\+C\+C\+\_\+3V}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a957fbb70b80939c351d0abc6ad52990e}{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a4b009c2fd78020cd389253ebca8669bd}{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}(D\+ST,  \hyperlink{struct_s}{S},  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ad9777660deb72b9b5d9a66c0ff55cd72}{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}(D\+ST,  \hyperlink{struct_s}{S},  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ae78600d50aa763402ed9e92ba53bd755}{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}(D\+ST,  \hyperlink{struct_s}{S})
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aacd401192b667ae77f352a19316cd498}{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}(D\+ST,  \hyperlink{struct_s}{S})
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ad00b1e32b3d54161cfac1a573be2b178}{A\+S\+S\+I\+G\+N\+\_\+3V}(\hyperlink{struct_v}{V},  V0,  V1,  V2)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ 2-\/element vector operations}\par
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a9dba0b926bb03bfab4d257eb532f287e}{Z\+E\+R\+O\+\_\+2V}(D\+ST)~(D\+ST)\mbox{[}0\mbox{]} = (D\+ST)\mbox{[}1\mbox{]} = 0
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aba028c5440da31ac656e3ceb07f510f3}{C\+O\+P\+Y\+\_\+2V}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a4723f009e3688945537ae1b4e5a21365}{C\+O\+P\+Y\+\_\+2\+V\+\_\+\+C\+A\+ST}(D\+ST,  S\+RC,  C\+A\+ST)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a1d6d398f68897063ed31881988d1ada7}{C\+O\+P\+Y\+\_\+2\+FV}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a4e28bd57f246e8a3321ad5a6df8c9ec7}{S\+U\+B\+\_\+2V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a4f2a0508887590911dfd934887d4ed65}{A\+D\+D\+\_\+2V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aa7518f7b86f83f61690a06c9f4f17773}{S\+C\+A\+L\+E\+\_\+2V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a36b3f2ab46e00aaa4d1bd5ec1a9d33d3}{A\+C\+C\+\_\+2V}(D\+ST,  S\+RC)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aa4bf0551ca10c237f7d7726e7e88e130}{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2V}(D\+ST,  S\+R\+CA,  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a6c5f50ba8548c9e079bffd35096b9dc6}{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}(D\+ST,  \hyperlink{struct_s}{S},  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a9c599455fd59bb43743a67a826987392}{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}(D\+ST,  \hyperlink{struct_s}{S},  S\+R\+CB)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ae86fc6603c75b1d0f2796d41c52db67b}{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}(D\+ST,  \hyperlink{struct_s}{S})
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a25177495c842242faca7fa197b941eda}{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}(D\+ST,  \hyperlink{struct_s}{S})
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ac03b1294ae6f86c2379c070fd947668d}{A\+S\+S\+I\+G\+N\+\_\+2V}(\hyperlink{struct_v}{V},  V0,  V1)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Linear interpolation macros}\par
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{L\+I\+N\+T\+E\+RP}(T,  O\+UT,  IN)~((O\+UT) + (T) $\ast$ ((IN) -\/ (O\+UT)))
+\item 
+\mbox{\Hypertarget{macros_8h_a41b75cda1fed0c930e6bdbcb4cacb280}\label{macros_8h_a41b75cda1fed0c930e6bdbcb4cacb280}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+E\+R\+P\+\_\+F}(t,  dstf,  outf,  inf)~dstf = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{L\+I\+N\+T\+E\+RP}( t, outf, inf )
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+E\+R\+P\+\_\+4F}(t,  dst,  out,  in)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+E\+R\+P\+\_\+3F}(t,  dst,  out,  in)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Integer / float conversion for colors, normals, etc.}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{macros_8h_a2fdc6d20e3013fae8775273e4d7a5111}\label{macros_8h_a2fdc6d20e3013fae8775273e4d7a5111}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}(u)~\hyperlink{macros_8h_a50190dd499de923063487965e28276e6}{\+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab}\mbox{[}(unsigned int)(u)\mbox{]}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_abf2184d76bbfcf1ac3b31dfa87b80cc6}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(\hyperlink{class_x}{X})~((G\+Lubyte) (G\+Lint) ((\hyperlink{class_x}{X}) $\ast$ 255.\+0\+F))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ab330762f19dfa8d07de5dce072a6b6ed}{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}(B)~((2.\+0\+F $\ast$ (\+B) + 1.\+0\+F) $\ast$ (1.\+0\+F/255.\+0\+F))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a70efd0ca3fc07f8855d0aaf0f0ef653b}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+TE}(\hyperlink{class_x}{X})~( (((G\+Lint) (255.\+0\+F $\ast$ (\+X))) -\/ 1) / 2 )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a71d164131b092e640ab75e70227b05da}{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}(B)~((B) == 0 ? 0.\+0\+F \+: B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T(\+B))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a425ef6e7bc288f992595b935ed8e4282}{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}(B)~((B) == -\/128 ? -\/1.\+0\+F \+: (\+B) $\ast$ (1.\+0\+F/127.\+0\+F))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aaf65b5df2b3bd39d937814dbac1da996}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+EX}(\hyperlink{class_x}{X})~\hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}( (G\+Lint) (127.\+0\+F $\ast$ (\+X)), -\/128, 127 )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_adc16a064a9f163d3729715e0ed05c47a}{U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}(\hyperlink{struct_s}{S})~((G\+Lfloat) (\hyperlink{struct_s}{S}) $\ast$ (1.\+0\+F / 65535.\+0\+F))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_ab4b8a0ec40a56f289bd5f9c59c5a68d7}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(\hyperlink{class_x}{X})~((G\+Luint) ((\hyperlink{class_x}{X}) $\ast$ 65535.\+0\+F))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aba7a25b54ebdc854e22019ec20762fbb}{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}(\hyperlink{struct_s}{S})~((2.\+0\+F $\ast$ (\+S) + 1.\+0\+F) $\ast$ (1.\+0\+F/65535.\+0\+F))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_aceeff3b5d8a715a4e7fd4bf4ed270ff8}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT}(\hyperlink{class_x}{X})~( (((G\+Lint) (65535.\+0\+F $\ast$ (\+X))) -\/ 1) / 2 )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_adbcae710dd36890dbe79e360c446ca60}{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}(\hyperlink{struct_s}{S})~((\hyperlink{struct_s}{S}) == 0 ? 0.\+0\+F \+: S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T(\+S))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a5beac86f28c9bb74cc166d5325d34496}{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}(\hyperlink{struct_s}{S})~((\hyperlink{struct_s}{S}) == -\/32768 ? -\/1.\+0\+F \+: (\+S) $\ast$ (1.\+0\+F/32767.\+0\+F))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a412f3854fe6cad9d353cd260a5dcf071}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+R\+T\+\_\+\+T\+EX}(\hyperlink{class_x}{X})~( (G\+Lint) (32767.\+0\+F $\ast$ (\+X)) )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a82f28884e0db94843177d77227043921}{U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}(U)~((G\+Lfloat) ((U) $\ast$ (1.\+0\+F / 4294967295.\+0)))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a0a0aaa6e9e8c77a5538679ecd1aa8df2}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+I\+NT}(\hyperlink{class_x}{X})~((G\+Luint) ((\hyperlink{class_x}{X}) $\ast$ 4294967295.\+0))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a62a3c95c5e41d9b54173dd2ebb780dd6}{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}(I)~((G\+Lfloat) ((2.\+0\+F $\ast$ (\+I) + 1.\+0\+F) $\ast$ (1.\+0\+F/4294967294.\+0)))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_af41a0b32e63560599ce1d3745a5cd60a}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+NT}(\hyperlink{class_x}{X})~( (G\+Lint) (2147483647.\+0 $\ast$ (\hyperlink{class_x}{X})) )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a93e24df7ec29b186e246e12bac0031ed}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T64}(\hyperlink{class_x}{X})~( (G\+Lint64) (9223372036854775807.\+0 $\ast$ (double)(\hyperlink{class_x}{X})) )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a81772ade624a7f640356ecf9c15f3969}{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}(I)~((I) == -\/2147483648 ? -\/1.\+0\+F \+: (\+I) $\ast$ (1.\+0\+F/2147483647.\+0))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{macros_8h_a9623a216cf41606b4974511ec5d5b06e}{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T\+\_\+\+T\+EX}(\hyperlink{class_x}{X})~( (G\+Lint) (2147483647.\+0 $\ast$ (\hyperlink{class_x}{X})) )
+\item 
+\mbox{\Hypertarget{macros_8h_abdd96d7ceb4cf8e9d949ae531bb04fa5}\label{macros_8h_abdd96d7ceb4cf8e9d949ae531bb04fa5}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(b)~((G\+Lubyte) ((b) $<$ 0 ? 0 \+: (G\+Lubyte) (b)))
+\item 
+\mbox{\Hypertarget{macros_8h_a9eb3558ea12f5cee9174e7360a48512b}\label{macros_8h_a9eb3558ea12f5cee9174e7360a48512b}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(s)~((G\+Lubyte) ((s) $<$ 0 ? 0 \+: (G\+Lubyte) ((s) $>$$>$ 7)))
+\item 
+\mbox{\Hypertarget{macros_8h_a170ff867f590c165b4391bff969a1d51}\label{macros_8h_a170ff867f590c165b4391bff969a1d51}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(s)~((G\+Lubyte) ((s) $>$$>$ 8))
+\item 
+\mbox{\Hypertarget{macros_8h_a5992b98831fa571df7b64d1b130b6c49}\label{macros_8h_a5992b98831fa571df7b64d1b130b6c49}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(i)~((G\+Lubyte) ((i) $<$ 0 ? 0 \+: (G\+Lubyte) ((i) $>$$>$ 23)))
+\item 
+\mbox{\Hypertarget{macros_8h_ab8cc7ed5ec7a2dbb5c9b9ceecde9205e}\label{macros_8h_ab8cc7ed5ec7a2dbb5c9b9ceecde9205e}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(i)~((G\+Lubyte) ((i) $>$$>$ 24))
+\item 
+\mbox{\Hypertarget{macros_8h_a065caddac51b123c39116db5d7e6984d}\label{macros_8h_a065caddac51b123c39116db5d7e6984d}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(b)~((b) $<$ 0 ? 0 \+: ((G\+Lushort) (((b) $\ast$ 65535) / 255)))
+\item 
+\mbox{\Hypertarget{macros_8h_a2d1e872625621019fa455920473f32b9}\label{macros_8h_a2d1e872625621019fa455920473f32b9}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(b)~(((G\+Lushort) (b) $<$$<$ 8) $\vert$ (G\+Lushort) (b))
+\item 
+\mbox{\Hypertarget{macros_8h_a3f3c1553acc6e9d9992be84799acd027}\label{macros_8h_a3f3c1553acc6e9d9992be84799acd027}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(s)~((s) $<$ 0 ? 0 \+: ((G\+Lushort) (((s) $\ast$ 65535 / 32767))))
+\item 
+\mbox{\Hypertarget{macros_8h_a712a0d7a3ba8af7d71b2ec527aea7368}\label{macros_8h_a712a0d7a3ba8af7d71b2ec527aea7368}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(i)~((i) $<$ 0 ? 0 \+: ((G\+Lushort) ((i) $>$$>$ 15)))
+\item 
+\mbox{\Hypertarget{macros_8h_acc8fcfca9d18de71b44daa4aba520a01}\label{macros_8h_acc8fcfca9d18de71b44daa4aba520a01}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(i)~((i) $<$ 0 ? 0 \+: ((G\+Lushort) ((i) $>$$>$ 16)))
+\item 
+\mbox{\Hypertarget{macros_8h_adaaaf7584e3cf844c5817fb85b9c1267}\label{macros_8h_adaaaf7584e3cf844c5817fb85b9c1267}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+N\+C\+L\+A\+M\+P\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(us,  f)~us = ( (G\+Lushort) I\+R\+O\+U\+ND( \hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}((f), 0.\+0\+F, 1.\+0\+F) $\ast$ 65535.\+0\+F) )
+\item 
+\mbox{\Hypertarget{macros_8h_a469c80a673a1011dcdf69d5e5376c083}\label{macros_8h_a469c80a673a1011dcdf69d5e5376c083}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+L\+A\+M\+P\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}(us,  f)~us = ( (G\+Lushort) I\+R\+O\+U\+ND( (f) $\ast$ 65535.\+0\+F) )
+\item 
+\mbox{\Hypertarget{macros_8h_afb96163c186582c057f3098fb974c333}\label{macros_8h_afb96163c186582c057f3098fb974c333}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+N\+C\+L\+A\+M\+P\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT}(s,  f)~s = ( (G\+Lshort) I\+R\+O\+U\+ND( \hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}((f), -\/1.\+0\+F, 1.\+0\+F) $\ast$ 32767.\+0\+F) )
+\item 
+\mbox{\Hypertarget{macros_8h_a0034a79d102318b2d992d6f95cb9fecd}\label{macros_8h_a0034a79d102318b2d992d6f95cb9fecd}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+N\+C\+L\+A\+M\+P\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(ub,  f)~ub = ((G\+Lubyte) I\+R\+O\+U\+ND(\hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}((f), 0.\+0\+F, 1.\+0\+F) $\ast$ 255.\+0\+F))
+\item 
+\mbox{\Hypertarget{macros_8h_a71b6146424d14f4748ba7c802b937f2f}\label{macros_8h_a71b6146424d14f4748ba7c802b937f2f}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+L\+A\+M\+P\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}(ub,  f)~ub = ((G\+Lubyte) I\+R\+O\+U\+ND((f) $\ast$ 255.\+0\+F))
+\item 
+G\+Lfloat \hyperlink{macros_8h_a50190dd499de923063487965e28276e6}{\+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{struct_a}{A} collection of useful macros. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{macros_8h_a36b3f2ab46e00aaa4d1bd5ec1a9d33d3}\label{macros_8h_a36b3f2ab46e00aaa4d1bd5ec1a9d33d3}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+2V@{A\+C\+C\+\_\+2V}}
+\index{A\+C\+C\+\_\+2V@{A\+C\+C\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+2V}{ACC\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] += (SRC)[0];         \(\backslash\)
+      (DST)[1] += (SRC)[1];         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place addition \mbox{\Hypertarget{macros_8h_a98287ad4276cf32d474b5ff21b4119d3}\label{macros_8h_a98287ad4276cf32d474b5ff21b4119d3}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+3V@{A\+C\+C\+\_\+3V}}
+\index{A\+C\+C\+\_\+3V@{A\+C\+C\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+3V}{ACC\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+      (DST)[0] += (SRC)[0];         \(\backslash\)
+      (DST)[1] += (SRC)[1];         \(\backslash\)
+      (DST)[2] += (SRC)[2];         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place addition \mbox{\Hypertarget{macros_8h_a64dd29dd1c658d35ba7828b51076255c}\label{macros_8h_a64dd29dd1c658d35ba7828b51076255c}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+4V@{A\+C\+C\+\_\+4V}}
+\index{A\+C\+C\+\_\+4V@{A\+C\+C\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+4V}{ACC\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+      (DST)[0] += (SRC)[0];         \(\backslash\)
+      (DST)[1] += (SRC)[1];         \(\backslash\)
+      (DST)[2] += (SRC)[2];         \(\backslash\)
+      (DST)[3] += (SRC)[3];         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place addition \mbox{\Hypertarget{macros_8h_a25177495c842242faca7fa197b941eda}\label{macros_8h_a25177495c842242faca7fa197b941eda}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}{ACC\_SCALAR\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] += \hyperlink{struct_s}{S};                \(\backslash\)
+      (DST)[1] += \hyperlink{struct_s}{S};                \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar addition \mbox{\Hypertarget{macros_8h_aacd401192b667ae77f352a19316cd498}\label{macros_8h_aacd401192b667ae77f352a19316cd498}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}{ACC\_SCALAR\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+      (DST)[0] += \hyperlink{struct_s}{S};                \(\backslash\)
+      (DST)[1] += \hyperlink{struct_s}{S};                \(\backslash\)
+      (DST)[2] += \hyperlink{struct_s}{S};                \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar addition \mbox{\Hypertarget{macros_8h_aa4bf0551ca10c237f7d7726e7e88e130}\label{macros_8h_aa4bf0551ca10c237f7d7726e7e88e130}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2V}{ACC\_SCALE\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] += (SRCA)[0] * (SRCB)[0];    \(\backslash\)
+      (DST)[1] += (SRCA)[1] * (SRCB)[1];    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Element-\/wise multiplication and addition \mbox{\Hypertarget{macros_8h_a957fbb70b80939c351d0abc6ad52990e}\label{macros_8h_a957fbb70b80939c351d0abc6ad52990e}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+3V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+3V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}{ACC\_SCALE\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                        \(\backslash\)
+      (DST)[0] += (SRCA)[0] * (SRCB)[0];    \(\backslash\)
+      (DST)[1] += (SRCA)[1] * (SRCB)[1];    \(\backslash\)
+      (DST)[2] += (SRCA)[2] * (SRCB)[2];    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Element-\/wise multiplication and addition \mbox{\Hypertarget{macros_8h_a25b16e05d4f3cf7c7b3f95af36d3e56c}\label{macros_8h_a25b16e05d4f3cf7c7b3f95af36d3e56c}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4V}{ACC\_SCALE\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                        \(\backslash\)
+      (DST)[0] += (SRCA)[0] * (SRCB)[0];    \(\backslash\)
+      (DST)[1] += (SRCA)[1] * (SRCB)[1];    \(\backslash\)
+      (DST)[2] += (SRCA)[2] * (SRCB)[2];    \(\backslash\)
+      (DST)[3] += (SRCA)[3] * (SRCB)[3];    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Element-\/wise multiplication and addition \mbox{\Hypertarget{macros_8h_a9c599455fd59bb43743a67a826987392}\label{macros_8h_a9c599455fd59bb43743a67a826987392}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}{ACC\_SCALE\_SCALAR\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S},  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] += \hyperlink{struct_s}{S} * (SRCB)[0];        \(\backslash\)
+      (DST)[1] += \hyperlink{struct_s}{S} * (SRCB)[1];        \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication and addition \mbox{\Hypertarget{macros_8h_ad9777660deb72b9b5d9a66c0ff55cd72}\label{macros_8h_ad9777660deb72b9b5d9a66c0ff55cd72}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}{ACC\_SCALE\_SCALAR\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S},  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                        \(\backslash\)
+      (DST)[0] += \hyperlink{struct_s}{S} * (SRCB)[0];            \(\backslash\)
+      (DST)[1] += \hyperlink{struct_s}{S} * (SRCB)[1];            \(\backslash\)
+      (DST)[2] += \hyperlink{struct_s}{S} * (SRCB)[2];            \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication and addition \mbox{\Hypertarget{macros_8h_ad8ff1e09a31a17886710485e4539adeb}\label{macros_8h_ad8ff1e09a31a17886710485e4539adeb}} 
+\index{macros.\+h@{macros.\+h}!A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}}
+\index{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V@{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}{ACC\_SCALE\_SCALAR\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+C\+C\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S},  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                        \(\backslash\)
+      (DST)[0] += \hyperlink{struct_s}{S} * (SRCB)[0];            \(\backslash\)
+      (DST)[1] += \hyperlink{struct_s}{S} * (SRCB)[1];            \(\backslash\)
+      (DST)[2] += \hyperlink{struct_s}{S} * (SRCB)[2];            \(\backslash\)
+      (DST)[3] += \hyperlink{struct_s}{S} * (SRCB)[3];            \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication and addition \mbox{\Hypertarget{macros_8h_a4f2a0508887590911dfd934887d4ed65}\label{macros_8h_a4f2a0508887590911dfd934887d4ed65}} 
+\index{macros.\+h@{macros.\+h}!A\+D\+D\+\_\+2V@{A\+D\+D\+\_\+2V}}
+\index{A\+D\+D\+\_\+2V@{A\+D\+D\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+D\+D\+\_\+2V}{ADD\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+D\+D\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] = (SRCA)[0] + (SRCB)[0];     \(\backslash\)
+      (DST)[1] = (SRCA)[1] + (SRCB)[1];     \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Addition \mbox{\Hypertarget{macros_8h_a6cb2586ad29148281e6b79ea9f8f7d3e}\label{macros_8h_a6cb2586ad29148281e6b79ea9f8f7d3e}} 
+\index{macros.\+h@{macros.\+h}!A\+D\+D\+\_\+3V@{A\+D\+D\+\_\+3V}}
+\index{A\+D\+D\+\_\+3V@{A\+D\+D\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+D\+D\+\_\+3V}{ADD\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+D\+D\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+      (DST)[0] = (SRCA)[0] + (SRCB)[0]; \(\backslash\)
+      (DST)[1] = (SRCA)[1] + (SRCB)[1]; \(\backslash\)
+      (DST)[2] = (SRCA)[2] + (SRCB)[2]; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Addition \mbox{\Hypertarget{macros_8h_a1e48b37442cd1b4eb9aa4a6eb7b25388}\label{macros_8h_a1e48b37442cd1b4eb9aa4a6eb7b25388}} 
+\index{macros.\+h@{macros.\+h}!A\+D\+D\+\_\+4V@{A\+D\+D\+\_\+4V}}
+\index{A\+D\+D\+\_\+4V@{A\+D\+D\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+D\+D\+\_\+4V}{ADD\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+D\+D\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                        \(\backslash\)
+      (DST)[0] = (SRCA)[0] + (SRCB)[0];     \(\backslash\)
+      (DST)[1] = (SRCA)[1] + (SRCB)[1];     \(\backslash\)
+      (DST)[2] = (SRCA)[2] + (SRCB)[2];     \(\backslash\)
+      (DST)[3] = (SRCA)[3] + (SRCB)[3];     \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Addition \mbox{\Hypertarget{macros_8h_ac03b1294ae6f86c2379c070fd947668d}\label{macros_8h_ac03b1294ae6f86c2379c070fd947668d}} 
+\index{macros.\+h@{macros.\+h}!A\+S\+S\+I\+G\+N\+\_\+2V@{A\+S\+S\+I\+G\+N\+\_\+2V}}
+\index{A\+S\+S\+I\+G\+N\+\_\+2V@{A\+S\+S\+I\+G\+N\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+I\+G\+N\+\_\+2V}{ASSIGN\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+I\+G\+N\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_v}{V},  }\item[{}]{V0,  }\item[{}]{V1 }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                \(\backslash\)
+    V[0] = V0;          \(\backslash\)
+    V[1] = V1;          \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Assign scalers to short vectors \mbox{\Hypertarget{macros_8h_ad00b1e32b3d54161cfac1a573be2b178}\label{macros_8h_ad00b1e32b3d54161cfac1a573be2b178}} 
+\index{macros.\+h@{macros.\+h}!A\+S\+S\+I\+G\+N\+\_\+3V@{A\+S\+S\+I\+G\+N\+\_\+3V}}
+\index{A\+S\+S\+I\+G\+N\+\_\+3V@{A\+S\+S\+I\+G\+N\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+I\+G\+N\+\_\+3V}{ASSIGN\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+I\+G\+N\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_v}{V},  }\item[{}]{V0,  }\item[{}]{V1,  }\item[{}]{V2 }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+    V[0] = V0;                      \(\backslash\)
+    V[1] = V1;                      \(\backslash\)
+    V[2] = V2;                      \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Assignment \mbox{\Hypertarget{macros_8h_a2f815f0f288640d4b267aa9e91ac87b6}\label{macros_8h_a2f815f0f288640d4b267aa9e91ac87b6}} 
+\index{macros.\+h@{macros.\+h}!A\+S\+S\+I\+G\+N\+\_\+4V@{A\+S\+S\+I\+G\+N\+\_\+4V}}
+\index{A\+S\+S\+I\+G\+N\+\_\+4V@{A\+S\+S\+I\+G\+N\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+I\+G\+N\+\_\+4V}{ASSIGN\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+I\+G\+N\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_v}{V},  }\item[{}]{V0,  }\item[{}]{V1,  }\item[{}]{V2,  }\item[{}]{V3 }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+    V[0] = V0;                          \(\backslash\)
+    V[1] = V1;                          \(\backslash\)
+    V[2] = V2;                          \(\backslash\)
+    V[3] = V3;                          \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Assignment \mbox{\Hypertarget{macros_8h_ab330762f19dfa8d07de5dce072a6b6ed}\label{macros_8h_ab330762f19dfa8d07de5dce072a6b6ed}} 
+\index{macros.\+h@{macros.\+h}!B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}}
+\index{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}{BYTE\_TO\_FLOAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT(\begin{DoxyParamCaption}\item[{}]{B }\end{DoxyParamCaption})~((2.\+0\+F $\ast$ (\+B) + 1.\+0\+F) $\ast$ (1.\+0\+F/255.\+0\+F))}
+
+Convert G\+Lbyte in \mbox{[}-\/128,127\mbox{]} to G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} \mbox{\Hypertarget{macros_8h_a425ef6e7bc288f992595b935ed8e4282}\label{macros_8h_a425ef6e7bc288f992595b935ed8e4282}} 
+\index{macros.\+h@{macros.\+h}!B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX@{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}}
+\index{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX@{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}{BYTE\_TO\_FLOAT\_TEX}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX(\begin{DoxyParamCaption}\item[{}]{B }\end{DoxyParamCaption})~((B) == -\/128 ? -\/1.\+0\+F \+: (\+B) $\ast$ (1.\+0\+F/127.\+0\+F))}
+
+Convert G\+Lbyte in \mbox{[}-\/128,127\mbox{]} to G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]}, texture/fb data \mbox{\Hypertarget{macros_8h_a71d164131b092e640ab75e70227b05da}\label{macros_8h_a71d164131b092e640ab75e70227b05da}} 
+\index{macros.\+h@{macros.\+h}!B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ@{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}}
+\index{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ@{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}{BYTE\_TO\_FLOATZ}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ(\begin{DoxyParamCaption}\item[{}]{B }\end{DoxyParamCaption})~((B) == 0 ? 0.\+0\+F \+: B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T(\+B))}
+
+Convert G\+Lbyte to G\+Lfloat while preserving zero \mbox{\Hypertarget{macros_8h_ae6f47cf9efe9ec9be0d4624e53c2fb0b}\label{macros_8h_ae6f47cf9efe9ec9be0d4624e53c2fb0b}} 
+\index{macros.\+h@{macros.\+h}!C\+E\+I\+L\+I\+NG@{C\+E\+I\+L\+I\+NG}}
+\index{C\+E\+I\+L\+I\+NG@{C\+E\+I\+L\+I\+NG}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+E\+I\+L\+I\+NG}{CEILING}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+E\+I\+L\+I\+NG(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B }\end{DoxyParamCaption})~( (\hyperlink{struct_a}{A}) \% (B) == 0 ? (\hyperlink{struct_a}{A})/(B) \+: (\hyperlink{struct_a}{A})/(B)+1 )}
+
+Compute ceiling of integer quotient of \hyperlink{struct_a}{A} divided by B. \mbox{\Hypertarget{macros_8h_aef6b95b4a34b714269c30f831c117896}\label{macros_8h_aef6b95b4a34b714269c30f831c117896}} 
+\index{macros.\+h@{macros.\+h}!C\+L\+A\+MP@{C\+L\+A\+MP}}
+\index{C\+L\+A\+MP@{C\+L\+A\+MP}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+A\+MP}{CLAMP}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+L\+A\+MP(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X},  }\item[{}]{\hyperlink{boot_2environ_2include_2efi_2_base_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN},  }\item[{}]{\hyperlink{boot_2environ_2include_2efi_2_base_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX} }\end{DoxyParamCaption})~( (\hyperlink{class_x}{X})$<$(\hyperlink{boot_2environ_2include_2efi_2_base_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN}) ? (\hyperlink{boot_2environ_2include_2efi_2_base_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN}) \+: ((\hyperlink{class_x}{X})$>$(\hyperlink{boot_2environ_2include_2efi_2_base_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX}) ? (\hyperlink{boot_2environ_2include_2efi_2_base_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX}) \+: (\hyperlink{class_x}{X})) )}
+
+Clamp \hyperlink{class_x}{X} to \mbox{[}M\+IN,M\+AX\mbox{]} \mbox{\Hypertarget{macros_8h_a1d6d398f68897063ed31881988d1ada7}\label{macros_8h_a1d6d398f68897063ed31881988d1ada7}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+2\+FV@{C\+O\+P\+Y\+\_\+2\+FV}}
+\index{C\+O\+P\+Y\+\_\+2\+FV@{C\+O\+P\+Y\+\_\+2\+FV}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+2\+FV}{COPY\_2FV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+2\+FV(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   const GLfloat *\_tmp = (SRC);         \(\backslash\)
+   (DST)[0] = \_tmp[0];              \(\backslash\)
+   (DST)[1] = \_tmp[1];              \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 2-\/element float vector \mbox{\Hypertarget{macros_8h_aba028c5440da31ac656e3ceb07f510f3}\label{macros_8h_aba028c5440da31ac656e3ceb07f510f3}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+2V@{C\+O\+P\+Y\+\_\+2V}}
+\index{C\+O\+P\+Y\+\_\+2V@{C\+O\+P\+Y\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+2V}{COPY\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   (DST)[0] = (SRC)[0];             \(\backslash\)
+   (DST)[1] = (SRC)[1];             \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 2-\/element vector \mbox{\Hypertarget{macros_8h_a4723f009e3688945537ae1b4e5a21365}\label{macros_8h_a4723f009e3688945537ae1b4e5a21365}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+2\+V\+\_\+\+C\+A\+ST@{C\+O\+P\+Y\+\_\+2\+V\+\_\+\+C\+A\+ST}}
+\index{C\+O\+P\+Y\+\_\+2\+V\+\_\+\+C\+A\+ST@{C\+O\+P\+Y\+\_\+2\+V\+\_\+\+C\+A\+ST}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+2\+V\+\_\+\+C\+A\+ST}{COPY\_2V\_CAST}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+2\+V\+\_\+\+C\+A\+ST(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC,  }\item[{}]{C\+A\+ST }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   (DST)[0] = (CAST)(SRC)[0];           \(\backslash\)
+   (DST)[1] = (CAST)(SRC)[1];           \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 2-\/element vector with cast \mbox{\Hypertarget{macros_8h_a7444b5054bd5caddc04f1213072fb39f}\label{macros_8h_a7444b5054bd5caddc04f1213072fb39f}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+3\+FV@{C\+O\+P\+Y\+\_\+3\+FV}}
+\index{C\+O\+P\+Y\+\_\+3\+FV@{C\+O\+P\+Y\+\_\+3\+FV}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+3\+FV}{COPY\_3FV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+3\+FV(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+   const GLfloat *\_tmp = (SRC);     \(\backslash\)
+   (DST)[0] = \_tmp[0];              \(\backslash\)
+   (DST)[1] = \_tmp[1];              \(\backslash\)
+   (DST)[2] = \_tmp[2];              \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 3-\/element float vector \mbox{\Hypertarget{macros_8h_ae1e66b97c214aee7d871ac68f40c0a91}\label{macros_8h_ae1e66b97c214aee7d871ac68f40c0a91}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+3V@{C\+O\+P\+Y\+\_\+3V}}
+\index{C\+O\+P\+Y\+\_\+3V@{C\+O\+P\+Y\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+3V}{COPY\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+   (DST)[0] = (SRC)[0];             \(\backslash\)
+   (DST)[1] = (SRC)[1];             \(\backslash\)
+   (DST)[2] = (SRC)[2];             \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 3-\/element vector \mbox{\Hypertarget{macros_8h_ab18a36e5615ce29dc747d7df88df34c1}\label{macros_8h_ab18a36e5615ce29dc747d7df88df34c1}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+3\+V\+\_\+\+C\+A\+ST@{C\+O\+P\+Y\+\_\+3\+V\+\_\+\+C\+A\+ST}}
+\index{C\+O\+P\+Y\+\_\+3\+V\+\_\+\+C\+A\+ST@{C\+O\+P\+Y\+\_\+3\+V\+\_\+\+C\+A\+ST}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+3\+V\+\_\+\+C\+A\+ST}{COPY\_3V\_CAST}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+3\+V\+\_\+\+C\+A\+ST(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC,  }\item[{}]{C\+A\+ST }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   (DST)[0] = (CAST)(SRC)[0];           \(\backslash\)
+   (DST)[1] = (CAST)(SRC)[1];           \(\backslash\)
+   (DST)[2] = (CAST)(SRC)[2];           \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 3-\/element vector with cast \mbox{\Hypertarget{macros_8h_a300174ee54407e48d2c306c42add300d}\label{macros_8h_a300174ee54407e48d2c306c42add300d}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+4\+FV@{C\+O\+P\+Y\+\_\+4\+FV}}
+\index{C\+O\+P\+Y\+\_\+4\+FV@{C\+O\+P\+Y\+\_\+4\+FV}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+4\+FV}{COPY\_4FV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+4\+FV(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                          \(\backslash\)
+   memcpy(DST, SRC, \textcolor{keyword}{sizeof}(GLfloat) * 4);     \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 4-\/element float vector memcpy seems to be most efficient \mbox{\Hypertarget{macros_8h_aeec583d50978a39e4de071af050217e9}\label{macros_8h_aeec583d50978a39e4de071af050217e9}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+4\+U\+BV@{C\+O\+P\+Y\+\_\+4\+U\+BV}}
+\index{C\+O\+P\+Y\+\_\+4\+U\+BV@{C\+O\+P\+Y\+\_\+4\+U\+BV}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+4\+U\+BV}{COPY\_4UBV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+4\+U\+BV(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+   (DST)[0] = (SRC)[0];             \(\backslash\)
+   (DST)[1] = (SRC)[1];             \(\backslash\)
+   (DST)[2] = (SRC)[2];             \(\backslash\)
+   (DST)[3] = (SRC)[3];             \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 4-\/element unsigned byte vector \mbox{\Hypertarget{macros_8h_af96cb9f6b14206dd6269c356a00a1058}\label{macros_8h_af96cb9f6b14206dd6269c356a00a1058}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+4V@{C\+O\+P\+Y\+\_\+4V}}
+\index{C\+O\+P\+Y\+\_\+4V@{C\+O\+P\+Y\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+4V}{COPY\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+   (DST)[0] = (SRC)[0];             \(\backslash\)
+   (DST)[1] = (SRC)[1];             \(\backslash\)
+   (DST)[2] = (SRC)[2];             \(\backslash\)
+   (DST)[3] = (SRC)[3];             \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 4-\/element vector \mbox{\Hypertarget{macros_8h_af3616e05abb0439f075ff9b5f24bcc64}\label{macros_8h_af3616e05abb0439f075ff9b5f24bcc64}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+4\+V\+\_\+\+C\+A\+ST@{C\+O\+P\+Y\+\_\+4\+V\+\_\+\+C\+A\+ST}}
+\index{C\+O\+P\+Y\+\_\+4\+V\+\_\+\+C\+A\+ST@{C\+O\+P\+Y\+\_\+4\+V\+\_\+\+C\+A\+ST}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+4\+V\+\_\+\+C\+A\+ST}{COPY\_4V\_CAST}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+4\+V\+\_\+\+C\+A\+ST(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC,  }\item[{}]{C\+A\+ST }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   (DST)[0] = (CAST)(SRC)[0];           \(\backslash\)
+   (DST)[1] = (CAST)(SRC)[1];           \(\backslash\)
+   (DST)[2] = (CAST)(SRC)[2];           \(\backslash\)
+   (DST)[3] = (CAST)(SRC)[3];           \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy a 4-\/element vector with cast \mbox{\Hypertarget{macros_8h_acc7e991cc939c14ed26dd5edcfb9f9a6}\label{macros_8h_acc7e991cc939c14ed26dd5edcfb9f9a6}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+\+C\+L\+E\+A\+N\+\_\+4V@{C\+O\+P\+Y\+\_\+\+C\+L\+E\+A\+N\+\_\+4V}}
+\index{C\+O\+P\+Y\+\_\+\+C\+L\+E\+A\+N\+\_\+4V@{C\+O\+P\+Y\+\_\+\+C\+L\+E\+A\+N\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+\+C\+L\+E\+A\+N\+\_\+4V}{COPY\_CLEAN\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+\+C\+L\+E\+A\+N\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{SZ,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                 \(\backslash\)
+      ASSIGN\_4V( DST, 0, 0, 0, 1 );  \(\backslash\)
+      COPY\_SZ\_4V( DST, SZ, SRC );    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Copy {\ttfamily SZ} elements into a homegeneous (4-\/element) vector, giving default values to the remaining \mbox{\Hypertarget{macros_8h_ab902c649c990a5d84bba6846cb9cb66b}\label{macros_8h_ab902c649c990a5d84bba6846cb9cb66b}} 
+\index{macros.\+h@{macros.\+h}!C\+O\+P\+Y\+\_\+\+S\+Z\+\_\+4V@{C\+O\+P\+Y\+\_\+\+S\+Z\+\_\+4V}}
+\index{C\+O\+P\+Y\+\_\+\+S\+Z\+\_\+4V@{C\+O\+P\+Y\+\_\+\+S\+Z\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+P\+Y\+\_\+\+S\+Z\+\_\+4V}{COPY\_SZ\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+O\+P\+Y\+\_\+\+S\+Z\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{SZ,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                              \(\backslash\)
+   switch (SZ) \{                  \(\backslash\)
+   case 4: (DST)[3] = (SRC)[3];   \(\backslash\)
+   case 3: (DST)[2] = (SRC)[2];   \(\backslash\)
+   case 2: (DST)[1] = (SRC)[1];   \(\backslash\)
+   case 1: (DST)[0] = (SRC)[0];   \(\backslash\)
+   \}                              \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Copy {\ttfamily SZ} elements into a 4-\/element vector \mbox{\Hypertarget{macros_8h_a53aaa15376a3b0a14538d66a498fcaa4}\label{macros_8h_a53aaa15376a3b0a14538d66a498fcaa4}} 
+\index{macros.\+h@{macros.\+h}!C\+R\+O\+S\+S3@{C\+R\+O\+S\+S3}}
+\index{C\+R\+O\+S\+S3@{C\+R\+O\+S\+S3}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{C\+R\+O\+S\+S3}{CROSS3}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+R\+O\+S\+S3(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{u,  }\item[{}]{v }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   (n)[0] = (u)[1]*(v)[2] - (u)[2]*(v)[1];  \(\backslash\)
+   (n)[1] = (u)[2]*(v)[0] - (u)[0]*(v)[2];  \(\backslash\)
+   (n)[2] = (u)[0]*(v)[1] - (u)[1]*(v)[0];  \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Cross product of two 3-\/element vectors \mbox{\Hypertarget{macros_8h_a6f830dce7c52388865343596733191c0}\label{macros_8h_a6f830dce7c52388865343596733191c0}} 
+\index{macros.\+h@{macros.\+h}!D\+O\+T2@{D\+O\+T2}}
+\index{D\+O\+T2@{D\+O\+T2}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{D\+O\+T2}{DOT2}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+O\+T2(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~( (a)\mbox{[}0\mbox{]}$\ast$(b)\mbox{[}0\mbox{]} + (a)\mbox{[}1\mbox{]}$\ast$(b)\mbox{[}1\mbox{]} )}
+
+Dot product of two 2-\/element vectors \mbox{\Hypertarget{macros_8h_aeaf9029d9b8aba8e9b0ed2303ada907d}\label{macros_8h_aeaf9029d9b8aba8e9b0ed2303ada907d}} 
+\index{macros.\+h@{macros.\+h}!D\+O\+T3@{D\+O\+T3}}
+\index{D\+O\+T3@{D\+O\+T3}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{D\+O\+T3}{DOT3}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+O\+T3(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~( (a)\mbox{[}0\mbox{]}$\ast$(b)\mbox{[}0\mbox{]} + (a)\mbox{[}1\mbox{]}$\ast$(b)\mbox{[}1\mbox{]} + (a)\mbox{[}2\mbox{]}$\ast$(b)\mbox{[}2\mbox{]} )}
+
+Dot product of two 3-\/element vectors \mbox{\Hypertarget{macros_8h_a2073bfc2043b688a94f3c4ee675521f3}\label{macros_8h_a2073bfc2043b688a94f3c4ee675521f3}} 
+\index{macros.\+h@{macros.\+h}!D\+O\+T4@{D\+O\+T4}}
+\index{D\+O\+T4@{D\+O\+T4}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{D\+O\+T4}{DOT4}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+O\+T4(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+( (a)[0]*(b)[0] + (a)[1]*(b)[1] + \(\backslash\)
+            (a)[2]*(b)[2] + (a)[3]*(b)[3] )
+\end{DoxyCode}
+Dot product of two 4-\/element vectors \mbox{\Hypertarget{macros_8h_a597382d6de2e2c09d4913e9da512e02c}\label{macros_8h_a597382d6de2e2c09d4913e9da512e02c}} 
+\index{macros.\+h@{macros.\+h}!E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+I\+NT@{E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+I\+NT}}
+\index{E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+I\+NT@{E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+I\+NT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+I\+NT}{ENUM\_TO\_INT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} E\+N\+U\+M\+\_\+\+T\+O\+\_\+\+I\+NT(\begin{DoxyParamCaption}\item[{}]{E }\end{DoxyParamCaption})~((G\+Lint)(E))}
+
+casts to silence warnings with some compilers \mbox{\Hypertarget{macros_8h_a70efd0ca3fc07f8855d0aaf0f0ef653b}\label{macros_8h_a70efd0ca3fc07f8855d0aaf0f0ef653b}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+TE@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+TE}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+TE@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+TE}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+TE}{FLOAT\_TO\_BYTE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+TE(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~( (((G\+Lint) (255.\+0\+F $\ast$ (\+X))) -\/ 1) / 2 )}
+
+Convert G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} to G\+Lbyte in \mbox{[}-\/128,127\mbox{]} \mbox{\Hypertarget{macros_8h_aaf65b5df2b3bd39d937814dbac1da996}\label{macros_8h_aaf65b5df2b3bd39d937814dbac1da996}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+EX@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+EX}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+EX@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+EX}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+EX}{FLOAT\_TO\_BYTE\_TEX}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+EX(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~\hyperlink{macros_8h_aef6b95b4a34b714269c30f831c117896}{C\+L\+A\+MP}( (G\+Lint) (127.\+0\+F $\ast$ (\+X)), -\/128, 127 )}
+
+Convert G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} to G\+Lbyte in \mbox{[}-\/128,127\mbox{]}, texture/fb data \mbox{\Hypertarget{macros_8h_af41a0b32e63560599ce1d3745a5cd60a}\label{macros_8h_af41a0b32e63560599ce1d3745a5cd60a}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+NT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+NT}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+NT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+NT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+NT}{FLOAT\_TO\_INT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+NT(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~( (G\+Lint) (2147483647.\+0 $\ast$ (\hyperlink{class_x}{X})) )}
+
+Convert G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} to G\+Lint in \mbox{[}-\/2147483648,2147483647\mbox{]} \mbox{\Hypertarget{macros_8h_a93e24df7ec29b186e246e12bac0031ed}\label{macros_8h_a93e24df7ec29b186e246e12bac0031ed}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T64@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T64}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T64@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T64}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T64}{FLOAT\_TO\_INT64}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T64(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~( (G\+Lint64) (9223372036854775807.\+0 $\ast$ (double)(\hyperlink{class_x}{X})) )}
+
+Convert G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} to G\+Lint64 in \mbox{[}-\/(1$<$$<$63),(1 $<$$<$ 63) -\/1\mbox{]} \mbox{\Hypertarget{macros_8h_a9623a216cf41606b4974511ec5d5b06e}\label{macros_8h_a9623a216cf41606b4974511ec5d5b06e}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T\+\_\+\+T\+EX@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T\+\_\+\+T\+EX}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T\+\_\+\+T\+EX@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T\+\_\+\+T\+EX}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T\+\_\+\+T\+EX}{FLOAT\_TO\_INT\_TEX}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+I\+N\+T\+\_\+\+T\+EX(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~( (G\+Lint) (2147483647.\+0 $\ast$ (\hyperlink{class_x}{X})) )}
+
+Convert G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} to G\+Lint in \mbox{[}-\/2147483648,2147483647\mbox{]}, texture/fb data \mbox{\Hypertarget{macros_8h_aceeff3b5d8a715a4e7fd4bf4ed270ff8}\label{macros_8h_aceeff3b5d8a715a4e7fd4bf4ed270ff8}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT}{FLOAT\_TO\_SHORT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+RT(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~( (((G\+Lint) (65535.\+0\+F $\ast$ (\+X))) -\/ 1) / 2 )}
+
+Convert G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} to G\+Lshort in \mbox{[}-\/32768,32767\mbox{]} \mbox{\Hypertarget{macros_8h_a412f3854fe6cad9d353cd260a5dcf071}\label{macros_8h_a412f3854fe6cad9d353cd260a5dcf071}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+R\+T\+\_\+\+T\+EX@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+R\+T\+\_\+\+T\+EX}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+R\+T\+\_\+\+T\+EX@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+R\+T\+\_\+\+T\+EX}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+R\+T\+\_\+\+T\+EX}{FLOAT\_TO\_SHORT\_TEX}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+S\+H\+O\+R\+T\+\_\+\+T\+EX(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~( (G\+Lint) (32767.\+0\+F $\ast$ (\+X)) )}
+
+Convert G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} to G\+Lshort in \mbox{[}-\/32768,32767\mbox{]}, texture/fb data \mbox{\Hypertarget{macros_8h_abf2184d76bbfcf1ac3b31dfa87b80cc6}\label{macros_8h_abf2184d76bbfcf1ac3b31dfa87b80cc6}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE}{FLOAT\_TO\_UBYTE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+B\+Y\+TE(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~((G\+Lubyte) (G\+Lint) ((\hyperlink{class_x}{X}) $\ast$ 255.\+0\+F))}
+
+Convert G\+Lfloat in \mbox{[}0.\+0,1.\+0\mbox{]} to G\+Lubyte in \mbox{[}0,255\mbox{]} \mbox{\Hypertarget{macros_8h_a0a0aaa6e9e8c77a5538679ecd1aa8df2}\label{macros_8h_a0a0aaa6e9e8c77a5538679ecd1aa8df2}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+I\+NT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+I\+NT}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+I\+NT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+I\+NT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+I\+NT}{FLOAT\_TO\_UINT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+I\+NT(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~((G\+Luint) ((\hyperlink{class_x}{X}) $\ast$ 4294967295.\+0))}
+
+Convert G\+Lfloat in \mbox{[}0.\+0,1.\+0\mbox{]} to G\+Luint in \mbox{[}0,4294967295\mbox{]} \mbox{\Hypertarget{macros_8h_ab4b8a0ec40a56f289bd5f9c59c5a68d7}\label{macros_8h_ab4b8a0ec40a56f289bd5f9c59c5a68d7}} 
+\index{macros.\+h@{macros.\+h}!F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}}
+\index{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT@{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT}{FLOAT\_TO\_USHORT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+O\+A\+T\+\_\+\+T\+O\+\_\+\+U\+S\+H\+O\+RT(\begin{DoxyParamCaption}\item[{}]{\hyperlink{class_x}{X} }\end{DoxyParamCaption})~((G\+Luint) ((\hyperlink{class_x}{X}) $\ast$ 65535.\+0\+F))}
+
+Convert G\+Lfloat in \mbox{[}0.\+0,1.\+0\mbox{]} to G\+Lushort in \mbox{[}0, 65535\mbox{]} \mbox{\Hypertarget{macros_8h_a62a3c95c5e41d9b54173dd2ebb780dd6}\label{macros_8h_a62a3c95c5e41d9b54173dd2ebb780dd6}} 
+\index{macros.\+h@{macros.\+h}!I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}}
+\index{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}{INT\_TO\_FLOAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT(\begin{DoxyParamCaption}\item[{}]{I }\end{DoxyParamCaption})~((G\+Lfloat) ((2.\+0\+F $\ast$ (\+I) + 1.\+0\+F) $\ast$ (1.\+0\+F/4294967294.\+0)))}
+
+Convert G\+Lint in \mbox{[}-\/2147483648,2147483647\mbox{]} to G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} \mbox{\Hypertarget{macros_8h_a81772ade624a7f640356ecf9c15f3969}\label{macros_8h_a81772ade624a7f640356ecf9c15f3969}} 
+\index{macros.\+h@{macros.\+h}!I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX@{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}}
+\index{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX@{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}{INT\_TO\_FLOAT\_TEX}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX(\begin{DoxyParamCaption}\item[{}]{I }\end{DoxyParamCaption})~((I) == -\/2147483648 ? -\/1.\+0\+F \+: (\+I) $\ast$ (1.\+0\+F/2147483647.\+0))}
+
+Convert G\+Lint in \mbox{[}-\/2147483648,2147483647\mbox{]} to G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]}, texture/fb data \mbox{\Hypertarget{macros_8h_a63258010d5943810750d4640b5984ef8}\label{macros_8h_a63258010d5943810750d4640b5984ef8}} 
+\index{macros.\+h@{macros.\+h}!I\+N\+T\+E\+R\+P\+\_\+3F@{I\+N\+T\+E\+R\+P\+\_\+3F}}
+\index{I\+N\+T\+E\+R\+P\+\_\+3F@{I\+N\+T\+E\+R\+P\+\_\+3F}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+T\+E\+R\+P\+\_\+3F}{INTERP\_3F}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} I\+N\+T\+E\+R\+P\+\_\+3F(\begin{DoxyParamCaption}\item[{}]{t,  }\item[{}]{dst,  }\item[{}]{out,  }\item[{}]{in }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   dst[0] = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{LINTERP}( (t), (out)[0], (in)[0] );  \(\backslash\)
+   dst[1] = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{LINTERP}( (t), (out)[1], (in)[1] );  \(\backslash\)
+   dst[2] = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{LINTERP}( (t), (out)[2], (in)[2] );  \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{macros_8h_a3e8070bfd6de4a62def578b6b2487db4}\label{macros_8h_a3e8070bfd6de4a62def578b6b2487db4}} 
+\index{macros.\+h@{macros.\+h}!I\+N\+T\+E\+R\+P\+\_\+4F@{I\+N\+T\+E\+R\+P\+\_\+4F}}
+\index{I\+N\+T\+E\+R\+P\+\_\+4F@{I\+N\+T\+E\+R\+P\+\_\+4F}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+T\+E\+R\+P\+\_\+4F}{INTERP\_4F}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} I\+N\+T\+E\+R\+P\+\_\+4F(\begin{DoxyParamCaption}\item[{}]{t,  }\item[{}]{dst,  }\item[{}]{out,  }\item[{}]{in }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   dst[0] = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{LINTERP}( (t), (out)[0], (in)[0] );  \(\backslash\)
+   dst[1] = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{LINTERP}( (t), (out)[1], (in)[1] );  \(\backslash\)
+   dst[2] = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{LINTERP}( (t), (out)[2], (in)[2] );  \(\backslash\)
+   dst[3] = \hyperlink{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}{LINTERP}( (t), (out)[3], (in)[3] );  \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}\label{macros_8h_a26984aa0ae7d58e10fa1d5d3010f6d07}} 
+\index{macros.\+h@{macros.\+h}!L\+I\+N\+T\+E\+RP@{L\+I\+N\+T\+E\+RP}}
+\index{L\+I\+N\+T\+E\+RP@{L\+I\+N\+T\+E\+RP}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+N\+T\+E\+RP}{LINTERP}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} L\+I\+N\+T\+E\+RP(\begin{DoxyParamCaption}\item[{}]{T,  }\item[{}]{O\+UT,  }\item[{}]{IN }\end{DoxyParamCaption})~((O\+UT) + (T) $\ast$ ((IN) -\/ (O\+UT)))}
+
+Linear interpolation
+
+\begin{DoxyNote}{注解}
+{\ttfamily O\+UT} argument is evaluated twice! 
+
+Be wary of using $\ast$coord++ as an argument to any of these macros! 
+\end{DoxyNote}
+\mbox{\Hypertarget{macros_8h_a33297b3679c713b0c4d897cd0fe3b122}\label{macros_8h_a33297b3679c713b0c4d897cd0fe3b122}} 
+\index{macros.\+h@{macros.\+h}!M\+A\+X2@{M\+A\+X2}}
+\index{M\+A\+X2@{M\+A\+X2}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X2}{MAX2}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+A\+X2(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B }\end{DoxyParamCaption})~( (\hyperlink{struct_a}{A})$>$(B) ? (\hyperlink{struct_a}{A}) \+: (B) )}
+
+Maximum of two values\+: \mbox{\Hypertarget{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}\label{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}} 
+\index{macros.\+h@{macros.\+h}!M\+I\+N2@{M\+I\+N2}}
+\index{M\+I\+N2@{M\+I\+N2}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+N2}{MIN2}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+I\+N2(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B }\end{DoxyParamCaption})~( (\hyperlink{struct_a}{A})$<$(B) ? (\hyperlink{struct_a}{A}) \+: (B) )}
+
+Minimum of two values\+: \mbox{\Hypertarget{macros_8h_a721b8d5f3abef17f10293f1f7f8c958e}\label{macros_8h_a721b8d5f3abef17f10293f1f7f8c958e}} 
+\index{macros.\+h@{macros.\+h}!M\+I\+N3@{M\+I\+N3}}
+\index{M\+I\+N3@{M\+I\+N3}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+N3}{MIN3}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+I\+N3(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B,  }\item[{}]{\hyperlink{struct_c}{C} }\end{DoxyParamCaption})~((\hyperlink{struct_a}{A}) $<$ (B) ? \hyperlink{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{M\+I\+N2}(\hyperlink{struct_a}{A}, \hyperlink{struct_c}{C}) \+: \hyperlink{macros_8h_ae0b9cd0ce090bd69b951aa73e8fa4f7d}{M\+I\+N2}(B, \hyperlink{struct_c}{C}))}
+
+Minimum and maximum of three values\+: \mbox{\Hypertarget{macros_8h_a773d1828c8fe6589340f4003b7bdf3e2}\label{macros_8h_a773d1828c8fe6589340f4003b7bdf3e2}} 
+\index{macros.\+h@{macros.\+h}!N\+O\+R\+M\+A\+L\+I\+Z\+E\+\_\+3\+FV@{N\+O\+R\+M\+A\+L\+I\+Z\+E\+\_\+3\+FV}}
+\index{N\+O\+R\+M\+A\+L\+I\+Z\+E\+\_\+3\+FV@{N\+O\+R\+M\+A\+L\+I\+Z\+E\+\_\+3\+FV}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+R\+M\+A\+L\+I\+Z\+E\+\_\+3\+FV}{NORMALIZE\_3FV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} N\+O\+R\+M\+A\+L\+I\+Z\+E\+\_\+3\+FV(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_v}{V} }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   GLfloat len = (GLfloat) LEN\_SQUARED\_3FV(\hyperlink{struct_v}{V});  \(\backslash\)
+   if (len) \{                   \(\backslash\)
+      len = INV\_SQRTF(len);         \(\backslash\)
+      (\hyperlink{struct_v}{V})[0] = (GLfloat) ((\hyperlink{struct_v}{V})[0] * len);    \(\backslash\)
+      (\hyperlink{struct_v}{V})[1] = (GLfloat) ((\hyperlink{struct_v}{V})[1] * len);    \(\backslash\)
+      (\hyperlink{struct_v}{V})[2] = (GLfloat) ((\hyperlink{struct_v}{V})[2] * len);    \(\backslash\)
+   \}                        \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+\mbox{\Hypertarget{macros_8h_aa7518f7b86f83f61690a06c9f4f17773}\label{macros_8h_aa7518f7b86f83f61690a06c9f4f17773}} 
+\index{macros.\+h@{macros.\+h}!S\+C\+A\+L\+E\+\_\+2V@{S\+C\+A\+L\+E\+\_\+2V}}
+\index{S\+C\+A\+L\+E\+\_\+2V@{S\+C\+A\+L\+E\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+A\+L\+E\+\_\+2V}{SCALE\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+C\+A\+L\+E\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] = (SRCA)[0] * (SRCB)[0];     \(\backslash\)
+      (DST)[1] = (SRCA)[1] * (SRCB)[1];     \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication \mbox{\Hypertarget{macros_8h_aceeed08f48339ca06c4e301090ba12c1}\label{macros_8h_aceeed08f48339ca06c4e301090ba12c1}} 
+\index{macros.\+h@{macros.\+h}!S\+C\+A\+L\+E\+\_\+3V@{S\+C\+A\+L\+E\+\_\+3V}}
+\index{S\+C\+A\+L\+E\+\_\+3V@{S\+C\+A\+L\+E\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+A\+L\+E\+\_\+3V}{SCALE\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+C\+A\+L\+E\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+      (DST)[0] = (SRCA)[0] * (SRCB)[0]; \(\backslash\)
+      (DST)[1] = (SRCA)[1] * (SRCB)[1]; \(\backslash\)
+      (DST)[2] = (SRCA)[2] * (SRCB)[2]; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication \mbox{\Hypertarget{macros_8h_a8ab4b3c7858fa8b2db028ba7e323853f}\label{macros_8h_a8ab4b3c7858fa8b2db028ba7e323853f}} 
+\index{macros.\+h@{macros.\+h}!S\+C\+A\+L\+E\+\_\+4V@{S\+C\+A\+L\+E\+\_\+4V}}
+\index{S\+C\+A\+L\+E\+\_\+4V@{S\+C\+A\+L\+E\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+A\+L\+E\+\_\+4V}{SCALE\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+C\+A\+L\+E\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                        \(\backslash\)
+      (DST)[0] = (SRCA)[0] * (SRCB)[0];     \(\backslash\)
+      (DST)[1] = (SRCA)[1] * (SRCB)[1];     \(\backslash\)
+      (DST)[2] = (SRCA)[2] * (SRCB)[2];     \(\backslash\)
+      (DST)[3] = (SRCA)[3] * (SRCB)[3];     \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Element-\/wise multiplication \mbox{\Hypertarget{macros_8h_a6c5f50ba8548c9e079bffd35096b9dc6}\label{macros_8h_a6c5f50ba8548c9e079bffd35096b9dc6}} 
+\index{macros.\+h@{macros.\+h}!S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}}
+\index{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}{SCALE\_SCALAR\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S},  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] = \hyperlink{struct_s}{S} * (SRCB)[0];         \(\backslash\)
+      (DST)[1] = \hyperlink{struct_s}{S} * (SRCB)[1];         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Scalar multiplication \mbox{\Hypertarget{macros_8h_a4b009c2fd78020cd389253ebca8669bd}\label{macros_8h_a4b009c2fd78020cd389253ebca8669bd}} 
+\index{macros.\+h@{macros.\+h}!S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}}
+\index{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}{SCALE\_SCALAR\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S},  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+      (DST)[0] = \hyperlink{struct_s}{S} * (SRCB)[0];         \(\backslash\)
+      (DST)[1] = \hyperlink{struct_s}{S} * (SRCB)[1];         \(\backslash\)
+      (DST)[2] = \hyperlink{struct_s}{S} * (SRCB)[2];         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Scalar multiplication \mbox{\Hypertarget{macros_8h_a51ee8bcc007dfa2412c96771957a404b}\label{macros_8h_a51ee8bcc007dfa2412c96771957a404b}} 
+\index{macros.\+h@{macros.\+h}!S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V@{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}}
+\index{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V@{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}{SCALE\_SCALAR\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S},  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+      (DST)[0] = \hyperlink{struct_s}{S} * (SRCB)[0];         \(\backslash\)
+      (DST)[1] = \hyperlink{struct_s}{S} * (SRCB)[1];         \(\backslash\)
+      (DST)[2] = \hyperlink{struct_s}{S} * (SRCB)[2];         \(\backslash\)
+      (DST)[3] = \hyperlink{struct_s}{S} * (SRCB)[3];         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Scalar multiplication \mbox{\Hypertarget{macros_8h_ac3d7fd28ad6fa119234fadf5f749bacc}\label{macros_8h_ac3d7fd28ad6fa119234fadf5f749bacc}} 
+\index{macros.\+h@{macros.\+h}!S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+3V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}}
+\index{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+3V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+3V}{SELF\_SCALE\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+      (DST)[0] *= (SRC)[0];         \(\backslash\)
+      (DST)[1] *= (SRC)[1];         \(\backslash\)
+      (DST)[2] *= (SRC)[2];         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place element-\/wise multiplication \mbox{\Hypertarget{macros_8h_ae86fc6603c75b1d0f2796d41c52db67b}\label{macros_8h_ae86fc6603c75b1d0f2796d41c52db67b}} 
+\index{macros.\+h@{macros.\+h}!S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}}
+\index{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V}{SELF\_SCALE\_SCALAR\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] *= \hyperlink{struct_s}{S};                \(\backslash\)
+      (DST)[1] *= \hyperlink{struct_s}{S};                \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication \mbox{\Hypertarget{macros_8h_ae78600d50aa763402ed9e92ba53bd755}\label{macros_8h_ae78600d50aa763402ed9e92ba53bd755}} 
+\index{macros.\+h@{macros.\+h}!S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}}
+\index{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V}{SELF\_SCALE\_SCALAR\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                   \(\backslash\)
+      (DST)[0] *= \hyperlink{struct_s}{S};                   \(\backslash\)
+      (DST)[1] *= \hyperlink{struct_s}{S};                   \(\backslash\)
+      (DST)[2] *= \hyperlink{struct_s}{S};                   \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication \mbox{\Hypertarget{macros_8h_a16b293b22a2b1ea4598a1f108a4805fa}\label{macros_8h_a16b293b22a2b1ea4598a1f108a4805fa}} 
+\index{macros.\+h@{macros.\+h}!S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}}
+\index{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V@{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V}{SELF\_SCALE\_SCALAR\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+E\+L\+F\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                   \(\backslash\)
+      (DST)[0] *= \hyperlink{struct_s}{S};                   \(\backslash\)
+      (DST)[1] *= \hyperlink{struct_s}{S};                   \(\backslash\)
+      (DST)[2] *= \hyperlink{struct_s}{S};                   \(\backslash\)
+      (DST)[3] *= \hyperlink{struct_s}{S};                   \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+In-\/place scalar multiplication \mbox{\Hypertarget{macros_8h_aba7a25b54ebdc854e22019ec20762fbb}\label{macros_8h_aba7a25b54ebdc854e22019ec20762fbb}} 
+\index{macros.\+h@{macros.\+h}!S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}}
+\index{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}{SHORT\_TO\_FLOAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})~((2.\+0\+F $\ast$ (\+S) + 1.\+0\+F) $\ast$ (1.\+0\+F/65535.\+0\+F))}
+
+Convert G\+Lshort in \mbox{[}-\/32768,32767\mbox{]} to G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]} \mbox{\Hypertarget{macros_8h_a5beac86f28c9bb74cc166d5325d34496}\label{macros_8h_a5beac86f28c9bb74cc166d5325d34496}} 
+\index{macros.\+h@{macros.\+h}!S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX@{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}}
+\index{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX@{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX}{SHORT\_TO\_FLOAT\_TEX}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T\+\_\+\+T\+EX(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})~((\hyperlink{struct_s}{S}) == -\/32768 ? -\/1.\+0\+F \+: (\+S) $\ast$ (1.\+0\+F/32767.\+0\+F))}
+
+Convert G\+Lshort in \mbox{[}-\/32768,32767\mbox{]} to G\+Lfloat in \mbox{[}-\/1.\+0,1.\+0\mbox{]}, texture/fb data \mbox{\Hypertarget{macros_8h_adbcae710dd36890dbe79e360c446ca60}\label{macros_8h_adbcae710dd36890dbe79e360c446ca60}} 
+\index{macros.\+h@{macros.\+h}!S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ@{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}}
+\index{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ@{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ}{SHORT\_TO\_FLOATZ}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+TZ(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})~((\hyperlink{struct_s}{S}) == 0 ? 0.\+0\+F \+: S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+A\+T(\+S))}
+
+Convert G\+Lshort to G\+Lfloat while preserving zero \mbox{\Hypertarget{macros_8h_a80a975a900fc6343c46a4e5993b53b94}\label{macros_8h_a80a975a900fc6343c46a4e5993b53b94}} 
+\index{macros.\+h@{macros.\+h}!S\+T\+R\+I\+D\+E\+\_\+4F@{S\+T\+R\+I\+D\+E\+\_\+4F}}
+\index{S\+T\+R\+I\+D\+E\+\_\+4F@{S\+T\+R\+I\+D\+E\+\_\+4F}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+D\+E\+\_\+4F}{STRIDE\_4F}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+T\+R\+I\+D\+E\+\_\+4F(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{i }\end{DoxyParamCaption})~(p = (G\+Lfloat ($\ast$)\mbox{[}4\mbox{]})((G\+Lubyte $\ast$)p + i))}
+
+Stepping a G\+Lfloat\mbox{[}4\mbox{]} pointer by a byte stride \mbox{\Hypertarget{macros_8h_a25cba6b1f46db2f3303787fc80df20ff}\label{macros_8h_a25cba6b1f46db2f3303787fc80df20ff}} 
+\index{macros.\+h@{macros.\+h}!S\+T\+R\+I\+D\+E\+\_\+4\+UB@{S\+T\+R\+I\+D\+E\+\_\+4\+UB}}
+\index{S\+T\+R\+I\+D\+E\+\_\+4\+UB@{S\+T\+R\+I\+D\+E\+\_\+4\+UB}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+D\+E\+\_\+4\+UB}{STRIDE\_4UB}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+T\+R\+I\+D\+E\+\_\+4\+UB(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{i }\end{DoxyParamCaption})~(p = (G\+Lubyte ($\ast$)\mbox{[}4\mbox{]})((G\+Lubyte $\ast$)p + i))}
+
+Stepping a G\+Lubyte\mbox{[}4\mbox{]} pointer by a byte stride \mbox{\Hypertarget{macros_8h_add27014ec804db8c2b0eb0124fe0a3e6}\label{macros_8h_add27014ec804db8c2b0eb0124fe0a3e6}} 
+\index{macros.\+h@{macros.\+h}!S\+T\+R\+I\+D\+E\+\_\+F@{S\+T\+R\+I\+D\+E\+\_\+F}}
+\index{S\+T\+R\+I\+D\+E\+\_\+F@{S\+T\+R\+I\+D\+E\+\_\+F}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+D\+E\+\_\+F}{STRIDE\_F}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+T\+R\+I\+D\+E\+\_\+F(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{i }\end{DoxyParamCaption})~(p = (G\+Lfloat $\ast$)((G\+Lubyte $\ast$)p + i))}
+
+Stepping a G\+Lfloat pointer by a byte stride \mbox{\Hypertarget{macros_8h_a70eb0b7d8f92a90f87167a13fe980ed7}\label{macros_8h_a70eb0b7d8f92a90f87167a13fe980ed7}} 
+\index{macros.\+h@{macros.\+h}!S\+T\+R\+I\+D\+E\+\_\+T@{S\+T\+R\+I\+D\+E\+\_\+T}}
+\index{S\+T\+R\+I\+D\+E\+\_\+T@{S\+T\+R\+I\+D\+E\+\_\+T}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+D\+E\+\_\+T}{STRIDE\_T}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+T\+R\+I\+D\+E\+\_\+T(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{t,  }\item[{}]{i }\end{DoxyParamCaption})~(p = (t)((G\+Lubyte $\ast$)p + i))}
+
+Stepping a {\ttfamily t} pointer by a byte stride \mbox{\Hypertarget{macros_8h_aaa0f27eaf5f9a22802727c682dd1c116}\label{macros_8h_aaa0f27eaf5f9a22802727c682dd1c116}} 
+\index{macros.\+h@{macros.\+h}!S\+T\+R\+I\+D\+E\+\_\+\+UI@{S\+T\+R\+I\+D\+E\+\_\+\+UI}}
+\index{S\+T\+R\+I\+D\+E\+\_\+\+UI@{S\+T\+R\+I\+D\+E\+\_\+\+UI}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+I\+D\+E\+\_\+\+UI}{STRIDE\_UI}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+T\+R\+I\+D\+E\+\_\+\+UI(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{i }\end{DoxyParamCaption})~(p = (G\+Luint $\ast$)((G\+Lubyte $\ast$)p + i))}
+
+Stepping a G\+Luint pointer by a byte stride \mbox{\Hypertarget{macros_8h_a4e28bd57f246e8a3321ad5a6df8c9ec7}\label{macros_8h_a4e28bd57f246e8a3321ad5a6df8c9ec7}} 
+\index{macros.\+h@{macros.\+h}!S\+U\+B\+\_\+2V@{S\+U\+B\+\_\+2V}}
+\index{S\+U\+B\+\_\+2V@{S\+U\+B\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+U\+B\+\_\+2V}{SUB\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+U\+B\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+      (DST)[0] = (SRCA)[0] - (SRCB)[0];     \(\backslash\)
+      (DST)[1] = (SRCA)[1] - (SRCB)[1];     \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Subtraction \mbox{\Hypertarget{macros_8h_af89eb4396116bce0f77ac1d1762de43d}\label{macros_8h_af89eb4396116bce0f77ac1d1762de43d}} 
+\index{macros.\+h@{macros.\+h}!S\+U\+B\+\_\+3V@{S\+U\+B\+\_\+3V}}
+\index{S\+U\+B\+\_\+3V@{S\+U\+B\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+U\+B\+\_\+3V}{SUB\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+U\+B\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                     \(\backslash\)
+      (DST)[0] = (SRCA)[0] - (SRCB)[0];  \(\backslash\)
+      (DST)[1] = (SRCA)[1] - (SRCB)[1];  \(\backslash\)
+      (DST)[2] = (SRCA)[2] - (SRCB)[2];  \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Subtraction \mbox{\Hypertarget{macros_8h_a5ea61bc5544d0cecd4184beae9f9384c}\label{macros_8h_a5ea61bc5544d0cecd4184beae9f9384c}} 
+\index{macros.\+h@{macros.\+h}!S\+U\+B\+\_\+4V@{S\+U\+B\+\_\+4V}}
+\index{S\+U\+B\+\_\+4V@{S\+U\+B\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{S\+U\+B\+\_\+4V}{SUB\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+U\+B\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+R\+CA,  }\item[{}]{S\+R\+CB }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                        \(\backslash\)
+      (DST)[0] = (SRCA)[0] - (SRCB)[0];     \(\backslash\)
+      (DST)[1] = (SRCA)[1] - (SRCB)[1];     \(\backslash\)
+      (DST)[2] = (SRCA)[2] - (SRCB)[2];     \(\backslash\)
+      (DST)[3] = (SRCA)[3] - (SRCB)[3];     \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Subtraction \mbox{\Hypertarget{macros_8h_adb182b60d425a1148dffd97f75b4ff9c}\label{macros_8h_adb182b60d425a1148dffd97f75b4ff9c}} 
+\index{macros.\+h@{macros.\+h}!T\+E\+S\+T\+\_\+\+E\+Q\+\_\+3V@{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+3V}}
+\index{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+3V@{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+3V}{TEST\_EQ\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} T\+E\+S\+T\+\_\+\+E\+Q\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+((a)[0] == (b)[0] &&  \(\backslash\)
+    (a)[1] == (b)[1] &&  \(\backslash\)
+    (a)[2] == (b)[2])
+\end{DoxyCode}
+\hyperlink{class_test}{Test} for equality \mbox{\Hypertarget{macros_8h_a81cb13a25c7097e6df3aa7a054b253c2}\label{macros_8h_a81cb13a25c7097e6df3aa7a054b253c2}} 
+\index{macros.\+h@{macros.\+h}!T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4\+U\+BV@{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4\+U\+BV}}
+\index{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4\+U\+BV@{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4\+U\+BV}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4\+U\+BV}{TEST\_EQ\_4UBV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4\+U\+BV(\begin{DoxyParamCaption}\item[{}]{D\+ST,  }\item[{}]{S\+RC }\end{DoxyParamCaption})~\hyperlink{macros_8h_a835791c13fa6c59d810fda0305dc16ce}{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V}(D\+ST, S\+RC)}
+
+\hyperlink{class_test}{Test} for equality (unsigned bytes) \mbox{\Hypertarget{macros_8h_a835791c13fa6c59d810fda0305dc16ce}\label{macros_8h_a835791c13fa6c59d810fda0305dc16ce}} 
+\index{macros.\+h@{macros.\+h}!T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V@{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V}}
+\index{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V@{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V}{TEST\_EQ\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} T\+E\+S\+T\+\_\+\+E\+Q\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+((a)[0] == (b)[0] &&   \(\backslash\)
+              (a)[1] == (b)[1] &&   \(\backslash\)
+              (a)[2] == (b)[2] &&   \(\backslash\)
+              (a)[3] == (b)[3])
+\end{DoxyCode}
+\hyperlink{class_test}{Test} for equality \mbox{\Hypertarget{macros_8h_a82f28884e0db94843177d77227043921}\label{macros_8h_a82f28884e0db94843177d77227043921}} 
+\index{macros.\+h@{macros.\+h}!U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}}
+\index{U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}{UINT\_TO\_FLOAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT(\begin{DoxyParamCaption}\item[{}]{U }\end{DoxyParamCaption})~((G\+Lfloat) ((U) $\ast$ (1.\+0\+F / 4294967295.\+0)))}
+
+Convert G\+Luint in \mbox{[}0,4294967295\mbox{]} to G\+Lfloat in \mbox{[}0.\+0,1.\+0\mbox{]} \mbox{\Hypertarget{macros_8h_adc16a064a9f163d3729715e0ed05c47a}\label{macros_8h_adc16a064a9f163d3729715e0ed05c47a}} 
+\index{macros.\+h@{macros.\+h}!U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}}
+\index{U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT@{U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT}{USHORT\_TO\_FLOAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} U\+S\+H\+O\+R\+T\+\_\+\+T\+O\+\_\+\+F\+L\+O\+AT(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_s}{S} }\end{DoxyParamCaption})~((G\+Lfloat) (\hyperlink{struct_s}{S}) $\ast$ (1.\+0\+F / 65535.\+0\+F))}
+
+Convert G\+Lushort in \mbox{[}0,65535\mbox{]} to G\+Lfloat in \mbox{[}0.\+0,1.\+0\mbox{]} \mbox{\Hypertarget{macros_8h_a9dba0b926bb03bfab4d257eb532f287e}\label{macros_8h_a9dba0b926bb03bfab4d257eb532f287e}} 
+\index{macros.\+h@{macros.\+h}!Z\+E\+R\+O\+\_\+2V@{Z\+E\+R\+O\+\_\+2V}}
+\index{Z\+E\+R\+O\+\_\+2V@{Z\+E\+R\+O\+\_\+2V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{Z\+E\+R\+O\+\_\+2V}{ZERO\_2V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} Z\+E\+R\+O\+\_\+2V(\begin{DoxyParamCaption}\item[{}]{D\+ST }\end{DoxyParamCaption})~(D\+ST)\mbox{[}0\mbox{]} = (D\+ST)\mbox{[}1\mbox{]} = 0}
+
+Zero \mbox{\Hypertarget{macros_8h_a60ed9d864cd8cf8bf2d60431d2400071}\label{macros_8h_a60ed9d864cd8cf8bf2d60431d2400071}} 
+\index{macros.\+h@{macros.\+h}!Z\+E\+R\+O\+\_\+3V@{Z\+E\+R\+O\+\_\+3V}}
+\index{Z\+E\+R\+O\+\_\+3V@{Z\+E\+R\+O\+\_\+3V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{Z\+E\+R\+O\+\_\+3V}{ZERO\_3V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} Z\+E\+R\+O\+\_\+3V(\begin{DoxyParamCaption}\item[{}]{D\+ST }\end{DoxyParamCaption})~(D\+ST)\mbox{[}0\mbox{]} = (D\+ST)\mbox{[}1\mbox{]} = (D\+ST)\mbox{[}2\mbox{]} = 0}
+
+Zero \mbox{\Hypertarget{macros_8h_a693ce23ac42fc5969c7eb7a07507299c}\label{macros_8h_a693ce23ac42fc5969c7eb7a07507299c}} 
+\index{macros.\+h@{macros.\+h}!Z\+E\+R\+O\+\_\+4V@{Z\+E\+R\+O\+\_\+4V}}
+\index{Z\+E\+R\+O\+\_\+4V@{Z\+E\+R\+O\+\_\+4V}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{Z\+E\+R\+O\+\_\+4V}{ZERO\_4V}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} Z\+E\+R\+O\+\_\+4V(\begin{DoxyParamCaption}\item[{}]{D\+ST }\end{DoxyParamCaption})~(D\+ST)\mbox{[}0\mbox{]} = (D\+ST)\mbox{[}1\mbox{]} = (D\+ST)\mbox{[}2\mbox{]} = (D\+ST)\mbox{[}3\mbox{]} = 0}
+
+Zero 
+
+\subsection{变量说明}
+\mbox{\Hypertarget{macros_8h_a50190dd499de923063487965e28276e6}\label{macros_8h_a50190dd499de923063487965e28276e6}} 
+\index{macros.\+h@{macros.\+h}!\+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab@{\+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab}}
+\index{\+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab@{\+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab}!macros.\+h@{macros.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab}{\_mesa\_ubyte\_to\_float\_color\_tab}}
+{\footnotesize\ttfamily G\+Lfloat \+\_\+mesa\+\_\+ubyte\+\_\+to\+\_\+float\+\_\+color\+\_\+tab\mbox{[}256\mbox{]}}
+
+Convert G\+Lubyte in \mbox{[}0,255\mbox{]} to G\+Lfloat in \mbox{[}0.\+0,1.\+0\mbox{]} 

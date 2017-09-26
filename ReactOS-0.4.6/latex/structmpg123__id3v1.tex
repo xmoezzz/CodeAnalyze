@@ -1,0 +1,76 @@
+\hypertarget{structmpg123__id3v1}{}\section{mpg123\+\_\+id3v1结构体 参考}
+\label{structmpg123__id3v1}\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+
+
+{\ttfamily \#include $<$mpg123.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{structmpg123__id3v1_ab75ed435e357198b4316a0c86686069b}{tag} \mbox{[}3\mbox{]}
+\item 
+char \hyperlink{structmpg123__id3v1_a07f4a232c9be375fc35285538ff08c98}{title} \mbox{[}30\mbox{]}
+\item 
+char \hyperlink{structmpg123__id3v1_a1aab043e91127fd288c379e974ffc8fe}{artist} \mbox{[}30\mbox{]}
+\item 
+char \hyperlink{structmpg123__id3v1_aeef247d147c96898e25b98dbdf4eba65}{album} \mbox{[}30\mbox{]}
+\item 
+char \hyperlink{structmpg123__id3v1_a6087be9b3b25b86cafb4d59af51a1c67}{year} \mbox{[}4\mbox{]}
+\item 
+char \hyperlink{structmpg123__id3v1_a32a423f6277d64b16b655eb115233e11}{comment} \mbox{[}30\mbox{]}
+\item 
+unsigned char \hyperlink{structmpg123__id3v1_ac7fa19ffcdc1fbb8d5fbf786606baa08}{genre}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{struct_data}{Data} structure for I\+D3v1 tags (the last 128 bytes of a file). Don\textquotesingle{}t take anything for granted (like string termination)! Also note the change I\+D3v1.\+1 did\+: comment\mbox{[}28\mbox{]} = 0; comment\mbox{[}29\mbox{]} = track\+\_\+number \hyperlink{class_it}{It} is your task to support I\+D3v1 only or I\+D3v1.\+1 ... 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structmpg123__id3v1_aeef247d147c96898e25b98dbdf4eba65}\label{structmpg123__id3v1_aeef247d147c96898e25b98dbdf4eba65}} 
+\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}!album@{album}}
+\index{album@{album}!mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+\subsubsection{\texorpdfstring{album}{album}}
+{\footnotesize\ttfamily char mpg123\+\_\+id3v1\+::album\mbox{[}30\mbox{]}}
+
+Album string. \mbox{\Hypertarget{structmpg123__id3v1_a1aab043e91127fd288c379e974ffc8fe}\label{structmpg123__id3v1_a1aab043e91127fd288c379e974ffc8fe}} 
+\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}!artist@{artist}}
+\index{artist@{artist}!mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+\subsubsection{\texorpdfstring{artist}{artist}}
+{\footnotesize\ttfamily char mpg123\+\_\+id3v1\+::artist\mbox{[}30\mbox{]}}
+
+Artist string. \mbox{\Hypertarget{structmpg123__id3v1_a32a423f6277d64b16b655eb115233e11}\label{structmpg123__id3v1_a32a423f6277d64b16b655eb115233e11}} 
+\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}!comment@{comment}}
+\index{comment@{comment}!mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+\subsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily char mpg123\+\_\+id3v1\+::comment\mbox{[}30\mbox{]}}
+
+Comment string. \mbox{\Hypertarget{structmpg123__id3v1_ac7fa19ffcdc1fbb8d5fbf786606baa08}\label{structmpg123__id3v1_ac7fa19ffcdc1fbb8d5fbf786606baa08}} 
+\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}!genre@{genre}}
+\index{genre@{genre}!mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+\subsubsection{\texorpdfstring{genre}{genre}}
+{\footnotesize\ttfamily unsigned char mpg123\+\_\+id3v1\+::genre}
+
+Genre index. \mbox{\Hypertarget{structmpg123__id3v1_ab75ed435e357198b4316a0c86686069b}\label{structmpg123__id3v1_ab75ed435e357198b4316a0c86686069b}} 
+\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}!tag@{tag}}
+\index{tag@{tag}!mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+\subsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily char mpg123\+\_\+id3v1\+::tag\mbox{[}3\mbox{]}}
+
+Always the string \char`\"{}\+T\+A\+G\char`\"{}, the classic intro. \mbox{\Hypertarget{structmpg123__id3v1_a07f4a232c9be375fc35285538ff08c98}\label{structmpg123__id3v1_a07f4a232c9be375fc35285538ff08c98}} 
+\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}!title@{title}}
+\index{title@{title}!mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+\subsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily char mpg123\+\_\+id3v1\+::title\mbox{[}30\mbox{]}}
+
+Title string. \mbox{\Hypertarget{structmpg123__id3v1_a6087be9b3b25b86cafb4d59af51a1c67}\label{structmpg123__id3v1_a6087be9b3b25b86cafb4d59af51a1c67}} 
+\index{mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}!year@{year}}
+\index{year@{year}!mpg123\+\_\+id3v1@{mpg123\+\_\+id3v1}}
+\subsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily char mpg123\+\_\+id3v1\+::year\mbox{[}4\mbox{]}}
+
+Year string. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/libmpg123/\hyperlink{mpg123_8h}{mpg123.\+h}\end{DoxyCompactItemize}

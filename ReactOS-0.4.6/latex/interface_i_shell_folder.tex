@@ -1,0 +1,90 @@
+\hypertarget{interface_i_shell_folder}{}\section{I\+Shell\+Folder接口 参考}
+\label{interface_i_shell_folder}\index{I\+Shell\+Folder@{I\+Shell\+Folder}}
+类 I\+Shell\+Folder 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.176470cm]{interface_i_shell_folder}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a439b75036d7c25c6ae39d6421f618178}\label{interface_i_shell_folder_a439b75036d7c25c6ae39d6421f618178}} 
+enum {\bfseries tag\+S\+H\+G\+DN} \{ \newline
+{\bfseries S\+H\+G\+D\+N\+\_\+\+N\+O\+R\+M\+AL} = 0, 
+{\bfseries S\+H\+G\+D\+N\+\_\+\+I\+N\+F\+O\+L\+D\+ER} = 1, 
+{\bfseries S\+H\+G\+D\+N\+\_\+\+F\+O\+R\+E\+D\+I\+T\+I\+NG} = 0x1000, 
+{\bfseries S\+H\+G\+D\+N\+\_\+\+I\+N\+C\+L\+U\+D\+E\+\_\+\+N\+O\+N\+F\+I\+L\+E\+S\+YS} = 0x2000, 
+\newline
+{\bfseries S\+H\+G\+D\+N\+\_\+\+F\+O\+R\+A\+D\+D\+R\+E\+S\+S\+B\+AR} = 0x4000, 
+{\bfseries S\+H\+G\+D\+N\+\_\+\+F\+O\+R\+P\+A\+R\+S\+I\+NG} = 0x8000
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a907db8b011edc84598bb6486b3d80b3e}\label{interface_i_shell_folder_a907db8b011edc84598bb6486b3d80b3e}} 
+enum {\bfseries tag\+S\+H\+C\+O\+N\+TF} \{ \newline
+{\bfseries S\+H\+C\+O\+N\+T\+F\+\_\+\+F\+O\+L\+D\+E\+RS} = 32, 
+{\bfseries S\+H\+C\+O\+N\+T\+F\+\_\+\+N\+O\+N\+F\+O\+L\+D\+E\+RS} = 64, 
+{\bfseries S\+H\+C\+O\+N\+T\+F\+\_\+\+I\+N\+C\+L\+U\+D\+E\+H\+I\+D\+D\+EN} = 128, 
+{\bfseries S\+H\+C\+O\+N\+T\+F\+\_\+\+I\+N\+I\+T\+\_\+\+O\+N\+\_\+\+F\+I\+R\+S\+T\+\_\+\+N\+E\+XT} = 256, 
+\newline
+{\bfseries S\+H\+C\+O\+N\+T\+F\+\_\+\+N\+E\+T\+P\+R\+I\+N\+T\+E\+R\+S\+R\+CH} = 512, 
+{\bfseries S\+H\+C\+O\+N\+T\+F\+\_\+\+S\+H\+A\+R\+E\+A\+B\+LE} = 1024, 
+{\bfseries S\+H\+C\+O\+N\+T\+F\+\_\+\+S\+T\+O\+R\+A\+GE} = 2048
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_ae1974ac986bc389bf2ef1409fd7b72a8}\label{interface_i_shell_folder_ae1974ac986bc389bf2ef1409fd7b72a8}} 
+typedef \hyperlink{interface_i_shell_folder}{I\+Shell\+Folder} $\ast$ {\bfseries L\+P\+S\+H\+E\+L\+L\+F\+O\+L\+D\+ER}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a280ab0baec53f9a0a51c956643f9a431}\label{interface_i_shell_folder_a280ab0baec53f9a0a51c956643f9a431}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Shell\+Folder\+::tag\+S\+H\+G\+DN {\bfseries S\+H\+G\+NO}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_af425fcea97277c8e39004ffc831514fb}\label{interface_i_shell_folder_af425fcea97277c8e39004ffc831514fb}} 
+typedef D\+W\+O\+RD {\bfseries S\+H\+G\+D\+NF}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_afd4c6835e00b34808d708b05de4d4aa7}\label{interface_i_shell_folder_afd4c6835e00b34808d708b05de4d4aa7}} 
+typedef D\+W\+O\+RD {\bfseries S\+H\+C\+O\+N\+TF}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a82d388b2df30481bb5256c1bcda486e0}\label{interface_i_shell_folder_a82d388b2df30481bb5256c1bcda486e0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Parse\+Display\+Name} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Owner, \mbox{[}in\mbox{]} L\+P\+BC pbc\+Reserved, \mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+O\+L\+E\+S\+TR lpsz\+Display\+Name, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pch\+Eaten, \mbox{[}out\mbox{]} \hyperlink{struct___i_t_e_m_i_d_l_i_s_t___r_e_l_a_t_i_v_e}{P\+I\+D\+L\+I\+S\+T\+\_\+\+R\+E\+L\+A\+T\+I\+VE} $\ast$ppidl, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} U\+L\+O\+NG $\ast$pdw\+Attributes)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a83d00f9d050c2f157c8ab4ae53d1e6da}\label{interface_i_shell_folder_a83d00f9d050c2f157c8ab4ae53d1e6da}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Objects} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Owner, \mbox{[}in\mbox{]} S\+H\+C\+O\+N\+TF grf\+Flags, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_i_d_list}{I\+Enum\+I\+D\+List} $\ast$$\ast$ppenum\+I\+D\+List)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a8c351e714ac5b7faceb3da28f5776b63}\label{interface_i_shell_folder_a8c351e714ac5b7faceb3da28f5776b63}} 
+H\+R\+E\+S\+U\+LT {\bfseries Bind\+To\+Object} (\mbox{[}in\mbox{]} P\+C\+U\+I\+D\+L\+I\+S\+T\+\_\+\+R\+E\+L\+A\+T\+I\+VE pidl, \mbox{[}in\mbox{]} L\+P\+BC pbc\+Reserved, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_ae3279163ba52d8b4cc6ab139f950bd3f}\label{interface_i_shell_folder_ae3279163ba52d8b4cc6ab139f950bd3f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Bind\+To\+Storage} (\mbox{[}in\mbox{]} P\+C\+U\+I\+D\+L\+I\+S\+T\+\_\+\+R\+E\+L\+A\+T\+I\+VE pidl, \mbox{[}in\mbox{]} L\+P\+BC pbc\+Reserved, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Obj)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_ac877c64d3c3ca4cbd88497ec4b6e06e0}\label{interface_i_shell_folder_ac877c64d3c3ca4cbd88497ec4b6e06e0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Compare\+I\+Ds} (\mbox{[}in\mbox{]} L\+P\+A\+R\+AM l\+Param, \mbox{[}in\mbox{]} P\+C\+U\+I\+D\+L\+I\+S\+T\+\_\+\+R\+E\+L\+A\+T\+I\+VE pidl1, \mbox{[}in\mbox{]} P\+C\+U\+I\+D\+L\+I\+S\+T\+\_\+\+R\+E\+L\+A\+T\+I\+VE pidl2)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a17f3a4286927932ee7785a8ee55e6430}\label{interface_i_shell_folder_a17f3a4286927932ee7785a8ee55e6430}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+View\+Object} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Owner, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_af1d8598af46e3e5e9f1d6115df36c367}\label{interface_i_shell_folder_af1d8598af46e3e5e9f1d6115df36c367}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Attributes\+Of} (\mbox{[}in\mbox{]} U\+I\+NT cidl, \mbox{[}in, size\+\_\+is(cidl)\mbox{]} P\+C\+U\+I\+T\+E\+M\+I\+D\+\_\+\+C\+H\+I\+L\+D\+\_\+\+A\+R\+R\+AY apidl, \mbox{[}in, out\mbox{]} S\+F\+G\+A\+OF $\ast$rgf\+In\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_a5a01139eabdfecc85db964ec56508bb0}\label{interface_i_shell_folder_a5a01139eabdfecc85db964ec56508bb0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+U\+I\+Object\+Of} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Owner, \mbox{[}in\mbox{]} U\+I\+NT cidl, \mbox{[}in, size\+\_\+is(cidl)\mbox{]} P\+C\+U\+I\+T\+E\+M\+I\+D\+\_\+\+C\+H\+I\+L\+D\+\_\+\+A\+R\+R\+AY apidl, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} U\+I\+NT $\ast$prgf\+In\+Out, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_ab17cc636ae6937e72bd497d6cd1fcb28}\label{interface_i_shell_folder_ab17cc636ae6937e72bd497d6cd1fcb28}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Display\+Name\+Of} (\mbox{[}in\mbox{]} P\+C\+U\+I\+T\+E\+M\+I\+D\+\_\+\+C\+H\+I\+LD pidl, \mbox{[}in\mbox{]} S\+H\+G\+D\+NF u\+Flags, \mbox{[}out\mbox{]} \hyperlink{struct___s_t_r_r_e_t}{S\+T\+R\+R\+ET} $\ast$lp\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_aa3adff13d974372903ad2d88fef90afa}\label{interface_i_shell_folder_aa3adff13d974372903ad2d88fef90afa}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Name\+Of} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} P\+C\+U\+I\+T\+E\+M\+I\+D\+\_\+\+C\+H\+I\+LD pidl, \mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR lpsz\+Name, \mbox{[}in\mbox{]} S\+H\+G\+D\+NF u\+Flags, \mbox{[}out\mbox{]} \hyperlink{struct___i_t_e_m_i_d___c_h_i_l_d}{P\+I\+T\+E\+M\+I\+D\+\_\+\+C\+H\+I\+LD} $\ast$ppidl\+Out)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_shell_folder_ac37df1dde378a059ef49f5c21681ec92}\label{interface_i_shell_folder_ac37df1dde378a059ef49f5c21681ec92}} 
+S\+F\+G\+A\+O\+\_\+\+S\+T\+O\+R\+A\+G\+E\+A\+N\+C\+E\+S\+T\+OR typedef U\+L\+O\+NG {\bfseries S\+F\+G\+A\+OF}
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

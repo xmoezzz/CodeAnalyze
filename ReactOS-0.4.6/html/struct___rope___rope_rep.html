@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: _Rope_RopeRep&lt; _CharT, _Alloc &gt; 模板结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct___rope___rope_rep-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">_Rope_RopeRep&lt; _CharT, _Alloc &gt; 模板结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 _Rope_RopeRep&lt; _CharT, _Alloc &gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="struct___rope___rope_rep.png" usemap="#_5FRope_5FRopeRep_3C_20_5FCharT_2C_20_5FAlloc_20_3E_map" alt=""/>
+  <map id="_5FRope_5FRopeRep_3C_20_5FCharT_2C_20_5FAlloc_20_3E_map" name="_5FRope_5FRopeRep_3C_20_5FCharT_2C_20_5FAlloc_20_3E_map">
+<area href="class___refcount___base.html" alt="_Refcount_Base" shape="rect" coords="286,0,562,24"/>
+<area href="struct___rope___rope_concatenation.html" alt="_Rope_RopeConcatenation&lt; _CharT, _Alloc &gt;" shape="rect" coords="0,112,276,136"/>
+<area href="struct___rope___rope_function.html" alt="_Rope_RopeFunction&lt; _CharT, _Alloc &gt;" shape="rect" coords="286,112,562,136"/>
+<area href="struct___rope___rope_leaf.html" alt="_Rope_RopeLeaf&lt; _CharT, _Alloc &gt;" shape="rect" coords="572,112,848,136"/>
+<area href="struct___rope___rope_substring.html" alt="_Rope_RopeSubstring&lt; _CharT, _Alloc &gt;" shape="rect" coords="286,168,562,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1757b4dc84d05bd38356e6b0ddf07c30"><td class="memItemLeft" align="right" valign="top"><a id="a1757b4dc84d05bd38356e6b0ddf07c30"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>_S_max_rope_depth</b> = __ROPE_MAX_DEPTH
+ }</td></tr>
+<tr class="separator:a1757b4dc84d05bd38356e6b0ddf07c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab707d6ee3822eabec2929f0de0823184"><td class="memItemLeft" align="right" valign="top"><a id="ab707d6ee3822eabec2929f0de0823184"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>_Tag</b> { <b>_S_leaf</b>, 
+<b>_S_concat</b>, 
+<b>_S_substringfn</b>, 
+<b>_S_function</b>
+ }</td></tr>
+<tr class="separator:ab707d6ee3822eabec2929f0de0823184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99dad0dcd64da637f4c55a28a8e2b7d"><td class="memItemLeft" align="right" valign="top"><a id="ac99dad0dcd64da637f4c55a28a8e2b7d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>_S_alloc_granularity</b> = 8
+ }</td></tr>
+<tr class="separator:ac99dad0dcd64da637f4c55a28a8e2b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252aae689e4f22c5e0db177e95bc2c55"><td class="memItemLeft" align="right" valign="top"><a id="a252aae689e4f22c5e0db177e95bc2c55"></a>
+typedef <a class="el" href="struct___rope___rope_rep.html">_Rope_RopeRep</a>&lt; _CharT, _Alloc &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_Self</b></td></tr>
+<tr class="separator:a252aae689e4f22c5e0db177e95bc2c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6a1ace4f1ce5afb26b90b6f6156214"><td class="memItemLeft" align="right" valign="top"><a id="a8c6a1ace4f1ce5afb26b90b6f6156214"></a>
+typedef _Alloc&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b></td></tr>
+<tr class="separator:a8c6a1ace4f1ce5afb26b90b6f6156214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af893a960ed6ea88c1874b6168e2d8d7c"><td class="memItemLeft" align="right" valign="top"><a id="af893a960ed6ea88c1874b6168e2d8d7c"></a>
+typedef _STLP_TYPENAME _STLP_PRIV <a class="el" href="struct___basic_char_type.html">_BasicCharType</a>&lt; _CharT &gt;::_Ret&#160;</td><td class="memItemRight" valign="bottom"><b>_IsBasicCharType</b></td></tr>
+<tr class="separator:af893a960ed6ea88c1874b6168e2d8d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7c8df0d1709c188805f4245326d29368"><td class="memItemLeft" align="right" valign="top"><a id="a7c8df0d1709c188805f4245326d29368"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocator</b> () const</td></tr>
+<tr class="separator:a7c8df0d1709c188805f4245326d29368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4087fed54c89f2140bf807587d797a35"><td class="memItemLeft" align="right" valign="top"><a id="a4087fed54c89f2140bf807587d797a35"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_Rope_RopeRep</b> (_Tag __t, unsigned char __d, bool __b, size_t _p_size, allocator_type __a)</td></tr>
+<tr class="separator:a4087fed54c89f2140bf807587d797a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2e59bf58d52307979ca1b7da3f625a"><td class="memItemLeft" align="right" valign="top"><a id="aaf2e59bf58d52307979ca1b7da3f625a"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_free_c_string</b> ()</td></tr>
+<tr class="separator:aaf2e59bf58d52307979ca1b7da3f625a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdfa789bd96d7f0a71ac076f7bbb027b"><td class="memItemLeft" align="right" valign="top"><a id="afdfa789bd96d7f0a71ac076f7bbb027b"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_free_tree</b> ()</td></tr>
+<tr class="separator:afdfa789bd96d7f0a71ac076f7bbb027b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda35226b118852a3579d2459bfbd6e5"><td class="memItemLeft" align="right" valign="top"><a id="afda35226b118852a3579d2459bfbd6e5"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_unref_nonnil</b> ()</td></tr>
+<tr class="separator:afda35226b118852a3579d2459bfbd6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af198d3c0c32ead11289b7245722af297"><td class="memItemLeft" align="right" valign="top"><a id="af198d3c0c32ead11289b7245722af297"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_ref_nonnil</b> ()</td></tr>
+<tr class="separator:af198d3c0c32ead11289b7245722af297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class___refcount___base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class___refcount___base')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class___refcount___base.html">_Refcount_Base</a></td></tr>
+<tr class="memitem:ad9c78e56ae43fa185c38cd197d7d823c inherit pub_methods_class___refcount___base"><td class="memItemLeft" align="right" valign="top"><a id="ad9c78e56ae43fa185c38cd197d7d823c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_Refcount_Base</b> (__stl_atomic_t __n)</td></tr>
+<tr class="separator:ad9c78e56ae43fa185c38cd197d7d823c inherit pub_methods_class___refcount___base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad191898b3065b4b8e15fdb3879797741 inherit pub_methods_class___refcount___base"><td class="memItemLeft" align="right" valign="top"><a id="ad191898b3065b4b8e15fdb3879797741"></a>
+__stl_atomic_t&#160;</td><td class="memItemRight" valign="bottom"><b>_M_incr</b> ()</td></tr>
+<tr class="separator:ad191898b3065b4b8e15fdb3879797741 inherit pub_methods_class___refcount___base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e973793b022a734aef93fe119fe787 inherit pub_methods_class___refcount___base"><td class="memItemLeft" align="right" valign="top"><a id="ad6e973793b022a734aef93fe119fe787"></a>
+__stl_atomic_t&#160;</td><td class="memItemRight" valign="bottom"><b>_M_decr</b> ()</td></tr>
+<tr class="separator:ad6e973793b022a734aef93fe119fe787 inherit pub_methods_class___refcount___base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a82555e71e05ea74367c0b825dd99aa25"><td class="memItemLeft" align="right" valign="top"><a id="a82555e71e05ea74367c0b825dd99aa25"></a>
+static size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_S_rounded_up_size</b> (size_t __n)</td></tr>
+<tr class="separator:a82555e71e05ea74367c0b825dd99aa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d202f610eaa2ed6cd1c520dc087fff9"><td class="memItemLeft" align="right" valign="top"><a id="a3d202f610eaa2ed6cd1c520dc087fff9"></a>
+static <a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_S_free_string</b> (_CharT *__s, size_t __len, allocator_type __a)</td></tr>
+<tr class="separator:a3d202f610eaa2ed6cd1c520dc087fff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b5d734e4f814b9a0cb4390f765b7e8"><td class="memItemLeft" align="right" valign="top"><a id="a83b5d734e4f814b9a0cb4390f765b7e8"></a>
+static <a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_S_unref</b> (<a class="el" href="struct___rope___rope_rep.html">_Self</a> *__t)</td></tr>
+<tr class="separator:a83b5d734e4f814b9a0cb4390f765b7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f30136be471e07ce221a1130d82621"><td class="memItemLeft" align="right" valign="top"><a id="a66f30136be471e07ce221a1130d82621"></a>
+static <a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_S_ref</b> (<a class="el" href="struct___rope___rope_rep.html">_Self</a> *__t)</td></tr>
+<tr class="separator:a66f30136be471e07ce221a1130d82621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a3c7d25e4172e8b2c50fcf0878956ec5b"><td class="memItemLeft" align="right" valign="top"><a id="a3c7d25e4172e8b2c50fcf0878956ec5b"></a>
+_Tag&#160;</td><td class="memItemRight" valign="bottom"><b>_M_tag</b>:8</td></tr>
+<tr class="separator:a3c7d25e4172e8b2c50fcf0878956ec5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab982b69e52634c451b8ed21464321130"><td class="memItemLeft" align="right" valign="top"><a id="ab982b69e52634c451b8ed21464321130"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_M_is_balanced</b>:8</td></tr>
+<tr class="separator:ab982b69e52634c451b8ed21464321130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa946810e2ea93fc03306a14b6a074b59"><td class="memItemLeft" align="right" valign="top"><a id="aa946810e2ea93fc03306a14b6a074b59"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>_M_depth</b></td></tr>
+<tr class="separator:aa946810e2ea93fc03306a14b6a074b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ab5fa6fc522c359b9fcc80e4a10d4a"><td class="memItemLeft" align="right" valign="top"><a id="a34ab5fa6fc522c359b9fcc80e4a10d4a"></a>
+_CharT *_STLP_VOLATILE&#160;</td><td class="memItemRight" valign="bottom"><b>_M_c_string</b></td></tr>
+<tr class="separator:a34ab5fa6fc522c359b9fcc80e4a10d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad026203a2e2864f3387e8b63bef6bac3"><td class="memItemLeft" align="right" valign="top"><a id="ad026203a2e2864f3387e8b63bef6bac3"></a>
+_STLP_PRIV <a class="el" href="class___s_t_l_p__alloc__proxy.html">_STLP_alloc_proxy</a>&lt; size_t, _CharT, allocator_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_M_size</b></td></tr>
+<tr class="separator:ad026203a2e2864f3387e8b63bef6bac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/c++/stlport/stl/<a class="el" href="__rope_8h_source.html">_rope.h</a></li>
+<li>E:/ReactOS-0.4.6/sdk/include/c++/stlport/stl/_rope.c</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IInstallEngine接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_install_engine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IInstallEngine接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IInstallEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_install_engine.png" usemap="#IInstallEngine_map" alt=""/>
+  <map id="IInstallEngine_map" name="IInstallEngine_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,93,24"/>
+<area href="interface_i_install_engine2.html" alt="IInstallEngine2" shape="rect" coords="0,112,93,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a60866c7ffc198a9fbbce5b77586b9b1e"><td class="memItemLeft" align="right" valign="top"><a id="a60866c7ffc198a9fbbce5b77586b9b1e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetEngineStatus</b> (DWORD *<a class="el" href="structstatus.html">status</a>)</td></tr>
+<tr class="separator:a60866c7ffc198a9fbbce5b77586b9b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1406d153eebae7ae4b781d07854b25"><td class="memItemLeft" align="right" valign="top"><a id="a8a1406d153eebae7ae4b781d07854b25"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetCifFile</b> (const char *cab_name, const char *cif_name)</td></tr>
+<tr class="separator:a8a1406d153eebae7ae4b781d07854b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651b0efe496b99d28811f58153284a11"><td class="memItemLeft" align="right" valign="top"><a id="a651b0efe496b99d28811f58153284a11"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DownloadComponents</b> (DWORD flags)</td></tr>
+<tr class="separator:a651b0efe496b99d28811f58153284a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c915b32452976eb6515b9f90b4bf34"><td class="memItemLeft" align="right" valign="top"><a id="af3c915b32452976eb6515b9f90b4bf34"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>InstallComponents</b> (DWORD flags)</td></tr>
+<tr class="separator:af3c915b32452976eb6515b9f90b4bf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99c67917a88b94d56b4616d194afa84"><td class="memItemLeft" align="right" valign="top"><a id="ac99c67917a88b94d56b4616d194afa84"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>EnumInstallIDs</b> (UINT index, char **id)</td></tr>
+<tr class="separator:ac99c67917a88b94d56b4616d194afa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad3097bfcf29a61d4f00cc9ae520f6a"><td class="memItemLeft" align="right" valign="top"><a id="a0ad3097bfcf29a61d4f00cc9ae520f6a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>EnumDownloadIDs</b> (UINT index, char **id)</td></tr>
+<tr class="separator:a0ad3097bfcf29a61d4f00cc9ae520f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b453cf2674fc035c61415d87391163"><td class="memItemLeft" align="right" valign="top"><a id="a03b453cf2674fc035c61415d87391163"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsComponentInstalled</b> (const char *id, DWORD *<a class="el" href="structstatus.html">status</a>)</td></tr>
+<tr class="separator:a03b453cf2674fc035c61415d87391163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb7a72a8069555068f072f83113b543"><td class="memItemLeft" align="right" valign="top"><a id="acbb7a72a8069555068f072f83113b543"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterInstallEngineCallback</b> (<a class="el" href="interface_i_install_engine_callback.html">IInstallEngineCallback</a> *callback)</td></tr>
+<tr class="separator:acbb7a72a8069555068f072f83113b543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7024ab0c3a876d9f32f012398759e2e"><td class="memItemLeft" align="right" valign="top"><a id="ad7024ab0c3a876d9f32f012398759e2e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstallEngineCallback</b> ()</td></tr>
+<tr class="separator:ad7024ab0c3a876d9f32f012398759e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea7bd99d1cd38a1c20f425f99ab7216"><td class="memItemLeft" align="right" valign="top"><a id="acea7bd99d1cd38a1c20f425f99ab7216"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetAction</b> (const char *id, DWORD action, DWORD priority)</td></tr>
+<tr class="separator:acea7bd99d1cd38a1c20f425f99ab7216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f4682193b2f622f8593107247e9653"><td class="memItemLeft" align="right" valign="top"><a id="a56f4682193b2f622f8593107247e9653"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSizes</b> (const char *id, <a class="el" href="struct_c_o_m_p_o_n_e_n_t___s_i_z_e_s.html">COMPONENT_SIZES</a> *sizes)</td></tr>
+<tr class="separator:a56f4682193b2f622f8593107247e9653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fecda6cd2db6793a6be4eec91c066e"><td class="memItemLeft" align="right" valign="top"><a id="a19fecda6cd2db6793a6be4eec91c066e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>LaunchExtraCommand</b> (const char *inf_name, const char *<a class="el" href="structsection.html">section</a>)</td></tr>
+<tr class="separator:a19fecda6cd2db6793a6be4eec91c066e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae217f883513949327e863ed172064250"><td class="memItemLeft" align="right" valign="top"><a id="ae217f883513949327e863ed172064250"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayName</b> (const char *id, const char *<a class="el" href="structname.html">name</a>)</td></tr>
+<tr class="separator:ae217f883513949327e863ed172064250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3190335c4dd55f40c349b53225aaf3"><td class="memItemLeft" align="right" valign="top"><a id="a9b3190335c4dd55f40c349b53225aaf3"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetBaseUrl</b> (const char *base_name)</td></tr>
+<tr class="separator:a9b3190335c4dd55f40c349b53225aaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d524361d59c5ae2d8f7b815cccedeaa"><td class="memItemLeft" align="right" valign="top"><a id="a6d524361d59c5ae2d8f7b815cccedeaa"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetDownloadDir</b> (const char *download_dir)</td></tr>
+<tr class="separator:a6d524361d59c5ae2d8f7b815cccedeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae982e39597ab3c1939e654b527c85e67"><td class="memItemLeft" align="right" valign="top"><a id="ae982e39597ab3c1939e654b527c85e67"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstallDrive</b> (char <a class="el" href="structdrive.html">drive</a>)</td></tr>
+<tr class="separator:ae982e39597ab3c1939e654b527c85e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c7ce57c193d5692edfe2d52f5963ef"><td class="memItemLeft" align="right" valign="top"><a id="a54c7ce57c193d5692edfe2d52f5963ef"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstallOptions</b> (DWORD flags)</td></tr>
+<tr class="separator:a54c7ce57c193d5692edfe2d52f5963ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb26a6eca7463d6cf6b5c7912b564700"><td class="memItemLeft" align="right" valign="top"><a id="afb26a6eca7463d6cf6b5c7912b564700"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetHWND</b> (<a class="el" href="interfacevoid.html">HWND</a> hwnd)</td></tr>
+<tr class="separator:afb26a6eca7463d6cf6b5c7912b564700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a11597627d9a88cb374acf6dc4b2d5"><td class="memItemLeft" align="right" valign="top"><a id="a18a11597627d9a88cb374acf6dc4b2d5"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetIStream</b> (<a class="el" href="interface_i_stream.html">IStream</a> *<a class="el" href="structstream.html">stream</a>)</td></tr>
+<tr class="separator:a18a11597627d9a88cb374acf6dc4b2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b690456d3b1e433cc7d452811364a9"><td class="memItemLeft" align="right" valign="top"><a id="a11b690456d3b1e433cc7d452811364a9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Abort</b> (DWORD flags)</td></tr>
+<tr class="separator:a11b690456d3b1e433cc7d452811364a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363acb02a7e0f5dc9da18b432a30a6eb"><td class="memItemLeft" align="right" valign="top"><a id="a363acb02a7e0f5dc9da18b432a30a6eb"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Suspend</b> ()</td></tr>
+<tr class="separator:a363acb02a7e0f5dc9da18b432a30a6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9860b247f30195d2a1e63ac97cdd16b5"><td class="memItemLeft" align="right" valign="top"><a id="a9860b247f30195d2a1e63ac97cdd16b5"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Resume</b> ()</td></tr>
+<tr class="separator:a9860b247f30195d2a1e63ac97cdd16b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="inseng_8idl_source.html">inseng.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,64 @@
+\hypertarget{bn__mul_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/bn\+\_\+mul.h 文件参考}
+\label{bn__mul_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/bn\+\_\+mul.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/bn\+\_\+mul.\+h}}
+
+
+Multi-\/precision integer library  
+
+
+{\ttfamily \#include \char`\"{}bignum.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{bn__mul_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}\label{bn__mul_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}} 
+\#\hyperlink{structdefine}{define} {\bfseries asm}~\+\_\+\+\_\+asm
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+U\+L\+A\+D\+D\+C\+\_\+\+I\+N\+IT}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+U\+L\+A\+D\+D\+C\+\_\+\+C\+O\+RE}
+\item 
+\mbox{\Hypertarget{bn__mul_8h_aca47b090c97546b17261fdd712e910f9}\label{bn__mul_8h_aca47b090c97546b17261fdd712e910f9}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+U\+L\+A\+D\+D\+C\+\_\+\+S\+T\+OP}~\}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Multi-\/precision integer library 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{bn__mul_8h_a3b3b2d66bb9377769084b8f69e6a0d3c}\label{bn__mul_8h_a3b3b2d66bb9377769084b8f69e6a0d3c}} 
+\index{bn\+\_\+mul.\+h@{bn\+\_\+mul.\+h}!M\+U\+L\+A\+D\+D\+C\+\_\+\+C\+O\+RE@{M\+U\+L\+A\+D\+D\+C\+\_\+\+C\+O\+RE}}
+\index{M\+U\+L\+A\+D\+D\+C\+\_\+\+C\+O\+RE@{M\+U\+L\+A\+D\+D\+C\+\_\+\+C\+O\+RE}!bn\+\_\+mul.\+h@{bn\+\_\+mul.\+h}}
+\subsubsection{\texorpdfstring{M\+U\+L\+A\+D\+D\+C\+\_\+\+C\+O\+RE}{MULADDC\_CORE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+U\+L\+A\+D\+D\+C\+\_\+\+C\+O\+RE}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+r   = *(s++) * (mbedtls\_t\_udbl) b;          \(\backslash\)
+    r0  = (mbedtls\_mpi\_uint) r;                   \(\backslash\)
+    r1  = (mbedtls\_mpi\_uint)( r >> biL );         \(\backslash\)
+    r0 += c;  r1 += (r0 <  c);          \(\backslash\)
+    r0 += *d; r1 += (r0 < *d);          \(\backslash\)
+    c = r1; *(d++) = r0;
+\end{DoxyCode}
+\mbox{\Hypertarget{bn__mul_8h_a3c34f8aa787b08f646c7537e9b2911c6}\label{bn__mul_8h_a3c34f8aa787b08f646c7537e9b2911c6}} 
+\index{bn\+\_\+mul.\+h@{bn\+\_\+mul.\+h}!M\+U\+L\+A\+D\+D\+C\+\_\+\+I\+N\+IT@{M\+U\+L\+A\+D\+D\+C\+\_\+\+I\+N\+IT}}
+\index{M\+U\+L\+A\+D\+D\+C\+\_\+\+I\+N\+IT@{M\+U\+L\+A\+D\+D\+C\+\_\+\+I\+N\+IT}!bn\+\_\+mul.\+h@{bn\+\_\+mul.\+h}}
+\subsubsection{\texorpdfstring{M\+U\+L\+A\+D\+D\+C\+\_\+\+I\+N\+IT}{MULADDC\_INIT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+U\+L\+A\+D\+D\+C\+\_\+\+I\+N\+IT}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\{                                       \(\backslash\)
+    mbedtls\_t\_udbl r;                           \(\backslash\)
+    mbedtls\_mpi\_uint r0, r1;
+\end{DoxyCode}

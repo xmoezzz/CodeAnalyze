@@ -1,0 +1,43 @@
+\hypertarget{structtexture__state}{}\section{texture\+\_\+state结构体 参考}
+\label{structtexture__state}\index{texture\+\_\+state@{texture\+\_\+state}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__attrib}{gl\+\_\+texture\+\_\+attrib} \hyperlink{structtexture__state_a68291c6540890e8155771cb8f35cfea7}{Texture}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} \hyperlink{structtexture__state_a8c34795feda468479e743e9549808f42}{Saved\+Obj} \mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{structtexture__state_ac3d2463544a34245ad079ad67cc80979}{Saved\+Tex\+Ref} \mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}
+\item 
+\mbox{\Hypertarget{structtexture__state_a232a3f44da21b05c837eca8972b2a8cd}\label{structtexture__state_a232a3f44da21b05c837eca8972b2a8cd}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__shared__state}{gl\+\_\+shared\+\_\+state} $\ast$ {\bfseries Shared\+Ref}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Special struct for saving/restoring texture state (G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+B\+IT) 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structtexture__state_a8c34795feda468479e743e9549808f42}\label{structtexture__state_a8c34795feda468479e743e9549808f42}} 
+\index{texture\+\_\+state@{texture\+\_\+state}!Saved\+Obj@{Saved\+Obj}}
+\index{Saved\+Obj@{Saved\+Obj}!texture\+\_\+state@{texture\+\_\+state}}
+\subsubsection{\texorpdfstring{Saved\+Obj}{SavedObj}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} texture\+\_\+state\+::\+Saved\+Obj\mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}}
+
+to save per texture object state (wrap modes, filters, etc)\+: \mbox{\Hypertarget{structtexture__state_ac3d2463544a34245ad079ad67cc80979}\label{structtexture__state_ac3d2463544a34245ad079ad67cc80979}} 
+\index{texture\+\_\+state@{texture\+\_\+state}!Saved\+Tex\+Ref@{Saved\+Tex\+Ref}}
+\index{Saved\+Tex\+Ref@{Saved\+Tex\+Ref}!texture\+\_\+state@{texture\+\_\+state}}
+\subsubsection{\texorpdfstring{Saved\+Tex\+Ref}{SavedTexRef}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ texture\+\_\+state\+::\+Saved\+Tex\+Ref\mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}}
+
+To save references to texture objects (so they don\textquotesingle{}t get accidentally deleted while saved in the attribute stack). \mbox{\Hypertarget{structtexture__state_a68291c6540890e8155771cb8f35cfea7}\label{structtexture__state_a68291c6540890e8155771cb8f35cfea7}} 
+\index{texture\+\_\+state@{texture\+\_\+state}!Texture@{Texture}}
+\index{Texture@{Texture}!texture\+\_\+state@{texture\+\_\+state}}
+\subsubsection{\texorpdfstring{Texture}{Texture}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__attrib}{gl\+\_\+texture\+\_\+attrib} texture\+\_\+state\+::\+Texture}
+
+The usual context state 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/attrib.\+c\end{DoxyCompactItemize}

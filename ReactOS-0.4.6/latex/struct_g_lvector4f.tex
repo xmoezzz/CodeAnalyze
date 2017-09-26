@@ -1,0 +1,86 @@
+\hypertarget{struct_g_lvector4f}{}\section{G\+Lvector4f结构体 参考}
+\label{struct_g_lvector4f}\index{G\+Lvector4f@{G\+Lvector4f}}
+
+
+{\ttfamily \#include $<$m\+\_\+vector.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lfloat($\ast$ \hyperlink{struct_g_lvector4f_ac4496cfda78d106356b73b4cac41761d}{data} )\mbox{[}4\mbox{]}
+\item 
+G\+Lfloat $\ast$ \hyperlink{struct_g_lvector4f_a37b2bc6b9bda2d1f0bb08485510d0ec4}{start}
+\item 
+G\+Luint \hyperlink{struct_g_lvector4f_a447eccb061600c93426c8fe30cdc40f6}{count}
+\item 
+G\+Luint \hyperlink{struct_g_lvector4f_a33ad01f392807d777a925f726cacb97b}{stride}
+\item 
+G\+Luint \hyperlink{struct_g_lvector4f_ae3421fa4b48cb80b49f81fa5a04fd44f}{size}
+\item 
+G\+Lbitfield \hyperlink{struct_g_lvector4f_ab10bfdc37b34f053b520f30f13433b08}{flags}
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{struct_g_lvector4f_ad9723e4382903415fcc9dea824da1c2c}{storage}
+\item 
+G\+Luint \hyperlink{struct_g_lvector4f_a16eec0e05b68c2dc7983b0208dd39a52}{storage\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Wrap all the information about vectors up in a struct. Has additional fields compared to the other vectors to help us track of different vertex sizes, and whether we need to clean columns out because they contain non-\/(0,0,0,1) values.
+
+The start field is used to reserve data for copied vertices at the end of \+\_\+mesa\+\_\+transform\+\_\+vb, and avoids the need for a multiplication in the transformation routines. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct_g_lvector4f_a447eccb061600c93426c8fe30cdc40f6}\label{struct_g_lvector4f_a447eccb061600c93426c8fe30cdc40f6}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!count@{count}}
+\index{count@{count}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily G\+Luint G\+Lvector4f\+::count}
+
+size of the vector (in elements) \mbox{\Hypertarget{struct_g_lvector4f_ac4496cfda78d106356b73b4cac41761d}\label{struct_g_lvector4f_ac4496cfda78d106356b73b4cac41761d}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!data@{data}}
+\index{data@{data}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily G\+Lfloat($\ast$ G\+Lvector4f\+::data)\mbox{[}4\mbox{]}}
+
+may be malloc\textquotesingle{}d or point to client data \mbox{\Hypertarget{struct_g_lvector4f_ab10bfdc37b34f053b520f30f13433b08}\label{struct_g_lvector4f_ab10bfdc37b34f053b520f30f13433b08}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!flags@{flags}}
+\index{flags@{flags}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily G\+Lbitfield G\+Lvector4f\+::flags}
+
+bitmask of V\+E\+C\+\_\+x flags \mbox{\Hypertarget{struct_g_lvector4f_ae3421fa4b48cb80b49f81fa5a04fd44f}\label{struct_g_lvector4f_ae3421fa4b48cb80b49f81fa5a04fd44f}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!size@{size}}
+\index{size@{size}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily G\+Luint G\+Lvector4f\+::size}
+
+2-\/4 for vertices and 1-\/4 for texcoords \mbox{\Hypertarget{struct_g_lvector4f_a37b2bc6b9bda2d1f0bb08485510d0ec4}\label{struct_g_lvector4f_a37b2bc6b9bda2d1f0bb08485510d0ec4}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!start@{start}}
+\index{start@{start}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily G\+Lfloat$\ast$ G\+Lvector4f\+::start}
+
+points somewhere inside of $<$data$>$ \mbox{\Hypertarget{struct_g_lvector4f_ad9723e4382903415fcc9dea824da1c2c}\label{struct_g_lvector4f_ad9723e4382903415fcc9dea824da1c2c}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!storage@{storage}}
+\index{storage@{storage}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{storage}{storage}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ G\+Lvector4f\+::storage}
+
+self-\/allocated storage \mbox{\Hypertarget{struct_g_lvector4f_a16eec0e05b68c2dc7983b0208dd39a52}\label{struct_g_lvector4f_a16eec0e05b68c2dc7983b0208dd39a52}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!storage\+\_\+count@{storage\+\_\+count}}
+\index{storage\+\_\+count@{storage\+\_\+count}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{storage\+\_\+count}{storage\_count}}
+{\footnotesize\ttfamily G\+Luint G\+Lvector4f\+::storage\+\_\+count}
+
+storage size in elements \mbox{\Hypertarget{struct_g_lvector4f_a33ad01f392807d777a925f726cacb97b}\label{struct_g_lvector4f_a33ad01f392807d777a925f726cacb97b}} 
+\index{G\+Lvector4f@{G\+Lvector4f}!stride@{stride}}
+\index{stride@{stride}!G\+Lvector4f@{G\+Lvector4f}}
+\subsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily G\+Luint G\+Lvector4f\+::stride}
+
+stride from one element to the next (in bytes) 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/math/m\+\_\+vector.\+h\end{DoxyCompactItemize}

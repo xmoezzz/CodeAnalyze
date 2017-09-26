@@ -1,0 +1,89 @@
+\hypertarget{msvideo1_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/win32/msvidc32/msvideo1.c 文件参考}
+\label{msvideo1_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/msvidc32/msvideo1.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/msvidc32/msvideo1.\+c}}
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$windef.\+h$>$}\newline
+{\ttfamily \#include $<$winbase.\+h$>$}\newline
+{\ttfamily \#include $<$wingdi.\+h$>$}\newline
+{\ttfamily \#include $<$vfw.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}msvidc32\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$wine/debug.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_msvideo1_context}{Msvideo1\+Context}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msvideo1_8c_ac655ab401ed399c26e30292b40ca5dea}\label{msvideo1_8c_ac655ab401ed399c26e30292b40ca5dea}} 
+\#\hyperlink{structdefine}{define} {\bfseries W\+I\+N32\+\_\+\+N\+O\+\_\+\+S\+T\+A\+T\+US}
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a62c692e3e6314806b9d12f6f3a7113df}\label{msvideo1_8c_a62c692e3e6314806b9d12f6f3a7113df}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+I\+N\+C\+\_\+\+W\+I\+N\+D\+O\+WS}
+\item 
+\mbox{\Hypertarget{msvideo1_8c_acc94034b1be19ae75621fe0140ffe09c}\label{msvideo1_8c_acc94034b1be19ae75621fe0140ffe09c}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+O\+M\+\_\+\+N\+O\+\_\+\+W\+I\+N\+D\+O\+W\+S\+\_\+H}
+\item 
+\mbox{\Hypertarget{msvideo1_8c_ab111a46ace24e489f8af4d334566c672}\label{msvideo1_8c_ab111a46ace24e489f8af4d334566c672}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+R\+A\+M\+\_\+\+M\+A\+G\+IC}~mmio\+F\+O\+U\+R\+CC(\textquotesingle{}\hyperlink{struct_c}{C}\textquotesingle{}, \textquotesingle{}R\textquotesingle{}, \textquotesingle{}\hyperlink{struct_a}{A}\textquotesingle{}, \textquotesingle{}M\textquotesingle{})
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a0901512179eb1b4d411739ab78a07ee3}\label{msvideo1_8c_a0901512179eb1b4d411739ab78a07ee3}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+S\+V\+C\+\_\+\+M\+A\+G\+IC}~mmio\+F\+O\+U\+R\+CC(\textquotesingle{}M\textquotesingle{}, \textquotesingle{}\hyperlink{struct_s}{S}\textquotesingle{}, \textquotesingle{}\hyperlink{struct_v}{V}\textquotesingle{}, \textquotesingle{}\hyperlink{struct_c}{C}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{msvideo1_8c_af45d0fe3a3f514cf6d2630d5259f4583}\label{msvideo1_8c_af45d0fe3a3f514cf6d2630d5259f4583}} 
+\#\hyperlink{structdefine}{define} {\bfseries W\+H\+A\+M\+\_\+\+M\+A\+G\+IC}~mmio\+F\+O\+U\+R\+CC(\textquotesingle{}W\textquotesingle{}, \textquotesingle{}H\textquotesingle{}, \textquotesingle{}\hyperlink{struct_a}{A}\textquotesingle{}, \textquotesingle{}M\textquotesingle{})
+\item 
+\mbox{\Hypertarget{msvideo1_8c_ab36ab0b5cb81109f5e03fbc0ae385210}\label{msvideo1_8c_ab36ab0b5cb81109f5e03fbc0ae385210}} 
+\#\hyperlink{structdefine}{define} {\bfseries compare\+\_\+fourcc}(fcc1,  fcc2)~(((fcc1)$^\wedge$(fcc2))\&$\sim$0x20202020)
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a86923ccb5d8d94a7ff871fc52455fc03}\label{msvideo1_8c_a86923ccb5d8d94a7ff871fc52455fc03}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+U\+NT}~256
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a85fa51b7e9e6cc1f39a4464d419632f0}\label{msvideo1_8c_a85fa51b7e9e6cc1f39a4464d419632f0}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+E\+\_\+16}(x)~((((const uint8\+\_\+t $\ast$)(x))\mbox{[}1\mbox{]} $<$$<$ 8) $\vert$ ((const uint8\+\_\+t $\ast$)(x))\mbox{[}0\mbox{]})
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries C\+H\+E\+C\+K\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+TR}(n)
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a4c435ed1f3c847d16394c703541d7d07}\label{msvideo1_8c_a4c435ed1f3c847d16394c703541d7d07}} 
+typedef B\+Y\+TE {\bfseries uint8\+\_\+t}
+\item 
+\mbox{\Hypertarget{msvideo1_8c_ab0cfccc008d65dda7f61b618a5425f19}\label{msvideo1_8c_ab0cfccc008d65dda7f61b618a5425f19}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_msvideo1_context}{Msvideo1\+Context} {\bfseries Msvideo1\+Context}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a8a9a45a672f6942f9ba43e0fc5a8c2db}\label{msvideo1_8c_a8a9a45a672f6942f9ba43e0fc5a8c2db}} 
+{\bfseries W\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+C\+H\+A\+N\+N\+EL} (msvidc32)
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a56c71c97aa59c375f28812dcd0cc0ed0}\label{msvideo1_8c_a56c71c97aa59c375f28812dcd0cc0ed0}} 
+L\+R\+E\+S\+U\+LT W\+I\+N\+A\+PI {\bfseries C\+R\+A\+M\+\_\+\+Driver\+Proc} (D\+W\+O\+R\+D\+\_\+\+P\+TR dw\+Driver\+Id, H\+D\+R\+VR hdrvr, U\+I\+NT msg, L\+P\+A\+R\+AM l\+Param1, L\+P\+A\+R\+AM l\+Param2)
+\item 
+\mbox{\Hypertarget{msvideo1_8c_a50c4a9f6dba992df0dbec38c57e43d8e}\label{msvideo1_8c_a50c4a9f6dba992df0dbec38c57e43d8e}} 
+B\+O\+OL W\+I\+N\+A\+PI {\bfseries Dll\+Main} (\hyperlink{interfacevoid}{H\+I\+N\+S\+T\+A\+N\+CE} h\+Module, D\+W\+O\+RD dw\+Reason, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} lp\+Reserved)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Microsoft Video-\/1 Decoder by Mike Melanson (\href{mailto:melanson@pcisys.net}{\tt melanson@pcisys.\+net}) For more information about the MS Video-\/1 format, visit\+: \href{http://www.pcisys.net/~melanson/codecs/}{\tt http\+://www.\+pcisys.\+net/$\sim$melanson/codecs/}
+
+\hyperlink{namespace_this}{This} decoder outputs either P\+A\+L8 or R\+G\+B555 data, depending on the whether a R\+GB palette was passed through palctrl; if it\textquotesingle{}s present, then the data is P\+A\+L8; R\+G\+B555 otherwise. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{msvideo1_8c_a86e3885a3cf96e2b797368d03e3b2295}\label{msvideo1_8c_a86e3885a3cf96e2b797368d03e3b2295}} 
+\index{msvideo1.\+c@{msvideo1.\+c}!C\+H\+E\+C\+K\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+TR@{C\+H\+E\+C\+K\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+TR}}
+\index{C\+H\+E\+C\+K\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+TR@{C\+H\+E\+C\+K\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+TR}!msvideo1.\+c@{msvideo1.\+c}}
+\subsubsection{\texorpdfstring{C\+H\+E\+C\+K\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+TR}{CHECK\_STREAM\_PTR}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} C\+H\+E\+C\+K\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+TR(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} ((stream\_ptr + n) > buf\_size ) \{ \(\backslash\)
+    WARN(\textcolor{stringliteral}{"stream\_ptr out of bounds (%d >= %d)\(\backslash\)n"}, \(\backslash\)
+      stream\_ptr + n, buf\_size); \(\backslash\)
+    return; \(\backslash\)
+  \}
+\end{DoxyCode}

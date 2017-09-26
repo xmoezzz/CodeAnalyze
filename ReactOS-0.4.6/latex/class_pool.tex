@@ -1,0 +1,64 @@
+\hypertarget{class_pool}{}\section{Pool类 参考}
+\label{class_pool}\index{Pool@{Pool}}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pool_a63f64768bbbc278d5da0a5f622e57d71}\label{class_pool_a63f64768bbbc278d5da0a5f622e57d71}} 
+{\bfseries Pool} (int, int, const char $\ast$)
+\item 
+\mbox{\Hypertarget{class_pool_a6821088999419668f5e1648bd019ed7a}\label{class_pool_a6821088999419668f5e1648bd019ed7a}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries new\+\_\+buffer} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_pool_a3dc60dcb713e5af6622170ce6403a60c}\label{class_pool_a3dc60dcb713e5af6622170ce6403a60c}} 
+\hyperlink{interfacevoid}{void} {\bfseries free\+\_\+buffer} (\hyperlink{interfacevoid}{void} $\ast$)
+\item 
+\mbox{\Hypertarget{class_pool_a12ce4e223f13fe707ae5e092fcf84d40}\label{class_pool_a12ce4e223f13fe707ae5e092fcf84d40}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} (\hyperlink{interfacevoid}{void})
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pool_a404a46932a48f96525144f59f38e68ca}\label{class_pool_a404a46932a48f96525144f59f38e68ca}} 
+enum {\bfseries Magic} \{ {\bfseries is\+\_\+allocated} = 0xf3a1, 
+{\bfseries is\+\_\+free} = 0xf1a2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pool_a742274f0f31566d43bb53339571b7001}\label{class_pool_a742274f0f31566d43bb53339571b7001}} 
+\hyperlink{class_buffer}{Buffer} $\ast$ {\bfseries freelist}
+\item 
+\mbox{\Hypertarget{class_pool_a6d33c2b57d3be18ba5748ba63261869f}\label{class_pool_a6d33c2b57d3be18ba5748ba63261869f}} 
+char $\ast$ {\bfseries blocklist} \mbox{[}N\+B\+L\+O\+C\+KS\mbox{]}
+\item 
+\mbox{\Hypertarget{class_pool_ad3d466568d26e449d10fa51f7d102138}\label{class_pool_ad3d466568d26e449d10fa51f7d102138}} 
+int {\bfseries nextblock}
+\item 
+\mbox{\Hypertarget{class_pool_abbfb0fd6c607c7b3c93da2c815f6bcce}\label{class_pool_abbfb0fd6c607c7b3c93da2c815f6bcce}} 
+char $\ast$ {\bfseries curblock}
+\item 
+\mbox{\Hypertarget{class_pool_a8010c40b5954ffe4588e01dc40181201}\label{class_pool_a8010c40b5954ffe4588e01dc40181201}} 
+int {\bfseries buffersize}
+\item 
+\mbox{\Hypertarget{class_pool_a97cb360b86c01bc172265143a862c1ed}\label{class_pool_a97cb360b86c01bc172265143a862c1ed}} 
+int {\bfseries nextsize}
+\item 
+\mbox{\Hypertarget{class_pool_a2c696e387366eb2c964cdebecb65ef72}\label{class_pool_a2c696e387366eb2c964cdebecb65ef72}} 
+int {\bfseries nextfree}
+\item 
+\mbox{\Hypertarget{class_pool_a6e2c6f05d09f0867d145ed784869682b}\label{class_pool_a6e2c6f05d09f0867d145ed784869682b}} 
+int {\bfseries initsize}
+\item 
+\mbox{\Hypertarget{class_pool_a296b8f7ed3d0ae1ccf2a8b7b6b84e1e7}\label{class_pool_a296b8f7ed3d0ae1ccf2a8b7b6b84e1e7}} 
+const char $\ast$ {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_pool_a9338ad73597d37372f3288528095d968}\label{class_pool_a9338ad73597d37372f3288528095d968}} 
+Magic {\bfseries magic}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/glu32/src/libnurbs/internals/bufpool.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/glu32/src/libnurbs/internals/bufpool.\+cc\end{DoxyCompactItemize}

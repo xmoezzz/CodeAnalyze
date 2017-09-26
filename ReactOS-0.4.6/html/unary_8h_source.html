@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/3rdparty/stlport/test/unit/unary.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_727636fe2c0c7ad7dfe8f2ab5613e0a0.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_7a10ed2504908d15b6369f837f12097a.html">stlport</a></li><li class="navelem"><a class="el" href="dir_d2905305e83c47c55f9ecff644e894a4.html">test</a></li><li class="navelem"><a class="el" href="dir_54e7cf9a9b8d11a21ccc175755369e93.html">unit</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">unary.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _unary_h</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _unary_h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cfloat&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span>    <span class="comment">//*TY 12/26/1998 - added to get unary_function</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if !defined (STLPORT) || defined (_STLP_USE_NAMESPACES)</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::unary_function;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structodd.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structodd.html">odd</a> : <span class="keyword">public</span> <a class="code" href="structunary__function.html">unary_function</a>&lt;int, bool&gt; {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">bool</span> operator()(<span class="keywordtype">int</span> n_)<span class="keyword"> const </span>{ <span class="keywordflow">return</span>(n_ % 2) == 1; }</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structpositive.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpositive.html">positive</a> : <span class="keyword">public</span> <a class="code" href="structunary__function.html">unary_function</a>&lt;int, bool&gt; {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">bool</span> operator()(<span class="keywordtype">int</span> n_)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> n_ &gt;= 0; }</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structsquare__root.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structsquare__root.html">square_root</a> : <span class="keyword">public</span> <a class="code" href="structunary__function.html">unary_function</a>&lt;double, double&gt; {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">double</span> operator()(<span class="keywordtype">double</span> x_)<span class="keyword"> const</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">  </span>{ return ::sqrt(x_); }</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // _unary_h</span></div><div class="ttc" id="structsquare__root_html"><div class="ttname"><a href="structsquare__root.html">square_root</a></div><div class="ttdef"><b>Definition:</b> unary.h:19</div></div>
+<div class="ttc" id="structodd_html"><div class="ttname"><a href="structodd.html">odd</a></div><div class="ttdef"><b>Definition:</b> unary.h:11</div></div>
+<div class="ttc" id="structunary__function_html"><div class="ttname"><a href="structunary__function.html">unary_function</a></div><div class="ttdef"><b>Definition:</b> _function_base.h:40</div></div>
+<div class="ttc" id="structpositive_html"><div class="ttname"><a href="structpositive.html">positive</a></div><div class="ttdef"><b>Definition:</b> unary.h:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ICorDebugThread接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_cor_debug_thread-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ICorDebugThread接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ICorDebugThread 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_cor_debug_thread.png" usemap="#ICorDebugThread_map" alt=""/>
+  <map id="ICorDebugThread_map" name="ICorDebugThread_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,113,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a81f9476553bba2046ff008a85a003a29"><td class="memItemLeft" align="right" valign="top"><a id="a81f9476553bba2046ff008a85a003a29"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CorDebugUserState</b> { <br />
+&#160;&#160;<b>USER_STOP_REQUESTED</b> = 0x01, 
+<b>USER_SUSPEND_REQUESTED</b> = 0x02, 
+<b>USER_BACKGROUND</b> = 0x04, 
+<b>USER_UNSTARTED</b> = 0x08, 
+<br />
+&#160;&#160;<b>USER_STOPPED</b> = 0x10, 
+<b>USER_WAIT_SLEEP_JOIN</b> = 0x20, 
+<b>USER_SUSPENDED</b> = 0x40, 
+<b>USER_UNSAFE_POINT</b> = 0x80
+<br />
+ }</td></tr>
+<tr class="separator:a81f9476553bba2046ff008a85a003a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecc1c2f0025681b59cd4d284537a165"><td class="memItemLeft" align="right" valign="top"><a id="a1ecc1c2f0025681b59cd4d284537a165"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> ICorDebugThread::CorDebugUserState&#160;</td><td class="memItemRight" valign="bottom"><b>CorDebugUserState</b></td></tr>
+<tr class="separator:a1ecc1c2f0025681b59cd4d284537a165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1a2cc1ca65fb822e47b6492317cc5d81"><td class="memItemLeft" align="right" valign="top"><a id="a1a2cc1ca65fb822e47b6492317cc5d81"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetProcess</b> ([out] <a class="el" href="interface_i_cor_debug_process.html">ICorDebugProcess</a> **ppProcess)</td></tr>
+<tr class="separator:a1a2cc1ca65fb822e47b6492317cc5d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7536ed741876a5151bc4955769474694"><td class="memItemLeft" align="right" valign="top"><a id="a7536ed741876a5151bc4955769474694"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetID</b> ([out] DWORD *pdwThreadId)</td></tr>
+<tr class="separator:a7536ed741876a5151bc4955769474694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa931f0d350486b6713a9cdef52620c46"><td class="memItemLeft" align="right" valign="top"><a id="aa931f0d350486b6713a9cdef52620c46"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetHandle</b> ([out] <a class="el" href="interfacevoid.html">HTHREAD</a> *phThreadHandle)</td></tr>
+<tr class="separator:aa931f0d350486b6713a9cdef52620c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f14f95eb4a111b8fb1525c76e208fa2"><td class="memItemLeft" align="right" valign="top"><a id="a7f14f95eb4a111b8fb1525c76e208fa2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetAppDomain</b> ([out] <a class="el" href="interface_i_cor_debug_app_domain.html">ICorDebugAppDomain</a> **ppAppDomain)</td></tr>
+<tr class="separator:a7f14f95eb4a111b8fb1525c76e208fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a01c70f686a0f6390f6d36ae1abd47"><td class="memItemLeft" align="right" valign="top"><a id="ab9a01c70f686a0f6390f6d36ae1abd47"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugState</b> ([in] CorDebugThreadState state)</td></tr>
+<tr class="separator:ab9a01c70f686a0f6390f6d36ae1abd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e9fb8eb133fd9db3269d494a1ef25b"><td class="memItemLeft" align="right" valign="top"><a id="ac7e9fb8eb133fd9db3269d494a1ef25b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugState</b> ([out] CorDebugThreadState *pState)</td></tr>
+<tr class="separator:ac7e9fb8eb133fd9db3269d494a1ef25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840627e5d1947eb425dc32759f1d0dc0"><td class="memItemLeft" align="right" valign="top"><a id="a840627e5d1947eb425dc32759f1d0dc0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserState</b> ([out] CorDebugUserState *pState)</td></tr>
+<tr class="separator:a840627e5d1947eb425dc32759f1d0dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a9ddeeb7f8500b2f5c52f15227d387"><td class="memItemLeft" align="right" valign="top"><a id="ac0a9ddeeb7f8500b2f5c52f15227d387"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentException</b> ([out] <a class="el" href="interface_i_cor_debug_value.html">ICorDebugValue</a> **ppExceptionObject)</td></tr>
+<tr class="separator:ac0a9ddeeb7f8500b2f5c52f15227d387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6caaf11f75eb227c29850ae0eb10ae2a"><td class="memItemLeft" align="right" valign="top"><a id="a6caaf11f75eb227c29850ae0eb10ae2a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ClearCurrentException</b> ()</td></tr>
+<tr class="separator:a6caaf11f75eb227c29850ae0eb10ae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e42f3985a7a47622705aa99b20a25a9"><td class="memItemLeft" align="right" valign="top"><a id="a7e42f3985a7a47622705aa99b20a25a9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStepper</b> ([out] <a class="el" href="interface_i_cor_debug_stepper.html">ICorDebugStepper</a> **ppStepper)</td></tr>
+<tr class="separator:a7e42f3985a7a47622705aa99b20a25a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0246cc5e22a20559eee4f4e3952d19e"><td class="memItemLeft" align="right" valign="top"><a id="aa0246cc5e22a20559eee4f4e3952d19e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateChains</b> ([out] <a class="el" href="interface_i_cor_debug_chain_enum.html">ICorDebugChainEnum</a> **ppChains)</td></tr>
+<tr class="separator:aa0246cc5e22a20559eee4f4e3952d19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71288f19e0836d1ab22d149cbee18bd4"><td class="memItemLeft" align="right" valign="top"><a id="a71288f19e0836d1ab22d149cbee18bd4"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveChain</b> ([out] <a class="el" href="interface_i_cor_debug_chain.html">ICorDebugChain</a> **ppChain)</td></tr>
+<tr class="separator:a71288f19e0836d1ab22d149cbee18bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f836c06c52aff765adc76f097c22a32"><td class="memItemLeft" align="right" valign="top"><a id="a7f836c06c52aff765adc76f097c22a32"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveFrame</b> ([out] <a class="el" href="interface_i_cor_debug_frame.html">ICorDebugFrame</a> **ppFrame)</td></tr>
+<tr class="separator:a7f836c06c52aff765adc76f097c22a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20bb584e05ed5d1f4e5d74c73f1c76b"><td class="memItemLeft" align="right" valign="top"><a id="ae20bb584e05ed5d1f4e5d74c73f1c76b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegisterSet</b> ([out] <a class="el" href="interface_i_cor_debug_register_set.html">ICorDebugRegisterSet</a> **ppRegisters)</td></tr>
+<tr class="separator:ae20bb584e05ed5d1f4e5d74c73f1c76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1032c1a659a2c5d2e59c5fb3cd01485"><td class="memItemLeft" align="right" valign="top"><a id="ae1032c1a659a2c5d2e59c5fb3cd01485"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEval</b> ([out] <a class="el" href="interface_i_cor_debug_eval.html">ICorDebugEval</a> **ppEval)</td></tr>
+<tr class="separator:ae1032c1a659a2c5d2e59c5fb3cd01485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af028212331bbbdbcc39c9f3a4470d1c8"><td class="memItemLeft" align="right" valign="top"><a id="af028212331bbbdbcc39c9f3a4470d1c8"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetObject</b> ([out] <a class="el" href="interface_i_cor_debug_value.html">ICorDebugValue</a> **ppObject)</td></tr>
+<tr class="separator:af028212331bbbdbcc39c9f3a4470d1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="cordebug_8idl_source.html">cordebug.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

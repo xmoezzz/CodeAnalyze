@@ -1,0 +1,98 @@
+\hypertarget{interface_i_moniker}{}\section{I\+Moniker接口 参考}
+\label{interface_i_moniker}\index{I\+Moniker@{I\+Moniker}}
+类 I\+Moniker 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_moniker}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_moniker_ad653a1be0d42c7c5c8ed9f5d63f648ce}\label{interface_i_moniker_ad653a1be0d42c7c5c8ed9f5d63f648ce}} 
+enum {\bfseries tag\+M\+K\+S\+YS} \{ \newline
+{\bfseries M\+K\+S\+Y\+S\+\_\+\+N\+O\+NE} = 0, 
+{\bfseries M\+K\+S\+Y\+S\+\_\+\+G\+E\+N\+E\+R\+I\+C\+C\+O\+M\+P\+O\+S\+I\+TE} = 1, 
+{\bfseries M\+K\+S\+Y\+S\+\_\+\+F\+I\+L\+E\+M\+O\+N\+I\+K\+ER} = 2, 
+{\bfseries M\+K\+S\+Y\+S\+\_\+\+A\+N\+T\+I\+M\+O\+N\+I\+K\+ER} = 3, 
+\newline
+{\bfseries M\+K\+S\+Y\+S\+\_\+\+I\+T\+E\+M\+M\+O\+N\+I\+K\+ER} = 4, 
+{\bfseries M\+K\+S\+Y\+S\+\_\+\+P\+O\+I\+N\+T\+E\+R\+M\+O\+N\+I\+K\+ER} = 5, 
+{\bfseries M\+K\+S\+Y\+S\+\_\+\+C\+L\+A\+S\+S\+M\+O\+N\+I\+K\+ER} = 7
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a48f8016d2349c1ac4c4cc35c55707ec6}\label{interface_i_moniker_a48f8016d2349c1ac4c4cc35c55707ec6}} 
+enum {\bfseries tag\+M\+K\+R\+E\+D\+U\+CE} \{ {\bfseries M\+K\+R\+R\+E\+D\+U\+C\+E\+\_\+\+O\+NE} = 3 $<$$<$ 16, 
+{\bfseries M\+K\+R\+R\+E\+D\+U\+C\+E\+\_\+\+T\+O\+U\+S\+ER} = 2 $<$$<$ 16, 
+{\bfseries M\+K\+R\+R\+E\+D\+U\+C\+E\+\_\+\+T\+H\+R\+O\+U\+G\+H\+U\+S\+ER} = 1 $<$$<$ 16, 
+{\bfseries M\+K\+R\+R\+E\+D\+U\+C\+E\+\_\+\+A\+LL} = 0
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a4edaf7cd64938c8c87018bee36a36c2f}\label{interface_i_moniker_a4edaf7cd64938c8c87018bee36a36c2f}} 
+typedef \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$ {\bfseries L\+P\+M\+O\+N\+I\+K\+ER}
+\item 
+\mbox{\Hypertarget{interface_i_moniker_aea58843bcb6d2841fde7a28fa58083c5}\label{interface_i_moniker_aea58843bcb6d2841fde7a28fa58083c5}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Moniker\+::tag\+M\+K\+S\+YS {\bfseries M\+K\+S\+YS}
+\item 
+\mbox{\Hypertarget{interface_i_moniker_ae04037ba9b588180b242b004d42ed855}\label{interface_i_moniker_ae04037ba9b588180b242b004d42ed855}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Moniker\+::tag\+M\+K\+R\+E\+D\+U\+CE {\bfseries M\+K\+R\+R\+E\+D\+U\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a5b908ab57f5fb29049b364f98f850772}\label{interface_i_moniker_a5b908ab57f5fb29049b364f98f850772}} 
+H\+R\+E\+S\+U\+LT {\bfseries Bind\+To\+Object} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid\+Result, \mbox{[}out, iid\+\_\+is(riid\+Result)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a874aeec7ac8a077ac978e1376ee50138}\label{interface_i_moniker_a874aeec7ac8a077ac978e1376ee50138}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Bind\+To\+Object} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid\+Result, \mbox{[}out, iid\+\_\+is(riid\+Result)\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppv\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a902ef045db76f8fe4d78928dcfd86f40}\label{interface_i_moniker_a902ef045db76f8fe4d78928dcfd86f40}} 
+H\+R\+E\+S\+U\+LT {\bfseries Bind\+To\+Storage} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Obj)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a96c82794cd66b0c51176b500b841dfc9}\label{interface_i_moniker_a96c82794cd66b0c51176b500b841dfc9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Bind\+To\+Storage} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppv\+Obj)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a5d508da1e365db6ceefdaf1afcae55df}\label{interface_i_moniker_a5d508da1e365db6ceefdaf1afcae55df}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reduce} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reduce\+How\+Far, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$$\ast$ppmk\+To\+Left, \mbox{[}out\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$$\ast$ppmk\+Reduced)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a131053015d0037ac8d22dd9aae6a5293}\label{interface_i_moniker_a131053015d0037ac8d22dd9aae6a5293}} 
+H\+R\+E\+S\+U\+LT {\bfseries Compose\+With} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+Right, \mbox{[}in\mbox{]} B\+O\+OL f\+Only\+If\+Not\+Generic, \mbox{[}out\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$$\ast$ppmk\+Composite)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_abaf46de07becfd0cda59c3f580fcda93}\label{interface_i_moniker_abaf46de07becfd0cda59c3f580fcda93}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum} (\mbox{[}in\mbox{]} B\+O\+OL f\+Forward, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_moniker}{I\+Enum\+Moniker} $\ast$$\ast$ppenum\+Moniker)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a2d095942c83d83a8397e8b8fb15b3e85}\label{interface_i_moniker_a2d095942c83d83a8397e8b8fb15b3e85}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Equal} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+Other\+Moniker)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_aa30d145ac064a6ea321362c998990016}\label{interface_i_moniker_aa30d145ac064a6ea321362c998990016}} 
+H\+R\+E\+S\+U\+LT {\bfseries Hash} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Hash)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_ae2c15951e6a52f15ff2e8b8f110baaec}\label{interface_i_moniker_ae2c15951e6a52f15ff2e8b8f110baaec}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Running} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+Newly\+Running)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a3dedbb42a2c7a2061511129f0ed57f3f}\label{interface_i_moniker_a3dedbb42a2c7a2061511129f0ed57f3f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Time\+Of\+Last\+Change} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}out\mbox{]} \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} $\ast$p\+File\+Time)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a966f58924f1431d9c3cb783dff637a6d}\label{interface_i_moniker_a966f58924f1431d9c3cb783dff637a6d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Inverse} (\mbox{[}out\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$$\ast$ppmk)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a0293b77bf5588d19aebbd2f6222e0f4c}\label{interface_i_moniker_a0293b77bf5588d19aebbd2f6222e0f4c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Common\+Prefix\+With} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+Other, \mbox{[}out\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$$\ast$ppmk\+Prefix)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_ad6688f9a72b6ce2dc182b8bae8d41dad}\label{interface_i_moniker_ad6688f9a72b6ce2dc182b8bae8d41dad}} 
+H\+R\+E\+S\+U\+LT {\bfseries Relative\+Path\+To} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+Other, \mbox{[}out\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$$\ast$ppmk\+Rel\+Path)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a799d1eb85554a06431add7b2cf5e269c}\label{interface_i_moniker_a799d1eb85554a06431add7b2cf5e269c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Display\+Name} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}out\mbox{]} L\+P\+O\+L\+E\+S\+TR $\ast$ppsz\+Display\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_ada8b728fca8b65b3f5d74a2984831e83}\label{interface_i_moniker_ada8b728fca8b65b3f5d74a2984831e83}} 
+H\+R\+E\+S\+U\+LT {\bfseries Parse\+Display\+Name} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$pmk\+To\+Left, \mbox{[}in\mbox{]} L\+P\+O\+L\+E\+S\+TR psz\+Display\+Name, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pch\+Eaten, \mbox{[}out\mbox{]} \hyperlink{interface_i_moniker}{I\+Moniker} $\ast$$\ast$ppmk\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_moniker_a625d1e18ab485a291bf2ed45123c3cdd}\label{interface_i_moniker_a625d1e18ab485a291bf2ed45123c3cdd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+System\+Moniker} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Mksys)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

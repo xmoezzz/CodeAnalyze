@@ -1,0 +1,36 @@
+\hypertarget{s__alpha_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/swrast/s\+\_\+alpha.c 文件参考}
+\label{s__alpha_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/s\+\_\+alpha.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/s\+\_\+alpha.\+c}}
+
+
+Functions to apply alpha test.  
+
+
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{s__alpha_8c_a1ef517f3377f6055450e32639c8e9d4a}\label{s__alpha_8c_a1ef517f3377f6055450e32639c8e9d4a}} 
+\#\hyperlink{structdefine}{define} {\bfseries A\+L\+P\+H\+A\+\_\+\+T\+E\+ST}(A\+L\+P\+HA,  L\+O\+O\+P\+\_\+\+C\+O\+DE)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lint \hyperlink{s__alpha_8c_a9dfa2bbe5cc10ad206ef47bdb2a6c4a9}{\+\_\+swrast\+\_\+alpha\+\_\+test} (const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{structsw__span}{S\+Wspan} $\ast$span)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions to apply alpha test. 
+
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{s__alpha_8c_a9dfa2bbe5cc10ad206ef47bdb2a6c4a9}\label{s__alpha_8c_a9dfa2bbe5cc10ad206ef47bdb2a6c4a9}} 
+\index{s\+\_\+alpha.\+c@{s\+\_\+alpha.\+c}!\+\_\+swrast\+\_\+alpha\+\_\+test@{\+\_\+swrast\+\_\+alpha\+\_\+test}}
+\index{\+\_\+swrast\+\_\+alpha\+\_\+test@{\+\_\+swrast\+\_\+alpha\+\_\+test}!s\+\_\+alpha.\+c@{s\+\_\+alpha.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+alpha\+\_\+test()}{\_swrast\_alpha\_test()}}
+{\footnotesize\ttfamily G\+Lint \+\_\+swrast\+\_\+alpha\+\_\+test (\begin{DoxyParamCaption}\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{structsw__span}{S\+Wspan} $\ast$}]{span }\end{DoxyParamCaption})}
+
+Perform the alpha test for an array of pixels. For pixels that fail the test, mask\mbox{[}i\mbox{]} will be set to 0. \begin{DoxyReturn}{返回}
+0 if all pixels in the span failed the alpha test, 1 if one or more pixels passed the alpha test. 
+\end{DoxyReturn}

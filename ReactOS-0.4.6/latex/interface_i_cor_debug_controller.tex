@@ -1,0 +1,47 @@
+\hypertarget{interface_i_cor_debug_controller}{}\section{I\+Cor\+Debug\+Controller接口 参考}
+\label{interface_i_cor_debug_controller}\index{I\+Cor\+Debug\+Controller@{I\+Cor\+Debug\+Controller}}
+类 I\+Cor\+Debug\+Controller 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_cor_debug_controller}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a2679b0711f9fc3b5df32302704edcc5b}\label{interface_i_cor_debug_controller_a2679b0711f9fc3b5df32302704edcc5b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stop} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Timeout\+Ignored)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a0809a840adbe17071c72e41904fe8865}\label{interface_i_cor_debug_controller_a0809a840adbe17071c72e41904fe8865}} 
+H\+R\+E\+S\+U\+LT {\bfseries Continue} (\mbox{[}in\mbox{]} B\+O\+OL f\+Is\+Out\+Of\+Band)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a1edb9fa8f9cb52d5358c03b73314ba13}\label{interface_i_cor_debug_controller_a1edb9fa8f9cb52d5358c03b73314ba13}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Running} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$pb\+Running)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a678b6d4e6aa6d1e865e602ff24126587}\label{interface_i_cor_debug_controller_a678b6d4e6aa6d1e865e602ff24126587}} 
+H\+R\+E\+S\+U\+LT {\bfseries Has\+Queued\+Callbacks} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$p\+Thread, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pb\+Queued)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a3671304348d842ec6d71e26e060d8032}\label{interface_i_cor_debug_controller_a3671304348d842ec6d71e26e060d8032}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enumerate\+Threads} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_thread_enum}{I\+Cor\+Debug\+Thread\+Enum} $\ast$$\ast$pp\+Threads)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a503de392a2680b9514378796422af457}\label{interface_i_cor_debug_controller_a503de392a2680b9514378796422af457}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+All\+Threads\+Debug\+State} (\mbox{[}in\mbox{]} Cor\+Debug\+Thread\+State state, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$p\+Except\+This\+Thread)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a6de4759512c3902d57aff1368df883d1}\label{interface_i_cor_debug_controller_a6de4759512c3902d57aff1368df883d1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Detach} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a9caf6984928d92f4ae9a77c30022aabd}\label{interface_i_cor_debug_controller_a9caf6984928d92f4ae9a77c30022aabd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Terminate} (\mbox{[}in\mbox{]} U\+I\+NT exit\+Code)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_aa409dfe2ada5412141790f15b82bcf2e}\label{interface_i_cor_debug_controller_aa409dfe2ada5412141790f15b82bcf2e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Can\+Commit\+Changes} (\mbox{[}in\mbox{]} U\+L\+O\+NG c\+Snapshots, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_edit_and_continue_snapshot}{I\+Cor\+Debug\+Edit\+And\+Continue\+Snapshot} $\ast$p\+Snapshots\mbox{[}$\,$\mbox{]}, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_error_info_enum}{I\+Cor\+Debug\+Error\+Info\+Enum} $\ast$$\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_controller_a95ea740b6827a49df4b5ebfb25da642e}\label{interface_i_cor_debug_controller_a95ea740b6827a49df4b5ebfb25da642e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Commit\+Changes} (\mbox{[}in\mbox{]} U\+L\+O\+NG c\+Snapshots, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_edit_and_continue_snapshot}{I\+Cor\+Debug\+Edit\+And\+Continue\+Snapshot} $\ast$p\+Snapshots\mbox{[}$\,$\mbox{]}, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_error_info_enum}{I\+Cor\+Debug\+Error\+Info\+Enum} $\ast$$\ast$p\+Error)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

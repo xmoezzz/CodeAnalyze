@@ -1,0 +1,238 @@
+\hypertarget{bitset_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/bitset.h 文件参考}
+\label{bitset_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/bitset.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/bitset.\+h}}
+
+
+Bitset of arbitrary size definitions.  
+
+
+{\ttfamily \#include \char`\"{}imports.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{bitset_8h_ab93840a225e0bcbf8e88495695c24ad6}\label{bitset_8h_ab93840a225e0bcbf8e88495695c24ad6}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+RD}~G\+Luint
+\item 
+\mbox{\Hypertarget{bitset_8h_a28c2171f97c141e58bbe5b3c72a85e1a}\label{bitset_8h_a28c2171f97c141e58bbe5b3c72a85e1a}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+R\+D\+B\+I\+TS}~(sizeof (B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+RD) $\ast$ 8)
+\item 
+\mbox{\Hypertarget{bitset_8h_a91799091d2829a43664c1f9f922a2472}\label{bitset_8h_a91799091d2829a43664c1f9f922a2472}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+D\+E\+C\+L\+A\+RE}(\hyperlink{structname}{name},  size)~B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+RD \hyperlink{structname}{name}\mbox{[}((size) + B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+R\+D\+B\+I\+TS -\/ 1) / B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+R\+D\+B\+I\+TS\mbox{]}
+\item 
+\mbox{\Hypertarget{bitset_8h_ad08bff24b6497d84aacbde93c4102ac7}\label{bitset_8h_ad08bff24b6497d84aacbde93c4102ac7}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+C\+O\+PY}(x,  y)~memcpy( (x), (y), sizeof (x) )
+\item 
+\mbox{\Hypertarget{bitset_8h_a630045e91cdad12f82311f9c971aec7c}\label{bitset_8h_a630045e91cdad12f82311f9c971aec7c}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+E\+Q\+U\+AL}(x,  y)~(memcmp( (x), (y), sizeof (x) ) == 0)
+\item 
+\mbox{\Hypertarget{bitset_8h_a05e6be7bf6ec749066013b8c63c0dfbd}\label{bitset_8h_a05e6be7bf6ec749066013b8c63c0dfbd}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+Z\+E\+RO}(x)~memset( (x), 0, sizeof (x) )
+\item 
+\mbox{\Hypertarget{bitset_8h_a851b7f9cca23686c41e746c4fb40f434}\label{bitset_8h_a851b7f9cca23686c41e746c4fb40f434}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+O\+N\+ES}(x)~memset( (x), 0xff, sizeof (x) )
+\item 
+\mbox{\Hypertarget{bitset_8h_aba2e460b56823cad503a2376771798cf}\label{bitset_8h_aba2e460b56823cad503a2376771798cf}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+B\+I\+T\+W\+O\+RD}(b)~((b) / B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+R\+D\+B\+I\+TS)
+\item 
+\mbox{\Hypertarget{bitset_8h_ad3b06dfeaa02ed63f5f9f7f19300ee37}\label{bitset_8h_ad3b06dfeaa02ed63f5f9f7f19300ee37}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+B\+IT}(b)~(1 $<$$<$ ((b) \% B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+R\+D\+B\+I\+TS))
+\item 
+\mbox{\Hypertarget{bitset_8h_a8146e8fdb6cea9d9436f524018f78e18}\label{bitset_8h_a8146e8fdb6cea9d9436f524018f78e18}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+ST}(x,  b)~((x)\mbox{[}B\+I\+T\+S\+E\+T\+\_\+\+B\+I\+T\+W\+O\+RD(b)\mbox{]} \& B\+I\+T\+S\+E\+T\+\_\+\+B\+IT(b))
+\item 
+\mbox{\Hypertarget{bitset_8h_acd05a40271560ec43f91682902f6f2a9}\label{bitset_8h_acd05a40271560ec43f91682902f6f2a9}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+S\+ET}(x,  b)~((x)\mbox{[}B\+I\+T\+S\+E\+T\+\_\+\+B\+I\+T\+W\+O\+RD(b)\mbox{]} $\vert$= B\+I\+T\+S\+E\+T\+\_\+\+B\+IT(b))
+\item 
+\mbox{\Hypertarget{bitset_8h_a60459793adecd70672acceec6e8c6908}\label{bitset_8h_a60459793adecd70672acceec6e8c6908}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+AR}(x,  b)~((x)\mbox{[}B\+I\+T\+S\+E\+T\+\_\+\+B\+I\+T\+W\+O\+RD(b)\mbox{]} \&= $\sim$B\+I\+T\+S\+E\+T\+\_\+\+B\+IT(b))
+\item 
+\mbox{\Hypertarget{bitset_8h_a49f3b4b62676e9a416b708d777e5cc25}\label{bitset_8h_a49f3b4b62676e9a416b708d777e5cc25}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+M\+A\+SK}(b)~((b) == B\+I\+T\+S\+E\+T\+\_\+\+W\+O\+R\+D\+B\+I\+TS ? $\sim$0 \+: B\+I\+T\+S\+E\+T\+\_\+\+B\+IT(b) -\/ 1)
+\item 
+\mbox{\Hypertarget{bitset_8h_a0e41a728de459ba23a1b6a3dc078f9b8}\label{bitset_8h_a0e41a728de459ba23a1b6a3dc078f9b8}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+R\+A\+N\+GE}(b,  e)~(B\+I\+T\+S\+E\+T\+\_\+\+M\+A\+SK((e) + 1) \& $\sim$B\+I\+T\+S\+E\+T\+\_\+\+M\+A\+SK(b))
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\mbox{\Hypertarget{bitset_8h_aa900d2b3e3c7725a1adb3dc762bb771b}\label{bitset_8h_aa900d2b3e3c7725a1adb3dc762bb771b}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T\+\_\+\+F\+FS}(x)~\+\_\+\+\_\+bitset\+\_\+ffs(x, Elements(x))
+\item 
+\mbox{\Hypertarget{bitset_8h_a6d21563e128c015bcab4a758cfe4d8dc}\label{bitset_8h_a6d21563e128c015bcab4a758cfe4d8dc}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+W\+O\+RD}~G\+Luint
+\item 
+\mbox{\Hypertarget{bitset_8h_aef31e7f83ec34743c9a6f45eb7ca8365}\label{bitset_8h_aef31e7f83ec34743c9a6f45eb7ca8365}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+W\+O\+R\+D\+B\+I\+TS}~(sizeof (B\+I\+T\+S\+E\+T64\+\_\+\+W\+O\+RD) $\ast$ 8)
+\item 
+\mbox{\Hypertarget{bitset_8h_a280fe39ae3c4b7e63107532913f81f1f}\label{bitset_8h_a280fe39ae3c4b7e63107532913f81f1f}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+D\+E\+C\+L\+A\+RE}(\hyperlink{structname}{name},  size)~G\+Luint \hyperlink{structname}{name}\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{bitset_8h_a2dffc2c6852b4115a67c363d9436c810}\label{bitset_8h_a2dffc2c6852b4115a67c363d9436c810}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+C\+O\+PY}(x,  y)~do \{ (x)\mbox{[}0\mbox{]} = (y)\mbox{[}0\mbox{]}; (x)\mbox{[}1\mbox{]} = (y)\mbox{[}1\mbox{]}; \} while (0)
+\item 
+\mbox{\Hypertarget{bitset_8h_a75ecddec753456fda85c711da73d8411}\label{bitset_8h_a75ecddec753456fda85c711da73d8411}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+E\+Q\+U\+AL}(x,  y)~( (x)\mbox{[}0\mbox{]} == (y)\mbox{[}0\mbox{]} \&\& (x)\mbox{[}1\mbox{]} == (y)\mbox{[}1\mbox{]} )
+\item 
+\mbox{\Hypertarget{bitset_8h_a9383c1203fb7e1d679823c413dbfabeb}\label{bitset_8h_a9383c1203fb7e1d679823c413dbfabeb}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+Z\+E\+RO}(x)~do \{ (x)\mbox{[}0\mbox{]} = 0; (x)\mbox{[}1\mbox{]} = 0; \} while (0)
+\item 
+\mbox{\Hypertarget{bitset_8h_a56adee5fce13596b5feda11a71746603}\label{bitset_8h_a56adee5fce13596b5feda11a71746603}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+O\+N\+ES}(x)~do \{ (x)\mbox{[}0\mbox{]} = 0x\+F\+F; (x)\mbox{[}1\mbox{]} = 0x\+F\+F; \} while (0)
+\item 
+\mbox{\Hypertarget{bitset_8h_a101a0c03d538a53b6a05d5c63e55a358}\label{bitset_8h_a101a0c03d538a53b6a05d5c63e55a358}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+B\+I\+T\+W\+O\+RD}(b)~((b) / B\+I\+T\+S\+E\+T64\+\_\+\+W\+O\+R\+D\+B\+I\+TS)
+\item 
+\mbox{\Hypertarget{bitset_8h_a0e193f150ab77835f079bea58edf4db7}\label{bitset_8h_a0e193f150ab77835f079bea58edf4db7}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+B\+IT}(b)~(1 $<$$<$ ((b) \% B\+I\+T\+S\+E\+T64\+\_\+\+W\+O\+R\+D\+B\+I\+TS))
+\item 
+\mbox{\Hypertarget{bitset_8h_a3344b5590c879635077da243156d35e3}\label{bitset_8h_a3344b5590c879635077da243156d35e3}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+ST}(x,  b)~((x)\mbox{[}B\+I\+T\+S\+E\+T64\+\_\+\+B\+I\+T\+W\+O\+RD(b)\mbox{]} \& B\+I\+T\+S\+E\+T64\+\_\+\+B\+IT(b))
+\item 
+\mbox{\Hypertarget{bitset_8h_a8fc44ca0ed0d2ea1fd559dbacc85be48}\label{bitset_8h_a8fc44ca0ed0d2ea1fd559dbacc85be48}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+S\+ET}(x,  b)~((x)\mbox{[}B\+I\+T\+S\+E\+T64\+\_\+\+B\+I\+T\+W\+O\+RD(b)\mbox{]} $\vert$= B\+I\+T\+S\+E\+T64\+\_\+\+B\+IT(b))
+\item 
+\mbox{\Hypertarget{bitset_8h_a7a52d6abf4e08d63194a6713bc6a76fc}\label{bitset_8h_a7a52d6abf4e08d63194a6713bc6a76fc}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+AR}(x,  b)~((x)\mbox{[}B\+I\+T\+S\+E\+T64\+\_\+\+B\+I\+T\+W\+O\+RD(b)\mbox{]} \&= $\sim$B\+I\+T\+S\+E\+T64\+\_\+\+B\+IT(b))
+\item 
+\mbox{\Hypertarget{bitset_8h_a2c22476888227aa80d3d3fbe07864b96}\label{bitset_8h_a2c22476888227aa80d3d3fbe07864b96}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+M\+A\+SK}(b)~((b) == B\+I\+T\+S\+E\+T64\+\_\+\+W\+O\+R\+D\+B\+I\+TS ? $\sim$0 \+: B\+I\+T\+S\+E\+T64\+\_\+\+B\+IT(b) -\/ 1)
+\item 
+\mbox{\Hypertarget{bitset_8h_ac041a73cfd0560de270b94afb4cef15b}\label{bitset_8h_ac041a73cfd0560de270b94afb4cef15b}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+R\+A\+N\+GE}(b,  e)~(B\+I\+T\+S\+E\+T64\+\_\+\+M\+A\+SK((e) + 1) \& $\sim$B\+I\+T\+S\+E\+T64\+\_\+\+M\+A\+SK(b))
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+U\+B\+R\+A\+N\+GE}(x,  b,  e)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}(x,  b,  e)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Bitset of arbitrary size definitions. 
+
+\begin{DoxyAuthor}{作者}
+Michal Krol 
+\end{DoxyAuthor}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{bitset_8h_a26c10d0feb7bd456da4ff049d45c3803}\label{bitset_8h_a26c10d0feb7bd456da4ff049d45c3803}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}{BITSET64\_CLEAR\_RANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET64\_BITWORD(b) == BITSET64\_BITWORD(e) ? \(\backslash\)
+   (BITSET64\_CLEAR\_SUBRANGE(x, b, e)) : \(\backslash\)
+   (BITSET64\_CLEAR\_SUBRANGE(x, b, BITSET64\_WORDBITS - 1) | \(\backslash\)
+    BITSET64\_CLEAR\_SUBRANGE(x, BITSET64\_WORDBITS, e)))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_ac9f31302274af8efe2b2e9269a08702d}\label{bitset_8h_ac9f31302274af8efe2b2e9269a08702d}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+U\+B\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+U\+B\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+U\+B\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+U\+B\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+U\+B\+R\+A\+N\+GE}{BITSET64\_CLEAR\_SUBRANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T64\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+U\+B\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET64\_BITWORD(b) == BITSET64\_BITWORD(e) ? \(\backslash\)
+   ((x)[BITSET64\_BITWORD(b)] &= ~BITSET64\_RANGE(b, e)) : \(\backslash\)
+   (assert (!\textcolor{stringliteral}{"BITSET64\_CLEAR\_RANGE: bit range crosses word boundary"}), 0))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_a37b19c3ab693c72484cca71554485b01}\label{bitset_8h_a37b19c3ab693c72484cca71554485b01}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}{BITSET64\_SET\_RANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET64\_BITWORD(b) == BITSET64\_BITWORD(e) ? \(\backslash\)
+   (BITSET64\_SET\_SUBRANGE(x, b, e)) : \(\backslash\)
+   (BITSET64\_SET\_SUBRANGE(x, b, BITSET64\_WORDBITS - 1) | \(\backslash\)
+    BITSET64\_SET\_SUBRANGE(x, BITSET64\_WORDBITS, e)))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_a73ee192714fc83868bc47ce253437c14}\label{bitset_8h_a73ee192714fc83868bc47ce253437c14}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}{BITSET64\_SET\_SUBRANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T64\+\_\+\+S\+E\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET64\_BITWORD(b) == BITSET64\_BITWORD(e) ? \(\backslash\)
+   ((x)[BITSET64\_BITWORD(b)] |= BITSET64\_RANGE(b, e)) : \(\backslash\)
+   (assert (!\textcolor{stringliteral}{"BITSET64\_SET\_RANGE: bit range crosses word boundary"}), 0))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_a7e2871507b0dfabd1344e6a8beda4db3}\label{bitset_8h_a7e2871507b0dfabd1344e6a8beda4db3}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}{BITSET64\_TEST\_RANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET64\_BITWORD(b) == BITSET64\_BITWORD(e) ? \(\backslash\)
+   (BITSET64\_TEST\_SUBRANGE(x, b, e)) : \(\backslash\)
+   (BITSET64\_TEST\_SUBRANGE(x, b, BITSET64\_WORDBITS - 1) | \(\backslash\)
+    BITSET64\_TEST\_SUBRANGE(x, BITSET64\_WORDBITS, e)))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_a27410a8c940afcdc49aa781160f4b632}\label{bitset_8h_a27410a8c940afcdc49aa781160f4b632}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE}{BITSET64\_TEST\_SUBRANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T64\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+B\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET64\_BITWORD(b) == BITSET64\_BITWORD(e) ? \(\backslash\)
+   ((x)[BITSET64\_BITWORD(b)] & BITSET64\_RANGE(b, e)) : \(\backslash\)
+   (assert (!\textcolor{stringliteral}{"BITSET64\_TEST\_RANGE: bit range crosses word boundary"}), 0))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_a32a6ff4cea68c87e5260adcae7baab19}\label{bitset_8h_a32a6ff4cea68c87e5260adcae7baab19}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE}{BITSET\_CLEAR\_RANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET\_BITWORD(b) == BITSET\_BITWORD(e) ? \(\backslash\)
+   ((x)[BITSET\_BITWORD(b)] &= ~BITSET\_RANGE(b, e)) : \(\backslash\)
+   (assert (!\textcolor{stringliteral}{"BITSET\_CLEAR\_RANGE: bit range crosses word boundary"}), 0))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_a5301c046c4b2595047453db2d6e88f90}\label{bitset_8h_a5301c046c4b2595047453db2d6e88f90}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE}{BITSET\_SET\_RANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T\+\_\+\+S\+E\+T\+\_\+\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET\_BITWORD(b) == BITSET\_BITWORD(e) ? \(\backslash\)
+   ((x)[BITSET\_BITWORD(b)] |= BITSET\_RANGE(b, e)) : \(\backslash\)
+   (assert (!\textcolor{stringliteral}{"BITSET\_SET\_RANGE: bit range crosses word boundary"}), 0))
+\end{DoxyCode}
+\mbox{\Hypertarget{bitset_8h_a7c6b639ce6dc3c1bd81270576efb0495}\label{bitset_8h_a7c6b639ce6dc3c1bd81270576efb0495}} 
+\index{bitset.\+h@{bitset.\+h}!B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}}
+\index{B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE@{B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}!bitset.\+h@{bitset.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE}{BITSET\_TEST\_RANGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+I\+T\+S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{b,  }\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(BITSET\_BITWORD(b) == BITSET\_BITWORD(e) ? \(\backslash\)
+   ((x)[BITSET\_BITWORD(b)] & BITSET\_RANGE(b, e)) : \(\backslash\)
+   (assert (!\textcolor{stringliteral}{"BITSET\_TEST\_RANGE: bit range crosses word boundary"}), 0))
+\end{DoxyCode}

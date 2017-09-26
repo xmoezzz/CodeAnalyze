@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/win32ss/user/winsrv/concfg/font.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_ddfd06bba35866cf4fe2acc35285f4c9.html">win32ss</a></li><li class="navelem"><a class="el" href="dir_0116d2930833c7d5f73ccf8d5a4c3370.html">user</a></li><li class="navelem"><a class="el" href="dir_5625f99b1c3420ecb64ad7c5cabf9554.html">winsrv</a></li><li class="navelem"><a class="el" href="dir_383d8a3b7c2b37f5b7e712a82c61cea7.html">concfg</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">font.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * COPYRIGHT:       See COPYING in the top level directory</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * PROJECT:         ReactOS Console Server DLL</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * FILE:            win32ss/user/winsrv/concfg/font.h</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * PURPOSE:         Console Fonts Management</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * PROGRAMMERS:     Hermes Belusca-Maito (hermes.belusca@sfr.fr)</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *                  Katayama Hirofumi MZ (katayama.hirofumi.mz@gmail.com)</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/* DEFINES ********************************************************************/</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define CP_SHIFTJIS 932 // Japanese Shift-JIS</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define CP_HANGUL   949 // Korean Hangul</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define CP_GB2312   936 // Chinese Simplified (GB2312)</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define CP_BIG5     950 // Chinese Traditional (Big5)</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/* IsFarEastCP(CodePage) */</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define IsCJKCodePage(CodePage) \</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    ((CodePage) == CP_SHIFTJIS || (CodePage) == CP_HANGUL || \</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">     (CodePage) == CP_BIG5     || (CodePage) == CP_GB2312)</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/* FUNCTIONS ******************************************************************/</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;BYTE</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;CodePageToCharSet(</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    IN UINT CodePage);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;HFONT</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;CreateConsoleFontEx(</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    IN LONG Height,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    IN LONG Width OPTIONAL,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    IN OUT LPWSTR FaceName, <span class="comment">// Points to a WCHAR array of LF_FACESIZE elements</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    IN ULONG <a class="code" href="class_font_family.html">FontFamily</a>,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    IN ULONG FontWeight,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    IN UINT  CodePage);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;HFONT</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;CreateConsoleFont2(</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    IN LONG Height,</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    IN LONG Width OPTIONAL,</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    IN OUT <a class="code" href="struct___c_o_n_s_o_l_e___s_t_a_t_e___i_n_f_o.html">PCONSOLE_STATE_INFO</a> ConsoleInfo);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;HFONT</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;CreateConsoleFont(</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    IN OUT <a class="code" href="struct___c_o_n_s_o_l_e___s_t_a_t_e___i_n_f_o.html">PCONSOLE_STATE_INFO</a> ConsoleInfo);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;BOOL</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;GetFontCellSize(</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    IN HDC hDC OPTIONAL,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    IN HFONT hFont,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    OUT PUINT Height,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    OUT PUINT Width);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;BOOL</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;IsValidConsoleFont2(</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    IN <a class="code" href="structtag_l_o_g_f_o_n_t_w.html">PLOGFONTW</a> lplf,</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    IN <a class="code" href="structtag_n_e_w_t_e_x_t_m_e_t_r_i_c_w.html">PNEWTEXTMETRICW</a> lpntm,</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    IN DWORD FontType,</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    IN UINT CodePage);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;BOOL</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;IsValidConsoleFont(</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    IN LPCWSTR FaceName,</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    IN UINT CodePage);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/* EOF */</span></div><div class="ttc" id="structtag_l_o_g_f_o_n_t_w_html"><div class="ttname"><a href="structtag_l_o_g_f_o_n_t_w.html">tagLOGFONTW</a></div><div class="ttdef"><b>Definition:</b> wingdi.h:1873</div></div>
+<div class="ttc" id="class_font_family_html"><div class="ttname"><a href="class_font_family.html">FontFamily</a></div><div class="ttdef"><b>Definition:</b> gdiplusheaders.h:507</div></div>
+<div class="ttc" id="struct___c_o_n_s_o_l_e___s_t_a_t_e___i_n_f_o_html"><div class="ttname"><a href="struct___c_o_n_s_o_l_e___s_t_a_t_e___i_n_f_o.html">_CONSOLE_STATE_INFO</a></div><div class="ttdef"><b>Definition:</b> settings.h:27</div></div>
+<div class="ttc" id="structtag_n_e_w_t_e_x_t_m_e_t_r_i_c_w_html"><div class="ttname"><a href="structtag_n_e_w_t_e_x_t_m_e_t_r_i_c_w.html">tagNEWTEXTMETRICW</a></div><div class="ttdef"><b>Definition:</b> wingdi.h:2620</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

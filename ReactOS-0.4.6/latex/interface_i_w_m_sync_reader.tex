@@ -1,0 +1,80 @@
+\hypertarget{interface_i_w_m_sync_reader}{}\section{I\+W\+M\+Sync\+Reader接口 参考}
+\label{interface_i_w_m_sync_reader}\index{I\+W\+M\+Sync\+Reader@{I\+W\+M\+Sync\+Reader}}
+类 I\+W\+M\+Sync\+Reader 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_w_m_sync_reader}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a226e9c3c339d2cf02a2e479e15aeb65c}\label{interface_i_w_m_sync_reader_a226e9c3c339d2cf02a2e479e15aeb65c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwsz\+Filename)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a690e3fa7dc36b338255f38dcda34f3da}\label{interface_i_w_m_sync_reader_a690e3fa7dc36b338255f38dcda34f3da}} 
+H\+R\+E\+S\+U\+LT {\bfseries Close} ()
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_ad9dd05e310e2a83a5f9248e49a06b2a2}\label{interface_i_w_m_sync_reader_ad9dd05e310e2a83a5f9248e49a06b2a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Range} (\mbox{[}in\mbox{]} Q\+W\+O\+RD cns\+Start\+Time, \mbox{[}in\mbox{]} L\+O\+N\+G\+L\+O\+NG cns\+Duration)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a6736e750368875bd76ad30b5119cc701}\label{interface_i_w_m_sync_reader_a6736e750368875bd76ad30b5119cc701}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Range\+By\+Frame} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}in\mbox{]} Q\+W\+O\+RD qw\+Frame\+Number, \mbox{[}in\mbox{]} L\+O\+N\+G\+L\+O\+NG c\+Frames\+To\+Read)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_ae1365ada2a1ed32884c5ad9243cd87cc}\label{interface_i_w_m_sync_reader_ae1365ada2a1ed32884c5ad9243cd87cc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Next\+Sample} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}out\mbox{]} \hyperlink{interface_i_n_s_s_buffer}{I\+N\+S\+S\+Buffer} $\ast$$\ast$pp\+Sample, \mbox{[}out\mbox{]} Q\+W\+O\+RD $\ast$pcns\+Sample\+Time, \mbox{[}out\mbox{]} Q\+W\+O\+RD $\ast$pcns\+Duration, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Flags, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Output\+Num, \mbox{[}out\mbox{]} W\+O\+RD $\ast$pw\+Stream\+Num)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a42c0d32050cfcb09548dd2672db17fcc}\label{interface_i_w_m_sync_reader_a42c0d32050cfcb09548dd2672db17fcc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Streams\+Selected} (\mbox{[}in\mbox{]} W\+O\+RD c\+Stream\+Count, \mbox{[}in\mbox{]} W\+O\+RD $\ast$pw\+Stream\+Numbers, \mbox{[}in\mbox{]} W\+M\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON $\ast$p\+Selections)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_af5d037eed57d05b8c1e66a6fa380dc1c}\label{interface_i_w_m_sync_reader_af5d037eed57d05b8c1e66a6fa380dc1c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Stream\+Selected} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}out\mbox{]} W\+M\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON $\ast$p\+Selection)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a1b6a10f4bbf589f81fa6ad57cb1e360a}\label{interface_i_w_m_sync_reader_a1b6a10f4bbf589f81fa6ad57cb1e360a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Read\+Stream\+Samples} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}in\mbox{]} B\+O\+OL f\+Compressed)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_ae16cc15ad83d551aa1851d56279aa838}\label{interface_i_w_m_sync_reader_ae16cc15ad83d551aa1851d56279aa838}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Read\+Stream\+Samples} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Compressed)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_af080f6a7e44a8d6efe53a763d8abbc58}\label{interface_i_w_m_sync_reader_af080f6a7e44a8d6efe53a763d8abbc58}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Output\+Setting} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR psz\+Name, \mbox{[}out\mbox{]} W\+M\+T\+\_\+\+A\+T\+T\+R\+\_\+\+D\+A\+T\+A\+T\+Y\+PE $\ast$p\+Type, \mbox{[}out, size\+\_\+is($\ast$pcb\+Length)\mbox{]} B\+Y\+TE $\ast$p\+Value, \mbox{[}in, out\mbox{]} W\+O\+RD $\ast$pcb\+Length)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a8b7c26289782820e45041cf7f0b6e1c7}\label{interface_i_w_m_sync_reader_a8b7c26289782820e45041cf7f0b6e1c7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Output\+Setting} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR psz\+Name, \mbox{[}in\mbox{]} W\+M\+T\+\_\+\+A\+T\+T\+R\+\_\+\+D\+A\+T\+A\+T\+Y\+PE Type, \mbox{[}in, size\+\_\+is(cb\+Length)\mbox{]} const B\+Y\+TE $\ast$p\+Value, \mbox{[}in\mbox{]} W\+O\+RD cb\+Length)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a37214a1b1676d52f308d98be46490d7b}\label{interface_i_w_m_sync_reader_a37214a1b1676d52f308d98be46490d7b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Output\+Count} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pc\+Outputs)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_aeed5038a06c0b5dcbdbde885c313f9e0}\label{interface_i_w_m_sync_reader_aeed5038a06c0b5dcbdbde885c313f9e0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Output\+Props} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_output_media_props}{I\+W\+M\+Output\+Media\+Props} $\ast$$\ast$pp\+Output)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a853be40edfb4cb659f800bf95402ec0b}\label{interface_i_w_m_sync_reader_a853be40edfb4cb659f800bf95402ec0b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Output\+Props} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_output_media_props}{I\+W\+M\+Output\+Media\+Props} $\ast$p\+Output)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_ad999770301dd5cf61f3358cf3b49343a}\label{interface_i_w_m_sync_reader_ad999770301dd5cf61f3358cf3b49343a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Output\+Format\+Count} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pc\+Formats)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_ac348a0e475e0603bc530abcfc1247080}\label{interface_i_w_m_sync_reader_ac348a0e475e0603bc530abcfc1247080}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Output\+Format} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Format\+Num, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_output_media_props}{I\+W\+M\+Output\+Media\+Props} $\ast$$\ast$pp\+Props)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a73bf4a6de48c02578b9f9d5e79b651b7}\label{interface_i_w_m_sync_reader_a73bf4a6de48c02578b9f9d5e79b651b7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Output\+Number\+For\+Stream} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Output\+Num)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a7b92109ae7879d62a45159e7dc701203}\label{interface_i_w_m_sync_reader_a7b92109ae7879d62a45159e7dc701203}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Stream\+Number\+For\+Output} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}out\mbox{]} W\+O\+RD $\ast$pw\+Stream\+Num)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a47f21224bb2e72dd430818d195489a19}\label{interface_i_w_m_sync_reader_a47f21224bb2e72dd430818d195489a19}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Max\+Output\+Sample\+Size} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pcb\+Max)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_a51f754e4fe49341566bc6240802a2a90}\label{interface_i_w_m_sync_reader_a51f754e4fe49341566bc6240802a2a90}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Max\+Stream\+Sample\+Size} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pcb\+Max)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_sync_reader_aa099bb2dad5d2a245ff24de58d82a54c}\label{interface_i_w_m_sync_reader_aa099bb2dad5d2a245ff24de58d82a54c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open\+Stream} (\mbox{[}in\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wmsdkidl.\+idl\end{DoxyCompactItemize}

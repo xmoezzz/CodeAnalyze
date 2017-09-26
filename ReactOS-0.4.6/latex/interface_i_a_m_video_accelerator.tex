@@ -1,0 +1,53 @@
+\hypertarget{interface_i_a_m_video_accelerator}{}\section{I\+A\+M\+Video\+Accelerator接口 参考}
+\label{interface_i_a_m_video_accelerator}\index{I\+A\+M\+Video\+Accelerator@{I\+A\+M\+Video\+Accelerator}}
+类 I\+A\+M\+Video\+Accelerator 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_a_m_video_accelerator}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a011b67c6a19b116a0fd7938fc01738d5}\label{interface_i_a_m_video_accelerator_a011b67c6a19b116a0fd7938fc01738d5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Video\+Accelerator\+G\+U\+I\+Ds} (\mbox{[}in\mbox{]} \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Num\+Guids\+Supported, \mbox{[}in\mbox{]} \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+G\+U\+ID} p\+Guids\+Supported)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a77fb593a08e17fa54820e2b16ad098f5}\label{interface_i_a_m_video_accelerator_a77fb593a08e17fa54820e2b16ad098f5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Uncomp\+Formats\+Supported} (\mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Guid, \mbox{[}in\mbox{]} \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Num\+Formats\+Supported, \mbox{[}in\mbox{]} \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{L\+P\+D\+D\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT} p\+Formats\+Supported)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a74bcf31fbed8454e92141e74e8bd102e}\label{interface_i_a_m_video_accelerator_a74bcf31fbed8454e92141e74e8bd102e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Internal\+Mem\+Info} (\mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Guid, \mbox{[}in\mbox{]} const \hyperlink{struct__tag___a_m_v_a_uncomp_data_info}{A\+M\+V\+A\+Uncomp\+Data\+Info} $\ast$pamva\+Uncomp\+Data\+Info, \mbox{[}in\mbox{]} \mbox{[}out\mbox{]} \hyperlink{struct__tag___a_m_v_a_internal_mem_info}{L\+P\+A\+M\+V\+A\+Internal\+Mem\+Info} pamva\+Internal\+Mem\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a8e9e017822d8c6624554bbe66a799a47}\label{interface_i_a_m_video_accelerator_a8e9e017822d8c6624554bbe66a799a47}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Comp\+Buffer\+Info} (\mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Guid, \mbox{[}in\mbox{]} const \hyperlink{struct__tag___a_m_v_a_uncomp_data_info}{A\+M\+V\+A\+Uncomp\+Data\+Info} $\ast$pamva\+Uncomp\+Data\+Info, \mbox{[}in\mbox{]} \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Num\+Types\+Comp\+Buffers, \mbox{[}out\mbox{]} \hyperlink{struct__tag___a_m_v_a_comp_buffer_info}{L\+P\+A\+M\+V\+A\+Comp\+Buffer\+Info} pamva\+Comp\+Buffer\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_acbebb7550edc2960ff5aef3cb59eed88}\label{interface_i_a_m_video_accelerator_acbebb7550edc2960ff5aef3cb59eed88}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Internal\+Comp\+Buffer\+Info} (\mbox{[}in\mbox{]} \mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Num\+Types\+Comp\+Buffers, \mbox{[}out\mbox{]} \hyperlink{struct__tag___a_m_v_a_comp_buffer_info}{L\+P\+A\+M\+V\+A\+Comp\+Buffer\+Info} pamva\+Comp\+Buffer\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_ae0cd0f13c33e0be055eacf6c6a94e2a3}\label{interface_i_a_m_video_accelerator_ae0cd0f13c33e0be055eacf6c6a94e2a3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Begin\+Frame} (\mbox{[}in\mbox{]} const \hyperlink{struct__tag___a_m_v_a_begin_frame_info}{A\+M\+V\+A\+Begin\+Frame\+Info} $\ast$amva\+Begin\+Frame\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a22f8bcad71f638db3218c5c53b04a945}\label{interface_i_a_m_video_accelerator_a22f8bcad71f638db3218c5c53b04a945}} 
+H\+R\+E\+S\+U\+LT {\bfseries End\+Frame} (\mbox{[}in\mbox{]} const \hyperlink{struct__tag___a_m_v_a_end_frame_info}{A\+M\+V\+A\+End\+Frame\+Info} $\ast$p\+End\+Frame\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a63c9814179fe0434040ad4be376f2dbc}\label{interface_i_a_m_video_accelerator_a63c9814179fe0434040ad4be376f2dbc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Buffer} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Type\+Index, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Buffer\+Index, \mbox{[}in\mbox{]} B\+O\+OL b\+Read\+Only, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} $\ast$pp\+Buffer, \mbox{[}out\mbox{]} L\+O\+NG $\ast$lp\+Stride)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a0cf1d83892a5f0770ce5c64ad4a9464a}\label{interface_i_a_m_video_accelerator_a0cf1d83892a5f0770ce5c64ad4a9464a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Release\+Buffer} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Type\+Index, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Buffer\+Index)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a762a97985600ca4da7a5b350e2f4b927}\label{interface_i_a_m_video_accelerator_a762a97985600ca4da7a5b350e2f4b927}} 
+H\+R\+E\+S\+U\+LT {\bfseries Execute} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Function, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} lp\+Private\+Input\+Data, \mbox{[}in\mbox{]} D\+W\+O\+RD cb\+Private\+Input\+Data, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} lp\+Private\+Output\+Dat, \mbox{[}in\mbox{]} D\+W\+O\+RD cb\+Private\+Output\+Data, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Num\+Buffers, \mbox{[}in\mbox{]} const \hyperlink{struct__tag___a_m_v_a_b_u_f_f_e_r_i_n_f_o}{A\+M\+V\+A\+B\+U\+F\+F\+E\+R\+I\+N\+FO} $\ast$pamva\+Buffer\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_afb34954b1b4bd9c9357e54d76a16c0e6}\label{interface_i_a_m_video_accelerator_afb34954b1b4bd9c9357e54d76a16c0e6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Render\+Status} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Type\+Index, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Buffer\+Index, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_a_m_video_accelerator_a146c9f54ec82437c58080d1dbc9ebcb2}\label{interface_i_a_m_video_accelerator_a146c9f54ec82437c58080d1dbc9ebcb2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Display\+Frame} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flip\+To\+Index, \mbox{[}in\mbox{]} \hyperlink{interface_i_media_sample}{I\+Media\+Sample} $\ast$p\+Media\+Sample)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/videoacc.\+idl\end{DoxyCompactItemize}

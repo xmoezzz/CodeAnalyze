@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: Pool类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_pool-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Pool类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a63f64768bbbc278d5da0a5f622e57d71"><td class="memItemLeft" align="right" valign="top"><a id="a63f64768bbbc278d5da0a5f622e57d71"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Pool</b> (int, int, const char *)</td></tr>
+<tr class="separator:a63f64768bbbc278d5da0a5f622e57d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6821088999419668f5e1648bd019ed7a"><td class="memItemLeft" align="right" valign="top"><a id="a6821088999419668f5e1648bd019ed7a"></a>
+<a class="el" href="interfacevoid.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>new_buffer</b> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a6821088999419668f5e1648bd019ed7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc60dcb713e5af6622170ce6403a60c"><td class="memItemLeft" align="right" valign="top"><a id="a3dc60dcb713e5af6622170ce6403a60c"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>free_buffer</b> (<a class="el" href="interfacevoid.html">void</a> *)</td></tr>
+<tr class="separator:a3dc60dcb713e5af6622170ce6403a60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ce4e223f13fe707ae5e092fcf84d40"><td class="memItemLeft" align="right" valign="top"><a id="a12ce4e223f13fe707ae5e092fcf84d40"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a12ce4e223f13fe707ae5e092fcf84d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a404a46932a48f96525144f59f38e68ca"><td class="memItemLeft" align="right" valign="top"><a id="a404a46932a48f96525144f59f38e68ca"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Magic</b> { <b>is_allocated</b> = 0xf3a1, 
+<b>is_free</b> = 0xf1a2
+ }</td></tr>
+<tr class="separator:a404a46932a48f96525144f59f38e68ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a742274f0f31566d43bb53339571b7001"><td class="memItemLeft" align="right" valign="top"><a id="a742274f0f31566d43bb53339571b7001"></a>
+<a class="el" href="class_buffer.html">Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>freelist</b></td></tr>
+<tr class="separator:a742274f0f31566d43bb53339571b7001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d33c2b57d3be18ba5748ba63261869f"><td class="memItemLeft" align="right" valign="top"><a id="a6d33c2b57d3be18ba5748ba63261869f"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>blocklist</b> [NBLOCKS]</td></tr>
+<tr class="separator:a6d33c2b57d3be18ba5748ba63261869f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d466568d26e449d10fa51f7d102138"><td class="memItemLeft" align="right" valign="top"><a id="ad3d466568d26e449d10fa51f7d102138"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nextblock</b></td></tr>
+<tr class="separator:ad3d466568d26e449d10fa51f7d102138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfb0fd6c607c7b3c93da2c815f6bcce"><td class="memItemLeft" align="right" valign="top"><a id="abbfb0fd6c607c7b3c93da2c815f6bcce"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>curblock</b></td></tr>
+<tr class="separator:abbfb0fd6c607c7b3c93da2c815f6bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8010c40b5954ffe4588e01dc40181201"><td class="memItemLeft" align="right" valign="top"><a id="a8010c40b5954ffe4588e01dc40181201"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>buffersize</b></td></tr>
+<tr class="separator:a8010c40b5954ffe4588e01dc40181201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cb360b86c01bc172265143a862c1ed"><td class="memItemLeft" align="right" valign="top"><a id="a97cb360b86c01bc172265143a862c1ed"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nextsize</b></td></tr>
+<tr class="separator:a97cb360b86c01bc172265143a862c1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c696e387366eb2c964cdebecb65ef72"><td class="memItemLeft" align="right" valign="top"><a id="a2c696e387366eb2c964cdebecb65ef72"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nextfree</b></td></tr>
+<tr class="separator:a2c696e387366eb2c964cdebecb65ef72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2c6f05d09f0867d145ed784869682b"><td class="memItemLeft" align="right" valign="top"><a id="a6e2c6f05d09f0867d145ed784869682b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>initsize</b></td></tr>
+<tr class="separator:a6e2c6f05d09f0867d145ed784869682b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296b8f7ed3d0ae1ccf2a8b7b6b84e1e7"><td class="memItemLeft" align="right" valign="top"><a id="a296b8f7ed3d0ae1ccf2a8b7b6b84e1e7"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="separator:a296b8f7ed3d0ae1ccf2a8b7b6b84e1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9338ad73597d37372f3288528095d968"><td class="memItemLeft" align="right" valign="top"><a id="a9338ad73597d37372f3288528095d968"></a>
+Magic&#160;</td><td class="memItemRight" valign="bottom"><b>magic</b></td></tr>
+<tr class="separator:a9338ad73597d37372f3288528095d968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/opengl/glu32/src/libnurbs/internals/<a class="el" href="bufpool_8h_source.html">bufpool.h</a></li>
+<li>E:/ReactOS-0.4.6/dll/opengl/glu32/src/libnurbs/internals/bufpool.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

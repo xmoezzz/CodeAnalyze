@@ -1,0 +1,83 @@
+\hypertarget{interface_i_cor_debug_thread}{}\section{I\+Cor\+Debug\+Thread接口 参考}
+\label{interface_i_cor_debug_thread}\index{I\+Cor\+Debug\+Thread@{I\+Cor\+Debug\+Thread}}
+类 I\+Cor\+Debug\+Thread 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug_thread}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a81f9476553bba2046ff008a85a003a29}\label{interface_i_cor_debug_thread_a81f9476553bba2046ff008a85a003a29}} 
+enum {\bfseries Cor\+Debug\+User\+State} \{ \newline
+{\bfseries U\+S\+E\+R\+\_\+\+S\+T\+O\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+ED} = 0x01, 
+{\bfseries U\+S\+E\+R\+\_\+\+S\+U\+S\+P\+E\+N\+D\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+ED} = 0x02, 
+{\bfseries U\+S\+E\+R\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND} = 0x04, 
+{\bfseries U\+S\+E\+R\+\_\+\+U\+N\+S\+T\+A\+R\+T\+ED} = 0x08, 
+\newline
+{\bfseries U\+S\+E\+R\+\_\+\+S\+T\+O\+P\+P\+ED} = 0x10, 
+{\bfseries U\+S\+E\+R\+\_\+\+W\+A\+I\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+J\+O\+IN} = 0x20, 
+{\bfseries U\+S\+E\+R\+\_\+\+S\+U\+S\+P\+E\+N\+D\+ED} = 0x40, 
+{\bfseries U\+S\+E\+R\+\_\+\+U\+N\+S\+A\+F\+E\+\_\+\+P\+O\+I\+NT} = 0x80
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a1ecc1c2f0025681b59cd4d284537a165}\label{interface_i_cor_debug_thread_a1ecc1c2f0025681b59cd4d284537a165}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Thread\+::\+Cor\+Debug\+User\+State {\bfseries Cor\+Debug\+User\+State}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a1a2cc1ca65fb822e47b6492317cc5d81}\label{interface_i_cor_debug_thread_a1a2cc1ca65fb822e47b6492317cc5d81}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Process} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$$\ast$pp\+Process)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a7536ed741876a5151bc4955769474694}\label{interface_i_cor_debug_thread_a7536ed741876a5151bc4955769474694}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+ID} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Thread\+Id)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_aa931f0d350486b6713a9cdef52620c46}\label{interface_i_cor_debug_thread_aa931f0d350486b6713a9cdef52620c46}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Handle} (\mbox{[}out\mbox{]} \hyperlink{interfacevoid}{H\+T\+H\+R\+E\+AD} $\ast$ph\+Thread\+Handle)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a7f14f95eb4a111b8fb1525c76e208fa2}\label{interface_i_cor_debug_thread_a7f14f95eb4a111b8fb1525c76e208fa2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+App\+Domain} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_app_domain}{I\+Cor\+Debug\+App\+Domain} $\ast$$\ast$pp\+App\+Domain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_ab9a01c70f686a0f6390f6d36ae1abd47}\label{interface_i_cor_debug_thread_ab9a01c70f686a0f6390f6d36ae1abd47}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Debug\+State} (\mbox{[}in\mbox{]} Cor\+Debug\+Thread\+State state)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_ac7e9fb8eb133fd9db3269d494a1ef25b}\label{interface_i_cor_debug_thread_ac7e9fb8eb133fd9db3269d494a1ef25b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Debug\+State} (\mbox{[}out\mbox{]} Cor\+Debug\+Thread\+State $\ast$p\+State)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a840627e5d1947eb425dc32759f1d0dc0}\label{interface_i_cor_debug_thread_a840627e5d1947eb425dc32759f1d0dc0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+User\+State} (\mbox{[}out\mbox{]} Cor\+Debug\+User\+State $\ast$p\+State)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_ac0a9ddeeb7f8500b2f5c52f15227d387}\label{interface_i_cor_debug_thread_ac0a9ddeeb7f8500b2f5c52f15227d387}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Current\+Exception} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_value}{I\+Cor\+Debug\+Value} $\ast$$\ast$pp\+Exception\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a6caaf11f75eb227c29850ae0eb10ae2a}\label{interface_i_cor_debug_thread_a6caaf11f75eb227c29850ae0eb10ae2a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Clear\+Current\+Exception} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a7e42f3985a7a47622705aa99b20a25a9}\label{interface_i_cor_debug_thread_a7e42f3985a7a47622705aa99b20a25a9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Stepper} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_stepper}{I\+Cor\+Debug\+Stepper} $\ast$$\ast$pp\+Stepper)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_aa0246cc5e22a20559eee4f4e3952d19e}\label{interface_i_cor_debug_thread_aa0246cc5e22a20559eee4f4e3952d19e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enumerate\+Chains} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_chain_enum}{I\+Cor\+Debug\+Chain\+Enum} $\ast$$\ast$pp\+Chains)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a71288f19e0836d1ab22d149cbee18bd4}\label{interface_i_cor_debug_thread_a71288f19e0836d1ab22d149cbee18bd4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Active\+Chain} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_chain}{I\+Cor\+Debug\+Chain} $\ast$$\ast$pp\+Chain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_a7f836c06c52aff765adc76f097c22a32}\label{interface_i_cor_debug_thread_a7f836c06c52aff765adc76f097c22a32}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Active\+Frame} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_frame}{I\+Cor\+Debug\+Frame} $\ast$$\ast$pp\+Frame)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_ae20bb584e05ed5d1f4e5d74c73f1c76b}\label{interface_i_cor_debug_thread_ae20bb584e05ed5d1f4e5d74c73f1c76b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Register\+Set} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_register_set}{I\+Cor\+Debug\+Register\+Set} $\ast$$\ast$pp\+Registers)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_ae1032c1a659a2c5d2e59c5fb3cd01485}\label{interface_i_cor_debug_thread_ae1032c1a659a2c5d2e59c5fb3cd01485}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Eval} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_eval}{I\+Cor\+Debug\+Eval} $\ast$$\ast$pp\+Eval)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_thread_af028212331bbbdbcc39c9f3a4470d1c8}\label{interface_i_cor_debug_thread_af028212331bbbdbcc39c9f3a4470d1c8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Object} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_value}{I\+Cor\+Debug\+Value} $\ast$$\ast$pp\+Object)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

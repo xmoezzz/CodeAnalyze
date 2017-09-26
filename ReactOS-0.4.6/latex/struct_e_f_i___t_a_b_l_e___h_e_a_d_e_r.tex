@@ -1,0 +1,60 @@
+\hypertarget{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r}{}\section{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+E\+R结构体 参考}
+\label{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r}\index{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}}
+
+
+{\ttfamily \#include $<$Uefi\+Multi\+Phase.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_processor_bind_8h_a57be03562867144161c1bfee95ca8f7c}{U\+I\+N\+T64} \hyperlink{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_ac64d8f731c5e181fea6e1f6d151f8eab}{Signature}
+\item 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} \hyperlink{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_a81ed6a4813ad43b0e1252011b626829a}{Revision}
+\item 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} \hyperlink{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_ab16fde8c7521836c272dc21fdc83d63f}{Header\+Size}
+\item 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} \hyperlink{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_aec8d3c80619f3c0c4fd183c25f987e9a}{C\+R\+C32}
+\item 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} \hyperlink{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_a6d8ed5bbbac04b13751ab12f4e338913}{Reserved}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{struct_data}{Data} structure that precedes all of the standard E\+FI table types. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_aec8d3c80619f3c0c4fd183c25f987e9a}\label{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_aec8d3c80619f3c0c4fd183c25f987e9a}} 
+\index{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}!C\+R\+C32@{C\+R\+C32}}
+\index{C\+R\+C32@{C\+R\+C32}!E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}}
+\subsubsection{\texorpdfstring{C\+R\+C32}{CRC32}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+E\+R\+::\+C\+R\+C32}
+
+The 32-\/bit C\+RC for the entire table. \hyperlink{namespace_this}{This} value is computed by setting this field to 0, and computing the 32-\/bit C\+RC for Header\+Size bytes. \mbox{\Hypertarget{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_ab16fde8c7521836c272dc21fdc83d63f}\label{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_ab16fde8c7521836c272dc21fdc83d63f}} 
+\index{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}!Header\+Size@{Header\+Size}}
+\index{Header\+Size@{Header\+Size}!E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}}
+\subsubsection{\texorpdfstring{Header\+Size}{HeaderSize}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+E\+R\+::\+Header\+Size}
+
+The size, in bytes, of the entire table including the \hyperlink{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r}{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}. \mbox{\Hypertarget{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_a6d8ed5bbbac04b13751ab12f4e338913}\label{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_a6d8ed5bbbac04b13751ab12f4e338913}} 
+\index{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}!Reserved@{Reserved}}
+\index{Reserved@{Reserved}!E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}}
+\subsubsection{\texorpdfstring{Reserved}{Reserved}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+E\+R\+::\+Reserved}
+
+Reserved field that must be set to 0. \mbox{\Hypertarget{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_a81ed6a4813ad43b0e1252011b626829a}\label{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_a81ed6a4813ad43b0e1252011b626829a}} 
+\index{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}!Revision@{Revision}}
+\index{Revision@{Revision}!E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}}
+\subsubsection{\texorpdfstring{Revision}{Revision}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+E\+R\+::\+Revision}
+
+The revision of the E\+FI Specification to which this table conforms. The upper 16 bits of this field contain the major revision value, and the lower 16 bits contain the minor revision value. The minor revision values are limited to the range of 00..99. \mbox{\Hypertarget{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_ac64d8f731c5e181fea6e1f6d151f8eab}\label{struct_e_f_i___t_a_b_l_e___h_e_a_d_e_r_ac64d8f731c5e181fea6e1f6d151f8eab}} 
+\index{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}!Signature@{Signature}}
+\index{Signature@{Signature}!E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER@{E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+ER}}
+\subsubsection{\texorpdfstring{Signature}{Signature}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_a57be03562867144161c1bfee95ca8f7c}{U\+I\+N\+T64} E\+F\+I\+\_\+\+T\+A\+B\+L\+E\+\_\+\+H\+E\+A\+D\+E\+R\+::\+Signature}
+
+\hyperlink{struct_a}{A} 64-\/bit signature that identifies the type of table that follows. Unique signatures have been generated for the E\+FI System Table, the E\+FI Boot Services Table, and the E\+FI Runtime Services Table. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/boot/environ/include/efi/\hyperlink{_uefi_multi_phase_8h}{Uefi\+Multi\+Phase.\+h}\end{DoxyCompactItemize}

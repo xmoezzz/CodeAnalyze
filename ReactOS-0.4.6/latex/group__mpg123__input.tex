@@ -1,0 +1,265 @@
+\hypertarget{group__mpg123__input}{}\section{mpg123 file input and decoding}
+\label{group__mpg123__input}\index{mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga8f74d35cf61667a791b507c76c22a29b}{mpg123\+\_\+open} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, const char $\ast$\hyperlink{structpath}{path})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga969c0cbe49b3831e18ad9e9e45c9d83e}{mpg123\+\_\+open\+\_\+fd} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, int fd)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gaadda450ea307f88589cb77ffda0754ab}{mpg123\+\_\+open\+\_\+handle} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfacevoid}{void} $\ast$iohandle)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga072669ae9bde29eea8cffa4be10c7345}{mpg123\+\_\+open\+\_\+feed} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga156eb0774196db868485662dc31621af}{mpg123\+\_\+close} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga8023e3b24e8a70d9589c6c7567c54a41}{mpg123\+\_\+read} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, unsigned char $\ast$outmemory, size\+\_\+t outmemsize, size\+\_\+t $\ast$done)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga0a50910ce7bf0b30921114a89cc78d29}{mpg123\+\_\+feed} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, const unsigned char $\ast$in, size\+\_\+t size)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gafaf2382b208257a9685a8cab9f4360be}{mpg123\+\_\+decode} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, const unsigned char $\ast$inmemory, size\+\_\+t inmemsize, unsigned char $\ast$outmemory, size\+\_\+t outmemsize, size\+\_\+t $\ast$done)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gabcc91dfcc46df4bdef267b8061ffcce0}{mpg123\+\_\+decode\+\_\+frame} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t $\ast$num, unsigned char $\ast$$\ast$audio, size\+\_\+t $\ast$bytes)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gad6e52cca146bcd6db3954e88fb86bc82}{mpg123\+\_\+framebyframe\+\_\+decode} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t $\ast$num, unsigned char $\ast$$\ast$audio, size\+\_\+t $\ast$bytes)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gad10c57bc8060c64652b014a2593de61a}{mpg123\+\_\+framebyframe\+\_\+next} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gaa4c4e18d7defd6e5fb7addc3caf8d946}{mpg123\+\_\+framedata} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, unsigned long $\ast$header, unsigned char $\ast$$\ast$bodydata, size\+\_\+t $\ast$bodybytes)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__input_gaf8d143984f9fd2ea91e9b10a6110c129}{mpg123\+\_\+framepos} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions for input bitstream and decoding operations. Decoding/seek functions may also return message codes M\+P\+G123\+\_\+\+D\+O\+NE, M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+F\+O\+R\+M\+AT and M\+P\+G123\+\_\+\+N\+E\+E\+D\+\_\+\+M\+O\+RE (please read up on these on how to react!). 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{group__mpg123__input_ga156eb0774196db868485662dc31621af}\label{group__mpg123__input_ga156eb0774196db868485662dc31621af}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+close@{mpg123\+\_\+close}}
+\index{mpg123\+\_\+close@{mpg123\+\_\+close}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+close()}{mpg123\_close()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+close (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Closes the source, if libmpg123 opened it. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_gafaf2382b208257a9685a8cab9f4360be}\label{group__mpg123__input_gafaf2382b208257a9685a8cab9f4360be}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+decode@{mpg123\+\_\+decode}}
+\index{mpg123\+\_\+decode@{mpg123\+\_\+decode}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+decode()}{mpg123\_decode()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+decode (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{const unsigned char $\ast$}]{inmemory,  }\item[{size\+\_\+t}]{inmemsize,  }\item[{unsigned char $\ast$}]{outmemory,  }\item[{size\+\_\+t}]{outmemsize,  }\item[{size\+\_\+t $\ast$}]{done }\end{DoxyParamCaption})}
+
+Decode M\+P\+EG Audio from inmemory to outmemory. \hyperlink{namespace_this}{This} is very close to a drop-\/in replacement for old mpglib. When you give zero-\/sized output buffer the input will be parsed until decoded data is available. \hyperlink{namespace_this}{This} enables you to get M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+F\+O\+R\+M\+AT (and query it) without taking decoded data. Think of this function being the union of \hyperlink{group__mpg123__input_ga8023e3b24e8a70d9589c6c7567c54a41}{mpg123\+\_\+read()} and \hyperlink{group__mpg123__input_ga0a50910ce7bf0b30921114a89cc78d29}{mpg123\+\_\+feed()} (which it actually is, sort of;-\/). You can actually always decide if you want those specialized functions in separate steps or one call this one here. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em inmemory} & input buffer \\
+\hline
+{\em inmemsize} & number of input bytes \\
+\hline
+{\em outmemory} & output buffer \\
+\hline
+{\em outmemsize} & maximum number of output bytes \\
+\hline
+{\em done} & address to store the number of actually decoded bytes to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+error/message code (watch out especially for M\+P\+G123\+\_\+\+N\+E\+E\+D\+\_\+\+M\+O\+RE) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_gabcc91dfcc46df4bdef267b8061ffcce0}\label{group__mpg123__input_gabcc91dfcc46df4bdef267b8061ffcce0}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+decode\+\_\+frame@{mpg123\+\_\+decode\+\_\+frame}}
+\index{mpg123\+\_\+decode\+\_\+frame@{mpg123\+\_\+decode\+\_\+frame}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+decode\+\_\+frame()}{mpg123\_decode\_frame()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+decode\+\_\+frame (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{off\+\_\+t $\ast$}]{num,  }\item[{unsigned char $\ast$$\ast$}]{audio,  }\item[{size\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
+
+Decode next M\+P\+EG frame to internal buffer or read a frame and return after setting a new format. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em num} & current frame offset gets stored there \\
+\hline
+{\em audio} & \hyperlink{namespace_this}{This} pointer is set to the internal buffer to read the decoded audio from. \\
+\hline
+{\em bytes} & number of output bytes ready in the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK or error/message code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_ga0a50910ce7bf0b30921114a89cc78d29}\label{group__mpg123__input_ga0a50910ce7bf0b30921114a89cc78d29}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+feed@{mpg123\+\_\+feed}}
+\index{mpg123\+\_\+feed@{mpg123\+\_\+feed}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+feed()}{mpg123\_feed()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+feed (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{const unsigned char $\ast$}]{in,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Feed data for a stream that has been opened with \hyperlink{group__mpg123__input_ga072669ae9bde29eea8cffa4be10c7345}{mpg123\+\_\+open\+\_\+feed()}. \hyperlink{class_it}{It}\textquotesingle{}s give and take\+: You provide the bytestream, mpg123 gives you the decoded samples. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em in} & input buffer \\
+\hline
+{\em size} & number of input bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK or error/message code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_gad6e52cca146bcd6db3954e88fb86bc82}\label{group__mpg123__input_gad6e52cca146bcd6db3954e88fb86bc82}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+framebyframe\+\_\+decode@{mpg123\+\_\+framebyframe\+\_\+decode}}
+\index{mpg123\+\_\+framebyframe\+\_\+decode@{mpg123\+\_\+framebyframe\+\_\+decode}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+framebyframe\+\_\+decode()}{mpg123\_framebyframe\_decode()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+framebyframe\+\_\+decode (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{off\+\_\+t $\ast$}]{num,  }\item[{unsigned char $\ast$$\ast$}]{audio,  }\item[{size\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
+
+Decode current M\+P\+EG frame to internal buffer. Warning\+: \hyperlink{namespace_this}{This} is experimental A\+PI that might change in future releases! Please watch mpg123 development closely when using it. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em num} & last frame offset gets stored there \\
+\hline
+{\em audio} & this pointer is set to the internal buffer to read the decoded audio from. \\
+\hline
+{\em bytes} & number of output bytes ready in the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK or error/message code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_gad10c57bc8060c64652b014a2593de61a}\label{group__mpg123__input_gad10c57bc8060c64652b014a2593de61a}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+framebyframe\+\_\+next@{mpg123\+\_\+framebyframe\+\_\+next}}
+\index{mpg123\+\_\+framebyframe\+\_\+next@{mpg123\+\_\+framebyframe\+\_\+next}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+framebyframe\+\_\+next()}{mpg123\_framebyframe\_next()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+framebyframe\+\_\+next (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Find, read and parse the next mp3 frame Warning\+: \hyperlink{namespace_this}{This} is experimental A\+PI that might change in future releases! Please watch mpg123 development closely when using it. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK or error/message code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_gaa4c4e18d7defd6e5fb7addc3caf8d946}\label{group__mpg123__input_gaa4c4e18d7defd6e5fb7addc3caf8d946}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+framedata@{mpg123\+\_\+framedata}}
+\index{mpg123\+\_\+framedata@{mpg123\+\_\+framedata}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+framedata()}{mpg123\_framedata()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+framedata (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{unsigned long $\ast$}]{header,  }\item[{unsigned char $\ast$$\ast$}]{bodydata,  }\item[{size\+\_\+t $\ast$}]{bodybytes }\end{DoxyParamCaption})}
+
+Get access to the raw input data for the last parsed frame. \hyperlink{namespace_this}{This} gives you a direct look (and write access) to the frame body data. Together with the raw header, you can reconstruct the whole raw M\+P\+EG stream without junk and meta data, or play games by actually modifying the frame body data before decoding this frame (\hyperlink{group__mpg123__input_gad6e52cca146bcd6db3954e88fb86bc82}{mpg123\+\_\+framebyframe\+\_\+decode()}). \hyperlink{struct_a}{A} more sane use would be to use this for C\+RC checking (see \hyperlink{group__mpg123__status_ga2f3357b968c78a77ad456a3200820ba8}{mpg123\+\_\+info()} and M\+P\+G123\+\_\+\+C\+RC), the first two bytes of the body make up the C\+R\+C16 checksum, if present. You can provide N\+U\+LL for a parameter pointer when you are not interested in the value.
+
+
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em header} & the 4-\/byte M\+P\+EG header \\
+\hline
+{\em bodydata} & pointer to the frame body stored in the handle (without the header) \\
+\hline
+{\em bodybytes} & size of frame body in bytes (without the header) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK if there was a yet un-\/decoded frame to get the data from, M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+H\+A\+N\+D\+LE or M\+P\+G123\+\_\+\+E\+RR otherwise (without further explanation, the error state of the mpg123\+\_\+handle is not modified by this function). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_gaf8d143984f9fd2ea91e9b10a6110c129}\label{group__mpg123__input_gaf8d143984f9fd2ea91e9b10a6110c129}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+framepos@{mpg123\+\_\+framepos}}
+\index{mpg123\+\_\+framepos@{mpg123\+\_\+framepos}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+framepos()}{mpg123\_framepos()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t mpg123\+\_\+framepos (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Get the input position (byte offset in stream) of the last parsed frame. \hyperlink{namespace_this}{This} can be used for external seek index building, for example. \hyperlink{class_it}{It} just returns the internally stored offset, regardless of validity -- you ensure that a valid frame has been parsed before! 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+byte offset in stream 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_ga8f74d35cf61667a791b507c76c22a29b}\label{group__mpg123__input_ga8f74d35cf61667a791b507c76c22a29b}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+open@{mpg123\+\_\+open}}
+\index{mpg123\+\_\+open@{mpg123\+\_\+open}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+open()}{mpg123\_open()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+open (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Enumeration of the error codes returned by libmpg123 functions. Open and prepare to decode the specified file by filesystem path. \hyperlink{namespace_this}{This} does not open H\+T\+TP urls; libmpg123 contains no networking code. If you want to decode internet streams, use \hyperlink{group__mpg123__input_ga969c0cbe49b3831e18ad9e9e45c9d83e}{mpg123\+\_\+open\+\_\+fd()} or \hyperlink{group__mpg123__input_ga072669ae9bde29eea8cffa4be10c7345}{mpg123\+\_\+open\+\_\+feed()}. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em path} & filesystem path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_ga969c0cbe49b3831e18ad9e9e45c9d83e}\label{group__mpg123__input_ga969c0cbe49b3831e18ad9e9e45c9d83e}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+open\+\_\+fd@{mpg123\+\_\+open\+\_\+fd}}
+\index{mpg123\+\_\+open\+\_\+fd@{mpg123\+\_\+open\+\_\+fd}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+open\+\_\+fd()}{mpg123\_open\_fd()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+open\+\_\+fd (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{int}]{fd }\end{DoxyParamCaption})}
+
+Use an already opened file descriptor as the bitstream input \hyperlink{group__mpg123__input_ga156eb0774196db868485662dc31621af}{mpg123\+\_\+close()} will {\itshape not} close the file descriptor. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em fd} & file descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_ga072669ae9bde29eea8cffa4be10c7345}\label{group__mpg123__input_ga072669ae9bde29eea8cffa4be10c7345}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+open\+\_\+feed@{mpg123\+\_\+open\+\_\+feed}}
+\index{mpg123\+\_\+open\+\_\+feed@{mpg123\+\_\+open\+\_\+feed}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+open\+\_\+feed()}{mpg123\_open\_feed()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+open\+\_\+feed (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Open a new bitstream and prepare for direct feeding \hyperlink{namespace_this}{This} works together with \hyperlink{group__mpg123__input_gafaf2382b208257a9685a8cab9f4360be}{mpg123\+\_\+decode()}; you are responsible for reading and feeding the input bitstream. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_gaadda450ea307f88589cb77ffda0754ab}\label{group__mpg123__input_gaadda450ea307f88589cb77ffda0754ab}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+open\+\_\+handle@{mpg123\+\_\+open\+\_\+handle}}
+\index{mpg123\+\_\+open\+\_\+handle@{mpg123\+\_\+open\+\_\+handle}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+open\+\_\+handle()}{mpg123\_open\_handle()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+open\+\_\+handle (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{iohandle }\end{DoxyParamCaption})}
+
+Use an opaque handle as bitstream input. \hyperlink{namespace_this}{This} works only with the replaced I/O from \hyperlink{group__mpg123__lowio_ga61a125c56f2aab9590a4b1a29194dc10}{mpg123\+\_\+replace\+\_\+reader\+\_\+handle()}! \hyperlink{group__mpg123__input_ga156eb0774196db868485662dc31621af}{mpg123\+\_\+close()} will call the cleanup callback for your handle (if you gave one). 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em iohandle} & your handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__input_ga8023e3b24e8a70d9589c6c7567c54a41}\label{group__mpg123__input_ga8023e3b24e8a70d9589c6c7567c54a41}} 
+\index{mpg123 file input and decoding@{mpg123 file input and decoding}!mpg123\+\_\+read@{mpg123\+\_\+read}}
+\index{mpg123\+\_\+read@{mpg123\+\_\+read}!mpg123 file input and decoding@{mpg123 file input and decoding}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+read()}{mpg123\_read()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+read (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{unsigned char $\ast$}]{outmemory,  }\item[{size\+\_\+t}]{outmemsize,  }\item[{size\+\_\+t $\ast$}]{done }\end{DoxyParamCaption})}
+
+Read from stream and decode up to outmemsize bytes. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em outmemory} & address of output buffer to write to \\
+\hline
+{\em outmemsize} & maximum number of bytes to write \\
+\hline
+{\em done} & address to store the number of actually decoded bytes to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK or error/message code 
+\end{DoxyReturn}

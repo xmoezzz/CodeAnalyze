@@ -1,0 +1,71 @@
+\hypertarget{structpbuf}{}\section{pbuf结构体 参考}
+\label{structpbuf}\index{pbuf@{pbuf}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$ \hyperlink{structpbuf_a5e5763c94fd18d78937b0b58ce7df341}{next}
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{structpbuf_a8d32dc3e964369d4eec638fc37fbc460}{payload}
+\item 
+u16\+\_\+t \hyperlink{structpbuf_a5259e7ec29bab9c0999b64f2e86b411f}{tot\+\_\+len}
+\item 
+u16\+\_\+t \hyperlink{structpbuf_a6f82449625e36e294f5d210268c0703f}{len}
+\item 
+u8\+\_\+t \hyperlink{structpbuf_afd7bff5210a022424caa97d2f25fe8e6}{type}
+\item 
+u8\+\_\+t \hyperlink{structpbuf_aa4d1af2cab3d9280d29212095b5b872a}{flags}
+\item 
+u16\+\_\+t \hyperlink{structpbuf_a18e2c02942feb1baa3756fcd585b6731}{ref}
+\end{DoxyCompactItemize}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structpbuf_aa4d1af2cab3d9280d29212095b5b872a}\label{structpbuf_aa4d1af2cab3d9280d29212095b5b872a}} 
+\index{pbuf@{pbuf}!flags@{flags}}
+\index{flags@{flags}!pbuf@{pbuf}}
+\subsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily u8\+\_\+t pbuf\+::flags}
+
+misc flags \mbox{\Hypertarget{structpbuf_a6f82449625e36e294f5d210268c0703f}\label{structpbuf_a6f82449625e36e294f5d210268c0703f}} 
+\index{pbuf@{pbuf}!len@{len}}
+\index{len@{len}!pbuf@{pbuf}}
+\subsubsection{\texorpdfstring{len}{len}}
+{\footnotesize\ttfamily u16\+\_\+t pbuf\+::len}
+
+length of this buffer \mbox{\Hypertarget{structpbuf_a5e5763c94fd18d78937b0b58ce7df341}\label{structpbuf_a5e5763c94fd18d78937b0b58ce7df341}} 
+\index{pbuf@{pbuf}!next@{next}}
+\index{next@{next}!pbuf@{pbuf}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf}$\ast$ pbuf\+::next}
+
+next pbuf in singly linked pbuf chain \mbox{\Hypertarget{structpbuf_a8d32dc3e964369d4eec638fc37fbc460}\label{structpbuf_a8d32dc3e964369d4eec638fc37fbc460}} 
+\index{pbuf@{pbuf}!payload@{payload}}
+\index{payload@{payload}!pbuf@{pbuf}}
+\subsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ pbuf\+::payload}
+
+pointer to the actual data in the buffer \mbox{\Hypertarget{structpbuf_a18e2c02942feb1baa3756fcd585b6731}\label{structpbuf_a18e2c02942feb1baa3756fcd585b6731}} 
+\index{pbuf@{pbuf}!ref@{ref}}
+\index{ref@{ref}!pbuf@{pbuf}}
+\subsubsection{\texorpdfstring{ref}{ref}}
+{\footnotesize\ttfamily u16\+\_\+t pbuf\+::ref}
+
+the reference count always equals the number of pointers that refer to this pbuf. \hyperlink{namespace_this}{This} can be pointers from an application, the stack itself, or pbuf-\/$>$next pointers from a chain. \mbox{\Hypertarget{structpbuf_a5259e7ec29bab9c0999b64f2e86b411f}\label{structpbuf_a5259e7ec29bab9c0999b64f2e86b411f}} 
+\index{pbuf@{pbuf}!tot\+\_\+len@{tot\+\_\+len}}
+\index{tot\+\_\+len@{tot\+\_\+len}!pbuf@{pbuf}}
+\subsubsection{\texorpdfstring{tot\+\_\+len}{tot\_len}}
+{\footnotesize\ttfamily u16\+\_\+t pbuf\+::tot\+\_\+len}
+
+total length of this buffer and all next buffers in chain belonging to the same packet.
+
+For non-\/queue packet chains this is the invariant\+: p-\/$>$tot\+\_\+len == p-\/$>$len + (p-\/$>$next? p-\/$>$next-\/$>$tot\+\_\+len\+: 0) \mbox{\Hypertarget{structpbuf_afd7bff5210a022424caa97d2f25fe8e6}\label{structpbuf_afd7bff5210a022424caa97d2f25fe8e6}} 
+\index{pbuf@{pbuf}!type@{type}}
+\index{type@{type}!pbuf@{pbuf}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily u8\+\_\+t pbuf\+::type}
+
+pbuf\+\_\+type as u8\+\_\+t instead of enum to save space 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/include/lwip/pbuf.\+h\end{DoxyCompactItemize}

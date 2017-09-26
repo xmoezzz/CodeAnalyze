@@ -1,0 +1,161 @@
+\hypertarget{group___dynamic_strings}{}\section{Dynamic\+Strings}
+\label{group___dynamic_strings}\index{Dynamic\+Strings@{Dynamic\+Strings}}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_gaa6f85d7dc1c6cdefcfaf5940358b52f0}\label{group___dynamic_strings_gaa6f85d7dc1c6cdefcfaf5940358b52f0}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+R\+I\+V\+A\+TE \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$ {\bfseries Trio\+String\+Alloc} (T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga5c7fba43c49aae9ea637539c87b9ab7b}\label{group___dynamic_strings_ga5c7fba43c49aae9ea637539c87b9ab7b}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+R\+I\+V\+A\+TE B\+O\+O\+L\+E\+A\+N\+\_\+T Trio\+String\+Grow {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, delta), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, size\+\_\+t delta)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga3192fadad484e1dc17c0f78d0ce2e0b1}\label{group___dynamic_strings_ga3192fadad484e1dc17c0f78d0ce2e0b1}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+R\+I\+V\+A\+TE B\+O\+O\+L\+E\+A\+N\+\_\+T Trio\+String\+Grow\+To {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, length), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, size\+\_\+t length)
+\item 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$trio\+\_\+string\+\_\+create \hyperlink{group___dynamic_strings_gaa88b356493c359ca876cf89cab5bef1e}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1} ((initial\+\_\+size), int initial\+\_\+size)
+\item 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC \hyperlink{interfacevoid}{void} trio\+\_\+string\+\_\+destroy \hyperlink{group___dynamic_strings_ga57398879c57ffad9cf943c5646b8d652}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1} ((self), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self)
+\item 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC char $\ast$trio\+\_\+string\+\_\+get \hyperlink{group___dynamic_strings_ga4270a9e7b524425d513dad700305121a}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, offset), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, int offset)
+\item 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC \hyperlink{interfacevoid}{void} trio\+\_\+xstring\+\_\+set \hyperlink{group___dynamic_strings_ga85dae323032856f313c671ce62d969d4}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, buffer), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, char $\ast$buffer)
+\item 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+string\+\_\+append \hyperlink{group___dynamic_strings_gae667c0eb39eed60b4c2742eb2d5cef5b}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, other), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$other)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_gafd3b48465dd816508d93f1d1b56b4dcc}\label{group___dynamic_strings_gafd3b48465dd816508d93f1d1b56b4dcc}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+xstring\+\_\+append {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, other), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$other)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga07775c2e3248fab32f50d4f67100406c}\label{group___dynamic_strings_ga07775c2e3248fab32f50d4f67100406c}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+xstring\+\_\+append\+\_\+char {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, character), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, char character)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga0601773a84fb518e796cc5b7b73160ee}\label{group___dynamic_strings_ga0601773a84fb518e796cc5b7b73160ee}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$trio\+\_\+string\+\_\+duplicate {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S1} ((other), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$other)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga89005a6b765842b784abf609bf6995d4}\label{group___dynamic_strings_ga89005a6b765842b784abf609bf6995d4}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$trio\+\_\+xstring\+\_\+duplicate {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S1} ((other), T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$other)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga81f351c32d5dcea4424766dc08c55db7}\label{group___dynamic_strings_ga81f351c32d5dcea4424766dc08c55db7}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+string\+\_\+equal\+\_\+max {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((self, max, other), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, size\+\_\+t max, \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$other)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga0908ce062607606e53f6938dd97214f7}\label{group___dynamic_strings_ga0908ce062607606e53f6938dd97214f7}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+xstring\+\_\+equal\+\_\+max {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((self, max, other), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, size\+\_\+t max, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$other)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_gaf57ea089a2147d25980e33b4e88ba0ce}\label{group___dynamic_strings_gaf57ea089a2147d25980e33b4e88ba0ce}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC size\+\_\+t trio\+\_\+string\+\_\+format\+\_\+date\+\_\+max {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S4} ((self, max, format, datetime), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, size\+\_\+t max, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST \hyperlink{interfacestruct}{struct} \hyperlink{structtm}{tm} $\ast$datetime)
+\item 
+\mbox{\Hypertarget{group___dynamic_strings_ga39392c0e3f35782f7b34bdcddc289765}\label{group___dynamic_strings_ga39392c0e3f35782f7b34bdcddc289765}} 
+T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC char $\ast$trio\+\_\+string\+\_\+index {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((self, character), \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$self, int character)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{group___dynamic_strings_gaa88b356493c359ca876cf89cab5bef1e}\label{group___dynamic_strings_gaa88b356493c359ca876cf89cab5bef1e}} 
+\index{Dynamic\+Strings@{Dynamic\+Strings}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S1@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1}!Dynamic\+Strings@{Dynamic\+Strings}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1()}{TRIO\_ARGS1()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC \hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t}$\ast$ trio\+\_\+string\+\_\+create T\+R\+I\+O\+\_\+\+A\+R\+G\+S1 (\begin{DoxyParamCaption}\item[{(initial\+\_\+size)}]{,  }\item[{int}]{initial\+\_\+size }\end{DoxyParamCaption})}
+
+Create a new dynamic string.
+
+
+\begin{DoxyParams}{参数}
+{\em initial\+\_\+size} & Initial size of the buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Newly allocated dynamic string, or N\+U\+LL if memory allocation failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___dynamic_strings_ga57398879c57ffad9cf943c5646b8d652}\label{group___dynamic_strings_ga57398879c57ffad9cf943c5646b8d652}} 
+\index{Dynamic\+Strings@{Dynamic\+Strings}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S1@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1}!Dynamic\+Strings@{Dynamic\+Strings}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1()}{TRIO\_ARGS1()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+string\+\_\+upper T\+R\+I\+O\+\_\+\+A\+R\+G\+S1 (\begin{DoxyParamCaption}\item[{(self)}]{,  }\item[{\hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$}]{self }\end{DoxyParamCaption})}
+
+Deallocate the dynamic string and its contents.
+
+
+\begin{DoxyParams}{参数}
+{\em self} & Dynamic string\\
+\hline
+\end{DoxyParams}
+Extract the content.
+
+
+\begin{DoxyParams}{参数}
+{\em self} & Dynamic String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Content of dynamic string.
+\end{DoxyReturn}
+The content is removed from the dynamic string. \hyperlink{namespace_this}{This} enables destruction of the dynamic string without deallocation of the content. \mbox{\Hypertarget{group___dynamic_strings_ga4270a9e7b524425d513dad700305121a}\label{group___dynamic_strings_ga4270a9e7b524425d513dad700305121a}} 
+\index{Dynamic\+Strings@{Dynamic\+Strings}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}!Dynamic\+Strings@{Dynamic\+Strings}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2()}{TRIO\_ARGS2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC char$\ast$ trio\+\_\+string\+\_\+get T\+R\+I\+O\+\_\+\+A\+R\+G\+S2 (\begin{DoxyParamCaption}\item[{(self, offset)}]{,  }\item[{\hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$}]{self,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+Get a pointer to the content.
+
+
+\begin{DoxyParams}{参数}
+{\em self} & Dynamic string. \\
+\hline
+{\em offset} & Offset into content. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Pointer to the content.
+\end{DoxyReturn}
+{\ttfamily Offset} can be zero, positive, or negative. If {\ttfamily offset} is zero, then the start of the content will be returned. If {\ttfamily offset} is positive, then a pointer to {\ttfamily offset} number of characters from the beginning of the content is returned. If {\ttfamily offset} is negative, then a pointer to {\ttfamily offset} number of characters from the ending of the string, starting at the terminating zero, is returned. \mbox{\Hypertarget{group___dynamic_strings_ga85dae323032856f313c671ce62d969d4}\label{group___dynamic_strings_ga85dae323032856f313c671ce62d969d4}} 
+\index{Dynamic\+Strings@{Dynamic\+Strings}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}!Dynamic\+Strings@{Dynamic\+Strings}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2()}{TRIO\_ARGS2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC \hyperlink{interfacevoid}{void} trio\+\_\+xstring\+\_\+set T\+R\+I\+O\+\_\+\+A\+R\+G\+S2 (\begin{DoxyParamCaption}\item[{(self, buffer)}]{,  }\item[{\hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$}]{self,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+Set the content of the dynamic string.
+
+
+\begin{DoxyParams}{参数}
+{\em self} & Dynamic String \\
+\hline
+{\em buffer} & The new content.\\
+\hline
+\end{DoxyParams}
+Sets the content of the dynamic string to a copy {\ttfamily buffer}. An existing content will be deallocated first, if necessary.
+
+\begin{DoxyRemark}{备注}
+\hyperlink{namespace_this}{This} function will make a copy of {\ttfamily buffer}. You are responsible for deallocating {\ttfamily buffer} yourself. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{group___dynamic_strings_gae667c0eb39eed60b4c2742eb2d5cef5b}\label{group___dynamic_strings_gae667c0eb39eed60b4c2742eb2d5cef5b}} 
+\index{Dynamic\+Strings@{Dynamic\+Strings}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}!Dynamic\+Strings@{Dynamic\+Strings}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2()}{TRIO\_ARGS2()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+U\+B\+L\+IC char $\ast$trio\+\_\+string\+\_\+substring T\+R\+I\+O\+\_\+\+A\+R\+G\+S2 (\begin{DoxyParamCaption}\item[{(self, other)}]{,  }\item[{\hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$}]{self,  }\item[{\hyperlink{struct__trio__string__t}{trio\+\_\+string\+\_\+t} $\ast$}]{other }\end{DoxyParamCaption})}
+
+Append the second string to the first.
+
+
+\begin{DoxyParams}{参数}
+{\em self} & Dynamic string to be modified. \\
+\hline
+{\em other} & Dynamic string to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Boolean value indicating success or failure.
+\end{DoxyReturn}
+Search for the first occurrence of second parameter in the first.
+
+
+\begin{DoxyParams}{参数}
+{\em self} & Dynamic string to be modified. \\
+\hline
+{\em other} & Dynamic string to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Boolean value indicating success or failure. 
+\end{DoxyReturn}

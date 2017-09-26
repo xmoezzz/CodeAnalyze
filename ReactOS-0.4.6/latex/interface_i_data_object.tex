@@ -1,0 +1,66 @@
+\hypertarget{interface_i_data_object}{}\section{I\+Data\+Object接口 参考}
+\label{interface_i_data_object}\index{I\+Data\+Object@{I\+Data\+Object}}
+类 I\+Data\+Object 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.297998cm]{interface_i_data_object}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_data_object_a8dbd0b23b54498b2cf86a70ab0586ad0}\label{interface_i_data_object_a8dbd0b23b54498b2cf86a70ab0586ad0}} 
+enum {\bfseries tag\+D\+A\+T\+A\+D\+IR} \{ {\bfseries D\+A\+T\+A\+D\+I\+R\+\_\+\+G\+ET} = 1, 
+{\bfseries D\+A\+T\+A\+D\+I\+R\+\_\+\+S\+ET} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_data_object_adc5a6a36c4a0d98d105516d7faca5d2c}\label{interface_i_data_object_adc5a6a36c4a0d98d105516d7faca5d2c}} 
+typedef \hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$ {\bfseries L\+P\+D\+A\+T\+A\+O\+B\+J\+E\+CT}
+\item 
+\mbox{\Hypertarget{interface_i_data_object_a8c5f3ac8452cfc75dbda25853e4bd394}\label{interface_i_data_object_a8c5f3ac8452cfc75dbda25853e4bd394}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Data\+Object\+::tag\+D\+A\+T\+A\+D\+IR {\bfseries D\+A\+T\+A\+D\+IR}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_data_object_ad8c0862b65eb940cfbfd4e3480c44179}\label{interface_i_data_object_ad8c0862b65eb940cfbfd4e3480c44179}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Data} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc\+In, \mbox{[}out\mbox{]} S\+T\+G\+M\+E\+D\+I\+UM $\ast$pmedium)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_aec902ba203670617764c221b02131f7e}\label{interface_i_data_object_aec902ba203670617764c221b02131f7e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Get\+Data} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc\+In, \mbox{[}out\mbox{]} S\+T\+G\+M\+E\+D\+I\+UM $\ast$p\+Remote\+Medium)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_a43ba93fe5cb4f0675a76c1628d18142c}\label{interface_i_data_object_a43ba93fe5cb4f0675a76c1628d18142c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Data\+Here} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc, \mbox{[}in, out\mbox{]} S\+T\+G\+M\+E\+D\+I\+UM $\ast$pmedium)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_ae95c2bc830d1999685061b950a12a67d}\label{interface_i_data_object_ae95c2bc830d1999685061b950a12a67d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Get\+Data\+Here} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc, \mbox{[}in, out\mbox{]} S\+T\+G\+M\+E\+D\+I\+UM $\ast$p\+Remote\+Medium)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_adec691dacffd456c4c01ff776f92d8b6}\label{interface_i_data_object_adec691dacffd456c4c01ff776f92d8b6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Get\+Data} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_ae0d3c69ab917379fa41aa6023a8d6fcd}\label{interface_i_data_object_ae0d3c69ab917379fa41aa6023a8d6fcd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Canonical\+Format\+Etc} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatect\+In, \mbox{[}out\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_abd214245ea9dc0e71584f7d68d24f31a}\label{interface_i_data_object_abd214245ea9dc0e71584f7d68d24f31a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Data} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} S\+T\+G\+M\+E\+D\+I\+UM $\ast$pmedium, \mbox{[}in\mbox{]} B\+O\+OL f\+Release)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_a34d56cfa14fabc7a9fee57eed320110e}\label{interface_i_data_object_a34d56cfa14fabc7a9fee57eed320110e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Set\+Data} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} F\+L\+A\+G\+\_\+\+S\+T\+G\+M\+E\+D\+I\+UM $\ast$pmedium, \mbox{[}in\mbox{]} B\+O\+OL f\+Release)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_afa764948b5993ec1bc64468f88dfca0b}\label{interface_i_data_object_afa764948b5993ec1bc64468f88dfca0b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Format\+Etc} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Direction, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_f_o_r_m_a_t_e_t_c}{I\+Enum\+F\+O\+R\+M\+A\+T\+E\+TC} $\ast$$\ast$ppenum\+Format\+Etc)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_acf77bd6f3d743415beff377aaaf8e63a}\label{interface_i_data_object_acf77bd6f3d743415beff377aaaf8e63a}} 
+H\+R\+E\+S\+U\+LT {\bfseries D\+Advise} (\mbox{[}in\mbox{]} F\+O\+R\+M\+A\+T\+E\+TC $\ast$pformatetc, \mbox{[}in\mbox{]} D\+W\+O\+RD advf, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_advise_sink}{I\+Advise\+Sink} $\ast$p\+Adv\+Sink, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Connection)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_a4d8192ae77ade7dbb0150295822d69ae}\label{interface_i_data_object_a4d8192ae77ade7dbb0150295822d69ae}} 
+H\+R\+E\+S\+U\+LT {\bfseries D\+Unadvise} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Connection)
+\item 
+\mbox{\Hypertarget{interface_i_data_object_aff83d7cb8818344b17f042d43c41d680}\label{interface_i_data_object_aff83d7cb8818344b17f042d43c41d680}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+D\+Advise} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_s_t_a_t_d_a_t_a}{I\+Enum\+S\+T\+A\+T\+D\+A\+TA} $\ast$$\ast$ppenum\+Advise)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

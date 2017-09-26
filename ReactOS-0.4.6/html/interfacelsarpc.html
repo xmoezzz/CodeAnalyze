@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: lsarpc接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacelsarpc-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">lsarpc接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a92fb095f16099e81f92c539c122d82fb"><td class="memItemLeft" align="right" valign="top"><a id="a92fb095f16099e81f92c539c122d82fb"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarClose</b> ([in, out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *ObjectHandle)</td></tr>
+<tr class="separator:a92fb095f16099e81f92c539c122d82fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4de5484f0fe76efe8339e8e90e1129"><td class="memItemLeft" align="right" valign="top"><a id="a4b4de5484f0fe76efe8339e8e90e1129"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarDelete</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> ObjectHandle)</td></tr>
+<tr class="separator:a4b4de5484f0fe76efe8339e8e90e1129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30cfc0b3a71c15cb882c906e54c7de78"><td class="memItemLeft" align="right" valign="top"><a id="a30cfc0b3a71c15cb882c906e54c7de78"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarEnumeratePrivileges</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in, out] DWORD *EnumerationContext, [out] <a class="el" href="struct___l_s_a_p_r___p_r_i_v_i_l_e_g_e___e_n_u_m___b_u_f_f_e_r.html">PLSAPR_PRIVILEGE_ENUM_BUFFER</a> EnumerationBuffer, [in] DWORD PreferedMaximumLength)</td></tr>
+<tr class="separator:a30cfc0b3a71c15cb882c906e54c7de78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e26758cf11529f4475d1d6e0eb146ae"><td class="memItemLeft" align="right" valign="top"><a id="a5e26758cf11529f4475d1d6e0eb146ae"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQuerySecurityObject</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> ObjectHandle, [in] SECURITY_INFORMATION SecurityInformation, [out] <a class="el" href="struct___l_s_a_p_r___s_r___s_e_c_u_r_i_t_y___d_e_s_c_r_i_p_t_o_r.html">PLSAPR_SR_SECURITY_DESCRIPTOR</a> *SecurityDescriptor)</td></tr>
+<tr class="separator:a5e26758cf11529f4475d1d6e0eb146ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0420d0f7019ae7c3a0abe3b282dec5e3"><td class="memItemLeft" align="right" valign="top"><a id="a0420d0f7019ae7c3a0abe3b282dec5e3"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetSecurityObject</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> ObjectHandle, [in] SECURITY_INFORMATION SecurityInformation, [in] <a class="el" href="struct___l_s_a_p_r___s_r___s_e_c_u_r_i_t_y___d_e_s_c_r_i_p_t_o_r.html">PLSAPR_SR_SECURITY_DESCRIPTOR</a> SecurityDescriptor)</td></tr>
+<tr class="separator:a0420d0f7019ae7c3a0abe3b282dec5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e65602dcc54a36d8a88c3eee8dc879"><td class="memItemLeft" align="right" valign="top"><a id="a14e65602dcc54a36d8a88c3eee8dc879"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarChangePassword</b> ([in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> String1, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> String2, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> String3, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> String4, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> String5)</td></tr>
+<tr class="separator:a14e65602dcc54a36d8a88c3eee8dc879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c743f5015774a00fa4bd00d5b1725a4"><td class="memItemLeft" align="right" valign="top"><a id="a8c743f5015774a00fa4bd00d5b1725a4"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarOpenPolicy</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] PLSAPR_SERVER_NAME SystemName, [in] <a class="el" href="struct___l_s_a_p_r___o_b_j_e_c_t___a_t_t_r_i_b_u_t_e_s.html">PLSAPR_OBJECT_ATTRIBUTES</a> ObjectAttributes, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *PolicyHandle)</td></tr>
+<tr class="separator:a8c743f5015774a00fa4bd00d5b1725a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c1b741e879a3019303b7fbc36d2272"><td class="memItemLeft" align="right" valign="top"><a id="a20c1b741e879a3019303b7fbc36d2272"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQueryInformationPolicy</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] POLICY_INFORMATION_CLASS InformationClass, [out, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___p_o_l_i_c_y___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_POLICY_INFORMATION</a> *PolicyInformation)</td></tr>
+<tr class="separator:a20c1b741e879a3019303b7fbc36d2272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899b42054450769c748b2113fadd1d72"><td class="memItemLeft" align="right" valign="top"><a id="a899b42054450769c748b2113fadd1d72"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetInformationPolicy</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] POLICY_INFORMATION_CLASS InformationClass, [in, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___p_o_l_i_c_y___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_POLICY_INFORMATION</a> PolicyInformation)</td></tr>
+<tr class="separator:a899b42054450769c748b2113fadd1d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94926aee1749a7125d9cd7eae109f49"><td class="memItemLeft" align="right" valign="top"><a id="aa94926aee1749a7125d9cd7eae109f49"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarClearAuditLog</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> ObjectHandle)</td></tr>
+<tr class="separator:aa94926aee1749a7125d9cd7eae109f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0051dfe81b92974c25b545aa6e7311ff"><td class="memItemLeft" align="right" valign="top"><a id="a0051dfe81b92974c25b545aa6e7311ff"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarCreateAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> AccountSid, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *AccountHandle)</td></tr>
+<tr class="separator:a0051dfe81b92974c25b545aa6e7311ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb75d705b7862fa3a3ba11a9fbdbd763"><td class="memItemLeft" align="right" valign="top"><a id="acb75d705b7862fa3a3ba11a9fbdbd763"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarEnumerateAccounts</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in, out] DWORD *EnumerationContext, [out] <a class="el" href="struct___l_s_a_p_r___a_c_c_o_u_n_t___e_n_u_m___b_u_f_f_e_r.html">PLSAPR_ACCOUNT_ENUM_BUFFER</a> EnumerationBuffer, [in] DWORD PreferedMaximumLength)</td></tr>
+<tr class="separator:acb75d705b7862fa3a3ba11a9fbdbd763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4865ef8051f291caaa84c5da8df20521"><td class="memItemLeft" align="right" valign="top"><a id="a4865ef8051f291caaa84c5da8df20521"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarCreateTrustedDomain</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a_p_r___t_r_u_s_t___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_TRUST_INFORMATION</a> TrustedDomainInformation, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *TrustedDomainHandle)</td></tr>
+<tr class="separator:a4865ef8051f291caaa84c5da8df20521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d735ed3ce1b45b726510391e85368b1"><td class="memItemLeft" align="right" valign="top"><a id="a9d735ed3ce1b45b726510391e85368b1"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarEnumerateTrustedDomains</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in, out] DWORD *EnumerationContext, [out] <a class="el" href="struct___l_s_a_p_r___t_r_u_s_t_e_d___e_n_u_m___b_u_f_f_e_r.html">PLSAPR_TRUSTED_ENUM_BUFFER</a> EnumerationBuffer, [in] DWORD PreferedMaximumLength)</td></tr>
+<tr class="separator:a9d735ed3ce1b45b726510391e85368b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d37b9db61032865da70fccba96c112"><td class="memItemLeft" align="right" valign="top"><a id="af4d37b9db61032865da70fccba96c112"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupNames</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] DWORD Count, [in, size_is(Count)] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Names, [out] <a class="el" href="struct___l_s_a_p_r___r_e_f_e_r_e_n_c_e_d___d_o_m_a_i_n___l_i_s_t.html">PLSAPR_REFERENCED_DOMAIN_LIST</a> *ReferencedDomains, [in, out] <a class="el" href="struct___l_s_a_p_r___t_r_a_n_s_l_a_t_e_d___s_i_d_s.html">PLSAPR_TRANSLATED_SIDS</a> TranslatedSids, [in] LSAP_LOOKUP_LEVEL LookupLevel, [in, out] DWORD *MappedCount)</td></tr>
+<tr class="separator:af4d37b9db61032865da70fccba96c112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb4ea774df4716a839cc8f59c1b414d"><td class="memItemLeft" align="right" valign="top"><a id="a0cb4ea774df4716a839cc8f59c1b414d"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupSids</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a_p_r___s_i_d___e_n_u_m___b_u_f_f_e_r.html">PLSAPR_SID_ENUM_BUFFER</a> SidEnumBuffer, [out] <a class="el" href="struct___l_s_a_p_r___r_e_f_e_r_e_n_c_e_d___d_o_m_a_i_n___l_i_s_t.html">PLSAPR_REFERENCED_DOMAIN_LIST</a> *ReferencedDomains, [in, out] <a class="el" href="struct___l_s_a_p_r___t_r_a_n_s_l_a_t_e_d___n_a_m_e_s.html">PLSAPR_TRANSLATED_NAMES</a> TranslatedNames, [in] LSAP_LOOKUP_LEVEL LookupLevel, [in, out] DWORD *MappedCount)</td></tr>
+<tr class="separator:a0cb4ea774df4716a839cc8f59c1b414d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f8b52b94b5284cb3e8418ec7a89a46"><td class="memItemLeft" align="right" valign="top"><a id="ac3f8b52b94b5284cb3e8418ec7a89a46"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarCreateSecret</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> SecretName, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *SecretHandle)</td></tr>
+<tr class="separator:ac3f8b52b94b5284cb3e8418ec7a89a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17bb28cee07b13399f2453b72b436eb0"><td class="memItemLeft" align="right" valign="top"><a id="a17bb28cee07b13399f2453b72b436eb0"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarOpenAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> AccountSid, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *AccountHandle)</td></tr>
+<tr class="separator:a17bb28cee07b13399f2453b72b436eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650e65109769c4164f00b14e0de57d35"><td class="memItemLeft" align="right" valign="top"><a id="a650e65109769c4164f00b14e0de57d35"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarEnumeratePrivilegesAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> AccountHandle, [out] <a class="el" href="struct___l_s_a_p_r___p_r_i_v_i_l_e_g_e___s_e_t.html">PLSAPR_PRIVILEGE_SET</a> *Privileges)</td></tr>
+<tr class="separator:a650e65109769c4164f00b14e0de57d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31e456d0d5f5a21a7e2d0c82666594f"><td class="memItemLeft" align="right" valign="top"><a id="af31e456d0d5f5a21a7e2d0c82666594f"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarAddPrivilegesToAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> AccountHandle, [in] <a class="el" href="struct___l_s_a_p_r___p_r_i_v_i_l_e_g_e___s_e_t.html">PLSAPR_PRIVILEGE_SET</a> Privileges)</td></tr>
+<tr class="separator:af31e456d0d5f5a21a7e2d0c82666594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60a5f3c1758e48aea8a65262ee4fc3d"><td class="memItemLeft" align="right" valign="top"><a id="ad60a5f3c1758e48aea8a65262ee4fc3d"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarRemovePrivilegesFromAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> AccountHandle, [in] <a class="el" href="_processor_bind_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a> AllPrivileges, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___l_s_a_p_r___p_r_i_v_i_l_e_g_e___s_e_t.html">PLSAPR_PRIVILEGE_SET</a> Privileges)</td></tr>
+<tr class="separator:ad60a5f3c1758e48aea8a65262ee4fc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c1683602501b8e9967605c01d92ea5"><td class="memItemLeft" align="right" valign="top"><a id="a43c1683602501b8e9967605c01d92ea5"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarGetQuotasForAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> AccountHandle, [out] <a class="el" href="struct___q_u_o_t_a___l_i_m_i_t_s.html">PQUOTA_LIMITS</a> QuotaLimits)</td></tr>
+<tr class="separator:a43c1683602501b8e9967605c01d92ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac2e5d47348a4e85c64a7248cfcb094"><td class="memItemLeft" align="right" valign="top"><a id="a0ac2e5d47348a4e85c64a7248cfcb094"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetQuotasForAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> AccountHandle, [in] <a class="el" href="struct___q_u_o_t_a___l_i_m_i_t_s.html">PQUOTA_LIMITS</a> QuotaLimits)</td></tr>
+<tr class="separator:a0ac2e5d47348a4e85c64a7248cfcb094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90adb9578423d74ae88a0036383c1ca6"><td class="memItemLeft" align="right" valign="top"><a id="a90adb9578423d74ae88a0036383c1ca6"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarGetSystemAccessAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> AccountHandle, [out] ACCESS_MASK *SystemAccess)</td></tr>
+<tr class="separator:a90adb9578423d74ae88a0036383c1ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacafbcd046f5860c8f75ded6f514c6dd"><td class="memItemLeft" align="right" valign="top"><a id="aacafbcd046f5860c8f75ded6f514c6dd"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetSystemAccessAccount</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> AccountHandle, [in] ACCESS_MASK SystemAccess)</td></tr>
+<tr class="separator:aacafbcd046f5860c8f75ded6f514c6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2382ab96cded476d1e51f1704dac869d"><td class="memItemLeft" align="right" valign="top"><a id="a2382ab96cded476d1e51f1704dac869d"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarOpenTrustedDomain</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> TrustedDomainSid, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *TrustedDomainHandle)</td></tr>
+<tr class="separator:a2382ab96cded476d1e51f1704dac869d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667849857184bdff62666f1f57fb21bc"><td class="memItemLeft" align="right" valign="top"><a id="a667849857184bdff62666f1f57fb21bc"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQueryInfoTrustedDomain</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> TrustedDomainHandle, [in] TRUSTED_INFORMATION_CLASS InformationClass, [out, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o.html">PLSAPR_TRUSTED_DOMAIN_INFO</a> *TrustedDomainInformation)</td></tr>
+<tr class="separator:a667849857184bdff62666f1f57fb21bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5552a093724a86be5e0508c3740f813"><td class="memItemLeft" align="right" valign="top"><a id="ad5552a093724a86be5e0508c3740f813"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetInformationTrustedDomain</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> TrustedDomainHandle, [in] TRUSTED_INFORMATION_CLASS InformationClass, [in, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o.html">PLSAPR_TRUSTED_DOMAIN_INFO</a> TrustedDomainInformation)</td></tr>
+<tr class="separator:ad5552a093724a86be5e0508c3740f813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2596341ca2c668d0e98917530511cb"><td class="memItemLeft" align="right" valign="top"><a id="a5e2596341ca2c668d0e98917530511cb"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarOpenSecret</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> SecretName, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *SecretHandle)</td></tr>
+<tr class="separator:a5e2596341ca2c668d0e98917530511cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8e678ffacb51b94e5888832e5a6e9c"><td class="memItemLeft" align="right" valign="top"><a id="aeb8e678ffacb51b94e5888832e5a6e9c"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetSecret</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> SecretHandle, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___l_s_a_p_r___c_r___c_i_p_h_e_r___v_a_l_u_e.html">PLSAPR_CR_CIPHER_VALUE</a> EncryptedCurrentValue, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___l_s_a_p_r___c_r___c_i_p_h_e_r___v_a_l_u_e.html">PLSAPR_CR_CIPHER_VALUE</a> EncryptedOldValue)</td></tr>
+<tr class="separator:aeb8e678ffacb51b94e5888832e5a6e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c9f6d409463cc2d64b30e95d5fe64d"><td class="memItemLeft" align="right" valign="top"><a id="a48c9f6d409463cc2d64b30e95d5fe64d"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQuerySecret</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> SecretHandle, [in, out, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___l_s_a_p_r___c_r___c_i_p_h_e_r___v_a_l_u_e.html">PLSAPR_CR_CIPHER_VALUE</a> *EncryptedCurrentValue, [in, out, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="union___l_a_r_g_e___i_n_t_e_g_e_r.html">PLARGE_INTEGER</a> CurrentValueSetTime, [in, out, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___l_s_a_p_r___c_r___c_i_p_h_e_r___v_a_l_u_e.html">PLSAPR_CR_CIPHER_VALUE</a> *EncryptedOldValue, [in, out, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="union___l_a_r_g_e___i_n_t_e_g_e_r.html">PLARGE_INTEGER</a> OldValueSetTime)</td></tr>
+<tr class="separator:a48c9f6d409463cc2d64b30e95d5fe64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311d0deae1aded8af784931780df9447"><td class="memItemLeft" align="right" valign="top"><a id="a311d0deae1aded8af784931780df9447"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupPrivilegeValue</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> <a class="el" href="struct_name_rec__.html">Name</a>, [out] <a class="el" href="struct___l_u_i_d.html">PLUID</a> Value)</td></tr>
+<tr class="separator:a311d0deae1aded8af784931780df9447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b15c19adf74a11362fe39097ce9430"><td class="memItemLeft" align="right" valign="top"><a id="a47b15c19adf74a11362fe39097ce9430"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupPrivilegeName</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_u_i_d.html">PLUID</a> Value, [out] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> *<a class="el" href="struct_name_rec__.html">Name</a>)</td></tr>
+<tr class="separator:a47b15c19adf74a11362fe39097ce9430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f7d77793f8385cd11f8502305c1982"><td class="memItemLeft" align="right" valign="top"><a id="a10f7d77793f8385cd11f8502305c1982"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupPrivilegeDisplayName</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> <a class="el" href="struct_name_rec__.html">Name</a>, [in] USHORT ClientLanguage, [in] USHORT ClientSystemDefaultLanguage, [out] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> *DisplayName, [out] USHORT *LanguageReturned)</td></tr>
+<tr class="separator:a10f7d77793f8385cd11f8502305c1982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3a537af5e4ac85fac0cc5b1d6f45f1"><td class="memItemLeft" align="right" valign="top"><a id="acb3a537af5e4ac85fac0cc5b1d6f45f1"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarDeleteObject</b> ([in, out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *ObjectHandle)</td></tr>
+<tr class="separator:acb3a537af5e4ac85fac0cc5b1d6f45f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6236f080b841493ce6437fb4e32bf24b"><td class="memItemLeft" align="right" valign="top"><a id="a6236f080b841493ce6437fb4e32bf24b"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarEnumerateAccountsWithUserRight</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> UserRight, [out] <a class="el" href="struct___l_s_a_p_r___a_c_c_o_u_n_t___e_n_u_m___b_u_f_f_e_r.html">PLSAPR_ACCOUNT_ENUM_BUFFER</a> EnumerationBuffer)</td></tr>
+<tr class="separator:a6236f080b841493ce6437fb4e32bf24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4999700367dcc76fba365a9e5048f6"><td class="memItemLeft" align="right" valign="top"><a id="a3a4999700367dcc76fba365a9e5048f6"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarEnumerateAccountRights</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> AccountSid, [out] <a class="el" href="struct___l_s_a_p_r___u_s_e_r___r_i_g_h_t___s_e_t.html">PLSAPR_USER_RIGHT_SET</a> UserRights)</td></tr>
+<tr class="separator:a3a4999700367dcc76fba365a9e5048f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e256990e86a8070520f54efa965425"><td class="memItemLeft" align="right" valign="top"><a id="ad2e256990e86a8070520f54efa965425"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarAddAccountRights</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> AccountSid, [in] <a class="el" href="struct___l_s_a_p_r___u_s_e_r___r_i_g_h_t___s_e_t.html">PLSAPR_USER_RIGHT_SET</a> UserRights)</td></tr>
+<tr class="separator:ad2e256990e86a8070520f54efa965425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c6619f9e6d723fa1c635354e21e50d"><td class="memItemLeft" align="right" valign="top"><a id="a65c6619f9e6d723fa1c635354e21e50d"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarRemoveAccountRights</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> AccountSid, [in] <a class="el" href="_processor_bind_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a> AllRights, [in] <a class="el" href="struct___l_s_a_p_r___u_s_e_r___r_i_g_h_t___s_e_t.html">PLSAPR_USER_RIGHT_SET</a> UserRights)</td></tr>
+<tr class="separator:a65c6619f9e6d723fa1c635354e21e50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001854f8d9e705ca2e70478e2c034d74"><td class="memItemLeft" align="right" valign="top"><a id="a001854f8d9e705ca2e70478e2c034d74"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQueryTrustedDomainInfo</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> TrustedDomainSid, [in] TRUSTED_INFORMATION_CLASS InformationClass, [out, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o.html">PLSAPR_TRUSTED_DOMAIN_INFO</a> *TrustedDomainInformation)</td></tr>
+<tr class="separator:a001854f8d9e705ca2e70478e2c034d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35abd88b7912290ffacc5a633cd1943d"><td class="memItemLeft" align="right" valign="top"><a id="a35abd88b7912290ffacc5a633cd1943d"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetTrustedDomainInfo</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> TrustedDomainSid, [in] TRUSTED_INFORMATION_CLASS InformationClass, [in, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o.html">PLSAPR_TRUSTED_DOMAIN_INFO</a> TrustedDomainInformation)</td></tr>
+<tr class="separator:a35abd88b7912290ffacc5a633cd1943d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac427a161976ca0223f08df8e696c96fe"><td class="memItemLeft" align="right" valign="top"><a id="ac427a161976ca0223f08df8e696c96fe"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarDeleteTrustedDomain</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> TrustedDomainSid)</td></tr>
+<tr class="separator:ac427a161976ca0223f08df8e696c96fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46a124d5dde06d6530c96f3cf66309e"><td class="memItemLeft" align="right" valign="top"><a id="ab46a124d5dde06d6530c96f3cf66309e"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarStorePrivateData</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> KeyName, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___l_s_a_p_r___c_r___c_i_p_h_e_r___v_a_l_u_e.html">PLSAPR_CR_CIPHER_VALUE</a> EncryptedData)</td></tr>
+<tr class="separator:ab46a124d5dde06d6530c96f3cf66309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c78d541401fee950b7c5a218a1c9413"><td class="memItemLeft" align="right" valign="top"><a id="a5c78d541401fee950b7c5a218a1c9413"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarRetrievePrivateData</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> KeyName, [in, out] <a class="el" href="struct___l_s_a_p_r___c_r___c_i_p_h_e_r___v_a_l_u_e.html">PLSAPR_CR_CIPHER_VALUE</a> *EncryptedData)</td></tr>
+<tr class="separator:a5c78d541401fee950b7c5a218a1c9413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d629fe4d09a65180713915e87f7ab2"><td class="memItemLeft" align="right" valign="top"><a id="a32d629fe4d09a65180713915e87f7ab2"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarOpenPolicy2</b> ([in, <a class="el" href="interfaceunique.html">unique</a>, <a class="el" href="structstring.html">string</a>] PLSAPR_SERVER_NAME SystemName, [in] <a class="el" href="struct___l_s_a_p_r___o_b_j_e_c_t___a_t_t_r_i_b_u_t_e_s.html">PLSAPR_OBJECT_ATTRIBUTES</a> ObjectAttributes, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *PolicyHandle)</td></tr>
+<tr class="separator:a32d629fe4d09a65180713915e87f7ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83baad32cf674d9c32f6b9a1521079e"><td class="memItemLeft" align="right" valign="top"><a id="ab83baad32cf674d9c32f6b9a1521079e"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarGetUserName</b> ([in, <a class="el" href="interfaceunique.html">unique</a>, <a class="el" href="structstring.html">string</a>] PLSAPR_SERVER_NAME SystemName, [in, out] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> *UserName, [in, out, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> *DomainName)</td></tr>
+<tr class="separator:ab83baad32cf674d9c32f6b9a1521079e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac969638df5d479c0e1c43f5297d598f8"><td class="memItemLeft" align="right" valign="top"><a id="ac969638df5d479c0e1c43f5297d598f8"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQueryInformationPolicy2</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] POLICY_INFORMATION_CLASS InformationClass, [out, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___p_o_l_i_c_y___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_POLICY_INFORMATION</a> *PolicyInformation)</td></tr>
+<tr class="separator:ac969638df5d479c0e1c43f5297d598f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632bcfc1d6f545ea9f32fa73491765ce"><td class="memItemLeft" align="right" valign="top"><a id="a632bcfc1d6f545ea9f32fa73491765ce"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetInformationPolicy2</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] POLICY_INFORMATION_CLASS InformationClass, [in, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___p_o_l_i_c_y___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_POLICY_INFORMATION</a> PolicyInformation)</td></tr>
+<tr class="separator:a632bcfc1d6f545ea9f32fa73491765ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f6fbb1ea7d983130e38f21d8d66cd9"><td class="memItemLeft" align="right" valign="top"><a id="a14f6fbb1ea7d983130e38f21d8d66cd9"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQueryTrustedDomainInfoByName</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> TrustedDomainName, [in] POLICY_INFORMATION_CLASS InformationClass, [out, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o.html">PLSAPR_TRUSTED_DOMAIN_INFO</a> *PolicyInformation)</td></tr>
+<tr class="separator:a14f6fbb1ea7d983130e38f21d8d66cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ddcaee129f0a108596d67652fca8cb"><td class="memItemLeft" align="right" valign="top"><a id="ae9ddcaee129f0a108596d67652fca8cb"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetTrustedDomainInfoByName</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> TrustedDomainName, [in] POLICY_INFORMATION_CLASS InformationClass, [in, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o.html">PLSAPR_TRUSTED_DOMAIN_INFO</a> PolicyInformation)</td></tr>
+<tr class="separator:ae9ddcaee129f0a108596d67652fca8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d2384d055bc6ae0dcbfe7552fa9584"><td class="memItemLeft" align="right" valign="top"><a id="a36d2384d055bc6ae0dcbfe7552fa9584"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarEnumerateTrustedDomainsEx</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in, out] DWORD *EnumerationContext, [out] <a class="el" href="struct___l_s_a_p_r___t_r_u_s_t_e_d___e_n_u_m___b_u_f_f_e_r___e_x.html">PLSAPR_TRUSTED_ENUM_BUFFER_EX</a> EnumerationBuffer, [in] DWORD PreferedMaximumLength)</td></tr>
+<tr class="separator:a36d2384d055bc6ae0dcbfe7552fa9584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826c24edb6066e641f6ca5e4cc9f262e"><td class="memItemLeft" align="right" valign="top"><a id="a826c24edb6066e641f6ca5e4cc9f262e"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarCreateTrustedDomainEx</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o_r_m_a_t_i_o_n___e_x.html">PLSAPR_TRUSTED_DOMAIN_INFORMATION_EX</a> TrustedDomainInformation, [in] <a class="el" href="struct___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___a_u_t_h___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION</a> AuthentificationInformation, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *TrustedDomainHandle)</td></tr>
+<tr class="separator:a826c24edb6066e641f6ca5e4cc9f262e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6c4cb521a05c14060aa41e97fd144c"><td class="memItemLeft" align="right" valign="top"><a id="add6c4cb521a05c14060aa41e97fd144c"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetPolicyReplicationHandle</b> ([in, out] <a class="el" href="interfacevoid.html">PLSAPR_HANDLE</a> PolicyHandle)</td></tr>
+<tr class="separator:add6c4cb521a05c14060aa41e97fd144c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99817f129fb087db58aeba2118da21e7"><td class="memItemLeft" align="right" valign="top"><a id="a99817f129fb087db58aeba2118da21e7"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQueryDomainInformationPolicy</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] POLICY_INFORMATION_CLASS InformationClass, [out, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___p_o_l_i_c_y___d_o_m_a_i_n___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_POLICY_DOMAIN_INFORMATION</a> *PolicyInformation)</td></tr>
+<tr class="separator:a99817f129fb087db58aeba2118da21e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff1e8a752667f57eca92f974b289051"><td class="memItemLeft" align="right" valign="top"><a id="abff1e8a752667f57eca92f974b289051"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetDomainInformationPolicy</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] POLICY_INFORMATION_CLASS InformationClass, [in, switch_is(InformationClass)] <a class="el" href="union___l_s_a_p_r___p_o_l_i_c_y___d_o_m_a_i_n___i_n_f_o_r_m_a_t_i_o_n.html">PLSAPR_POLICY_DOMAIN_INFORMATION</a> PolicyInformation)</td></tr>
+<tr class="separator:abff1e8a752667f57eca92f974b289051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da960160509bfe2e2c795c895f607c5"><td class="memItemLeft" align="right" valign="top"><a id="a5da960160509bfe2e2c795c895f607c5"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarOpenTrustedDomainByName</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> TrustedDomainName, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *TrustedDomainHandle)</td></tr>
+<tr class="separator:a5da960160509bfe2e2c795c895f607c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3bf1a234363b7384a583651efcae3ea"><td class="memItemLeft" align="right" valign="top"><a id="ad3bf1a234363b7384a583651efcae3ea"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarTestCall</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:ad3bf1a234363b7384a583651efcae3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26487a23f31d1e9379e982302846af9"><td class="memItemLeft" align="right" valign="top"><a id="ae26487a23f31d1e9379e982302846af9"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupSids2</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a_p_r___s_i_d___e_n_u_m___b_u_f_f_e_r.html">PLSAPR_SID_ENUM_BUFFER</a> SidEnumBuffer, [out] <a class="el" href="struct___l_s_a_p_r___r_e_f_e_r_e_n_c_e_d___d_o_m_a_i_n___l_i_s_t.html">PLSAPR_REFERENCED_DOMAIN_LIST</a> *ReferencedDomains, [in, out] <a class="el" href="struct___l_s_a_p_r___t_r_a_n_s_l_a_t_e_d___n_a_m_e_s___e_x.html">PLSAPR_TRANSLATED_NAMES_EX</a> TranslatedNames, [in] LSAP_LOOKUP_LEVEL LookupLevel, [in, out] DWORD *MappedCount, [in] DWORD LookupOptions, [in] DWORD ClientRevision)</td></tr>
+<tr class="separator:ae26487a23f31d1e9379e982302846af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d8cb6a530406de0a23fec6eb0a6732"><td class="memItemLeft" align="right" valign="top"><a id="ae9d8cb6a530406de0a23fec6eb0a6732"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupNames2</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] DWORD Count, [in, size_is(Count)] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Names, [out] <a class="el" href="struct___l_s_a_p_r___r_e_f_e_r_e_n_c_e_d___d_o_m_a_i_n___l_i_s_t.html">PLSAPR_REFERENCED_DOMAIN_LIST</a> *ReferencedDomains, [in, out] <a class="el" href="struct___l_s_a_p_r___t_r_a_n_s_l_a_t_e_d___s_i_d_s___e_x.html">PLSAPR_TRANSLATED_SIDS_EX</a> TranslatedSids, [in] LSAP_LOOKUP_LEVEL LookupLevel, [in, out] DWORD *MappedCount, [in] DWORD LookupOptions, [in] DWORD ClientRevision)</td></tr>
+<tr class="separator:ae9d8cb6a530406de0a23fec6eb0a6732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb5c24fd5fc14ba729cd3d1c378f7bf"><td class="memItemLeft" align="right" valign="top"><a id="a2fb5c24fd5fc14ba729cd3d1c378f7bf"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarCreateTrustedDomainEx2</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___i_n_f_o_r_m_a_t_i_o_n___e_x.html">PLSAPR_TRUSTED_DOMAIN_INFORMATION_EX</a> TrustedDomainInformation, [in] <a class="el" href="struct___l_s_a_p_r___t_r_u_s_t_e_d___d_o_m_a_i_n___a_u_t_h___i_n_f_o_r_m_a_t_i_o_n___i_n_t_e_r_n_a_l.html">PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION_INTERNAL</a> AuthentificationInformation, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *TrustedDomainHandle)</td></tr>
+<tr class="separator:a2fb5c24fd5fc14ba729cd3d1c378f7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712bf8781685e0659c4437b6c959bffa"><td class="memItemLeft" align="right" valign="top"><a id="a712bf8781685e0659c4437b6c959bffa"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrWrite</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a712bf8781685e0659c4437b6c959bffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d760ee631ec37eff292f68b0b21cf38"><td class="memItemLeft" align="right" valign="top"><a id="a4d760ee631ec37eff292f68b0b21cf38"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrRead</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a4d760ee631ec37eff292f68b0b21cf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58b15bcaeffe97d6f6e6b4180492862"><td class="memItemLeft" align="right" valign="top"><a id="aa58b15bcaeffe97d6f6e6b4180492862"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrEnumerate</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:aa58b15bcaeffe97d6f6e6b4180492862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e2bdf624f11f2beab93027a9e950b8"><td class="memItemLeft" align="right" valign="top"><a id="a44e2bdf624f11f2beab93027a9e950b8"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrWriteDomainCredentials</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a44e2bdf624f11f2beab93027a9e950b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f7d4e0851fe08984b3a36328f3301f"><td class="memItemLeft" align="right" valign="top"><a id="a36f7d4e0851fe08984b3a36328f3301f"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrReadDomainCredentials</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a36f7d4e0851fe08984b3a36328f3301f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7579e78ca5b31120a68e4d9c5e56bab1"><td class="memItemLeft" align="right" valign="top"><a id="a7579e78ca5b31120a68e4d9c5e56bab1"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrDelete</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a7579e78ca5b31120a68e4d9c5e56bab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f29c387b38ebd047d2347c46216837"><td class="memItemLeft" align="right" valign="top"><a id="a99f29c387b38ebd047d2347c46216837"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrGetTargetInfo</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a99f29c387b38ebd047d2347c46216837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc28846e3a30aae12e7824d61e321ad"><td class="memItemLeft" align="right" valign="top"><a id="adfc28846e3a30aae12e7824d61e321ad"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrProfileLoaded</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:adfc28846e3a30aae12e7824d61e321ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be9e6be356468b06ea04ea24403e532"><td class="memItemLeft" align="right" valign="top"><a id="a2be9e6be356468b06ea04ea24403e532"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupNames3</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] DWORD Count, [in, size_is(Count)] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Names, [out] <a class="el" href="struct___l_s_a_p_r___r_e_f_e_r_e_n_c_e_d___d_o_m_a_i_n___l_i_s_t.html">PLSAPR_REFERENCED_DOMAIN_LIST</a> *ReferencedDomains, [in, out] <a class="el" href="struct___l_s_a_p_r___t_r_a_n_s_l_a_t_e_d___s_i_d_s___e_x2.html">PLSAPR_TRANSLATED_SIDS_EX2</a> TranslatedSids, [in] LSAP_LOOKUP_LEVEL LookupLevel, [in, out] DWORD *MappedCount, [in] DWORD LookupOptions, [in] DWORD ClientRevision)</td></tr>
+<tr class="separator:a2be9e6be356468b06ea04ea24403e532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13aa9954ab4b1dcd2f8bf2d5e3ded3ca"><td class="memItemLeft" align="right" valign="top"><a id="a13aa9954ab4b1dcd2f8bf2d5e3ded3ca"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrGetSessionTypes</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a13aa9954ab4b1dcd2f8bf2d5e3ded3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eb5084a11835bdbaf019f1e2f3adc1"><td class="memItemLeft" align="right" valign="top"><a id="a46eb5084a11835bdbaf019f1e2f3adc1"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarRegisterAuditEvent</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a46eb5084a11835bdbaf019f1e2f3adc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef808db7c050ca1272f54f17a1af3837"><td class="memItemLeft" align="right" valign="top"><a id="aef808db7c050ca1272f54f17a1af3837"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarGenAuditEvent</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:aef808db7c050ca1272f54f17a1af3837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ef5578d956f275adac738d80a3294b"><td class="memItemLeft" align="right" valign="top"><a id="a59ef5578d956f275adac738d80a3294b"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarUnregisterAuditEvent</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a59ef5578d956f275adac738d80a3294b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b9cc4ba8573a007463b439c60c4a12"><td class="memItemLeft" align="right" valign="top"><a id="ae8b9cc4ba8573a007463b439c60c4a12"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarQueryForestTrustInformation</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PLSA_UNICODE_STRING</a> TrustedDomainName, [in] LSA_FOREST_TRUST_RECORD_TYPE HighestRecordType, [out] <a class="el" href="struct___l_s_a___f_o_r_e_s_t___t_r_u_s_t___i_n_f_o_r_m_a_t_i_o_n.html">PLSA_FOREST_TRUST_INFORMATION</a> *ForestTrustInfo)</td></tr>
+<tr class="separator:ae8b9cc4ba8573a007463b439c60c4a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3dc2e9c85bd3050147be8f5e14c3dd"><td class="memItemLeft" align="right" valign="top"><a id="a9e3dc2e9c85bd3050147be8f5e14c3dd"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarSetForestTrustInformation</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PLSA_UNICODE_STRING</a> TrustedDomainName, [in] LSA_FOREST_TRUST_RECORD_TYPE HighestRecordType, [in] <a class="el" href="struct___l_s_a___f_o_r_e_s_t___t_r_u_s_t___i_n_f_o_r_m_a_t_i_o_n.html">PLSA_FOREST_TRUST_INFORMATION</a> ForestTrustInfo, [in] <a class="el" href="_processor_bind_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a> CheckOnly, [out] <a class="el" href="struct___l_s_a___f_o_r_e_s_t___t_r_u_s_t___c_o_l_l_i_s_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html">PLSA_FOREST_TRUST_COLLISION_INFORMATION</a> *CollisionInfo)</td></tr>
+<tr class="separator:a9e3dc2e9c85bd3050147be8f5e14c3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba45159894d49c2db035cfe5a134e53"><td class="memItemLeft" align="right" valign="top"><a id="a3ba45159894d49c2db035cfe5a134e53"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CredrRename</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a3ba45159894d49c2db035cfe5a134e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2033e1c6898dab3ac2ae89a47ac94ac2"><td class="memItemLeft" align="right" valign="top"><a id="a2033e1c6898dab3ac2ae89a47ac94ac2"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupSids3</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] <a class="el" href="struct___l_s_a_p_r___s_i_d___e_n_u_m___b_u_f_f_e_r.html">PLSAPR_SID_ENUM_BUFFER</a> SidEnumBuffer, [out] <a class="el" href="struct___l_s_a_p_r___r_e_f_e_r_e_n_c_e_d___d_o_m_a_i_n___l_i_s_t.html">PLSAPR_REFERENCED_DOMAIN_LIST</a> *ReferencedDomains, [in, out] <a class="el" href="struct___l_s_a_p_r___t_r_a_n_s_l_a_t_e_d___n_a_m_e_s___e_x.html">PLSAPR_TRANSLATED_NAMES_EX</a> TranslatedNames, [in] LSAP_LOOKUP_LEVEL LookupLevel, [in, out] DWORD *MappedCount, [in] DWORD LookupOptions, [in] DWORD ClientRevision)</td></tr>
+<tr class="separator:a2033e1c6898dab3ac2ae89a47ac94ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42ca5806d0c351188589a812feb8b53"><td class="memItemLeft" align="right" valign="top"><a id="ac42ca5806d0c351188589a812feb8b53"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarLookupNames4</b> ([in] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> PolicyHandle, [in] DWORD Count, [in, size_is(Count)] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Names, [out] <a class="el" href="struct___l_s_a_p_r___r_e_f_e_r_e_n_c_e_d___d_o_m_a_i_n___l_i_s_t.html">PLSAPR_REFERENCED_DOMAIN_LIST</a> *ReferencedDomains, [in, out] <a class="el" href="struct___l_s_a_p_r___t_r_a_n_s_l_a_t_e_d___s_i_d_s___e_x2.html">PLSAPR_TRANSLATED_SIDS_EX2</a> TranslatedSids, [in] LSAP_LOOKUP_LEVEL LookupLevel, [in, out] DWORD *MappedCount, [in] DWORD LookupOptions, [in] DWORD ClientRevision)</td></tr>
+<tr class="separator:ac42ca5806d0c351188589a812feb8b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f7a539026bf0fc38c10ebfc458453b"><td class="memItemLeft" align="right" valign="top"><a id="a87f7a539026bf0fc38c10ebfc458453b"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarOpenPolicySce</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] PLSAPR_SERVER_NAME SystemName, [in] <a class="el" href="struct___l_s_a_p_r___o_b_j_e_c_t___a_t_t_r_i_b_u_t_e_s.html">PLSAPR_OBJECT_ATTRIBUTES</a> ObjectAttributes, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">LSAPR_HANDLE</a> *PolicyHandle)</td></tr>
+<tr class="separator:a87f7a539026bf0fc38c10ebfc458453b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd1aba5271d25431922c298bce610c2"><td class="memItemLeft" align="right" valign="top"><a id="a5dd1aba5271d25431922c298bce610c2"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarAdtRegisterSecurityEventSource</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a5dd1aba5271d25431922c298bce610c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eca9ccb4eaa99356591f414b607e841"><td class="memItemLeft" align="right" valign="top"><a id="a9eca9ccb4eaa99356591f414b607e841"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarAdtUnregisterSecurityEventSource</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a9eca9ccb4eaa99356591f414b607e841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fb4da8837de1ba51b35d99dd6bbe92"><td class="memItemLeft" align="right" valign="top"><a id="a47fb4da8837de1ba51b35d99dd6bbe92"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>LsarAdtReportSecurityEvent</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> hBinding)</td></tr>
+<tr class="separator:a47fb4da8837de1ba51b35d99dd6bbe92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/reactos/idl/<a class="el" href="lsa_8idl_source.html">lsa.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

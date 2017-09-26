@@ -1,0 +1,104 @@
+\hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer}{}\section{X\+M\+L\+Storage\+:\+:X\+M\+L\+Writer结构体 参考}
+\label{struct_x_m_l_storage_1_1_x_m_l_writer}\index{X\+M\+L\+Storage\+::\+X\+M\+L\+Writer@{X\+M\+L\+Storage\+::\+X\+M\+L\+Writer}}
+
+
+on the fly X\+ML writer  
+
+
+
+
+{\ttfamily \#include $<$xmlstorage.\+h$>$}
+
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry}{Stack\+Entry}
+\begin{DoxyCompactList}\small\item\em container for \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer}{X\+M\+L\+Writer} state information \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a32aa9b48b973cc98b20e7972c3c9e3bf}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a32aa9b48b973cc98b20e7972c3c9e3bf}} 
+enum {\bfseries W\+R\+I\+T\+E\+S\+T\+A\+TE} \{ {\bfseries N\+O\+T\+H\+I\+NG}, 
+{\bfseries A\+T\+T\+R\+I\+B\+U\+T\+ES}, 
+{\bfseries P\+R\+E\+\_\+\+C\+L\+O\+S\+ED}, 
+{\bfseries P\+O\+ST}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a55ccf4a7c28edb4c1aaa7db9eb68691a}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a55ccf4a7c28edb4c1aaa7db9eb68691a}} 
+{\bfseries X\+M\+L\+Writer} (std\+::ostream \&out, const \hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Format} \&format=\hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Format}())
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a4114551501a5aa97a17e26314b45a42e}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a4114551501a5aa97a17e26314b45a42e}} 
+{\bfseries X\+M\+L\+Writer} (L\+P\+C\+T\+S\+TR \hyperlink{structpath}{path}, const \hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Format} \&format=\hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Format}())
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_ad3ec198a0329a4cdb4f085d4d0bf9a63}\label{struct_x_m_l_storage_1_1_x_m_l_writer_ad3ec198a0329a4cdb4f085d4d0bf9a63}} 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_ad3ec198a0329a4cdb4f085d4d0bf9a63}{create} (const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&\hyperlink{structname}{name})
+\begin{DoxyCompactList}\small\item\em create node and move to it \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_abf84ed65bba1d76d76dc424697983ab9}\label{struct_x_m_l_storage_1_1_x_m_l_writer_abf84ed65bba1d76d76dc424697983ab9}} 
+bool \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_abf84ed65bba1d76d76dc424697983ab9}{back} ()
+\begin{DoxyCompactList}\small\item\em go back to previous position \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a200e8f15812088b24e63380c56f65443}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a200e8f15812088b24e63380c56f65443}} 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_a200e8f15812088b24e63380c56f65443}{put} (const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&attr\+\_\+name, const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&\hyperlink{unionvalue}{value})
+\begin{DoxyCompactList}\small\item\em attribute setting \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a8a442cc5c3d4b885afba4aac5a9bcc1f}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a8a442cc5c3d4b885afba4aac5a9bcc1f}} 
+\hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \& \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_a8a442cc5c3d4b885afba4aac5a9bcc1f}{operator\mbox{[}$\,$\mbox{]}} (const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&attr\+\_\+name)
+\begin{DoxyCompactList}\small\item\em index operator write access to an attribute \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_ab216ecd157ce46b8ee23a2492efbe632}\label{struct_x_m_l_storage_1_1_x_m_l_writer_ab216ecd157ce46b8ee23a2492efbe632}} 
+\hyperlink{interfacevoid}{void} {\bfseries set\+\_\+content} (const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&s, bool cdata=false)
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_adb448cf14758cff2f66e93ee3d377eee}\label{struct_x_m_l_storage_1_1_x_m_l_writer_adb448cf14758cff2f66e93ee3d377eee}} 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_adb448cf14758cff2f66e93ee3d377eee}{create\+\_\+node\+\_\+content} (const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&node\+\_\+name, const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&content)
+\begin{DoxyCompactList}\small\item\em create node with string content \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a72c48e48c3e32a5c1c6254f79b03604a}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a72c48e48c3e32a5c1c6254f79b03604a}} 
+typedef \hyperlink{struct_x_m_l_storage_1_1_x_m_l_node_1_1_attribute_map}{X\+M\+L\+Node\+::\+Attribute\+Map} {\bfseries Attr\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a3e0f44af7946fb1339a082e554611db1}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a3e0f44af7946fb1339a082e554611db1}} 
+\hyperlink{interfacevoid}{void} {\bfseries close\+\_\+pre} (\hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry}{Stack\+Entry} \&entry)
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a1b1ae9d3ab3910f3342bca8ca1e595d8}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a1b1ae9d3ab3910f3342bca8ca1e595d8}} 
+\hyperlink{interfacevoid}{void} {\bfseries write\+\_\+pre} (\hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry}{Stack\+Entry} \&entry)
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_ad3f28a275c4db6c9405a4b746b64dda9}\label{struct_x_m_l_storage_1_1_x_m_l_writer_ad3f28a275c4db6c9405a4b746b64dda9}} 
+\hyperlink{interfacevoid}{void} {\bfseries write\+\_\+attributes} (\hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry}{Stack\+Entry} \&entry)
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_abae251ecf1888d660068a2f59e44c916}\label{struct_x_m_l_storage_1_1_x_m_l_writer_abae251ecf1888d660068a2f59e44c916}} 
+\hyperlink{interfacevoid}{void} {\bfseries write\+\_\+post} (\hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry}{Stack\+Entry} \&entry)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_aac0f02655aaaae9933c0159272740693}\label{struct_x_m_l_storage_1_1_x_m_l_writer_aac0f02655aaaae9933c0159272740693}} 
+\hyperlink{struct_x_m_l_storage_1_1tofstream}{tofstream} $\ast$ {\bfseries \+\_\+pofstream}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a55d3790a57b8894df21ee198d3075d2e}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a55d3790a57b8894df21ee198d3075d2e}} 
+std\+::ostream \& {\bfseries \+\_\+out}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a018e6e409f4a87d440ddfa0c091e14db}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a018e6e409f4a87d440ddfa0c091e14db}} 
+\hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Format} {\bfseries \+\_\+format}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_ae7687f2962e77b6be79475bf4cf68d97}\label{struct_x_m_l_storage_1_1_x_m_l_writer_ae7687f2962e77b6be79475bf4cf68d97}} 
+std\+::stack$<$ \hyperlink{struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry}{Stack\+Entry} $>$ {\bfseries \+\_\+stack}
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_writer_a14e8db214f15915c8fcf41d3b7206e9b}\label{struct_x_m_l_storage_1_1_x_m_l_writer_a14e8db214f15915c8fcf41d3b7206e9b}} 
+static \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} {\bfseries s\+\_\+empty\+\_\+attr}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+on the fly X\+ML writer 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/\hyperlink{xmlstorage_8h}{xmlstorage.\+h}\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/\hyperlink{xmlstorage_8cpp}{xmlstorage.\+cpp}\end{DoxyCompactItemize}

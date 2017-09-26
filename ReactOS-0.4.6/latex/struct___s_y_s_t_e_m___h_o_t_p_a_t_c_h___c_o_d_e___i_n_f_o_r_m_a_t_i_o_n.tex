@@ -1,0 +1,61 @@
+\hypertarget{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n}{}\section{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+H\+O\+T\+P\+A\+T\+C\+H\+\_\+\+C\+O\+D\+E\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+N结构体 参考}
+\label{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n}\index{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+H\+O\+T\+P\+A\+T\+C\+H\+\_\+\+C\+O\+D\+E\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+H\+O\+T\+P\+A\+T\+C\+H\+\_\+\+C\+O\+D\+E\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n_a919ce839eb04b28f8e5370e3f345fb36}\label{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n_a919ce839eb04b28f8e5370e3f345fb36}} 
+U\+L\+O\+NG {\bfseries Flags}
+\item 
+\mbox{\Hypertarget{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n_a49609e92fa440e7a64cec81f4e18eebe}\label{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n_a49609e92fa440e7a64cec81f4e18eebe}} 
+U\+L\+O\+NG {\bfseries Info\+Size}
+\item 
+\mbox{\Hypertarget{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n_acbace11b7d4cef807eb43a9c499a7477}\label{struct___s_y_s_t_e_m___h_o_t_p_a_t_c_h___c_o_d_e___i_n_f_o_r_m_a_t_i_o_n_acbace11b7d4cef807eb43a9c499a7477}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>ULONG {\bfseries Foo}\\
+\>\} {\bfseries CodeInfo}\\
+\>struct \{\\
+\>\>USHORT {\bfseries NameOffset}\\
+\>\>USHORT {\bfseries NameLength}\\
+\>\} {\bfseries KernelInfo}\\
+\>struct \{\\
+\>\>USHORT {\bfseries NameOffset}\\
+\>\>USHORT {\bfseries NameLength}\\
+\>\>USHORT {\bfseries TargetNameOffset}\\
+\>\>USHORT {\bfseries TargetNameLength}\\
+\>\>UCHAR {\bfseries PatchingFinished}\\
+\>\} {\bfseries UserModeInfo}\\
+\>struct \{\\
+\>\>USHORT {\bfseries NameOffset}\\
+\>\>USHORT {\bfseries NameLength}\\
+\>\>USHORT {\bfseries TargetNameOffset}\\
+\>\>USHORT {\bfseries TargetNameLength}\\
+\>\>UCHAR {\bfseries PatchingFinished}\\
+\>\>NTSTATUS {\bfseries ReturnCode}\\
+\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries TargetProcess}\\
+\>\} {\bfseries InjectionInfo}\\
+\>struct \{\\
+\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries FileHandle1}\\
+\>\>\hyperlink{struct___i_o___s_t_a_t_u_s___b_l_o_c_k}{PIO\_STATUS\_BLOCK} {\bfseries IoStatusBlock1}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries RenameInformation1}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries RenameInformationLength1}\\
+\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries FileHandle2}\\
+\>\>\hyperlink{struct___i_o___s_t_a_t_u_s___b_l_o_c_k}{PIO\_STATUS\_BLOCK} {\bfseries IoStatusBlock2}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries RenameInformation2}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries RenameInformationLength2}\\
+\>\} {\bfseries RenameInfo}\\
+\>struct \{\\
+\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries ParentDirectory}\\
+\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries ObjectHandle1}\\
+\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries ObjectHandle2}\\
+\>\} {\bfseries AtomicSwap}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/ndk/extypes.\+h\end{DoxyCompactItemize}

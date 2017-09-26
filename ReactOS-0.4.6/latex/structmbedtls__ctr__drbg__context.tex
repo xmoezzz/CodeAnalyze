@@ -1,0 +1,84 @@
+\hypertarget{structmbedtls__ctr__drbg__context}{}\section{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context结构体 参考}
+\label{structmbedtls__ctr__drbg__context}\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+
+
+C\+T\+R\+\_\+\+D\+R\+BG context structure  
+
+
+
+
+{\ttfamily \#include $<$ctr\+\_\+drbg.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{structmbedtls__ctr__drbg__context_a45ccb95b2b7828711c158fc4a06d41fc}{counter} \mbox{[}16\mbox{]}
+\item 
+int \hyperlink{structmbedtls__ctr__drbg__context_abdbeba1194553f4f1a3534712dc0c9f9}{reseed\+\_\+counter}
+\item 
+int \hyperlink{structmbedtls__ctr__drbg__context_ae521e373913548f732e0cdfe3e82d2ac}{prediction\+\_\+resistance}
+\item 
+size\+\_\+t \hyperlink{structmbedtls__ctr__drbg__context_aa874779eab1f355824ff692b33755476}{entropy\+\_\+len}
+\item 
+int \hyperlink{structmbedtls__ctr__drbg__context_a7b048c97f8dc916d89a0c7cd9d7f8522}{reseed\+\_\+interval}
+\item 
+\hyperlink{structmbedtls__aes__context}{mbedtls\+\_\+aes\+\_\+context} \hyperlink{structmbedtls__ctr__drbg__context_ab9513701b8389770eb294cbc4267ff92}{aes\+\_\+ctx}
+\item 
+\mbox{\Hypertarget{structmbedtls__ctr__drbg__context_a996a460946cf035a5de799c6fc905f62}\label{structmbedtls__ctr__drbg__context_a996a460946cf035a5de799c6fc905f62}} 
+int($\ast$ {\bfseries f\+\_\+entropy} )(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{structmbedtls__ctr__drbg__context_a85ca46b24fc75d3d1c091835c8c2e0b4}{p\+\_\+entropy}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+C\+T\+R\+\_\+\+D\+R\+BG context structure 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structmbedtls__ctr__drbg__context_ab9513701b8389770eb294cbc4267ff92}\label{structmbedtls__ctr__drbg__context_ab9513701b8389770eb294cbc4267ff92}} 
+\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}!aes\+\_\+ctx@{aes\+\_\+ctx}}
+\index{aes\+\_\+ctx@{aes\+\_\+ctx}!mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+\subsubsection{\texorpdfstring{aes\+\_\+ctx}{aes\_ctx}}
+{\footnotesize\ttfamily \hyperlink{structmbedtls__aes__context}{mbedtls\+\_\+aes\+\_\+context} mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context\+::aes\+\_\+ctx}
+
+A\+ES context \mbox{\Hypertarget{structmbedtls__ctr__drbg__context_a45ccb95b2b7828711c158fc4a06d41fc}\label{structmbedtls__ctr__drbg__context_a45ccb95b2b7828711c158fc4a06d41fc}} 
+\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}!counter@{counter}}
+\index{counter@{counter}!mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily unsigned char mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context\+::counter\mbox{[}16\mbox{]}}
+
+counter (\hyperlink{struct_v}{V}) \mbox{\Hypertarget{structmbedtls__ctr__drbg__context_aa874779eab1f355824ff692b33755476}\label{structmbedtls__ctr__drbg__context_aa874779eab1f355824ff692b33755476}} 
+\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}!entropy\+\_\+len@{entropy\+\_\+len}}
+\index{entropy\+\_\+len@{entropy\+\_\+len}!mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+\subsubsection{\texorpdfstring{entropy\+\_\+len}{entropy\_len}}
+{\footnotesize\ttfamily size\+\_\+t mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context\+::entropy\+\_\+len}
+
+amount of entropy grabbed on each (re)seed \mbox{\Hypertarget{structmbedtls__ctr__drbg__context_a85ca46b24fc75d3d1c091835c8c2e0b4}\label{structmbedtls__ctr__drbg__context_a85ca46b24fc75d3d1c091835c8c2e0b4}} 
+\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}!p\+\_\+entropy@{p\+\_\+entropy}}
+\index{p\+\_\+entropy@{p\+\_\+entropy}!mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+\subsubsection{\texorpdfstring{p\+\_\+entropy}{p\_entropy}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context\+::p\+\_\+entropy}
+
+context for the entropy function \mbox{\Hypertarget{structmbedtls__ctr__drbg__context_ae521e373913548f732e0cdfe3e82d2ac}\label{structmbedtls__ctr__drbg__context_ae521e373913548f732e0cdfe3e82d2ac}} 
+\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}!prediction\+\_\+resistance@{prediction\+\_\+resistance}}
+\index{prediction\+\_\+resistance@{prediction\+\_\+resistance}!mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+\subsubsection{\texorpdfstring{prediction\+\_\+resistance}{prediction\_resistance}}
+{\footnotesize\ttfamily int mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context\+::prediction\+\_\+resistance}
+
+enable prediction resistance (Automatic reseed before every random generation) \mbox{\Hypertarget{structmbedtls__ctr__drbg__context_abdbeba1194553f4f1a3534712dc0c9f9}\label{structmbedtls__ctr__drbg__context_abdbeba1194553f4f1a3534712dc0c9f9}} 
+\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}!reseed\+\_\+counter@{reseed\+\_\+counter}}
+\index{reseed\+\_\+counter@{reseed\+\_\+counter}!mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+\subsubsection{\texorpdfstring{reseed\+\_\+counter}{reseed\_counter}}
+{\footnotesize\ttfamily int mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context\+::reseed\+\_\+counter}
+
+reseed counter \mbox{\Hypertarget{structmbedtls__ctr__drbg__context_a7b048c97f8dc916d89a0c7cd9d7f8522}\label{structmbedtls__ctr__drbg__context_a7b048c97f8dc916d89a0c7cd9d7f8522}} 
+\index{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}!reseed\+\_\+interval@{reseed\+\_\+interval}}
+\index{reseed\+\_\+interval@{reseed\+\_\+interval}!mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context@{mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context}}
+\subsubsection{\texorpdfstring{reseed\+\_\+interval}{reseed\_interval}}
+{\footnotesize\ttfamily int mbedtls\+\_\+ctr\+\_\+drbg\+\_\+context\+::reseed\+\_\+interval}
+
+reseed interval 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/\hyperlink{ctr__drbg_8h}{ctr\+\_\+drbg.\+h}\end{DoxyCompactItemize}

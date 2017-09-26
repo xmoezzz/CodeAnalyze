@@ -1,0 +1,193 @@
+\hypertarget{classunordered__map}{}\section{unordered\+\_\+map$<$ \+\_\+\+Key, \+\_\+\+Tp,,, $>$ 模板类 参考}
+\label{classunordered__map}\index{unordered\+\_\+map$<$ \+\_\+\+Key, \+\_\+\+Tp,,, $>$@{unordered\+\_\+map$<$ \+\_\+\+Key, \+\_\+\+Tp,,, $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunordered__map_a3c2437bba45c98d91164848e74335673}\label{classunordered__map_a3c2437bba45c98d91164848e74335673}} 
+typedef \+\_\+\+Key {\bfseries key\+\_\+type}
+\item 
+\mbox{\Hypertarget{classunordered__map_a8fcdea6e3db7084dcbff98aea805f127}\label{classunordered__map_a8fcdea6e3db7084dcbff98aea805f127}} 
+typedef \+\_\+\+Tp {\bfseries data\+\_\+type}
+\item 
+\mbox{\Hypertarget{classunordered__map_a69e8e71aa95a12cea4e91453103b9b2e}\label{classunordered__map_a69e8e71aa95a12cea4e91453103b9b2e}} 
+typedef \+\_\+\+Tp {\bfseries mapped\+\_\+type}
+\item 
+\mbox{\Hypertarget{classunordered__map_ad974c87e4ff56b733210905ba196dfd5}\label{classunordered__map_ad974c87e4ff56b733210905ba196dfd5}} 
+typedef \hyperlink{structpair}{pair}$<$ \+\_\+\+S\+T\+L\+P\+\_\+\+C\+O\+N\+ST key\+\_\+type, data\+\_\+type $>$ {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classunordered__map_a072313259b58a576309e8222406be485}\label{classunordered__map_a072313259b58a576309e8222406be485}} 
+typedef \hyperlink{classhashtable}{hashtable}$<$ \hyperlink{structpair}{value\+\_\+type}, key\+\_\+type, \+\_\+\+Hash\+Fcn, \+\_\+\+Unordered\+Map\+Traits, \+\_\+\+S\+T\+L\+P\+\_\+\+S\+E\+L\+E\+C\+T1\+ST(\hyperlink{structpair}{value\+\_\+type}, \+\_\+\+Key), \+\_\+\+Equal\+Key, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Ht}
+\item 
+\mbox{\Hypertarget{classunordered__map_a78181880d737416cca17d96115c0fd5e}\label{classunordered__map_a78181880d737416cca17d96115c0fd5e}} 
+typedef \+\_\+\+Ht\+::hasher {\bfseries hasher}
+\item 
+\mbox{\Hypertarget{classunordered__map_acc8f9199686dd20e2d74cd7d1aa9f997}\label{classunordered__map_acc8f9199686dd20e2d74cd7d1aa9f997}} 
+typedef \+\_\+\+Ht\+::key\+\_\+equal {\bfseries key\+\_\+equal}
+\item 
+\mbox{\Hypertarget{classunordered__map_aedae4e68c2f9e06eca8bfe469d034770}\label{classunordered__map_aedae4e68c2f9e06eca8bfe469d034770}} 
+typedef \+\_\+\+Ht\+::size\+\_\+type {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classunordered__map_ae8359f5a85b77068051b147d10ec3e35}\label{classunordered__map_ae8359f5a85b77068051b147d10ec3e35}} 
+typedef \+\_\+\+Ht\+::difference\+\_\+type {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classunordered__map_a403aa94bdd15b43102be625671953742}\label{classunordered__map_a403aa94bdd15b43102be625671953742}} 
+typedef \+\_\+\+Ht\+::pointer {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classunordered__map_a7e1a731109920d2895d5ad05f4e4e266}\label{classunordered__map_a7e1a731109920d2895d5ad05f4e4e266}} 
+typedef \+\_\+\+Ht\+::const\+\_\+pointer {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classunordered__map_a163afede789c85c85182bd934043a267}\label{classunordered__map_a163afede789c85c85182bd934043a267}} 
+typedef \+\_\+\+Ht\+::reference {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classunordered__map_a0dfca562b4bb88d6672bc8cf2da02877}\label{classunordered__map_a0dfca562b4bb88d6672bc8cf2da02877}} 
+typedef \+\_\+\+Ht\+::const\+\_\+reference {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classunordered__map_a3be0c9c602bc3fae2289dfd989831c09}\label{classunordered__map_a3be0c9c602bc3fae2289dfd989831c09}} 
+typedef \+\_\+\+Ht\+::iterator {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classunordered__map_af34e8cd0215e802458e2b7b5a0ebd12f}\label{classunordered__map_af34e8cd0215e802458e2b7b5a0ebd12f}} 
+typedef \+\_\+\+Ht\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classunordered__map_aa4cee3c8e4bb6cf36750772e13976359}\label{classunordered__map_aa4cee3c8e4bb6cf36750772e13976359}} 
+typedef \+\_\+\+Ht\+::local\+\_\+iterator {\bfseries local\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classunordered__map_acd7b8d658c53cea323c22daf3cb6227e}\label{classunordered__map_acd7b8d658c53cea323c22daf3cb6227e}} 
+typedef \+\_\+\+Ht\+::const\+\_\+local\+\_\+iterator {\bfseries const\+\_\+local\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classunordered__map_ab7b1ee5fd9d6ed9af494713bb0135576}\label{classunordered__map_ab7b1ee5fd9d6ed9af494713bb0135576}} 
+typedef \+\_\+\+Ht\+::allocator\+\_\+type {\bfseries allocator\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classunordered__map_af6ab811010ef5328800bff9ea2bfa0e8}\label{classunordered__map_af6ab811010ef5328800bff9ea2bfa0e8}} 
+hasher {\bfseries hash\+\_\+function} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_ad7e35e703d54fe14d8c07ef98f62aa30}\label{classunordered__map_ad7e35e703d54fe14d8c07ef98f62aa30}} 
+key\+\_\+equal {\bfseries key\+\_\+eq} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_a6475f677777c9e0edac4248fc1d0d9ed}\label{classunordered__map_a6475f677777c9e0edac4248fc1d0d9ed}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_af68be93f651e3488cf4e3044df2013c5}\label{classunordered__map_af68be93f651e3488cf4e3044df2013c5}} 
+{\bfseries unordered\+\_\+map} (size\+\_\+type \+\_\+\+\_\+n=0, const hasher \&\+\_\+\+\_\+hf=hasher(), const key\+\_\+equal \&\+\_\+\+\_\+eql=key\+\_\+equal(), const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classunordered__map_aec7635aa4569ba82847f24b32f0c2f3f}\label{classunordered__map_aec7635aa4569ba82847f24b32f0c2f3f}} 
+{\bfseries unordered\+\_\+map} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classunordered__map}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{classunordered__map_ad73d8859d3c4fbbc48eabc6f49cf2b7a}\label{classunordered__map_ad73d8859d3c4fbbc48eabc6f49cf2b7a}} 
+{\bfseries unordered\+\_\+map} (const \hyperlink{structpair}{value\+\_\+type} $\ast$\+\_\+\+\_\+f, const \hyperlink{structpair}{value\+\_\+type} $\ast$\+\_\+\+\_\+l, size\+\_\+type \+\_\+\+\_\+n=0, const hasher \&\+\_\+\+\_\+hf=hasher(), const key\+\_\+equal \&\+\_\+\+\_\+eql=key\+\_\+equal(), const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classunordered__map_a60914bdda364e1c6a6d117b6481486f2}\label{classunordered__map_a60914bdda364e1c6a6d117b6481486f2}} 
+{\bfseries unordered\+\_\+map} (const\+\_\+iterator \+\_\+\+\_\+f, const\+\_\+iterator \+\_\+\+\_\+l, size\+\_\+type \+\_\+\+\_\+n=0, const hasher \&\+\_\+\+\_\+hf=hasher(), const key\+\_\+equal \&\+\_\+\+\_\+eql=key\+\_\+equal(), const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classunordered__map_a5fd41a4bff1ec7ff12346b80b0b56e20}\label{classunordered__map_a5fd41a4bff1ec7ff12346b80b0b56e20}} 
+\hyperlink{classunordered__map}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{classunordered__map}{\+\_\+\+Self} \&\+\_\+\+\_\+other)
+\item 
+\mbox{\Hypertarget{classunordered__map_a7a33a3d5cc565bd58d06f22bfc2025a6}\label{classunordered__map_a7a33a3d5cc565bd58d06f22bfc2025a6}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_aba50487d91c8c1dc8b28739484096e61}\label{classunordered__map_aba50487d91c8c1dc8b28739484096e61}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_a691aea0936dbeda0d862d2e4a5e737f2}\label{classunordered__map_a691aea0936dbeda0d862d2e4a5e737f2}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_aa80294b7394b71d63862958386f87cda}\label{classunordered__map_aa80294b7394b71d63862958386f87cda}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{classunordered__map}{\+\_\+\+Self} \&\+\_\+\+\_\+hs)
+\item 
+\mbox{\Hypertarget{classunordered__map_a305649152f69435f774e9837011dc78f}\label{classunordered__map_a305649152f69435f774e9837011dc78f}} 
+\hyperlink{structiterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classunordered__map_a048539a63bab5037060fe7a956fa7439}\label{classunordered__map_a048539a63bab5037060fe7a956fa7439}} 
+\hyperlink{structiterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classunordered__map_a8fa43a145bfe6cf416776777edf8a686}\label{classunordered__map_a8fa43a145bfe6cf416776777edf8a686}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_a1322d7382c05f67e13e1154e2aede581}\label{classunordered__map_a1322d7382c05f67e13e1154e2aede581}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_a2da00df7aebb002fa751cd609e4afc22}\label{classunordered__map_a2da00df7aebb002fa751cd609e4afc22}} 
+\hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, bool $>$ {\bfseries insert} (const \hyperlink{structpair}{value\+\_\+type} \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classunordered__map_af9c8be6af76957fb732a94b5f26d458b}\label{classunordered__map_af9c8be6af76957fb732a94b5f26d458b}} 
+\hyperlink{structiterator}{iterator} {\bfseries insert} (const\+\_\+iterator, const \hyperlink{structpair}{value\+\_\+type} \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classunordered__map_aa9c7778cce331714bf3a63975b48f05e}\label{classunordered__map_aa9c7778cce331714bf3a63975b48f05e}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (const \hyperlink{structpair}{value\+\_\+type} $\ast$\+\_\+\+\_\+f, const \hyperlink{structpair}{value\+\_\+type} $\ast$\+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classunordered__map_a9abcf8dadfe2cb8b07504af62fd487ea}\label{classunordered__map_a9abcf8dadfe2cb8b07504af62fd487ea}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (const\+\_\+iterator \+\_\+\+\_\+f, const\+\_\+iterator \+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classunordered__map_a3c71d887e7754b4dc4a1a8a6aeccb58a}\label{classunordered__map_a3c71d887e7754b4dc4a1a8a6aeccb58a}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structiterator}{iterator} {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classunordered__map_a8575a2263c6eda0fc62021697a8e23e9}\label{classunordered__map_a8575a2263c6eda0fc62021697a8e23e9}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT const\+\_\+iterator {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classunordered__map_a2c8d5f2a526f145de4dae21383323cfc}\label{classunordered__map_a2c8d5f2a526f145de4dae21383323cfc}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \+\_\+\+Tp \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const \+\_\+\+KT \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classunordered__map_a001fbb2282482257bdfa7cb841ab360c}\label{classunordered__map_a001fbb2282482257bdfa7cb841ab360c}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries count} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classunordered__map_a8e890fe68fb7f072d820909f9de1fd04}\label{classunordered__map_a8e890fe68fb7f072d820909f9de1fd04}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, \hyperlink{structiterator}{iterator} $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classunordered__map_acc5c657503bc9f99bf8cd5ff2297f34c}\label{classunordered__map_acc5c657503bc9f99bf8cd5ff2297f34c}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ const\+\_\+iterator, const\+\_\+iterator $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classunordered__map_a3247b92b129b00b18617e4a068c13006}\label{classunordered__map_a3247b92b129b00b18617e4a068c13006}} 
+size\+\_\+type {\bfseries erase} (const key\+\_\+type \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classunordered__map_afac2e4eff0adaba4454e4507cbb08ee9}\label{classunordered__map_afac2e4eff0adaba4454e4507cbb08ee9}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const\+\_\+iterator \+\_\+\+\_\+it)
+\item 
+\mbox{\Hypertarget{classunordered__map_a8279cf8e332eeed03e7ef85679220fb0}\label{classunordered__map_a8279cf8e332eeed03e7ef85679220fb0}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const\+\_\+iterator \+\_\+\+\_\+f, const\+\_\+iterator \+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classunordered__map_a0ad9d87b97cf586a58161bb575cb7ca7}\label{classunordered__map_a0ad9d87b97cf586a58161bb575cb7ca7}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classunordered__map_a7d1d0f0afcf52b111ec0ea28890d48dd}\label{classunordered__map_a7d1d0f0afcf52b111ec0ea28890d48dd}} 
+size\+\_\+type {\bfseries bucket\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_a0af96f01be27ebd05d503a733c39b5f5}\label{classunordered__map_a0af96f01be27ebd05d503a733c39b5f5}} 
+size\+\_\+type {\bfseries max\+\_\+bucket\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_a11de431623740719ccfa94e4dd37df68}\label{classunordered__map_a11de431623740719ccfa94e4dd37df68}} 
+size\+\_\+type {\bfseries bucket\+\_\+size} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classunordered__map_a47f13de867aab4b49755139d6997e8fd}\label{classunordered__map_a47f13de867aab4b49755139d6997e8fd}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries bucket} (const \+\_\+\+KT \&\+\_\+\+\_\+k) const
+\item 
+\mbox{\Hypertarget{classunordered__map_a9aa834c4e8d62b63a68a2262c589bbaa}\label{classunordered__map_a9aa834c4e8d62b63a68a2262c589bbaa}} 
+local\+\_\+iterator {\bfseries begin} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classunordered__map_a899f29cbf52fd6fcd1e207c9884fdb64}\label{classunordered__map_a899f29cbf52fd6fcd1e207c9884fdb64}} 
+local\+\_\+iterator {\bfseries end} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classunordered__map_a20015fdd95d2180be3599ac6876a28be}\label{classunordered__map_a20015fdd95d2180be3599ac6876a28be}} 
+const\+\_\+local\+\_\+iterator {\bfseries begin} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classunordered__map_a1e3b186ad244cea1e51eabe0df42d433}\label{classunordered__map_a1e3b186ad244cea1e51eabe0df42d433}} 
+const\+\_\+local\+\_\+iterator {\bfseries end} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classunordered__map_a30fe5411d0f1baa9c0566c2e0f2598c3}\label{classunordered__map_a30fe5411d0f1baa9c0566c2e0f2598c3}} 
+float {\bfseries load\+\_\+factor} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_af8ecdfabfb1eb8b8f201d2d065b6eab1}\label{classunordered__map_af8ecdfabfb1eb8b8f201d2d065b6eab1}} 
+float {\bfseries max\+\_\+load\+\_\+factor} () const
+\item 
+\mbox{\Hypertarget{classunordered__map_a920a9aa6500e9afa14fd18067f65d17c}\label{classunordered__map_a920a9aa6500e9afa14fd18067f65d17c}} 
+\hyperlink{interfacevoid}{void} {\bfseries max\+\_\+load\+\_\+factor} (float \+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{classunordered__map_ad990d881fbe43ebb9ed9592f866376e6}\label{classunordered__map_ad990d881fbe43ebb9ed9592f866376e6}} 
+\hyperlink{interfacevoid}{void} {\bfseries rehash} (size\+\_\+type \+\_\+\+\_\+hint)
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+unordered\+\_\+map.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+\hypertarget{structcpu}{}\section{cpu结构体 参考}
+\label{structcpu}\index{cpu@{cpu}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcpu_abd2e019ddba9a1eaa55b4604481b56e0}\label{structcpu_abd2e019ddba9a1eaa55b4604481b56e0}} 
+D\+W\+O\+RD {\bfseries machine}
+\item 
+\mbox{\Hypertarget{structcpu_a17d3822f659180e35db0ed53b9fef3f1}\label{structcpu_a17d3822f659180e35db0ed53b9fef3f1}} 
+D\+W\+O\+RD {\bfseries word\+\_\+size}
+\item 
+\mbox{\Hypertarget{structcpu_a5d038c6f1c12e5a6b2e7d1a4ec55b7ec}\label{structcpu_a5d038c6f1c12e5a6b2e7d1a4ec55b7ec}} 
+D\+W\+O\+RD {\bfseries frame\+\_\+regno}
+\item 
+\mbox{\Hypertarget{structcpu_aaed599fb963c1d62cebd4609235045a5}\label{structcpu_aaed599fb963c1d62cebd4609235045a5}} 
+B\+O\+OL($\ast$ {\bfseries get\+\_\+addr} )(\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Thread, const \hyperlink{struct___c_o_n_t_e_x_t}{C\+O\+N\+T\+E\+XT} $\ast$ctx, \hyperlink{interfaceenum}{enum} cpu\+\_\+addr, \hyperlink{struct__tag_a_d_d_r_e_s_s64}{A\+D\+D\+R\+E\+S\+S64} $\ast$addr)
+\item 
+\mbox{\Hypertarget{structcpu_a35496eeaa5fa18fd1f6fe7913589a3c9}\label{structcpu_a35496eeaa5fa18fd1f6fe7913589a3c9}} 
+B\+O\+OL($\ast$ {\bfseries stack\+\_\+walk} )(\hyperlink{interfacestruct}{struct} \hyperlink{structcpu__stack__walk}{cpu\+\_\+stack\+\_\+walk} $\ast$csw, \hyperlink{struct___s_t_a_c_k_f_r_a_m_e64}{L\+P\+S\+T\+A\+C\+K\+F\+R\+A\+M\+E64} frame, \hyperlink{struct___c_o_n_t_e_x_t}{C\+O\+N\+T\+E\+XT} $\ast$context)
+\item 
+\mbox{\Hypertarget{structcpu_a5ea45546313e295d7ebc18c490f2ded6}\label{structcpu_a5ea45546313e295d7ebc18c490f2ded6}} 
+\hyperlink{interfacevoid}{void} $\ast$($\ast$ {\bfseries find\+\_\+runtime\+\_\+function} )(\hyperlink{interfacestruct}{struct} \hyperlink{structmodule}{module} $\ast$, D\+W\+O\+R\+D64 addr)
+\item 
+\mbox{\Hypertarget{structcpu_afba903707280a64358a92250712f91da}\label{structcpu_afba903707280a64358a92250712f91da}} 
+unsigned($\ast$ {\bfseries map\+\_\+dwarf\+\_\+register} )(unsigned regno, B\+O\+OL eh\+\_\+frame)
+\item 
+\mbox{\Hypertarget{structcpu_ab4a771f78c2f3ee116d178b2f73e043e}\label{structcpu_ab4a771f78c2f3ee116d178b2f73e043e}} 
+\hyperlink{interfacevoid}{void} $\ast$($\ast$ {\bfseries fetch\+\_\+context\+\_\+reg} )(\hyperlink{struct___c_o_n_t_e_x_t}{C\+O\+N\+T\+E\+XT} $\ast$context, unsigned regno, unsigned $\ast$size)
+\item 
+\mbox{\Hypertarget{structcpu_aa16f19a6726571179e1b81c7366c7498}\label{structcpu_aa16f19a6726571179e1b81c7366c7498}} 
+const char $\ast$($\ast$ {\bfseries fetch\+\_\+regname} )(unsigned regno)
+\item 
+\mbox{\Hypertarget{structcpu_a0f4a19268a397fca8eddaeb51066f87c}\label{structcpu_a0f4a19268a397fca8eddaeb51066f87c}} 
+B\+O\+OL($\ast$ {\bfseries fetch\+\_\+minidump\+\_\+thread} )(\hyperlink{interfacestruct}{struct} \hyperlink{structdump__context}{dump\+\_\+context} $\ast$dc, unsigned index, unsigned flags, const \hyperlink{struct___c_o_n_t_e_x_t}{C\+O\+N\+T\+E\+XT} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{structcpu_a30804a503963802b01919fed5cbffac9}\label{structcpu_a30804a503963802b01919fed5cbffac9}} 
+B\+O\+OL($\ast$ {\bfseries fetch\+\_\+minidump\+\_\+module} )(\hyperlink{interfacestruct}{struct} \hyperlink{structdump__context}{dump\+\_\+context} $\ast$dc, unsigned index, unsigned flags)
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/dbghelp/dbghelp\+\_\+private.\+h\end{DoxyCompactItemize}

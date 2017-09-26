@@ -1,0 +1,101 @@
+\hypertarget{structgl__renderbuffer}{}\section{gl\+\_\+renderbuffer结构体 参考}
+\label{structgl__renderbuffer}\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+
+
+{\ttfamily \#include $<$mtypes.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} \hyperlink{structgl__renderbuffer_a279c62ac954364ce78084a5434829cc2}{Mutex}
+\item 
+G\+Luint \hyperlink{structgl__renderbuffer_a304a3efe4c9475c420b63315d1efc34a}{Class\+ID}
+\item 
+\mbox{\Hypertarget{structgl__renderbuffer_a8e56c0006e0808ed690bfc88c2581618}\label{structgl__renderbuffer_a8e56c0006e0808ed690bfc88c2581618}} 
+G\+Lint {\bfseries Ref\+Count}
+\item 
+\mbox{\Hypertarget{structgl__renderbuffer_aee60dc8feece507e4f9257a3b40f8cc5}\label{structgl__renderbuffer_aee60dc8feece507e4f9257a3b40f8cc5}} 
+G\+Luint {\bfseries Width}
+\item 
+\mbox{\Hypertarget{structgl__renderbuffer_af439381abd5e4eb6d5b2373e43200a05}\label{structgl__renderbuffer_af439381abd5e4eb6d5b2373e43200a05}} 
+G\+Luint {\bfseries Height}
+\item 
+G\+Lboolean \hyperlink{structgl__renderbuffer_af109a1d51c0b1b78925b6381ce162abb}{Purgeable}
+\item 
+G\+Lboolean \hyperlink{structgl__renderbuffer_a96d9b2ec2725f6ef30b097c7771fe89c}{Attached\+Anytime}
+\item 
+\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structgl__renderbuffer_a0fa7646bd3fafdda50aa039989b6c1ad}{Internal\+Format}
+\item 
+\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structgl__renderbuffer_a01b2be097f81607c3e646ffda0a2c961}{\+\_\+\+Base\+Format}
+\item 
+gl\+\_\+format \hyperlink{structgl__renderbuffer_ab9941ec9f6de54b2fd2a53439aa9a157}{Format}
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structgl__renderbuffer_adbc4d0dd7d8bc7d4937c19309fb32937}{Delete} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb)
+\item 
+G\+Lboolean($\ast$ \hyperlink{structgl__renderbuffer_a0f2ab4bf0d4e3343c76e67b0305b7f93}{Alloc\+Storage} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{internal\+Format}, G\+Luint width, G\+Luint height)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Renderbuffers represent drawing surfaces such as color, depth and/or stencil. \hyperlink{struct_a}{A} framebuffer object has a set of renderbuffers. Drivers will typically derive subclasses of this type. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structgl__renderbuffer_a01b2be097f81607c3e646ffda0a2c961}\label{structgl__renderbuffer_a01b2be097f81607c3e646ffda0a2c961}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!\+\_\+\+Base\+Format@{\+\_\+\+Base\+Format}}
+\index{\+\_\+\+Base\+Format@{\+\_\+\+Base\+Format}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+Base\+Format}{\_BaseFormat}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{G\+Lenum} gl\+\_\+renderbuffer\+::\+\_\+\+Base\+Format}
+
+Either G\+L\+\_\+\+R\+GB, G\+L\+\_\+\+R\+G\+BA, G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+NT or G\+L\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+I\+N\+D\+EX. \mbox{\Hypertarget{structgl__renderbuffer_a0f2ab4bf0d4e3343c76e67b0305b7f93}\label{structgl__renderbuffer_a0f2ab4bf0d4e3343c76e67b0305b7f93}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Alloc\+Storage@{Alloc\+Storage}}
+\index{Alloc\+Storage@{Alloc\+Storage}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Alloc\+Storage}{AllocStorage}}
+{\footnotesize\ttfamily G\+Lboolean($\ast$ gl\+\_\+renderbuffer\+::\+Alloc\+Storage) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{internal\+Format}, G\+Luint width, G\+Luint height)}
+
+Allocate new storage for this renderbuffer \mbox{\Hypertarget{structgl__renderbuffer_a96d9b2ec2725f6ef30b097c7771fe89c}\label{structgl__renderbuffer_a96d9b2ec2725f6ef30b097c7771fe89c}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Attached\+Anytime@{Attached\+Anytime}}
+\index{Attached\+Anytime@{Attached\+Anytime}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Attached\+Anytime}{AttachedAnytime}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+renderbuffer\+::\+Attached\+Anytime}
+
+T\+R\+UE if it was attached to a framebuffer \mbox{\Hypertarget{structgl__renderbuffer_a304a3efe4c9475c420b63315d1efc34a}\label{structgl__renderbuffer_a304a3efe4c9475c420b63315d1efc34a}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Class\+ID@{Class\+ID}}
+\index{Class\+ID@{Class\+ID}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Class\+ID}{ClassID}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+renderbuffer\+::\+Class\+ID}
+
+Useful for drivers \mbox{\Hypertarget{structgl__renderbuffer_adbc4d0dd7d8bc7d4937c19309fb32937}\label{structgl__renderbuffer_adbc4d0dd7d8bc7d4937c19309fb32937}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Delete@{Delete}}
+\index{Delete@{Delete}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Delete}{Delete}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ gl\+\_\+renderbuffer\+::\+Delete) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb)}
+
+Delete this renderbuffer \mbox{\Hypertarget{structgl__renderbuffer_ab9941ec9f6de54b2fd2a53439aa9a157}\label{structgl__renderbuffer_ab9941ec9f6de54b2fd2a53439aa9a157}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Format@{Format}}
+\index{Format@{Format}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Format}{Format}}
+{\footnotesize\ttfamily gl\+\_\+format gl\+\_\+renderbuffer\+::\+Format}
+
+The actual renderbuffer memory format \mbox{\Hypertarget{structgl__renderbuffer_a0fa7646bd3fafdda50aa039989b6c1ad}\label{structgl__renderbuffer_a0fa7646bd3fafdda50aa039989b6c1ad}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Internal\+Format@{Internal\+Format}}
+\index{Internal\+Format@{Internal\+Format}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Internal\+Format}{InternalFormat}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{G\+Lenum} gl\+\_\+renderbuffer\+::\+Internal\+Format}
+
+The user-\/specified format \mbox{\Hypertarget{structgl__renderbuffer_a279c62ac954364ce78084a5434829cc2}\label{structgl__renderbuffer_a279c62ac954364ce78084a5434829cc2}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Mutex@{Mutex}}
+\index{Mutex@{Mutex}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Mutex}{Mutex}}
+{\footnotesize\ttfamily \hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} gl\+\_\+renderbuffer\+::\+Mutex}
+
+for thread safety \mbox{\Hypertarget{structgl__renderbuffer_af109a1d51c0b1b78925b6381ce162abb}\label{structgl__renderbuffer_af109a1d51c0b1b78925b6381ce162abb}} 
+\index{gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}!Purgeable@{Purgeable}}
+\index{Purgeable@{Purgeable}!gl\+\_\+renderbuffer@{gl\+\_\+renderbuffer}}
+\subsubsection{\texorpdfstring{Purgeable}{Purgeable}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+renderbuffer\+::\+Purgeable}
+
+Is the buffer purgeable under memory pressure? 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{mtypes_8h}{mtypes.\+h}\end{DoxyCompactItemize}

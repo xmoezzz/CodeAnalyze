@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IInternetSecurityManagerEx2接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_internet_security_manager_ex2-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IInternetSecurityManagerEx2接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IInternetSecurityManagerEx2 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_internet_security_manager_ex2.png" usemap="#IInternetSecurityManagerEx2_map" alt=""/>
+  <map id="IInternetSecurityManagerEx2_map" name="IInternetSecurityManagerEx2_map">
+<area href="interface_i_internet_security_manager_ex.html" alt="IInternetSecurityManagerEx" shape="rect" coords="0,112,176,136"/>
+<area href="interface_i_internet_security_manager.html" alt="IInternetSecurityManager" shape="rect" coords="0,56,176,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,176,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:addceafd615d361604eb502146979c705"><td class="memItemLeft" align="right" valign="top"><a id="addceafd615d361604eb502146979c705"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>MapUrlToZoneEx2</b> ([in] <a class="el" href="interface_i_uri.html">IUri</a> *pUri, [out] DWORD *pdwZone, [in] DWORD dwFlags, [out] LPWSTR *ppwszMappedUrl, [out] DWORD *pdwOutFlags)</td></tr>
+<tr class="separator:addceafd615d361604eb502146979c705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0210f0990bd7acc18adcf976e81518f"><td class="memItemLeft" align="right" valign="top"><a id="ac0210f0990bd7acc18adcf976e81518f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessUrlActionEx2</b> ([in] <a class="el" href="interface_i_uri.html">IUri</a> *pUri, [in] DWORD dwAction, [out, size_is(cbPolicy)] BYTE *pPolicy, [in] DWORD cbPolicy, [in, <a class="el" href="interfaceunique.html">unique</a>] BYTE *pContext, [in] DWORD cbContext, [in] DWORD dwFlags, [in] DWORD_PTR dwReserved, [out] DWORD *pdwOutFlags)</td></tr>
+<tr class="separator:ac0210f0990bd7acc18adcf976e81518f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43424b540e26e63b68d38a6a1afd31c5"><td class="memItemLeft" align="right" valign="top"><a id="a43424b540e26e63b68d38a6a1afd31c5"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSecurityIdEx2</b> ([in] <a class="el" href="interface_i_uri.html">IUri</a> *pUri, [out, size_is(*pcbSecurityId)] BYTE *pbSecurityId, [in, out] DWORD *pcbSecurityId, [in] DWORD_PTR dwReserved)</td></tr>
+<tr class="separator:a43424b540e26e63b68d38a6a1afd31c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e8db25f384d660b25f2f343481b55b"><td class="memItemLeft" align="right" valign="top"><a id="a95e8db25f384d660b25f2f343481b55b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryCustomPolicyEx2</b> ([in] <a class="el" href="interface_i_uri.html">IUri</a> *pUri, [in] <a class="el" href="struct___g_u_i_d.html">REFGUID</a> guidKey, [out, size_is(, *pcbPolicy)] BYTE **ppPolicy, [out] DWORD *pcbPolicy, [in] BYTE *pContext, [in] DWORD cbContext, [in] DWORD_PTR dwReserved)</td></tr>
+<tr class="separator:a95e8db25f384d660b25f2f343481b55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_internet_security_manager_ex"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_internet_security_manager_ex')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_internet_security_manager_ex.html">IInternetSecurityManagerEx</a></td></tr>
+<tr class="memitem:a9d4508a7823a905531ce243545e2288c inherit pub_methods_interface_i_internet_security_manager_ex"><td class="memItemLeft" align="right" valign="top"><a id="a9d4508a7823a905531ce243545e2288c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessUrlActionEx</b> ([in] LPCWSTR pwszUrl, [in] DWORD dwAction, [out, size_is(cbPolicy)] BYTE *pPolicy, [in] DWORD cbPolicy, [in] BYTE *pContext, [in] DWORD cbContext, [in] DWORD dwFlags, [in] DWORD dwReserved, [out] DWORD *pdwOutFlags)</td></tr>
+<tr class="separator:a9d4508a7823a905531ce243545e2288c inherit pub_methods_interface_i_internet_security_manager_ex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_internet_security_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_internet_security_manager')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_internet_security_manager.html">IInternetSecurityManager</a></td></tr>
+<tr class="memitem:ad04b3840a936baf18e1c7697f9e805c9 inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="ad04b3840a936baf18e1c7697f9e805c9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetSecuritySite</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_internet_security_mgr_site.html">IInternetSecurityMgrSite</a> *pSite)</td></tr>
+<tr class="separator:ad04b3840a936baf18e1c7697f9e805c9 inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ab37d31733aaec53f89ed1f94bf0bf inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="a03ab37d31733aaec53f89ed1f94bf0bf"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSecuritySite</b> ([out] <a class="el" href="interface_i_internet_security_mgr_site.html">IInternetSecurityMgrSite</a> **ppSite)</td></tr>
+<tr class="separator:a03ab37d31733aaec53f89ed1f94bf0bf inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47ffa6a818d899e20fad6a775f3b78a inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="ad47ffa6a818d899e20fad6a775f3b78a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>MapUrlToZone</b> ([in] LPCWSTR pwszUrl, [out] DWORD *pdwZone, [in] DWORD dwFlags)</td></tr>
+<tr class="separator:ad47ffa6a818d899e20fad6a775f3b78a inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377e1793b02cc76a6bd5013f5f8605e5 inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="a377e1793b02cc76a6bd5013f5f8605e5"></a>
+MAX_SIZE_SECURITY_ID HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSecurityId</b> ([in] LPCWSTR pwszUrl, [out, size_is(*pcbSecurityId)] BYTE *pbSecurityId, [in, out] DWORD *pcbSecurityId, [in] DWORD_PTR dwReserved)</td></tr>
+<tr class="separator:a377e1793b02cc76a6bd5013f5f8605e5 inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302b3f69501b52aefc1abe5a8120563d inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="a302b3f69501b52aefc1abe5a8120563d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessUrlAction</b> ([in] LPCWSTR pwszUrl, [in] DWORD dwAction, [out, size_is(cbPolicy)] BYTE *pPolicy, [in] DWORD cbPolicy, [in, <a class="el" href="interfaceunique.html">unique</a>] BYTE *pContext, [in] DWORD cbContext, [in] DWORD dwFlags, [in] DWORD dwReserved)</td></tr>
+<tr class="separator:a302b3f69501b52aefc1abe5a8120563d inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1344f85d16e4c154dfcb4d7fce9e433e inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="a1344f85d16e4c154dfcb4d7fce9e433e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryCustomPolicy</b> ([in] LPCWSTR pwszUrl, [in] <a class="el" href="struct___g_u_i_d.html">REFGUID</a> guidKey, [out, size_is(, *pcbPolicy)] BYTE **ppPolicy, [out] DWORD *pcbPolicy, [in] BYTE *pContext, [in] DWORD cbContext, [in] DWORD dwReserved)</td></tr>
+<tr class="separator:a1344f85d16e4c154dfcb4d7fce9e433e inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de3f203155787e5d2bdd0ea9d1f60ca inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="a9de3f203155787e5d2bdd0ea9d1f60ca"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetZoneMapping</b> ([in] DWORD dwZone, [in] LPCWSTR lpszPattern, [in] DWORD dwFlags)</td></tr>
+<tr class="separator:a9de3f203155787e5d2bdd0ea9d1f60ca inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5e2f9543291b9aeaea748a83ebd84f inherit pub_methods_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="aac5e2f9543291b9aeaea748a83ebd84f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetZoneMappings</b> ([in] DWORD dwZone, [out] <a class="el" href="interface_i_enum_string.html">IEnumString</a> **ppenumString, [in] DWORD dwFlags)</td></tr>
+<tr class="separator:aac5e2f9543291b9aeaea748a83ebd84f inherit pub_methods_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_internet_security_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_internet_security_manager')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_internet_security_manager.html">IInternetSecurityManager</a></td></tr>
+<tr class="memitem:a8e1389559dcc282640b57bf2072a01a7 inherit pub_types_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="a8e1389559dcc282640b57bf2072a01a7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PUAF</b> { <br />
+&#160;&#160;<b>PUAF_DEFAULT</b> = 0x00, 
+<b>PUAF_NOUI</b> = 0x01, 
+<b>PUAF_ISFILE</b> = 0x02, 
+<b>PUAF_WARN_IF_DENIED</b> = 0x04, 
+<br />
+&#160;&#160;<b>PUAF_FORCEUI_FOREGROUND</b> = 0x08, 
+<b>PUAF_CHECK_TIPS</b> = 0x10
+<br />
+ }</td></tr>
+<tr class="separator:a8e1389559dcc282640b57bf2072a01a7 inherit pub_types_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1a2ab9df92555d61196eda370579a1 inherit pub_types_interface_i_internet_security_manager"><td class="memItemLeft" align="right" valign="top"><a id="aef1a2ab9df92555d61196eda370579a1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SZM_FLAGS</b> { <b>SZM_CREATE</b> = 0x0, 
+<b>SZM_DELETE</b> = 0x1
+ }</td></tr>
+<tr class="separator:aef1a2ab9df92555d61196eda370579a1 inherit pub_types_interface_i_internet_security_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="urlmon_8idl_source.html">urlmon.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

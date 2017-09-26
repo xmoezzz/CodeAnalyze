@@ -1,0 +1,65 @@
+\hypertarget{lines_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/lines.h 文件参考}
+\label{lines_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/lines.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/lines.\+h}}
+{\ttfamily \#include \char`\"{}glheader.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{lines_8h_a013017417249f36cd22979bd8e603f26}{\+\_\+mesa\+\_\+\+Line\+Width} (G\+Lfloat width)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{lines_8h_acb7c1df13edb08726472fd6b5f7548d8}{\+\_\+mesa\+\_\+\+Line\+Stipple} (G\+Lint factor, G\+Lushort pattern)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{lines_8h_a4d8e785d68bfcd046ad98bae5fb58592}{\+\_\+mesa\+\_\+init\+\_\+line} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{struct_line}{Line} operations. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{lines_8h_a4d8e785d68bfcd046ad98bae5fb58592}\label{lines_8h_a4d8e785d68bfcd046ad98bae5fb58592}} 
+\index{lines.\+h@{lines.\+h}!\+\_\+mesa\+\_\+init\+\_\+line@{\+\_\+mesa\+\_\+init\+\_\+line}}
+\index{\+\_\+mesa\+\_\+init\+\_\+line@{\+\_\+mesa\+\_\+init\+\_\+line}!lines.\+h@{lines.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+line()}{\_mesa\_init\_line()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+init\+\_\+line (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialize the context line state.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+Initializes \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Line and line related constants in \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Const. \mbox{\Hypertarget{lines_8h_acb7c1df13edb08726472fd6b5f7548d8}\label{lines_8h_acb7c1df13edb08726472fd6b5f7548d8}} 
+\index{lines.\+h@{lines.\+h}!\+\_\+mesa\+\_\+\+Line\+Stipple@{\+\_\+mesa\+\_\+\+Line\+Stipple}}
+\index{\+\_\+mesa\+\_\+\+Line\+Stipple@{\+\_\+mesa\+\_\+\+Line\+Stipple}!lines.\+h@{lines.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Line\+Stipple()}{\_mesa\_LineStipple()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Line\+Stipple (\begin{DoxyParamCaption}\item[{G\+Lint}]{factor,  }\item[{G\+Lushort}]{pattern }\end{DoxyParamCaption})}
+
+Set the line stipple pattern.
+
+
+\begin{DoxyParams}{参数}
+{\em factor} & pattern scale factor. \\
+\hline
+{\em pattern} & bit pattern.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Line\+Stipple().
+\end{DoxySeeAlso}
+Updates \hyperlink{structgl__line__attrib_a06ce34b685f070d817bcd62aee1c36f0}{gl\+\_\+line\+\_\+attrib\+::\+Stipple\+Factor} and \hyperlink{structgl__line__attrib_a930054b381115d34df02010a4efb9e65}{gl\+\_\+line\+\_\+attrib\+::\+Stipple\+Pattern}. On change flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_ac12a98543e785ceb983f4d38e8d9a089}{dd\+\_\+function\+\_\+table\+::\+Line\+Stipple} callback. \mbox{\Hypertarget{lines_8h_a013017417249f36cd22979bd8e603f26}\label{lines_8h_a013017417249f36cd22979bd8e603f26}} 
+\index{lines.\+h@{lines.\+h}!\+\_\+mesa\+\_\+\+Line\+Width@{\+\_\+mesa\+\_\+\+Line\+Width}}
+\index{\+\_\+mesa\+\_\+\+Line\+Width@{\+\_\+mesa\+\_\+\+Line\+Width}!lines.\+h@{lines.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Line\+Width()}{\_mesa\_LineWidth()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Line\+Width (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{width }\end{DoxyParamCaption})}
+
+Set the line width.
+
+
+\begin{DoxyParams}{参数}
+{\em width} & line width in pixels.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Line\+Width(). 
+\end{DoxySeeAlso}

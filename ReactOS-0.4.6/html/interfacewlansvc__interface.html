@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: wlansvc_interface接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacewlansvc__interface-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">wlansvc_interface接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:add9385a07be7a53bd00ea17be488d5de"><td class="memItemLeft" align="right" valign="top"><a id="add9385a07be7a53bd00ea17be488d5de"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcOpenHandle</b> ([in] WLANSVC_HANDLE szMachineName, [in] DWORD dwClientVersion, [out] DWORD *pdwNegotiatedVersion, [out] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> *phClientHandle)</td></tr>
+<tr class="separator:add9385a07be7a53bd00ea17be488d5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffe0c94dc6094da9006d3015a5eae19"><td class="memItemLeft" align="right" valign="top"><a id="acffe0c94dc6094da9006d3015a5eae19"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcCloseHandle</b> ([in, out] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> *phClientHandle)</td></tr>
+<tr class="separator:acffe0c94dc6094da9006d3015a5eae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e22dc7427e191d26060155767f72deb"><td class="memItemLeft" align="right" valign="top"><a id="a8e22dc7427e191d26060155767f72deb"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcEnumInterfaces</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [out, ref] <a class="el" href="struct___w_l_a_n___i_n_t_e_r_f_a_c_e___i_n_f_o___l_i_s_t.html">PWLAN_INTERFACE_INFO_LIST</a> *ppInterfaceList)</td></tr>
+<tr class="separator:a8e22dc7427e191d26060155767f72deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3c45329d508a7cf15a000161f6a276"><td class="memItemLeft" align="right" valign="top"><a id="a1a3c45329d508a7cf15a000161f6a276"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetAutoConfigParameter</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] long <a class="el" href="dlist_8c.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a>, [in] DWORD dwDataSize, [in][size_is(dwDataSize)] LPBYTE pData)</td></tr>
+<tr class="separator:a1a3c45329d508a7cf15a000161f6a276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d82ee6d025a8020a481ed77118cc89d"><td class="memItemLeft" align="right" valign="top"><a id="a0d82ee6d025a8020a481ed77118cc89d"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcQueryAutoConfigParameter</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] DWORD <a class="el" href="dlist_8c.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a>, [in, out] LPDWORD pdwDataSize, [out][ref][size_is(*pdwDataSize)] char **ppData, [out] DWORD *pWlanOpcodeValueType)</td></tr>
+<tr class="separator:a0d82ee6d025a8020a481ed77118cc89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6caf086dd10dab3e19f72d25cb5710"><td class="memItemLeft" align="right" valign="top"><a id="a1b6caf086dd10dab3e19f72d25cb5710"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetInterfaceCapability</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [out, ref] <a class="el" href="struct___w_l_a_n___i_n_t_e_r_f_a_c_e___c_a_p_a_b_i_l_i_t_y.html">PWLAN_INTERFACE_CAPABILITY</a> *ppCapability)</td></tr>
+<tr class="separator:a1b6caf086dd10dab3e19f72d25cb5710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcd00c516292db7fbf2789e203b7285"><td class="memItemLeft" align="right" valign="top"><a id="a0dcd00c516292db7fbf2789e203b7285"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetInterface</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] DWORD <a class="el" href="dlist_8c.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a>, [in] DWORD dwDataSize, [in, size_is(dwDataSize)] LPBYTE pData)</td></tr>
+<tr class="separator:a0dcd00c516292db7fbf2789e203b7285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eac5dc80a73c45117e37a74786a7721"><td class="memItemLeft" align="right" valign="top"><a id="a9eac5dc80a73c45117e37a74786a7721"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcQueryInterface</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] long <a class="el" href="dlist_8c.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a>, [in, out] LPDWORD pdwDataSize, [out][ref][size_is(*pdwDataSize)] LPBYTE *ppData, [out] LPDWORD pWlanOpcodeValueType)</td></tr>
+<tr class="separator:a9eac5dc80a73c45117e37a74786a7721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4ab33174363d5f0ebfceae52879126"><td class="memItemLeft" align="right" valign="top"><a id="a3c4ab33174363d5f0ebfceae52879126"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcIhvControl</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] DWORD Type, [in] DWORD dwInBufferSize, [in][size_is(dwInBufferSize)] LPBYTE pInBuffer, [in] DWORD dwOutBufferSize, [out][size_is(dwOutBufferSize), length_is(*pdwBytesReturned)] LPBYTE pOutBuffer, [out] LPDWORD pdwBytesReturned)</td></tr>
+<tr class="separator:a3c4ab33174363d5f0ebfceae52879126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cc4ea94646ca65b3ef8e3e50aefee6"><td class="memItemLeft" align="right" valign="top"><a id="a12cc4ea94646ca65b3ef8e3e50aefee6"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcScan</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___d_o_t11___s_s_i_d.html">PDOT11_SSID</a> pDot11Ssid, [in][<a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___w_l_a_n___r_a_w___d_a_t_a.html">PWLAN_RAW_DATA</a> pIeData)</td></tr>
+<tr class="separator:a12cc4ea94646ca65b3ef8e3e50aefee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd8737462950ebd25128bb8abfec35c"><td class="memItemLeft" align="right" valign="top"><a id="aafd8737462950ebd25128bb8abfec35c"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetAvailableNetworkList</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] DWORD dwFlags, [out][ref] <a class="el" href="struct___w_l_a_n___a_v_a_i_l_a_b_l_e___n_e_t_w_o_r_k___l_i_s_t.html">WLAN_AVAILABLE_NETWORK_LIST</a> **ppAvailableNetworkList)</td></tr>
+<tr class="separator:aafd8737462950ebd25128bb8abfec35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3f10172df938233bb836a052f07ea1"><td class="memItemLeft" align="right" valign="top"><a id="a4b3f10172df938233bb836a052f07ea1"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetNetworkBssList</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___d_o_t11___s_s_i_d.html">PDOT11_SSID</a> pDot11Ssid, [in] short dot11BssType, [in] DWORD bSecurityEnabled, [in, out] LPDWORD dwBssListSize, [out][ref][size_is(*dwBssListSize)] LPBYTE *ppWlanBssList)</td></tr>
+<tr class="separator:a4b3f10172df938233bb836a052f07ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9f090ee7465128142624c20933ae5f"><td class="memItemLeft" align="right" valign="top"><a id="aec9f090ee7465128142624c20933ae5f"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcConnect</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] const <a class="el" href="struct___w_l_a_n___c_o_n_n_e_c_t_i_o_n___p_a_r_a_m_e_t_e_r_s.html">PWLAN_CONNECTION_PARAMETERS</a> *pConnectionParameters)</td></tr>
+<tr class="separator:aec9f090ee7465128142624c20933ae5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e11c314162f73ad6418e5a5f39f444"><td class="memItemLeft" align="right" valign="top"><a id="a83e11c314162f73ad6418e5a5f39f444"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcDisconnect</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGUID)</td></tr>
+<tr class="separator:a83e11c314162f73ad6418e5a5f39f444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16100643f655ad30729fe8972d85318"><td class="memItemLeft" align="right" valign="top"><a id="aa16100643f655ad30729fe8972d85318"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcRegisterNotification</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] DWORD arg_2, [out] LPDWORD pdwPrevNotifSource)</td></tr>
+<tr class="separator:aa16100643f655ad30729fe8972d85318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e67d97841b2aa2418b1edb1ba191c42"><td class="memItemLeft" align="right" valign="top"><a id="a1e67d97841b2aa2418b1edb1ba191c42"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcAsyncGetNotification</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [out][ref] <a class="el" href="struct___l2___n_o_t_i_f_i_c_a_t_i_o_n___d_a_t_a.html">PWLAN_NOTIFICATION_DATA</a> *NotificationData)</td></tr>
+<tr class="separator:a1e67d97841b2aa2418b1edb1ba191c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35c655d07330f514adf8ae93bc90623"><td class="memItemLeft" align="right" valign="top"><a id="ab35c655d07330f514adf8ae93bc90623"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetProfileEapUserData</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *strProfileName, [in] <a class="el" href="struct___e_a_p___m_e_t_h_o_d___t_y_p_e.html">EAP_METHOD_TYPE</a> MethodType, [in] DWORD dwFlags, [in] DWORD dwEapUserDataSize, [in][size_is(dwEapUserDataSize)] LPBYTE pbEapUserData)</td></tr>
+<tr class="separator:ab35c655d07330f514adf8ae93bc90623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb09315a5c8bf373ac7e9d5860d1f825"><td class="memItemLeft" align="right" valign="top"><a id="abb09315a5c8bf373ac7e9d5860d1f825"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetProfile</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] DWORD dwFlags, [in][<a class="el" href="structstring.html">string</a>] wchar_t *strProfileXml, [in][<a class="el" href="interfaceunique.html">unique</a>][<a class="el" href="structstring.html">string</a>] wchar_t *strAllUserProfileSecurity, [in] BOOL bOverwrite, [out] LPDWORD pdwReasonCode)</td></tr>
+<tr class="separator:abb09315a5c8bf373ac7e9d5860d1f825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a54098f45066b3219cead8a76ded37"><td class="memItemLeft" align="right" valign="top"><a id="a73a54098f45066b3219cead8a76ded37"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetProfile</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *strProfileName, [out][ref][<a class="el" href="structstring.html">string</a>] wchar_t **pstrProfileXml, [out] LPDWORD pdwFlags, [in, out][<a class="el" href="interfaceunique.html">unique</a>] LPDWORD pdwGrantedAccess)</td></tr>
+<tr class="separator:a73a54098f45066b3219cead8a76ded37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9375bba075ccd79e6683d03456212fec"><td class="memItemLeft" align="right" valign="top"><a id="a9375bba075ccd79e6683d03456212fec"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcDeleteProfile</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] const wchar_t *strProfileName)</td></tr>
+<tr class="separator:a9375bba075ccd79e6683d03456212fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7050272f9fddab8ca6ccb469d1b7e5"><td class="memItemLeft" align="right" valign="top"><a id="a5c7050272f9fddab8ca6ccb469d1b7e5"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcRenameProfile</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] const wchar_t *strOldProfileName, [in][<a class="el" href="structstring.html">string</a>] const wchar_t *strNewProfileName)</td></tr>
+<tr class="separator:a5c7050272f9fddab8ca6ccb469d1b7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e75e9d5481980be0554d6e2fbdf31e7"><td class="memItemLeft" align="right" valign="top"><a id="a3e75e9d5481980be0554d6e2fbdf31e7"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetProfileList</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] DWORD dwItems, [in] [size_is(dwItems)] BYTE **strProfileNames)</td></tr>
+<tr class="separator:a3e75e9d5481980be0554d6e2fbdf31e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cdd49f14ccc3c6915deeb2d43c8b8d7"><td class="memItemLeft" align="right" valign="top"><a id="a7cdd49f14ccc3c6915deeb2d43c8b8d7"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetProfileList</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [out][ref] <a class="el" href="struct___w_l_a_n___p_r_o_f_i_l_e___i_n_f_o___l_i_s_t.html">PWLAN_PROFILE_INFO_LIST</a> *ppProfileList)</td></tr>
+<tr class="separator:a7cdd49f14ccc3c6915deeb2d43c8b8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0f67c02052864e7d274e9784d0d6e6"><td class="memItemLeft" align="right" valign="top"><a id="a1b0f67c02052864e7d274e9784d0d6e6"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetProfilePosition</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *strProfileName, [in] DWORD dwPosition)</td></tr>
+<tr class="separator:a1b0f67c02052864e7d274e9784d0d6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19ff62dcd0c317616f4c5b45f32a83c"><td class="memItemLeft" align="right" valign="top"><a id="ab19ff62dcd0c317616f4c5b45f32a83c"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetProfileCustomUserData</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *strProfileName, [in] DWORD dwDataSize, [in][<a class="el" href="interfaceunique.html">unique</a>][size_is(dwDataSize)] LPBYTE pData)</td></tr>
+<tr class="separator:ab19ff62dcd0c317616f4c5b45f32a83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38534f0b37ba05221e47e2567df17a3e"><td class="memItemLeft" align="right" valign="top"><a id="a38534f0b37ba05221e47e2567df17a3e"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetProfileCustomUserData</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *strProfileName, [in, out] LPDWORD dwDataSize, [out][ref][size_is(*dwDataSize)] LPBYTE *pData)</td></tr>
+<tr class="separator:a38534f0b37ba05221e47e2567df17a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a67ff28b2f883d46927cec9761a3b3"><td class="memItemLeft" align="right" valign="top"><a id="a75a67ff28b2f883d46927cec9761a3b3"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetFilterList</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] short wlanFilterListType, [in][<a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___d_o_t11___n_e_t_w_o_r_k___l_i_s_t.html">PDOT11_NETWORK_LIST</a> pNetworkList)</td></tr>
+<tr class="separator:a75a67ff28b2f883d46927cec9761a3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858c8e6cf4c756b9996cdcd87ab79b7f"><td class="memItemLeft" align="right" valign="top"><a id="a858c8e6cf4c756b9996cdcd87ab79b7f"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetFilterList</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] short wlanFilterListType, [out][ref] <a class="el" href="struct___d_o_t11___n_e_t_w_o_r_k___l_i_s_t.html">PDOT11_NETWORK_LIST</a> *pNetworkList)</td></tr>
+<tr class="separator:a858c8e6cf4c756b9996cdcd87ab79b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3872aa1dd1910fe6a897d64734e7fa9c"><td class="memItemLeft" align="right" valign="top"><a id="a3872aa1dd1910fe6a897d64734e7fa9c"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetPsdIEDataList</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in][<a class="el" href="interfaceunique.html">unique</a>][<a class="el" href="structstring.html">string</a>] wchar_t *strFormat, [in] DWORD dwDataListSize, [in][<a class="el" href="interfaceunique.html">unique</a>][size_is(dwDataListSize)] LPBYTE pPsdIEDataList)</td></tr>
+<tr class="separator:a3872aa1dd1910fe6a897d64734e7fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a5aebb67154d8d4e02227e9c06e9b5"><td class="memItemLeft" align="right" valign="top"><a id="a20a5aebb67154d8d4e02227e9c06e9b5"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSaveTemporaryProfile</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *strProfileName, [in][<a class="el" href="interfaceunique.html">unique</a>][<a class="el" href="structstring.html">string</a>] wchar_t *strAllUserProfileSecurity, [in] DWORD dwFlags, [in] BOOL bOverWrite)</td></tr>
+<tr class="separator:a20a5aebb67154d8d4e02227e9c06e9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8a9ea3b7959c490c75c7cebfa63783"><td class="memItemLeft" align="right" valign="top"><a id="a5e8a9ea3b7959c490c75c7cebfa63783"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcIsUIRequestPending</b> ([in] WLANSVC_HANDLE arg_1, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in] <a class="el" href="structstruct___c.html">struct_C</a> *arg_3, [out] LPDWORD arg_4)</td></tr>
+<tr class="separator:a5e8a9ea3b7959c490c75c7cebfa63783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bde6d4eb07978035985df5429f6973b"><td class="memItemLeft" align="right" valign="top"><a id="a7bde6d4eb07978035985df5429f6973b"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetUIForwardingNetworkList</b> ([in] WLANSVC_HANDLE arg_1, [in][size_is(dwSize)] <a class="el" href="interface_g_u_i_d.html">GUID</a> *arg_2, [in] DWORD dwSize, [out] <a class="el" href="interface_g_u_i_d.html">GUID</a> *arg_4)</td></tr>
+<tr class="separator:a7bde6d4eb07978035985df5429f6973b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e524b05b34657b5f2957157389d9fd"><td class="memItemLeft" align="right" valign="top"><a id="ac2e524b05b34657b5f2957157389d9fd"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcIsNetworkSuppressed</b> ([in] WLANSVC_HANDLE arg_1, [in] DWORD arg_2, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [out] LPDWORD arg_4)</td></tr>
+<tr class="separator:ac2e524b05b34657b5f2957157389d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808c104768053366222ebf46c3ace98f"><td class="memItemLeft" align="right" valign="top"><a id="a808c104768053366222ebf46c3ace98f"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcRemoveUIForwardingNetworkList</b> ([in] WLANSVC_HANDLE arg_1, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid)</td></tr>
+<tr class="separator:a808c104768053366222ebf46c3ace98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0bb18de6bf93ad53bc344241353e63"><td class="memItemLeft" align="right" valign="top"><a id="a6e0bb18de6bf93ad53bc344241353e63"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcQueryExtUIRequest</b> ([in] WLANSVC_HANDLE arg_1, [in] <a class="el" href="interface_g_u_i_d.html">GUID</a> *arg_2, [in] <a class="el" href="interface_g_u_i_d.html">GUID</a> *arg_3, [in] short arg_4, [out] <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [out][ref] <a class="el" href="structstruct___c.html">struct_C</a> **arg_6)</td></tr>
+<tr class="separator:a6e0bb18de6bf93ad53bc344241353e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c5fdc06ad205ba314fe1a6937cd87a"><td class="memItemLeft" align="right" valign="top"><a id="ab6c5fdc06ad205ba314fe1a6937cd87a"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcUIResponse</b> ([in] WLANSVC_HANDLE arg_1, [in] <a class="el" href="structstruct___c.html">struct_C</a> *arg_2, [in] <a class="el" href="structstruct___d.html">struct_D</a> *arg_3)</td></tr>
+<tr class="separator:ab6c5fdc06ad205ba314fe1a6937cd87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca97b0b6685d47fb8a25d854b6c44326"><td class="memItemLeft" align="right" valign="top"><a id="aca97b0b6685d47fb8a25d854b6c44326"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetProfileKeyInfo</b> ([in] WLANSVC_HANDLE arg_1, [in] DWORD arg_2, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *arg_4, [in] DWORD arg_5, [out] LPDWORD arg_6, [in, out][<a class="el" href="interfaceunique.html">unique</a>][size_is(arg_5)] char *arg_7, [out] LPDWORD arg_8)</td></tr>
+<tr class="separator:aca97b0b6685d47fb8a25d854b6c44326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d24755e8d89c22173fa5d9d0eccd4e"><td class="memItemLeft" align="right" valign="top"><a id="ab2d24755e8d89c22173fa5d9d0eccd4e"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcAsyncDoPlap</b> ([in] WLANSVC_HANDLE arg_1, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [in][<a class="el" href="structstring.html">string</a>] wchar_t *arg_3, [in] DWORD dwSize, [in][size_is(dwSize)] <a class="el" href="structstruct___e.html">struct_E</a> arg_5[])</td></tr>
+<tr class="separator:ab2d24755e8d89c22173fa5d9d0eccd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba58163451b5a1bfd42b84dc7feb9e1d"><td class="memItemLeft" align="right" valign="top"><a id="aba58163451b5a1bfd42b84dc7feb9e1d"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcQueryPlapCredentials</b> ([in] WLANSVC_HANDLE arg_1, [in, out] LPDWORD dwSize, [out][ref][size_is(*dwSize)] <a class="el" href="structstruct___e.html">struct_E</a> **arg_3, [out][ref][<a class="el" href="structstring.html">string</a>] wchar_t **arg_4, [out] <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid, [out] LPDWORD arg_6, [out] LPDWORD arg_7, [out] LPDWORD arg_8, [out] LPDWORD arg_9)</td></tr>
+<tr class="separator:aba58163451b5a1bfd42b84dc7feb9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835c20245552cec9dff574479025699d"><td class="memItemLeft" align="right" valign="top"><a id="a835c20245552cec9dff574479025699d"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcCancelPlap</b> ([in] WLANSVC_HANDLE arg_1, [in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pInterfaceGuid)</td></tr>
+<tr class="separator:a835c20245552cec9dff574479025699d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8f445f00c7b0e4bdefc2b789273b67"><td class="memItemLeft" align="right" valign="top"><a id="abe8f445f00c7b0e4bdefc2b789273b67"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcSetSecuritySettings</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] WLAN_SECURABLE_OBJECT SecurableObject, [in][<a class="el" href="structstring.html">string</a>] const wchar_t *strModifiedSDDL)</td></tr>
+<tr class="separator:abe8f445f00c7b0e4bdefc2b789273b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa69c732029d55e1b9e4d3aa2043e80"><td class="memItemLeft" align="right" valign="top"><a id="abfa69c732029d55e1b9e4d3aa2043e80"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_RpcGetSecuritySettings</b> ([in] <a class="el" href="interfacevoid.html">WLANSVC_RPC_HANDLE</a> hClientHandle, [in] WLAN_SECURABLE_OBJECT SecurableObject, [out] WLAN_OPCODE_VALUE_TYPE *pValueType, [out][ref][<a class="el" href="structstring.html">string</a>] wchar_t **pstrCurrentSDDL, [out] LPDWORD pdwGrantedAccess)</td></tr>
+<tr class="separator:abfa69c732029d55e1b9e4d3aa2043e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/reactos/idl/<a class="el" href="wlansvc_8idl_source.html">wlansvc.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

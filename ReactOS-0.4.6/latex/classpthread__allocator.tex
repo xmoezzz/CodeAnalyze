@@ -1,0 +1,67 @@
+\hypertarget{classpthread__allocator}{}\section{pthread\+\_\+allocator$<$ \+\_\+\+Tp $>$ 模板类 参考}
+\label{classpthread__allocator}\index{pthread\+\_\+allocator$<$ \+\_\+\+Tp $>$@{pthread\+\_\+allocator$<$ \+\_\+\+Tp $>$}}
+类 pthread\+\_\+allocator$<$ \+\_\+\+Tp $>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpthread__allocator}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_ae2bd0e4e8f54fd2d19bd8846e1ba3e0d}\label{classpthread__allocator_ae2bd0e4e8f54fd2d19bd8846e1ba3e0d}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_ade982785cd60c704345c244fc86e5ecc}\label{classpthread__allocator_ade982785cd60c704345c244fc86e5ecc}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_afca03e409c618c1b3fb0ad08de77b011}\label{classpthread__allocator_afca03e409c618c1b3fb0ad08de77b011}} 
+typedef \+\_\+\+Tp $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a03b730d0196244b07c7c7ec5f356b664}\label{classpthread__allocator_a03b730d0196244b07c7c7ec5f356b664}} 
+typedef const \+\_\+\+Tp $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_ae0fae1b2d4d5d70b7f3bf5b970372c81}\label{classpthread__allocator_ae0fae1b2d4d5d70b7f3bf5b970372c81}} 
+typedef \+\_\+\+Tp \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a58e80cd31c2436c99f41e9763930860c}\label{classpthread__allocator_a58e80cd31c2436c99f41e9763930860c}} 
+typedef const \+\_\+\+Tp \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a99eb5d4a72db4817d1917bcfa7dad129}\label{classpthread__allocator_a99eb5d4a72db4817d1917bcfa7dad129}} 
+typedef \+\_\+\+Tp {\bfseries value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpthread__allocator_ad51207a2fc6fc8c2cef129e7c9c7274f}\label{classpthread__allocator_ad51207a2fc6fc8c2cef129e7c9c7274f}} 
+{\bfseries pthread\+\_\+allocator} (const \hyperlink{classpthread__allocator}{pthread\+\_\+allocator}$<$ \+\_\+\+Tp $>$ \&a) \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classpthread__allocator_ac68efd31b1195be9632e545a9e9a9c65}\label{classpthread__allocator_ac68efd31b1195be9632e545a9e9a9c65}} 
+pointer {\bfseries address} (reference \+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a92b05f0fdfd74aeba5a622b3c975da69}\label{classpthread__allocator_a92b05f0fdfd74aeba5a622b3c975da69}} 
+const\+\_\+pointer {\bfseries address} (const\+\_\+reference \+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a1695725856840aaec9fc966e1ac1dfb6}\label{classpthread__allocator_a1695725856840aaec9fc966e1ac1dfb6}} 
+\+\_\+\+Tp $\ast$ {\bfseries allocate} (size\+\_\+type \+\_\+\+\_\+n, const \hyperlink{interfacevoid}{void} $\ast$=0)
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a42d84d16b7911840894f3c71b80156ce}\label{classpthread__allocator_a42d84d16b7911840894f3c71b80156ce}} 
+\hyperlink{interfacevoid}{void} {\bfseries deallocate} (pointer \+\_\+\+\_\+p, size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classpthread__allocator_ae556985bbc4aa3a7b8e74f8588a5b55f}\label{classpthread__allocator_ae556985bbc4aa3a7b8e74f8588a5b55f}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a07162b29fe5d5516718c2f314f0bf20f}\label{classpthread__allocator_a07162b29fe5d5516718c2f314f0bf20f}} 
+\hyperlink{interfacevoid}{void} {\bfseries construct} (pointer \+\_\+\+\_\+p, const \+\_\+\+Tp \&\+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{classpthread__allocator_ad9253392b3e544b00862e025910997fe}\label{classpthread__allocator_ad9253392b3e544b00862e025910997fe}} 
+\hyperlink{interfacevoid}{void} {\bfseries destroy} (pointer \+\_\+p)
+\item 
+\mbox{\Hypertarget{classpthread__allocator_a785828dc77bfb60a2f4f172ddabacd69}\label{classpthread__allocator_a785828dc77bfb60a2f4f172ddabacd69}} 
+\+\_\+\+Tp $\ast$ {\bfseries allocate} (size\+\_\+type \+\_\+\+\_\+n, size\+\_\+type \&\+\_\+\+\_\+allocated\+\_\+n)
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+pthread\+\_\+alloc.\+h\end{DoxyCompactItemize}

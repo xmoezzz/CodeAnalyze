@@ -1,0 +1,78 @@
+\hypertarget{interface_i_cor_debug_chain}{}\section{I\+Cor\+Debug\+Chain接口 参考}
+\label{interface_i_cor_debug_chain}\index{I\+Cor\+Debug\+Chain@{I\+Cor\+Debug\+Chain}}
+类 I\+Cor\+Debug\+Chain 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug_chain}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_aa40a97556f2919b458328522498257a3}\label{interface_i_cor_debug_chain_aa40a97556f2919b458328522498257a3}} 
+enum {\bfseries Cor\+Debug\+Chain\+Reason} \{ \newline
+{\bfseries C\+H\+A\+I\+N\+\_\+\+N\+O\+NE} = 0x000, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+IT} = 0x001, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+ER} = 0x002, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+S\+E\+C\+U\+R\+I\+TY} = 0x004, 
+\newline
+{\bfseries C\+H\+A\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+O\+L\+I\+CY} = 0x008, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+I\+ON} = 0x010, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+RT} = 0x020, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+T\+A\+RT} = 0x040, 
+\newline
+{\bfseries C\+H\+A\+I\+N\+\_\+\+E\+N\+T\+E\+R\+\_\+\+M\+A\+N\+A\+G\+ED} = 0x080, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+E\+N\+T\+E\+R\+\_\+\+U\+N\+M\+A\+N\+A\+G\+ED} = 0x100, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+D\+E\+B\+U\+G\+G\+E\+R\+\_\+\+E\+V\+AL} = 0x200, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+W\+I\+T\+CH} = 0x400, 
+\newline
+{\bfseries C\+H\+A\+I\+N\+\_\+\+F\+U\+N\+C\+\_\+\+E\+V\+AL} = 0x800
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a68d47cab5a3b1b6f62d8519575db3e02}\label{interface_i_cor_debug_chain_a68d47cab5a3b1b6f62d8519575db3e02}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Chain\+::\+Cor\+Debug\+Chain\+Reason {\bfseries Cor\+Debug\+Chain\+Reason}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a06fb15053e6ae6bb48d0e057ece87289}\label{interface_i_cor_debug_chain_a06fb15053e6ae6bb48d0e057ece87289}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Thread} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$$\ast$pp\+Thread)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_adf440e27f7d1b797695f4b58710089c9}\label{interface_i_cor_debug_chain_adf440e27f7d1b797695f4b58710089c9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Stack\+Range} (\mbox{[}out\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS $\ast$p\+Start, \mbox{[}out\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS $\ast$p\+End)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a1b2041514cc48be70e3db3947a64beaf}\label{interface_i_cor_debug_chain_a1b2041514cc48be70e3db3947a64beaf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Context} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_context}{I\+Cor\+Debug\+Context} $\ast$$\ast$pp\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a67796e960b00346170c2a0eb15cb681f}\label{interface_i_cor_debug_chain_a67796e960b00346170c2a0eb15cb681f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Caller} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_chain}{I\+Cor\+Debug\+Chain} $\ast$$\ast$pp\+Chain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a2f765a28565557992839024ca814d587}\label{interface_i_cor_debug_chain_a2f765a28565557992839024ca814d587}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Callee} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_chain}{I\+Cor\+Debug\+Chain} $\ast$$\ast$pp\+Chain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a104577dc719f7a7a5c68755e1f4d818d}\label{interface_i_cor_debug_chain_a104577dc719f7a7a5c68755e1f4d818d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Previous} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_chain}{I\+Cor\+Debug\+Chain} $\ast$$\ast$pp\+Chain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a0f0543dfc7f7dffd06d51a3c4a8fbef2}\label{interface_i_cor_debug_chain_a0f0543dfc7f7dffd06d51a3c4a8fbef2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Next} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_chain}{I\+Cor\+Debug\+Chain} $\ast$$\ast$pp\+Chain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_abfa8249ac3ef17c320bd2219e763809b}\label{interface_i_cor_debug_chain_abfa8249ac3ef17c320bd2219e763809b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Managed} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$p\+Managed)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_ae84c5113636f63ff0cb1230df35cfd7b}\label{interface_i_cor_debug_chain_ae84c5113636f63ff0cb1230df35cfd7b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enumerate\+Frames} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_frame_enum}{I\+Cor\+Debug\+Frame\+Enum} $\ast$$\ast$pp\+Frames)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_ade93fb132957d608409d1774adabdb43}\label{interface_i_cor_debug_chain_ade93fb132957d608409d1774adabdb43}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Active\+Frame} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_frame}{I\+Cor\+Debug\+Frame} $\ast$$\ast$pp\+Frame)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a646a33ce47da2968ec1add7fd9bbc9c6}\label{interface_i_cor_debug_chain_a646a33ce47da2968ec1add7fd9bbc9c6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Register\+Set} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_register_set}{I\+Cor\+Debug\+Register\+Set} $\ast$$\ast$pp\+Registers)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_chain_a9e796bc81a9858973f5bf96ca3ae154f}\label{interface_i_cor_debug_chain_a9e796bc81a9858973f5bf96ca3ae154f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Reason} (\mbox{[}out\mbox{]} Cor\+Debug\+Chain\+Reason $\ast$p\+Reason)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

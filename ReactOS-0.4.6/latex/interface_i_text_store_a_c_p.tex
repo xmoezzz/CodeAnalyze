@@ -1,0 +1,95 @@
+\hypertarget{interface_i_text_store_a_c_p}{}\section{I\+Text\+Store\+A\+C\+P接口 参考}
+\label{interface_i_text_store_a_c_p}\index{I\+Text\+Store\+A\+CP@{I\+Text\+Store\+A\+CP}}
+类 I\+Text\+Store\+A\+CP 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_text_store_a_c_p}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a9059fbc71cabc797b6a38f68650b7246}\label{interface_i_text_store_a_c_p_a9059fbc71cabc797b6a38f68650b7246}} 
+H\+R\+E\+S\+U\+LT {\bfseries Advise\+Sink} (\mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}in, iid\+\_\+is(riid)\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Mask)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_aa687500a900a85bd81340bb9995e0a1f}\label{interface_i_text_store_a_c_p_aa687500a900a85bd81340bb9995e0a1f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unadvise\+Sink} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_ac5d70e072c2d187017528f8f2c661ef7}\label{interface_i_text_store_a_c_p_ac5d70e072c2d187017528f8f2c661ef7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request\+Lock} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Lock\+Flags, \mbox{[}out\mbox{]} H\+R\+E\+S\+U\+LT $\ast$phr\+Session)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a53fafeeb2a1214c2c4683feaf781e89a}\label{interface_i_text_store_a_c_p_a53fafeeb2a1214c2c4683feaf781e89a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Status} (\mbox{[}out\mbox{]} \hyperlink{struct_t_s___s_t_a_t_u_s}{T\+S\+\_\+\+S\+T\+A\+T\+US} $\ast$pdcs)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_ac3f8e39b7fd907086c66a778158654ea}\label{interface_i_text_store_a_c_p_ac3f8e39b7fd907086c66a778158654ea}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Insert} (\mbox{[}in\mbox{]} L\+O\+NG acp\+Test\+Start, \mbox{[}in\mbox{]} L\+O\+NG acp\+Test\+End, \mbox{[}in\mbox{]} U\+L\+O\+NG cch, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+Result\+Start, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+Result\+End)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a209031ac02b10de276c725a6438b18be}\label{interface_i_text_store_a_c_p_a209031ac02b10de276c725a6438b18be}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Selection} (\mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Index, \mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Count, \mbox{[}out, size\+\_\+is(ul\+Count), length\+\_\+is($\ast$pc\+Fetched)\mbox{]} \hyperlink{struct_t_s___s_e_l_e_c_t_i_o_n___a_c_p}{T\+S\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+A\+CP} $\ast$p\+Selection, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pc\+Fetched)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a176aba280cf12f10192cefc2204c02f8}\label{interface_i_text_store_a_c_p_a176aba280cf12f10192cefc2204c02f8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Selection} (\mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Count, \mbox{[}in, size\+\_\+is(ul\+Count)\mbox{]} const \hyperlink{struct_t_s___s_e_l_e_c_t_i_o_n___a_c_p}{T\+S\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+A\+CP} $\ast$p\+Selection)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a5d4f1f3802daad8f99cd5867a656f36f}\label{interface_i_text_store_a_c_p_a5d4f1f3802daad8f99cd5867a656f36f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Text} (\mbox{[}in\mbox{]} L\+O\+NG acp\+Start, \mbox{[}in\mbox{]} L\+O\+NG acp\+End, \mbox{[}out, size\+\_\+is(cch\+Plain\+Req), length\+\_\+is($\ast$pcch\+Plain\+Ret)\mbox{]} W\+C\+H\+AR $\ast$pch\+Plain, \mbox{[}in\mbox{]} U\+L\+O\+NG cch\+Plain\+Req, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcch\+Plain\+Ret, \mbox{[}out, size\+\_\+is(c\+Run\+Info\+Req), length\+\_\+is($\ast$pc\+Run\+Info\+Ret)\mbox{]} \hyperlink{struct_t_s___r_u_n_i_n_f_o}{T\+S\+\_\+\+R\+U\+N\+I\+N\+FO} $\ast$prg\+Run\+Info, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Run\+Info\+Req, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pc\+Run\+Info\+Ret, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+Next)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_aefb56a7b132f3ea46e9c41496c166457}\label{interface_i_text_store_a_c_p_aefb56a7b132f3ea46e9c41496c166457}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Text} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} L\+O\+NG acp\+Start, \mbox{[}in\mbox{]} L\+O\+NG acp\+End, \mbox{[}in, size\+\_\+is(cch)\mbox{]} const W\+C\+H\+AR $\ast$pch\+Text, \mbox{[}in\mbox{]} U\+L\+O\+NG cch, \mbox{[}out\mbox{]} \hyperlink{struct_t_s___t_e_x_t_c_h_a_n_g_e}{T\+S\+\_\+\+T\+E\+X\+T\+C\+H\+A\+N\+GE} $\ast$p\+Change)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a1e06c4fb6873601b420c120e57630702}\label{interface_i_text_store_a_c_p_a1e06c4fb6873601b420c120e57630702}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Formatted\+Text} (\mbox{[}in\mbox{]} L\+O\+NG acp\+Start, \mbox{[}in\mbox{]} L\+O\+NG acp\+End, \mbox{[}out\mbox{]} \hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$$\ast$pp\+Data\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a34865ae23abc2fda3e8b20b31766bc86}\label{interface_i_text_store_a_c_p_a34865ae23abc2fda3e8b20b31766bc86}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Embedded} (\mbox{[}in\mbox{]} L\+O\+NG acp\+Pos, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid\+Service, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppunk)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a043363ac764495b98c95d1656f8d32fe}\label{interface_i_text_store_a_c_p_a043363ac764495b98c95d1656f8d32fe}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Insert\+Embedded} (\mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Service, \mbox{[}in\mbox{]} const F\+O\+R\+M\+A\+T\+E\+TC $\ast$p\+Format\+Etc, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Insertable)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a7f4714f8af0a1b6fd62275cbb516bca5}\label{interface_i_text_store_a_c_p_a7f4714f8af0a1b6fd62275cbb516bca5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Insert\+Embedded} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} L\+O\+NG acp\+Start, \mbox{[}in\mbox{]} L\+O\+NG acp\+End, \mbox{[}in\mbox{]} \hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$p\+Data\+Object, \mbox{[}out\mbox{]} \hyperlink{struct_t_s___t_e_x_t_c_h_a_n_g_e}{T\+S\+\_\+\+T\+E\+X\+T\+C\+H\+A\+N\+GE} $\ast$p\+Change)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a35c98c7f2e1a3dd38d7ed5a7cfdf6523}\label{interface_i_text_store_a_c_p_a35c98c7f2e1a3dd38d7ed5a7cfdf6523}} 
+H\+R\+E\+S\+U\+LT {\bfseries Insert\+Text\+At\+Selection} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in, size\+\_\+is(cch)\mbox{]} const W\+C\+H\+AR $\ast$pch\+Text, \mbox{[}in\mbox{]} U\+L\+O\+NG cch, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+Start, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+End, \mbox{[}out\mbox{]} \hyperlink{struct_t_s___t_e_x_t_c_h_a_n_g_e}{T\+S\+\_\+\+T\+E\+X\+T\+C\+H\+A\+N\+GE} $\ast$p\+Change)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a2f213557e339bda67876eb410a068254}\label{interface_i_text_store_a_c_p_a2f213557e339bda67876eb410a068254}} 
+H\+R\+E\+S\+U\+LT {\bfseries Insert\+Embedded\+At\+Selection} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} \hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$p\+Data\+Object, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+Start, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+End, \mbox{[}out\mbox{]} \hyperlink{struct_t_s___t_e_x_t_c_h_a_n_g_e}{T\+S\+\_\+\+T\+E\+X\+T\+C\+H\+A\+N\+GE} $\ast$p\+Change)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a72c090c255c3139ba5bbfd15d1e4b0c9}\label{interface_i_text_store_a_c_p_a72c090c255c3139ba5bbfd15d1e4b0c9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request\+Supported\+Attrs} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Filter\+Attrs, \mbox{[}in, size\+\_\+is(c\+Filter\+Attrs), \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{T\+S\+\_\+\+A\+T\+T\+R\+ID} $\ast$pa\+Filter\+Attrs)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_ae96197952d2cfca876e6364e5bddf8b7}\label{interface_i_text_store_a_c_p_ae96197952d2cfca876e6364e5bddf8b7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request\+Attrs\+At\+Position} (\mbox{[}in\mbox{]} L\+O\+NG acp\+Pos, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Filter\+Attrs, \mbox{[}in, size\+\_\+is(c\+Filter\+Attrs), \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{T\+S\+\_\+\+A\+T\+T\+R\+ID} $\ast$pa\+Filter\+Attrs, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a3705a8691949339dd3052ed4483946be}\label{interface_i_text_store_a_c_p_a3705a8691949339dd3052ed4483946be}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request\+Attrs\+Transitioning\+At\+Position} (\mbox{[}in\mbox{]} L\+O\+NG acp\+Pos, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Filter\+Attrs, \mbox{[}in, size\+\_\+is(c\+Filter\+Attrs), \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{T\+S\+\_\+\+A\+T\+T\+R\+ID} $\ast$pa\+Filter\+Attrs, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_ada89881ebd96c65cb63729f0c1cb2949}\label{interface_i_text_store_a_c_p_ada89881ebd96c65cb63729f0c1cb2949}} 
+H\+R\+E\+S\+U\+LT {\bfseries Find\+Next\+Attr\+Transition} (\mbox{[}in\mbox{]} L\+O\+NG acp\+Start, \mbox{[}in\mbox{]} L\+O\+NG acp\+Halt, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Filter\+Attrs, \mbox{[}in, size\+\_\+is(c\+Filter\+Attrs), \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{T\+S\+\_\+\+A\+T\+T\+R\+ID} $\ast$pa\+Filter\+Attrs, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp\+Next, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Found, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pl\+Found\+Offset)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a8061b820d549b2387369a94c81269cc2}\label{interface_i_text_store_a_c_p_a8061b820d549b2387369a94c81269cc2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Retrieve\+Requested\+Attrs} (\mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Count, \mbox{[}out, size\+\_\+is(ul\+Count), length\+\_\+is($\ast$pc\+Fetched)\mbox{]} \hyperlink{struct_t_s___a_t_t_r_v_a_l}{T\+S\+\_\+\+A\+T\+T\+R\+V\+AL} $\ast$pa\+Attr\+Vals, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pc\+Fetched)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_ad24cfa80a9be4916b0f278d83a94d82c}\label{interface_i_text_store_a_c_p_ad24cfa80a9be4916b0f278d83a94d82c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+End\+A\+CP} (\mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a6701b38d98bdd23e0f16101002a00cba}\label{interface_i_text_store_a_c_p_a6701b38d98bdd23e0f16101002a00cba}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Active\+View} (\mbox{[}out\mbox{]} Ts\+View\+Cookie $\ast$pvc\+View)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a6d754647aff07e6cde9109a8ed135d46}\label{interface_i_text_store_a_c_p_a6d754647aff07e6cde9109a8ed135d46}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+A\+C\+P\+From\+Point} (\mbox{[}in\mbox{]} Ts\+View\+Cookie vc\+View, \mbox{[}in\mbox{]} const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} $\ast$pt\+Screen, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pacp)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_ad88472e5f1ebf8a3db37452318408ac3}\label{interface_i_text_store_a_c_p_ad88472e5f1ebf8a3db37452318408ac3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Text\+Ext} (\mbox{[}in\mbox{]} Ts\+View\+Cookie vc\+View, \mbox{[}in\mbox{]} L\+O\+NG acp\+Start, \mbox{[}in\mbox{]} L\+O\+NG acp\+End, \mbox{[}out\mbox{]} \hyperlink{structtag_r_e_c_t}{R\+E\+CT} $\ast$\hyperlink{structtag_r_e_c_t}{prc}, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Clipped)
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_a9b40169eb764ffbab2003f341a40b7b1}\label{interface_i_text_store_a_c_p_a9b40169eb764ffbab2003f341a40b7b1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Screen\+Ext} (\mbox{[}in\mbox{]} Ts\+View\+Cookie vc\+View, \mbox{[}out\mbox{]} \hyperlink{structtag_r_e_c_t}{R\+E\+CT} $\ast$\hyperlink{structtag_r_e_c_t}{prc})
+\item 
+\mbox{\Hypertarget{interface_i_text_store_a_c_p_acd621e515bf4dc80263b1b477023cc51}\label{interface_i_text_store_a_c_p_acd621e515bf4dc80263b1b477023cc51}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Wnd} (\mbox{[}in\mbox{]} Ts\+View\+Cookie vc\+View, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} $\ast$phwnd)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/textstor.\+idl\end{DoxyCompactItemize}

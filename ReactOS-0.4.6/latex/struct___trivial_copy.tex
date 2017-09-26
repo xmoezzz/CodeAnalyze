@@ -1,0 +1,64 @@
+\hypertarget{struct___trivial_copy}{}\section{\+\_\+\+Trivial\+Copy$<$ \+\_\+\+Tp1, \+\_\+\+Tp2 $>$ 模板结构体 参考}
+\label{struct___trivial_copy}\index{\+\_\+\+Trivial\+Copy$<$ \+\_\+\+Tp1, \+\_\+\+Tp2 $>$@{\+\_\+\+Trivial\+Copy$<$ \+\_\+\+Tp1, \+\_\+\+Tp2 $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a326e280f978b5374ebe6b3752e91c87b}\label{struct___trivial_copy_a326e280f978b5374ebe6b3752e91c87b}} 
+enum \{ {\bfseries same} = \+:\+:boost\+:\+:is\+\_\+same$<$uncv1, uncv2$>$\+:\+:value
+ \}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a3b97637781d569418d53ef66767c814e}\label{struct___trivial_copy_a3b97637781d569418d53ef66767c814e}} 
+enum \{ {\bfseries boost\+\_\+trivial\+\_\+assign} = \+:\+:boost\+:\+:has\+\_\+trivial\+\_\+assign$<$uncv1$>$\+:\+:value
+ \}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_aebc0abc982b0a73e5fdc2c47f3e28165}\label{struct___trivial_copy_aebc0abc982b0a73e5fdc2c47f3e28165}} 
+typedef \+::boost\+::remove\+\_\+cv$<$ \+\_\+\+Tp1 $>$\+::type {\bfseries uncv1}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_af1ba2f01505be2afb80e5de87bb6e39b}\label{struct___trivial_copy_af1ba2f01505be2afb80e5de87bb6e39b}} 
+typedef \+::boost\+::remove\+\_\+cv$<$ \+\_\+\+Tp2 $>$\+::type {\bfseries uncv2}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a455a14546d9eba239e59c0b8196319ab}\label{struct___trivial_copy_a455a14546d9eba239e59c0b8196319ab}} 
+typedef \hyperlink{struct____bool2type}{\+\_\+\+\_\+bool2type}$<$ same $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Same}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a3ed95873b8c00f71d56cb0dabb7f860a}\label{struct___trivial_copy_a3ed95873b8c00f71d56cb0dabb7f860a}} 
+typedef \hyperlink{struct____bool2type}{\+\_\+\+\_\+bool2type}$<$ boost\+\_\+trivial\+\_\+assign $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Boost\+Trivial\+Assign}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a85261470654f3c64530e89879b928293}\label{struct___trivial_copy_a85261470654f3c64530e89879b928293}} 
+typedef \hyperlink{struct____type__traits}{\+\_\+\+\_\+type\+\_\+traits}$<$ uncv1 $>$\+::has\+\_\+trivial\+\_\+assignment\+\_\+operator {\bfseries \+\_\+\+S\+T\+L\+P\+Trivial\+Assign}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_abb68b8d834c50eb203aee02115c37900}\label{struct___trivial_copy_abb68b8d834c50eb203aee02115c37900}} 
+typedef \hyperlink{struct___lor2}{\+\_\+\+Lor2}$<$ \hyperlink{struct____true__type}{\+\_\+\+Boost\+Trivial\+Assign}, \hyperlink{struct____true__type}{\+\_\+\+S\+T\+L\+P\+Trivial\+Assign} $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Trivial\+Assign}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a6498a805c926a4de0faeb5d1ac150d54}\label{struct___trivial_copy_a6498a805c926a4de0faeb5d1ac150d54}} 
+typedef \hyperlink{struct___land2}{\+\_\+\+Land2}$<$ \hyperlink{struct____true__type}{\+\_\+\+Same}, \hyperlink{struct____true__type}{\+\_\+\+Trivial\+Assign} $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Type}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a161dac65b6239c7d7a841e1f3ad0c202}\label{struct___trivial_copy_a161dac65b6239c7d7a841e1f3ad0c202}} 
+typedef \hyperlink{struct___trivial_native_type_copy}{\+\_\+\+Trivial\+Native\+Type\+Copy}$<$ \+\_\+\+Src, \+\_\+\+Dst $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Native\+Ret}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a15e6be6c144ddd986220905393713710}\label{struct___trivial_copy_a15e6be6c144ddd986220905393713710}} 
+typedef \hyperlink{struct____type__traits}{\+\_\+\+\_\+type\+\_\+traits}$<$ \+\_\+\+Src $>$\+::has\+\_\+trivial\+\_\+assignment\+\_\+operator {\bfseries \+\_\+\+Tr1}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a33aea6b9cb9777e0024d62ab600c8107}\label{struct___trivial_copy_a33aea6b9cb9777e0024d62ab600c8107}} 
+typedef \hyperlink{struct___are_copyable}{\+\_\+\+Are\+Copyable}$<$ \+\_\+\+Src, \+\_\+\+Dst $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Tr2}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_abbd630c4dedf27ff748bb3800dccc7bb}\label{struct___trivial_copy_abbd630c4dedf27ff748bb3800dccc7bb}} 
+typedef \hyperlink{struct___land2}{\+\_\+\+Land2}$<$ \hyperlink{struct____true__type}{\+\_\+\+Tr1}, \hyperlink{struct____true__type}{\+\_\+\+Tr2} $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+User\+Ret}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a8a6931aaf52ceff68d0eb164e1eaec7a}\label{struct___trivial_copy_a8a6931aaf52ceff68d0eb164e1eaec7a}} 
+typedef \hyperlink{struct___lor2}{\+\_\+\+Lor2}$<$ \hyperlink{struct____true__type}{\+\_\+\+Native\+Ret}, \hyperlink{struct____false__type}{\+\_\+\+User\+Ret} $>$\+::\hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Ret}
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a5f1c783fb8fa2fd92f4ae168fab09ccb}\label{struct___trivial_copy_a5f1c783fb8fa2fd92f4ae168fab09ccb}} 
+static \hyperlink{struct____false__type}{\+\_\+\+Type} {\bfseries \+\_\+\+Answer} ()
+\item 
+\mbox{\Hypertarget{struct___trivial_copy_a58648a7d6888991fac08f41f2cc4f37e}\label{struct___trivial_copy_a58648a7d6888991fac08f41f2cc4f37e}} 
+static \hyperlink{struct____true__type}{\+\_\+\+Ret} {\bfseries \+\_\+\+Answer} ()
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/boost\+\_\+type\+\_\+traits.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/type\+\_\+traits.\+h\end{DoxyCompactItemize}

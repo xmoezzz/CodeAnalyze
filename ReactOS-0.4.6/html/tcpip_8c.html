@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/drivers/lwip/src/api/tcpip.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_2c85cff4f1cef242b8656be9a8ac1f31.html">drivers</a></li><li class="navelem"><a class="el" href="dir_96ee20e854c60754e26b655afd09dbca.html">lwip</a></li><li class="navelem"><a class="el" href="dir_ead4725ee7eaa6e080332f3f984ccc64.html">src</a></li><li class="navelem"><a class="el" href="dir_578378038ad2ba34327a41ca3154c48b.html">api</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">tcpip.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="opt_8h_source.html">lwip/opt.h</a>&quot;</code><br />
+<code>#include &quot;lwip/sys.h&quot;</code><br />
+<code>#include &quot;lwip/memp.h&quot;</code><br />
+<code>#include &quot;lwip/mem.h&quot;</code><br />
+<code>#include &quot;lwip/pbuf.h&quot;</code><br />
+<code>#include &quot;lwip/tcpip.h&quot;</code><br />
+<code>#include &quot;lwip/init.h&quot;</code><br />
+<code>#include &quot;lwip/ip.h&quot;</code><br />
+<code>#include &quot;netif/etharp.h&quot;</code><br />
+<code>#include &quot;netif/ppp_oe.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae510f195171bed8499ae94e264a92717"><td class="memItemLeft" align="right" valign="top">err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#ae510f195171bed8499ae94e264a92717">tcpip_input</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structnetif.html">netif</a> *inp)</td></tr>
+<tr class="separator:ae510f195171bed8499ae94e264a92717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d3ef23817d7703fa75ed67bd45ea1d"><td class="memItemLeft" align="right" valign="top">err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#ab1d3ef23817d7703fa75ed67bd45ea1d">tcpip_callback_with_block</a> (tcpip_callback_fn function, <a class="el" href="interfacevoid.html">void</a> *ctx, u8_t block)</td></tr>
+<tr class="separator:ab1d3ef23817d7703fa75ed67bd45ea1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee14fa2587a9ba9d23e4c7e16c4526ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> tcpip_callback_msg *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#aee14fa2587a9ba9d23e4c7e16c4526ac">tcpip_callbackmsg_new</a> (tcpip_callback_fn function, <a class="el" href="interfacevoid.html">void</a> *ctx)</td></tr>
+<tr class="separator:aee14fa2587a9ba9d23e4c7e16c4526ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b7a59f4c3f5f721ab9ee81f231c9fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#ac5b7a59f4c3f5f721ab9ee81f231c9fd">tcpip_callbackmsg_delete</a> (<a class="el" href="interfacestruct.html">struct</a> tcpip_callback_msg *msg)</td></tr>
+<tr class="separator:ac5b7a59f4c3f5f721ab9ee81f231c9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc81ad493f68714a22b3b8ea7d04378"><td class="memItemLeft" align="right" valign="top">err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#acfc81ad493f68714a22b3b8ea7d04378">tcpip_trycallback</a> (<a class="el" href="interfacestruct.html">struct</a> tcpip_callback_msg *msg)</td></tr>
+<tr class="separator:acfc81ad493f68714a22b3b8ea7d04378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3a88b8df6ba3b9ed1c00e0a305e3db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#a1f3a88b8df6ba3b9ed1c00e0a305e3db">tcpip_init</a> (tcpip_init_done_fn initfunc, <a class="el" href="interfacevoid.html">void</a> *<a class="el" href="interfacevoid.html">arg</a>)</td></tr>
+<tr class="separator:a1f3a88b8df6ba3b9ed1c00e0a305e3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdcb6b784fe0e8736a5b31a5cfbed6c"><td class="memItemLeft" align="right" valign="top">err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#a5cdcb6b784fe0e8736a5b31a5cfbed6c">pbuf_free_callback</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p)</td></tr>
+<tr class="separator:a5cdcb6b784fe0e8736a5b31a5cfbed6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b4de3765c6a37b3f2b26a11603771c"><td class="memItemLeft" align="right" valign="top">err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpip_8c.html#a55b4de3765c6a37b3f2b26a11603771c">mem_free_callback</a> (<a class="el" href="interfacevoid.html">void</a> *m)</td></tr>
+<tr class="separator:a55b4de3765c6a37b3f2b26a11603771c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Sequential API Main thread module </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a55b4de3765c6a37b3f2b26a11603771c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b4de3765c6a37b3f2b26a11603771c">&#9670;&nbsp;</a></span>mem_free_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_t mem_free_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_a.html">A</a> simple wrapper function that allows you to free heap memory from interrupt context.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>the heap memory to free </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_OK if callback could be enqueued, an err_t if not </dd></dl>
+
+</div>
+</div>
+<a id="a5cdcb6b784fe0e8736a5b31a5cfbed6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cdcb6b784fe0e8736a5b31a5cfbed6c">&#9670;&nbsp;</a></span>pbuf_free_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_t pbuf_free_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_a.html">A</a> simple wrapper function that allows you to free a pbuf from interrupt context.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The pbuf (chain) to be dereferenced. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_OK if callback could be enqueued, an err_t if not </dd></dl>
+
+</div>
+</div>
+<a id="ab1d3ef23817d7703fa75ed67bd45ea1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d3ef23817d7703fa75ed67bd45ea1d">&#9670;&nbsp;</a></span>tcpip_callback_with_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_t tcpip_callback_with_block </td>
+          <td>(</td>
+          <td class="paramtype">tcpip_callback_fn&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8_t&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call a specific function in the thread context of tcpip_thread for easy access synchronization. <a class="el" href="struct_a.html">A</a> function called in that way may access lwIP core code without fearing concurrent access.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>the function to call </td></tr>
+    <tr><td class="paramname">ctx</td><td>parameter passed to f </td></tr>
+    <tr><td class="paramname">block</td><td>1 to block until the request is posted, 0 to non-blocking mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_OK if the function was called, another err_t if not </dd></dl>
+
+</div>
+</div>
+<a id="ac5b7a59f4c3f5f721ab9ee81f231c9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b7a59f4c3f5f721ab9ee81f231c9fd">&#9670;&nbsp;</a></span>tcpip_callbackmsg_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> tcpip_callbackmsg_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> tcpip_callback_msg *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Free a callback message allocated by <a class="el" href="tcpip_8c.html#aee14fa2587a9ba9d23e4c7e16c4526ac">tcpip_callbackmsg_new()</a>.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>the message to free </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee14fa2587a9ba9d23e4c7e16c4526ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee14fa2587a9ba9d23e4c7e16c4526ac">&#9670;&nbsp;</a></span>tcpip_callbackmsg_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> tcpip_callback_msg* tcpip_callbackmsg_new </td>
+          <td>(</td>
+          <td class="paramtype">tcpip_callback_fn&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocate a structure for a static callback message and initialize it. <a class="el" href="namespace_this.html">This</a> is intended to be used to send "static" messages from interrupt context.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">function</td><td>the function to call </td></tr>
+    <tr><td class="paramname">ctx</td><td>parameter passed to function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>a struct pointer to pass to <a class="el" href="tcpip_8c.html#acfc81ad493f68714a22b3b8ea7d04378">tcpip_trycallback()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a1f3a88b8df6ba3b9ed1c00e0a305e3db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3a88b8df6ba3b9ed1c00e0a305e3db">&#9670;&nbsp;</a></span>tcpip_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> tcpip_init </td>
+          <td>(</td>
+          <td class="paramtype">tcpip_init_done_fn&#160;</td>
+          <td class="paramname"><em>initfunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize this module:</p><ul>
+<li>initialize all sub modules</li>
+<li>start the tcpip_thread</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initfunc</td><td>a function to call when tcpip_thread is running and finished initializing </td></tr>
+    <tr><td class="paramname">arg</td><td>argument to pass to initfunc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae510f195171bed8499ae94e264a92717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae510f195171bed8499ae94e264a92717">&#9670;&nbsp;</a></span>tcpip_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_t tcpip_input </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structnetif.html">netif</a> *&#160;</td>
+          <td class="paramname"><em>inp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pass a received packet to tcpip_thread for input processing</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>the received packet, p-&gt;payload pointing to the Ethernet header or to an IP header (if inp doesn't have NETIF_FLAG_ETHARP or NETIF_FLAG_ETHERNET flags) </td></tr>
+    <tr><td class="paramname">inp</td><td>the network interface on which the packet was received </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acfc81ad493f68714a22b3b8ea7d04378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc81ad493f68714a22b3b8ea7d04378">&#9670;&nbsp;</a></span>tcpip_trycallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_t tcpip_trycallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> tcpip_callback_msg *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Try to post a callback-message to the tcpip_thread mbox <a class="el" href="namespace_this.html">This</a> is intended to be used to send "static" messages from interrupt context.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>pointer to the message to post </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>sys_mbox_trypost() return code </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

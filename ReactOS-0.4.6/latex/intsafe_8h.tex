@@ -1,0 +1,780 @@
+\hypertarget{intsafe_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/psdk/intsafe.h 文件参考}
+\label{intsafe_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/intsafe.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/intsafe.\+h}}
+
+
+Windows helper functions for integer overflow prevention  
+
+
+{\ttfamily \#include $<$specstrings.\+h$>$}\newline
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_this}{This}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a3393a32ceabd1e7c71a5e9cf78fa43ed}\label{intsafe_8h_a3393a32ceabd1e7c71a5e9cf78fa43ed}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+I\+N\+T\+S\+A\+F\+E\+\_\+\+H\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a1b2d0b0636b4f79b0e4faad30997e684}\label{intsafe_8h_a1b2d0b0636b4f79b0e4faad30997e684}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+U\+C\+C\+E\+E\+D\+ED}(hr)~(((H\+R\+E\+S\+U\+LT)(hr)) $>$= 0)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aaf71f8ef65478dbd871fd111685333ee}\label{intsafe_8h_aaf71f8ef65478dbd871fd111685333ee}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+A\+I\+L\+ED}(hr)~(((H\+R\+E\+S\+U\+LT)(hr)) $<$ 0)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a14bc2dfa42241600d567369cd25ddc70}\label{intsafe_8h_a14bc2dfa42241600d567369cd25ddc70}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+\_\+\+OK}~((H\+R\+E\+S\+U\+LT)0\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a24b22f748e7abc3ed4f4acdd577398ef}\label{intsafe_8h_a24b22f748e7abc3ed4f4acdd577398ef}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+S\+A\+F\+E\+\_\+\+R\+E\+S\+U\+LT}~H\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{intsafe_8h_a21304dd052e418c04c24df9403beb4a0}\label{intsafe_8h_a21304dd052e418c04c24df9403beb4a0}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+S\+A\+F\+E\+\_\+\+S\+U\+C\+C\+E\+SS}~S\+\_\+\+OK
+\item 
+\mbox{\Hypertarget{intsafe_8h_a64975bf3616acafa604568dfad9c95ce}\label{intsafe_8h_a64975bf3616acafa604568dfad9c95ce}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+S\+A\+F\+E\+\_\+\+E\+\_\+\+A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+O\+V\+E\+R\+F\+L\+OW}~((H\+R\+E\+S\+U\+LT)0x80070216\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a88d7437e2a69c71623f44218ee1ce139}\label{intsafe_8h_a88d7437e2a69c71623f44218ee1ce139}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+S\+A\+F\+E\+\_\+\+N\+A\+ME}(\hyperlink{structname}{name})~\hyperlink{structname}{name}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a3730e9bd68460c3bea497352ee69b9ae}\label{intsafe_8h_a3730e9bd68460c3bea497352ee69b9ae}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+W64}
+\item 
+\mbox{\Hypertarget{intsafe_8h_abf28f80e90bef143796d9dfcf34dd239}\label{intsafe_8h_abf28f80e90bef143796d9dfcf34dd239}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+\_\+\+A\+S\+S\+E\+RT}(e)~extern \hyperlink{interfacevoid}{void} \+\_\+\+\_\+\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+\_\+(int \mbox{[}(e)?1\+:-\/1\mbox{]})
+\item 
+\mbox{\Hypertarget{intsafe_8h_aadcf2a81af243df333b31efa6461ab8e}\label{intsafe_8h_aadcf2a81af243df333b31efa6461ab8e}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T8\+\_\+\+M\+IN}~((signed char)(-\/127 -\/ 1))
+\item 
+\mbox{\Hypertarget{intsafe_8h_a1aa2f0097522f3458a80b26024764fa6}\label{intsafe_8h_a1aa2f0097522f3458a80b26024764fa6}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+H\+O\+R\+T\+\_\+\+M\+IN}~(-\/32768)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad4e9955955b27624963643eac448118a}\label{intsafe_8h_ad4e9955955b27624963643eac448118a}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T16\+\_\+\+M\+IN}~((short)(-\/32767 -\/ 1))
+\item 
+\mbox{\Hypertarget{intsafe_8h_a21658776274b3d146c674318b635a334}\label{intsafe_8h_a21658776274b3d146c674318b635a334}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+M\+IN}~(-\/2147483647 -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a688eb21a22db27c2b2bd5836943cdcbe}\label{intsafe_8h_a688eb21a22db27c2b2bd5836943cdcbe}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T32\+\_\+\+M\+IN}~(-\/2147483647 -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ae8a44c5a7436466221e0f3859d02420f}\label{intsafe_8h_ae8a44c5a7436466221e0f3859d02420f}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+\_\+\+M\+IN}~(-\/2147483647\+L -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a65eb07a280141dab05420d9a4c6a6484}\label{intsafe_8h_a65eb07a280141dab05420d9a4c6a6484}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+L\+O\+N\+G\+\_\+\+M\+IN}~(-\/9223372036854775807\+L\+L -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ab08f08e2083842596399e99a64d807b7}\label{intsafe_8h_ab08f08e2083842596399e99a64d807b7}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G64\+\_\+\+M\+IN}~(-\/9223372036854775807\+L\+L -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ab21f12f372f67b8ff0aa3432336ede67}\label{intsafe_8h_ab21f12f372f67b8ff0aa3432336ede67}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T64\+\_\+\+M\+IN}~(-\/9223372036854775807\+L\+L -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a999401b12d60d6c3e1bfa7f3135ac6b1}\label{intsafe_8h_a999401b12d60d6c3e1bfa7f3135ac6b1}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T128\+\_\+\+M\+IN}~(-\/170141183460469231731687303715884105727i128 -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a6feb96415b2917d0a512688a80e93b5d}\label{intsafe_8h_a6feb96415b2917d0a512688a80e93b5d}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+P\+T\+R\+\_\+\+M\+IN}~(-\/2147483647 -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2d7340a6290f84d99bf65605444f9f6b}\label{intsafe_8h_a2d7340a6290f84d99bf65605444f9f6b}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+\_\+\+P\+T\+R\+\_\+\+M\+IN}~(-\/2147483647\+L -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2bc8f29000d3eabff640b89ba62a888e}\label{intsafe_8h_a2bc8f29000d3eabff640b89ba62a888e}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+T\+R\+D\+I\+F\+F\+\_\+\+T\+\_\+\+M\+IN}~(-\/2147483647 -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ab3bd7fef0819ea39c7790dfb5e23530e}\label{intsafe_8h_ab3bd7fef0819ea39c7790dfb5e23530e}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+M\+IN}~(-\/2147483647\+L -\/ 1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aaf7f29f45f1a513b4748a4e5014ddf6a}\label{intsafe_8h_aaf7f29f45f1a513b4748a4e5014ddf6a}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T8\+\_\+\+M\+AX}~((signed char)127)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aeb4e270a084ee26fe73e799861bd0252}\label{intsafe_8h_aeb4e270a084ee26fe73e799861bd0252}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T8\+\_\+\+M\+AX}~((unsigned char)0xff\+U)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ac9e7264518a2ef08d338c7913ee72b9f}\label{intsafe_8h_ac9e7264518a2ef08d338c7913ee72b9f}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+Y\+T\+E\+\_\+\+M\+AX}~((unsigned char)0xff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa6e9509c5546ef94a7c3d78e3441606a}\label{intsafe_8h_aa6e9509c5546ef94a7c3d78e3441606a}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+H\+O\+R\+T\+\_\+\+M\+AX}~((short)32767)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ac58f2c111cc9989c86db2a7dc4fd84ca}\label{intsafe_8h_ac58f2c111cc9989c86db2a7dc4fd84ca}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T16\+\_\+\+M\+AX}~((short)32767)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a4e9f5ac7b59f702350690c053aad1cf4}\label{intsafe_8h_a4e9f5ac7b59f702350690c053aad1cf4}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+S\+H\+O\+R\+T\+\_\+\+M\+AX}~((unsigned short)0xffff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a3ea490c9b3617d4479bd80ef93cd5602}\label{intsafe_8h_a3ea490c9b3617d4479bd80ef93cd5602}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T16\+\_\+\+M\+AX}~((unsigned short)0xffff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa679baa4df180fe5fadb94c0e985a470}\label{intsafe_8h_aa679baa4df180fe5fadb94c0e985a470}} 
+\#\hyperlink{structdefine}{define} {\bfseries W\+O\+R\+D\+\_\+\+M\+AX}~((unsigned short)0xffff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a9ec306f36d50c7375e74f0d1c55a3a67}\label{intsafe_8h_a9ec306f36d50c7375e74f0d1c55a3a67}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+M\+AX}~2147483647
+\item 
+\mbox{\Hypertarget{intsafe_8h_a181807730d4a375f848ba139813ce04f}\label{intsafe_8h_a181807730d4a375f848ba139813ce04f}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T32\+\_\+\+M\+AX}~2147483647
+\item 
+\mbox{\Hypertarget{intsafe_8h_ac998ea02fbd821fc123d60445ce76f38}\label{intsafe_8h_ac998ea02fbd821fc123d60445ce76f38}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T\+\_\+\+M\+AX}~0xffffffff
+\item 
+\mbox{\Hypertarget{intsafe_8h_ab5eb23180f7cc12b7d6c04a8ec067fdd}\label{intsafe_8h_ab5eb23180f7cc12b7d6c04a8ec067fdd}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T32\+\_\+\+M\+AX}~0xffffffffU
+\item 
+\mbox{\Hypertarget{intsafe_8h_a50fece4db74f09568b2938db583c5655}\label{intsafe_8h_a50fece4db74f09568b2938db583c5655}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+\_\+\+M\+AX}~2147483647L
+\item 
+\mbox{\Hypertarget{intsafe_8h_a41c51926a1997aab3503f9083935e06c}\label{intsafe_8h_a41c51926a1997aab3503f9083935e06c}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G\+\_\+\+M\+AX}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a5abb0f6238f0a835195ab874c15ec947}\label{intsafe_8h_a5abb0f6238f0a835195ab874c15ec947}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+W\+O\+R\+D\+\_\+\+M\+AX}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_abc857a28862106659c6720fdbb39b331}\label{intsafe_8h_abc857a28862106659c6720fdbb39b331}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+L\+O\+N\+G\+\_\+\+M\+AX}~9223372036854775807\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a4d725f9b654e5c3f2dc815b5a20767dd}\label{intsafe_8h_a4d725f9b654e5c3f2dc815b5a20767dd}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G64\+\_\+\+M\+AX}~9223372036854775807\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad0d744f05898e32d01f73f8af3cd2071}\label{intsafe_8h_ad0d744f05898e32d01f73f8af3cd2071}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T64\+\_\+\+M\+AX}~9223372036854775807\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_abb917c05458ae022fb7870fda7b6c642}\label{intsafe_8h_abb917c05458ae022fb7870fda7b6c642}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G\+L\+O\+N\+G\+\_\+\+M\+AX}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a44c740a4d005bff5d360aefb60fcaa27}\label{intsafe_8h_a44c740a4d005bff5d360aefb60fcaa27}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+W\+O\+R\+D\+L\+O\+N\+G\+\_\+\+M\+AX}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a53aef8d9a41bba0f784399d632f68bd8}\label{intsafe_8h_a53aef8d9a41bba0f784399d632f68bd8}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G64\+\_\+\+M\+AX}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad8b9e77b949e8249feaee6a4e1237874}\label{intsafe_8h_ad8b9e77b949e8249feaee6a4e1237874}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+W\+O\+R\+D64\+\_\+\+M\+AX}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a30654b4b67d97c42ca3f9b6052dda916}\label{intsafe_8h_a30654b4b67d97c42ca3f9b6052dda916}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T64\+\_\+\+M\+AX}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7706db46d5f46c20fd6ed247bf716ebe}\label{intsafe_8h_a7706db46d5f46c20fd6ed247bf716ebe}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T128\+\_\+\+M\+AX}~170141183460469231731687303715884105727i128
+\item 
+\mbox{\Hypertarget{intsafe_8h_ae4472310e03cc4d8569d897c19637067}\label{intsafe_8h_ae4472310e03cc4d8569d897c19637067}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T128\+\_\+\+M\+AX}~0xffffffffffffffffffffffffffffffffui128
+\item 
+\mbox{\Hypertarget{intsafe_8h_a5223de484fdc997e33c74194c054d71b}\label{intsafe_8h_a5223de484fdc997e33c74194c054d71b}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+P\+T\+R\+\_\+\+M\+AX}~2147483647
+\item 
+\mbox{\Hypertarget{intsafe_8h_a0ec28072900c748547f99b9816d8cf6e}\label{intsafe_8h_a0ec28072900c748547f99b9816d8cf6e}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T\+\_\+\+P\+T\+R\+\_\+\+M\+AX}~0xffffffff
+\item 
+\mbox{\Hypertarget{intsafe_8h_a70b7da3fe27efed012870780696e150b}\label{intsafe_8h_a70b7da3fe27efed012870780696e150b}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+\_\+\+P\+T\+R\+\_\+\+M\+AX}~2147483647L
+\item 
+\mbox{\Hypertarget{intsafe_8h_a8ddc68a2401c3e2d9c964b9da3bb66ff}\label{intsafe_8h_a8ddc68a2401c3e2d9c964b9da3bb66ff}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G\+\_\+\+P\+T\+R\+\_\+\+M\+AX}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a97b117ff2d82d3ae15afca567a09b736}\label{intsafe_8h_a97b117ff2d82d3ae15afca567a09b736}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+W\+O\+R\+D\+\_\+\+P\+T\+R\+\_\+\+M\+AX}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa5fd68bd94ccd1b30af14a37529b0866}\label{intsafe_8h_aa5fd68bd94ccd1b30af14a37529b0866}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+T\+R\+D\+I\+F\+F\+\_\+\+T\+\_\+\+M\+AX}~2147483647
+\item 
+\mbox{\Hypertarget{intsafe_8h_acfa3af56d5e0045c1d7a5682fd1d2853}\label{intsafe_8h_acfa3af56d5e0045c1d7a5682fd1d2853}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+I\+Z\+E\+\_\+\+T\+\_\+\+M\+AX}~0xffffffff
+\item 
+\mbox{\Hypertarget{intsafe_8h_aab89eada8d273a7e1f1447c5c0dffa3d}\label{intsafe_8h_aab89eada8d273a7e1f1447c5c0dffa3d}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+M\+AX}~2147483647L
+\item 
+\mbox{\Hypertarget{intsafe_8h_a67239eacedb78e67705819d20cb05281}\label{intsafe_8h_a67239eacedb78e67705819d20cb05281}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+M\+AX}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_aee8b74a5d0c7f6abe8a7ec0f6d510d5b}\label{intsafe_8h_aee8b74a5d0c7f6abe8a7ec0f6d510d5b}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T8\+\_\+\+E\+R\+R\+OR}~((signed char)(-\/1))
+\item 
+\mbox{\Hypertarget{intsafe_8h_a1b95e9dc8ede6f18afc8d3d2f51f7bf9}\label{intsafe_8h_a1b95e9dc8ede6f18afc8d3d2f51f7bf9}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T8\+\_\+\+E\+R\+R\+OR}~((unsigned char)0xff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aeb2ef4b8feeb123ef0f784cb4483082b}\label{intsafe_8h_aeb2ef4b8feeb123ef0f784cb4483082b}} 
+\#\hyperlink{structdefine}{define} {\bfseries B\+Y\+T\+E\+\_\+\+E\+R\+R\+OR}~((unsigned char)0xff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a3360325288b6a3c934ff704d4da9c8e0}\label{intsafe_8h_a3360325288b6a3c934ff704d4da9c8e0}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+H\+O\+R\+T\+\_\+\+E\+R\+R\+OR}~((short)(-\/1))
+\item 
+\mbox{\Hypertarget{intsafe_8h_afd42c21c4573f3333ff9b4ccf39ffdf6}\label{intsafe_8h_afd42c21c4573f3333ff9b4ccf39ffdf6}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T16\+\_\+\+E\+R\+R\+OR}~((short)(-\/1))
+\item 
+\mbox{\Hypertarget{intsafe_8h_af4de3430482eb6c15379c3517bad7fa1}\label{intsafe_8h_af4de3430482eb6c15379c3517bad7fa1}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+S\+H\+O\+R\+T\+\_\+\+E\+R\+R\+OR}~((unsigned short)0xffff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aaaf1648101313b629b3478764f08d5c3}\label{intsafe_8h_aaaf1648101313b629b3478764f08d5c3}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T16\+\_\+\+E\+R\+R\+OR}~((unsigned short)0xffff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ae76ad785732863d96bb253a7e883d99e}\label{intsafe_8h_ae76ad785732863d96bb253a7e883d99e}} 
+\#\hyperlink{structdefine}{define} {\bfseries W\+O\+R\+D\+\_\+\+E\+R\+R\+OR}~((unsigned short)0xffff)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7f4d57817be08fb859af44f3e9da6db6}\label{intsafe_8h_a7f4d57817be08fb859af44f3e9da6db6}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+E\+R\+R\+OR}~(-\/1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ace204990e3443f759e945afd5e12184e}\label{intsafe_8h_ace204990e3443f759e945afd5e12184e}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T32\+\_\+\+E\+R\+R\+OR}~(-\/1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a6602a3b123864d03059352ab0cf20758}\label{intsafe_8h_a6602a3b123864d03059352ab0cf20758}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T\+\_\+\+E\+R\+R\+OR}~0xffffffffU
+\item 
+\mbox{\Hypertarget{intsafe_8h_a31b88eb4c95f4bd56c8bc504de362de3}\label{intsafe_8h_a31b88eb4c95f4bd56c8bc504de362de3}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T32\+\_\+\+E\+R\+R\+OR}~0xffffffffU
+\item 
+\mbox{\Hypertarget{intsafe_8h_af8f2b394cce1e15c49a87de40cb9ba88}\label{intsafe_8h_af8f2b394cce1e15c49a87de40cb9ba88}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+\_\+\+E\+R\+R\+OR}~(-\/1\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a56f2346eac70c29f362a70cab960f91a}\label{intsafe_8h_a56f2346eac70c29f362a70cab960f91a}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G\+\_\+\+E\+R\+R\+OR}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7f2251e2a3c1f8c1c149b3fa17beb50c}\label{intsafe_8h_a7f2251e2a3c1f8c1c149b3fa17beb50c}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+W\+O\+R\+D\+\_\+\+E\+R\+R\+OR}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad524ff075b7d827c28f748936bd5e123}\label{intsafe_8h_ad524ff075b7d827c28f748936bd5e123}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+L\+O\+N\+G\+\_\+\+E\+R\+R\+OR}~(-\/1\+L\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad2c80b550ebc8659152a561cac217e8e}\label{intsafe_8h_ad2c80b550ebc8659152a561cac217e8e}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G64\+\_\+\+E\+R\+R\+OR}~(-\/1\+L\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a5d122cf5eeed766b1d4f20732ee42834}\label{intsafe_8h_a5d122cf5eeed766b1d4f20732ee42834}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T64\+\_\+\+E\+R\+R\+OR}~(-\/1\+L\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2886425895e66977a0092438560aad56}\label{intsafe_8h_a2886425895e66977a0092438560aad56}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G\+L\+O\+N\+G\+\_\+\+E\+R\+R\+OR}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_af5e0cf0ada59e0343e453f7dc710d024}\label{intsafe_8h_af5e0cf0ada59e0343e453f7dc710d024}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+W\+O\+R\+D\+L\+O\+N\+G\+\_\+\+E\+R\+R\+OR}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_ae1e04e6916fac25500956da4b871c671}\label{intsafe_8h_ae1e04e6916fac25500956da4b871c671}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G64\+\_\+\+E\+R\+R\+OR}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_acd10544a76b7987eef9462c07a888641}\label{intsafe_8h_acd10544a76b7987eef9462c07a888641}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T64\+\_\+\+E\+R\+R\+OR}~0xffffffffffffffff\+U\+LL
+\item 
+\mbox{\Hypertarget{intsafe_8h_acae6f394693de76495bcd6647e921f67}\label{intsafe_8h_acae6f394693de76495bcd6647e921f67}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+T\+\_\+\+P\+T\+R\+\_\+\+E\+R\+R\+OR}~(-\/1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a712413cb7b716e821e8ba1e722894a32}\label{intsafe_8h_a712413cb7b716e821e8ba1e722894a32}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+I\+N\+T\+\_\+\+P\+T\+R\+\_\+\+E\+R\+R\+OR}~0xffffffffU
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa09235374e371bb1fa7e039eb606dbb3}\label{intsafe_8h_aa09235374e371bb1fa7e039eb606dbb3}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+O\+N\+G\+\_\+\+P\+T\+R\+\_\+\+E\+R\+R\+OR}~(-\/1\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_aae7f7b66f4f088e17a1f360e283724e8}\label{intsafe_8h_aae7f7b66f4f088e17a1f360e283724e8}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+L\+O\+N\+G\+\_\+\+P\+T\+R\+\_\+\+E\+R\+R\+OR}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa1734ba57183bf479039242fbcca99a9}\label{intsafe_8h_aa1734ba57183bf479039242fbcca99a9}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+W\+O\+R\+D\+\_\+\+P\+T\+R\+\_\+\+E\+R\+R\+OR}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a16788a508fbfb51d12a066411c722b5a}\label{intsafe_8h_a16788a508fbfb51d12a066411c722b5a}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+T\+R\+D\+I\+F\+F\+\_\+\+T\+\_\+\+E\+R\+R\+OR}~(-\/1)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a11a80d2809fbdd6fdcad7bae7b01b111}\label{intsafe_8h_a11a80d2809fbdd6fdcad7bae7b01b111}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+I\+Z\+E\+\_\+\+T\+\_\+\+E\+R\+R\+OR}~0xffffffffU
+\item 
+\mbox{\Hypertarget{intsafe_8h_a4c718ee2545f7d801fce96f2d9ff628f}\label{intsafe_8h_a4c718ee2545f7d801fce96f2d9ff628f}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+E\+R\+R\+OR}~(-\/1\+L)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a3f1d50daf634a81351425643c7b5ce3a}\label{intsafe_8h_a3f1d50daf634a81351425643c7b5ce3a}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+E\+R\+R\+OR}~0xffffffff\+UL
+\item 
+\mbox{\Hypertarget{intsafe_8h_a6fdb00c9b7793d3c290519607e228b8d}\label{intsafe_8h_a6fdb00c9b7793d3c290519607e228b8d}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+I\+N\+T\+S\+A\+F\+E\+\_\+\+C\+H\+AR}~C\+H\+AR
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad3df64af184f4328b25b508a5fd35f13}\label{intsafe_8h_ad3df64af184f4328b25b508a5fd35f13}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+I\+N\+T\+S\+A\+F\+E\+\_\+\+C\+H\+A\+R\+\_\+\+E\+R\+R\+OR}~((signed char)(-\/1))
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2f07de6578e7d180f56347bb3c43b3ce}\label{intsafe_8h_a2f07de6578e7d180f56347bb3c43b3ce}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+I\+N\+T\+S\+A\+F\+E\+\_\+\+C\+H\+A\+R\+\_\+\+M\+IN}~((signed char)(-\/128))
+\item 
+\mbox{\Hypertarget{intsafe_8h_abf4deae02d71034a7ea0b32d876822c8}\label{intsafe_8h_abf4deae02d71034a7ea0b32d876822c8}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+I\+N\+T\+S\+A\+F\+E\+\_\+\+C\+H\+A\+R\+\_\+\+M\+AX}~((signed char)127)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a03ab33a5a0c1e0bbadd6a84e84213405}\label{intsafe_8h_a03ab33a5a0c1e0bbadd6a84e84213405}} 
+\#\hyperlink{structdefine}{define} {\bfseries size\+\_\+t\+\_\+\+E\+R\+R\+OR}~S\+I\+Z\+E\+\_\+\+T\+\_\+\+E\+R\+R\+OR
+\item 
+\mbox{\Hypertarget{intsafe_8h_a518741a16b2fb55030b6426df4497d7e}\label{intsafe_8h_a518741a16b2fb55030b6426df4497d7e}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+C\+H\+A\+R\+\_\+\+E\+R\+R\+OR}~\textquotesingle{}\textbackslash{}0\textquotesingle{}
+\item 
+\mbox{\Hypertarget{intsafe_8h_af7555d869b0034eb4e3b8c7ce6c6590f}\label{intsafe_8h_af7555d869b0034eb4e3b8c7ce6c6590f}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+H\+A\+R\+\_\+\+E\+R\+R\+OR}~\textquotesingle{}\textbackslash{}0\textquotesingle{}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a440535b2c2bb53c8198cde3951967c6b}\label{intsafe_8h_a440535b2c2bb53c8198cde3951967c6b}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int32x32\+To64}(a,  b)~((unsigned \+\_\+\+\_\+int64)(unsigned int)(a)$\ast$(unsigned \+\_\+\+\_\+int64)(unsigned int)(b))
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+U\+T\+OX}(\+\_\+\+Name,  \+\_\+\+Type\+From,  \+\_\+\+Type\+To)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OU}(\+\_\+\+Name,  \+\_\+\+Type\+From,  \+\_\+\+Type\+To)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OS}(\+\_\+\+Name,  \+\_\+\+Type\+From,  \+\_\+\+Type\+To)
+\item 
+\mbox{\Hypertarget{intsafe_8h_add62de2d0cb9c71e3fa94f7175054846}\label{intsafe_8h_add62de2d0cb9c71e3fa94f7175054846}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+Byte}~Int8\+To\+U\+Int8
+\item 
+\mbox{\Hypertarget{intsafe_8h_a0a74f7404be63d5fc4849f53a23ea91b}\label{intsafe_8h_a0a74f7404be63d5fc4849f53a23ea91b}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+U\+Int16}~Int8\+To\+U\+Short
+\item 
+\mbox{\Hypertarget{intsafe_8h_a37b1e18064a74009a876a7021c492d93}\label{intsafe_8h_a37b1e18064a74009a876a7021c492d93}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+Word}~Int8\+To\+U\+Short
+\item 
+\mbox{\Hypertarget{intsafe_8h_af4a50d21fa3835214f35419f6cc3614e}\label{intsafe_8h_af4a50d21fa3835214f35419f6cc3614e}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+U\+Int32}~Int8\+To\+U\+Int
+\item 
+\mbox{\Hypertarget{intsafe_8h_acd41681e7333731157fd17d13b8c8fe7}\label{intsafe_8h_acd41681e7333731157fd17d13b8c8fe7}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+D\+Word}~Int8\+To\+U\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_afb361ac7b2486373c084f371db1da5e3}\label{intsafe_8h_afb361ac7b2486373c084f371db1da5e3}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+D\+Word\+Ptr}~Int8\+To\+U\+Long\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa5f82432686ffa8ce1665fa8659c7c78}\label{intsafe_8h_aa5f82432686ffa8ce1665fa8659c7c78}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+D\+Word\+Long}~Int8\+To\+U\+Long\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_af831b78f75bf0ab45a0306f09c122c93}\label{intsafe_8h_af831b78f75bf0ab45a0306f09c122c93}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+U\+Long64}~Int8\+To\+U\+Long\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7b587d1d86c273b71620c18025376545}\label{intsafe_8h_a7b587d1d86c273b71620c18025376545}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+D\+Word64}~Int8\+To\+U\+Long\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_a796c3beffdd92addac0906b25c126d06}\label{intsafe_8h_a796c3beffdd92addac0906b25c126d06}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+U\+Int64}~Int8\+To\+U\+Long\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_af8417032734bdb79fc698aa984ba7bbf}\label{intsafe_8h_af8417032734bdb79fc698aa984ba7bbf}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+SizeT}~Int8\+To\+U\+Int\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_a79d3580e0362075bdb715cab456eef1e}\label{intsafe_8h_a79d3580e0362075bdb715cab456eef1e}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int8\+To\+S\+I\+Z\+ET}~Int8\+To\+U\+Long\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_ab73b63c0075ebdaa30b4e8854f17af8b}\label{intsafe_8h_ab73b63c0075ebdaa30b4e8854f17af8b}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int\+To\+SizeT}~Int\+To\+U\+Int\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_a458a3b1ee466c61270338d3b8a108bd4}\label{intsafe_8h_a458a3b1ee466c61270338d3b8a108bd4}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int\+To\+S\+I\+Z\+ET}~Int\+To\+U\+Long\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_ae6d2d63dc60541b4fe77bb937c313504}\label{intsafe_8h_ae6d2d63dc60541b4fe77bb937c313504}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+To\+S\+S\+I\+Z\+ET}~U\+Long\+To\+Long\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa710101c1afa9cb827b0c3b522d1d05e}\label{intsafe_8h_aa710101c1afa9cb827b0c3b522d1d05e}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+To\+Byte}~U\+Long\+To\+U\+Int8
+\item 
+\mbox{\Hypertarget{intsafe_8h_a78bd8f95cf60c88dfb0e3e5548062816}\label{intsafe_8h_a78bd8f95cf60c88dfb0e3e5548062816}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+Int64}~U\+Long\+Long\+To\+Long\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_aa815dc5987acd832478cf11e97c6252c}\label{intsafe_8h_aa815dc5987acd832478cf11e97c6252c}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+Long64}~U\+Long\+Long\+To\+Long\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_abcb16c1487dde7dbeabffe2e1a0fc92b}\label{intsafe_8h_abcb16c1487dde7dbeabffe2e1a0fc92b}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+PtrdiffT}~U\+Long\+Long\+To\+Int\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_aafad24ae552e3b45be83a50cb160a6b5}\label{intsafe_8h_aafad24ae552e3b45be83a50cb160a6b5}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+SizeT}~U\+Long\+Long\+To\+U\+Int\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_a23acc9807393de8a109b4a01dd7a7230}\label{intsafe_8h_a23acc9807393de8a109b4a01dd7a7230}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+S\+S\+I\+Z\+ET}~U\+Long\+Long\+To\+Long\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_a8135b153585c50252b2bc7fc9456a080}\label{intsafe_8h_a8135b153585c50252b2bc7fc9456a080}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+S\+I\+Z\+ET}~U\+Long\+Long\+To\+U\+Long\+Ptr
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7b327618ed26d07482d6ac29e9342d3c}\label{intsafe_8h_a7b327618ed26d07482d6ac29e9342d3c}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+I\+Z\+E\+T\+To\+U\+Long}~U\+Long\+Ptr\+To\+U\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_acf1044579c7b76276e8e963c9055bcd8}\label{intsafe_8h_acf1044579c7b76276e8e963c9055bcd8}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+S\+I\+Z\+E\+T\+To\+U\+Long\+Long}~Long\+Ptr\+To\+U\+Long\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_aad0ff68d3544646c6d564232b7669a72}\label{intsafe_8h_aad0ff68d3544646c6d564232b7669a72}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+S\+I\+Z\+E\+T\+To\+U\+Long}~Long\+Ptr\+To\+U\+Long
+\item 
+\mbox{\Hypertarget{intsafe_8h_a9c242da76e02fefd5424f95a9d737088}\label{intsafe_8h_a9c242da76e02fefd5424f95a9d737088}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int\+To\+U\+Int\+Ptr}~Int\+To\+U\+Int
+\item 
+\mbox{\Hypertarget{intsafe_8h_abee871497972648ec3603650f19fd048}\label{intsafe_8h_abee871497972648ec3603650f19fd048}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+Int\+Ptr}~U\+Long\+Long\+To\+Int
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad86896717b64f3ed2740060b5000954b}\label{intsafe_8h_ad86896717b64f3ed2740060b5000954b}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+U\+Int\+Ptr}~U\+Long\+Long\+To\+U\+Int
+\item 
+\mbox{\Hypertarget{intsafe_8h_a29a39ef4b00526f907ee181e4a199025}\label{intsafe_8h_a29a39ef4b00526f907ee181e4a199025}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long\+Long\+To\+U\+Long\+Ptr}~U\+Long\+Long\+To\+U\+Long
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+A\+DD}(\+\_\+\+Name,  \+\_\+\+Type)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+S\+UB}(\+\_\+\+Name,  \+\_\+\+Type)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U32}(\+\_\+\+Name,  \+\_\+\+Type,  \+\_\+\+Convert)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U16}(\+\_\+\+Name,  \+\_\+\+Type,  \+\_\+\+Convert)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a88b9b06a29ba74600d83fc923955e9c3}\label{intsafe_8h_a88b9b06a29ba74600d83fc923955e9c3}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int16\+Add}~U\+Short\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_aae527241ebc4e612262aca64f8e000a9}\label{intsafe_8h_aae527241ebc4e612262aca64f8e000a9}} 
+\#\hyperlink{structdefine}{define} {\bfseries Word\+Add}~U\+Short\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_a400d25c37b353977879da4e2c6e236db}\label{intsafe_8h_a400d25c37b353977879da4e2c6e236db}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int32\+Add}~U\+Int\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_a9926a16fcae94f254ab7eae35056ed90}\label{intsafe_8h_a9926a16fcae94f254ab7eae35056ed90}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+Word\+Add}~U\+Long\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_a57d2da6c50a170dc5c97a9b6716722b0}\label{intsafe_8h_a57d2da6c50a170dc5c97a9b6716722b0}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+Word\+Long\+Add}~U\+Long\+Long\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_afa63d5662ecb5912c95c9dd3b8fed4f3}\label{intsafe_8h_afa63d5662ecb5912c95c9dd3b8fed4f3}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long64\+Add}~U\+Long\+Long\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_a1332c9e58452d3e0211f678a828b52e1}\label{intsafe_8h_a1332c9e58452d3e0211f678a828b52e1}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+Word64\+Add}~U\+Long\+Long\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_aced1e0d41c7cf039f35a98eb49236760}\label{intsafe_8h_aced1e0d41c7cf039f35a98eb49236760}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int64\+Add}~U\+Long\+Long\+Add
+\item 
+\mbox{\Hypertarget{intsafe_8h_ac9681cc4e8943c7fd5eebcfe07473d7c}\label{intsafe_8h_ac9681cc4e8943c7fd5eebcfe07473d7c}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int16\+Sub}~U\+Short\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_a18175dd7b774a3ca55a6e8a6559d55ad}\label{intsafe_8h_a18175dd7b774a3ca55a6e8a6559d55ad}} 
+\#\hyperlink{structdefine}{define} {\bfseries Word\+Sub}~U\+Short\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_af720d33dfb80a0f775d139fd401409d3}\label{intsafe_8h_af720d33dfb80a0f775d139fd401409d3}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int32\+Sub}~U\+Int\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_af2b3b8c813321ee51e61e2db06fadcd0}\label{intsafe_8h_af2b3b8c813321ee51e61e2db06fadcd0}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+Word\+Sub}~U\+Long\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_a9c0883de3d5970359ec9140c4774bb61}\label{intsafe_8h_a9c0883de3d5970359ec9140c4774bb61}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+Word\+Long\+Sub}~U\+Long\+Long\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_a0742b0aecda84604fe031d6edeb91ef4}\label{intsafe_8h_a0742b0aecda84604fe031d6edeb91ef4}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Long64\+Sub}~U\+Long\+Long\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_ac4ecfdafb3a3be6cce1282f9cadd6f93}\label{intsafe_8h_ac4ecfdafb3a3be6cce1282f9cadd6f93}} 
+\#\hyperlink{structdefine}{define} {\bfseries D\+Word64\+Sub}~U\+Long\+Long\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_a6817b451375374a9334dde7bff3dfeb9}\label{intsafe_8h_a6817b451375374a9334dde7bff3dfeb9}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int64\+Sub}~U\+Long\+Long\+Sub
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2520452305c9b455e17dad71c5aebb5c}\label{intsafe_8h_a2520452305c9b455e17dad71c5aebb5c}} 
+\#\hyperlink{structdefine}{define} {\bfseries U\+Int16\+Mult}~U\+Short\+Mult
+\item 
+\mbox{\Hypertarget{intsafe_8h_a475633279a77a58ff788fa3f4786815a}\label{intsafe_8h_a475633279a77a58ff788fa3f4786815a}} 
+\#\hyperlink{structdefine}{define} {\bfseries Word\+Mult}~U\+Short\+Mult
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{intsafe_8h_aebb9e13210d88d43e32e735ada43a425}\label{intsafe_8h_aebb9e13210d88d43e32e735ada43a425}} 
+typedef char {\bfseries C\+H\+AR}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}\label{intsafe_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}} 
+typedef unsigned char {\bfseries U\+C\+H\+AR}
+\item 
+\mbox{\Hypertarget{intsafe_8h_ab27e9918b538ce9d8ca692479b375b6a}\label{intsafe_8h_ab27e9918b538ce9d8ca692479b375b6a}} 
+typedef unsigned char {\bfseries U\+I\+N\+T8}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7ebe70ceca856797319175e30bcf003d}\label{intsafe_8h_a7ebe70ceca856797319175e30bcf003d}} 
+typedef signed char {\bfseries I\+N\+T8}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a9909bd3cf05f0906045f2ee85be4eeac}\label{intsafe_8h_a9909bd3cf05f0906045f2ee85be4eeac}} 
+typedef short {\bfseries S\+H\+O\+RT}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a30f500129d8c688af07726d5d34ce52d}\label{intsafe_8h_a30f500129d8c688af07726d5d34ce52d}} 
+typedef signed short {\bfseries I\+N\+T16}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a5850d5316caf7f4cedd742fdf8cd7c02}\label{intsafe_8h_a5850d5316caf7f4cedd742fdf8cd7c02}} 
+typedef unsigned short {\bfseries U\+S\+H\+O\+RT}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}\label{intsafe_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}} 
+typedef unsigned short {\bfseries U\+I\+N\+T16}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a392e62da233ed3e2f7c3fd4f487a3896}\label{intsafe_8h_a392e62da233ed3e2f7c3fd4f487a3896}} 
+typedef int {\bfseries I\+NT}
+\item 
+\mbox{\Hypertarget{intsafe_8h_ae1e6edbbc26d6fbc71a90190d0266018}\label{intsafe_8h_ae1e6edbbc26d6fbc71a90190d0266018}} 
+typedef unsigned int {\bfseries U\+I\+N\+T32}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a1137216524060afd426c34677fed058b}\label{intsafe_8h_a1137216524060afd426c34677fed058b}} 
+typedef signed int {\bfseries I\+N\+T32}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}\label{intsafe_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}} 
+typedef long {\bfseries L\+O\+NG}
+\item 
+\mbox{\Hypertarget{intsafe_8h_af632da489ebc3708ec3ab6791ee53fa4}\label{intsafe_8h_af632da489ebc3708ec3ab6791ee53fa4}} 
+typedef unsigned long {\bfseries U\+L\+O\+NG}
+\item 
+\mbox{\Hypertarget{intsafe_8h_af559a7ae68520d96f21d0655d6792508}\label{intsafe_8h_af559a7ae68520d96f21d0655d6792508}} 
+typedef long long {\bfseries L\+O\+N\+G\+L\+O\+NG}
+\item 
+\mbox{\Hypertarget{intsafe_8h_ae57305825c7d329ad8a3065ae045e875}\label{intsafe_8h_ae57305825c7d329ad8a3065ae045e875}} 
+typedef long long {\bfseries L\+O\+N\+G64}
+\item 
+\mbox{\Hypertarget{intsafe_8h_af16992cf571ce4103a92355761cc471e}\label{intsafe_8h_af16992cf571ce4103a92355761cc471e}} 
+typedef signed long long {\bfseries I\+N\+T64}
+\item 
+\mbox{\Hypertarget{intsafe_8h_abb9abb9ce956f1a9e5a4081ac40e5649}\label{intsafe_8h_abb9abb9ce956f1a9e5a4081ac40e5649}} 
+typedef unsigned long long {\bfseries U\+L\+O\+N\+G\+L\+O\+NG}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a720d365a9653d3fb60cdf78da40472b8}\label{intsafe_8h_a720d365a9653d3fb60cdf78da40472b8}} 
+typedef unsigned long long {\bfseries D\+W\+O\+R\+D\+L\+O\+NG}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a28961430434ccabca6862ea93fe9a15b}\label{intsafe_8h_a28961430434ccabca6862ea93fe9a15b}} 
+typedef unsigned long long {\bfseries U\+L\+O\+N\+G64}
+\item 
+\mbox{\Hypertarget{intsafe_8h_adbfeae90dcbc6d1e23fc52bb64339f46}\label{intsafe_8h_adbfeae90dcbc6d1e23fc52bb64339f46}} 
+typedef unsigned long long {\bfseries D\+W\+O\+R\+D64}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a57be03562867144161c1bfee95ca8f7c}\label{intsafe_8h_a57be03562867144161c1bfee95ca8f7c}} 
+typedef unsigned long long {\bfseries U\+I\+N\+T64}
+\item 
+\mbox{\Hypertarget{intsafe_8h_aae8c961bdc5cb6ea73af035851c4227d}\label{intsafe_8h_aae8c961bdc5cb6ea73af035851c4227d}} 
+typedef \+\_\+\+W64 int {\bfseries I\+N\+T\+\_\+\+P\+TR}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a296720e1fba775e0b1f4a26a958cb769}\label{intsafe_8h_a296720e1fba775e0b1f4a26a958cb769}} 
+typedef \+\_\+\+W64 int {\bfseries ptrdiff\+\_\+t}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a510e0a09b707ec8f46d10c497014ab53}\label{intsafe_8h_a510e0a09b707ec8f46d10c497014ab53}} 
+typedef \+\_\+\+W64 unsigned int {\bfseries U\+I\+N\+T\+\_\+\+P\+TR}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2378aeebed25d40df9f89ec2cbf43d2e}\label{intsafe_8h_a2378aeebed25d40df9f89ec2cbf43d2e}} 
+typedef \+\_\+\+W64 unsigned int {\bfseries size\+\_\+t}
+\item 
+\mbox{\Hypertarget{intsafe_8h_ab806494dc8904358e60aec7d1efc9331}\label{intsafe_8h_ab806494dc8904358e60aec7d1efc9331}} 
+typedef \+\_\+\+W64 long {\bfseries L\+O\+N\+G\+\_\+\+P\+TR}
+\item 
+\mbox{\Hypertarget{intsafe_8h_ac1aa1989f34dbe44934b806ef70ba440}\label{intsafe_8h_ac1aa1989f34dbe44934b806ef70ba440}} 
+typedef \+\_\+\+W64 long {\bfseries S\+S\+I\+Z\+E\+\_\+T}
+\item 
+\mbox{\Hypertarget{intsafe_8h_abdedc624187898e693222864762e6944}\label{intsafe_8h_abdedc624187898e693222864762e6944}} 
+typedef \+\_\+\+W64 unsigned long {\bfseries U\+L\+O\+N\+G\+\_\+\+P\+TR}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a670dda8909057618b242dcc1095ed945}\label{intsafe_8h_a670dda8909057618b242dcc1095ed945}} 
+typedef \+\_\+\+W64 unsigned long {\bfseries D\+W\+O\+R\+D\+\_\+\+P\+TR}
+\item 
+\mbox{\Hypertarget{intsafe_8h_adb0fc2ba5ae31a2df2035cc17bca3fc5}\label{intsafe_8h_adb0fc2ba5ae31a2df2035cc17bca3fc5}} 
+typedef \+\_\+\+W64 unsigned long {\bfseries S\+I\+Z\+E\+\_\+T}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a4ae1dab0fb4b072a66584546209e7d58}\label{intsafe_8h_a4ae1dab0fb4b072a66584546209e7d58}} 
+typedef unsigned char {\bfseries B\+Y\+TE}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a197942eefa7db30960ae396d68339b97}\label{intsafe_8h_a197942eefa7db30960ae396d68339b97}} 
+typedef unsigned short {\bfseries W\+O\+RD}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a36cb3b01d81ffd844bbbfb54003e06ec}\label{intsafe_8h_a36cb3b01d81ffd844bbbfb54003e06ec}} 
+typedef unsigned int {\bfseries U\+I\+NT}
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad342ac907eb044443153a22f964bf0af}\label{intsafe_8h_ad342ac907eb044443153a22f964bf0af}} 
+typedef unsigned long {\bfseries D\+W\+O\+RD}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{intsafe_8h_a2a990bea63f94b5e0e1d2ccd47daed07}\label{intsafe_8h_a2a990bea63f94b5e0e1d2ccd47daed07}} 
+typedef {\bfseries \+\_\+\+Return\+\_\+type\+\_\+success\+\_\+} (return $>$=0) long H\+R\+E\+S\+U\+LT
+\item 
+\mbox{\Hypertarget{intsafe_8h_ad6c63d673eed7f2e3d3a31cfe837e670}\label{intsafe_8h_ad6c63d673eed7f2e3d3a31cfe837e670}} 
+{\bfseries C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(U\+S\+H\+O\+RT)==2)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a6ffdca02879640e7deb1ef80c34625bc}\label{intsafe_8h_a6ffdca02879640e7deb1ef80c34625bc}} 
+{\bfseries C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(I\+NT)==4)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a355d53089f9e1e5b7f98c96745cd7a61}\label{intsafe_8h_a355d53089f9e1e5b7f98c96745cd7a61}} 
+{\bfseries C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(U\+I\+NT)==4)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7bbf58772236c5f87ee0617b41ea5b74}\label{intsafe_8h_a7bbf58772236c5f87ee0617b41ea5b74}} 
+{\bfseries C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(L\+O\+NG)==4)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a7d2074099b9b6483424444039cfa38c3}\label{intsafe_8h_a7d2074099b9b6483424444039cfa38c3}} 
+{\bfseries C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(D\+W\+O\+RD)==4)
+\item 
+\mbox{\Hypertarget{intsafe_8h_a9729f39d4a15fc62e8206877cb6c57ff}\label{intsafe_8h_a9729f39d4a15fc62e8206877cb6c57ff}} 
+{\bfseries C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(U\+I\+N\+T\+\_\+\+P\+TR)==sizeof(U\+L\+O\+N\+G\+\_\+\+P\+TR))
+\item 
+\mbox{\Hypertarget{intsafe_8h_a8309905c576a5e1bb640a4b4f320606e}\label{intsafe_8h_a8309905c576a5e1bb640a4b4f320606e}} 
+\+\_\+\+Must\+\_\+inspect\+\_\+result\+\_\+ \+\_\+\+\_\+forceinline I\+N\+T\+S\+A\+F\+E\+\_\+\+R\+E\+S\+U\+LT I\+N\+T\+S\+A\+F\+E\+\_\+\+N\+A\+ME() {\bfseries U\+Long\+Long\+Mult} (\+\_\+\+In\+\_\+ U\+L\+O\+N\+G\+L\+O\+NG Multiplicand, \+\_\+\+In\+\_\+ U\+L\+O\+N\+G\+L\+O\+NG Multiplier, \+\_\+\+Out\+\_\+ \+\_\+\+Deref\+\_\+out\+\_\+range\+\_\+(==, Multiplicand $\ast$Multiplier) U\+L\+O\+N\+G\+L\+O\+NG $\ast$p\+Output)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Windows helper functions for integer overflow prevention 
+
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{intsafe_8h_aa4272312b4222a5e89f59aac59cdafe0}\label{intsafe_8h_aa4272312b4222a5e89f59aac59cdafe0}} 
+\index{intsafe.\+h@{intsafe.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+A\+DD@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+A\+DD}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+A\+DD@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+A\+DD}!intsafe.\+h@{intsafe.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+A\+DD}{DEFINE\_SAFE\_ADD}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+A\+DD(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Name,  }\item[{}]{\+\_\+\+Type }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\_Must\_inspect\_result\_ \(\backslash\)
+\_\_forceinline \(\backslash\)
+INTSAFE\_RESULT \(\backslash\)
+INTSAFE\_NAME(\_Name)( \(\backslash\)
+    \_In\_ \_Type Augend, \(\backslash\)
+    \_In\_ \_Type Addend, \(\backslash\)
+    \_Out\_ \_Deref\_out\_range\_(==, Augend + Addend) \_Type *pOutput) \(\backslash\)
+\{ \(\backslash\)
+    if ((\_Type)(Augend + Addend) >= Augend) \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = Augend + Addend; \(\backslash\)
+        return INTSAFE\_SUCCESS; \(\backslash\)
+    \} \(\backslash\)
+    else \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = \_Type ## \_ERROR; \(\backslash\)
+        return INTSAFE\_E\_ARITHMETIC\_OVERFLOW; \(\backslash\)
+    \} \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{intsafe_8h_a47d11b13bc4460ee526492912d60002e}\label{intsafe_8h_a47d11b13bc4460ee526492912d60002e}} 
+\index{intsafe.\+h@{intsafe.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OS@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OS}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OS@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OS}!intsafe.\+h@{intsafe.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OS}{DEFINE\_SAFE\_CONVERT\_STOS}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OS(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Name,  }\item[{}]{\+\_\+\+Type\+From,  }\item[{}]{\+\_\+\+Type\+To }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\_Must\_inspect\_result\_ \(\backslash\)
+\_\_forceinline \(\backslash\)
+INTSAFE\_RESULT \(\backslash\)
+INTSAFE\_NAME(\_Name)( \(\backslash\)
+    \_In\_ \_TypeFrom Input, \(\backslash\)
+    \_Out\_ \_Deref\_out\_range\_(==, Input) \_TypeTo *pOutput) \(\backslash\)
+\{ \(\backslash\)
+    if ((Input >= \_TypeTo ## \_MIN) && (Input <= \_TypeTo ## \_MAX)) \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = (\_TypeTo)Input; \(\backslash\)
+        return INTSAFE\_SUCCESS; \(\backslash\)
+    \} \(\backslash\)
+    else \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = \_TypeTo ## \_ERROR; \(\backslash\)
+        return INTSAFE\_E\_ARITHMETIC\_OVERFLOW; \(\backslash\)
+    \} \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{intsafe_8h_a43b5c7232aa7b947291cbb78afd80f13}\label{intsafe_8h_a43b5c7232aa7b947291cbb78afd80f13}} 
+\index{intsafe.\+h@{intsafe.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OU@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OU}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OU@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OU}!intsafe.\+h@{intsafe.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OU}{DEFINE\_SAFE\_CONVERT\_STOU}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+T\+OU(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Name,  }\item[{}]{\+\_\+\+Type\+From,  }\item[{}]{\+\_\+\+Type\+To }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\_Must\_inspect\_result\_ \(\backslash\)
+\_\_forceinline \(\backslash\)
+INTSAFE\_RESULT \(\backslash\)
+INTSAFE\_NAME(\_Name)( \(\backslash\)
+    \_In\_ \_TypeFrom Input, \(\backslash\)
+    \_Out\_ \_Deref\_out\_range\_(==, Input) \_TypeTo *pOutput) \(\backslash\)
+\{ \(\backslash\)
+    if ((Input >= 0) && \(\backslash\)
+        ((\textcolor{keyword}{sizeof}(\_TypeFrom) <= \textcolor{keyword}{sizeof}(\_TypeTo)) || (Input <= (\_TypeFrom)\_TypeTo ## \_MAX))) \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = (\_TypeTo)Input; \(\backslash\)
+        return INTSAFE\_SUCCESS; \(\backslash\)
+    \} \(\backslash\)
+    else \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = \_TypeTo ## \_ERROR; \(\backslash\)
+        return INTSAFE\_E\_ARITHMETIC\_OVERFLOW; \(\backslash\)
+    \} \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{intsafe_8h_a7adf340ea75f40cee3e996cb31b434fa}\label{intsafe_8h_a7adf340ea75f40cee3e996cb31b434fa}} 
+\index{intsafe.\+h@{intsafe.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+U\+T\+OX@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+U\+T\+OX}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+U\+T\+OX@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+U\+T\+OX}!intsafe.\+h@{intsafe.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+U\+T\+OX}{DEFINE\_SAFE\_CONVERT\_UTOX}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+U\+T\+OX(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Name,  }\item[{}]{\+\_\+\+Type\+From,  }\item[{}]{\+\_\+\+Type\+To }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\_Must\_inspect\_result\_ \(\backslash\)
+\_\_forceinline \(\backslash\)
+INTSAFE\_RESULT \(\backslash\)
+INTSAFE\_NAME(\_Name)( \(\backslash\)
+    \_In\_ \_TypeFrom Input, \(\backslash\)
+    \_Out\_ \_Deref\_out\_range\_(==, Input) \_TypeTo *pOutput) \(\backslash\)
+\{ \(\backslash\)
+    if (Input <= \_TypeTo ## \_MAX) \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = (\_TypeTo)Input; \(\backslash\)
+        return INTSAFE\_SUCCESS; \(\backslash\)
+    \} \(\backslash\)
+    else \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = \_TypeTo ## \_ERROR; \(\backslash\)
+        return INTSAFE\_E\_ARITHMETIC\_OVERFLOW; \(\backslash\)
+    \} \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{intsafe_8h_a4e663fe8a25e76cc247685de4339107e}\label{intsafe_8h_a4e663fe8a25e76cc247685de4339107e}} 
+\index{intsafe.\+h@{intsafe.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U16@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U16}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U16@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U16}!intsafe.\+h@{intsafe.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U16}{DEFINE\_SAFE\_MULT\_U16}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U16(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Name,  }\item[{}]{\+\_\+\+Type,  }\item[{}]{\+\_\+\+Convert }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\_Must\_inspect\_result\_ \(\backslash\)
+\_\_forceinline \(\backslash\)
+INTSAFE\_RESULT \(\backslash\)
+INTSAFE\_NAME(\_Name)( \(\backslash\)
+    \_In\_ \_Type Multiplicand, \(\backslash\)
+    \_In\_ \_Type Multiplier, \(\backslash\)
+    \_Out\_ \_Deref\_out\_range\_(==, Multiplicand * Multiplier) \_Type* pOutput) \(\backslash\)
+\{ \(\backslash\)
+    ULONG Result = ((ULONG)Multiplicand) * ((ULONG)Multiplier); \(\backslash\)
+    return INTSAFE\_NAME(\_Convert)(Result, pOutput); \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{intsafe_8h_a28bc93d91bbb7d6c0c23157772dfea64}\label{intsafe_8h_a28bc93d91bbb7d6c0c23157772dfea64}} 
+\index{intsafe.\+h@{intsafe.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U32@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U32}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U32@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U32}!intsafe.\+h@{intsafe.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U32}{DEFINE\_SAFE\_MULT\_U32}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+M\+U\+L\+T\+\_\+\+U32(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Name,  }\item[{}]{\+\_\+\+Type,  }\item[{}]{\+\_\+\+Convert }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\_Must\_inspect\_result\_ \(\backslash\)
+\_\_forceinline \(\backslash\)
+INTSAFE\_RESULT \(\backslash\)
+INTSAFE\_NAME(\_Name)( \(\backslash\)
+    \_In\_ \_Type Multiplicand, \(\backslash\)
+    \_In\_ \_Type Multiplier, \(\backslash\)
+    \_Out\_ \_Deref\_out\_range\_(==, Multiplicand * Multiplier) \_Type* pOutput) \(\backslash\)
+\{ \(\backslash\)
+    ULONGLONG Result = UInt32x32To64(Multiplicand, Multiplier); \(\backslash\)
+    return INTSAFE\_NAME(\_Convert)(Result, pOutput); \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{intsafe_8h_a92898d8b17be300c8303b2a4de637a47}\label{intsafe_8h_a92898d8b17be300c8303b2a4de637a47}} 
+\index{intsafe.\+h@{intsafe.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+S\+UB@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+S\+UB}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+S\+UB@{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+S\+UB}!intsafe.\+h@{intsafe.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+S\+UB}{DEFINE\_SAFE\_SUB}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} D\+E\+F\+I\+N\+E\+\_\+\+S\+A\+F\+E\+\_\+\+S\+UB(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Name,  }\item[{}]{\+\_\+\+Type }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\_Must\_inspect\_result\_ \(\backslash\)
+\_\_forceinline \(\backslash\)
+INTSAFE\_RESULT \(\backslash\)
+INTSAFE\_NAME(\_Name)( \(\backslash\)
+    \_In\_ \_Type Minuend, \(\backslash\)
+    \_In\_ \_Type Subtrahend, \(\backslash\)
+    \_Out\_ \_Deref\_out\_range\_(==, Minuend - Subtrahend) \_Type* pOutput) \(\backslash\)
+\{ \(\backslash\)
+    if (Minuend >= Subtrahend) \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = Minuend - Subtrahend; \(\backslash\)
+        return INTSAFE\_SUCCESS; \(\backslash\)
+    \} \(\backslash\)
+    else \(\backslash\)
+    \{ \(\backslash\)
+        *pOutput = \_Type ## \_ERROR; \(\backslash\)
+        return INTSAFE\_E\_ARITHMETIC\_OVERFLOW; \(\backslash\)
+    \} \(\backslash\)
+\}
+\end{DoxyCode}

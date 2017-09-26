@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: blit_shader结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structblit__shader-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">blit_shader结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a66a47a4bde4a9596aee288d8fef595be"><td class="memItemLeft" align="right" valign="top"><a id="a66a47a4bde4a9596aee288d8fef595be"></a>
+HRESULT(*&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_private</b> )(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__device.html">wined3d_device</a> *<a class="el" href="structdevice.html">device</a>)</td></tr>
+<tr class="separator:a66a47a4bde4a9596aee288d8fef595be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4462cc9c1d71189a0d8ddfa579f22a41"><td class="memItemLeft" align="right" valign="top"><a id="a4462cc9c1d71189a0d8ddfa579f22a41"></a>
+<a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>free_private</b> )(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__device.html">wined3d_device</a> *<a class="el" href="structdevice.html">device</a>)</td></tr>
+<tr class="separator:a4462cc9c1d71189a0d8ddfa579f22a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79283ab41e076ff7b5d80342abd3552"><td class="memItemLeft" align="right" valign="top"><a id="ac79283ab41e076ff7b5d80342abd3552"></a>
+HRESULT(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_shader</b> )(<a class="el" href="interfacevoid.html">void</a> *blit_priv, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__context.html">wined3d_context</a> *context, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__surface.html">wined3d_surface</a> *surface, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__color__key.html">wined3d_color_key</a> *<a class="el" href="structcolor__key.html">color_key</a>)</td></tr>
+<tr class="separator:ac79283ab41e076ff7b5d80342abd3552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0c87fde6e941668435cef54fd6157e"><td class="memItemLeft" align="right" valign="top"><a id="aca0c87fde6e941668435cef54fd6157e"></a>
+<a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>unset_shader</b> )(const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__gl__info.html">wined3d_gl_info</a> *gl_info)</td></tr>
+<tr class="separator:aca0c87fde6e941668435cef54fd6157e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3422f96a3b797a69a545354ba28a69c0"><td class="memItemLeft" align="right" valign="top"><a id="a3422f96a3b797a69a545354ba28a69c0"></a>
+BOOL(*&#160;</td><td class="memItemRight" valign="bottom"><b>blit_supported</b> )(const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__gl__info.html">wined3d_gl_info</a> *gl_info, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__d3d__info.html">wined3d_d3d_info</a> *d3d_info, <a class="el" href="interfaceenum.html">enum</a> wined3d_blit_op blit_op, const <a class="el" href="structtag_r_e_c_t.html">RECT</a> *src_rect, DWORD src_usage, <a class="el" href="interfaceenum.html">enum</a> wined3d_pool src_pool, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__format.html">wined3d_format</a> *src_format, const <a class="el" href="structtag_r_e_c_t.html">RECT</a> *dst_rect, DWORD dst_usage, <a class="el" href="interfaceenum.html">enum</a> wined3d_pool dst_pool, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__format.html">wined3d_format</a> *dst_format)</td></tr>
+<tr class="separator:a3422f96a3b797a69a545354ba28a69c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d53023e6b660890c5a20027230aba4"><td class="memItemLeft" align="right" valign="top"><a id="aa5d53023e6b660890c5a20027230aba4"></a>
+HRESULT(*&#160;</td><td class="memItemRight" valign="bottom"><b>color_fill</b> )(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__device.html">wined3d_device</a> *<a class="el" href="structdevice.html">device</a>, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__rendertarget__view.html">wined3d_rendertarget_view</a> *<a class="el" href="structview.html">view</a>, const <a class="el" href="structtag_r_e_c_t.html">RECT</a> *rect, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__color.html">wined3d_color</a> *color)</td></tr>
+<tr class="separator:aa5d53023e6b660890c5a20027230aba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0daa3d89207fbbca076b234b3157ca"><td class="memItemLeft" align="right" valign="top"><a id="a4c0daa3d89207fbbca076b234b3157ca"></a>
+HRESULT(*&#160;</td><td class="memItemRight" valign="bottom"><b>depth_fill</b> )(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__device.html">wined3d_device</a> *<a class="el" href="structdevice.html">device</a>, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__rendertarget__view.html">wined3d_rendertarget_view</a> *<a class="el" href="structview.html">view</a>, const <a class="el" href="structtag_r_e_c_t.html">RECT</a> *rect, float depth)</td></tr>
+<tr class="separator:a4c0daa3d89207fbbca076b234b3157ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ddd475f9a0a4a76ec4cf4cecc8591b"><td class="memItemLeft" align="right" valign="top"><a id="af5ddd475f9a0a4a76ec4cf4cecc8591b"></a>
+<a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>blit_surface</b> )(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__device.html">wined3d_device</a> *<a class="el" href="structdevice.html">device</a>, <a class="el" href="interfaceenum.html">enum</a> wined3d_blit_op op, DWORD filter, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__surface.html">wined3d_surface</a> *src_surface, const <a class="el" href="structtag_r_e_c_t.html">RECT</a> *src_rect, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__surface.html">wined3d_surface</a> *dst_surface, const <a class="el" href="structtag_r_e_c_t.html">RECT</a> *dst_rect, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structwined3d__color__key.html">wined3d_color_key</a> *<a class="el" href="structcolor__key.html">color_key</a>)</td></tr>
+<tr class="separator:af5ddd475f9a0a4a76ec4cf4cecc8591b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/directx/wine/wined3d/<a class="el" href="wined3d__private_8h_source.html">wined3d_private.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

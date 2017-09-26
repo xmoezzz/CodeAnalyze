@@ -1,0 +1,92 @@
+\hypertarget{class_c_hci_local}{}\section{C\+Hci\+Local类 参考}
+\label{class_c_hci_local}\index{C\+Hci\+Local@{C\+Hci\+Local}}
+类 C\+Hci\+Local 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_hci_local}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a2d642bafebe26107e63fe19d54636812}\label{class_c_hci_local_a2d642bafebe26107e63fe19d54636812}} 
+virtual int {\bfseries Queue\+Command} (U\+S\+H\+O\+RT n\+Command, B\+Y\+TE $\ast$p\+Result\+Buffer=N\+U\+LL, D\+W\+O\+RD dw\+Buffer\+Size=0)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a4721470a470d95582544823a6df1a5a5}\label{class_c_hci_local_a4721470a470d95582544823a6df1a5a5}} 
+virtual int {\bfseries Queue\+Command\+Status} (U\+S\+H\+O\+RT n\+Command)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a386e76b3acf3cdc4a5c2daafaf250dcf}\label{class_c_hci_local_a386e76b3acf3cdc4a5c2daafaf250dcf}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries De\+Queue\+Command} (int n\+Slot)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a5ead8a1f71a228142023d4a7f8fbed7d}\label{class_c_hci_local_a5ead8a1f71a228142023d4a7f8fbed7d}} 
+virtual D\+W\+O\+RD {\bfseries Clear\+Queue} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a76f19e721e196b00590f79db88e1f873}\label{class_c_hci_local_a76f19e721e196b00590f79db88e1f873}} 
+virtual \hyperlink{struct___queued_command}{P\+Queued\+Command} {\bfseries Get\+Queued\+Command} (int n\+Slot)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a00828556354972329144ccfaa482c610}\label{class_c_hci_local_a00828556354972329144ccfaa482c610}} 
+virtual D\+W\+O\+RD {\bfseries Wait\+For\+Command\+Complete} (int n\+Slot)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a68b9bc287b34ddf3c7a4ce880fb1dd06}\label{class_c_hci_local_a68b9bc287b34ddf3c7a4ce880fb1dd06}} 
+virtual D\+W\+O\+RD {\bfseries Wait\+For\+Command\+Status} (int n\+Slot, B\+Y\+TE \&n\+Status)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a4c2b4429338dc1c329ef654b86042fac}\label{class_c_hci_local_a4c2b4429338dc1c329ef654b86042fac}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Reset} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_local_afe138ac2a4d4099ac23173328e2c36c9}\label{class_c_hci_local_afe138ac2a4d4099ac23173328e2c36c9}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Write\+Class\+Of\+Device} (B\+Y\+TE Class\+Of\+Device\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a63acfa45945667090f18ad9086a22451}\label{class_c_hci_local_a63acfa45945667090f18ad9086a22451}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Set\+Event\+Filter} (B\+Y\+TE n\+Filter\+Type, B\+Y\+TE n\+Filter\+Condition\+Type, B\+Y\+TE n\+Condition\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+D\+I\+T\+I\+O\+N\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE n\+Condition\+Bytes)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_ac1d9c3abe09ce94e9ac6ab814345fa1c}\label{class_c_hci_local_ac1d9c3abe09ce94e9ac6ab814345fa1c}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Inquiry} (U\+L\+O\+NG n\+L\+AP, B\+Y\+TE n\+Inquiry\+Length, B\+Y\+TE n\+Num\+Responses)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a040efb7187c6fe1ebbb7cbfe4ef56733}\label{class_c_hci_local_a040efb7187c6fe1ebbb7cbfe4ef56733}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Inquiry\+Cancel} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a84388102db96cfdc197f77ea183ded7d}\label{class_c_hci_local_a84388102db96cfdc197f77ea183ded7d}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Create\+Connection} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, U\+S\+H\+O\+RT n\+Packet\+Type, B\+Y\+TE n\+Page\+Scan\+Repetition\+Mode, B\+Y\+TE n\+Page\+Scan\+Mode, U\+S\+H\+O\+RT n\+Clock\+Offset, B\+Y\+TE n\+Allow\+Role\+Switch)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a475a21e9c14a8ea5f64b75359f55e9b8}\label{class_c_hci_local_a475a21e9c14a8ea5f64b75359f55e9b8}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Disconnect} (U\+S\+H\+O\+RT n\+Connection\+Handle, B\+Y\+TE n\+Reason)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a6c72e5ca4101c0b070c094923cfe36ab}\label{class_c_hci_local_a6c72e5ca4101c0b070c094923cfe36ab}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Switch\+Role} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE n\+Role)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a571ef45229005d5fa9c3355c340d7431}\label{class_c_hci_local_a571ef45229005d5fa9c3355c340d7431}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Remote\+Name\+Request} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE n\+Page\+Scan\+Repetition\+Mode, B\+Y\+TE n\+Page\+Scan\+Mode, U\+S\+H\+O\+RT n\+Clock\+Offset)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_aa76ef727fd9286c6e2dba5c89b7cbd8d}\label{class_c_hci_local_aa76ef727fd9286c6e2dba5c89b7cbd8d}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Read\+Local\+Version\+Information} (\hyperlink{struct_f_b_t___h_c_i___r_e_a_d___l_o_c_a_l___v_e_r_s_i_o_n___i_n_f_o_r_m_a_t_i_o_n___c_o_m_p_l_e_t_e}{F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+M\+P\+L\+E\+TE} \&Command\+Complete)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a469495c3922f383a4654a5e215193370}\label{class_c_hci_local_a469495c3922f383a4654a5e215193370}} 
+virtual D\+W\+O\+RD {\bfseries On\+Event} (\hyperlink{struct_f_b_t___h_c_i___e_v_e_n_t___h_e_a_d_e_r}{P\+F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+H\+E\+A\+D\+ER} p\+Event, D\+W\+O\+RD dw\+Length)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a4487b1b1e30d246f638874fa918db9be}\label{class_c_hci_local_a4487b1b1e30d246f638874fa918db9be}} 
+virtual D\+W\+O\+RD {\bfseries Command\+Complete\+Handler} (U\+S\+H\+O\+RT n\+Command, B\+Y\+TE $\ast$p\+Parameters, D\+W\+O\+RD dw\+Parameter\+Length)
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a364801687183baf0f7fe59dd7ca3a491}\label{class_c_hci_local_a364801687183baf0f7fe59dd7ca3a491}} 
+virtual D\+W\+O\+RD {\bfseries Command\+Status\+Handler} (B\+Y\+TE n\+Status, U\+S\+H\+O\+RT n\+Command)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_local_adf6d794268a51c0d03701d39c6d6fb5e}\label{class_c_hci_local_adf6d794268a51c0d03701d39c6d6fb5e}} 
+virtual int {\bfseries Find\+Command\+Slot} (U\+S\+H\+O\+RT n\+Command)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a5f17020827d1a022265aecd8f91d360c}\label{class_c_hci_local_a5f17020827d1a022265aecd8f91d360c}} 
+\hyperlink{struct___queued_command}{Queued\+Command} {\bfseries m\+\_\+\+Queued\+Commands} \mbox{[}M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+D\+\_\+\+C\+O\+M\+M\+A\+N\+DS\mbox{]}
+\item 
+\mbox{\Hypertarget{class_c_hci_local_a0b3c823b64ed1e6789015c746474cbef}\label{class_c_hci_local_a0b3c823b64ed1e6789015c746474cbef}} 
+\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON} {\bfseries m\+\_\+\+Queue\+Critical\+Section}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/bluetooth/fbtusb/include/fbt\+Hci\+Local.\+h\end{DoxyCompactItemize}

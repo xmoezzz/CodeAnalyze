@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IMediaStreamFilter接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_media_stream_filter-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IMediaStreamFilter接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IMediaStreamFilter 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_media_stream_filter.png" usemap="#IMediaStreamFilter_map" alt=""/>
+  <map id="IMediaStreamFilter_map" name="IMediaStreamFilter_map">
+<area href="interface_i_base_filter.html" alt="IBaseFilter" shape="rect" coords="0,168,118,192"/>
+<area href="interface_i_media_filter.html" alt="IMediaFilter" shape="rect" coords="0,112,118,136"/>
+<area href="interface_i_persist.html" alt="IPersist" shape="rect" coords="0,56,118,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,118,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a43a954bd2e116d70dfaaff2613788581"><td class="memItemLeft" align="right" valign="top"><a id="a43a954bd2e116d70dfaaff2613788581"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>AddMediaStream</b> ([in] <a class="el" href="interface_i_a_m_media_stream.html">IAMMediaStream</a> *pAMMediaStream)</td></tr>
+<tr class="separator:a43a954bd2e116d70dfaaff2613788581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd569551ec64804f399656ea3066af2e"><td class="memItemLeft" align="right" valign="top"><a id="abd569551ec64804f399656ea3066af2e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetMediaStream</b> ([in] <a class="el" href="struct___g_u_i_d.html">REFMSPID</a> idPurpose, [out] <a class="el" href="interface_i_media_stream.html">IMediaStream</a> **ppMediaStream)</td></tr>
+<tr class="separator:abd569551ec64804f399656ea3066af2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495898ce96a56b62f9e661294bb3172c"><td class="memItemLeft" align="right" valign="top"><a id="a495898ce96a56b62f9e661294bb3172c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>EnumMediaStreams</b> ([in] long Index, [out] <a class="el" href="interface_i_media_stream.html">IMediaStream</a> **ppMediaStream)</td></tr>
+<tr class="separator:a495898ce96a56b62f9e661294bb3172c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fd6c99b202d61c8336ab2b1321ca5c"><td class="memItemLeft" align="right" valign="top"><a id="a86fd6c99b202d61c8336ab2b1321ca5c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SupportSeeking</b> ([in] BOOL bRenderer)</td></tr>
+<tr class="separator:a86fd6c99b202d61c8336ab2b1321ca5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a61a9c7e5c12e66d9ea9ff9be46064d"><td class="memItemLeft" align="right" valign="top"><a id="a3a61a9c7e5c12e66d9ea9ff9be46064d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceTimeToStreamTime</b> ([in] [out] REFERENCE_TIME *pTime)</td></tr>
+<tr class="separator:a3a61a9c7e5c12e66d9ea9ff9be46064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239bbd104f6cd8784a570c45d7bfca19"><td class="memItemLeft" align="right" valign="top"><a id="a239bbd104f6cd8784a570c45d7bfca19"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentStreamTime</b> ([out] REFERENCE_TIME *pCurrentStreamTime)</td></tr>
+<tr class="separator:a239bbd104f6cd8784a570c45d7bfca19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8944ae9bce50fa631aae21f90c646c3"><td class="memItemLeft" align="right" valign="top"><a id="ae8944ae9bce50fa631aae21f90c646c3"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WaitUntil</b> ([in] REFERENCE_TIME WaitStreamTime)</td></tr>
+<tr class="separator:ae8944ae9bce50fa631aae21f90c646c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5eb6141e508321f3e4fd4e27bfcef4c"><td class="memItemLeft" align="right" valign="top"><a id="ab5eb6141e508321f3e4fd4e27bfcef4c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> ([in] BOOL bCancelEOS)</td></tr>
+<tr class="separator:ab5eb6141e508321f3e4fd4e27bfcef4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba30cbb530ff45c054501b9c4f11053"><td class="memItemLeft" align="right" valign="top"><a id="afba30cbb530ff45c054501b9c4f11053"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>EndOfStream</b> ()</td></tr>
+<tr class="separator:afba30cbb530ff45c054501b9c4f11053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_base_filter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_base_filter')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_base_filter.html">IBaseFilter</a></td></tr>
+<tr class="memitem:a4ae91d1b205c9d976c5342ed43767e6e inherit pub_methods_interface_i_base_filter"><td class="memItemLeft" align="right" valign="top"><a id="a4ae91d1b205c9d976c5342ed43767e6e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>EnumPins</b> ([out] <a class="el" href="interface_i_enum_pins.html">IEnumPins</a> **ppEnum)</td></tr>
+<tr class="separator:a4ae91d1b205c9d976c5342ed43767e6e inherit pub_methods_interface_i_base_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f68cf7a936d6c29763c7c734206ab4 inherit pub_methods_interface_i_base_filter"><td class="memItemLeft" align="right" valign="top"><a id="a93f68cf7a936d6c29763c7c734206ab4"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>FindPin</b> ([in, <a class="el" href="structstring.html">string</a>] LPCWSTR Id, [out] <a class="el" href="interface_i_pin.html">IPin</a> **ppPin)</td></tr>
+<tr class="separator:a93f68cf7a936d6c29763c7c734206ab4 inherit pub_methods_interface_i_base_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5a2732412c54d7c12dbdbd9afea89d inherit pub_methods_interface_i_base_filter"><td class="memItemLeft" align="right" valign="top"><a id="acb5a2732412c54d7c12dbdbd9afea89d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryFilterInfo</b> ([out] <a class="el" href="struct_i_base_filter_1_1___filter_info.html">FILTER_INFO</a> *pInfo)</td></tr>
+<tr class="separator:acb5a2732412c54d7c12dbdbd9afea89d inherit pub_methods_interface_i_base_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb36ce8c5a4756e98540a7a904feb615 inherit pub_methods_interface_i_base_filter"><td class="memItemLeft" align="right" valign="top"><a id="aeb36ce8c5a4756e98540a7a904feb615"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>JoinFilterGraph</b> ([in] <a class="el" href="interface_i_filter_graph.html">IFilterGraph</a> *pGraph, [in, <a class="el" href="structstring.html">string</a>] LPCWSTR pName)</td></tr>
+<tr class="separator:aeb36ce8c5a4756e98540a7a904feb615 inherit pub_methods_interface_i_base_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932ce0644ef2be98a31b5cae94180446 inherit pub_methods_interface_i_base_filter"><td class="memItemLeft" align="right" valign="top"><a id="a932ce0644ef2be98a31b5cae94180446"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryVendorInfo</b> ([out, <a class="el" href="structstring.html">string</a>] LPWSTR *pVendorInfo)</td></tr>
+<tr class="separator:a932ce0644ef2be98a31b5cae94180446 inherit pub_methods_interface_i_base_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_media_filter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_media_filter')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_media_filter.html">IMediaFilter</a></td></tr>
+<tr class="memitem:a942a1a35b402936d85a8fa551388f7d0 inherit pub_methods_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a942a1a35b402936d85a8fa551388f7d0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a942a1a35b402936d85a8fa551388f7d0 inherit pub_methods_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bfa370c92e31bb5968a4b3295661b2a inherit pub_methods_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a1bfa370c92e31bb5968a4b3295661b2a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Pause</b> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a1bfa370c92e31bb5968a4b3295661b2a inherit pub_methods_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5a1c7715965634321fb3a5cf922222 inherit pub_methods_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a0b5a1c7715965634321fb3a5cf922222"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> (REFERENCE_TIME tStart)</td></tr>
+<tr class="separator:a0b5a1c7715965634321fb3a5cf922222 inherit pub_methods_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d92dce7307a7d8122d8205436e542ff inherit pub_methods_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a2d92dce7307a7d8122d8205436e542ff"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> ([in] DWORD dwMilliSecsTimeout, [out] FILTER_STATE *<a class="el" href="struct_state.html">State</a>)</td></tr>
+<tr class="separator:a2d92dce7307a7d8122d8205436e542ff inherit pub_methods_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e946ad4ac8c53bd578b0052c019e29 inherit pub_methods_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a95e946ad4ac8c53bd578b0052c019e29"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetSyncSource</b> ([in] <a class="el" href="interface_i_reference_clock.html">IReferenceClock</a> *pClock)</td></tr>
+<tr class="separator:a95e946ad4ac8c53bd578b0052c019e29 inherit pub_methods_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7ca416a46b2d374c7583a49fa39a5a inherit pub_methods_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a7a7ca416a46b2d374c7583a49fa39a5a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSyncSource</b> ([out] <a class="el" href="interface_i_reference_clock.html">IReferenceClock</a> **pClock)</td></tr>
+<tr class="separator:a7a7ca416a46b2d374c7583a49fa39a5a inherit pub_methods_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_persist"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_persist')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_persist.html">IPersist</a></td></tr>
+<tr class="memitem:a898270b681e7e646ab96df1916470b16 inherit pub_methods_interface_i_persist"><td class="memItemLeft" align="right" valign="top"><a id="a898270b681e7e646ab96df1916470b16"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassID</b> ([out] <a class="el" href="struct___i_i_d.html">CLSID</a> *pClassID)</td></tr>
+<tr class="separator:a898270b681e7e646ab96df1916470b16 inherit pub_methods_interface_i_persist"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_base_filter"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_base_filter')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_base_filter.html">IBaseFilter</a></td></tr>
+<tr class="memitem:a62280115a774769df2743f0326ed70d8 inherit pub_types_interface_i_base_filter"><td class="memItemLeft" align="right" valign="top"><a id="a62280115a774769df2743f0326ed70d8"></a>
+typedef <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="struct_i_base_filter_1_1___filter_info.html">IBaseFilter::_FilterInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FILTER_INFO</b></td></tr>
+<tr class="separator:a62280115a774769df2743f0326ed70d8 inherit pub_types_interface_i_base_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_media_filter"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_media_filter')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_media_filter.html">IMediaFilter</a></td></tr>
+<tr class="memitem:a53c5540495ce7a1990108c40ffb27692 inherit pub_types_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a53c5540495ce7a1990108c40ffb27692"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>_FilterState</b> { <b>State_Stopped</b>, 
+<b>State_Paused</b>, 
+<b>State_Running</b>
+ }</td></tr>
+<tr class="separator:a53c5540495ce7a1990108c40ffb27692 inherit pub_types_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c65380ad0ecb6b57485438530205220 inherit pub_types_interface_i_media_filter"><td class="memItemLeft" align="right" valign="top"><a id="a3c65380ad0ecb6b57485438530205220"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IMediaFilter::_FilterState&#160;</td><td class="memItemRight" valign="bottom"><b>FILTER_STATE</b></td></tr>
+<tr class="separator:a3c65380ad0ecb6b57485438530205220 inherit pub_types_interface_i_media_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_persist"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_persist')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_persist.html">IPersist</a></td></tr>
+<tr class="memitem:a687ceef44a96d253c5bc83e201edd93c inherit pub_types_interface_i_persist"><td class="memItemLeft" align="right" valign="top"><a id="a687ceef44a96d253c5bc83e201edd93c"></a>
+typedef <a class="el" href="interface_i_persist.html">IPersist</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPPERSIST</b></td></tr>
+<tr class="separator:a687ceef44a96d253c5bc83e201edd93c inherit pub_types_interface_i_persist"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/dxsdk/<a class="el" href="amstream_8idl_source.html">amstream.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

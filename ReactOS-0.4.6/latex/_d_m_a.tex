@@ -1,0 +1,33 @@
+Concepts\+:
+
+
+\begin{DoxyItemize}
+\item Map register
+
+Abstract encapsulation of physically contiguous buffer that resides in memory accessible by both the D\+MA device / controller and the system. The map registers are allocated and distributed on demand and are scarce resource.
+
+The actual use of map registers is to allow transfers from/to buffer located in physical memory at address inaccessible by the D\+MA device / controller directly. For such transfers the map register buffers are used as intermediate data storage.
+\item Master adapter
+
+\hyperlink{struct_a}{A} container for map registers (typically corresponding to one physical bus connection type). There can be master adapters for 24-\/bit address ranges, 32-\/bit address ranges, etc. Every time a new D\+MA adapter is created it\textquotesingle{}s associated with a corresponding master adapter that is used for any map register allocation requests.
+\item Bus-\/master / Slave D\+MA
+
+Slave D\+MA is term used for D\+MA transfers done by the system (E)I\+SA controller as opposed to transfers mastered by the device itself (hence the name).
+
+For slave D\+MA special care is taken to actually access the system controller and handle the transfers. The relevant code is in Halp\+Dma\+Initialize\+Eisa\+Adapter, Hal\+Read\+Dma\+Counter, Io\+Flush\+Adapter\+Buffers and Io\+Map\+Transfer.
+\end{DoxyItemize}
+
+Implementation\+:
+
+
+\begin{DoxyItemize}
+\item Allocation of map registers
+
+Initial set of map registers is allocated on the system start to ensure that low memory won\textquotesingle{}t get filled up later. Additional map registers are allocated as needed by Halp\+Grow\+Map\+Buffers. \hyperlink{namespace_this}{This} routine is called on two places\+:
+\begin{DoxyItemize}
+\item Hal\+Get\+Adapter, since we\textquotesingle{}re at P\+A\+S\+S\+I\+V\+E\+\_\+\+L\+E\+V\+EL and it\textquotesingle{}s known that more map registers will probably be needed.
+\item Io\+Allocate\+Adapter\+Channel (indirectly using Halp\+Grow\+Map\+Buffer\+Worker since we\textquotesingle{}re at D\+I\+S\+P\+A\+T\+C\+H\+\_\+\+L\+E\+V\+EL and call Halp\+Grow\+Map\+Buffers directly) when no more map registers are free.
+\end{DoxyItemize}
+
+Note that even if no more map registers can be allocated it\textquotesingle{}s not the end of the world. The adapters waiting for free map registers are queued in the master adapter\textquotesingle{}s queue and once one driver hands back it\textquotesingle{}s map registers (using Io\+Free\+Map\+Registers or indirectly using the execution routine callback in Io\+Allocate\+Adapter\+Channel) the queue gets processed and the map registers are reassigned. 
+\end{DoxyItemize}

@@ -1,0 +1,72 @@
+\hypertarget{struct_shell_directory}{}\section{Shell\+Directory结构体 参考}
+\label{struct_shell_directory}\index{Shell\+Directory@{Shell\+Directory}}
+
+
+shell folder entry  
+
+
+
+
+{\ttfamily \#include $<$shellfs.\+h$>$}
+
+类 Shell\+Directory 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_shell_directory}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_directory_af3dfaf11610e25fa2cde67b286a47948}\label{struct_shell_directory_af3dfaf11610e25fa2cde67b286a47948}} 
+{\bfseries Shell\+Directory} (\hyperlink{struct_shell_folder}{Shell\+Folder} \&root\+\_\+folder, const \hyperlink{struct_shell_path}{Shell\+Path} \&shell\+\_\+path, \hyperlink{interfacevoid}{H\+W\+ND} hwnd)
+\item 
+\mbox{\Hypertarget{struct_shell_directory_a0c4f84640cfc4d5d804e7daf963f3b4e}\label{struct_shell_directory_a0c4f84640cfc4d5d804e7daf963f3b4e}} 
+{\bfseries Shell\+Directory} (\hyperlink{struct_shell_directory}{Shell\+Directory} $\ast$parent, L\+P\+I\+T\+E\+M\+I\+D\+L\+I\+ST shell\+\_\+path, \hyperlink{interfacevoid}{H\+W\+ND} hwnd)
+\item 
+\mbox{\Hypertarget{struct_shell_directory_aec2a8e0641a34a34520cb4518e71de5d}\label{struct_shell_directory_aec2a8e0641a34a34520cb4518e71de5d}} 
+{\bfseries Shell\+Directory} (const \hyperlink{struct_shell_directory}{Shell\+Directory} \&other)
+\item 
+\mbox{\Hypertarget{struct_shell_directory_a67a98f03c13704875a3ba8a9290fd1ca}\label{struct_shell_directory_a67a98f03c13704875a3ba8a9290fd1ca}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries read\+\_\+directory} (int scan\+\_\+flags=0)
+\item 
+\mbox{\Hypertarget{struct_shell_directory_acafc2cc0af15afd1262e8e0b0e9153a3}\label{struct_shell_directory_acafc2cc0af15afd1262e8e0b0e9153a3}} 
+virtual const \hyperlink{interfacevoid}{void} $\ast$ {\bfseries get\+\_\+next\+\_\+path\+\_\+component} (const \hyperlink{interfacevoid}{void} $\ast$) const
+\item 
+\mbox{\Hypertarget{struct_shell_directory_ad7619a6f9c80a85f5dda749ecaaf3197}\label{struct_shell_directory_ad7619a6f9c80a85f5dda749ecaaf3197}} 
+virtual \hyperlink{struct_entry}{Entry} $\ast$ {\bfseries find\+\_\+entry} (const \hyperlink{interfacevoid}{void} $\ast$)
+\item 
+\mbox{\Hypertarget{struct_shell_directory_ae5f9c77d4dc355a67e799e7f2b7bf4c7}\label{struct_shell_directory_ae5f9c77d4dc355a67e799e7f2b7bf4c7}} 
+virtual bool {\bfseries get\+\_\+path} (P\+T\+S\+TR \hyperlink{structpath}{path}, size\+\_\+t path\+\_\+count) const
+\item 
+\mbox{\Hypertarget{struct_shell_directory_a2c3e8cb0b0041c47c2b4b2bcb0b3c01c}\label{struct_shell_directory_a2c3e8cb0b0041c47c2b4b2bcb0b3c01c}} 
+virtual \hyperlink{struct_shell_folder}{Shell\+Folder} {\bfseries get\+\_\+shell\+\_\+folder} () const
+\item 
+\mbox{\Hypertarget{struct_shell_directory_a24ee77ac5f0c82b982987da8dd25d4b1}\label{struct_shell_directory_a24ee77ac5f0c82b982987da8dd25d4b1}} 
+int {\bfseries extract\+\_\+icons} (I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS flags)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_directory_a9a35d0d2f90518ef13601fdfb1262e30}\label{struct_shell_directory_a9a35d0d2f90518ef13601fdfb1262e30}} 
+\hyperlink{struct_shell_folder}{Shell\+Folder} {\bfseries \+\_\+folder}
+\item 
+\mbox{\Hypertarget{struct_shell_directory_ac7a5b7139055110bebf662a586e1b84f}\label{struct_shell_directory_ac7a5b7139055110bebf662a586e1b84f}} 
+\hyperlink{interfacevoid}{H\+W\+ND} {\bfseries \+\_\+hwnd}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_directory_a9f9d1f9e7e3aae40719790c50351431e}\label{struct_shell_directory_a9f9d1f9e7e3aae40719790c50351431e}} 
+bool {\bfseries fill\+\_\+w32fdata\+\_\+shell} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, S\+F\+G\+A\+OF attribs, \hyperlink{struct_w_i_n32___f_i_n_d___d_a_t_a_a}{W\+I\+N32\+\_\+\+F\+I\+N\+D\+\_\+\+D\+A\+TA} $\ast$, \hyperlink{struct___b_y___h_a_n_d_l_e___f_i_l_e___i_n_f_o_r_m_a_t_i_o_n}{B\+Y\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON} $\ast$, bool do\+\_\+access=true)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+shell folder entry 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/shellfs.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/shellfs.\+cpp\end{DoxyCompactItemize}

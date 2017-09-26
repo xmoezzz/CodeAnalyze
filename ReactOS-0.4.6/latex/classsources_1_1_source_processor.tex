@@ -1,0 +1,108 @@
+\hypertarget{classsources_1_1_source_processor}{}\section{sources.\+Source\+Processor类 参考}
+\label{classsources_1_1_source_processor}\index{sources.\+Source\+Processor@{sources.\+Source\+Processor}}
+
+
+S\+O\+U\+R\+CE P\+R\+O\+C\+E\+S\+S\+OR C\+L\+A\+SS  
+
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsources_1_1_source_processor_a976a915b122b4e1eaae02ff140c04292}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classsources_1_1_source_processor_a367b849e7abce1219f2c14a9c8fda0ca}{reset} (self)
+\item 
+def \hyperlink{classsources_1_1_source_processor_ac3aa49eda144c4b855c84907d8f95c18}{parse\+\_\+file} (self, filename)
+\item 
+def \hyperlink{classsources_1_1_source_processor_a2b1c60d8bc9d94bb958e04019baafea3}{process\+\_\+normal\+\_\+line} (self, \hyperlink{structline}{line})
+\item 
+def \hyperlink{classsources_1_1_source_processor_a461735ab30867f32d3e974ee8f2c255d}{add\+\_\+block\+\_\+lines} (self)
+\item 
+def \hyperlink{classsources_1_1_source_processor_a4b76f5fe5374cca4929e6d4fb6eb0e1f}{dump} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsources_1_1_source_processor_a4c6a2a09b63a37de1c8f70d5cfd08bb1}\label{classsources_1_1_source_processor_a4c6a2a09b63a37de1c8f70d5cfd08bb1}} 
+{\bfseries blocks}
+\item 
+\mbox{\Hypertarget{classsources_1_1_source_processor_ab324c34e3a33bf2abec242df5407b690}\label{classsources_1_1_source_processor_ab324c34e3a33bf2abec242df5407b690}} 
+{\bfseries filename}
+\item 
+\mbox{\Hypertarget{classsources_1_1_source_processor_a4613674ba9915139266f9a39a5d6295a}\label{classsources_1_1_source_processor_a4613674ba9915139266f9a39a5d6295a}} 
+{\bfseries format}
+\item 
+\mbox{\Hypertarget{classsources_1_1_source_processor_adc4256e323f2766175075037a992a4f8}\label{classsources_1_1_source_processor_adc4256e323f2766175075037a992a4f8}} 
+{\bfseries lines}
+\item 
+\mbox{\Hypertarget{classsources_1_1_source_processor_a3a18441a2fdf0feb1ac612f01263cee2}\label{classsources_1_1_source_processor_a3a18441a2fdf0feb1ac612f01263cee2}} 
+{\bfseries lineno}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+S\+O\+U\+R\+CE P\+R\+O\+C\+E\+S\+S\+OR C\+L\+A\+SS 
+
+The `\+Source\+Processor\textquotesingle{} is in charge of reading a \hyperlink{struct_c}{C} source file and decomposing it into a series of different `\+Source\+Block\textquotesingle{} objects.
+
+\hyperlink{struct_a}{A} \hyperlink{classsources_1_1_source_block}{Source\+Block} object consists of the following data.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{struct_a}{A} documentation comment block using one of the layouts above. Its exact format will be discussed later.
+\item Normal sources lines, including comments. 
+\end{DoxyItemize}
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classsources_1_1_source_processor_a976a915b122b4e1eaae02ff140c04292}\label{classsources_1_1_source_processor_a976a915b122b4e1eaae02ff140c04292}} 
+\index{sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def sources.\+Source\+Processor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize a source processor.\end{DoxyVerb}
+ 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classsources_1_1_source_processor_a461735ab30867f32d3e974ee8f2c255d}\label{classsources_1_1_source_processor_a461735ab30867f32d3e974ee8f2c255d}} 
+\index{sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}!add\+\_\+block\+\_\+lines@{add\+\_\+block\+\_\+lines}}
+\index{add\+\_\+block\+\_\+lines@{add\+\_\+block\+\_\+lines}!sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}}
+\subsubsection{\texorpdfstring{add\+\_\+block\+\_\+lines()}{add\_block\_lines()}}
+{\footnotesize\ttfamily def sources.\+Source\+Processor.\+add\+\_\+block\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add the current accumulated lines and create a new block.\end{DoxyVerb}
+ \mbox{\Hypertarget{classsources_1_1_source_processor_a4b76f5fe5374cca4929e6d4fb6eb0e1f}\label{classsources_1_1_source_processor_a4b76f5fe5374cca4929e6d4fb6eb0e1f}} 
+\index{sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}!dump@{dump}}
+\index{dump@{dump}!sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily def sources.\+Source\+Processor.\+dump (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print all blocks in a processor.\end{DoxyVerb}
+ \mbox{\Hypertarget{classsources_1_1_source_processor_ac3aa49eda144c4b855c84907d8f95c18}\label{classsources_1_1_source_processor_ac3aa49eda144c4b855c84907d8f95c18}} 
+\index{sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}!parse\+\_\+file@{parse\+\_\+file}}
+\index{parse\+\_\+file@{parse\+\_\+file}!sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}}
+\subsubsection{\texorpdfstring{parse\+\_\+file()}{parse\_file()}}
+{\footnotesize\ttfamily def sources.\+Source\+Processor.\+parse\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a C source file and add its blocks to the processor's
+   list.\end{DoxyVerb}
+ \mbox{\Hypertarget{classsources_1_1_source_processor_a2b1c60d8bc9d94bb958e04019baafea3}\label{classsources_1_1_source_processor_a2b1c60d8bc9d94bb958e04019baafea3}} 
+\index{sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}!process\+\_\+normal\+\_\+line@{process\+\_\+normal\+\_\+line}}
+\index{process\+\_\+normal\+\_\+line@{process\+\_\+normal\+\_\+line}!sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}}
+\subsubsection{\texorpdfstring{process\+\_\+normal\+\_\+line()}{process\_normal\_line()}}
+{\footnotesize\ttfamily def sources.\+Source\+Processor.\+process\+\_\+normal\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process a normal line and check whether it is the start of a new
+   block.\end{DoxyVerb}
+ \mbox{\Hypertarget{classsources_1_1_source_processor_a367b849e7abce1219f2c14a9c8fda0ca}\label{classsources_1_1_source_processor_a367b849e7abce1219f2c14a9c8fda0ca}} 
+\index{sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}!reset@{reset}}
+\index{reset@{reset}!sources\+::\+Source\+Processor@{sources\+::\+Source\+Processor}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def sources.\+Source\+Processor.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset a block processor and clean up all its blocks.\end{DoxyVerb}
+ 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/freetype/src/tools/docmaker/sources.\+py\end{DoxyCompactItemize}

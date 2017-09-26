@@ -1,0 +1,82 @@
+\hypertarget{classcodecvt}{}\section{codecvt$<$ \+\_\+\+InternT, \+\_\+\+ExternT, \+\_\+\+StateT $>$ 模板类 参考}
+\label{classcodecvt}\index{codecvt$<$ \+\_\+\+Intern\+T, \+\_\+\+Extern\+T, \+\_\+\+State\+T $>$@{codecvt$<$ \+\_\+\+Intern\+T, \+\_\+\+Extern\+T, \+\_\+\+State\+T $>$}}
+类 codecvt$<$ \+\_\+\+InternT, \+\_\+\+ExternT, \+\_\+\+StateT $>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.783784cm]{classcodecvt}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcodecvt_a912930d10a22c61948478d09c3cec534}\label{classcodecvt_a912930d10a22c61948478d09c3cec534}} 
+typedef \+\_\+\+InternT {\bfseries intern\+\_\+type}
+\item 
+\mbox{\Hypertarget{classcodecvt_a5760ad54fa46cc105801b56c5f952d1d}\label{classcodecvt_a5760ad54fa46cc105801b56c5f952d1d}} 
+typedef \+\_\+\+ExternT {\bfseries extern\+\_\+type}
+\item 
+\mbox{\Hypertarget{classcodecvt_ab661438726223264ced7258736ca4a40}\label{classcodecvt_ab661438726223264ced7258736ca4a40}} 
+typedef \+\_\+\+StateT {\bfseries state\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcodecvt_a381b32572ce023f09b8c4db03f8a54cb}\label{classcodecvt_a381b32572ce023f09b8c4db03f8a54cb}} 
+{\bfseries codecvt} (size\+\_\+t \+\_\+\+\_\+refs=0)
+\item 
+\mbox{\Hypertarget{classcodecvt_a2620d91b586d999e04cbb18d578e1728}\label{classcodecvt_a2620d91b586d999e04cbb18d578e1728}} 
+result {\bfseries out} (state\+\_\+type \&\+\_\+\+\_\+state, const intern\+\_\+type $\ast$\+\_\+\+\_\+from, const intern\+\_\+type $\ast$\+\_\+\+\_\+from\+\_\+end, const intern\+\_\+type $\ast$\&\+\_\+\+\_\+from\+\_\+next, extern\+\_\+type $\ast$\+\_\+\+\_\+to, extern\+\_\+type $\ast$\+\_\+\+\_\+to\+\_\+limit, extern\+\_\+type $\ast$\&\+\_\+\+\_\+to\+\_\+next) const
+\item 
+\mbox{\Hypertarget{classcodecvt_a3f594a167e765dccf56a25af447f12cf}\label{classcodecvt_a3f594a167e765dccf56a25af447f12cf}} 
+result {\bfseries unshift} (state\+\_\+type \&\+\_\+\+\_\+state, extern\+\_\+type $\ast$\+\_\+\+\_\+to, extern\+\_\+type $\ast$\+\_\+\+\_\+to\+\_\+limit, extern\+\_\+type $\ast$\&\+\_\+\+\_\+to\+\_\+next) const
+\item 
+\mbox{\Hypertarget{classcodecvt_af00d6ae60cf75626314f775a3adaf835}\label{classcodecvt_af00d6ae60cf75626314f775a3adaf835}} 
+result {\bfseries in} (state\+\_\+type \&\+\_\+\+\_\+state, const extern\+\_\+type $\ast$\+\_\+\+\_\+from, const extern\+\_\+type $\ast$\+\_\+\+\_\+from\+\_\+end, const extern\+\_\+type $\ast$\&\+\_\+\+\_\+from\+\_\+next, intern\+\_\+type $\ast$\+\_\+\+\_\+to, intern\+\_\+type $\ast$\+\_\+\+\_\+to\+\_\+limit, intern\+\_\+type $\ast$\&\+\_\+\+\_\+to\+\_\+next) const
+\item 
+\mbox{\Hypertarget{classcodecvt_a412c8a526a0d26da8407b0453947573b}\label{classcodecvt_a412c8a526a0d26da8407b0453947573b}} 
+int {\bfseries encoding} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classcodecvt_a560a1adb531cf4b5785a3d242424cad7}\label{classcodecvt_a560a1adb531cf4b5785a3d242424cad7}} 
+bool {\bfseries always\+\_\+noconv} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classcodecvt_aca41db0dfa4afbbd1a2b5cecd0659700}\label{classcodecvt_aca41db0dfa4afbbd1a2b5cecd0659700}} 
+int {\bfseries length} (state\+\_\+type \&\+\_\+\+\_\+state, const extern\+\_\+type $\ast$\+\_\+\+\_\+from, const extern\+\_\+type $\ast$\+\_\+\+\_\+from\+\_\+end, size\+\_\+t \+\_\+\+\_\+max) const
+\item 
+\mbox{\Hypertarget{classcodecvt_ae401a29ab395cda7b132e4245aa815e7}\label{classcodecvt_ae401a29ab395cda7b132e4245aa815e7}} 
+int {\bfseries max\+\_\+length} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcodecvt_a26366693ec535354eb5f4c28fc4142fb}\label{classcodecvt_a26366693ec535354eb5f4c28fc4142fb}} 
+static \hyperlink{classlocale_1_1id}{locale\+::id} {\bfseries id}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcodecvt_adf8d1de0ec5a070f761b4b88a35ef66d}\label{classcodecvt_adf8d1de0ec5a070f761b4b88a35ef66d}} 
+virtual result {\bfseries do\+\_\+out} (state\+\_\+type \&, const intern\+\_\+type $\ast$\+\_\+\+\_\+from, const intern\+\_\+type $\ast$, const intern\+\_\+type $\ast$\&\+\_\+\+\_\+from\+\_\+next, extern\+\_\+type $\ast$\+\_\+\+\_\+to, extern\+\_\+type $\ast$, extern\+\_\+type $\ast$\&\+\_\+\+\_\+to\+\_\+next) const
+\item 
+\mbox{\Hypertarget{classcodecvt_ad19e45cee971b3916ae80b26333cdc5d}\label{classcodecvt_ad19e45cee971b3916ae80b26333cdc5d}} 
+virtual result {\bfseries do\+\_\+in} (state\+\_\+type \&, const extern\+\_\+type $\ast$\+\_\+\+\_\+from, const extern\+\_\+type $\ast$, const extern\+\_\+type $\ast$\&\+\_\+\+\_\+from\+\_\+next, intern\+\_\+type $\ast$\+\_\+\+\_\+to, intern\+\_\+type $\ast$, intern\+\_\+type $\ast$\&\+\_\+\+\_\+to\+\_\+next) const
+\item 
+\mbox{\Hypertarget{classcodecvt_a2081210e464decbe8bd256031af4cbbf}\label{classcodecvt_a2081210e464decbe8bd256031af4cbbf}} 
+virtual result {\bfseries do\+\_\+unshift} (state\+\_\+type \&, extern\+\_\+type $\ast$\+\_\+\+\_\+to, extern\+\_\+type $\ast$, extern\+\_\+type $\ast$\&\+\_\+\+\_\+to\+\_\+next) const
+\item 
+\mbox{\Hypertarget{classcodecvt_a7c49c767330993045efda27a645ca08e}\label{classcodecvt_a7c49c767330993045efda27a645ca08e}} 
+virtual int {\bfseries do\+\_\+encoding} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classcodecvt_a18294bd525c5bfeff8e28661b137b3ce}\label{classcodecvt_a18294bd525c5bfeff8e28661b137b3ce}} 
+virtual bool {\bfseries do\+\_\+always\+\_\+noconv} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classcodecvt_aec62855ab93330c37dec181d5431a878}\label{classcodecvt_aec62855ab93330c37dec181d5431a878}} 
+virtual int {\bfseries do\+\_\+length} (state\+\_\+type \&, const extern\+\_\+type $\ast$\+\_\+\+\_\+from, const extern\+\_\+type $\ast$\+\_\+\+\_\+end, size\+\_\+t \+\_\+\+\_\+max) const
+\item 
+\mbox{\Hypertarget{classcodecvt_a1677be9ea68c736ffe4fb53969dcddb8}\label{classcodecvt_a1677be9ea68c736ffe4fb53969dcddb8}} 
+virtual int {\bfseries do\+\_\+max\+\_\+length} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+codecvt.\+h\end{DoxyCompactItemize}

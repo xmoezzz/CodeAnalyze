@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/dll/opengl/mesa/main/bitset.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c938f8a9ae7e172e1ee48b60f4a9b17a.html">dll</a></li><li class="navelem"><a class="el" href="dir_f28df4588c441543404e0bf042ec3ed8.html">opengl</a></li><li class="navelem"><a class="el" href="dir_8f911cde560d768cee55606d872b51f5.html">mesa</a></li><li class="navelem"><a class="el" href="dir_57ebefe5e357811c45777f992b96e913.html">main</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a>  </div>
+  <div class="headertitle">
+<div class="title">bitset.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Bitset of arbitrary size definitions.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;imports.h&quot;</code><br />
+</div>
+<p><a href="bitset_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab93840a225e0bcbf8e88495695c24ad6"><td class="memItemLeft" align="right" valign="top"><a id="ab93840a225e0bcbf8e88495695c24ad6"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_WORD</b>&#160;&#160;&#160;GLuint</td></tr>
+<tr class="separator:ab93840a225e0bcbf8e88495695c24ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c2171f97c141e58bbe5b3c72a85e1a"><td class="memItemLeft" align="right" valign="top"><a id="a28c2171f97c141e58bbe5b3c72a85e1a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_WORDBITS</b>&#160;&#160;&#160;(sizeof (BITSET_WORD) * 8)</td></tr>
+<tr class="separator:a28c2171f97c141e58bbe5b3c72a85e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91799091d2829a43664c1f9f922a2472"><td class="memItemLeft" align="right" valign="top"><a id="a91799091d2829a43664c1f9f922a2472"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_DECLARE</b>(<a class="el" href="structname.html">name</a>,  size)&#160;&#160;&#160;BITSET_WORD <a class="el" href="structname.html">name</a>[((size) + BITSET_WORDBITS - 1) / BITSET_WORDBITS]</td></tr>
+<tr class="separator:a91799091d2829a43664c1f9f922a2472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08bff24b6497d84aacbde93c4102ac7"><td class="memItemLeft" align="right" valign="top"><a id="ad08bff24b6497d84aacbde93c4102ac7"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_COPY</b>(x,  y)&#160;&#160;&#160;memcpy( (x), (y), sizeof (x) )</td></tr>
+<tr class="separator:ad08bff24b6497d84aacbde93c4102ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630045e91cdad12f82311f9c971aec7c"><td class="memItemLeft" align="right" valign="top"><a id="a630045e91cdad12f82311f9c971aec7c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_EQUAL</b>(x,  y)&#160;&#160;&#160;(memcmp( (x), (y), sizeof (x) ) == 0)</td></tr>
+<tr class="separator:a630045e91cdad12f82311f9c971aec7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e6be7bf6ec749066013b8c63c0dfbd"><td class="memItemLeft" align="right" valign="top"><a id="a05e6be7bf6ec749066013b8c63c0dfbd"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_ZERO</b>(x)&#160;&#160;&#160;memset( (x), 0, sizeof (x) )</td></tr>
+<tr class="separator:a05e6be7bf6ec749066013b8c63c0dfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851b7f9cca23686c41e746c4fb40f434"><td class="memItemLeft" align="right" valign="top"><a id="a851b7f9cca23686c41e746c4fb40f434"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_ONES</b>(x)&#160;&#160;&#160;memset( (x), 0xff, sizeof (x) )</td></tr>
+<tr class="separator:a851b7f9cca23686c41e746c4fb40f434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2e460b56823cad503a2376771798cf"><td class="memItemLeft" align="right" valign="top"><a id="aba2e460b56823cad503a2376771798cf"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_BITWORD</b>(b)&#160;&#160;&#160;((b) / BITSET_WORDBITS)</td></tr>
+<tr class="separator:aba2e460b56823cad503a2376771798cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b06dfeaa02ed63f5f9f7f19300ee37"><td class="memItemLeft" align="right" valign="top"><a id="ad3b06dfeaa02ed63f5f9f7f19300ee37"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_BIT</b>(b)&#160;&#160;&#160;(1 &lt;&lt; ((b) % BITSET_WORDBITS))</td></tr>
+<tr class="separator:ad3b06dfeaa02ed63f5f9f7f19300ee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8146e8fdb6cea9d9436f524018f78e18"><td class="memItemLeft" align="right" valign="top"><a id="a8146e8fdb6cea9d9436f524018f78e18"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_TEST</b>(x,  b)&#160;&#160;&#160;((x)[BITSET_BITWORD(b)] &amp; BITSET_BIT(b))</td></tr>
+<tr class="separator:a8146e8fdb6cea9d9436f524018f78e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd05a40271560ec43f91682902f6f2a9"><td class="memItemLeft" align="right" valign="top"><a id="acd05a40271560ec43f91682902f6f2a9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_SET</b>(x,  b)&#160;&#160;&#160;((x)[BITSET_BITWORD(b)] |= BITSET_BIT(b))</td></tr>
+<tr class="separator:acd05a40271560ec43f91682902f6f2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60459793adecd70672acceec6e8c6908"><td class="memItemLeft" align="right" valign="top"><a id="a60459793adecd70672acceec6e8c6908"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_CLEAR</b>(x,  b)&#160;&#160;&#160;((x)[BITSET_BITWORD(b)] &amp;= ~BITSET_BIT(b))</td></tr>
+<tr class="separator:a60459793adecd70672acceec6e8c6908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f3b4b62676e9a416b708d777e5cc25"><td class="memItemLeft" align="right" valign="top"><a id="a49f3b4b62676e9a416b708d777e5cc25"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_MASK</b>(b)&#160;&#160;&#160;((b) == BITSET_WORDBITS ? ~0 : BITSET_BIT(b) - 1)</td></tr>
+<tr class="separator:a49f3b4b62676e9a416b708d777e5cc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e41a728de459ba23a1b6a3dc078f9b8"><td class="memItemLeft" align="right" valign="top"><a id="a0e41a728de459ba23a1b6a3dc078f9b8"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_RANGE</b>(b,  e)&#160;&#160;&#160;(BITSET_MASK((e) + 1) &amp; ~BITSET_MASK(b))</td></tr>
+<tr class="separator:a0e41a728de459ba23a1b6a3dc078f9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c6b639ce6dc3c1bd81270576efb0495"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_TEST_RANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a7c6b639ce6dc3c1bd81270576efb0495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5301c046c4b2595047453db2d6e88f90"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_SET_RANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a5301c046c4b2595047453db2d6e88f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a6ff4cea68c87e5260adcae7baab19"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_CLEAR_RANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a32a6ff4cea68c87e5260adcae7baab19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa900d2b3e3c7725a1adb3dc762bb771b"><td class="memItemLeft" align="right" valign="top"><a id="aa900d2b3e3c7725a1adb3dc762bb771b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET_FFS</b>(x)&#160;&#160;&#160;__bitset_ffs(x, Elements(x))</td></tr>
+<tr class="separator:aa900d2b3e3c7725a1adb3dc762bb771b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d21563e128c015bcab4a758cfe4d8dc"><td class="memItemLeft" align="right" valign="top"><a id="a6d21563e128c015bcab4a758cfe4d8dc"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_WORD</b>&#160;&#160;&#160;GLuint</td></tr>
+<tr class="separator:a6d21563e128c015bcab4a758cfe4d8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef31e7f83ec34743c9a6f45eb7ca8365"><td class="memItemLeft" align="right" valign="top"><a id="aef31e7f83ec34743c9a6f45eb7ca8365"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_WORDBITS</b>&#160;&#160;&#160;(sizeof (BITSET64_WORD) * 8)</td></tr>
+<tr class="separator:aef31e7f83ec34743c9a6f45eb7ca8365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280fe39ae3c4b7e63107532913f81f1f"><td class="memItemLeft" align="right" valign="top"><a id="a280fe39ae3c4b7e63107532913f81f1f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_DECLARE</b>(<a class="el" href="structname.html">name</a>,  size)&#160;&#160;&#160;GLuint <a class="el" href="structname.html">name</a>[2]</td></tr>
+<tr class="separator:a280fe39ae3c4b7e63107532913f81f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dffc2c6852b4115a67c363d9436c810"><td class="memItemLeft" align="right" valign="top"><a id="a2dffc2c6852b4115a67c363d9436c810"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_COPY</b>(x,  y)&#160;&#160;&#160;do { (x)[0] = (y)[0]; (x)[1] = (y)[1]; } while (0)</td></tr>
+<tr class="separator:a2dffc2c6852b4115a67c363d9436c810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ecddec753456fda85c711da73d8411"><td class="memItemLeft" align="right" valign="top"><a id="a75ecddec753456fda85c711da73d8411"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_EQUAL</b>(x,  y)&#160;&#160;&#160;( (x)[0] == (y)[0] &amp;&amp; (x)[1] == (y)[1] )</td></tr>
+<tr class="separator:a75ecddec753456fda85c711da73d8411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9383c1203fb7e1d679823c413dbfabeb"><td class="memItemLeft" align="right" valign="top"><a id="a9383c1203fb7e1d679823c413dbfabeb"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_ZERO</b>(x)&#160;&#160;&#160;do { (x)[0] = 0; (x)[1] = 0; } while (0)</td></tr>
+<tr class="separator:a9383c1203fb7e1d679823c413dbfabeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56adee5fce13596b5feda11a71746603"><td class="memItemLeft" align="right" valign="top"><a id="a56adee5fce13596b5feda11a71746603"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_ONES</b>(x)&#160;&#160;&#160;do { (x)[0] = 0xFF; (x)[1] = 0xFF; } while (0)</td></tr>
+<tr class="separator:a56adee5fce13596b5feda11a71746603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101a0c03d538a53b6a05d5c63e55a358"><td class="memItemLeft" align="right" valign="top"><a id="a101a0c03d538a53b6a05d5c63e55a358"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_BITWORD</b>(b)&#160;&#160;&#160;((b) / BITSET64_WORDBITS)</td></tr>
+<tr class="separator:a101a0c03d538a53b6a05d5c63e55a358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e193f150ab77835f079bea58edf4db7"><td class="memItemLeft" align="right" valign="top"><a id="a0e193f150ab77835f079bea58edf4db7"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_BIT</b>(b)&#160;&#160;&#160;(1 &lt;&lt; ((b) % BITSET64_WORDBITS))</td></tr>
+<tr class="separator:a0e193f150ab77835f079bea58edf4db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3344b5590c879635077da243156d35e3"><td class="memItemLeft" align="right" valign="top"><a id="a3344b5590c879635077da243156d35e3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_TEST</b>(x,  b)&#160;&#160;&#160;((x)[BITSET64_BITWORD(b)] &amp; BITSET64_BIT(b))</td></tr>
+<tr class="separator:a3344b5590c879635077da243156d35e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc44ca0ed0d2ea1fd559dbacc85be48"><td class="memItemLeft" align="right" valign="top"><a id="a8fc44ca0ed0d2ea1fd559dbacc85be48"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_SET</b>(x,  b)&#160;&#160;&#160;((x)[BITSET64_BITWORD(b)] |= BITSET64_BIT(b))</td></tr>
+<tr class="separator:a8fc44ca0ed0d2ea1fd559dbacc85be48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a52d6abf4e08d63194a6713bc6a76fc"><td class="memItemLeft" align="right" valign="top"><a id="a7a52d6abf4e08d63194a6713bc6a76fc"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_CLEAR</b>(x,  b)&#160;&#160;&#160;((x)[BITSET64_BITWORD(b)] &amp;= ~BITSET64_BIT(b))</td></tr>
+<tr class="separator:a7a52d6abf4e08d63194a6713bc6a76fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c22476888227aa80d3d3fbe07864b96"><td class="memItemLeft" align="right" valign="top"><a id="a2c22476888227aa80d3d3fbe07864b96"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_MASK</b>(b)&#160;&#160;&#160;((b) == BITSET64_WORDBITS ? ~0 : BITSET64_BIT(b) - 1)</td></tr>
+<tr class="separator:a2c22476888227aa80d3d3fbe07864b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac041a73cfd0560de270b94afb4cef15b"><td class="memItemLeft" align="right" valign="top"><a id="ac041a73cfd0560de270b94afb4cef15b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_RANGE</b>(b,  e)&#160;&#160;&#160;(BITSET64_MASK((e) + 1) &amp; ~BITSET64_MASK(b))</td></tr>
+<tr class="separator:ac041a73cfd0560de270b94afb4cef15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27410a8c940afcdc49aa781160f4b632"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_TEST_SUBRANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a27410a8c940afcdc49aa781160f4b632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2871507b0dfabd1344e6a8beda4db3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_TEST_RANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a7e2871507b0dfabd1344e6a8beda4db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ee192714fc83868bc47ce253437c14"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_SET_SUBRANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a73ee192714fc83868bc47ce253437c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b19c3ab693c72484cca71554485b01"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_SET_RANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a37b19c3ab693c72484cca71554485b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f31302274af8efe2b2e9269a08702d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_CLEAR_SUBRANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:ac9f31302274af8efe2b2e9269a08702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c10d0feb7bd456da4ff049d45c3803"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BITSET64_CLEAR_RANGE</b>(x,  b,  e)</td></tr>
+<tr class="separator:a26c10d0feb7bd456da4ff049d45c3803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Bitset of arbitrary size definitions. </p>
+<dl class="section author"><dt>作者</dt><dd>Michal Krol </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a26c10d0feb7bd456da4ff049d45c3803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c10d0feb7bd456da4ff049d45c3803">&#9670;&nbsp;</a></span>BITSET64_CLEAR_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET64_CLEAR_RANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET64_BITWORD(b) == BITSET64_BITWORD(e) ? \</div><div class="line">   (BITSET64_CLEAR_SUBRANGE(x, b, e)) : \</div><div class="line">   (BITSET64_CLEAR_SUBRANGE(x, b, BITSET64_WORDBITS - 1) | \</div><div class="line">    BITSET64_CLEAR_SUBRANGE(x, BITSET64_WORDBITS, e)))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac9f31302274af8efe2b2e9269a08702d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f31302274af8efe2b2e9269a08702d">&#9670;&nbsp;</a></span>BITSET64_CLEAR_SUBRANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET64_CLEAR_SUBRANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET64_BITWORD(b) == BITSET64_BITWORD(e) ? \</div><div class="line">   ((x)[BITSET64_BITWORD(b)] &amp;= ~BITSET64_RANGE(b, e)) : \</div><div class="line">   (assert (!<span class="stringliteral">&quot;BITSET64_CLEAR_RANGE: bit range crosses word boundary&quot;</span>), 0))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a37b19c3ab693c72484cca71554485b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b19c3ab693c72484cca71554485b01">&#9670;&nbsp;</a></span>BITSET64_SET_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET64_SET_RANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET64_BITWORD(b) == BITSET64_BITWORD(e) ? \</div><div class="line">   (BITSET64_SET_SUBRANGE(x, b, e)) : \</div><div class="line">   (BITSET64_SET_SUBRANGE(x, b, BITSET64_WORDBITS - 1) | \</div><div class="line">    BITSET64_SET_SUBRANGE(x, BITSET64_WORDBITS, e)))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a73ee192714fc83868bc47ce253437c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ee192714fc83868bc47ce253437c14">&#9670;&nbsp;</a></span>BITSET64_SET_SUBRANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET64_SET_SUBRANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET64_BITWORD(b) == BITSET64_BITWORD(e) ? \</div><div class="line">   ((x)[BITSET64_BITWORD(b)] |= BITSET64_RANGE(b, e)) : \</div><div class="line">   (assert (!<span class="stringliteral">&quot;BITSET64_SET_RANGE: bit range crosses word boundary&quot;</span>), 0))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7e2871507b0dfabd1344e6a8beda4db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2871507b0dfabd1344e6a8beda4db3">&#9670;&nbsp;</a></span>BITSET64_TEST_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET64_TEST_RANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET64_BITWORD(b) == BITSET64_BITWORD(e) ? \</div><div class="line">   (BITSET64_TEST_SUBRANGE(x, b, e)) : \</div><div class="line">   (BITSET64_TEST_SUBRANGE(x, b, BITSET64_WORDBITS - 1) | \</div><div class="line">    BITSET64_TEST_SUBRANGE(x, BITSET64_WORDBITS, e)))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a27410a8c940afcdc49aa781160f4b632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27410a8c940afcdc49aa781160f4b632">&#9670;&nbsp;</a></span>BITSET64_TEST_SUBRANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET64_TEST_SUBRANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET64_BITWORD(b) == BITSET64_BITWORD(e) ? \</div><div class="line">   ((x)[BITSET64_BITWORD(b)] &amp; BITSET64_RANGE(b, e)) : \</div><div class="line">   (assert (!<span class="stringliteral">&quot;BITSET64_TEST_RANGE: bit range crosses word boundary&quot;</span>), 0))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a32a6ff4cea68c87e5260adcae7baab19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a6ff4cea68c87e5260adcae7baab19">&#9670;&nbsp;</a></span>BITSET_CLEAR_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET_CLEAR_RANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET_BITWORD(b) == BITSET_BITWORD(e) ? \</div><div class="line">   ((x)[BITSET_BITWORD(b)] &amp;= ~BITSET_RANGE(b, e)) : \</div><div class="line">   (assert (!<span class="stringliteral">&quot;BITSET_CLEAR_RANGE: bit range crosses word boundary&quot;</span>), 0))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a5301c046c4b2595047453db2d6e88f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5301c046c4b2595047453db2d6e88f90">&#9670;&nbsp;</a></span>BITSET_SET_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET_SET_RANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET_BITWORD(b) == BITSET_BITWORD(e) ? \</div><div class="line">   ((x)[BITSET_BITWORD(b)] |= BITSET_RANGE(b, e)) : \</div><div class="line">   (assert (!<span class="stringliteral">&quot;BITSET_SET_RANGE: bit range crosses word boundary&quot;</span>), 0))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7c6b639ce6dc3c1bd81270576efb0495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6b639ce6dc3c1bd81270576efb0495">&#9670;&nbsp;</a></span>BITSET_TEST_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> BITSET_TEST_RANGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(BITSET_BITWORD(b) == BITSET_BITWORD(e) ? \</div><div class="line">   ((x)[BITSET_BITWORD(b)] &amp; BITSET_RANGE(b, e)) : \</div><div class="line">   (assert (!<span class="stringliteral">&quot;BITSET_TEST_RANGE: bit range crosses word boundary&quot;</span>), 0))</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

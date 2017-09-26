@@ -1,0 +1,195 @@
+\hypertarget{lwip_2src_2core_2ipv4_2ip_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/ipv4/ip.c 文件参考}
+\label{lwip_2src_2core_2ipv4_2ip_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/ipv4/ip.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/ipv4/ip.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/ip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/mem.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/ip\+\_\+frag.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/inet\+\_\+chksum.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/netif.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/icmp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/igmp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/raw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/udp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/tcp\+\_\+impl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/snmp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/dhcp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/autoip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/stats.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}arch/perf.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a9652ce304f893f6245c6ba9daea0a30f}{L\+W\+I\+P\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+I\+P\+\_\+\+C\+H\+K\+S\+UM}~1
+\item 
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_acd5530a8c28199e56a1886f78bdb37f6}\label{lwip_2src_2core_2ipv4_2ip_8c_acd5530a8c28199e56a1886f78bdb37f6}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+H\+E\+C\+K\+S\+U\+M\+\_\+\+G\+E\+N\+\_\+\+I\+P\+\_\+\+I\+N\+L\+I\+NE}~0
+\item 
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a4ea65becf52af980f8e26d9339df8006}\label{lwip_2src_2core_2ipv4_2ip_8c_a4ea65becf52af980f8e26d9339df8006}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+P\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+L\+I\+N\+K\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+A\+D\+D\+R\+E\+S\+S\+I\+NG}~0
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a81facf31eb2f115e66227f648153ed79}{ip\+\_\+route} (ip\+\_\+addr\+\_\+t $\ast$dest)
+\item 
+err\+\_\+t \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a3c420dab0c6760df099a2d688fa42a26}{ip\+\_\+input} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$inp)
+\item 
+err\+\_\+t \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a4bb5579127e9d605d66c275c1393e114}{ip\+\_\+output\+\_\+if} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, ip\+\_\+addr\+\_\+t $\ast$src, ip\+\_\+addr\+\_\+t $\ast$dest, u8\+\_\+t ttl, u8\+\_\+t tos, u8\+\_\+t \hyperlink{structproto}{proto}, \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\item 
+err\+\_\+t \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_aada620fb6df3b1116290a88cb85a85ab}{ip\+\_\+output} (\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$p, ip\+\_\+addr\+\_\+t $\ast$src, ip\+\_\+addr\+\_\+t $\ast$dest, u8\+\_\+t ttl, u8\+\_\+t tos, u8\+\_\+t \hyperlink{structproto}{proto})
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_aabce496c19c6ae4000174c8af8a4a913}{current\+\_\+netif}
+\item 
+const \hyperlink{interfacestruct}{struct} \hyperlink{structip__hdr}{ip\+\_\+hdr} $\ast$ \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a169cfb7f1ed23bc514e3e567644291af}{current\+\_\+header}
+\item 
+ip\+\_\+addr\+\_\+t \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a312380e254b06dd3041065a3ec27264b}{current\+\_\+iphdr\+\_\+src}
+\item 
+ip\+\_\+addr\+\_\+t \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a63c0914cf407e33af9b47061bd6ae40d}{current\+\_\+iphdr\+\_\+dest}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{namespace_this}{This} is the I\+Pv4 layer implementation for incoming and outgoing IP traffic.
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{ip__frag_8c}{ip\+\_\+frag.\+c} 
+\end{DoxySeeAlso}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a9652ce304f893f6245c6ba9daea0a30f}\label{lwip_2src_2core_2ipv4_2ip_8c_a9652ce304f893f6245c6ba9daea0a30f}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!L\+W\+I\+P\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+I\+P\+\_\+\+C\+H\+K\+S\+UM@{L\+W\+I\+P\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+I\+P\+\_\+\+C\+H\+K\+S\+UM}}
+\index{L\+W\+I\+P\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+I\+P\+\_\+\+C\+H\+K\+S\+UM@{L\+W\+I\+P\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+I\+P\+\_\+\+C\+H\+K\+S\+UM}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{L\+W\+I\+P\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+I\+P\+\_\+\+C\+H\+K\+S\+UM}{LWIP\_INLINE\_IP\_CHKSUM}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} L\+W\+I\+P\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+I\+P\+\_\+\+C\+H\+K\+S\+UM~1}
+
+Set this to 0 in the rare case of wanting to call an extra function to generate the IP checksum (in contrast to calculating it on-\/the-\/fly). 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a3c420dab0c6760df099a2d688fa42a26}\label{lwip_2src_2core_2ipv4_2ip_8c_a3c420dab0c6760df099a2d688fa42a26}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!ip\+\_\+input@{ip\+\_\+input}}
+\index{ip\+\_\+input@{ip\+\_\+input}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{ip\+\_\+input()}{ip\_input()}}
+{\footnotesize\ttfamily err\+\_\+t ip\+\_\+input (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{inp }\end{DoxyParamCaption})}
+
+\hyperlink{namespace_this}{This} function is called by the network interface device driver when an IP packet is received. The function does the basic checks of the IP header such as packet size being at least larger than the header size etc. If the packet was not destined for us, the packet is forwarded (using ip\+\_\+forward). The IP checksum is always checked.
+
+Finally, the packet is sent to the upper layer protocol input function.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & the received IP packet (p-\/$>$payload points to IP header) \\
+\hline
+{\em inp} & the netif on which this packet was received \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+E\+R\+R\+\_\+\+OK if the packet was processed (could return E\+R\+R\+\_\+$\ast$ if it wasn\textquotesingle{}t processed, but currently always returns E\+R\+R\+\_\+\+OK) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_aada620fb6df3b1116290a88cb85a85ab}\label{lwip_2src_2core_2ipv4_2ip_8c_aada620fb6df3b1116290a88cb85a85ab}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!ip\+\_\+output@{ip\+\_\+output}}
+\index{ip\+\_\+output@{ip\+\_\+output}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{ip\+\_\+output()}{ip\_output()}}
+{\footnotesize\ttfamily err\+\_\+t ip\+\_\+output (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{src,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{dest,  }\item[{u8\+\_\+t}]{ttl,  }\item[{u8\+\_\+t}]{tos,  }\item[{u8\+\_\+t}]{proto }\end{DoxyParamCaption})}
+
+Simple interface to ip\+\_\+output\+\_\+if. \hyperlink{class_it}{It} finds the outgoing network interface and calls upon ip\+\_\+output\+\_\+if to do the actual work.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & the packet to send (p-\/$>$payload points to the data, e.\+g. next protocol header; if dest == I\+P\+\_\+\+H\+D\+R\+I\+N\+CL, p already includes an IP header and p-\/$>$payload points to that IP header) \\
+\hline
+{\em src} & the source IP address to send from (if src == I\+P\+\_\+\+A\+D\+D\+R\+\_\+\+A\+NY, the IP address of the netif used to send is used as source address) \\
+\hline
+{\em dest} & the destination IP address to send the packet to \\
+\hline
+{\em ttl} & the T\+TL value to be set in the IP header \\
+\hline
+{\em tos} & the T\+OS value to be set in the IP header \\
+\hline
+{\em proto} & the P\+R\+O\+T\+O\+C\+OL to be set in the IP header\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+E\+R\+R\+\_\+\+R\+TE if no route is found see \hyperlink{lwip_2src_2core_2ipv4_2ip_8c_a4bb5579127e9d605d66c275c1393e114}{ip\+\_\+output\+\_\+if()} for more return values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a4bb5579127e9d605d66c275c1393e114}\label{lwip_2src_2core_2ipv4_2ip_8c_a4bb5579127e9d605d66c275c1393e114}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!ip\+\_\+output\+\_\+if@{ip\+\_\+output\+\_\+if}}
+\index{ip\+\_\+output\+\_\+if@{ip\+\_\+output\+\_\+if}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{ip\+\_\+output\+\_\+if()}{ip\_output\_if()}}
+{\footnotesize\ttfamily err\+\_\+t ip\+\_\+output\+\_\+if (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$}]{p,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{src,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{dest,  }\item[{u8\+\_\+t}]{ttl,  }\item[{u8\+\_\+t}]{tos,  }\item[{u8\+\_\+t}]{proto,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Sends an IP packet on a network interface. \hyperlink{namespace_this}{This} function constructs the IP header and calculates the IP header checksum. If the source IP address is N\+U\+LL, the IP address of the outgoing network interface is filled in as source address. If the destination IP address is I\+P\+\_\+\+H\+D\+R\+I\+N\+CL, p is assumed to already include an IP header and p-\/$>$payload points to it instead of the data.
+
+
+\begin{DoxyParams}{参数}
+{\em p} & the packet to send (p-\/$>$payload points to the data, e.\+g. next protocol header; if dest == I\+P\+\_\+\+H\+D\+R\+I\+N\+CL, p already includes an IP header and p-\/$>$payload points to that IP header) \\
+\hline
+{\em src} & the source IP address to send from (if src == I\+P\+\_\+\+A\+D\+D\+R\+\_\+\+A\+NY, the IP address of the netif used to send is used as source address) \\
+\hline
+{\em dest} & the destination IP address to send the packet to \\
+\hline
+{\em ttl} & the T\+TL value to be set in the IP header \\
+\hline
+{\em tos} & the T\+OS value to be set in the IP header \\
+\hline
+{\em proto} & the P\+R\+O\+T\+O\+C\+OL to be set in the IP header \\
+\hline
+{\em netif} & the netif on which to send this packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+E\+R\+R\+\_\+\+OK if the packet was sent OK E\+R\+R\+\_\+\+B\+UF if p doesn\textquotesingle{}t have enough space for I\+P/\+L\+I\+NK headers returns errors returned by netif-\/$>$output
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+ip\+\_\+id\+: R\+F\+C791 \char`\"{}some host may be able to simply use
+ unique identifiers independent of destination\char`\"{} 
+\end{DoxyNote}
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a81facf31eb2f115e66227f648153ed79}\label{lwip_2src_2core_2ipv4_2ip_8c_a81facf31eb2f115e66227f648153ed79}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!ip\+\_\+route@{ip\+\_\+route}}
+\index{ip\+\_\+route@{ip\+\_\+route}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{ip\+\_\+route()}{ip\_route()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif}$\ast$ ip\+\_\+route (\begin{DoxyParamCaption}\item[{ip\+\_\+addr\+\_\+t $\ast$}]{dest }\end{DoxyParamCaption})}
+
+Finds the appropriate network interface for a given IP address. \hyperlink{class_it}{It} searches the list of network interfaces linearly. \hyperlink{struct_a}{A} match is found if the masked IP address of the network interface equals the masked IP address given to the function.
+
+
+\begin{DoxyParams}{参数}
+{\em dest} & the destination IP address for which to find the route \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the netif on which to send to reach dest 
+\end{DoxyReturn}
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a169cfb7f1ed23bc514e3e567644291af}\label{lwip_2src_2core_2ipv4_2ip_8c_a169cfb7f1ed23bc514e3e567644291af}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!current\+\_\+header@{current\+\_\+header}}
+\index{current\+\_\+header@{current\+\_\+header}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{current\+\_\+header}{current\_header}}
+{\footnotesize\ttfamily const \hyperlink{interfacestruct}{struct} \hyperlink{structip__hdr}{ip\+\_\+hdr}$\ast$ current\+\_\+header}
+
+\hyperlink{class_header}{Header} of the input packet currently being processed. \mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a63c0914cf407e33af9b47061bd6ae40d}\label{lwip_2src_2core_2ipv4_2ip_8c_a63c0914cf407e33af9b47061bd6ae40d}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!current\+\_\+iphdr\+\_\+dest@{current\+\_\+iphdr\+\_\+dest}}
+\index{current\+\_\+iphdr\+\_\+dest@{current\+\_\+iphdr\+\_\+dest}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{current\+\_\+iphdr\+\_\+dest}{current\_iphdr\_dest}}
+{\footnotesize\ttfamily ip\+\_\+addr\+\_\+t current\+\_\+iphdr\+\_\+dest}
+
+Destination IP address of current\+\_\+header \mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_a312380e254b06dd3041065a3ec27264b}\label{lwip_2src_2core_2ipv4_2ip_8c_a312380e254b06dd3041065a3ec27264b}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!current\+\_\+iphdr\+\_\+src@{current\+\_\+iphdr\+\_\+src}}
+\index{current\+\_\+iphdr\+\_\+src@{current\+\_\+iphdr\+\_\+src}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{current\+\_\+iphdr\+\_\+src}{current\_iphdr\_src}}
+{\footnotesize\ttfamily ip\+\_\+addr\+\_\+t current\+\_\+iphdr\+\_\+src}
+
+Source IP address of current\+\_\+header \mbox{\Hypertarget{lwip_2src_2core_2ipv4_2ip_8c_aabce496c19c6ae4000174c8af8a4a913}\label{lwip_2src_2core_2ipv4_2ip_8c_aabce496c19c6ae4000174c8af8a4a913}} 
+\index{lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}!current\+\_\+netif@{current\+\_\+netif}}
+\index{current\+\_\+netif@{current\+\_\+netif}!lwip/src/core/ipv4/ip.\+c@{lwip/src/core/ipv4/ip.\+c}}
+\subsubsection{\texorpdfstring{current\+\_\+netif}{current\_netif}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif}$\ast$ current\+\_\+netif}
+
+The interface that provided the packet for the current callback invocation. 

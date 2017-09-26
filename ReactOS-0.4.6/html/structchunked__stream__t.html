@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: chunked_stream_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structchunked__stream__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">chunked_stream_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a35d1e6e58ac349ec052a0c9289b0ea16"><td class="memItemLeft" align="right" valign="top"><a id="a35d1e6e58ac349ec052a0c9289b0ea16"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CHUNKED_STREAM_STATE_READING_CHUNK_SIZE</b>, 
+<b>CHUNKED_STREAM_STATE_DISCARD_EOL_AFTER_SIZE</b>, 
+<b>CHUNKED_STREAM_STATE_READING_CHUNK</b>, 
+<b>CHUNKED_STREAM_STATE_DISCARD_EOL_AFTER_DATA</b>, 
+<br />
+&#160;&#160;<b>CHUNKED_STREAM_STATE_DISCARD_EOL_AT_END</b>, 
+<b>CHUNKED_STREAM_STATE_END_OF_STREAM</b>
+<br />
+ }</td></tr>
+<tr class="separator:a35d1e6e58ac349ec052a0c9289b0ea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a12915113c37db5236679301d422a3a2a"><td class="memItemLeft" align="right" valign="top"><a id="a12915113c37db5236679301d422a3a2a"></a>
+<a class="el" href="structdata__stream__t.html">data_stream_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data_stream</b></td></tr>
+<tr class="separator:a12915113c37db5236679301d422a3a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f192929f703024d7441f4eb3a3ded6e"><td class="memItemLeft" align="right" valign="top"><a id="a2f192929f703024d7441f4eb3a3ded6e"></a>
+BYTE&#160;</td><td class="memItemRight" valign="bottom"><b>buf</b> [READ_BUFFER_SIZE]</td></tr>
+<tr class="separator:a2f192929f703024d7441f4eb3a3ded6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e31ac8c506489867cc9bfac7fe92cb"><td class="memItemLeft" align="right" valign="top"><a id="a05e31ac8c506489867cc9bfac7fe92cb"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>buf_size</b></td></tr>
+<tr class="separator:a05e31ac8c506489867cc9bfac7fe92cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0170f8e253c178a008e42fe0082ff248"><td class="memItemLeft" align="right" valign="top"><a id="a0170f8e253c178a008e42fe0082ff248"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>buf_pos</b></td></tr>
+<tr class="separator:a0170f8e253c178a008e42fe0082ff248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e369b82ed3e20e2ac8ac40c4b2dda1"><td class="memItemLeft" align="right" valign="top"><a id="ae6e369b82ed3e20e2ac8ac40c4b2dda1"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>chunk_size</b></td></tr>
+<tr class="separator:ae6e369b82ed3e20e2ac8ac40c4b2dda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271f2a8ae47f5515f87d70897d363741"><td class="memItemLeft" align="right" valign="top"><a id="a271f2a8ae47f5515f87d70897d363741"></a>
+<a class="el" href="interfaceenum.html">enum</a> chunked_stream_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:a271f2a8ae47f5515f87d70897d363741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/win32/wininet/http.c</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,36 @@
+\hypertarget{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n}{}\section{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N结构体 参考}
+\label{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n}\index{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON}}
+
+
+{\ttfamily \#include $<$Uefi\+Multi\+Phase.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_processor_bind_8h_a57be03562867144161c1bfee95ca8f7c}{U\+I\+N\+T64} \hyperlink{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n_afc0e2555963a8a3046a17ddd2c09350e}{Monotonic\+Count}
+\item 
+\hyperlink{struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d}{W\+I\+N\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+U\+E\+F\+I\+\_\+\+G\+U\+ID} \hyperlink{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n_a69728a7870afdec21157504b489a6e1b}{Auth\+Info}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Auth\+Info is a \hyperlink{struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e}{W\+I\+N\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+TE} using the w\+Certificate\+Type \hyperlink{struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d}{W\+I\+N\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+U\+E\+F\+I\+\_\+\+G\+U\+ID} and the Cert\+Type E\+F\+I\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+S\+A2048\+\_\+\+S\+H\+A256\+\_\+\+G\+U\+ID. If the attribute specifies authenticated access, then the \hyperlink{struct_data}{Data} buffer should begin with an authentication descriptor prior to the data payload and Data\+Size should reflect the the data.\+and descriptor size. The caller shall digest the Monotonic Count value and the associated data for the variable update using the S\+H\+A-\/256 1-\/way hash algorithm. The ensuing the 32-\/byte digest will be signed using the private key associated w/ the public/private 2048-\/bit R\+SA key-\/pair. The \hyperlink{struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e}{W\+I\+N\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+TE} shall be used to describe the signature of the Variable data $\ast$\+Data. In addition, the signature will also include the Monotonic\+Count value to guard against replay attacks. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n_a69728a7870afdec21157504b489a6e1b}\label{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n_a69728a7870afdec21157504b489a6e1b}} 
+\index{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON}!Auth\+Info@{Auth\+Info}}
+\index{Auth\+Info@{Auth\+Info}!E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{Auth\+Info}{AuthInfo}}
+{\footnotesize\ttfamily \hyperlink{struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d}{W\+I\+N\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+U\+E\+F\+I\+\_\+\+G\+U\+ID} E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+::\+Auth\+Info}
+
+Provides the authorization for the variable access. \hyperlink{class_it}{It} is a signature across the variable data and the Monotonic Count value. Caller uses Private key that is associated with a public key that has been provisioned via the key exchange. \mbox{\Hypertarget{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n_afc0e2555963a8a3046a17ddd2c09350e}\label{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n_afc0e2555963a8a3046a17ddd2c09350e}} 
+\index{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON}!Monotonic\+Count@{Monotonic\+Count}}
+\index{Monotonic\+Count@{Monotonic\+Count}!E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{Monotonic\+Count}{MonotonicCount}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_a57be03562867144161c1bfee95ca8f7c}{U\+I\+N\+T64} E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+::\+Monotonic\+Count}
+
+Included in the signature of Auth\+Info.\+Used to ensure freshness/no replay. Incremented during each \char`\"{}\+Write\char`\"{} access. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/boot/environ/include/efi/\hyperlink{_uefi_multi_phase_8h}{Uefi\+Multi\+Phase.\+h}\end{DoxyCompactItemize}

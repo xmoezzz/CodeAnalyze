@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/win32ss/user/ntuser/focus.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_ddfd06bba35866cf4fe2acc35285f4c9.html">win32ss</a></li><li class="navelem"><a class="el" href="dir_0116d2930833c7d5f73ccf8d5a4c3370.html">user</a></li><li class="navelem"><a class="el" href="dir_e69fcc465f835c7f629f8240ea84b44c.html">ntuser</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">focus.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___u_s_e_r___m_e_s_s_a_g_e___q_u_e_u_e.html">PUSER_MESSAGE_QUEUE</a> gpqForeground;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___u_s_e_r___m_e_s_s_a_g_e___q_u_e_u_e.html">PUSER_MESSAGE_QUEUE</a> gpqForegroundPrev;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___t_h_r_e_a_d_i_n_f_o.html">PTHREADINFO</a> ptiLastInput;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * These functions take the window handles from current message queue.</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="interfacevoid.html">HWND</a> FASTCALL IntGetCaptureWindow(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<a class="code" href="interfacevoid.html">HWND</a> FASTCALL co_UserSetCapture(<a class="code" href="interfacevoid.html">HWND</a> hWnd);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;BOOL FASTCALL IntReleaseCapture(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * These functions take the window handles from current thread queue.</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="interfacevoid.html">HWND</a> FASTCALL IntGetThreadFocusWindow(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="interfacevoid.html">HWND</a> APIENTRY IntGetCapture(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="interfacevoid.html">HWND</a> FASTCALL UserGetActiveWindow(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;BOOL FASTCALL co_IntMouseActivateWindow(<a class="code" href="struct___w_n_d.html">PWND</a> <a class="code" href="struct_window.html">Window</a>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;BOOL FASTCALL co_IntSetForegroundWindow(<a class="code" href="struct___w_n_d.html">PWND</a> <a class="code" href="struct_window.html">Window</a>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;BOOL FASTCALL co_IntSetForegroundWindowMouse(<a class="code" href="struct___w_n_d.html">PWND</a> <a class="code" href="struct_window.html">Window</a>);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;BOOL FASTCALL co_IntSetActiveWindow(<a class="code" href="struct___w_n_d.html">PWND</a>,BOOL,BOOL,BOOL);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;BOOL FASTCALL IntUserSetActiveWindow(<a class="code" href="struct___w_n_d.html">PWND</a>,BOOL,BOOL,BOOL);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;BOOL FASTCALL UserSetActiveWindow(<a class="code" href="struct___w_n_d.html">PWND</a> Wnd);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;BOOL FASTCALL IntLockSetForegroundWindow(UINT uLockCode);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;BOOL FASTCALL IntAllowSetForegroundWindow(DWORD dwProcessId);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> FASTCALL IntActivateWindow(<a class="code" href="struct___w_n_d.html">PWND</a>,<a class="code" href="struct___t_h_r_e_a_d_i_n_f_o.html">PTHREADINFO</a>,<a class="code" href="interfacevoid.html">HANDLE</a>,DWORD);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;BOOL FASTCALL IntDeactivateWindow(<a class="code" href="struct___t_h_r_e_a_d_i_n_f_o.html">PTHREADINFO</a>,<a class="code" href="interfacevoid.html">HANDLE</a>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;BOOL FASTCALL co_IntSetForegroundMessageQueue(<a class="code" href="struct___w_n_d.html">PWND</a>,<a class="code" href="struct___t_h_r_e_a_d_i_n_f_o.html">PTHREADINFO</a>,BOOL,DWORD );</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> FASTCALL UpdateShellHook(<a class="code" href="struct___w_n_d.html">PWND</a>);</div><div class="ttc" id="struct___t_h_r_e_a_d_i_n_f_o_html"><div class="ttname"><a href="struct___t_h_r_e_a_d_i_n_f_o.html">_THREADINFO</a></div><div class="ttdef"><b>Definition:</b> win32.h:82</div></div>
+<div class="ttc" id="struct___w_n_d_html"><div class="ttname"><a href="struct___w_n_d.html">_WND</a></div><div class="ttdef"><b>Definition:</b> ntuser.h:657</div></div>
+<div class="ttc" id="struct___u_s_e_r___m_e_s_s_a_g_e___q_u_e_u_e_html"><div class="ttname"><a href="struct___u_s_e_r___m_e_s_s_a_g_e___q_u_e_u_e.html">_USER_MESSAGE_QUEUE</a></div><div class="ttdef"><b>Definition:</b> msgqueue.h:44</div></div>
+<div class="ttc" id="struct_window_html"><div class="ttname"><a href="struct_window.html">Window</a></div><div class="ttdef"><b>Definition:</b> window.c:21</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

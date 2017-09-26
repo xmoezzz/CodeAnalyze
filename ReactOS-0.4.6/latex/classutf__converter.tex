@@ -1,0 +1,115 @@
+\hypertarget{classutf__converter}{}\section{utf\+\_\+converter类 参考}
+\label{classutf__converter}\index{utf\+\_\+converter@{utf\+\_\+converter}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classutf__converter_ac573e63f01db39d5991b3fde2ff2dc8d}\label{classutf__converter_ac573e63f01db39d5991b3fde2ff2dc8d}} 
+enum {\bfseries enc\+\_\+types} \{ \newline
+{\bfseries detect}, 
+{\bfseries utf8}, 
+{\bfseries utf16le}, 
+{\bfseries utf16be}, 
+\newline
+{\bfseries utf32le}, 
+{\bfseries utf32be}
+ \}
+\item 
+\mbox{\Hypertarget{classutf__converter_a9a17751acf7ecc7c13386c7e58ce1141}\label{classutf__converter_a9a17751acf7ecc7c13386c7e58ce1141}} 
+enum {\bfseries err\+\_\+types} \{ \newline
+{\bfseries none}, 
+{\bfseries iopen}, 
+{\bfseries oopen}, 
+{\bfseries eof}, 
+\newline
+{\bfseries read}, 
+{\bfseries write}, 
+{\bfseries decode}
+ \}
+\item 
+\mbox{\Hypertarget{classutf__converter_a2574bd5cecb5b8a46e1bec330a349753}\label{classutf__converter_a2574bd5cecb5b8a46e1bec330a349753}} 
+enum {\bfseries bom\+\_\+types} \{ {\bfseries bom}, 
+{\bfseries nobom}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classutf__converter_a2fa77e006e0d8ed2ed87fd87e1a4082e}\label{classutf__converter_a2fa77e006e0d8ed2ed87fd87e1a4082e}} 
+{\bfseries utf\+\_\+converter} (\hyperlink{structstring}{string} ifname, \hyperlink{structstring}{string} ofname, bom\+\_\+types ofbom=bom, enc\+\_\+types enc=detect)
+\item 
+\mbox{\Hypertarget{classutf__converter_a85e4df7465bace73900bda4b6c370b4b}\label{classutf__converter_a85e4df7465bace73900bda4b6c370b4b}} 
+err\+\_\+types {\bfseries get\+Error} ()
+\item 
+\mbox{\Hypertarget{classutf__converter_ae4b82ecb11ae7e239d63ff749f5cb9b7}\label{classutf__converter_ae4b82ecb11ae7e239d63ff749f5cb9b7}} 
+enc\+\_\+types {\bfseries get\+B\+OM} ()
+\item 
+\mbox{\Hypertarget{classutf__converter_a17146b0b071723d75da98dc375c3b77e}\label{classutf__converter_a17146b0b071723d75da98dc375c3b77e}} 
+int {\bfseries get\+Byte} (unsigned char \&c)
+\item 
+\mbox{\Hypertarget{classutf__converter_a28b6616ef5820e942161e1fa87121485}\label{classutf__converter_a28b6616ef5820e942161e1fa87121485}} 
+int {\bfseries get\+Word} (unsigned short \&w)
+\item 
+\mbox{\Hypertarget{classutf__converter_aed6b5b8d767ba4a390d3affa27ddd635}\label{classutf__converter_aed6b5b8d767ba4a390d3affa27ddd635}} 
+int {\bfseries get\+D\+Word} (wchar\+\_\+t \&d)
+\item 
+\mbox{\Hypertarget{classutf__converter_a15ca3e7629d6475f25abcb4b9646c037}\label{classutf__converter_a15ca3e7629d6475f25abcb4b9646c037}} 
+wchar\+\_\+t {\bfseries get\+\_\+wchar\+\_\+t} ()
+\item 
+\mbox{\Hypertarget{classutf__converter_a97981bcd421302543bacf53ed0e3e112}\label{classutf__converter_a97981bcd421302543bacf53ed0e3e112}} 
+\hyperlink{interfacevoid}{void} {\bfseries convert2utf16le} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classutf__converter_ac95a995f4836917eda5dbd8eaea6f420}\label{classutf__converter_ac95a995f4836917eda5dbd8eaea6f420}} 
+err\+\_\+types {\bfseries error}
+\item 
+\mbox{\Hypertarget{classutf__converter_a0b36f592864abe055d39c973e48e89b9}\label{classutf__converter_a0b36f592864abe055d39c973e48e89b9}} 
+enc\+\_\+types {\bfseries encoding}
+\item 
+\mbox{\Hypertarget{classutf__converter_a1ea5ff7a1a3a79276af28cad31cdb959}\label{classutf__converter_a1ea5ff7a1a3a79276af28cad31cdb959}} 
+bom\+\_\+types {\bfseries bom\+\_\+type}
+\item 
+\mbox{\Hypertarget{classutf__converter_af91b86a15c5a7bb25143384408dcb143}\label{classutf__converter_af91b86a15c5a7bb25143384408dcb143}} 
+unsigned char {\bfseries buffer} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{classutf__converter_ac652b5794a769062a68700536ea73728}\label{classutf__converter_ac652b5794a769062a68700536ea73728}} 
+unsigned char {\bfseries fill}
+\item 
+\mbox{\Hypertarget{classutf__converter_a9fe32ca75f04ae948b68cff6af4977a5}\label{classutf__converter_a9fe32ca75f04ae948b68cff6af4977a5}} 
+unsigned char {\bfseries index}
+\item 
+\mbox{\Hypertarget{classutf__converter_a2ca5d2f86ee8ece7ca51b43e4d7e65c4}\label{classutf__converter_a2ca5d2f86ee8ece7ca51b43e4d7e65c4}} 
+\hyperlink{classbasic__fstream}{fstream} {\bfseries inputfile}
+\item 
+\mbox{\Hypertarget{classutf__converter_aaacec06d519c78a108a5bff3754dacb8}\label{classutf__converter_aaacec06d519c78a108a5bff3754dacb8}} 
+\hyperlink{classbasic__fstream}{fstream} {\bfseries outputfile}
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned char {\bfseries utf8table} \mbox{[}64\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classutf__converter_a2344354f8e9923372bd845c30faa10f0}\label{classutf__converter_a2344354f8e9923372bd845c30faa10f0}} 
+\index{utf\+\_\+converter@{utf\+\_\+converter}!utf8table@{utf8table}}
+\index{utf8table@{utf8table}!utf\+\_\+converter@{utf\+\_\+converter}}
+\subsubsection{\texorpdfstring{utf8table}{utf8table}}
+{\footnotesize\ttfamily const unsigned char utf\+\_\+converter\+::utf8table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}
+= \{
+1, 9, 17, 25, 33, 41, 49, 57, 65, 73, 81, 89, 97, 105, 113, 121,
+129, 137, 145, 153, 161, 169, 177, 185, 193, 201, 209, 217, 225, 233, 241, 249,
+2, 10, 18, 26, 34, 42, 50, 58, 66, 74, 82, 90, 98, 106, 114, 122,
+3, 11, 19, 27, 35, 43, 51, 59, 4, 12, 20, 28, 5, 13, 6, 7
+\}
+\end{DoxyCode}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/tools/utf16le/utf16le.\+cpp\end{DoxyCompactItemize}

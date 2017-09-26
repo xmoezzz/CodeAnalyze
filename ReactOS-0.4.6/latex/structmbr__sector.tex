@@ -1,0 +1,44 @@
+\hypertarget{structmbr__sector}{}\section{mbr\+\_\+sector结构体 参考}
+\label{structmbr__sector}\index{mbr\+\_\+sector@{mbr\+\_\+sector}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmbr__sector_af14f9df3fcc2b3db2569547575bc95a2}\label{structmbr__sector_af14f9df3fcc2b3db2569547575bc95a2}} 
+uint8\+\_\+t {\bfseries mbr\+\_\+jmpboot} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{structmbr__sector_a3f517add1bab774964c9345c627c8e3a}\label{structmbr__sector_a3f517add1bab774964c9345c627c8e3a}} 
+uint8\+\_\+t {\bfseries mbr\+\_\+oemname} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{structmbr__sector_a8dd0a14f1fc6602036f9acb1d6a51923}\label{structmbr__sector_a8dd0a14f1fc6602036f9acb1d6a51923}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structmbr__bpb_f_a_t12}{mbr\_bpbFAT12} {\bfseries bpb12}\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structmbr__bpb_f_a_t16}{mbr\_bpbFAT16} {\bfseries bpb16}\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structmbr__bpb_f_a_t32}{mbr\_bpbFAT32} {\bfseries bpb32}\\
+\} {\bfseries mbr\_bpb}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structmbr__sector_ac7eeef9a60476b32610fca1d61003991}\label{structmbr__sector_ac7eeef9a60476b32610fca1d61003991}} 
+uint8\+\_\+t {\bfseries mbr\+\_\+bootcode} \mbox{[}310\mbox{]}
+\item 
+\mbox{\Hypertarget{structmbr__sector_ae84e2f4f3659c4241e51ddc2f50d38d9}\label{structmbr__sector_ae84e2f4f3659c4241e51ddc2f50d38d9}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structmbr__bootsel}{mbr\+\_\+bootsel} {\bfseries mbr\+\_\+bootsel}
+\item 
+\mbox{\Hypertarget{structmbr__sector_a8720133ab1c0901ff6e331cf8ead794c}\label{structmbr__sector_a8720133ab1c0901ff6e331cf8ead794c}} 
+uint32\+\_\+t {\bfseries mbr\+\_\+dsn}
+\item 
+\mbox{\Hypertarget{structmbr__sector_ad615f7352c9d977e8ce507954b4e66ca}\label{structmbr__sector_ad615f7352c9d977e8ce507954b4e66ca}} 
+uint16\+\_\+t {\bfseries mbr\+\_\+bootsel\+\_\+magic}
+\item 
+\mbox{\Hypertarget{structmbr__sector_adf9d7bdfde2f952ab020d47590c38587}\label{structmbr__sector_adf9d7bdfde2f952ab020d47590c38587}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structmbr__partition}{mbr\+\_\+partition} {\bfseries mbr\+\_\+parts} \mbox{[}M\+B\+R\+\_\+\+P\+A\+R\+T\+\_\+\+C\+O\+U\+NT\mbox{]}
+\item 
+\mbox{\Hypertarget{structmbr__sector_ae41187c2fcb7eddbebe2886700ddd6eb}\label{structmbr__sector_ae41187c2fcb7eddbebe2886700ddd6eb}} 
+uint16\+\_\+t {\bfseries mbr\+\_\+magic}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/ffs/inc/bootblock.\+h\end{DoxyCompactItemize}

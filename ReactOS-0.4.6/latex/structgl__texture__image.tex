@@ -1,0 +1,156 @@
+\hypertarget{structgl__texture__image}{}\section{gl\+\_\+texture\+\_\+image结构体 参考}
+\label{structgl__texture__image}\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+
+
+{\ttfamily \#include $<$mtypes.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lint \hyperlink{structgl__texture__image_a751bb5023f9e5d258251482e8688552c}{Internal\+Format}
+\item 
+\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structgl__texture__image_a23c4c6cc37d46da9915958b9c8f9f9be}{\+\_\+\+Base\+Format}
+\item 
+gl\+\_\+format \hyperlink{structgl__texture__image_a910b87e255833f89c26ffd6e42fea008}{Tex\+Format}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a7330d1bc4b0c951a62fc4140e4c0f7b8}{Border}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a4beaa43b2d0ae457e9a1f56356946f1d}{Width}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_ad0cd46eed7e3fe51d59bb649e5037dae}{Height}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a2bc8422726a784b5c101295edee63f05}{Depth}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a9724b743b168c804c080912c57e3961d}{Width2}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a62d6a9ac133354a9c022c182adaeb79c}{Height2}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a0a94f825d0045a2c063cf00d072dea91}{Depth2}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a9cdd9a992878f0f281f0336865290b69}{Width\+Log2}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_afda895fd0f10eac420dd4f3633d8beb7}{Height\+Log2}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a40b95495f32aa068c3b8e60ca47af110}{Depth\+Log2}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a54ca8a30b80c45537e69c1aea2ef7b7a}{Max\+Log2}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{structgl__texture__image_a7f92ed7e183543437ac6816195b0799b}{Tex\+Object}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_ac6b1846545335abaa628607e3bd35e7b}{Level}
+\item 
+G\+Luint \hyperlink{structgl__texture__image_a6f00a299a0f065b64cdef797ec3d2930}{Face}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Texture image state. Drivers will typically create a subclass of this with extra fields for memory buffers, etc. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structgl__texture__image_a23c4c6cc37d46da9915958b9c8f9f9be}\label{structgl__texture__image_a23c4c6cc37d46da9915958b9c8f9f9be}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!\+\_\+\+Base\+Format@{\+\_\+\+Base\+Format}}
+\index{\+\_\+\+Base\+Format@{\+\_\+\+Base\+Format}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{\+\_\+\+Base\+Format}{\_BaseFormat}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{G\+Lenum} gl\+\_\+texture\+\_\+image\+::\+\_\+\+Base\+Format}
+
+Either G\+L\+\_\+\+R\+GB, G\+L\+\_\+\+R\+G\+BA, G\+L\+\_\+\+A\+L\+P\+HA, G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE, G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA, G\+L\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY, G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+NT or G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+E\+XT only. Used for choosing Tex\+Env arithmetic. \mbox{\Hypertarget{structgl__texture__image_a7330d1bc4b0c951a62fc4140e4c0f7b8}\label{structgl__texture__image_a7330d1bc4b0c951a62fc4140e4c0f7b8}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Border@{Border}}
+\index{Border@{Border}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Border}{Border}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Border}
+
+0 or 1 \mbox{\Hypertarget{structgl__texture__image_a2bc8422726a784b5c101295edee63f05}\label{structgl__texture__image_a2bc8422726a784b5c101295edee63f05}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Depth@{Depth}}
+\index{Depth@{Depth}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Depth}{Depth}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Depth}
+
+= 2$^\wedge$\+Depth\+Log2 + 2$\ast$\+Border \mbox{\Hypertarget{structgl__texture__image_a0a94f825d0045a2c063cf00d072dea91}\label{structgl__texture__image_a0a94f825d0045a2c063cf00d072dea91}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Depth2@{Depth2}}
+\index{Depth2@{Depth2}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Depth2}{Depth2}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Depth2}
+
+= Depth -\/ 2$\ast$\+Border \mbox{\Hypertarget{structgl__texture__image_a40b95495f32aa068c3b8e60ca47af110}\label{structgl__texture__image_a40b95495f32aa068c3b8e60ca47af110}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Depth\+Log2@{Depth\+Log2}}
+\index{Depth\+Log2@{Depth\+Log2}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Depth\+Log2}{DepthLog2}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Depth\+Log2}
+
+= log2(\+Depth2) \mbox{\Hypertarget{structgl__texture__image_a6f00a299a0f065b64cdef797ec3d2930}\label{structgl__texture__image_a6f00a299a0f065b64cdef797ec3d2930}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Face@{Face}}
+\index{Face@{Face}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Face}{Face}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Face}
+
+Cube map face\+: index into \hyperlink{structgl__texture__object_ad63857c05f285d1d6b19b6dbe660f892}{gl\+\_\+texture\+\_\+object\+::\+Image}\mbox{[}\mbox{]} array \mbox{\Hypertarget{structgl__texture__image_ad0cd46eed7e3fe51d59bb649e5037dae}\label{structgl__texture__image_ad0cd46eed7e3fe51d59bb649e5037dae}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Height@{Height}}
+\index{Height@{Height}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Height}
+
+= 2$^\wedge$\+Height\+Log2 + 2$\ast$\+Border \mbox{\Hypertarget{structgl__texture__image_a62d6a9ac133354a9c022c182adaeb79c}\label{structgl__texture__image_a62d6a9ac133354a9c022c182adaeb79c}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Height2@{Height2}}
+\index{Height2@{Height2}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Height2}{Height2}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Height2}
+
+= Height -\/ 2$\ast$\+Border \mbox{\Hypertarget{structgl__texture__image_afda895fd0f10eac420dd4f3633d8beb7}\label{structgl__texture__image_afda895fd0f10eac420dd4f3633d8beb7}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Height\+Log2@{Height\+Log2}}
+\index{Height\+Log2@{Height\+Log2}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Height\+Log2}{HeightLog2}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Height\+Log2}
+
+= log2(\+Height2) \mbox{\Hypertarget{structgl__texture__image_a751bb5023f9e5d258251482e8688552c}\label{structgl__texture__image_a751bb5023f9e5d258251482e8688552c}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Internal\+Format@{Internal\+Format}}
+\index{Internal\+Format@{Internal\+Format}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Internal\+Format}{InternalFormat}}
+{\footnotesize\ttfamily G\+Lint gl\+\_\+texture\+\_\+image\+::\+Internal\+Format}
+
+Internal format as given by the user \mbox{\Hypertarget{structgl__texture__image_ac6b1846545335abaa628607e3bd35e7b}\label{structgl__texture__image_ac6b1846545335abaa628607e3bd35e7b}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Level@{Level}}
+\index{Level@{Level}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Level}
+
+Which mipmap level am I? \mbox{\Hypertarget{structgl__texture__image_a54ca8a30b80c45537e69c1aea2ef7b7a}\label{structgl__texture__image_a54ca8a30b80c45537e69c1aea2ef7b7a}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Max\+Log2@{Max\+Log2}}
+\index{Max\+Log2@{Max\+Log2}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Max\+Log2}{MaxLog2}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Max\+Log2}
+
+= \hyperlink{boot_2environ_2include_2efi_2_base_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+A\+X(\+Width\+Log2, Height\+Log2)} \mbox{\Hypertarget{structgl__texture__image_a910b87e255833f89c26ffd6e42fea008}\label{structgl__texture__image_a910b87e255833f89c26ffd6e42fea008}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Tex\+Format@{Tex\+Format}}
+\index{Tex\+Format@{Tex\+Format}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Tex\+Format}{TexFormat}}
+{\footnotesize\ttfamily gl\+\_\+format gl\+\_\+texture\+\_\+image\+::\+Tex\+Format}
+
+The actual texture memory format \mbox{\Hypertarget{structgl__texture__image_a7f92ed7e183543437ac6816195b0799b}\label{structgl__texture__image_a7f92ed7e183543437ac6816195b0799b}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Tex\+Object@{Tex\+Object}}
+\index{Tex\+Object@{Tex\+Object}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Tex\+Object}{TexObject}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ gl\+\_\+texture\+\_\+image\+::\+Tex\+Object}
+
+Pointer back to parent object \mbox{\Hypertarget{structgl__texture__image_a4beaa43b2d0ae457e9a1f56356946f1d}\label{structgl__texture__image_a4beaa43b2d0ae457e9a1f56356946f1d}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Width@{Width}}
+\index{Width@{Width}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Width}
+
+= 2$^\wedge$\+Width\+Log2 + 2$\ast$\+Border \mbox{\Hypertarget{structgl__texture__image_a9724b743b168c804c080912c57e3961d}\label{structgl__texture__image_a9724b743b168c804c080912c57e3961d}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Width2@{Width2}}
+\index{Width2@{Width2}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Width2}{Width2}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Width2}
+
+= Width -\/ 2$\ast$\+Border \mbox{\Hypertarget{structgl__texture__image_a9cdd9a992878f0f281f0336865290b69}\label{structgl__texture__image_a9cdd9a992878f0f281f0336865290b69}} 
+\index{gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}!Width\+Log2@{Width\+Log2}}
+\index{Width\+Log2@{Width\+Log2}!gl\+\_\+texture\+\_\+image@{gl\+\_\+texture\+\_\+image}}
+\subsubsection{\texorpdfstring{Width\+Log2}{WidthLog2}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+texture\+\_\+image\+::\+Width\+Log2}
+
+= log2(\+Width2) 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{mtypes_8h}{mtypes.\+h}\end{DoxyCompactItemize}

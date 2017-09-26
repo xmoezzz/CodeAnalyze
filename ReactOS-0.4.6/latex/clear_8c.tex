@@ -1,0 +1,68 @@
+\hypertarget{clear_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/clear.c 文件参考}
+\label{clear_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/clear.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/clear.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{clear_8c_a254e06f1ff77ed23e39386586c68a1a4}{\+\_\+mesa\+\_\+\+Clear\+Color} (G\+Lclampf red, G\+Lclampf green, G\+Lclampf blue, G\+Lclampf alpha)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{clear_8c_aa041043120ab8bfbe361aaa20aa4f3d5}{\+\_\+mesa\+\_\+\+Clear\+Color\+Ii\+E\+XT} (G\+Lint r, G\+Lint g, G\+Lint b, G\+Lint a)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{clear_8c_a2224369f6ddea48b187c9e67ca423656}{\+\_\+mesa\+\_\+\+Clear\+Color\+Iui\+E\+XT} (G\+Luint r, G\+Luint g, G\+Luint b, G\+Luint a)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{clear_8c_a94bc72abc7a2df4e82938d2c6e919cc5}{\+\_\+mesa\+\_\+\+Clear} (G\+Lbitfield mask)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+gl\+Clear\+Color, gl\+Clear\+Index, gl\+Clear() functions. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{clear_8c_a94bc72abc7a2df4e82938d2c6e919cc5}\label{clear_8c_a94bc72abc7a2df4e82938d2c6e919cc5}} 
+\index{clear.\+c@{clear.\+c}!\+\_\+mesa\+\_\+\+Clear@{\+\_\+mesa\+\_\+\+Clear}}
+\index{\+\_\+mesa\+\_\+\+Clear@{\+\_\+mesa\+\_\+\+Clear}!clear.\+c@{clear.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Clear()}{\_mesa\_Clear()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{G\+Lbitfield}]{mask }\end{DoxyParamCaption})}
+
+Clear buffers.
+
+
+\begin{DoxyParams}{参数}
+{\em mask} & bit-\/mask indicating the buffers to be cleared.\\
+\hline
+\end{DoxyParams}
+Flushes the vertices and verifies the parameter. If \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+New\+State is set then calls \+\_\+mesa\+\_\+update\+\_\+state() to update gl\+\_\+frame\+\_\+buffer\+::\+\_\+\+Xmin, etc. If the rasterization mode is set to G\+L\+\_\+\+R\+E\+N\+D\+ER then requests the driver to clear the buffers, via the \hyperlink{structdd__function__table_a5ff278dbc44c864bab3d198b40f0cff9}{dd\+\_\+function\+\_\+table\+::\+Clear} callback. \mbox{\Hypertarget{clear_8c_a254e06f1ff77ed23e39386586c68a1a4}\label{clear_8c_a254e06f1ff77ed23e39386586c68a1a4}} 
+\index{clear.\+c@{clear.\+c}!\+\_\+mesa\+\_\+\+Clear\+Color@{\+\_\+mesa\+\_\+\+Clear\+Color}}
+\index{\+\_\+mesa\+\_\+\+Clear\+Color@{\+\_\+mesa\+\_\+\+Clear\+Color}!clear.\+c@{clear.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Clear\+Color()}{\_mesa\_ClearColor()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Clear\+Color (\begin{DoxyParamCaption}\item[{G\+Lclampf}]{red,  }\item[{G\+Lclampf}]{green,  }\item[{G\+Lclampf}]{blue,  }\item[{G\+Lclampf}]{alpha }\end{DoxyParamCaption})}
+
+Specify the clear values for the color buffers.
+
+
+\begin{DoxyParams}{参数}
+{\em red} & red color component. \\
+\hline
+{\em green} & green color component. \\
+\hline
+{\em blue} & blue color component. \\
+\hline
+{\em alpha} & alpha component.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Clear\+Color().
+\end{DoxySeeAlso}
+Clamps the parameters and updates \hyperlink{structgl__colorbuffer__attrib_ad5e6e80fe1397bed90785951293ddc23}{gl\+\_\+colorbuffer\+\_\+attrib\+::\+Clear\+Color}. On a change, flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_ace26dc0dbb18a0787f792fa5144e739a}{dd\+\_\+function\+\_\+table\+::\+Clear\+Color} callback. \mbox{\Hypertarget{clear_8c_aa041043120ab8bfbe361aaa20aa4f3d5}\label{clear_8c_aa041043120ab8bfbe361aaa20aa4f3d5}} 
+\index{clear.\+c@{clear.\+c}!\+\_\+mesa\+\_\+\+Clear\+Color\+Ii\+E\+XT@{\+\_\+mesa\+\_\+\+Clear\+Color\+Ii\+E\+XT}}
+\index{\+\_\+mesa\+\_\+\+Clear\+Color\+Ii\+E\+XT@{\+\_\+mesa\+\_\+\+Clear\+Color\+Ii\+E\+XT}!clear.\+c@{clear.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Clear\+Color\+Ii\+E\+X\+T()}{\_mesa\_ClearColorIiEXT()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Clear\+Color\+Ii\+E\+XT (\begin{DoxyParamCaption}\item[{G\+Lint}]{r,  }\item[{G\+Lint}]{g,  }\item[{G\+Lint}]{b,  }\item[{G\+Lint}]{a }\end{DoxyParamCaption})}
+
+G\+L\+\_\+\+E\+X\+T\+\_\+texture\+\_\+integer \mbox{\Hypertarget{clear_8c_a2224369f6ddea48b187c9e67ca423656}\label{clear_8c_a2224369f6ddea48b187c9e67ca423656}} 
+\index{clear.\+c@{clear.\+c}!\+\_\+mesa\+\_\+\+Clear\+Color\+Iui\+E\+XT@{\+\_\+mesa\+\_\+\+Clear\+Color\+Iui\+E\+XT}}
+\index{\+\_\+mesa\+\_\+\+Clear\+Color\+Iui\+E\+XT@{\+\_\+mesa\+\_\+\+Clear\+Color\+Iui\+E\+XT}!clear.\+c@{clear.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Clear\+Color\+Iui\+E\+X\+T()}{\_mesa\_ClearColorIuiEXT()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Clear\+Color\+Iui\+E\+XT (\begin{DoxyParamCaption}\item[{G\+Luint}]{r,  }\item[{G\+Luint}]{g,  }\item[{G\+Luint}]{b,  }\item[{G\+Luint}]{a }\end{DoxyParamCaption})}
+
+G\+L\+\_\+\+E\+X\+T\+\_\+texture\+\_\+integer 

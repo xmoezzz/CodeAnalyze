@@ -1,0 +1,37 @@
+\hypertarget{struct_bcd_object_type}{}\section{Bcd\+Object\+Type结构体 参考}
+\label{struct_bcd_object_type}\index{Bcd\+Object\+Type@{Bcd\+Object\+Type}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_bcd_object_type_a716905a7be26da4f73afe2fee44588fe}\label{struct_bcd_object_type_a716905a7be26da4f73afe2fee44588fe}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>ULONG {\bfseries PackedValue}\\
+\mbox{\Hypertarget{union_bcd_object_type_1_1_0D98_a1beb8a6d9f685ac871749c4dd8b6f138}\label{union_bcd_object_type_1_1_0D98_a1beb8a6d9f685ac871749c4dd8b6f138}} 
+\>union \{\\
+\>\>struct \{\\
+\>\>\>ULONG {\bfseries ApplicationCode}: 20\\
+\>\>\>ULONG {\bfseries ImageCode}: 4\\
+\>\>\>ULONG {\bfseries Reserved}: 4\\
+\>\>\>ULONG {\bfseries ObjectCode}: 4\\
+\>\>\} {\bfseries Application}\\
+\>\>struct \{\\
+\>\>\>ULONG {\bfseries Value}: 20\\
+\>\>\>ULONG {\bfseries ClassCode}: 4\\
+\>\>\>ULONG {\bfseries Reserved}: 4\\
+\>\>\>ULONG {\bfseries ObjectCode}: 4\\
+\>\>\} {\bfseries Inherit}\\
+\>\>struct \{\\
+\>\>\>ULONG {\bfseries Reserved}:28\\
+\>\>\>ULONG {\bfseries ObjectCode}: 4\\
+\>\>\} {\bfseries Device}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/boot/environ/include/bcd.\+h\end{DoxyCompactItemize}

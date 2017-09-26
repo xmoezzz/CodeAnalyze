@@ -1,0 +1,411 @@
+\hypertarget{struct___k_i_p_c_r}{}\section{\+\_\+\+K\+I\+P\+C\+R结构体 参考}
+\label{struct___k_i_p_c_r}\index{\+\_\+\+K\+I\+P\+CR@{\+\_\+\+K\+I\+P\+CR}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a9ea0451ee960f3aca05b39ba92410076}\label{struct___k_i_p_c_r_a9ea0451ee960f3aca05b39ba92410076}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct___n_t___t_i_b}{NT\_TIB} {\bfseries NtTib}\\
+\mbox{\Hypertarget{union___k_i_p_c_r_1_1_0D1927_a50ad4c30d809f295d13253ff5414d114}\label{union___k_i_p_c_r_1_1_0D1927_a50ad4c30d809f295d13253ff5414d114}} 
+\>struct \{\\
+\>\>union \hyperlink{union___k_g_d_t_e_n_t_r_y64}{\_KGDTENTRY64} $\ast$ {\bfseries GdtBase}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_t_s_s64}{\_KTSS64} $\ast$ {\bfseries TssBase}\\
+\>\>ULONG64 {\bfseries UserRsp}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_p_c_r}{\_KPCR} $\ast$ {\bfseries Self}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_p_r_c_b}{\_KPRCB} $\ast$ {\bfseries CurrentPrcb}\\
+\>\>\hyperlink{struct___k_s_p_i_n___l_o_c_k___q_u_e_u_e}{PKSPIN\_LOCK\_QUEUE} {\bfseries LockArray}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Used\_Self}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ad5b78368b708b0546186d3e2c2b2faa2}\label{struct___k_i_p_c_r_ad5b78368b708b0546186d3e2c2b2faa2}} 
+union \hyperlink{union___k_i_d_t_e_n_t_r_y64}{\+\_\+\+K\+I\+D\+T\+E\+N\+T\+R\+Y64} $\ast$ {\bfseries Idt\+Base}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_afc5455cb805d31af1346d324a0efd68f}\label{struct___k_i_p_c_r_afc5455cb805d31af1346d324a0efd68f}} 
+U\+L\+O\+N\+G64 {\bfseries Unused} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a349006dc7c5d56e7248c3c7d16a7bbdf}\label{struct___k_i_p_c_r_a349006dc7c5d56e7248c3c7d16a7bbdf}} 
+K\+I\+R\+QL {\bfseries Irql}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a22363f774c0ca338bcf1715fdd028556}\label{struct___k_i_p_c_r_a22363f774c0ca338bcf1715fdd028556}} 
+U\+C\+H\+AR {\bfseries Second\+Level\+Cache\+Associativity}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aa1d444b0dc9f9de9bb0874d9a9e6bfb2}\label{struct___k_i_p_c_r_aa1d444b0dc9f9de9bb0874d9a9e6bfb2}} 
+U\+C\+H\+AR {\bfseries Obsolete\+Number}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a581408824657c64f97b1796ba7c41afa}\label{struct___k_i_p_c_r_a581408824657c64f97b1796ba7c41afa}} 
+U\+C\+H\+AR {\bfseries Fill0}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a768bf33b224cbd7503702b6348cd9b6e}\label{struct___k_i_p_c_r_a768bf33b224cbd7503702b6348cd9b6e}} 
+U\+L\+O\+NG {\bfseries Unused0} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a2168c26f63b8c38ec3075a00fb3f89e4}\label{struct___k_i_p_c_r_a2168c26f63b8c38ec3075a00fb3f89e4}} 
+U\+S\+H\+O\+RT {\bfseries Major\+Version}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a0d9930c8dee9ad74354fb977375f8e1d}\label{struct___k_i_p_c_r_a0d9930c8dee9ad74354fb977375f8e1d}} 
+U\+S\+H\+O\+RT {\bfseries Minor\+Version}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ae9d99d35af1bd465927295e9b2d708c3}\label{struct___k_i_p_c_r_ae9d99d35af1bd465927295e9b2d708c3}} 
+U\+L\+O\+NG {\bfseries Stall\+Scale\+Factor}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a9f9d46fcfa6a7e4a8d50e746de2a5110}\label{struct___k_i_p_c_r_a9f9d46fcfa6a7e4a8d50e746de2a5110}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Unused1} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ad1f4578d1420fbb740275e08dee020ca}\label{struct___k_i_p_c_r_ad1f4578d1420fbb740275e08dee020ca}} 
+U\+L\+O\+NG {\bfseries Kernel\+Reserved} \mbox{[}15\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a133397669f314ee098284f6456c16896}\label{struct___k_i_p_c_r_a133397669f314ee098284f6456c16896}} 
+U\+L\+O\+NG {\bfseries Second\+Level\+Cache\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a7cd37cf98e1fbf1df54f851a9d820b4c}\label{struct___k_i_p_c_r_a7cd37cf98e1fbf1df54f851a9d820b4c}} 
+U\+L\+O\+NG {\bfseries Hal\+Reserved} \mbox{[}16\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_acd34102d3c275750f548511c45662952}\label{struct___k_i_p_c_r_acd34102d3c275750f548511c45662952}} 
+U\+L\+O\+NG {\bfseries Unused2}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a76d59bda38be385acfbf457e486d95f4}\label{struct___k_i_p_c_r_a76d59bda38be385acfbf457e486d95f4}} 
+U\+L\+O\+NG {\bfseries Fill1}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_af34d64eeecfdc6ccfef44eea31e9fa5b}\label{struct___k_i_p_c_r_af34d64eeecfdc6ccfef44eea31e9fa5b}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Kd\+Version\+Block}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ab68b3464fb35785e00425448099559bb}\label{struct___k_i_p_c_r_ab68b3464fb35785e00425448099559bb}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Unused3}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ad88ae3f5b93d6dd0b385afb53a4baf87}\label{struct___k_i_p_c_r_ad88ae3f5b93d6dd0b385afb53a4baf87}} 
+U\+L\+O\+NG {\bfseries Pcr\+Align1} \mbox{[}24\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a7c71f2a0d0728f1370afc776dd159740}\label{struct___k_i_p_c_r_a7c71f2a0d0728f1370afc776dd159740}} 
+U\+L\+O\+NG {\bfseries Fill2} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a075d0dc89aa540ee6b1caf41982a5f49}\label{struct___k_i_p_c_r_a075d0dc89aa540ee6b1caf41982a5f49}} 
+\hyperlink{struct___k_p_r_c_b}{K\+P\+R\+CB} {\bfseries Prcb}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a0489eef0cbe9420d2fb6d6705a7a871e}\label{struct___k_i_p_c_r_a0489eef0cbe9420d2fb6d6705a7a871e}} 
+U\+L\+O\+NG {\bfseries Context\+Switches}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aab17722617cce58bb9f6766501a012c1}\label{struct___k_i_p_c_r_aab17722617cce58bb9f6766501a012c1}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct___n_t___t_i_b}{NT\_TIB} {\bfseries NtTib}\\
+\mbox{\Hypertarget{union___k_i_p_c_r_1_1_0D1960_aa69dd871ddda11da05459b48d52ef135}\label{union___k_i_p_c_r_1_1_0D1960_aa69dd871ddda11da05459b48d52ef135}} 
+\>struct \{\\
+\>\>ULONG {\bfseries TibPad0} \mbox{[}2\mbox{]}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Spare1}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_p_c_r}{\_KPCR} $\ast$ {\bfseries Self}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_p_r_c_b}{\_KPRCB} $\ast$ {\bfseries CurrentPrcb}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_s_p_i_n___l_o_c_k___q_u_e_u_e}{\_KSPIN\_LOCK\_QUEUE} $\ast$ {\bfseries LockArray}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Used\_Self}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a5566572c779e41a88ec514e4b29e75c5}\label{struct___k_i_p_c_r_a5566572c779e41a88ec514e4b29e75c5}} 
+K\+I\+R\+QL {\bfseries Current\+Irql}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_abc18829ccda602f27d63104d5345ab55}\label{struct___k_i_p_c_r_abc18829ccda602f27d63104d5345ab55}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>USHORT {\bfseries SoftwareInterruptPending}\\
+\mbox{\Hypertarget{union___k_i_p_c_r_1_1_0D1962_a7af7767989d6b9cece7f97af2e134df8}\label{union___k_i_p_c_r_1_1_0D1962_a7af7767989d6b9cece7f97af2e134df8}} 
+\>struct \{\\
+\>\>UCHAR {\bfseries ApcInterrupt}\\
+\>\>UCHAR {\bfseries DispatchInterrupt}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a12b87b5b41b7ad6114b66496f110bba5}\label{struct___k_i_p_c_r_a12b87b5b41b7ad6114b66496f110bba5}} 
+U\+S\+H\+O\+RT {\bfseries Interrupt\+Pad}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a1d52a95ed35b686d26e64dbafc609ab2}\label{struct___k_i_p_c_r_a1d52a95ed35b686d26e64dbafc609ab2}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Idt} \mbox{[}256\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a879a23d8b24a018c7d84c735cf483566}\label{struct___k_i_p_c_r_a879a23d8b24a018c7d84c735cf483566}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} $\ast$ {\bfseries Idt\+Ext}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a900cfeeb6ae979da6ae6e9c0f73362cc}\label{struct___k_i_p_c_r_a900cfeeb6ae979da6ae6e9c0f73362cc}} 
+U\+L\+O\+NG {\bfseries Pcr\+Align2} \mbox{[}19\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aeaaca1c319134eb29dae7b7a746ee556}\label{struct___k_i_p_c_r_aeaaca1c319134eb29dae7b7a746ee556}} 
+U\+C\+H\+AR {\bfseries \+\_\+\+P\+A\+D\+D\+I\+N\+G1\+\_\+} \mbox{[}0x4\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a5027d11fc905b1b00daa1492c6efda34}\label{struct___k_i_p_c_r_a5027d11fc905b1b00daa1492c6efda34}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct___n_t___t_i_b}{NT\_TIB} {\bfseries NtTib}\\
+\mbox{\Hypertarget{union___k_i_p_c_r_1_1_0D2035_a9ffe2b050a486671b7d0cb45608c6fce}\label{union___k_i_p_c_r_1_1_0D2035_a9ffe2b050a486671b7d0cb45608c6fce}} 
+\>struct \{\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___e_x_c_e_p_t_i_o_n___r_e_g_i_s_t_r_a_t_i_o_n___r_e_c_o_r_d}{\_EXCEPTION\_REGISTRATION\_RECORD} $\ast$ {\bfseries Used\_ExceptionList}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Used\_StackBase}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries PerfGlobalGroupMask}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries TssCopy}\\
+\>\>ULONG {\bfseries ContextSwitches}\\
+\>\>KAFFINITY {\bfseries SetMemberCopy}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Used\_Self}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a9eb0c92046693ca522dc91afbd8c6d0f}\label{struct___k_i_p_c_r_a9eb0c92046693ca522dc91afbd8c6d0f}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_p_r_c_b}{\+\_\+\+K\+P\+R\+CB} $\ast$ {\bfseries Prcb}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a604cd58c0a25c8b4aec8752bb40876d6}\label{struct___k_i_p_c_r_a604cd58c0a25c8b4aec8752bb40876d6}} 
+U\+L\+O\+NG {\bfseries I\+RR}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a31e2c74796d7e4b8894f74c4b8e815ad}\label{struct___k_i_p_c_r_a31e2c74796d7e4b8894f74c4b8e815ad}} 
+U\+L\+O\+NG {\bfseries Irr\+Active}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ac9a46033a60462a8c9d9de053c029511}\label{struct___k_i_p_c_r_ac9a46033a60462a8c9d9de053c029511}} 
+U\+L\+O\+NG {\bfseries I\+DR}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a17bd6324f215db19dd0f0b69b56a190d}\label{struct___k_i_p_c_r_a17bd6324f215db19dd0f0b69b56a190d}} 
+\hyperlink{struct___k_i_d_t_e_n_t_r_y}{P\+K\+I\+D\+T\+E\+N\+T\+RY} {\bfseries I\+DT}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a70bf7cbd26db8b2fc67b6775ff081cb7}\label{struct___k_i_p_c_r_a70bf7cbd26db8b2fc67b6775ff081cb7}} 
+\hyperlink{struct___k_g_d_t_e_n_t_r_y}{P\+K\+G\+D\+T\+E\+N\+T\+RY} {\bfseries G\+DT}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a9d42686e65ba89d8b360479a554bfdbe}\label{struct___k_i_p_c_r_a9d42686e65ba89d8b360479a554bfdbe}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_t_s_s}{\+\_\+\+K\+T\+SS} $\ast$ {\bfseries T\+SS}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a541c7c73ab511e921933cebed9819012}\label{struct___k_i_p_c_r_a541c7c73ab511e921933cebed9819012}} 
+K\+A\+F\+F\+I\+N\+I\+TY {\bfseries Set\+Member}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ae71621df78fdf4a464495adaabc8bd74}\label{struct___k_i_p_c_r_ae71621df78fdf4a464495adaabc8bd74}} 
+U\+C\+H\+AR {\bfseries Spare\+Unused}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a394314cf4d7ab1f63232555dc204dc93}\label{struct___k_i_p_c_r_a394314cf4d7ab1f63232555dc204dc93}} 
+U\+C\+H\+AR {\bfseries Number}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ad4af4f9ee16f896828fb5fe0c720e222}\label{struct___k_i_p_c_r_ad4af4f9ee16f896828fb5fe0c720e222}} 
+U\+C\+H\+AR {\bfseries Spare0}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aecea0f8df7ea6eb16f3ecf65a363c909}\label{struct___k_i_p_c_r_aecea0f8df7ea6eb16f3ecf65a363c909}} 
+U\+L\+O\+NG {\bfseries Vdm\+Alert}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a705253d34baafccfff5e489c608b69ae}\label{struct___k_i_p_c_r_a705253d34baafccfff5e489c608b69ae}} 
+U\+L\+O\+NG {\bfseries Interrupt\+Mode}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a6395e732bb984098af070522294742e2}\label{struct___k_i_p_c_r_a6395e732bb984098af070522294742e2}} 
+U\+C\+H\+AR {\bfseries Spare1}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a5e249062b8a147922219c1cd6db336ae}\label{struct___k_i_p_c_r_a5e249062b8a147922219c1cd6db336ae}} 
+U\+L\+O\+NG {\bfseries Kernel\+Reserved2} \mbox{[}17\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a45eea1315dc64fe05a14d6492c4fcece}\label{struct___k_i_p_c_r_a45eea1315dc64fe05a14d6492c4fcece}} 
+\hyperlink{struct___k_p_r_c_b}{K\+P\+R\+CB} {\bfseries Prcb\+Data}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ad738549775fd4a3092739eb845a87d79}\label{struct___k_i_p_c_r_ad738549775fd4a3092739eb845a87d79}} 
+P\+K\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+R\+O\+U\+T\+I\+NE {\bfseries Interrupt\+Routine} \mbox{[}M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+E\+C\+T\+OR\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ac4504d24cd089573e23d969902b4744d}\label{struct___k_i_p_c_r_ac4504d24cd089573e23d969902b4744d}} 
+U\+L\+O\+NG {\bfseries Pcr\+Page2}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a73609c76ebc21842e3374a9251d77a4e}\label{struct___k_i_p_c_r_a73609c76ebc21842e3374a9251d77a4e}} 
+U\+L\+O\+NG {\bfseries Kseg0\+Top}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aaf89f113f705a7adb32a88eab6a6d5b4}\label{struct___k_i_p_c_r_aaf89f113f705a7adb32a88eab6a6d5b4}} 
+U\+L\+O\+NG {\bfseries Spare7} \mbox{[}30\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_adf6042bcce37668acb793c9bd0b5fdf2}\label{struct___k_i_p_c_r_adf6042bcce37668acb793c9bd0b5fdf2}} 
+U\+L\+O\+NG {\bfseries First\+Level\+Dcache\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ac570db53f4e6a3eb2bd0d95fd7d3c937}\label{struct___k_i_p_c_r_ac570db53f4e6a3eb2bd0d95fd7d3c937}} 
+U\+L\+O\+NG {\bfseries First\+Level\+Dcache\+Fill\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a142bb5760aa3e0726c30f3fe83dd3824}\label{struct___k_i_p_c_r_a142bb5760aa3e0726c30f3fe83dd3824}} 
+U\+L\+O\+NG {\bfseries First\+Level\+Icache\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a30fcf673cda209fc3c90e395bee368e9}\label{struct___k_i_p_c_r_a30fcf673cda209fc3c90e395bee368e9}} 
+U\+L\+O\+NG {\bfseries First\+Level\+Icache\+Fill\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a1f3f7496d1229cdc8de8226798553f58}\label{struct___k_i_p_c_r_a1f3f7496d1229cdc8de8226798553f58}} 
+U\+L\+O\+NG {\bfseries Second\+Level\+Dcache\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a726938127036b064dbd5e8e96be63298}\label{struct___k_i_p_c_r_a726938127036b064dbd5e8e96be63298}} 
+U\+L\+O\+NG {\bfseries Second\+Level\+Dcache\+Fill\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aa73a3bfcb92f396541bcfa442e265dbf}\label{struct___k_i_p_c_r_aa73a3bfcb92f396541bcfa442e265dbf}} 
+U\+L\+O\+NG {\bfseries Second\+Level\+Icache\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a2934652df046f4777e2f0fdc84bc2154}\label{struct___k_i_p_c_r_a2934652df046f4777e2f0fdc84bc2154}} 
+U\+L\+O\+NG {\bfseries Second\+Level\+Icache\+Fill\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a871df3f71859683f2d066251a8289fda}\label{struct___k_i_p_c_r_a871df3f71859683f2d066251a8289fda}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_p_r_c_b}{\+\_\+\+K\+P\+R\+CB} $\ast$ {\bfseries Prcb\+Data}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_afbee98b996475d1a14f5a13bf9056f94}\label{struct___k_i_p_c_r_afbee98b996475d1a14f5a13bf9056f94}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Teb}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a948ca54c4886f5f1ec6e34e20c34533f}\label{struct___k_i_p_c_r_a948ca54c4886f5f1ec6e34e20c34533f}} 
+U\+L\+O\+NG {\bfseries Dcache\+Alignment}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ab96312d897750a9fbd104cd1d562fe12}\label{struct___k_i_p_c_r_ab96312d897750a9fbd104cd1d562fe12}} 
+U\+L\+O\+NG {\bfseries Dcache\+Fill\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a06341ea28d6c964efd61938f9bc10684}\label{struct___k_i_p_c_r_a06341ea28d6c964efd61938f9bc10684}} 
+U\+L\+O\+NG {\bfseries Icache\+Alignment}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_af1b414a6c788d687d5f8b6b929d172dc}\label{struct___k_i_p_c_r_af1b414a6c788d687d5f8b6b929d172dc}} 
+U\+L\+O\+NG {\bfseries Icache\+Fill\+Size}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a981f853ceedf08e618f3a9f54359d714}\label{struct___k_i_p_c_r_a981f853ceedf08e618f3a9f54359d714}} 
+U\+L\+O\+NG {\bfseries Processor\+Version}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a07c2e7dea14e2355b5cf0fe39d160552}\label{struct___k_i_p_c_r_a07c2e7dea14e2355b5cf0fe39d160552}} 
+U\+L\+O\+NG {\bfseries Processor\+Revision}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_acdd474cb1f72dd53ffec708eabf13f02}\label{struct___k_i_p_c_r_acdd474cb1f72dd53ffec708eabf13f02}} 
+U\+L\+O\+NG {\bfseries Profile\+Interval}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a272d78307a39cc5408ac442375b0c41a}\label{struct___k_i_p_c_r_a272d78307a39cc5408ac442375b0c41a}} 
+U\+L\+O\+NG {\bfseries Profile\+Count}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a6f1490f8e383b59726a0afe5abfb05bd}\label{struct___k_i_p_c_r_a6f1490f8e383b59726a0afe5abfb05bd}} 
+U\+L\+O\+NG {\bfseries Stall\+Execution\+Count}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a0daeaca0f005c7431e4eab0543b98d91}\label{struct___k_i_p_c_r_a0daeaca0f005c7431e4eab0543b98d91}} 
+U\+L\+O\+NG {\bfseries Spare}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a56b9c975b16ec2b33649e22612f6a88f}\label{struct___k_i_p_c_r_a56b9c975b16ec2b33649e22612f6a88f}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>ULONG {\bfseries CachePolicy}\\
+\mbox{\Hypertarget{union___k_i_p_c_r_1_1_0D2193_a3afacbd5aa14737ee3b248d5c8c9478d}\label{union___k_i_p_c_r_1_1_0D2193_a3afacbd5aa14737ee3b248d5c8c9478d}} 
+\>struct \{\\
+\>\>UCHAR {\bfseries IcacheMode}\\
+\>\>UCHAR {\bfseries DcacheMode}\\
+\>\>USHORT {\bfseries ModeSpare}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a85705c1b91cf0478513a08b95d1b10fd}\label{struct___k_i_p_c_r_a85705c1b91cf0478513a08b95d1b10fd}} 
+U\+C\+H\+AR {\bfseries Irql\+Mask} \mbox{[}32\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_af8583469b6bfc618e168b932e8bbc19a}\label{struct___k_i_p_c_r_af8583469b6bfc618e168b932e8bbc19a}} 
+U\+C\+H\+AR {\bfseries Irql\+Table} \mbox{[}9\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a200342f424a6a086d72aed487a4d9a7a}\label{struct___k_i_p_c_r_a200342f424a6a086d72aed487a4d9a7a}} 
+U\+C\+H\+AR {\bfseries Current\+Irql}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a49e0bb941a37b962652a41c0880b5038}\label{struct___k_i_p_c_r_a49e0bb941a37b962652a41c0880b5038}} 
+C\+C\+H\+AR {\bfseries Number}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a0652306c9832baa25eaaadd87a397d00}\label{struct___k_i_p_c_r_a0652306c9832baa25eaaadd87a397d00}} 
+U\+L\+O\+NG {\bfseries Reserved\+Vectors}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a6147d139603cd8199c575ff1ca7f388b}\label{struct___k_i_p_c_r_a6147d139603cd8199c575ff1ca7f388b}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct___k_t_h_r_e_a_d}{\+\_\+\+K\+T\+H\+R\+E\+AD} $\ast$ {\bfseries Current\+Thread}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aa9a6103df8709209173b19aea40fc0e1}\label{struct___k_i_p_c_r_aa9a6103df8709209173b19aea40fc0e1}} 
+U\+L\+O\+NG {\bfseries Aligned\+Cache\+Policy}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a3fe55c2bb0ec5d090874bf4bd20fb2b3}\label{struct___k_i_p_c_r_a3fe55c2bb0ec5d090874bf4bd20fb2b3}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>ULONG {\bfseries SoftwareInterrupt}\\
+\mbox{\Hypertarget{union___k_i_p_c_r_1_1_0D2195_a19e4cf8f5cf597b28efcbf804f6cbdc9}\label{union___k_i_p_c_r_1_1_0D2195_a19e4cf8f5cf597b28efcbf804f6cbdc9}} 
+\>struct \{\\
+\>\>UCHAR {\bfseries ApcInterrupt}\\
+\>\>UCHAR {\bfseries DispatchInterrupt}\\
+\>\>UCHAR {\bfseries Spare4}\\
+\>\>UCHAR {\bfseries Spare5}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_abe618a3fdfbd19261c5036bd912ab3b1}\label{struct___k_i_p_c_r_abe618a3fdfbd19261c5036bd912ab3b1}} 
+K\+A\+F\+F\+I\+N\+I\+TY {\bfseries Not\+Member}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a2507075a0a8165cfd4a649d4e30fb2f8}\label{struct___k_i_p_c_r_a2507075a0a8165cfd4a649d4e30fb2f8}} 
+U\+L\+O\+NG {\bfseries System\+Reserved} \mbox{[}16\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aa43bacbb129d16d9f75f9e0934571882}\label{struct___k_i_p_c_r_aa43bacbb129d16d9f75f9e0934571882}} 
+U\+L\+O\+NG {\bfseries First\+Level\+Active}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ad73de65f1096271107540d885ef31777}\label{struct___k_i_p_c_r_ad73de65f1096271107540d885ef31777}} 
+U\+L\+O\+NG {\bfseries System\+Service\+Dispatch\+Start}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a2b0d2bca3fd31d540b938fb23dee0399}\label{struct___k_i_p_c_r_a2b0d2bca3fd31d540b938fb23dee0399}} 
+U\+L\+O\+NG {\bfseries System\+Service\+Dispatch\+End}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a4fb509f57e0ec7b51dd394960662e92c}\label{struct___k_i_p_c_r_a4fb509f57e0ec7b51dd394960662e92c}} 
+U\+L\+O\+NG {\bfseries Interrupt\+Stack}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a30f98c93411fb5e6c3323e42ef982064}\label{struct___k_i_p_c_r_a30f98c93411fb5e6c3323e42ef982064}} 
+U\+L\+O\+NG {\bfseries Quantum\+End}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ae404e8b87edcea3ba2a58b51d3469b43}\label{struct___k_i_p_c_r_ae404e8b87edcea3ba2a58b51d3469b43}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Initial\+Stack}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a9c9e12ecdfb96a8a58ef3a68126e9561}\label{struct___k_i_p_c_r_a9c9e12ecdfb96a8a58ef3a68126e9561}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Panic\+Stack}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a6998b44fda8d44b253305dadca571fb8}\label{struct___k_i_p_c_r_a6998b44fda8d44b253305dadca571fb8}} 
+U\+L\+O\+NG {\bfseries Bad\+Vaddr}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a9356bf681df09a95f9e1a905f199eb53}\label{struct___k_i_p_c_r_a9356bf681df09a95f9e1a905f199eb53}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Stack\+Limit}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a548353357b8c86907cbd084f653581f3}\label{struct___k_i_p_c_r_a548353357b8c86907cbd084f653581f3}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Saved\+Stack\+Limit}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a75394871de087aef03dc46e5a02224a5}\label{struct___k_i_p_c_r_a75394871de087aef03dc46e5a02224a5}} 
+U\+L\+O\+NG {\bfseries Saved\+V0}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_abf4862c58ca9f3f558007eaaab33fa49}\label{struct___k_i_p_c_r_abf4862c58ca9f3f558007eaaab33fa49}} 
+U\+L\+O\+NG {\bfseries Saved\+V1}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a0d311cb3545f5a08e4d64fccd6cc1e38}\label{struct___k_i_p_c_r_a0d311cb3545f5a08e4d64fccd6cc1e38}} 
+U\+C\+H\+AR {\bfseries Debug\+Active}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_af2277743093d0eee34434767c0f27502}\label{struct___k_i_p_c_r_af2277743093d0eee34434767c0f27502}} 
+U\+C\+H\+AR {\bfseries Spare6} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ae826487428109f7f080181065d7300be}\label{struct___k_i_p_c_r_ae826487428109f7f080181065d7300be}} 
+U\+L\+O\+NG {\bfseries Gpr\+Save} \mbox{[}6\mbox{]}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a8ee61a4e64ca6aba8d0567f588eda015}\label{struct___k_i_p_c_r_a8ee61a4e64ca6aba8d0567f588eda015}} 
+U\+L\+O\+NG {\bfseries Si\+R0}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a9367225a96741ae5d4c9ec60ccdb4842}\label{struct___k_i_p_c_r_a9367225a96741ae5d4c9ec60ccdb4842}} 
+U\+L\+O\+NG {\bfseries Si\+R2}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a2d86bdfa3c5c554476046960a56ca4e3}\label{struct___k_i_p_c_r_a2d86bdfa3c5c554476046960a56ca4e3}} 
+U\+L\+O\+NG {\bfseries Si\+R3}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ae8824fd7869084595ce4362da5cbdce4}\label{struct___k_i_p_c_r_ae8824fd7869084595ce4362da5cbdce4}} 
+U\+L\+O\+NG {\bfseries Si\+R4}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a2f03a114de777c91ded6501ddbea24f6}\label{struct___k_i_p_c_r_a2f03a114de777c91ded6501ddbea24f6}} 
+U\+L\+O\+NG {\bfseries Si\+R5}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_aee34ae08f103d3256ad271ef1c96db3e}\label{struct___k_i_p_c_r_aee34ae08f103d3256ad271ef1c96db3e}} 
+U\+L\+O\+NG {\bfseries Spare0}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_a22450cb1d3fa346b3ce1df52136a415b}\label{struct___k_i_p_c_r_a22450cb1d3fa346b3ce1df52136a415b}} 
+U\+L\+O\+NG {\bfseries Spare8}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_af6264f02745402395f2fc33e9c0c372d}\label{struct___k_i_p_c_r_af6264f02745402395f2fc33e9c0c372d}} 
+U\+L\+O\+NG {\bfseries Pg\+Dir\+Ra}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ad146bc4232bb78cca76fc2cd2d265776}\label{struct___k_i_p_c_r_ad146bc4232bb78cca76fc2cd2d265776}} 
+U\+L\+O\+NG {\bfseries On\+Interrupt\+Stack}
+\item 
+\mbox{\Hypertarget{struct___k_i_p_c_r_ab216eb5715ed25fa11936c2da3a07c95}\label{struct___k_i_p_c_r_ab216eb5715ed25fa11936c2da3a07c95}} 
+U\+L\+O\+NG {\bfseries Saved\+Initial\+Stack}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/ndk/amd64/ketypes.\+h\end{DoxyCompactItemize}

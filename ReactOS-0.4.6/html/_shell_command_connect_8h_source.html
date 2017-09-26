@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/modules/rosapps/applications/sysutils/regexpl/ShellCommandConnect.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_455a3560abea4864820da1bb9abc4f47.html">modules</a></li><li class="navelem"><a class="el" href="dir_2ac4fadfe2a22516c77666bc1d042cf6.html">rosapps</a></li><li class="navelem"><a class="el" href="dir_b55192eb6dc0306191a7b6a891424cae.html">applications</a></li><li class="navelem"><a class="el" href="dir_cd2844e86fe7cac2da6585896a6493a2.html">sysutils</a></li><li class="navelem"><a class="el" href="dir_fa2d6f3135c1080557c841373183dc3e.html">regexpl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ShellCommandConnect.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// ShellCommandConnect.h: interface for the CShellCommandConnect class.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if !defined(SHELLCOMMANDCONNECT_H__848A250C_5A0F_11D4_A039_FC2CE602E70F__INCLUDED_)</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SHELLCOMMANDCONNECT_H__848A250C_5A0F_11D4_A039_FC2CE602E70F__INCLUDED_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;ShellCommand.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;RegistryTree.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_c_shell_command_connect.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_shell_command_connect.html">CShellCommandConnect</a> : <span class="keyword">public</span> <a class="code" href="class_c_shell_command.html">CShellCommand</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_c_shell_command_connect.html">CShellCommandConnect</a>(<a class="code" href="class_c_registry_tree.html">CRegistryTree</a>&amp; rTree);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_c_shell_command_connect.html">CShellCommandConnect</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> BOOL Match(<span class="keyword">const</span> TCHAR *pchCommand);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> Execute(<a class="code" href="class_c_console.html">CConsole</a> &amp;rConsole, <a class="code" href="class_c_argument_parser.html">CArgumentParser</a>&amp; rArguments);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> TCHAR * GetHelpString();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> TCHAR * GetHelpShortDescriptionString();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_c_registry_tree.html">CRegistryTree</a>&amp; m_rTree;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif // !defined(SHELLCOMMANDCONNECT_H__848A250C_5A0F_11D4_A039_FC2CE602E70F__INCLUDED_)</span></div><div class="ttc" id="class_c_argument_parser_html"><div class="ttname"><a href="class_c_argument_parser.html">CArgumentParser</a></div><div class="ttdef"><b>Definition:</b> ArgumentParser.h:10</div></div>
+<div class="ttc" id="class_c_shell_command_html"><div class="ttname"><a href="class_c_shell_command.html">CShellCommand</a></div><div class="ttdef"><b>Definition:</b> ShellCommand.h:13</div></div>
+<div class="ttc" id="class_c_shell_command_connect_html"><div class="ttname"><a href="class_c_shell_command_connect.html">CShellCommandConnect</a></div><div class="ttdef"><b>Definition:</b> ShellCommandConnect.h:12</div></div>
+<div class="ttc" id="class_c_console_html"><div class="ttname"><a href="class_c_console.html">CConsole</a></div><div class="ttdef"><b>Definition:</b> Console.h:12</div></div>
+<div class="ttc" id="class_c_registry_tree_html"><div class="ttname"><a href="class_c_registry_tree.html">CRegistryTree</a></div><div class="ttdef"><b>Definition:</b> RegistryTree.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: _AssocStorageTypes&lt; _Tp, _Compare &gt; 模板结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="struct___assoc_storage_types-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">_AssocStorageTypes&lt; _Tp, _Compare &gt; 模板结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a3ab3a9907f4b55184b497e1c92e36d45"><td class="memItemLeft" align="right" valign="top"><a id="a3ab3a9907f4b55184b497e1c92e36d45"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>ptr_type</b> = _StorageTypeInfo::use_const_volatile_void_ptr
+ }</td></tr>
+<tr class="separator:a3ab3a9907f4b55184b497e1c92e36d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14266e8afdfa5ef43d4196c2c8ba951"><td class="memItemLeft" align="right" valign="top"><a id="ab14266e8afdfa5ef43d4196c2c8ba951"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>is_default_less</b> = __type2bool&lt;_STLportLess&gt;::_Ret
+ }</td></tr>
+<tr class="separator:ab14266e8afdfa5ef43d4196c2c8ba951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7edda2f0daba6aa14054d444d89dd6"><td class="memItemLeft" align="right" valign="top"><a id="aff7edda2f0daba6aa14054d444d89dd6"></a>
+typedef <a class="el" href="struct___storage_type.html">_StorageType</a>&lt; _Tp &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_StorageTypeInfo</b></td></tr>
+<tr class="separator:aff7edda2f0daba6aa14054d444d89dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c1581d04ddd076314a6ca74187a837"><td class="memItemLeft" align="right" valign="top"><a id="ac5c1581d04ddd076314a6ca74187a837"></a>
+typedef _StorageTypeInfo::_Type&#160;</td><td class="memItemRight" valign="bottom"><b>_SType</b></td></tr>
+<tr class="separator:ac5c1581d04ddd076314a6ca74187a837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f133a37df61f7ee4c39d89936769005"><td class="memItemLeft" align="right" valign="top"><a id="a1f133a37df61f7ee4c39d89936769005"></a>
+typedef <a class="el" href="struct___is_s_t_lport_class.html">_IsSTLportClass</a>&lt; _Compare &gt;::_Ret&#160;</td><td class="memItemRight" valign="bottom"><b>_STLportLess</b></td></tr>
+<tr class="separator:a1f133a37df61f7ee4c39d89936769005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8e796d3769249b1b4c343a08826abe"><td class="memItemLeft" align="right" valign="top"><a id="a1e8e796d3769249b1b4c343a08826abe"></a>
+typedef <a class="el" href="struct____select.html">__select</a>&lt; is_default_less, _SType, _Tp &gt;::_Ret&#160;</td><td class="memItemRight" valign="bottom"><b>_KeyStorageType</b></td></tr>
+<tr class="separator:a1e8e796d3769249b1b4c343a08826abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757a1b40d71c85d0351867e6fae8b3f8"><td class="memItemLeft" align="right" valign="top"><a id="a757a1b40d71c85d0351867e6fae8b3f8"></a>
+typedef <a class="el" href="struct____select.html">__select</a>&lt; is_default_less &amp;&amp;ptr_type, <a class="el" href="struct___binary_pred_wrapper.html">_BinaryPredWrapper</a>&lt; _KeyStorageType, _Tp, _Compare &gt;, _Compare &gt;::_Ret&#160;</td><td class="memItemRight" valign="bottom"><b>_CompareStorageType</b></td></tr>
+<tr class="separator:a757a1b40d71c85d0351867e6fae8b3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/c++/stlport/stl/pointers/<a class="el" href="__tools_8h_source.html">_tools.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

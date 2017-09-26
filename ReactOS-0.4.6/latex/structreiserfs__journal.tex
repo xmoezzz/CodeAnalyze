@@ -1,0 +1,181 @@
+\hypertarget{structreiserfs__journal}{}\section{reiserfs\+\_\+journal结构体 参考}
+\label{structreiserfs__journal}\index{reiserfs\+\_\+journal@{reiserfs\+\_\+journal}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a9f087ce1da2cf35db2c13bbc217bff62}\label{structreiserfs__journal_a9f087ce1da2cf35db2c13bbc217bff62}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structbuffer__head}{buffer\+\_\+head} $\ast$$\ast$ {\bfseries j\+\_\+ap\+\_\+blocks}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a4a960beb6cfd213bd7dc290c8298be38}\label{structreiserfs__journal_a4a960beb6cfd213bd7dc290c8298be38}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+last}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a1e9c578314b0327a28d771f861c09fd3}\label{structreiserfs__journal_a1e9c578314b0327a28d771f861c09fd3}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+first}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_afde3e6ac99ce39545478c8c46757a09b}\label{structreiserfs__journal_afde3e6ac99ce39545478c8c46757a09b}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structfile}{file} $\ast$ {\bfseries j\+\_\+dev\+\_\+file}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a773f1d1d523dcd4095cd55a50e13b0e1}\label{structreiserfs__journal_a773f1d1d523dcd4095cd55a50e13b0e1}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structblock__device}{block\+\_\+device} $\ast$ {\bfseries j\+\_\+dev\+\_\+bd}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a13acb2e1c53044eb1886c761fd8c617c}\label{structreiserfs__journal_a13acb2e1c53044eb1886c761fd8c617c}} 
+int {\bfseries j\+\_\+1st\+\_\+reserved\+\_\+block}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a5cd88b2648fef356766576df27ddc888}\label{structreiserfs__journal_a5cd88b2648fef356766576df27ddc888}} 
+long {\bfseries j\+\_\+state}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a9bb6b12f778e6c1d30d292d2ca6a265a}\label{structreiserfs__journal_a9bb6b12f778e6c1d30d292d2ca6a265a}} 
+unsigned long {\bfseries j\+\_\+trans\+\_\+id}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a82f1e232a154b1b59e1d0814cba8dfbb}\label{structreiserfs__journal_a82f1e232a154b1b59e1d0814cba8dfbb}} 
+unsigned long {\bfseries j\+\_\+mount\+\_\+id}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_aaf1ee9ef3313bb245e5f60ff3b81d520}\label{structreiserfs__journal_aaf1ee9ef3313bb245e5f60ff3b81d520}} 
+unsigned long {\bfseries j\+\_\+start}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a8ec1ff98cc4fbe89184f4ffa374a80bf}\label{structreiserfs__journal_a8ec1ff98cc4fbe89184f4ffa374a80bf}} 
+unsigned long {\bfseries j\+\_\+len}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ae3014f096ff176c6286c48e865a1522f}\label{structreiserfs__journal_ae3014f096ff176c6286c48e865a1522f}} 
+unsigned long {\bfseries j\+\_\+len\+\_\+alloc}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ac136a9b84f043a946bcc088e5a25cbb8}\label{structreiserfs__journal_ac136a9b84f043a946bcc088e5a25cbb8}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries j\+\_\+wcount}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ab605881b497714809c900b44b657a5c1}\label{structreiserfs__journal_ab605881b497714809c900b44b657a5c1}} 
+unsigned long {\bfseries j\+\_\+bcount}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a30f1b8996be3ad8838a2f81745dafb93}\label{structreiserfs__journal_a30f1b8996be3ad8838a2f81745dafb93}} 
+unsigned long {\bfseries j\+\_\+first\+\_\+unflushed\+\_\+offset}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ac52b90d3f2df274a402433ca6782973b}\label{structreiserfs__journal_ac52b90d3f2df274a402433ca6782973b}} 
+unsigned long {\bfseries j\+\_\+last\+\_\+flush\+\_\+trans\+\_\+id}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a6dbfa8964373e4167d70f8e9d36770e5}\label{structreiserfs__journal_a6dbfa8964373e4167d70f8e9d36770e5}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structbuffer__head}{buffer\+\_\+head} $\ast$ {\bfseries j\+\_\+header\+\_\+bh}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a08062c938f4a11a94ca1792c25424d38}\label{structreiserfs__journal_a08062c938f4a11a94ca1792c25424d38}} 
+time\+\_\+t {\bfseries j\+\_\+trans\+\_\+start\+\_\+time}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ad523316c03f13630392b43f4c252b809}\label{structreiserfs__journal_ad523316c03f13630392b43f4c252b809}} 
+\hyperlink{interfacestruct}{struct} semaphore {\bfseries j\+\_\+lock}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_af997dca5305006a4a8cb68ab010379f2}\label{structreiserfs__journal_af997dca5305006a4a8cb68ab010379f2}} 
+\hyperlink{interfacestruct}{struct} semaphore {\bfseries j\+\_\+flush\+\_\+sem}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_af85746a72811ebbc4066f871f9584890}\label{structreiserfs__journal_af85746a72811ebbc4066f871f9584890}} 
+\hyperlink{struct____wait__queue__head}{wait\+\_\+queue\+\_\+head\+\_\+t} {\bfseries j\+\_\+join\+\_\+wait}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a85bceff7c9faea1d9ec35fb0edd15a23}\label{structreiserfs__journal_a85bceff7c9faea1d9ec35fb0edd15a23}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries j\+\_\+jlock}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ae2a95d794d66774728119051ce01c167}\label{structreiserfs__journal_ae2a95d794d66774728119051ce01c167}} 
+int {\bfseries j\+\_\+list\+\_\+bitmap\+\_\+index}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ad8fe60f6d6785da555cb39f9d834eb3b}\label{structreiserfs__journal_ad8fe60f6d6785da555cb39f9d834eb3b}} 
+int {\bfseries j\+\_\+must\+\_\+wait}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a5ed8b13003b468f2b2cc0e0e944ddca5}\label{structreiserfs__journal_a5ed8b13003b468f2b2cc0e0e944ddca5}} 
+int {\bfseries j\+\_\+next\+\_\+full\+\_\+flush}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a0a797bb0ea0e5491b8e34659e4163b0d}\label{structreiserfs__journal_a0a797bb0ea0e5491b8e34659e4163b0d}} 
+int {\bfseries j\+\_\+next\+\_\+async\+\_\+flush}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a041afb7d61a4c9182e92c5e54b501bac}\label{structreiserfs__journal_a041afb7d61a4c9182e92c5e54b501bac}} 
+int {\bfseries j\+\_\+cnode\+\_\+used}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ae0cb8b18422648a98e33006ddc8969bf}\label{structreiserfs__journal_ae0cb8b18422648a98e33006ddc8969bf}} 
+int {\bfseries j\+\_\+cnode\+\_\+free}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a65a81e6033ab2e55f2a73bb0c6d0954c}\label{structreiserfs__journal_a65a81e6033ab2e55f2a73bb0c6d0954c}} 
+unsigned int {\bfseries j\+\_\+trans\+\_\+max}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_afc67211e1a1eea132a2aeca93b57d846}\label{structreiserfs__journal_afc67211e1a1eea132a2aeca93b57d846}} 
+unsigned int {\bfseries j\+\_\+max\+\_\+batch}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a25d33382a6314d63b716d2f6b1b3e089}\label{structreiserfs__journal_a25d33382a6314d63b716d2f6b1b3e089}} 
+unsigned int {\bfseries j\+\_\+max\+\_\+commit\+\_\+age}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a54e8f7e0518918f3053cfd05739f4c6f}\label{structreiserfs__journal_a54e8f7e0518918f3053cfd05739f4c6f}} 
+unsigned int {\bfseries j\+\_\+max\+\_\+trans\+\_\+age}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a12fa9a9252dc49e678771f862d025fa0}\label{structreiserfs__journal_a12fa9a9252dc49e678771f862d025fa0}} 
+unsigned int {\bfseries j\+\_\+default\+\_\+max\+\_\+commit\+\_\+age}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a3412d5b03f12df5e4750f5e244751b57}\label{structreiserfs__journal_a3412d5b03f12df5e4750f5e244751b57}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+cnode\+\_\+free\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_addf3a395f6b60d908101ac097ddd8902}\label{structreiserfs__journal_addf3a395f6b60d908101ac097ddd8902}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+cnode\+\_\+free\+\_\+orig}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_afe0d7888dbb3c14f62474f5a3661eabe}\label{structreiserfs__journal_afe0d7888dbb3c14f62474f5a3661eabe}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__list}{reiserfs\+\_\+journal\+\_\+list} $\ast$ {\bfseries j\+\_\+current\+\_\+jl}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a1efbf70a78479bb751ca9c10f5fa4223}\label{structreiserfs__journal_a1efbf70a78479bb751ca9c10f5fa4223}} 
+int {\bfseries j\+\_\+free\+\_\+bitmap\+\_\+nodes}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a0462d8b9e85de45dceb8271dbc94863d}\label{structreiserfs__journal_a0462d8b9e85de45dceb8271dbc94863d}} 
+int {\bfseries j\+\_\+used\+\_\+bitmap\+\_\+nodes}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ad8b0f32d0bda11a75e5b2a0780e0558e}\label{structreiserfs__journal_ad8b0f32d0bda11a75e5b2a0780e0558e}} 
+int {\bfseries j\+\_\+num\+\_\+lists}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a49327501fd0885551e8a18d849a320a5}\label{structreiserfs__journal_a49327501fd0885551e8a18d849a320a5}} 
+int {\bfseries j\+\_\+num\+\_\+work\+\_\+lists}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a5023a75af53cf8f06e4c902e5154f8e7}\label{structreiserfs__journal_a5023a75af53cf8f06e4c902e5154f8e7}} 
+int {\bfseries j\+\_\+last\+\_\+flush\+\_\+id}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ae08d742bf7ec88c05ee48e2f5270bb79}\label{structreiserfs__journal_ae08d742bf7ec88c05ee48e2f5270bb79}} 
+int {\bfseries j\+\_\+last\+\_\+commit\+\_\+id}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_af1e0dfbb89468ca0b234818a3511dd43}\label{structreiserfs__journal_af1e0dfbb89468ca0b234818a3511dd43}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+bitmap\+\_\+nodes}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ac302bb332b81f734693ea6ccd501463e}\label{structreiserfs__journal_ac302bb332b81f734693ea6ccd501463e}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+dirty\+\_\+buffers}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_abe62eda2b9d3705ced6db292546a2557}\label{structreiserfs__journal_abe62eda2b9d3705ced6db292546a2557}} 
+\hyperlink{structspinlock__t}{spinlock\+\_\+t} {\bfseries j\+\_\+dirty\+\_\+buffers\+\_\+lock}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_afb9fcd108c7f32487e0d509d0a7fef3b}\label{structreiserfs__journal_afb9fcd108c7f32487e0d509d0a7fef3b}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+journal\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_aaca05597a146fa1802dc8a2d88b35927}\label{structreiserfs__journal_aaca05597a146fa1802dc8a2d88b35927}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+working\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_add8aa8ebf714919486bf5830456ac9f4}\label{structreiserfs__journal_add8aa8ebf714919486bf5830456ac9f4}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__list__bitmap}{reiserfs\+\_\+list\+\_\+bitmap} {\bfseries j\+\_\+list\+\_\+bitmap} \mbox{[}J\+O\+U\+R\+N\+A\+L\+\_\+\+N\+U\+M\+\_\+\+B\+I\+T\+M\+A\+PS\mbox{]}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a7258410eb08638a81c334dc91dade127}\label{structreiserfs__journal_a7258410eb08638a81c334dc91dade127}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+hash\+\_\+table} \mbox{[}J\+O\+U\+R\+N\+A\+L\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a29f576aeff4090ef44626b4f14953bcc}\label{structreiserfs__journal_a29f576aeff4090ef44626b4f14953bcc}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+list\+\_\+hash\+\_\+table} \mbox{[}J\+O\+U\+R\+N\+A\+L\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_aad5ab6f0901a690be6795296dc7acd11}\label{structreiserfs__journal_aad5ab6f0901a690be6795296dc7acd11}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+prealloc\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a3a62cf080ead416c75ecf7f16237e7a3}\label{structreiserfs__journal_a3a62cf080ead416c75ecf7f16237e7a3}} 
+int {\bfseries j\+\_\+persistent\+\_\+trans}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_afdfa651e6aef38bbc94787ec93ce228c}\label{structreiserfs__journal_afdfa651e6aef38bbc94787ec93ce228c}} 
+unsigned long {\bfseries j\+\_\+max\+\_\+trans\+\_\+size}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_ae8ab100a847cd727ff6ad9d689ef0c19}\label{structreiserfs__journal_ae8ab100a847cd727ff6ad9d689ef0c19}} 
+unsigned long {\bfseries j\+\_\+max\+\_\+batch\+\_\+size}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a877e3eec0210649968325fc6a272bb53}\label{structreiserfs__journal_a877e3eec0210649968325fc6a272bb53}} 
+int {\bfseries j\+\_\+errno}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_a7f9fea1f8e115b6aeb5b49ecf5370642}\label{structreiserfs__journal_a7f9fea1f8e115b6aeb5b49ecf5370642}} 
+\hyperlink{interfacestruct}{struct} work\+\_\+struct {\bfseries j\+\_\+work}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal_af2688773514e397d3f298828a1026d24}\label{structreiserfs__journal_af2688773514e397d3f298828a1026d24}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries j\+\_\+async\+\_\+throttle}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/reiserfs/inc/linux/reiserfs\+\_\+fs\+\_\+sb.\+h\end{DoxyCompactItemize}

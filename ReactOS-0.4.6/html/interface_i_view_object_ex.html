@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IViewObjectEx接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_view_object_ex-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IViewObjectEx接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IViewObjectEx 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_view_object_ex.png" usemap="#IViewObjectEx_map" alt=""/>
+  <map id="IViewObjectEx_map" name="IViewObjectEx_map">
+<area href="interface_i_view_object2.html" alt="IViewObject2" shape="rect" coords="0,112,94,136"/>
+<area href="interface_i_view_object.html" alt="IViewObject" shape="rect" coords="0,56,94,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,94,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_view_object_ex_1_1tag_aspect_info.html">tagAspectInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_view_object_ex_1_1tag_extent_info.html">tagExtentInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae63d8578798e3f83e7f01b1c8313b4ec"><td class="memItemLeft" align="right" valign="top"><a id="ae63d8578798e3f83e7f01b1c8313b4ec"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagVIEWSTATUS</b> { <br />
+&#160;&#160;<b>VIEWSTATUS_OPAQUE</b> = 1, 
+<b>VIEWSTATUS_SOLIDBKGND</b> = 2, 
+<b>VIEWSTATUS_DVASPECTOPAQUE</b> = 4, 
+<b>VIEWSTATUS_DVASPECTTRANSPARENT</b> = 8, 
+<br />
+&#160;&#160;<b>VIEWSTATUS_SURFACE</b> = 16, 
+<b>VIEWSTATUS_3DSURFACE</b> = 32
+<br />
+ }</td></tr>
+<tr class="separator:ae63d8578798e3f83e7f01b1c8313b4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf03e108d5a3d3e09a64af0178e94ce"><td class="memItemLeft" align="right" valign="top"><a id="abdf03e108d5a3d3e09a64af0178e94ce"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagHITRESULT</b> { <b>HITRESULT_OUTSIDE</b> = 0, 
+<b>HITRESULT_TRANSPARENT</b> = 1, 
+<b>HITRESULT_CLOSE</b> = 2, 
+<b>HITRESULT_HIT</b> = 3
+ }</td></tr>
+<tr class="separator:abdf03e108d5a3d3e09a64af0178e94ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea844e37949186b53c065e016d7da341"><td class="memItemLeft" align="right" valign="top"><a id="aea844e37949186b53c065e016d7da341"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagDVASPECT2</b> { <b>DVASPECT_OPAQUE</b> = 16, 
+<b>DVASPECT_TRANSPARENT</b> = 32
+ }</td></tr>
+<tr class="separator:aea844e37949186b53c065e016d7da341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e1aa26381f755513ef4d60415e0dd2"><td class="memItemLeft" align="right" valign="top"><a id="a00e1aa26381f755513ef4d60415e0dd2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagAspectInfoFlag</b> { <b>DVASPECTINFOFLAG_CANOPTIMIZE</b> = 1
+ }</td></tr>
+<tr class="separator:a00e1aa26381f755513ef4d60415e0dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff146195475cf22a334f5fdfe749466"><td class="memItemLeft" align="right" valign="top"><a id="a6ff146195475cf22a334f5fdfe749466"></a>
+typedef <a class="el" href="interface_i_view_object_ex.html">IViewObjectEx</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPVIEWOBJECTEX</b></td></tr>
+<tr class="separator:a6ff146195475cf22a334f5fdfe749466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4cd8345b843c50cfca436ef71aebaa"><td class="memItemLeft" align="right" valign="top"><a id="a2c4cd8345b843c50cfca436ef71aebaa"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IViewObjectEx::tagVIEWSTATUS&#160;</td><td class="memItemRight" valign="bottom"><b>VIEWSTATUS</b></td></tr>
+<tr class="separator:a2c4cd8345b843c50cfca436ef71aebaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c06a98575213f713a4ae398f95140c"><td class="memItemLeft" align="right" valign="top"><a id="ad3c06a98575213f713a4ae398f95140c"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IViewObjectEx::tagHITRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>HITRESULT</b></td></tr>
+<tr class="separator:ad3c06a98575213f713a4ae398f95140c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac668d739744d734f4721ec4046859901"><td class="memItemLeft" align="right" valign="top"><a id="ac668d739744d734f4721ec4046859901"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IViewObjectEx::tagDVASPECT2&#160;</td><td class="memItemRight" valign="bottom"><b>DVASPECT2</b></td></tr>
+<tr class="separator:ac668d739744d734f4721ec4046859901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafce626d3c39a112888e771a35f4895b"><td class="memItemLeft" align="right" valign="top"><a id="aafce626d3c39a112888e771a35f4895b"></a>
+typedef <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="struct_i_view_object_ex_1_1tag_extent_info.html">IViewObjectEx::tagExtentInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DVEXTENTINFO</b></td></tr>
+<tr class="separator:aafce626d3c39a112888e771a35f4895b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc319aac26d2f38571b3a352e8e36a9d"><td class="memItemLeft" align="right" valign="top"><a id="adc319aac26d2f38571b3a352e8e36a9d"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IViewObjectEx::tagAspectInfoFlag&#160;</td><td class="memItemRight" valign="bottom"><b>DVASPECTINFOFLAG</b></td></tr>
+<tr class="separator:adc319aac26d2f38571b3a352e8e36a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868226575c8872a0d02ff92a0ae3fdc9"><td class="memItemLeft" align="right" valign="top"><a id="a868226575c8872a0d02ff92a0ae3fdc9"></a>
+typedef <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="struct_i_view_object_ex_1_1tag_aspect_info.html">IViewObjectEx::tagAspectInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DVASPECTINFO</b></td></tr>
+<tr class="separator:a868226575c8872a0d02ff92a0ae3fdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_view_object2"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_view_object2')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_view_object2.html">IViewObject2</a></td></tr>
+<tr class="memitem:abe50bdf746bc3cd87aa6e2cde1df0397 inherit pub_types_interface_i_view_object2"><td class="memItemLeft" align="right" valign="top"><a id="abe50bdf746bc3cd87aa6e2cde1df0397"></a>
+typedef <a class="el" href="interface_i_view_object2.html">IViewObject2</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPVIEWOBJECT2</b></td></tr>
+<tr class="separator:abe50bdf746bc3cd87aa6e2cde1df0397 inherit pub_types_interface_i_view_object2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_view_object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_view_object')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_view_object.html">IViewObject</a></td></tr>
+<tr class="memitem:a2aa929b34ca0403ccc69358c271f4efd inherit pub_types_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a2aa929b34ca0403ccc69358c271f4efd"></a>
+typedef <a class="el" href="interface_i_view_object.html">IViewObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPVIEWOBJECT</b></td></tr>
+<tr class="separator:a2aa929b34ca0403ccc69358c271f4efd inherit pub_types_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad3bc2948aeeb6f69c7e8ca7ec4e973bc"><td class="memItemLeft" align="right" valign="top"><a id="ad3bc2948aeeb6f69c7e8ca7ec4e973bc"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetRect</b> ([in] DWORD dwAspect, [out] <a class="el" href="struct___r_e_c_t_l.html">LPRECTL</a> pRect)</td></tr>
+<tr class="separator:ad3bc2948aeeb6f69c7e8ca7ec4e973bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ee44feb64d6bceed10fc4d875fdc96"><td class="memItemLeft" align="right" valign="top"><a id="a02ee44feb64d6bceed10fc4d875fdc96"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewStatus</b> ([out] DWORD *pdwStatus)</td></tr>
+<tr class="separator:a02ee44feb64d6bceed10fc4d875fdc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af405a11e6212b570a08ac14c7d74a640"><td class="memItemLeft" align="right" valign="top"><a id="af405a11e6212b570a08ac14c7d74a640"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryHitPoint</b> ([in] DWORD dwAspect, [in] <a class="el" href="structtag_r_e_c_t.html">LPCRECT</a> pRectBounds, [in] <a class="el" href="structtag_p_o_i_n_t.html">POINT</a> ptlLoc, [in] LONG lCloseHint, [out] DWORD *pHitResult)</td></tr>
+<tr class="separator:af405a11e6212b570a08ac14c7d74a640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19528c621a371996eee749e782589992"><td class="memItemLeft" align="right" valign="top"><a id="a19528c621a371996eee749e782589992"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryHitRect</b> ([in] DWORD dwAspect, [in] <a class="el" href="structtag_r_e_c_t.html">LPCRECT</a> pRectBounds, [in] <a class="el" href="structtag_r_e_c_t.html">LPCRECT</a> pRectLoc, [in] LONG lCloseHint, [out] DWORD *pHitResult)</td></tr>
+<tr class="separator:a19528c621a371996eee749e782589992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b25e17b65185d3cea1541f5ed0739a8"><td class="memItemLeft" align="right" valign="top"><a id="a7b25e17b65185d3cea1541f5ed0739a8"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetNaturalExtent</b> ([in] DWORD dwAspect, [in] LONG lindex, [in] DVTARGETDEVICE *ptd, [in] HDC hicTargetDev, [in] <a class="el" href="struct_i_view_object_ex_1_1tag_extent_info.html">DVEXTENTINFO</a> *pExtentInfo, [out] <a class="el" href="structtag_s_i_z_e.html">LPSIZEL</a> pSizel)</td></tr>
+<tr class="separator:a7b25e17b65185d3cea1541f5ed0739a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_view_object2"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_view_object2')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_view_object2.html">IViewObject2</a></td></tr>
+<tr class="memitem:aa50ebfd0efc3d6c98fb3a12a96d8cb70 inherit pub_methods_interface_i_view_object2"><td class="memItemLeft" align="right" valign="top"><a id="aa50ebfd0efc3d6c98fb3a12a96d8cb70"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetExtent</b> ([in] DWORD dwDrawAspect, [in] LONG lindex, [in, <a class="el" href="interfaceunique.html">unique</a>] DVTARGETDEVICE *ptd, [out] <a class="el" href="structtag_s_i_z_e.html">LPSIZEL</a> lpsizel)</td></tr>
+<tr class="separator:aa50ebfd0efc3d6c98fb3a12a96d8cb70 inherit pub_methods_interface_i_view_object2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_view_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_view_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_view_object.html">IViewObject</a></td></tr>
+<tr class="memitem:a553add5413100ac5131ef6396224de55 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a553add5413100ac5131ef6396224de55"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> ([in] DWORD dwDrawAspect, [in] LONG lindex, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interfacevoid.html">void</a> *pvAspect, [in, <a class="el" href="interfaceunique.html">unique</a>] DVTARGETDEVICE *ptd, [in] HDC hdcTargetDev, [in] HDC hdcDraw, [in] <a class="el" href="struct___r_e_c_t_l.html">LPCRECTL</a> lprcBounds, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_e_c_t_l.html">LPCRECTL</a> lprcWBounds, [in] BOOL(*pfnContinue)(ULONG_PTR dwContinue), [in] ULONG_PTR dwContinue)</td></tr>
+<tr class="separator:a553add5413100ac5131ef6396224de55 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8bc5cc444f2a7be31f510fd7b32c02 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="afc8bc5cc444f2a7be31f510fd7b32c02"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteDraw</b> ([in] DWORD dwDrawAspect, [in] LONG lindex, [in] ULONG_PTR pvAspect, [in, <a class="el" href="interfaceunique.html">unique</a>] DVTARGETDEVICE *ptd, [in] ULONG_PTR hdcTargetDev, [in] ULONG_PTR hdcDraw, [in] <a class="el" href="struct___r_e_c_t_l.html">LPCRECTL</a> lprcBounds, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_e_c_t_l.html">LPCRECTL</a> lprcWBounds, [in] <a class="el" href="interface_i_continue.html">IContinue</a> *pContinue)</td></tr>
+<tr class="separator:afc8bc5cc444f2a7be31f510fd7b32c02 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0745a6e7e1137d29502cff571082856e inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a0745a6e7e1137d29502cff571082856e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetColorSet</b> ([in] DWORD dwDrawAspect, [in] LONG lindex, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interfacevoid.html">void</a> *pvAspect, [in, <a class="el" href="interfaceunique.html">unique</a>] DVTARGETDEVICE *ptd, [in] HDC hicTargetDev, [out] <a class="el" href="structtag_l_o_g_p_a_l_e_t_t_e.html">LOGPALETTE</a> **ppColorSet)</td></tr>
+<tr class="separator:a0745a6e7e1137d29502cff571082856e inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5931a58bb5dae28955b440dc2346d140 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a5931a58bb5dae28955b440dc2346d140"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteGetColorSet</b> ([in] DWORD dwDrawAspect, [in] LONG lindex, [in] ULONG_PTR pvAspect, [in, <a class="el" href="interfaceunique.html">unique</a>] DVTARGETDEVICE *ptd, [in] ULONG_PTR hicTargetDev, [out] <a class="el" href="structtag_l_o_g_p_a_l_e_t_t_e.html">LOGPALETTE</a> **ppColorSet)</td></tr>
+<tr class="separator:a5931a58bb5dae28955b440dc2346d140 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdddf99d11afdeafa33d1745d210df6 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a4cdddf99d11afdeafa33d1745d210df6"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Freeze</b> ([in] DWORD dwDrawAspect, [in] LONG lindex, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interfacevoid.html">void</a> *pvAspect, [out] DWORD *pdwFreeze)</td></tr>
+<tr class="separator:a4cdddf99d11afdeafa33d1745d210df6 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf49f26cbfa8c4d722e03f7f602d4abf inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="aaf49f26cbfa8c4d722e03f7f602d4abf"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteFreeze</b> ([in] DWORD dwDrawAspect, [in] LONG lindex, [in] ULONG_PTR pvAspect, [out] DWORD *pdwFreeze)</td></tr>
+<tr class="separator:aaf49f26cbfa8c4d722e03f7f602d4abf inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2627061922d8290cb51f3a4ce972a3 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a5a2627061922d8290cb51f3a4ce972a3"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Unfreeze</b> ([in] DWORD dwFreeze)</td></tr>
+<tr class="separator:a5a2627061922d8290cb51f3a4ce972a3 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a3ffd8c85f47ca80436ae5ff8d7ed0 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a82a3ffd8c85f47ca80436ae5ff8d7ed0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetAdvise</b> ([in] DWORD aspects, [in] DWORD advf, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_advise_sink.html">IAdviseSink</a> *pAdvSink)</td></tr>
+<tr class="separator:a82a3ffd8c85f47ca80436ae5ff8d7ed0 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83df17050f393e1cf695ba7ab4b3efe5 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a83df17050f393e1cf695ba7ab4b3efe5"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetAdvise</b> ([out, <a class="el" href="interfaceunique.html">unique</a>] DWORD *pAspects, [out, <a class="el" href="interfaceunique.html">unique</a>] DWORD *pAdvf, [out] <a class="el" href="interface_i_advise_sink.html">IAdviseSink</a> **ppAdvSink)</td></tr>
+<tr class="separator:a83df17050f393e1cf695ba7ab4b3efe5 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b518cd7a61496bdb9c4fab93f354c0 inherit pub_methods_interface_i_view_object"><td class="memItemLeft" align="right" valign="top"><a id="a33b518cd7a61496bdb9c4fab93f354c0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteGetAdvise</b> ([out] DWORD *pAspects, [out] DWORD *pAdvf, [out] <a class="el" href="interface_i_advise_sink.html">IAdviseSink</a> **ppAdvSink)</td></tr>
+<tr class="separator:a33b518cd7a61496bdb9c4fab93f354c0 inherit pub_methods_interface_i_view_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="ocidl_8idl_source.html">ocidl.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

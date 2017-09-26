@@ -1,0 +1,533 @@
+\hypertarget{context_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/context.h 文件参考}
+\label{context_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/context.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/context.\+h}}
+{\ttfamily \#include \char`\"{}imports.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtypes.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{Indent}\textbf{ Macros for flushing buffered rendering commands before state changes,}\par
+{\em checking if inside gl\+Begin/gl\+End, etc. }\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{context_8h_ae4cee470c3a155d770b351b681b53164}{F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}(ctx,  newstate)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{context_8h_a2e3b3ee7b4431e70f8324080d2dcd37d}{F\+L\+U\+S\+H\+\_\+\+C\+U\+R\+R\+E\+NT}(ctx,  newstate)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{context_8h_a0e7cd5802267f3b17c67f550baa17fcc}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}(ctx,  retval)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{context_8h_a13ef9eb77f08acffe706e218076568f3}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}(ctx)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{context_8h_a6dbe64d9c3d218a3112aa552a3fc8ec7}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}(ctx)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{context_8h_ac09d593d6a0eb4c8c364fd487c3ead33}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}(ctx,  retval)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_a8420551e9c57ea58e8f6e59cb64b948e}{\+\_\+mesa\+\_\+init\+\_\+get\+\_\+hash} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_aa1f2e15c394bc9919d84f4f5f8472eba}{\+\_\+mesa\+\_\+notify\+Swap\+Buffers} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$gc)
+\item 
+\hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table $\ast$ \hyperlink{context_8h_a64a59ed3f36346992b91ef20775db14b}{\+\_\+mesa\+\_\+get\+\_\+dispatch} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_a9ac280d31ddd7cf7ca6da4e67e3ed82c}{\+\_\+mesa\+\_\+set\+\_\+mvp\+\_\+with\+\_\+dp4} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lboolean flag)
+\item 
+G\+Lboolean \hyperlink{context_8h_ad951603a4d33d18b15d0eeafc4ad5e1d}{\+\_\+mesa\+\_\+valid\+\_\+to\+\_\+render} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const char $\ast$where)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Visual-\/related functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$ \hyperlink{context_8h_ab6f70195f1463dd384557084879d343c}{\+\_\+mesa\+\_\+create\+\_\+visual} (G\+Lboolean db\+Flag, G\+Lboolean stereo\+Flag, G\+Lint red\+Bits, G\+Lint green\+Bits, G\+Lint blue\+Bits, G\+Lint alpha\+Bits, G\+Lint depth\+Bits, G\+Lint stencil\+Bits, G\+Lint accum\+Red\+Bits, G\+Lint accum\+Green\+Bits, G\+Lint accum\+Blue\+Bits, G\+Lint accum\+Alpha\+Bits)
+\item 
+G\+Lboolean \hyperlink{context_8h_a86dcb34f74872fba5a082c997a8a687f}{\+\_\+mesa\+\_\+initialize\+\_\+visual} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$v, G\+Lboolean db\+Flag, G\+Lboolean stereo\+Flag, G\+Lint red\+Bits, G\+Lint green\+Bits, G\+Lint blue\+Bits, G\+Lint alpha\+Bits, G\+Lint depth\+Bits, G\+Lint stencil\+Bits, G\+Lint accum\+Red\+Bits, G\+Lint accum\+Green\+Bits, G\+Lint accum\+Blue\+Bits, G\+Lint accum\+Alpha\+Bits)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_ac8e780c5af7163a0b8fc47c2741e6a0a}{\+\_\+mesa\+\_\+destroy\+\_\+visual} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$vis)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Context-\/related functions}\par
+\begin{DoxyCompactItemize}
+\item 
+G\+Lboolean \hyperlink{context_8h_a9d903fb48a4dd420a512f79c75752e95}{\+\_\+mesa\+\_\+initialize\+\_\+context} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$visual, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$share\+\_\+list, const \hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} $\ast$driver\+Functions, \hyperlink{interfacevoid}{void} $\ast$driver\+Context)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ \hyperlink{context_8h_a10cd4ad4b5167521044415341b3d5864}{\+\_\+mesa\+\_\+create\+\_\+context} (const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$visual, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$share\+\_\+list, const \hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} $\ast$driver\+Functions, \hyperlink{interfacevoid}{void} $\ast$driver\+Context)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_a1094b83ed247a9a949128da155440bcf}{\+\_\+mesa\+\_\+free\+\_\+context\+\_\+data} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_ae42d8ad02e901ec69e440d5aa8f67dad}{\+\_\+mesa\+\_\+destroy\+\_\+context} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{context_8h_a65cdd2261d906273011e3868b2817fa0}\label{context_8h_a65cdd2261d906273011e3868b2817fa0}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+copy\+\_\+context} (const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$src, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$dst, G\+Luint mask)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_a732d6d543cd521ad53c66912f6d34348}{\+\_\+mesa\+\_\+check\+\_\+init\+\_\+viewport} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint width, G\+Luint height)
+\item 
+G\+Lboolean \hyperlink{context_8h_acc7ec73e5d31f7df9d88975c04b820f9}{\+\_\+mesa\+\_\+make\+\_\+current} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$draw\+Buffer, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$read\+Buffer)
+\item 
+G\+Lboolean \hyperlink{context_8h_af4026b0cb4957af9637c5d4c72787fbb}{\+\_\+mesa\+\_\+share\+\_\+state} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx\+To\+Share)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ \hyperlink{context_8h_a9009761789de1bde0a16ffe3cc8f7882}{\+\_\+mesa\+\_\+get\+\_\+current\+\_\+context} (\hyperlink{interfacevoid}{void})
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Miscellaneous}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_ad98d5d4fae70f1fea38eeab0dad268bc}{\+\_\+mesa\+\_\+record\+\_\+error} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} error)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_ab7c5969c2af3641f9632a9aa0a4f0609}{\+\_\+mesa\+\_\+finish} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{context_8h_a1534c85a80d793eaa3b893b891e0a35d}{\+\_\+mesa\+\_\+flush} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{context_8h_a4af3dd491fa9d0c6566c215b50fa2f6f}{\+\_\+mesa\+\_\+\+Finish} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{context_8h_a0ec87f14a36ca3eecb572d5eea1e0130}{\+\_\+mesa\+\_\+\+Flush} (\hyperlink{interfacevoid}{void})
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Mesa context and visual-\/related functions.
+
+There are three large Mesa data types/classes which are meant to be used by device drivers\+:
+\begin{DoxyItemize}
+\item struct \hyperlink{structgl__context}{gl\+\_\+context}\+: this contains the Mesa rendering state
+\item struct \hyperlink{structgl__config}{gl\+\_\+config}\+: this describes the color buffer (R\+GB vs. ci), whether or not there\textquotesingle{}s a depth buffer, stencil buffer, etc.
+\item struct \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer}\+: contains pointers to the depth buffer, stencil buffer, accum buffer and alpha buffers.
+\end{DoxyItemize}
+
+These types should be encapsulated by corresponding device driver data types. See xmesa.\+h and xmesa\+P.\+h for an example.
+
+In O\+OP terms, struct \hyperlink{structgl__context}{gl\+\_\+context}, struct \hyperlink{structgl__config}{gl\+\_\+config}, and struct \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} are base classes which the device driver must derive from.
+
+The following functions create and destroy these data types. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{context_8h_a13ef9eb77f08acffe706e218076568f3}\label{context_8h_a13ef9eb77f08acffe706e218076568f3}} 
+\index{context.\+h@{context.\+h}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}{ASSERT\_OUTSIDE\_BEGIN\_END}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND(\begin{DoxyParamCaption}\item[{}]{ctx }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   if (ctx->Driver.CurrentExecPrimitive != \hyperlink{mtypes_8h_ab5bbc742d880e2dc15eb3241cdfea74e}{PRIM\_OUTSIDE\_BEGIN\_END}) \{  \(\backslash\)
+      \_mesa\_error(ctx, GL\_INVALID\_OPERATION, \textcolor{stringliteral}{"Inside glBegin/glEnd"});   \(\backslash\)
+      return;                               \(\backslash\)
+   \}                                    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{context_8h_a6dbe64d9c3d218a3112aa552a3fc8ec7}\label{context_8h_a6dbe64d9c3d218a3112aa552a3fc8ec7}} 
+\index{context.\+h@{context.\+h}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}{ASSERT\_OUTSIDE\_BEGIN\_END\_AND\_FLUSH}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH(\begin{DoxyParamCaption}\item[{}]{ctx }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   ASSERT\_OUTSIDE\_BEGIN\_END(ctx);                   \(\backslash\)
+   FLUSH\_VERTICES(ctx, 0);                      \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair and flush the vertices.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{context_8h_ac09d593d6a0eb4c8c364fd487c3ead33}\label{context_8h_ac09d593d6a0eb4c8c364fd487c3ead33}} 
+\index{context.\+h@{context.\+h}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}{ASSERT\_OUTSIDE\_BEGIN\_END\_AND\_FLUSH\_WITH\_RETVAL}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{retval }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   ASSERT\_OUTSIDE\_BEGIN\_END\_WITH\_RETVAL(ctx, retval);           \(\backslash\)
+   FLUSH\_VERTICES(ctx, 0);                      \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair and flush the vertices, with return value.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em retval} & value to return in case the assertion fails. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{context_8h_a0e7cd5802267f3b17c67f550baa17fcc}\label{context_8h_a0e7cd5802267f3b17c67f550baa17fcc}} 
+\index{context.\+h@{context.\+h}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}{ASSERT\_OUTSIDE\_BEGIN\_END\_WITH\_RETVAL}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{retval }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   if (ctx->Driver.CurrentExecPrimitive != \hyperlink{mtypes_8h_ab5bbc742d880e2dc15eb3241cdfea74e}{PRIM\_OUTSIDE\_BEGIN\_END}) \{  \(\backslash\)
+      \_mesa\_error(ctx, GL\_INVALID\_OPERATION, \textcolor{stringliteral}{"Inside glBegin/glEnd"});   \(\backslash\)
+      return retval;                            \(\backslash\)
+   \}                                    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair, with return value.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em retval} & value to return in case the assertion fails. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{context_8h_a2e3b3ee7b4431e70f8324080d2dcd37d}\label{context_8h_a2e3b3ee7b4431e70f8324080d2dcd37d}} 
+\index{context.\+h@{context.\+h}!F\+L\+U\+S\+H\+\_\+\+C\+U\+R\+R\+E\+NT@{F\+L\+U\+S\+H\+\_\+\+C\+U\+R\+R\+E\+NT}}
+\index{F\+L\+U\+S\+H\+\_\+\+C\+U\+R\+R\+E\+NT@{F\+L\+U\+S\+H\+\_\+\+C\+U\+R\+R\+E\+NT}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+U\+S\+H\+\_\+\+C\+U\+R\+R\+E\+NT}{FLUSH\_CURRENT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+U\+S\+H\+\_\+\+C\+U\+R\+R\+E\+NT(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{newstate }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+   if (MESA\_VERBOSE & VERBOSE\_STATE)                \(\backslash\)
+      \_mesa\_debug(ctx, \textcolor{stringliteral}{"FLUSH\_CURRENT in %s\(\backslash\)n"}, MESA\_FUNCTION); \(\backslash\)
+   if (ctx->Driver.NeedFlush & FLUSH\_UPDATE\_CURRENT)        \(\backslash\)
+      ctx->Driver.FlushVertices(ctx, FLUSH\_UPDATE\_CURRENT); \(\backslash\)
+   ctx->NewState |= newstate;                   \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Flush current state.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em newstate} & new state.\\
+\hline
+\end{DoxyParams}
+Checks if \hyperlink{structdd__function__table_a3e2043e74cfdbaedd6f5885c1303b7c9}{dd\+\_\+function\+\_\+table\+::\+Need\+Flush} is marked to flush current state, and calls \hyperlink{structdd__function__table_a3c743494ace4641ddbd61b3168fe7f96}{dd\+\_\+function\+\_\+table\+::\+Flush\+Vertices} if so. Marks \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+New\+State with {\ttfamily newstate}. \mbox{\Hypertarget{context_8h_ae4cee470c3a155d770b351b681b53164}\label{context_8h_ae4cee470c3a155d770b351b681b53164}} 
+\index{context.\+h@{context.\+h}!F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES@{F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}}
+\index{F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES@{F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}{FLUSH\_VERTICES}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{newstate }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+   if (MESA\_VERBOSE & VERBOSE\_STATE)                \(\backslash\)
+      \_mesa\_debug(ctx, \textcolor{stringliteral}{"FLUSH\_VERTICES in %s\(\backslash\)n"}, MESA\_FUNCTION);\(\backslash\)
+   if (ctx->Driver.NeedFlush & FLUSH\_STORED\_VERTICES)       \(\backslash\)
+      ctx->Driver.FlushVertices(ctx, FLUSH\_STORED\_VERTICES);    \(\backslash\)
+   ctx->NewState |= newstate;                   \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Flush vertices.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em newstate} & new state.\\
+\hline
+\end{DoxyParams}
+Checks if \hyperlink{structdd__function__table_a3e2043e74cfdbaedd6f5885c1303b7c9}{dd\+\_\+function\+\_\+table\+::\+Need\+Flush} is marked to flush stored vertices, and calls \hyperlink{structdd__function__table_a3c743494ace4641ddbd61b3168fe7f96}{dd\+\_\+function\+\_\+table\+::\+Flush\+Vertices} if so. Marks \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+New\+State with {\ttfamily newstate}. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{context_8h_a732d6d543cd521ad53c66912f6d34348}\label{context_8h_a732d6d543cd521ad53c66912f6d34348}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+check\+\_\+init\+\_\+viewport@{\+\_\+mesa\+\_\+check\+\_\+init\+\_\+viewport}}
+\index{\+\_\+mesa\+\_\+check\+\_\+init\+\_\+viewport@{\+\_\+mesa\+\_\+check\+\_\+init\+\_\+viewport}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+check\+\_\+init\+\_\+viewport()}{\_mesa\_check\_init\_viewport()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+check\+\_\+init\+\_\+viewport (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{width,  }\item[{G\+Luint}]{height }\end{DoxyParamCaption})}
+
+Check if the viewport/scissor size has not yet been initialized. Initialize the size if the given width and height are non-\/zero. \mbox{\Hypertarget{context_8h_a10cd4ad4b5167521044415341b3d5864}\label{context_8h_a10cd4ad4b5167521044415341b3d5864}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+create\+\_\+context@{\+\_\+mesa\+\_\+create\+\_\+context}}
+\index{\+\_\+mesa\+\_\+create\+\_\+context@{\+\_\+mesa\+\_\+create\+\_\+context}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+create\+\_\+context()}{\_mesa\_create\_context()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context}$\ast$ \+\_\+mesa\+\_\+create\+\_\+context (\begin{DoxyParamCaption}\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$}]{visual,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{share\+\_\+list,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} $\ast$}]{driver\+Functions,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{driver\+Context }\end{DoxyParamCaption})}
+
+Allocate and initialize a struct \hyperlink{structgl__context}{gl\+\_\+context} structure. Note that the driver needs to pass in its \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} here since we need to at least call driver\+Functions-\/$>$New\+Texture\+Object to initialize the rendering context.
+
+
+\begin{DoxyParams}{参数}
+{\em api} & the GL A\+PI type to create the context for \\
+\hline
+{\em visual} & a struct \hyperlink{structgl__config}{gl\+\_\+config} pointer (we copy the struct contents) \\
+\hline
+{\em share\+\_\+list} & another context to share display lists with or N\+U\+LL \\
+\hline
+{\em driver\+Functions} & points to the \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} into which the driver has plugged in all its special functions. \\
+\hline
+{\em driver\+Context} & points to the device driver\textquotesingle{}s private context state\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to a new \+\_\+\+\_\+struct gl\+\_\+context\+Rec or N\+U\+LL if error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{context_8h_ab6f70195f1463dd384557084879d343c}\label{context_8h_ab6f70195f1463dd384557084879d343c}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+create\+\_\+visual@{\+\_\+mesa\+\_\+create\+\_\+visual}}
+\index{\+\_\+mesa\+\_\+create\+\_\+visual@{\+\_\+mesa\+\_\+create\+\_\+visual}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+create\+\_\+visual()}{\_mesa\_create\_visual()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config}$\ast$ \+\_\+mesa\+\_\+create\+\_\+visual (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{db\+Flag,  }\item[{G\+Lboolean}]{stereo\+Flag,  }\item[{G\+Lint}]{red\+Bits,  }\item[{G\+Lint}]{green\+Bits,  }\item[{G\+Lint}]{blue\+Bits,  }\item[{G\+Lint}]{alpha\+Bits,  }\item[{G\+Lint}]{depth\+Bits,  }\item[{G\+Lint}]{stencil\+Bits,  }\item[{G\+Lint}]{accum\+Red\+Bits,  }\item[{G\+Lint}]{accum\+Green\+Bits,  }\item[{G\+Lint}]{accum\+Blue\+Bits,  }\item[{G\+Lint}]{accum\+Alpha\+Bits }\end{DoxyParamCaption})}
+
+Allocates a struct \hyperlink{structgl__config}{gl\+\_\+config} structure and initializes it via \hyperlink{context_8h_a86dcb34f74872fba5a082c997a8a687f}{\+\_\+mesa\+\_\+initialize\+\_\+visual()}.
+
+
+\begin{DoxyParams}{参数}
+{\em db\+Flag} & double buffering \\
+\hline
+{\em stereo\+Flag} & stereo buffer \\
+\hline
+{\em depth\+Bits} & requested bits per depth buffer value. Any value in \mbox{[}0, 32\mbox{]} is acceptable but the actual depth type will be G\+Lushort or G\+Luint as needed. \\
+\hline
+{\em stencil\+Bits} & requested minimum bits per stencil buffer value \\
+\hline
+{\em accum\+Red\+Bits,accum\+Green\+Bits,accum\+Blue\+Bits,accum\+Alpha\+Bits} & number of bits per color component in accum buffer. \\
+\hline
+{\em index\+Bits} & number of bits per pixel if {\ttfamily rgb\+Flag} is G\+L\+\_\+\+F\+A\+L\+SE \\
+\hline
+{\em red\+Bits} & number of bits per color component in frame buffer for R\+G\+B(\+A) mode. We always use 8 in core Mesa though. \\
+\hline
+{\em green\+Bits} & same as above. \\
+\hline
+{\em blue\+Bits} & same as above. \\
+\hline
+{\em alpha\+Bits} & same as above.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to new struct \hyperlink{structgl__config}{gl\+\_\+config} or N\+U\+LL if requested parameters can\textquotesingle{}t be met.
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+Need to add params for level and num\+Aux\+Buffers (at least) 
+\end{DoxyNote}
+\mbox{\Hypertarget{context_8h_ae42d8ad02e901ec69e440d5aa8f67dad}\label{context_8h_ae42d8ad02e901ec69e440d5aa8f67dad}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+destroy\+\_\+context@{\+\_\+mesa\+\_\+destroy\+\_\+context}}
+\index{\+\_\+mesa\+\_\+destroy\+\_\+context@{\+\_\+mesa\+\_\+destroy\+\_\+context}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+destroy\+\_\+context()}{\_mesa\_destroy\_context()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+destroy\+\_\+context (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Destroy a struct \hyperlink{structgl__context}{gl\+\_\+context} structure.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+Calls \hyperlink{context_8h_a1094b83ed247a9a949128da155440bcf}{\+\_\+mesa\+\_\+free\+\_\+context\+\_\+data()} and frees the \hyperlink{structgl__context}{gl\+\_\+context} object itself. \mbox{\Hypertarget{context_8h_ac8e780c5af7163a0b8fc47c2741e6a0a}\label{context_8h_ac8e780c5af7163a0b8fc47c2741e6a0a}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+destroy\+\_\+visual@{\+\_\+mesa\+\_\+destroy\+\_\+visual}}
+\index{\+\_\+mesa\+\_\+destroy\+\_\+visual@{\+\_\+mesa\+\_\+destroy\+\_\+visual}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+destroy\+\_\+visual()}{\_mesa\_destroy\_visual()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+destroy\+\_\+visual (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$}]{vis }\end{DoxyParamCaption})}
+
+Destroy a visual and free its memory.
+
+
+\begin{DoxyParams}{参数}
+{\em vis} & visual.\\
+\hline
+\end{DoxyParams}
+Frees the visual structure. \mbox{\Hypertarget{context_8h_ab7c5969c2af3641f9632a9aa0a4f0609}\label{context_8h_ab7c5969c2af3641f9632a9aa0a4f0609}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+finish@{\+\_\+mesa\+\_\+finish}}
+\index{\+\_\+mesa\+\_\+finish@{\+\_\+mesa\+\_\+finish}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+finish()}{\_mesa\_finish()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+finish (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Flush commands and wait for completion. \mbox{\Hypertarget{context_8h_a4af3dd491fa9d0c6566c215b50fa2f6f}\label{context_8h_a4af3dd491fa9d0c6566c215b50fa2f6f}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+\+Finish@{\+\_\+mesa\+\_\+\+Finish}}
+\index{\+\_\+mesa\+\_\+\+Finish@{\+\_\+mesa\+\_\+\+Finish}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Finish()}{\_mesa\_Finish()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Finish (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+Execute gl\+Finish().
+
+Calls the \hyperlink{context_8h_a6dbe64d9c3d218a3112aa552a3fc8ec7}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH} macro and the \hyperlink{structdd__function__table_a3d15abc006c0aa92f1b467cd29d8e2b4}{dd\+\_\+function\+\_\+table\+::\+Finish} driver callback, if not N\+U\+LL. \mbox{\Hypertarget{context_8h_a1534c85a80d793eaa3b893b891e0a35d}\label{context_8h_a1534c85a80d793eaa3b893b891e0a35d}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+flush@{\+\_\+mesa\+\_\+flush}}
+\index{\+\_\+mesa\+\_\+flush@{\+\_\+mesa\+\_\+flush}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+flush()}{\_mesa\_flush()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+flush (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Flush commands. \mbox{\Hypertarget{context_8h_a0ec87f14a36ca3eecb572d5eea1e0130}\label{context_8h_a0ec87f14a36ca3eecb572d5eea1e0130}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+\+Flush@{\+\_\+mesa\+\_\+\+Flush}}
+\index{\+\_\+mesa\+\_\+\+Flush@{\+\_\+mesa\+\_\+\+Flush}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Flush()}{\_mesa\_Flush()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Flush (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+Execute gl\+Flush().
+
+Calls the \hyperlink{context_8h_a6dbe64d9c3d218a3112aa552a3fc8ec7}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH} macro and the \hyperlink{structdd__function__table_a0680f8de4e049f72cfb10cf5867a85f5}{dd\+\_\+function\+\_\+table\+::\+Flush} driver callback, if not N\+U\+LL. \mbox{\Hypertarget{context_8h_a1094b83ed247a9a949128da155440bcf}\label{context_8h_a1094b83ed247a9a949128da155440bcf}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+free\+\_\+context\+\_\+data@{\+\_\+mesa\+\_\+free\+\_\+context\+\_\+data}}
+\index{\+\_\+mesa\+\_\+free\+\_\+context\+\_\+data@{\+\_\+mesa\+\_\+free\+\_\+context\+\_\+data}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+free\+\_\+context\+\_\+data()}{\_mesa\_free\_context\_data()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+free\+\_\+context\+\_\+data (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Free the data associated with the given context.
+
+But doesn\textquotesingle{}t free the struct \hyperlink{structgl__context}{gl\+\_\+context} struct itself.
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{context_8h_a9d903fb48a4dd420a512f79c75752e95}{\+\_\+mesa\+\_\+initialize\+\_\+context()} and init\+\_\+attrib\+\_\+groups(). 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{context_8h_a9009761789de1bde0a16ffe3cc8f7882}\label{context_8h_a9009761789de1bde0a16ffe3cc8f7882}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+get\+\_\+current\+\_\+context@{\+\_\+mesa\+\_\+get\+\_\+current\+\_\+context}}
+\index{\+\_\+mesa\+\_\+get\+\_\+current\+\_\+context@{\+\_\+mesa\+\_\+get\+\_\+current\+\_\+context}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+current\+\_\+context()}{\_mesa\_get\_current\_context()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context}$\ast$ \+\_\+mesa\+\_\+get\+\_\+current\+\_\+context (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{返回}
+pointer to the current GL context for this thread.
+\end{DoxyReturn}
+Calls \+\_\+glapi\+\_\+get\+\_\+context(). \hyperlink{namespace_this}{This} isn\textquotesingle{}t the fastest way to get the current context. If you need speed, see the \#\+G\+E\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+C\+O\+N\+T\+E\+XT macro in \hyperlink{context_8h}{context.\+h}. \mbox{\Hypertarget{context_8h_a64a59ed3f36346992b91ef20775db14b}\label{context_8h_a64a59ed3f36346992b91ef20775db14b}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+get\+\_\+dispatch@{\+\_\+mesa\+\_\+get\+\_\+dispatch}}
+\index{\+\_\+mesa\+\_\+get\+\_\+dispatch@{\+\_\+mesa\+\_\+get\+\_\+dispatch}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+dispatch()}{\_mesa\_get\_dispatch()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table$\ast$ \+\_\+mesa\+\_\+get\+\_\+dispatch (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Get context\textquotesingle{}s current A\+PI dispatch table.
+
+\hyperlink{class_it}{It}\textquotesingle{}ll either be the immediate-\/mode execute dispatcher or the display list compile dispatcher.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to dispatch\+\_\+table.
+\end{DoxyReturn}
+Simply returns \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Current\+Dispatch. \mbox{\Hypertarget{context_8h_a8420551e9c57ea58e8f6e59cb64b948e}\label{context_8h_a8420551e9c57ea58e8f6e59cb64b948e}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+init\+\_\+get\+\_\+hash@{\+\_\+mesa\+\_\+init\+\_\+get\+\_\+hash}}
+\index{\+\_\+mesa\+\_\+init\+\_\+get\+\_\+hash@{\+\_\+mesa\+\_\+init\+\_\+get\+\_\+hash}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+get\+\_\+hash()}{\_mesa\_init\_get\_hash()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+get\+\_\+hash (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialize the enum hash for a given A\+PI
+
+\hyperlink{namespace_this}{This} is called from one\+\_\+time\+\_\+init() to insert the enum values that are valid for the A\+PI in question into the enum hash table.
+
+
+\begin{DoxyParams}{参数}
+{\em the} & current context, for determining the A\+PI in question \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{context_8h_a9d903fb48a4dd420a512f79c75752e95}\label{context_8h_a9d903fb48a4dd420a512f79c75752e95}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+initialize\+\_\+context@{\+\_\+mesa\+\_\+initialize\+\_\+context}}
+\index{\+\_\+mesa\+\_\+initialize\+\_\+context@{\+\_\+mesa\+\_\+initialize\+\_\+context}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+initialize\+\_\+context()}{\_mesa\_initialize\_context()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+initialize\+\_\+context (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$}]{visual,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{share\+\_\+list,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} $\ast$}]{driver\+Functions,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{driver\+Context }\end{DoxyParamCaption})}
+
+Initialize a struct \hyperlink{structgl__context}{gl\+\_\+context} struct (rendering context).
+
+\hyperlink{namespace_this}{This} includes allocating all the other structs and arrays which hang off of the context by pointers. Note that the driver needs to pass in its \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} here since we need to at least call driver\+Functions-\/$>$New\+Texture\+Object to create the default texture objects.
+
+Called by \hyperlink{context_8h_a10cd4ad4b5167521044415341b3d5864}{\+\_\+mesa\+\_\+create\+\_\+context()}.
+
+Performs the imports and exports callback tables initialization, and miscellaneous one-\/time initializations. If no shared context is supplied one is allocated, and increase its reference count. Setups the GL A\+PI dispatch tables. Initialize the T\+NL module. Sets the maximum Z buffer depth. Finally queries the {\ttfamily M\+E\+S\+A\+\_\+\+D\+E\+B\+UG} and {\ttfamily M\+E\+S\+A\+\_\+\+V\+E\+R\+B\+O\+SE} environment variables for debug flags.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & the context to initialize \\
+\hline
+{\em api} & the GL A\+PI type to create the context for \\
+\hline
+{\em visual} & describes the visual attributes for this context \\
+\hline
+{\em share\+\_\+list} & points to context to share textures, display lists, etc with, or N\+U\+LL \\
+\hline
+{\em driver\+Functions} & table of device driver functions for this context to use \\
+\hline
+{\em driver\+Context} & pointer to driver-\/specific context data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{context_8h_a86dcb34f74872fba5a082c997a8a687f}\label{context_8h_a86dcb34f74872fba5a082c997a8a687f}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+initialize\+\_\+visual@{\+\_\+mesa\+\_\+initialize\+\_\+visual}}
+\index{\+\_\+mesa\+\_\+initialize\+\_\+visual@{\+\_\+mesa\+\_\+initialize\+\_\+visual}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+initialize\+\_\+visual()}{\_mesa\_initialize\_visual()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+initialize\+\_\+visual (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} $\ast$}]{vis,  }\item[{G\+Lboolean}]{db\+Flag,  }\item[{G\+Lboolean}]{stereo\+Flag,  }\item[{G\+Lint}]{red\+Bits,  }\item[{G\+Lint}]{green\+Bits,  }\item[{G\+Lint}]{blue\+Bits,  }\item[{G\+Lint}]{alpha\+Bits,  }\item[{G\+Lint}]{depth\+Bits,  }\item[{G\+Lint}]{stencil\+Bits,  }\item[{G\+Lint}]{accum\+Red\+Bits,  }\item[{G\+Lint}]{accum\+Green\+Bits,  }\item[{G\+Lint}]{accum\+Blue\+Bits,  }\item[{G\+Lint}]{accum\+Alpha\+Bits }\end{DoxyParamCaption})}
+
+Makes some sanity checks and fills in the fields of the struct \hyperlink{structgl__config}{gl\+\_\+config} object with the given parameters. If the caller needs to set additional fields, he should just probably init the whole \hyperlink{structgl__config}{gl\+\_\+config} object himself.
+
+\begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE on success, or G\+L\+\_\+\+F\+A\+L\+SE on failure.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{context_8h_ab6f70195f1463dd384557084879d343c}{\+\_\+mesa\+\_\+create\+\_\+visual()} above for the parameter description. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{context_8h_acc7ec73e5d31f7df9d88975c04b820f9}\label{context_8h_acc7ec73e5d31f7df9d88975c04b820f9}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+make\+\_\+current@{\+\_\+mesa\+\_\+make\+\_\+current}}
+\index{\+\_\+mesa\+\_\+make\+\_\+current@{\+\_\+mesa\+\_\+make\+\_\+current}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+make\+\_\+current()}{\_mesa\_make\_current()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+make\+\_\+current (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{new\+Ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$}]{draw\+Buffer,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$}]{read\+Buffer }\end{DoxyParamCaption})}
+
+Bind the given context to the given draw\+Buffer and read\+Buffer and make it the current context for the calling thread. We\textquotesingle{}ll render into the draw\+Buffer and read pixels from the read\+Buffer (i.\+e. gl\+Read/\+Copy\+Pixels, gl\+Copy\+Tex\+Image, etc).
+
+We check that the context\textquotesingle{}s and framebuffer\textquotesingle{}s visuals are compatible and return immediately if they\textquotesingle{}re not.
+
+
+\begin{DoxyParams}{参数}
+{\em new\+Ctx} & the new GL context. If N\+U\+LL then there will be no current GL context. \\
+\hline
+{\em draw\+Buffer} & the drawing framebuffer \\
+\hline
+{\em read\+Buffer} & the reading framebuffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{context_8h_aa1f2e15c394bc9919d84f4f5f8472eba}\label{context_8h_aa1f2e15c394bc9919d84f4f5f8472eba}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+notify\+Swap\+Buffers@{\+\_\+mesa\+\_\+notify\+Swap\+Buffers}}
+\index{\+\_\+mesa\+\_\+notify\+Swap\+Buffers@{\+\_\+mesa\+\_\+notify\+Swap\+Buffers}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+notify\+Swap\+Buffers()}{\_mesa\_notifySwapBuffers()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+notify\+Swap\+Buffers (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Swap buffers notification callback.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+Called by window system just before swapping buffers. We have to finish any pending rendering. \mbox{\Hypertarget{context_8h_ad98d5d4fae70f1fea38eeab0dad268bc}\label{context_8h_ad98d5d4fae70f1fea38eeab0dad268bc}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+record\+\_\+error@{\+\_\+mesa\+\_\+record\+\_\+error}}
+\index{\+\_\+mesa\+\_\+record\+\_\+error@{\+\_\+mesa\+\_\+record\+\_\+error}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+record\+\_\+error()}{\_mesa\_record\_error()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+record\+\_\+error (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{error }\end{DoxyParamCaption})}
+
+Record an error.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em error} & error code.\\
+\hline
+\end{DoxyParams}
+Records the given error code and call the driver\textquotesingle{}s \hyperlink{structdd__function__table_abc8c0b95063ce845d9e26d53b370e02c}{dd\+\_\+function\+\_\+table\+::\+Error} function if defined.
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{namespace_this}{This} is called via \+\_\+mesa\+\_\+error(). 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{context_8h_a9ac280d31ddd7cf7ca6da4e67e3ed82c}\label{context_8h_a9ac280d31ddd7cf7ca6da4e67e3ed82c}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+set\+\_\+mvp\+\_\+with\+\_\+dp4@{\+\_\+mesa\+\_\+set\+\_\+mvp\+\_\+with\+\_\+dp4}}
+\index{\+\_\+mesa\+\_\+set\+\_\+mvp\+\_\+with\+\_\+dp4@{\+\_\+mesa\+\_\+set\+\_\+mvp\+\_\+with\+\_\+dp4}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+set\+\_\+mvp\+\_\+with\+\_\+dp4()}{\_mesa\_set\_mvp\_with\_dp4()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+set\+\_\+mvp\+\_\+with\+\_\+dp4 (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lboolean}]{flag }\end{DoxyParamCaption})}
+
+Set mvp\+\_\+with\+\_\+dp4 flag. If a driver has a preference for D\+P4 over M\+U\+L/\+M\+AD, or vice versa, call this function to register that. Otherwise we default to M\+U\+L/\+M\+AD. \mbox{\Hypertarget{context_8h_af4026b0cb4957af9637c5d4c72787fbb}\label{context_8h_af4026b0cb4957af9637c5d4c72787fbb}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+share\+\_\+state@{\+\_\+mesa\+\_\+share\+\_\+state}}
+\index{\+\_\+mesa\+\_\+share\+\_\+state@{\+\_\+mesa\+\_\+share\+\_\+state}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+share\+\_\+state()}{\_mesa\_share\_state()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+share\+\_\+state (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx\+To\+Share }\end{DoxyParamCaption})}
+
+Make context \textquotesingle{}ctx\textquotesingle{} share the display lists, textures and programs that are associated with \textquotesingle{}ctx\+To\+Share\textquotesingle{}. Any display lists, textures or programs associated with \textquotesingle{}ctx\textquotesingle{} will be deleted if nobody else is sharing them. \mbox{\Hypertarget{context_8h_ad951603a4d33d18b15d0eeafc4ad5e1d}\label{context_8h_ad951603a4d33d18b15d0eeafc4ad5e1d}} 
+\index{context.\+h@{context.\+h}!\+\_\+mesa\+\_\+valid\+\_\+to\+\_\+render@{\+\_\+mesa\+\_\+valid\+\_\+to\+\_\+render}}
+\index{\+\_\+mesa\+\_\+valid\+\_\+to\+\_\+render@{\+\_\+mesa\+\_\+valid\+\_\+to\+\_\+render}!context.\+h@{context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+valid\+\_\+to\+\_\+render()}{\_mesa\_valid\_to\_render()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+valid\+\_\+to\+\_\+render (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{const char $\ast$}]{where }\end{DoxyParamCaption})}
+
+Prior to drawing anything with gl\+Begin, gl\+Draw\+Arrays, etc. this function is called to see if it\textquotesingle{}s valid to render. \hyperlink{namespace_this}{This} involves checking that the current shader is valid and the framebuffer is complete. If an error is detected it\textquotesingle{}ll be recorded here. \begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE if OK to render, G\+L\+\_\+\+F\+A\+L\+SE if not 
+\end{DoxyReturn}

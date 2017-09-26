@@ -1,0 +1,99 @@
+\hypertarget{polygon_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/polygon.h 文件参考}
+\label{polygon_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/polygon.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/polygon.\+h}}
+{\ttfamily \#include \char`\"{}glheader.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{polygon_8h_a33567368637f9a869d0b524b7fe24ead}\label{polygon_8h_a33567368637f9a869d0b524b7fe24ead}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+polygon\+\_\+stipple} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const G\+Lubyte $\ast$pattern)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{polygon_8h_abe574cde7ffab4a0af69084a63ee68f5}{\+\_\+mesa\+\_\+\+Cull\+Face} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{polygon_8h_a5bc09c6f52fb3f7c8d0ecb70bc0a4eff}{\+\_\+mesa\+\_\+\+Front\+Face} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{polygon_8h_a3148420df549b4bd180b6ce71e1516db}{\+\_\+mesa\+\_\+\+Polygon\+Mode} (\hyperlink{interfacevoid}{G\+Lenum} face, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\mbox{\Hypertarget{polygon_8h_ad339e439ffb51b217de66cec01160302}\label{polygon_8h_ad339e439ffb51b217de66cec01160302}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Polygon\+Offset} (G\+Lfloat factor, G\+Lfloat units)
+\item 
+\mbox{\Hypertarget{polygon_8h_a68d43ab96ea465f610ebe679a07dbefd}\label{polygon_8h_a68d43ab96ea465f610ebe679a07dbefd}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Polygon\+Offset\+E\+XT} (G\+Lfloat factor, G\+Lfloat bias)
+\item 
+\mbox{\Hypertarget{polygon_8h_a6cf3a5112d2bfe02a5b6bc50949cf015}\label{polygon_8h_a6cf3a5112d2bfe02a5b6bc50949cf015}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Polygon\+Stipple} (const G\+Lubyte $\ast$mask)
+\item 
+\mbox{\Hypertarget{polygon_8h_a1734ecd425780589895f3068b9a33c62}\label{polygon_8h_a1734ecd425780589895f3068b9a33c62}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Get\+Polygon\+Stipple} (G\+Lubyte $\ast$mask)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{polygon_8h_a98826255a14762def16f1f492bf3bd4e}{\+\_\+mesa\+\_\+init\+\_\+polygon} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Polygon operations. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{polygon_8h_abe574cde7ffab4a0af69084a63ee68f5}\label{polygon_8h_abe574cde7ffab4a0af69084a63ee68f5}} 
+\index{polygon.\+h@{polygon.\+h}!\+\_\+mesa\+\_\+\+Cull\+Face@{\+\_\+mesa\+\_\+\+Cull\+Face}}
+\index{\+\_\+mesa\+\_\+\+Cull\+Face@{\+\_\+mesa\+\_\+\+Cull\+Face}!polygon.\+h@{polygon.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Cull\+Face()}{\_mesa\_CullFace()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Cull\+Face (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{mode }\end{DoxyParamCaption})}
+
+Specify whether to cull front-\/ or back-\/facing facets.
+
+
+\begin{DoxyParams}{参数}
+{\em mode} & culling mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Cull\+Face().
+\end{DoxySeeAlso}
+Verifies the parameter and updates \hyperlink{structgl__polygon__attrib_a5b72a38a92447e6c38bf2ef0f57d4f7e}{gl\+\_\+polygon\+\_\+attrib\+::\+Cull\+Face\+Mode}. On change, flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_ab5de002676624683a137641cf9053901}{dd\+\_\+function\+\_\+table\+::\+Cull\+Face} callback. \mbox{\Hypertarget{polygon_8h_a5bc09c6f52fb3f7c8d0ecb70bc0a4eff}\label{polygon_8h_a5bc09c6f52fb3f7c8d0ecb70bc0a4eff}} 
+\index{polygon.\+h@{polygon.\+h}!\+\_\+mesa\+\_\+\+Front\+Face@{\+\_\+mesa\+\_\+\+Front\+Face}}
+\index{\+\_\+mesa\+\_\+\+Front\+Face@{\+\_\+mesa\+\_\+\+Front\+Face}!polygon.\+h@{polygon.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Front\+Face()}{\_mesa\_FrontFace()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Front\+Face (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{mode }\end{DoxyParamCaption})}
+
+Define front-\/ and back-\/facing
+
+
+\begin{DoxyParams}{参数}
+{\em mode} & orientation of front-\/facing polygons.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Front\+Face().
+\end{DoxySeeAlso}
+Verifies the parameter and updates \hyperlink{structgl__polygon__attrib_a13f1cfa11a943787240fdcc16938e240}{gl\+\_\+polygon\+\_\+attrib\+::\+Front\+Face}. On change flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_a456ec268b948ec165002ec80537e4172}{dd\+\_\+function\+\_\+table\+::\+Front\+Face} callback. \mbox{\Hypertarget{polygon_8h_a98826255a14762def16f1f492bf3bd4e}\label{polygon_8h_a98826255a14762def16f1f492bf3bd4e}} 
+\index{polygon.\+h@{polygon.\+h}!\+\_\+mesa\+\_\+init\+\_\+polygon@{\+\_\+mesa\+\_\+init\+\_\+polygon}}
+\index{\+\_\+mesa\+\_\+init\+\_\+polygon@{\+\_\+mesa\+\_\+init\+\_\+polygon}!polygon.\+h@{polygon.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+polygon()}{\_mesa\_init\_polygon()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+polygon (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialize the context polygon state.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+Initializes \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Polygon and \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Polygon\+Stipple attribute groups. \mbox{\Hypertarget{polygon_8h_a3148420df549b4bd180b6ce71e1516db}\label{polygon_8h_a3148420df549b4bd180b6ce71e1516db}} 
+\index{polygon.\+h@{polygon.\+h}!\+\_\+mesa\+\_\+\+Polygon\+Mode@{\+\_\+mesa\+\_\+\+Polygon\+Mode}}
+\index{\+\_\+mesa\+\_\+\+Polygon\+Mode@{\+\_\+mesa\+\_\+\+Polygon\+Mode}!polygon.\+h@{polygon.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Polygon\+Mode()}{\_mesa\_PolygonMode()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Polygon\+Mode (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{face,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{mode }\end{DoxyParamCaption})}
+
+Set the polygon rasterization mode.
+
+
+\begin{DoxyParams}{参数}
+{\em face} & the polygons which {\ttfamily mode} applies to. \\
+\hline
+{\em mode} & how polygons should be rasterized.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Polygon\+Mode().
+\end{DoxySeeAlso}
+Verifies the parameters and updates \hyperlink{structgl__polygon__attrib_a9db397247cea61ec3b210f492b4d139b}{gl\+\_\+polygon\+\_\+attrib\+::\+Front\+Mode} and \hyperlink{structgl__polygon__attrib_a3cadb266ec4a6a2c4c9d1afe9b68bc6d}{gl\+\_\+polygon\+\_\+attrib\+::\+Back\+Mode}. On change flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_a10d886b8170e9960a05c351ec600d89a}{dd\+\_\+function\+\_\+table\+::\+Polygon\+Mode} callback. 

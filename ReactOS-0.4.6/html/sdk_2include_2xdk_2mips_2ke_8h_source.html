@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/include/xdk/mips/ke.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_f392f966fdfa958006dd89b2d26c104a.html">include</a></li><li class="navelem"><a class="el" href="dir_05a8bae5a3a74453287e9dbcfe2bf9c0.html">xdk</a></li><li class="navelem"><a class="el" href="dir_10dee39cdcd0317ec3f37c9e7cc971b6.html">mips</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ke.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$if (_WDMDDK_)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#error MIPS Headers are totally incorrect</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Used to contain PFNs and PFN counts</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">typedef</span> ULONG PFN_COUNT;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">typedef</span> ULONG PFN_NUMBER, *PPFN_NUMBER;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">typedef</span> LONG SPFN_NUMBER, *PSPFN_NUMBER;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define PASSIVE_LEVEL                      0</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define APC_LEVEL                          1</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define DISPATCH_LEVEL                     2</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define PROFILE_LEVEL                     27</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define IPI_LEVEL                         29</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define HIGH_LEVEL                        31</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___k_p_c_r.html">_KPCR</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">struct </span><a class="code" href="struct___k_p_r_c_b.html">_KPRCB</a> *Prcb;         <span class="comment">/* 20 */</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  KIRQL Irql;                  <span class="comment">/* 24 */</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  ULONG IRR;                   <span class="comment">/* 28 */</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  ULONG IDR;                   <span class="comment">/* 30 */</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <a class="code" href="struct___k_p_c_r.html">KPCR</a>, *<a class="code" href="struct___k_p_c_r.html">PKPCR</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define KeGetPcr()                      PCR</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct___k_f_l_o_a_t_i_n_g___s_a_v_e.html">   27</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___k_f_l_o_a_t_i_n_g___s_a_v_e.html">_KFLOATING_SAVE</a> {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <a class="code" href="struct___k_f_l_o_a_t_i_n_g___s_a_v_e.html">KFLOATING_SAVE</a>, *<a class="code" href="struct___k_f_l_o_a_t_i_n_g___s_a_v_e.html">PKFLOATING_SAVE</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">static</span> __inline</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;ULONG</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;NTAPI</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;KeGetCurrentProcessorNumber(<a class="code" href="interfacevoid.html">VOID</a>)</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define YieldProcessor() __asm__ __volatile__(&quot;nop&quot;);</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define KeLowerIrql(a) KfLowerIrql(a)</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define KeRaiseIrql(a,b) *(b) = KfRaiseIrql(a)</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;NTKERNELAPI</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="interfacevoid.html">VOID</a></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;NTAPI</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;KfLowerIrql(</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  IN KIRQL NewIrql);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;NTKERNELAPI</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;KIRQL</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;NTAPI</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;KfRaiseIrql(</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  IN KIRQL NewIrql);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;NTKERNELAPI</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;KIRQL</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;NTAPI</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;KeRaiseIrqlToDpcLevel(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;NTKERNELAPI</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;KIRQL</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;NTAPI</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;KeRaiseIrqlToSynchLevel(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;$endif</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="ttc" id="struct___k_f_l_o_a_t_i_n_g___s_a_v_e_html"><div class="ttname"><a href="struct___k_f_l_o_a_t_i_n_g___s_a_v_e.html">_KFLOATING_SAVE</a></div><div class="ttdef"><b>Definition:</b> ke.h:27</div></div>
+<div class="ttc" id="struct___k_p_r_c_b_html"><div class="ttname"><a href="struct___k_p_r_c_b.html">_KPRCB</a></div><div class="ttdef"><b>Definition:</b> ketypes.h:555</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+<div class="ttc" id="struct___k_p_c_r_html"><div class="ttname"><a href="struct___k_p_c_r.html">_KPCR</a></div><div class="ttdef"><b>Definition:</b> ke.h:280</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

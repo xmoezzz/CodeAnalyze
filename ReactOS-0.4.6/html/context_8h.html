@@ -1,0 +1,1113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/dll/opengl/mesa/main/context.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c938f8a9ae7e172e1ee48b60f4a9b17a.html">dll</a></li><li class="navelem"><a class="el" href="dir_f28df4588c441543404e0bf042ec3ed8.html">opengl</a></li><li class="navelem"><a class="el" href="dir_8f911cde560d768cee55606d872b51f5.html">mesa</a></li><li class="navelem"><a class="el" href="dir_57ebefe5e357811c45777f992b96e913.html">main</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">context.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;imports.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="mtypes_8h_source.html">mtypes.h</a>&quot;</code><br />
+</div>
+<p><a href="context_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Macros for flushing buffered rendering commands before state changes,</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>checking if inside glBegin/glEnd, etc. </p>
+</div></td></tr>
+<tr class="memitem:ae4cee470c3a155d770b351b681b53164"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ae4cee470c3a155d770b351b681b53164">FLUSH_VERTICES</a>(ctx,  newstate)</td></tr>
+<tr class="separator:ae4cee470c3a155d770b351b681b53164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3b3ee7b4431e70f8324080d2dcd37d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a2e3b3ee7b4431e70f8324080d2dcd37d">FLUSH_CURRENT</a>(ctx,  newstate)</td></tr>
+<tr class="separator:a2e3b3ee7b4431e70f8324080d2dcd37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7cd5802267f3b17c67f550baa17fcc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a0e7cd5802267f3b17c67f550baa17fcc">ASSERT_OUTSIDE_BEGIN_END_WITH_RETVAL</a>(ctx,  retval)</td></tr>
+<tr class="separator:a0e7cd5802267f3b17c67f550baa17fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ef9eb77f08acffe706e218076568f3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a13ef9eb77f08acffe706e218076568f3">ASSERT_OUTSIDE_BEGIN_END</a>(ctx)</td></tr>
+<tr class="separator:a13ef9eb77f08acffe706e218076568f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbe64d9c3d218a3112aa552a3fc8ec7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a6dbe64d9c3d218a3112aa552a3fc8ec7">ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH</a>(ctx)</td></tr>
+<tr class="separator:a6dbe64d9c3d218a3112aa552a3fc8ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09d593d6a0eb4c8c364fd487c3ead33"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ac09d593d6a0eb4c8c364fd487c3ead33">ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH_WITH_RETVAL</a>(ctx,  retval)</td></tr>
+<tr class="separator:ac09d593d6a0eb4c8c364fd487c3ead33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8420551e9c57ea58e8f6e59cb64b948e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a8420551e9c57ea58e8f6e59cb64b948e">_mesa_init_get_hash</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx)</td></tr>
+<tr class="separator:a8420551e9c57ea58e8f6e59cb64b948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f2e15c394bc9919d84f4f5f8472eba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#aa1f2e15c394bc9919d84f4f5f8472eba">_mesa_notifySwapBuffers</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *gc)</td></tr>
+<tr class="separator:aa1f2e15c394bc9919d84f4f5f8472eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a59ed3f36346992b91ef20775db14b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> _glapi_table *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a64a59ed3f36346992b91ef20775db14b">_mesa_get_dispatch</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx)</td></tr>
+<tr class="separator:a64a59ed3f36346992b91ef20775db14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac280d31ddd7cf7ca6da4e67e3ed82c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a9ac280d31ddd7cf7ca6da4e67e3ed82c">_mesa_set_mvp_with_dp4</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, GLboolean flag)</td></tr>
+<tr class="separator:a9ac280d31ddd7cf7ca6da4e67e3ed82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad951603a4d33d18b15d0eeafc4ad5e1d"><td class="memItemLeft" align="right" valign="top">GLboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ad951603a4d33d18b15d0eeafc4ad5e1d">_mesa_valid_to_render</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, const char *where)</td></tr>
+<tr class="separator:ad951603a4d33d18b15d0eeafc4ad5e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Visual-related functions</div></td></tr>
+<tr class="memitem:ab6f70195f1463dd384557084879d343c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ab6f70195f1463dd384557084879d343c">_mesa_create_visual</a> (GLboolean dbFlag, GLboolean stereoFlag, GLint redBits, GLint greenBits, GLint blueBits, GLint alphaBits, GLint depthBits, GLint stencilBits, GLint accumRedBits, GLint accumGreenBits, GLint accumBlueBits, GLint accumAlphaBits)</td></tr>
+<tr class="separator:ab6f70195f1463dd384557084879d343c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86dcb34f74872fba5a082c997a8a687f"><td class="memItemLeft" align="right" valign="top">GLboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a86dcb34f74872fba5a082c997a8a687f">_mesa_initialize_visual</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *v, GLboolean dbFlag, GLboolean stereoFlag, GLint redBits, GLint greenBits, GLint blueBits, GLint alphaBits, GLint depthBits, GLint stencilBits, GLint accumRedBits, GLint accumGreenBits, GLint accumBlueBits, GLint accumAlphaBits)</td></tr>
+<tr class="separator:a86dcb34f74872fba5a082c997a8a687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e780c5af7163a0b8fc47c2741e6a0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ac8e780c5af7163a0b8fc47c2741e6a0a">_mesa_destroy_visual</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *vis)</td></tr>
+<tr class="separator:ac8e780c5af7163a0b8fc47c2741e6a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Context-related functions</div></td></tr>
+<tr class="memitem:a9d903fb48a4dd420a512f79c75752e95"><td class="memItemLeft" align="right" valign="top">GLboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a9d903fb48a4dd420a512f79c75752e95">_mesa_initialize_context</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *visual, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *share_list, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structdd__function__table.html">dd_function_table</a> *driverFunctions, <a class="el" href="interfacevoid.html">void</a> *driverContext)</td></tr>
+<tr class="separator:a9d903fb48a4dd420a512f79c75752e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cd4ad4b5167521044415341b3d5864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a10cd4ad4b5167521044415341b3d5864">_mesa_create_context</a> (const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *visual, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *share_list, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structdd__function__table.html">dd_function_table</a> *driverFunctions, <a class="el" href="interfacevoid.html">void</a> *driverContext)</td></tr>
+<tr class="separator:a10cd4ad4b5167521044415341b3d5864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1094b83ed247a9a949128da155440bcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a1094b83ed247a9a949128da155440bcf">_mesa_free_context_data</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx)</td></tr>
+<tr class="separator:a1094b83ed247a9a949128da155440bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42d8ad02e901ec69e440d5aa8f67dad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ae42d8ad02e901ec69e440d5aa8f67dad">_mesa_destroy_context</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx)</td></tr>
+<tr class="separator:ae42d8ad02e901ec69e440d5aa8f67dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cdd2261d906273011e3868b2817fa0"><td class="memItemLeft" align="right" valign="top"><a id="a65cdd2261d906273011e3868b2817fa0"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_mesa_copy_context</b> (const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *src, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *dst, GLuint mask)</td></tr>
+<tr class="separator:a65cdd2261d906273011e3868b2817fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732d6d543cd521ad53c66912f6d34348"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a732d6d543cd521ad53c66912f6d34348">_mesa_check_init_viewport</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, GLuint width, GLuint height)</td></tr>
+<tr class="separator:a732d6d543cd521ad53c66912f6d34348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7ec73e5d31f7df9d88975c04b820f9"><td class="memItemLeft" align="right" valign="top">GLboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#acc7ec73e5d31f7df9d88975c04b820f9">_mesa_make_current</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__framebuffer.html">gl_framebuffer</a> *drawBuffer, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__framebuffer.html">gl_framebuffer</a> *readBuffer)</td></tr>
+<tr class="separator:acc7ec73e5d31f7df9d88975c04b820f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4026b0cb4957af9637c5d4c72787fbb"><td class="memItemLeft" align="right" valign="top">GLboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#af4026b0cb4957af9637c5d4c72787fbb">_mesa_share_state</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctxToShare)</td></tr>
+<tr class="separator:af4026b0cb4957af9637c5d4c72787fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9009761789de1bde0a16ffe3cc8f7882"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a9009761789de1bde0a16ffe3cc8f7882">_mesa_get_current_context</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a9009761789de1bde0a16ffe3cc8f7882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Miscellaneous</div></td></tr>
+<tr class="memitem:ad98d5d4fae70f1fea38eeab0dad268bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ad98d5d4fae70f1fea38eeab0dad268bc">_mesa_record_error</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, <a class="el" href="interfacevoid.html">GLenum</a> error)</td></tr>
+<tr class="separator:ad98d5d4fae70f1fea38eeab0dad268bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c5969c2af3641f9632a9aa0a4f0609"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#ab7c5969c2af3641f9632a9aa0a4f0609">_mesa_finish</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx)</td></tr>
+<tr class="separator:ab7c5969c2af3641f9632a9aa0a4f0609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1534c85a80d793eaa3b893b891e0a35d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a1534c85a80d793eaa3b893b891e0a35d">_mesa_flush</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx)</td></tr>
+<tr class="separator:a1534c85a80d793eaa3b893b891e0a35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af3dd491fa9d0c6566c215b50fa2f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a> GLAPIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a4af3dd491fa9d0c6566c215b50fa2f6f">_mesa_Finish</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a4af3dd491fa9d0c6566c215b50fa2f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec87f14a36ca3eecb572d5eea1e0130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a> GLAPIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="context_8h.html#a0ec87f14a36ca3eecb572d5eea1e0130">_mesa_Flush</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a0ec87f14a36ca3eecb572d5eea1e0130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Mesa context and visual-related functions.</p>
+<p>There are three large Mesa data types/classes which are meant to be used by device drivers:</p><ul>
+<li>struct <a class="el" href="structgl__context.html">gl_context</a>: this contains the Mesa rendering state</li>
+<li>struct <a class="el" href="structgl__config.html">gl_config</a>: this describes the color buffer (RGB vs. ci), whether or not there's a depth buffer, stencil buffer, etc.</li>
+<li>struct <a class="el" href="structgl__framebuffer.html">gl_framebuffer</a>: contains pointers to the depth buffer, stencil buffer, accum buffer and alpha buffers.</li>
+</ul>
+<p>These types should be encapsulated by corresponding device driver data types. See xmesa.h and xmesaP.h for an example.</p>
+<p>In OOP terms, struct <a class="el" href="structgl__context.html">gl_context</a>, struct <a class="el" href="structgl__config.html">gl_config</a>, and struct <a class="el" href="structgl__framebuffer.html">gl_framebuffer</a> are base classes which the device driver must derive from.</p>
+<p>The following functions create and destroy these data types. </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a13ef9eb77f08acffe706e218076568f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ef9eb77f08acffe706e218076568f3">&#9670;&nbsp;</a></span>ASSERT_OUTSIDE_BEGIN_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> ASSERT_OUTSIDE_BEGIN_END</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ctx</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                    \</div><div class="line">   if (ctx-&gt;Driver.CurrentExecPrimitive != <a class="code" href="mtypes_8h.html#ab5bbc742d880e2dc15eb3241cdfea74e">PRIM_OUTSIDE_BEGIN_END</a>) {    \</div><div class="line">      _mesa_error(ctx, GL_INVALID_OPERATION, <span class="stringliteral">&quot;Inside glBegin/glEnd&quot;</span>);   \</div><div class="line">      return;                               \</div><div class="line">   }                                    \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="mtypes_8h_html_ab5bbc742d880e2dc15eb3241cdfea74e"><div class="ttname"><a href="mtypes_8h.html#ab5bbc742d880e2dc15eb3241cdfea74e">PRIM_OUTSIDE_BEGIN_END</a></div><div class="ttdeci">#define PRIM_OUTSIDE_BEGIN_END</div><div class="ttdef"><b>Definition:</b> mtypes.h:81</div></div>
+</div><!-- fragment --><p>Macro to assert that the API call was made outside the glBegin()/glEnd() pair.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6dbe64d9c3d218a3112aa552a3fc8ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dbe64d9c3d218a3112aa552a3fc8ec7">&#9670;&nbsp;</a></span>ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ctx</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                    \</div><div class="line">   ASSERT_OUTSIDE_BEGIN_END(ctx);                   \</div><div class="line">   FLUSH_VERTICES(ctx, 0);                      \</div><div class="line">} <span class="keywordflow">while</span> (0)</div></div><!-- fragment --><p>Macro to assert that the API call was made outside the glBegin()/glEnd() pair and flush the vertices.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac09d593d6a0eb4c8c364fd487c3ead33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09d593d6a0eb4c8c364fd487c3ead33">&#9670;&nbsp;</a></span>ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH_WITH_RETVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH_WITH_RETVAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ctx, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">retval&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                    \</div><div class="line">   ASSERT_OUTSIDE_BEGIN_END_WITH_RETVAL(ctx, retval);           \</div><div class="line">   FLUSH_VERTICES(ctx, 0);                      \</div><div class="line">} <span class="keywordflow">while</span> (0)</div></div><!-- fragment --><p>Macro to assert that the API call was made outside the glBegin()/glEnd() pair and flush the vertices, with return value.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context. </td></tr>
+    <tr><td class="paramname">retval</td><td>value to return in case the assertion fails. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e7cd5802267f3b17c67f550baa17fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7cd5802267f3b17c67f550baa17fcc">&#9670;&nbsp;</a></span>ASSERT_OUTSIDE_BEGIN_END_WITH_RETVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> ASSERT_OUTSIDE_BEGIN_END_WITH_RETVAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ctx, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">retval&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                    \</div><div class="line">   if (ctx-&gt;Driver.CurrentExecPrimitive != <a class="code" href="mtypes_8h.html#ab5bbc742d880e2dc15eb3241cdfea74e">PRIM_OUTSIDE_BEGIN_END</a>) {    \</div><div class="line">      _mesa_error(ctx, GL_INVALID_OPERATION, <span class="stringliteral">&quot;Inside glBegin/glEnd&quot;</span>);   \</div><div class="line">      return retval;                            \</div><div class="line">   }                                    \</div><div class="line">} <span class="keywordflow">while</span> (0)</div><div class="ttc" id="mtypes_8h_html_ab5bbc742d880e2dc15eb3241cdfea74e"><div class="ttname"><a href="mtypes_8h.html#ab5bbc742d880e2dc15eb3241cdfea74e">PRIM_OUTSIDE_BEGIN_END</a></div><div class="ttdeci">#define PRIM_OUTSIDE_BEGIN_END</div><div class="ttdef"><b>Definition:</b> mtypes.h:81</div></div>
+</div><!-- fragment --><p>Macro to assert that the API call was made outside the glBegin()/glEnd() pair, with return value.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context. </td></tr>
+    <tr><td class="paramname">retval</td><td>value to return in case the assertion fails. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e3b3ee7b4431e70f8324080d2dcd37d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3b3ee7b4431e70f8324080d2dcd37d">&#9670;&nbsp;</a></span>FLUSH_CURRENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> FLUSH_CURRENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ctx, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">newstate&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                \</div><div class="line">   if (MESA_VERBOSE &amp; VERBOSE_STATE)                \</div><div class="line">      _mesa_debug(ctx, <span class="stringliteral">&quot;FLUSH_CURRENT in %s\n&quot;</span>, MESA_FUNCTION); \</div><div class="line">   if (ctx-&gt;Driver.NeedFlush &amp; FLUSH_UPDATE_CURRENT)        \</div><div class="line">      ctx-&gt;Driver.FlushVertices(ctx, FLUSH_UPDATE_CURRENT); \</div><div class="line">   ctx-&gt;NewState |= newstate;                   \</div><div class="line">} <span class="keywordflow">while</span> (0)</div></div><!-- fragment --><p>Flush current state.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context. </td></tr>
+    <tr><td class="paramname">newstate</td><td>new state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Checks if <a class="el" href="structdd__function__table.html#a3e2043e74cfdbaedd6f5885c1303b7c9">dd_function_table::NeedFlush</a> is marked to flush current state, and calls <a class="el" href="structdd__function__table.html#a3c743494ace4641ddbd61b3168fe7f96">dd_function_table::FlushVertices</a> if so. Marks __struct gl_contextRec::NewState with <code>newstate</code>. </p>
+
+</div>
+</div>
+<a id="ae4cee470c3a155d770b351b681b53164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4cee470c3a155d770b351b681b53164">&#9670;&nbsp;</a></span>FLUSH_VERTICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> FLUSH_VERTICES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ctx, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">newstate&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                \</div><div class="line">   if (MESA_VERBOSE &amp; VERBOSE_STATE)                \</div><div class="line">      _mesa_debug(ctx, <span class="stringliteral">&quot;FLUSH_VERTICES in %s\n&quot;</span>, MESA_FUNCTION);\</div><div class="line">   if (ctx-&gt;Driver.NeedFlush &amp; FLUSH_STORED_VERTICES)       \</div><div class="line">      ctx-&gt;Driver.FlushVertices(ctx, FLUSH_STORED_VERTICES);    \</div><div class="line">   ctx-&gt;NewState |= newstate;                   \</div><div class="line">} <span class="keywordflow">while</span> (0)</div></div><!-- fragment --><p>Flush vertices.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context. </td></tr>
+    <tr><td class="paramname">newstate</td><td>new state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Checks if <a class="el" href="structdd__function__table.html#a3e2043e74cfdbaedd6f5885c1303b7c9">dd_function_table::NeedFlush</a> is marked to flush stored vertices, and calls <a class="el" href="structdd__function__table.html#a3c743494ace4641ddbd61b3168fe7f96">dd_function_table::FlushVertices</a> if so. Marks __struct gl_contextRec::NewState with <code>newstate</code>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a732d6d543cd521ad53c66912f6d34348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a732d6d543cd521ad53c66912f6d34348">&#9670;&nbsp;</a></span>_mesa_check_init_viewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_check_init_viewport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check if the viewport/scissor size has not yet been initialized. Initialize the size if the given width and height are non-zero. </p>
+
+</div>
+</div>
+<a id="a10cd4ad4b5167521044415341b3d5864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10cd4ad4b5167521044415341b3d5864">&#9670;&nbsp;</a></span>_mesa_create_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a>* _mesa_create_context </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *&#160;</td>
+          <td class="paramname"><em>visual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>share_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structdd__function__table.html">dd_function_table</a> *&#160;</td>
+          <td class="paramname"><em>driverFunctions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>driverContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocate and initialize a struct <a class="el" href="structgl__context.html">gl_context</a> structure. Note that the driver needs to pass in its <a class="el" href="structdd__function__table.html">dd_function_table</a> here since we need to at least call driverFunctions-&gt;NewTextureObject to initialize the rendering context.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">api</td><td>the GL API type to create the context for </td></tr>
+    <tr><td class="paramname">visual</td><td>a struct <a class="el" href="structgl__config.html">gl_config</a> pointer (we copy the struct contents) </td></tr>
+    <tr><td class="paramname">share_list</td><td>another context to share display lists with or NULL </td></tr>
+    <tr><td class="paramname">driverFunctions</td><td>points to the <a class="el" href="structdd__function__table.html">dd_function_table</a> into which the driver has plugged in all its special functions. </td></tr>
+    <tr><td class="paramname">driverContext</td><td>points to the device driver's private context state</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to a new __struct gl_contextRec or NULL if error. </dd></dl>
+
+</div>
+</div>
+<a id="ab6f70195f1463dd384557084879d343c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f70195f1463dd384557084879d343c">&#9670;&nbsp;</a></span>_mesa_create_visual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a>* _mesa_create_visual </td>
+          <td>(</td>
+          <td class="paramtype">GLboolean&#160;</td>
+          <td class="paramname"><em>dbFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLboolean&#160;</td>
+          <td class="paramname"><em>stereoFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>redBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>greenBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>blueBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>alphaBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>depthBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>stencilBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumRedBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumGreenBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumBlueBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumAlphaBits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocates a struct <a class="el" href="structgl__config.html">gl_config</a> structure and initializes it via <a class="el" href="context_8h.html#a86dcb34f74872fba5a082c997a8a687f">_mesa_initialize_visual()</a>.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dbFlag</td><td>double buffering </td></tr>
+    <tr><td class="paramname">stereoFlag</td><td>stereo buffer </td></tr>
+    <tr><td class="paramname">depthBits</td><td>requested bits per depth buffer value. Any value in [0, 32] is acceptable but the actual depth type will be GLushort or GLuint as needed. </td></tr>
+    <tr><td class="paramname">stencilBits</td><td>requested minimum bits per stencil buffer value </td></tr>
+    <tr><td class="paramname">accumRedBits,accumGreenBits,accumBlueBits,accumAlphaBits</td><td>number of bits per color component in accum buffer. </td></tr>
+    <tr><td class="paramname">indexBits</td><td>number of bits per pixel if <code>rgbFlag</code> is GL_FALSE </td></tr>
+    <tr><td class="paramname">redBits</td><td>number of bits per color component in frame buffer for RGB(A) mode. We always use 8 in core Mesa though. </td></tr>
+    <tr><td class="paramname">greenBits</td><td>same as above. </td></tr>
+    <tr><td class="paramname">blueBits</td><td>same as above. </td></tr>
+    <tr><td class="paramname">alphaBits</td><td>same as above.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to new struct <a class="el" href="structgl__config.html">gl_config</a> or NULL if requested parameters can't be met.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Need to add params for level and numAuxBuffers (at least) </dd></dl>
+
+</div>
+</div>
+<a id="ae42d8ad02e901ec69e440d5aa8f67dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42d8ad02e901ec69e440d5aa8f67dad">&#9670;&nbsp;</a></span>_mesa_destroy_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_destroy_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destroy a struct <a class="el" href="structgl__context.html">gl_context</a> structure.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Calls <a class="el" href="context_8h.html#a1094b83ed247a9a949128da155440bcf">_mesa_free_context_data()</a> and frees the <a class="el" href="structgl__context.html">gl_context</a> object itself. </p>
+
+</div>
+</div>
+<a id="ac8e780c5af7163a0b8fc47c2741e6a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e780c5af7163a0b8fc47c2741e6a0a">&#9670;&nbsp;</a></span>_mesa_destroy_visual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_destroy_visual </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *&#160;</td>
+          <td class="paramname"><em>vis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destroy a visual and free its memory.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vis</td><td>visual.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Frees the visual structure. </p>
+
+</div>
+</div>
+<a id="ab7c5969c2af3641f9632a9aa0a4f0609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c5969c2af3641f9632a9aa0a4f0609">&#9670;&nbsp;</a></span>_mesa_finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_finish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flush commands and wait for completion. </p>
+
+</div>
+</div>
+<a id="a4af3dd491fa9d0c6566c215b50fa2f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af3dd491fa9d0c6566c215b50fa2f6f">&#9670;&nbsp;</a></span>_mesa_Finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> GLAPIENTRY _mesa_Finish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Execute glFinish().</p>
+<p>Calls the <a class="el" href="context_8h.html#a6dbe64d9c3d218a3112aa552a3fc8ec7">ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH</a> macro and the <a class="el" href="structdd__function__table.html#a3d15abc006c0aa92f1b467cd29d8e2b4">dd_function_table::Finish</a> driver callback, if not NULL. </p>
+
+</div>
+</div>
+<a id="a1534c85a80d793eaa3b893b891e0a35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1534c85a80d793eaa3b893b891e0a35d">&#9670;&nbsp;</a></span>_mesa_flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_flush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flush commands. </p>
+
+</div>
+</div>
+<a id="a0ec87f14a36ca3eecb572d5eea1e0130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec87f14a36ca3eecb572d5eea1e0130">&#9670;&nbsp;</a></span>_mesa_Flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> GLAPIENTRY _mesa_Flush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Execute glFlush().</p>
+<p>Calls the <a class="el" href="context_8h.html#a6dbe64d9c3d218a3112aa552a3fc8ec7">ASSERT_OUTSIDE_BEGIN_END_AND_FLUSH</a> macro and the <a class="el" href="structdd__function__table.html#a0680f8de4e049f72cfb10cf5867a85f5">dd_function_table::Flush</a> driver callback, if not NULL. </p>
+
+</div>
+</div>
+<a id="a1094b83ed247a9a949128da155440bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1094b83ed247a9a949128da155440bcf">&#9670;&nbsp;</a></span>_mesa_free_context_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_free_context_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Free the data associated with the given context.</p>
+<p>But doesn't free the struct <a class="el" href="structgl__context.html">gl_context</a> struct itself.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="context_8h.html#a9d903fb48a4dd420a512f79c75752e95">_mesa_initialize_context()</a> and init_attrib_groups(). </dd></dl>
+
+</div>
+</div>
+<a id="a9009761789de1bde0a16ffe3cc8f7882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9009761789de1bde0a16ffe3cc8f7882">&#9670;&nbsp;</a></span>_mesa_get_current_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a>* _mesa_get_current_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>pointer to the current GL context for this thread.</dd></dl>
+<p>Calls _glapi_get_context(). <a class="el" href="namespace_this.html">This</a> isn't the fastest way to get the current context. If you need speed, see the #GET_CURRENT_CONTEXT macro in <a class="el" href="context_8h.html">context.h</a>. </p>
+
+</div>
+</div>
+<a id="a64a59ed3f36346992b91ef20775db14b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a59ed3f36346992b91ef20775db14b">&#9670;&nbsp;</a></span>_mesa_get_dispatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> _glapi_table* _mesa_get_dispatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get context's current API dispatch table.</p>
+<p><a class="el" href="class_it.html">It</a>'ll either be the immediate-mode execute dispatcher or the display list compile dispatcher.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to dispatch_table.</dd></dl>
+<p>Simply returns __struct gl_contextRec::CurrentDispatch. </p>
+
+</div>
+</div>
+<a id="a8420551e9c57ea58e8f6e59cb64b948e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8420551e9c57ea58e8f6e59cb64b948e">&#9670;&nbsp;</a></span>_mesa_init_get_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_init_get_hash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize the enum hash for a given API</p>
+<p><a class="el" href="namespace_this.html">This</a> is called from one_time_init() to insert the enum values that are valid for the API in question into the enum hash table.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">the</td><td>current context, for determining the API in question </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d903fb48a4dd420a512f79c75752e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d903fb48a4dd420a512f79c75752e95">&#9670;&nbsp;</a></span>_mesa_initialize_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLboolean _mesa_initialize_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *&#160;</td>
+          <td class="paramname"><em>visual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>share_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structdd__function__table.html">dd_function_table</a> *&#160;</td>
+          <td class="paramname"><em>driverFunctions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>driverContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize a struct <a class="el" href="structgl__context.html">gl_context</a> struct (rendering context).</p>
+<p><a class="el" href="namespace_this.html">This</a> includes allocating all the other structs and arrays which hang off of the context by pointers. Note that the driver needs to pass in its <a class="el" href="structdd__function__table.html">dd_function_table</a> here since we need to at least call driverFunctions-&gt;NewTextureObject to create the default texture objects.</p>
+<p>Called by <a class="el" href="context_8h.html#a10cd4ad4b5167521044415341b3d5864">_mesa_create_context()</a>.</p>
+<p>Performs the imports and exports callback tables initialization, and miscellaneous one-time initializations. If no shared context is supplied one is allocated, and increase its reference count. Setups the GL API dispatch tables. Initialize the TNL module. Sets the maximum Z buffer depth. Finally queries the <code>MESA_DEBUG</code> and <code>MESA_VERBOSE</code> environment variables for debug flags.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the context to initialize </td></tr>
+    <tr><td class="paramname">api</td><td>the GL API type to create the context for </td></tr>
+    <tr><td class="paramname">visual</td><td>describes the visual attributes for this context </td></tr>
+    <tr><td class="paramname">share_list</td><td>points to context to share textures, display lists, etc with, or NULL </td></tr>
+    <tr><td class="paramname">driverFunctions</td><td>table of device driver functions for this context to use </td></tr>
+    <tr><td class="paramname">driverContext</td><td>pointer to driver-specific context data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86dcb34f74872fba5a082c997a8a687f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86dcb34f74872fba5a082c997a8a687f">&#9670;&nbsp;</a></span>_mesa_initialize_visual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLboolean _mesa_initialize_visual </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__config.html">gl_config</a> *&#160;</td>
+          <td class="paramname"><em>vis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLboolean&#160;</td>
+          <td class="paramname"><em>dbFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLboolean&#160;</td>
+          <td class="paramname"><em>stereoFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>redBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>greenBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>blueBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>alphaBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>depthBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>stencilBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumRedBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumGreenBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumBlueBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>accumAlphaBits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Makes some sanity checks and fills in the fields of the struct <a class="el" href="structgl__config.html">gl_config</a> object with the given parameters. If the caller needs to set additional fields, he should just probably init the whole <a class="el" href="structgl__config.html">gl_config</a> object himself.</p>
+<dl class="section return"><dt>返回</dt><dd>GL_TRUE on success, or GL_FALSE on failure.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="context_8h.html#ab6f70195f1463dd384557084879d343c">_mesa_create_visual()</a> above for the parameter description. </dd></dl>
+
+</div>
+</div>
+<a id="acc7ec73e5d31f7df9d88975c04b820f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7ec73e5d31f7df9d88975c04b820f9">&#9670;&nbsp;</a></span>_mesa_make_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLboolean _mesa_make_current </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>newCtx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__framebuffer.html">gl_framebuffer</a> *&#160;</td>
+          <td class="paramname"><em>drawBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__framebuffer.html">gl_framebuffer</a> *&#160;</td>
+          <td class="paramname"><em>readBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bind the given context to the given drawBuffer and readBuffer and make it the current context for the calling thread. We'll render into the drawBuffer and read pixels from the readBuffer (i.e. glRead/CopyPixels, glCopyTexImage, etc).</p>
+<p>We check that the context's and framebuffer's visuals are compatible and return immediately if they're not.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCtx</td><td>the new GL context. If NULL then there will be no current GL context. </td></tr>
+    <tr><td class="paramname">drawBuffer</td><td>the drawing framebuffer </td></tr>
+    <tr><td class="paramname">readBuffer</td><td>the reading framebuffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa1f2e15c394bc9919d84f4f5f8472eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f2e15c394bc9919d84f4f5f8472eba">&#9670;&nbsp;</a></span>_mesa_notifySwapBuffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_notifySwapBuffers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Swap buffers notification callback.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Called by window system just before swapping buffers. We have to finish any pending rendering. </p>
+
+</div>
+</div>
+<a id="ad98d5d4fae70f1fea38eeab0dad268bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98d5d4fae70f1fea38eeab0dad268bc">&#9670;&nbsp;</a></span>_mesa_record_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_record_error </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">GLenum</a>&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Record an error.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>GL context. </td></tr>
+    <tr><td class="paramname">error</td><td>error code.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Records the given error code and call the driver's <a class="el" href="structdd__function__table.html#abc8c0b95063ce845d9e26d53b370e02c">dd_function_table::Error</a> function if defined.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="namespace_this.html">This</a> is called via _mesa_error(). </dd></dl>
+
+</div>
+</div>
+<a id="a9ac280d31ddd7cf7ca6da4e67e3ed82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac280d31ddd7cf7ca6da4e67e3ed82c">&#9670;&nbsp;</a></span>_mesa_set_mvp_with_dp4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_set_mvp_with_dp4 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLboolean&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set mvp_with_dp4 flag. If a driver has a preference for DP4 over MUL/MAD, or vice versa, call this function to register that. Otherwise we default to MUL/MAD. </p>
+
+</div>
+</div>
+<a id="af4026b0cb4957af9637c5d4c72787fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4026b0cb4957af9637c5d4c72787fbb">&#9670;&nbsp;</a></span>_mesa_share_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLboolean _mesa_share_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctxToShare</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make context 'ctx' share the display lists, textures and programs that are associated with 'ctxToShare'. Any display lists, textures or programs associated with 'ctx' will be deleted if nobody else is sharing them. </p>
+
+</div>
+</div>
+<a id="ad951603a4d33d18b15d0eeafc4ad5e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad951603a4d33d18b15d0eeafc4ad5e1d">&#9670;&nbsp;</a></span>_mesa_valid_to_render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLboolean _mesa_valid_to_render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prior to drawing anything with glBegin, glDrawArrays, etc. this function is called to see if it's valid to render. <a class="el" href="namespace_this.html">This</a> involves checking that the current shader is valid and the framebuffer is complete. If an error is detected it'll be recorded here. </p><dl class="section return"><dt>返回</dt><dd>GL_TRUE if OK to render, GL_FALSE if not </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

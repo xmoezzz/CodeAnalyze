@@ -1,0 +1,106 @@
+\hypertarget{interfacens_i_parser}{}\section{ns\+I\+Parser接口 参考}
+\label{interfacens_i_parser}\index{ns\+I\+Parser@{ns\+I\+Parser}}
+类 ns\+I\+Parser 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacens_i_parser}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a5b2f46f05b22de7f24c31e0e9a39cc3f}\label{interfacens_i_parser_a5b2f46f05b22de7f24c31e0e9a39cc3f}} 
+typedef int {\bfseries ns\+D\+T\+D\+Mode}
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a527af21341be6b7eaf81b3f871031587}\label{interfacens_i_parser_a527af21341be6b7eaf81b3f871031587}} 
+typedef int {\bfseries e\+Parser\+Commands}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a78bbdf6c472ed720bab60d44b6f8dbfa}\label{interfacens_i_parser_a78bbdf6c472ed720bab60d44b6f8dbfa}} 
+bool {\bfseries Is\+Parser\+Enabled} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_aed13e271b0c42b3d7aa8eaeb5c5d76d9}\label{interfacens_i_parser_aed13e271b0c42b3d7aa8eaeb5c5d76d9}} 
+nsresult {\bfseries Get\+Channel} (\hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$a\+Channel)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_adfdcd90f846217c82b6e5ff4ea4478d9}\label{interfacens_i_parser_adfdcd90f846217c82b6e5ff4ea4478d9}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Content\+Sink} (\hyperlink{interfacens_i_supports}{ns\+I\+Content\+Sink} $\ast$a\+Sink)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ad6ec7a68287a52ff5d27aab1cd10ab50}\label{interfacens_i_parser_ad6ec7a68287a52ff5d27aab1cd10ab50}} 
+\hyperlink{interfacens_i_supports}{ns\+I\+Content\+Sink} $\ast$ {\bfseries Get\+Content\+Sink} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ab007b91264f43b74d647a694aecc61cc}\label{interfacens_i_parser_ab007b91264f43b74d647a694aecc61cc}} 
+\hyperlink{interfacevoid}{void} {\bfseries Get\+Command} (\hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Command)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a0957aae413d7d15c85e7563743219d29}\label{interfacens_i_parser_a0957aae413d7d15c85e7563743219d29}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Command2} (const char $\ast$a\+Command)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_adb4d14fe51077df28430c9f802444cc2}\label{interfacens_i_parser_adb4d14fe51077df28430c9f802444cc2}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Command} (e\+Parser\+Commands a\+Parser\+Command)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a4e2c1701f84bb6d1001faea57f5121a7}\label{interfacens_i_parser_a4e2c1701f84bb6d1001faea57f5121a7}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Document\+Charset} (const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Charset, int32\+\_\+t a\+Source)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a160f7c2d2f008ff726f213d20871b9b5}\label{interfacens_i_parser_a160f7c2d2f008ff726f213d20871b9b5}} 
+\hyperlink{interfacevoid}{void} {\bfseries Get\+Document\+Charset} (\hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$o\+Charset, int32\+\_\+t $\ast$o\+Source)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ab9c919ef25f9f112dc5f9fe2004b97f5}\label{interfacens_i_parser_ab9c919ef25f9f112dc5f9fe2004b97f5}} 
+nsresult {\bfseries Get\+D\+TD} (\hyperlink{interfacens_i_supports}{ns\+I\+D\+TD} $\ast$$\ast$a\+D\+TD)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a72dd84f63a033e9915baa1f93945ac9a}\label{interfacens_i_parser_a72dd84f63a033e9915baa1f93945ac9a}} 
+\hyperlink{interfacens_i_stream_listener}{ns\+I\+Stream\+Listener} $\ast$ {\bfseries Get\+Stream\+Listener} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a79e32ef7e37a9aaaefacdd6ffa830198}\label{interfacens_i_parser_a79e32ef7e37a9aaaefacdd6ffa830198}} 
+nsresult {\bfseries Continue\+Interrupted\+Parsing} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ac3410f10ca408495ac3607bc13354eed}\label{interfacens_i_parser_ac3410f10ca408495ac3607bc13354eed}} 
+\hyperlink{interfacevoid}{void} {\bfseries Block\+Parser} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a7618552892b4f160cca7c061189e9b99}\label{interfacens_i_parser_a7618552892b4f160cca7c061189e9b99}} 
+\hyperlink{interfacevoid}{void} {\bfseries Unblock\+Parser} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a1e29f0157d102061ad28aadabe418cd0}\label{interfacens_i_parser_a1e29f0157d102061ad28aadabe418cd0}} 
+\hyperlink{interfacevoid}{void} {\bfseries Continue\+Interrupted\+Parsing\+Async} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a81a74685b1e552321fef85aef02d1cf6}\label{interfacens_i_parser_a81a74685b1e552321fef85aef02d1cf6}} 
+bool {\bfseries Is\+Complete} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ab23fbd6a57c197fe33f00f5c5bd7252a}\label{interfacens_i_parser_ab23fbd6a57c197fe33f00f5c5bd7252a}} 
+nsresult {\bfseries Parse} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RL, \hyperlink{interfacens_i_request_observer}{ns\+I\+Request\+Observer} $\ast$a\+Listener, \hyperlink{interfacevoid}{void} $\ast$a\+Key, ns\+D\+T\+D\+Mode a\+Mode)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a755fdda3d4283df5b0ee83df9a9b288c}\label{interfacens_i_parser_a755fdda3d4283df5b0ee83df9a9b288c}} 
+nsresult {\bfseries Terminate} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ac5e64b82763e2748a748131c40e68209}\label{interfacens_i_parser_ac5e64b82763e2748a748131c40e68209}} 
+nsresult {\bfseries Parse\+Fragment} (const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+Source\+Buffer, \hyperlink{interfacevoid}{void} $\ast$a\+Tag\+Stack)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a5748d81135ba606b169d944d53c010e0}\label{interfacens_i_parser_a5748d81135ba606b169d944d53c010e0}} 
+nsresult {\bfseries Build\+Model} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ae2f34795b025df2b26c6deb87fda51eb}\label{interfacens_i_parser_ae2f34795b025df2b26c6deb87fda51eb}} 
+nsresult {\bfseries Cancel\+Parsing\+Events} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ab8f8fab16fb8399204410b11c49fd691}\label{interfacens_i_parser_ab8f8fab16fb8399204410b11c49fd691}} 
+\hyperlink{interfacevoid}{void} {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a090c16d994a5e4805db75a490d555e6d}\label{interfacens_i_parser_a090c16d994a5e4805db75a490d555e6d}} 
+bool {\bfseries Is\+Insertion\+Point\+Defined} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_a92066b0ef1276f8febfeef6f9ed9ca94}\label{interfacens_i_parser_a92066b0ef1276f8febfeef6f9ed9ca94}} 
+\hyperlink{interfacevoid}{void} {\bfseries Begin\+Evaluating\+Parser\+Inserted\+Script} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_aaa364aad0a827d4f90c0598fae46e037}\label{interfacens_i_parser_aaa364aad0a827d4f90c0598fae46e037}} 
+\hyperlink{interfacevoid}{void} {\bfseries End\+Evaluating\+Parser\+Inserted\+Script} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ab69fe0076e5d7e8066290856e0c6c3b9}\label{interfacens_i_parser_ab69fe0076e5d7e8066290856e0c6c3b9}} 
+\hyperlink{interfacevoid}{void} {\bfseries Mark\+As\+Not\+Script\+Created} (const char $\ast$a\+Command)
+\item 
+\mbox{\Hypertarget{interfacens_i_parser_ac20d4d9db10ac7764791b034a82928af}\label{interfacens_i_parser_ac20d4d9db10ac7764791b034a82928af}} 
+bool {\bfseries Is\+Script\+Created} ()
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

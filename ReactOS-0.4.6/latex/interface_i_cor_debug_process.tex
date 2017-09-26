@@ -1,0 +1,68 @@
+\hypertarget{interface_i_cor_debug_process}{}\section{I\+Cor\+Debug\+Process接口 参考}
+\label{interface_i_cor_debug_process}\index{I\+Cor\+Debug\+Process@{I\+Cor\+Debug\+Process}}
+类 I\+Cor\+Debug\+Process 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_cor_debug_process}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a163ed3336b3a3192937cf225e5c18f14}\label{interface_i_cor_debug_process_a163ed3336b3a3192937cf225e5c18f14}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+ID} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Process\+Id)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a81c4ea61d61e4aabdb0909f0aaa6fec5}\label{interface_i_cor_debug_process_a81c4ea61d61e4aabdb0909f0aaa6fec5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Handle} (\mbox{[}out\mbox{]} \hyperlink{interfacevoid}{H\+P\+R\+O\+C\+E\+SS} $\ast$ph\+Process\+Handle)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a111d8753036ff7db6c4b84fbe8613bd2}\label{interface_i_cor_debug_process_a111d8753036ff7db6c4b84fbe8613bd2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Thread} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Thread\+Id, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$$\ast$pp\+Thread)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_ae7ff31e2d2a522870b0e92788b3b92a2}\label{interface_i_cor_debug_process_ae7ff31e2d2a522870b0e92788b3b92a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enumerate\+Objects} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_object_enum}{I\+Cor\+Debug\+Object\+Enum} $\ast$$\ast$pp\+Objects)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a8d190ce3cf4929679eaf83e279da1a26}\label{interface_i_cor_debug_process_a8d190ce3cf4929679eaf83e279da1a26}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Transition\+Stub} (\mbox{[}in\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS address, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pb\+Transition\+Stub)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a879f0fe8e2f9d9bffed610396bea4690}\label{interface_i_cor_debug_process_a879f0fe8e2f9d9bffed610396bea4690}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+O\+S\+Suspended} (\mbox{[}in\mbox{]} D\+W\+O\+RD thread\+ID, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pb\+Suspended)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_ab331d94547ebb9c9a7b3f31c540a6ec7}\label{interface_i_cor_debug_process_ab331d94547ebb9c9a7b3f31c540a6ec7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Thread\+Context} (\mbox{[}in\mbox{]} D\+W\+O\+RD thread\+ID, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 context\+Size, \mbox{[}in, out\mbox{]} B\+Y\+TE context\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a569a4058a7948509c17fb7460d8d964a}\label{interface_i_cor_debug_process_a569a4058a7948509c17fb7460d8d964a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Thread\+Context} (\mbox{[}in\mbox{]} D\+W\+O\+RD thread\+ID, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 context\+Size, \mbox{[}in\mbox{]} B\+Y\+TE context\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a78de2b84e4afec42a07522867a3f1e67}\label{interface_i_cor_debug_process_a78de2b84e4afec42a07522867a3f1e67}} 
+H\+R\+E\+S\+U\+LT {\bfseries Read\+Memory} (\mbox{[}in\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS address, \mbox{[}in\mbox{]} D\+W\+O\+RD size, \mbox{[}out\mbox{]} B\+Y\+TE buffer\mbox{[}$\,$\mbox{]}, \mbox{[}out\mbox{]} S\+I\+Z\+E\+\_\+T $\ast$read)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a7ccc7440d273e5aa62f803aa02827917}\label{interface_i_cor_debug_process_a7ccc7440d273e5aa62f803aa02827917}} 
+H\+R\+E\+S\+U\+LT {\bfseries Write\+Memory} (\mbox{[}in\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS address, \mbox{[}in\mbox{]} D\+W\+O\+RD size, \mbox{[}in\mbox{]} B\+Y\+TE buffer\mbox{[}$\,$\mbox{]}, \mbox{[}out\mbox{]} S\+I\+Z\+E\+\_\+T $\ast$written)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a58320497d076b8a98154e9157313f26a}\label{interface_i_cor_debug_process_a58320497d076b8a98154e9157313f26a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Clear\+Current\+Exception} (\mbox{[}in\mbox{]} D\+W\+O\+RD thread\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a39a3fbba4c40dfa4da39c015546f2499}\label{interface_i_cor_debug_process_a39a3fbba4c40dfa4da39c015546f2499}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enable\+Log\+Messages} (\mbox{[}in\mbox{]}B\+O\+OL f\+On\+Off)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a63757da2e3cae06ce7f16accf0686a6a}\label{interface_i_cor_debug_process_a63757da2e3cae06ce7f16accf0686a6a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Modify\+Log\+Switch} (\mbox{[}in\mbox{]} W\+C\+H\+AR $\ast$p\+Log\+Switch\+Name, \mbox{[}in\mbox{]}L\+O\+NG l\+Level)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_ae6c7019a329abae27907ac9fb9975d0e}\label{interface_i_cor_debug_process_ae6c7019a329abae27907ac9fb9975d0e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enumerate\+App\+Domains} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_app_domain_enum}{I\+Cor\+Debug\+App\+Domain\+Enum} $\ast$$\ast$pp\+App\+Domains)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_ac182bf2dc3626bdc115c0ce6d11fa338}\label{interface_i_cor_debug_process_ac182bf2dc3626bdc115c0ce6d11fa338}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Object} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_value}{I\+Cor\+Debug\+Value} $\ast$$\ast$pp\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_ab9ba3024ce072029c43b31a16c19f2e5}\label{interface_i_cor_debug_process_ab9ba3024ce072029c43b31a16c19f2e5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Thread\+For\+Fiber\+Cookie} (\mbox{[}in\mbox{]} D\+W\+O\+RD fiber\+Cookie, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$$\ast$pp\+Thread)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_process_a66ea4cca39d188ea03ed65beb0415d59}\label{interface_i_cor_debug_process_a66ea4cca39d188ea03ed65beb0415d59}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Helper\+Thread\+ID} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Thread\+ID)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IPropertyDescription接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="interface_i_property_description-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IPropertyDescription接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IPropertyDescription 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_property_description.png" usemap="#IPropertyDescription_map" alt=""/>
+  <map id="IPropertyDescription_map" name="IPropertyDescription_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="300,0,490,24"/>
+<area href="interface_i_property_description2.html" alt="IPropertyDescription2" shape="rect" coords="0,112,190,136"/>
+<area href="interface_i_property_description_alias_info.html" alt="IPropertyDescriptionAliasInfo" shape="rect" coords="200,112,390,136"/>
+<area href="interface_i_property_description_search_info.html" alt="IPropertyDescriptionSearchInfo" shape="rect" coords="400,112,590,136"/>
+<area href="interfacev1__enum.html" alt="v1_enum" shape="rect" coords="600,112,790,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a289de93ea488622c0a6c829e4abb1235"><td class="memItemLeft" align="right" valign="top"><a id="a289de93ea488622c0a6c829e4abb1235"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_TYPE_FLAGS</b> { <br />
+&#160;&#160;<b>PDTF_DEFAULT</b> = 0, 
+<b>PDTF_MULTIPLEVALUES</b> = 0x001, 
+<b>PDTF_ISINNATE</b> = 0x002, 
+<b>PDTF_ISGROUP</b> = 0x004, 
+<br />
+&#160;&#160;<b>PDTF_CANGROUPBY</b> = 0x008, 
+<b>PDTF_CANSTACKBY</b> = 0x010, 
+<b>PDTF_ISTREEPROPERTY</b> = 0x020, 
+<b>PDTF_INCLUDEINFULLTEXTQUERY</b> = 0x040, 
+<br />
+&#160;&#160;<b>PDTF_ISVIEWABLE</b> = 0x080, 
+<b>PDTF_ISQUERYABLE</b> = 0x100, 
+<b>PDTF_CANBEPURGED</b> = 0x200, 
+<b>PDTF_SEARCHRAWVALUE</b> = 0x400, 
+<br />
+&#160;&#160;<b>PDTF_ISSYSTEMPROPERTY</b> = 0x80000000, 
+<b>PDTF_MASK_ALL</b> = 0x800007ff
+<br />
+ }</td></tr>
+<tr class="separator:a289de93ea488622c0a6c829e4abb1235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5650c2bb9c9905ecc79e361349665224"><td class="memItemLeft" align="right" valign="top"><a id="a5650c2bb9c9905ecc79e361349665224"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_GROUPING_RANGE</b> { <br />
+&#160;&#160;<b>PDGR_DISCRETE</b> = 0, 
+<b>PDGR_ALPHANUMERIC</b>, 
+<b>PDGR_SIZE</b>, 
+<b>PDGR_DYNAMIC</b>, 
+<br />
+&#160;&#160;<b>PDGR_DATE</b>, 
+<b>PDGR_PERCENT</b>, 
+<b>PDGR_ENUMERATED</b>
+<br />
+ }</td></tr>
+<tr class="separator:a5650c2bb9c9905ecc79e361349665224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c978e2f62aac247f346d5901caefe13"><td class="memItemLeft" align="right" valign="top"><a id="a1c978e2f62aac247f346d5901caefe13"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_FORMAT_FLAGS</b> { <br />
+&#160;&#160;<b>PDFF_DEFAULT</b> = 0x0000, 
+<b>PDFF_PREFIXNAME</b> = 0x0001, 
+<b>PDFF_FILENAME</b> = 0x0002, 
+<b>PDFF_ALWAYSKB</b> = 0x0004, 
+<br />
+&#160;&#160;<b>PDFF_RESERVED_RIGHTTOLEFT</b> = 0x0008, 
+<b>PDFF_SHORTTIME</b> = 0x0010, 
+<b>PDFF_LONGTIME</b> = 0x0020, 
+<b>PDFF_HIDETIME</b> = 0x0040, 
+<br />
+&#160;&#160;<b>PDFF_SHORTDATE</b> = 0x0080, 
+<b>PDFF_LONGDATE</b> = 0x0100, 
+<b>PDFF_HIDEDATE</b> = 0x0200, 
+<b>PDFF_RELATIVEDATE</b> = 0x0400, 
+<br />
+&#160;&#160;<b>PDFF_USEEDITINVITATION</b> = 0x0800, 
+<b>PDFF_READONLY</b> = 0x1000, 
+<b>PDFF_NOAUTOREADINGORDER</b> = 0x2000
+<br />
+ }</td></tr>
+<tr class="separator:a1c978e2f62aac247f346d5901caefe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771d306d05ea48ed541f9543ef3d7648"><td class="memItemLeft" align="right" valign="top"><a id="a771d306d05ea48ed541f9543ef3d7648"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_RELATIVEDESCRIPTION_TYPE</b> { <br />
+&#160;&#160;<b>PDRDT_GENERAL</b> = 0, 
+<b>PDRDT_DATE</b>, 
+<b>PDRDT_SIZE</b>, 
+<b>PDRDT_COUNT</b>, 
+<br />
+&#160;&#160;<b>PDRDT_REVISION</b>, 
+<b>PDRDT_LENGTH</b>, 
+<b>PDRDT_DURATION</b>, 
+<b>PDRDT_SPEED</b>, 
+<br />
+&#160;&#160;<b>PDRDT_RATE</b>, 
+<b>PDRDT_RATING</b>, 
+<b>PDRDT_PRIORITY</b>
+<br />
+ }</td></tr>
+<tr class="separator:a771d306d05ea48ed541f9543ef3d7648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ffc0245e97dd5562f07cb1d976397f"><td class="memItemLeft" align="right" valign="top"><a id="ac1ffc0245e97dd5562f07cb1d976397f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_AGGREGATION_TYPE</b> { <br />
+&#160;&#160;<b>PDAT_DEFAULT</b> = 0, 
+<b>PDAT_FIRST</b>, 
+<b>PDAT_SUM</b>, 
+<b>PDAT_AVERAGE</b>, 
+<br />
+&#160;&#160;<b>PDAT_DATERANGE</b>, 
+<b>PDAT_UNION</b>, 
+<b>PDAT_MAX</b>, 
+<b>PDAT_MIN</b>
+<br />
+ }</td></tr>
+<tr class="separator:ac1ffc0245e97dd5562f07cb1d976397f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f7b5ae45c8c4c3b22d1743172e30c7"><td class="memItemLeft" align="right" valign="top"><a id="a67f7b5ae45c8c4c3b22d1743172e30c7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_CONDITION_TYPE</b> { <br />
+&#160;&#160;<b>PDCOT_NONE</b> = 0, 
+<b>PDCOT_STRING</b>, 
+<b>PDCOT_SIZE</b>, 
+<b>PDCOT_DATETIME</b>, 
+<br />
+&#160;&#160;<b>PDCOT_BOOLEAN</b>, 
+<b>PDCOT_NUMBER</b>
+<br />
+ }</td></tr>
+<tr class="separator:a67f7b5ae45c8c4c3b22d1743172e30c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8bb33b799ea4e44fe95dfafc6e71b5"><td class="memItemLeft" align="right" valign="top"><a id="acc8bb33b799ea4e44fe95dfafc6e71b5"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IPropertyDescription::PROPDESC_TYPE_FLAGS&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_TYPE_FLAGS</b></td></tr>
+<tr class="separator:acc8bb33b799ea4e44fe95dfafc6e71b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3007d26423b38109bdbd97bfb7fafd"><td class="memItemLeft" align="right" valign="top"><a id="a3d3007d26423b38109bdbd97bfb7fafd"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IPropertyDescription::PROPDESC_GROUPING_RANGE&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_GROUPING_RANGE</b></td></tr>
+<tr class="separator:a3d3007d26423b38109bdbd97bfb7fafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47c8d2e36fb9f57ac9de81be481a609"><td class="memItemLeft" align="right" valign="top"><a id="ae47c8d2e36fb9f57ac9de81be481a609"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IPropertyDescription::PROPDESC_FORMAT_FLAGS&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_FORMAT_FLAGS</b></td></tr>
+<tr class="separator:ae47c8d2e36fb9f57ac9de81be481a609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b4d25ba59d410865c3adeef51b7269"><td class="memItemLeft" align="right" valign="top"><a id="ad8b4d25ba59d410865c3adeef51b7269"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IPropertyDescription::PROPDESC_RELATIVEDESCRIPTION_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_RELATIVEDESCRIPTION_TYPE</b></td></tr>
+<tr class="separator:ad8b4d25ba59d410865c3adeef51b7269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7298887d01390205d810cfdc62837d4e"><td class="memItemLeft" align="right" valign="top"><a id="a7298887d01390205d810cfdc62837d4e"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IPropertyDescription::PROPDESC_AGGREGATION_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_AGGREGATION_TYPE</b></td></tr>
+<tr class="separator:a7298887d01390205d810cfdc62837d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51097aaf3c2da34edd356da1c4437b32"><td class="memItemLeft" align="right" valign="top"><a id="a51097aaf3c2da34edd356da1c4437b32"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IPropertyDescription::PROPDESC_CONDITION_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_CONDITION_TYPE</b></td></tr>
+<tr class="separator:a51097aaf3c2da34edd356da1c4437b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a66b77759f921d8b6bb0fd176accdab73"><td class="memItemLeft" align="right" valign="top"><a id="a66b77759f921d8b6bb0fd176accdab73"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_ENUM_FLAG_OPERATORS</b> (PROPDESC_TYPE_FLAGS)&quot;) typedef [<a class="el" href="interfacev1__enum.html">v1_enum</a>] <a class="el" href="interfaceenum.html">enum</a> PROPDESC_VIEW_FLAGS </td></tr>
+<tr class="separator:a66b77759f921d8b6bb0fd176accdab73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27a0417231137c9d60b77ee15af5893"><td class="memItemLeft" align="right" valign="top"><a id="af27a0417231137c9d60b77ee15af5893"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_ENUM_FLAG_OPERATORS</b> (PROPDESC_VIEW_FLAGS)&quot;) typedef [<a class="el" href="interfacev1__enum.html">v1_enum</a>] <a class="el" href="interfaceenum.html">enum</a> PROPDESC_DISPLAYTYPE </td></tr>
+<tr class="separator:af27a0417231137c9d60b77ee15af5893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aabc8041a615a473987501584606532"><td class="memItemLeft" align="right" valign="top"><a id="a8aabc8041a615a473987501584606532"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_ENUM_FLAG_OPERATORS</b> (PROPDESC_FORMAT_FLAGS)&quot;) typedef [<a class="el" href="interfacev1__enum.html">v1_enum</a>] <a class="el" href="interfaceenum.html">enum</a> PROPDESC_SORTDESCRIPTION </td></tr>
+<tr class="separator:a8aabc8041a615a473987501584606532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75c662d72f4aa88169a81f31cb265a5"><td class="memItemLeft" align="right" valign="top"><a id="aa75c662d72f4aa88169a81f31cb265a5"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyKey</b> ([out] PROPERTYKEY *pkey)</td></tr>
+<tr class="separator:aa75c662d72f4aa88169a81f31cb265a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22009a07678f2c9e4267a07b1d8d7df2"><td class="memItemLeft" align="right" valign="top"><a id="a22009a07678f2c9e4267a07b1d8d7df2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetCanonicalName</b> ([out, <a class="el" href="structstring.html">string</a>] LPWSTR *ppszName)</td></tr>
+<tr class="separator:a22009a07678f2c9e4267a07b1d8d7df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e904f901728aa619af5cb35e8c46c0"><td class="memItemLeft" align="right" valign="top"><a id="a17e904f901728aa619af5cb35e8c46c0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyType</b> ([out] VARTYPE *pvartype)</td></tr>
+<tr class="separator:a17e904f901728aa619af5cb35e8c46c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a81fceb28375ba7dd450674622f97f9"><td class="memItemLeft" align="right" valign="top"><a id="a7a81fceb28375ba7dd450674622f97f9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayName</b> ([out, <a class="el" href="structstring.html">string</a>] LPWSTR *ppszName)</td></tr>
+<tr class="separator:a7a81fceb28375ba7dd450674622f97f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e13abb4a110d8600f15ab308ca26f1"><td class="memItemLeft" align="right" valign="top"><a id="a99e13abb4a110d8600f15ab308ca26f1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetEditInvitation</b> ([out, <a class="el" href="structstring.html">string</a>] LPWSTR *ppszName)</td></tr>
+<tr class="separator:a99e13abb4a110d8600f15ab308ca26f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ed6542a6b0a51a6c6c828c68ff5bbb"><td class="memItemLeft" align="right" valign="top"><a id="a25ed6542a6b0a51a6c6c828c68ff5bbb"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeFlags</b> ([in] PROPDESC_TYPE_FLAGS mask, [out] PROPDESC_TYPE_FLAGS *ppdtFlags)</td></tr>
+<tr class="separator:a25ed6542a6b0a51a6c6c828c68ff5bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ddf14b127658ff19159504465c8a30"><td class="memItemLeft" align="right" valign="top"><a id="ac6ddf14b127658ff19159504465c8a30"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewFlags</b> ([out] PROPDESC_VIEW_FLAGS *ppdvFlags)</td></tr>
+<tr class="separator:ac6ddf14b127658ff19159504465c8a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a3c7af1b34a3d2d640787c59ccb5f6"><td class="memItemLeft" align="right" valign="top"><a id="a29a3c7af1b34a3d2d640787c59ccb5f6"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultColumnWidth</b> ([out] UINT *pcxChars)</td></tr>
+<tr class="separator:a29a3c7af1b34a3d2d640787c59ccb5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a73967e1d791b822dadd4da9256ea2"><td class="memItemLeft" align="right" valign="top"><a id="a81a73967e1d791b822dadd4da9256ea2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayType</b> ([out] PROPDESC_DISPLAYTYPE *pdisplaytype)</td></tr>
+<tr class="separator:a81a73967e1d791b822dadd4da9256ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b071388ec584980e8ee35a1fb2dd1c"><td class="memItemLeft" align="right" valign="top"><a id="ad8b071388ec584980e8ee35a1fb2dd1c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnState</b> ([out] SHCOLSTATEF *pcsFlags)</td></tr>
+<tr class="separator:ad8b071388ec584980e8ee35a1fb2dd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7a28eabb56e7fcb3edd8e35c758004"><td class="memItemLeft" align="right" valign="top"><a id="a7d7a28eabb56e7fcb3edd8e35c758004"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetGroupingRange</b> ([out] PROPDESC_GROUPING_RANGE *psd)</td></tr>
+<tr class="separator:a7d7a28eabb56e7fcb3edd8e35c758004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2c8c660bfa5a20bcc7db4f49e3f1c7"><td class="memItemLeft" align="right" valign="top"><a id="aaf2c8c660bfa5a20bcc7db4f49e3f1c7"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelativeDescriptionType</b> ([out] PROPDESC_RELATIVEDESCRIPTION_TYPE *prdt)</td></tr>
+<tr class="separator:aaf2c8c660bfa5a20bcc7db4f49e3f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53bb555a7bf17c5f6a2769ddbf88960"><td class="memItemLeft" align="right" valign="top"><a id="aa53bb555a7bf17c5f6a2769ddbf88960"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelativeDescription</b> ([in] REFPROPVARIANT propvar1, [in] REFPROPVARIANT propvar2, [out, <a class="el" href="structstring.html">string</a>] LPWSTR *ppszDesc1, [out, <a class="el" href="structstring.html">string</a>] LPWSTR *ppszDesc2)</td></tr>
+<tr class="separator:aa53bb555a7bf17c5f6a2769ddbf88960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eacd9be5ebd80646e4d92ae0cf8b976"><td class="memItemLeft" align="right" valign="top"><a id="a3eacd9be5ebd80646e4d92ae0cf8b976"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSortDescription</b> ([out] PROPDESC_SORTDESCRIPTION *psd)</td></tr>
+<tr class="separator:a3eacd9be5ebd80646e4d92ae0cf8b976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db00213b63ed7a6b0568c347f5d2607"><td class="memItemLeft" align="right" valign="top"><a id="a1db00213b63ed7a6b0568c347f5d2607"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSortDescriptionLabel</b> ([in] BOOL fDescending, [out, <a class="el" href="structstring.html">string</a>] LPWSTR *ppszDescription)</td></tr>
+<tr class="separator:a1db00213b63ed7a6b0568c347f5d2607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab667ab21e5a6fb97a0ebbc12e79c84e4"><td class="memItemLeft" align="right" valign="top"><a id="ab667ab21e5a6fb97a0ebbc12e79c84e4"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetAggregationType</b> ([out] PROPDESC_AGGREGATION_TYPE *paggtype)</td></tr>
+<tr class="separator:ab667ab21e5a6fb97a0ebbc12e79c84e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbeafe2e961df42d07859bb737dc54bd"><td class="memItemLeft" align="right" valign="top"><a id="afbeafe2e961df42d07859bb737dc54bd"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetConditionType</b> ([out] PROPDESC_CONDITION_TYPE *pcontype, [out] CONDITION_OPERATION *popDefault)</td></tr>
+<tr class="separator:afbeafe2e961df42d07859bb737dc54bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb13adf9a82503303721361ba0af235f"><td class="memItemLeft" align="right" valign="top"><a id="abb13adf9a82503303721361ba0af235f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnumTypeList</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppv)</td></tr>
+<tr class="separator:abb13adf9a82503303721361ba0af235f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898361a080f54e370abeca678ba87f34"><td class="memItemLeft" align="right" valign="top"><a id="a898361a080f54e370abeca678ba87f34"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CoerceToCanonicalValue</b> ([in, out] PROPVARIANT *propvar)</td></tr>
+<tr class="separator:a898361a080f54e370abeca678ba87f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92059002de58f1fe4e82029b8e834125"><td class="memItemLeft" align="right" valign="top"><a id="a92059002de58f1fe4e82029b8e834125"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteCoerceToCanonicalValue</b> ([in] REFPROPVARIANT propvar, [out] PROPVARIANT *ppropvar)</td></tr>
+<tr class="separator:a92059002de58f1fe4e82029b8e834125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed67e7b98c11425a75fd671cdcd4f1c"><td class="memItemLeft" align="right" valign="top"><a id="a3ed67e7b98c11425a75fd671cdcd4f1c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>FormatForDisplay</b> ([in] REFPROPVARIANT propvar, [in] PROPDESC_FORMAT_FLAGS flags, [out, <a class="el" href="structstring.html">string</a>] LPWSTR *ppszDisplay)</td></tr>
+<tr class="separator:a3ed67e7b98c11425a75fd671cdcd4f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2243d2167886d1ced4cb4ddaf1773a1b"><td class="memItemLeft" align="right" valign="top"><a id="a2243d2167886d1ced4cb4ddaf1773a1b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsValueCanonical</b> ([in] REFPROPVARIANT propvar)</td></tr>
+<tr class="separator:a2243d2167886d1ced4cb4ddaf1773a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a51fcc009c11537d83a29ead02571d388"><td class="memItemLeft" align="right" valign="top"><a id="a51fcc009c11537d83a29ead02571d388"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_VIEW_FLAGS</b></td></tr>
+<tr class="separator:a51fcc009c11537d83a29ead02571d388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dcd815e89730a52292549fbc25bf15"><td class="memItemLeft" align="right" valign="top"><a id="ac2dcd815e89730a52292549fbc25bf15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_DISPLAYTYPE</b></td></tr>
+<tr class="separator:ac2dcd815e89730a52292549fbc25bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3cafdfe22a5e6da580f88adbc826e2d"><td class="memItemLeft" align="right" valign="top"><a id="ad3cafdfe22a5e6da580f88adbc826e2d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PROPDESC_SORTDESCRIPTION</b></td></tr>
+<tr class="separator:ad3cafdfe22a5e6da580f88adbc826e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="propsys_8idl_source.html">propsys.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,484 @@
+\hypertarget{mpg123_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/libmpg123/mpg123.h 文件参考}
+\label{mpg123_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/libmpg123/mpg123.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/libmpg123/mpg123.\+h}}
+{\ttfamily \#include $<$fmt123.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmpg123__frameinfo}{mpg123\+\_\+frameinfo}
+\item 
+struct \hyperlink{structmpg123__string}{mpg123\+\_\+string}
+\item 
+struct \hyperlink{structmpg123__text}{mpg123\+\_\+text}
+\item 
+struct \hyperlink{structmpg123__picture}{mpg123\+\_\+picture}
+\item 
+struct \hyperlink{structmpg123__id3v2}{mpg123\+\_\+id3v2}
+\item 
+struct \hyperlink{structmpg123__id3v1}{mpg123\+\_\+id3v1}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{mpg123_8h_afce761c5b8da1263915b3191749483d2}{M\+P\+G123\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}~44
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_gacee1d4e2cac4601f57eddadcc828f66c}{M\+P\+G123\+\_\+\+I\+D3}~0x3
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_ga3fb42527b89f66d9caa6aee4fa6aaaae}{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3}~0x1
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_ga8beaa04ade9db672e2bdf722c66b61ce}{M\+P\+G123\+\_\+\+I\+CY}~0xc
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_ga25db33a48f531fd4da02dbf12d53e5be}{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY}~0x4
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmpg123__handle__struct}{mpg123\+\_\+handle\+\_\+struct} \hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmpg123__pars__struct}{mpg123\+\_\+pars\+\_\+struct} \hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars}
+\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__mpg123__init_ga73a8ff3363028b89afc72b3ea032b9cb}{mpg123\+\_\+parms} \{ \newline
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba247ee44c0a30758043aae23f632f71c2}{M\+P\+G123\+\_\+\+V\+E\+R\+B\+O\+SE} = 0, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cbab954f2a377983aa42270aaf5f78d9bad}{M\+P\+G123\+\_\+\+F\+L\+A\+GS}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba827123f9e1f1632205edf3cc2ffcbc57}{M\+P\+G123\+\_\+\+A\+D\+D\+\_\+\+F\+L\+A\+GS}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cbabf36264bd0b9fc637859074fae669009}{M\+P\+G123\+\_\+\+F\+O\+R\+C\+E\+\_\+\+R\+A\+TE}, 
+\newline
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba5007a284819e19fb021f6474600a53ce}{M\+P\+G123\+\_\+\+D\+O\+W\+N\+\_\+\+S\+A\+M\+P\+LE}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cbae5eab9557471720a92e82464bc8c55bf}{M\+P\+G123\+\_\+\+R\+VA}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba3cf2c33797ba2b002ed2a02fa6254136}{M\+P\+G123\+\_\+\+D\+O\+W\+N\+S\+P\+E\+ED}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba2d8a913150ac6c83e07bf82fcc98eb67}{M\+P\+G123\+\_\+\+U\+P\+S\+P\+E\+ED}, 
+\newline
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba4d9cdf3a931e57be058a36bcc8f7e892}{M\+P\+G123\+\_\+\+S\+T\+A\+R\+T\+\_\+\+F\+R\+A\+ME}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cbace9412184ef1e4c13ec0430bedc622bd}{M\+P\+G123\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+F\+R\+A\+M\+ES}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba904b9ea7e03ae0ec349087267bea20c8}{M\+P\+G123\+\_\+\+I\+C\+Y\+\_\+\+I\+N\+T\+E\+R\+V\+AL}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba8906c6dd898249d64e69c949b6602c79}{M\+P\+G123\+\_\+\+O\+U\+T\+S\+C\+A\+LE}, 
+\newline
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba3a158d9a8da1576cc5167baca516a4df}{M\+P\+G123\+\_\+\+T\+I\+M\+E\+O\+UT}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cbaaa4b5fab189f6d358de292ca64bffb3d}{M\+P\+G123\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+F\+L\+A\+GS}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba67f50832e898196754ed4aedc5a09ecd}{M\+P\+G123\+\_\+\+R\+E\+S\+Y\+N\+C\+\_\+\+L\+I\+M\+IT}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba748ede28ca0c3f008a74f96b0e433aa8}{M\+P\+G123\+\_\+\+I\+N\+D\+E\+X\+\_\+\+S\+I\+ZE}, 
+\newline
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cbad24bb8a14dd65295757a2d57e3c3d1f4}{M\+P\+G123\+\_\+\+P\+R\+E\+F\+R\+A\+M\+ES}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cba983e7ee0f39792777e576ff30a249f0d}{M\+P\+G123\+\_\+\+F\+E\+E\+D\+P\+O\+OL}, 
+\hyperlink{group__mpg123__init_gga73a8ff3363028b89afc72b3ea032b9cbaa1edbfca901f5152d61f69402871ef1d}{M\+P\+G123\+\_\+\+F\+E\+E\+D\+B\+U\+F\+F\+ER}
+ \}
+\item 
+enum \hyperlink{group__mpg123__init_ga12f1bf1105a9b0c1501b20516a9719d4}{mpg123\+\_\+param\+\_\+flags} \{ \newline
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a0b542c86f9ca0e6db1b9dc1d9bd231e5}{M\+P\+G123\+\_\+\+F\+O\+R\+C\+E\+\_\+\+M\+O\+NO} = 0x7, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a357a5e84304216caf0ce2ebf86157870}{M\+P\+G123\+\_\+\+M\+O\+N\+O\+\_\+\+L\+E\+FT} = 0x1, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a8669dc0960c01b21495dfd8b8406d262}{M\+P\+G123\+\_\+\+M\+O\+N\+O\+\_\+\+R\+I\+G\+HT} = 0x2, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4ab703b73207538e7f9071ea07f9bc001f}{M\+P\+G123\+\_\+\+M\+O\+N\+O\+\_\+\+M\+IX} = 0x4, 
+\newline
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a6cad0909c32750dde7d243a424ab335a}{M\+P\+G123\+\_\+\+F\+O\+R\+C\+E\+\_\+\+S\+T\+E\+R\+EO} = 0x8, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a38ce55c1c030cde5bebcf811651d6a7e}{M\+P\+G123\+\_\+\+F\+O\+R\+C\+E\+\_\+8\+B\+IT} = 0x10, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a16c97fe4bfd9c697eab37a48b7b66d5a}{M\+P\+G123\+\_\+\+Q\+U\+I\+ET} = 0x20, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a6be98c51b6a37299ef341004032c8f88}{M\+P\+G123\+\_\+\+G\+A\+P\+L\+E\+SS} = 0x40, 
+\newline
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a1a1e6e5c9517c63055cb6e0e42733ac1}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+R\+E\+S\+Y\+NC} = 0x80, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a5a966ce7ec10e489b923100c4fec0332}{M\+P\+G123\+\_\+\+S\+E\+E\+K\+B\+U\+F\+F\+ER} = 0x100, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a12cc94ea8ac42e9a3a7ece0c9f28b319}{M\+P\+G123\+\_\+\+F\+U\+Z\+ZY} = 0x200, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a14f7a0feff933f06ae34db03d73aa1db}{M\+P\+G123\+\_\+\+F\+O\+R\+C\+E\+\_\+\+F\+L\+O\+AT} = 0x400, 
+\newline
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4aa00f01ec5d06a4c94dd882023e088233}{M\+P\+G123\+\_\+\+P\+L\+A\+I\+N\+\_\+\+I\+D3\+T\+E\+XT} = 0x800, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a0ad235e627edb585b2c30b26bbca674d}{M\+P\+G123\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+S\+T\+R\+E\+A\+M\+L\+E\+N\+G\+TH} = 0x1000, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4ad8420a13b8eaecc2b269a7a7c29b7d4d}{M\+P\+G123\+\_\+\+S\+K\+I\+P\+\_\+\+I\+D3\+V2} = 0x2000, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a20f6106dc2ba2611d4dd75b7c639358f}{M\+P\+G123\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+I\+N\+F\+O\+F\+R\+A\+ME} = 0x4000, 
+\newline
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a9a9cbe6ba5d250aaff28b9edad2f1da2}{M\+P\+G123\+\_\+\+A\+U\+T\+O\+\_\+\+R\+E\+S\+A\+M\+P\+LE} = 0x8000, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a493d31a9a0d5c6fac3e04755c2e851dc}{M\+P\+G123\+\_\+\+P\+I\+C\+T\+U\+RE} = 0x10000, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a76ec6c65776981df0f83422a8db8b461}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+P\+E\+E\+K\+\_\+\+E\+ND} = 0x20000, 
+\hyperlink{group__mpg123__init_gga12f1bf1105a9b0c1501b20516a9719d4a984d1fff70244c4203284bf0e7ae6976}{M\+P\+G123\+\_\+\+F\+O\+R\+C\+E\+\_\+\+S\+E\+E\+K\+A\+B\+LE} = 0x40000
+ \}
+\item 
+enum \hyperlink{group__mpg123__init_ga911d4cba9eb5e98b37e61ea2f05f5d16}{mpg123\+\_\+param\+\_\+rva} \{ \hyperlink{group__mpg123__init_gga911d4cba9eb5e98b37e61ea2f05f5d16aec2925c1632f2fe4bc98b66d5cd68cde}{M\+P\+G123\+\_\+\+R\+V\+A\+\_\+\+O\+FF} = 0, 
+\hyperlink{group__mpg123__init_gga911d4cba9eb5e98b37e61ea2f05f5d16a0c3e4aca27f2a882583b5a322a8a4155}{M\+P\+G123\+\_\+\+R\+V\+A\+\_\+\+M\+IX} = 1, 
+\hyperlink{group__mpg123__init_gga911d4cba9eb5e98b37e61ea2f05f5d16a1b3300f9f02325d59a17751e0874ee6a}{M\+P\+G123\+\_\+\+R\+V\+A\+\_\+\+A\+L\+B\+UM} = 2, 
+\hyperlink{group__mpg123__init_gga911d4cba9eb5e98b37e61ea2f05f5d16a7e248302cf0d3dec455c559a4a7832d8}{M\+P\+G123\+\_\+\+R\+V\+A\+\_\+\+M\+AX} = M\+P\+G123\+\_\+\+R\+V\+A\+\_\+\+A\+L\+B\+UM
+ \}
+\item 
+enum \hyperlink{group__mpg123__init_gab26f1b8c3289847f5928176a20b4c942}{mpg123\+\_\+feature\+\_\+set} \{ \newline
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942ac0f93a7bb7f2a8a8b7b0040eeee4af9f}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+A\+B\+I\+\_\+\+U\+T\+F8\+O\+P\+EN} = 0, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942abb8b94aa5c15347379d2990eb8c4d768}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+8\+B\+IT}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942aefa681b8f3341ac1c4b0a88697d02be6}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+16\+B\+IT}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a9803836e7733a324de79ede091d249fd}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+32\+B\+IT}, 
+\newline
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a0e82db35b24679fb693aa9942bf33b3b}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+I\+N\+D\+EX}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a7181093bcf12cd56d2f25253d9bdbd0e}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+I\+D3\+V2}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942af58d039198b83459bb9c6cd0d4476b5b}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+L\+A\+Y\+E\+R1}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942aef46647eeb12f23765a142afde81938e}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+L\+A\+Y\+E\+R2}, 
+\newline
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a20493a0bc9f5a330d84c0288976f096f}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+L\+A\+Y\+E\+R3}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942ac6dd73f09affd87013bd534037a6943a}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+A\+C\+C\+U\+R\+A\+TE}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942ae2fbb7ab56e52d8e92bc3aadad94df01}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+D\+O\+W\+N\+S\+A\+M\+P\+LE}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a65cb6cfd17748202dcb2a56376516f91}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+N\+T\+OM}, 
+\newline
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a8f389ab08b1761fd9ac2af2517512312}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+I\+CY}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a0ef3762ac29d0f22b6d216c27ddc2251}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD}, 
+\hyperlink{group__mpg123__init_ggab26f1b8c3289847f5928176a20b4c942a6ca3ab6ce7b24b67ac0a213c0e29ca72}{M\+P\+G123\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+E\+Q\+U\+A\+L\+I\+Z\+ER}
+ \}
+\item 
+enum \hyperlink{group__mpg123__error_gac50432012aeaf7c23014de3198dfa5fd}{mpg123\+\_\+errors} \{ \newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaa70ae24fcae9de17ba5d7196898557ba}{M\+P\+G123\+\_\+\+D\+O\+NE} =-\/12, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda843569efa962ea0e093bae7f190d1da6}{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+F\+O\+R\+M\+AT} =-\/11, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda094f4acef73ea2392e2e5d89df96a879}{M\+P\+G123\+\_\+\+N\+E\+E\+D\+\_\+\+M\+O\+RE} =-\/10, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda416b4ef6c8cdc461fe210327819192cd}{M\+P\+G123\+\_\+\+E\+RR} =-\/1, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaf2a2fd03e8a2cc34d676f1a416f482e0}{M\+P\+G123\+\_\+\+OK} =0, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda3b12600e50fbe0a81922ef28385890d4}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+O\+U\+T\+F\+O\+R\+M\+AT}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda2354f3320877398e294a3f140bbb1d24}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+C\+H\+A\+N\+N\+EL}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdafc8e025f961282382014c063f7c116dd}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+R\+A\+TE}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda14286499b7ef3f73012d084e64881896}{M\+P\+G123\+\_\+\+E\+R\+R\+\_\+16\+T\+O8\+T\+A\+B\+LE}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda10a7e2cfe8420802ef929f0f152571f4}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+P\+A\+R\+AM}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda3f5d00bf75b553a9f3f96ab4b4bbf23b}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+B\+U\+F\+F\+ER}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda631e5674fd95abd99992b43bb91afa94}{M\+P\+G123\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+M\+EM}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda5db83e7a717a153f93a8f45c4e13f333}{M\+P\+G123\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdafe5bd9461a4d2a3883737c63bfe9cb5c}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+D\+E\+C\+O\+D\+ER}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda3298795f3be471cbdeed64bc7bf6b50e}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+H\+A\+N\+D\+LE}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaa194cfc6faf56e1cfc79fb5905a47591}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+B\+U\+F\+F\+E\+RS}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda46d8080d67eeba84775ecddb35043150}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+R\+VA}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdad15f28728cf32383fdc949caf7f31b79}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+G\+A\+P\+L\+E\+SS}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda71aeba859302f4220e81772e5adf6522}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+S\+P\+A\+CE}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda7bc9d660fa53509028478df827826615}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+T\+Y\+P\+ES}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaf23d57a3b345dc323c29a42ca56878d7}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+B\+A\+ND}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda76fbf5846855945f675e1a43968210a9}{M\+P\+G123\+\_\+\+E\+R\+R\+\_\+\+N\+U\+LL}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda5b611d4c39a25b0801cc1815994188c8}{M\+P\+G123\+\_\+\+E\+R\+R\+\_\+\+R\+E\+A\+D\+ER}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda5dac0942b612acebe960ca72448a7a61}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+S\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+E\+ND}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda9ad2e186be9c05390c4e345ff68e99fa}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+W\+H\+E\+N\+CE}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda3c930fb1d77ef50b172a27598a5d926a}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+T\+I\+M\+E\+O\+UT}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda52bccb287baaed3f83c5d989e5451cc2}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+F\+I\+LE}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda283193c86385df3fac3f48b8133f84f3}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+S\+E\+EK}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda923e0b3a5d5b607b704085d02f3fb586}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+R\+E\+A\+D\+ER}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda286dfcc0d3fbbf792a0b6ec97019a6ba}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+P\+A\+RS}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdad5a8785cadeeba574877a7ad1e261ebe}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+P\+AR}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda7016afea86a0a3d7e273f0849f665256}{M\+P\+G123\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+S\+Y\+NC}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda38af634ca20e6f9f9ab5aafdd0e3b2e3}{M\+P\+G123\+\_\+\+R\+E\+S\+Y\+N\+C\+\_\+\+F\+A\+IL}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaff41324627aae3e8b546163b4d624671}{M\+P\+G123\+\_\+\+N\+O\+\_\+8\+B\+IT}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda9bbd90efc32cd1d34fee31f340680f6a}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+A\+L\+I\+GN}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda6a597a1a50ff4fcce54efc2c157096f3}{M\+P\+G123\+\_\+\+N\+U\+L\+L\+\_\+\+B\+U\+F\+F\+ER}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdacf32e0342dc6632b6966510da214f064}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+R\+E\+L\+S\+E\+EK}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda46530f4567232b72c94fdb1188174253}{M\+P\+G123\+\_\+\+N\+U\+L\+L\+\_\+\+P\+O\+I\+N\+T\+ER}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda865323a2b72cbf67b5079b1482821175}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+K\+EY}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaa5b4fd8051237dc3bcbf7ea5f416e304}{M\+P\+G123\+\_\+\+N\+O\+\_\+\+I\+N\+D\+EX}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda3d80467966ee29ab6e5f7d89a5cb95ad}{M\+P\+G123\+\_\+\+I\+N\+D\+E\+X\+\_\+\+F\+A\+IL}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdabd3ac7764125b2426e7df9f34ba4b69d}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+D\+E\+C\+O\+D\+E\+R\+\_\+\+S\+E\+T\+UP}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaeede1c7688467a75161c766ecf479ce8}{M\+P\+G123\+\_\+\+M\+I\+S\+S\+I\+N\+G\+\_\+\+F\+E\+A\+T\+U\+RE}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fdaebc536f5fffaa1abe7243434cf2d353e}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE}, 
+\newline
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda102bd78ff1fad6cce594e22ea6fb0698}{M\+P\+G123\+\_\+\+L\+S\+E\+E\+K\+\_\+\+F\+A\+I\+L\+ED}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda9968b3ba91db9dd166fa8421572bda52}{M\+P\+G123\+\_\+\+B\+A\+D\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+IO}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda7ecc133213daa350d801a9e1dc3028e3}{M\+P\+G123\+\_\+\+L\+F\+S\+\_\+\+O\+V\+E\+R\+F\+L\+OW}, 
+\hyperlink{group__mpg123__error_ggac50432012aeaf7c23014de3198dfa5fda29cadbffa0da2fc28d1d83e59211b86e}{M\+P\+G123\+\_\+\+I\+N\+T\+\_\+\+O\+V\+E\+R\+F\+L\+OW}
+ \}
+\item 
+enum \hyperlink{group__mpg123__output_ga94df916cae2fc81b8a6df88c1728eb1c}{mpg123\+\_\+channelcount} \{ \hyperlink{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca5429c88158462f4290639ec505227c0c}{M\+P\+G123\+\_\+\+M\+O\+NO} = 1, 
+\hyperlink{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca52d7aff6b35da496e7f430b37c0d4602}{M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO} = 2
+ \}
+\item 
+enum \hyperlink{group__mpg123__voleq_gaf6ae0d8c593d295c36e7d20e9f892840}{mpg123\+\_\+channels} \{ \hyperlink{group__mpg123__voleq_ggaf6ae0d8c593d295c36e7d20e9f892840a0442a02c69eba4474b27d271da00478a}{M\+P\+G123\+\_\+\+L\+E\+FT} =0x1, 
+\hyperlink{group__mpg123__voleq_ggaf6ae0d8c593d295c36e7d20e9f892840a15ced0bea77e48f6e23d15410058d543}{M\+P\+G123\+\_\+\+R\+I\+G\+HT} =0x2, 
+\hyperlink{group__mpg123__voleq_ggaf6ae0d8c593d295c36e7d20e9f892840ab3dd5fa5351f27c4678e30013fceee2b}{M\+P\+G123\+\_\+\+LR} =0x3
+ \}
+\item 
+enum \hyperlink{group__mpg123__status_ga8253714e77705037271f377f33858876}{mpg123\+\_\+vbr} \{ \hyperlink{group__mpg123__status_gga8253714e77705037271f377f33858876a0fcfa8f9e6b68fe5d9f45960a21586e5}{M\+P\+G123\+\_\+\+C\+BR} =0, 
+\hyperlink{group__mpg123__status_gga8253714e77705037271f377f33858876aa5dc6936f72f7a41db280caae328d6a0}{M\+P\+G123\+\_\+\+V\+BR}, 
+\hyperlink{group__mpg123__status_gga8253714e77705037271f377f33858876a360f745114b8b6c6676b48b460516dfc}{M\+P\+G123\+\_\+\+A\+BR}
+ \}
+\item 
+enum \hyperlink{group__mpg123__status_ga0553c78534d6d130df2d1dc0df675748}{mpg123\+\_\+version} \{ \hyperlink{group__mpg123__status_gga0553c78534d6d130df2d1dc0df675748a627aae4380c98f85ac3e5d06d9e619ab}{M\+P\+G123\+\_\+1\+\_\+0} =0, 
+\hyperlink{group__mpg123__status_gga0553c78534d6d130df2d1dc0df675748a177c1f933df92e62389bec42f46ccb69}{M\+P\+G123\+\_\+2\+\_\+0}, 
+\hyperlink{group__mpg123__status_gga0553c78534d6d130df2d1dc0df675748af916280ab6be5a487a35613d553c63d3}{M\+P\+G123\+\_\+2\+\_\+5}
+ \}
+\item 
+enum \hyperlink{group__mpg123__status_ga044931724a9a987a86c2eea02f85cc4b}{mpg123\+\_\+mode} \{ \hyperlink{group__mpg123__status_gga044931724a9a987a86c2eea02f85cc4babeee8ae2a21b36bac370c92f78c898b7}{M\+P\+G123\+\_\+\+M\+\_\+\+S\+T\+E\+R\+EO} =0, 
+\hyperlink{group__mpg123__status_gga044931724a9a987a86c2eea02f85cc4ba970e949c6aa24c07539f13835a98f20d}{M\+P\+G123\+\_\+\+M\+\_\+\+J\+O\+I\+NT}, 
+\hyperlink{group__mpg123__status_gga044931724a9a987a86c2eea02f85cc4ba0c87ff3b08c8ca4437744c39ccf12897}{M\+P\+G123\+\_\+\+M\+\_\+\+D\+U\+AL}, 
+\hyperlink{group__mpg123__status_gga044931724a9a987a86c2eea02f85cc4ba036bb953727d2351d0289da337a5393c}{M\+P\+G123\+\_\+\+M\+\_\+\+M\+O\+NO}
+ \}
+\item 
+enum \hyperlink{group__mpg123__status_gaf527c5a99203cb8591b0e0dfb2615303}{mpg123\+\_\+flags} \{ \hyperlink{group__mpg123__status_ggaf527c5a99203cb8591b0e0dfb2615303a8c668bf12726c748305afb480b0517df}{M\+P\+G123\+\_\+\+C\+RC} =0x1, 
+\hyperlink{group__mpg123__status_ggaf527c5a99203cb8591b0e0dfb2615303a19e63e5fdbb76e50cb9a08171b9b0de5}{M\+P\+G123\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT} =0x2, 
+\hyperlink{group__mpg123__status_ggaf527c5a99203cb8591b0e0dfb2615303a1007b38ce5ca1d1ce34872947acbb0fd}{M\+P\+G123\+\_\+\+P\+R\+I\+V\+A\+TE} =0x4, 
+\hyperlink{group__mpg123__status_ggaf527c5a99203cb8591b0e0dfb2615303acec50031d9725b0fd95fd4b28c699ee1}{M\+P\+G123\+\_\+\+O\+R\+I\+G\+I\+N\+AL} =0x8
+ \}
+\item 
+enum \hyperlink{group__mpg123__status_gadfc90f3072f8c1fe32dd88854f6afb28}{mpg123\+\_\+state} \{ \hyperlink{group__mpg123__status_ggadfc90f3072f8c1fe32dd88854f6afb28a3b60be4690824a19084f134254019dfb}{M\+P\+G123\+\_\+\+A\+C\+C\+U\+R\+A\+TE} = 1, 
+\hyperlink{group__mpg123__status_ggadfc90f3072f8c1fe32dd88854f6afb28a54c2be407f25a8261af7121081be11c2}{M\+P\+G123\+\_\+\+B\+U\+F\+F\+E\+R\+F\+I\+LL}, 
+\hyperlink{group__mpg123__status_ggadfc90f3072f8c1fe32dd88854f6afb28ab0699a32eb0eea669e8175f1f8554209}{M\+P\+G123\+\_\+\+F\+R\+A\+N\+K\+E\+N\+S\+T\+E\+IN}, 
+\hyperlink{group__mpg123__status_ggadfc90f3072f8c1fe32dd88854f6afb28af79c0a2d6cc022956d13d9710c1527e3}{M\+P\+G123\+\_\+\+F\+R\+E\+S\+H\+\_\+\+D\+E\+C\+O\+D\+ER}
+ \}
+\item 
+enum \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding} \{ \newline
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea66ca05c71fce0b560f0ee474f1c4793b}{mpg123\+\_\+text\+\_\+unknown} = 0, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf74023fc99a8967ef3b1fa4973cc9f23}{mpg123\+\_\+text\+\_\+utf8} = 1, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf8ac03befb4ae509bcdc56fc63975f8e}{mpg123\+\_\+text\+\_\+latin1} = 2, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea83281d24ebc95d586d14273770faa2b2}{mpg123\+\_\+text\+\_\+icy} = 3, 
+\newline
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea06c8e0a5f457c3f40b18746eb43941a1}{mpg123\+\_\+text\+\_\+cp1252} = 4, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceac869251a2f73f329771eddef6396818c}{mpg123\+\_\+text\+\_\+utf16} = 5, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea4c5c139706dab0863fdb466d8fe5cb46}{mpg123\+\_\+text\+\_\+utf16bom} = 6, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea659e92fc2d96cb3fae94b25ec34aa3cf}{mpg123\+\_\+text\+\_\+utf16be} = 7, 
+\newline
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea31f6a1326b0e255e708b2cf97cb2b15b}{mpg123\+\_\+text\+\_\+max} = 7
+ \}
+\item 
+enum \hyperlink{group__mpg123__metadata_ga6a01e07e0e0770d6912767c2638fa86c}{mpg123\+\_\+id3\+\_\+enc} \{ \newline
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca4061581adda5da0e531e65a2186c762f}{mpg123\+\_\+id3\+\_\+latin1} = 0, 
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86caeead9376bcb51aef2df6bc1422e9af88}{mpg123\+\_\+id3\+\_\+utf16bom} = 1, 
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca44352115750b7cad2f7a738bbb0e1130}{mpg123\+\_\+id3\+\_\+utf16be} = 2, 
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86cafa589f1408c94714c2e1fa0c5d32aed2}{mpg123\+\_\+id3\+\_\+utf8} = 3, 
+\newline
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca6e7e43434882f04f41ea355068986bbf}{mpg123\+\_\+id3\+\_\+enc\+\_\+max} = 3
+ \}
+\item 
+enum \hyperlink{group__mpg123__metadata_gaf40652195dd80e2b06dc031c9902840e}{mpg123\+\_\+id3\+\_\+pic\+\_\+type} \{ \newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaab239ba35c10e9a7863195b634862144}{mpg123\+\_\+id3\+\_\+pic\+\_\+other} = 0, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa2380abffb80eee3d7b81aa29c7acf61}{mpg123\+\_\+id3\+\_\+pic\+\_\+icon} = 1, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead7ce5e9c3685e8302f4597a7ab45fb37}{mpg123\+\_\+id3\+\_\+pic\+\_\+other\+\_\+icon} = 2, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eacddb144390e5bd675572ec6233b08276}{mpg123\+\_\+id3\+\_\+pic\+\_\+front\+\_\+cover} = 3, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea18487a457317d28cbfbacf8d83d9a215}{mpg123\+\_\+id3\+\_\+pic\+\_\+back\+\_\+cover} = 4, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0f4aed397950e9d25407e4dc0d39050f}{mpg123\+\_\+id3\+\_\+pic\+\_\+leaflet} = 5, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea65f0be03aab84dc9097d4fb1e4ba6bb8}{mpg123\+\_\+id3\+\_\+pic\+\_\+media} = 6, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea6e9042aca905862dc426a66319d6a5ba}{mpg123\+\_\+id3\+\_\+pic\+\_\+lead} = 7, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea84509e27bf315acb048a89b089aa61df}{mpg123\+\_\+id3\+\_\+pic\+\_\+artist} = 8, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea62cd73a8cf340411fbffefde0fd26519}{mpg123\+\_\+id3\+\_\+pic\+\_\+conductor} = 9, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea92663f277b008f9401724b137f358bcf}{mpg123\+\_\+id3\+\_\+pic\+\_\+orchestra} = 10, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa43d70c2af5f8d0bcca24a158f161a08}{mpg123\+\_\+id3\+\_\+pic\+\_\+composer} = 11, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead0fe5d97282d6e9eddc09c71c7f2c89c}{mpg123\+\_\+id3\+\_\+pic\+\_\+lyricist} = 12, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaaf122dce228ebcdcdbe00dba519b6880}{mpg123\+\_\+id3\+\_\+pic\+\_\+location} = 13, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea135a56f6e49c5790eb9f62ec15f5fc5a}{mpg123\+\_\+id3\+\_\+pic\+\_\+recording} = 14, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0c49a847e6537f3508d50fff0c403b69}{mpg123\+\_\+id3\+\_\+pic\+\_\+performance} = 15, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea526b70c5e75feaa65667379a5827a488}{mpg123\+\_\+id3\+\_\+pic\+\_\+video} = 16, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead6e7b74aaa293db65270bc0aa9b39bde}{mpg123\+\_\+id3\+\_\+pic\+\_\+fish} = 17, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eab7a07c2ef50ffda63afc1946ebeb4afa}{mpg123\+\_\+id3\+\_\+pic\+\_\+illustration} = 18, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea8ed904e278c40a8ad1599541e17b1e0e}{mpg123\+\_\+id3\+\_\+pic\+\_\+artist\+\_\+logo} = 19, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea02e311e2cd923c95615acfbe559a3ac1}{mpg123\+\_\+id3\+\_\+pic\+\_\+publisher\+\_\+logo} = 20
+ \}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__init_gad59b5dc08fb7551ef5ec085906a85604}{mpg123\+\_\+init} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__init_gac73c78104d6525100aa4e1c62705c6be}{mpg123\+\_\+exit} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$ \hyperlink{group__mpg123__init_ga1413635a4b699acdf3b19bd9d2257557}{mpg123\+\_\+new} (const char $\ast$decoder, int $\ast$error)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__init_ga1607278690c3dea7affb906615af12ad}{mpg123\+\_\+delete} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__init_gad2c81c9b8abeccd5e0e8a01e6744d806}{mpg123\+\_\+param} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__init_ga73a8ff3363028b89afc72b3ea032b9cb}{mpg123\+\_\+parms} type, long \hyperlink{unionvalue}{value}, double fvalue)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__init_ga2b742bb1eecc9d29a09aa9a7f69b52af}{mpg123\+\_\+getparam} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__init_ga73a8ff3363028b89afc72b3ea032b9cb}{mpg123\+\_\+parms} type, long $\ast$\hyperlink{unionvalue}{value}, double $\ast$fvalue)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__init_gaf9b00e4fc7273c0d5e41d6d490606d56}{mpg123\+\_\+feature} (const \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__init_gab26f1b8c3289847f5928176a20b4c942}{mpg123\+\_\+feature\+\_\+set} \hyperlink{structkey}{key})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{group__mpg123__error_gacf2c837729218ae3681e3fdb03cda529}{mpg123\+\_\+plain\+\_\+strerror} (int errcode)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{group__mpg123__error_ga161acf171646d7ffce09446404cb0c21}{mpg123\+\_\+strerror} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__error_ga3fcb62b39c7ee3884b163aee0433df04}{mpg123\+\_\+errcode} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$$\ast$ \hyperlink{group__mpg123__decoder_gaaa1b0af58f5f9654c736ccb24dcf0475}{mpg123\+\_\+decoders} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$$\ast$ \hyperlink{group__mpg123__decoder_gaa74de136a5a49d0b420707e98e91a789}{mpg123\+\_\+supported\+\_\+decoders} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__decoder_gae21df3e432dc90e9983d9fea25372cdc}{mpg123\+\_\+decoder} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, const char $\ast$decoder\+\_\+name)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} const char $\ast$ \hyperlink{group__mpg123__decoder_gaa9e1be14b204d271ab57b679894c10e2}{mpg123\+\_\+current\+\_\+decoder} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__output_gac01392beb95e85d2ba165d4a3630f52a}{mpg123\+\_\+rates} (const long $\ast$$\ast$\hyperlink{classlist}{list}, size\+\_\+t $\ast$number)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__output_gabdf7009c888364527de2bdf37aa36185}{mpg123\+\_\+encodings} (const int $\ast$$\ast$\hyperlink{classlist}{list}, size\+\_\+t $\ast$number)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gaf12bd45d9040973c8c7b7b9411a530b5}{mpg123\+\_\+encsize} (int encoding)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_ga931ca238347de394901c3baa13e7a8f8}{mpg123\+\_\+format\+\_\+none} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_ga65a28420ccab9021abd44ae95db8b1b6}{mpg123\+\_\+format\+\_\+all} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gadad5794afc300a997e517dbe397dc2c7}{mpg123\+\_\+format} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long rate, int channels, int encodings)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gae30accfd052c88aad47820c5bb149cda}{mpg123\+\_\+format\+\_\+support} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long rate, int encoding)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gae5e04c7522d620e122009db359cc6dc5}{mpg123\+\_\+getformat} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long $\ast$rate, int $\ast$channels, int $\ast$encoding)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gadf21a63d9ab2fc87e271962f6f583876}{mpg123\+\_\+getformat2} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long $\ast$rate, int $\ast$channels, int $\ast$encoding, int clear\+\_\+flag)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga8f74d35cf61667a791b507c76c22a29b}{mpg123\+\_\+open} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, const char $\ast$\hyperlink{structpath}{path})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga969c0cbe49b3831e18ad9e9e45c9d83e}{mpg123\+\_\+open\+\_\+fd} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, int fd)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gaadda450ea307f88589cb77ffda0754ab}{mpg123\+\_\+open\+\_\+handle} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfacevoid}{void} $\ast$iohandle)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga072669ae9bde29eea8cffa4be10c7345}{mpg123\+\_\+open\+\_\+feed} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga156eb0774196db868485662dc31621af}{mpg123\+\_\+close} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga8023e3b24e8a70d9589c6c7567c54a41}{mpg123\+\_\+read} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, unsigned char $\ast$outmemory, size\+\_\+t outmemsize, size\+\_\+t $\ast$done)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_ga0a50910ce7bf0b30921114a89cc78d29}{mpg123\+\_\+feed} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, const unsigned char $\ast$in, size\+\_\+t size)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gafaf2382b208257a9685a8cab9f4360be}{mpg123\+\_\+decode} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, const unsigned char $\ast$inmemory, size\+\_\+t inmemsize, unsigned char $\ast$outmemory, size\+\_\+t outmemsize, size\+\_\+t $\ast$done)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gabcc91dfcc46df4bdef267b8061ffcce0}{mpg123\+\_\+decode\+\_\+frame} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t $\ast$num, unsigned char $\ast$$\ast$audio, size\+\_\+t $\ast$bytes)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gad6e52cca146bcd6db3954e88fb86bc82}{mpg123\+\_\+framebyframe\+\_\+decode} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t $\ast$num, unsigned char $\ast$$\ast$audio, size\+\_\+t $\ast$bytes)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gad10c57bc8060c64652b014a2593de61a}{mpg123\+\_\+framebyframe\+\_\+next} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__input_gaa4c4e18d7defd6e5fb7addc3caf8d946}{mpg123\+\_\+framedata} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, unsigned long $\ast$header, unsigned char $\ast$$\ast$bodydata, size\+\_\+t $\ast$bodybytes)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__input_gaf8d143984f9fd2ea91e9b10a6110c129}{mpg123\+\_\+framepos} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__seek_gaad30e14c278dde500e609af2971d7b44}{mpg123\+\_\+tell} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__seek_gaab81ee3527294d01e2c10a10e91022ee}{mpg123\+\_\+tellframe} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__seek_ga385bcc9fd3cec22289410828eac3938b}{mpg123\+\_\+tell\+\_\+stream} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__seek_gabf7633e5765e35933e264f175f5fcf8c}{mpg123\+\_\+seek} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t sampleoff, int whence)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__seek_gab0b0e6ed9e4ba14f1ca0c1dd83be6f57}{mpg123\+\_\+feedseek} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t sampleoff, int whence, off\+\_\+t $\ast$input\+\_\+offset)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__seek_gada9748c253215a8669eab327dd00d447}{mpg123\+\_\+seek\+\_\+frame} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t frameoff, int whence)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__seek_gab6c3b85832ef3de29aafdb0ef790043b}{mpg123\+\_\+timeframe} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, double sec)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__seek_gae1d174ac632ec72df7dead94c04865fb}{mpg123\+\_\+index} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t $\ast$$\ast$offsets, off\+\_\+t $\ast$step, size\+\_\+t $\ast$fill)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__seek_ga0e59ca79cc1e1ad984ad46186e7f0665}{mpg123\+\_\+set\+\_\+index} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t $\ast$offsets, off\+\_\+t step, size\+\_\+t fill)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__seek_gafafcafb33dce9a28eb5ad07eb054149a}{mpg123\+\_\+position} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t frame\+\_\+offset, off\+\_\+t buffered\+\_\+bytes, off\+\_\+t $\ast$current\+\_\+frame, off\+\_\+t $\ast$frames\+\_\+left, double $\ast$current\+\_\+seconds, double $\ast$seconds\+\_\+left)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__voleq_gae5121afbdada36c3dc3dd9450dfaaf07}{mpg123\+\_\+eq} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__voleq_gaf6ae0d8c593d295c36e7d20e9f892840}{mpg123\+\_\+channels} channel, int band, double val)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} double \hyperlink{group__mpg123__voleq_gad03e2f5ca346ae488f708551db994ff7}{mpg123\+\_\+geteq} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__voleq_gaf6ae0d8c593d295c36e7d20e9f892840}{mpg123\+\_\+channels} channel, int band)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__voleq_ga3f118a7b7c333066ccad9006d933202a}{mpg123\+\_\+reset\+\_\+eq} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__voleq_gad3cf821056ba53d4a9caca2671485dc4}{mpg123\+\_\+volume} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, double vol)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__voleq_gaa0897be03a78daf11e28c0e7263a0ae1}{mpg123\+\_\+volume\+\_\+change} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, double change)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__voleq_ga33be27860acfd34d5d2a1d17cf72a15a}{mpg123\+\_\+getvolume} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, double $\ast$\hyperlink{structbase}{base}, double $\ast$really, double $\ast$rva\+\_\+db)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__status_ga2f3357b968c78a77ad456a3200820ba8}{mpg123\+\_\+info} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfacestruct}{struct} \hyperlink{structmpg123__frameinfo}{mpg123\+\_\+frameinfo} $\ast$mi)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{group__mpg123__status_gafdb7e99795ac9915f47d0e1985ce3968}{mpg123\+\_\+safe\+\_\+buffer} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__status_ga229cf48b0e7020403e423824f6b9ac2c}{mpg123\+\_\+scan} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__status_gabf4a6c8f3b251acfa05fd7737a076370}{mpg123\+\_\+framelength} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} off\+\_\+t \hyperlink{group__mpg123__status_ga7a97295f5dd82795489d9ed8ee544805}{mpg123\+\_\+length} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__status_gad0301e80dbc3f48e47e27d39cd328755}{mpg123\+\_\+set\+\_\+filesize} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, off\+\_\+t size)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} double \hyperlink{group__mpg123__status_ga6edf9556db430445dac2434ed5306a12}{mpg123\+\_\+tpf} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__status_ga361e1b936b6dca126ba46e06e06fcc53}{mpg123\+\_\+spf} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} long \hyperlink{group__mpg123__status_gadb294b6e7c73dc58190b6fa2f024042d}{mpg123\+\_\+clip} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__status_gaf8d11409b86657b19069bbffb4c22fb7}{mpg123\+\_\+getstate} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__status_gadfc90f3072f8c1fe32dd88854f6afb28}{mpg123\+\_\+state} \hyperlink{structkey}{key}, long $\ast$val, double $\ast$fval)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__metadata_gaf0206ccb2574f563bff863a26a3b0025}{mpg123\+\_\+init\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__metadata_ga254cfe80f5eb2f2715e36be9a5119aed}{mpg123\+\_\+free\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga57ddead33785908618a5c0c7f3c1895a}{mpg123\+\_\+resize\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, size\+\_\+t news)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga1125e5a8235c42759d7300797006b05d}{mpg123\+\_\+grow\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, size\+\_\+t news)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga9d7fe63da5bc665bc754975b293e0a6b}{mpg123\+\_\+copy\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$from, \hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$to)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_gab54a099feebd65c5fa77d49a8c9c6db5}{mpg123\+\_\+add\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga76c2bf2ead81199a750ddff7253371f1}{mpg123\+\_\+add\+\_\+substring} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff, size\+\_\+t from, size\+\_\+t count)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga96e9070d26d63c02c3f22caa0d339f26}{mpg123\+\_\+set\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga37b68d834755647a4ef227b0dd4b5c2a}{mpg123\+\_\+set\+\_\+substring} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff, size\+\_\+t from, size\+\_\+t count)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{group__mpg123__metadata_ga556c8eb6c2ee4b88d744dcf20dffa83b}{mpg123\+\_\+strlen} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, int utf8)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_gad149639f724347c8c420c8551ea3d4c2}{mpg123\+\_\+chomp\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding} \hyperlink{group__mpg123__metadata_gabd394947d8cca46e49a0e07926bb2369}{mpg123\+\_\+enc\+\_\+from\+\_\+id3} (unsigned char id3\+\_\+enc\+\_\+byte)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga5800cb8b5886969982a695258d80f342}{mpg123\+\_\+store\+\_\+utf8} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding} enc, const unsigned char $\ast$\hyperlink{structsource}{source}, size\+\_\+t source\+\_\+size)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga1cd6279a1273f63eb8dcc8a554d815bb}{mpg123\+\_\+meta\+\_\+check} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__metadata_ga4bca410c7589658fb8379b3cf3fa3e05}{mpg123\+\_\+meta\+\_\+free} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga8352786015f8ff33c7d1fe8a4d979c88}{mpg123\+\_\+id3} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{structmpg123__id3v1}{mpg123\+\_\+id3v1} $\ast$$\ast$v1, \hyperlink{structmpg123__id3v2}{mpg123\+\_\+id3v2} $\ast$$\ast$v2)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga637c01818ba80ac2275b76a8abefa36c}{mpg123\+\_\+icy} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, char $\ast$$\ast$\hyperlink{structicy__meta}{icy\+\_\+meta})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} char $\ast$ \hyperlink{group__mpg123__metadata_ga0a6e45c3f8dda42ada8a07c29c253c88}{mpg123\+\_\+icy2utf8} (const char $\ast$icy\+\_\+text)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$ \hyperlink{group__mpg123__advpar_gad06a0834157dca25dbcf4775b29a894b}{mpg123\+\_\+parnew} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp, const char $\ast$decoder, int $\ast$error)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$ \hyperlink{group__mpg123__advpar_gae40d23747eb55f0ab2612588935d6350}{mpg123\+\_\+new\+\_\+pars} (int $\ast$error)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__advpar_gaafc74d249a5a7a545cc6e11576ec5c78}{mpg123\+\_\+delete\+\_\+pars} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__advpar_gaf018c28ca2ddcfba5ef7842252ff945a}{mpg123\+\_\+fmt\+\_\+none} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__advpar_gae473a32f2aec9d786cd3ae8857d211b1}{mpg123\+\_\+fmt\+\_\+all} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__advpar_ga481219fd8962c7b7ab69d4c8daebc094}{mpg123\+\_\+fmt} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp, long rate, int channels, int encodings)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__advpar_gaa9a70e142d765916977be699c82bc603}{mpg123\+\_\+fmt\+\_\+support} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp, long rate, int encoding)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__advpar_gacf5f968dde49b648327ef601d9ff0367}{mpg123\+\_\+par} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__init_ga73a8ff3363028b89afc72b3ea032b9cb}{mpg123\+\_\+parms} type, long \hyperlink{unionvalue}{value}, double fvalue)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__advpar_ga290f6cf33a625af1376249b75eb8e7c8}{mpg123\+\_\+getpar} (\hyperlink{group__mpg123__advpar_ga3983578625af3bb6dc7e3b74d0cab4aa}{mpg123\+\_\+pars} $\ast$mp, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__init_ga73a8ff3363028b89afc72b3ea032b9cb}{mpg123\+\_\+parms} type, long $\ast$\hyperlink{unionvalue}{value}, double $\ast$fvalue)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__lowio_gaaae8cfb0de3a2bc1dc97d916aa519772}{mpg123\+\_\+replace\+\_\+buffer} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, unsigned char $\ast$data, size\+\_\+t size)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{group__mpg123__lowio_ga00c0874bdad4a3f6366a035694f298d6}{mpg123\+\_\+outblock} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__lowio_ga00a65b6bc6d3e56e3c055943c30894ab}{mpg123\+\_\+replace\+\_\+reader} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, ssize\+\_\+t($\ast$r\+\_\+read)(int, \hyperlink{interfacevoid}{void} $\ast$, size\+\_\+t), off\+\_\+t($\ast$r\+\_\+lseek)(int, off\+\_\+t, int))
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__lowio_ga61a125c56f2aab9590a4b1a29194dc10}{mpg123\+\_\+replace\+\_\+reader\+\_\+handle} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, ssize\+\_\+t($\ast$r\+\_\+read)(\hyperlink{interfacevoid}{void} $\ast$, \hyperlink{interfacevoid}{void} $\ast$, size\+\_\+t), off\+\_\+t($\ast$r\+\_\+lseek)(\hyperlink{interfacevoid}{void} $\ast$, off\+\_\+t, int), \hyperlink{interfacevoid}{void}($\ast$cleanup)(\hyperlink{interfacevoid}{void} $\ast$))
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+The header file for the libmpg123 M\+P\+EG Audio decoder 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{mpg123_8h_afce761c5b8da1263915b3191749483d2}\label{mpg123_8h_afce761c5b8da1263915b3191749483d2}} 
+\index{mpg123.\+h@{mpg123.\+h}!M\+P\+G123\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON@{M\+P\+G123\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{M\+P\+G123\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON@{M\+P\+G123\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}!mpg123.\+h@{mpg123.\+h}}
+\subsubsection{\texorpdfstring{M\+P\+G123\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}{MPG123\_API\_VERSION}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+P\+G123\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON~44}
+
+\hyperlink{struct_a}{A} macro to check at compile time which set of A\+PI functions to expect. \hyperlink{namespace_this}{This} should be incremented at least each time a new symbol is added to the header. \mbox{\Hypertarget{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}\label{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}} 
+\index{mpg123.\+h@{mpg123.\+h}!M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT@{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT}}
+\index{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT@{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT}!mpg123.\+h@{mpg123.\+h}}
+\subsubsection{\texorpdfstring{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT}{MPG123\_EXPORT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT}
+
+Defines needed for MS Visual Studio(tm) D\+LL builds. Every public function must be prefixed with M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT. When building the D\+LL ensure to define B\+U\+I\+L\+D\+\_\+\+M\+P\+G123\+\_\+\+D\+LL. \hyperlink{namespace_this}{This} makes the function accessible for clients and includes it in the import library which is created together with the D\+LL. When consuming the D\+LL ensure to define L\+I\+N\+K\+\_\+\+M\+P\+G123\+\_\+\+D\+LL which imports the functions from the D\+LL. 

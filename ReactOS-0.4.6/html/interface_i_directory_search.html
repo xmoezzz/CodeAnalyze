@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IDirectorySearch接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_directory_search-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IDirectorySearch接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IDirectorySearch 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_directory_search.png" usemap="#IDirectorySearch_map" alt=""/>
+  <map id="IDirectorySearch_map" name="IDirectorySearch_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,109,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8156e79e86eec7e09562ed3e2eb097cf"><td class="memItemLeft" align="right" valign="top"><a id="a8156e79e86eec7e09562ed3e2eb097cf"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetSearchPreference</b> ([in] PADS_SEARCHPREF_INFO pSearchPrefs, [in] DWORD dwNumPrefs)</td></tr>
+<tr class="separator:a8156e79e86eec7e09562ed3e2eb097cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e1360247f177ef302a86235b031a2d"><td class="memItemLeft" align="right" valign="top"><a id="a14e1360247f177ef302a86235b031a2d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteSearch</b> ([in] LPWSTR pszSearchFilter, [in] LPWSTR *pAttributeNames, [in] DWORD dwNumberAttributes, [out] <a class="el" href="interfacevoid.html">PADS_SEARCH_HANDLE</a> phSearchResult)</td></tr>
+<tr class="separator:a14e1360247f177ef302a86235b031a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f24ffadd0957d1743359600b06457a"><td class="memItemLeft" align="right" valign="top"><a id="a98f24ffadd0957d1743359600b06457a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>AbandonSearch</b> ([in] <a class="el" href="interfacevoid.html">ADS_SEARCH_HANDLE</a> phSearchResult)</td></tr>
+<tr class="separator:a98f24ffadd0957d1743359600b06457a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f794b94bca3a959b8b43c5777c00d29"><td class="memItemLeft" align="right" valign="top"><a id="a6f794b94bca3a959b8b43c5777c00d29"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstRow</b> ([in] <a class="el" href="interfacevoid.html">ADS_SEARCH_HANDLE</a> hSearchResult)</td></tr>
+<tr class="separator:a6f794b94bca3a959b8b43c5777c00d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66550656dd4ee0cc1e7e652564765b59"><td class="memItemLeft" align="right" valign="top"><a id="a66550656dd4ee0cc1e7e652564765b59"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextRow</b> ([in] <a class="el" href="interfacevoid.html">ADS_SEARCH_HANDLE</a> hSearchResult)</td></tr>
+<tr class="separator:a66550656dd4ee0cc1e7e652564765b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b41ddc448334932f0bce4cfa46b875"><td class="memItemLeft" align="right" valign="top"><a id="a02b41ddc448334932f0bce4cfa46b875"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetPreviousRow</b> ([in] <a class="el" href="interfacevoid.html">ADS_SEARCH_HANDLE</a> hSearchResult)</td></tr>
+<tr class="separator:a02b41ddc448334932f0bce4cfa46b875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e11115487a036d965333c59438b153e"><td class="memItemLeft" align="right" valign="top"><a id="a2e11115487a036d965333c59438b153e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextColumnName</b> ([in] <a class="el" href="interfacevoid.html">ADS_SEARCH_HANDLE</a> hSearchHandle, [out] LPWSTR *ppszColumnName)</td></tr>
+<tr class="separator:a2e11115487a036d965333c59438b153e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd06cde7b88aa2dcceeed479a0fd7c4"><td class="memItemLeft" align="right" valign="top"><a id="a7bd06cde7b88aa2dcceeed479a0fd7c4"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumn</b> ([in] <a class="el" href="interfacevoid.html">ADS_SEARCH_HANDLE</a> hSearchResult, [in] LPWSTR szColumnName, [out] <a class="el" href="structads__search__column.html">PADS_SEARCH_COLUMN</a> pSearchColumn)</td></tr>
+<tr class="separator:a7bd06cde7b88aa2dcceeed479a0fd7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada37788c58a80b6955939957c83ee099"><td class="memItemLeft" align="right" valign="top"><a id="ada37788c58a80b6955939957c83ee099"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>FreeColumn</b> ([in] <a class="el" href="structads__search__column.html">PADS_SEARCH_COLUMN</a> pSearchColumn)</td></tr>
+<tr class="separator:ada37788c58a80b6955939957c83ee099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaccf0a3c31662b64e0dec525832d1ea"><td class="memItemLeft" align="right" valign="top"><a id="acaccf0a3c31662b64e0dec525832d1ea"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CloseSearchHandle</b> ([in] <a class="el" href="interfacevoid.html">ADS_SEARCH_HANDLE</a> hSearchResult)</td></tr>
+<tr class="separator:acaccf0a3c31662b64e0dec525832d1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="iads_8idl_source.html">iads.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

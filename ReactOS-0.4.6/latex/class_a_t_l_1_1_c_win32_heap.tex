@@ -1,0 +1,64 @@
+\hypertarget{class_a_t_l_1_1_c_win32_heap}{}\section{A\+TL\+:\+:C\+Win32\+Heap类 参考}
+\label{class_a_t_l_1_1_c_win32_heap}\index{A\+T\+L\+::\+C\+Win32\+Heap@{A\+T\+L\+::\+C\+Win32\+Heap}}
+类 A\+TL\+:\+:C\+Win32\+Heap 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_t_l_1_1_c_win32_heap}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_win32_heap_a95a37bdf7e525c9b04e798d2b98e4f71}\label{class_a_t_l_1_1_c_win32_heap_a95a37bdf7e525c9b04e798d2b98e4f71}} 
+{\bfseries C\+Win32\+Heap} (\+\_\+\+In\+\_\+ \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Heap)
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_win32_heap_a67e8022f2eebb8dffe6654a2fed95813}\label{class_a_t_l_1_1_c_win32_heap_a67e8022f2eebb8dffe6654a2fed95813}} 
+\+\_\+\+Ret\+\_\+maybenull\+\_\+ {\bfseries \+\_\+\+Post\+\_\+writable\+\_\+byte\+\_\+size\+\_\+} (Size\+Bytes) virtual \hyperlink{interfacevoid}{void} $\ast$Allocate(\+\_\+\+In\+\_\+ size\+\_\+t Size\+Bytes)
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_win32_heap_a6ec4fe157c56b5dab308b0658d556dba}\label{class_a_t_l_1_1_c_win32_heap_a6ec4fe157c56b5dab308b0658d556dba}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries Free} (\+\_\+\+In\+\_\+opt\+\_\+ \hyperlink{interfacevoid}{void} $\ast$\hyperlink{class_buffer}{Buffer})
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_win32_heap_a57fae9d7985dd216acbd6aeba72b4e9a}\label{class_a_t_l_1_1_c_win32_heap_a57fae9d7985dd216acbd6aeba72b4e9a}} 
+\+\_\+\+Ret\+\_\+maybenull\+\_\+ {\bfseries \+\_\+\+Post\+\_\+writable\+\_\+byte\+\_\+size\+\_\+} (Size\+Bytes) virtual \hyperlink{interfacevoid}{void} $\ast$Reallocate(\+\_\+\+In\+\_\+opt\+\_\+ \hyperlink{interfacevoid}{void} $\ast$\hyperlink{class_buffer}{Buffer}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_win32_heap_ad553d7755d8bbb6192f3d085df7f5a5e}\label{class_a_t_l_1_1_c_win32_heap_ad553d7755d8bbb6192f3d085df7f5a5e}} 
+virtual size\+\_\+t {\bfseries Get\+Size} (\+\_\+\+Inout\+\_\+ \hyperlink{interfacevoid}{void} $\ast$\hyperlink{class_buffer}{Buffer})
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_win32_heap_a25a11642f7a7b70f3526af218f6fa899}\label{class_a_t_l_1_1_c_win32_heap_a25a11642f7a7b70f3526af218f6fa899}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Heap}
+\item 
+\+\_\+\+Ret\+\_\+maybenull\+\_\+ \+\_\+\+In\+\_\+ size\+\_\+t {\bfseries Size\+Bytes}
+\end{DoxyCompactItemize}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{class_a_t_l_1_1_c_win32_heap_af05f3ded79ee6a1ff8594fa4a9e4b019}\label{class_a_t_l_1_1_c_win32_heap_af05f3ded79ee6a1ff8594fa4a9e4b019}} 
+\index{A\+T\+L\+::\+C\+Win32\+Heap@{A\+T\+L\+::\+C\+Win32\+Heap}!Size\+Bytes@{Size\+Bytes}}
+\index{Size\+Bytes@{Size\+Bytes}!A\+T\+L\+::\+C\+Win32\+Heap@{A\+T\+L\+::\+C\+Win32\+Heap}}
+\subsubsection{\texorpdfstring{Size\+Bytes}{SizeBytes}}
+{\footnotesize\ttfamily \+\_\+\+Ret\+\_\+maybenull\+\_\+ \+\_\+\+In\+\_\+ size\+\_\+t A\+T\+L\+::\+C\+Win32\+Heap\+::\+Size\+Bytes}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}
+\{
+        \textcolor{keywordflow}{if} (SizeBytes == 0)
+        \{
+            Free(\hyperlink{class_buffer}{Buffer});
+            \textcolor{keywordflow}{return} NULL;
+        \}
+
+        \textcolor{keywordflow}{if} (\hyperlink{class_buffer}{Buffer} == NULL)
+        \{
+            \textcolor{keywordflow}{return} Allocate(SizeBytes);
+        \}
+
+        return ::HeapReAlloc(m\_hHeap, 0, \hyperlink{class_buffer}{Buffer}, SizeBytes)
+\end{DoxyCode}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/atl/atlmem.\+h\end{DoxyCompactItemize}

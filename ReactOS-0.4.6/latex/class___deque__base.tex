@@ -1,0 +1,84 @@
+\hypertarget{class___deque__base}{}\section{\+\_\+\+Deque\+\_\+base$<$ \+\_\+\+Tp, \+\_\+\+Alloc $>$ 模板类 参考}
+\label{class___deque__base}\index{\+\_\+\+Deque\+\_\+base$<$ \+\_\+\+Tp, \+\_\+\+Alloc $>$@{\+\_\+\+Deque\+\_\+base$<$ \+\_\+\+Tp, \+\_\+\+Alloc $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___deque__base_a7b05768648654c4292d300c1e1edd874}\label{class___deque__base_a7b05768648654c4292d300c1e1edd874}} 
+typedef \+\_\+\+Tp {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___deque__base_ac3b542e973109f36aaf394ea782af847}\label{class___deque__base_ac3b542e973109f36aaf394ea782af847}} 
+typedef \+\_\+\+Alloc {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___deque__base_ade11921363ba02f2042f34cbc7953ac0}\label{class___deque__base_ade11921363ba02f2042f34cbc7953ac0}} 
+typedef \hyperlink{class___s_t_l_p__alloc__proxy}{\+\_\+\+S\+T\+L\+P\+\_\+alloc\+\_\+proxy}$<$ size\+\_\+t, value\+\_\+type, allocator\+\_\+type $>$ {\bfseries \+\_\+\+Alloc\+\_\+proxy}
+\item 
+\mbox{\Hypertarget{class___deque__base_a10f51e31d8c1404525522831ebccfaa4}\label{class___deque__base_a10f51e31d8c1404525522831ebccfaa4}} 
+typedef \hyperlink{struct___alloc__traits}{\+\_\+\+Alloc\+\_\+traits}$<$ \+\_\+\+Tp $\ast$, \+\_\+\+Alloc $>$\+::allocator\+\_\+type {\bfseries \+\_\+\+Map\+\_\+alloc\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___deque__base_ab8a078fecab12a25f4b1e664c05d6a2d}\label{class___deque__base_ab8a078fecab12a25f4b1e664c05d6a2d}} 
+typedef \hyperlink{class___s_t_l_p__alloc__proxy}{\+\_\+\+S\+T\+L\+P\+\_\+alloc\+\_\+proxy}$<$ value\+\_\+type $\ast$$\ast$, value\+\_\+type $\ast$, \+\_\+\+Map\+\_\+alloc\+\_\+type $>$ {\bfseries \+\_\+\+Map\+\_\+alloc\+\_\+proxy}
+\item 
+\mbox{\Hypertarget{class___deque__base_acd53f880f8841bce5cbd6d53ac186997}\label{class___deque__base_acd53f880f8841bce5cbd6d53ac186997}} 
+typedef \hyperlink{struct___deque__iterator}{\+\_\+\+Deque\+\_\+iterator}$<$ \+\_\+\+Tp, \hyperlink{struct___nonconst__traits}{\+\_\+\+Nonconst\+\_\+traits}$<$ \+\_\+\+Tp $>$ $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{class___deque__base_a3e994a06b8a14181ca91d90a462e0254}\label{class___deque__base_a3e994a06b8a14181ca91d90a462e0254}} 
+typedef \hyperlink{struct___deque__iterator}{\+\_\+\+Deque\+\_\+iterator}$<$ \+\_\+\+Tp, \hyperlink{struct___const__traits}{\+\_\+\+Const\+\_\+traits}$<$ \+\_\+\+Tp $>$ $>$ {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___deque__base_a3434c716e5c6bcbf0773227feb7ae8e6}\label{class___deque__base_a3434c716e5c6bcbf0773227feb7ae8e6}} 
+{\bfseries \+\_\+\+Deque\+\_\+base} (const allocator\+\_\+type \&\+\_\+\+\_\+a, size\+\_\+t \+\_\+\+\_\+num\+\_\+elements)
+\item 
+\mbox{\Hypertarget{class___deque__base_a46d126e03a84ddd07fd8189ad12fc113}\label{class___deque__base_a46d126e03a84ddd07fd8189ad12fc113}} 
+{\bfseries \+\_\+\+Deque\+\_\+base} (const allocator\+\_\+type \&\+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{class___deque__base_af45d46341e13d03dede139201b1dadea}\label{class___deque__base_af45d46341e13d03dede139201b1dadea}} 
+{\bfseries \+\_\+\+Deque\+\_\+base} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{class___deque__base}{\+\_\+\+Self} $>$ src)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___deque__base_affa2846a910af9a5701b58a3d9e4f353}\label{class___deque__base_affa2846a910af9a5701b58a3d9e4f353}} 
+static size\+\_\+t \+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries buffer\+\_\+size} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___deque__base_a57a86761cc3b0e8064d70a5c1970a80e}\label{class___deque__base_a57a86761cc3b0e8064d70a5c1970a80e}} 
+enum \{ {\bfseries \+\_\+\+S\+\_\+initial\+\_\+map\+\_\+size} = 8
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___deque__base_a18003bb14854cb98e607c5214c080872}\label{class___deque__base_a18003bb14854cb98e607c5214c080872}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+initialize\+\_\+map} (size\+\_\+t)
+\item 
+\mbox{\Hypertarget{class___deque__base_a2a759941bd020c89ed894112261fdcd5}\label{class___deque__base_a2a759941bd020c89ed894112261fdcd5}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+create\+\_\+nodes} (\+\_\+\+Tp $\ast$$\ast$\+\_\+\+\_\+nstart, \+\_\+\+Tp $\ast$$\ast$\+\_\+\+\_\+nfinish)
+\item 
+\mbox{\Hypertarget{class___deque__base_a76c378290d7e6301d294d1e30407f3bb}\label{class___deque__base_a76c378290d7e6301d294d1e30407f3bb}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+destroy\+\_\+nodes} (\+\_\+\+Tp $\ast$$\ast$\+\_\+\+\_\+nstart, \+\_\+\+Tp $\ast$$\ast$\+\_\+\+\_\+nfinish)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___deque__base_adb358d98cf30e81c0165786fb9a4f753}\label{class___deque__base_adb358d98cf30e81c0165786fb9a4f753}} 
+\hyperlink{struct___deque__iterator}{iterator} {\bfseries \+\_\+\+M\+\_\+start}
+\item 
+\mbox{\Hypertarget{class___deque__base_ac44b45a9d74e1c5a7c884e6ecf236a55}\label{class___deque__base_ac44b45a9d74e1c5a7c884e6ecf236a55}} 
+\hyperlink{struct___deque__iterator}{iterator} {\bfseries \+\_\+\+M\+\_\+finish}
+\item 
+\mbox{\Hypertarget{class___deque__base_a9240f2f4fd6981e33a35a22760be9d0e}\label{class___deque__base_a9240f2f4fd6981e33a35a22760be9d0e}} 
+\hyperlink{class___s_t_l_p__alloc__proxy}{\+\_\+\+Map\+\_\+alloc\+\_\+proxy} {\bfseries \+\_\+\+M\+\_\+map}
+\item 
+\mbox{\Hypertarget{class___deque__base_acaffe77c282d5bdbd02723649c315d73}\label{class___deque__base_acaffe77c282d5bdbd02723649c315d73}} 
+\hyperlink{class___s_t_l_p__alloc__proxy}{\+\_\+\+Alloc\+\_\+proxy} {\bfseries \+\_\+\+M\+\_\+map\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+deque.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+deque.\+c\end{DoxyCompactItemize}

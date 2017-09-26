@@ -1,0 +1,111 @@
+\hypertarget{interface_s_h_doc_vw_1_1_i_web_browser}{}\section{S\+H\+Doc\+Vw\+:\+:I\+Web\+Browser接口 参考}
+\label{interface_s_h_doc_vw_1_1_i_web_browser}\index{S\+H\+Doc\+Vw\+::\+I\+Web\+Browser@{S\+H\+Doc\+Vw\+::\+I\+Web\+Browser}}
+类 S\+H\+Doc\+Vw\+:\+:I\+Web\+Browser 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_s_h_doc_vw_1_1_i_web_browser}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a6a8b66316bd6c89ac06be7ec6aeff525}\label{interface_s_h_doc_vw_1_1_i_web_browser_a6a8b66316bd6c89ac06be7ec6aeff525}} 
+enum {\bfseries Browser\+Nav\+Constants} \{ \newline
+{\bfseries nav\+Open\+In\+New\+Window} = 0x1, 
+{\bfseries nav\+No\+History} = 0x2, 
+{\bfseries nav\+No\+Read\+From\+Cache} = 0x4, 
+{\bfseries nav\+No\+Write\+To\+Cache} = 0x8, 
+\newline
+{\bfseries nav\+Allow\+Autosearch} = 0x10, 
+{\bfseries nav\+Browser\+Bar} = 0x20, 
+{\bfseries nav\+Hyperlink} = 0x40, 
+{\bfseries nav\+Enforce\+Restricted} = 0x80
+ \}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a1c99717009407c600961918e9efa74dd}\label{interface_s_h_doc_vw_1_1_i_web_browser_a1c99717009407c600961918e9efa74dd}} 
+enum {\bfseries Refresh\+Constants} \{ {\bfseries R\+E\+F\+R\+E\+S\+H\+\_\+\+N\+O\+R\+M\+AL} = 0, 
+{\bfseries R\+E\+F\+R\+E\+S\+H\+\_\+\+I\+F\+E\+X\+P\+I\+R\+ED} = 1, 
+{\bfseries R\+E\+F\+R\+E\+S\+H\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+LY} = 3
+ \}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_aa4758637b657014b6b7782350e3ab84e}\label{interface_s_h_doc_vw_1_1_i_web_browser_aa4758637b657014b6b7782350e3ab84e}} 
+typedef \hyperlink{interfaceenum}{enum} S\+H\+Doc\+Vw\+::\+I\+Web\+Browser\+::\+Browser\+Nav\+Constants {\bfseries Browser\+Nav\+Constants}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a81dbc10caec95edaae1aaa37ae2654b4}\label{interface_s_h_doc_vw_1_1_i_web_browser_a81dbc10caec95edaae1aaa37ae2654b4}} 
+typedef \hyperlink{interfaceenum}{enum} S\+H\+Doc\+Vw\+::\+I\+Web\+Browser\+::\+Refresh\+Constants {\bfseries Refresh\+Constants}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a13b2e71987de6b31303729aea7483881}\label{interface_s_h_doc_vw_1_1_i_web_browser_a13b2e71987de6b31303729aea7483881}} 
+H\+R\+E\+S\+U\+LT {\bfseries Go\+Back} ()
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a826847cd0b6f55308a70d1cf0f21b762}\label{interface_s_h_doc_vw_1_1_i_web_browser_a826847cd0b6f55308a70d1cf0f21b762}} 
+H\+R\+E\+S\+U\+LT {\bfseries Go\+Forward} ()
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a70d591f4d372bd17f19fe7a45515087d}\label{interface_s_h_doc_vw_1_1_i_web_browser_a70d591f4d372bd17f19fe7a45515087d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Go\+Home} ()
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a7f4edcb5edb41aa5521ae752db98b217}\label{interface_s_h_doc_vw_1_1_i_web_browser_a7f4edcb5edb41aa5521ae752db98b217}} 
+H\+R\+E\+S\+U\+LT {\bfseries Go\+Search} ()
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a720230f49b30b2f4a0a698fff4a0d811}\label{interface_s_h_doc_vw_1_1_i_web_browser_a720230f49b30b2f4a0a698fff4a0d811}} 
+H\+R\+E\+S\+U\+LT {\bfseries Navigate} (\mbox{[}in\mbox{]} B\+S\+TR U\+RL, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Flags, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Target\+Frame\+Name, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Post\+Data, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Headers)
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a56003311811b4835b86ffe81e5215e6b}\label{interface_s_h_doc_vw_1_1_i_web_browser_a56003311811b4835b86ffe81e5215e6b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Refresh} ()
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_ab9c8b3e2bc4485e84f9dc36494ec8614}\label{interface_s_h_doc_vw_1_1_i_web_browser_ab9c8b3e2bc4485e84f9dc36494ec8614}} 
+H\+R\+E\+S\+U\+LT {\bfseries Refresh2} (\mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Level)
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a23e1e8c3397010ebaf7e9a460f95f1df}\label{interface_s_h_doc_vw_1_1_i_web_browser_a23e1e8c3397010ebaf7e9a460f95f1df}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stop} ()
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_ac0a8d042df9b603cdf27ba19abc731c9}\label{interface_s_h_doc_vw_1_1_i_web_browser_ac0a8d042df9b603cdf27ba19abc731c9}} 
+\hyperlink{interface_i_dispatch}{I\+Dispatch} {\bfseries Application}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a145ea7935e74d232f496a80561ec6767}\label{interface_s_h_doc_vw_1_1_i_web_browser_a145ea7935e74d232f496a80561ec6767}} 
+\hyperlink{interface_i_dispatch}{I\+Dispatch} {\bfseries Parent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_ab3cfcad837e81104747707ea5a33e262}\label{interface_s_h_doc_vw_1_1_i_web_browser_ab3cfcad837e81104747707ea5a33e262}} 
+\hyperlink{interface_i_dispatch}{I\+Dispatch} {\bfseries Container}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_ad558cccb043fed21c1410ae08bd66ca2}\label{interface_s_h_doc_vw_1_1_i_web_browser_ad558cccb043fed21c1410ae08bd66ca2}} 
+\hyperlink{interface_i_dispatch}{I\+Dispatch} {\bfseries Document}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_aa9e97f67dec2e803a1d22864271104c0}\label{interface_s_h_doc_vw_1_1_i_web_browser_aa9e97f67dec2e803a1d22864271104c0}} 
+V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL {\bfseries Top\+Level\+Container}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a7f74cc24d9307336b9306a04000470e6}\label{interface_s_h_doc_vw_1_1_i_web_browser_a7f74cc24d9307336b9306a04000470e6}} 
+B\+S\+TR {\bfseries Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a23a90b0bd47ebc57c7611e55591086cb}\label{interface_s_h_doc_vw_1_1_i_web_browser_a23a90b0bd47ebc57c7611e55591086cb}} 
+long {\bfseries Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a6d92f4f00f3fbd7689f95bc43cb122c5}\label{interface_s_h_doc_vw_1_1_i_web_browser_a6d92f4f00f3fbd7689f95bc43cb122c5}} 
+long {\bfseries Top}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a74d79570617fdea9394e037aade3ea08}\label{interface_s_h_doc_vw_1_1_i_web_browser_a74d79570617fdea9394e037aade3ea08}} 
+long {\bfseries Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_ae67b53231a0e3a2c0606e75d33624a40}\label{interface_s_h_doc_vw_1_1_i_web_browser_ae67b53231a0e3a2c0606e75d33624a40}} 
+long {\bfseries Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a47dc362bd1443a4ce6f4fbf98fecdb97}\label{interface_s_h_doc_vw_1_1_i_web_browser_a47dc362bd1443a4ce6f4fbf98fecdb97}} 
+B\+S\+TR {\bfseries Location\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a56e22637c0409261eb123ebe94ecc122}\label{interface_s_h_doc_vw_1_1_i_web_browser_a56e22637c0409261eb123ebe94ecc122}} 
+B\+S\+TR {\bfseries Location\+U\+RL}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_s_h_doc_vw_1_1_i_web_browser_a5313577c8c5a99d4cd5b18b7bb1dd555}\label{interface_s_h_doc_vw_1_1_i_web_browser_a5313577c8c5a99d4cd5b18b7bb1dd555}} 
+V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL {\bfseries Busy}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/exdisp.\+idl\end{DoxyCompactItemize}

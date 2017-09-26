@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IWbemServices接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_wbem_services-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IWbemServices接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IWbemServices 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_wbem_services.png" usemap="#IWbemServices_map" alt=""/>
+  <map id="IWbemServices_map" name="IWbemServices_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,99,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3d89d2885a5a1a84e850553be1705633"><td class="memItemLeft" align="right" valign="top"><a id="a3d89d2885a5a1a84e850553be1705633"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>OpenNamespace</b> ([in] const BSTR strNamespace, [in] long lFlags, [in] IWbemContext *pCtx, [out] <a class="el" href="interface_i_wbem_services.html">IWbemServices</a> **ppWorkingNamespace, [out] IWbemCallResult **ppResult)</td></tr>
+<tr class="separator:a3d89d2885a5a1a84e850553be1705633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854c4353b4345e8f0b3fa1efe9a17797"><td class="memItemLeft" align="right" valign="top"><a id="a854c4353b4345e8f0b3fa1efe9a17797"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CancelAsyncCall</b> ([in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pSink)</td></tr>
+<tr class="separator:a854c4353b4345e8f0b3fa1efe9a17797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cc8db2f591eacafb48351ef7c92f8e"><td class="memItemLeft" align="right" valign="top"><a id="a66cc8db2f591eacafb48351ef7c92f8e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryObjectSink</b> ([in] long lFlags, [out] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> **ppResponseHandler)</td></tr>
+<tr class="separator:a66cc8db2f591eacafb48351ef7c92f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e4416554a6b0efc653519e4a11fc89"><td class="memItemLeft" align="right" valign="top"><a id="a01e4416554a6b0efc653519e4a11fc89"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetObject</b> ([in] const BSTR strObjectPath, [in] long lFlags, [in] IWbemContext *pCtx, [out] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> **ppObject, [out] IWbemCallResult **ppCallResult)</td></tr>
+<tr class="separator:a01e4416554a6b0efc653519e4a11fc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b403c111ded2c34de6108941789c3d"><td class="memItemLeft" align="right" valign="top"><a id="ac6b403c111ded2c34de6108941789c3d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectAsync</b> ([in] const BSTR strObjectPath, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:ac6b403c111ded2c34de6108941789c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5839527e0e4cb70c47c9c643620c5ad"><td class="memItemLeft" align="right" valign="top"><a id="ad5839527e0e4cb70c47c9c643620c5ad"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>PutClass</b> ([in] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> *pObject, [in] long lFlags, [in] IWbemContext *pCtx, [out] IWbemCallResult **ppCallResult)</td></tr>
+<tr class="separator:ad5839527e0e4cb70c47c9c643620c5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e94c5a72a1b1b568203f7399238ca72"><td class="memItemLeft" align="right" valign="top"><a id="a4e94c5a72a1b1b568203f7399238ca72"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>PutClassAsync</b> ([in] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> *pObject, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:a4e94c5a72a1b1b568203f7399238ca72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1c011c5b0012179f5f7d3f23851a80"><td class="memItemLeft" align="right" valign="top"><a id="ada1c011c5b0012179f5f7d3f23851a80"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteClass</b> ([in] const BSTR strClass, [in] long lFlags, [in] IWbemContext *pCtx, [out] IWbemCallResult **ppCallResult)</td></tr>
+<tr class="separator:ada1c011c5b0012179f5f7d3f23851a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc489b64ea25eaae6528722346aacc4a"><td class="memItemLeft" align="right" valign="top"><a id="abc489b64ea25eaae6528722346aacc4a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteClassAsync</b> ([in] const BSTR strClass, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:abc489b64ea25eaae6528722346aacc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8c2f08569ba45ff8418704ffa8c572"><td class="memItemLeft" align="right" valign="top"><a id="abc8c2f08569ba45ff8418704ffa8c572"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CreateClassEnum</b> ([in] const BSTR strSuperclass, [in] long lFlags, [in] IWbemContext *pCtx, [out] <a class="el" href="interface_i_enum_wbem_class_object.html">IEnumWbemClassObject</a> **ppEnum)</td></tr>
+<tr class="separator:abc8c2f08569ba45ff8418704ffa8c572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136e15260bdf5cbd15f2e7cd644393f4"><td class="memItemLeft" align="right" valign="top"><a id="a136e15260bdf5cbd15f2e7cd644393f4"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CreateClassEnumAsync</b> ([in] const BSTR strSuperclass, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:a136e15260bdf5cbd15f2e7cd644393f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0f3e069a3999c44b8df6aa05ab8143"><td class="memItemLeft" align="right" valign="top"><a id="a4d0f3e069a3999c44b8df6aa05ab8143"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>PutInstance</b> ([in] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> *pInst, [in] long lFlags, [in] IWbemContext *pCtx, [out] IWbemCallResult **ppCallResult)</td></tr>
+<tr class="separator:a4d0f3e069a3999c44b8df6aa05ab8143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aabc96807e492812d8035b0cd2dcf3a"><td class="memItemLeft" align="right" valign="top"><a id="a7aabc96807e492812d8035b0cd2dcf3a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>PutInstanceAsync</b> ([in] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> *pInst, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:a7aabc96807e492812d8035b0cd2dcf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9898680d0749852157555f2ddb9d42af"><td class="memItemLeft" align="right" valign="top"><a id="a9898680d0749852157555f2ddb9d42af"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteInstance</b> ([in] const BSTR strObjectPath, [in] long lFlags, [in] IWbemContext *pCtx, [out] IWbemCallResult **ppCallResult)</td></tr>
+<tr class="separator:a9898680d0749852157555f2ddb9d42af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b21e71eba9314a7174d2f0ecd7d14a"><td class="memItemLeft" align="right" valign="top"><a id="ab4b21e71eba9314a7174d2f0ecd7d14a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteInstanceAsync</b> ([in] const BSTR strObjectPath, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:ab4b21e71eba9314a7174d2f0ecd7d14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3c446c57d3151d8e9c9fd460e6ba3d"><td class="memItemLeft" align="right" valign="top"><a id="a3e3c446c57d3151d8e9c9fd460e6ba3d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInstanceEnum</b> ([in] const BSTR strFilter, [in] long lFlags, [in] IWbemContext *pCtx, [out] <a class="el" href="interface_i_enum_wbem_class_object.html">IEnumWbemClassObject</a> **ppEnum)</td></tr>
+<tr class="separator:a3e3c446c57d3151d8e9c9fd460e6ba3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59d2926c6a4e286d3f8738cbb15e459"><td class="memItemLeft" align="right" valign="top"><a id="aa59d2926c6a4e286d3f8738cbb15e459"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInstanceEnumAsync</b> ([in] const BSTR strFilter, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:aa59d2926c6a4e286d3f8738cbb15e459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d34ab313bc8f6c4f77adc4ce0feb5d"><td class="memItemLeft" align="right" valign="top"><a id="a31d34ab313bc8f6c4f77adc4ce0feb5d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ExecQuery</b> ([in] const BSTR strQueryLanguage, [in] const BSTR strQuery, [in] long lFlags, [in] IWbemContext *pCtx, [out] <a class="el" href="interface_i_enum_wbem_class_object.html">IEnumWbemClassObject</a> **ppEnum)</td></tr>
+<tr class="separator:a31d34ab313bc8f6c4f77adc4ce0feb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11199b16db3c933020f6976511b20354"><td class="memItemLeft" align="right" valign="top"><a id="a11199b16db3c933020f6976511b20354"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ExecQueryAsync</b> ([in] const BSTR strQueryLanguage, [in] const BSTR strQuery, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:a11199b16db3c933020f6976511b20354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d0fd148945755f1f42c28020a6daa2"><td class="memItemLeft" align="right" valign="top"><a id="a92d0fd148945755f1f42c28020a6daa2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ExecNotificationQuery</b> ([in] const BSTR strQueryLanguage, [in] const BSTR strQuery, [in] long lFlags, [in] IWbemContext *pCtx, [out] <a class="el" href="interface_i_enum_wbem_class_object.html">IEnumWbemClassObject</a> **ppEnum)</td></tr>
+<tr class="separator:a92d0fd148945755f1f42c28020a6daa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a45c5861f271c38d4a86e4dd71a8c7"><td class="memItemLeft" align="right" valign="top"><a id="a64a45c5861f271c38d4a86e4dd71a8c7"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ExecNotificationQueryAsync</b> ([in] const BSTR strQueryLanguage, [in] const BSTR strQuery, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:a64a45c5861f271c38d4a86e4dd71a8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a10236725667f60f9383df475356839"><td class="memItemLeft" align="right" valign="top"><a id="a9a10236725667f60f9383df475356839"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ExecMethod</b> ([in] const BSTR strObjectPath, [in] const BSTR strMethodName, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> *pInParams, [out] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> **ppOutParams, [out] IWbemCallResult **ppCallResult)</td></tr>
+<tr class="separator:a9a10236725667f60f9383df475356839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30439fe7cd02a62b7f5135690eff1f69"><td class="memItemLeft" align="right" valign="top"><a id="a30439fe7cd02a62b7f5135690eff1f69"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ExecMethodAsync</b> ([in] const BSTR strObjectPath, [in] const BSTR strMethodName, [in] long lFlags, [in] IWbemContext *pCtx, [in] <a class="el" href="interface_i_wbem_class_object.html">IWbemClassObject</a> *pInParams, [in] <a class="el" href="interface_i_wbem_object_sink.html">IWbemObjectSink</a> *pResponseHandler)</td></tr>
+<tr class="separator:a30439fe7cd02a62b7f5135690eff1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="wbemcli_8idl_source.html">wbemcli.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

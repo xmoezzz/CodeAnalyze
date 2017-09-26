@@ -1,0 +1,110 @@
+\hypertarget{interface_i_cor_debug_register_set}{}\section{I\+Cor\+Debug\+Register\+Set接口 参考}
+\label{interface_i_cor_debug_register_set}\index{I\+Cor\+Debug\+Register\+Set@{I\+Cor\+Debug\+Register\+Set}}
+类 I\+Cor\+Debug\+Register\+Set 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug_register_set}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_register_set_a30f2ef4d5a657f5aa003b9c887020eb2}\label{interface_i_cor_debug_register_set_a30f2ef4d5a657f5aa003b9c887020eb2}} 
+enum {\bfseries Cor\+Debug\+Register} \{ \newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+ER} = 0, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+O\+I\+N\+T\+ER}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+I\+N\+T\+ER}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+IP} = 0, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+SP}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+BP}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+AX}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+CX}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+DX}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+BX}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+SI}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+E\+DI}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+0}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+1}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+2}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+3}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+4}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+5}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+6}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+X86\+\_\+\+F\+P\+S\+T\+A\+C\+K\+\_\+7}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+IP} = 0, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+SP}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+BP}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+AX}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+CX}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+DX}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+BX}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+SI}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R\+DI}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R8}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R9}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R10}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R11}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R12}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R13}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R14}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+R15}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M0}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M1}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M2}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M3}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M4}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M5}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M6}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M7}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M8}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M9}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M10}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M11}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M12}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M13}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M14}, 
+\newline
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+M\+D64\+\_\+\+X\+M\+M15}, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+A64\+\_\+\+B\+SP} = R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+P\+O\+I\+N\+T\+ER, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+A64\+\_\+\+R0} = R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+A64\+\_\+\+B\+SP + 1, 
+{\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+A64\+\_\+\+F0} = R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+A64\+\_\+\+R0 + 128
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_register_set_ac99e0d70dbc48f27ba5e7eb89b8973fd}\label{interface_i_cor_debug_register_set_ac99e0d70dbc48f27ba5e7eb89b8973fd}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Register\+Set\+::\+Cor\+Debug\+Register {\bfseries Cor\+Debug\+Register}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_register_set_aebea468e3a97a50da094249205dfc2f7}\label{interface_i_cor_debug_register_set_aebea468e3a97a50da094249205dfc2f7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Registers\+Available} (\mbox{[}out\mbox{]} U\+L\+O\+N\+G64 $\ast$p\+Available)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_register_set_a2e24e5c70955048e4ff81b2078768173}\label{interface_i_cor_debug_register_set_a2e24e5c70955048e4ff81b2078768173}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Registers} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G64 mask, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 reg\+Count, \mbox{[}out\mbox{]} C\+O\+R\+D\+B\+\_\+\+R\+E\+G\+I\+S\+T\+ER reg\+Buffer\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_register_set_a6cb802ee44e1dadeabf05e3316b6a1ec}\label{interface_i_cor_debug_register_set_a6cb802ee44e1dadeabf05e3316b6a1ec}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Registers} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G64 mask, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 reg\+Count, \mbox{[}in\mbox{]} C\+O\+R\+D\+B\+\_\+\+R\+E\+G\+I\+S\+T\+ER reg\+Buffer\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_register_set_a9d2415d5f3876d17dcc1c021d0596498}\label{interface_i_cor_debug_register_set_a9d2415d5f3876d17dcc1c021d0596498}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Thread\+Context} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G32 context\+Size, \mbox{[}in, out\mbox{]} B\+Y\+TE context\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_register_set_a1103d17c65d10cc196ba0ed11d4c4586}\label{interface_i_cor_debug_register_set_a1103d17c65d10cc196ba0ed11d4c4586}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Thread\+Context} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G32 context\+Size, \mbox{[}in\mbox{]} B\+Y\+TE context\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

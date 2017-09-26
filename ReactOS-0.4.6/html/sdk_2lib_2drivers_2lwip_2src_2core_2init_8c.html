@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/drivers/lwip/src/core/init.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_2c85cff4f1cef242b8656be9a8ac1f31.html">drivers</a></li><li class="navelem"><a class="el" href="dir_96ee20e854c60754e26b655afd09dbca.html">lwip</a></li><li class="navelem"><a class="el" href="dir_ead4725ee7eaa6e080332f3f984ccc64.html">src</a></li><li class="navelem"><a class="el" href="dir_22a6bd8b988ddbe67052e47417ed1651.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">init.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="opt_8h_source.html">lwip/opt.h</a>&quot;</code><br />
+<code>#include &quot;lwip/init.h&quot;</code><br />
+<code>#include &quot;lwip/stats.h&quot;</code><br />
+<code>#include &quot;lwip/sys.h&quot;</code><br />
+<code>#include &quot;lwip/mem.h&quot;</code><br />
+<code>#include &quot;lwip/memp.h&quot;</code><br />
+<code>#include &quot;lwip/pbuf.h&quot;</code><br />
+<code>#include &quot;lwip/netif.h&quot;</code><br />
+<code>#include &quot;lwip/sockets.h&quot;</code><br />
+<code>#include &quot;lwip/ip.h&quot;</code><br />
+<code>#include &quot;lwip/raw.h&quot;</code><br />
+<code>#include &quot;lwip/udp.h&quot;</code><br />
+<code>#include &quot;lwip/tcp_impl.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="snmp__msg_8h_source.html">lwip/snmp_msg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="autoip_8h_source.html">lwip/autoip.h</a>&quot;</code><br />
+<code>#include &quot;lwip/igmp.h&quot;</code><br />
+<code>#include &quot;lwip/dns.h&quot;</code><br />
+<code>#include &quot;lwip/timers.h&quot;</code><br />
+<code>#include &quot;netif/etharp.h&quot;</code><br />
+<code>#include &quot;lwip/api.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2fd90dfd6cee216d4a316078cc0ec2b9"><td class="memItemLeft" align="right" valign="top"><a id="a2fd90dfd6cee216d4a316078cc0ec2b9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_DISABLE_TCP_SANITY_CHECKS</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2fd90dfd6cee216d4a316078cc0ec2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76cb551defb63d2352d696afcb8ade6"><td class="memItemLeft" align="right" valign="top"><a id="ad76cb551defb63d2352d696afcb8ade6"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_DISABLE_MEMP_SANITY_CHECKS</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad76cb551defb63d2352d696afcb8ade6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0c1a18439524d2f4a5e51d25c0ca2ce9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2init_8c.html#a0c1a18439524d2f4a5e51d25c0ca2ce9">lwip_init</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a0c1a18439524d2f4a5e51d25c0ca2ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Modules initialization </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a0c1a18439524d2f4a5e51d25c0ca2ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1a18439524d2f4a5e51d25c0ca2ce9">&#9670;&nbsp;</a></span>lwip_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> lwip_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perform Sanity check of user-configurable values, and initialize all modules. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

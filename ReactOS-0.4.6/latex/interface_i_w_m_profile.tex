@@ -1,0 +1,71 @@
+\hypertarget{interface_i_w_m_profile}{}\section{I\+W\+M\+Profile接口 参考}
+\label{interface_i_w_m_profile}\index{I\+W\+M\+Profile@{I\+W\+M\+Profile}}
+类 I\+W\+M\+Profile 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_w_m_profile}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a48bba4218a9f44cb690ce2c3471d584e}\label{interface_i_w_m_profile_a48bba4218a9f44cb690ce2c3471d584e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Version} (\mbox{[}out\mbox{]} W\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON $\ast$pdw\+Version)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a863c4a0e236070969a19ecdd07bb08e7}\label{interface_i_w_m_profile_a863c4a0e236070969a19ecdd07bb08e7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Name} (\mbox{[}out, size\+\_\+is($\ast$pcch\+Name)\mbox{]} W\+C\+H\+AR $\ast$pwsz\+Name, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_aebbc67c90453199f98eddc121adafb7e}\label{interface_i_w_m_profile_aebbc67c90453199f98eddc121adafb7e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Name} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwsz\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a6fe0ed870bb1dc55ba25f205b20d71ed}\label{interface_i_w_m_profile_a6fe0ed870bb1dc55ba25f205b20d71ed}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Description} (\mbox{[}out, size\+\_\+is($\ast$pcch\+Description)\mbox{]} W\+C\+H\+AR $\ast$pwsz\+Description, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Description)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a1e4a6fd8be9f2467f574a7cfca2d1b10}\label{interface_i_w_m_profile_a1e4a6fd8be9f2467f574a7cfca2d1b10}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Description} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwsz\+Description)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_ad29d0d37bf730653201b6cffdf33a1dc}\label{interface_i_w_m_profile_ad29d0d37bf730653201b6cffdf33a1dc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Stream\+Count} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pc\+Streams)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a5ba48861fc38dcddb434b8a6b81945a2}\label{interface_i_w_m_profile_a5ba48861fc38dcddb434b8a6b81945a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Stream} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Stream\+Index, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_stream_config}{I\+W\+M\+Stream\+Config} $\ast$$\ast$pp\+Config)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a4c7e1d096940c3422f9a8b4e39b62c5b}\label{interface_i_w_m_profile_a4c7e1d096940c3422f9a8b4e39b62c5b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Stream\+By\+Number} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_stream_config}{I\+W\+M\+Stream\+Config} $\ast$$\ast$pp\+Config)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_aac9d82fa90299a97d8ec4f8f9c53698b}\label{interface_i_w_m_profile_aac9d82fa90299a97d8ec4f8f9c53698b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Stream} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_stream_config}{I\+W\+M\+Stream\+Config} $\ast$p\+Config)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_ab7b6fbe977f63996b4b73f0ffbf2550a}\label{interface_i_w_m_profile_ab7b6fbe977f63996b4b73f0ffbf2550a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Stream\+By\+Number} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a8fc599a3cb7362fecaa3a22d82d63b34}\label{interface_i_w_m_profile_a8fc599a3cb7362fecaa3a22d82d63b34}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Stream} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_stream_config}{I\+W\+M\+Stream\+Config} $\ast$p\+Config)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a16a4562f3532c817605d746c22b16846}\label{interface_i_w_m_profile_a16a4562f3532c817605d746c22b16846}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reconfig\+Stream} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_stream_config}{I\+W\+M\+Stream\+Config} $\ast$p\+Config)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a78d67ddc67ff54bb99ffe0dc659bfc15}\label{interface_i_w_m_profile_a78d67ddc67ff54bb99ffe0dc659bfc15}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+New\+Stream} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Stream\+Type, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_stream_config}{I\+W\+M\+Stream\+Config} $\ast$$\ast$pp\+Config)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a108a5322acb58d6ccd73d5dad6d77973}\label{interface_i_w_m_profile_a108a5322acb58d6ccd73d5dad6d77973}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Mutual\+Exclusion\+Count} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pc\+ME)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_ab71a40ab417028dd9facc5410e099d92}\label{interface_i_w_m_profile_ab71a40ab417028dd9facc5410e099d92}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Mutual\+Exclusion} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+M\+E\+Index, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_mutual_exclusion}{I\+W\+M\+Mutual\+Exclusion} $\ast$$\ast$pp\+ME)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_abbd8cc1ae382bb2894783de74190573b}\label{interface_i_w_m_profile_abbd8cc1ae382bb2894783de74190573b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Mutual\+Exclusion} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_mutual_exclusion}{I\+W\+M\+Mutual\+Exclusion} $\ast$p\+ME)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_a96dc485628a6302e9bda21a0212fa0cd}\label{interface_i_w_m_profile_a96dc485628a6302e9bda21a0212fa0cd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Mutual\+Exclusion} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_mutual_exclusion}{I\+W\+M\+Mutual\+Exclusion} $\ast$p\+ME)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_profile_abd68c4b3e9087273639c140c8edf3801}\label{interface_i_w_m_profile_abd68c4b3e9087273639c140c8edf3801}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+New\+Mutual\+Exclusion} (\mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_mutual_exclusion}{I\+W\+M\+Mutual\+Exclusion} $\ast$$\ast$pp\+ME)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wmsdkidl.\+idl\end{DoxyCompactItemize}

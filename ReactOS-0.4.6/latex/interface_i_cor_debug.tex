@@ -1,0 +1,44 @@
+\hypertarget{interface_i_cor_debug}{}\section{I\+Cor\+Debug接口 参考}
+\label{interface_i_cor_debug}\index{I\+Cor\+Debug@{I\+Cor\+Debug}}
+类 I\+Cor\+Debug 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_a8c6a01904bd733953a6501e999b1933e}\label{interface_i_cor_debug_a8c6a01904bd733953a6501e999b1933e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_a1070ba7b78a2ad4dd3530c469d412850}\label{interface_i_cor_debug_a1070ba7b78a2ad4dd3530c469d412850}} 
+H\+R\+E\+S\+U\+LT {\bfseries Terminate} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_a4cbbe139cb3a55f1dfc578c17223d486}\label{interface_i_cor_debug_a4cbbe139cb3a55f1dfc578c17223d486}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Managed\+Handler} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_managed_callback}{I\+Cor\+Debug\+Managed\+Callback} $\ast$p\+Callback)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_aef79325366e34f9f61aa4a4a895d21f0}\label{interface_i_cor_debug_aef79325366e34f9f61aa4a4a895d21f0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Unmanaged\+Handler} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_unmanaged_callback}{I\+Cor\+Debug\+Unmanaged\+Callback} $\ast$p\+Callback)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_a711d674a2a228a268b289ba7c55fb244}\label{interface_i_cor_debug_a711d674a2a228a268b289ba7c55fb244}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Process} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR lp\+Application\+Name, \mbox{[}in\mbox{]} L\+P\+W\+S\+TR lp\+Command\+Line, \mbox{[}in\mbox{]} \hyperlink{struct___s_e_c_u_r_i_t_y___a_t_t_r_i_b_u_t_e_s}{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES} lp\+Process\+Attributes, \mbox{[}in\mbox{]} \hyperlink{struct___s_e_c_u_r_i_t_y___a_t_t_r_i_b_u_t_e_s}{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES} lp\+Thread\+Attributes, \mbox{[}in\mbox{]} B\+O\+OL b\+Inherit\+Handles, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Creation\+Flags, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{P\+V\+O\+ID} lp\+Environment, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR lp\+Current\+Directory, \mbox{[}in\mbox{]} L\+P\+S\+T\+A\+R\+T\+U\+P\+I\+N\+F\+OW lp\+Startup\+Info, \mbox{[}in\mbox{]} L\+P\+P\+R\+O\+C\+E\+S\+S\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON lp\+Process\+Information, \mbox{[}in\mbox{]} Cor\+Debug\+Create\+Process\+Flags debugging\+Flags, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$$\ast$pp\+Process)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_a65b11a4ee3ff62a29381b53f7869122e}\label{interface_i_cor_debug_a65b11a4ee3ff62a29381b53f7869122e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Debug\+Active\+Process} (\mbox{[}in\mbox{]} D\+W\+O\+RD id, \mbox{[}in\mbox{]} B\+O\+OL win32\+Attach, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$$\ast$pp\+Process)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_a9c4fbb3e1f5a6bbc1180ec56612c56cf}\label{interface_i_cor_debug_a9c4fbb3e1f5a6bbc1180ec56612c56cf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enumerate\+Processes} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_process_enum}{I\+Cor\+Debug\+Process\+Enum} $\ast$$\ast$pp\+Process)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_a493014b1f9e8f678970e262a8338d080}\label{interface_i_cor_debug_a493014b1f9e8f678970e262a8338d080}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Process} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Process\+Id, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$$\ast$pp\+Process)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_ae04a4db3d52ddbec216355a83cd4c441}\label{interface_i_cor_debug_ae04a4db3d52ddbec216355a83cd4c441}} 
+H\+R\+E\+S\+U\+LT {\bfseries Can\+Launch\+Or\+Attach} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Process\+Id, \mbox{[}in\mbox{]} B\+O\+OL win32\+Debugging\+Enabled)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

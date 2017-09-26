@@ -1,0 +1,108 @@
+\hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o}{}\section{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O结构体 参考}
+\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o}\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+
+
+{\ttfamily \#include $<$udf\+\_\+rel.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct___u_d_f_n_t_required_f_c_b}{\+\_\+\+U\+D\+F\+N\+T\+Required\+F\+CB} $\ast$ \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aa16e04c294edf8f5cdf5e214c390c246}{Common\+Fcb}
+\item 
+\hyperlink{struct___e_x_t_e_n_t___i_n_f_o}{E\+X\+T\+E\+N\+T\+\_\+\+I\+N\+FO} \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a9515c0bbac1936572a7347ae50e7dd55}{Data\+Loc}
+\item 
+\hyperlink{struct___e_x_t_e_n_t___i_n_f_o}{E\+X\+T\+E\+N\+T\+\_\+\+I\+N\+FO} \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ade01a853270827c06a39f6b33db3f6a7}{Alloc\+Loc}
+\item 
+\hyperlink{struct___e_x_t_e_n_t___i_n_f_o}{E\+X\+T\+E\+N\+T\+\_\+\+I\+N\+FO} \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a412523da551f2c58ace14d1ca23b5ec8}{F\+E\+Loc}
+\item 
+\hyperlink{structtag}{tag} $\ast$ \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aaf8ffd0e631978872f812f5eae001efa}{File\+Entry}
+\item 
+\mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ae3453a52e16f8a1d939fd066bc9aa0ac}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ae3453a52e16f8a1d939fd066bc9aa0ac}} 
+uint32 {\bfseries File\+Entry\+Len}
+\item 
+uint32 \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a1b5650cc4b76759629799d5131b16d9f}{F\+E\+\_\+\+Flags}
+\item 
+uint32 \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ac573bac9d1c567842bbb5c68798927fb}{Link\+Ref\+Count}
+\item 
+\hyperlink{struct___d_i_r___i_n_d_e_x___h_d_r}{P\+D\+I\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+H\+DR} \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aefc2ae1a50056dcbd7fa7bae15a1931d}{Dir\+Index}
+\item 
+\mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_af7192926e7598ea7e09b9f2f82d218a3}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_af7192926e7598ea7e09b9f2f82d218a3}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct___u_d_f___f_i_l_e___i_n_f_o}{\+\_\+\+U\+D\+F\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+FO} $\ast$ {\bfseries Linked\+File\+Info}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct___u_d_f___f_i_l_e___i_n_f_o}{\+\_\+\+U\+D\+F\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+FO} $\ast$ \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a1c3f0b9df859980637a14f92d08350d4}{S\+Dir\+Info}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{namespace_this}{This} structure describes actual data location. \hyperlink{class_it}{It} is an analogue (and a pair in this implementation) of N\+T\+Required\+Fcb structure.
+
+U\+DF F\+SD keeps list of all Dloc structures \& their on-\/disk representations. Before allocating new Dloc for newly opened file the F\+SD checks if the Dloc with the same Lba is already in memory. If it is so the initiator receive pointer to existing structure instead of allocating new. \hyperlink{namespace_this}{This} allows to handle Hard\+Liks properly. When all references to given Dloc has gone it is released. In case of file deletion the association between Dloc \& Lba is discarded, but Dloc is not released untill U\+D\+F\+Clean\+Up\+File\+\_\+\+\_\+() is called. \hyperlink{namespace_this}{This} prevents interference between deleted files \& newly created ones in case of equal Lba of deleted \& created File\+Entries. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ade01a853270827c06a39f6b33db3f6a7}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ade01a853270827c06a39f6b33db3f6a7}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!Alloc\+Loc@{Alloc\+Loc}}
+\index{Alloc\+Loc@{Alloc\+Loc}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{Alloc\+Loc}{AllocLoc}}
+{\footnotesize\ttfamily \hyperlink{struct___e_x_t_e_n_t___i_n_f_o}{E\+X\+T\+E\+N\+T\+\_\+\+I\+N\+FO} \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+Alloc\+Loc}
+
+Describes on-\/disk location of allocation descriptors. They are part of metadata associated with given file If this structure is not initialized U\+DF assumes that no allocation descriptors recorded for this file. Usually this structure points to the same L\+BA as \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a412523da551f2c58ace14d1ca23b5ec8}{F\+E\+Loc}, but with non-\/zero offset inside logical block. The only exception is for files recorded using I\+N\+\_\+\+I\+CB method (see above). In such a case this structure must be zero-\/filled \mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aa16e04c294edf8f5cdf5e214c390c246}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aa16e04c294edf8f5cdf5e214c390c246}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!Common\+Fcb@{Common\+Fcb}}
+\index{Common\+Fcb@{Common\+Fcb}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{Common\+Fcb}{CommonFcb}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{struct___u_d_f_n_t_required_f_c_b}{\+\_\+\+U\+D\+F\+N\+T\+Required\+F\+CB}$\ast$ \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+Common\+Fcb}
+
+N\+T-\/specific field. As soon as NT supports Hard\+Link concept it has own structure describing the file\textquotesingle{}s actual data. \mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a9515c0bbac1936572a7347ae50e7dd55}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a9515c0bbac1936572a7347ae50e7dd55}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!Data\+Loc@{Data\+Loc}}
+\index{Data\+Loc@{Data\+Loc}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{Data\+Loc}{DataLoc}}
+{\footnotesize\ttfamily \hyperlink{struct___e_x_t_e_n_t___i_n_f_o}{E\+X\+T\+E\+N\+T\+\_\+\+I\+N\+FO} \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+Data\+Loc}
+
+Describes on-\/disk location of user data. If the file is recorded using I\+N\+\_\+\+I\+CB method this structure points to the same L\+BA as \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a412523da551f2c58ace14d1ca23b5ec8}{F\+E\+Loc}, but with non-\/zero offset inside logical block \mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aefc2ae1a50056dcbd7fa7bae15a1931d}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aefc2ae1a50056dcbd7fa7bae15a1931d}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!Dir\+Index@{Dir\+Index}}
+\index{Dir\+Index@{Dir\+Index}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{Dir\+Index}{DirIndex}}
+{\footnotesize\ttfamily \hyperlink{struct___d_i_r___i_n_d_e_x___h_d_r}{P\+D\+I\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+H\+DR} \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+Dir\+Index}
+
+Points to the list of files referenced by the given file. \hyperlink{namespace_this}{This} field is used for directories only. Otherwise its value should be N\+U\+LL. \mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a1b5650cc4b76759629799d5131b16d9f}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a1b5650cc4b76759629799d5131b16d9f}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!F\+E\+\_\+\+Flags@{F\+E\+\_\+\+Flags}}
+\index{F\+E\+\_\+\+Flags@{F\+E\+\_\+\+Flags}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{F\+E\+\_\+\+Flags}{FE\_Flags}}
+{\footnotesize\ttfamily uint32 \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+F\+E\+\_\+\+Flags}
+
+Set of flags. \hyperlink{namespace_this}{This} is intended for internal use. Valid flags\+:
+\begin{DoxyItemize}
+\item \#\+U\+D\+F\+\_\+\+F\+E\+\_\+\+F\+L\+A\+G\+\_\+\+F\+E\+\_\+\+M\+O\+D\+I\+F\+I\+ED~\newline
+ Presence of this bit means that given File\+Entry was modified \& should be flushed
+\item \#\+U\+D\+F\+\_\+\+F\+E\+\_\+\+F\+L\+A\+G\+\_\+\+H\+A\+S\+\_\+\+S\+D\+IR~\newline
+ Presence of this bit means that given File\+Entry has an associated Stream Dir.
+\item \#\+U\+D\+F\+\_\+\+F\+E\+\_\+\+F\+L\+A\+G\+\_\+\+I\+S\+\_\+\+S\+D\+IR~\newline
+ Presence of this bit means that given File\+Entry represents a Stream Dir. 
+\end{DoxyItemize}\mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a412523da551f2c58ace14d1ca23b5ec8}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a412523da551f2c58ace14d1ca23b5ec8}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!F\+E\+Loc@{F\+E\+Loc}}
+\index{F\+E\+Loc@{F\+E\+Loc}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{F\+E\+Loc}{FELoc}}
+{\footnotesize\ttfamily \hyperlink{struct___e_x_t_e_n_t___i_n_f_o}{E\+X\+T\+E\+N\+T\+\_\+\+I\+N\+FO} \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+F\+E\+Loc}
+
+Describes on-\/disk location the File\+Entry. \hyperlink{namespace_this}{This} is on-\/disk metadata block describing file location. \mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aaf8ffd0e631978872f812f5eae001efa}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_aaf8ffd0e631978872f812f5eae001efa}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!File\+Entry@{File\+Entry}}
+\index{File\+Entry@{File\+Entry}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{File\+Entry}{FileEntry}}
+{\footnotesize\ttfamily \hyperlink{structtag}{tag}$\ast$ \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+File\+Entry}
+
+Pointer to cached File\+Entry. \hyperlink{namespace_this}{This} field mush be valid untill all file instances are cleaned up (see U\+D\+F\+Clean\+Up\+File\+\_\+\+\_\+() and \hyperlink{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ac573bac9d1c567842bbb5c68798927fb}{Link\+Ref\+Count}). \mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ac573bac9d1c567842bbb5c68798927fb}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_ac573bac9d1c567842bbb5c68798927fb}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!Link\+Ref\+Count@{Link\+Ref\+Count}}
+\index{Link\+Ref\+Count@{Link\+Ref\+Count}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{Link\+Ref\+Count}{LinkRefCount}}
+{\footnotesize\ttfamily uint32 \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+Link\+Ref\+Count}
+
+Counter of currently opened directory tree instances (files) pointing to given data. \hyperlink{class_it}{It} is introduced because U\+DF supports Hard\+Link concept. U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO structure should not be released untill this field reaches zero. \mbox{\Hypertarget{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a1c3f0b9df859980637a14f92d08350d4}\label{struct___u_d_f___d_a_t_a_l_o_c___i_n_f_o_a1c3f0b9df859980637a14f92d08350d4}} 
+\index{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}!S\+Dir\+Info@{S\+Dir\+Info}}
+\index{S\+Dir\+Info@{S\+Dir\+Info}!\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO@{\+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+FO}}
+\subsubsection{\texorpdfstring{S\+Dir\+Info}{SDirInfo}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{struct___u_d_f___f_i_l_e___i_n_f_o}{\+\_\+\+U\+D\+F\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+FO}$\ast$ \+\_\+\+U\+D\+F\+\_\+\+D\+A\+T\+A\+L\+O\+C\+\_\+\+I\+N\+F\+O\+::\+S\+Dir\+Info}
+
+Points to the \hyperlink{struct_file_info}{File\+Info} describing the Stream\+Directory associated with the given file. If the file has no associated Stream\+Directory this field must bu N\+U\+LL. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/udfs/udf\+\_\+info/udf\+\_\+rel.\+h\end{DoxyCompactItemize}

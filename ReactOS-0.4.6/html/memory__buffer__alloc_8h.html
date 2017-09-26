@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/include/reactos/libs/mbedtls/memory_buffer_alloc.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_f392f966fdfa958006dd89b2d26c104a.html">include</a></li><li class="navelem"><a class="el" href="dir_1fa98287edbac1d069b3283b7ba87594.html">reactos</a></li><li class="navelem"><a class="el" href="dir_a7bc96c4819f5914c1c3be6be3859db3.html">libs</a></li><li class="navelem"><a class="el" href="dir_8008c1c9e8177206b0a1fdb50589ccd4.html">mbedtls</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">memory_buffer_alloc.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Buffer-based memory allocator  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;config.h&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div>
+<p><a href="memory__buffer__alloc_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2b9fd1ef7a128cf7680e6c9c377134d4"><td class="memItemLeft" align="right" valign="top"><a id="a2b9fd1ef7a128cf7680e6c9c377134d4"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MBEDTLS_MEMORY_VERIFY_NONE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2b9fd1ef7a128cf7680e6c9c377134d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb815b3f3b7cfce7c5ddd6f2a33b80d"><td class="memItemLeft" align="right" valign="top"><a id="a3fb815b3f3b7cfce7c5ddd6f2a33b80d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MBEDTLS_MEMORY_VERIFY_ALLOC</b>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="separator:a3fb815b3f3b7cfce7c5ddd6f2a33b80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7f2d8956e95373dcb4fe24154b6650"><td class="memItemLeft" align="right" valign="top"><a id="a1c7f2d8956e95373dcb4fe24154b6650"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MBEDTLS_MEMORY_VERIFY_FREE</b>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:a1c7f2d8956e95373dcb4fe24154b6650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581a709e67d33b34d3c8a7dfb4b3df00"><td class="memItemLeft" align="right" valign="top"><a id="a581a709e67d33b34d3c8a7dfb4b3df00"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MBEDTLS_MEMORY_VERIFY_ALWAYS</b>&#160;&#160;&#160;(MBEDTLS_MEMORY_VERIFY_ALLOC | MBEDTLS_MEMORY_VERIFY_FREE)</td></tr>
+<tr class="separator:a581a709e67d33b34d3c8a7dfb4b3df00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">SECTION: Module settings</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>The configuration options you can set for this module are in this section. Either change them in config.h or define them on the compiler command line. </p>
+</div></td></tr>
+<tr class="memitem:a1fa1e20d4ff40eb6c2a740d7d26b2749"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory__buffer__alloc_8h.html#a1fa1e20d4ff40eb6c2a740d7d26b2749">MBEDTLS_MEMORY_ALIGN_MULTIPLE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a1fa1e20d4ff40eb6c2a740d7d26b2749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac70d134be54133c272d8eab2cb85dfbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory__buffer__alloc_8h.html#ac70d134be54133c272d8eab2cb85dfbf">mbedtls_memory_buffer_alloc_init</a> (unsigned char *buf, size_t len)</td></tr>
+<tr class="memdesc:ac70d134be54133c272d8eab2cb85dfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize use of stack-based memory allocator. The stack-based allocator does memory management inside the presented buffer and does not call calloc() and free(). <a class="el" href="class_it.html">It</a> sets the global mbedtls_calloc() and mbedtls_free() pointers to its own functions. (Provided mbedtls_calloc() and mbedtls_free() are thread-safe if MBEDTLS_THREADING_C is defined)  <a href="#ac70d134be54133c272d8eab2cb85dfbf">更多...</a><br /></td></tr>
+<tr class="separator:ac70d134be54133c272d8eab2cb85dfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d7316a19b72776f34ba74720a06325"><td class="memItemLeft" align="right" valign="top"><a id="ae9d7316a19b72776f34ba74720a06325"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory__buffer__alloc_8h.html#ae9d7316a19b72776f34ba74720a06325">mbedtls_memory_buffer_alloc_free</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="memdesc:ae9d7316a19b72776f34ba74720a06325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the mutex for thread-safety and clear remaining memory <br /></td></tr>
+<tr class="separator:ae9d7316a19b72776f34ba74720a06325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa50603bb2f2f1fe8d97d6953589b832"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory__buffer__alloc_8h.html#aaa50603bb2f2f1fe8d97d6953589b832">mbedtls_memory_buffer_set_verify</a> (int verify)</td></tr>
+<tr class="memdesc:aaa50603bb2f2f1fe8d97d6953589b832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine when the allocator should automatically verify the state of the entire chain of headers / meta-data. (Default: MBEDTLS_MEMORY_VERIFY_NONE)  <a href="#aaa50603bb2f2f1fe8d97d6953589b832">更多...</a><br /></td></tr>
+<tr class="separator:aaa50603bb2f2f1fe8d97d6953589b832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aae8a0cd61f08dd6734ebc8a8a3ba38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory__buffer__alloc_8h.html#a7aae8a0cd61f08dd6734ebc8a8a3ba38">mbedtls_memory_buffer_alloc_verify</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="memdesc:a7aae8a0cd61f08dd6734ebc8a8a3ba38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that all headers in the memory buffer are correct and contain sane values. Helps debug buffer-overflow errors.  <a href="#a7aae8a0cd61f08dd6734ebc8a8a3ba38">更多...</a><br /></td></tr>
+<tr class="separator:a7aae8a0cd61f08dd6734ebc8a8a3ba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Buffer-based memory allocator </p>
+<p>Copyright (<a class="el" href="struct_c.html">C</a>) 2006-2015, ARM Limited, All Rights Reserved SPDX-License-Identifier: GPL-2.0</p>
+<p><a class="el" href="namespace_this.html">This</a> program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+<p><a class="el" href="namespace_this.html">This</a> program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR <a class="el" href="struct_a.html">A</a> PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+<p><a class="el" href="namespace_this.html">This</a> file is part of mbed TLS (<a href="https://tls.mbed.org">https://tls.mbed.org</a>) </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a1fa1e20d4ff40eb6c2a740d7d26b2749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa1e20d4ff40eb6c2a740d7d26b2749">&#9670;&nbsp;</a></span>MBEDTLS_MEMORY_ALIGN_MULTIPLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MBEDTLS_MEMORY_ALIGN_MULTIPLE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Align on multiples of this value </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ac70d134be54133c272d8eab2cb85dfbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70d134be54133c272d8eab2cb85dfbf">&#9670;&nbsp;</a></span>mbedtls_memory_buffer_alloc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> mbedtls_memory_buffer_alloc_init </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize use of stack-based memory allocator. The stack-based allocator does memory management inside the presented buffer and does not call calloc() and free(). <a class="el" href="class_it.html">It</a> sets the global mbedtls_calloc() and mbedtls_free() pointers to its own functions. (Provided mbedtls_calloc() and mbedtls_free() are thread-safe if MBEDTLS_THREADING_C is defined) </p>
+<dl class="section note"><dt>注解</dt><dd><a class="el" href="namespace_this.html">This</a> code is not optimized and provides a straight-forward implementation of a stack-based memory allocator.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>buffer to use as heap </td></tr>
+    <tr><td class="paramname">len</td><td>size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7aae8a0cd61f08dd6734ebc8a8a3ba38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aae8a0cd61f08dd6734ebc8a8a3ba38">&#9670;&nbsp;</a></span>mbedtls_memory_buffer_alloc_verify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mbedtls_memory_buffer_alloc_verify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifies that all headers in the memory buffer are correct and contain sane values. Helps debug buffer-overflow errors. </p>
+<p>Prints out first failure if MBEDTLS_MEMORY_DEBUG is defined. Prints out full header information if MBEDTLS_MEMORY_DEBUG is defined. (Includes stack trace information for each block if MBEDTLS_MEMORY_BACKTRACE is defined as well).</p>
+<dl class="section return"><dt>返回</dt><dd>0 if verified, 1 otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aaa50603bb2f2f1fe8d97d6953589b832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa50603bb2f2f1fe8d97d6953589b832">&#9670;&nbsp;</a></span>mbedtls_memory_buffer_set_verify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> mbedtls_memory_buffer_set_verify </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>verify</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine when the allocator should automatically verify the state of the entire chain of headers / meta-data. (Default: MBEDTLS_MEMORY_VERIFY_NONE) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verify</td><td>One of MBEDTLS_MEMORY_VERIFY_NONE, MBEDTLS_MEMORY_VERIFY_ALLOC, MBEDTLS_MEMORY_VERIFY_FREE or MBEDTLS_MEMORY_VERIFY_ALWAYS </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

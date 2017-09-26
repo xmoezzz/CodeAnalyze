@@ -1,0 +1,11 @@
+\hypertarget{etharp_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/netif/etharp.c 文件参考}
+\label{etharp_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/netif/etharp.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/netif/etharp.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+
+
+\subsection{详细描述}
+Address Resolution \hyperlink{struct_protocol}{Protocol} module for IP over Ethernet
+
+Functionally, A\+RP is divided into two parts. The first maps an IP address to a physical address when sending a packet, and the second part answers requests from other machines for our physical address.
+
+\hyperlink{namespace_this}{This} implementation complies with R\+FC 826 (Ethernet A\+RP). \hyperlink{class_it}{It} supports Gratuitious A\+RP from R\+F\+C3220 (IP Mobility Support for I\+Pv4) section 4.\+6 if an interface calls etharp\+\_\+gratuitous(our\+\_\+netif) upon address change. 

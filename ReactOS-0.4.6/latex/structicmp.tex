@@ -1,0 +1,60 @@
+\hypertarget{structicmp}{}\section{icmp结构体 参考}
+\label{structicmp}\index{icmp@{icmp}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structicmp_aa1e03d610e2391565d96ef5ace20caf6}\label{structicmp_aa1e03d610e2391565d96ef5ace20caf6}} 
+u\+\_\+char {\bfseries icmp\+\_\+type}
+\item 
+\mbox{\Hypertarget{structicmp_a4db7a65d2113b9800928821b67494ee0}\label{structicmp_a4db7a65d2113b9800928821b67494ee0}} 
+u\+\_\+char {\bfseries icmp\+\_\+code}
+\item 
+\mbox{\Hypertarget{structicmp_af1087f74d787650ed3b46ea777de030f}\label{structicmp_af1087f74d787650ed3b46ea777de030f}} 
+u\+\_\+short {\bfseries icmp\+\_\+cksum}
+\item 
+\mbox{\Hypertarget{structicmp_a0495c8f0af332ef2ec4e8972272d0f93}\label{structicmp_a0495c8f0af332ef2ec4e8972272d0f93}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>u\_char {\bfseries ih\_pptr}\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structin__addr}{in\_addr} {\bfseries ih\_gwaddr}\\
+\>struct {\bfseries ih\_idseq} \{\\
+\>\>n\_short {\bfseries icd\_id}\\
+\>\>n\_short {\bfseries icd\_seq}\\
+\>\} {\bfseries ih\_idseq}\\
+\>int {\bfseries ih\_void}\\
+\>struct {\bfseries ih\_pmtu} \{\\
+\>\>n\_short {\bfseries ipm\_void}\\
+\>\>n\_short {\bfseries ipm\_nextmtu}\\
+\>\} {\bfseries ih\_pmtu}\\
+\>struct {\bfseries ih\_rtradv} \{\\
+\>\>u\_char {\bfseries irt\_num\_addrs}\\
+\>\>u\_char {\bfseries irt\_wpa}\\
+\>\>u\_int16\_t {\bfseries irt\_lifetime}\\
+\>\} {\bfseries ih\_rtradv}\\
+\} {\bfseries icmp\_hun}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structicmp_a5d63dad4b0f58bb56eb0b4e617408792}\label{structicmp_a5d63dad4b0f58bb56eb0b4e617408792}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct {\bfseries id\_ts} \{\\
+\>\>n\_time {\bfseries its\_otime}\\
+\>\>n\_time {\bfseries its\_rtime}\\
+\>\>n\_time {\bfseries its\_ttime}\\
+\>\} {\bfseries id\_ts}\\
+\>struct {\bfseries id\_ip} \{\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{structip}{ip} {\bfseries idi\_ip}\\
+\>\} {\bfseries id\_ip}\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structicmp__ra__addr}{icmp\_ra\_addr} {\bfseries id\_radv}\\
+\>u\_int32\_t {\bfseries id\_mask}\\
+\>char {\bfseries id\_data} \mbox{[}1\mbox{]}\\
+\} {\bfseries icmp\_dun}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/iphlpapi/ip\+\_\+icmp.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r}{}\section{\+\_\+\+R\+E\+P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+A\+\_\+\+B\+U\+F\+F\+E\+R结构体 参考}
+\label{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r}\index{\+\_\+\+R\+E\+P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+A\+\_\+\+B\+U\+F\+F\+ER@{\+\_\+\+R\+E\+P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+A\+\_\+\+B\+U\+F\+F\+ER}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_a48f7c20aaa1e9bf48b54bab58c77cee1}\label{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_a48f7c20aaa1e9bf48b54bab58c77cee1}} 
+U\+L\+O\+NG {\bfseries Reparse\+Tag}
+\item 
+\mbox{\Hypertarget{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_ad604064a54502284ae28a5a101855405}\label{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_ad604064a54502284ae28a5a101855405}} 
+U\+S\+H\+O\+RT {\bfseries Reparse\+Data\+Length}
+\item 
+\mbox{\Hypertarget{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_ab7d7ef1bac95556ac1ffee0a37e8b6d7}\label{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_ab7d7ef1bac95556ac1ffee0a37e8b6d7}} 
+U\+S\+H\+O\+RT {\bfseries Reserved}
+\item 
+\mbox{\Hypertarget{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_add5fc5e68e586fbf7f2b69355b095053}\label{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_add5fc5e68e586fbf7f2b69355b095053}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>USHORT {\bfseries SubstituteNameOffset}\\
+\>\>USHORT {\bfseries SubstituteNameLength}\\
+\>\>USHORT {\bfseries PrintNameOffset}\\
+\>\>USHORT {\bfseries PrintNameLength}\\
+\>\>ULONG {\bfseries Flags}\\
+\>\>WCHAR {\bfseries PathBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries SymbolicLinkReparseBuffer}\\
+\>struct \{\\
+\>\>USHORT {\bfseries SubstituteNameOffset}\\
+\>\>USHORT {\bfseries SubstituteNameLength}\\
+\>\>USHORT {\bfseries PrintNameOffset}\\
+\>\>USHORT {\bfseries PrintNameLength}\\
+\>\>WCHAR {\bfseries PathBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries MountPointReparseBuffer}\\
+\>struct \{\\
+\>\>UCHAR {\bfseries DataBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries GenericReparseBuffer}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_a147503590f71e7c7810a94477a3da674}\label{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_a147503590f71e7c7810a94477a3da674}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>USHORT {\bfseries SubstituteNameOffset}\\
+\>\>USHORT {\bfseries SubstituteNameLength}\\
+\>\>USHORT {\bfseries PrintNameOffset}\\
+\>\>USHORT {\bfseries PrintNameLength}\\
+\>\>ULONG {\bfseries Flags}\\
+\>\>WCHAR {\bfseries PathBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries SymbolicLinkReparseBuffer}\\
+\>struct \{\\
+\>\>USHORT {\bfseries SubstituteNameOffset}\\
+\>\>USHORT {\bfseries SubstituteNameLength}\\
+\>\>USHORT {\bfseries PrintNameOffset}\\
+\>\>USHORT {\bfseries PrintNameLength}\\
+\>\>WCHAR {\bfseries PathBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries MountPointReparseBuffer}\\
+\>struct \{\\
+\>\>UCHAR {\bfseries DataBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries GenericReparseBuffer}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_ad622f2bf7d4d2829bed07a7a92a414b6}\label{struct___r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_ad622f2bf7d4d2829bed07a7a92a414b6}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>USHORT {\bfseries SubstituteNameOffset}\\
+\>\>USHORT {\bfseries SubstituteNameLength}\\
+\>\>USHORT {\bfseries PrintNameOffset}\\
+\>\>USHORT {\bfseries PrintNameLength}\\
+\>\>ULONG {\bfseries Flags}\\
+\>\>WCHAR {\bfseries PathBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries SymbolicLinkReparseBuffer}\\
+\>struct \{\\
+\>\>USHORT {\bfseries SubstituteNameOffset}\\
+\>\>USHORT {\bfseries SubstituteNameLength}\\
+\>\>USHORT {\bfseries PrintNameOffset}\\
+\>\>USHORT {\bfseries PrintNameLength}\\
+\>\>WCHAR {\bfseries PathBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries MountPointReparseBuffer}\\
+\>struct \{\\
+\>\>UCHAR {\bfseries DataBuffer} \mbox{[}1\mbox{]}\\
+\>\} {\bfseries GenericReparseBuffer}\\
+\} {\bfseries DUMMYUNIONNAME}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/kernel32/client/file/create.\+c\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/kernel32/client/file/dir.\+c\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/xdk/iotypes.\+h\end{DoxyCompactItemize}

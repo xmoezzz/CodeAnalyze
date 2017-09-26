@@ -1,0 +1,44 @@
+\hypertarget{interface_i_capture_graph_builder}{}\section{I\+Capture\+Graph\+Builder接口 参考}
+\label{interface_i_capture_graph_builder}\index{I\+Capture\+Graph\+Builder@{I\+Capture\+Graph\+Builder}}
+类 I\+Capture\+Graph\+Builder 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_capture_graph_builder}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a612321366a683527dfc6a00438c9092e}\label{interface_i_capture_graph_builder_a612321366a683527dfc6a00438c9092e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Filtergraph} (\mbox{[}in\mbox{]} \hyperlink{interface_i_graph_builder}{I\+Graph\+Builder} $\ast$pfg)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a64606b1f26e2692f6905490920788434}\label{interface_i_capture_graph_builder_a64606b1f26e2692f6905490920788434}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Filtergraph} (\mbox{[}out\mbox{]} \hyperlink{interface_i_graph_builder}{I\+Graph\+Builder} $\ast$$\ast$ppfg)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a7fac8b062ca094353b2a203fa1ffe61a}\label{interface_i_capture_graph_builder_a7fac8b062ca094353b2a203fa1ffe61a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Output\+File\+Name} (\mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Type, \mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR lpstr\+File, \mbox{[}out\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$$\ast$\hyperlink{struct__paraformat}{ppf}, \mbox{[}out\mbox{]} \hyperlink{interface_i_file_sink_filter}{I\+File\+Sink\+Filter} $\ast$$\ast$pp\+Sink)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_ac10340c04fad28d4aca93a617406c1b7}\label{interface_i_capture_graph_builder_ac10340c04fad28d4aca93a617406c1b7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Find\+Interface} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Category, \mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$pf, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppint)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a217bb7cebd2b5d0eda426165f0f6abfd}\label{interface_i_capture_graph_builder_a217bb7cebd2b5d0eda426165f0f6abfd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Find\+Interface} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Category, \mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$pf, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppint)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a79e5580efd6ae1c948542cffa80924a4}\label{interface_i_capture_graph_builder_a79e5580efd6ae1c948542cffa80924a4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Render\+Stream} (\mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Category, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Source, \mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$pf\+Compressor, \mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$pf\+Renderer)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a6c4c270a3fe48050cfc705854a999c63}\label{interface_i_capture_graph_builder_a6c4c270a3fe48050cfc705854a999c63}} 
+H\+R\+E\+S\+U\+LT {\bfseries Control\+Stream} (\mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Category, \mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter, \mbox{[}in\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$pstart, \mbox{[}in\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$pstop, \mbox{[}in\mbox{]} W\+O\+RD w\+Start\+Cookie, \mbox{[}in\mbox{]} W\+O\+RD w\+Stop\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a1a21802d6ae3c16987bb588b8c63e4a5}\label{interface_i_capture_graph_builder_a1a21802d6ae3c16987bb588b8c63e4a5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Alloc\+Cap\+File} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR lpstr, \mbox{[}in\mbox{]} D\+W\+O\+R\+D\+L\+O\+NG dwl\+Size)
+\item 
+\mbox{\Hypertarget{interface_i_capture_graph_builder_a6e80d5129724ce33d31bf9a35be197ce}\label{interface_i_capture_graph_builder_a6e80d5129724ce33d31bf9a35be197ce}} 
+H\+R\+E\+S\+U\+LT {\bfseries Copy\+Capture\+File} (\mbox{[}in\mbox{]} L\+P\+O\+L\+E\+S\+TR lpwstr\+Old, \mbox{[}in\mbox{]} L\+P\+O\+L\+E\+S\+TR lpwstr\+New, \mbox{[}in\mbox{]} int f\+Allow\+Esc\+Abort, \mbox{[}in\mbox{]} \hyperlink{interface_i_a_m_copy_capture_file_progress}{I\+A\+M\+Copy\+Capture\+File\+Progress} $\ast$p\+Callback)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/axextend.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: deque&lt; _Tp, &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classdeque-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">deque&lt; _Tp, &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 deque&lt; _Tp, &gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classdeque.png" usemap="#deque_3C_20_5FTp_2C_20_3E_map" alt=""/>
+  <map id="deque_3C_20_5FTp_2C_20_3E_map" name="deque_3C_20_5FTp_2C_20_3E_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4beaa2826510a15103b4e01d1faa31df"><td class="memItemLeft" align="right" valign="top"><a id="a4beaa2826510a15103b4e01d1faa31df"></a>
+typedef _Tp&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
+<tr class="separator:a4beaa2826510a15103b4e01d1faa31df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6101907d1272b65463cc77121e94bef6"><td class="memItemLeft" align="right" valign="top"><a id="a6101907d1272b65463cc77121e94bef6"></a>
+typedef value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
+<tr class="separator:a6101907d1272b65463cc77121e94bef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3f48b8db12ae2d2e1c8b732e3563b5"><td class="memItemLeft" align="right" valign="top"><a id="abe3f48b8db12ae2d2e1c8b732e3563b5"></a>
+typedef const value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>const_pointer</b></td></tr>
+<tr class="separator:abe3f48b8db12ae2d2e1c8b732e3563b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5763152ecaa38821b1dfb96f57964d22"><td class="memItemLeft" align="right" valign="top"><a id="a5763152ecaa38821b1dfb96f57964d22"></a>
+typedef value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
+<tr class="separator:a5763152ecaa38821b1dfb96f57964d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be701298b98770dcf6e04597fdde160"><td class="memItemLeft" align="right" valign="top"><a id="a9be701298b98770dcf6e04597fdde160"></a>
+typedef const value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
+<tr class="separator:a9be701298b98770dcf6e04597fdde160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fc9a20c7832fb52ecb94ed854b00dd"><td class="memItemLeft" align="right" valign="top"><a id="a78fc9a20c7832fb52ecb94ed854b00dd"></a>
+typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
+<tr class="separator:a78fc9a20c7832fb52ecb94ed854b00dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a0ce4ae8792f5e47bb17bbf8c01e80"><td class="memItemLeft" align="right" valign="top"><a id="aa0a0ce4ae8792f5e47bb17bbf8c01e80"></a>
+typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b></td></tr>
+<tr class="separator:aa0a0ce4ae8792f5e47bb17bbf8c01e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1427a66623140cd21ce1754e732eae0"><td class="memItemLeft" align="right" valign="top"><a id="af1427a66623140cd21ce1754e732eae0"></a>
+typedef <a class="el" href="structrandom__access__iterator__tag.html">random_access_iterator_tag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_Iterator_category</b></td></tr>
+<tr class="separator:af1427a66623140cd21ce1754e732eae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990af1c421099a2454ee6ad80e728573"><td class="memItemLeft" align="right" valign="top"><a id="a990af1c421099a2454ee6ad80e728573"></a>
+typedef _Base::allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b></td></tr>
+<tr class="separator:a990af1c421099a2454ee6ad80e728573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374bb507398b383b9414618b6e106249"><td class="memItemLeft" align="right" valign="top"><a id="a374bb507398b383b9414618b6e106249"></a>
+typedef _Base::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:a374bb507398b383b9414618b6e106249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630e623af9631fae4c878b9bc32279a4"><td class="memItemLeft" align="right" valign="top"><a id="a630e623af9631fae4c878b9bc32279a4"></a>
+typedef _Base::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:a630e623af9631fae4c878b9bc32279a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943efd290ef9a91732600341390fd1eb"><td class="memItemLeft" align="right" valign="top"><a id="a943efd290ef9a91732600341390fd1eb"></a>
+typedef _STLP_PRIV <a class="el" href="struct___d_b_g__iter.html">_DBG_iter</a>&lt; _Base, _STLP_PRIV _DbgTraits&lt; <a class="el" href="struct___nonconst__traits.html">_Nonconst_traits</a>&lt; value_type &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:a943efd290ef9a91732600341390fd1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad889223d0a461e09f08b690a4efc6a3e"><td class="memItemLeft" align="right" valign="top"><a id="ad889223d0a461e09f08b690a4efc6a3e"></a>
+typedef _STLP_PRIV <a class="el" href="struct___d_b_g__iter.html">_DBG_iter</a>&lt; _Base, _STLP_PRIV _DbgTraits&lt; <a class="el" href="struct___const__traits.html">_Const_traits</a>&lt; value_type &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:ad889223d0a461e09f08b690a4efc6a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4beaa2826510a15103b4e01d1faa31df"><td class="memItemLeft" align="right" valign="top"><a id="a4beaa2826510a15103b4e01d1faa31df"></a>
+typedef _Tp&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
+<tr class="separator:a4beaa2826510a15103b4e01d1faa31df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6101907d1272b65463cc77121e94bef6"><td class="memItemLeft" align="right" valign="top"><a id="a6101907d1272b65463cc77121e94bef6"></a>
+typedef value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
+<tr class="separator:a6101907d1272b65463cc77121e94bef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3f48b8db12ae2d2e1c8b732e3563b5"><td class="memItemLeft" align="right" valign="top"><a id="abe3f48b8db12ae2d2e1c8b732e3563b5"></a>
+typedef const value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>const_pointer</b></td></tr>
+<tr class="separator:abe3f48b8db12ae2d2e1c8b732e3563b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5763152ecaa38821b1dfb96f57964d22"><td class="memItemLeft" align="right" valign="top"><a id="a5763152ecaa38821b1dfb96f57964d22"></a>
+typedef value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
+<tr class="separator:a5763152ecaa38821b1dfb96f57964d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be701298b98770dcf6e04597fdde160"><td class="memItemLeft" align="right" valign="top"><a id="a9be701298b98770dcf6e04597fdde160"></a>
+typedef const value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
+<tr class="separator:a9be701298b98770dcf6e04597fdde160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fc9a20c7832fb52ecb94ed854b00dd"><td class="memItemLeft" align="right" valign="top"><a id="a78fc9a20c7832fb52ecb94ed854b00dd"></a>
+typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
+<tr class="separator:a78fc9a20c7832fb52ecb94ed854b00dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a0ce4ae8792f5e47bb17bbf8c01e80"><td class="memItemLeft" align="right" valign="top"><a id="aa0a0ce4ae8792f5e47bb17bbf8c01e80"></a>
+typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b></td></tr>
+<tr class="separator:aa0a0ce4ae8792f5e47bb17bbf8c01e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1427a66623140cd21ce1754e732eae0"><td class="memItemLeft" align="right" valign="top"><a id="af1427a66623140cd21ce1754e732eae0"></a>
+typedef <a class="el" href="structrandom__access__iterator__tag.html">random_access_iterator_tag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_Iterator_category</b></td></tr>
+<tr class="separator:af1427a66623140cd21ce1754e732eae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291e13a61cac62b06a51f09722be1b7d"><td class="memItemLeft" align="right" valign="top"><a id="a291e13a61cac62b06a51f09722be1b7d"></a>
+typedef <a class="el" href="struct___alloc__traits.html">_Alloc_traits</a>&lt; value_type, _Alloc &gt;::allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b></td></tr>
+<tr class="separator:a291e13a61cac62b06a51f09722be1b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a882c49bc8540cd3ce535690e7c7de"><td class="memItemLeft" align="right" valign="top"><a id="ab2a882c49bc8540cd3ce535690e7c7de"></a>
+typedef _STLP_PRIV <a class="el" href="struct___deque__iterator.html">_Deque_iterator</a>&lt; value_type, <a class="el" href="struct___nonconst__traits.html">_Nonconst_traits</a>&lt; value_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:ab2a882c49bc8540cd3ce535690e7c7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8f6cf9650706b8c32a082d09d9d915"><td class="memItemLeft" align="right" valign="top"><a id="a9b8f6cf9650706b8c32a082d09d9d915"></a>
+typedef _STLP_PRIV <a class="el" href="struct___deque__iterator.html">_Deque_iterator</a>&lt; value_type, <a class="el" href="struct___const__traits.html">_Const_traits</a>&lt; value_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:a9b8f6cf9650706b8c32a082d09d9d915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3f138e445edc68e29f8f8d338406ba89"><td class="memItemLeft" align="right" valign="top"><a id="a3f138e445edc68e29f8f8d338406ba89"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a3f138e445edc68e29f8f8d338406ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1391e9f01e6d240ae3a083e760ce284b"><td class="memItemLeft" align="right" valign="top"><a id="a1391e9f01e6d240ae3a083e760ce284b"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a1391e9f01e6d240ae3a083e760ce284b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee8f8d17f37958b4f56d2f4c2f71edf"><td class="memItemLeft" align="right" valign="top"><a id="abee8f8d17f37958b4f56d2f4c2f71edf"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:abee8f8d17f37958b4f56d2f4c2f71edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004885c837a83910ec104ceda37f0408"><td class="memItemLeft" align="right" valign="top"><a id="a004885c837a83910ec104ceda37f0408"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:a004885c837a83910ec104ceda37f0408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b60cb0c9936e92371d5ad74a59619b"><td class="memItemLeft" align="right" valign="top"><a id="a21b60cb0c9936e92371d5ad74a59619b"></a>
+<a class="el" href="classreverse__iterator.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> ()</td></tr>
+<tr class="separator:a21b60cb0c9936e92371d5ad74a59619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6000323ead2caf0fb56c2ea65928702f"><td class="memItemLeft" align="right" valign="top"><a id="a6000323ead2caf0fb56c2ea65928702f"></a>
+<a class="el" href="classreverse__iterator.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
+<tr class="separator:a6000323ead2caf0fb56c2ea65928702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660e4820eb547ee737f5cfa9ca0f5372"><td class="memItemLeft" align="right" valign="top"><a id="a660e4820eb547ee737f5cfa9ca0f5372"></a>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const</td></tr>
+<tr class="separator:a660e4820eb547ee737f5cfa9ca0f5372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413dcab1e427b0a5f81f14c6d3bdab1f"><td class="memItemLeft" align="right" valign="top"><a id="a413dcab1e427b0a5f81f14c6d3bdab1f"></a>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const</td></tr>
+<tr class="separator:a413dcab1e427b0a5f81f14c6d3bdab1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c16a67c6054482aa1696308d7661937"><td class="memItemLeft" align="right" valign="top"><a id="a7c16a67c6054482aa1696308d7661937"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type __n)</td></tr>
+<tr class="separator:a7c16a67c6054482aa1696308d7661937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de0dc94b74d36c1f1666491f18abc77"><td class="memItemLeft" align="right" valign="top"><a id="a7de0dc94b74d36c1f1666491f18abc77"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type __n) const</td></tr>
+<tr class="separator:a7de0dc94b74d36c1f1666491f18abc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0064f18379ca17a5ca53e01c05d45d6d"><td class="memItemLeft" align="right" valign="top"><a id="a0064f18379ca17a5ca53e01c05d45d6d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_range_check</b> (size_type __n) const</td></tr>
+<tr class="separator:a0064f18379ca17a5ca53e01c05d45d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77cf0a0716fd6930ec8799a00ec1e6b"><td class="memItemLeft" align="right" valign="top"><a id="ae77cf0a0716fd6930ec8799a00ec1e6b"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_type __n)</td></tr>
+<tr class="separator:ae77cf0a0716fd6930ec8799a00ec1e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61b2cf963a40af573a91a00d8231e00"><td class="memItemLeft" align="right" valign="top"><a id="aa61b2cf963a40af573a91a00d8231e00"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_type __n) const</td></tr>
+<tr class="separator:aa61b2cf963a40af573a91a00d8231e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d38eb626b619b2fb356f170b250d93"><td class="memItemLeft" align="right" valign="top"><a id="ae6d38eb626b619b2fb356f170b250d93"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> ()</td></tr>
+<tr class="separator:ae6d38eb626b619b2fb356f170b250d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737db581f2ebbe096db0dddf7b8626db"><td class="memItemLeft" align="right" valign="top"><a id="a737db581f2ebbe096db0dddf7b8626db"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> ()</td></tr>
+<tr class="separator:a737db581f2ebbe096db0dddf7b8626db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d811eddb80d64a420e0449583a7bb"><td class="memItemLeft" align="right" valign="top"><a id="a671d811eddb80d64a420e0449583a7bb"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> () const</td></tr>
+<tr class="separator:a671d811eddb80d64a420e0449583a7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0306fdef6e078601dd982b4c22f5fd9f"><td class="memItemLeft" align="right" valign="top"><a id="a0306fdef6e078601dd982b4c22f5fd9f"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const</td></tr>
+<tr class="separator:a0306fdef6e078601dd982b4c22f5fd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6742ae6f3d0500ddc63857116badf7b1"><td class="memItemLeft" align="right" valign="top"><a id="a6742ae6f3d0500ddc63857116badf7b1"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a6742ae6f3d0500ddc63857116badf7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5b708bad53263dbcfce7569d66906b"><td class="memItemLeft" align="right" valign="top"><a id="a1d5b708bad53263dbcfce7569d66906b"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>max_size</b> () const</td></tr>
+<tr class="separator:a1d5b708bad53263dbcfce7569d66906b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4629b471ae5aba7a88d2398fb78b87fa"><td class="memItemLeft" align="right" valign="top"><a id="a4629b471ae5aba7a88d2398fb78b87fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="separator:a4629b471ae5aba7a88d2398fb78b87fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4f51b1ebd3a9a96effbd7302b8c3e9"><td class="memItemLeft" align="right" valign="top"><a id="aac4f51b1ebd3a9a96effbd7302b8c3e9"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocator</b> () const</td></tr>
+<tr class="separator:aac4f51b1ebd3a9a96effbd7302b8c3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbdb37e77ced88dce8da510457b67dd"><td class="memItemLeft" align="right" valign="top"><a id="a5bbdb37e77ced88dce8da510457b67dd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a5bbdb37e77ced88dce8da510457b67dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae315582b08dbf9ac98a7f7c44d022a2f"><td class="memItemLeft" align="right" valign="top"><a id="ae315582b08dbf9ac98a7f7c44d022a2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const <a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:ae315582b08dbf9ac98a7f7c44d022a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2032bedb8662f1aa7eaee5d0d6609aa5"><td class="memItemLeft" align="right" valign="top"><a id="a2032bedb8662f1aa7eaee5d0d6609aa5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (size_type __n)</td></tr>
+<tr class="separator:a2032bedb8662f1aa7eaee5d0d6609aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42bc5bbeaae902d4cca2f68c2d790ab"><td class="memItemLeft" align="right" valign="top"><a id="ae42bc5bbeaae902d4cca2f68c2d790ab"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (size_type __n, const value_type &amp;__val, const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:ae42bc5bbeaae902d4cca2f68c2d790ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02ccbea3f5ab0d9b2c30c33f83c8c50"><td class="memItemLeft" align="right" valign="top"><a id="ad02ccbea3f5ab0d9b2c30c33f83c8c50"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const value_type *__first, const value_type *__last, const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:ad02ccbea3f5ab0d9b2c30c33f83c8c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fddb3c21bd676926040d9496fda161"><td class="memItemLeft" align="right" valign="top"><a id="a39fddb3c21bd676926040d9496fda161"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const_iterator __first, const_iterator __last, const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a39fddb3c21bd676926040d9496fda161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8047e4723c11c7098194f7d62353ad13"><td class="memItemLeft" align="right" valign="top"><a id="a8047e4723c11c7098194f7d62353ad13"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (<a class="el" href="class____move__source.html">__move_source</a>&lt; <a class="el" href="classdeque.html">_Self</a> &gt; src)</td></tr>
+<tr class="separator:a8047e4723c11c7098194f7d62353ad13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d44f46bcf2ca8448ede05a56719c00"><td class="memItemLeft" align="right" valign="top"><a id="a21d44f46bcf2ca8448ede05a56719c00"></a>
+<a class="el" href="classdeque.html">_Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:a21d44f46bcf2ca8448ede05a56719c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bb324e2a525a085c3a1df23990b184"><td class="memItemLeft" align="right" valign="top"><a id="a33bb324e2a525a085c3a1df23990b184"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:a33bb324e2a525a085c3a1df23990b184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d233a4b7184da8b29d69fa3fad8a483"><td class="memItemLeft" align="right" valign="top"><a id="a9d233a4b7184da8b29d69fa3fad8a483"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_fill_assign</b> (size_type __n, const _Tp &amp;__val)</td></tr>
+<tr class="separator:a9d233a4b7184da8b29d69fa3fad8a483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac993d1af3e42bcc0ffc3644e545b49d"><td class="memItemLeft" align="right" valign="top"><a id="aac993d1af3e42bcc0ffc3644e545b49d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (size_type __n, const _Tp &amp;__val)</td></tr>
+<tr class="separator:aac993d1af3e42bcc0ffc3644e545b49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd118d8d021843fb731812c177a9d387"><td class="memItemLeft" align="right" valign="top"><a id="abd118d8d021843fb731812c177a9d387"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const value_type *__first, const value_type *__last)</td></tr>
+<tr class="separator:abd118d8d021843fb731812c177a9d387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31750de5d83743071b0ba68881f6e26"><td class="memItemLeft" align="right" valign="top"><a id="ad31750de5d83743071b0ba68881f6e26"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const_iterator __first, const_iterator __last)</td></tr>
+<tr class="separator:ad31750de5d83743071b0ba68881f6e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365cc9bed82b9ce3baec754a2c5534c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdeque.html#a365cc9bed82b9ce3baec754a2c5534c7">push_back</a> (const value_type &amp;__t=_STLP_DEFAULT_CONSTRUCTED(_Tp))</td></tr>
+<tr class="separator:a365cc9bed82b9ce3baec754a2c5534c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7c21146c392ff2959d3ebaf498cf48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdeque.html#a5b7c21146c392ff2959d3ebaf498cf48">push_front</a> (const value_type &amp;__t=_STLP_DEFAULT_CONSTRUCTED(_Tp))</td></tr>
+<tr class="separator:a5b7c21146c392ff2959d3ebaf498cf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ae8102a53e4f72f853de9e79aa76df"><td class="memItemLeft" align="right" valign="top"><a id="ae7ae8102a53e4f72f853de9e79aa76df"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pop_back</b> ()</td></tr>
+<tr class="separator:ae7ae8102a53e4f72f853de9e79aa76df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d248dbded70706ad477b8548a9ffa7f"><td class="memItemLeft" align="right" valign="top"><a id="a2d248dbded70706ad477b8548a9ffa7f"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pop_front</b> ()</td></tr>
+<tr class="separator:a2d248dbded70706ad477b8548a9ffa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11db751b5a2c95c19f852703b6724591"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdeque.html#a11db751b5a2c95c19f852703b6724591">insert</a> (<a class="el" href="structiterator.html">iterator</a> __pos, const value_type &amp;__x=_STLP_DEFAULT_CONSTRUCTED(_Tp))</td></tr>
+<tr class="separator:a11db751b5a2c95c19f852703b6724591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bfac374cf3c088591ca63ad9855ed6"><td class="memItemLeft" align="right" valign="top"><a id="ac4bfac374cf3c088591ca63ad9855ed6"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, size_type __n, const value_type &amp;__x)</td></tr>
+<tr class="separator:ac4bfac374cf3c088591ca63ad9855ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b09601f9bfe385b4a813756b20bf4d"><td class="memItemLeft" align="right" valign="top"><a id="a28b09601f9bfe385b4a813756b20bf4d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const value_type *__first, const value_type *__last)</td></tr>
+<tr class="separator:a28b09601f9bfe385b4a813756b20bf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1bb677797bb0a66c9a3fd5ca02576f"><td class="memItemLeft" align="right" valign="top"><a id="a9d1bb677797bb0a66c9a3fd5ca02576f"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const_iterator __first, const_iterator __last)</td></tr>
+<tr class="separator:a9d1bb677797bb0a66c9a3fd5ca02576f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e21dc40af799077eac515304b8735d"><td class="memItemLeft" align="right" valign="top"><a id="ae7e21dc40af799077eac515304b8735d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_type __new_size, const value_type &amp;__x=_STLP_DEFAULT_CONSTRUCTED(_Tp))</td></tr>
+<tr class="separator:ae7e21dc40af799077eac515304b8735d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c84b0b6e601140132de6324489f0b4d"><td class="memItemLeft" align="right" valign="top"><a id="a0c84b0b6e601140132de6324489f0b4d"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="structiterator.html">iterator</a> __pos)</td></tr>
+<tr class="separator:a0c84b0b6e601140132de6324489f0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745e68373354ed0bab1ed5edec114c01"><td class="memItemLeft" align="right" valign="top"><a id="a745e68373354ed0bab1ed5edec114c01"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="structiterator.html">iterator</a> __first, <a class="el" href="structiterator.html">iterator</a> __last)</td></tr>
+<tr class="separator:a745e68373354ed0bab1ed5edec114c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43508d2e46158dd2dd01ce2579894c9c"><td class="memItemLeft" align="right" valign="top"><a id="a43508d2e46158dd2dd01ce2579894c9c"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:a43508d2e46158dd2dd01ce2579894c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4f51b1ebd3a9a96effbd7302b8c3e9"><td class="memItemLeft" align="right" valign="top"><a id="aac4f51b1ebd3a9a96effbd7302b8c3e9"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocator</b> () const</td></tr>
+<tr class="separator:aac4f51b1ebd3a9a96effbd7302b8c3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f138e445edc68e29f8f8d338406ba89"><td class="memItemLeft" align="right" valign="top"><a id="a3f138e445edc68e29f8f8d338406ba89"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a3f138e445edc68e29f8f8d338406ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1391e9f01e6d240ae3a083e760ce284b"><td class="memItemLeft" align="right" valign="top"><a id="a1391e9f01e6d240ae3a083e760ce284b"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a1391e9f01e6d240ae3a083e760ce284b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee8f8d17f37958b4f56d2f4c2f71edf"><td class="memItemLeft" align="right" valign="top"><a id="abee8f8d17f37958b4f56d2f4c2f71edf"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:abee8f8d17f37958b4f56d2f4c2f71edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004885c837a83910ec104ceda37f0408"><td class="memItemLeft" align="right" valign="top"><a id="a004885c837a83910ec104ceda37f0408"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:a004885c837a83910ec104ceda37f0408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b60cb0c9936e92371d5ad74a59619b"><td class="memItemLeft" align="right" valign="top"><a id="a21b60cb0c9936e92371d5ad74a59619b"></a>
+<a class="el" href="classreverse__iterator.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> ()</td></tr>
+<tr class="separator:a21b60cb0c9936e92371d5ad74a59619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6000323ead2caf0fb56c2ea65928702f"><td class="memItemLeft" align="right" valign="top"><a id="a6000323ead2caf0fb56c2ea65928702f"></a>
+<a class="el" href="classreverse__iterator.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
+<tr class="separator:a6000323ead2caf0fb56c2ea65928702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660e4820eb547ee737f5cfa9ca0f5372"><td class="memItemLeft" align="right" valign="top"><a id="a660e4820eb547ee737f5cfa9ca0f5372"></a>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const</td></tr>
+<tr class="separator:a660e4820eb547ee737f5cfa9ca0f5372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413dcab1e427b0a5f81f14c6d3bdab1f"><td class="memItemLeft" align="right" valign="top"><a id="a413dcab1e427b0a5f81f14c6d3bdab1f"></a>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const</td></tr>
+<tr class="separator:a413dcab1e427b0a5f81f14c6d3bdab1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c16a67c6054482aa1696308d7661937"><td class="memItemLeft" align="right" valign="top"><a id="a7c16a67c6054482aa1696308d7661937"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type __n)</td></tr>
+<tr class="separator:a7c16a67c6054482aa1696308d7661937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de0dc94b74d36c1f1666491f18abc77"><td class="memItemLeft" align="right" valign="top"><a id="a7de0dc94b74d36c1f1666491f18abc77"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type __n) const</td></tr>
+<tr class="separator:a7de0dc94b74d36c1f1666491f18abc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77cf0a0716fd6930ec8799a00ec1e6b"><td class="memItemLeft" align="right" valign="top"><a id="ae77cf0a0716fd6930ec8799a00ec1e6b"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_type __n)</td></tr>
+<tr class="separator:ae77cf0a0716fd6930ec8799a00ec1e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61b2cf963a40af573a91a00d8231e00"><td class="memItemLeft" align="right" valign="top"><a id="aa61b2cf963a40af573a91a00d8231e00"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_type __n) const</td></tr>
+<tr class="separator:aa61b2cf963a40af573a91a00d8231e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d38eb626b619b2fb356f170b250d93"><td class="memItemLeft" align="right" valign="top"><a id="ae6d38eb626b619b2fb356f170b250d93"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> ()</td></tr>
+<tr class="separator:ae6d38eb626b619b2fb356f170b250d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d811eddb80d64a420e0449583a7bb"><td class="memItemLeft" align="right" valign="top"><a id="a671d811eddb80d64a420e0449583a7bb"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> () const</td></tr>
+<tr class="separator:a671d811eddb80d64a420e0449583a7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737db581f2ebbe096db0dddf7b8626db"><td class="memItemLeft" align="right" valign="top"><a id="a737db581f2ebbe096db0dddf7b8626db"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> ()</td></tr>
+<tr class="separator:a737db581f2ebbe096db0dddf7b8626db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0306fdef6e078601dd982b4c22f5fd9f"><td class="memItemLeft" align="right" valign="top"><a id="a0306fdef6e078601dd982b4c22f5fd9f"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const</td></tr>
+<tr class="separator:a0306fdef6e078601dd982b4c22f5fd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbdb37e77ced88dce8da510457b67dd"><td class="memItemLeft" align="right" valign="top"><a id="a5bbdb37e77ced88dce8da510457b67dd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a5bbdb37e77ced88dce8da510457b67dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae315582b08dbf9ac98a7f7c44d022a2f"><td class="memItemLeft" align="right" valign="top"><a id="ae315582b08dbf9ac98a7f7c44d022a2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const <a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:ae315582b08dbf9ac98a7f7c44d022a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada788fa870ab2ef170a65f7252b4efb0"><td class="memItemLeft" align="right" valign="top"><a id="ada788fa870ab2ef170a65f7252b4efb0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (size_type __n, const value_type &amp;__x=_Tp(), const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:ada788fa870ab2ef170a65f7252b4efb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8047e4723c11c7098194f7d62353ad13"><td class="memItemLeft" align="right" valign="top"><a id="a8047e4723c11c7098194f7d62353ad13"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (<a class="el" href="class____move__source.html">__move_source</a>&lt; <a class="el" href="classdeque.html">_Self</a> &gt; src)</td></tr>
+<tr class="separator:a8047e4723c11c7098194f7d62353ad13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02ccbea3f5ab0d9b2c30c33f83c8c50"><td class="memItemLeft" align="right" valign="top"><a id="ad02ccbea3f5ab0d9b2c30c33f83c8c50"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const value_type *__first, const value_type *__last, const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:ad02ccbea3f5ab0d9b2c30c33f83c8c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fddb3c21bd676926040d9496fda161"><td class="memItemLeft" align="right" valign="top"><a id="a39fddb3c21bd676926040d9496fda161"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const_iterator __first, const_iterator __last, const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a39fddb3c21bd676926040d9496fda161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356d6145750aa80835244c8683878619"><td class="memItemLeft" align="right" valign="top"><a id="a356d6145750aa80835244c8683878619"></a>
+<a class="el" href="classdeque.html">_Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:a356d6145750aa80835244c8683878619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4629b471ae5aba7a88d2398fb78b87fa"><td class="memItemLeft" align="right" valign="top"><a id="a4629b471ae5aba7a88d2398fb78b87fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="separator:a4629b471ae5aba7a88d2398fb78b87fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6742ae6f3d0500ddc63857116badf7b1"><td class="memItemLeft" align="right" valign="top"><a id="a6742ae6f3d0500ddc63857116badf7b1"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a6742ae6f3d0500ddc63857116badf7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5b708bad53263dbcfce7569d66906b"><td class="memItemLeft" align="right" valign="top"><a id="a1d5b708bad53263dbcfce7569d66906b"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>max_size</b> () const</td></tr>
+<tr class="separator:a1d5b708bad53263dbcfce7569d66906b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bb324e2a525a085c3a1df23990b184"><td class="memItemLeft" align="right" valign="top"><a id="a33bb324e2a525a085c3a1df23990b184"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:a33bb324e2a525a085c3a1df23990b184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac993d1af3e42bcc0ffc3644e545b49d"><td class="memItemLeft" align="right" valign="top"><a id="aac993d1af3e42bcc0ffc3644e545b49d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (size_type __n, const _Tp &amp;__val)</td></tr>
+<tr class="separator:aac993d1af3e42bcc0ffc3644e545b49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31750de5d83743071b0ba68881f6e26"><td class="memItemLeft" align="right" valign="top"><a id="ad31750de5d83743071b0ba68881f6e26"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const_iterator __first, const_iterator __last)</td></tr>
+<tr class="separator:ad31750de5d83743071b0ba68881f6e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd118d8d021843fb731812c177a9d387"><td class="memItemLeft" align="right" valign="top"><a id="abd118d8d021843fb731812c177a9d387"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const value_type *__first, const value_type *__last)</td></tr>
+<tr class="separator:abd118d8d021843fb731812c177a9d387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e22cc3e68837513dbc503cc9f7b4dd1"><td class="memItemLeft" align="right" valign="top"><a id="a7e22cc3e68837513dbc503cc9f7b4dd1"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (const value_type &amp;__t=_Tp())</td></tr>
+<tr class="separator:a7e22cc3e68837513dbc503cc9f7b4dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c352c97b88b4a2699a3e3afd3f0c02"><td class="memItemLeft" align="right" valign="top"><a id="ac0c352c97b88b4a2699a3e3afd3f0c02"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>push_front</b> (const value_type &amp;__t=_Tp())</td></tr>
+<tr class="separator:ac0c352c97b88b4a2699a3e3afd3f0c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ae8102a53e4f72f853de9e79aa76df"><td class="memItemLeft" align="right" valign="top"><a id="ae7ae8102a53e4f72f853de9e79aa76df"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pop_back</b> ()</td></tr>
+<tr class="separator:ae7ae8102a53e4f72f853de9e79aa76df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d248dbded70706ad477b8548a9ffa7f"><td class="memItemLeft" align="right" valign="top"><a id="a2d248dbded70706ad477b8548a9ffa7f"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pop_front</b> ()</td></tr>
+<tr class="separator:a2d248dbded70706ad477b8548a9ffa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae404110a7d92f989958139f8bff0fd19"><td class="memItemLeft" align="right" valign="top"><a id="ae404110a7d92f989958139f8bff0fd19"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const value_type &amp;__x=_Tp())</td></tr>
+<tr class="separator:ae404110a7d92f989958139f8bff0fd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bfac374cf3c088591ca63ad9855ed6"><td class="memItemLeft" align="right" valign="top"><a id="ac4bfac374cf3c088591ca63ad9855ed6"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, size_type __n, const value_type &amp;__x)</td></tr>
+<tr class="separator:ac4bfac374cf3c088591ca63ad9855ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e7e01d3af439329bd6c9b78f349645"><td class="memItemLeft" align="right" valign="top"><a id="ab9e7e01d3af439329bd6c9b78f349645"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const value_type *__first, const value_type *__last)</td></tr>
+<tr class="separator:ab9e7e01d3af439329bd6c9b78f349645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefb933214dbfacf968ebbe4fce9a154"><td class="memItemLeft" align="right" valign="top"><a id="aeefb933214dbfacf968ebbe4fce9a154"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const_iterator __first, const_iterator __last)</td></tr>
+<tr class="separator:aeefb933214dbfacf968ebbe4fce9a154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd436c7a58c9b7d751f01714874b7b60"><td class="memItemLeft" align="right" valign="top"><a id="abd436c7a58c9b7d751f01714874b7b60"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, <a class="el" href="structiterator.html">iterator</a> __first, <a class="el" href="structiterator.html">iterator</a> __last)</td></tr>
+<tr class="separator:abd436c7a58c9b7d751f01714874b7b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485aa69a9954cc2b00a7eed4e65affaf"><td class="memItemLeft" align="right" valign="top"><a id="a485aa69a9954cc2b00a7eed4e65affaf"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_type __new_size, const value_type &amp;__x=_Tp())</td></tr>
+<tr class="separator:a485aa69a9954cc2b00a7eed4e65affaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c84b0b6e601140132de6324489f0b4d"><td class="memItemLeft" align="right" valign="top"><a id="a0c84b0b6e601140132de6324489f0b4d"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="structiterator.html">iterator</a> __pos)</td></tr>
+<tr class="separator:a0c84b0b6e601140132de6324489f0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745e68373354ed0bab1ed5edec114c01"><td class="memItemLeft" align="right" valign="top"><a id="a745e68373354ed0bab1ed5edec114c01"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="structiterator.html">iterator</a> __first, <a class="el" href="structiterator.html">iterator</a> __last)</td></tr>
+<tr class="separator:a745e68373354ed0bab1ed5edec114c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5ec5ff14dce593a54256378d6bb15e"><td class="memItemLeft" align="right" valign="top"><a id="acc5ec5ff14dce593a54256378d6bb15e"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:acc5ec5ff14dce593a54256378d6bb15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f138e445edc68e29f8f8d338406ba89"><td class="memItemLeft" align="right" valign="top"><a id="a3f138e445edc68e29f8f8d338406ba89"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a3f138e445edc68e29f8f8d338406ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1391e9f01e6d240ae3a083e760ce284b"><td class="memItemLeft" align="right" valign="top"><a id="a1391e9f01e6d240ae3a083e760ce284b"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a1391e9f01e6d240ae3a083e760ce284b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee8f8d17f37958b4f56d2f4c2f71edf"><td class="memItemLeft" align="right" valign="top"><a id="abee8f8d17f37958b4f56d2f4c2f71edf"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:abee8f8d17f37958b4f56d2f4c2f71edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004885c837a83910ec104ceda37f0408"><td class="memItemLeft" align="right" valign="top"><a id="a004885c837a83910ec104ceda37f0408"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:a004885c837a83910ec104ceda37f0408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b60cb0c9936e92371d5ad74a59619b"><td class="memItemLeft" align="right" valign="top"><a id="a21b60cb0c9936e92371d5ad74a59619b"></a>
+<a class="el" href="classreverse__iterator.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> ()</td></tr>
+<tr class="separator:a21b60cb0c9936e92371d5ad74a59619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6000323ead2caf0fb56c2ea65928702f"><td class="memItemLeft" align="right" valign="top"><a id="a6000323ead2caf0fb56c2ea65928702f"></a>
+<a class="el" href="classreverse__iterator.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
+<tr class="separator:a6000323ead2caf0fb56c2ea65928702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660e4820eb547ee737f5cfa9ca0f5372"><td class="memItemLeft" align="right" valign="top"><a id="a660e4820eb547ee737f5cfa9ca0f5372"></a>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const</td></tr>
+<tr class="separator:a660e4820eb547ee737f5cfa9ca0f5372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413dcab1e427b0a5f81f14c6d3bdab1f"><td class="memItemLeft" align="right" valign="top"><a id="a413dcab1e427b0a5f81f14c6d3bdab1f"></a>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const</td></tr>
+<tr class="separator:a413dcab1e427b0a5f81f14c6d3bdab1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c16a67c6054482aa1696308d7661937"><td class="memItemLeft" align="right" valign="top"><a id="a7c16a67c6054482aa1696308d7661937"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type __n)</td></tr>
+<tr class="separator:a7c16a67c6054482aa1696308d7661937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de0dc94b74d36c1f1666491f18abc77"><td class="memItemLeft" align="right" valign="top"><a id="a7de0dc94b74d36c1f1666491f18abc77"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type __n) const</td></tr>
+<tr class="separator:a7de0dc94b74d36c1f1666491f18abc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77cf0a0716fd6930ec8799a00ec1e6b"><td class="memItemLeft" align="right" valign="top"><a id="ae77cf0a0716fd6930ec8799a00ec1e6b"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_type __n)</td></tr>
+<tr class="separator:ae77cf0a0716fd6930ec8799a00ec1e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61b2cf963a40af573a91a00d8231e00"><td class="memItemLeft" align="right" valign="top"><a id="aa61b2cf963a40af573a91a00d8231e00"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_type __n) const</td></tr>
+<tr class="separator:aa61b2cf963a40af573a91a00d8231e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d38eb626b619b2fb356f170b250d93"><td class="memItemLeft" align="right" valign="top"><a id="ae6d38eb626b619b2fb356f170b250d93"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> ()</td></tr>
+<tr class="separator:ae6d38eb626b619b2fb356f170b250d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737db581f2ebbe096db0dddf7b8626db"><td class="memItemLeft" align="right" valign="top"><a id="a737db581f2ebbe096db0dddf7b8626db"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> ()</td></tr>
+<tr class="separator:a737db581f2ebbe096db0dddf7b8626db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d811eddb80d64a420e0449583a7bb"><td class="memItemLeft" align="right" valign="top"><a id="a671d811eddb80d64a420e0449583a7bb"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> () const</td></tr>
+<tr class="separator:a671d811eddb80d64a420e0449583a7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0306fdef6e078601dd982b4c22f5fd9f"><td class="memItemLeft" align="right" valign="top"><a id="a0306fdef6e078601dd982b4c22f5fd9f"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const</td></tr>
+<tr class="separator:a0306fdef6e078601dd982b4c22f5fd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6742ae6f3d0500ddc63857116badf7b1"><td class="memItemLeft" align="right" valign="top"><a id="a6742ae6f3d0500ddc63857116badf7b1"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a6742ae6f3d0500ddc63857116badf7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5b708bad53263dbcfce7569d66906b"><td class="memItemLeft" align="right" valign="top"><a id="a1d5b708bad53263dbcfce7569d66906b"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>max_size</b> () const</td></tr>
+<tr class="separator:a1d5b708bad53263dbcfce7569d66906b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4629b471ae5aba7a88d2398fb78b87fa"><td class="memItemLeft" align="right" valign="top"><a id="a4629b471ae5aba7a88d2398fb78b87fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="separator:a4629b471ae5aba7a88d2398fb78b87fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4f51b1ebd3a9a96effbd7302b8c3e9"><td class="memItemLeft" align="right" valign="top"><a id="aac4f51b1ebd3a9a96effbd7302b8c3e9"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocator</b> () const</td></tr>
+<tr class="separator:aac4f51b1ebd3a9a96effbd7302b8c3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbdb37e77ced88dce8da510457b67dd"><td class="memItemLeft" align="right" valign="top"><a id="a5bbdb37e77ced88dce8da510457b67dd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a5bbdb37e77ced88dce8da510457b67dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae315582b08dbf9ac98a7f7c44d022a2f"><td class="memItemLeft" align="right" valign="top"><a id="ae315582b08dbf9ac98a7f7c44d022a2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const <a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:ae315582b08dbf9ac98a7f7c44d022a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd0ac7e13a8aa7f63a113642bac5c57"><td class="memItemLeft" align="right" valign="top"><a id="a8fd0ac7e13a8aa7f63a113642bac5c57"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (size_type __n, const value_type &amp;__val=_STLP_DEFAULT_CONSTRUCTED(value_type), const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a8fd0ac7e13a8aa7f63a113642bac5c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c8a718d31e75363bf116e3e71f44e8"><td class="memItemLeft" align="right" valign="top"><a id="a69c8a718d31e75363bf116e3e71f44e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const_pointer __first, const_pointer __last, const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a69c8a718d31e75363bf116e3e71f44e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fddb3c21bd676926040d9496fda161"><td class="memItemLeft" align="right" valign="top"><a id="a39fddb3c21bd676926040d9496fda161"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (const_iterator __first, const_iterator __last, const allocator_type &amp;__a=allocator_type())</td></tr>
+<tr class="separator:a39fddb3c21bd676926040d9496fda161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8047e4723c11c7098194f7d62353ad13"><td class="memItemLeft" align="right" valign="top"><a id="a8047e4723c11c7098194f7d62353ad13"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>deque</b> (<a class="el" href="class____move__source.html">__move_source</a>&lt; <a class="el" href="classdeque.html">_Self</a> &gt; src)</td></tr>
+<tr class="separator:a8047e4723c11c7098194f7d62353ad13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356d6145750aa80835244c8683878619"><td class="memItemLeft" align="right" valign="top"><a id="a356d6145750aa80835244c8683878619"></a>
+<a class="el" href="classdeque.html">_Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:a356d6145750aa80835244c8683878619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bb324e2a525a085c3a1df23990b184"><td class="memItemLeft" align="right" valign="top"><a id="a33bb324e2a525a085c3a1df23990b184"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classdeque.html">_Self</a> &amp;__x)</td></tr>
+<tr class="separator:a33bb324e2a525a085c3a1df23990b184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4fe50f10526f395390705ebe5eebc4"><td class="memItemLeft" align="right" valign="top"><a id="a0b4fe50f10526f395390705ebe5eebc4"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (size_type __n, const value_type &amp;__val)</td></tr>
+<tr class="separator:a0b4fe50f10526f395390705ebe5eebc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9ad6d448f4db90075b3baabb9696af"><td class="memItemLeft" align="right" valign="top"><a id="a8d9ad6d448f4db90075b3baabb9696af"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const_pointer __first, const_pointer __last)</td></tr>
+<tr class="separator:a8d9ad6d448f4db90075b3baabb9696af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31750de5d83743071b0ba68881f6e26"><td class="memItemLeft" align="right" valign="top"><a id="ad31750de5d83743071b0ba68881f6e26"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const_iterator __first, const_iterator __last)</td></tr>
+<tr class="separator:ad31750de5d83743071b0ba68881f6e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0624acc579c05c1df04b107fe283bb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdeque.html#ad0624acc579c05c1df04b107fe283bb9">push_back</a> (const value_type &amp;__t=_STLP_DEFAULT_CONSTRUCTED(value_type))</td></tr>
+<tr class="separator:ad0624acc579c05c1df04b107fe283bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb102fac10501dc695a496beca93a9da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdeque.html#acb102fac10501dc695a496beca93a9da">push_front</a> (const value_type &amp;__t=_STLP_DEFAULT_CONSTRUCTED(value_type))</td></tr>
+<tr class="separator:acb102fac10501dc695a496beca93a9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ae8102a53e4f72f853de9e79aa76df"><td class="memItemLeft" align="right" valign="top"><a id="ae7ae8102a53e4f72f853de9e79aa76df"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pop_back</b> ()</td></tr>
+<tr class="separator:ae7ae8102a53e4f72f853de9e79aa76df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d248dbded70706ad477b8548a9ffa7f"><td class="memItemLeft" align="right" valign="top"><a id="a2d248dbded70706ad477b8548a9ffa7f"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pop_front</b> ()</td></tr>
+<tr class="separator:a2d248dbded70706ad477b8548a9ffa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f0345cf9468b0700654de0845dfb00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdeque.html#a74f0345cf9468b0700654de0845dfb00">insert</a> (<a class="el" href="structiterator.html">iterator</a> __pos, const value_type &amp;__x=_STLP_DEFAULT_CONSTRUCTED(value_type))</td></tr>
+<tr class="separator:a74f0345cf9468b0700654de0845dfb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bfac374cf3c088591ca63ad9855ed6"><td class="memItemLeft" align="right" valign="top"><a id="ac4bfac374cf3c088591ca63ad9855ed6"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, size_type __n, const value_type &amp;__x)</td></tr>
+<tr class="separator:ac4bfac374cf3c088591ca63ad9855ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5e9df16b3c18cae9628c7cc824880e"><td class="memItemLeft" align="right" valign="top"><a id="aba5e9df16b3c18cae9628c7cc824880e"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const_pointer __first, const_pointer __last)</td></tr>
+<tr class="separator:aba5e9df16b3c18cae9628c7cc824880e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefb933214dbfacf968ebbe4fce9a154"><td class="memItemLeft" align="right" valign="top"><a id="aeefb933214dbfacf968ebbe4fce9a154"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const_iterator __first, const_iterator __last)</td></tr>
+<tr class="separator:aeefb933214dbfacf968ebbe4fce9a154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7239ec67868940d913e6ae389080c863"><td class="memItemLeft" align="right" valign="top"><a id="a7239ec67868940d913e6ae389080c863"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_type __new_size, const value_type &amp;__x=_STLP_DEFAULT_CONSTRUCTED(value_type))</td></tr>
+<tr class="separator:a7239ec67868940d913e6ae389080c863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c84b0b6e601140132de6324489f0b4d"><td class="memItemLeft" align="right" valign="top"><a id="a0c84b0b6e601140132de6324489f0b4d"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="structiterator.html">iterator</a> __pos)</td></tr>
+<tr class="separator:a0c84b0b6e601140132de6324489f0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745e68373354ed0bab1ed5edec114c01"><td class="memItemLeft" align="right" valign="top"><a id="a745e68373354ed0bab1ed5edec114c01"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="structiterator.html">iterator</a> __first, <a class="el" href="structiterator.html">iterator</a> __last)</td></tr>
+<tr class="separator:a745e68373354ed0bab1ed5edec114c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5ec5ff14dce593a54256378d6bb15e"><td class="memItemLeft" align="right" valign="top"><a id="acc5ec5ff14dce593a54256378d6bb15e"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:acc5ec5ff14dce593a54256378d6bb15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a805d2c23d1fe9d32eeb97766216743db"><td class="memItemLeft" align="right" valign="top"><a id="a805d2c23d1fe9d32eeb97766216743db"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_STLP_DECLARE_RANDOM_ACCESS_REVERSE_ITERATORS</b></td></tr>
+<tr class="separator:a805d2c23d1fe9d32eeb97766216743db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a8ae6ed4374a5dd47a89d2e309cbbddfa"><td class="memItemLeft" align="right" valign="top"><a id="a8ae6ed4374a5dd47a89d2e309cbbddfa"></a>
+typedef pointer *&#160;</td><td class="memItemRight" valign="bottom"><b>_Map_pointer</b></td></tr>
+<tr class="separator:a8ae6ed4374a5dd47a89d2e309cbbddfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a427d7619e13343730ab6332670c8dd83"><td class="memItemLeft" align="right" valign="top"><a id="a427d7619e13343730ab6332670c8dd83"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_fill_insert_aux</b> (<a class="el" href="structiterator.html">iterator</a> __pos, size_type __n, const value_type &amp;__x, const <a class="el" href="struct____true__type.html">__true_type</a> &amp;)</td></tr>
+<tr class="separator:a427d7619e13343730ab6332670c8dd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8abfced406fdc56fcc4d9df9d942c7"><td class="memItemLeft" align="right" valign="top"><a id="a2d8abfced406fdc56fcc4d9df9d942c7"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_fill_insert_aux</b> (<a class="el" href="structiterator.html">iterator</a> __pos, size_type __n, const value_type &amp;__x, const <a class="el" href="struct____false__type.html">__false_type</a> &amp;)</td></tr>
+<tr class="separator:a2d8abfced406fdc56fcc4d9df9d942c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfccaff30b2f6902781d8616bf448677"><td class="memItemLeft" align="right" valign="top"><a id="adfccaff30b2f6902781d8616bf448677"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_fill_insert</b> (<a class="el" href="structiterator.html">iterator</a> __pos, size_type __n, const value_type &amp;__x)</td></tr>
+<tr class="separator:adfccaff30b2f6902781d8616bf448677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef333ffc3e9332c4f100aa1dbb2f0dd5"><td class="memItemLeft" align="right" valign="top"><a id="aef333ffc3e9332c4f100aa1dbb2f0dd5"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_insert_range_aux</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const value_type *__first, const value_type *__last, size_type __n, const <a class="el" href="struct____true__type.html">__true_type</a> &amp;)</td></tr>
+<tr class="separator:aef333ffc3e9332c4f100aa1dbb2f0dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f99625725bafb7d20d8555bb06edb2"><td class="memItemLeft" align="right" valign="top"><a id="af6f99625725bafb7d20d8555bb06edb2"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_insert_range_aux</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const value_type *__first, const value_type *__last, size_type __n, const <a class="el" href="struct____false__type.html">__false_type</a> &amp;)</td></tr>
+<tr class="separator:af6f99625725bafb7d20d8555bb06edb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1824b9198f5ec8f6da7d8b67b1d9a19e"><td class="memItemLeft" align="right" valign="top"><a id="a1824b9198f5ec8f6da7d8b67b1d9a19e"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_insert_range_aux</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const_iterator __first, const_iterator __last, size_type __n, const <a class="el" href="struct____true__type.html">__true_type</a> &amp;)</td></tr>
+<tr class="separator:a1824b9198f5ec8f6da7d8b67b1d9a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae929a1d70103425a4fd7e4b6fc428a5d"><td class="memItemLeft" align="right" valign="top"><a id="ae929a1d70103425a4fd7e4b6fc428a5d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_insert_range_aux</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const_iterator __first, const_iterator __last, size_type __n, const <a class="el" href="struct____false__type.html">__false_type</a> &amp;)</td></tr>
+<tr class="separator:ae929a1d70103425a4fd7e4b6fc428a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba3e3698721556a0aa604a76fd13965"><td class="memItemLeft" align="right" valign="top"><a id="a9ba3e3698721556a0aa604a76fd13965"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_erase</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const <a class="el" href="struct____true__type.html">__true_type</a> &amp;)</td></tr>
+<tr class="separator:a9ba3e3698721556a0aa604a76fd13965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe5c189757b22ddef6d11691d38212a"><td class="memItemLeft" align="right" valign="top"><a id="a6fe5c189757b22ddef6d11691d38212a"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_erase</b> (<a class="el" href="structiterator.html">iterator</a> __pos, const <a class="el" href="struct____false__type.html">__false_type</a> &amp;)</td></tr>
+<tr class="separator:a6fe5c189757b22ddef6d11691d38212a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a3c5c28467c3af3453016e916228b8"><td class="memItemLeft" align="right" valign="top"><a id="ad8a3c5c28467c3af3453016e916228b8"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_erase</b> (<a class="el" href="structiterator.html">iterator</a> __first, <a class="el" href="structiterator.html">iterator</a> __last, const <a class="el" href="struct____true__type.html">__true_type</a> &amp;)</td></tr>
+<tr class="separator:ad8a3c5c28467c3af3453016e916228b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc66c596c6f37d0615f011bb15bfd13"><td class="memItemLeft" align="right" valign="top"><a id="a3dc66c596c6f37d0615f011bb15bfd13"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_erase</b> (<a class="el" href="structiterator.html">iterator</a> __first, <a class="el" href="structiterator.html">iterator</a> __last, const <a class="el" href="struct____false__type.html">__false_type</a> &amp;)</td></tr>
+<tr class="separator:a3dc66c596c6f37d0615f011bb15bfd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a4399f02dfaf305b7d80bfd839912a"><td class="memItemLeft" align="right" valign="top"><a id="ab3a4399f02dfaf305b7d80bfd839912a"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_fill_initialize</b> (const value_type &amp;__val, const <a class="el" href="struct____true__type.html">__true_type</a> &amp;)</td></tr>
+<tr class="separator:ab3a4399f02dfaf305b7d80bfd839912a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0aef24cc15a56d40b14eaeec65c5c8"><td class="memItemLeft" align="right" valign="top"><a id="a1b0aef24cc15a56d40b14eaeec65c5c8"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_fill_initialize</b> (const value_type &amp;__val, const <a class="el" href="struct____false__type.html">__false_type</a> &amp;)</td></tr>
+<tr class="separator:a1b0aef24cc15a56d40b14eaeec65c5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9c30cb73ab0c51b605e7b424981f7c"><td class="memItemLeft" align="right" valign="top"><a id="a3f9c30cb73ab0c51b605e7b424981f7c"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_push_back_aux_v</b> (const value_type &amp;)</td></tr>
+<tr class="separator:a3f9c30cb73ab0c51b605e7b424981f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc612edaf7a0cf84a9e50325202244c2"><td class="memItemLeft" align="right" valign="top"><a id="acc612edaf7a0cf84a9e50325202244c2"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_push_front_aux_v</b> (const value_type &amp;)</td></tr>
+<tr class="separator:acc612edaf7a0cf84a9e50325202244c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd305a66ac1b6a6f76c05926c3db1e47"><td class="memItemLeft" align="right" valign="top"><a id="afd305a66ac1b6a6f76c05926c3db1e47"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_pop_back_aux</b> ()</td></tr>
+<tr class="separator:afd305a66ac1b6a6f76c05926c3db1e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b889af03611e37921d65cdfc658cb59"><td class="memItemLeft" align="right" valign="top"><a id="a9b889af03611e37921d65cdfc658cb59"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_pop_front_aux</b> ()</td></tr>
+<tr class="separator:a9b889af03611e37921d65cdfc658cb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20158c55e6090cde38fdcef06db3fda"><td class="memItemLeft" align="right" valign="top"><a id="ab20158c55e6090cde38fdcef06db3fda"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_reserve_elements_at_front</b> (size_type __n)</td></tr>
+<tr class="separator:ab20158c55e6090cde38fdcef06db3fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945cf31b7d7d3bf1650887cff2a71fa2"><td class="memItemLeft" align="right" valign="top"><a id="a945cf31b7d7d3bf1650887cff2a71fa2"></a>
+<a class="el" href="structiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_reserve_elements_at_back</b> (size_type __n)</td></tr>
+<tr class="separator:a945cf31b7d7d3bf1650887cff2a71fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78ca6d06ee9fe298ed83f08872c8c1f"><td class="memItemLeft" align="right" valign="top"><a id="ad78ca6d06ee9fe298ed83f08872c8c1f"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_new_elements_at_front</b> (size_type __new_elements)</td></tr>
+<tr class="separator:ad78ca6d06ee9fe298ed83f08872c8c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472932717ea8ecaafeff1ec50f6f990b"><td class="memItemLeft" align="right" valign="top"><a id="a472932717ea8ecaafeff1ec50f6f990b"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_new_elements_at_back</b> (size_type __new_elements)</td></tr>
+<tr class="separator:a472932717ea8ecaafeff1ec50f6f990b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e0e4642cd00ce0a136f02866a21987"><td class="memItemLeft" align="right" valign="top"><a id="ab4e0e4642cd00ce0a136f02866a21987"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_reserve_map_at_back</b> (size_type __nodes_to_add=1)</td></tr>
+<tr class="separator:ab4e0e4642cd00ce0a136f02866a21987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923ef04f6203145648a8d68d3058bf62"><td class="memItemLeft" align="right" valign="top"><a id="a923ef04f6203145648a8d68d3058bf62"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_reserve_map_at_front</b> (size_type __nodes_to_add=1)</td></tr>
+<tr class="separator:a923ef04f6203145648a8d68d3058bf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e95db5142763be58fed5569ac8d665d"><td class="memItemLeft" align="right" valign="top"><a id="a8e95db5142763be58fed5569ac8d665d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_M_reallocate_map</b> (size_type __nodes_to_add, bool __add_at_front)</td></tr>
+<tr class="separator:a8e95db5142763be58fed5569ac8d665d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78179ad31e64bee7403e470d819b9f40"><td class="memItemLeft" align="right" valign="top"><a id="a78179ad31e64bee7403e470d819b9f40"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_Invalidate_all</b> ()</td></tr>
+<tr class="separator:a78179ad31e64bee7403e470d819b9f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285c140323b3b127975cab845c731ebb"><td class="memItemLeft" align="right" valign="top"><a id="a285c140323b3b127975cab845c731ebb"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_Invalidate_iterator</b> (const <a class="el" href="structiterator.html">iterator</a> &amp;__it)</td></tr>
+<tr class="separator:a285c140323b3b127975cab845c731ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152b6175bbb75f622d2b200ec730c8eb"><td class="memItemLeft" align="right" valign="top"><a id="a152b6175bbb75f622d2b200ec730c8eb"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_Invalidate_iterators</b> (const <a class="el" href="structiterator.html">iterator</a> &amp;__first, const <a class="el" href="structiterator.html">iterator</a> &amp;__last)</td></tr>
+<tr class="separator:a152b6175bbb75f622d2b200ec730c8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a1d95b4cf3e5f27c64f2d05c4f62ca293"><td class="memItemLeft" align="right" valign="top"><a id="a1d95b4cf3e5f27c64f2d05c4f62ca293"></a>
+_Base&#160;</td><td class="memItemRight" valign="bottom"><b>_M_non_dbg_impl</b></td></tr>
+<tr class="separator:a1d95b4cf3e5f27c64f2d05c4f62ca293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9239c465370cf751efa43b2ab805b591"><td class="memItemLeft" align="right" valign="top"><a id="a9239c465370cf751efa43b2ab805b591"></a>
+_STLP_PRIV __owned_list&#160;</td><td class="memItemRight" valign="bottom"><b>_M_iter_list</b></td></tr>
+<tr class="separator:a9239c465370cf751efa43b2ab805b591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a74f0345cf9468b0700654de0845dfb00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f0345cf9468b0700654de0845dfb00">&#9670;&nbsp;</a></span>insert() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class _Tp, _STLP_DFL_TMPL_PARAM(_Alloc, allocator&lt; _Tp &gt;) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structiterator.html">iterator</a> <a class="el" href="classdeque.html">deque</a>&lt; _Tp, &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiterator.html">iterator</a>&#160;</td>
+          <td class="paramname"><em>__pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const value_type &amp;&#160;</td>
+          <td class="paramname"><em>__x</em> = <code>_STLP_DEFAULT_CONSTRUCTED(value_type)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>_STLP_DONT_SUP_DFLT_PARAM &amp;&amp; !_STLP_NO_ANACHRONISMS </p>
+
+</div>
+</div>
+<a id="a11db751b5a2c95c19f852703b6724591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11db751b5a2c95c19f852703b6724591">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class _Tp, _STLP_DFL_TMPL_PARAM(_Alloc, allocator&lt; _Tp &gt;) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structiterator.html">iterator</a> <a class="el" href="classdeque.html">deque</a>&lt; _Tp, &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiterator.html">iterator</a>&#160;</td>
+          <td class="paramname"><em>__pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const value_type &amp;&#160;</td>
+          <td class="paramname"><em>__x</em> = <code>_STLP_DEFAULT_CONSTRUCTED(_Tp)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>_STLP_DONT_SUP_DFLT_PARAM &amp;&amp; !_STLP_NO_ANACHRONISMS </p>
+
+</div>
+</div>
+<a id="ad0624acc579c05c1df04b107fe283bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0624acc579c05c1df04b107fe283bb9">&#9670;&nbsp;</a></span>push_back() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class _Tp, _STLP_DFL_TMPL_PARAM(_Alloc, allocator&lt; _Tp &gt;) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> <a class="el" href="classdeque.html">deque</a>&lt; _Tp, &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype">const value_type &amp;&#160;</td>
+          <td class="paramname"><em>__t</em> = <code>_STLP_DEFAULT_CONSTRUCTED(value_type)</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>_STLP_DONT_SUP_DFLT_PARAM &amp;&amp; !_STLP_NO_ANACHRONISMS </p>
+
+</div>
+</div>
+<a id="a365cc9bed82b9ce3baec754a2c5534c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a365cc9bed82b9ce3baec754a2c5534c7">&#9670;&nbsp;</a></span>push_back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class _Tp, _STLP_DFL_TMPL_PARAM(_Alloc, allocator&lt; _Tp &gt;) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> <a class="el" href="classdeque.html">deque</a>&lt; _Tp, &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype">const value_type &amp;&#160;</td>
+          <td class="paramname"><em>__t</em> = <code>_STLP_DEFAULT_CONSTRUCTED(_Tp)</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>_STLP_DONT_SUP_DFLT_PARAM &amp;&amp; !_STLP_NO_ANACHRONISMS </p>
+
+</div>
+</div>
+<a id="acb102fac10501dc695a496beca93a9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb102fac10501dc695a496beca93a9da">&#9670;&nbsp;</a></span>push_front() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class _Tp, _STLP_DFL_TMPL_PARAM(_Alloc, allocator&lt; _Tp &gt;) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> <a class="el" href="classdeque.html">deque</a>&lt; _Tp, &gt;::push_front </td>
+          <td>(</td>
+          <td class="paramtype">const value_type &amp;&#160;</td>
+          <td class="paramname"><em>__t</em> = <code>_STLP_DEFAULT_CONSTRUCTED(value_type)</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>_STLP_DONT_SUP_DFLT_PARAM &amp;&amp; !_STLP_NO_ANACHRONISMS </p>
+
+</div>
+</div>
+<a id="a5b7c21146c392ff2959d3ebaf498cf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7c21146c392ff2959d3ebaf498cf48">&#9670;&nbsp;</a></span>push_front() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class _Tp, _STLP_DFL_TMPL_PARAM(_Alloc, allocator&lt; _Tp &gt;) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> <a class="el" href="classdeque.html">deque</a>&lt; _Tp, &gt;::push_front </td>
+          <td>(</td>
+          <td class="paramtype">const value_type &amp;&#160;</td>
+          <td class="paramname"><em>__t</em> = <code>_STLP_DEFAULT_CONSTRUCTED(_Tp)</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>_STLP_DONT_SUP_DFLT_PARAM &amp;&amp; !_STLP_NO_ANACHRONISMS </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/c++/stlport/stl/<a class="el" href="__deque_8h_source.html">_deque.h</a></li>
+<li>E:/ReactOS-0.4.6/sdk/include/c++/stlport/stl/_deque.c</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,122 @@
+\hypertarget{structhda__controller}{}\section{hda\+\_\+controller结构体 参考}
+\label{structhda__controller}\index{hda\+\_\+controller@{hda\+\_\+controller}}
+
+
+{\ttfamily \#include $<$driver.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structhda__controller_a957cad4bc41d3f5ba780b8825096665f}\label{structhda__controller_a957cad4bc41d3f5ba780b8825096665f}} 
+uint8 {\bfseries Read8} (uint32 reg)
+\item 
+\mbox{\Hypertarget{structhda__controller_ae23c960f87244567852a320f498b26b9}\label{structhda__controller_ae23c960f87244567852a320f498b26b9}} 
+uint16 {\bfseries Read16} (uint32 reg)
+\item 
+\mbox{\Hypertarget{structhda__controller_a5824ea92dc0f57c10093eaedf36dab55}\label{structhda__controller_a5824ea92dc0f57c10093eaedf36dab55}} 
+uint32 {\bfseries Read32} (uint32 reg)
+\item 
+\mbox{\Hypertarget{structhda__controller_a0b518a3f5d6c286ec5ffba5b4ff59059}\label{structhda__controller_a0b518a3f5d6c286ec5ffba5b4ff59059}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write8} (uint32 reg, uint8 \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{structhda__controller_aaecbabd53e4281e856cc8acfe14e46f7}\label{structhda__controller_aaecbabd53e4281e856cc8acfe14e46f7}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write16} (uint32 reg, uint16 \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{structhda__controller_a74b9dd74f31e48b38066ab056d416665}\label{structhda__controller_a74b9dd74f31e48b38066ab056d416665}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write32} (uint32 reg, uint32 \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{structhda__controller_a64bc9830b70e2a99614a7a81477b6cdd}\label{structhda__controller_a64bc9830b70e2a99614a7a81477b6cdd}} 
+\hyperlink{interfacevoid}{void} {\bfseries Read\+Modify\+Write8} (uint32 reg, uint8 mask, uint8 \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{structhda__controller_a9b2cf3e8510592c24f6af8242d62711c}\label{structhda__controller_a9b2cf3e8510592c24f6af8242d62711c}} 
+\hyperlink{interfacevoid}{void} {\bfseries Read\+Modify\+Write16} (uint32 reg, uint16 mask, uint16 \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{structhda__controller_aa7c31978a2a12f9c741d9c765fdd9f42}\label{structhda__controller_aa7c31978a2a12f9c741d9c765fdd9f42}} 
+\hyperlink{interfacevoid}{void} {\bfseries Read\+Modify\+Write32} (uint32 reg, uint32 mask, uint32 \hyperlink{unionvalue}{value})
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structhda__controller_a016c090b381c76b46eb9f34eb133e0b6}\label{structhda__controller_a016c090b381c76b46eb9f34eb133e0b6}} 
+\hyperlink{interfacestruct}{struct} pci\+\_\+info {\bfseries pci\+\_\+info}
+\item 
+\mbox{\Hypertarget{structhda__controller_a0db4a85715f846845b8ef62bfddc3bc7}\label{structhda__controller_a0db4a85715f846845b8ef62bfddc3bc7}} 
+int32 {\bfseries opened}
+\item 
+\mbox{\Hypertarget{structhda__controller_abf2dc82864ceacd7e0bcf713287a4076}\label{structhda__controller_abf2dc82864ceacd7e0bcf713287a4076}} 
+const char $\ast$ {\bfseries devfs\+\_\+path}
+\item 
+\mbox{\Hypertarget{structhda__controller_a62b8995731f5f80762472b246a063cae}\label{structhda__controller_a62b8995731f5f80762472b246a063cae}} 
+area\+\_\+id {\bfseries regs\+\_\+area}
+\item 
+\mbox{\Hypertarget{structhda__controller_a672a8970656d3f53ac775faf9162422e}\label{structhda__controller_a672a8970656d3f53ac775faf9162422e}} 
+vuint8 $\ast$ {\bfseries regs}
+\item 
+\mbox{\Hypertarget{structhda__controller_ae10fabdb39c1d9422a527401ec8da8da}\label{structhda__controller_ae10fabdb39c1d9422a527401ec8da8da}} 
+uint32 {\bfseries irq}
+\item 
+\mbox{\Hypertarget{structhda__controller_a60b43b8c4aca40e14b07bcb9de966988}\label{structhda__controller_a60b43b8c4aca40e14b07bcb9de966988}} 
+bool {\bfseries msi}
+\item 
+\mbox{\Hypertarget{structhda__controller_a91dd1146d61fb26924fe27a711c68d49}\label{structhda__controller_a91dd1146d61fb26924fe27a711c68d49}} 
+bool {\bfseries dma\+\_\+snooping}
+\item 
+\mbox{\Hypertarget{structhda__controller_a6a785512e25e5266ff620e1da381ff08}\label{structhda__controller_a6a785512e25e5266ff620e1da381ff08}} 
+uint16 {\bfseries codec\+\_\+status}
+\item 
+\mbox{\Hypertarget{structhda__controller_a91cb73c207a637ea2b155af8b21fb86d}\label{structhda__controller_a91cb73c207a637ea2b155af8b21fb86d}} 
+uint32 {\bfseries num\+\_\+input\+\_\+streams}
+\item 
+\mbox{\Hypertarget{structhda__controller_aee0a96c6ee49447ceab15b41fe3ba418}\label{structhda__controller_aee0a96c6ee49447ceab15b41fe3ba418}} 
+uint32 {\bfseries num\+\_\+output\+\_\+streams}
+\item 
+\mbox{\Hypertarget{structhda__controller_a2c59b2ddb608f94bdc3d18a4a2d25458}\label{structhda__controller_a2c59b2ddb608f94bdc3d18a4a2d25458}} 
+uint32 {\bfseries num\+\_\+bidir\+\_\+streams}
+\item 
+\mbox{\Hypertarget{structhda__controller_ad41cbf9f5b57dd9e6da4f021e835c962}\label{structhda__controller_ad41cbf9f5b57dd9e6da4f021e835c962}} 
+uint32 {\bfseries corb\+\_\+length}
+\item 
+\mbox{\Hypertarget{structhda__controller_a7ddb8fcdd7bbe5a0cf1f9d5f5eadeb4f}\label{structhda__controller_a7ddb8fcdd7bbe5a0cf1f9d5f5eadeb4f}} 
+uint32 {\bfseries rirb\+\_\+length}
+\item 
+\mbox{\Hypertarget{structhda__controller_a991b5bad3c0ccea37713c1f25e1480cf}\label{structhda__controller_a991b5bad3c0ccea37713c1f25e1480cf}} 
+uint32 {\bfseries rirb\+\_\+read\+\_\+pos}
+\item 
+\mbox{\Hypertarget{structhda__controller_ac1d0d5f8203e88841a9e6f841cc70516}\label{structhda__controller_ac1d0d5f8203e88841a9e6f841cc70516}} 
+uint32 {\bfseries corb\+\_\+write\+\_\+pos}
+\item 
+\mbox{\Hypertarget{structhda__controller_ab2175933359b6977a2d7d5b0bca84151}\label{structhda__controller_ab2175933359b6977a2d7d5b0bca84151}} 
+area\+\_\+id {\bfseries corb\+\_\+rirb\+\_\+pos\+\_\+area}
+\item 
+\mbox{\Hypertarget{structhda__controller_a8bec5f1183a2af7b88775f0ede33a3bf}\label{structhda__controller_a8bec5f1183a2af7b88775f0ede33a3bf}} 
+corb\+\_\+t $\ast$ {\bfseries corb}
+\item 
+\mbox{\Hypertarget{structhda__controller_a3412e634dff94950c489bfe21759a4bf}\label{structhda__controller_a3412e634dff94950c489bfe21759a4bf}} 
+\hyperlink{structrirb__t}{rirb\+\_\+t} $\ast$ {\bfseries rirb}
+\item 
+\mbox{\Hypertarget{structhda__controller_a55a09757334d89890244c52236617b58}\label{structhda__controller_a55a09757334d89890244c52236617b58}} 
+uint32 $\ast$ {\bfseries stream\+\_\+positions}
+\item 
+\mbox{\Hypertarget{structhda__controller_acd664eec54c1632a52b3698ff6d46784}\label{structhda__controller_acd664eec54c1632a52b3698ff6d46784}} 
+\hyperlink{structhda__codec}{hda\+\_\+codec} $\ast$ {\bfseries codecs} \mbox{[}H\+D\+A\+\_\+\+M\+A\+X\+\_\+\+C\+O\+D\+E\+CS+1\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__controller_adb707b6b0a1064e577861d14553c633b}\label{structhda__controller_adb707b6b0a1064e577861d14553c633b}} 
+\hyperlink{structhda__codec}{hda\+\_\+codec} $\ast$ {\bfseries active\+\_\+codec}
+\item 
+\mbox{\Hypertarget{structhda__controller_a49f5a4600f1bc8fdae43bcd9f4ad9329}\label{structhda__controller_a49f5a4600f1bc8fdae43bcd9f4ad9329}} 
+uint32 {\bfseries num\+\_\+codecs}
+\item 
+\mbox{\Hypertarget{structhda__controller_ae9c7db241b051f46615478074bf7e4c0}\label{structhda__controller_ae9c7db241b051f46615478074bf7e4c0}} 
+\hyperlink{structhda__stream}{hda\+\_\+stream} $\ast$ {\bfseries streams} \mbox{[}H\+D\+A\+\_\+\+M\+A\+X\+\_\+\+S\+T\+R\+E\+A\+MS\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__controller_a627c91fe68b546b04b93889520d90fd2}\label{structhda__controller_a627c91fe68b546b04b93889520d90fd2}} 
+sem\+\_\+id {\bfseries buffer\+\_\+ready\+\_\+sem}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{namespace_this}{This} structure describes a single H\+DA compliant controller. \hyperlink{class_it}{It} contains a list of available streams for use by the codecs contained, and the messaging queue (verb/response) buffers for communication. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/wdm/audio/hdaudbus/driver.\+h\end{DoxyCompactItemize}

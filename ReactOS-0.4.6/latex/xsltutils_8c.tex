@@ -1,0 +1,468 @@
+\hypertarget{xsltutils_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/3rdparty/libxslt/xsltutils.c 文件参考}
+\label{xsltutils_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/3rdparty/libxslt/xsltutils.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/3rdparty/libxslt/xsltutils.\+c}}
+{\ttfamily \#include \char`\"{}precomp.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__xslt_debugger_callbacks}{\+\_\+xslt\+Debugger\+Callbacks}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{Indent}\textbf{ \+: the full Q\+Name}\par
+{\em xslt\+Split\+Q\+Name\+: \+: a dictionary
+
+\+: the return value
+
+Split Q\+Names into prefix and local names, both allocated from a dictionary.
+
+Returns\+: the localname or N\+U\+LL in case of error. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{xsltutils_8c_a5813c0fa467974df1a02f3714402e22c}\label{xsltutils_8c_a5813c0fa467974df1a02f3714402e22c}} 
+const xml\+Char $\ast$ {\bfseries xslt\+Split\+Q\+Name} (xml\+Dict\+Ptr dict, const xml\+Char $\ast$\hyperlink{structname}{name}, const xml\+Char $\ast$$\ast$prefix)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{\+: the attribute name}
+\label{_amgrp32ab77e2ab730031d18014a6eb45ba00}%
+xslt\+Get\+Ns\+Prop\+: \+: the node
+
+\+: the U\+RI of the namespace
+
+Similar to xml\+Get\+Ns\+Prop() but with a slightly different semantic
+
+Search and get the value of an attribute associated to a node \hyperlink{namespace_this}{This} attribute has to be anchored in the namespace specified, or has no namespace and the element is in that namespace.
+
+\hyperlink{namespace_this}{This} does the entity substitution. \hyperlink{namespace_this}{This} function looks in D\+TD attribute declaration for \#\+F\+I\+X\+ED or default declaration values unless D\+TD use has been turned off.
+
+Returns the attribute value or N\+U\+LL if not found. \hyperlink{class_it}{It}\textquotesingle{}s up to the caller to free the memory. \begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+L\+T\+\_\+\+G\+E\+T\+\_\+\+V\+A\+R\+\_\+\+S\+TR}(msg,  str)
+\item 
+\mbox{\Hypertarget{xsltutils_8c_a404a24aec49f211c5a282f8d809cde19}\label{xsltutils_8c_a404a24aec49f211c5a282f8d809cde19}} 
+xml\+Generic\+Error\+Func {\bfseries xslt\+Generic\+Error} = xslt\+Generic\+Error\+Default\+Func
+\item 
+\mbox{\Hypertarget{xsltutils_8c_ae6c99fc3d4b72dba18101820a352ffe4}\label{xsltutils_8c_ae6c99fc3d4b72dba18101820a352ffe4}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries xslt\+Generic\+Error\+Context} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{xsltutils_8c_a700d023bf3e051dd8e2655717b95f950}\label{xsltutils_8c_a700d023bf3e051dd8e2655717b95f950}} 
+xml\+Generic\+Error\+Func {\bfseries xslt\+Generic\+Debug} = xslt\+Generic\+Debug\+Default\+Func
+\item 
+\mbox{\Hypertarget{xsltutils_8c_ac06ffe473a563f062a528c6fe94db103}\label{xsltutils_8c_ac06ffe473a563f062a528c6fe94db103}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries xslt\+Generic\+Debug\+Context} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{xsltutils_8c_adffa6f200d6e62ce3bb14eb1f27a6aac}\label{xsltutils_8c_adffa6f200d6e62ce3bb14eb1f27a6aac}} 
+const xml\+Char $\ast$ {\bfseries xslt\+Get\+C\+Ns\+Prop} (\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} node, const xml\+Char $\ast$\hyperlink{structname}{name}, const xml\+Char $\ast$name\+Space)
+\item 
+\mbox{\Hypertarget{xsltutils_8c_abf2806185c3d5700cea52a6d373c8875}\label{xsltutils_8c_abf2806185c3d5700cea52a6d373c8875}} 
+xml\+Char $\ast$ {\bfseries xslt\+Get\+Ns\+Prop} (\hyperlink{struct__xml_node}{xml\+Node\+Ptr} node, const xml\+Char $\ast$\hyperlink{structname}{name}, const xml\+Char $\ast$name\+Space)
+\item 
+int \hyperlink{xsltutils_8c_a728c1c632f0e08ea541bad3abb4ab636}{xslt\+Get\+U\+T\+F8\+Char} (const unsigned char $\ast$utf, int $\ast$len)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_afeed5d3985a9f25ad5b39a3ced4e238f}{xslt\+Message} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} node, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} inst)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_aafd388ca81bc6d3c69e71e6c239c9b97}{xslt\+Set\+Generic\+Error\+Func} (\hyperlink{interfacevoid}{void} $\ast$ctx, xml\+Generic\+Error\+Func handler)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a5093d02128d8274f00474cbd51b405fc}{xslt\+Set\+Generic\+Debug\+Func} (\hyperlink{interfacevoid}{void} $\ast$ctx, xml\+Generic\+Error\+Func handler)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a8abe059052398a85691a2ca6dbd30f11}{xslt\+Print\+Error\+Context} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} node)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a8aaa4174c5ef4d0450b3467740b58dc5}{xslt\+Set\+Transform\+Error\+Func} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{interfacevoid}{void} $\ast$ctx, xml\+Generic\+Error\+Func handler)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a06ac8c8175b43aaff1b7487f510bc0f9}{xslt\+Transform\+Error} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} node, const char $\ast$msg,...)
+\end{DoxyCompactItemize}
+\subsection*{is}
+\label{_amgrpa2a551a6458a8de22446cc76d639a9e9}%
+not prefixed. \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{xsltutils_8c_a0b935b9f5a6d3f57285fece1aa0a37a5}\label{xsltutils_8c_a0b935b9f5a6d3f57285fece1aa0a37a5}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+X\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES}~10000
+\item 
+\mbox{\Hypertarget{xsltutils_8c_aae61dd69b3fa26bdbb5486131911b925}\label{xsltutils_8c_aae61dd69b3fa26bdbb5486131911b925}} 
+\#\hyperlink{structdefine}{define} {\bfseries X\+S\+L\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+N\+U\+M\+B\+ER}~3
+\item 
+\mbox{\Hypertarget{xsltutils_8c_a1a5574885115172a3318c86b44758b96}\label{xsltutils_8c_a1a5574885115172a3318c86b44758b96}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct__xslt_debugger_callbacks}{\+\_\+xslt\+Debugger\+Callbacks} {\bfseries xslt\+Debugger\+Callbacks}
+\item 
+\mbox{\Hypertarget{xsltutils_8c_afacb76f09bbde8a2f695a3790270d984}\label{xsltutils_8c_afacb76f09bbde8a2f695a3790270d984}} 
+typedef \hyperlink{struct__xslt_debugger_callbacks}{xslt\+Debugger\+Callbacks} $\ast$ {\bfseries xslt\+Debugger\+Callbacks\+Ptr}
+\item 
+\mbox{\Hypertarget{xsltutils_8c_ab08a493822e074f3dcbb492f479d10f6}\label{xsltutils_8c_ab08a493822e074f3dcbb492f479d10f6}} 
+int {\bfseries xsl\+Debug\+Status}
+\item 
+\mbox{\Hypertarget{xsltutils_8c_ae4d8db41497a461f6c291c07fe5293c1}\label{xsltutils_8c_ae4d8db41497a461f6c291c07fe5293c1}} 
+const xml\+Char $\ast$ {\bfseries xslt\+Get\+Q\+Name\+U\+RI} (\hyperlink{struct__xml_node}{xml\+Node\+Ptr} node, xml\+Char $\ast$$\ast$\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{xsltutils_8c_a0c40c5787ae31d94dc092e2734774ffe}\label{xsltutils_8c_a0c40c5787ae31d94dc092e2734774ffe}} 
+const xml\+Char $\ast$ {\bfseries xslt\+Get\+Q\+Name\+U\+R\+I2} (\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} node, const xml\+Char $\ast$$\ast$\hyperlink{structname}{name})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a4f0ff3a290e5190f1200c564d164a5d6}{xslt\+Document\+Sort\+Function} (xml\+Node\+Set\+Ptr \hyperlink{classlist}{list})
+\item 
+xml\+X\+Path\+Object\+Ptr $\ast$ \hyperlink{xsltutils_8c_a5bfecad9552b104af247361a00c8f97b}{xslt\+Compute\+Sort\+Result} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} sort)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a800b6d7fbe2911dfa2af5b9b19ae76ac}{xslt\+Default\+Sort\+Function} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} $\ast$sorts, int nbsorts)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a017168e108e0616f7c760a23e69c3b90}{xslt\+Do\+Sort\+Function} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} $\ast$sorts, int nbsorts)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_afa9d8b01ad9ee4d4e700b0b435ccdd83}{xslt\+Set\+Sort\+Func} (xslt\+Sort\+Func handler)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_ad23e87d457e3ceb310de6ce12edf7ca1}{xslt\+Set\+Ctxt\+Sort\+Func} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, xslt\+Sort\+Func handler)
+\item 
+int \hyperlink{xsltutils_8c_a6e7d6fb8c5d93c9771e2121c5349b44e}{xslt\+Set\+Ctxt\+Parse\+Options} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, int options)
+\item 
+int \hyperlink{xsltutils_8c_aa94901eb2c2b7101bb3a0d5d13d13016}{xslt\+Save\+Result\+To} (xml\+Output\+Buffer\+Ptr buf, \hyperlink{struct__xml_doc}{xml\+Doc\+Ptr} result, \hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style)
+\item 
+int \hyperlink{xsltutils_8c_aab1c50da521d9bb5363c32a2ce6ca86a}{xslt\+Save\+Result\+To\+Filename} (const char $\ast$U\+RL, \hyperlink{struct__xml_doc}{xml\+Doc\+Ptr} result, \hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style, int compression)
+\item 
+\mbox{\Hypertarget{xsltutils_8c_afaf9ef9152cd7053739eb98d5c0d04f7}\label{xsltutils_8c_afaf9ef9152cd7053739eb98d5c0d04f7}} 
+int {\bfseries xslt\+Save\+Result\+To\+File} (\hyperlink{struct__iobuf}{F\+I\+LE} $\ast$\hyperlink{structfile}{file}, \hyperlink{struct__xml_doc}{xml\+Doc\+Ptr} result, \hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style)
+\item 
+int \hyperlink{xsltutils_8c_a5980c0d50b1951278f1807ed4a1fddb6}{xslt\+Save\+Result\+To\+Fd} (int fd, \hyperlink{struct__xml_doc}{xml\+Doc\+Ptr} result, \hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style)
+\item 
+int \hyperlink{xsltutils_8c_a957fa700e146cc5e833eb6e15b001fc3}{xslt\+Save\+Result\+To\+String} (xml\+Char $\ast$$\ast$doc\+\_\+txt\+\_\+ptr, int $\ast$doc\+\_\+txt\+\_\+len, \hyperlink{struct__xml_doc}{xml\+Doc\+Ptr} result, \hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_aa82f420dfc72736d298657a4067a029a}{xslt\+Calibrate\+Adjust} (long delta)
+\item 
+long \hyperlink{xsltutils_8c_a2d32e7afb7636ffcc9da62859b4208dc}{xslt\+Timestamp} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a8b72e5df03ea485f9a229e18f6bb679c}{xslt\+Save\+Profiling} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt, \hyperlink{struct__iobuf}{F\+I\+LE} $\ast$output)
+\item 
+\hyperlink{struct__xml_doc}{xml\+Doc\+Ptr} \hyperlink{xsltutils_8c_af737b260d6b629bb82dfa77b010f11a7}{xslt\+Get\+Profile\+Information} (\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt)
+\item 
+xml\+X\+Path\+Comp\+Expr\+Ptr \hyperlink{xsltutils_8c_a06c08c7236802dab97b3453d2c87d04d}{xslt\+X\+Path\+Compile\+Flags} (\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style, const xml\+Char $\ast$str, int flags)
+\item 
+xml\+X\+Path\+Comp\+Expr\+Ptr \hyperlink{xsltutils_8c_a6450f6afb0a3d96304a41916917e0f27}{xslt\+X\+Path\+Compile} (\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr} style, const xml\+Char $\ast$str)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_a04dd33cd309be797c727f0f6870584a3}{xslt\+Set\+Debugger\+Status} (int \hyperlink{unionvalue}{value})
+\item 
+int \hyperlink{xsltutils_8c_a236922a72ac555628ef1b3cccbf3bb67}{xslt\+Get\+Debugger\+Status} (\hyperlink{interfacevoid}{void})
+\item 
+int \hyperlink{xsltutils_8c_ac49249ba4ea6f5cbcee793dc6975747e}{xslt\+Set\+Debugger\+Callbacks} (int no, \hyperlink{interfacevoid}{void} $\ast$block)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_ac2e4e19740c46f16358756250c1b739c}{xsl\+Handle\+Debugger} (\hyperlink{struct__xml_node}{xml\+Node\+Ptr} cur, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} node, \hyperlink{struct__xslt_template}{xslt\+Template\+Ptr} templ, \hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr} ctxt)
+\item 
+int \hyperlink{xsltutils_8c_aaf78c06c1e7c3ea48f46636f5aa79a63}{xsl\+Add\+Call} (\hyperlink{struct__xslt_template}{xslt\+Template\+Ptr} templ, \hyperlink{struct__xml_node}{xml\+Node\+Ptr} \hyperlink{structsource}{source})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xsltutils_8c_ad14a933faa65022b53c8450babc6b61d}{xsl\+Drop\+Call} (\hyperlink{interfacevoid}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Returns the number of bytes written or -\/1 in case of failure. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{xsltutils_8c_a7287d297ddd77a4b94e18609938d55d0}\label{xsltutils_8c_a7287d297ddd77a4b94e18609938d55d0}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!X\+S\+L\+T\+\_\+\+G\+E\+T\+\_\+\+V\+A\+R\+\_\+\+S\+TR@{X\+S\+L\+T\+\_\+\+G\+E\+T\+\_\+\+V\+A\+R\+\_\+\+S\+TR}}
+\index{X\+S\+L\+T\+\_\+\+G\+E\+T\+\_\+\+V\+A\+R\+\_\+\+S\+TR@{X\+S\+L\+T\+\_\+\+G\+E\+T\+\_\+\+V\+A\+R\+\_\+\+S\+TR}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{X\+S\+L\+T\+\_\+\+G\+E\+T\+\_\+\+V\+A\+R\+\_\+\+S\+TR}{XSLT\_GET\_VAR\_STR}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} X\+S\+L\+T\+\_\+\+G\+E\+T\+\_\+\+V\+A\+R\+\_\+\+S\+TR(\begin{DoxyParamCaption}\item[{}]{msg,  }\item[{}]{str }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\{               \(\backslash\)
+    int       size;                     \(\backslash\)
+    int       chars;                        \(\backslash\)
+    char      *larger;                      \(\backslash\)
+    va\_list   ap;                       \(\backslash\)
+                                \(\backslash\)
+    str = (\textcolor{keywordtype}{char} *) xmlMalloc(150);              \(\backslash\)
+    if (str == NULL)                        \(\backslash\)
+    return;                         \(\backslash\)
+                                \(\backslash\)
+    size = 150;                         \(\backslash\)
+                                \(\backslash\)
+    while (size < 64000) \{                  \(\backslash\)
+    va\_start(ap, msg);                  \(\backslash\)
+    chars = vsnprintf(str, size, msg, ap);          \(\backslash\)
+    va\_end(ap);                     \(\backslash\)
+    if ((chars > -1) && (chars < size))         \(\backslash\)
+        break;                      \(\backslash\)
+    if (chars > -1)                     \(\backslash\)
+        size += chars + 1;                  \(\backslash\)
+    else                            \(\backslash\)
+        size += 100;                    \(\backslash\)
+    if ((larger = (\textcolor{keywordtype}{char} *) xmlRealloc(str, size)) == NULL) \{\(\backslash\)
+        xmlFree(str);                   \(\backslash\)
+        return;                     \(\backslash\)
+    \}                           \(\backslash\)
+    str = larger;                       \(\backslash\)
+    \}                               \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{xsltutils_8c_aaf78c06c1e7c3ea48f46636f5aa79a63}\label{xsltutils_8c_aaf78c06c1e7c3ea48f46636f5aa79a63}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xsl\+Add\+Call@{xsl\+Add\+Call}}
+\index{xsl\+Add\+Call@{xsl\+Add\+Call}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xsl\+Add\+Call()}{xslAddCall()}}
+{\footnotesize\ttfamily int xsl\+Add\+Call (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_template}{xslt\+Template\+Ptr}}]{templ,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{source }\end{DoxyParamCaption})}
+
+xsl\+Add\+Call\+:  \+: current template being applied  \+: the source node being processed
+
+Add template \char`\"{}call\char`\"{} to call stack Returns \+: 1 on sucess 0 otherwise an error may be printed if W\+I\+T\+H\+\_\+\+X\+S\+L\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+R\+E\+A\+K\+P\+O\+I\+N\+TS is defined \mbox{\Hypertarget{xsltutils_8c_ad14a933faa65022b53c8450babc6b61d}\label{xsltutils_8c_ad14a933faa65022b53c8450babc6b61d}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xsl\+Drop\+Call@{xsl\+Drop\+Call}}
+\index{xsl\+Drop\+Call@{xsl\+Drop\+Call}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xsl\+Drop\+Call()}{xslDropCall()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xsl\+Drop\+Call (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+xsl\+Drop\+Call\+:
+
+Drop the topmost item off the call stack \mbox{\Hypertarget{xsltutils_8c_ac2e4e19740c46f16358756250c1b739c}\label{xsltutils_8c_ac2e4e19740c46f16358756250c1b739c}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xsl\+Handle\+Debugger@{xsl\+Handle\+Debugger}}
+\index{xsl\+Handle\+Debugger@{xsl\+Handle\+Debugger}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xsl\+Handle\+Debugger()}{xslHandleDebugger()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xsl\+Handle\+Debugger (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{cur,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{node,  }\item[{\hyperlink{struct__xslt_template}{xslt\+Template\+Ptr}}]{templ,  }\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt }\end{DoxyParamCaption})}
+
+xsl\+Handle\+Debugger\+:  \+: source node being executed  \+: data node being processed  \+: temlate that applies to node  \+: the xslt transform context
+
+If either cur or node are a breakpoint, or xsl\+Debug\+Status in state where debugging must occcur at this time then transfer control to the xsl\+Debug\+Break function \mbox{\Hypertarget{xsltutils_8c_aa82f420dfc72736d298657a4067a029a}\label{xsltutils_8c_aa82f420dfc72736d298657a4067a029a}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Calibrate\+Adjust@{xslt\+Calibrate\+Adjust}}
+\index{xslt\+Calibrate\+Adjust@{xslt\+Calibrate\+Adjust}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Calibrate\+Adjust()}{xsltCalibrateAdjust()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Calibrate\+Adjust (\begin{DoxyParamCaption}\item[{long}]{delta }\end{DoxyParamCaption})}
+
+xslt\+Calibrate\+Adjust\+: \+: a negative dealy value found
+
+Used for to correct the calibration for \hyperlink{xsltutils_8c_a2d32e7afb7636ffcc9da62859b4208dc}{xslt\+Timestamp()} \mbox{\Hypertarget{xsltutils_8c_a5bfecad9552b104af247361a00c8f97b}\label{xsltutils_8c_a5bfecad9552b104af247361a00c8f97b}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Compute\+Sort\+Result@{xslt\+Compute\+Sort\+Result}}
+\index{xslt\+Compute\+Sort\+Result@{xslt\+Compute\+Sort\+Result}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Compute\+Sort\+Result()}{xsltComputeSortResult()}}
+{\footnotesize\ttfamily xml\+X\+Path\+Object\+Ptr$\ast$ xslt\+Compute\+Sort\+Result (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{sort }\end{DoxyParamCaption})}
+
+xslt\+Compute\+Sort\+Result\+: \+: a X\+S\+LT process context \+: node list
+
+reorder the current node list accordingly to the set of sorting requirement provided by the array of nodes.
+
+Returns a ordered X\+Path nodeset or N\+U\+LL in case of error. \mbox{\Hypertarget{xsltutils_8c_a800b6d7fbe2911dfa2af5b9b19ae76ac}\label{xsltutils_8c_a800b6d7fbe2911dfa2af5b9b19ae76ac}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Default\+Sort\+Function@{xslt\+Default\+Sort\+Function}}
+\index{xslt\+Default\+Sort\+Function@{xslt\+Default\+Sort\+Function}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Default\+Sort\+Function()}{xsltDefaultSortFunction()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Default\+Sort\+Function (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr} $\ast$}]{sorts,  }\item[{int}]{nbsorts }\end{DoxyParamCaption})}
+
+xslt\+Default\+Sort\+Function\+: \+: a X\+S\+LT process context \+: array of sort nodes \+: the number of sorts in the array
+
+reorder the current node list accordingly to the set of sorting requirement provided by the arry of nodes. \mbox{\Hypertarget{xsltutils_8c_a4f0ff3a290e5190f1200c564d164a5d6}\label{xsltutils_8c_a4f0ff3a290e5190f1200c564d164a5d6}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Document\+Sort\+Function@{xslt\+Document\+Sort\+Function}}
+\index{xslt\+Document\+Sort\+Function@{xslt\+Document\+Sort\+Function}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Document\+Sort\+Function()}{xsltDocumentSortFunction()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Document\+Sort\+Function (\begin{DoxyParamCaption}\item[{xml\+Node\+Set\+Ptr}]{list }\end{DoxyParamCaption})}
+
+xslt\+Document\+Sort\+Function\+: \+: the node set
+
+reorder the current node list  accordingly to the document order \hyperlink{namespace_this}{This} function is slow, obsolete and should not be used anymore. \mbox{\Hypertarget{xsltutils_8c_a017168e108e0616f7c760a23e69c3b90}\label{xsltutils_8c_a017168e108e0616f7c760a23e69c3b90}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Do\+Sort\+Function@{xslt\+Do\+Sort\+Function}}
+\index{xslt\+Do\+Sort\+Function@{xslt\+Do\+Sort\+Function}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Do\+Sort\+Function()}{xsltDoSortFunction()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Do\+Sort\+Function (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr} $\ast$}]{sorts,  }\item[{int}]{nbsorts }\end{DoxyParamCaption})}
+
+xslt\+Do\+Sort\+Function\+: \+: a X\+S\+LT process context \+: array of sort nodes \+: the number of sorts in the array
+
+reorder the current node list accordingly to the set of sorting requirement provided by the arry of nodes. \hyperlink{namespace_this}{This} is a wrapper function, the actual function used is specified using \hyperlink{xsltutils_8c_ad23e87d457e3ceb310de6ce12edf7ca1}{xslt\+Set\+Ctxt\+Sort\+Func()} to set the context specific sort function, or \hyperlink{xsltutils_8c_afa9d8b01ad9ee4d4e700b0b435ccdd83}{xslt\+Set\+Sort\+Func()} to set the global sort function. If a sort function is set on the context, this will get called. Otherwise the global sort function is called. \mbox{\Hypertarget{xsltutils_8c_a236922a72ac555628ef1b3cccbf3bb67}\label{xsltutils_8c_a236922a72ac555628ef1b3cccbf3bb67}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Get\+Debugger\+Status@{xslt\+Get\+Debugger\+Status}}
+\index{xslt\+Get\+Debugger\+Status@{xslt\+Get\+Debugger\+Status}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Get\+Debugger\+Status()}{xsltGetDebuggerStatus()}}
+{\footnotesize\ttfamily int xslt\+Get\+Debugger\+Status (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+xslt\+Get\+Debugger\+Status\+:
+
+Get xsl\+Debug\+Status.
+
+Returns the value of xsl\+Debug\+Status. \mbox{\Hypertarget{xsltutils_8c_af737b260d6b629bb82dfa77b010f11a7}\label{xsltutils_8c_af737b260d6b629bb82dfa77b010f11a7}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Get\+Profile\+Information@{xslt\+Get\+Profile\+Information}}
+\index{xslt\+Get\+Profile\+Information@{xslt\+Get\+Profile\+Information}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Get\+Profile\+Information()}{xsltGetProfileInformation()}}
+{\footnotesize\ttfamily \hyperlink{struct__xml_doc}{xml\+Doc\+Ptr} xslt\+Get\+Profile\+Information (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt }\end{DoxyParamCaption})}
+
+xslt\+Get\+Profile\+Information\+: \+: a transformation context
+
+\hyperlink{namespace_this}{This} function should be called after the transformation completed to extract template processing profiling informations if availble. The informations are returned as an X\+ML document tree like $<$?xml version=\char`\"{}1.\+0\char`\"{}?$>$ $<$profile$>$ $<$template rank=\char`\"{}1\char`\"{} match=\char`\"{}$\ast$\char`\"{} name=\char`\"{}\char`\"{} mode=\char`\"{}\char`\"{} calls=\char`\"{}6\char`\"{} time=\char`\"{}48\char`\"{} average=\char`\"{}8\char`\"{}$>$ $<$template rank=\char`\"{}2\char`\"{} match=\char`\"{}item2$\vert$item3\char`\"{} name=\char`\"{}\char`\"{} mode=\char`\"{}\char`\"{} calls=\char`\"{}10\char`\"{} time=\char`\"{}30\char`\"{} average=\char`\"{}3\char`\"{}$>$ $<$template rank=\char`\"{}3\char`\"{} match=\char`\"{}item1\char`\"{} name=\char`\"{}\char`\"{} mode=\char`\"{}\char`\"{} calls=\char`\"{}5\char`\"{} time=\char`\"{}17\char`\"{} average=\char`\"{}3\char`\"{}$>$ $<$/profile$>$ The caller will need to free up the returned tree with xml\+Free\+Doc()
+
+Returns the xml\+Doc\+Ptr corresponding to the result or N\+U\+LL if not available. \mbox{\Hypertarget{xsltutils_8c_a728c1c632f0e08ea541bad3abb4ab636}\label{xsltutils_8c_a728c1c632f0e08ea541bad3abb4ab636}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Get\+U\+T\+F8\+Char@{xslt\+Get\+U\+T\+F8\+Char}}
+\index{xslt\+Get\+U\+T\+F8\+Char@{xslt\+Get\+U\+T\+F8\+Char}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Get\+U\+T\+F8\+Char()}{xsltGetUTF8Char()}}
+{\footnotesize\ttfamily int xslt\+Get\+U\+T\+F8\+Char (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{utf,  }\item[{int $\ast$}]{len }\end{DoxyParamCaption})}
+
+xslt\+Get\+U\+T\+F8\+Char\+: \+: a sequence of U\+T\+F-\/8 encoded bytes \+: a pointer to  len
+
+Read one U\+T\+F8 Char from  Function copied from libxml2 xml\+Get\+U\+T\+F8\+Char() ... to discard ultimately and use the original A\+PI
+
+Returns the char value or -\/1 in case of error and update  with the number of bytes used \mbox{\Hypertarget{xsltutils_8c_afeed5d3985a9f25ad5b39a3ced4e238f}\label{xsltutils_8c_afeed5d3985a9f25ad5b39a3ced4e238f}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Message@{xslt\+Message}}
+\index{xslt\+Message@{xslt\+Message}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Message()}{xsltMessage()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Message (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{node,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{inst }\end{DoxyParamCaption})}
+
+xslt\+Message\+: \+: an X\+S\+LT processing context \+: The current node \+: The node containing the message instruction
+
+Process and xsl\+:message construct \mbox{\Hypertarget{xsltutils_8c_a8abe059052398a85691a2ca6dbd30f11}\label{xsltutils_8c_a8abe059052398a85691a2ca6dbd30f11}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Print\+Error\+Context@{xslt\+Print\+Error\+Context}}
+\index{xslt\+Print\+Error\+Context@{xslt\+Print\+Error\+Context}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Print\+Error\+Context()}{xsltPrintErrorContext()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Print\+Error\+Context (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{node }\end{DoxyParamCaption})}
+
+xslt\+Print\+Error\+Context\+: \+: the transformation context \+: the stylesheet \+: the current node being processed
+
+Display the context of an error. \mbox{\Hypertarget{xsltutils_8c_a8b72e5df03ea485f9a229e18f6bb679c}\label{xsltutils_8c_a8b72e5df03ea485f9a229e18f6bb679c}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Save\+Profiling@{xslt\+Save\+Profiling}}
+\index{xslt\+Save\+Profiling@{xslt\+Save\+Profiling}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Save\+Profiling()}{xsltSaveProfiling()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Save\+Profiling (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{struct__iobuf}{F\+I\+LE} $\ast$}]{output }\end{DoxyParamCaption})}
+
+xslt\+Save\+Profiling\+: \+: an X\+S\+LT context \+: a F\+I\+LE $\ast$ for saving the informations
+
+Save the profiling informations on  \mbox{\Hypertarget{xsltutils_8c_aa94901eb2c2b7101bb3a0d5d13d13016}\label{xsltutils_8c_aa94901eb2c2b7101bb3a0d5d13d13016}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Save\+Result\+To@{xslt\+Save\+Result\+To}}
+\index{xslt\+Save\+Result\+To@{xslt\+Save\+Result\+To}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Save\+Result\+To()}{xsltSaveResultTo()}}
+{\footnotesize\ttfamily int xslt\+Save\+Result\+To (\begin{DoxyParamCaption}\item[{xml\+Output\+Buffer\+Ptr}]{buf,  }\item[{\hyperlink{struct__xml_doc}{xml\+Doc\+Ptr}}]{result,  }\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style }\end{DoxyParamCaption})}
+
+xslt\+Save\+Result\+To\+: \+: an output buffer \begin{DoxyReturn}{返回}
+\+: the result xml\+Doc\+Ptr \+: the stylesheet
+\end{DoxyReturn}
+Save the result \begin{DoxyReturn}{返回}
+obtained by applying the  stylesheet to an I/O output channel 
+\end{DoxyReturn}
+Returns the number of byte written or -\/1 in case of failure. \mbox{\Hypertarget{xsltutils_8c_a5980c0d50b1951278f1807ed4a1fddb6}\label{xsltutils_8c_a5980c0d50b1951278f1807ed4a1fddb6}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Save\+Result\+To\+Fd@{xslt\+Save\+Result\+To\+Fd}}
+\index{xslt\+Save\+Result\+To\+Fd@{xslt\+Save\+Result\+To\+Fd}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Save\+Result\+To\+Fd()}{xsltSaveResultToFd()}}
+{\footnotesize\ttfamily int xslt\+Save\+Result\+To\+Fd (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{\hyperlink{struct__xml_doc}{xml\+Doc\+Ptr}}]{result,  }\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style }\end{DoxyParamCaption})}
+
+xslt\+Save\+Result\+To\+Fd\+: \+: a file descriptor \begin{DoxyReturn}{返回}
+\+: the result xml\+Doc\+Ptr \+: the stylesheet
+\end{DoxyReturn}
+Save the result \begin{DoxyReturn}{返回}
+obtained by applying the  stylesheet to an open file descriptor \hyperlink{namespace_this}{This} does not close the descriptor.
+\end{DoxyReturn}
+Returns the number of bytes written or -\/1 in case of failure. \mbox{\Hypertarget{xsltutils_8c_aab1c50da521d9bb5363c32a2ce6ca86a}\label{xsltutils_8c_aab1c50da521d9bb5363c32a2ce6ca86a}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Save\+Result\+To\+Filename@{xslt\+Save\+Result\+To\+Filename}}
+\index{xslt\+Save\+Result\+To\+Filename@{xslt\+Save\+Result\+To\+Filename}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Save\+Result\+To\+Filename()}{xsltSaveResultToFilename()}}
+{\footnotesize\ttfamily int xslt\+Save\+Result\+To\+Filename (\begin{DoxyParamCaption}\item[{const char $\ast$}]{U\+RL,  }\item[{\hyperlink{struct__xml_doc}{xml\+Doc\+Ptr}}]{result,  }\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style,  }\item[{int}]{compression }\end{DoxyParamCaption})}
+
+xslt\+Save\+Result\+To\+Filename\+: \+: a filename or U\+RL \begin{DoxyReturn}{返回}
+\+: the result xml\+Doc\+Ptr \+: the stylesheet \+: the compression factor (0 -\/ 9 included)
+\end{DoxyReturn}
+Save the result \begin{DoxyReturn}{返回}
+obtained by applying the  stylesheet to a file or 
+\end{DoxyReturn}
+Returns the number of byte written or -\/1 in case of failure. \mbox{\Hypertarget{xsltutils_8c_a957fa700e146cc5e833eb6e15b001fc3}\label{xsltutils_8c_a957fa700e146cc5e833eb6e15b001fc3}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Save\+Result\+To\+String@{xslt\+Save\+Result\+To\+String}}
+\index{xslt\+Save\+Result\+To\+String@{xslt\+Save\+Result\+To\+String}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Save\+Result\+To\+String()}{xsltSaveResultToString()}}
+{\footnotesize\ttfamily int xslt\+Save\+Result\+To\+String (\begin{DoxyParamCaption}\item[{xml\+Char $\ast$$\ast$}]{doc\+\_\+txt\+\_\+ptr,  }\item[{int $\ast$}]{doc\+\_\+txt\+\_\+len,  }\item[{\hyperlink{struct__xml_doc}{xml\+Doc\+Ptr}}]{result,  }\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style }\end{DoxyParamCaption})}
+
+xslt\+Save\+Result\+To\+String\+: \+: Memory pointer for allocated X\+ML text \+: Length of the generated X\+ML text \begin{DoxyReturn}{返回}
+\+: the result xml\+Doc\+Ptr \+: the stylesheet
+\end{DoxyReturn}
+Save the result \begin{DoxyReturn}{返回}
+obtained by applying the  stylesheet to a new allocated string.
+\end{DoxyReturn}
+Returns 0 in case of success and -\/1 in case of error \mbox{\Hypertarget{xsltutils_8c_a6e7d6fb8c5d93c9771e2121c5349b44e}\label{xsltutils_8c_a6e7d6fb8c5d93c9771e2121c5349b44e}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Ctxt\+Parse\+Options@{xslt\+Set\+Ctxt\+Parse\+Options}}
+\index{xslt\+Set\+Ctxt\+Parse\+Options@{xslt\+Set\+Ctxt\+Parse\+Options}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Ctxt\+Parse\+Options()}{xsltSetCtxtParseOptions()}}
+{\footnotesize\ttfamily int xslt\+Set\+Ctxt\+Parse\+Options (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{int}]{options }\end{DoxyParamCaption})}
+
+xslt\+Set\+Ctxt\+Parse\+Options\+: \+: a X\+S\+LT process context \+: a combination of libxml2 xml\+Parser\+Option
+
+Change the default parser option passed by the X\+S\+LT engine to the parser when using document() loading.
+
+Returns the previous options or -\/1 in case of error \mbox{\Hypertarget{xsltutils_8c_ad23e87d457e3ceb310de6ce12edf7ca1}\label{xsltutils_8c_ad23e87d457e3ceb310de6ce12edf7ca1}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Ctxt\+Sort\+Func@{xslt\+Set\+Ctxt\+Sort\+Func}}
+\index{xslt\+Set\+Ctxt\+Sort\+Func@{xslt\+Set\+Ctxt\+Sort\+Func}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Ctxt\+Sort\+Func()}{xsltSetCtxtSortFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Set\+Ctxt\+Sort\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{xslt\+Sort\+Func}]{handler }\end{DoxyParamCaption})}
+
+xslt\+Set\+Ctxt\+Sort\+Func\+: \+: a X\+S\+LT process context \+: the new handler function
+
+Function to set the handler for X\+S\+LT sorting for the specified context. If the handler is N\+U\+LL, then the global sort function will be called \mbox{\Hypertarget{xsltutils_8c_ac49249ba4ea6f5cbcee793dc6975747e}\label{xsltutils_8c_ac49249ba4ea6f5cbcee793dc6975747e}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Debugger\+Callbacks@{xslt\+Set\+Debugger\+Callbacks}}
+\index{xslt\+Set\+Debugger\+Callbacks@{xslt\+Set\+Debugger\+Callbacks}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Debugger\+Callbacks()}{xsltSetDebuggerCallbacks()}}
+{\footnotesize\ttfamily int xslt\+Set\+Debugger\+Callbacks (\begin{DoxyParamCaption}\item[{int}]{no,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{block }\end{DoxyParamCaption})}
+
+xslt\+Set\+Debugger\+Callbacks\+:  \+: number of callbacks  \+: the block of callbacks
+
+\hyperlink{namespace_this}{This} function allow to plug a debugger into the X\+S\+LT library  points to a block of memory containing the address of  callback routines.
+
+Returns 0 in case of success and -\/1 in case of error \mbox{\Hypertarget{xsltutils_8c_a04dd33cd309be797c727f0f6870584a3}\label{xsltutils_8c_a04dd33cd309be797c727f0f6870584a3}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Debugger\+Status@{xslt\+Set\+Debugger\+Status}}
+\index{xslt\+Set\+Debugger\+Status@{xslt\+Set\+Debugger\+Status}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Debugger\+Status()}{xsltSetDebuggerStatus()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Set\+Debugger\+Status (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+xslt\+Set\+Debugger\+Status\+:  \+: the value to be set
+
+\hyperlink{namespace_this}{This} function sets the value of xsl\+Debug\+Status. \mbox{\Hypertarget{xsltutils_8c_a5093d02128d8274f00474cbd51b405fc}\label{xsltutils_8c_a5093d02128d8274f00474cbd51b405fc}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Generic\+Debug\+Func@{xslt\+Set\+Generic\+Debug\+Func}}
+\index{xslt\+Set\+Generic\+Debug\+Func@{xslt\+Set\+Generic\+Debug\+Func}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Generic\+Debug\+Func()}{xsltSetGenericDebugFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Set\+Generic\+Debug\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void} $\ast$}]{ctx,  }\item[{xml\+Generic\+Error\+Func}]{handler }\end{DoxyParamCaption})}
+
+xslt\+Set\+Generic\+Debug\+Func\+: \+: the new error handling context \+: the new handler function
+
+Function to reset the handler and the error context for out of context error messages. \hyperlink{namespace_this}{This} simply means that  will be called for subsequent error messages while not parsing or validating. And  will be passed as first argument to  One can simply force messages to be emitted to another F\+I\+LE $\ast$ than stderr by setting  to this file handle and  to N\+U\+LL. \mbox{\Hypertarget{xsltutils_8c_aafd388ca81bc6d3c69e71e6c239c9b97}\label{xsltutils_8c_aafd388ca81bc6d3c69e71e6c239c9b97}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Generic\+Error\+Func@{xslt\+Set\+Generic\+Error\+Func}}
+\index{xslt\+Set\+Generic\+Error\+Func@{xslt\+Set\+Generic\+Error\+Func}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Generic\+Error\+Func()}{xsltSetGenericErrorFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Set\+Generic\+Error\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void} $\ast$}]{ctx,  }\item[{xml\+Generic\+Error\+Func}]{handler }\end{DoxyParamCaption})}
+
+xslt\+Set\+Generic\+Error\+Func\+: \+: the new error handling context \+: the new handler function
+
+Function to reset the handler and the error context for out of context error messages. \hyperlink{namespace_this}{This} simply means that  will be called for subsequent error messages while not parsing nor validating. And  will be passed as first argument to  One can simply force messages to be emitted to another F\+I\+LE $\ast$ than stderr by setting  to this file handle and  to N\+U\+LL. \mbox{\Hypertarget{xsltutils_8c_afa9d8b01ad9ee4d4e700b0b435ccdd83}\label{xsltutils_8c_afa9d8b01ad9ee4d4e700b0b435ccdd83}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Sort\+Func@{xslt\+Set\+Sort\+Func}}
+\index{xslt\+Set\+Sort\+Func@{xslt\+Set\+Sort\+Func}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Sort\+Func()}{xsltSetSortFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Set\+Sort\+Func (\begin{DoxyParamCaption}\item[{xslt\+Sort\+Func}]{handler }\end{DoxyParamCaption})}
+
+xslt\+Set\+Sort\+Func\+: \+: the new handler function
+
+Function to reset the global handler for X\+S\+LT sorting. If the handler is N\+U\+LL, the default sort function will be used. \mbox{\Hypertarget{xsltutils_8c_a8aaa4174c5ef4d0450b3467740b58dc5}\label{xsltutils_8c_a8aaa4174c5ef4d0450b3467740b58dc5}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Set\+Transform\+Error\+Func@{xslt\+Set\+Transform\+Error\+Func}}
+\index{xslt\+Set\+Transform\+Error\+Func@{xslt\+Set\+Transform\+Error\+Func}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Set\+Transform\+Error\+Func()}{xsltSetTransformErrorFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Set\+Transform\+Error\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{ctx,  }\item[{xml\+Generic\+Error\+Func}]{handler }\end{DoxyParamCaption})}
+
+xslt\+Set\+Transform\+Error\+Func\+: \+: the X\+S\+LT transformation context \+: the new error handling context \+: the new handler function
+
+Function to reset the handler and the error context for out of context error messages specific to a given X\+S\+LT transromation.
+
+\hyperlink{namespace_this}{This} simply means that  will be called for subsequent error messages while running the transformation. \mbox{\Hypertarget{xsltutils_8c_a2d32e7afb7636ffcc9da62859b4208dc}\label{xsltutils_8c_a2d32e7afb7636ffcc9da62859b4208dc}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Timestamp@{xslt\+Timestamp}}
+\index{xslt\+Timestamp@{xslt\+Timestamp}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Timestamp()}{xsltTimestamp()}}
+{\footnotesize\ttfamily long xslt\+Timestamp (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+xslt\+Timestamp\+:
+
+Used for gathering profiling data
+
+Returns the number of tenth of milliseconds since the beginning of the profiling \mbox{\Hypertarget{xsltutils_8c_a06ac8c8175b43aaff1b7487f510bc0f9}\label{xsltutils_8c_a06ac8c8175b43aaff1b7487f510bc0f9}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+Transform\+Error@{xslt\+Transform\+Error}}
+\index{xslt\+Transform\+Error@{xslt\+Transform\+Error}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+Transform\+Error()}{xsltTransformError()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} xslt\+Transform\+Error (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_transform_context}{xslt\+Transform\+Context\+Ptr}}]{ctxt,  }\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style,  }\item[{\hyperlink{struct__xml_node}{xml\+Node\+Ptr}}]{node,  }\item[{const char $\ast$}]{msg,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+xslt\+Transform\+Error\+: \+: an X\+S\+LT transformation context \+: the X\+S\+LT stylesheet used \+: the current node in the stylesheet \+: the message to display/transmit ...\+: extra parameters for the message display
+
+Display and format an error messages, gives file, line, position and extra parameters, will use the specific transformation context if available \mbox{\Hypertarget{xsltutils_8c_a6450f6afb0a3d96304a41916917e0f27}\label{xsltutils_8c_a6450f6afb0a3d96304a41916917e0f27}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+X\+Path\+Compile@{xslt\+X\+Path\+Compile}}
+\index{xslt\+X\+Path\+Compile@{xslt\+X\+Path\+Compile}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+X\+Path\+Compile()}{xsltXPathCompile()}}
+{\footnotesize\ttfamily xml\+X\+Path\+Comp\+Expr\+Ptr xslt\+X\+Path\+Compile (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style,  }\item[{const xml\+Char $\ast$}]{str }\end{DoxyParamCaption})}
+
+xslt\+X\+Path\+Compile\+: \+: the stylesheet \+: the X\+Path expression
+
+Compile an X\+Path expression
+
+Returns the xml\+X\+Path\+Comp\+Expr\+Ptr resulting from the compilation or N\+U\+LL. the caller has to free the object. \mbox{\Hypertarget{xsltutils_8c_a06c08c7236802dab97b3453d2c87d04d}\label{xsltutils_8c_a06c08c7236802dab97b3453d2c87d04d}} 
+\index{xsltutils.\+c@{xsltutils.\+c}!xslt\+X\+Path\+Compile\+Flags@{xslt\+X\+Path\+Compile\+Flags}}
+\index{xslt\+X\+Path\+Compile\+Flags@{xslt\+X\+Path\+Compile\+Flags}!xsltutils.\+c@{xsltutils.\+c}}
+\subsubsection{\texorpdfstring{xslt\+X\+Path\+Compile\+Flags()}{xsltXPathCompileFlags()}}
+{\footnotesize\ttfamily xml\+X\+Path\+Comp\+Expr\+Ptr xslt\+X\+Path\+Compile\+Flags (\begin{DoxyParamCaption}\item[{\hyperlink{struct__xslt_stylesheet}{xslt\+Stylesheet\+Ptr}}]{style,  }\item[{const xml\+Char $\ast$}]{str,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+xslt\+X\+Path\+Compile\+Flags\+: \+: the stylesheet \+: the X\+Path expression \+: extra compilation flags to pass down to libxml2 X\+Path
+
+Compile an X\+Path expression
+
+Returns the xml\+X\+Path\+Comp\+Expr\+Ptr resulting from the compilation or N\+U\+LL. the caller has to free the object. 

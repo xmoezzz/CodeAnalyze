@@ -1,0 +1,62 @@
+\hypertarget{class_test_case}{}\section{Test\+Case类 参考}
+\label{class_test_case}\index{Test\+Case@{Test\+Case}}
+类 Test\+Case 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_test_case}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_test_case_a7fa9343edf139c341bf95c2d9a0304fb}\label{class_test_case_a7fa9343edf139c341bf95c2d9a0304fb}} 
+\hyperlink{interfacevoid}{void} \hyperlink{class_test_case_a7fa9343edf139c341bf95c2d9a0304fb}{set\+Up} ()
+\begin{DoxyCompactList}\small\item\em Set up context before running a test. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_test_case_a649eaeccff30326e9895d17eb38f60bc}\label{class_test_case_a649eaeccff30326e9895d17eb38f60bc}} 
+int {\bfseries num\+Errors} ()
+\item 
+\mbox{\Hypertarget{class_test_case_aee22746da06ee739a8ccf5754b45edfa}\label{class_test_case_aee22746da06ee739a8ccf5754b45edfa}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries my\+Run} (const char $\ast$, bool=false)
+\item 
+\mbox{\Hypertarget{class_test_case_a367e6848478e834b914aac16df98782f}\label{class_test_case_a367e6848478e834b914aac16df98782f}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries error} (const char $\ast$in\+\_\+macro\+Name, const char $\ast$in\+\_\+macro, const char $\ast$in\+\_\+file, int in\+\_\+line)
+\item 
+\mbox{\Hypertarget{class_test_case_a1fb2bc14cadeebcc7febd17511bed70d}\label{class_test_case_a1fb2bc14cadeebcc7febd17511bed70d}} 
+bool {\bfseries equal\+Doubles} (double in\+\_\+expected, double in\+\_\+real, double in\+\_\+max\+Err)
+\item 
+\mbox{\Hypertarget{class_test_case_aa704bae9913329528dcb488ebd983eb9}\label{class_test_case_aa704bae9913329528dcb488ebd983eb9}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries progress} (const char $\ast$in\+\_\+class\+Name, const char $\ast$in\+\_\+function\+Name, bool ignored, bool explicit\+Test)
+\item 
+\mbox{\Hypertarget{class_test_case_aa7bbc1f4fecd0dfc8807596ede6b1142}\label{class_test_case_aa7bbc1f4fecd0dfc8807596ede6b1142}} 
+bool {\bfseries should\+Run\+This} (const char $\ast$in\+\_\+desired\+Test, const char $\ast$in\+\_\+class\+Name, const char $\ast$in\+\_\+function\+Name, bool invert, bool explicit\+\_\+test, bool \&do\+\_\+progress)
+\item 
+\mbox{\Hypertarget{class_test_case_ad77983de749c3790ef79807cd301a2f7}\label{class_test_case_ad77983de749c3790ef79807cd301a2f7}} 
+\hyperlink{interfacevoid}{void} \hyperlink{class_test_case_ad77983de749c3790ef79807cd301a2f7}{tear\+Down} ()
+\begin{DoxyCompactList}\small\item\em Clean up after the test run. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_test_case_a3f1a68ea28735604f983c4a89a4084f8}\label{class_test_case_a3f1a68ea28735604f983c4a89a4084f8}} 
+static int {\bfseries run} (\hyperlink{class_reporter}{Reporter} $\ast$in\+\_\+reporter=0, const char $\ast$in\+\_\+test\+Name=\char`\"{}\char`\"{}, bool invert=false)
+\item 
+\mbox{\Hypertarget{class_test_case_acfd59e4cc6c5638d90e5001f218788a9}\label{class_test_case_acfd59e4cc6c5638d90e5001f218788a9}} 
+static \hyperlink{interfacevoid}{void} {\bfseries register\+Test\+Case} (\hyperlink{class_test_case}{Test\+Case} $\ast$in\+\_\+test\+Case)
+\item 
+\mbox{\Hypertarget{class_test_case_a0315be29b9546ca7eead8f9c484b8fb7}\label{class_test_case_a0315be29b9546ca7eead8f9c484b8fb7}} 
+static \hyperlink{interfacevoid}{void} {\bfseries message} (const char $\ast$msg)
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_test_case_aed5f2383d17ca803811986ec91a05eda}\label{class_test_case_aed5f2383d17ca803811986ec91a05eda}} 
+static int {\bfseries m\+\_\+num\+Errors} = 0
+\item 
+\mbox{\Hypertarget{class_test_case_a4d10428de36df5d24414a00be57de975}\label{class_test_case_a4d10428de36df5d24414a00be57de975}} 
+static int {\bfseries m\+\_\+num\+Tests} = 0
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/test/unit/cppunit/cppunit\+\_\+mini.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/test/unit/cppunit/test\+\_\+main.\+cpp\end{DoxyCompactItemize}

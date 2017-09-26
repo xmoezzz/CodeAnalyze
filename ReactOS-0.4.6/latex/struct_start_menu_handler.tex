@@ -1,0 +1,102 @@
+\hypertarget{struct_start_menu_handler}{}\section{Start\+Menu\+Handler结构体 参考}
+\label{struct_start_menu_handler}\index{Start\+Menu\+Handler@{Start\+Menu\+Handler}}
+
+
+Handling of standard start menu commands  
+
+
+
+
+{\ttfamily \#include $<$startmenu.\+h$>$}
+
+类 Start\+Menu\+Handler 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.828283cm]{struct_start_menu_handler}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_handler_a0e2d4e47d320c1c4c1f84c6efa23f34b}\label{struct_start_menu_handler_a0e2d4e47d320c1c4c1f84c6efa23f34b}} 
+typedef \hyperlink{struct_start_menu}{Start\+Menu} {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_handler_a4e989e141e502bc0e8f12f0c7d402d49}\label{struct_start_menu_handler_a4e989e141e502bc0e8f12f0c7d402d49}} 
+{\bfseries Start\+Menu\+Handler} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, int icon\+\_\+size=I\+C\+O\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+LL)
+\item 
+\mbox{\Hypertarget{struct_start_menu_handler_a97c171eabe12317a9c3154f560540d18}\label{struct_start_menu_handler_a97c171eabe12317a9c3154f560540d18}} 
+{\bfseries Start\+Menu\+Handler} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, const \hyperlink{struct_start_menu_create_info}{Start\+Menu\+Create\+Info} \&create\+\_\+info, int icon\+\_\+size=I\+C\+O\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_start_menu_handler_acf21227ba5f3d16659873efd2630a200}{Command} (int id, int \hyperlink{structcode}{code})
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_handler_a11ad824ff1f1bd68b9389be099f72c0f}\label{struct_start_menu_handler_a11ad824ff1f1bd68b9389be099f72c0f}} 
+static \hyperlink{interfacevoid}{void} {\bfseries Show\+Launch\+Dialog} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Owner)
+\item 
+\mbox{\Hypertarget{struct_start_menu_handler_aee7132a41eeae31116125ae4c13de7d3}\label{struct_start_menu_handler_aee7132a41eeae31116125ae4c13de7d3}} 
+static \hyperlink{interfacevoid}{void} {\bfseries Show\+Logoff\+Dialog} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Owner)
+\item 
+\mbox{\Hypertarget{struct_start_menu_handler_a3b89c31d025d129467522bd8bf2a178b}\label{struct_start_menu_handler_a3b89c31d025d129467522bd8bf2a178b}} 
+static \hyperlink{interfacevoid}{void} {\bfseries Show\+Restart\+Dialog} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Owner, U\+I\+NT flags)
+\item 
+static \hyperlink{interfacevoid}{void} \hyperlink{struct_start_menu_handler_ac06629f59aa85cbaf1b5adfbc62ff124}{Show\+Search\+Dialog} ()
+\item 
+static \hyperlink{interfacevoid}{void} \hyperlink{struct_start_menu_handler_a7ebc2b808763f6ad884ad8d5b03b6069}{Show\+Search\+Computer} ()
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Handling of standard start menu commands 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_start_menu_handler_acf21227ba5f3d16659873efd2630a200}\label{struct_start_menu_handler_acf21227ba5f3d16659873efd2630a200}} 
+\index{Start\+Menu\+Handler@{Start\+Menu\+Handler}!Command@{Command}}
+\index{Command@{Command}!Start\+Menu\+Handler@{Start\+Menu\+Handler}}
+\subsubsection{\texorpdfstring{Command()}{Command()}}
+{\footnotesize\ttfamily int Start\+Menu\+Handler\+::\+Command (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000066}{待办事项}]use printer start menu folder per default and allow opening \char`\"{}printers\char`\"{} cabinet window using the context menu \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000067}{待办事项}]to be removed when network browsing will be implemented in shell namespace \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000068}{待办事项}]exclude removable drives \end{DoxyRefDesc}
+
+
+重载 \hyperlink{struct_start_menu}{Start\+Menu} .
+
+\mbox{\Hypertarget{struct_start_menu_handler_a7ebc2b808763f6ad884ad8d5b03b6069}\label{struct_start_menu_handler_a7ebc2b808763f6ad884ad8d5b03b6069}} 
+\index{Start\+Menu\+Handler@{Start\+Menu\+Handler}!Show\+Search\+Computer@{Show\+Search\+Computer}}
+\index{Show\+Search\+Computer@{Show\+Search\+Computer}!Start\+Menu\+Handler@{Start\+Menu\+Handler}}
+\subsubsection{\texorpdfstring{Show\+Search\+Computer()}{ShowSearchComputer()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Start\+Menu\+Handler\+::\+Show\+Search\+Computer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000070}{待办事项}]to be removed when S\+H\+Find\+Computer() will be implemented in shell32.\+dll \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_start_menu_handler_ac06629f59aa85cbaf1b5adfbc62ff124}\label{struct_start_menu_handler_ac06629f59aa85cbaf1b5adfbc62ff124}} 
+\index{Start\+Menu\+Handler@{Start\+Menu\+Handler}!Show\+Search\+Dialog@{Show\+Search\+Dialog}}
+\index{Show\+Search\+Dialog@{Show\+Search\+Dialog}!Start\+Menu\+Handler@{Start\+Menu\+Handler}}
+\subsubsection{\texorpdfstring{Show\+Search\+Dialog()}{ShowSearchDialog()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Start\+Menu\+Handler\+::\+Show\+Search\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000069}{待办事项}]to be removed when S\+H\+Find\+Files() will be implemented in shell32.\+dll \end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/startmenu.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/startmenu.\+cpp\end{DoxyCompactItemize}

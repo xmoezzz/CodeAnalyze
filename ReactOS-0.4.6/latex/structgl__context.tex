@@ -1,0 +1,605 @@
+\hypertarget{structgl__context}{}\section{gl\+\_\+context结构体 参考}
+\label{structgl__context}\index{gl\+\_\+context@{gl\+\_\+context}}
+
+
+{\ttfamily \#include $<$mtypes.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__shared__state}{gl\+\_\+shared\+\_\+state} $\ast$ \hyperlink{structgl__context_a902136f9a479ad001efa6a095eed7ebf}{Shared}
+\item 
+\mbox{\Hypertarget{structgl__context_ad4d48636beafc254103c7c4f6e99a374}\label{structgl__context_ad4d48636beafc254103c7c4f6e99a374}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} {\bfseries Visual}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$ \hyperlink{structgl__context_a69a6afef6a63b78db5e101c8bc0de3c0}{Draw\+Buffer}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$ \hyperlink{structgl__context_a8708d397970a3e8c2cc77448d018f7c8}{Read\+Buffer}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$ \hyperlink{structgl__context_ae05433139d6c0d0bf3d0800d49e1f27c}{Win\+Sys\+Draw\+Buffer}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$ \hyperlink{structgl__context_a899c88a95f3c980b3132e88afb812e42}{Win\+Sys\+Read\+Buffer}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} \hyperlink{structgl__context_ab3a40dffd6176c154014e6ed457da31e}{Driver}
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{structgl__context_a8c538dbb407e8bf2f28b4cafad05bdee}{Driver\+Ctx}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__constants}{gl\+\_\+constants} \hyperlink{structgl__context_a225ea8c45facc3040c10c9460e031c04}{Const}
+\item 
+\hyperlink{struct_g_lmatrix}{G\+Lmatrix} \hyperlink{structgl__context_a1dfc9b6e93931d47c5767c016dd099f1}{\+\_\+\+Model\+Project\+Matrix}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__meta__state}{gl\+\_\+meta\+\_\+state} $\ast$ \hyperlink{structgl__context_a2b873d30b560c7e6551cf1c171504ec0}{Meta}
+\item 
+\mbox{\Hypertarget{structgl__context_a65075007f8937cf2df3e445ac16316cb}\label{structgl__context_a65075007f8937cf2df3e445ac16316cb}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$ {\bfseries Current\+Renderbuffer}
+\item 
+\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structgl__context_a49e26ac67855e06f51644dd62c47fb50}{Error\+Value}
+\item 
+const char $\ast$ \hyperlink{structgl__context_a82c1612f3a2e94b3a49a844838bcb917}{Error\+Debug\+Fmt\+String}
+\item 
+\mbox{\Hypertarget{structgl__context_adc31f1b8ee2589e8640ac55a61c94f57}\label{structgl__context_adc31f1b8ee2589e8640ac55a61c94f57}} 
+G\+Luint {\bfseries Error\+Debug\+Count}
+\item 
+\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structgl__context_aa2ce1b2155bf1b5458e8ac16fd5dae14}{Render\+Mode}
+\item 
+G\+Lbitfield \hyperlink{structgl__context_ad9bbbbb426be7fd670dfd9470da9a890}{New\+State}
+\item 
+G\+Lboolean \hyperlink{structgl__context_ac3cf60bd521580b20b714ceef68659cd}{Viewport\+Initialized}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__list__extensions}{gl\+\_\+list\+\_\+extensions} $\ast$ \hyperlink{structgl__context_aba2e4cfb56b1246b62a464dbd0987012}{List\+Ext}
+\item 
+\mbox{\Hypertarget{structgl__context_acf2a4c9c2a51dfe0cc4e3ab844608c2f}\label{structgl__context_acf2a4c9c2a51dfe0cc4e3ab844608c2f}} 
+G\+Lboolean {\bfseries Texture\+Format\+Supported} \mbox{[}M\+E\+S\+A\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+O\+U\+NT\mbox{]}
+\item 
+G\+Lboolean \hyperlink{structgl__context_a66e2340b482a6d5bf04f44c4a260a380}{mvp\+\_\+with\+\_\+dp4}
+\item 
+G\+Lboolean \hyperlink{structgl__context_afda14363ac59455b69f5f00c4f967054}{Raster\+Discard}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ A\+PI function pointer tables}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table $\ast$ \hyperlink{structgl__context_a78d173102caa0046b96f79499f1b7db7}{Save}
+\item 
+\hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table $\ast$ \hyperlink{structgl__context_a7bd1ab1d7228f547307df028ca5d6571}{Exec}
+\item 
+\hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table $\ast$ \hyperlink{structgl__context_a92b08ad6e43e67c060819301d498c7bc}{Current\+Dispatch}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ The various 4x4 matrix stacks}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__context_a491d962ffc903f3bac3b2f1006de511e}\label{structgl__context_a491d962ffc903f3bac3b2f1006de511e}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__matrix__stack}{gl\+\_\+matrix\+\_\+stack} {\bfseries Modelview\+Matrix\+Stack}
+\item 
+\mbox{\Hypertarget{structgl__context_a0218ec46d676a39332fbeebf1cdcec27}\label{structgl__context_a0218ec46d676a39332fbeebf1cdcec27}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__matrix__stack}{gl\+\_\+matrix\+\_\+stack} {\bfseries Projection\+Matrix\+Stack}
+\item 
+\mbox{\Hypertarget{structgl__context_aa0f306667da935d512e6c48fb219a820}\label{structgl__context_aa0f306667da935d512e6c48fb219a820}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__matrix__stack}{gl\+\_\+matrix\+\_\+stack} {\bfseries Texture\+Matrix\+Stack}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__matrix__stack}{gl\+\_\+matrix\+\_\+stack} $\ast$ \hyperlink{structgl__context_ab49feb8f976150ad03e8da17a98fe06c}{Current\+Stack}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Display lists}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__context_a2e364570cee504dd9924b1dd32f484ae}\label{structgl__context_a2e364570cee504dd9924b1dd32f484ae}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__dlist__state}{gl\+\_\+dlist\+\_\+state} {\bfseries List\+State}
+\item 
+G\+Lboolean \hyperlink{structgl__context_a492432e836190b7addd4771e0e9cfbfe}{Execute\+Flag}
+\item 
+G\+Lboolean \hyperlink{structgl__context_a61c2ececfb345ad84ed3e53b6e61fc91}{Compile\+Flag}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__extensions}{gl\+\_\+extensions} \hyperlink{structgl__context_a42c593ad4789f858c99817c631137507}{Extensions}
+\item 
+G\+Luint \hyperlink{structgl__context_aa41cddcbdb50f005d485615064e0ab2a}{Version\+Major}
+\item 
+\mbox{\Hypertarget{structgl__context_ae66d3dbeab0af709a5c4de0d11039f97}\label{structgl__context_ae66d3dbeab0af709a5c4de0d11039f97}} 
+G\+Luint {\bfseries Version\+Minor}
+\item 
+\mbox{\Hypertarget{structgl__context_a9f7f192bfa182237d736243e484a9ab6}\label{structgl__context_a9f7f192bfa182237d736243e484a9ab6}} 
+char $\ast$ {\bfseries Version\+String}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ State attribute stack (for gl\+Push/\+Pop\+Attrib)}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__context_acb5e9af9fa07547bfa08afdf1bc18e65}\label{structgl__context_acb5e9af9fa07547bfa08afdf1bc18e65}} 
+G\+Luint {\bfseries Attrib\+Stack\+Depth}
+\item 
+\mbox{\Hypertarget{structgl__context_af340afb7885ac134682183a277ccb4f6}\label{structgl__context_af340afb7885ac134682183a277ccb4f6}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__attrib__node}{gl\+\_\+attrib\+\_\+node} $\ast$ {\bfseries Attrib\+Stack} \mbox{[}M\+A\+X\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+S\+T\+A\+C\+K\+\_\+\+D\+E\+P\+TH\mbox{]}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Renderer attribute groups}\par
+{\em We define a struct for each attribute group to make pushing and popping attributes easy. Also it\textquotesingle{}s a good organization. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__accum__attrib}{gl\+\_\+accum\+\_\+attrib} \hyperlink{structgl__context_a6d3fc098c5d88af7112008dbc571d1ef}{Accum}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__colorbuffer__attrib}{gl\+\_\+colorbuffer\+\_\+attrib} \hyperlink{structgl__context_afab0d7d7836d09a81558ccf9a56e024d}{Color}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__current__attrib}{gl\+\_\+current\+\_\+attrib} \hyperlink{structgl__context_a7e896ebbbbd9fccb431e2b177e87229a}{Current}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__depthbuffer__attrib}{gl\+\_\+depthbuffer\+\_\+attrib} \hyperlink{structgl__context_a1e53e365f8c2e4b1677d37421fe3ab1e}{Depth}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__eval__attrib}{gl\+\_\+eval\+\_\+attrib} \hyperlink{structgl__context_a5f15d1a9ccf2fb8b9ee69a650917a0b2}{Eval}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__fog__attrib}{gl\+\_\+fog\+\_\+attrib} \hyperlink{structgl__context_af8949f54ba019939b7eebc1200aaec78}{Fog}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__hint__attrib}{gl\+\_\+hint\+\_\+attrib} \hyperlink{structgl__context_a7ac77ff692912136a0fb6703e1bb863c}{Hint}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__light__attrib}{gl\+\_\+light\+\_\+attrib} \hyperlink{structgl__context_a5f080158d18983d21aa97cc694bdaefb}{Light}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__line__attrib}{gl\+\_\+line\+\_\+attrib} \hyperlink{structgl__context_a650b57ea969135a891cccfed705c9685}{Line}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__list__attrib}{gl\+\_\+list\+\_\+attrib} \hyperlink{structgl__context_a57a14cd1572a6d337817ad2934bf1fac}{List}
+\item 
+\mbox{\Hypertarget{structgl__context_a61c5e0d659d8c8a9d86608e7d907c57f}\label{structgl__context_a61c5e0d659d8c8a9d86608e7d907c57f}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__multisample__attrib}{gl\+\_\+multisample\+\_\+attrib} {\bfseries Multisample}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixel__attrib}{gl\+\_\+pixel\+\_\+attrib} \hyperlink{structgl__context_ac718578bc209874cb788abf0c41980ac}{Pixel}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__point__attrib}{gl\+\_\+point\+\_\+attrib} \hyperlink{structgl__context_a79d8f2f5bb031562f2136478c55fc249}{Point}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__polygon__attrib}{gl\+\_\+polygon\+\_\+attrib} \hyperlink{structgl__context_a49528675fd9c10af309a499891392aa4}{Polygon}
+\item 
+G\+Luint \hyperlink{structgl__context_af3af2af1154e6b8670f8d5076e299095}{Polygon\+Stipple} \mbox{[}32\mbox{]}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__scissor__attrib}{gl\+\_\+scissor\+\_\+attrib} \hyperlink{structgl__context_a8062e89ef2d80346927dfdba1147f3a0}{Scissor}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__stencil__attrib}{gl\+\_\+stencil\+\_\+attrib} \hyperlink{structgl__context_a95a893f6eb0f3b7a23d89db3b0a75c41}{Stencil}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__attrib}{gl\+\_\+texture\+\_\+attrib} \hyperlink{structgl__context_aa3788eb53856dc78776e2ac6fb471804}{Texture}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__transform__attrib}{gl\+\_\+transform\+\_\+attrib} \hyperlink{structgl__context_a12d40ee4d766575386d7e25b03dd7db0}{Transform}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__viewport__attrib}{gl\+\_\+viewport\+\_\+attrib} \hyperlink{structgl__context_a54504b1734cbd90b1debe5c538b2ddeb}{Viewport}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Client attribute stack}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__context_a62bb2c6d35fa30046936ff2c7ad5ea1c}\label{structgl__context_a62bb2c6d35fa30046936ff2c7ad5ea1c}} 
+G\+Luint {\bfseries Client\+Attrib\+Stack\+Depth}
+\item 
+\mbox{\Hypertarget{structgl__context_ac2f2fe24baa26fb817bd98adb52d72bf}\label{structgl__context_ac2f2fe24baa26fb817bd98adb52d72bf}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__attrib__node}{gl\+\_\+attrib\+\_\+node} $\ast$ {\bfseries Client\+Attrib\+Stack} \mbox{[}M\+A\+X\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+S\+T\+A\+C\+K\+\_\+\+D\+E\+P\+TH\mbox{]}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Client attribute groups}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__array__attrib}{gl\+\_\+array\+\_\+attrib} \hyperlink{structgl__context_a7612fcdb4163ab4dca31937f78adb826}{Array}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} \hyperlink{structgl__context_a5ccb9b34c3177329f8bfc758161c60a2}{Pack}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} \hyperlink{structgl__context_aa7be6bf26321340cd2fcb3857c2756b6}{Unpack}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} \hyperlink{structgl__context_a63ee4ec4dd075917d69cf89339f82761}{Default\+Packing}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Other assorted state (not pushed/popped on attribute stack)}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__context_a16c718edec0b9b308b2738f357ca8dc2}\label{structgl__context_a16c718edec0b9b308b2738f357ca8dc2}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelmaps}{gl\+\_\+pixelmaps} {\bfseries Pixel\+Maps}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__evaluators}{gl\+\_\+evaluators} \hyperlink{structgl__context_a646761ec5a56ceff5d3815733fc99fc1}{Eval\+Map}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__feedback}{gl\+\_\+feedback} \hyperlink{structgl__context_a95b4746db6881392cca9b3580c0e21a9}{Feedback}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__selection}{gl\+\_\+selection} \hyperlink{structgl__context_aef69cddd9306ad3101ee239a5c9b76e1}{Select}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Derived state}\par
+\begin{DoxyCompactItemize}
+\item 
+G\+Lbitfield \hyperlink{structgl__context_a81c0ab96452f8d97b7dfe0171cef0d11}{\+\_\+\+Triangle\+Caps}
+\item 
+G\+Lbitfield \hyperlink{structgl__context_a864d2d1285eb6fc23f92f7f6cd14336d}{\+\_\+\+Image\+Transfer\+State}
+\item 
+\mbox{\Hypertarget{structgl__context_ad4c0b56e8374404b7b71f515af6b0a04}\label{structgl__context_ad4c0b56e8374404b7b71f515af6b0a04}} 
+G\+Lfloat {\bfseries \+\_\+\+Eye\+Z\+Dir} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{structgl__context_a336f9f00751cf7b5518de6f015337296}\label{structgl__context_a336f9f00751cf7b5518de6f015337296}} 
+G\+Lfloat {\bfseries \+\_\+\+Model\+View\+Inv\+Scale}
+\item 
+\mbox{\Hypertarget{structgl__context_aef9515ac7c38d0a000bac381222c09da}\label{structgl__context_aef9515ac7c38d0a000bac381222c09da}} 
+G\+Lboolean {\bfseries \+\_\+\+Need\+Eye\+Coords}
+\item 
+\mbox{\Hypertarget{structgl__context_a2a4c07d17607c7cc3a2b7af7d230783b}\label{structgl__context_a2a4c07d17607c7cc3a2b7af7d230783b}} 
+G\+Lboolean {\bfseries \+\_\+\+Force\+Eye\+Coords}
+\item 
+G\+Luint \hyperlink{structgl__context_ac8146a34f7767c6158be080769804ef1}{Texture\+State\+Timestamp}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__shine__tab}{gl\+\_\+shine\+\_\+tab} $\ast$ \hyperlink{structgl__context_a9e0baca009841a823b60862edbefc5ac}{\+\_\+\+Shine\+Table} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__shine__tab}{gl\+\_\+shine\+\_\+tab} $\ast$ \hyperlink{structgl__context_abe2ee6aaa885199a12ebdb6135e8045c}{\+\_\+\+Shine\+Tab\+List}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ For debugging/development only}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__context_a711e3884b8ac1710b98cbdf592f1e4c2}\label{structgl__context_a711e3884b8ac1710b98cbdf592f1e4c2}} 
+G\+Lboolean {\bfseries First\+Time\+Current}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Hooks for module contexts.}\par
+{\em These will eventually live in the driver or elsewhere. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__context_aa32345d15fa965f5750d8a5ef6b49867}\label{structgl__context_aa32345d15fa965f5750d8a5ef6b49867}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries swrast\+\_\+context}
+\item 
+\mbox{\Hypertarget{structgl__context_aa612fa4448c0abd6040cedbf73add049}\label{structgl__context_aa612fa4448c0abd6040cedbf73add049}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries swsetup\+\_\+context}
+\item 
+\mbox{\Hypertarget{structgl__context_a66f2ec34dd7131597e20504fcd7a2d3a}\label{structgl__context_a66f2ec34dd7131597e20504fcd7a2d3a}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries swtnl\+\_\+context}
+\item 
+\mbox{\Hypertarget{structgl__context_ade4d57c00f901b632bd770d273031e6f}\label{structgl__context_ade4d57c00f901b632bd770d273031e6f}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries swtnl\+\_\+im}
+\item 
+\mbox{\Hypertarget{structgl__context_aa8f7ae78aec40ec3d532b9ea1f7306c2}\label{structgl__context_aa8f7ae78aec40ec3d532b9ea1f7306c2}} 
+\hyperlink{interfacestruct}{struct} st\+\_\+context $\ast$ {\bfseries st}
+\item 
+\mbox{\Hypertarget{structgl__context_aba1bd701a6569061a6d9847f2186ae78}\label{structgl__context_aba1bd701a6569061a6d9847f2186ae78}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries aelt\+\_\+context}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Mesa rendering context.
+
+\hyperlink{namespace_this}{This} is the central context data structure for Mesa. Almost all Open\+GL state is contained in this structure. Think of this as a base class from which device drivers will derive sub classes.
+
+The struct \hyperlink{structgl__context}{gl\+\_\+context} typedef names this structure. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structgl__context_a864d2d1285eb6fc23f92f7f6cd14336d}\label{structgl__context_a864d2d1285eb6fc23f92f7f6cd14336d}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!\+\_\+\+Image\+Transfer\+State@{\+\_\+\+Image\+Transfer\+State}}
+\index{\+\_\+\+Image\+Transfer\+State@{\+\_\+\+Image\+Transfer\+State}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{\+\_\+\+Image\+Transfer\+State}{\_ImageTransferState}}
+{\footnotesize\ttfamily G\+Lbitfield gl\+\_\+context\+::\+\_\+\+Image\+Transfer\+State}
+
+bitwise-\/or of I\+M\+A\+G\+E\+\_\+$\ast$\+\_\+\+B\+IT flags \mbox{\Hypertarget{structgl__context_a1dfc9b6e93931d47c5767c016dd099f1}\label{structgl__context_a1dfc9b6e93931d47c5767c016dd099f1}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!\+\_\+\+Model\+Project\+Matrix@{\+\_\+\+Model\+Project\+Matrix}}
+\index{\+\_\+\+Model\+Project\+Matrix@{\+\_\+\+Model\+Project\+Matrix}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{\+\_\+\+Model\+Project\+Matrix}{\_ModelProjectMatrix}}
+{\footnotesize\ttfamily \hyperlink{struct_g_lmatrix}{G\+Lmatrix} gl\+\_\+context\+::\+\_\+\+Model\+Project\+Matrix}
+
+Combined modelview and projection matrix \mbox{\Hypertarget{structgl__context_a9e0baca009841a823b60862edbefc5ac}\label{structgl__context_a9e0baca009841a823b60862edbefc5ac}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!\+\_\+\+Shine\+Table@{\+\_\+\+Shine\+Table}}
+\index{\+\_\+\+Shine\+Table@{\+\_\+\+Shine\+Table}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{\+\_\+\+Shine\+Table}{\_ShineTable}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__shine__tab}{gl\+\_\+shine\+\_\+tab}$\ast$ gl\+\_\+context\+::\+\_\+\+Shine\+Table\mbox{[}2\mbox{]}}
+
+Active shine tables \mbox{\Hypertarget{structgl__context_abe2ee6aaa885199a12ebdb6135e8045c}\label{structgl__context_abe2ee6aaa885199a12ebdb6135e8045c}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!\+\_\+\+Shine\+Tab\+List@{\+\_\+\+Shine\+Tab\+List}}
+\index{\+\_\+\+Shine\+Tab\+List@{\+\_\+\+Shine\+Tab\+List}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{\+\_\+\+Shine\+Tab\+List}{\_ShineTabList}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__shine__tab}{gl\+\_\+shine\+\_\+tab}$\ast$ gl\+\_\+context\+::\+\_\+\+Shine\+Tab\+List}
+
+M\+RU list of inactive shine tables \mbox{\Hypertarget{structgl__context_a81c0ab96452f8d97b7dfe0171cef0d11}\label{structgl__context_a81c0ab96452f8d97b7dfe0171cef0d11}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!\+\_\+\+Triangle\+Caps@{\+\_\+\+Triangle\+Caps}}
+\index{\+\_\+\+Triangle\+Caps@{\+\_\+\+Triangle\+Caps}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{\+\_\+\+Triangle\+Caps}{\_TriangleCaps}}
+{\footnotesize\ttfamily G\+Lbitfield gl\+\_\+context\+::\+\_\+\+Triangle\+Caps}
+
+Bitwise-\/or of D\+D\+\_\+$\ast$ flags. Note that this bitfield may be used before state validation so they need to always be current. \mbox{\Hypertarget{structgl__context_a6d3fc098c5d88af7112008dbc571d1ef}\label{structgl__context_a6d3fc098c5d88af7112008dbc571d1ef}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Accum@{Accum}}
+\index{Accum@{Accum}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Accum}{Accum}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__accum__attrib}{gl\+\_\+accum\+\_\+attrib} gl\+\_\+context\+::\+Accum}
+
+Accum buffer attributes \mbox{\Hypertarget{structgl__context_a7612fcdb4163ab4dca31937f78adb826}\label{structgl__context_a7612fcdb4163ab4dca31937f78adb826}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Array@{Array}}
+\index{Array@{Array}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Array}{Array}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__array__attrib}{gl\+\_\+array\+\_\+attrib} gl\+\_\+context\+::\+Array}
+
+Vertex arrays \mbox{\Hypertarget{structgl__context_afab0d7d7836d09a81558ccf9a56e024d}\label{structgl__context_afab0d7d7836d09a81558ccf9a56e024d}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Color@{Color}}
+\index{Color@{Color}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__colorbuffer__attrib}{gl\+\_\+colorbuffer\+\_\+attrib} gl\+\_\+context\+::\+Color}
+
+\hyperlink{struct_color}{Color} buffer attributes \mbox{\Hypertarget{structgl__context_a61c2ececfb345ad84ed3e53b6e61fc91}\label{structgl__context_a61c2ececfb345ad84ed3e53b6e61fc91}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Compile\+Flag@{Compile\+Flag}}
+\index{Compile\+Flag@{Compile\+Flag}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Compile\+Flag}{CompileFlag}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+context\+::\+Compile\+Flag}
+
+Compile GL commands into display list? \mbox{\Hypertarget{structgl__context_a225ea8c45facc3040c10c9460e031c04}\label{structgl__context_a225ea8c45facc3040c10c9460e031c04}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Const@{Const}}
+\index{Const@{Const}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Const}{Const}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__constants}{gl\+\_\+constants} gl\+\_\+context\+::\+Const}
+
+Core/\+Driver constants \mbox{\Hypertarget{structgl__context_a7e896ebbbbd9fccb431e2b177e87229a}\label{structgl__context_a7e896ebbbbd9fccb431e2b177e87229a}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Current@{Current}}
+\index{Current@{Current}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Current}{Current}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__current__attrib}{gl\+\_\+current\+\_\+attrib} gl\+\_\+context\+::\+Current}
+
+Current attributes \mbox{\Hypertarget{structgl__context_a92b08ad6e43e67c060819301d498c7bc}\label{structgl__context_a92b08ad6e43e67c060819301d498c7bc}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Current\+Dispatch@{Current\+Dispatch}}
+\index{Current\+Dispatch@{Current\+Dispatch}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Current\+Dispatch}{CurrentDispatch}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table$\ast$ gl\+\_\+context\+::\+Current\+Dispatch}
+
+== Save or Exec !! \mbox{\Hypertarget{structgl__context_ab49feb8f976150ad03e8da17a98fe06c}\label{structgl__context_ab49feb8f976150ad03e8da17a98fe06c}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Current\+Stack@{Current\+Stack}}
+\index{Current\+Stack@{Current\+Stack}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Current\+Stack}{CurrentStack}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__matrix__stack}{gl\+\_\+matrix\+\_\+stack}$\ast$ gl\+\_\+context\+::\+Current\+Stack}
+
+Points to one of the above stacks \mbox{\Hypertarget{structgl__context_a63ee4ec4dd075917d69cf89339f82761}\label{structgl__context_a63ee4ec4dd075917d69cf89339f82761}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Default\+Packing@{Default\+Packing}}
+\index{Default\+Packing@{Default\+Packing}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Default\+Packing}{DefaultPacking}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} gl\+\_\+context\+::\+Default\+Packing}
+
+Default params \mbox{\Hypertarget{structgl__context_a1e53e365f8c2e4b1677d37421fe3ab1e}\label{structgl__context_a1e53e365f8c2e4b1677d37421fe3ab1e}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Depth@{Depth}}
+\index{Depth@{Depth}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Depth}{Depth}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__depthbuffer__attrib}{gl\+\_\+depthbuffer\+\_\+attrib} gl\+\_\+context\+::\+Depth}
+
+Depth buffer attributes \mbox{\Hypertarget{structgl__context_a69a6afef6a63b78db5e101c8bc0de3c0}\label{structgl__context_a69a6afef6a63b78db5e101c8bc0de3c0}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Draw\+Buffer@{Draw\+Buffer}}
+\index{Draw\+Buffer@{Draw\+Buffer}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Draw\+Buffer}{DrawBuffer}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer}$\ast$ gl\+\_\+context\+::\+Draw\+Buffer}
+
+buffer for writing \mbox{\Hypertarget{structgl__context_ab3a40dffd6176c154014e6ed457da31e}\label{structgl__context_ab3a40dffd6176c154014e6ed457da31e}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Driver@{Driver}}
+\index{Driver@{Driver}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Driver}{Driver}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} gl\+\_\+context\+::\+Driver}
+
+Device driver function pointer table \mbox{\Hypertarget{structgl__context_a8c538dbb407e8bf2f28b4cafad05bdee}\label{structgl__context_a8c538dbb407e8bf2f28b4cafad05bdee}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Driver\+Ctx@{Driver\+Ctx}}
+\index{Driver\+Ctx@{Driver\+Ctx}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Driver\+Ctx}{DriverCtx}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ gl\+\_\+context\+::\+Driver\+Ctx}
+
+Points to device driver context/state \mbox{\Hypertarget{structgl__context_a82c1612f3a2e94b3a49a844838bcb917}\label{structgl__context_a82c1612f3a2e94b3a49a844838bcb917}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Error\+Debug\+Fmt\+String@{Error\+Debug\+Fmt\+String}}
+\index{Error\+Debug\+Fmt\+String@{Error\+Debug\+Fmt\+String}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Error\+Debug\+Fmt\+String}{ErrorDebugFmtString}}
+{\footnotesize\ttfamily const char$\ast$ gl\+\_\+context\+::\+Error\+Debug\+Fmt\+String}
+
+Recognize and silence repeated error debug messages in buggy apps. \mbox{\Hypertarget{structgl__context_a49e26ac67855e06f51644dd62c47fb50}\label{structgl__context_a49e26ac67855e06f51644dd62c47fb50}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Error\+Value@{Error\+Value}}
+\index{Error\+Value@{Error\+Value}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Error\+Value}{ErrorValue}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{G\+Lenum} gl\+\_\+context\+::\+Error\+Value}
+
+Last error code \mbox{\Hypertarget{structgl__context_a5f15d1a9ccf2fb8b9ee69a650917a0b2}\label{structgl__context_a5f15d1a9ccf2fb8b9ee69a650917a0b2}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Eval@{Eval}}
+\index{Eval@{Eval}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Eval}{Eval}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__eval__attrib}{gl\+\_\+eval\+\_\+attrib} gl\+\_\+context\+::\+Eval}
+
+Eval attributes \mbox{\Hypertarget{structgl__context_a646761ec5a56ceff5d3815733fc99fc1}\label{structgl__context_a646761ec5a56ceff5d3815733fc99fc1}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Eval\+Map@{Eval\+Map}}
+\index{Eval\+Map@{Eval\+Map}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Eval\+Map}{EvalMap}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__evaluators}{gl\+\_\+evaluators} gl\+\_\+context\+::\+Eval\+Map}
+
+All evaluators \mbox{\Hypertarget{structgl__context_a7bd1ab1d7228f547307df028ca5d6571}\label{structgl__context_a7bd1ab1d7228f547307df028ca5d6571}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Exec@{Exec}}
+\index{Exec@{Exec}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Exec}{Exec}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table$\ast$ gl\+\_\+context\+::\+Exec}
+
+Execute functions \mbox{\Hypertarget{structgl__context_a492432e836190b7addd4771e0e9cfbfe}\label{structgl__context_a492432e836190b7addd4771e0e9cfbfe}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Execute\+Flag@{Execute\+Flag}}
+\index{Execute\+Flag@{Execute\+Flag}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Execute\+Flag}{ExecuteFlag}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+context\+::\+Execute\+Flag}
+
+Execute GL commands? \mbox{\Hypertarget{structgl__context_a42c593ad4789f858c99817c631137507}\label{structgl__context_a42c593ad4789f858c99817c631137507}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Extensions@{Extensions}}
+\index{Extensions@{Extensions}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Extensions}{Extensions}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__extensions}{gl\+\_\+extensions} gl\+\_\+context\+::\+Extensions}
+
+Extension information \mbox{\Hypertarget{structgl__context_a95b4746db6881392cca9b3580c0e21a9}\label{structgl__context_a95b4746db6881392cca9b3580c0e21a9}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Feedback@{Feedback}}
+\index{Feedback@{Feedback}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Feedback}{Feedback}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__feedback}{gl\+\_\+feedback} gl\+\_\+context\+::\+Feedback}
+
+Feedback \mbox{\Hypertarget{structgl__context_af8949f54ba019939b7eebc1200aaec78}\label{structgl__context_af8949f54ba019939b7eebc1200aaec78}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Fog@{Fog}}
+\index{Fog@{Fog}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Fog}{Fog}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__fog__attrib}{gl\+\_\+fog\+\_\+attrib} gl\+\_\+context\+::\+Fog}
+
+Fog attributes \mbox{\Hypertarget{structgl__context_a7ac77ff692912136a0fb6703e1bb863c}\label{structgl__context_a7ac77ff692912136a0fb6703e1bb863c}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Hint@{Hint}}
+\index{Hint@{Hint}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Hint}{Hint}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__hint__attrib}{gl\+\_\+hint\+\_\+attrib} gl\+\_\+context\+::\+Hint}
+
+Hint attributes \mbox{\Hypertarget{structgl__context_a5f080158d18983d21aa97cc694bdaefb}\label{structgl__context_a5f080158d18983d21aa97cc694bdaefb}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Light@{Light}}
+\index{Light@{Light}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Light}{Light}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__light__attrib}{gl\+\_\+light\+\_\+attrib} gl\+\_\+context\+::\+Light}
+
+Light attributes \mbox{\Hypertarget{structgl__context_a650b57ea969135a891cccfed705c9685}\label{structgl__context_a650b57ea969135a891cccfed705c9685}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Line@{Line}}
+\index{Line@{Line}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Line}{Line}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__line__attrib}{gl\+\_\+line\+\_\+attrib} gl\+\_\+context\+::\+Line}
+
+\hyperlink{struct_line}{Line} attributes \mbox{\Hypertarget{structgl__context_a57a14cd1572a6d337817ad2934bf1fac}\label{structgl__context_a57a14cd1572a6d337817ad2934bf1fac}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!List@{List}}
+\index{List@{List}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{List}{List}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__list__attrib}{gl\+\_\+list\+\_\+attrib} gl\+\_\+context\+::\+List}
+
+List attributes \mbox{\Hypertarget{structgl__context_aba2e4cfb56b1246b62a464dbd0987012}\label{structgl__context_aba2e4cfb56b1246b62a464dbd0987012}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!List\+Ext@{List\+Ext}}
+\index{List\+Ext@{List\+Ext}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{List\+Ext}{ListExt}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__list__extensions}{gl\+\_\+list\+\_\+extensions}$\ast$ gl\+\_\+context\+::\+List\+Ext}
+
+driver dlist extensions \mbox{\Hypertarget{structgl__context_a2b873d30b560c7e6551cf1c171504ec0}\label{structgl__context_a2b873d30b560c7e6551cf1c171504ec0}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Meta@{Meta}}
+\index{Meta@{Meta}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Meta}{Meta}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__meta__state}{gl\+\_\+meta\+\_\+state}$\ast$ gl\+\_\+context\+::\+Meta}
+
+for \char`\"{}meta\char`\"{} operations \mbox{\Hypertarget{structgl__context_a66e2340b482a6d5bf04f44c4a260a380}\label{structgl__context_a66e2340b482a6d5bf04f44c4a260a380}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!mvp\+\_\+with\+\_\+dp4@{mvp\+\_\+with\+\_\+dp4}}
+\index{mvp\+\_\+with\+\_\+dp4@{mvp\+\_\+with\+\_\+dp4}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{mvp\+\_\+with\+\_\+dp4}{mvp\_with\_dp4}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+context\+::mvp\+\_\+with\+\_\+dp4}
+
+Use dp4 (rather than mul/mad) instructions for position transformation? \mbox{\Hypertarget{structgl__context_ad9bbbbb426be7fd670dfd9470da9a890}\label{structgl__context_ad9bbbbb426be7fd670dfd9470da9a890}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!New\+State@{New\+State}}
+\index{New\+State@{New\+State}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{New\+State}{NewState}}
+{\footnotesize\ttfamily G\+Lbitfield gl\+\_\+context\+::\+New\+State}
+
+bitwise-\/or of {\itshape N\+EW}$\ast$ flags \mbox{\Hypertarget{structgl__context_a5ccb9b34c3177329f8bfc758161c60a2}\label{structgl__context_a5ccb9b34c3177329f8bfc758161c60a2}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Pack@{Pack}}
+\index{Pack@{Pack}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Pack}{Pack}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} gl\+\_\+context\+::\+Pack}
+
+Pixel packing \mbox{\Hypertarget{structgl__context_ac718578bc209874cb788abf0c41980ac}\label{structgl__context_ac718578bc209874cb788abf0c41980ac}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Pixel@{Pixel}}
+\index{Pixel@{Pixel}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Pixel}{Pixel}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixel__attrib}{gl\+\_\+pixel\+\_\+attrib} gl\+\_\+context\+::\+Pixel}
+
+Pixel attributes \mbox{\Hypertarget{structgl__context_a79d8f2f5bb031562f2136478c55fc249}\label{structgl__context_a79d8f2f5bb031562f2136478c55fc249}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Point@{Point}}
+\index{Point@{Point}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Point}{Point}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__point__attrib}{gl\+\_\+point\+\_\+attrib} gl\+\_\+context\+::\+Point}
+
+\hyperlink{struct_point}{Point} attributes \mbox{\Hypertarget{structgl__context_a49528675fd9c10af309a499891392aa4}\label{structgl__context_a49528675fd9c10af309a499891392aa4}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Polygon}{Polygon}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__polygon__attrib}{gl\+\_\+polygon\+\_\+attrib} gl\+\_\+context\+::\+Polygon}
+
+Polygon attributes \mbox{\Hypertarget{structgl__context_af3af2af1154e6b8670f8d5076e299095}\label{structgl__context_af3af2af1154e6b8670f8d5076e299095}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Polygon\+Stipple@{Polygon\+Stipple}}
+\index{Polygon\+Stipple@{Polygon\+Stipple}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Polygon\+Stipple}{PolygonStipple}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+context\+::\+Polygon\+Stipple\mbox{[}32\mbox{]}}
+
+Polygon stipple \mbox{\Hypertarget{structgl__context_afda14363ac59455b69f5f00c4f967054}\label{structgl__context_afda14363ac59455b69f5f00c4f967054}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Raster\+Discard@{Raster\+Discard}}
+\index{Raster\+Discard@{Raster\+Discard}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Raster\+Discard}{RasterDiscard}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+context\+::\+Raster\+Discard}
+
+G\+L\+\_\+\+R\+A\+S\+T\+E\+R\+I\+Z\+E\+R\+\_\+\+D\+I\+S\+C\+A\+RD \mbox{\Hypertarget{structgl__context_a8708d397970a3e8c2cc77448d018f7c8}\label{structgl__context_a8708d397970a3e8c2cc77448d018f7c8}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Read\+Buffer@{Read\+Buffer}}
+\index{Read\+Buffer@{Read\+Buffer}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Read\+Buffer}{ReadBuffer}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer}$\ast$ gl\+\_\+context\+::\+Read\+Buffer}
+
+buffer for reading \mbox{\Hypertarget{structgl__context_aa2ce1b2155bf1b5458e8ac16fd5dae14}\label{structgl__context_aa2ce1b2155bf1b5458e8ac16fd5dae14}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Render\+Mode@{Render\+Mode}}
+\index{Render\+Mode@{Render\+Mode}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Render\+Mode}{RenderMode}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{G\+Lenum} gl\+\_\+context\+::\+Render\+Mode}
+
+either G\+L\+\_\+\+R\+E\+N\+D\+ER, G\+L\+\_\+\+S\+E\+L\+E\+CT, G\+L\+\_\+\+F\+E\+E\+D\+B\+A\+CK \mbox{\Hypertarget{structgl__context_a78d173102caa0046b96f79499f1b7db7}\label{structgl__context_a78d173102caa0046b96f79499f1b7db7}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Save@{Save}}
+\index{Save@{Save}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Save}{Save}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table$\ast$ gl\+\_\+context\+::\+Save}
+
+Display list save functions \mbox{\Hypertarget{structgl__context_a8062e89ef2d80346927dfdba1147f3a0}\label{structgl__context_a8062e89ef2d80346927dfdba1147f3a0}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Scissor@{Scissor}}
+\index{Scissor@{Scissor}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Scissor}{Scissor}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__scissor__attrib}{gl\+\_\+scissor\+\_\+attrib} gl\+\_\+context\+::\+Scissor}
+
+Scissor attributes \mbox{\Hypertarget{structgl__context_aef69cddd9306ad3101ee239a5c9b76e1}\label{structgl__context_aef69cddd9306ad3101ee239a5c9b76e1}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Select@{Select}}
+\index{Select@{Select}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Select}{Select}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__selection}{gl\+\_\+selection} gl\+\_\+context\+::\+Select}
+
+Selection \mbox{\Hypertarget{structgl__context_a902136f9a479ad001efa6a095eed7ebf}\label{structgl__context_a902136f9a479ad001efa6a095eed7ebf}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Shared@{Shared}}
+\index{Shared@{Shared}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Shared}{Shared}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__shared__state}{gl\+\_\+shared\+\_\+state}$\ast$ gl\+\_\+context\+::\+Shared}
+
+\hyperlink{struct_state}{State} possibly shared with other contexts in the address space \mbox{\Hypertarget{structgl__context_a95a893f6eb0f3b7a23d89db3b0a75c41}\label{structgl__context_a95a893f6eb0f3b7a23d89db3b0a75c41}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Stencil@{Stencil}}
+\index{Stencil@{Stencil}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Stencil}{Stencil}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__stencil__attrib}{gl\+\_\+stencil\+\_\+attrib} gl\+\_\+context\+::\+Stencil}
+
+Stencil buffer attributes \mbox{\Hypertarget{structgl__context_aa3788eb53856dc78776e2ac6fb471804}\label{structgl__context_aa3788eb53856dc78776e2ac6fb471804}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Texture@{Texture}}
+\index{Texture@{Texture}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Texture}{Texture}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__attrib}{gl\+\_\+texture\+\_\+attrib} gl\+\_\+context\+::\+Texture}
+
+Texture attributes \mbox{\Hypertarget{structgl__context_ac8146a34f7767c6158be080769804ef1}\label{structgl__context_ac8146a34f7767c6158be080769804ef1}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Texture\+State\+Timestamp@{Texture\+State\+Timestamp}}
+\index{Texture\+State\+Timestamp@{Texture\+State\+Timestamp}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Texture\+State\+Timestamp}{TextureStateTimestamp}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+context\+::\+Texture\+State\+Timestamp}
+
+detect changes to shared state \mbox{\Hypertarget{structgl__context_a12d40ee4d766575386d7e25b03dd7db0}\label{structgl__context_a12d40ee4d766575386d7e25b03dd7db0}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Transform@{Transform}}
+\index{Transform@{Transform}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Transform}{Transform}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__transform__attrib}{gl\+\_\+transform\+\_\+attrib} gl\+\_\+context\+::\+Transform}
+
+Transformation attributes \mbox{\Hypertarget{structgl__context_aa7be6bf26321340cd2fcb3857c2756b6}\label{structgl__context_aa7be6bf26321340cd2fcb3857c2756b6}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Unpack@{Unpack}}
+\index{Unpack@{Unpack}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Unpack}{Unpack}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} gl\+\_\+context\+::\+Unpack}
+
+Pixel unpacking \mbox{\Hypertarget{structgl__context_aa41cddcbdb50f005d485615064e0ab2a}\label{structgl__context_aa41cddcbdb50f005d485615064e0ab2a}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Version\+Major@{Version\+Major}}
+\index{Version\+Major@{Version\+Major}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Version\+Major}{VersionMajor}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+context\+::\+Version\+Major}
+
+Version info \mbox{\Hypertarget{structgl__context_a54504b1734cbd90b1debe5c538b2ddeb}\label{structgl__context_a54504b1734cbd90b1debe5c538b2ddeb}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Viewport@{Viewport}}
+\index{Viewport@{Viewport}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Viewport}{Viewport}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__viewport__attrib}{gl\+\_\+viewport\+\_\+attrib} gl\+\_\+context\+::\+Viewport}
+
+Viewport attributes \mbox{\Hypertarget{structgl__context_ac3cf60bd521580b20b714ceef68659cd}\label{structgl__context_ac3cf60bd521580b20b714ceef68659cd}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Viewport\+Initialized@{Viewport\+Initialized}}
+\index{Viewport\+Initialized@{Viewport\+Initialized}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Viewport\+Initialized}{ViewportInitialized}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+context\+::\+Viewport\+Initialized}
+
+has viewport size been initialized? \mbox{\Hypertarget{structgl__context_ae05433139d6c0d0bf3d0800d49e1f27c}\label{structgl__context_ae05433139d6c0d0bf3d0800d49e1f27c}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Win\+Sys\+Draw\+Buffer@{Win\+Sys\+Draw\+Buffer}}
+\index{Win\+Sys\+Draw\+Buffer@{Win\+Sys\+Draw\+Buffer}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Win\+Sys\+Draw\+Buffer}{WinSysDrawBuffer}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer}$\ast$ gl\+\_\+context\+::\+Win\+Sys\+Draw\+Buffer}
+
+set with Make\+Current \mbox{\Hypertarget{structgl__context_a899c88a95f3c980b3132e88afb812e42}\label{structgl__context_a899c88a95f3c980b3132e88afb812e42}} 
+\index{gl\+\_\+context@{gl\+\_\+context}!Win\+Sys\+Read\+Buffer@{Win\+Sys\+Read\+Buffer}}
+\index{Win\+Sys\+Read\+Buffer@{Win\+Sys\+Read\+Buffer}!gl\+\_\+context@{gl\+\_\+context}}
+\subsubsection{\texorpdfstring{Win\+Sys\+Read\+Buffer}{WinSysReadBuffer}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer}$\ast$ gl\+\_\+context\+::\+Win\+Sys\+Read\+Buffer}
+
+set with Make\+Current 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{mtypes_8h}{mtypes.\+h}\end{DoxyCompactItemize}

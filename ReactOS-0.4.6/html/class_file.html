@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: File类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_file-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">File类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae536e1722532ad6411e9e8471fa70210"><td class="memItemLeft" align="right" valign="top"><a id="ae536e1722532ad6411e9e8471fa70210"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>File</b> (const char *filename, const char *<a class="el" href="interfacevoid.html">mode</a>)</td></tr>
+<tr class="separator:ae536e1722532ad6411e9e8471fa70210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6376a46cc6c1ff56dbacf74f80b428c"><td class="memItemLeft" align="right" valign="top"><a id="ab6376a46cc6c1ff56dbacf74f80b428c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>open</b> (const char *filename, const char *<a class="el" href="interfacevoid.html">mode</a>)</td></tr>
+<tr class="separator:ab6376a46cc6c1ff56dbacf74f80b428c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445ea4d6513d8c840045902bef0a9383"><td class="memItemLeft" align="right" valign="top"><a id="a445ea4d6513d8c840045902bef0a9383"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>seek</b> (long offset)</td></tr>
+<tr class="separator:a445ea4d6513d8c840045902bef0a9383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48225624b579be1ad48ef0ba1509114d"><td class="memItemLeft" align="right" valign="top"><a id="a48225624b579be1ad48ef0ba1509114d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr class="separator:a48225624b579be1ad48ef0ba1509114d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6905dc6552ffb515787f08c209ff69"><td class="memItemLeft" align="right" valign="top"><a id="aba6905dc6552ffb515787f08c209ff69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (int c)</td></tr>
+<tr class="separator:aba6905dc6552ffb515787f08c209ff69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c6f485e2d6df8cf6d1dc7ea7ed7679"><td class="memItemLeft" align="right" valign="top"><a id="a19c6f485e2d6df8cf6d1dc7ea7ed7679"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getline</b> (bool strip_crlf=false)</td></tr>
+<tr class="separator:a19c6f485e2d6df8cf6d1dc7ea7ed7679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d305a33602c3aa0bffa7a0150f828fe"><td class="memItemLeft" align="right" valign="top"><a id="a0d305a33602c3aa0bffa7a0150f828fe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>next_line</b> (std::string &amp;<a class="el" href="structline.html">line</a>, bool strip_crlf)</td></tr>
+<tr class="separator:a0d305a33602c3aa0bffa7a0150f828fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dde74765871f111319ec9bd8282f4c2"><td class="memItemLeft" align="right" valign="top"><a id="a9dde74765871f111319ec9bd8282f4c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enum_lines</b> (bool(*callback)(const std::string &amp;<a class="el" href="structline.html">line</a>, int line_number, long lparam), long lparam, bool strip_crlf)</td></tr>
+<tr class="separator:a9dde74765871f111319ec9bd8282f4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4f49c8947ea67aa5343640af8255c1"><td class="memItemLeft" align="right" valign="top"><a id="a9b4f49c8947ea67aa5343640af8255c1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (<a class="el" href="interfacevoid.html">void</a> *data, unsigned len)</td></tr>
+<tr class="separator:a9b4f49c8947ea67aa5343640af8255c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19da8736a34d975847d4cda2dcdd0d44"><td class="memItemLeft" align="right" valign="top"><a id="a19da8736a34d975847d4cda2dcdd0d44"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (const <a class="el" href="interfacevoid.html">void</a> *data, unsigned len)</td></tr>
+<tr class="separator:a19da8736a34d975847d4cda2dcdd0d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6d7975f01bbb50b7d247541a90398e"><td class="memItemLeft" align="right" valign="top"><a id="a7b6d7975f01bbb50b7d247541a90398e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> ()</td></tr>
+<tr class="separator:a7b6d7975f01bbb50b7d247541a90398e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cbce54d6c3b8c2f417b51f6b3f488c"><td class="memItemLeft" align="right" valign="top"><a id="a83cbce54d6c3b8c2f417b51f6b3f488c"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
+<tr class="separator:a83cbce54d6c3b8c2f417b51f6b3f488c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada85e83c41cc0e75e61aced720580a12"><td class="memItemLeft" align="right" valign="top"><a id="ada85e83c41cc0e75e61aced720580a12"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isopened</b> ()</td></tr>
+<tr class="separator:ada85e83c41cc0e75e61aced720580a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad839a71e58eadc67ea20fa7595aa76"><td class="memItemLeft" align="right" valign="top"><a id="a7ad839a71e58eadc67ea20fa7595aa76"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eof</b> ()</td></tr>
+<tr class="separator:a7ad839a71e58eadc67ea20fa7595aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bce9d7eeb9b7ca34b8c5174f6e735d"><td class="memItemLeft" align="right" valign="top"><a id="a82bce9d7eeb9b7ca34b8c5174f6e735d"></a>
+<a class="el" href="struct__iobuf.html">FILE</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
+<tr class="separator:a82bce9d7eeb9b7ca34b8c5174f6e735d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a0e70899577b4e105a2a9fd7ae0219c21"><td class="memItemLeft" align="right" valign="top"><a id="a0e70899577b4e105a2a9fd7ae0219c21"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadIntoString</b> (std::string &amp;s, const char *filename)</td></tr>
+<tr class="separator:a0e70899577b4e105a2a9fd7ae0219c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1ea11072f97abe5c4c021c2bdd3ef1"><td class="memItemLeft" align="right" valign="top"><a id="a0e1ea11072f97abe5c4c021c2bdd3ef1"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFromString</b> (const char *filename, const std::string &amp;s, bool binary)</td></tr>
+<tr class="separator:a0e1ea11072f97abe5c4c021c2bdd3ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/sysutils/utils/sdkparse/<a class="el" href="modules_2rosapps_2applications_2sysutils_2utils_2sdkparse_2_file_8h_source.html">File.h</a></li>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/sysutils/utils/sdkparse/File.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

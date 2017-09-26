@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: mpg123 low level I/O</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">mpg123 low level I/O</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gaaae8cfb0de3a2bc1dc97d916aa519772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__lowio.html#gaaae8cfb0de3a2bc1dc97d916aa519772">mpg123_replace_buffer</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh, unsigned char *data, size_t size)</td></tr>
+<tr class="separator:gaaae8cfb0de3a2bc1dc97d916aa519772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00c0874bdad4a3f6366a035694f298d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__lowio.html#ga00c0874bdad4a3f6366a035694f298d6">mpg123_outblock</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh)</td></tr>
+<tr class="separator:ga00c0874bdad4a3f6366a035694f298d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00a65b6bc6d3e56e3c055943c30894ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__lowio.html#ga00a65b6bc6d3e56e3c055943c30894ab">mpg123_replace_reader</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh, ssize_t(*r_read)(int, <a class="el" href="interfacevoid.html">void</a> *, size_t), off_t(*r_lseek)(int, off_t, int))</td></tr>
+<tr class="separator:ga00a65b6bc6d3e56e3c055943c30894ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61a125c56f2aab9590a4b1a29194dc10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__lowio.html#ga61a125c56f2aab9590a4b1a29194dc10">mpg123_replace_reader_handle</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh, ssize_t(*r_read)(<a class="el" href="interfacevoid.html">void</a> *, <a class="el" href="interfacevoid.html">void</a> *, size_t), off_t(*r_lseek)(<a class="el" href="interfacevoid.html">void</a> *, off_t, int), <a class="el" href="interfacevoid.html">void</a>(*cleanup)(<a class="el" href="interfacevoid.html">void</a> *))</td></tr>
+<tr class="separator:ga61a125c56f2aab9590a4b1a29194dc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>You may want to do tricky stuff with I/O that does not work with mpg123's default file access or you want to make it decode into your own pocket... </p>
+<h2 class="groupheader">函数说明</h2>
+<a id="ga00c0874bdad4a3f6366a035694f298d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00c0874bdad4a3f6366a035694f298d6">&#9670;&nbsp;</a></span>mpg123_outblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> size_t mpg123_outblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The max size of one frame's decoded output with current settings. Use that to determine an appropriate minimum buffer size for decoding one frame. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mh</td><td>handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>maximum decoded data size in bytes </dd></dl>
+
+</div>
+</div>
+<a id="gaaae8cfb0de3a2bc1dc97d916aa519772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaae8cfb0de3a2bc1dc97d916aa519772">&#9670;&nbsp;</a></span>mpg123_replace_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_replace_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replace default internal buffer with user-supplied buffer. Instead of working on it's own private buffer, mpg123 will directly use the one you provide for storing decoded audio. Note that the required buffer size could be bigger than expected from output encoding if libmpg123 has to convert from primary decoder output (p.ex. 32 bit storage for 24 bit output). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mh</td><td>handle </td></tr>
+    <tr><td class="paramname">data</td><td>pointer to user buffer </td></tr>
+    <tr><td class="paramname">size</td><td>of buffer in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MPG123_OK on success </dd></dl>
+
+</div>
+</div>
+<a id="ga00a65b6bc6d3e56e3c055943c30894ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00a65b6bc6d3e56e3c055943c30894ab">&#9670;&nbsp;</a></span>mpg123_replace_reader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_replace_reader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t(*)(int, <a class="el" href="interfacevoid.html">void</a> *, size_t)&#160;</td>
+          <td class="paramname"><em>r_read</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">off_t(*)(int, off_t, int)&#160;</td>
+          <td class="paramname"><em>r_lseek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replace low-level stream access functions; read and lseek as known in POSIX. You can use this to make any fancy file opening/closing yourself, using <a class="el" href="group__mpg123__input.html#ga969c0cbe49b3831e18ad9e9e45c9d83e">mpg123_open_fd()</a> to set the file descriptor for your read/lseek (doesn't need to be a "real" file descriptor...). Setting a function to NULL means that the default internal read is used (active from next mpg123_open call on). Note: As it would be troublesome to mess with this while having a file open, this implies <a class="el" href="group__mpg123__input.html#ga156eb0774196db868485662dc31621af">mpg123_close()</a>. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mh</td><td>handle </td></tr>
+    <tr><td class="paramname">r_read</td><td>callback for reading (behaviour like POSIX read) </td></tr>
+    <tr><td class="paramname">r_lseek</td><td>callback for seeking (like POSIX lseek) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MPG123_OK on success </dd></dl>
+
+</div>
+</div>
+<a id="ga61a125c56f2aab9590a4b1a29194dc10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61a125c56f2aab9590a4b1a29194dc10">&#9670;&nbsp;</a></span>mpg123_replace_reader_handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_replace_reader_handle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t(*)(<a class="el" href="interfacevoid.html">void</a> *, <a class="el" href="interfacevoid.html">void</a> *, size_t)&#160;</td>
+          <td class="paramname"><em>r_read</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">off_t(*)(<a class="el" href="interfacevoid.html">void</a> *, off_t, int)&#160;</td>
+          <td class="paramname"><em>r_lseek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>(*)(<a class="el" href="interfacevoid.html">void</a> *)&#160;</td>
+          <td class="paramname"><em>cleanup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replace I/O functions with your own ones operating on some kind of handle instead of integer descriptors. The handle is a void pointer, so you can pass any data you want... <a class="el" href="group__mpg123__input.html#gaadda450ea307f88589cb77ffda0754ab">mpg123_open_handle()</a> is the call you make to use the I/O defined here. There is no fallback to internal read/seek here. Note: As it would be troublesome to mess with this while having a file open, this <a class="el" href="group__mpg123__input.html#ga156eb0774196db868485662dc31621af">mpg123_close()</a> is implied here. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mh</td><td>handle </td></tr>
+    <tr><td class="paramname">r_read</td><td>callback for reading (behaviour like POSIX read) </td></tr>
+    <tr><td class="paramname">r_lseek</td><td>callback for seeking (like POSIX lseek) </td></tr>
+    <tr><td class="paramname">cleanup</td><td><a class="el" href="struct_a.html">A</a> callback to clean up an I/O handle on mpg123_close, can be NULL for none (you take care of cleaning your handles). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MPG123_OK on success </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

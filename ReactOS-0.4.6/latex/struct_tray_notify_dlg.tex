@@ -1,0 +1,134 @@
+\hypertarget{struct_tray_notify_dlg}{}\section{Tray\+Notify\+Dlg结构体 参考}
+\label{struct_tray_notify_dlg}\index{Tray\+Notify\+Dlg@{Tray\+Notify\+Dlg}}
+
+
+configuration dialog for notification icons  
+
+
+
+
+{\ttfamily \#include $<$traynotify.\+h$>$}
+
+类 Tray\+Notify\+Dlg 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{struct_tray_notify_dlg}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_aed216dd15eecddcce6ec91bc3336c9fb}\label{struct_tray_notify_dlg_aed216dd15eecddcce6ec91bc3336c9fb}} 
+typedef \hyperlink{struct_resize_controller}{Resize\+Controller}$<$ \hyperlink{struct_dialog}{Dialog} $>$ {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a2f79eb0c6959d53815c8870fba78fc12}\label{struct_tray_notify_dlg_a2f79eb0c6959d53815c8870fba78fc12}} 
+{\bfseries Tray\+Notify\+Dlg} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd)
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_aa06d31c4b4b2a82c134c8c67cc3ccab2}\label{struct_tray_notify_dlg_aa06d31c4b4b2a82c134c8c67cc3ccab2}} 
+typedef \hyperlink{structpair}{pair}$<$ N\+O\+T\+I\+F\+Y\+I\+C\+O\+N\+M\+O\+DE, D\+W\+O\+RD $>$ {\bfseries Icon\+State\+Pair}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_aef6dd110a7b15fe6e961cbb3b69c00d6}\label{struct_tray_notify_dlg_aef6dd110a7b15fe6e961cbb3b69c00d6}} 
+typedef \hyperlink{classmap}{map}$<$ \hyperlink{struct_notify_icon_index}{Notify\+Icon\+Index}, \hyperlink{structpair}{Icon\+State\+Pair} $>$ {\bfseries Icon\+State\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_abed68583fc634df8515f92c2d61df7d2}\label{struct_tray_notify_dlg_abed68583fc634df8515f92c2d61df7d2}} 
+virtual L\+R\+E\+S\+U\+LT {\bfseries Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_ae126b966f1ca2a4268175401ca1866c2}\label{struct_tray_notify_dlg_ae126b966f1ca2a4268175401ca1866c2}} 
+virtual int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a066688be8868a6d84db91c3fd5d8f737}\label{struct_tray_notify_dlg_a066688be8868a6d84db91c3fd5d8f737}} 
+virtual int {\bfseries Notify} (int id, \hyperlink{structtag_n_m_h_d_r}{N\+M\+H\+DR} $\ast$pnmh)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_tray_notify_dlg_a8e27d7865edb16d7bbecff7534116899}{Refresh} ()
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_af5eb0ba78eda39056ff592250a036d50}\label{struct_tray_notify_dlg_af5eb0ba78eda39056ff592250a036d50}} 
+\hyperlink{interfacevoid}{void} {\bfseries Insert\+Item} (\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} hparent, \hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} after, const \hyperlink{struct_notify_info}{Notify\+Info} \&, H\+DC)
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_abb86bc8fcfbdca7f413fca03c738e47f}\label{struct_tray_notify_dlg_abb86bc8fcfbdca7f413fca03c738e47f}} 
+\hyperlink{interfacevoid}{void} {\bfseries Insert\+Item} (\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} hparent, \hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} after, const \hyperlink{struct_notify_icon_dlg_info}{Notify\+Icon\+Dlg\+Info} \&, H\+DC, H\+I\+C\+ON, N\+O\+T\+I\+F\+Y\+I\+C\+O\+N\+M\+O\+DE)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_tray_notify_dlg_a001841ee0119a56a1f009a3694109ea5}{Set\+Icon\+Mode} (N\+O\+T\+I\+F\+Y\+I\+C\+O\+N\+M\+O\+DE \hyperlink{interfacevoid}{mode})
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a2e754300d55747e1d00b208dfba05dfd}\label{struct_tray_notify_dlg_a2e754300d55747e1d00b208dfba05dfd}} 
+\hyperlink{interfacevoid}{void} {\bfseries Refresh\+Properties} (const \hyperlink{struct_notify_icon_dlg_info}{Notify\+Icon\+Dlg\+Info} \&entry)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a2f888237d7c38c08d042d62b362b5bd2}\label{struct_tray_notify_dlg_a2f888237d7c38c08d042d62b362b5bd2}} 
+\hyperlink{interfacevoid}{H\+W\+ND} {\bfseries \+\_\+tree\+\_\+ctrl}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_af262e32ff97db6ca64b6a4756843cf79}\label{struct_tray_notify_dlg_af262e32ff97db6ca64b6a4756843cf79}} 
+H\+A\+C\+C\+EL {\bfseries \+\_\+haccel}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a706c633bb3cd2c076614c0c4c127e5cd}\label{struct_tray_notify_dlg_a706c633bb3cd2c076614c0c4c127e5cd}} 
+\hyperlink{struct___i_m_a_g_e_l_i_s_t}{H\+I\+M\+A\+G\+E\+L\+I\+ST} {\bfseries \+\_\+himl}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_ad803c9deab984edff7f8a8229c0680d1}\label{struct_tray_notify_dlg_ad803c9deab984edff7f8a8229c0680d1}} 
+\hyperlink{struct_notify_area}{Notify\+Area} $\ast$ {\bfseries \+\_\+p\+Notify\+Area}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a079ca11ed7743d2da61c28faa5ea1124}\label{struct_tray_notify_dlg_a079ca11ed7743d2da61c28faa5ea1124}} 
+\hyperlink{classmap}{Notify\+Icon\+Dlg\+Info\+Map} {\bfseries \+\_\+info}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a8cfb1d9b7172ce3753c78a261aae33f3}\label{struct_tray_notify_dlg_a8cfb1d9b7172ce3753c78a261aae33f3}} 
+\hyperlink{classlist}{Notify\+Icon\+Cfg\+List} {\bfseries \+\_\+cfg\+\_\+org}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a75a731a745a8d2d5418c8740b2f7b8c7}\label{struct_tray_notify_dlg_a75a731a745a8d2d5418c8740b2f7b8c7}} 
+\hyperlink{classmap}{Icon\+State\+Map} {\bfseries \+\_\+icon\+\_\+states\+\_\+org}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a4b5505b01094b41fe1148c54b16bf442}\label{struct_tray_notify_dlg_a4b5505b01094b41fe1148c54b16bf442}} 
+bool {\bfseries \+\_\+show\+\_\+hidden\+\_\+org}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a7503f70440263a5dff3ea9bfe1841460}\label{struct_tray_notify_dlg_a7503f70440263a5dff3ea9bfe1841460}} 
+\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} {\bfseries \+\_\+hitem\+Current}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a363c21b41cddd66d03b31c10f27b7ae0}\label{struct_tray_notify_dlg_a363c21b41cddd66d03b31c10f27b7ae0}} 
+\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} {\bfseries \+\_\+hitem\+Current\+\_\+visible}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a24996df7c9f17354683366a6eac7375e}\label{struct_tray_notify_dlg_a24996df7c9f17354683366a6eac7375e}} 
+\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} {\bfseries \+\_\+hitem\+Current\+\_\+hidden}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a4c4849a0e8cb8229fb3163b2903f3eb0}\label{struct_tray_notify_dlg_a4c4849a0e8cb8229fb3163b2903f3eb0}} 
+\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} {\bfseries \+\_\+hitem\+Config}
+\item 
+\mbox{\Hypertarget{struct_tray_notify_dlg_a30c9555a7e7c73155b6f3cb6f2b88f67}\label{struct_tray_notify_dlg_a30c9555a7e7c73155b6f3cb6f2b88f67}} 
+\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} {\bfseries \+\_\+selected\+Item}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+configuration dialog for notification icons 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_tray_notify_dlg_a8e27d7865edb16d7bbecff7534116899}\label{struct_tray_notify_dlg_a8e27d7865edb16d7bbecff7534116899}} 
+\index{Tray\+Notify\+Dlg@{Tray\+Notify\+Dlg}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!Tray\+Notify\+Dlg@{Tray\+Notify\+Dlg}}
+\subsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Tray\+Notify\+Dlg\+::\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000077}{待办事项}]refresh incrementally \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_tray_notify_dlg_a001841ee0119a56a1f009a3694109ea5}\label{struct_tray_notify_dlg_a001841ee0119a56a1f009a3694109ea5}} 
+\index{Tray\+Notify\+Dlg@{Tray\+Notify\+Dlg}!Set\+Icon\+Mode@{Set\+Icon\+Mode}}
+\index{Set\+Icon\+Mode@{Set\+Icon\+Mode}!Tray\+Notify\+Dlg@{Tray\+Notify\+Dlg}}
+\subsubsection{\texorpdfstring{Set\+Icon\+Mode()}{SetIconMode()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Tray\+Notify\+Dlg\+::\+Set\+Icon\+Mode (\begin{DoxyParamCaption}\item[{N\+O\+T\+I\+F\+Y\+I\+C\+O\+N\+M\+O\+DE}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000078}{待办事项}]select treeview item at new position in tree view -\/$>$ refresh H\+T\+R\+E\+E\+I\+T\+EM in \+\_\+selected\+Item \end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/traynotify.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/traynotify.\+cpp\end{DoxyCompactItemize}

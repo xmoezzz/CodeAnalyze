@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/win32ss/gdi/eng/ldevobj.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_ddfd06bba35866cf4fe2acc35285f4c9.html">win32ss</a></li><li class="navelem"><a class="el" href="dir_0b66c715d9d9299803e3c89e07a6e7d0.html">gdi</a></li><li class="navelem"><a class="el" href="dir_7133c8c1308acd344e8a1a94b4843551.html">eng</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ldevobj.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___i_m_a_g_e___d_o_s___h_e_a_d_e_r.html">IMAGE_DOS_HEADER</a> __ImageBase;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> GDI_ENGINE_VERSION = DDI_DRIVER_VERSION_NT5_01;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    LDEV_DEVICE_DISPLAY = 1,</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    LDEV_DEVICE_PRINTER = 2,</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    LDEV_DEVICE_META = 3,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    LDEV_DEVICE_MIRROR = 4,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    LDEV_IMAGE = 5,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    LDEV_FONT = 6,</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} LDEVTYPE;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct___l_d_e_v_o_b_j.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___l_d_e_v_o_b_j.html">_LDEVOBJ</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="struct___l_i_s_t___e_n_t_r_y.html">LIST_ENTRY</a> leLink;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="struct___s_y_s_t_e_m___g_d_i___d_r_i_v_e_r___i_n_f_o_r_m_a_t_i_o_n.html">SYSTEM_GDI_DRIVER_INFORMATION</a> *pGdiDriverInfo;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    LDEVTYPE ldevtype;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ULONG cRefs;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ULONG ulDriverVersion;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">union</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="interfacevoid.html">PVOID</a> apfn[INDEX_LAST];</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="struct___d_r_i_v_e_r___f_u_n_c_t_i_o_n_s.html">DRIVER_FUNCTIONS</a> pfn;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <a class="code" href="struct___l_d_e_v_o_b_j.html">LDEVOBJ</a>, *<a class="code" href="struct___l_d_e_v_o_b_j.html">PLDEVOBJ</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;INIT_FUNCTION</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;NTSTATUS</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;NTAPI</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;InitLDEVImpl(<a class="code" href="interfacevoid.html">VOID</a>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="struct___d_e_v_m_o_d_e_i_n_f_o.html">PDEVMODEINFO</a></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;NTAPI</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;LDEVOBJ_pdmiGetModes(</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    _In_ PLDEVOBJ pldev,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    _In_ <a class="code" href="interfacevoid.html">HANDLE</a> hDriver);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;PLDEVOBJ</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;APIENTRY</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;EngLoadImageEx(</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    _In_z_ LPWSTR pwszDriverName,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    _In_ ULONG ldevtype);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;PLDEVOBJ</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;NTAPI</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;EngGetLDEV(</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="struct__devicemode_w.html">PDEVMODEW</a> pdm);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;NTSTATUS</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;APIENTRY</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;DriverEntry (</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    _In_ <a class="code" href="struct___d_r_i_v_e_r___o_b_j_e_c_t.html">PDRIVER_OBJECT</a> DriverObject,</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    _In_ <a class="code" href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PUNICODE_STRING</a> RegistryPath);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="ttc" id="struct__devicemode_w_html"><div class="ttname"><a href="struct__devicemode_w.html">_devicemodeW</a></div><div class="ttdef"><b>Definition:</b> wingdi.h:1593</div></div>
+<div class="ttc" id="struct___u_n_i_c_o_d_e___s_t_r_i_n_g_html"><div class="ttname"><a href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html">_UNICODE_STRING</a></div><div class="ttdef"><b>Definition:</b> env_spec_w32.h:368</div></div>
+<div class="ttc" id="struct___l_d_e_v_o_b_j_html"><div class="ttname"><a href="struct___l_d_e_v_o_b_j.html">_LDEVOBJ</a></div><div class="ttdef"><b>Definition:</b> ldevobj.h:16</div></div>
+<div class="ttc" id="struct___i_m_a_g_e___d_o_s___h_e_a_d_e_r_html"><div class="ttname"><a href="struct___i_m_a_g_e___d_o_s___h_e_a_d_e_r.html">_IMAGE_DOS_HEADER</a></div><div class="ttdef"><b>Definition:</b> ntddk_ex.h:99</div></div>
+<div class="ttc" id="struct___d_r_i_v_e_r___o_b_j_e_c_t_html"><div class="ttname"><a href="struct___d_r_i_v_e_r___o_b_j_e_c_t.html">_DRIVER_OBJECT</a></div><div class="ttdef"><b>Definition:</b> iotypes.h:2160</div></div>
+<div class="ttc" id="struct___s_y_s_t_e_m___g_d_i___d_r_i_v_e_r___i_n_f_o_r_m_a_t_i_o_n_html"><div class="ttname"><a href="struct___s_y_s_t_e_m___g_d_i___d_r_i_v_e_r___i_n_f_o_r_m_a_t_i_o_n.html">_SYSTEM_GDI_DRIVER_INFORMATION</a></div><div class="ttdef"><b>Definition:</b> extypes.h:1182</div></div>
+<div class="ttc" id="struct___d_e_v_m_o_d_e_i_n_f_o_html"><div class="ttname"><a href="struct___d_e_v_m_o_d_e_i_n_f_o.html">_DEVMODEINFO</a></div><div class="ttdef"><b>Definition:</b> pdevobj.h:42</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+<div class="ttc" id="struct___d_r_i_v_e_r___f_u_n_c_t_i_o_n_s_html"><div class="ttname"><a href="struct___d_r_i_v_e_r___f_u_n_c_t_i_o_n_s.html">_DRIVER_FUNCTIONS</a></div><div class="ttdef"><b>Definition:</b> ntgdityp.h:547</div></div>
+<div class="ttc" id="struct___l_i_s_t___e_n_t_r_y_html"><div class="ttname"><a href="struct___l_i_s_t___e_n_t_r_y.html">_LIST_ENTRY</a></div><div class="ttdef"><b>Definition:</b> typedefs.h:118</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

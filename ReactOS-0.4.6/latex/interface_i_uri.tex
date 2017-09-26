@@ -1,0 +1,136 @@
+\hypertarget{interface_i_uri}{}\section{I\+Uri接口 参考}
+\label{interface_i_uri}\index{I\+Uri@{I\+Uri}}
+类 I\+Uri 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_uri}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_uri_a8ff540739d5cf239f7486bbd8a629f1e}\label{interface_i_uri_a8ff540739d5cf239f7486bbd8a629f1e}} 
+enum {\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+TY} \{ \newline
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+A\+B\+S\+O\+L\+U\+T\+E\+\_\+\+U\+RI} = 0, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+T\+A\+RT} = Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+A\+B\+S\+O\+L\+U\+T\+E\+\_\+\+U\+RI, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+A\+U\+T\+H\+O\+R\+I\+TY} = 1, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+U\+RI} = 2, 
+\newline
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+D\+O\+M\+A\+IN} = 3, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON} = 4, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+F\+R\+A\+G\+M\+E\+NT} = 5, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+H\+O\+ST} = 6, 
+\newline
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+P\+A\+S\+S\+W\+O\+RD} = 7, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+P\+A\+TH} = 8, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+P\+A\+T\+H\+\_\+\+A\+N\+D\+\_\+\+Q\+U\+E\+RY} = 9, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+Q\+U\+E\+RY} = 10, 
+\newline
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+R\+A\+W\+\_\+\+U\+RI} = 11, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+S\+C\+H\+E\+M\+E\+\_\+\+N\+A\+ME} = 12, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+U\+S\+E\+R\+\_\+\+I\+N\+FO} = 13, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+U\+S\+E\+R\+\_\+\+N\+A\+ME} = 14, 
+\newline
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+A\+ST} = Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+U\+S\+E\+R\+\_\+\+N\+A\+ME, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+H\+O\+S\+T\+\_\+\+T\+Y\+PE} = 15, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+D\+W\+O\+R\+D\+\_\+\+S\+T\+A\+RT} = Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+H\+O\+S\+T\+\_\+\+T\+Y\+PE, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+P\+O\+RT} = 16, 
+\newline
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+S\+C\+H\+E\+ME} = 17, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+Z\+O\+NE} = 18, 
+{\bfseries Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+D\+W\+O\+R\+D\+\_\+\+L\+A\+ST} = Uri\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+Z\+O\+NE
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_uri_ae2c49caf4139f9fd2fd24f474c1674d2}\label{interface_i_uri_ae2c49caf4139f9fd2fd24f474c1674d2}} 
+enum {\bfseries Uri\+\_\+\+H\+O\+S\+T\+\_\+\+T\+Y\+PE} \{ \newline
+{\bfseries Uri\+\_\+\+H\+O\+S\+T\+\_\+\+U\+N\+K\+N\+O\+WN} = 0, 
+{\bfseries Uri\+\_\+\+H\+O\+S\+T\+\_\+\+D\+NS} = 1, 
+{\bfseries Uri\+\_\+\+H\+O\+S\+T\+\_\+\+I\+P\+V4} = 2, 
+{\bfseries Uri\+\_\+\+H\+O\+S\+T\+\_\+\+I\+P\+V6} = 3, 
+\newline
+{\bfseries Uri\+\_\+\+H\+O\+S\+T\+\_\+\+I\+DN} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_uri_a07191eb7429f48cfff0b73dd05c14a8c}\label{interface_i_uri_a07191eb7429f48cfff0b73dd05c14a8c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Property\+B\+S\+TR} (\mbox{[}in\mbox{]} Uri\+\_\+\+P\+R\+O\+P\+E\+R\+TY uri\+Prop, \mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Property, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_uri_ab3d10af9e532a4bf0856035c5387fa42}\label{interface_i_uri_ab3d10af9e532a4bf0856035c5387fa42}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Property\+Length} (\mbox{[}in\mbox{]} Uri\+\_\+\+P\+R\+O\+P\+E\+R\+TY uri\+Prop, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Property, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a8bca3cc9d1429cf3170ca2bb2b392278}\label{interface_i_uri_a8bca3cc9d1429cf3170ca2bb2b392278}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Property\+D\+W\+O\+RD} (\mbox{[}in\mbox{]} Uri\+\_\+\+P\+R\+O\+P\+E\+R\+TY uri\+Prop, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Property, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a80dd674341b7701407d8e38d62fee87c}\label{interface_i_uri_a80dd674341b7701407d8e38d62fee87c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Has\+Property} (\mbox{[}in\mbox{]} Uri\+\_\+\+P\+R\+O\+P\+E\+R\+TY uri\+Prop, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Has\+Property)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a225f5c924bb2cb1d7c191be8b29046eb}\label{interface_i_uri_a225f5c924bb2cb1d7c191be8b29046eb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Absolute\+Uri} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Absolute\+Uri)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a49d4429ca25d2f119e2a3322c4712645}\label{interface_i_uri_a49d4429ca25d2f119e2a3322c4712645}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Authority} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Authority)
+\item 
+\mbox{\Hypertarget{interface_i_uri_ab065270f80aec9ae7d580e1c959ab3b6}\label{interface_i_uri_ab065270f80aec9ae7d580e1c959ab3b6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Display\+Uri} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Display\+String)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a5bc59d6bdd940521777d804a9222030d}\label{interface_i_uri_a5bc59d6bdd940521777d804a9222030d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Domain} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Domain)
+\item 
+\mbox{\Hypertarget{interface_i_uri_ac9d602fcf796b8f30fef237f9bfbe86d}\label{interface_i_uri_ac9d602fcf796b8f30fef237f9bfbe86d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Extension} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Extension)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a1815881eff67a105301fd3eb847de305}\label{interface_i_uri_a1815881eff67a105301fd3eb847de305}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Fragment} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Fragment)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a07979a458ca53e26fcdf22b9d69147f3}\label{interface_i_uri_a07979a458ca53e26fcdf22b9d69147f3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Host} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Host)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a4a7cda9af77c134171aefaec83a440a3}\label{interface_i_uri_a4a7cda9af77c134171aefaec83a440a3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Password} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Password)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a1bc189ab9082ae3659bc7cbdda7853cb}\label{interface_i_uri_a1bc189ab9082ae3659bc7cbdda7853cb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Path} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Path)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a4589d22fb9928d4ad40596e1f9e8a6db}\label{interface_i_uri_a4589d22fb9928d4ad40596e1f9e8a6db}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Path\+And\+Query} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Path\+And\+Query)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a33aa001db30c11fc95448f2c51ce560b}\label{interface_i_uri_a33aa001db30c11fc95448f2c51ce560b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Query} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Query)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a2369a32572d8cdbf53205ac8a24c748a}\label{interface_i_uri_a2369a32572d8cdbf53205ac8a24c748a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Raw\+Uri} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Raw\+Uri)
+\item 
+\mbox{\Hypertarget{interface_i_uri_aeab9a5e2ab809d5888e4c7d4a5323774}\label{interface_i_uri_aeab9a5e2ab809d5888e4c7d4a5323774}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Scheme\+Name} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Scheme\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a0d2a0667978c6a49e824a548749d8635}\label{interface_i_uri_a0d2a0667978c6a49e824a548749d8635}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+User\+Info} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+User\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_uri_ad5895476de272a37a4045452ddf0f5d3}\label{interface_i_uri_ad5895476de272a37a4045452ddf0f5d3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+User\+Name} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+User\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_uri_ad18e42eb60ca19d0cc53749f24adb3dc}\label{interface_i_uri_ad18e42eb60ca19d0cc53749f24adb3dc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Host\+Type} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Host\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_uri_ae351bf92f1af28efbc1eab3169fdec29}\label{interface_i_uri_ae351bf92f1af28efbc1eab3169fdec29}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Port} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Port)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a1a3a4b504a224d26f8cb805f9275615d}\label{interface_i_uri_a1a3a4b504a224d26f8cb805f9275615d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Scheme} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Scheme)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a0a6cf883128298bc4bb0778391743708}\label{interface_i_uri_a0a6cf883128298bc4bb0778391743708}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Zone} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Zone)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a1b9d82cecbaaef53ec2e19f5c1ebf501}\label{interface_i_uri_a1b9d82cecbaaef53ec2e19f5c1ebf501}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Properties} (\mbox{[}out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_uri_a9e6b2f8b3399a68e5d80c4eee1a4cccd}\label{interface_i_uri_a9e6b2f8b3399a68e5d80c4eee1a4cccd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Equal} (\mbox{[}in\mbox{]} \hyperlink{interface_i_uri}{I\+Uri} $\ast$p\+Uri, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Equal)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/urlmon.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\hypertarget{buffers_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/buffers.h 文件参考}
+\label{buffers_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/buffers.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/buffers.\+h}}
+{\ttfamily \#include \char`\"{}glheader.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{buffers_8h_a156fdedf7b8f4815cb7d76fae02af534}{\+\_\+mesa\+\_\+\+Draw\+Buffer} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{buffers_8h_ae50697ee931881dfa30bc04352375fce}{\+\_\+mesa\+\_\+drawbuffer} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{interfacevoid}{G\+Lenum} buffers, G\+Lbitfield dest\+Mask)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{buffers_8h_a8b1c04f9cd9f708666f41724de1e7c56}{\+\_\+mesa\+\_\+readbuffer} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} buffer, G\+Lint buffer\+Index)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{buffers_8h_af93061a93d397222465c915137a12b8b}{\+\_\+mesa\+\_\+update\+\_\+draw\+\_\+buffer} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{buffers_8h_a3e2bed6c746a00c01cdf1cf5a5f129c6}{\+\_\+mesa\+\_\+\+Read\+Buffer} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Frame buffer management functions declarations. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{buffers_8h_a156fdedf7b8f4815cb7d76fae02af534}\label{buffers_8h_a156fdedf7b8f4815cb7d76fae02af534}} 
+\index{buffers.\+h@{buffers.\+h}!\+\_\+mesa\+\_\+\+Draw\+Buffer@{\+\_\+mesa\+\_\+\+Draw\+Buffer}}
+\index{\+\_\+mesa\+\_\+\+Draw\+Buffer@{\+\_\+mesa\+\_\+\+Draw\+Buffer}!buffers.\+h@{buffers.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Draw\+Buffer()}{\_mesa\_DrawBuffer()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Draw\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{buffer }\end{DoxyParamCaption})}
+
+Called by gl\+Draw\+Buffer(). Specify which renderbuffer(s) to draw into for the first color output. $<$buffer$>$ can name zero, one, two or four renderbuffers! \begin{DoxySeeAlso}{参见}
+\+\_\+mesa\+\_\+\+Draw\+Buffers\+A\+RB
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em buffer} & buffer token such as G\+L\+\_\+\+L\+E\+FT or G\+L\+\_\+\+F\+R\+O\+N\+T\+\_\+\+A\+N\+D\+\_\+\+B\+A\+CK, etc.\\
+\hline
+\end{DoxyParams}
+Note that the behaviour of this function depends on whether the current ctx-\/$>$Draw\+Buffer is a window-\/system framebuffer (Name=0) or a user-\/created framebuffer object (Name!=0). In the former case, we update the per-\/context ctx-\/$>$Color.\+Draw\+Buffer state var {\itshape and} the FB\textquotesingle{}s Color\+Draw\+Buffer state. In the later case, we update the FB\textquotesingle{}s Color\+Draw\+Buffer state only.
+
+Furthermore, upon a Make\+Current() or Bind\+Framebuffer() call, if the new FB is a window system FB, we need to re-\/update the FB\textquotesingle{}s Color\+Draw\+Buffer state to match the context. \hyperlink{namespace_this}{This} is handled in \+\_\+mesa\+\_\+update\+\_\+framebuffer().
+
+See the G\+L\+\_\+\+E\+X\+T\+\_\+framebuffer\+\_\+object spec for more info. \mbox{\Hypertarget{buffers_8h_ae50697ee931881dfa30bc04352375fce}\label{buffers_8h_ae50697ee931881dfa30bc04352375fce}} 
+\index{buffers.\+h@{buffers.\+h}!\+\_\+mesa\+\_\+drawbuffer@{\+\_\+mesa\+\_\+drawbuffer}}
+\index{\+\_\+mesa\+\_\+drawbuffer@{\+\_\+mesa\+\_\+drawbuffer}!buffers.\+h@{buffers.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+drawbuffer()}{\_mesa\_drawbuffer()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+drawbuffer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{const \hyperlink{interfacevoid}{G\+Lenum}}]{buffers,  }\item[{G\+Lbitfield}]{dest\+Mask }\end{DoxyParamCaption})}
+
+Helper function to set the G\+L\+\_\+\+D\+R\+A\+W\+\_\+\+B\+U\+F\+F\+ER state in the context and current F\+BO. Called via gl\+Draw\+Buffer(), gl\+Draw\+Buffers\+A\+R\+B()
+
+All error checking will have been done prior to calling this function so nothing should go wrong at this point.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & current context \\
+\hline
+{\em n} & number of color outputs to set \\
+\hline
+{\em buffers} & array\mbox{[}n\mbox{]} of colorbuffer names, like G\+L\+\_\+\+L\+E\+FT. \\
+\hline
+{\em dest\+Mask} & array\mbox{[}n\mbox{]} of B\+U\+F\+F\+E\+R\+\_\+\+B\+I\+T\+\_\+$\ast$ bitmasks which correspond to the colorbuffer names. (i.\+e. G\+L\+\_\+\+F\+R\+O\+N\+T\+\_\+\+A\+N\+D\+\_\+\+B\+A\+CK =$>$ B\+U\+F\+F\+E\+R\+\_\+\+B\+I\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+FT $\vert$ B\+U\+F\+F\+E\+R\+\_\+\+B\+I\+T\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+FT). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{buffers_8h_a8b1c04f9cd9f708666f41724de1e7c56}\label{buffers_8h_a8b1c04f9cd9f708666f41724de1e7c56}} 
+\index{buffers.\+h@{buffers.\+h}!\+\_\+mesa\+\_\+readbuffer@{\+\_\+mesa\+\_\+readbuffer}}
+\index{\+\_\+mesa\+\_\+readbuffer@{\+\_\+mesa\+\_\+readbuffer}!buffers.\+h@{buffers.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+readbuffer()}{\_mesa\_readbuffer()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+readbuffer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{buffer,  }\item[{G\+Lint}]{buffer\+Index }\end{DoxyParamCaption})}
+
+Like \begin{DoxySeeAlso}{参见}
+\+\_\+mesa\+\_\+drawbuffers(), this is a helper function for setting G\+L\+\_\+\+R\+E\+A\+D\+\_\+\+B\+U\+F\+F\+ER state in the context and current F\+BO. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em ctx} & the rendering context \\
+\hline
+{\em buffer} & G\+L\+\_\+\+F\+R\+O\+NT, G\+L\+\_\+\+B\+A\+CK, G\+L\+\_\+\+C\+O\+L\+O\+R\+\_\+\+A\+T\+T\+A\+C\+H\+M\+E\+N\+T0, etc. \\
+\hline
+{\em buffer\+Index} & the numerical index corresponding to \textquotesingle{}buffer\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{buffers_8h_a3e2bed6c746a00c01cdf1cf5a5f129c6}\label{buffers_8h_a3e2bed6c746a00c01cdf1cf5a5f129c6}} 
+\index{buffers.\+h@{buffers.\+h}!\+\_\+mesa\+\_\+\+Read\+Buffer@{\+\_\+mesa\+\_\+\+Read\+Buffer}}
+\index{\+\_\+mesa\+\_\+\+Read\+Buffer@{\+\_\+mesa\+\_\+\+Read\+Buffer}!buffers.\+h@{buffers.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Read\+Buffer()}{\_mesa\_ReadBuffer()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Read\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{buffer }\end{DoxyParamCaption})}
+
+Called by gl\+Read\+Buffer to set the source renderbuffer for reading pixels. 
+\begin{DoxyParams}{参数}
+{\em mode} & color buffer such as G\+L\+\_\+\+F\+R\+O\+NT, G\+L\+\_\+\+B\+A\+CK, etc. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{buffers_8h_af93061a93d397222465c915137a12b8b}\label{buffers_8h_af93061a93d397222465c915137a12b8b}} 
+\index{buffers.\+h@{buffers.\+h}!\+\_\+mesa\+\_\+update\+\_\+draw\+\_\+buffer@{\+\_\+mesa\+\_\+update\+\_\+draw\+\_\+buffer}}
+\index{\+\_\+mesa\+\_\+update\+\_\+draw\+\_\+buffer@{\+\_\+mesa\+\_\+update\+\_\+draw\+\_\+buffer}!buffers.\+h@{buffers.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+update\+\_\+draw\+\_\+buffer()}{\_mesa\_update\_draw\_buffer()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+update\+\_\+draw\+\_\+buffer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Update the current drawbuffer\textquotesingle{}s \+\_\+\+Color\+Draw\+Buffer\+Index\mbox{[}\mbox{]} list, etc. from the context\textquotesingle{}s Color.\+Draw\+Buffer\mbox{[}\mbox{]} state. Use when changing contexts. 

@@ -1,0 +1,590 @@
+\hypertarget{group__mpg123__metadata}{}\section{mpg123 metadata handling}
+\label{group__mpg123__metadata}\index{mpg123 metadata handling@{mpg123 metadata handling}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmpg123__string}{mpg123\+\_\+string}
+\item 
+struct \hyperlink{structmpg123__text}{mpg123\+\_\+text}
+\item 
+struct \hyperlink{structmpg123__picture}{mpg123\+\_\+picture}
+\item 
+struct \hyperlink{structmpg123__id3v2}{mpg123\+\_\+id3v2}
+\item 
+struct \hyperlink{structmpg123__id3v1}{mpg123\+\_\+id3v1}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_gacee1d4e2cac4601f57eddadcc828f66c}{M\+P\+G123\+\_\+\+I\+D3}~0x3
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_ga3fb42527b89f66d9caa6aee4fa6aaaae}{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3}~0x1
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_ga8beaa04ade9db672e2bdf722c66b61ce}{M\+P\+G123\+\_\+\+I\+CY}~0xc
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__mpg123__metadata_ga25db33a48f531fd4da02dbf12d53e5be}{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY}~0x4
+\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding} \{ \newline
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea66ca05c71fce0b560f0ee474f1c4793b}{mpg123\+\_\+text\+\_\+unknown} = 0, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf74023fc99a8967ef3b1fa4973cc9f23}{mpg123\+\_\+text\+\_\+utf8} = 1, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf8ac03befb4ae509bcdc56fc63975f8e}{mpg123\+\_\+text\+\_\+latin1} = 2, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea83281d24ebc95d586d14273770faa2b2}{mpg123\+\_\+text\+\_\+icy} = 3, 
+\newline
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea06c8e0a5f457c3f40b18746eb43941a1}{mpg123\+\_\+text\+\_\+cp1252} = 4, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceac869251a2f73f329771eddef6396818c}{mpg123\+\_\+text\+\_\+utf16} = 5, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea4c5c139706dab0863fdb466d8fe5cb46}{mpg123\+\_\+text\+\_\+utf16bom} = 6, 
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea659e92fc2d96cb3fae94b25ec34aa3cf}{mpg123\+\_\+text\+\_\+utf16be} = 7, 
+\newline
+\hyperlink{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea31f6a1326b0e255e708b2cf97cb2b15b}{mpg123\+\_\+text\+\_\+max} = 7
+ \}
+\item 
+enum \hyperlink{group__mpg123__metadata_ga6a01e07e0e0770d6912767c2638fa86c}{mpg123\+\_\+id3\+\_\+enc} \{ \newline
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca4061581adda5da0e531e65a2186c762f}{mpg123\+\_\+id3\+\_\+latin1} = 0, 
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86caeead9376bcb51aef2df6bc1422e9af88}{mpg123\+\_\+id3\+\_\+utf16bom} = 1, 
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca44352115750b7cad2f7a738bbb0e1130}{mpg123\+\_\+id3\+\_\+utf16be} = 2, 
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86cafa589f1408c94714c2e1fa0c5d32aed2}{mpg123\+\_\+id3\+\_\+utf8} = 3, 
+\newline
+\hyperlink{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca6e7e43434882f04f41ea355068986bbf}{mpg123\+\_\+id3\+\_\+enc\+\_\+max} = 3
+ \}
+\item 
+enum \hyperlink{group__mpg123__metadata_gaf40652195dd80e2b06dc031c9902840e}{mpg123\+\_\+id3\+\_\+pic\+\_\+type} \{ \newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaab239ba35c10e9a7863195b634862144}{mpg123\+\_\+id3\+\_\+pic\+\_\+other} = 0, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa2380abffb80eee3d7b81aa29c7acf61}{mpg123\+\_\+id3\+\_\+pic\+\_\+icon} = 1, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead7ce5e9c3685e8302f4597a7ab45fb37}{mpg123\+\_\+id3\+\_\+pic\+\_\+other\+\_\+icon} = 2, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eacddb144390e5bd675572ec6233b08276}{mpg123\+\_\+id3\+\_\+pic\+\_\+front\+\_\+cover} = 3, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea18487a457317d28cbfbacf8d83d9a215}{mpg123\+\_\+id3\+\_\+pic\+\_\+back\+\_\+cover} = 4, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0f4aed397950e9d25407e4dc0d39050f}{mpg123\+\_\+id3\+\_\+pic\+\_\+leaflet} = 5, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea65f0be03aab84dc9097d4fb1e4ba6bb8}{mpg123\+\_\+id3\+\_\+pic\+\_\+media} = 6, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea6e9042aca905862dc426a66319d6a5ba}{mpg123\+\_\+id3\+\_\+pic\+\_\+lead} = 7, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea84509e27bf315acb048a89b089aa61df}{mpg123\+\_\+id3\+\_\+pic\+\_\+artist} = 8, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea62cd73a8cf340411fbffefde0fd26519}{mpg123\+\_\+id3\+\_\+pic\+\_\+conductor} = 9, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea92663f277b008f9401724b137f358bcf}{mpg123\+\_\+id3\+\_\+pic\+\_\+orchestra} = 10, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa43d70c2af5f8d0bcca24a158f161a08}{mpg123\+\_\+id3\+\_\+pic\+\_\+composer} = 11, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead0fe5d97282d6e9eddc09c71c7f2c89c}{mpg123\+\_\+id3\+\_\+pic\+\_\+lyricist} = 12, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaaf122dce228ebcdcdbe00dba519b6880}{mpg123\+\_\+id3\+\_\+pic\+\_\+location} = 13, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea135a56f6e49c5790eb9f62ec15f5fc5a}{mpg123\+\_\+id3\+\_\+pic\+\_\+recording} = 14, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0c49a847e6537f3508d50fff0c403b69}{mpg123\+\_\+id3\+\_\+pic\+\_\+performance} = 15, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea526b70c5e75feaa65667379a5827a488}{mpg123\+\_\+id3\+\_\+pic\+\_\+video} = 16, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead6e7b74aaa293db65270bc0aa9b39bde}{mpg123\+\_\+id3\+\_\+pic\+\_\+fish} = 17, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eab7a07c2ef50ffda63afc1946ebeb4afa}{mpg123\+\_\+id3\+\_\+pic\+\_\+illustration} = 18, 
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea8ed904e278c40a8ad1599541e17b1e0e}{mpg123\+\_\+id3\+\_\+pic\+\_\+artist\+\_\+logo} = 19, 
+\newline
+\hyperlink{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea02e311e2cd923c95615acfbe559a3ac1}{mpg123\+\_\+id3\+\_\+pic\+\_\+publisher\+\_\+logo} = 20
+ \}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__metadata_gaf0206ccb2574f563bff863a26a3b0025}{mpg123\+\_\+init\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__metadata_ga254cfe80f5eb2f2715e36be9a5119aed}{mpg123\+\_\+free\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga57ddead33785908618a5c0c7f3c1895a}{mpg123\+\_\+resize\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, size\+\_\+t news)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga1125e5a8235c42759d7300797006b05d}{mpg123\+\_\+grow\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, size\+\_\+t news)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga9d7fe63da5bc665bc754975b293e0a6b}{mpg123\+\_\+copy\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$from, \hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$to)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_gab54a099feebd65c5fa77d49a8c9c6db5}{mpg123\+\_\+add\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga76c2bf2ead81199a750ddff7253371f1}{mpg123\+\_\+add\+\_\+substring} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff, size\+\_\+t from, size\+\_\+t count)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga96e9070d26d63c02c3f22caa0d339f26}{mpg123\+\_\+set\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga37b68d834755647a4ef227b0dd4b5c2a}{mpg123\+\_\+set\+\_\+substring} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, const char $\ast$stuff, size\+\_\+t from, size\+\_\+t count)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t \hyperlink{group__mpg123__metadata_ga556c8eb6c2ee4b88d744dcf20dffa83b}{mpg123\+\_\+strlen} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, int utf8)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_gad149639f724347c8c420c8551ea3d4c2}{mpg123\+\_\+chomp\+\_\+string} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding} \hyperlink{group__mpg123__metadata_gabd394947d8cca46e49a0e07926bb2369}{mpg123\+\_\+enc\+\_\+from\+\_\+id3} (unsigned char id3\+\_\+enc\+\_\+byte)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga5800cb8b5886969982a695258d80f342}{mpg123\+\_\+store\+\_\+utf8} (\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$sb, \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding} enc, const unsigned char $\ast$\hyperlink{structsource}{source}, size\+\_\+t source\+\_\+size)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga1cd6279a1273f63eb8dcc8a554d815bb}{mpg123\+\_\+meta\+\_\+check} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__metadata_ga4bca410c7589658fb8379b3cf3fa3e05}{mpg123\+\_\+meta\+\_\+free} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga8352786015f8ff33c7d1fe8a4d979c88}{mpg123\+\_\+id3} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, \hyperlink{structmpg123__id3v1}{mpg123\+\_\+id3v1} $\ast$$\ast$v1, \hyperlink{structmpg123__id3v2}{mpg123\+\_\+id3v2} $\ast$$\ast$v2)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__metadata_ga637c01818ba80ac2275b76a8abefa36c}{mpg123\+\_\+icy} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, char $\ast$$\ast$\hyperlink{structicy__meta}{icy\+\_\+meta})
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} char $\ast$ \hyperlink{group__mpg123__metadata_ga0a6e45c3f8dda42ada8a07c29c253c88}{mpg123\+\_\+icy2utf8} (const char $\ast$icy\+\_\+text)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions to retrieve the metadata from M\+P\+EG Audio files and streams. Also includes string handling functions. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{group__mpg123__metadata_ga8beaa04ade9db672e2bdf722c66b61ce}\label{group__mpg123__metadata_ga8beaa04ade9db672e2bdf722c66b61ce}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!M\+P\+G123\+\_\+\+I\+CY@{M\+P\+G123\+\_\+\+I\+CY}}
+\index{M\+P\+G123\+\_\+\+I\+CY@{M\+P\+G123\+\_\+\+I\+CY}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{M\+P\+G123\+\_\+\+I\+CY}{MPG123\_ICY}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+P\+G123\+\_\+\+I\+CY~0xc}
+
+1100 There is some I\+CY info. Also matches 0100 or N\+E\+W\+\_\+\+I\+CY. \mbox{\Hypertarget{group__mpg123__metadata_gacee1d4e2cac4601f57eddadcc828f66c}\label{group__mpg123__metadata_gacee1d4e2cac4601f57eddadcc828f66c}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!M\+P\+G123\+\_\+\+I\+D3@{M\+P\+G123\+\_\+\+I\+D3}}
+\index{M\+P\+G123\+\_\+\+I\+D3@{M\+P\+G123\+\_\+\+I\+D3}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{M\+P\+G123\+\_\+\+I\+D3}{MPG123\_ID3}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+P\+G123\+\_\+\+I\+D3~0x3}
+
+0011 There is some I\+D3 info. Also matches 0010 or N\+E\+W\+\_\+\+I\+D3. \mbox{\Hypertarget{group__mpg123__metadata_ga25db33a48f531fd4da02dbf12d53e5be}\label{group__mpg123__metadata_ga25db33a48f531fd4da02dbf12d53e5be}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY@{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY}}
+\index{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY@{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY}{MPG123\_NEW\_ICY}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+CY~0x4}
+
+0100 There is I\+CY info that changed since last call to mpg123\+\_\+icy. \mbox{\Hypertarget{group__mpg123__metadata_ga3fb42527b89f66d9caa6aee4fa6aaaae}\label{group__mpg123__metadata_ga3fb42527b89f66d9caa6aee4fa6aaaae}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3@{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3}}
+\index{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3@{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3}{MPG123\_NEW\_ID3}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+I\+D3~0x1}
+
+0001 There is I\+D3 info that changed since last call to mpg123\+\_\+id3. 
+
+\subsection{枚举类型说明}
+\mbox{\Hypertarget{group__mpg123__metadata_ga6a01e07e0e0770d6912767c2638fa86c}\label{group__mpg123__metadata_ga6a01e07e0e0770d6912767c2638fa86c}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+enc@{mpg123\+\_\+id3\+\_\+enc}}
+\index{mpg123\+\_\+id3\+\_\+enc@{mpg123\+\_\+id3\+\_\+enc}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+id3\+\_\+enc}{mpg123\_id3\_enc}}
+{\footnotesize\ttfamily \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga6a01e07e0e0770d6912767c2638fa86c}{mpg123\+\_\+id3\+\_\+enc}}
+
+The encoding byte values from I\+D3v2. \begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+latin1@{mpg123\+\_\+id3\+\_\+latin1}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+latin1@{mpg123\+\_\+id3\+\_\+latin1}}}\mbox{\Hypertarget{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca4061581adda5da0e531e65a2186c762f}\label{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca4061581adda5da0e531e65a2186c762f}} 
+mpg123\+\_\+id3\+\_\+latin1&Note\+: \hyperlink{namespace_this}{This} sometimes can mean anything in practice... \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+utf16bom@{mpg123\+\_\+id3\+\_\+utf16bom}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+utf16bom@{mpg123\+\_\+id3\+\_\+utf16bom}}}\mbox{\Hypertarget{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86caeead9376bcb51aef2df6bc1422e9af88}\label{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86caeead9376bcb51aef2df6bc1422e9af88}} 
+mpg123\+\_\+id3\+\_\+utf16bom&U\+T\+F16, U\+C\+S-\/2 ... it\textquotesingle{}s all the same for practical purposes. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+utf16be@{mpg123\+\_\+id3\+\_\+utf16be}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+utf16be@{mpg123\+\_\+id3\+\_\+utf16be}}}\mbox{\Hypertarget{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca44352115750b7cad2f7a738bbb0e1130}\label{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca44352115750b7cad2f7a738bbb0e1130}} 
+mpg123\+\_\+id3\+\_\+utf16be&Big-\/endian U\+T\+F-\/16, B\+OM see note for mpg123\+\_\+text\+\_\+utf16be. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+utf8@{mpg123\+\_\+id3\+\_\+utf8}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+utf8@{mpg123\+\_\+id3\+\_\+utf8}}}\mbox{\Hypertarget{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86cafa589f1408c94714c2e1fa0c5d32aed2}\label{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86cafa589f1408c94714c2e1fa0c5d32aed2}} 
+mpg123\+\_\+id3\+\_\+utf8&Our lovely overly A\+S\+C\+I\+I-\/compatible 8 byte encoding for the world. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+enc\+\_\+max@{mpg123\+\_\+id3\+\_\+enc\+\_\+max}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+enc\+\_\+max@{mpg123\+\_\+id3\+\_\+enc\+\_\+max}}}\mbox{\Hypertarget{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca6e7e43434882f04f41ea355068986bbf}\label{group__mpg123__metadata_gga6a01e07e0e0770d6912767c2638fa86ca6e7e43434882f04f41ea355068986bbf}} 
+mpg123\+\_\+id3\+\_\+enc\+\_\+max&Placeholder to check valid range of encoding byte. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__mpg123__metadata_gaf40652195dd80e2b06dc031c9902840e}\label{group__mpg123__metadata_gaf40652195dd80e2b06dc031c9902840e}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+type@{mpg123\+\_\+id3\+\_\+pic\+\_\+type}}
+\index{mpg123\+\_\+id3\+\_\+pic\+\_\+type@{mpg123\+\_\+id3\+\_\+pic\+\_\+type}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+id3\+\_\+pic\+\_\+type}{mpg123\_id3\_pic\_type}}
+{\footnotesize\ttfamily \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_gaf40652195dd80e2b06dc031c9902840e}{mpg123\+\_\+id3\+\_\+pic\+\_\+type}}
+
+The picture type values from I\+D3v2. \begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+other@{mpg123\+\_\+id3\+\_\+pic\+\_\+other}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+other@{mpg123\+\_\+id3\+\_\+pic\+\_\+other}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaab239ba35c10e9a7863195b634862144}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaab239ba35c10e9a7863195b634862144}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+other&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+icon@{mpg123\+\_\+id3\+\_\+pic\+\_\+icon}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+icon@{mpg123\+\_\+id3\+\_\+pic\+\_\+icon}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa2380abffb80eee3d7b81aa29c7acf61}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa2380abffb80eee3d7b81aa29c7acf61}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+icon&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+other\+\_\+icon@{mpg123\+\_\+id3\+\_\+pic\+\_\+other\+\_\+icon}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+other\+\_\+icon@{mpg123\+\_\+id3\+\_\+pic\+\_\+other\+\_\+icon}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead7ce5e9c3685e8302f4597a7ab45fb37}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead7ce5e9c3685e8302f4597a7ab45fb37}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+other\+\_\+icon&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+front\+\_\+cover@{mpg123\+\_\+id3\+\_\+pic\+\_\+front\+\_\+cover}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+front\+\_\+cover@{mpg123\+\_\+id3\+\_\+pic\+\_\+front\+\_\+cover}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eacddb144390e5bd675572ec6233b08276}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eacddb144390e5bd675572ec6233b08276}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+front\+\_\+cover&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+back\+\_\+cover@{mpg123\+\_\+id3\+\_\+pic\+\_\+back\+\_\+cover}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+back\+\_\+cover@{mpg123\+\_\+id3\+\_\+pic\+\_\+back\+\_\+cover}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea18487a457317d28cbfbacf8d83d9a215}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea18487a457317d28cbfbacf8d83d9a215}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+back\+\_\+cover&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+leaflet@{mpg123\+\_\+id3\+\_\+pic\+\_\+leaflet}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+leaflet@{mpg123\+\_\+id3\+\_\+pic\+\_\+leaflet}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0f4aed397950e9d25407e4dc0d39050f}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0f4aed397950e9d25407e4dc0d39050f}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+leaflet&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+media@{mpg123\+\_\+id3\+\_\+pic\+\_\+media}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+media@{mpg123\+\_\+id3\+\_\+pic\+\_\+media}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea65f0be03aab84dc9097d4fb1e4ba6bb8}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea65f0be03aab84dc9097d4fb1e4ba6bb8}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+media&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+lead@{mpg123\+\_\+id3\+\_\+pic\+\_\+lead}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+lead@{mpg123\+\_\+id3\+\_\+pic\+\_\+lead}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea6e9042aca905862dc426a66319d6a5ba}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea6e9042aca905862dc426a66319d6a5ba}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+lead&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+artist@{mpg123\+\_\+id3\+\_\+pic\+\_\+artist}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+artist@{mpg123\+\_\+id3\+\_\+pic\+\_\+artist}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea84509e27bf315acb048a89b089aa61df}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea84509e27bf315acb048a89b089aa61df}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+artist&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+conductor@{mpg123\+\_\+id3\+\_\+pic\+\_\+conductor}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+conductor@{mpg123\+\_\+id3\+\_\+pic\+\_\+conductor}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea62cd73a8cf340411fbffefde0fd26519}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea62cd73a8cf340411fbffefde0fd26519}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+conductor&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+orchestra@{mpg123\+\_\+id3\+\_\+pic\+\_\+orchestra}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+orchestra@{mpg123\+\_\+id3\+\_\+pic\+\_\+orchestra}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea92663f277b008f9401724b137f358bcf}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea92663f277b008f9401724b137f358bcf}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+orchestra&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+composer@{mpg123\+\_\+id3\+\_\+pic\+\_\+composer}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+composer@{mpg123\+\_\+id3\+\_\+pic\+\_\+composer}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa43d70c2af5f8d0bcca24a158f161a08}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaa43d70c2af5f8d0bcca24a158f161a08}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+composer&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+lyricist@{mpg123\+\_\+id3\+\_\+pic\+\_\+lyricist}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+lyricist@{mpg123\+\_\+id3\+\_\+pic\+\_\+lyricist}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead0fe5d97282d6e9eddc09c71c7f2c89c}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead0fe5d97282d6e9eddc09c71c7f2c89c}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+lyricist&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+location@{mpg123\+\_\+id3\+\_\+pic\+\_\+location}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+location@{mpg123\+\_\+id3\+\_\+pic\+\_\+location}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaaf122dce228ebcdcdbe00dba519b6880}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eaaf122dce228ebcdcdbe00dba519b6880}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+location&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+recording@{mpg123\+\_\+id3\+\_\+pic\+\_\+recording}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+recording@{mpg123\+\_\+id3\+\_\+pic\+\_\+recording}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea135a56f6e49c5790eb9f62ec15f5fc5a}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea135a56f6e49c5790eb9f62ec15f5fc5a}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+recording&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+performance@{mpg123\+\_\+id3\+\_\+pic\+\_\+performance}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+performance@{mpg123\+\_\+id3\+\_\+pic\+\_\+performance}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0c49a847e6537f3508d50fff0c403b69}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea0c49a847e6537f3508d50fff0c403b69}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+performance&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+video@{mpg123\+\_\+id3\+\_\+pic\+\_\+video}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+video@{mpg123\+\_\+id3\+\_\+pic\+\_\+video}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea526b70c5e75feaa65667379a5827a488}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea526b70c5e75feaa65667379a5827a488}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+video&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+fish@{mpg123\+\_\+id3\+\_\+pic\+\_\+fish}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+fish@{mpg123\+\_\+id3\+\_\+pic\+\_\+fish}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead6e7b74aaa293db65270bc0aa9b39bde}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ead6e7b74aaa293db65270bc0aa9b39bde}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+fish&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+illustration@{mpg123\+\_\+id3\+\_\+pic\+\_\+illustration}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+illustration@{mpg123\+\_\+id3\+\_\+pic\+\_\+illustration}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eab7a07c2ef50ffda63afc1946ebeb4afa}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840eab7a07c2ef50ffda63afc1946ebeb4afa}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+illustration&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+artist\+\_\+logo@{mpg123\+\_\+id3\+\_\+pic\+\_\+artist\+\_\+logo}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+artist\+\_\+logo@{mpg123\+\_\+id3\+\_\+pic\+\_\+artist\+\_\+logo}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea8ed904e278c40a8ad1599541e17b1e0e}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea8ed904e278c40a8ad1599541e17b1e0e}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+artist\+\_\+logo&see I\+D3v2 docs \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+id3\+\_\+pic\+\_\+publisher\+\_\+logo@{mpg123\+\_\+id3\+\_\+pic\+\_\+publisher\+\_\+logo}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3\+\_\+pic\+\_\+publisher\+\_\+logo@{mpg123\+\_\+id3\+\_\+pic\+\_\+publisher\+\_\+logo}}}\mbox{\Hypertarget{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea02e311e2cd923c95615acfbe559a3ac1}\label{group__mpg123__metadata_ggaf40652195dd80e2b06dc031c9902840ea02e311e2cd923c95615acfbe559a3ac1}} 
+mpg123\+\_\+id3\+\_\+pic\+\_\+publisher\+\_\+logo&see I\+D3v2 docs \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}\label{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+encoding@{mpg123\+\_\+text\+\_\+encoding}}
+\index{mpg123\+\_\+text\+\_\+encoding@{mpg123\+\_\+text\+\_\+encoding}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+text\+\_\+encoding}{mpg123\_text\_encoding}}
+{\footnotesize\ttfamily \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding}}
+
+The mpg123 text encodings. \hyperlink{namespace_this}{This} contains encodings we encounter in I\+D3 tags or I\+CY meta info. \begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+unknown@{mpg123\+\_\+text\+\_\+unknown}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+unknown@{mpg123\+\_\+text\+\_\+unknown}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea66ca05c71fce0b560f0ee474f1c4793b}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea66ca05c71fce0b560f0ee474f1c4793b}} 
+mpg123\+\_\+text\+\_\+unknown&Unkown encoding... mpg123\+\_\+id3\+\_\+encoding can return that on invalid codes. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+utf8@{mpg123\+\_\+text\+\_\+utf8}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+utf8@{mpg123\+\_\+text\+\_\+utf8}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf74023fc99a8967ef3b1fa4973cc9f23}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf74023fc99a8967ef3b1fa4973cc9f23}} 
+mpg123\+\_\+text\+\_\+utf8&U\+T\+F-\/8 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+latin1@{mpg123\+\_\+text\+\_\+latin1}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+latin1@{mpg123\+\_\+text\+\_\+latin1}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf8ac03befb4ae509bcdc56fc63975f8e}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceaf8ac03befb4ae509bcdc56fc63975f8e}} 
+mpg123\+\_\+text\+\_\+latin1&I\+S\+O-\/8859-\/1. Note that sometimes latin1 in I\+D3 is abused for totally different encodings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+icy@{mpg123\+\_\+text\+\_\+icy}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+icy@{mpg123\+\_\+text\+\_\+icy}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea83281d24ebc95d586d14273770faa2b2}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea83281d24ebc95d586d14273770faa2b2}} 
+mpg123\+\_\+text\+\_\+icy&I\+CY metadata encoding, usually C\+P-\/1252 but we take it as U\+T\+F-\/8 if it qualifies as such. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+cp1252@{mpg123\+\_\+text\+\_\+cp1252}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+cp1252@{mpg123\+\_\+text\+\_\+cp1252}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea06c8e0a5f457c3f40b18746eb43941a1}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea06c8e0a5f457c3f40b18746eb43941a1}} 
+mpg123\+\_\+text\+\_\+cp1252&Really C\+P-\/1252 without any guessing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+utf16@{mpg123\+\_\+text\+\_\+utf16}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+utf16@{mpg123\+\_\+text\+\_\+utf16}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceac869251a2f73f329771eddef6396818c}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294ceac869251a2f73f329771eddef6396818c}} 
+mpg123\+\_\+text\+\_\+utf16&Some U\+T\+F-\/16 encoding. The last of a set of leading B\+O\+Ms (byte order mark) rules. When there is no B\+OM, big endian ordering is used. Note that U\+C\+S-\/2 qualifies as U\+T\+F-\/8 when you don\textquotesingle{}t mess with the reserved code points. If you want to decode little endian data without B\+OM you need to prepend 0xff 0xfe yourself. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+utf16bom@{mpg123\+\_\+text\+\_\+utf16bom}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+utf16bom@{mpg123\+\_\+text\+\_\+utf16bom}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea4c5c139706dab0863fdb466d8fe5cb46}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea4c5c139706dab0863fdb466d8fe5cb46}} 
+mpg123\+\_\+text\+\_\+utf16bom&Just an alias for U\+T\+F-\/16, I\+D3v2 has this as distinct code. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+utf16be@{mpg123\+\_\+text\+\_\+utf16be}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+utf16be@{mpg123\+\_\+text\+\_\+utf16be}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea659e92fc2d96cb3fae94b25ec34aa3cf}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea659e92fc2d96cb3fae94b25ec34aa3cf}} 
+mpg123\+\_\+text\+\_\+utf16be&Another alias for U\+T\+F16 from I\+D3v2. Note, that, because of the mess that is reality, B\+O\+Ms are used if encountered. There really is not much distinction between the U\+T\+F16 types for mpg123 One exception\+: Since this is seen in I\+D3v2 tags, leading null bytes are skipped for all other U\+T\+F16 types (we expect a B\+OM before real data there), not so for utf16be! \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpg123\+\_\+text\+\_\+max@{mpg123\+\_\+text\+\_\+max}!mpg123 metadata handling@{mpg123 metadata handling}}\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+text\+\_\+max@{mpg123\+\_\+text\+\_\+max}}}\mbox{\Hypertarget{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea31f6a1326b0e255e708b2cf97cb2b15b}\label{group__mpg123__metadata_gga489b4cd5fb8d1d826e38b09bed9294cea31f6a1326b0e255e708b2cf97cb2b15b}} 
+mpg123\+\_\+text\+\_\+max&Placeholder for the maximum encoding value. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{group__mpg123__metadata_gab54a099feebd65c5fa77d49a8c9c6db5}\label{group__mpg123__metadata_gab54a099feebd65c5fa77d49a8c9c6db5}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+add\+\_\+string@{mpg123\+\_\+add\+\_\+string}}
+\index{mpg123\+\_\+add\+\_\+string@{mpg123\+\_\+add\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+add\+\_\+string()}{mpg123\_add\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+add\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{const char $\ast$}]{stuff }\end{DoxyParamCaption})}
+
+Append a C-\/\+String to an \hyperlink{structmpg123__string}{mpg123\+\_\+string} 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+{\em stuff} & to append \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga76c2bf2ead81199a750ddff7253371f1}\label{group__mpg123__metadata_ga76c2bf2ead81199a750ddff7253371f1}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+add\+\_\+substring@{mpg123\+\_\+add\+\_\+substring}}
+\index{mpg123\+\_\+add\+\_\+substring@{mpg123\+\_\+add\+\_\+substring}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+add\+\_\+substring()}{mpg123\_add\_substring()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+add\+\_\+substring (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{const char $\ast$}]{stuff,  }\item[{size\+\_\+t}]{from,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+Append a C-\/substring to an mpg123 string 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+{\em stuff} & content to copy \\
+\hline
+{\em from} & offset to copy from \\
+\hline
+{\em count} & number of characters to copy (a null-\/byte is always appended) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_gad149639f724347c8c420c8551ea3d4c2}\label{group__mpg123__metadata_gad149639f724347c8c420c8551ea3d4c2}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+chomp\+\_\+string@{mpg123\+\_\+chomp\+\_\+string}}
+\index{mpg123\+\_\+chomp\+\_\+string@{mpg123\+\_\+chomp\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+chomp\+\_\+string()}{mpg123\_chomp\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+chomp\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb }\end{DoxyParamCaption})}
+
+Remove trailing \textbackslash{}r and \textbackslash{}n, if present. 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga9d7fe63da5bc665bc754975b293e0a6b}\label{group__mpg123__metadata_ga9d7fe63da5bc665bc754975b293e0a6b}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+copy\+\_\+string@{mpg123\+\_\+copy\+\_\+string}}
+\index{mpg123\+\_\+copy\+\_\+string@{mpg123\+\_\+copy\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+copy\+\_\+string()}{mpg123\_copy\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+copy\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{from,  }\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{to }\end{DoxyParamCaption})}
+
+Copy the contents of one \hyperlink{structmpg123__string}{mpg123\+\_\+string} string to another. Yes the order of arguments is reversed compated to memcpy(). 
+\begin{DoxyParams}{参数}
+{\em from} & string handle \\
+\hline
+{\em to} & string handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_gabd394947d8cca46e49a0e07926bb2369}\label{group__mpg123__metadata_gabd394947d8cca46e49a0e07926bb2369}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+enc\+\_\+from\+\_\+id3@{mpg123\+\_\+enc\+\_\+from\+\_\+id3}}
+\index{mpg123\+\_\+enc\+\_\+from\+\_\+id3@{mpg123\+\_\+enc\+\_\+from\+\_\+id3}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+enc\+\_\+from\+\_\+id3()}{mpg123\_enc\_from\_id3()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding} mpg123\+\_\+enc\+\_\+from\+\_\+id3 (\begin{DoxyParamCaption}\item[{unsigned char}]{id3\+\_\+enc\+\_\+byte }\end{DoxyParamCaption})}
+
+Convert I\+D3 encoding byte to mpg123 encoding index. 
+\begin{DoxyParams}{参数}
+{\em id3\+\_\+enc\+\_\+byte} & the I\+D3 encoding code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the mpg123 encoding index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga254cfe80f5eb2f2715e36be9a5119aed}\label{group__mpg123__metadata_ga254cfe80f5eb2f2715e36be9a5119aed}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+free\+\_\+string@{mpg123\+\_\+free\+\_\+string}}
+\index{mpg123\+\_\+free\+\_\+string@{mpg123\+\_\+free\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+free\+\_\+string()}{mpg123\_free\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} mpg123\+\_\+free\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb }\end{DoxyParamCaption})}
+
+Free-\/up mempory for an existing \hyperlink{structmpg123__string}{mpg123\+\_\+string} 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__mpg123__metadata_ga1125e5a8235c42759d7300797006b05d}\label{group__mpg123__metadata_ga1125e5a8235c42759d7300797006b05d}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+grow\+\_\+string@{mpg123\+\_\+grow\+\_\+string}}
+\index{mpg123\+\_\+grow\+\_\+string@{mpg123\+\_\+grow\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+grow\+\_\+string()}{mpg123\_grow\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+grow\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{size\+\_\+t}]{news }\end{DoxyParamCaption})}
+
+Increase size of a \hyperlink{structmpg123__string}{mpg123\+\_\+string} if necessary (it may stay larger). Note that the functions for adding and setting in current libmpg123 use this instead of \hyperlink{group__mpg123__metadata_ga57ddead33785908618a5c0c7f3c1895a}{mpg123\+\_\+resize\+\_\+string()}. That way, you can preallocate memory and safely work afterwards with pieces. 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+{\em news} & new minimum size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga637c01818ba80ac2275b76a8abefa36c}\label{group__mpg123__metadata_ga637c01818ba80ac2275b76a8abefa36c}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+icy@{mpg123\+\_\+icy}}
+\index{mpg123\+\_\+icy@{mpg123\+\_\+icy}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+icy()}{mpg123\_icy()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+icy (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{char $\ast$$\ast$}]{icy\+\_\+meta }\end{DoxyParamCaption})}
+
+\hyperlink{struct_point}{Point} \hyperlink{structicy__meta}{icy\+\_\+meta} to existing data structure wich may change on any next read/decode function call. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em \hyperlink{structicy__meta}{icy\+\_\+meta}} & return address for I\+CY meta string (set to N\+U\+LL if nothing there) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga0a6e45c3f8dda42ada8a07c29c253c88}\label{group__mpg123__metadata_ga0a6e45c3f8dda42ada8a07c29c253c88}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+icy2utf8@{mpg123\+\_\+icy2utf8}}
+\index{mpg123\+\_\+icy2utf8@{mpg123\+\_\+icy2utf8}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+icy2utf8()}{mpg123\_icy2utf8()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} char$\ast$ mpg123\+\_\+icy2utf8 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{icy\+\_\+text }\end{DoxyParamCaption})}
+
+Decode from windows-\/1252 (the encoding I\+CY metainfo used) to U\+T\+F-\/8. Note that this is very similar to mpg123\+\_\+store\+\_\+utf8(\&sb, mpg123\+\_\+text\+\_\+icy, icy\+\_\+text, strlen(icy\+\_\+text+1)) . 
+\begin{DoxyParams}{参数}
+{\em icy\+\_\+text} & The input data in I\+CY encoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to newly allocated buffer with U\+T\+F-\/8 data (You free() it!) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga8352786015f8ff33c7d1fe8a4d979c88}\label{group__mpg123__metadata_ga8352786015f8ff33c7d1fe8a4d979c88}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+id3@{mpg123\+\_\+id3}}
+\index{mpg123\+\_\+id3@{mpg123\+\_\+id3}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+id3()}{mpg123\_id3()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+id3 (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{\hyperlink{structmpg123__id3v1}{mpg123\+\_\+id3v1} $\ast$$\ast$}]{v1,  }\item[{\hyperlink{structmpg123__id3v2}{mpg123\+\_\+id3v2} $\ast$$\ast$}]{v2 }\end{DoxyParamCaption})}
+
+\hyperlink{struct_point}{Point} v1 and v2 to existing data structures wich may change on any next read/decode function call. v1 and/or v2 can be set to N\+U\+LL when there is no corresponding data. \begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_gaf0206ccb2574f563bff863a26a3b0025}\label{group__mpg123__metadata_gaf0206ccb2574f563bff863a26a3b0025}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+init\+\_\+string@{mpg123\+\_\+init\+\_\+string}}
+\index{mpg123\+\_\+init\+\_\+string@{mpg123\+\_\+init\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+init\+\_\+string()}{mpg123\_init\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} mpg123\+\_\+init\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb }\end{DoxyParamCaption})}
+
+Create and allocate memory for a new \hyperlink{structmpg123__string}{mpg123\+\_\+string} 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle (address of existing structure on your side) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__mpg123__metadata_ga1cd6279a1273f63eb8dcc8a554d815bb}\label{group__mpg123__metadata_ga1cd6279a1273f63eb8dcc8a554d815bb}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+meta\+\_\+check@{mpg123\+\_\+meta\+\_\+check}}
+\index{mpg123\+\_\+meta\+\_\+check@{mpg123\+\_\+meta\+\_\+check}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+meta\+\_\+check()}{mpg123\_meta\_check()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+meta\+\_\+check (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Query if there is (new) meta info, be it I\+D3 or I\+CY (or something new in future). 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+combination of flags, 0 on error (same as \char`\"{}nothing new\char`\"{}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga4bca410c7589658fb8379b3cf3fa3e05}\label{group__mpg123__metadata_ga4bca410c7589658fb8379b3cf3fa3e05}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+meta\+\_\+free@{mpg123\+\_\+meta\+\_\+free}}
+\index{mpg123\+\_\+meta\+\_\+free@{mpg123\+\_\+meta\+\_\+free}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+meta\+\_\+free()}{mpg123\_meta\_free()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} mpg123\+\_\+meta\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Clean up meta data storage (I\+D3v2 and I\+CY), freeing memory. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__mpg123__metadata_ga57ddead33785908618a5c0c7f3c1895a}\label{group__mpg123__metadata_ga57ddead33785908618a5c0c7f3c1895a}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+resize\+\_\+string@{mpg123\+\_\+resize\+\_\+string}}
+\index{mpg123\+\_\+resize\+\_\+string@{mpg123\+\_\+resize\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+resize\+\_\+string()}{mpg123\_resize\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+resize\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{size\+\_\+t}]{news }\end{DoxyParamCaption})}
+
+Change the size of a \hyperlink{structmpg123__string}{mpg123\+\_\+string} 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+{\em news} & new size in bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga96e9070d26d63c02c3f22caa0d339f26}\label{group__mpg123__metadata_ga96e9070d26d63c02c3f22caa0d339f26}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+set\+\_\+string@{mpg123\+\_\+set\+\_\+string}}
+\index{mpg123\+\_\+set\+\_\+string@{mpg123\+\_\+set\+\_\+string}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+set\+\_\+string()}{mpg123\_set\_string()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+set\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{const char $\ast$}]{stuff }\end{DoxyParamCaption})}
+
+Set the content of a \hyperlink{structmpg123__string}{mpg123\+\_\+string} to a C-\/string 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+{\em stuff} & content to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga37b68d834755647a4ef227b0dd4b5c2a}\label{group__mpg123__metadata_ga37b68d834755647a4ef227b0dd4b5c2a}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+set\+\_\+substring@{mpg123\+\_\+set\+\_\+substring}}
+\index{mpg123\+\_\+set\+\_\+substring@{mpg123\+\_\+set\+\_\+substring}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+set\+\_\+substring()}{mpg123\_set\_substring()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+set\+\_\+substring (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{const char $\ast$}]{stuff,  }\item[{size\+\_\+t}]{from,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+Set the content of a \hyperlink{structmpg123__string}{mpg123\+\_\+string} to a C-\/substring 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+{\em stuff} & the future content \\
+\hline
+{\em from} & offset to copy from \\
+\hline
+{\em count} & number of characters to copy (a null-\/byte is always appended) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga5800cb8b5886969982a695258d80f342}\label{group__mpg123__metadata_ga5800cb8b5886969982a695258d80f342}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+store\+\_\+utf8@{mpg123\+\_\+store\+\_\+utf8}}
+\index{mpg123\+\_\+store\+\_\+utf8@{mpg123\+\_\+store\+\_\+utf8}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+store\+\_\+utf8()}{mpg123\_store\_utf8()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+store\+\_\+utf8 (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{\hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__metadata_ga489b4cd5fb8d1d826e38b09bed9294ce}{mpg123\+\_\+text\+\_\+encoding}}]{enc,  }\item[{const unsigned char $\ast$}]{source,  }\item[{size\+\_\+t}]{source\+\_\+size }\end{DoxyParamCaption})}
+
+Store text data in string, after converting to U\+T\+F-\/8 from indicated encoding \hyperlink{struct_a}{A} prominent error can be that you provided an unknown encoding value, or this build of libmpg123 lacks support for certain encodings (I\+D3 or I\+CY stuff missing). Also, you might want to take a bit of care with preparing the data; for example, strip leading zeroes (I have seen that). 
+\begin{DoxyParams}{参数}
+{\em sb} & target string \\
+\hline
+{\em enc} & mpg123 text encoding value \\
+\hline
+{\em source} & source buffer with plain unsigned bytes (you might need to cast from signed char) \\
+\hline
+{\em source\+\_\+size} & number of bytes in the source buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on error, 1 on success (on error, mpg123\+\_\+free\+\_\+string is called on sb) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__metadata_ga556c8eb6c2ee4b88d744dcf20dffa83b}\label{group__mpg123__metadata_ga556c8eb6c2ee4b88d744dcf20dffa83b}} 
+\index{mpg123 metadata handling@{mpg123 metadata handling}!mpg123\+\_\+strlen@{mpg123\+\_\+strlen}}
+\index{mpg123\+\_\+strlen@{mpg123\+\_\+strlen}!mpg123 metadata handling@{mpg123 metadata handling}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+strlen()}{mpg123\_strlen()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} size\+\_\+t mpg123\+\_\+strlen (\begin{DoxyParamCaption}\item[{\hyperlink{structmpg123__string}{mpg123\+\_\+string} $\ast$}]{sb,  }\item[{int}]{utf8 }\end{DoxyParamCaption})}
+
+Count characters in a mpg123 string (non-\/null bytes or U\+T\+F-\/8 characters). Even with the fill property, the character count is not obvious as there could be multiple trailing null bytes. 
+\begin{DoxyParams}{参数}
+{\em sb} & string handle \\
+\hline
+{\em utf8} & a flag to tell if the string is in utf8 encoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+character count 
+\end{DoxyReturn}

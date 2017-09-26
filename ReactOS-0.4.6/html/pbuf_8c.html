@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/drivers/lwip/src/core/pbuf.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_2c85cff4f1cef242b8656be9a8ac1f31.html">drivers</a></li><li class="navelem"><a class="el" href="dir_96ee20e854c60754e26b655afd09dbca.html">lwip</a></li><li class="navelem"><a class="el" href="dir_ead4725ee7eaa6e080332f3f984ccc64.html">src</a></li><li class="navelem"><a class="el" href="dir_22a6bd8b988ddbe67052e47417ed1651.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">pbuf.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="opt_8h_source.html">lwip/opt.h</a>&quot;</code><br />
+<code>#include &quot;lwip/stats.h&quot;</code><br />
+<code>#include &quot;lwip/def.h&quot;</code><br />
+<code>#include &quot;lwip/mem.h&quot;</code><br />
+<code>#include &quot;lwip/memp.h&quot;</code><br />
+<code>#include &quot;lwip/pbuf.h&quot;</code><br />
+<code>#include &quot;lwip/sys.h&quot;</code><br />
+<code>#include &quot;arch/perf.h&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a8357a994e45ff94c9494aa55b6c3ecb3"><td class="memItemLeft" align="right" valign="top"><a id="a8357a994e45ff94c9494aa55b6c3ecb3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SIZEOF_STRUCT_PBUF</b>&#160;&#160;&#160;LWIP_MEM_ALIGN_SIZE(sizeof(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a>))</td></tr>
+<tr class="separator:a8357a994e45ff94c9494aa55b6c3ecb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dad81a8286ee8e9a7c70a74f9f4bb0f"><td class="memItemLeft" align="right" valign="top"><a id="a3dad81a8286ee8e9a7c70a74f9f4bb0f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PBUF_POOL_BUFSIZE_ALIGNED</b>&#160;&#160;&#160;LWIP_MEM_ALIGN_SIZE(<a class="el" href="opt_8h.html#ae61f4491d56e805e79b79eb5d35a00e5">PBUF_POOL_BUFSIZE</a>)</td></tr>
+<tr class="separator:a3dad81a8286ee8e9a7c70a74f9f4bb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed70c61e971683736c569a1a99b76569"><td class="memItemLeft" align="right" valign="top"><a id="aed70c61e971683736c569a1a99b76569"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PBUF_POOL_IS_EMPTY</b>()</td></tr>
+<tr class="separator:aed70c61e971683736c569a1a99b76569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:acfcb0a2af918658ba0afe36499c65f47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#acfcb0a2af918658ba0afe36499c65f47">pbuf_alloc</a> (pbuf_layer layer, u16_t length, pbuf_type type)</td></tr>
+<tr class="separator:acfcb0a2af918658ba0afe36499c65f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50abfe830a33a1a47a562febee66015d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a50abfe830a33a1a47a562febee66015d">pbuf_realloc</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, u16_t new_len)</td></tr>
+<tr class="separator:a50abfe830a33a1a47a562febee66015d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f81deff4a0e6e8e0ff161a7b9871449"><td class="memItemLeft" align="right" valign="top">u8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a0f81deff4a0e6e8e0ff161a7b9871449">pbuf_header</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, s16_t header_size_increment)</td></tr>
+<tr class="separator:a0f81deff4a0e6e8e0ff161a7b9871449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dd696fb4b6bc65e548944584f1738b"><td class="memItemLeft" align="right" valign="top">u8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#ab0dd696fb4b6bc65e548944584f1738b">pbuf_free</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p)</td></tr>
+<tr class="separator:ab0dd696fb4b6bc65e548944584f1738b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949a13a7cfdf9241c9e7b859af1bd15c"><td class="memItemLeft" align="right" valign="top">u8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a949a13a7cfdf9241c9e7b859af1bd15c">pbuf_clen</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p)</td></tr>
+<tr class="separator:a949a13a7cfdf9241c9e7b859af1bd15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f6bbd69e45e542014d9c547c7da74e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a77f6bbd69e45e542014d9c547c7da74e">pbuf_ref</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p)</td></tr>
+<tr class="separator:a77f6bbd69e45e542014d9c547c7da74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82429084fe29015509c9b4a072707cd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a82429084fe29015509c9b4a072707cd4">pbuf_cat</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *h, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *t)</td></tr>
+<tr class="separator:a82429084fe29015509c9b4a072707cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831c9a72bda1d3bd4c7b96f5a0e3b891"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a831c9a72bda1d3bd4c7b96f5a0e3b891">pbuf_chain</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *h, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *t)</td></tr>
+<tr class="separator:a831c9a72bda1d3bd4c7b96f5a0e3b891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3d29c4f43986b4cb5eb314d5b9729d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#abf3d29c4f43986b4cb5eb314d5b9729d">pbuf_dechain</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p)</td></tr>
+<tr class="separator:abf3d29c4f43986b4cb5eb314d5b9729d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9cfb728d91302f068b5c6bd581e3e5"><td class="memItemLeft" align="right" valign="top">err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#aee9cfb728d91302f068b5c6bd581e3e5">pbuf_copy</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p_to, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p_from)</td></tr>
+<tr class="separator:aee9cfb728d91302f068b5c6bd581e3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efc1f3148d6c0236e40b41242bda4df"><td class="memItemLeft" align="right" valign="top">u16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a9efc1f3148d6c0236e40b41242bda4df">pbuf_copy_partial</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *buf, <a class="el" href="interfacevoid.html">void</a> *dataptr, u16_t len, u16_t offset)</td></tr>
+<tr class="separator:a9efc1f3148d6c0236e40b41242bda4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e31e370271335b197272af2724ca85"><td class="memItemLeft" align="right" valign="top">err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#ad1e31e370271335b197272af2724ca85">pbuf_take</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *buf, const <a class="el" href="interfacevoid.html">void</a> *dataptr, u16_t len)</td></tr>
+<tr class="separator:ad1e31e370271335b197272af2724ca85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ac7b116c6f53c704cbf74f35a8b35c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a54ac7b116c6f53c704cbf74f35a8b35c">pbuf_coalesce</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, pbuf_layer layer)</td></tr>
+<tr class="separator:a54ac7b116c6f53c704cbf74f35a8b35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0f4c31d059984a431c96bf27b763e6"><td class="memItemLeft" align="right" valign="top">u8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a9e0f4c31d059984a431c96bf27b763e6">pbuf_get_at</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, u16_t offset)</td></tr>
+<tr class="separator:a9e0f4c31d059984a431c96bf27b763e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c958b2d670dc831a982ea836c6bdfdb"><td class="memItemLeft" align="right" valign="top">u16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#a9c958b2d670dc831a982ea836c6bdfdb">pbuf_memcmp</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, u16_t offset, const <a class="el" href="interfacevoid.html">void</a> *s2, u16_t n)</td></tr>
+<tr class="separator:a9c958b2d670dc831a982ea836c6bdfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a23dd5534f69e34de05c624b91aa65"><td class="memItemLeft" align="right" valign="top">u16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#ab5a23dd5534f69e34de05c624b91aa65">pbuf_memfind</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, const <a class="el" href="interfacevoid.html">void</a> *<a class="el" href="structmem.html">mem</a>, u16_t mem_len, u16_t start_offset)</td></tr>
+<tr class="separator:ab5a23dd5534f69e34de05c624b91aa65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88642dbb9d8396e11c4da8d08854df7"><td class="memItemLeft" align="right" valign="top">u16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pbuf_8c.html#ad88642dbb9d8396e11c4da8d08854df7">pbuf_strstr</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *p, const char *substr)</td></tr>
+<tr class="separator:ad88642dbb9d8396e11c4da8d08854df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Packet buffer management</p>
+<p>Packets are built from the pbuf data structure. <a class="el" href="class_it.html">It</a> supports dynamic memory allocation for packet contents or can reference externally managed packet contents both in RAM and ROM. Quick allocation for incoming packets is provided through pools with fixed sized pbufs.</p>
+<p><a class="el" href="struct_a.html">A</a> packet may span over multiple pbufs, chained as a singly linked list. <a class="el" href="namespace_this.html">This</a> is called a "pbuf chain".</p>
+<p>Multiple packets may be queued, also using this singly linked list. <a class="el" href="namespace_this.html">This</a> is called a "packet queue".</p>
+<p>So, a packet queue consists of one or more pbuf chains, each of which consist of one or more pbufs. CURRENTLY, PACKET QUEUES ARE NOT SUPPORTED!!! Use helper structs to queue multiple packets.</p>
+<p>The differences between a pbuf chain and a packet queue are very precise but subtle.</p>
+<p>The last pbuf of a packet has a -&gt;tot_len field that equals the -&gt;len field. <a class="el" href="class_it.html">It</a> can be found by traversing the list. If the last pbuf of a packet has a -&gt;next field other than NULL, more packets are on the queue.</p>
+<p>Therefore, looping through a pbuf of a single packet, has an loop end condition (tot_len == p-&gt;len), NOT (next == NULL). </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="acfcb0a2af918658ba0afe36499c65f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfcb0a2af918658ba0afe36499c65f47">&#9670;&nbsp;</a></span>pbuf_alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a>* pbuf_alloc </td>
+          <td>(</td>
+          <td class="paramtype">pbuf_layer&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pbuf_type&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocates a pbuf of the given type (possibly a chain for PBUF_POOL type).</p>
+<p>The actual memory allocated for the pbuf is determined by the layer at which the pbuf is allocated and the requested size (from the size parameter).</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>flag to define header size </td></tr>
+    <tr><td class="paramname">length</td><td>size of the pbuf's payload </td></tr>
+    <tr><td class="paramname">type</td><td>this parameter decides how and where the pbuf should be allocated as follows:</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>PBUF_RAM: buffer memory for pbuf is allocated as one large chunk. <a class="el" href="namespace_this.html">This</a> includes protocol headers as well.</li>
+<li>PBUF_ROM: no buffer memory is allocated for the pbuf, even for protocol headers. Additional headers must be prepended by allocating another pbuf and chain in to the front of the ROM pbuf. <a class="el" href="class_it.html">It</a> is assumed that the memory used is really similar to ROM in that it is immutable and will not be changed. Memory which is dynamic should generally not be attached to PBUF_ROM pbufs. Use PBUF_REF instead.</li>
+<li>PBUF_REF: no buffer memory is allocated for the pbuf, even for protocol headers. <a class="el" href="class_it.html">It</a> is assumed that the pbuf is only being used in a single thread. If the pbuf gets queued, then pbuf_take should be called to copy the buffer.</li>
+<li>PBUF_POOL: the pbuf is allocated as a pbuf chain, with pbufs from the pbuf pool that is allocated during pbuf_init().</li>
+</ul>
+<dl class="section return"><dt>返回</dt><dd>the allocated pbuf. If multiple pbufs where allocated, this is the first pbuf of a pbuf chain. </dd></dl>
+
+</div>
+</div>
+<a id="a82429084fe29015509c9b4a072707cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82429084fe29015509c9b4a072707cd4">&#9670;&nbsp;</a></span>pbuf_cat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> pbuf_cat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Concatenate two pbufs (each may be a pbuf chain) and take over the caller's reference of the tail pbuf.</p>
+<dl class="section note"><dt>注解</dt><dd>The caller MAY NOT reference the tail pbuf afterwards. Use <a class="el" href="pbuf_8c.html#a831c9a72bda1d3bd4c7b96f5a0e3b891">pbuf_chain()</a> for that purpose.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="pbuf_8c.html#a831c9a72bda1d3bd4c7b96f5a0e3b891">pbuf_chain()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a831c9a72bda1d3bd4c7b96f5a0e3b891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a831c9a72bda1d3bd4c7b96f5a0e3b891">&#9670;&nbsp;</a></span>pbuf_chain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> pbuf_chain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Chain two pbufs (or pbuf chains) together.</p>
+<p>The caller MUST call pbuf_free(t) once it has stopped using it. Use <a class="el" href="pbuf_8c.html#a82429084fe29015509c9b4a072707cd4">pbuf_cat()</a> instead if you no longer use t.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>head pbuf (chain) </td></tr>
+    <tr><td class="paramname">t</td><td>tail pbuf (chain) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>The pbufs MUST belong to the same packet. </dd>
+<dd>
+MAY NOT be called on a packet queue.</dd></dl>
+<p>The -&gt;tot_len fields of all pbufs of the head chain are adjusted. The -&gt;next field of the last pbuf of the head chain is adjusted. The -&gt;ref field of the first pbuf of the tail chain is adjusted. </p>
+
+</div>
+</div>
+<a id="a949a13a7cfdf9241c9e7b859af1bd15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949a13a7cfdf9241c9e7b859af1bd15c">&#9670;&nbsp;</a></span>pbuf_clen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8_t pbuf_clen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Count number of pbufs in a chain</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>first pbuf of chain </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the number of pbufs in a chain </dd></dl>
+
+</div>
+</div>
+<a id="a54ac7b116c6f53c704cbf74f35a8b35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ac7b116c6f53c704cbf74f35a8b35c">&#9670;&nbsp;</a></span>pbuf_coalesce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a>* pbuf_coalesce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pbuf_layer&#160;</td>
+          <td class="paramname"><em>layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a single pbuf out of a queue of pbufs.</p>
+<dl class="section remark"><dt>备注</dt><dd>: Either the source pbuf 'p' is freed by this function or the original pbuf 'p' is returned, therefore the caller has to check the result!</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>the source pbuf </td></tr>
+    <tr><td class="paramname">layer</td><td>pbuf_layer of the new pbuf</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>a new, single pbuf (p-&gt;next is NULL) or the old pbuf if allocation fails </dd></dl>
+
+</div>
+</div>
+<a id="aee9cfb728d91302f068b5c6bd581e3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9cfb728d91302f068b5c6bd581e3e5">&#9670;&nbsp;</a></span>pbuf_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_t pbuf_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p_to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p_from</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create PBUF_RAM copies of pbufs.</p>
+<p>Used to queue packets on behalf of the lwIP stack, such as ARP based queueing.</p>
+<dl class="section note"><dt>注解</dt><dd>You MUST explicitly use p = pbuf_take(p);</dd>
+<dd>
+Only one packet is copied, no packet queue!</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_to</td><td>pbuf destination of the copy </td></tr>
+    <tr><td class="paramname">p_from</td><td>pbuf source of the copy</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_OK if pbuf was copied ERR_ARG if one of the pbufs is NULL or p_to is not big enough to hold p_from </dd></dl>
+
+</div>
+</div>
+<a id="a9efc1f3148d6c0236e40b41242bda4df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efc1f3148d6c0236e40b41242bda4df">&#9670;&nbsp;</a></span>pbuf_copy_partial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16_t pbuf_copy_partial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>dataptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy (part of) the contents of a packet buffer to an application supplied buffer.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>the pbuf from which to copy data </td></tr>
+    <tr><td class="paramname">dataptr</td><td>the application supplied buffer </td></tr>
+    <tr><td class="paramname">len</td><td>length of data to copy (dataptr must be big enough). No more than buf-&gt;tot_len will be copied, irrespective of len </td></tr>
+    <tr><td class="paramname">offset</td><td>offset into the packet buffer from where to begin copying len bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the number of bytes copied, or 0 on failure </dd></dl>
+
+</div>
+</div>
+<a id="abf3d29c4f43986b4cb5eb314d5b9729d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3d29c4f43986b4cb5eb314d5b9729d">&#9670;&nbsp;</a></span>pbuf_dechain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a>* pbuf_dechain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dechains the first pbuf from its succeeding pbufs in the chain.</p>
+<p>Makes p-&gt;tot_len field equal to p-&gt;len. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to dechain </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>remainder of the pbuf chain, or NULL if it was de-allocated. </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>May not be called on a packet queue. </dd></dl>
+
+</div>
+</div>
+<a id="ab0dd696fb4b6bc65e548944584f1738b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0dd696fb4b6bc65e548944584f1738b">&#9670;&nbsp;</a></span>pbuf_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8_t pbuf_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dereference a pbuf chain or queue and deallocate any no-longer-used pbufs at the head of this chain or queue.</p>
+<p>Decrements the pbuf reference count. If it reaches zero, the pbuf is deallocated.</p>
+<p>For a pbuf chain, this is repeated for each pbuf in the chain, up to the first pbuf which has a non-zero reference count after decrementing. So, when all reference counts are one, the whole chain is free'd.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The pbuf (chain) to be dereferenced.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the number of pbufs that were de-allocated from the head of the chain.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>MUST NOT be called on a packet queue (Not verified to work yet). </dd>
+<dd>
+the reference counter of a pbuf equals the number of pointers that refer to the pbuf (or into the pbuf). </dd></dl>
+
+</div>
+</div>
+<a id="a9e0f4c31d059984a431c96bf27b763e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0f4c31d059984a431c96bf27b763e6">&#9670;&nbsp;</a></span>pbuf_get_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8_t pbuf_get_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get one byte from the specified position in a pbuf WARNING: returns zero for offset &gt;= p-&gt;tot_len</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to parse </td></tr>
+    <tr><td class="paramname">offset</td><td>offset into p of the byte to return </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>byte at an offset into p OR ZERO IF 'offset' &gt;= p-&gt;tot_len </dd></dl>
+
+</div>
+</div>
+<a id="a0f81deff4a0e6e8e0ff161a7b9871449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f81deff4a0e6e8e0ff161a7b9871449">&#9670;&nbsp;</a></span>pbuf_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8_t pbuf_header </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s16_t&#160;</td>
+          <td class="paramname"><em>header_size_increment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adjusts the payload pointer to hide or reveal headers in the payload.</p>
+<p>Adjusts the -&gt;payload pointer so that space for a header (dis)appears in the pbuf payload.</p>
+<p>The -&gt;payload, -&gt;tot_len and -&gt;len fields are adjusted.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to change the header size. </td></tr>
+    <tr><td class="paramname">header_size_increment</td><td>Number of bytes to increment header size which increases the size of the pbuf. New space is on the front. (Using a negative value decreases the header size.) If hdr_size_inc is 0, this function does nothing and returns succesful.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>PBUF_ROM and PBUF_REF type buffers cannot have their sizes increased, so the call will fail. <a class="el" href="struct_a.html">A</a> check is made that the increase in header size does not move the payload pointer in front of the start of the buffer. </p><dl class="section return"><dt>返回</dt><dd>non-zero on failure, zero on success. </dd></dl>
+
+</div>
+</div>
+<a id="a9c958b2d670dc831a982ea836c6bdfdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c958b2d670dc831a982ea836c6bdfdb">&#9670;&nbsp;</a></span>pbuf_memcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16_t pbuf_memcmp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compare pbuf contents at specified offset with memory s2, both of length n</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to compare </td></tr>
+    <tr><td class="paramname">offset</td><td>offset into p at wich to start comparing </td></tr>
+    <tr><td class="paramname">s2</td><td>buffer to compare </td></tr>
+    <tr><td class="paramname">n</td><td>length of buffer to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>zero if equal, nonzero otherwise (0xffff if p is too short, diffoffset+1 otherwise) </dd></dl>
+
+</div>
+</div>
+<a id="ab5a23dd5534f69e34de05c624b91aa65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a23dd5534f69e34de05c624b91aa65">&#9670;&nbsp;</a></span>pbuf_memfind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16_t pbuf_memfind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>mem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>mem_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>start_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find occurrence of mem (with length mem_len) in pbuf p, starting at offset start_offset.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to search, maximum length is 0xFFFE since 0xFFFF is used as return value 'not found' </td></tr>
+    <tr><td class="paramname">mem</td><td>search for the contents of this buffer </td></tr>
+    <tr><td class="paramname">mem_len</td><td>length of 'mem' </td></tr>
+    <tr><td class="paramname">start_offset</td><td>offset into p at which to start searching </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0xFFFF if substr was not found in p or the index where it was found </dd></dl>
+
+</div>
+</div>
+<a id="a50abfe830a33a1a47a562febee66015d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50abfe830a33a1a47a562febee66015d">&#9670;&nbsp;</a></span>pbuf_realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> pbuf_realloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>new_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shrink a pbuf chain to a desired length.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to shrink. </td></tr>
+    <tr><td class="paramname">new_len</td><td>desired new length of pbuf chain</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Depending on the desired length, the first few pbufs in a chain might be skipped and left unchanged. The new last pbuf in the chain will be resized, and any remaining pbufs will be freed.</p>
+<dl class="section note"><dt>注解</dt><dd>If the pbuf is ROM/REF, only the -&gt;tot_len and -&gt;len fields are adjusted. </dd>
+<dd>
+May not be called on a packet queue.</dd>
+<dd>
+Despite its name, pbuf_realloc cannot grow the size of a pbuf (chain). </dd></dl>
+
+</div>
+</div>
+<a id="a77f6bbd69e45e542014d9c547c7da74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f6bbd69e45e542014d9c547c7da74e">&#9670;&nbsp;</a></span>pbuf_ref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> pbuf_ref </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Increment the reference count of the pbuf.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to increase reference counter of </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad88642dbb9d8396e11c4da8d08854df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88642dbb9d8396e11c4da8d08854df7">&#9670;&nbsp;</a></span>pbuf_strstr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16_t pbuf_strstr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>substr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find occurrence of substr with length substr_len in pbuf p, start at offset start_offset WARNING: in contrast to strstr(), this one does not stop at the first \0 in the pbuf/source string!</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pbuf to search, maximum length is 0xFFFE since 0xFFFF is used as return value 'not found' </td></tr>
+    <tr><td class="paramname">substr</td><td>string to search for in p, maximum length is 0xFFFE </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0xFFFF if substr was not found in p or the index where it was found </dd></dl>
+
+</div>
+</div>
+<a id="ad1e31e370271335b197272af2724ca85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e31e370271335b197272af2724ca85">&#9670;&nbsp;</a></span>pbuf_take()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">err_t pbuf_take </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>dataptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy application supplied data into a pbuf. <a class="el" href="namespace_this.html">This</a> function can only be used to copy the equivalent of buf-&gt;tot_len data.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>pbuf to fill with data </td></tr>
+    <tr><td class="paramname">dataptr</td><td>application supplied data buffer </td></tr>
+    <tr><td class="paramname">len</td><td>length of the application supplied data buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ERR_OK if successful, ERR_MEM if the pbuf is not big enough </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

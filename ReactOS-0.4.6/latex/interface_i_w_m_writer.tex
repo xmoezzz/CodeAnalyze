@@ -1,0 +1,56 @@
+\hypertarget{interface_i_w_m_writer}{}\section{I\+W\+M\+Writer接口 参考}
+\label{interface_i_w_m_writer}\index{I\+W\+M\+Writer@{I\+W\+M\+Writer}}
+类 I\+W\+M\+Writer 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_w_m_writer}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_a9b1052ed39b1e28a57f688973211b47b}\label{interface_i_w_m_writer_a9b1052ed39b1e28a57f688973211b47b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Profile\+By\+ID} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Profile)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_a2efe0aaf4d40f60e68bb1bdef5515ab4}\label{interface_i_w_m_writer_a2efe0aaf4d40f60e68bb1bdef5515ab4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Profile} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_profile}{I\+W\+M\+Profile} $\ast$p\+Profile)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_abb598210dd1b31da08954843e7f38f81}\label{interface_i_w_m_writer_abb598210dd1b31da08954843e7f38f81}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Output\+Filename} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwsz\+Filename)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_ad8b85631d01c099fb126095c35c3f0dd}\label{interface_i_w_m_writer_ad8b85631d01c099fb126095c35c3f0dd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Input\+Count} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pc\+Inputs)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_ab0870eb88569cd0f82a2553cc5012605}\label{interface_i_w_m_writer_ab0870eb88569cd0f82a2553cc5012605}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Input\+Props} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Input\+Num, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_input_media_props}{I\+W\+M\+Input\+Media\+Props} $\ast$$\ast$pp\+Input)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_aa08c4018ada78d5d7d0be32047421bae}\label{interface_i_w_m_writer_aa08c4018ada78d5d7d0be32047421bae}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Input\+Props} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Input\+Num, \mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_input_media_props}{I\+W\+M\+Input\+Media\+Props} $\ast$p\+Input)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_a864a97ae7923c7268e43f8f92d6e8722}\label{interface_i_w_m_writer_a864a97ae7923c7268e43f8f92d6e8722}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Input\+Format\+Count} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Input\+Number, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pc\+Formats)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_af0c7b977c0f595c5f50dec0778692137}\label{interface_i_w_m_writer_af0c7b977c0f595c5f50dec0778692137}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Input\+Format} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Input\+Number, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Format\+Number, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_input_media_props}{I\+W\+M\+Input\+Media\+Props} $\ast$$\ast$p\+Props)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_a607206903bd7b91112f8da33c68b2fef}\label{interface_i_w_m_writer_a607206903bd7b91112f8da33c68b2fef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Begin\+Writing} ()
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_a87f8c97008879eee479fe7df526c355c}\label{interface_i_w_m_writer_a87f8c97008879eee479fe7df526c355c}} 
+H\+R\+E\+S\+U\+LT {\bfseries End\+Writing} ()
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_af459b8e9e6cdf5b68d7b440f9d8307cf}\label{interface_i_w_m_writer_af459b8e9e6cdf5b68d7b440f9d8307cf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Allocate\+Sample} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Sample\+Size, \mbox{[}out\mbox{]} \hyperlink{interface_i_n_s_s_buffer}{I\+N\+S\+S\+Buffer} $\ast$$\ast$pp\+Sample)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_a0a7646b7fc974ea31e0bb66f123b0dfe}\label{interface_i_w_m_writer_a0a7646b7fc974ea31e0bb66f123b0dfe}} 
+H\+R\+E\+S\+U\+LT {\bfseries Write\+Sample} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Input\+Num, \mbox{[}in\mbox{]} Q\+W\+O\+RD cns\+Sample\+Time, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} \hyperlink{interface_i_n_s_s_buffer}{I\+N\+S\+S\+Buffer} $\ast$p\+Sample)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_a474b6de1afd11b6caff4cb3e9678bff4}\label{interface_i_w_m_writer_a474b6de1afd11b6caff4cb3e9678bff4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Flush} ()
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wmsdkidl.\+idl\end{DoxyCompactItemize}

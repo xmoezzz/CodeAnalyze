@@ -1,0 +1,71 @@
+\hypertarget{struct_shell_entry}{}\section{Shell\+Entry结构体 参考}
+\label{struct_shell_entry}\index{Shell\+Entry@{Shell\+Entry}}
+
+
+shell file/directory entry  
+
+
+
+
+{\ttfamily \#include $<$shellfs.\+h$>$}
+
+类 Shell\+Entry 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_shell_entry}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_entry_af2eda60b996c9ea087d3d87634d2d3cd}\label{struct_shell_entry_af2eda60b996c9ea087d3d87634d2d3cd}} 
+{\bfseries Shell\+Entry} (\hyperlink{struct_entry}{Entry} $\ast$parent, L\+P\+I\+T\+E\+M\+I\+D\+L\+I\+ST shell\+\_\+path)
+\item 
+\mbox{\Hypertarget{struct_shell_entry_aa862cd94c4255b2b06972920c362ff2a}\label{struct_shell_entry_aa862cd94c4255b2b06972920c362ff2a}} 
+{\bfseries Shell\+Entry} (\hyperlink{struct_entry}{Entry} $\ast$parent, const \hyperlink{struct_shell_path}{Shell\+Path} \&shell\+\_\+path)
+\item 
+\mbox{\Hypertarget{struct_shell_entry_aad52e37cf1650fc8ae5f856c61a3d2ed}\label{struct_shell_entry_aad52e37cf1650fc8ae5f856c61a3d2ed}} 
+virtual bool {\bfseries get\+\_\+path} (P\+T\+S\+TR \hyperlink{structpath}{path}, size\+\_\+t path\+\_\+count) const
+\item 
+\mbox{\Hypertarget{struct_shell_entry_a8dd9b3e7e37b07dc40adb8cc529e53f8}\label{struct_shell_entry_a8dd9b3e7e37b07dc40adb8cc529e53f8}} 
+virtual \hyperlink{struct_shell_path}{Shell\+Path} {\bfseries create\+\_\+absolute\+\_\+pidl} () const
+\item 
+\mbox{\Hypertarget{struct_shell_entry_ab66a6d88195783371cef7b8dc51b90ce}\label{struct_shell_entry_ab66a6d88195783371cef7b8dc51b90ce}} 
+virtual H\+R\+E\+S\+U\+LT {\bfseries Get\+U\+I\+Object\+Of} (\hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd, R\+E\+F\+I\+ID riid, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} $\ast$ppv\+Out)
+\item 
+\mbox{\Hypertarget{struct_shell_entry_ac3db3e8efdfdee25df49a20c35529079}\label{struct_shell_entry_ac3db3e8efdfdee25df49a20c35529079}} 
+virtual B\+O\+OL {\bfseries launch\+\_\+entry} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, U\+I\+NT n\+Cmd\+Show=S\+W\+\_\+\+S\+H\+O\+W\+N\+O\+R\+M\+AL)
+\item 
+\mbox{\Hypertarget{struct_shell_entry_a1172ae9fa4a3b2b5249971e9ac704de9}\label{struct_shell_entry_a1172ae9fa4a3b2b5249971e9ac704de9}} 
+virtual H\+R\+E\+S\+U\+LT {\bfseries do\+\_\+context\+\_\+menu} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&ppt\+Screen, \hyperlink{struct_ctx_menu_interfaces}{Ctx\+Menu\+Interfaces} \&cm\+\_\+ifs)
+\item 
+\mbox{\Hypertarget{struct_shell_entry_ae1c364a4c54ed30849c33991242c59c7}\label{struct_shell_entry_ae1c364a4c54ed30849c33991242c59c7}} 
+virtual \hyperlink{struct_shell_folder}{Shell\+Folder} {\bfseries get\+\_\+shell\+\_\+folder} () const
+\item 
+\mbox{\Hypertarget{struct_shell_entry_a3e7cc01aaed708bbc68b0cd64550bd09}\label{struct_shell_entry_a3e7cc01aaed708bbc68b0cd64550bd09}} 
+\hyperlink{interface_i_shell_folder}{I\+Shell\+Folder} $\ast$ {\bfseries get\+\_\+parent\+\_\+folder} () const
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_entry_adf0bb6eefbbae32e05316b8c6e6b21c6}\label{struct_shell_entry_adf0bb6eefbbae32e05316b8c6e6b21c6}} 
+\hyperlink{struct_shell_path}{Shell\+Path} {\bfseries \+\_\+pidl}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_entry_a607fe3be336cc7116737266ef8543669}\label{struct_shell_entry_a607fe3be336cc7116737266ef8543669}} 
+{\bfseries Shell\+Entry} (L\+P\+I\+T\+E\+M\+I\+D\+L\+I\+ST shell\+\_\+path)
+\item 
+\mbox{\Hypertarget{struct_shell_entry_a1c546f2d1a81659633d0bf38e294ff5c}\label{struct_shell_entry_a1c546f2d1a81659633d0bf38e294ff5c}} 
+{\bfseries Shell\+Entry} (const \hyperlink{struct_shell_path}{Shell\+Path} \&shell\+\_\+path)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+shell file/directory entry 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/shellfs.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/shellfs.\+cpp\end{DoxyCompactItemize}

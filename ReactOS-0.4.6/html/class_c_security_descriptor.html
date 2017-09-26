@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: CSecurityDescriptor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_c_security_descriptor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CSecurityDescriptor类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1c4ae670986a0ae174f53045ab9aabd1"><td class="memItemLeft" align="right" valign="top"><a id="a1c4ae670986a0ae174f53045ab9aabd1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ACEntryType</b> { <b>Unknown</b>, 
+<b>AccessAlowed</b>, 
+<b>AccessDenied</b>, 
+<b>SystemAudit</b>
+ }</td></tr>
+<tr class="separator:a1c4ae670986a0ae174f53045ab9aabd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab7c3b7f72a97d84b1334adea2c5f9e39"><td class="memItemLeft" align="right" valign="top"><a id="ab7c3b7f72a97d84b1334adea2c5f9e39"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentACE_Flags</b> (BYTE &amp;bFlags)</td></tr>
+<tr class="separator:ab7c3b7f72a97d84b1334adea2c5f9e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43c7440ad77f2bcf5c82a7724e86891"><td class="memItemLeft" align="right" valign="top"><a id="af43c7440ad77f2bcf5c82a7724e86891"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentACE_AccessMask</b> (DWORD &amp;dwMask)</td></tr>
+<tr class="separator:af43c7440ad77f2bcf5c82a7724e86891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8d8a0ed2d5b5d5b92f8db08cebd9b2"><td class="memItemLeft" align="right" valign="top"><a id="a4b8d8a0ed2d5b5d5b92f8db08cebd9b2"></a>
+<a class="el" href="struct___s_i_d.html">PSID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentACE_SID</b> ()</td></tr>
+<tr class="separator:a4b8d8a0ed2d5b5d5b92f8db08cebd9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29136287e24bc07e18216cd77b311c57"><td class="memItemLeft" align="right" valign="top"><a id="a29136287e24bc07e18216cd77b311c57"></a>
+ACEntryType&#160;</td><td class="memItemRight" valign="bottom"><b>GetDACLEntry</b> (DWORD nIndex)</td></tr>
+<tr class="separator:a29136287e24bc07e18216cd77b311c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab161d5fac59980263263a2100ab210b5"><td class="memItemLeft" align="right" valign="top"><a id="ab161d5fac59980263263a2100ab210b5"></a>
+ACEntryType&#160;</td><td class="memItemRight" valign="bottom"><b>GetSACLEntry</b> (DWORD nIndex, BOOL &amp;blnFailedAccess, BOOL &amp;blnSeccessfulAccess)</td></tr>
+<tr class="separator:ab161d5fac59980263263a2100ab210b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf7ee94917f0477b4886b37abfbd4e5"><td class="memItemLeft" align="right" valign="top"><a id="acdf7ee94917f0477b4886b37abfbd4e5"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>GetDACLEntriesCount</b> ()</td></tr>
+<tr class="separator:acdf7ee94917f0477b4886b37abfbd4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e7f30c995bfda91cafa31597a324cc"><td class="memItemLeft" align="right" valign="top"><a id="af2e7f30c995bfda91cafa31597a324cc"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>GetSACLEntriesCount</b> ()</td></tr>
+<tr class="separator:af2e7f30c995bfda91cafa31597a324cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee02cc67e75f81c42fca7f62d06c364"><td class="memItemLeft" align="right" valign="top"><a id="a1ee02cc67e75f81c42fca7f62d06c364"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>HasValidDACL</b> ()</td></tr>
+<tr class="separator:a1ee02cc67e75f81c42fca7f62d06c364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94b4b9f26225b911011f559433e6ead"><td class="memItemLeft" align="right" valign="top"><a id="ac94b4b9f26225b911011f559433e6ead"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>HasNULLDACL</b> ()</td></tr>
+<tr class="separator:ac94b4b9f26225b911011f559433e6ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0111ede473f2706bf764af612fc388"><td class="memItemLeft" align="right" valign="top"><a id="a0c0111ede473f2706bf764af612fc388"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>HasValidSACL</b> ()</td></tr>
+<tr class="separator:a0c0111ede473f2706bf764af612fc388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d37b2510abae5716e78e7fed52f6f0"><td class="memItemLeft" align="right" valign="top"><a id="a53d37b2510abae5716e78e7fed52f6f0"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>HasNULLSACL</b> ()</td></tr>
+<tr class="separator:a53d37b2510abae5716e78e7fed52f6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53672b7cc6d15da5db2c9b621dede91e"><td class="memItemLeft" align="right" valign="top"><a id="a53672b7cc6d15da5db2c9b621dede91e"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>DescriptorContainsDACL</b> ()</td></tr>
+<tr class="separator:a53672b7cc6d15da5db2c9b621dede91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f8493cca5d32b3c1c04b640c5c6e33"><td class="memItemLeft" align="right" valign="top"><a id="a82f8493cca5d32b3c1c04b640c5c6e33"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>DescriptorContainsSACL</b> ()</td></tr>
+<tr class="separator:a82f8493cca5d32b3c1c04b640c5c6e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5aeb6ae172cc7aaad377728c9e36a95"><td class="memItemLeft" align="right" valign="top"><a id="ab5aeb6ae172cc7aaad377728c9e36a95"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>BeginDACLInteration</b> ()</td></tr>
+<tr class="separator:ab5aeb6ae172cc7aaad377728c9e36a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5759c9b8bab4d4cc0586710ba20de9ab"><td class="memItemLeft" align="right" valign="top"><a id="a5759c9b8bab4d4cc0586710ba20de9ab"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>BeginSACLInteration</b> ()</td></tr>
+<tr class="separator:a5759c9b8bab4d4cc0586710ba20de9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9383b2fd592c0cc3de8ef67a89085d"><td class="memItemLeft" align="right" valign="top"><a id="a0e9383b2fd592c0cc3de8ef67a89085d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AssociateDescriptor</b> (<a class="el" href="struct___s_e_c_u_r_i_t_y___d_e_s_c_r_i_p_t_o_r.html">PSECURITY_DESCRIPTOR</a> pSecurityDescriptor)</td></tr>
+<tr class="separator:a0e9383b2fd592c0cc3de8ef67a89085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/sysutils/regexpl/<a class="el" href="_security_descriptor_8h_source.html">SecurityDescriptor.h</a></li>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/sysutils/regexpl/SecurityDescriptor.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

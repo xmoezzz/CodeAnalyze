@@ -1,0 +1,156 @@
+\hypertarget{opengl_2mesa_2main_2extensions_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/extensions.c 文件参考}
+\label{opengl_2mesa_2main_2extensions_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/extensions.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/extensions.\+c}}
+
+
+Extension handling  
+
+
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structextension}{extension}
+\begin{DoxyCompactList}\small\item\em An element of the {\ttfamily extension\+\_\+table}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_ab06449599802dd97b52b2abf2c572a47}\label{opengl_2mesa_2main_2extensions_8c_ab06449599802dd97b52b2abf2c572a47}} 
+\#\hyperlink{structdefine}{define} {\bfseries A\+L\+I\+GN}(\hyperlink{unionvalue}{value},  alignment)~(((\hyperlink{unionvalue}{value}) + alignment -\/ 1) \& $\sim$(alignment -\/ 1))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{opengl_2mesa_2main_2extensions_8c_ac02068cf344ef10efe2778c164d1233e}{o}(x)~offsetof(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__extensions}{gl\+\_\+extensions}, x)
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_ae7f1d86f7502415271715cb27266654c}\label{opengl_2mesa_2main_2extensions_8c_ae7f1d86f7502415271715cb27266654c}} 
+typedef unsigned short {\bfseries extension\+\_\+index}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a9a0f2eb3dfebc8d67076f258f415af22}{\+\_\+mesa\+\_\+enable\+\_\+sw\+\_\+extensions} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a111e7f13f495353c09f930d9b6317c27}{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+3\+\_\+extensions} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a64b9da3e20971349d046e3143bc7facb}{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+4\+\_\+extensions} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a18dabc5f660a779a3d14009cecc18a43}{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+5\+\_\+extensions} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_ab6e5d324eca2042787c4bafc8d5cb983}{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+0\+\_\+extensions} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a45994243563ff9321368991db6f120d4}{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+1\+\_\+extensions} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a42022094e282afbece535e45f657f98b}{\+\_\+mesa\+\_\+enable\+\_\+extension} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const char $\ast$\hyperlink{structname}{name})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a34e547dc69e16bb910a63e93d10c2f56}{\+\_\+mesa\+\_\+disable\+\_\+extension} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const char $\ast$\hyperlink{structname}{name})
+\item 
+G\+Lboolean \hyperlink{opengl_2mesa_2main_2extensions_8c_a35a10f708bd0d2cce4513611c2c9e9a2}{\+\_\+mesa\+\_\+extension\+\_\+is\+\_\+enabled} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const char $\ast$\hyperlink{structname}{name})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{opengl_2mesa_2main_2extensions_8c_a89fddfecc5d2a0af2c63d38d5af4bf93}{\+\_\+mesa\+\_\+init\+\_\+extensions} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Initialize extension tables and enable default extensions. \end{DoxyCompactList}\item 
+G\+Lubyte $\ast$ \hyperlink{opengl_2mesa_2main_2extensions_8c_af31e06b86ed27e6c7886ad7279c65c6a}{\+\_\+mesa\+\_\+make\+\_\+extension\+\_\+string} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+G\+Luint \hyperlink{opengl_2mesa_2main_2extensions_8c_a5511fca6f528920410f889a1603632f3}{\+\_\+mesa\+\_\+get\+\_\+extension\+\_\+count} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+const G\+Lubyte $\ast$ \hyperlink{opengl_2mesa_2main_2extensions_8c_abe04d42389f28a5366376e5e03a91523}{\+\_\+mesa\+\_\+get\+\_\+enabled\+\_\+extension} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint index)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Extension handling 
+
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_ac02068cf344ef10efe2778c164d1233e}\label{opengl_2mesa_2main_2extensions_8c_ac02068cf344ef10efe2778c164d1233e}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!o@{o}}
+\index{o@{o}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{o}{o}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} o(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~offsetof(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__extensions}{gl\+\_\+extensions}, x)}
+
+Given a member {\ttfamily x} of struct \hyperlink{structgl__extensions}{gl\+\_\+extensions}, return offset of {\ttfamily x} in bytes. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a34e547dc69e16bb910a63e93d10c2f56}\label{opengl_2mesa_2main_2extensions_8c_a34e547dc69e16bb910a63e93d10c2f56}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+disable\+\_\+extension@{\+\_\+mesa\+\_\+disable\+\_\+extension}}
+\index{\+\_\+mesa\+\_\+disable\+\_\+extension@{\+\_\+mesa\+\_\+disable\+\_\+extension}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+disable\+\_\+extension()}{\_mesa\_disable\_extension()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+disable\+\_\+extension (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Disable the named extension. X\+XX is this really needed??? \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a111e7f13f495353c09f930d9b6317c27}\label{opengl_2mesa_2main_2extensions_8c_a111e7f13f495353c09f930d9b6317c27}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+3\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+3\+\_\+extensions}}
+\index{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+3\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+3\+\_\+extensions}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+3\+\_\+extensions()}{\_mesa\_enable\_1\_3\_extensions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+enable\+\_\+1\+\_\+3\+\_\+extensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Enable all Open\+GL 1.\+3 features and extensions. \hyperlink{struct_a}{A} convenience function to be called by drivers. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a64b9da3e20971349d046e3143bc7facb}\label{opengl_2mesa_2main_2extensions_8c_a64b9da3e20971349d046e3143bc7facb}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+4\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+4\+\_\+extensions}}
+\index{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+4\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+4\+\_\+extensions}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+4\+\_\+extensions()}{\_mesa\_enable\_1\_4\_extensions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+enable\+\_\+1\+\_\+4\+\_\+extensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Enable all Open\+GL 1.\+4 features and extensions. \hyperlink{struct_a}{A} convenience function to be called by drivers. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a18dabc5f660a779a3d14009cecc18a43}\label{opengl_2mesa_2main_2extensions_8c_a18dabc5f660a779a3d14009cecc18a43}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+5\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+5\+\_\+extensions}}
+\index{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+5\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+5\+\_\+extensions}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+enable\+\_\+1\+\_\+5\+\_\+extensions()}{\_mesa\_enable\_1\_5\_extensions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+enable\+\_\+1\+\_\+5\+\_\+extensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Enable all Open\+GL 1.\+5 features and extensions. \hyperlink{struct_a}{A} convenience function to be called by drivers. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_ab6e5d324eca2042787c4bafc8d5cb983}\label{opengl_2mesa_2main_2extensions_8c_ab6e5d324eca2042787c4bafc8d5cb983}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+0\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+0\+\_\+extensions}}
+\index{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+0\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+0\+\_\+extensions}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+0\+\_\+extensions()}{\_mesa\_enable\_2\_0\_extensions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+enable\+\_\+2\+\_\+0\+\_\+extensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Enable all Open\+GL 2.\+0 features and extensions. \hyperlink{struct_a}{A} convenience function to be called by drivers. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a45994243563ff9321368991db6f120d4}\label{opengl_2mesa_2main_2extensions_8c_a45994243563ff9321368991db6f120d4}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+1\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+1\+\_\+extensions}}
+\index{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+1\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+1\+\_\+extensions}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+enable\+\_\+2\+\_\+1\+\_\+extensions()}{\_mesa\_enable\_2\_1\_extensions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+enable\+\_\+2\+\_\+1\+\_\+extensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Enable all Open\+GL 2.\+1 features and extensions. \hyperlink{struct_a}{A} convenience function to be called by drivers. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a42022094e282afbece535e45f657f98b}\label{opengl_2mesa_2main_2extensions_8c_a42022094e282afbece535e45f657f98b}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+enable\+\_\+extension@{\+\_\+mesa\+\_\+enable\+\_\+extension}}
+\index{\+\_\+mesa\+\_\+enable\+\_\+extension@{\+\_\+mesa\+\_\+enable\+\_\+extension}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+enable\+\_\+extension()}{\_mesa\_enable\_extension()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+enable\+\_\+extension (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Enable the named extension. Typically called by drivers. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a9a0f2eb3dfebc8d67076f258f415af22}\label{opengl_2mesa_2main_2extensions_8c_a9a0f2eb3dfebc8d67076f258f415af22}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+enable\+\_\+sw\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+sw\+\_\+extensions}}
+\index{\+\_\+mesa\+\_\+enable\+\_\+sw\+\_\+extensions@{\+\_\+mesa\+\_\+enable\+\_\+sw\+\_\+extensions}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+enable\+\_\+sw\+\_\+extensions()}{\_mesa\_enable\_sw\_extensions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+enable\+\_\+sw\+\_\+extensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Enable all extensions suitable for a software-\/only renderer. \hyperlink{namespace_this}{This} is a convenience function used by the X\+Mesa, O\+S\+Mesa, G\+GI drivers, etc. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a35a10f708bd0d2cce4513611c2c9e9a2}\label{opengl_2mesa_2main_2extensions_8c_a35a10f708bd0d2cce4513611c2c9e9a2}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+extension\+\_\+is\+\_\+enabled@{\+\_\+mesa\+\_\+extension\+\_\+is\+\_\+enabled}}
+\index{\+\_\+mesa\+\_\+extension\+\_\+is\+\_\+enabled@{\+\_\+mesa\+\_\+extension\+\_\+is\+\_\+enabled}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+extension\+\_\+is\+\_\+enabled()}{\_mesa\_extension\_is\_enabled()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+extension\+\_\+is\+\_\+enabled (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\hyperlink{class_test}{Test} if the named extension is enabled in this context. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_abe04d42389f28a5366376e5e03a91523}\label{opengl_2mesa_2main_2extensions_8c_abe04d42389f28a5366376e5e03a91523}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+get\+\_\+enabled\+\_\+extension@{\+\_\+mesa\+\_\+get\+\_\+enabled\+\_\+extension}}
+\index{\+\_\+mesa\+\_\+get\+\_\+enabled\+\_\+extension@{\+\_\+mesa\+\_\+get\+\_\+enabled\+\_\+extension}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+enabled\+\_\+extension()}{\_mesa\_get\_enabled\_extension()}}
+{\footnotesize\ttfamily const G\+Lubyte$\ast$ \+\_\+mesa\+\_\+get\+\_\+enabled\+\_\+extension (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{index }\end{DoxyParamCaption})}
+
+Return name of i-\/th enabled extension \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a5511fca6f528920410f889a1603632f3}\label{opengl_2mesa_2main_2extensions_8c_a5511fca6f528920410f889a1603632f3}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+get\+\_\+extension\+\_\+count@{\+\_\+mesa\+\_\+get\+\_\+extension\+\_\+count}}
+\index{\+\_\+mesa\+\_\+get\+\_\+extension\+\_\+count@{\+\_\+mesa\+\_\+get\+\_\+extension\+\_\+count}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+extension\+\_\+count()}{\_mesa\_get\_extension\_count()}}
+{\footnotesize\ttfamily G\+Luint \+\_\+mesa\+\_\+get\+\_\+extension\+\_\+count (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Return number of enabled extensions. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_a89fddfecc5d2a0af2c63d38d5af4bf93}\label{opengl_2mesa_2main_2extensions_8c_a89fddfecc5d2a0af2c63d38d5af4bf93}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+init\+\_\+extensions@{\+\_\+mesa\+\_\+init\+\_\+extensions}}
+\index{\+\_\+mesa\+\_\+init\+\_\+extensions@{\+\_\+mesa\+\_\+init\+\_\+extensions}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+extensions()}{\_mesa\_init\_extensions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+extensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Initialize extension tables and enable default extensions. 
+
+\hyperlink{namespace_this}{This} should be called during context initialization. Note\+: Sets gl\+\_\+extensions.\+dummy\+\_\+true to true. \mbox{\Hypertarget{opengl_2mesa_2main_2extensions_8c_af31e06b86ed27e6c7886ad7279c65c6a}\label{opengl_2mesa_2main_2extensions_8c_af31e06b86ed27e6c7886ad7279c65c6a}} 
+\index{opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}!\+\_\+mesa\+\_\+make\+\_\+extension\+\_\+string@{\+\_\+mesa\+\_\+make\+\_\+extension\+\_\+string}}
+\index{\+\_\+mesa\+\_\+make\+\_\+extension\+\_\+string@{\+\_\+mesa\+\_\+make\+\_\+extension\+\_\+string}!opengl/mesa/main/extensions.\+c@{opengl/mesa/main/extensions.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+make\+\_\+extension\+\_\+string()}{\_mesa\_make\_extension\_string()}}
+{\footnotesize\ttfamily G\+Lubyte$\ast$ \+\_\+mesa\+\_\+make\+\_\+extension\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Construct the G\+L\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS string. Called the first time that gl\+Get\+String(\+G\+L\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+N\+S) is called. 

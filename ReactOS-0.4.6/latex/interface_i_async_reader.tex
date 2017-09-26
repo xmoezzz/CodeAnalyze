@@ -1,0 +1,41 @@
+\hypertarget{interface_i_async_reader}{}\section{I\+Async\+Reader接口 参考}
+\label{interface_i_async_reader}\index{I\+Async\+Reader@{I\+Async\+Reader}}
+类 I\+Async\+Reader 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_async_reader}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_abde125d5a3cb605cc7d8c176bdc1be0b}\label{interface_i_async_reader_abde125d5a3cb605cc7d8c176bdc1be0b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request\+Allocator} (\mbox{[}in\mbox{]} \hyperlink{interface_i_mem_allocator}{I\+Mem\+Allocator} $\ast$p\+Preferred, \mbox{[}in\mbox{]} \hyperlink{struct___allocator_properties}{A\+L\+L\+O\+C\+A\+T\+O\+R\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES} $\ast$p\+Props, \mbox{[}out\mbox{]} \hyperlink{interface_i_mem_allocator}{I\+Mem\+Allocator} $\ast$$\ast$pp\+Actual)
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_ad9df52b0828f34f1a6f72d049cee812f}\label{interface_i_async_reader_ad9df52b0828f34f1a6f72d049cee812f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request} (\mbox{[}in\mbox{]} \hyperlink{interface_i_media_sample}{I\+Media\+Sample} $\ast$p\+Sample, \mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR dw\+User)
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_a5cc01d1ce003350850067c15b9eb1171}\label{interface_i_async_reader_a5cc01d1ce003350850067c15b9eb1171}} 
+H\+R\+E\+S\+U\+LT {\bfseries Wait\+For\+Next} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Timeout, \mbox{[}out\mbox{]} \hyperlink{interface_i_media_sample}{I\+Media\+Sample} $\ast$$\ast$pp\+Sample, \mbox{[}out\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR $\ast$pdw\+User)
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_afc771ee3ba51480a6c2a20619ed227f9}\label{interface_i_async_reader_afc771ee3ba51480a6c2a20619ed227f9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Sync\+Read\+Aligned} (\mbox{[}in\mbox{]} \hyperlink{interface_i_media_sample}{I\+Media\+Sample} $\ast$p\+Sample)
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_aac57cbac53b5d56f173279d4e4f450e7}\label{interface_i_async_reader_aac57cbac53b5d56f173279d4e4f450e7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Sync\+Read} (\mbox{[}in\mbox{]} L\+O\+N\+G\+L\+O\+NG ll\+Position, \mbox{[}in\mbox{]} L\+O\+NG l\+Length, \mbox{[}out, size\+\_\+is(l\+Length)\mbox{]} B\+Y\+TE $\ast$p\+Buffer)
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_aa7ebeb266e673938be37cb93fee03911}\label{interface_i_async_reader_aa7ebeb266e673938be37cb93fee03911}} 
+H\+R\+E\+S\+U\+LT {\bfseries Length} (\mbox{[}out\mbox{]} L\+O\+N\+G\+L\+O\+NG $\ast$p\+Total, \mbox{[}out\mbox{]} L\+O\+N\+G\+L\+O\+NG $\ast$p\+Available)
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_a411a28cfca91a2c53f1c2d9baeb4b458}\label{interface_i_async_reader_a411a28cfca91a2c53f1c2d9baeb4b458}} 
+H\+R\+E\+S\+U\+LT {\bfseries Begin\+Flush} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{interface_i_async_reader_a354029cece596e8e0a26132b31d6676f}\label{interface_i_async_reader_a354029cece596e8e0a26132b31d6676f}} 
+H\+R\+E\+S\+U\+LT {\bfseries End\+Flush} (\hyperlink{interfacevoid}{void})
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/axextend.\+idl\end{DoxyCompactItemize}

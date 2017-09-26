@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: gl_current_attrib结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="structgl__current__attrib-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">gl_current_attrib结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mtypes_8h_source.html">mtypes.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Current vertex attributes.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section note"><dt>注解</dt><dd>Values are valid only after FLUSH_VERTICES has been called. </dd>
+<dd>
+Index and Edgeflag current values are stored as floats in the SIX and SEVEN attribute slots. </dd></dl>
+</div></td></tr>
+<tr class="memitem:a17764994132bfc656323d26e4d34a7fe"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgl__current__attrib.html#a17764994132bfc656323d26e4d34a7fe">Attrib</a> [VERT_ATTRIB_MAX][4]</td></tr>
+<tr class="separator:a17764994132bfc656323d26e4d34a7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Current raster position attributes (always valid).</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section note"><dt>注解</dt><dd><a class="el" href="namespace_this.html">This</a> set of attributes is very similar to the <a class="el" href="struct_s_wvertex.html" title="Data-structure to handle vertices in the software rasterizer. ">SWvertex</a> struct. </dd></dl>
+</div></td></tr>
+<tr class="memitem:a90a2e909ea0a2521dfcd530b0b61b2ad"><td class="memItemLeft" align="right" valign="top"><a id="a90a2e909ea0a2521dfcd530b0b61b2ad"></a>
+GLfloat&#160;</td><td class="memItemRight" valign="bottom"><b>RasterPos</b> [4]</td></tr>
+<tr class="separator:a90a2e909ea0a2521dfcd530b0b61b2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacecbe7b99668b3d604b58cf1decb6d4"><td class="memItemLeft" align="right" valign="top"><a id="aacecbe7b99668b3d604b58cf1decb6d4"></a>
+GLfloat&#160;</td><td class="memItemRight" valign="bottom"><b>RasterDistance</b></td></tr>
+<tr class="separator:aacecbe7b99668b3d604b58cf1decb6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3525f30bd8459cbed672147757d83bf"><td class="memItemLeft" align="right" valign="top"><a id="aa3525f30bd8459cbed672147757d83bf"></a>
+GLfloat&#160;</td><td class="memItemRight" valign="bottom"><b>RasterColor</b> [4]</td></tr>
+<tr class="separator:aa3525f30bd8459cbed672147757d83bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6b060052c5a10d4288705ad83d9d7a"><td class="memItemLeft" align="right" valign="top"><a id="a8e6b060052c5a10d4288705ad83d9d7a"></a>
+GLfloat&#160;</td><td class="memItemRight" valign="bottom"><b>RasterTexCoords</b> [4]</td></tr>
+<tr class="separator:a8e6b060052c5a10d4288705ad83d9d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c53a5f55588f2397371dce5c88a4a2"><td class="memItemLeft" align="right" valign="top"><a id="ae5c53a5f55588f2397371dce5c88a4a2"></a>
+GLboolean&#160;</td><td class="memItemRight" valign="bottom"><b>RasterPosValid</b></td></tr>
+<tr class="separator:ae5c53a5f55588f2397371dce5c88a4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Current attribute group (GL_CURRENT_BIT). </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a17764994132bfc656323d26e4d34a7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17764994132bfc656323d26e4d34a7fe">&#9670;&nbsp;</a></span>Attrib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat gl_current_attrib::Attrib[VERT_ATTRIB_MAX][4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Position, color, texcoords, etc </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/opengl/mesa/main/<a class="el" href="mtypes_8h_source.html">mtypes.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

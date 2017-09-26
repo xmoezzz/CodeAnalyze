@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/drivers/network/afd/include/tdiconn.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_283433fb0e3adc3d407d1e24f0718b0e.html">drivers</a></li><li class="navelem"><a class="el" href="dir_75968cbed6dfdde972b8a41c3f62d337.html">network</a></li><li class="navelem"><a class="el" href="dir_ce37710a7431be57d1d3a553a218c712.html">afd</a></li><li class="navelem"><a class="el" href="dir_df326e378974e3b6339238d2f4fda96a.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tdiconn.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">typedef</span> <a class="code" href="interfacevoid.html">VOID</a> *<a class="code" href="interfacevoid.html">PTDI_CONNECTION_INFO_PAIR</a>;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> TaCopyTransportAddress( <a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> OtherAddress );</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> TaBuildNullTransportAddress(UINT AddressType);</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;UINT TaLengthOfAddress( <a class="code" href="struct___t_a___a_d_d_r_e_s_s.html">PTA_ADDRESS</a> Addr );</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;UINT TaLengthOfTransportAddress( <a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> Addr );</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> TaCopyAddressInPlace( <a class="code" href="struct___t_a___a_d_d_r_e_s_s.html">PTA_ADDRESS</a> Target, <a class="code" href="struct___t_a___a_d_d_r_e_s_s.html">PTA_ADDRESS</a> Source );</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="struct___t_a___a_d_d_r_e_s_s.html">PTA_ADDRESS</a> TaCopyAddress( <a class="code" href="struct___t_a___a_d_d_r_e_s_s.html">PTA_ADDRESS</a> Source );</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> TaCopyTransportAddressInPlace( <a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> Target,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                    <a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> Source );</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;UINT TdiAddressSizeFromType( UINT Type );</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;UINT TdiAddressSizeFromName( <a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> <a class="code" href="struct_name_rec__.html">Name</a> );</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;NTSTATUS TdiBuildConnectionInfoInPlace</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;( <a class="code" href="struct___t_d_i___c_o_n_n_e_c_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html">PTDI_CONNECTION_INFORMATION</a> ConnInfo, <a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> <a class="code" href="struct_name_rec__.html">Name</a> );</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;NTSTATUS TdiBuildConnectionInfo</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;( <a class="code" href="struct___t_d_i___c_o_n_n_e_c_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html">PTDI_CONNECTION_INFORMATION</a> *ConnectionInfo, <a class="code" href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">PTRANSPORT_ADDRESS</a> <a class="code" href="struct_name_rec__.html">Name</a> );</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;NTSTATUS TdiBuildNullConnectionInfoInPlace</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;( <a class="code" href="struct___t_d_i___c_o_n_n_e_c_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html">PTDI_CONNECTION_INFORMATION</a> ConnInfo, ULONG Type );</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;NTSTATUS TdiBuildNullConnectionInfo</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;( <a class="code" href="struct___t_d_i___c_o_n_n_e_c_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html">PTDI_CONNECTION_INFORMATION</a> *ConnectionInfo, ULONG Type );</div><div class="ttc" id="struct___t_a___a_d_d_r_e_s_s_html"><div class="ttname"><a href="struct___t_a___a_d_d_r_e_s_s.html">_TA_ADDRESS</a></div><div class="ttdef"><b>Definition:</b> tdi.h:337</div></div>
+<div class="ttc" id="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s_html"><div class="ttname"><a href="struct___t_r_a_n_s_p_o_r_t___a_d_d_r_e_s_s.html">_TRANSPORT_ADDRESS</a></div><div class="ttdef"><b>Definition:</b> tdi.h:375</div></div>
+<div class="ttc" id="struct___t_d_i___c_o_n_n_e_c_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n_html"><div class="ttname"><a href="struct___t_d_i___c_o_n_n_e_c_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html">_TDI_CONNECTION_INFORMATION</a></div><div class="ttdef"><b>Definition:</b> tdi.h:39</div></div>
+<div class="ttc" id="struct_name_rec___html"><div class="ttname"><a href="struct_name_rec__.html">NameRec_</a></div><div class="ttdef"><b>Definition:</b> apinames.c:48</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

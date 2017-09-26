@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ITextStoreACP接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_text_store_a_c_p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ITextStoreACP接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ITextStoreACP 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_text_store_a_c_p.png" usemap="#ITextStoreACP_map" alt=""/>
+  <map id="ITextStoreACP_map" name="ITextStoreACP_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,94,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9059fbc71cabc797b6a38f68650b7246"><td class="memItemLeft" align="right" valign="top"><a id="a9059fbc71cabc797b6a38f68650b7246"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>AdviseSink</b> ([in] REFIID riid, [in, iid_is(riid)] <a class="el" href="interface_i_unknown.html">IUnknown</a> *punk, [in] DWORD dwMask)</td></tr>
+<tr class="separator:a9059fbc71cabc797b6a38f68650b7246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa687500a900a85bd81340bb9995e0a1f"><td class="memItemLeft" align="right" valign="top"><a id="aa687500a900a85bd81340bb9995e0a1f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>UnadviseSink</b> ([in] <a class="el" href="interface_i_unknown.html">IUnknown</a> *punk)</td></tr>
+<tr class="separator:aa687500a900a85bd81340bb9995e0a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d70e072c2d187017528f8f2c661ef7"><td class="memItemLeft" align="right" valign="top"><a id="ac5d70e072c2d187017528f8f2c661ef7"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RequestLock</b> ([in] DWORD dwLockFlags, [out] HRESULT *phrSession)</td></tr>
+<tr class="separator:ac5d70e072c2d187017528f8f2c661ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53fafeeb2a1214c2c4683feaf781e89a"><td class="memItemLeft" align="right" valign="top"><a id="a53fafeeb2a1214c2c4683feaf781e89a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetStatus</b> ([out] <a class="el" href="struct_t_s___s_t_a_t_u_s.html">TS_STATUS</a> *pdcs)</td></tr>
+<tr class="separator:a53fafeeb2a1214c2c4683feaf781e89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f8e39b7fd907086c66a778158654ea"><td class="memItemLeft" align="right" valign="top"><a id="ac3f8e39b7fd907086c66a778158654ea"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInsert</b> ([in] LONG acpTestStart, [in] LONG acpTestEnd, [in] ULONG cch, [out] LONG *pacpResultStart, [out] LONG *pacpResultEnd)</td></tr>
+<tr class="separator:ac3f8e39b7fd907086c66a778158654ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209031ac02b10de276c725a6438b18be"><td class="memItemLeft" align="right" valign="top"><a id="a209031ac02b10de276c725a6438b18be"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelection</b> ([in] ULONG ulIndex, [in] ULONG ulCount, [out, size_is(ulCount), length_is(*pcFetched)] <a class="el" href="struct_t_s___s_e_l_e_c_t_i_o_n___a_c_p.html">TS_SELECTION_ACP</a> *pSelection, [out] ULONG *pcFetched)</td></tr>
+<tr class="separator:a209031ac02b10de276c725a6438b18be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176aba280cf12f10192cefc2204c02f8"><td class="memItemLeft" align="right" valign="top"><a id="a176aba280cf12f10192cefc2204c02f8"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelection</b> ([in] ULONG ulCount, [in, size_is(ulCount)] const <a class="el" href="struct_t_s___s_e_l_e_c_t_i_o_n___a_c_p.html">TS_SELECTION_ACP</a> *pSelection)</td></tr>
+<tr class="separator:a176aba280cf12f10192cefc2204c02f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4f1f3802daad8f99cd5867a656f36f"><td class="memItemLeft" align="right" valign="top"><a id="a5d4f1f3802daad8f99cd5867a656f36f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetText</b> ([in] LONG acpStart, [in] LONG acpEnd, [out, size_is(cchPlainReq), length_is(*pcchPlainRet)] WCHAR *pchPlain, [in] ULONG cchPlainReq, [out] ULONG *pcchPlainRet, [out, size_is(cRunInfoReq), length_is(*pcRunInfoRet)] <a class="el" href="struct_t_s___r_u_n_i_n_f_o.html">TS_RUNINFO</a> *prgRunInfo, [in] ULONG cRunInfoReq, [out] ULONG *pcRunInfoRet, [out] LONG *pacpNext)</td></tr>
+<tr class="separator:a5d4f1f3802daad8f99cd5867a656f36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb56a7b132f3ea46e9c41496c166457"><td class="memItemLeft" align="right" valign="top"><a id="aefb56a7b132f3ea46e9c41496c166457"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetText</b> ([in] DWORD dwFlags, [in] LONG acpStart, [in] LONG acpEnd, [in, size_is(cch)] const WCHAR *pchText, [in] ULONG cch, [out] <a class="el" href="struct_t_s___t_e_x_t_c_h_a_n_g_e.html">TS_TEXTCHANGE</a> *pChange)</td></tr>
+<tr class="separator:aefb56a7b132f3ea46e9c41496c166457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e06c4fb6873601b420c120e57630702"><td class="memItemLeft" align="right" valign="top"><a id="a1e06c4fb6873601b420c120e57630702"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetFormattedText</b> ([in] LONG acpStart, [in] LONG acpEnd, [out] <a class="el" href="interface_i_data_object.html">IDataObject</a> **ppDataObject)</td></tr>
+<tr class="separator:a1e06c4fb6873601b420c120e57630702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34865ae23abc2fda3e8b20b31766bc86"><td class="memItemLeft" align="right" valign="top"><a id="a34865ae23abc2fda3e8b20b31766bc86"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetEmbedded</b> ([in] LONG acpPos, [in] <a class="el" href="struct___g_u_i_d.html">REFGUID</a> rguidService, [in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interface_i_unknown.html">IUnknown</a> **ppunk)</td></tr>
+<tr class="separator:a34865ae23abc2fda3e8b20b31766bc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043363ac764495b98c95d1656f8d32fe"><td class="memItemLeft" align="right" valign="top"><a id="a043363ac764495b98c95d1656f8d32fe"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInsertEmbedded</b> ([in] const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pguidService, [in] const FORMATETC *pFormatEtc, [out] BOOL *pfInsertable)</td></tr>
+<tr class="separator:a043363ac764495b98c95d1656f8d32fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4714f8af0a1b6fd62275cbb516bca5"><td class="memItemLeft" align="right" valign="top"><a id="a7f4714f8af0a1b6fd62275cbb516bca5"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>InsertEmbedded</b> ([in] DWORD dwFlags, [in] LONG acpStart, [in] LONG acpEnd, [in] <a class="el" href="interface_i_data_object.html">IDataObject</a> *pDataObject, [out] <a class="el" href="struct_t_s___t_e_x_t_c_h_a_n_g_e.html">TS_TEXTCHANGE</a> *pChange)</td></tr>
+<tr class="separator:a7f4714f8af0a1b6fd62275cbb516bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c98c7f2e1a3dd38d7ed5a7cfdf6523"><td class="memItemLeft" align="right" valign="top"><a id="a35c98c7f2e1a3dd38d7ed5a7cfdf6523"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>InsertTextAtSelection</b> ([in] DWORD dwFlags, [in, size_is(cch)] const WCHAR *pchText, [in] ULONG cch, [out] LONG *pacpStart, [out] LONG *pacpEnd, [out] <a class="el" href="struct_t_s___t_e_x_t_c_h_a_n_g_e.html">TS_TEXTCHANGE</a> *pChange)</td></tr>
+<tr class="separator:a35c98c7f2e1a3dd38d7ed5a7cfdf6523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f213557e339bda67876eb410a068254"><td class="memItemLeft" align="right" valign="top"><a id="a2f213557e339bda67876eb410a068254"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>InsertEmbeddedAtSelection</b> ([in] DWORD dwFlags, [in] <a class="el" href="interface_i_data_object.html">IDataObject</a> *pDataObject, [out] LONG *pacpStart, [out] LONG *pacpEnd, [out] <a class="el" href="struct_t_s___t_e_x_t_c_h_a_n_g_e.html">TS_TEXTCHANGE</a> *pChange)</td></tr>
+<tr class="separator:a2f213557e339bda67876eb410a068254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c090c255c3139ba5bbfd15d1e4b0c9"><td class="memItemLeft" align="right" valign="top"><a id="a72c090c255c3139ba5bbfd15d1e4b0c9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RequestSupportedAttrs</b> ([in] DWORD dwFlags, [in] ULONG cFilterAttrs, [in, size_is(cFilterAttrs), <a class="el" href="interfaceunique.html">unique</a>] const <a class="el" href="interface_g_u_i_d.html">TS_ATTRID</a> *paFilterAttrs)</td></tr>
+<tr class="separator:a72c090c255c3139ba5bbfd15d1e4b0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96197952d2cfca876e6364e5bddf8b7"><td class="memItemLeft" align="right" valign="top"><a id="ae96197952d2cfca876e6364e5bddf8b7"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RequestAttrsAtPosition</b> ([in] LONG acpPos, [in] ULONG cFilterAttrs, [in, size_is(cFilterAttrs), <a class="el" href="interfaceunique.html">unique</a>] const <a class="el" href="interface_g_u_i_d.html">TS_ATTRID</a> *paFilterAttrs, [in] DWORD dwFlags)</td></tr>
+<tr class="separator:ae96197952d2cfca876e6364e5bddf8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3705a8691949339dd3052ed4483946be"><td class="memItemLeft" align="right" valign="top"><a id="a3705a8691949339dd3052ed4483946be"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RequestAttrsTransitioningAtPosition</b> ([in] LONG acpPos, [in] ULONG cFilterAttrs, [in, size_is(cFilterAttrs), <a class="el" href="interfaceunique.html">unique</a>] const <a class="el" href="interface_g_u_i_d.html">TS_ATTRID</a> *paFilterAttrs, [in] DWORD dwFlags)</td></tr>
+<tr class="separator:a3705a8691949339dd3052ed4483946be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada89881ebd96c65cb63729f0c1cb2949"><td class="memItemLeft" align="right" valign="top"><a id="ada89881ebd96c65cb63729f0c1cb2949"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>FindNextAttrTransition</b> ([in] LONG acpStart, [in] LONG acpHalt, [in] ULONG cFilterAttrs, [in, size_is(cFilterAttrs), <a class="el" href="interfaceunique.html">unique</a>] const <a class="el" href="interface_g_u_i_d.html">TS_ATTRID</a> *paFilterAttrs, [in] DWORD dwFlags, [out] LONG *pacpNext, [out] BOOL *pfFound, [out] LONG *plFoundOffset)</td></tr>
+<tr class="separator:ada89881ebd96c65cb63729f0c1cb2949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8061b820d549b2387369a94c81269cc2"><td class="memItemLeft" align="right" valign="top"><a id="a8061b820d549b2387369a94c81269cc2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveRequestedAttrs</b> ([in] ULONG ulCount, [out, size_is(ulCount), length_is(*pcFetched)] <a class="el" href="struct_t_s___a_t_t_r_v_a_l.html">TS_ATTRVAL</a> *paAttrVals, [out] ULONG *pcFetched)</td></tr>
+<tr class="separator:a8061b820d549b2387369a94c81269cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24cfa80a9be4916b0f278d83a94d82c"><td class="memItemLeft" align="right" valign="top"><a id="ad24cfa80a9be4916b0f278d83a94d82c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetEndACP</b> ([out] LONG *pacp)</td></tr>
+<tr class="separator:ad24cfa80a9be4916b0f278d83a94d82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6701b38d98bdd23e0f16101002a00cba"><td class="memItemLeft" align="right" valign="top"><a id="a6701b38d98bdd23e0f16101002a00cba"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveView</b> ([out] TsViewCookie *pvcView)</td></tr>
+<tr class="separator:a6701b38d98bdd23e0f16101002a00cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d754647aff07e6cde9109a8ed135d46"><td class="memItemLeft" align="right" valign="top"><a id="a6d754647aff07e6cde9109a8ed135d46"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetACPFromPoint</b> ([in] TsViewCookie vcView, [in] const <a class="el" href="structtag_p_o_i_n_t.html">POINT</a> *ptScreen, [in] DWORD dwFlags, [out] LONG *pacp)</td></tr>
+<tr class="separator:a6d754647aff07e6cde9109a8ed135d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88472e5f1ebf8a3db37452318408ac3"><td class="memItemLeft" align="right" valign="top"><a id="ad88472e5f1ebf8a3db37452318408ac3"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetTextExt</b> ([in] TsViewCookie vcView, [in] LONG acpStart, [in] LONG acpEnd, [out] <a class="el" href="structtag_r_e_c_t.html">RECT</a> *<a class="el" href="structtag_r_e_c_t.html">prc</a>, [out] BOOL *pfClipped)</td></tr>
+<tr class="separator:ad88472e5f1ebf8a3db37452318408ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b40169eb764ffbab2003f341a40b7b1"><td class="memItemLeft" align="right" valign="top"><a id="a9b40169eb764ffbab2003f341a40b7b1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetScreenExt</b> ([in] TsViewCookie vcView, [out] <a class="el" href="structtag_r_e_c_t.html">RECT</a> *<a class="el" href="structtag_r_e_c_t.html">prc</a>)</td></tr>
+<tr class="separator:a9b40169eb764ffbab2003f341a40b7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd621e515bf4dc80263b1b477023cc51"><td class="memItemLeft" align="right" valign="top"><a id="acd621e515bf4dc80263b1b477023cc51"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetWnd</b> ([in] TsViewCookie vcView, [out] <a class="el" href="interfacevoid.html">HWND</a> *phwnd)</td></tr>
+<tr class="separator:acd621e515bf4dc80263b1b477023cc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="textstor_8idl_source.html">textstor.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

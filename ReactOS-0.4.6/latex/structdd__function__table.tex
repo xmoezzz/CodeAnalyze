@@ -1,0 +1,828 @@
+\hypertarget{structdd__function__table}{}\section{dd\+\_\+function\+\_\+table结构体 参考}
+\label{structdd__function__table}\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+
+
+{\ttfamily \#include $<$dd.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+const G\+Lubyte $\ast$($\ast$ \hyperlink{structdd__function__table_a9806da3e2614187f5e154ffada409570}{Get\+String} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structname}{name})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a4275da33e8cc71c5e39a64759d5d3b38}{Update\+State} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lbitfield new\+\_\+state)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a8453cd558af6878530ab7a88a21ee64c}{Get\+Buffer\+Size} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$buffer, G\+Luint $\ast$width, G\+Luint $\ast$height)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ab08456af9890bc6cd4aa7b202d63ab09}{Resize\+Buffers} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$fb, G\+Luint width, G\+Luint height)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_abc8c0b95063ce845d9e26d53b370e02c}{Error} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a3d15abc006c0aa92f1b467cd29d8e2b4}{Finish} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a0680f8de4e049f72cfb10cf5867a85f5}{Flush} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a5ff278dbc44c864bab3d198b40f0cff9}{Clear} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lbitfield buffers)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aec6b2d3bc372cc7796bf30ae6eb297e4}{Accum} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} op, G\+Lfloat \hyperlink{unionvalue}{value})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ac39afdd3daf3f75b50295df734241d86}{Raster\+Pos} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const G\+Lfloat v\mbox{[}4\mbox{]})
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Image-\/related functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a1970141fc8c558da3b315002a6157da3}{Draw\+Pixels} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a2327fc5203c524e7db433dbdbbdb644f}{Read\+Pixels} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ae355c1c39a2145ace1c81e2fb285890b}{Copy\+Pixels} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint srcx, G\+Lint srcy, G\+Lsizei width, G\+Lsizei height, G\+Lint dstx, G\+Lint dsty, \hyperlink{interfacevoid}{G\+Lenum} type)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a438e3b6bcb20c0503c6e45565e1b416a}{Bitmap} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, const G\+Lubyte $\ast$\hyperlink{structbitmap}{bitmap})
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Texture image functions}\par
+\begin{DoxyCompactItemize}
+\item 
+gl\+\_\+format($\ast$ \hyperlink{structdd__function__table_ab3029e9747f5413c4e33efb89c245462}{Choose\+Texture\+Format} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, \hyperlink{interfacevoid}{G\+Lenum} src\+Format, \hyperlink{interfacevoid}{G\+Lenum} src\+Type)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a0907a18e4f97b0e8f36e50d8f5e7e369}{Tex\+Image1D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lint width, G\+Lint border, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a2640ee0c4221b29d2f01603424cd3b3a}{Tex\+Image2D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lint width, G\+Lint height, G\+Lint border, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aa633b8ffb5cbcacb00177fe255481faa}{Tex\+Sub\+Image1D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lsizei width, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ac5d434d3f197b6bd61e01311145d7244}{Tex\+Sub\+Image2D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lint yoffset, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a0b9a6f027a3472d9ca293bf3e7a703cd}{Get\+Tex\+Image} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a1f3b0bba4691f2f2d8338ad804aa948a}{Copy\+Tex\+Sub\+Image1D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, G\+Lint x, G\+Lint y, G\+Lsizei width)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a25e3ba53790920affc41a135e4c5b42b}{Copy\+Tex\+Sub\+Image2D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lint yoffset, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height)
+\item 
+G\+Lboolean($\ast$ \hyperlink{structdd__function__table_a6bde3f45be48a994c069fd106d1add4e}{Test\+Proxy\+Tex\+Image} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, G\+Lint width, G\+Lint height, G\+Lint depth, G\+Lint border)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Compressed texture functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a3c38c3f19f2f4702cd4f239bbc29f012}{Compressed\+Tex\+Image1D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lsizei width, G\+Lint border, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ae8789f6fbfc35d057639ed8adbd58db2}{Compressed\+Tex\+Image2D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lsizei width, G\+Lsizei height, G\+Lint border, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a374e6d241342f182142b6a9d19e2f9ac}{Compressed\+Tex\+Sub\+Image1D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lsizei width, \hyperlink{interfacevoid}{G\+Lenum} format, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a3f6e668531dd8aab592942e3ec6b3ce3}{Compressed\+Tex\+Sub\+Image2D} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lint yoffset, G\+Lsizei width, G\+Lint height, \hyperlink{interfacevoid}{G\+Lenum} format, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Texture object / image functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_adb02edc9fb93a4b96cfc999355ec5be7}{Bind\+Texture} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$t\+Obj)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$($\ast$ \hyperlink{structdd__function__table_a80f07e92761e4295e1d99111bd149d8a}{New\+Texture\+Object} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint \hyperlink{structname}{name}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_abdddd372703dc0ab4786e62e73c879a9}{Delete\+Texture} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$($\ast$ \hyperlink{structdd__function__table_af908ae93c473fd237a2d9b98245d2006}{New\+Texture\+Image} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a7b924d27d8e7c19e5aa91c466705a569}{Delete\+Texture\+Image} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$)
+\item 
+G\+Lboolean($\ast$ \hyperlink{structdd__function__table_a0cf36e5c6722b5cf92a942b490afe9c7}{Alloc\+Texture\+Image\+Buffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, gl\+\_\+format format, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_af2144a2c96c3385cb1b48d73c0e4cb02}{Free\+Texture\+Image\+Buffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a7d502b09d3cf21951c5a85b5ec83085d}{Map\+Texture\+Image} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Luint \hyperlink{classslice}{slice}, G\+Luint x, G\+Luint y, G\+Luint w, G\+Luint h, G\+Lbitfield \hyperlink{interfacevoid}{mode}, G\+Lubyte $\ast$$\ast$map\+Out, G\+Lint $\ast$row\+Stride\+Out)
+\item 
+\mbox{\Hypertarget{structdd__function__table_ae334361d1ef191ad0463a11b4a365f77}\label{structdd__function__table_ae334361d1ef191ad0463a11b4a365f77}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Unmap\+Texture\+Image} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Luint \hyperlink{classslice}{slice})
+\item 
+G\+Lboolean($\ast$ \hyperlink{structdd__function__table_a566b2982fc336288f889493284132c8f}{Alloc\+Texture\+Storage} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, G\+Lsizei levels, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_af1eb4b8689ff956a3ee1ebbd5c23aa2e}{Map\+Renderbuffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, G\+Luint x, G\+Luint y, G\+Luint w, G\+Luint h, G\+Lbitfield \hyperlink{interfacevoid}{mode}, G\+Lubyte $\ast$$\ast$map\+Out, G\+Lint $\ast$row\+Stride\+Out)
+\item 
+\mbox{\Hypertarget{structdd__function__table_a547fdd189c51be227257a6ed23532789}\label{structdd__function__table_a547fdd189c51be227257a6ed23532789}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Unmap\+Renderbuffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ State-\/changing functions.}\par
+{\em \begin{DoxyNote}{注解}
+drawing functions are above.
+\end{DoxyNote}
+These functions are called by their corresponding Open\+GL A\+PI functions. They are {\itshape also} called by the gl\+\_\+\+Pop\+Attrib() function!!! May add more functions like these to the device driver in the future. }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_acac707afa03c90c474a07ecd73c23ccd}{Alpha\+Func} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{func}, G\+Lfloat ref)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ace26dc0dbb18a0787f792fa5144e739a}{Clear\+Color} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const union \hyperlink{uniongl__color__union}{gl\+\_\+color\+\_\+union} color)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a42f995056022b65949c0021e1d0f5c35}{Clear\+Depth} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lclampd d)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ae1cc680b898261ec9a25547884009527}{Clear\+Stencil} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint s)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_acc3d4c85478f91446fe80b3f60f923fd}{Clip\+Plane} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} plane, const G\+Lfloat $\ast$equation)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a0f4498a49a4045be1ba912ce28caf884}{Color\+Mask} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lboolean rmask, G\+Lboolean gmask, G\+Lboolean bmask, G\+Lboolean amask)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a3ae0450c56130763cde4a72bd780485f}{Color\+Material} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} face, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ab5de002676624683a137641cf9053901}{Cull\+Face} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a456ec268b948ec165002ec80537e4172}{Front\+Face} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a5a2b32e1e03a438e9b00236cf1771933}{Depth\+Func} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{func})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aee0bc3435fdd8129e7e7d8d38e4a80bf}{Depth\+Mask} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lboolean flag)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_affca6014f4ce79ba995be2521bedaf24}{Depth\+Range} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lclampd nearval, G\+Lclampd farval)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_abb75f45b604b66c6e6cf986383f17c1b}{Draw\+Buffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} buffer)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ae22e641c2c7458248f00b64a289c2655}{Enable} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap}, G\+Lboolean state)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a31cee9b3e736221e5f7dd13c09ecf155}{Fogfv} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a3a33772ef04628691bd808904b1c1c0d}{Hint} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a43b63d95c85f068186d818b1d8cb2b51}{Lightfv} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} light, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a1b835dd88a3a64aeb91f3bb8d318874a}{Light\+Modelfv} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ac12a98543e785ceb983f4d38e8d9a089}{Line\+Stipple} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint factor, G\+Lushort pattern)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aeed6f87badf8228355b8c08bb0199dca}{Line\+Width} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lfloat width)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a0a18048817ee65f99d555958cd79c83d}{Logic\+Opcode} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} opcode)
+\item 
+\mbox{\Hypertarget{structdd__function__table_adf38ae3520dbb171b516b08c27eb05c3}\label{structdd__function__table_adf38ae3520dbb171b516b08c27eb05c3}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Point\+Parameterfv} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a57de2bc01cf4df1c5f7f7457083eacf1}{Point\+Size} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lfloat size)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a10d886b8170e9960a05c351ec600d89a}{Polygon\+Mode} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} face, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a9b6a80c3d27fbca5dbec612643772239}{Polygon\+Offset} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lfloat factor, G\+Lfloat units)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a5928f5d5a53c3faadbbd666c6d1fd7c2}{Polygon\+Stipple} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const G\+Lubyte $\ast$mask)
+\item 
+\mbox{\Hypertarget{structdd__function__table_a1e2d386ebff16ec051de38432a63cd21}\label{structdd__function__table_a1e2d386ebff16ec051de38432a63cd21}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Read\+Buffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} buffer)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aeab038e3944ccf13ec3d4867bd3ff5eb}{Render\+Mode} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a73e64b5bab55c1588ff9b58f21249f60}{Scissor} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei w, G\+Lsizei h)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a516726131e38d6075ce43582d23eb2b5}{Shade\+Model} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a89a6ee25a5d54cd2461ade62048f4051}{Tex\+Gen} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} coord, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a118b549ff1f5cda1b0214062d013f6cd}{Tex\+Env} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$param)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a970757885239587824ca27aba98bbe95}{Tex\+Parameter} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a02346107e5bca25525b75b729b4bac51}{Viewport} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei w, G\+Lsizei h)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Vertex/pixel buffer object functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdd__function__table_ac95c0125661fb65eb7888bfd893dcba4}\label{structdd__function__table_ac95c0125661fb65eb7888bfd893dcba4}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Bind\+Buffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\item 
+\mbox{\Hypertarget{structdd__function__table_a97ed43bf9fdd1f61d02688b54712065a}\label{structdd__function__table_a97ed43bf9fdd1f61d02688b54712065a}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$($\ast$ {\bfseries New\+Buffer\+Object} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint buffer, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\mbox{\Hypertarget{structdd__function__table_ae344aab5ace1142fd8e1d1d584eed52b}\label{structdd__function__table_ae344aab5ace1142fd8e1d1d584eed52b}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Delete\+Buffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\item 
+\mbox{\Hypertarget{structdd__function__table_a169c2aadf77bf88c53e9d921bfb542ff}\label{structdd__function__table_a169c2aadf77bf88c53e9d921bfb542ff}} 
+G\+Lboolean($\ast$ {\bfseries Buffer\+Data} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lsizeiptr\+A\+RB size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data, \hyperlink{interfacevoid}{G\+Lenum} usage, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\item 
+\mbox{\Hypertarget{structdd__function__table_a62501b7db965256fbbb5f3901519ccf7}\label{structdd__function__table_a62501b7db965256fbbb5f3901519ccf7}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Buffer\+Sub\+Data} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lintptr\+A\+RB offset, G\+Lsizeiptr\+A\+RB size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\item 
+\mbox{\Hypertarget{structdd__function__table_a0436d1e7fa127e6d587ca94eb0a93275}\label{structdd__function__table_a0436d1e7fa127e6d587ca94eb0a93275}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Get\+Buffer\+Sub\+Data} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lintptr\+A\+RB offset, G\+Lsizeiptr\+A\+RB size, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\item 
+\mbox{\Hypertarget{structdd__function__table_a45b176390a67ca379d33369f89618386}\label{structdd__function__table_a45b176390a67ca379d33369f89618386}} 
+\hyperlink{interfacevoid}{void} $\ast$($\ast$ {\bfseries Map\+Buffer\+Range} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lintptr offset, G\+Lsizeiptr length, G\+Lbitfield access, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\item 
+\mbox{\Hypertarget{structdd__function__table_afd054faa4fd0c17cddf0c1612e1921be}\label{structdd__function__table_afd054faa4fd0c17cddf0c1612e1921be}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Flush\+Mapped\+Buffer\+Range} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lintptr offset, G\+Lsizeiptr length, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\item 
+\mbox{\Hypertarget{structdd__function__table_ad2e61010e5db0c77f16d420ad369803d}\label{structdd__function__table_ad2e61010e5db0c77f16d420ad369803d}} 
+G\+Lboolean($\ast$ {\bfseries Unmap\+Buffer} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Support for multiple T\&L engines}\par
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \hyperlink{structdd__function__table_aa5cd1d1d6f24c6dc8cfd143e299963f5}{Current\+Exec\+Primitive}
+\item 
+G\+Luint \hyperlink{structdd__function__table_a80c1223fd161cbdbe0986f94eb6abe90}{Current\+Save\+Primitive}
+\item 
+G\+Luint \hyperlink{structdd__function__table_a3e2043e74cfdbaedd6f5885c1303b7c9}{Need\+Flush}
+\item 
+\mbox{\Hypertarget{structdd__function__table_a946ed3ec838908b600fdaa81b57e57f1}\label{structdd__function__table_a946ed3ec838908b600fdaa81b57e57f1}} 
+G\+Luint {\bfseries Save\+Need\+Flush}
+\item 
+\mbox{\Hypertarget{structdd__function__table_abcff0b3a318d628573ffc676e63fb1dc}\label{structdd__function__table_abcff0b3a318d628573ffc676e63fb1dc}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Begin\+Vertices} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a3c743494ace4641ddbd61b3168fe7f96}{Flush\+Vertices} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint flags)
+\item 
+\mbox{\Hypertarget{structdd__function__table_af840563921ca3b3300b72df94ae6abc8}\label{structdd__function__table_af840563921ca3b3300b72df94ae6abc8}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Save\+Flush\+Vertices} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aca0984d93fad489005dd371c904f21de}{Prepare\+Exec\+Begin} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Hook for drivers to prepare for a gl\+Begin/gl\+End block \end{DoxyCompactList}\item 
+G\+Lboolean($\ast$ \hyperlink{structdd__function__table_a539816dbcf04eeb01fa8ae6e231e97cc}{Notify\+Save\+Begin} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aac5505917d73e62a3a365ced64981083}{Lighting\+Space\+Change} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_a4fb10c66063fa5b3c6b98d4c9fc38b39}{New\+List} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint \hyperlink{classlist}{list}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_ab5c8edfc3ba9a6b3ff4dcfee53e4a2b9}{End\+List} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aefd7eee06c86ee7548b6648fb970369e}{Begin\+Call\+List} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__display__list}{gl\+\_\+display\+\_\+list} $\ast$dlist)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structdd__function__table_aa3a6bf7d319a558b88733fb71e7b4f6e}{End\+Call\+List} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Device driver function table. Core Mesa uses these function pointers to call into device drivers. Most of these functions directly correspond to Open\+GL state commands. Core Mesa will call these functions after error checking has been done so that the drivers don\textquotesingle{}t have to worry about error testing.
+
+Vertex transformation/clipping/lighting is patched into the T\&L module. Rasterization functions are patched into the swrast module.
+
+Note\+: when new functions are added here, the drivers/common/driverfuncs.\+c file should be updated too!!! 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structdd__function__table_aec6b2d3bc372cc7796bf30ae6eb297e4}\label{structdd__function__table_aec6b2d3bc372cc7796bf30ae6eb297e4}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Accum@{Accum}}
+\index{Accum@{Accum}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Accum}{Accum}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Accum) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} op, G\+Lfloat \hyperlink{unionvalue}{value})}
+
+Execute gl\+Accum command. \mbox{\Hypertarget{structdd__function__table_a0cf36e5c6722b5cf92a942b490afe9c7}\label{structdd__function__table_a0cf36e5c6722b5cf92a942b490afe9c7}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Alloc\+Texture\+Image\+Buffer@{Alloc\+Texture\+Image\+Buffer}}
+\index{Alloc\+Texture\+Image\+Buffer@{Alloc\+Texture\+Image\+Buffer}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Alloc\+Texture\+Image\+Buffer}{AllocTextureImageBuffer}}
+{\footnotesize\ttfamily G\+Lboolean($\ast$ dd\+\_\+function\+\_\+table\+::\+Alloc\+Texture\+Image\+Buffer) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, gl\+\_\+format format, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth)}
+
+Called to allocate memory for a single texture image \mbox{\Hypertarget{structdd__function__table_a566b2982fc336288f889493284132c8f}\label{structdd__function__table_a566b2982fc336288f889493284132c8f}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Alloc\+Texture\+Storage@{Alloc\+Texture\+Storage}}
+\index{Alloc\+Texture\+Storage@{Alloc\+Texture\+Storage}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Alloc\+Texture\+Storage}{AllocTextureStorage}}
+{\footnotesize\ttfamily G\+Lboolean($\ast$ dd\+\_\+function\+\_\+table\+::\+Alloc\+Texture\+Storage) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, G\+Lsizei levels, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth)}
+
+For G\+L\+\_\+\+A\+R\+B\+\_\+texture\+\_\+storage. Allocate memory for whole mipmap stack. All the gl\+\_\+texture\+\_\+images in the texture object will have their dimensions, format, etc. initialized already. \mbox{\Hypertarget{structdd__function__table_acac707afa03c90c474a07ecd73c23ccd}\label{structdd__function__table_acac707afa03c90c474a07ecd73c23ccd}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Alpha\+Func@{Alpha\+Func}}
+\index{Alpha\+Func@{Alpha\+Func}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Alpha\+Func}{AlphaFunc}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Alpha\+Func) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{func}, G\+Lfloat ref)}
+
+Specify the alpha test function \mbox{\Hypertarget{structdd__function__table_aefd7eee06c86ee7548b6648fb970369e}\label{structdd__function__table_aefd7eee06c86ee7548b6648fb970369e}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Begin\+Call\+List@{Begin\+Call\+List}}
+\index{Begin\+Call\+List@{Begin\+Call\+List}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Begin\+Call\+List}{BeginCallList}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Begin\+Call\+List) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__display__list}{gl\+\_\+display\+\_\+list} $\ast$dlist)}
+
+Called by gl\+Call\+List(s).
+
+Notify the T\&L component before and after calling a display list. \mbox{\Hypertarget{structdd__function__table_adb02edc9fb93a4b96cfc999355ec5be7}\label{structdd__function__table_adb02edc9fb93a4b96cfc999355ec5be7}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Bind\+Texture@{Bind\+Texture}}
+\index{Bind\+Texture@{Bind\+Texture}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Bind\+Texture}{BindTexture}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Bind\+Texture) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$t\+Obj)}
+
+Called by gl\+Bind\+Texture(). \mbox{\Hypertarget{structdd__function__table_a438e3b6bcb20c0503c6e45565e1b416a}\label{structdd__function__table_a438e3b6bcb20c0503c6e45565e1b416a}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Bitmap}{Bitmap}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Bitmap) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, const G\+Lubyte $\ast$\hyperlink{structbitmap}{bitmap})}
+
+Called by gl\+Bitmap(). \mbox{\Hypertarget{structdd__function__table_ab3029e9747f5413c4e33efb89c245462}\label{structdd__function__table_ab3029e9747f5413c4e33efb89c245462}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Choose\+Texture\+Format@{Choose\+Texture\+Format}}
+\index{Choose\+Texture\+Format@{Choose\+Texture\+Format}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Choose\+Texture\+Format}{ChooseTextureFormat}}
+{\footnotesize\ttfamily gl\+\_\+format($\ast$ dd\+\_\+function\+\_\+table\+::\+Choose\+Texture\+Format) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, \hyperlink{interfacevoid}{G\+Lenum} src\+Format, \hyperlink{interfacevoid}{G\+Lenum} src\+Type)}
+
+Choose actual hardware texture format given the user-\/provided source image format and type and the desired internal format. In some cases, src\+Format and src\+Type can be G\+L\+\_\+\+N\+O\+NE. Called by gl\+Tex\+Image(), etc. \mbox{\Hypertarget{structdd__function__table_a5ff278dbc44c864bab3d198b40f0cff9}\label{structdd__function__table_a5ff278dbc44c864bab3d198b40f0cff9}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Clear@{Clear}}
+\index{Clear@{Clear}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Clear}{Clear}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Clear) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lbitfield buffers)}
+
+Clear the color/depth/stencil/accum buffer(s). 
+\begin{DoxyParams}{参数}
+{\em buffers} & a bitmask of B\+U\+F\+F\+E\+R\+\_\+\+B\+I\+T\+\_\+$\ast$ flags indicating which renderbuffers need to be cleared. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structdd__function__table_ace26dc0dbb18a0787f792fa5144e739a}\label{structdd__function__table_ace26dc0dbb18a0787f792fa5144e739a}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Clear\+Color@{Clear\+Color}}
+\index{Clear\+Color@{Clear\+Color}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Clear\+Color}{ClearColor}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Clear\+Color) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const union \hyperlink{uniongl__color__union}{gl\+\_\+color\+\_\+union} color)}
+
+Specify clear values for the color buffers \mbox{\Hypertarget{structdd__function__table_a42f995056022b65949c0021e1d0f5c35}\label{structdd__function__table_a42f995056022b65949c0021e1d0f5c35}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Clear\+Depth@{Clear\+Depth}}
+\index{Clear\+Depth@{Clear\+Depth}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Clear\+Depth}{ClearDepth}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Clear\+Depth) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lclampd d)}
+
+Specify the clear value for the depth buffer \mbox{\Hypertarget{structdd__function__table_ae1cc680b898261ec9a25547884009527}\label{structdd__function__table_ae1cc680b898261ec9a25547884009527}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Clear\+Stencil@{Clear\+Stencil}}
+\index{Clear\+Stencil@{Clear\+Stencil}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Clear\+Stencil}{ClearStencil}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Clear\+Stencil) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint s)}
+
+Specify the clear value for the stencil buffer \mbox{\Hypertarget{structdd__function__table_acc3d4c85478f91446fe80b3f60f923fd}\label{structdd__function__table_acc3d4c85478f91446fe80b3f60f923fd}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Clip\+Plane@{Clip\+Plane}}
+\index{Clip\+Plane@{Clip\+Plane}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Clip\+Plane}{ClipPlane}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Clip\+Plane) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} plane, const G\+Lfloat $\ast$equation)}
+
+Specify a plane against which all geometry is clipped \mbox{\Hypertarget{structdd__function__table_a0f4498a49a4045be1ba912ce28caf884}\label{structdd__function__table_a0f4498a49a4045be1ba912ce28caf884}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Color\+Mask@{Color\+Mask}}
+\index{Color\+Mask@{Color\+Mask}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Color\+Mask}{ColorMask}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Color\+Mask) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lboolean rmask, G\+Lboolean gmask, G\+Lboolean bmask, G\+Lboolean amask)}
+
+Enable and disable writing of frame buffer color components \mbox{\Hypertarget{structdd__function__table_a3ae0450c56130763cde4a72bd780485f}\label{structdd__function__table_a3ae0450c56130763cde4a72bd780485f}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Color\+Material@{Color\+Material}}
+\index{Color\+Material@{Color\+Material}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Color\+Material}{ColorMaterial}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Color\+Material) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} face, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Cause a material color to track the current color \mbox{\Hypertarget{structdd__function__table_a3c38c3f19f2f4702cd4f239bbc29f012}\label{structdd__function__table_a3c38c3f19f2f4702cd4f239bbc29f012}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Compressed\+Tex\+Image1D@{Compressed\+Tex\+Image1D}}
+\index{Compressed\+Tex\+Image1D@{Compressed\+Tex\+Image1D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Compressed\+Tex\+Image1D}{CompressedTexImage1D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Compressed\+Tex\+Image1D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lsizei width, G\+Lint border, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)}
+
+Called by gl\+Compressed\+Tex\+Image1\+D(). The parameters are the same as for gl\+Compressed\+Tex\+Image1\+D(), plus a pointer to the destination texure image. \mbox{\Hypertarget{structdd__function__table_ae8789f6fbfc35d057639ed8adbd58db2}\label{structdd__function__table_ae8789f6fbfc35d057639ed8adbd58db2}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Compressed\+Tex\+Image2D@{Compressed\+Tex\+Image2D}}
+\index{Compressed\+Tex\+Image2D@{Compressed\+Tex\+Image2D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Compressed\+Tex\+Image2D}{CompressedTexImage2D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Compressed\+Tex\+Image2D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lsizei width, G\+Lsizei height, G\+Lint border, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)}
+
+Called by gl\+Compressed\+Tex\+Image2\+D().
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{structdd__function__table_a3c38c3f19f2f4702cd4f239bbc29f012}{dd\+\_\+function\+\_\+table\+::\+Compressed\+Tex\+Image1D}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structdd__function__table_a374e6d241342f182142b6a9d19e2f9ac}\label{structdd__function__table_a374e6d241342f182142b6a9d19e2f9ac}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Compressed\+Tex\+Sub\+Image1D@{Compressed\+Tex\+Sub\+Image1D}}
+\index{Compressed\+Tex\+Sub\+Image1D@{Compressed\+Tex\+Sub\+Image1D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Compressed\+Tex\+Sub\+Image1D}{CompressedTexSubImage1D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Compressed\+Tex\+Sub\+Image1D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lsizei width, \hyperlink{interfacevoid}{G\+Lenum} format, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)}
+
+Called by gl\+Compressed\+Tex\+Sub\+Image1\+D(). \mbox{\Hypertarget{structdd__function__table_a3f6e668531dd8aab592942e3ec6b3ce3}\label{structdd__function__table_a3f6e668531dd8aab592942e3ec6b3ce3}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Compressed\+Tex\+Sub\+Image2D@{Compressed\+Tex\+Sub\+Image2D}}
+\index{Compressed\+Tex\+Sub\+Image2D@{Compressed\+Tex\+Sub\+Image2D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Compressed\+Tex\+Sub\+Image2D}{CompressedTexSubImage2D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Compressed\+Tex\+Sub\+Image2D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lint yoffset, G\+Lsizei width, G\+Lint height, \hyperlink{interfacevoid}{G\+Lenum} format, G\+Lsizei image\+Size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)}
+
+Called by gl\+Compressed\+Tex\+Sub\+Image2\+D(). \mbox{\Hypertarget{structdd__function__table_ae355c1c39a2145ace1c81e2fb285890b}\label{structdd__function__table_ae355c1c39a2145ace1c81e2fb285890b}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Copy\+Pixels@{Copy\+Pixels}}
+\index{Copy\+Pixels@{Copy\+Pixels}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Copy\+Pixels}{CopyPixels}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Copy\+Pixels) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint srcx, G\+Lint srcy, G\+Lsizei width, G\+Lsizei height, G\+Lint dstx, G\+Lint dsty, \hyperlink{interfacevoid}{G\+Lenum} type)}
+
+Called by gl\+Copy\+Pixels(). \mbox{\Hypertarget{structdd__function__table_a1f3b0bba4691f2f2d8338ad804aa948a}\label{structdd__function__table_a1f3b0bba4691f2f2d8338ad804aa948a}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Copy\+Tex\+Sub\+Image1D@{Copy\+Tex\+Sub\+Image1D}}
+\index{Copy\+Tex\+Sub\+Image1D@{Copy\+Tex\+Sub\+Image1D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Copy\+Tex\+Sub\+Image1D}{CopyTexSubImage1D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Copy\+Tex\+Sub\+Image1D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, G\+Lint x, G\+Lint y, G\+Lsizei width)}
+
+Called by gl\+Copy\+Tex\+Sub\+Image1\+D() and gl\+Copy\+Tex\+Image1\+D(). \mbox{\Hypertarget{structdd__function__table_a25e3ba53790920affc41a135e4c5b42b}\label{structdd__function__table_a25e3ba53790920affc41a135e4c5b42b}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Copy\+Tex\+Sub\+Image2D@{Copy\+Tex\+Sub\+Image2D}}
+\index{Copy\+Tex\+Sub\+Image2D@{Copy\+Tex\+Sub\+Image2D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Copy\+Tex\+Sub\+Image2D}{CopyTexSubImage2D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Copy\+Tex\+Sub\+Image2D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lint yoffset, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height)}
+
+Called by gl\+Copy\+Tex\+Sub\+Image2\+D() and gl\+Copy\+Tex\+Image2\+D(). \mbox{\Hypertarget{structdd__function__table_ab5de002676624683a137641cf9053901}\label{structdd__function__table_ab5de002676624683a137641cf9053901}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Cull\+Face@{Cull\+Face}}
+\index{Cull\+Face@{Cull\+Face}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Cull\+Face}{CullFace}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Cull\+Face) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Specify whether front-\/ or back-\/facing facets can be culled \mbox{\Hypertarget{structdd__function__table_aa5cd1d1d6f24c6dc8cfd143e299963f5}\label{structdd__function__table_aa5cd1d1d6f24c6dc8cfd143e299963f5}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Current\+Exec\+Primitive@{Current\+Exec\+Primitive}}
+\index{Current\+Exec\+Primitive@{Current\+Exec\+Primitive}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Current\+Exec\+Primitive}{CurrentExecPrimitive}}
+{\footnotesize\ttfamily G\+Luint dd\+\_\+function\+\_\+table\+::\+Current\+Exec\+Primitive}
+
+Set by the driver-\/supplied T\&L engine.
+
+Set to P\+R\+I\+M\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND when outside gl\+Begin()/gl\+End(). \mbox{\Hypertarget{structdd__function__table_a80c1223fd161cbdbe0986f94eb6abe90}\label{structdd__function__table_a80c1223fd161cbdbe0986f94eb6abe90}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Current\+Save\+Primitive@{Current\+Save\+Primitive}}
+\index{Current\+Save\+Primitive@{Current\+Save\+Primitive}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Current\+Save\+Primitive}{CurrentSavePrimitive}}
+{\footnotesize\ttfamily G\+Luint dd\+\_\+function\+\_\+table\+::\+Current\+Save\+Primitive}
+
+Current state of an in-\/progress compilation.
+
+May take on any of the additional values P\+R\+I\+M\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND, P\+R\+I\+M\+\_\+\+I\+N\+S\+I\+D\+E\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+P\+R\+IM or P\+R\+I\+M\+\_\+\+U\+N\+K\+N\+O\+WN defined above. \mbox{\Hypertarget{structdd__function__table_abdddd372703dc0ab4786e62e73c879a9}\label{structdd__function__table_abdddd372703dc0ab4786e62e73c879a9}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Delete\+Texture@{Delete\+Texture}}
+\index{Delete\+Texture@{Delete\+Texture}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Delete\+Texture}{DeleteTexture}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Delete\+Texture) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj)}
+
+Called to delete/free a texture object. Drivers should free the object and any image data it contains. \mbox{\Hypertarget{structdd__function__table_a7b924d27d8e7c19e5aa91c466705a569}\label{structdd__function__table_a7b924d27d8e7c19e5aa91c466705a569}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Delete\+Texture\+Image@{Delete\+Texture\+Image}}
+\index{Delete\+Texture\+Image@{Delete\+Texture\+Image}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Delete\+Texture\+Image}{DeleteTextureImage}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Delete\+Texture\+Image) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$)}
+
+Called to free a texture image object returned by \hyperlink{structdd__function__table_af908ae93c473fd237a2d9b98245d2006}{New\+Texture\+Image()} \mbox{\Hypertarget{structdd__function__table_a5a2b32e1e03a438e9b00236cf1771933}\label{structdd__function__table_a5a2b32e1e03a438e9b00236cf1771933}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Depth\+Func@{Depth\+Func}}
+\index{Depth\+Func@{Depth\+Func}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Depth\+Func}{DepthFunc}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Depth\+Func) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{func})}
+
+Specify the value used for depth buffer comparisons \mbox{\Hypertarget{structdd__function__table_aee0bc3435fdd8129e7e7d8d38e4a80bf}\label{structdd__function__table_aee0bc3435fdd8129e7e7d8d38e4a80bf}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Depth\+Mask@{Depth\+Mask}}
+\index{Depth\+Mask@{Depth\+Mask}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Depth\+Mask}{DepthMask}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Depth\+Mask) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lboolean flag)}
+
+Enable or disable writing into the depth buffer \mbox{\Hypertarget{structdd__function__table_affca6014f4ce79ba995be2521bedaf24}\label{structdd__function__table_affca6014f4ce79ba995be2521bedaf24}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Depth\+Range@{Depth\+Range}}
+\index{Depth\+Range@{Depth\+Range}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Depth\+Range}{DepthRange}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Depth\+Range) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lclampd nearval, G\+Lclampd farval)}
+
+Specify mapping of depth values from N\+DC to window coordinates \mbox{\Hypertarget{structdd__function__table_abb75f45b604b66c6e6cf986383f17c1b}\label{structdd__function__table_abb75f45b604b66c6e6cf986383f17c1b}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Draw\+Buffer@{Draw\+Buffer}}
+\index{Draw\+Buffer@{Draw\+Buffer}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Draw\+Buffer}{DrawBuffer}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Draw\+Buffer) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} buffer)}
+
+Specify the current buffer for writing \mbox{\Hypertarget{structdd__function__table_a1970141fc8c558da3b315002a6157da3}\label{structdd__function__table_a1970141fc8c558da3b315002a6157da3}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Draw\+Pixels@{Draw\+Pixels}}
+\index{Draw\+Pixels@{Draw\+Pixels}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Draw\+Pixels}{DrawPixels}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Draw\+Pixels) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels)}
+
+Called by gl\+Draw\+Pixels(). {\ttfamily unpack} describes how to unpack the source image data. \mbox{\Hypertarget{structdd__function__table_ae22e641c2c7458248f00b64a289c2655}\label{structdd__function__table_ae22e641c2c7458248f00b64a289c2655}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Enable@{Enable}}
+\index{Enable@{Enable}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Enable}{Enable}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Enable) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{cap}, G\+Lboolean state)}
+
+Enable or disable server-\/side gl capabilities \mbox{\Hypertarget{structdd__function__table_aa3a6bf7d319a558b88733fb71e7b4f6e}\label{structdd__function__table_aa3a6bf7d319a558b88733fb71e7b4f6e}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!End\+Call\+List@{End\+Call\+List}}
+\index{End\+Call\+List@{End\+Call\+List}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{End\+Call\+List}{EndCallList}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+End\+Call\+List) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+Called by gl\+End\+Call\+List().
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{structdd__function__table_aefd7eee06c86ee7548b6648fb970369e}{dd\+\_\+function\+\_\+table\+::\+Begin\+Call\+List}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structdd__function__table_ab5c8edfc3ba9a6b3ff4dcfee53e4a2b9}\label{structdd__function__table_ab5c8edfc3ba9a6b3ff4dcfee53e4a2b9}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!End\+List@{End\+List}}
+\index{End\+List@{End\+List}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{End\+List}{EndList}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+End\+List) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+Called by gl\+End\+List().
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{structdd__function__table_a4fb10c66063fa5b3c6b98d4c9fc38b39}{dd\+\_\+function\+\_\+table\+::\+New\+List}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structdd__function__table_abc8c0b95063ce845d9e26d53b370e02c}\label{structdd__function__table_abc8c0b95063ce845d9e26d53b370e02c}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Error@{Error}}
+\index{Error@{Error}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Error}{Error}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Error) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+Called whenever an error is generated. \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Error\+Value contains the error value. \mbox{\Hypertarget{structdd__function__table_a3d15abc006c0aa92f1b467cd29d8e2b4}\label{structdd__function__table_a3d15abc006c0aa92f1b467cd29d8e2b4}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Finish@{Finish}}
+\index{Finish@{Finish}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Finish}{Finish}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Finish) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+\hyperlink{namespace_this}{This} is called whenever gl\+Finish() is called. \mbox{\Hypertarget{structdd__function__table_a0680f8de4e049f72cfb10cf5867a85f5}\label{structdd__function__table_a0680f8de4e049f72cfb10cf5867a85f5}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Flush@{Flush}}
+\index{Flush@{Flush}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Flush}{Flush}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Flush) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+\hyperlink{namespace_this}{This} is called whenever gl\+Flush() is called. \mbox{\Hypertarget{structdd__function__table_a3c743494ace4641ddbd61b3168fe7f96}\label{structdd__function__table_a3c743494ace4641ddbd61b3168fe7f96}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Flush\+Vertices@{Flush\+Vertices}}
+\index{Flush\+Vertices@{Flush\+Vertices}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Flush\+Vertices}{FlushVertices}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Flush\+Vertices) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint flags)}
+
+If inside gl\+Begin()/gl\+End(), it should A\+S\+S\+E\+R\+T(0). Otherwise, if F\+L\+U\+S\+H\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+V\+E\+R\+T\+I\+C\+ES bit in {\ttfamily flags} is set flushes any buffered vertices, if F\+L\+U\+S\+H\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+U\+R\+R\+E\+NT bit is set updates \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Current and \hyperlink{structgl__light__attrib_a61b333773d9847f6ae5ce17e11052e9d}{gl\+\_\+light\+\_\+attrib\+::\+Material}
+
+Note that the default T\&L engine never clears the F\+L\+U\+S\+H\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+U\+R\+R\+E\+NT bit, even after performing the update. \mbox{\Hypertarget{structdd__function__table_a31cee9b3e736221e5f7dd13c09ecf155}\label{structdd__function__table_a31cee9b3e736221e5f7dd13c09ecf155}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Fogfv@{Fogfv}}
+\index{Fogfv@{Fogfv}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Fogfv}{Fogfv}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Fogfv) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)}
+
+Specify fog parameters \mbox{\Hypertarget{structdd__function__table_af2144a2c96c3385cb1b48d73c0e4cb02}\label{structdd__function__table_af2144a2c96c3385cb1b48d73c0e4cb02}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Free\+Texture\+Image\+Buffer@{Free\+Texture\+Image\+Buffer}}
+\index{Free\+Texture\+Image\+Buffer@{Free\+Texture\+Image\+Buffer}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Free\+Texture\+Image\+Buffer}{FreeTextureImageBuffer}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Free\+Texture\+Image\+Buffer) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)}
+
+Free the memory for a single texture image \mbox{\Hypertarget{structdd__function__table_a456ec268b948ec165002ec80537e4172}\label{structdd__function__table_a456ec268b948ec165002ec80537e4172}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Front\+Face@{Front\+Face}}
+\index{Front\+Face@{Front\+Face}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Front\+Face}{FrontFace}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Front\+Face) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Define front-\/ and back-\/facing polygons \mbox{\Hypertarget{structdd__function__table_a8453cd558af6878530ab7a88a21ee64c}\label{structdd__function__table_a8453cd558af6878530ab7a88a21ee64c}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Get\+Buffer\+Size@{Get\+Buffer\+Size}}
+\index{Get\+Buffer\+Size@{Get\+Buffer\+Size}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Get\+Buffer\+Size}{GetBufferSize}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Get\+Buffer\+Size) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$buffer, G\+Luint $\ast$width, G\+Luint $\ast$height)}
+
+Get the width and height of the named buffer/window.
+
+Mesa uses this to determine when the driver\textquotesingle{}s window size has changed. X\+XX O\+B\+S\+O\+L\+E\+TE\+: this function will be removed in the future. \mbox{\Hypertarget{structdd__function__table_a9806da3e2614187f5e154ffada409570}\label{structdd__function__table_a9806da3e2614187f5e154ffada409570}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Get\+String@{Get\+String}}
+\index{Get\+String@{Get\+String}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Get\+String}{GetString}}
+{\footnotesize\ttfamily const G\+Lubyte$\ast$($\ast$ dd\+\_\+function\+\_\+table\+::\+Get\+String) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structname}{name})}
+
+Return a string as needed by gl\+Get\+String(). Only the G\+L\+\_\+\+R\+E\+N\+D\+E\+R\+ER query must be implemented. Otherwise, N\+U\+LL can be returned. \mbox{\Hypertarget{structdd__function__table_a0b9a6f027a3472d9ca293bf3e7a703cd}\label{structdd__function__table_a0b9a6f027a3472d9ca293bf3e7a703cd}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Get\+Tex\+Image@{Get\+Tex\+Image}}
+\index{Get\+Tex\+Image@{Get\+Tex\+Image}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Get\+Tex\+Image}{GetTexImage}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Get\+Tex\+Image) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)}
+
+Called by gl\+Get\+Tex\+Image(). \mbox{\Hypertarget{structdd__function__table_a3a33772ef04628691bd808904b1c1c0d}\label{structdd__function__table_a3a33772ef04628691bd808904b1c1c0d}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Hint@{Hint}}
+\index{Hint@{Hint}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Hint}{Hint}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Hint) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Specify implementation-\/specific hints \mbox{\Hypertarget{structdd__function__table_a43b63d95c85f068186d818b1d8cb2b51}\label{structdd__function__table_a43b63d95c85f068186d818b1d8cb2b51}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Lightfv@{Lightfv}}
+\index{Lightfv@{Lightfv}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Lightfv}{Lightfv}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Lightfv) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} light, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)}
+
+Set light source parameters. Note\+: for G\+L\+\_\+\+P\+O\+S\+I\+T\+I\+ON and G\+L\+\_\+\+S\+P\+O\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON, params will have already been transformed to eye-\/space. \mbox{\Hypertarget{structdd__function__table_aac5505917d73e62a3a365ced64981083}\label{structdd__function__table_aac5505917d73e62a3a365ced64981083}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Lighting\+Space\+Change@{Lighting\+Space\+Change}}
+\index{Lighting\+Space\+Change@{Lighting\+Space\+Change}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Lighting\+Space\+Change}{LightingSpaceChange}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Lighting\+Space\+Change) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+Notify driver that the special derived value \+\_\+\+Need\+Eye\+Coords has changed. \mbox{\Hypertarget{structdd__function__table_a1b835dd88a3a64aeb91f3bb8d318874a}\label{structdd__function__table_a1b835dd88a3a64aeb91f3bb8d318874a}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Light\+Modelfv@{Light\+Modelfv}}
+\index{Light\+Modelfv@{Light\+Modelfv}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Light\+Modelfv}{LightModelfv}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Light\+Modelfv) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)}
+
+Set the lighting model parameters \mbox{\Hypertarget{structdd__function__table_ac12a98543e785ceb983f4d38e8d9a089}\label{structdd__function__table_ac12a98543e785ceb983f4d38e8d9a089}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Line\+Stipple@{Line\+Stipple}}
+\index{Line\+Stipple@{Line\+Stipple}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Line\+Stipple}{LineStipple}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Line\+Stipple) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint factor, G\+Lushort pattern)}
+
+Specify the line stipple pattern \mbox{\Hypertarget{structdd__function__table_aeed6f87badf8228355b8c08bb0199dca}\label{structdd__function__table_aeed6f87badf8228355b8c08bb0199dca}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Line\+Width@{Line\+Width}}
+\index{Line\+Width@{Line\+Width}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Line\+Width}{LineWidth}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Line\+Width) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lfloat width)}
+
+Specify the width of rasterized lines \mbox{\Hypertarget{structdd__function__table_a0a18048817ee65f99d555958cd79c83d}\label{structdd__function__table_a0a18048817ee65f99d555958cd79c83d}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Logic\+Opcode@{Logic\+Opcode}}
+\index{Logic\+Opcode@{Logic\+Opcode}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Logic\+Opcode}{LogicOpcode}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Logic\+Opcode) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} opcode)}
+
+Specify a logical pixel operation for color index rendering \mbox{\Hypertarget{structdd__function__table_af1eb4b8689ff956a3ee1ebbd5c23aa2e}\label{structdd__function__table_af1eb4b8689ff956a3ee1ebbd5c23aa2e}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Map\+Renderbuffer@{Map\+Renderbuffer}}
+\index{Map\+Renderbuffer@{Map\+Renderbuffer}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Map\+Renderbuffer}{MapRenderbuffer}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Map\+Renderbuffer) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$rb, G\+Luint x, G\+Luint y, G\+Luint w, G\+Luint h, G\+Lbitfield \hyperlink{interfacevoid}{mode}, G\+Lubyte $\ast$$\ast$map\+Out, G\+Lint $\ast$row\+Stride\+Out)}
+
+Map a renderbuffer into user space. 
+\begin{DoxyParams}{参数}
+{\em mode} & bitmask of G\+L\+\_\+\+M\+A\+P\+\_\+\+R\+E\+A\+D\+\_\+\+B\+IT, G\+L\+\_\+\+M\+A\+P\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+IT and G\+L\+\_\+\+M\+A\+P\+\_\+\+I\+N\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+IT (if writing) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structdd__function__table_a7d502b09d3cf21951c5a85b5ec83085d}\label{structdd__function__table_a7d502b09d3cf21951c5a85b5ec83085d}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Map\+Texture\+Image@{Map\+Texture\+Image}}
+\index{Map\+Texture\+Image@{Map\+Texture\+Image}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Map\+Texture\+Image}{MapTextureImage}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Map\+Texture\+Image) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Luint \hyperlink{classslice}{slice}, G\+Luint x, G\+Luint y, G\+Luint w, G\+Luint h, G\+Lbitfield \hyperlink{interfacevoid}{mode}, G\+Lubyte $\ast$$\ast$map\+Out, G\+Lint $\ast$row\+Stride\+Out)}
+
+Map a slice of a texture image into user space. Note\+: for G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+A\+R\+R\+AY, height must be 1, y must be 0 and slice indicates the 1D array index. 
+\begin{DoxyParams}{参数}
+{\em tex\+Image} & the texture image \\
+\hline
+{\em slice} & the 3D image slice or array texture slice \\
+\hline
+{\em x,y,w,h} & region of interest \\
+\hline
+{\em mode} & bitmask of G\+L\+\_\+\+M\+A\+P\+\_\+\+R\+E\+A\+D\+\_\+\+B\+IT, G\+L\+\_\+\+M\+A\+P\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+IT and G\+L\+\_\+\+M\+A\+P\+\_\+\+I\+N\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+IT (if writing) \\
+\hline
+{\em map\+Out} & returns start of mapping of region of interest \\
+\hline
+{\em row\+Stride\+Out} & returns row stride (in bytes) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structdd__function__table_a3e2043e74cfdbaedd6f5885c1303b7c9}\label{structdd__function__table_a3e2043e74cfdbaedd6f5885c1303b7c9}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Need\+Flush@{Need\+Flush}}
+\index{Need\+Flush@{Need\+Flush}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Need\+Flush}{NeedFlush}}
+{\footnotesize\ttfamily G\+Luint dd\+\_\+function\+\_\+table\+::\+Need\+Flush}
+
+Set by the driver-\/supplied T\&L engine whenever vertices are buffered between gl\+Begin()/gl\+End() objects or \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Current is not updated.
+
+The \hyperlink{structdd__function__table_a3c743494ace4641ddbd61b3168fe7f96}{dd\+\_\+function\+\_\+table\+::\+Flush\+Vertices} call below may be used to resolve these conditions. \mbox{\Hypertarget{structdd__function__table_a4fb10c66063fa5b3c6b98d4c9fc38b39}\label{structdd__function__table_a4fb10c66063fa5b3c6b98d4c9fc38b39}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!New\+List@{New\+List}}
+\index{New\+List@{New\+List}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{New\+List}{NewList}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+New\+List) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint \hyperlink{classlist}{list}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Called by gl\+New\+List().
+
+Let the T\&L component know what is going on with display lists in time to make changes to dispatch tables, etc. \mbox{\Hypertarget{structdd__function__table_af908ae93c473fd237a2d9b98245d2006}\label{structdd__function__table_af908ae93c473fd237a2d9b98245d2006}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!New\+Texture\+Image@{New\+Texture\+Image}}
+\index{New\+Texture\+Image@{New\+Texture\+Image}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{New\+Texture\+Image}{NewTextureImage}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}$\ast$($\ast$ dd\+\_\+function\+\_\+table\+::\+New\+Texture\+Image) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+Called to allocate a new texture image object. \mbox{\Hypertarget{structdd__function__table_a80f07e92761e4295e1d99111bd149d8a}\label{structdd__function__table_a80f07e92761e4295e1d99111bd149d8a}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!New\+Texture\+Object@{New\+Texture\+Object}}
+\index{New\+Texture\+Object@{New\+Texture\+Object}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{New\+Texture\+Object}{NewTextureObject}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$($\ast$ dd\+\_\+function\+\_\+table\+::\+New\+Texture\+Object) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint \hyperlink{structname}{name}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})}
+
+Called to allocate a new texture object. Drivers will usually allocate/return a subclass of \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}. \mbox{\Hypertarget{structdd__function__table_a539816dbcf04eeb01fa8ae6e231e97cc}\label{structdd__function__table_a539816dbcf04eeb01fa8ae6e231e97cc}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Notify\+Save\+Begin@{Notify\+Save\+Begin}}
+\index{Notify\+Save\+Begin@{Notify\+Save\+Begin}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Notify\+Save\+Begin}{NotifySaveBegin}}
+{\footnotesize\ttfamily G\+Lboolean($\ast$ dd\+\_\+function\+\_\+table\+::\+Notify\+Save\+Begin) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Give the driver the opportunity to hook in its own vtxfmt for compiling optimized display lists. \hyperlink{namespace_this}{This} is called on each valid gl\+Begin() during list compilation. \mbox{\Hypertarget{structdd__function__table_a57de2bc01cf4df1c5f7f7457083eacf1}\label{structdd__function__table_a57de2bc01cf4df1c5f7f7457083eacf1}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Point\+Size@{Point\+Size}}
+\index{Point\+Size@{Point\+Size}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Point\+Size}{PointSize}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Point\+Size) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lfloat size)}
+
+Specify the diameter of rasterized points \mbox{\Hypertarget{structdd__function__table_a10d886b8170e9960a05c351ec600d89a}\label{structdd__function__table_a10d886b8170e9960a05c351ec600d89a}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Polygon\+Mode@{Polygon\+Mode}}
+\index{Polygon\+Mode@{Polygon\+Mode}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Polygon\+Mode}{PolygonMode}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Polygon\+Mode) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} face, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Select a polygon rasterization mode \mbox{\Hypertarget{structdd__function__table_a9b6a80c3d27fbca5dbec612643772239}\label{structdd__function__table_a9b6a80c3d27fbca5dbec612643772239}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Polygon\+Offset@{Polygon\+Offset}}
+\index{Polygon\+Offset@{Polygon\+Offset}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Polygon\+Offset}{PolygonOffset}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Polygon\+Offset) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lfloat factor, G\+Lfloat units)}
+
+Set the scale and units used to calculate depth values \mbox{\Hypertarget{structdd__function__table_a5928f5d5a53c3faadbbd666c6d1fd7c2}\label{structdd__function__table_a5928f5d5a53c3faadbbd666c6d1fd7c2}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Polygon\+Stipple@{Polygon\+Stipple}}
+\index{Polygon\+Stipple@{Polygon\+Stipple}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Polygon\+Stipple}{PolygonStipple}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Polygon\+Stipple) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const G\+Lubyte $\ast$mask)}
+
+Set the polygon stippling pattern \mbox{\Hypertarget{structdd__function__table_aca0984d93fad489005dd371c904f21de}\label{structdd__function__table_aca0984d93fad489005dd371c904f21de}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Prepare\+Exec\+Begin@{Prepare\+Exec\+Begin}}
+\index{Prepare\+Exec\+Begin@{Prepare\+Exec\+Begin}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Prepare\+Exec\+Begin}{PrepareExecBegin}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Prepare\+Exec\+Begin) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)}
+
+
+
+Hook for drivers to prepare for a gl\+Begin/gl\+End block 
+
+\hyperlink{namespace_this}{This} hook is called in vbo\+\_\+exec\+\_\+\+Begin() before any action, including state updates, occurs. \mbox{\Hypertarget{structdd__function__table_ac39afdd3daf3f75b50295df734241d86}\label{structdd__function__table_ac39afdd3daf3f75b50295df734241d86}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Raster\+Pos@{Raster\+Pos}}
+\index{Raster\+Pos@{Raster\+Pos}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Raster\+Pos}{RasterPos}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Raster\+Pos) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const G\+Lfloat v\mbox{[}4\mbox{]})}
+
+Execute gl\+Raster\+Pos, updating the ctx-\/$>$Current.\+Raster fields \mbox{\Hypertarget{structdd__function__table_a2327fc5203c524e7db433dbdbbdb644f}\label{structdd__function__table_a2327fc5203c524e7db433dbdbbdb644f}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Read\+Pixels@{Read\+Pixels}}
+\index{Read\+Pixels@{Read\+Pixels}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Read\+Pixels}{ReadPixels}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Read\+Pixels) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$unpack, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$dest)}
+
+Called by gl\+Read\+Pixels(). \mbox{\Hypertarget{structdd__function__table_aeab038e3944ccf13ec3d4867bd3ff5eb}\label{structdd__function__table_aeab038e3944ccf13ec3d4867bd3ff5eb}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Render\+Mode@{Render\+Mode}}
+\index{Render\+Mode@{Render\+Mode}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Render\+Mode}{RenderMode}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Render\+Mode) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Set rasterization mode \mbox{\Hypertarget{structdd__function__table_ab08456af9890bc6cd4aa7b202d63ab09}\label{structdd__function__table_ab08456af9890bc6cd4aa7b202d63ab09}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Resize\+Buffers@{Resize\+Buffers}}
+\index{Resize\+Buffers@{Resize\+Buffers}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Resize\+Buffers}{ResizeBuffers}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Resize\+Buffers) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$fb, G\+Luint width, G\+Luint height)}
+
+Resize the given framebuffer to the given size. X\+XX O\+B\+S\+O\+L\+E\+TE\+: this function will be removed in the future. \mbox{\Hypertarget{structdd__function__table_a73e64b5bab55c1588ff9b58f21249f60}\label{structdd__function__table_a73e64b5bab55c1588ff9b58f21249f60}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Scissor@{Scissor}}
+\index{Scissor@{Scissor}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Scissor}{Scissor}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Scissor) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei w, G\+Lsizei h)}
+
+Define the scissor box \mbox{\Hypertarget{structdd__function__table_a516726131e38d6075ce43582d23eb2b5}\label{structdd__function__table_a516726131e38d6075ce43582d23eb2b5}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Shade\+Model@{Shade\+Model}}
+\index{Shade\+Model@{Shade\+Model}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Shade\+Model}{ShadeModel}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Shade\+Model) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{mode})}
+
+Select flat or smooth shading \mbox{\Hypertarget{structdd__function__table_a6bde3f45be48a994c069fd106d1add4e}\label{structdd__function__table_a6bde3f45be48a994c069fd106d1add4e}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Test\+Proxy\+Tex\+Image@{Test\+Proxy\+Tex\+Image}}
+\index{Test\+Proxy\+Tex\+Image@{Test\+Proxy\+Tex\+Image}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Test\+Proxy\+Tex\+Image}{TestProxyTexImage}}
+{\footnotesize\ttfamily G\+Lboolean($\ast$ dd\+\_\+function\+\_\+table\+::\+Test\+Proxy\+Tex\+Image) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, G\+Lint width, G\+Lint height, G\+Lint depth, G\+Lint border)}
+
+Called by gl\+Tex\+Image\mbox{[}123\mbox{]}D when user specifies a proxy texture target.
+
+\begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE if the proxy test passes, or G\+L\+\_\+\+F\+A\+L\+SE if the test fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structdd__function__table_a118b549ff1f5cda1b0214062d013f6cd}\label{structdd__function__table_a118b549ff1f5cda1b0214062d013f6cd}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Tex\+Env@{Tex\+Env}}
+\index{Tex\+Env@{Tex\+Env}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Tex\+Env}{TexEnv}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Tex\+Env) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$param)}
+
+Set texture environment parameters \mbox{\Hypertarget{structdd__function__table_a89a6ee25a5d54cd2461ade62048f4051}\label{structdd__function__table_a89a6ee25a5d54cd2461ade62048f4051}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Tex\+Gen@{Tex\+Gen}}
+\index{Tex\+Gen@{Tex\+Gen}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Tex\+Gen}{TexGen}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Tex\+Gen) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} coord, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)}
+
+Control the generation of texture coordinates \mbox{\Hypertarget{structdd__function__table_a0907a18e4f97b0e8f36e50d8f5e7e369}\label{structdd__function__table_a0907a18e4f97b0e8f36e50d8f5e7e369}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Tex\+Image1D@{Tex\+Image1D}}
+\index{Tex\+Image1D@{Tex\+Image1D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Tex\+Image1D}{TexImage1D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Tex\+Image1D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lint width, G\+Lint border, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)}
+
+Called by gl\+Tex\+Image1\+D(). Simply copy the source texture data into the destination texture memory. The \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} fields, etc. will be fully initialized. The parameters are the same as gl\+Tex\+Image1\+D(), plus\+: 
+\begin{DoxyParams}{参数}
+{\em packing} & describes how to unpack the source data. \\
+\hline
+{\em tex\+Image} & is the destination texture image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structdd__function__table_a2640ee0c4221b29d2f01603424cd3b3a}\label{structdd__function__table_a2640ee0c4221b29d2f01603424cd3b3a}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Tex\+Image2D@{Tex\+Image2D}}
+\index{Tex\+Image2D@{Tex\+Image2D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Tex\+Image2D}{TexImage2D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Tex\+Image2D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lint width, G\+Lint height, G\+Lint border, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)}
+
+Called by gl\+Tex\+Image2\+D().
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{structdd__function__table_a0907a18e4f97b0e8f36e50d8f5e7e369}{dd\+\_\+function\+\_\+table\+::\+Tex\+Image1D}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structdd__function__table_a970757885239587824ca27aba98bbe95}\label{structdd__function__table_a970757885239587824ca27aba98bbe95}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Tex\+Parameter@{Tex\+Parameter}}
+\index{Tex\+Parameter@{Tex\+Parameter}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Tex\+Parameter}{TexParameter}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Tex\+Parameter) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, const G\+Lfloat $\ast$params)}
+
+Set texture parameters \mbox{\Hypertarget{structdd__function__table_aa633b8ffb5cbcacb00177fe255481faa}\label{structdd__function__table_aa633b8ffb5cbcacb00177fe255481faa}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Tex\+Sub\+Image1D@{Tex\+Sub\+Image1D}}
+\index{Tex\+Sub\+Image1D@{Tex\+Sub\+Image1D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Tex\+Sub\+Image1D}{TexSubImage1D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Tex\+Sub\+Image1D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lsizei width, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)}
+
+Called by gl\+Tex\+Sub\+Image1\+D(). Replace a subset of the target texture with new texel data. \begin{DoxySeeAlso}{参见}
+\hyperlink{structdd__function__table_a0907a18e4f97b0e8f36e50d8f5e7e369}{dd\+\_\+function\+\_\+table\+::\+Tex\+Image1D}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structdd__function__table_ac5d434d3f197b6bd61e01311145d7244}\label{structdd__function__table_ac5d434d3f197b6bd61e01311145d7244}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Tex\+Sub\+Image2D@{Tex\+Sub\+Image2D}}
+\index{Tex\+Sub\+Image2D@{Tex\+Sub\+Image2D}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Tex\+Sub\+Image2D}{TexSubImage2D}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Tex\+Sub\+Image2D) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint xoffset, G\+Lint yoffset, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__pixelstore__attrib}{gl\+\_\+pixelstore\+\_\+attrib} $\ast$packing)}
+
+Called by gl\+Tex\+Sub\+Image2\+D().
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{structdd__function__table_aa633b8ffb5cbcacb00177fe255481faa}{dd\+\_\+function\+\_\+table\+::\+Tex\+Sub\+Image1D}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structdd__function__table_a4275da33e8cc71c5e39a64759d5d3b38}\label{structdd__function__table_a4275da33e8cc71c5e39a64759d5d3b38}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Update\+State@{Update\+State}}
+\index{Update\+State@{Update\+State}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Update\+State}{UpdateState}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Update\+State) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lbitfield new\+\_\+state)}
+
+Notify the driver after Mesa has made some internal state changes.
+
+\hyperlink{namespace_this}{This} is in addition to any state change callbacks Mesa may already have made. \mbox{\Hypertarget{structdd__function__table_a02346107e5bca25525b75b729b4bac51}\label{structdd__function__table_a02346107e5bca25525b75b729b4bac51}} 
+\index{dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}!Viewport@{Viewport}}
+\index{Viewport@{Viewport}!dd\+\_\+function\+\_\+table@{dd\+\_\+function\+\_\+table}}
+\subsubsection{\texorpdfstring{Viewport}{Viewport}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ dd\+\_\+function\+\_\+table\+::\+Viewport) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint x, G\+Lint y, G\+Lsizei w, G\+Lsizei h)}
+
+Set the viewport 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{dd_8h}{dd.\+h}\end{DoxyCompactItemize}

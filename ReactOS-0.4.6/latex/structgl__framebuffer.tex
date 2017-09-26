@@ -1,0 +1,157 @@
+\hypertarget{structgl__framebuffer}{}\section{gl\+\_\+framebuffer结构体 参考}
+\label{structgl__framebuffer}\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+
+
+{\ttfamily \#include $<$mtypes.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} \hyperlink{structgl__framebuffer_aa6235e67026519c69cc955c2e90b87ce}{Mutex}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_a5ec012d37a8e5386d9df47a490c54b70}\label{structgl__framebuffer_a5ec012d37a8e5386d9df47a490c54b70}} 
+G\+Lint {\bfseries Ref\+Count}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_a359a215cb14e501d52a50d6bea27250f}\label{structgl__framebuffer_a359a215cb14e501d52a50d6bea27250f}} 
+G\+Lboolean {\bfseries Delete\+Pending}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} \hyperlink{structgl__framebuffer_aa3ba32377612702a75b54ce1824ff9e0}{Visual}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_a23e87e4fd761bf8696de4021c7fb431a}\label{structgl__framebuffer_a23e87e4fd761bf8696de4021c7fb431a}} 
+G\+Lboolean {\bfseries Initialized}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_a4d139dcb64062adbb1eaaf09890ebda4}\label{structgl__framebuffer_a4d139dcb64062adbb1eaaf09890ebda4}} 
+G\+Luint {\bfseries Width}
+\item 
+G\+Luint \hyperlink{structgl__framebuffer_ae5d2ed25f08fab458eeb6899119f94e5}{Height}
+\item 
+G\+Lboolean \hyperlink{structgl__framebuffer_ad59370bd850f01908152b0c17df5c847}{\+\_\+\+Integer\+Color}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer__attachment}{gl\+\_\+renderbuffer\+\_\+attachment} \hyperlink{structgl__framebuffer_a35ede5a6589db2944e338d025ec931bc}{Attachment} \mbox{[}B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT\mbox{]}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_ab166abe3896c67c94e58ffed70b68e5c}\label{structgl__framebuffer_ab166abe3896c67c94e58ffed70b68e5c}} 
+\hyperlink{interfacevoid}{G\+Lenum} {\bfseries Color\+Draw\+Buffer}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_aee49376d43bd6e0bdd93bb7ef8fdfabf}\label{structgl__framebuffer_aee49376d43bd6e0bdd93bb7ef8fdfabf}} 
+\hyperlink{interfacevoid}{G\+Lenum} {\bfseries Color\+Read\+Buffer}
+\item 
+G\+Lint \hyperlink{structgl__framebuffer_ac33c52ba1acfaf662daaea2e38083321}{\+\_\+\+Color\+Draw\+Buffer\+Index}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_a0b0734e2bcec60dbf3615147e40acb30}\label{structgl__framebuffer_a0b0734e2bcec60dbf3615147e40acb30}} 
+G\+Lint {\bfseries \+\_\+\+Color\+Read\+Buffer\+Index}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_ab87f875784b11e8c2f4562c9e3dc8a54}\label{structgl__framebuffer_ab87f875784b11e8c2f4562c9e3dc8a54}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$ {\bfseries \+\_\+\+Color\+Draw\+Buffer}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_a19f8b2c0ab47db3974dcf153e1fc7829}\label{structgl__framebuffer_a19f8b2c0ab47db3974dcf153e1fc7829}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer}{gl\+\_\+renderbuffer} $\ast$ {\bfseries \+\_\+\+Color\+Read\+Buffer}
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structgl__framebuffer_a179b9f40b107c71d68a7d5eb47124cc8}{Delete} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$fb)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Drawing bounds (Intersection of buffer size and scissor box)}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_a827af14a59579803c1cfb4b8ab9d8708}\label{structgl__framebuffer_a827af14a59579803c1cfb4b8ab9d8708}} 
+G\+Lint {\bfseries \+\_\+\+Xmin}
+\item 
+G\+Lint \hyperlink{structgl__framebuffer_a2d9b54e2cfd522578aeb99518fea21b0}{\+\_\+\+Xmax}
+\item 
+\mbox{\Hypertarget{structgl__framebuffer_aee9484863837f7048d16700ad2b85f33}\label{structgl__framebuffer_aee9484863837f7048d16700ad2b85f33}} 
+G\+Lint {\bfseries \+\_\+\+Ymin}
+\item 
+G\+Lint \hyperlink{structgl__framebuffer_a852cee35ad38c0dd3036a754cfb80810}{\+\_\+\+Ymax}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Derived Z buffer stuff}\par
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \hyperlink{structgl__framebuffer_a5b99c71bac994f7d532b210176507d8f}{\+\_\+\+Depth\+Max}
+\item 
+G\+Lfloat \hyperlink{structgl__framebuffer_aa8142b01ba5c1fdaba570d71eac7cb89}{\+\_\+\+Depth\+MaxF}
+\item 
+G\+Lfloat \hyperlink{structgl__framebuffer_afbbe2efe5298a3f3d5e497860d29c721}{\+\_\+\+M\+RD}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+\hyperlink{struct_a}{A} framebuffer is a collection of renderbuffers (color, depth, stencil, etc). In C++ terms, think of this as a base class from which device drivers will make derived classes. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structgl__framebuffer_ac33c52ba1acfaf662daaea2e38083321}\label{structgl__framebuffer_ac33c52ba1acfaf662daaea2e38083321}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!\+\_\+\+Color\+Draw\+Buffer\+Index@{\+\_\+\+Color\+Draw\+Buffer\+Index}}
+\index{\+\_\+\+Color\+Draw\+Buffer\+Index@{\+\_\+\+Color\+Draw\+Buffer\+Index}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+Color\+Draw\+Buffer\+Index}{\_ColorDrawBufferIndex}}
+{\footnotesize\ttfamily G\+Lint gl\+\_\+framebuffer\+::\+\_\+\+Color\+Draw\+Buffer\+Index}
+
+Computed from Color\+Draw/\+Read\+Buffer above B\+U\+F\+F\+E\+R\+\_\+x or -\/1 \mbox{\Hypertarget{structgl__framebuffer_a5b99c71bac994f7d532b210176507d8f}\label{structgl__framebuffer_a5b99c71bac994f7d532b210176507d8f}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!\+\_\+\+Depth\+Max@{\+\_\+\+Depth\+Max}}
+\index{\+\_\+\+Depth\+Max@{\+\_\+\+Depth\+Max}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+Depth\+Max}{\_DepthMax}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+framebuffer\+::\+\_\+\+Depth\+Max}
+
+Max depth buffer value \mbox{\Hypertarget{structgl__framebuffer_aa8142b01ba5c1fdaba570d71eac7cb89}\label{structgl__framebuffer_aa8142b01ba5c1fdaba570d71eac7cb89}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!\+\_\+\+Depth\+MaxF@{\+\_\+\+Depth\+MaxF}}
+\index{\+\_\+\+Depth\+MaxF@{\+\_\+\+Depth\+MaxF}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+Depth\+MaxF}{\_DepthMaxF}}
+{\footnotesize\ttfamily G\+Lfloat gl\+\_\+framebuffer\+::\+\_\+\+Depth\+MaxF}
+
+Float max depth buffer value \mbox{\Hypertarget{structgl__framebuffer_ad59370bd850f01908152b0c17df5c847}\label{structgl__framebuffer_ad59370bd850f01908152b0c17df5c847}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!\+\_\+\+Integer\+Color@{\+\_\+\+Integer\+Color}}
+\index{\+\_\+\+Integer\+Color@{\+\_\+\+Integer\+Color}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+Integer\+Color}{\_IntegerColor}}
+{\footnotesize\ttfamily G\+Lboolean gl\+\_\+framebuffer\+::\+\_\+\+Integer\+Color}
+
+Integer color values \mbox{\Hypertarget{structgl__framebuffer_afbbe2efe5298a3f3d5e497860d29c721}\label{structgl__framebuffer_afbbe2efe5298a3f3d5e497860d29c721}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!\+\_\+\+M\+RD@{\+\_\+\+M\+RD}}
+\index{\+\_\+\+M\+RD@{\+\_\+\+M\+RD}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+M\+RD}{\_MRD}}
+{\footnotesize\ttfamily G\+Lfloat gl\+\_\+framebuffer\+::\+\_\+\+M\+RD}
+
+minimum resolvable difference in Z values \mbox{\Hypertarget{structgl__framebuffer_a2d9b54e2cfd522578aeb99518fea21b0}\label{structgl__framebuffer_a2d9b54e2cfd522578aeb99518fea21b0}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!\+\_\+\+Xmax@{\+\_\+\+Xmax}}
+\index{\+\_\+\+Xmax@{\+\_\+\+Xmax}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+Xmax}{\_Xmax}}
+{\footnotesize\ttfamily G\+Lint gl\+\_\+framebuffer\+::\+\_\+\+Xmax}
+
+inclusive \mbox{\Hypertarget{structgl__framebuffer_a852cee35ad38c0dd3036a754cfb80810}\label{structgl__framebuffer_a852cee35ad38c0dd3036a754cfb80810}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!\+\_\+\+Ymax@{\+\_\+\+Ymax}}
+\index{\+\_\+\+Ymax@{\+\_\+\+Ymax}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{\+\_\+\+Ymax}{\_Ymax}}
+{\footnotesize\ttfamily G\+Lint gl\+\_\+framebuffer\+::\+\_\+\+Ymax}
+
+exclusive \mbox{\Hypertarget{structgl__framebuffer_a35ede5a6589db2944e338d025ec931bc}\label{structgl__framebuffer_a35ede5a6589db2944e338d025ec931bc}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!Attachment@{Attachment}}
+\index{Attachment@{Attachment}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{Attachment}{Attachment}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__renderbuffer__attachment}{gl\+\_\+renderbuffer\+\_\+attachment} gl\+\_\+framebuffer\+::\+Attachment\mbox{[}B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+U\+NT\mbox{]}}
+
+Array of all renderbuffer attachments, indexed by B\+U\+F\+F\+E\+R\+\_\+$\ast$ tokens. \mbox{\Hypertarget{structgl__framebuffer_a179b9f40b107c71d68a7d5eb47124cc8}\label{structgl__framebuffer_a179b9f40b107c71d68a7d5eb47124cc8}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!Delete@{Delete}}
+\index{Delete@{Delete}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{Delete}{Delete}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ gl\+\_\+framebuffer\+::\+Delete) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__framebuffer}{gl\+\_\+framebuffer} $\ast$fb)}
+
+Delete this framebuffer \mbox{\Hypertarget{structgl__framebuffer_ae5d2ed25f08fab458eeb6899119f94e5}\label{structgl__framebuffer_ae5d2ed25f08fab458eeb6899119f94e5}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!Height@{Height}}
+\index{Height@{Height}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+framebuffer\+::\+Height}
+
+size of frame buffer in pixels \mbox{\Hypertarget{structgl__framebuffer_aa6235e67026519c69cc955c2e90b87ce}\label{structgl__framebuffer_aa6235e67026519c69cc955c2e90b87ce}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!Mutex@{Mutex}}
+\index{Mutex@{Mutex}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{Mutex}{Mutex}}
+{\footnotesize\ttfamily \hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} gl\+\_\+framebuffer\+::\+Mutex}
+
+for thread safety \mbox{\Hypertarget{structgl__framebuffer_aa3ba32377612702a75b54ce1824ff9e0}\label{structgl__framebuffer_aa3ba32377612702a75b54ce1824ff9e0}} 
+\index{gl\+\_\+framebuffer@{gl\+\_\+framebuffer}!Visual@{Visual}}
+\index{Visual@{Visual}!gl\+\_\+framebuffer@{gl\+\_\+framebuffer}}
+\subsubsection{\texorpdfstring{Visual}{Visual}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__config}{gl\+\_\+config} gl\+\_\+framebuffer\+::\+Visual}
+
+The framebuffer\textquotesingle{}s visual. Immutable if this is a window system buffer. Computed from attachments if user-\/made F\+BO. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{mtypes_8h}{mtypes.\+h}\end{DoxyCompactItemize}

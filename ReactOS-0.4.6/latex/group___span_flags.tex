@@ -1,0 +1,70 @@
+\hypertarget{group___span_flags}{}\section{Span\+Flags}
+\label{group___span_flags}\index{Span\+Flags@{Span\+Flags}}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___span_flags_ga7d15791438b7236d63521108ef65248c}{S\+P\+A\+N\+\_\+\+R\+G\+BA}~0x01
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___span_flags_ga6fe921fca2256cfa8141b2d297e0d645}{S\+P\+A\+N\+\_\+Z}~0x02
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___span_flags_gac0a4901eaa9fb72fe4c88a8124a24ff6}{S\+P\+A\+N\+\_\+\+F\+L\+AT}~0x04
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___span_flags_ga22cb93640a88233385fbf84b3999bb31}{S\+P\+A\+N\+\_\+\+XY}~0x08
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___span_flags_gad1692321b8b94adade99c5c08213c689}{S\+P\+A\+N\+\_\+\+M\+A\+SK}~0x10
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___span_flags_ga29aadf8243bf79fa31a1859d8b228582}{S\+P\+A\+N\+\_\+\+L\+A\+M\+B\+DA}~0x20
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___span_flags_ga9299961dda2f1477e2e3744bf7bd3993}{S\+P\+A\+N\+\_\+\+C\+O\+V\+E\+R\+A\+GE}~0x40
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Special bitflags to describe span data.
+
+In general, the point/line/triangle functions interpolate/emit the attributes specified by swrast-\/$>$\+\_\+\+Active\+Attribs (i.\+e. F\+R\+A\+T\+\_\+\+B\+I\+T\+\_\+$\ast$ values). Some things don\textquotesingle{}t fit into that, though, so we have these flags. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{group___span_flags_ga9299961dda2f1477e2e3744bf7bd3993}\label{group___span_flags_ga9299961dda2f1477e2e3744bf7bd3993}} 
+\index{Span\+Flags@{Span\+Flags}!S\+P\+A\+N\+\_\+\+C\+O\+V\+E\+R\+A\+GE@{S\+P\+A\+N\+\_\+\+C\+O\+V\+E\+R\+A\+GE}}
+\index{S\+P\+A\+N\+\_\+\+C\+O\+V\+E\+R\+A\+GE@{S\+P\+A\+N\+\_\+\+C\+O\+V\+E\+R\+A\+GE}!Span\+Flags@{Span\+Flags}}
+\subsubsection{\texorpdfstring{S\+P\+A\+N\+\_\+\+C\+O\+V\+E\+R\+A\+GE}{SPAN\_COVERAGE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+P\+A\+N\+\_\+\+C\+O\+V\+E\+R\+A\+GE~0x40}
+
+array.\+coverage\mbox{[}\mbox{]} valid? \mbox{\Hypertarget{group___span_flags_gac0a4901eaa9fb72fe4c88a8124a24ff6}\label{group___span_flags_gac0a4901eaa9fb72fe4c88a8124a24ff6}} 
+\index{Span\+Flags@{Span\+Flags}!S\+P\+A\+N\+\_\+\+F\+L\+AT@{S\+P\+A\+N\+\_\+\+F\+L\+AT}}
+\index{S\+P\+A\+N\+\_\+\+F\+L\+AT@{S\+P\+A\+N\+\_\+\+F\+L\+AT}!Span\+Flags@{Span\+Flags}}
+\subsubsection{\texorpdfstring{S\+P\+A\+N\+\_\+\+F\+L\+AT}{SPAN\_FLAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+P\+A\+N\+\_\+\+F\+L\+AT~0x04}
+
+interp\+Mask\+: flat shading? \mbox{\Hypertarget{group___span_flags_ga29aadf8243bf79fa31a1859d8b228582}\label{group___span_flags_ga29aadf8243bf79fa31a1859d8b228582}} 
+\index{Span\+Flags@{Span\+Flags}!S\+P\+A\+N\+\_\+\+L\+A\+M\+B\+DA@{S\+P\+A\+N\+\_\+\+L\+A\+M\+B\+DA}}
+\index{S\+P\+A\+N\+\_\+\+L\+A\+M\+B\+DA@{S\+P\+A\+N\+\_\+\+L\+A\+M\+B\+DA}!Span\+Flags@{Span\+Flags}}
+\subsubsection{\texorpdfstring{S\+P\+A\+N\+\_\+\+L\+A\+M\+B\+DA}{SPAN\_LAMBDA}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+P\+A\+N\+\_\+\+L\+A\+M\+B\+DA~0x20}
+
+array.\+lambda\mbox{[}\mbox{]} valid? \mbox{\Hypertarget{group___span_flags_gad1692321b8b94adade99c5c08213c689}\label{group___span_flags_gad1692321b8b94adade99c5c08213c689}} 
+\index{Span\+Flags@{Span\+Flags}!S\+P\+A\+N\+\_\+\+M\+A\+SK@{S\+P\+A\+N\+\_\+\+M\+A\+SK}}
+\index{S\+P\+A\+N\+\_\+\+M\+A\+SK@{S\+P\+A\+N\+\_\+\+M\+A\+SK}!Span\+Flags@{Span\+Flags}}
+\subsubsection{\texorpdfstring{S\+P\+A\+N\+\_\+\+M\+A\+SK}{SPAN\_MASK}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+P\+A\+N\+\_\+\+M\+A\+SK~0x10}
+
+was array.\+mask\mbox{[}\mbox{]} filled in by caller? \mbox{\Hypertarget{group___span_flags_ga7d15791438b7236d63521108ef65248c}\label{group___span_flags_ga7d15791438b7236d63521108ef65248c}} 
+\index{Span\+Flags@{Span\+Flags}!S\+P\+A\+N\+\_\+\+R\+G\+BA@{S\+P\+A\+N\+\_\+\+R\+G\+BA}}
+\index{S\+P\+A\+N\+\_\+\+R\+G\+BA@{S\+P\+A\+N\+\_\+\+R\+G\+BA}!Span\+Flags@{Span\+Flags}}
+\subsubsection{\texorpdfstring{S\+P\+A\+N\+\_\+\+R\+G\+BA}{SPAN\_RGBA}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+P\+A\+N\+\_\+\+R\+G\+BA~0x01}
+
+interp\+Mask and array\+Mask \mbox{\Hypertarget{group___span_flags_ga22cb93640a88233385fbf84b3999bb31}\label{group___span_flags_ga22cb93640a88233385fbf84b3999bb31}} 
+\index{Span\+Flags@{Span\+Flags}!S\+P\+A\+N\+\_\+\+XY@{S\+P\+A\+N\+\_\+\+XY}}
+\index{S\+P\+A\+N\+\_\+\+XY@{S\+P\+A\+N\+\_\+\+XY}!Span\+Flags@{Span\+Flags}}
+\subsubsection{\texorpdfstring{S\+P\+A\+N\+\_\+\+XY}{SPAN\_XY}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+P\+A\+N\+\_\+\+XY~0x08}
+
+array.\+x\mbox{[}\mbox{]}, y\mbox{[}\mbox{]} valid? \mbox{\Hypertarget{group___span_flags_ga6fe921fca2256cfa8141b2d297e0d645}\label{group___span_flags_ga6fe921fca2256cfa8141b2d297e0d645}} 
+\index{Span\+Flags@{Span\+Flags}!S\+P\+A\+N\+\_\+Z@{S\+P\+A\+N\+\_\+Z}}
+\index{S\+P\+A\+N\+\_\+Z@{S\+P\+A\+N\+\_\+Z}!Span\+Flags@{Span\+Flags}}
+\subsubsection{\texorpdfstring{S\+P\+A\+N\+\_\+Z}{SPAN\_Z}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+P\+A\+N\+\_\+Z~0x02}
+
+interp\+Mask and array\+Mask 

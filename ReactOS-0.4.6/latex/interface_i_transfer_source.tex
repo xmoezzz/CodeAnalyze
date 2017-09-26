@@ -1,0 +1,56 @@
+\hypertarget{interface_i_transfer_source}{}\section{I\+Transfer\+Source接口 参考}
+\label{interface_i_transfer_source}\index{I\+Transfer\+Source@{I\+Transfer\+Source}}
+类 I\+Transfer\+Source 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_transfer_source}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_a0799cd21bb1211dbb6df262a2914a2ab}\label{interface_i_transfer_source_a0799cd21bb1211dbb6df262a2914a2ab}} 
+H\+R\+E\+S\+U\+LT {\bfseries Advise} (\mbox{[}in\mbox{]} \hyperlink{interface_i_transfer_advise_sink}{I\+Transfer\+Advise\+Sink} $\ast$sink, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$cookie)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_a29d1e19e29877b8161f8a84ab09e57c4}\label{interface_i_transfer_source_a29d1e19e29877b8161f8a84ab09e57c4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unadvise} (\mbox{[}in\mbox{]} D\+W\+O\+RD cookie)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_a417cd54d566b5a2bb52a587d61c510a2}\label{interface_i_transfer_source_a417cd54d566b5a2bb52a587d61c510a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Properties} (\mbox{[}in\mbox{]} \hyperlink{interface_i_property_change_array}{I\+Property\+Change\+Array} $\ast$\hyperlink{structarray}{array})
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_a687e5a547ca32d1cdbed0d3f29b408fc}\label{interface_i_transfer_source_a687e5a547ca32d1cdbed0d3f29b408fc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open\+Item} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$item, \mbox{[}in\mbox{]} T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+L\+A\+GS flags, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_af7207c232bc51820eebcecd16e937f7c}\label{interface_i_transfer_source_af7207c232bc51820eebcecd16e937f7c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Move\+Item} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$item, \mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$parent\+\_\+dest, \mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR name\+\_\+dest, \mbox{[}in\mbox{]} T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+L\+A\+GS flags, \mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$newitem)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_af4b9ebdbd9892a34e4142603dc14cb4e}\label{interface_i_transfer_source_af4b9ebdbd9892a34e4142603dc14cb4e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Recycle\+Item} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source}, \mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$parent\+\_\+dest, \mbox{[}in\mbox{]} T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+L\+A\+GS flags, \mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$new\+\_\+dest)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_afbe836303bff1811e9e3d829d068a6ea}\label{interface_i_transfer_source_afbe836303bff1811e9e3d829d068a6ea}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Item} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source}, \mbox{[}in\mbox{]} T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+L\+A\+GS flags)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_a0f2f4c6b21ffe6fd4c090d0a0e904e8b}\label{interface_i_transfer_source_a0f2f4c6b21ffe6fd4c090d0a0e904e8b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Rename\+Item} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source}, \mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR newname, \mbox{[}in\mbox{]} T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+L\+A\+GS flags, \mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$new\+\_\+dest)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_a047d5d7974ce9a1f0d2de956efcd5d96}\label{interface_i_transfer_source_a047d5d7974ce9a1f0d2de956efcd5d96}} 
+H\+R\+E\+S\+U\+LT {\bfseries Link\+Item} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source}, \mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$parent\+\_\+dest, \mbox{[}in, \hyperlink{interfaceunique}{unique}, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR new\+\_\+name, \mbox{[}in\mbox{]} T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+L\+A\+GS flags, \mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$new\+\_\+dest)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_a72810327a14c4a6e2a48ed282395e95d}\label{interface_i_transfer_source_a72810327a14c4a6e2a48ed282395e95d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Apply\+Properties\+To\+Item} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source}, \mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$newitem)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_af34b90e93958b009ae73b76ab170e66a}\label{interface_i_transfer_source_af34b90e93958b009ae73b76ab170e66a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Default\+Destination\+Name} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source}, \mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$parent\+\_\+dest, \mbox{[}out, \hyperlink{structstring}{string}\mbox{]} L\+P\+W\+S\+TR $\ast$dest\+\_\+name)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_ad5c94b3ee50f1bad04e2e66484dc912e}\label{interface_i_transfer_source_ad5c94b3ee50f1bad04e2e66484dc912e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enter\+Folder} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$child\+\_\+folder)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_source_ad6ef36dda63841956eb7dbb0fcaea546}\label{interface_i_transfer_source_ad6ef36dda63841956eb7dbb0fcaea546}} 
+H\+R\+E\+S\+U\+LT {\bfseries Leave\+Folder} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$child\+\_\+folder)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

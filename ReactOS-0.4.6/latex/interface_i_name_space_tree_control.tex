@@ -1,0 +1,159 @@
+\hypertarget{interface_i_name_space_tree_control}{}\section{I\+Name\+Space\+Tree\+Control接口 参考}
+\label{interface_i_name_space_tree_control}\index{I\+Name\+Space\+Tree\+Control@{I\+Name\+Space\+Tree\+Control}}
+类 I\+Name\+Space\+Tree\+Control 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_name_space_tree_control}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a9584d7fe47ae29cc088935856991819c}\label{interface_i_name_space_tree_control_a9584d7fe47ae29cc088935856991819c}} 
+enum {\bfseries \+\_\+\+N\+S\+T\+C\+S\+T\+Y\+LE} \{ \newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+H\+A\+S\+E\+X\+P\+A\+N\+D\+OS} = 0x00000001, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+H\+A\+S\+L\+I\+N\+ES} = 0x00000002, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+S\+I\+N\+G\+L\+E\+C\+L\+I\+C\+K\+E\+X\+P\+A\+ND} = 0x00000004, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+F\+U\+L\+L\+R\+O\+W\+S\+E\+L\+E\+CT} = 0x00000008, 
+\newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+S\+P\+R\+I\+N\+G\+E\+X\+P\+A\+ND} = 0x00000010, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+S\+C\+R\+O\+LL} = 0x00000020, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+R\+O\+O\+T\+H\+A\+S\+E\+X\+P\+A\+N\+DO} = 0x00000040, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+S\+H\+O\+W\+S\+E\+L\+E\+C\+T\+I\+O\+N\+A\+L\+W\+A\+YS} = 0x00000080, 
+\newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+N\+O\+I\+N\+F\+O\+T\+IP} = 0x00000200, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+E\+V\+E\+N\+H\+E\+I\+G\+HT} = 0x00000400, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+N\+O\+R\+E\+P\+L\+A\+C\+E\+O\+P\+EN} = 0x00000800, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D\+R\+A\+G\+D\+R\+OP} = 0x00001000, 
+\newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+N\+O\+O\+R\+D\+E\+R\+S\+T\+R\+E\+AM} = 0x00002000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+R\+I\+C\+H\+T\+O\+O\+L\+T\+IP} = 0x00004000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+B\+O\+R\+D\+ER} = 0x00008000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+N\+O\+E\+D\+I\+T\+L\+A\+B\+E\+LS} = 0x00010000, 
+\newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+T\+A\+B\+S\+T\+OP} = 0x00020000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+F\+A\+V\+O\+R\+I\+T\+E\+S\+M\+O\+DE} = 0x00080000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+A\+U\+T\+O\+H\+S\+C\+R\+O\+LL} = 0x00100000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+F\+A\+D\+E\+I\+N\+O\+U\+T\+E\+X\+P\+A\+N\+D\+OS} = 0x00200000, 
+\newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+E\+M\+P\+T\+Y\+T\+E\+XT} = 0x00400000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+C\+H\+E\+C\+K\+B\+O\+X\+ES} = 0x00800000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+P\+A\+R\+T\+I\+A\+L\+C\+H\+E\+C\+K\+B\+O\+X\+ES} = 0x01000000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+E\+X\+C\+L\+U\+S\+I\+O\+N\+C\+H\+E\+C\+K\+B\+O\+X\+ES} = 0x02000000, 
+\newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+D\+I\+M\+M\+E\+D\+C\+H\+E\+C\+K\+B\+O\+X\+ES} = 0x04000000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+N\+O\+I\+N\+D\+E\+N\+T\+C\+H\+E\+C\+KS} = 0x08000000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+A\+L\+L\+O\+W\+J\+U\+N\+C\+T\+I\+O\+NS} = 0x10000000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+S\+H\+O\+W\+T\+A\+B\+S\+B\+U\+T\+T\+ON} = 0x20000000, 
+\newline
+{\bfseries N\+S\+T\+C\+S\+\_\+\+S\+H\+O\+W\+D\+E\+L\+E\+T\+E\+B\+U\+T\+T\+ON} = 0x40000000, 
+{\bfseries N\+S\+T\+C\+S\+\_\+\+S\+H\+O\+W\+R\+E\+F\+R\+E\+S\+H\+B\+U\+T\+T\+ON} = (int)0x80000000
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a67dc6344dc1679331b7f958435e271b4}\label{interface_i_name_space_tree_control_a67dc6344dc1679331b7f958435e271b4}} 
+enum {\bfseries \+\_\+\+N\+S\+T\+C\+R\+O\+O\+T\+S\+T\+Y\+LE} \{ {\bfseries N\+S\+T\+C\+R\+S\+\_\+\+V\+I\+S\+I\+B\+LE} = 0x0000, 
+{\bfseries N\+S\+T\+C\+R\+S\+\_\+\+H\+I\+D\+D\+EN} = 0x0001, 
+{\bfseries N\+S\+T\+C\+R\+S\+\_\+\+E\+X\+P\+A\+N\+D\+ED} = 0x0002
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a39ac682659ba05168852ffdc131753b9}\label{interface_i_name_space_tree_control_a39ac682659ba05168852ffdc131753b9}} 
+enum {\bfseries \+\_\+\+N\+S\+T\+C\+I\+T\+E\+M\+S\+T\+A\+TE} \{ \newline
+{\bfseries N\+S\+T\+C\+I\+S\+\_\+\+N\+O\+NE} = 0x0000, 
+{\bfseries N\+S\+T\+C\+I\+S\+\_\+\+S\+E\+L\+E\+C\+T\+ED} = 0x0001, 
+{\bfseries N\+S\+T\+C\+I\+S\+\_\+\+E\+X\+P\+A\+N\+D\+ED} = 0x0002, 
+{\bfseries N\+S\+T\+C\+I\+S\+\_\+\+B\+O\+LD} = 0x0004, 
+\newline
+{\bfseries N\+S\+T\+C\+I\+S\+\_\+\+D\+I\+S\+A\+B\+L\+ED} = 0x0008, 
+{\bfseries N\+S\+T\+C\+I\+S\+\_\+\+S\+E\+L\+E\+C\+T\+E\+D\+N\+O\+E\+X\+P\+A\+ND} = 0x0010
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a33078adee214c83e9781c6fb93965651}\label{interface_i_name_space_tree_control_a33078adee214c83e9781c6fb93965651}} 
+enum {\bfseries N\+S\+T\+C\+G\+NI} \{ \newline
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+N\+E\+XT} = 0, 
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+N\+E\+X\+T\+V\+I\+S\+I\+B\+LE} = 1, 
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+P\+R\+EV} = 2, 
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+P\+R\+E\+V\+V\+I\+S\+I\+B\+LE} = 3, 
+\newline
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+P\+A\+R\+E\+NT} = 4, 
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+C\+H\+I\+LD} = 5, 
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+F\+I\+R\+S\+T\+V\+I\+S\+I\+B\+LE} = 6, 
+{\bfseries N\+S\+T\+C\+G\+N\+I\+\_\+\+L\+A\+S\+T\+V\+I\+S\+I\+B\+LE} = 7
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_adff14f875d216dedac4f1c7f6c5f078e}\label{interface_i_name_space_tree_control_adff14f875d216dedac4f1c7f6c5f078e}} 
+typedef D\+W\+O\+RD {\bfseries N\+S\+T\+C\+S\+T\+Y\+LE}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_acced57b285f28a3721b71c474ef94b50}\label{interface_i_name_space_tree_control_acced57b285f28a3721b71c474ef94b50}} 
+typedef D\+W\+O\+RD {\bfseries N\+S\+T\+C\+R\+O\+O\+T\+S\+T\+Y\+LE}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_ad4f7a620bfa4cb93af4251f2fe4d6d5b}\label{interface_i_name_space_tree_control_ad4f7a620bfa4cb93af4251f2fe4d6d5b}} 
+typedef D\+W\+O\+RD {\bfseries N\+S\+T\+C\+I\+T\+E\+M\+S\+T\+A\+TE}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a7542329e180f982456b10a46662aa78d}\label{interface_i_name_space_tree_control_a7542329e180f982456b10a46662aa78d}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Name\+Space\+Tree\+Control\+::\+N\+S\+T\+C\+G\+NI {\bfseries N\+S\+T\+C\+G\+NI}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_adf9ab7f88eaccfed516eab45733e47cc}\label{interface_i_name_space_tree_control_adf9ab7f88eaccfed516eab45733e47cc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Initialize} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{structtag_r_e_c_t}{R\+E\+CT} $\ast$\hyperlink{structtag_r_e_c_t}{prc}, \mbox{[}in\mbox{]} N\+S\+T\+C\+S\+T\+Y\+LE nstcs\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a38c2ae68cb167a5c5fce496895efec93}\label{interface_i_name_space_tree_control_a38c2ae68cb167a5c5fce496895efec93}} 
+H\+R\+E\+S\+U\+LT {\bfseries Tree\+Advise} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a0c71f3a90d2720d5af06cb7499f23040}\label{interface_i_name_space_tree_control_a0c71f3a90d2720d5af06cb7499f23040}} 
+H\+R\+E\+S\+U\+LT {\bfseries Tree\+Unadvise} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a8fd98bc4cc7c0b7a7668004a0b59f79a}\label{interface_i_name_space_tree_control_a8fd98bc4cc7c0b7a7668004a0b59f79a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Append\+Root} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi\+Root, \mbox{[}in\mbox{]} S\+H\+C\+O\+N\+TF grf\+Enum\+Flags, \mbox{[}in\mbox{]} N\+S\+T\+C\+R\+O\+O\+T\+S\+T\+Y\+LE grf\+Root\+Style, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_shell_item_filter}{I\+Shell\+Item\+Filter} $\ast$pif)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_ab39282ad898409c5caa718c4f1efddaf}\label{interface_i_name_space_tree_control_ab39282ad898409c5caa718c4f1efddaf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Insert\+Root} (\mbox{[}in\mbox{]} int i\+Index, \mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi\+Root, \mbox{[}in\mbox{]} S\+H\+C\+O\+N\+TF grf\+Enum\+Flags, \mbox{[}in\mbox{]} N\+S\+T\+C\+R\+O\+O\+T\+S\+T\+Y\+LE grf\+Root\+Style, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_shell_item_filter}{I\+Shell\+Item\+Filter} $\ast$pif)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a201bcb20b9ad10accc2d3c2d736cc29c}\label{interface_i_name_space_tree_control_a201bcb20b9ad10accc2d3c2d736cc29c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Root} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi\+Root)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a23c1858024c3a5613c8c80ebeba00fdd}\label{interface_i_name_space_tree_control_a23c1858024c3a5613c8c80ebeba00fdd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+All\+Roots} ()
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a3f94ae5722943ebd3d5ffff6b28f7b86}\label{interface_i_name_space_tree_control_a3f94ae5722943ebd3d5ffff6b28f7b86}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Root\+Items} (\mbox{[}out\mbox{]} I\+Shell\+Item\+Array $\ast$$\ast$ppsia\+Root\+Items)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a6edcf47cdd8670972f0ee684bda38680}\label{interface_i_name_space_tree_control_a6edcf47cdd8670972f0ee684bda38680}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Item\+State} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi, \mbox{[}in\mbox{]} N\+S\+T\+C\+I\+T\+E\+M\+S\+T\+A\+TE nstcis\+Mask, \mbox{[}in\mbox{]} N\+S\+T\+C\+I\+T\+E\+M\+S\+T\+A\+TE nstcis\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a21238a5ce39634cf8312b56d39746e13}\label{interface_i_name_space_tree_control_a21238a5ce39634cf8312b56d39746e13}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Item\+State} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi, \mbox{[}in\mbox{]} N\+S\+T\+C\+I\+T\+E\+M\+S\+T\+A\+TE nstcismask, \mbox{[}out\mbox{]} N\+S\+T\+C\+I\+T\+E\+M\+S\+T\+A\+TE $\ast$pnstcis\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a68ed9e92525fb3933f5dcfda776dd8e6}\label{interface_i_name_space_tree_control_a68ed9e92525fb3933f5dcfda776dd8e6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Selected\+Items} (\mbox{[}out\mbox{]} I\+Shell\+Item\+Array $\ast$$\ast$psia\+Items)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a8beb8e1da22605aef5d3594f6e7d4af9}\label{interface_i_name_space_tree_control_a8beb8e1da22605aef5d3594f6e7d4af9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Item\+Custom\+State} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi, \mbox{[}out\mbox{]} int $\ast$pi\+State\+Number)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a7b407539cedfba7dcdef18b0580801e9}\label{interface_i_name_space_tree_control_a7b407539cedfba7dcdef18b0580801e9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Item\+Custom\+State} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi, \mbox{[}in\mbox{]} int i\+State\+Number)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a92fd1a0ce5f82459c0abe6a3a7b8f928}\label{interface_i_name_space_tree_control_a92fd1a0ce5f82459c0abe6a3a7b8f928}} 
+H\+R\+E\+S\+U\+LT {\bfseries Ensure\+Item\+Visible} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a00c821700f0ced829b4efab13bb7a442}\label{interface_i_name_space_tree_control_a00c821700f0ced829b4efab13bb7a442}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Theme} (\mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+Theme)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_ad71c0f60cacccd7dec8f88dcf53eaa60}\label{interface_i_name_space_tree_control_ad71c0f60cacccd7dec8f88dcf53eaa60}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Next\+Item} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi, \mbox{[}in\mbox{]} N\+S\+T\+C\+G\+NI nstcgi, \mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$ppsi\+Next)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_ab09cfaf7016e1fdcd4a8ddcb13549e12}\label{interface_i_name_space_tree_control_ab09cfaf7016e1fdcd4a8ddcb13549e12}} 
+H\+R\+E\+S\+U\+LT {\bfseries Hit\+Test} (\mbox{[}in\mbox{]} \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} $\ast$ppt, \mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$ppsi\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a0fb8d856ce2b86ee4608c8629473d05f}\label{interface_i_name_space_tree_control_a0fb8d856ce2b86ee4608c8629473d05f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Item\+Rect} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi, \mbox{[}out\mbox{]} \hyperlink{structtag_r_e_c_t}{R\+E\+CT} $\ast$prect)
+\item 
+\mbox{\Hypertarget{interface_i_name_space_tree_control_a78fa1be38d45ab12bc72f7990b2c791d}\label{interface_i_name_space_tree_control_a78fa1be38d45ab12bc72f7990b2c791d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Collapse\+All} ()
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

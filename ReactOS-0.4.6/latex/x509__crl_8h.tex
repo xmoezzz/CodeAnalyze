@@ -1,0 +1,47 @@
+\hypertarget{x509__crl_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/x509\+\_\+crl.h 文件参考}
+\label{x509__crl_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/x509\+\_\+crl.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/x509\+\_\+crl.\+h}}
+
+
+X.\+509 certificate revocation list parsing  
+
+
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}x509.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__x509__crl__entry}{mbedtls\+\_\+x509\+\_\+crl\+\_\+entry}
+\item 
+struct \hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl}
+\end{DoxyCompactItemize}
+\subsection*{Structures and functions for parsing C\+R\+Ls}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__x509__crl__entry}{mbedtls\+\_\+x509\+\_\+crl\+\_\+entry} \hyperlink{group__x509__module_ga1e0c6230061fd501f9d00bd1b09ade33}{mbedtls\+\_\+x509\+\_\+crl\+\_\+entry}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} \hyperlink{group__x509__module_ga7957605a0ced963e12880ec9e19874fc}{mbedtls\+\_\+x509\+\_\+crl}
+\item 
+int \hyperlink{group__x509__module_ga29ab5f1216a727b334ee26cce9f5d4b5}{mbedtls\+\_\+x509\+\_\+crl\+\_\+parse\+\_\+der} (\hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} $\ast$chain, const unsigned char $\ast$buf, size\+\_\+t buflen)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a D\+E\+R-\/encoded C\+RL and append it to the chained list \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_gadfce4fc5f5af62e371695e74c5b67d70}{mbedtls\+\_\+x509\+\_\+crl\+\_\+parse} (\hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} $\ast$chain, const unsigned char $\ast$buf, size\+\_\+t buflen)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} one or more C\+R\+Ls and append them to the chained list \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_ga35898e101f5039c6db6b930da9892366}{mbedtls\+\_\+x509\+\_\+crl\+\_\+info} (char $\ast$buf, size\+\_\+t size, const char $\ast$prefix, const \hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} $\ast$crl)
+\begin{DoxyCompactList}\small\item\em Returns an informational string about the C\+RL. \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{group__x509__module_ga8513a192e281217802837571da98e218}{mbedtls\+\_\+x509\+\_\+crl\+\_\+init} (\hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} $\ast$crl)
+\begin{DoxyCompactList}\small\item\em Initialize a C\+RL (chain) \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{group__x509__module_gaeb19c3326889f9e493fbd605c1113b96}{mbedtls\+\_\+x509\+\_\+crl\+\_\+free} (\hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} $\ast$crl)
+\begin{DoxyCompactList}\small\item\em Unallocate all C\+RL data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+X.\+509 certificate revocation list parsing 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 

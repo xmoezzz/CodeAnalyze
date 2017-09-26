@@ -1,0 +1,66 @@
+\hypertarget{interface_i_imn_account_manager}{}\section{I\+Imn\+Account\+Manager接口 参考}
+\label{interface_i_imn_account_manager}\index{I\+Imn\+Account\+Manager@{I\+Imn\+Account\+Manager}}
+类 I\+Imn\+Account\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_imn_account_manager}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_imn_account_manager_1_1tag_a_c_c_t_l_i_s_t_i_n_f_o}{tag\+A\+C\+C\+T\+L\+I\+S\+T\+I\+N\+FO}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a4a792f7273681247723093ef5515acf8}\label{interface_i_imn_account_manager_a4a792f7273681247723093ef5515acf8}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_imn_account_manager_1_1tag_a_c_c_t_l_i_s_t_i_n_f_o}{I\+Imn\+Account\+Manager\+::tag\+A\+C\+C\+T\+L\+I\+S\+T\+I\+N\+FO} {\bfseries A\+C\+C\+T\+L\+I\+S\+T\+I\+N\+FO}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_aafab4cdede4c6077d56094a6e216ed26}\label{interface_i_imn_account_manager_aafab4cdede4c6077d56094a6e216ed26}} 
+H\+R\+E\+S\+U\+LT {\bfseries Init} (\mbox{[}in\mbox{]} \hyperlink{interface_i_imn_advise_migrate_server}{I\+Imn\+Advise\+Migrate\+Server} $\ast$p\+Advise\+Migrate\+Server)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a4ac6bc6f558bdf56aaee8a533e34839a}\label{interface_i_imn_account_manager_a4ac6bc6f558bdf56aaee8a533e34839a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Account\+Object} (\mbox{[}in\mbox{]} A\+C\+C\+T\+T\+Y\+PE Acct\+Type, \mbox{[}out\mbox{]} \hyperlink{interface_i_imn_account}{I\+Imn\+Account} $\ast$$\ast$pp\+Account)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_ad4431fd5ca41d0ff9d7d9d5f84e70f65}\label{interface_i_imn_account_manager_ad4431fd5ca41d0ff9d7d9d5f84e70f65}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enumerate} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Srv\+Types, \mbox{[}out\mbox{]} \hyperlink{interface_i_imn_enum_accounts}{I\+Imn\+Enum\+Accounts} $\ast$$\ast$pp\+Enum\+Accounts)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a399a937ceca1418357c84f965fc297ee}\label{interface_i_imn_account_manager_a399a937ceca1418357c84f965fc297ee}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Account\+Count} (\mbox{[}in\mbox{]} A\+C\+C\+T\+T\+Y\+PE Acct\+Type, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pc\+Servers)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_aa6a351c4fef28fb602c7b054af0a4920}\label{interface_i_imn_account_manager_aa6a351c4fef28fb602c7b054af0a4920}} 
+H\+R\+E\+S\+U\+LT {\bfseries Find\+Account} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Prop\+Tag, \mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Search\+Data, \mbox{[}out\mbox{]} \hyperlink{interface_i_imn_account}{I\+Imn\+Account} $\ast$$\ast$pp\+Account)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a32f5673a921bb102cc0e915da392177f}\label{interface_i_imn_account_manager_a32f5673a921bb102cc0e915da392177f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Default\+Account\+Name} (\mbox{[}in\mbox{]} A\+C\+C\+T\+T\+Y\+PE Acct\+Type, \mbox{[}in, ref\mbox{]} L\+P\+S\+TR psz\+Account, \mbox{[}in\mbox{]} U\+L\+O\+NG cch\+Max)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a8c92f2003c668f2c7b70f253bcba4390}\label{interface_i_imn_account_manager_a8c92f2003c668f2c7b70f253bcba4390}} 
+H\+R\+E\+S\+U\+LT {\bfseries Process\+Notification} (\mbox{[}in\mbox{]} U\+I\+NT u\+Msg, \mbox{[}in\mbox{]} W\+P\+A\+R\+AM w\+Param, \mbox{[}in\mbox{]} L\+P\+A\+R\+AM l\+Param)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a6e6c51d38d5db96e8bf579706c3f00a1}\label{interface_i_imn_account_manager_a6e6c51d38d5db96e8bf579706c3f00a1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Validate\+Default\+Send\+Account} ()
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_aa89ade2a5fb4ead90c3b87b62d61b543}\label{interface_i_imn_account_manager_aa89ade2a5fb4ead90c3b87b62d61b543}} 
+H\+R\+E\+S\+U\+LT {\bfseries Account\+List\+Dialog} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} \hyperlink{struct_i_imn_account_manager_1_1tag_a_c_c_t_l_i_s_t_i_n_f_o}{A\+C\+C\+T\+L\+I\+S\+T\+I\+N\+FO} $\ast$pinfo)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a67924d728053493041fd31ca9c5cbfa1}\label{interface_i_imn_account_manager_a67924d728053493041fd31ca9c5cbfa1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Advise} (\mbox{[}in\mbox{]} \hyperlink{interface_i_imn_advise_account}{I\+Imn\+Advise\+Account} $\ast$p\+Advise\+Account, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Connection)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_aac21d019badb0962d5748231e14e1676}\label{interface_i_imn_account_manager_aac21d019badb0962d5748231e14e1676}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unadvise} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Connection)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_a2b9f1b9b5a1940666b35ca7506826cb9}\label{interface_i_imn_account_manager_a2b9f1b9b5a1940666b35ca7506826cb9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Unique\+Account\+Name} (\mbox{[}in\mbox{]} L\+P\+S\+TR sz\+Name, \mbox{[}in\mbox{]} U\+I\+NT cch)
+\item 
+\mbox{\Hypertarget{interface_i_imn_account_manager_ac8579179ec009850051dd71467ac44b0}\label{interface_i_imn_account_manager_ac8579179ec009850051dd71467ac44b0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Init\+Ex} (\mbox{[}in\mbox{]} \hyperlink{interface_i_imn_advise_migrate_server}{I\+Imn\+Advise\+Migrate\+Server} $\ast$p\+Advise\+Migrate\+Server, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/imnact.\+idl\end{DoxyCompactItemize}

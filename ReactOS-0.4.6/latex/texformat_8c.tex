@@ -1,0 +1,65 @@
+\hypertarget{texformat_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/texformat.c 文件参考}
+\label{texformat_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/texformat.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/texformat.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries R\+E\+T\+U\+R\+N\+\_\+\+I\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}(f)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+gl\+\_\+format \hyperlink{texformat_8c_a4499357516e783ef32fe058426a33adb}{\+\_\+mesa\+\_\+choose\+\_\+tex\+\_\+format} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Texture formats.
+
+\begin{DoxyAuthor}{作者}
+Gareth Hughes 
+
+Brian Paul 
+\end{DoxyAuthor}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{texformat_8c_a68628ddee429b950306587daec0e62e3}\label{texformat_8c_a68628ddee429b950306587daec0e62e3}} 
+\index{texformat.\+c@{texformat.\+c}!R\+E\+T\+U\+R\+N\+\_\+\+I\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{R\+E\+T\+U\+R\+N\+\_\+\+I\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}}
+\index{R\+E\+T\+U\+R\+N\+\_\+\+I\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{R\+E\+T\+U\+R\+N\+\_\+\+I\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}!texformat.\+c@{texformat.\+c}}
+\subsubsection{\texorpdfstring{R\+E\+T\+U\+R\+N\+\_\+\+I\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}{RETURN\_IF\_SUPPORTED}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} R\+E\+T\+U\+R\+N\+\_\+\+I\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED(\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{        \(\backslash\)
+   if (ctx->TextureFormatSupported[f])      \(\backslash\)
+      return f;                 \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{texformat_8c_a4499357516e783ef32fe058426a33adb}\label{texformat_8c_a4499357516e783ef32fe058426a33adb}} 
+\index{texformat.\+c@{texformat.\+c}!\+\_\+mesa\+\_\+choose\+\_\+tex\+\_\+format@{\+\_\+mesa\+\_\+choose\+\_\+tex\+\_\+format}}
+\index{\+\_\+mesa\+\_\+choose\+\_\+tex\+\_\+format@{\+\_\+mesa\+\_\+choose\+\_\+tex\+\_\+format}!texformat.\+c@{texformat.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+choose\+\_\+tex\+\_\+format()}{\_mesa\_choose\_tex\_format()}}
+{\footnotesize\ttfamily gl\+\_\+format \+\_\+mesa\+\_\+choose\+\_\+tex\+\_\+format (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lint}]{internal\+Format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{type }\end{DoxyParamCaption})}
+
+Choose an appropriate texture format given the format, type and internal\+Format parameters passed to gl\+Tex\+Image().
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & the GL context. \\
+\hline
+{\em internal\+Format} & user\textquotesingle{}s prefered internal texture format. \\
+\hline
+{\em format} & incoming image pixel format. \\
+\hline
+{\em type} & incoming image data type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+a pointer to a gl\+\_\+texture\+\_\+format object which describes the choosen texture format, or N\+U\+LL on failure.
+\end{DoxyReturn}
+\hyperlink{namespace_this}{This} is called via \hyperlink{structdd__function__table_ab3029e9747f5413c4e33efb89c245462}{dd\+\_\+function\+\_\+table\+::\+Choose\+Texture\+Format}. Hardware drivers will typically override this function with a specialized version. 

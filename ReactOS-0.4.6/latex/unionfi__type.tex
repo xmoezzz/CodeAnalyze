@@ -1,0 +1,23 @@
+\hypertarget{unionfi__type}{}\section{fi\+\_\+type联合体 参考}
+\label{unionfi__type}\index{fi\+\_\+type@{fi\+\_\+type}}
+
+
+{\ttfamily \#include $<$imports.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{unionfi__type_a3b3dfd1df386d10c1fa125821756351d}\label{unionfi__type_a3b3dfd1df386d10c1fa125821756351d}} 
+G\+Lfloat {\bfseries f}
+\item 
+\mbox{\Hypertarget{unionfi__type_ae50f6e390586e3810ecfd879303f28b8}\label{unionfi__type_ae50f6e390586e3810ecfd879303f28b8}} 
+G\+Lint {\bfseries i}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Sometimes we treat G\+Lfloats as G\+Lints. On x86 systems, moving a float as a int (thereby using integer registers instead of FP registers) is a performance win. Typically, this can be done with ordinary casts. But with gcc\textquotesingle{}s -\/fstrict-\/aliasing flag (which defaults to on in gcc 3.\+0) these casts generate warnings. The following union typedef is used to solve that. 
+
+该联合体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/imports.\+h\end{DoxyCompactItemize}

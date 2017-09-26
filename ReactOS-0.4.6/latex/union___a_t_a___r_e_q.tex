@@ -1,0 +1,63 @@
+\hypertarget{union___a_t_a___r_e_q}{}\section{\+\_\+\+A\+T\+A\+\_\+\+R\+E\+Q联合体 参考}
+\label{union___a_t_a___r_e_q}\index{\+\_\+\+A\+T\+A\+\_\+\+R\+EQ@{\+\_\+\+A\+T\+A\+\_\+\+R\+EQ}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{union___a_t_a___r_e_q_abd38d496b9cf59a787294d7ac35283bd}\label{union___a_t_a___r_e_q_abd38d496b9cf59a787294d7ac35283bd}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\mbox{\Hypertarget{struct___a_t_a___r_e_q_1_1_0D1058_a32aa502908e74b48da0f4e536fcc6c0c}\label{struct___a_t_a___r_e_q_1_1_0D1058_a32aa502908e74b48da0f4e536fcc6c0c}} 
+\>struct \{\\
+\>\>union \hyperlink{union___a_t_a___r_e_q}{\_ATA\_REQ} $\ast$ {\bfseries next\_req}\\
+\>\>union \hyperlink{union___a_t_a___r_e_q}{\_ATA\_REQ} $\ast$ {\bfseries prev\_req}\\
+\>\>\hyperlink{struct___s_c_s_i___r_e_q_u_e_s_t___b_l_o_c_k}{PSCSI\_REQUEST\_BLOCK} {\bfseries Srb}\\
+\>\>PUSHORT {\bfseries DataBuffer}\\
+\>\>ULONG {\bfseries WordsLeft}\\
+\>\>ULONG {\bfseries TransferLength}\\
+\>\>LONGLONG {\bfseries lba}\\
+\>\>ULONG {\bfseries WordsTransfered}\\
+\>\>ULONG {\bfseries bcount}\\
+\>\>UCHAR {\bfseries retry}\\
+\>\>UCHAR {\bfseries ttl}\\
+\>\>UCHAR {\bfseries Flags}\\
+\>\>UCHAR {\bfseries ReqState}\\
+\>\>\hyperlink{struct___s_c_s_i___r_e_q_u_e_s_t___b_l_o_c_k}{PSCSI\_REQUEST\_BLOCK} {\bfseries OriginalSrb}\\
+\>\>ULONG {\bfseries dma\_entries}\\
+\mbox{\Hypertarget{struct___a_t_a___r_e_q_1_1_0D1058_1_1_0D1060_adde41df7733897a675b61341f3651132}\label{struct___a_t_a___r_e_q_1_1_0D1058_1_1_0D1060_adde41df7733897a675b61341f3651132}} 
+\>\>union \{\\
+\>\>\>struct \{\\
+\>\>\>\>ULONG {\bfseries dma\_base}\\
+\>\>\>\>ULONG {\bfseries dma\_baseu}\\
+\>\>\>\} {\bfseries ata}\\
+\>\>\>struct \{\\
+\>\>\>\>ULONGLONG {\bfseries ahci\_base64}\\
+\>\>\>\>ULONGLONG {\bfseries in\_lba}\\
+\>\>\>\>\hyperlink{struct___i_d_e___a_h_c_i___c_m_d}{PIDE\_AHCI\_CMD} {\bfseries ahci\_cmd\_ptr}\\
+\>\>\>\>ULONG {\bfseries in\_bcount}\\
+\>\>\>\>ULONG {\bfseries in\_status}\\
+\>\>\>\>ULONG {\bfseries in\_serror}\\
+\>\>\>\>USHORT {\bfseries io\_cmd\_flags}\\
+\>\>\>\>UCHAR {\bfseries in\_error}\\
+\>\>\>\} {\bfseries ahci}\\
+\>\>\} \\
+\>\} \\
+\mbox{\Hypertarget{struct___a_t_a___r_e_q_1_1_0D1058_aa71f429b1710799637157e190e96817b}\label{struct___a_t_a___r_e_q_1_1_0D1058_aa71f429b1710799637157e190e96817b}} 
+\>struct \{\\
+\mbox{\Hypertarget{struct___a_t_a___r_e_q_1_1_0D1058_1_1_0D1062_ad3fbbcbf8aa05a98b5d7d2b4cb44f394}\label{struct___a_t_a___r_e_q_1_1_0D1058_1_1_0D1062_ad3fbbcbf8aa05a98b5d7d2b4cb44f394}} 
+\>\>union \{\\
+\>\>\>\hyperlink{struct_b_m___d_m_a___e_n_t_r_y}{BM\_DMA\_ENTRY} {\bfseries dma\_tab} \mbox{[}ATA\_DMA\_ENTRIES\mbox{]}\\
+\>\>\>\hyperlink{struct___i_d_e___a_h_c_i___c_m_d}{IDE\_AHCI\_CMD} {\bfseries ahci\_cmd0}\\
+\>\>\} \\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{union___a_t_a___r_e_q_a4bc5c9c2d729e0230983f0c0c39a0194}\label{union___a_t_a___r_e_q_a4bc5c9c2d729e0230983f0c0c39a0194}} 
+U\+C\+H\+AR {\bfseries padding\+\_\+4kb} \mbox{[}P\+A\+G\+E\+\_\+\+S\+I\+ZE\mbox{]}
+\end{DoxyCompactItemize}
+
+
+该联合体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/storage/ide/uniata/bsmaster.\+h\end{DoxyCompactItemize}

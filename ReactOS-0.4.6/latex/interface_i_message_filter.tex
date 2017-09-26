@@ -1,0 +1,81 @@
+\hypertarget{interface_i_message_filter}{}\section{I\+Message\+Filter接口 参考}
+\label{interface_i_message_filter}\index{I\+Message\+Filter@{I\+Message\+Filter}}
+类 I\+Message\+Filter 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_message_filter}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_message_filter_1_1tag_i_n_t_e_r_f_a_c_e_i_n_f_o}{tag\+I\+N\+T\+E\+R\+F\+A\+C\+E\+I\+N\+FO}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a4e79377b4f47822119c67ba342b14741}\label{interface_i_message_filter_a4e79377b4f47822119c67ba342b14741}} 
+enum {\bfseries tag\+C\+A\+L\+L\+T\+Y\+PE} \{ \newline
+{\bfseries C\+A\+L\+L\+T\+Y\+P\+E\+\_\+\+T\+O\+P\+L\+E\+V\+EL} = 1, 
+{\bfseries C\+A\+L\+L\+T\+Y\+P\+E\+\_\+\+N\+E\+S\+T\+ED} = 2, 
+{\bfseries C\+A\+L\+L\+T\+Y\+P\+E\+\_\+\+A\+S\+Y\+NC} = 3, 
+{\bfseries C\+A\+L\+L\+T\+Y\+P\+E\+\_\+\+T\+O\+P\+L\+E\+V\+E\+L\+\_\+\+C\+A\+L\+L\+P\+E\+N\+D\+I\+NG} = 4, 
+\newline
+{\bfseries C\+A\+L\+L\+T\+Y\+P\+E\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+C\+A\+L\+L\+P\+E\+N\+D\+I\+NG} = 5
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a3bbddf1833fbf9afef38162c10b331de}\label{interface_i_message_filter_a3bbddf1833fbf9afef38162c10b331de}} 
+enum {\bfseries tag\+S\+E\+R\+V\+E\+R\+C\+A\+LL} \{ {\bfseries S\+E\+R\+V\+E\+R\+C\+A\+L\+L\+\_\+\+I\+S\+H\+A\+N\+D\+L\+ED} = 0, 
+{\bfseries S\+E\+R\+V\+E\+R\+C\+A\+L\+L\+\_\+\+R\+E\+J\+E\+C\+T\+ED} = 1, 
+{\bfseries S\+E\+R\+V\+E\+R\+C\+A\+L\+L\+\_\+\+R\+E\+T\+R\+Y\+L\+A\+T\+ER} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a58ac2d17b2b998a8bbfb90fe7f8b0723}\label{interface_i_message_filter_a58ac2d17b2b998a8bbfb90fe7f8b0723}} 
+enum {\bfseries tag\+P\+E\+N\+D\+I\+N\+G\+T\+Y\+PE} \{ {\bfseries P\+E\+N\+D\+I\+N\+G\+T\+Y\+P\+E\+\_\+\+T\+O\+P\+L\+E\+V\+EL} = 1, 
+{\bfseries P\+E\+N\+D\+I\+N\+G\+T\+Y\+P\+E\+\_\+\+N\+E\+S\+T\+ED} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_aa5bd0970ec54d1819672e4581e738f94}\label{interface_i_message_filter_aa5bd0970ec54d1819672e4581e738f94}} 
+enum {\bfseries tag\+P\+E\+N\+D\+I\+N\+G\+M\+SG} \{ {\bfseries P\+E\+N\+D\+I\+N\+G\+M\+S\+G\+\_\+\+C\+A\+N\+C\+E\+L\+C\+A\+LL} = 0, 
+{\bfseries P\+E\+N\+D\+I\+N\+G\+M\+S\+G\+\_\+\+W\+A\+I\+T\+N\+O\+P\+R\+O\+C\+E\+SS} = 1, 
+{\bfseries P\+E\+N\+D\+I\+N\+G\+M\+S\+G\+\_\+\+W\+A\+I\+T\+D\+E\+F\+P\+R\+O\+C\+E\+SS} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_aee180b03b3ad6f9c1bb9ce451d462524}\label{interface_i_message_filter_aee180b03b3ad6f9c1bb9ce451d462524}} 
+typedef \hyperlink{interface_i_message_filter}{I\+Message\+Filter} $\ast$ {\bfseries L\+P\+M\+E\+S\+S\+A\+G\+E\+F\+I\+L\+T\+ER}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a96fa3cf0aa3fea8ab2626442ee9ed5d4}\label{interface_i_message_filter_a96fa3cf0aa3fea8ab2626442ee9ed5d4}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Message\+Filter\+::tag\+C\+A\+L\+L\+T\+Y\+PE {\bfseries C\+A\+L\+L\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a61a94ecd6fe9c668fb7b99470a972809}\label{interface_i_message_filter_a61a94ecd6fe9c668fb7b99470a972809}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Message\+Filter\+::tag\+S\+E\+R\+V\+E\+R\+C\+A\+LL {\bfseries S\+E\+R\+V\+E\+R\+C\+A\+LL}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_aa43a704da7988d57a7c9ed5ff07fc2ec}\label{interface_i_message_filter_aa43a704da7988d57a7c9ed5ff07fc2ec}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Message\+Filter\+::tag\+P\+E\+N\+D\+I\+N\+G\+T\+Y\+PE {\bfseries P\+E\+N\+D\+I\+N\+G\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a752473f61f4e19f74d064bc153f52080}\label{interface_i_message_filter_a752473f61f4e19f74d064bc153f52080}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Message\+Filter\+::tag\+P\+E\+N\+D\+I\+N\+G\+M\+SG {\bfseries P\+E\+N\+D\+I\+N\+G\+M\+SG}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_ae5a6fe5fcd336bb260873a0368ddf491}\label{interface_i_message_filter_ae5a6fe5fcd336bb260873a0368ddf491}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_message_filter_1_1tag_i_n_t_e_r_f_a_c_e_i_n_f_o}{I\+Message\+Filter\+::tag\+I\+N\+T\+E\+R\+F\+A\+C\+E\+I\+N\+FO} {\bfseries I\+N\+T\+E\+R\+F\+A\+C\+E\+I\+N\+FO}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a506edfb13dde057195860a34be45c0b2}\label{interface_i_message_filter_a506edfb13dde057195860a34be45c0b2}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_message_filter_1_1tag_i_n_t_e_r_f_a_c_e_i_n_f_o}{I\+Message\+Filter\+::tag\+I\+N\+T\+E\+R\+F\+A\+C\+E\+I\+N\+FO} $\ast$ {\bfseries L\+P\+I\+N\+T\+E\+R\+F\+A\+C\+E\+I\+N\+FO}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a718942d091b7cdac8620a3384c50d52b}\label{interface_i_message_filter_a718942d091b7cdac8620a3384c50d52b}} 
+D\+W\+O\+RD {\bfseries Handle\+In\+Coming\+Call} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Call\+Type, \mbox{[}in\mbox{]} H\+T\+A\+SK htask\+Caller, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Tick\+Count, \mbox{[}in\mbox{]} \hyperlink{struct_i_message_filter_1_1tag_i_n_t_e_r_f_a_c_e_i_n_f_o}{L\+P\+I\+N\+T\+E\+R\+F\+A\+C\+E\+I\+N\+FO} lp\+Interface\+Info)
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_afb165582b2a82b95472f98307962a0d8}\label{interface_i_message_filter_afb165582b2a82b95472f98307962a0d8}} 
+D\+W\+O\+RD {\bfseries Retry\+Rejected\+Call} (\mbox{[}in\mbox{]} H\+T\+A\+SK htask\+Callee, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Tick\+Count, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reject\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_message_filter_a555e9df03344c99a2bd938d8998e3a0c}\label{interface_i_message_filter_a555e9df03344c99a2bd938d8998e3a0c}} 
+D\+W\+O\+RD {\bfseries Message\+Pending} (\mbox{[}in\mbox{]} H\+T\+A\+SK htask\+Callee, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Tick\+Count, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Pending\+Type)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

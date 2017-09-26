@@ -1,0 +1,974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: mpg123 metadata handling</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">mpg123 metadata handling</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmpg123__string.html">mpg123_string</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmpg123__text.html">mpg123_text</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmpg123__picture.html">mpg123_picture</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmpg123__id3v2.html">mpg123_id3v2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmpg123__id3v1.html">mpg123_id3v1</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:gacee1d4e2cac4601f57eddadcc828f66c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#gacee1d4e2cac4601f57eddadcc828f66c">MPG123_ID3</a>&#160;&#160;&#160;0x3</td></tr>
+<tr class="separator:gacee1d4e2cac4601f57eddadcc828f66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fb42527b89f66d9caa6aee4fa6aaaae"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga3fb42527b89f66d9caa6aee4fa6aaaae">MPG123_NEW_ID3</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:ga3fb42527b89f66d9caa6aee4fa6aaaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8beaa04ade9db672e2bdf722c66b61ce"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga8beaa04ade9db672e2bdf722c66b61ce">MPG123_ICY</a>&#160;&#160;&#160;0xc</td></tr>
+<tr class="separator:ga8beaa04ade9db672e2bdf722c66b61ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25db33a48f531fd4da02dbf12d53e5be"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga25db33a48f531fd4da02dbf12d53e5be">MPG123_NEW_ICY</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:ga25db33a48f531fd4da02dbf12d53e5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga489b4cd5fb8d1d826e38b09bed9294ce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga489b4cd5fb8d1d826e38b09bed9294ce">mpg123_text_encoding</a> { <br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294cea66ca05c71fce0b560f0ee474f1c4793b">mpg123_text_unknown</a> = 0, 
+<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294ceaf74023fc99a8967ef3b1fa4973cc9f23">mpg123_text_utf8</a> = 1, 
+<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294ceaf8ac03befb4ae509bcdc56fc63975f8e">mpg123_text_latin1</a> = 2, 
+<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294cea83281d24ebc95d586d14273770faa2b2">mpg123_text_icy</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294cea06c8e0a5f457c3f40b18746eb43941a1">mpg123_text_cp1252</a> = 4, 
+<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294ceac869251a2f73f329771eddef6396818c">mpg123_text_utf16</a> = 5, 
+<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294cea4c5c139706dab0863fdb466d8fe5cb46">mpg123_text_utf16bom</a> = 6, 
+<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294cea659e92fc2d96cb3fae94b25ec34aa3cf">mpg123_text_utf16be</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#gga489b4cd5fb8d1d826e38b09bed9294cea31f6a1326b0e255e708b2cf97cb2b15b">mpg123_text_max</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:ga489b4cd5fb8d1d826e38b09bed9294ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a01e07e0e0770d6912767c2638fa86c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga6a01e07e0e0770d6912767c2638fa86c">mpg123_id3_enc</a> { <br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#gga6a01e07e0e0770d6912767c2638fa86ca4061581adda5da0e531e65a2186c762f">mpg123_id3_latin1</a> = 0, 
+<a class="el" href="group__mpg123__metadata.html#gga6a01e07e0e0770d6912767c2638fa86caeead9376bcb51aef2df6bc1422e9af88">mpg123_id3_utf16bom</a> = 1, 
+<a class="el" href="group__mpg123__metadata.html#gga6a01e07e0e0770d6912767c2638fa86ca44352115750b7cad2f7a738bbb0e1130">mpg123_id3_utf16be</a> = 2, 
+<a class="el" href="group__mpg123__metadata.html#gga6a01e07e0e0770d6912767c2638fa86cafa589f1408c94714c2e1fa0c5d32aed2">mpg123_id3_utf8</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#gga6a01e07e0e0770d6912767c2638fa86ca6e7e43434882f04f41ea355068986bbf">mpg123_id3_enc_max</a> = 3
+<br />
+ }</td></tr>
+<tr class="separator:ga6a01e07e0e0770d6912767c2638fa86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf40652195dd80e2b06dc031c9902840e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#gaf40652195dd80e2b06dc031c9902840e">mpg123_id3_pic_type</a> { <br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840eaab239ba35c10e9a7863195b634862144">mpg123_id3_pic_other</a> = 0, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840eaa2380abffb80eee3d7b81aa29c7acf61">mpg123_id3_pic_icon</a> = 1, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ead7ce5e9c3685e8302f4597a7ab45fb37">mpg123_id3_pic_other_icon</a> = 2, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840eacddb144390e5bd675572ec6233b08276">mpg123_id3_pic_front_cover</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea18487a457317d28cbfbacf8d83d9a215">mpg123_id3_pic_back_cover</a> = 4, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea0f4aed397950e9d25407e4dc0d39050f">mpg123_id3_pic_leaflet</a> = 5, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea65f0be03aab84dc9097d4fb1e4ba6bb8">mpg123_id3_pic_media</a> = 6, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea6e9042aca905862dc426a66319d6a5ba">mpg123_id3_pic_lead</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea84509e27bf315acb048a89b089aa61df">mpg123_id3_pic_artist</a> = 8, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea62cd73a8cf340411fbffefde0fd26519">mpg123_id3_pic_conductor</a> = 9, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea92663f277b008f9401724b137f358bcf">mpg123_id3_pic_orchestra</a> = 10, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840eaa43d70c2af5f8d0bcca24a158f161a08">mpg123_id3_pic_composer</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ead0fe5d97282d6e9eddc09c71c7f2c89c">mpg123_id3_pic_lyricist</a> = 12, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840eaaf122dce228ebcdcdbe00dba519b6880">mpg123_id3_pic_location</a> = 13, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea135a56f6e49c5790eb9f62ec15f5fc5a">mpg123_id3_pic_recording</a> = 14, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea0c49a847e6537f3508d50fff0c403b69">mpg123_id3_pic_performance</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea526b70c5e75feaa65667379a5827a488">mpg123_id3_pic_video</a> = 16, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ead6e7b74aaa293db65270bc0aa9b39bde">mpg123_id3_pic_fish</a> = 17, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840eab7a07c2ef50ffda63afc1946ebeb4afa">mpg123_id3_pic_illustration</a> = 18, 
+<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea8ed904e278c40a8ad1599541e17b1e0e">mpg123_id3_pic_artist_logo</a> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__mpg123__metadata.html#ggaf40652195dd80e2b06dc031c9902840ea02e311e2cd923c95615acfbe559a3ac1">mpg123_id3_pic_publisher_logo</a> = 20
+<br />
+ }</td></tr>
+<tr class="separator:gaf40652195dd80e2b06dc031c9902840e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gaf0206ccb2574f563bff863a26a3b0025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#gaf0206ccb2574f563bff863a26a3b0025">mpg123_init_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb)</td></tr>
+<tr class="separator:gaf0206ccb2574f563bff863a26a3b0025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga254cfe80f5eb2f2715e36be9a5119aed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga254cfe80f5eb2f2715e36be9a5119aed">mpg123_free_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb)</td></tr>
+<tr class="separator:ga254cfe80f5eb2f2715e36be9a5119aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57ddead33785908618a5c0c7f3c1895a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga57ddead33785908618a5c0c7f3c1895a">mpg123_resize_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, size_t news)</td></tr>
+<tr class="separator:ga57ddead33785908618a5c0c7f3c1895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1125e5a8235c42759d7300797006b05d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga1125e5a8235c42759d7300797006b05d">mpg123_grow_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, size_t news)</td></tr>
+<tr class="separator:ga1125e5a8235c42759d7300797006b05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d7fe63da5bc665bc754975b293e0a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga9d7fe63da5bc665bc754975b293e0a6b">mpg123_copy_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *from, <a class="el" href="structmpg123__string.html">mpg123_string</a> *to)</td></tr>
+<tr class="separator:ga9d7fe63da5bc665bc754975b293e0a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab54a099feebd65c5fa77d49a8c9c6db5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#gab54a099feebd65c5fa77d49a8c9c6db5">mpg123_add_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, const char *stuff)</td></tr>
+<tr class="separator:gab54a099feebd65c5fa77d49a8c9c6db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76c2bf2ead81199a750ddff7253371f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga76c2bf2ead81199a750ddff7253371f1">mpg123_add_substring</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, const char *stuff, size_t from, size_t count)</td></tr>
+<tr class="separator:ga76c2bf2ead81199a750ddff7253371f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96e9070d26d63c02c3f22caa0d339f26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga96e9070d26d63c02c3f22caa0d339f26">mpg123_set_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, const char *stuff)</td></tr>
+<tr class="separator:ga96e9070d26d63c02c3f22caa0d339f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37b68d834755647a4ef227b0dd4b5c2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga37b68d834755647a4ef227b0dd4b5c2a">mpg123_set_substring</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, const char *stuff, size_t from, size_t count)</td></tr>
+<tr class="separator:ga37b68d834755647a4ef227b0dd4b5c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga556c8eb6c2ee4b88d744dcf20dffa83b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga556c8eb6c2ee4b88d744dcf20dffa83b">mpg123_strlen</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, int utf8)</td></tr>
+<tr class="separator:ga556c8eb6c2ee4b88d744dcf20dffa83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad149639f724347c8c420c8551ea3d4c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#gad149639f724347c8c420c8551ea3d4c2">mpg123_chomp_string</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb)</td></tr>
+<tr class="separator:gad149639f724347c8c420c8551ea3d4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd394947d8cca46e49a0e07926bb2369"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfaceenum.html">enum</a> <a class="el" href="group__mpg123__metadata.html#ga489b4cd5fb8d1d826e38b09bed9294ce">mpg123_text_encoding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#gabd394947d8cca46e49a0e07926bb2369">mpg123_enc_from_id3</a> (unsigned char id3_enc_byte)</td></tr>
+<tr class="separator:gabd394947d8cca46e49a0e07926bb2369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5800cb8b5886969982a695258d80f342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga5800cb8b5886969982a695258d80f342">mpg123_store_utf8</a> (<a class="el" href="structmpg123__string.html">mpg123_string</a> *sb, <a class="el" href="interfaceenum.html">enum</a> <a class="el" href="group__mpg123__metadata.html#ga489b4cd5fb8d1d826e38b09bed9294ce">mpg123_text_encoding</a> enc, const unsigned char *<a class="el" href="structsource.html">source</a>, size_t source_size)</td></tr>
+<tr class="separator:ga5800cb8b5886969982a695258d80f342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cd6279a1273f63eb8dcc8a554d815bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga1cd6279a1273f63eb8dcc8a554d815bb">mpg123_meta_check</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh)</td></tr>
+<tr class="separator:ga1cd6279a1273f63eb8dcc8a554d815bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bca410c7589658fb8379b3cf3fa3e05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga4bca410c7589658fb8379b3cf3fa3e05">mpg123_meta_free</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh)</td></tr>
+<tr class="separator:ga4bca410c7589658fb8379b3cf3fa3e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8352786015f8ff33c7d1fe8a4d979c88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga8352786015f8ff33c7d1fe8a4d979c88">mpg123_id3</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh, <a class="el" href="structmpg123__id3v1.html">mpg123_id3v1</a> **v1, <a class="el" href="structmpg123__id3v2.html">mpg123_id3v2</a> **v2)</td></tr>
+<tr class="separator:ga8352786015f8ff33c7d1fe8a4d979c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga637c01818ba80ac2275b76a8abefa36c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga637c01818ba80ac2275b76a8abefa36c">mpg123_icy</a> (<a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *mh, char **<a class="el" href="structicy__meta.html">icy_meta</a>)</td></tr>
+<tr class="separator:ga637c01818ba80ac2275b76a8abefa36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a6e45c3f8dda42ada8a07c29c253c88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpg123__metadata.html#ga0a6e45c3f8dda42ada8a07c29c253c88">mpg123_icy2utf8</a> (const char *icy_text)</td></tr>
+<tr class="separator:ga0a6e45c3f8dda42ada8a07c29c253c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>Functions to retrieve the metadata from MPEG Audio files and streams. Also includes string handling functions. </p>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="ga8beaa04ade9db672e2bdf722c66b61ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8beaa04ade9db672e2bdf722c66b61ce">&#9670;&nbsp;</a></span>MPG123_ICY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MPG123_ICY&#160;&#160;&#160;0xc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>1100 There is some ICY info. Also matches 0100 or NEW_ICY. </p>
+
+</div>
+</div>
+<a id="gacee1d4e2cac4601f57eddadcc828f66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacee1d4e2cac4601f57eddadcc828f66c">&#9670;&nbsp;</a></span>MPG123_ID3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MPG123_ID3&#160;&#160;&#160;0x3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0011 There is some ID3 info. Also matches 0010 or NEW_ID3. </p>
+
+</div>
+</div>
+<a id="ga25db33a48f531fd4da02dbf12d53e5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25db33a48f531fd4da02dbf12d53e5be">&#9670;&nbsp;</a></span>MPG123_NEW_ICY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MPG123_NEW_ICY&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0100 There is ICY info that changed since last call to mpg123_icy. </p>
+
+</div>
+</div>
+<a id="ga3fb42527b89f66d9caa6aee4fa6aaaae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fb42527b89f66d9caa6aee4fa6aaaae">&#9670;&nbsp;</a></span>MPG123_NEW_ID3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MPG123_NEW_ID3&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0001 There is ID3 info that changed since last call to mpg123_id3. </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="ga6a01e07e0e0770d6912767c2638fa86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a01e07e0e0770d6912767c2638fa86c">&#9670;&nbsp;</a></span>mpg123_id3_enc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceenum.html">enum</a> <a class="el" href="group__mpg123__metadata.html#ga6a01e07e0e0770d6912767c2638fa86c">mpg123_id3_enc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The encoding byte values from ID3v2. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="gga6a01e07e0e0770d6912767c2638fa86ca4061581adda5da0e531e65a2186c762f"></a>mpg123_id3_latin1&#160;</td><td class="fielddoc"><p>Note: <a class="el" href="namespace_this.html">This</a> sometimes can mean anything in practice... </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6a01e07e0e0770d6912767c2638fa86caeead9376bcb51aef2df6bc1422e9af88"></a>mpg123_id3_utf16bom&#160;</td><td class="fielddoc"><p>UTF16, UCS-2 ... it's all the same for practical purposes. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6a01e07e0e0770d6912767c2638fa86ca44352115750b7cad2f7a738bbb0e1130"></a>mpg123_id3_utf16be&#160;</td><td class="fielddoc"><p>Big-endian UTF-16, BOM see note for mpg123_text_utf16be. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6a01e07e0e0770d6912767c2638fa86cafa589f1408c94714c2e1fa0c5d32aed2"></a>mpg123_id3_utf8&#160;</td><td class="fielddoc"><p>Our lovely overly ASCII-compatible 8 byte encoding for the world. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6a01e07e0e0770d6912767c2638fa86ca6e7e43434882f04f41ea355068986bbf"></a>mpg123_id3_enc_max&#160;</td><td class="fielddoc"><p>Placeholder to check valid range of encoding byte. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf40652195dd80e2b06dc031c9902840e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf40652195dd80e2b06dc031c9902840e">&#9670;&nbsp;</a></span>mpg123_id3_pic_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceenum.html">enum</a> <a class="el" href="group__mpg123__metadata.html#gaf40652195dd80e2b06dc031c9902840e">mpg123_id3_pic_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The picture type values from ID3v2. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840eaab239ba35c10e9a7863195b634862144"></a>mpg123_id3_pic_other&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840eaa2380abffb80eee3d7b81aa29c7acf61"></a>mpg123_id3_pic_icon&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ead7ce5e9c3685e8302f4597a7ab45fb37"></a>mpg123_id3_pic_other_icon&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840eacddb144390e5bd675572ec6233b08276"></a>mpg123_id3_pic_front_cover&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea18487a457317d28cbfbacf8d83d9a215"></a>mpg123_id3_pic_back_cover&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea0f4aed397950e9d25407e4dc0d39050f"></a>mpg123_id3_pic_leaflet&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea65f0be03aab84dc9097d4fb1e4ba6bb8"></a>mpg123_id3_pic_media&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea6e9042aca905862dc426a66319d6a5ba"></a>mpg123_id3_pic_lead&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea84509e27bf315acb048a89b089aa61df"></a>mpg123_id3_pic_artist&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea62cd73a8cf340411fbffefde0fd26519"></a>mpg123_id3_pic_conductor&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea92663f277b008f9401724b137f358bcf"></a>mpg123_id3_pic_orchestra&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840eaa43d70c2af5f8d0bcca24a158f161a08"></a>mpg123_id3_pic_composer&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ead0fe5d97282d6e9eddc09c71c7f2c89c"></a>mpg123_id3_pic_lyricist&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840eaaf122dce228ebcdcdbe00dba519b6880"></a>mpg123_id3_pic_location&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea135a56f6e49c5790eb9f62ec15f5fc5a"></a>mpg123_id3_pic_recording&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea0c49a847e6537f3508d50fff0c403b69"></a>mpg123_id3_pic_performance&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea526b70c5e75feaa65667379a5827a488"></a>mpg123_id3_pic_video&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ead6e7b74aaa293db65270bc0aa9b39bde"></a>mpg123_id3_pic_fish&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840eab7a07c2ef50ffda63afc1946ebeb4afa"></a>mpg123_id3_pic_illustration&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea8ed904e278c40a8ad1599541e17b1e0e"></a>mpg123_id3_pic_artist_logo&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf40652195dd80e2b06dc031c9902840ea02e311e2cd923c95615acfbe559a3ac1"></a>mpg123_id3_pic_publisher_logo&#160;</td><td class="fielddoc"><p>see ID3v2 docs </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga489b4cd5fb8d1d826e38b09bed9294ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga489b4cd5fb8d1d826e38b09bed9294ce">&#9670;&nbsp;</a></span>mpg123_text_encoding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceenum.html">enum</a> <a class="el" href="group__mpg123__metadata.html#ga489b4cd5fb8d1d826e38b09bed9294ce">mpg123_text_encoding</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The mpg123 text encodings. <a class="el" href="namespace_this.html">This</a> contains encodings we encounter in ID3 tags or ICY meta info. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294cea66ca05c71fce0b560f0ee474f1c4793b"></a>mpg123_text_unknown&#160;</td><td class="fielddoc"><p>Unkown encoding... mpg123_id3_encoding can return that on invalid codes. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294ceaf74023fc99a8967ef3b1fa4973cc9f23"></a>mpg123_text_utf8&#160;</td><td class="fielddoc"><p>UTF-8 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294ceaf8ac03befb4ae509bcdc56fc63975f8e"></a>mpg123_text_latin1&#160;</td><td class="fielddoc"><p>ISO-8859-1. Note that sometimes latin1 in ID3 is abused for totally different encodings. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294cea83281d24ebc95d586d14273770faa2b2"></a>mpg123_text_icy&#160;</td><td class="fielddoc"><p>ICY metadata encoding, usually CP-1252 but we take it as UTF-8 if it qualifies as such. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294cea06c8e0a5f457c3f40b18746eb43941a1"></a>mpg123_text_cp1252&#160;</td><td class="fielddoc"><p>Really CP-1252 without any guessing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294ceac869251a2f73f329771eddef6396818c"></a>mpg123_text_utf16&#160;</td><td class="fielddoc"><p>Some UTF-16 encoding. The last of a set of leading BOMs (byte order mark) rules. When there is no BOM, big endian ordering is used. Note that UCS-2 qualifies as UTF-8 when you don't mess with the reserved code points. If you want to decode little endian data without BOM you need to prepend 0xff 0xfe yourself. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294cea4c5c139706dab0863fdb466d8fe5cb46"></a>mpg123_text_utf16bom&#160;</td><td class="fielddoc"><p>Just an alias for UTF-16, ID3v2 has this as distinct code. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294cea659e92fc2d96cb3fae94b25ec34aa3cf"></a>mpg123_text_utf16be&#160;</td><td class="fielddoc"><p>Another alias for UTF16 from ID3v2. Note, that, because of the mess that is reality, BOMs are used if encountered. There really is not much distinction between the UTF16 types for mpg123 One exception: Since this is seen in ID3v2 tags, leading null bytes are skipped for all other UTF16 types (we expect a BOM before real data there), not so for utf16be! </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga489b4cd5fb8d1d826e38b09bed9294cea31f6a1326b0e255e708b2cf97cb2b15b"></a>mpg123_text_max&#160;</td><td class="fielddoc"><p>Placeholder for the maximum encoding value. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="gab54a099feebd65c5fa77d49a8c9c6db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab54a099feebd65c5fa77d49a8c9c6db5">&#9670;&nbsp;</a></span>mpg123_add_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_add_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>stuff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Append a C-String to an <a class="el" href="structmpg123__string.html">mpg123_string</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+    <tr><td class="paramname">stuff</td><td>to append </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="ga76c2bf2ead81199a750ddff7253371f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76c2bf2ead81199a750ddff7253371f1">&#9670;&nbsp;</a></span>mpg123_add_substring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_add_substring </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>stuff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Append a C-substring to an mpg123 string </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+    <tr><td class="paramname">stuff</td><td>content to copy </td></tr>
+    <tr><td class="paramname">from</td><td>offset to copy from </td></tr>
+    <tr><td class="paramname">count</td><td>number of characters to copy (a null-byte is always appended) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="gad149639f724347c8c420c8551ea3d4c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad149639f724347c8c420c8551ea3d4c2">&#9670;&nbsp;</a></span>mpg123_chomp_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_chomp_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove trailing \r and \n, if present. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="ga9d7fe63da5bc665bc754975b293e0a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d7fe63da5bc665bc754975b293e0a6b">&#9670;&nbsp;</a></span>mpg123_copy_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_copy_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy the contents of one <a class="el" href="structmpg123__string.html">mpg123_string</a> string to another. Yes the order of arguments is reversed compated to memcpy(). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>string handle </td></tr>
+    <tr><td class="paramname">to</td><td>string handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="gabd394947d8cca46e49a0e07926bb2369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd394947d8cca46e49a0e07926bb2369">&#9670;&nbsp;</a></span>mpg123_enc_from_id3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfaceenum.html">enum</a> <a class="el" href="group__mpg123__metadata.html#ga489b4cd5fb8d1d826e38b09bed9294ce">mpg123_text_encoding</a> mpg123_enc_from_id3 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>id3_enc_byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert ID3 encoding byte to mpg123 encoding index. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id3_enc_byte</td><td>the ID3 encoding code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the mpg123 encoding index </dd></dl>
+
+</div>
+</div>
+<a id="ga254cfe80f5eb2f2715e36be9a5119aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga254cfe80f5eb2f2715e36be9a5119aed">&#9670;&nbsp;</a></span>mpg123_free_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfacevoid.html">void</a> mpg123_free_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Free-up mempory for an existing <a class="el" href="structmpg123__string.html">mpg123_string</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1125e5a8235c42759d7300797006b05d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1125e5a8235c42759d7300797006b05d">&#9670;&nbsp;</a></span>mpg123_grow_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_grow_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>news</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Increase size of a <a class="el" href="structmpg123__string.html">mpg123_string</a> if necessary (it may stay larger). Note that the functions for adding and setting in current libmpg123 use this instead of <a class="el" href="group__mpg123__metadata.html#ga57ddead33785908618a5c0c7f3c1895a">mpg123_resize_string()</a>. That way, you can preallocate memory and safely work afterwards with pieces. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+    <tr><td class="paramname">news</td><td>new minimum size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="ga637c01818ba80ac2275b76a8abefa36c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga637c01818ba80ac2275b76a8abefa36c">&#9670;&nbsp;</a></span>mpg123_icy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_icy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>icy_meta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_point.html">Point</a> <a class="el" href="structicy__meta.html">icy_meta</a> to existing data structure wich may change on any next read/decode function call. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mh</td><td>handle </td></tr>
+    <tr><td class="paramname"><a class="el" href="structicy__meta.html">icy_meta</a></td><td>return address for ICY meta string (set to NULL if nothing there) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MPG123_OK on success </dd></dl>
+
+</div>
+</div>
+<a id="ga0a6e45c3f8dda42ada8a07c29c253c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a6e45c3f8dda42ada8a07c29c253c88">&#9670;&nbsp;</a></span>mpg123_icy2utf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> char* mpg123_icy2utf8 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>icy_text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Decode from windows-1252 (the encoding ICY metainfo used) to UTF-8. Note that this is very similar to mpg123_store_utf8(&amp;sb, mpg123_text_icy, icy_text, strlen(icy_text+1)) . </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">icy_text</td><td>The input data in ICY encoding </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to newly allocated buffer with UTF-8 data (You free() it!) </dd></dl>
+
+</div>
+</div>
+<a id="ga8352786015f8ff33c7d1fe8a4d979c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8352786015f8ff33c7d1fe8a4d979c88">&#9670;&nbsp;</a></span>mpg123_id3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_id3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmpg123__id3v1.html">mpg123_id3v1</a> **&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmpg123__id3v2.html">mpg123_id3v2</a> **&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_point.html">Point</a> v1 and v2 to existing data structures wich may change on any next read/decode function call. v1 and/or v2 can be set to NULL when there is no corresponding data. </p><dl class="section return"><dt>返回</dt><dd>MPG123_OK on success </dd></dl>
+
+</div>
+</div>
+<a id="gaf0206ccb2574f563bff863a26a3b0025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0206ccb2574f563bff863a26a3b0025">&#9670;&nbsp;</a></span>mpg123_init_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfacevoid.html">void</a> mpg123_init_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create and allocate memory for a new <a class="el" href="structmpg123__string.html">mpg123_string</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle (address of existing structure on your side) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1cd6279a1273f63eb8dcc8a554d815bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cd6279a1273f63eb8dcc8a554d815bb">&#9670;&nbsp;</a></span>mpg123_meta_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_meta_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Query if there is (new) meta info, be it ID3 or ICY (or something new in future). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mh</td><td>handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>combination of flags, 0 on error (same as "nothing new") </dd></dl>
+
+</div>
+</div>
+<a id="ga4bca410c7589658fb8379b3cf3fa3e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bca410c7589658fb8379b3cf3fa3e05">&#9670;&nbsp;</a></span>mpg123_meta_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> <a class="el" href="interfacevoid.html">void</a> mpg123_meta_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mpg123__init.html#ga6728e2839a395f3a07d4514da659faca">mpg123_handle</a> *&#160;</td>
+          <td class="paramname"><em>mh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clean up meta data storage (ID3v2 and ICY), freeing memory. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mh</td><td>handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga57ddead33785908618a5c0c7f3c1895a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57ddead33785908618a5c0c7f3c1895a">&#9670;&nbsp;</a></span>mpg123_resize_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_resize_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>news</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change the size of a <a class="el" href="structmpg123__string.html">mpg123_string</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+    <tr><td class="paramname">news</td><td>new size in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="ga96e9070d26d63c02c3f22caa0d339f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96e9070d26d63c02c3f22caa0d339f26">&#9670;&nbsp;</a></span>mpg123_set_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_set_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>stuff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the content of a <a class="el" href="structmpg123__string.html">mpg123_string</a> to a C-string </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+    <tr><td class="paramname">stuff</td><td>content to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="ga37b68d834755647a4ef227b0dd4b5c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37b68d834755647a4ef227b0dd4b5c2a">&#9670;&nbsp;</a></span>mpg123_set_substring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_set_substring </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>stuff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the content of a <a class="el" href="structmpg123__string.html">mpg123_string</a> to a C-substring </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+    <tr><td class="paramname">stuff</td><td>the future content </td></tr>
+    <tr><td class="paramname">from</td><td>offset to copy from </td></tr>
+    <tr><td class="paramname">count</td><td>number of characters to copy (a null-byte is always appended) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success </dd></dl>
+
+</div>
+</div>
+<a id="ga5800cb8b5886969982a695258d80f342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5800cb8b5886969982a695258d80f342">&#9670;&nbsp;</a></span>mpg123_store_utf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> int mpg123_store_utf8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceenum.html">enum</a> <a class="el" href="group__mpg123__metadata.html#ga489b4cd5fb8d1d826e38b09bed9294ce">mpg123_text_encoding</a>&#160;</td>
+          <td class="paramname"><em>enc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>source_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Store text data in string, after converting to UTF-8 from indicated encoding <a class="el" href="struct_a.html">A</a> prominent error can be that you provided an unknown encoding value, or this build of libmpg123 lacks support for certain encodings (ID3 or ICY stuff missing). Also, you might want to take a bit of care with preparing the data; for example, strip leading zeroes (I have seen that). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>target string </td></tr>
+    <tr><td class="paramname">enc</td><td>mpg123 text encoding value </td></tr>
+    <tr><td class="paramname">source</td><td>source buffer with plain unsigned bytes (you might need to cast from signed char) </td></tr>
+    <tr><td class="paramname">source_size</td><td>number of bytes in the source buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on error, 1 on success (on error, mpg123_free_string is called on sb) </dd></dl>
+
+</div>
+</div>
+<a id="ga556c8eb6c2ee4b88d744dcf20dffa83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga556c8eb6c2ee4b88d744dcf20dffa83b">&#9670;&nbsp;</a></span>mpg123_strlen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mpg123_8h.html#a2ba98cfba3f760879df70e755b2a61cc">MPG123_EXPORT</a> size_t mpg123_strlen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmpg123__string.html">mpg123_string</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>utf8</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Count characters in a mpg123 string (non-null bytes or UTF-8 characters). Even with the fill property, the character count is not obvious as there could be multiple trailing null bytes. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sb</td><td>string handle </td></tr>
+    <tr><td class="paramname">utf8</td><td>a flag to tell if the string is in utf8 encoding </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>character count </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

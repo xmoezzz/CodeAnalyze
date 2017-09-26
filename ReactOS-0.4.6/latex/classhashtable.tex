@@ -1,0 +1,374 @@
+\hypertarget{classhashtable}{}\section{hashtable$<$ \+\_\+\+Val, \+\_\+\+Key, \+\_\+\+HF, \+\_\+\+Traits, \+\_\+\+ExK, \+\_\+\+EqK, \+\_\+\+All $>$ 模板类 参考}
+\label{classhashtable}\index{hashtable$<$ \+\_\+\+Val, \+\_\+\+Key, \+\_\+\+H\+F, \+\_\+\+Traits, \+\_\+\+Ex\+K, \+\_\+\+Eq\+K, \+\_\+\+All $>$@{hashtable$<$ \+\_\+\+Val, \+\_\+\+Key, \+\_\+\+H\+F, \+\_\+\+Traits, \+\_\+\+Ex\+K, \+\_\+\+Eq\+K, \+\_\+\+All $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classhashtable_a402f8855090127ba82f6d4b50ed99441}\label{classhashtable_a402f8855090127ba82f6d4b50ed99441}} 
+typedef \+\_\+\+Key {\bfseries key\+\_\+type}
+\item 
+\mbox{\Hypertarget{classhashtable_a1f07261653b1fd662e29b923e1bdd65f}\label{classhashtable_a1f07261653b1fd662e29b923e1bdd65f}} 
+typedef \+\_\+\+Val {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classhashtable_a0cd460e986b48a2c0e4f043ac69c915e}\label{classhashtable_a0cd460e986b48a2c0e4f043ac69c915e}} 
+typedef \+\_\+\+HF {\bfseries hasher}
+\item 
+\mbox{\Hypertarget{classhashtable_a3a42422d16cf88f6a2db6bd5166fb242}\label{classhashtable_a3a42422d16cf88f6a2db6bd5166fb242}} 
+typedef \+\_\+\+EqK {\bfseries key\+\_\+equal}
+\item 
+\mbox{\Hypertarget{classhashtable_af98123ca272bbb97b1c15059001450a7}\label{classhashtable_af98123ca272bbb97b1c15059001450a7}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classhashtable_a4b969dbfd1c2276e72d9e792e479ae6a}\label{classhashtable_a4b969dbfd1c2276e72d9e792e479ae6a}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classhashtable_abc6b06fa89a7970bad281a83f61721e7}\label{classhashtable_abc6b06fa89a7970bad281a83f61721e7}} 
+typedef \+\_\+\+Non\+Const\+Traits\+::pointer {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classhashtable_a3023697d5e7d67ff08094aa5f02eec4f}\label{classhashtable_a3023697d5e7d67ff08094aa5f02eec4f}} 
+typedef const value\+\_\+type $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classhashtable_a0cb322282042b0ccb701eca74356b5b5}\label{classhashtable_a0cb322282042b0ccb701eca74356b5b5}} 
+typedef \+\_\+\+Non\+Const\+Traits\+::reference {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classhashtable_a268d760af41e8ae91c47fb35767ea073}\label{classhashtable_a268d760af41e8ae91c47fb35767ea073}} 
+typedef const value\+\_\+type \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classhashtable_aba9537182653333ee3e2f6281a8a2a26}\label{classhashtable_aba9537182653333ee3e2f6281a8a2a26}} 
+typedef \hyperlink{structforward__iterator__tag}{forward\+\_\+iterator\+\_\+tag} {\bfseries \+\_\+\+Iterator\+\_\+category}
+\item 
+\mbox{\Hypertarget{classhashtable_a5ef9060dd0e36af863d09b5c01311ca4}\label{classhashtable_a5ef9060dd0e36af863d09b5c01311ca4}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___ht__iterator}{\+\_\+\+Ht\+\_\+iterator}$<$ \+\_\+\+Elems\+Ite, \+\_\+\+Non\+Const\+Traits $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_a140c50201251523d9a211b173b13680b}\label{classhashtable_a140c50201251523d9a211b173b13680b}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___ht__iterator}{\+\_\+\+Ht\+\_\+iterator}$<$ \+\_\+\+Elems\+Ite, \+\_\+\+Const\+Traits $>$ {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_adcbdbd15789daff0a88fcad6fa4737e8}\label{classhashtable_adcbdbd15789daff0a88fcad6fa4737e8}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___ht__iterator}{\+\_\+\+Ht\+\_\+iterator}$<$ \+\_\+\+Elems\+Ite, \+\_\+\+Non\+Const\+Local\+Traits $>$ {\bfseries local\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_ac32e2764bd963018f6143688b3d9da67}\label{classhashtable_ac32e2764bd963018f6143688b3d9da67}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___ht__iterator}{\+\_\+\+Ht\+\_\+iterator}$<$ \+\_\+\+Elems\+Ite, \+\_\+\+Const\+Local\+Traits $>$ {\bfseries const\+\_\+local\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_a71c7e8e8a2c291f43242691663379adf}\label{classhashtable_a71c7e8e8a2c291f43242691663379adf}} 
+typedef \+\_\+\+All {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{classhashtable_a402f8855090127ba82f6d4b50ed99441}\label{classhashtable_a402f8855090127ba82f6d4b50ed99441}} 
+typedef \+\_\+\+Key {\bfseries key\+\_\+type}
+\item 
+\mbox{\Hypertarget{classhashtable_a0cd460e986b48a2c0e4f043ac69c915e}\label{classhashtable_a0cd460e986b48a2c0e4f043ac69c915e}} 
+typedef \+\_\+\+HF {\bfseries hasher}
+\item 
+\mbox{\Hypertarget{classhashtable_a3a42422d16cf88f6a2db6bd5166fb242}\label{classhashtable_a3a42422d16cf88f6a2db6bd5166fb242}} 
+typedef \+\_\+\+EqK {\bfseries key\+\_\+equal}
+\item 
+\mbox{\Hypertarget{classhashtable_a74d69c6b5ac8884bac718a43497b238b}\label{classhashtable_a74d69c6b5ac8884bac718a43497b238b}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___d_b_g__iter}{\+\_\+\+D\+B\+G\+\_\+iter}$<$ \+\_\+\+Base, \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \+\_\+\+Dbg\+Traits$<$ \+\_\+\+Non\+Const\+Traits $>$ $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_a954aee0fabb8eace3b5e94948da416ec}\label{classhashtable_a954aee0fabb8eace3b5e94948da416ec}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___d_b_g__iter}{\+\_\+\+D\+B\+G\+\_\+iter}$<$ \+\_\+\+Base, \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \+\_\+\+Dbg\+Traits$<$ \+\_\+\+Const\+Traits $>$ $>$ {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_a643e55e87f6fa1bc1f7cee78ffd344fa}\label{classhashtable_a643e55e87f6fa1bc1f7cee78ffd344fa}} 
+typedef \hyperlink{structiterator}{iterator} {\bfseries local\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_a885a6cf3309ce9e740297af986566131}\label{classhashtable_a885a6cf3309ce9e740297af986566131}} 
+typedef const\+\_\+iterator {\bfseries const\+\_\+local\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_a6a7ee3689a715b70258c8060e41e44e0}\label{classhashtable_a6a7ee3689a715b70258c8060e41e44e0}} 
+typedef \+\_\+\+Base\+::iterator {\bfseries \+\_\+\+Base\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classhashtable_a9d2dd6c994b75c3893f29f96ef6c619a}\label{classhashtable_a9d2dd6c994b75c3893f29f96ef6c619a}} 
+typedef \+\_\+\+Base\+::const\+\_\+iterator {\bfseries \+\_\+\+Base\+\_\+const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classhashtable_ae08e112dcb9455d40455eb795e37feb9}\label{classhashtable_ae08e112dcb9455d40455eb795e37feb9}} 
+hasher {\bfseries hash\+\_\+funct} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a52477a0bb42d4170b09d90291d10ec36}\label{classhashtable_a52477a0bb42d4170b09d90291d10ec36}} 
+key\+\_\+equal {\bfseries key\+\_\+eq} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a45f92c1514cbf95304ddb11228004045}\label{classhashtable_a45f92c1514cbf95304ddb11228004045}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a23fd20375cbba8e496ee88789f89c654}\label{classhashtable_a23fd20375cbba8e496ee88789f89c654}} 
+{\bfseries hashtable} (size\+\_\+type \+\_\+\+\_\+n, const \+\_\+\+HF \&\+\_\+\+\_\+hf, const \+\_\+\+EqK \&\+\_\+\+\_\+eql, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classhashtable_a68d642038380c9db090140e82daf1fef}\label{classhashtable_a68d642038380c9db090140e82daf1fef}} 
+{\bfseries hashtable} (const \hyperlink{classhashtable}{\+\_\+\+Self} \&\+\_\+\+\_\+ht)
+\item 
+\mbox{\Hypertarget{classhashtable_a1e0899e2bf53826f2531295283fdeb9d}\label{classhashtable_a1e0899e2bf53826f2531295283fdeb9d}} 
+{\bfseries hashtable} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classhashtable}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{classhashtable_a5bc53028dd2381c784e4bb92a318f35e}\label{classhashtable_a5bc53028dd2381c784e4bb92a318f35e}} 
+\hyperlink{classhashtable}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{classhashtable}{\+\_\+\+Self} \&\+\_\+\+\_\+ht)
+\item 
+\mbox{\Hypertarget{classhashtable_ac2327a675ed3949ff1f36495c5211977}\label{classhashtable_ac2327a675ed3949ff1f36495c5211977}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classhashtable_ab345b909b769ec74109810bc36281559}\label{classhashtable_ab345b909b769ec74109810bc36281559}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a7c682967726ae9d11ddb30f476daa7dd}\label{classhashtable_a7c682967726ae9d11ddb30f476daa7dd}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classhashtable_ab73a15778f2fbc33d6e2d47579184be3}\label{classhashtable_ab73a15778f2fbc33d6e2d47579184be3}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{classhashtable}{\+\_\+\+Self} \&\+\_\+\+\_\+ht)
+\item 
+\mbox{\Hypertarget{classhashtable_ace3659f5a29b5abbeead961f612563f0}\label{classhashtable_ace3659f5a29b5abbeead961f612563f0}} 
+\hyperlink{structiterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classhashtable_a64bdf03e3603bb6eee9efce674181551}\label{classhashtable_a64bdf03e3603bb6eee9efce674181551}} 
+\hyperlink{structiterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classhashtable_a0883733b4a6d726b45fd46ad4bd3220d}\label{classhashtable_a0883733b4a6d726b45fd46ad4bd3220d}} 
+local\+\_\+iterator {\bfseries begin} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classhashtable_a4ca2e142f5c179e68280932e5a12f6b4}\label{classhashtable_a4ca2e142f5c179e68280932e5a12f6b4}} 
+local\+\_\+iterator {\bfseries end} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classhashtable_a5be315ba535c6de11db51430e6ad6438}\label{classhashtable_a5be315ba535c6de11db51430e6ad6438}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classhashtable_ab512801a294cadc9c1ded6f6f2b2af9c}\label{classhashtable_ab512801a294cadc9c1ded6f6f2b2af9c}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a1a6f8cabb0f91889e8e095913348b8dd}\label{classhashtable_a1a6f8cabb0f91889e8e095913348b8dd}} 
+const\+\_\+local\+\_\+iterator {\bfseries begin} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classhashtable_ac868c2ca569627372817ec2f261df4a9}\label{classhashtable_ac868c2ca569627372817ec2f261df4a9}} 
+const\+\_\+local\+\_\+iterator {\bfseries end} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classhashtable_a849f4d224a597465337740065a151259}\label{classhashtable_a849f4d224a597465337740065a151259}} 
+size\+\_\+type {\bfseries bucket\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a8a7714cabd613c8696f3697b9c9c8fb9}\label{classhashtable_a8a7714cabd613c8696f3697b9c9c8fb9}} 
+size\+\_\+type {\bfseries max\+\_\+bucket\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classhashtable_ac050145d008edd4034dc566eb098301e}\label{classhashtable_ac050145d008edd4034dc566eb098301e}} 
+size\+\_\+type {\bfseries elems\+\_\+in\+\_\+bucket} (size\+\_\+type \+\_\+\+\_\+bucket) const
+\item 
+\mbox{\Hypertarget{classhashtable_ae2bf062955dc04974a28b25f5eeac2ee}\label{classhashtable_ae2bf062955dc04974a28b25f5eeac2ee}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries bucket} (const \+\_\+\+KT \&\+\_\+\+\_\+k) const
+\item 
+\mbox{\Hypertarget{classhashtable_ad8a5a06468ea64c1ab3f15e05e904526}\label{classhashtable_ad8a5a06468ea64c1ab3f15e05e904526}} 
+float {\bfseries load\+\_\+factor} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a893d654bd3fb35ee04f4d295b28b4486}\label{classhashtable_a893d654bd3fb35ee04f4d295b28b4486}} 
+float {\bfseries max\+\_\+load\+\_\+factor} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a50e0c6b31d67dac674cc64561c767e47}\label{classhashtable_a50e0c6b31d67dac674cc64561c767e47}} 
+\hyperlink{interfacevoid}{void} {\bfseries max\+\_\+load\+\_\+factor} (float \+\_\+\+\_\+z)
+\item 
+\mbox{\Hypertarget{classhashtable_a3001b32bbe1999b16e7b2b7c1890ac79}\label{classhashtable_a3001b32bbe1999b16e7b2b7c1890ac79}} 
+\hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, bool $>$ {\bfseries insert\+\_\+unique} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_a5a694e9d853644b71654e0b0a82a2246}\label{classhashtable_a5a694e9d853644b71654e0b0a82a2246}} 
+\hyperlink{structiterator}{iterator} {\bfseries insert\+\_\+equal} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_afc1fcb6e5ba4fbb0dff5bb49029cc046}\label{classhashtable_afc1fcb6e5ba4fbb0dff5bb49029cc046}} 
+\hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, bool $>$ {\bfseries insert\+\_\+unique\+\_\+noresize} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_a6f7e6b7ba3b550dd13105fbfac78ce3e}\label{classhashtable_a6f7e6b7ba3b550dd13105fbfac78ce3e}} 
+\hyperlink{structiterator}{iterator} {\bfseries insert\+\_\+equal\+\_\+noresize} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_abc78f4e2494542433a5d48b610012540}\label{classhashtable_abc78f4e2494542433a5d48b610012540}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (const value\+\_\+type $\ast$\+\_\+\+\_\+f, const value\+\_\+type $\ast$\+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a906d1973cb8233c69f6bbc6a14447806}\label{classhashtable_a906d1973cb8233c69f6bbc6a14447806}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (const value\+\_\+type $\ast$\+\_\+\+\_\+f, const value\+\_\+type $\ast$\+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a7d6ed31a630f60f771aba6e018717604}\label{classhashtable_a7d6ed31a630f60f771aba6e018717604}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (const\+\_\+iterator \+\_\+\+\_\+f, const\+\_\+iterator \+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a36a544f9d96dad053e3aee0dc4d9deda}\label{classhashtable_a36a544f9d96dad053e3aee0dc4d9deda}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (const\+\_\+iterator \+\_\+\+\_\+f, const\+\_\+iterator \+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a9f6c7c05b8895882a3de2764831a0eca}\label{classhashtable_a9f6c7c05b8895882a3de2764831a0eca}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structiterator}{iterator} {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classhashtable_a0e2a79c8576a96fa82752485844d04e1}\label{classhashtable_a0e2a79c8576a96fa82752485844d04e1}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT const\+\_\+iterator {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classhashtable_af285e0578bbb1cf071b11e26476e820f}\label{classhashtable_af285e0578bbb1cf071b11e26476e820f}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries count} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classhashtable_ac454537f2e28b45372646c382e98984a}\label{classhashtable_ac454537f2e28b45372646c382e98984a}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, \hyperlink{structiterator}{iterator} $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classhashtable_a79fe7edebd28031966c8f5f57ea86145}\label{classhashtable_a79fe7edebd28031966c8f5f57ea86145}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ const\+\_\+iterator, const\+\_\+iterator $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classhashtable_a1974a9a3cfd47c0735950b94c4257db4}\label{classhashtable_a1974a9a3cfd47c0735950b94c4257db4}} 
+size\+\_\+type {\bfseries erase} (const key\+\_\+type \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classhashtable_aef92d17ec1239320db088fcafdedab18}\label{classhashtable_aef92d17ec1239320db088fcafdedab18}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const\+\_\+iterator \+\_\+\+\_\+it)
+\item 
+\mbox{\Hypertarget{classhashtable_a91aa73feb515a86fd2c92213d5bbba14}\label{classhashtable_a91aa73feb515a86fd2c92213d5bbba14}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classhashtable_ac9659e48cdb2f5d1c6ea1a15e25c41c0}\label{classhashtable_ac9659e48cdb2f5d1c6ea1a15e25c41c0}} 
+\hyperlink{interfacevoid}{void} {\bfseries rehash} (size\+\_\+type \+\_\+\+\_\+num\+\_\+buckets\+\_\+hint)
+\item 
+\mbox{\Hypertarget{classhashtable_ad0acccd0331a261cceb46601eb2c4cf0}\label{classhashtable_ad0acccd0331a261cceb46601eb2c4cf0}} 
+\hyperlink{interfacevoid}{void} {\bfseries resize} (size\+\_\+type \+\_\+\+\_\+num\+\_\+buckets\+\_\+hint)
+\item 
+\mbox{\Hypertarget{classhashtable_acc0ab8ddc2a832b18d760cdf96d2809b}\label{classhashtable_acc0ab8ddc2a832b18d760cdf96d2809b}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classhashtable_a0238c15fe01ab9fa372dbffd282ab0a8}\label{classhashtable_a0238c15fe01ab9fa372dbffd282ab0a8}} 
+reference {\bfseries \+\_\+\+M\+\_\+insert} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_ae08e112dcb9455d40455eb795e37feb9}\label{classhashtable_ae08e112dcb9455d40455eb795e37feb9}} 
+hasher {\bfseries hash\+\_\+funct} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a52477a0bb42d4170b09d90291d10ec36}\label{classhashtable_a52477a0bb42d4170b09d90291d10ec36}} 
+key\+\_\+equal {\bfseries key\+\_\+eq} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a45f92c1514cbf95304ddb11228004045}\label{classhashtable_a45f92c1514cbf95304ddb11228004045}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{classhashtable_ad4cab2e10219bf6e7131376288cb7adc}\label{classhashtable_ad4cab2e10219bf6e7131376288cb7adc}} 
+{\bfseries hashtable} (size\+\_\+type \+\_\+\+\_\+n, const \+\_\+\+HF \&\+\_\+\+\_\+hf, const \+\_\+\+EqK \&\+\_\+\+\_\+eql, const \+\_\+\+ExK \&\+\_\+\+\_\+ext, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classhashtable_a23fd20375cbba8e496ee88789f89c654}\label{classhashtable_a23fd20375cbba8e496ee88789f89c654}} 
+{\bfseries hashtable} (size\+\_\+type \+\_\+\+\_\+n, const \+\_\+\+HF \&\+\_\+\+\_\+hf, const \+\_\+\+EqK \&\+\_\+\+\_\+eql, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classhashtable_a68d642038380c9db090140e82daf1fef}\label{classhashtable_a68d642038380c9db090140e82daf1fef}} 
+{\bfseries hashtable} (const \hyperlink{classhashtable}{\+\_\+\+Self} \&\+\_\+\+\_\+ht)
+\item 
+\mbox{\Hypertarget{classhashtable_a1e0899e2bf53826f2531295283fdeb9d}\label{classhashtable_a1e0899e2bf53826f2531295283fdeb9d}} 
+{\bfseries hashtable} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classhashtable}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{classhashtable_ac2327a675ed3949ff1f36495c5211977}\label{classhashtable_ac2327a675ed3949ff1f36495c5211977}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classhashtable_ab345b909b769ec74109810bc36281559}\label{classhashtable_ab345b909b769ec74109810bc36281559}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a7c682967726ae9d11ddb30f476daa7dd}\label{classhashtable_a7c682967726ae9d11ddb30f476daa7dd}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a5bc53028dd2381c784e4bb92a318f35e}\label{classhashtable_a5bc53028dd2381c784e4bb92a318f35e}} 
+\hyperlink{classhashtable}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{classhashtable}{\+\_\+\+Self} \&\+\_\+\+\_\+ht)
+\item 
+\mbox{\Hypertarget{classhashtable_ab73a15778f2fbc33d6e2d47579184be3}\label{classhashtable_ab73a15778f2fbc33d6e2d47579184be3}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{classhashtable}{\+\_\+\+Self} \&\+\_\+\+\_\+ht)
+\item 
+\mbox{\Hypertarget{classhashtable_ace3659f5a29b5abbeead961f612563f0}\label{classhashtable_ace3659f5a29b5abbeead961f612563f0}} 
+\hyperlink{structiterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classhashtable_a64bdf03e3603bb6eee9efce674181551}\label{classhashtable_a64bdf03e3603bb6eee9efce674181551}} 
+\hyperlink{structiterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classhashtable_a0883733b4a6d726b45fd46ad4bd3220d}\label{classhashtable_a0883733b4a6d726b45fd46ad4bd3220d}} 
+local\+\_\+iterator {\bfseries begin} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classhashtable_a4ca2e142f5c179e68280932e5a12f6b4}\label{classhashtable_a4ca2e142f5c179e68280932e5a12f6b4}} 
+local\+\_\+iterator {\bfseries end} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classhashtable_a5be315ba535c6de11db51430e6ad6438}\label{classhashtable_a5be315ba535c6de11db51430e6ad6438}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classhashtable_ab512801a294cadc9c1ded6f6f2b2af9c}\label{classhashtable_ab512801a294cadc9c1ded6f6f2b2af9c}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a1a6f8cabb0f91889e8e095913348b8dd}\label{classhashtable_a1a6f8cabb0f91889e8e095913348b8dd}} 
+const\+\_\+local\+\_\+iterator {\bfseries begin} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classhashtable_ac868c2ca569627372817ec2f261df4a9}\label{classhashtable_ac868c2ca569627372817ec2f261df4a9}} 
+const\+\_\+local\+\_\+iterator {\bfseries end} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classhashtable_a3001b32bbe1999b16e7b2b7c1890ac79}\label{classhashtable_a3001b32bbe1999b16e7b2b7c1890ac79}} 
+\hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, bool $>$ {\bfseries insert\+\_\+unique} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_a5a694e9d853644b71654e0b0a82a2246}\label{classhashtable_a5a694e9d853644b71654e0b0a82a2246}} 
+\hyperlink{structiterator}{iterator} {\bfseries insert\+\_\+equal} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_aaf417fbfb94c9c9a4ef33a4dc7fc6f80}\label{classhashtable_aaf417fbfb94c9c9a4ef33a4dc7fc6f80}} 
+\hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, bool $>$ {\bfseries insert\+\_\+unique\+\_\+noresize} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_af2ae0bd7b170c562c13fc5270ea3317d}\label{classhashtable_af2ae0bd7b170c562c13fc5270ea3317d}} 
+\hyperlink{structiterator}{iterator} {\bfseries insert\+\_\+equal\+\_\+noresize} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_abc78f4e2494542433a5d48b610012540}\label{classhashtable_abc78f4e2494542433a5d48b610012540}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (const value\+\_\+type $\ast$\+\_\+\+\_\+f, const value\+\_\+type $\ast$\+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a906d1973cb8233c69f6bbc6a14447806}\label{classhashtable_a906d1973cb8233c69f6bbc6a14447806}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (const value\+\_\+type $\ast$\+\_\+\+\_\+f, const value\+\_\+type $\ast$\+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a7d6ed31a630f60f771aba6e018717604}\label{classhashtable_a7d6ed31a630f60f771aba6e018717604}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (const\+\_\+iterator \+\_\+\+\_\+f, const\+\_\+iterator \+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a36a544f9d96dad053e3aee0dc4d9deda}\label{classhashtable_a36a544f9d96dad053e3aee0dc4d9deda}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (const\+\_\+iterator \+\_\+\+\_\+f, const\+\_\+iterator \+\_\+\+\_\+l)
+\item 
+\mbox{\Hypertarget{classhashtable_a9f6c7c05b8895882a3de2764831a0eca}\label{classhashtable_a9f6c7c05b8895882a3de2764831a0eca}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structiterator}{iterator} {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classhashtable_a0e2a79c8576a96fa82752485844d04e1}\label{classhashtable_a0e2a79c8576a96fa82752485844d04e1}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT const\+\_\+iterator {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classhashtable_af285e0578bbb1cf071b11e26476e820f}\label{classhashtable_af285e0578bbb1cf071b11e26476e820f}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries count} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classhashtable_ac454537f2e28b45372646c382e98984a}\label{classhashtable_ac454537f2e28b45372646c382e98984a}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{structiterator}{iterator}, \hyperlink{structiterator}{iterator} $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classhashtable_a79fe7edebd28031966c8f5f57ea86145}\label{classhashtable_a79fe7edebd28031966c8f5f57ea86145}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ const\+\_\+iterator, const\+\_\+iterator $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+key) const
+\item 
+\mbox{\Hypertarget{classhashtable_a566bcb7cde220487dacde9f003b30cfe}\label{classhashtable_a566bcb7cde220487dacde9f003b30cfe}} 
+size\+\_\+type {\bfseries erase} (const key\+\_\+type \&\+\_\+\+\_\+key)
+\item 
+\mbox{\Hypertarget{classhashtable_a59cb9f10ea00af6cbe8b687e2d1330ee}\label{classhashtable_a59cb9f10ea00af6cbe8b687e2d1330ee}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const const\+\_\+iterator \&\+\_\+\+\_\+it)
+\item 
+\mbox{\Hypertarget{classhashtable_a91aa73feb515a86fd2c92213d5bbba14}\label{classhashtable_a91aa73feb515a86fd2c92213d5bbba14}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classhashtable_ac9659e48cdb2f5d1c6ea1a15e25c41c0}\label{classhashtable_ac9659e48cdb2f5d1c6ea1a15e25c41c0}} 
+\hyperlink{interfacevoid}{void} {\bfseries rehash} (size\+\_\+type \+\_\+\+\_\+num\+\_\+buckets\+\_\+hint)
+\item 
+\mbox{\Hypertarget{classhashtable_a5c09ca7d9e6c433a14965bd839f8d09d}\label{classhashtable_a5c09ca7d9e6c433a14965bd839f8d09d}} 
+\hyperlink{interfacevoid}{void} {\bfseries resize} (size\+\_\+type \+\_\+\+\_\+num\+\_\+elements\+\_\+hint)
+\item 
+\mbox{\Hypertarget{classhashtable_acc0ab8ddc2a832b18d760cdf96d2809b}\label{classhashtable_acc0ab8ddc2a832b18d760cdf96d2809b}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classhashtable_a6b2f3071fcced2f436a5b347adc75c73}\label{classhashtable_a6b2f3071fcced2f436a5b347adc75c73}} 
+reference {\bfseries \+\_\+\+M\+\_\+insert} (const value\+\_\+type \&\+\_\+\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classhashtable_a849f4d224a597465337740065a151259}\label{classhashtable_a849f4d224a597465337740065a151259}} 
+size\+\_\+type {\bfseries bucket\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a8a7714cabd613c8696f3697b9c9c8fb9}\label{classhashtable_a8a7714cabd613c8696f3697b9c9c8fb9}} 
+size\+\_\+type {\bfseries max\+\_\+bucket\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a175e82cb6b966fd93ccbabbbb16d5bb3}\label{classhashtable_a175e82cb6b966fd93ccbabbbb16d5bb3}} 
+size\+\_\+type {\bfseries elems\+\_\+in\+\_\+bucket} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classhashtable_ae2bf062955dc04974a28b25f5eeac2ee}\label{classhashtable_ae2bf062955dc04974a28b25f5eeac2ee}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries bucket} (const \+\_\+\+KT \&\+\_\+\+\_\+k) const
+\item 
+\mbox{\Hypertarget{classhashtable_ad8a5a06468ea64c1ab3f15e05e904526}\label{classhashtable_ad8a5a06468ea64c1ab3f15e05e904526}} 
+float {\bfseries load\+\_\+factor} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a893d654bd3fb35ee04f4d295b28b4486}\label{classhashtable_a893d654bd3fb35ee04f4d295b28b4486}} 
+float {\bfseries max\+\_\+load\+\_\+factor} () const
+\item 
+\mbox{\Hypertarget{classhashtable_a50e0c6b31d67dac674cc64561c767e47}\label{classhashtable_a50e0c6b31d67dac674cc64561c767e47}} 
+\hyperlink{interfacevoid}{void} {\bfseries max\+\_\+load\+\_\+factor} (float \+\_\+\+\_\+z)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classhashtable_a595d23b1283e51c5c3d9f41594b72693}\label{classhashtable_a595d23b1283e51c5c3d9f41594b72693}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+insert\+\_\+noresize} (size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+obj)
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+hashtable.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+hashtable.\+c\end{DoxyCompactItemize}

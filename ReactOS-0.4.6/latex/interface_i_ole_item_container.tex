@@ -1,0 +1,53 @@
+\hypertarget{interface_i_ole_item_container}{}\section{I\+Ole\+Item\+Container接口 参考}
+\label{interface_i_ole_item_container}\index{I\+Ole\+Item\+Container@{I\+Ole\+Item\+Container}}
+类 I\+Ole\+Item\+Container 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_ole_item_container}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_ac103f2edc91b88d7d9efc71f7201aa8a}\label{interface_i_ole_item_container_ac103f2edc91b88d7d9efc71f7201aa8a}} 
+enum {\bfseries tag\+B\+I\+N\+D\+S\+P\+E\+ED} \{ {\bfseries B\+I\+N\+D\+S\+P\+E\+E\+D\+\_\+\+I\+N\+D\+E\+F\+I\+N\+I\+TE} = 1, 
+{\bfseries B\+I\+N\+D\+S\+P\+E\+E\+D\+\_\+\+M\+O\+D\+E\+R\+A\+TE} = 2, 
+{\bfseries B\+I\+N\+D\+S\+P\+E\+E\+D\+\_\+\+I\+M\+M\+E\+D\+I\+A\+TE} = 3
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_ae4500cdafc9a266a817532989b1674b7}\label{interface_i_ole_item_container_ae4500cdafc9a266a817532989b1674b7}} 
+enum {\bfseries tag\+O\+L\+E\+C\+O\+N\+TF} \{ \newline
+{\bfseries O\+L\+E\+C\+O\+N\+T\+F\+\_\+\+E\+M\+B\+E\+D\+D\+I\+N\+GS} = 1, 
+{\bfseries O\+L\+E\+C\+O\+N\+T\+F\+\_\+\+L\+I\+N\+KS} = 2, 
+{\bfseries O\+L\+E\+C\+O\+N\+T\+F\+\_\+\+O\+T\+H\+E\+RS} = 4, 
+{\bfseries O\+L\+E\+C\+O\+N\+T\+F\+\_\+\+O\+N\+L\+Y\+U\+S\+ER} = 8, 
+\newline
+{\bfseries O\+L\+E\+C\+O\+N\+T\+F\+\_\+\+O\+N\+L\+Y\+I\+F\+R\+U\+N\+N\+I\+NG} = 16
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_a692e62c3f1d974f8b5378e5b1e843964}\label{interface_i_ole_item_container_a692e62c3f1d974f8b5378e5b1e843964}} 
+typedef \hyperlink{interface_i_ole_item_container}{I\+Ole\+Item\+Container} $\ast$ {\bfseries L\+P\+O\+L\+E\+I\+T\+E\+M\+C\+O\+N\+T\+A\+I\+N\+ER}
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_a0c7905d267097934d4c4c65eaeb5f3c3}\label{interface_i_ole_item_container_a0c7905d267097934d4c4c65eaeb5f3c3}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Ole\+Item\+Container\+::tag\+B\+I\+N\+D\+S\+P\+E\+ED {\bfseries B\+I\+N\+D\+S\+P\+E\+ED}
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_a1aef2ace6664aa143cf7f600263d3654}\label{interface_i_ole_item_container_a1aef2ace6664aa143cf7f600263d3654}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Ole\+Item\+Container\+::tag\+O\+L\+E\+C\+O\+N\+TF {\bfseries O\+L\+E\+C\+O\+N\+TF}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_a3dc19b6c1aa2356bfec61a62c329c009}\label{interface_i_ole_item_container_a3dc19b6c1aa2356bfec61a62c329c009}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Object} (\mbox{[}in\mbox{]} L\+P\+O\+L\+E\+S\+TR psz\+Item, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Speed\+Needed, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_a9aaee009915f8732b36e977d75c07513}\label{interface_i_ole_item_container_a9aaee009915f8732b36e977d75c07513}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Object\+Storage} (\mbox{[}in\mbox{]} L\+P\+O\+L\+E\+S\+TR psz\+Item, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Storage)
+\item 
+\mbox{\Hypertarget{interface_i_ole_item_container_a29c79638e5df50378ec3f83e28a23607}\label{interface_i_ole_item_container_a29c79638e5df50378ec3f83e28a23607}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Running} (\mbox{[}in\mbox{]} L\+P\+O\+L\+E\+S\+TR psz\+Item)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/oleidl.\+idl\end{DoxyCompactItemize}

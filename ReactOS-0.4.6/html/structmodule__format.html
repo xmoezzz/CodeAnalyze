@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: module_format结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structmodule__format-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">module_format结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a0fbff815fdeb23a7c4db7b0ad7af74d8"><td class="memItemLeft" align="right" valign="top"><a id="a0fbff815fdeb23a7c4db7b0ad7af74d8"></a>
+<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structmodule.html">module</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>module</b></td></tr>
+<tr class="separator:a0fbff815fdeb23a7c4db7b0ad7af74d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f327a88936a2a3a6c7e4d6bdf0e37f"><td class="memItemLeft" align="right" valign="top"><a id="ae9f327a88936a2a3a6c7e4d6bdf0e37f"></a>
+<a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> )(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structprocess.html">process</a> *pcs, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structmodule__format.html">module_format</a> *modfmt)</td></tr>
+<tr class="separator:ae9f327a88936a2a3a6c7e4d6bdf0e37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bfb68fdf37bc5bf6d37790c9781699"><td class="memItemLeft" align="right" valign="top"><a id="a55bfb68fdf37bc5bf6d37790c9781699"></a>
+<a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>loc_compute</b> )(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structprocess.html">process</a> *pcs, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structmodule__format.html">module_format</a> *modfmt, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structsymt__function.html">symt_function</a> *<a class="el" href="interfacevoid.html">func</a>, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structlocation.html">location</a> *loc)</td></tr>
+<tr class="separator:a55bfb68fdf37bc5bf6d37790c9781699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41598ff7029a8e61f9d7cf72c3d047bd"><td class="memItemLeft" ><a id="a41598ff7029a8e61f9d7cf72c3d047bd"></a>
+union {</td></tr>
+<tr class="memitem:ab1a12b98c1c2894f179e9b1a0cf81016"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> elf_module_info *&#160;&#160;&#160;<b>elf_info</b></td></tr>
+<tr class="separator:ab1a12b98c1c2894f179e9b1a0cf81016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6e8b6e438fce7f8dae58b70568750a"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structdwarf2__module__info__s.html">dwarf2_module_info_s</a> *&#160;&#160;&#160;<b>dwarf2_info</b></td></tr>
+<tr class="separator:a6d6e8b6e438fce7f8dae58b70568750a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fa1b82110fadfa43cdc78ad756a159"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpe__module__info.html">pe_module_info</a> *&#160;&#160;&#160;<b>pe_info</b></td></tr>
+<tr class="separator:aa5fa1b82110fadfa43cdc78ad756a159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2242d66286a0094598a48053de48d4"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> macho_module_info *&#160;&#160;&#160;<b>macho_info</b></td></tr>
+<tr class="separator:aba2242d66286a0094598a48053de48d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1917a84e40ad8b48832cf742d9028a6"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpdb__module__info.html">pdb_module_info</a> *&#160;&#160;&#160;<b>pdb_info</b></td></tr>
+<tr class="separator:ab1917a84e40ad8b48832cf742d9028a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41598ff7029a8e61f9d7cf72c3d047bd"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b></td></tr>
+<tr class="separator:a41598ff7029a8e61f9d7cf72c3d047bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/win32/dbghelp/<a class="el" href="dbghelp__private_8h_source.html">dbghelp_private.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

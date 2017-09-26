@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/drivers/network/tcpip/include/transmit.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_283433fb0e3adc3d407d1e24f0718b0e.html">drivers</a></li><li class="navelem"><a class="el" href="dir_75968cbed6dfdde972b8a41c3f62d337.html">network</a></li><li class="navelem"><a class="el" href="dir_8d51aba3e0a04cd45457c07c2a639744.html">tcpip</a></li><li class="navelem"><a class="el" href="dir_84e5a211106fc749fd51696d03d73546.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">transmit.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * COPYRIGHT:   See COPYING in the top level directory</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * PROJECT:     ReactOS TCP/IP protocol driver</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * FILE:        include/transmit.h</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * PURPOSE:     Internet Protocol transmit prototypes</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">typedef</span> <a class="code" href="interfacevoid.html">VOID</a> (*PIP_TRANSMIT_COMPLETE)( <a class="code" href="interfacevoid.html">PVOID</a> <a class="code" href="struct_context.html">Context</a>,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                       <a class="code" href="struct___n_d_i_s___p_a_c_k_e_t.html">PNDIS_PACKET</a> Packet,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                       NDIS_STATUS Status );</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/* IP fragment context information */</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_i_p_f_r_a_g_m_e_n_t___c_o_n_t_e_x_t.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_i_p_f_r_a_g_m_e_n_t___c_o_n_t_e_x_t.html">IPFRAGMENT_CONTEXT</a> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_i_p_f_r_a_g_m_e_n_t___c_o_n_t_e_x_t.html">IPFRAGMENT_CONTEXT</a> *Next;    <span class="comment">/* Pointer to next in list */</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="struct___n_d_i_s___p_a_c_k_e_t.html">PNDIS_PACKET</a> Datagram;              <span class="comment">/* Pointer to original NDIS packet */</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="interfacevoid.html">PVOID</a> DatagramData;                 <span class="comment">/* Pointer to datagram data */</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    UINT HeaderSize;                    <span class="comment">/* IP datagram header size */</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="struct___n_d_i_s___p_a_c_k_e_t.html">PNDIS_PACKET</a> NdisPacket;            <span class="comment">/* Pointer to NDIS packet */</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    PNDIS_BUFFER NdisBuffer;            <span class="comment">/* Pointer to NDIS buffer */</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="interfacevoid.html">PVOID</a> <a class="code" href="class_header.html">Header</a>;                       <span class="comment">/* Pointer to IP header in fragment buffer */</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="interfacevoid.html">PVOID</a> <a class="code" href="struct_data.html">Data</a>;                         <span class="comment">/* Pointer to fragment data */</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    UINT Position;                      <span class="comment">/* Current fragment offset */</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    UINT BytesLeft;                     <span class="comment">/* Number of bytes left to send */</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    UINT PathMTU;                       <span class="comment">/* Path Maximum Transmission Unit */</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="struct_n_e_i_g_h_b_o_r___c_a_c_h_e___e_n_t_r_y.html">PNEIGHBOR_CACHE_ENTRY</a> NCE;          <span class="comment">/* Pointer to NCE to use */</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="struct___k_e_v_e_n_t.html">KEVENT</a> <a class="code" href="struct_event.html">Event</a>;                       <span class="comment">/* Signalled when the transmission is complete */</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    NDIS_STATUS Status;                 <span class="comment">/* Status of the transmission */</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <a class="code" href="struct_i_p_f_r_a_g_m_e_n_t___c_o_n_t_e_x_t.html">IPFRAGMENT_CONTEXT</a>, *<a class="code" href="struct_i_p_f_r_a_g_m_e_n_t___c_o_n_t_e_x_t.html">PIPFRAGMENT_CONTEXT</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;NTSTATUS IPSendDatagram(<a class="code" href="struct___i_p___p_a_c_k_e_t.html">PIP_PACKET</a> IPPacket, <a class="code" href="struct_n_e_i_g_h_b_o_r___c_a_c_h_e___e_n_t_r_y.html">PNEIGHBOR_CACHE_ENTRY</a> NCE);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* EOF */</span></div><div class="ttc" id="struct___k_e_v_e_n_t_html"><div class="ttname"><a href="struct___k_e_v_e_n_t.html">_KEVENT</a></div><div class="ttdef"><b>Definition:</b> ketypes.h:784</div></div>
+<div class="ttc" id="struct___n_d_i_s___p_a_c_k_e_t_html"><div class="ttname"><a href="struct___n_d_i_s___p_a_c_k_e_t.html">_NDIS_PACKET</a></div><div class="ttdef"><b>Definition:</b> ndis.h:733</div></div>
+<div class="ttc" id="struct_data_html"><div class="ttname"><a href="struct_data.html">Data</a></div><div class="ttdef"><b>Definition:</b> sort_test.cpp:77</div></div>
+<div class="ttc" id="struct_n_e_i_g_h_b_o_r___c_a_c_h_e___e_n_t_r_y_html"><div class="ttname"><a href="struct_n_e_i_g_h_b_o_r___c_a_c_h_e___e_n_t_r_y.html">NEIGHBOR_CACHE_ENTRY</a></div><div class="ttdef"><b>Definition:</b> neighbor.h:28</div></div>
+<div class="ttc" id="struct_i_p_f_r_a_g_m_e_n_t___c_o_n_t_e_x_t_html"><div class="ttname"><a href="struct_i_p_f_r_a_g_m_e_n_t___c_o_n_t_e_x_t.html">IPFRAGMENT_CONTEXT</a></div><div class="ttdef"><b>Definition:</b> transmit.h:15</div></div>
+<div class="ttc" id="struct_context_html"><div class="ttname"><a href="struct_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> compobj.c:4618</div></div>
+<div class="ttc" id="class_header_html"><div class="ttname"><a href="class_header.html">Header</a></div><div class="ttdef"><b>Definition:</b> Header.h:8</div></div>
+<div class="ttc" id="struct___i_p___p_a_c_k_e_t_html"><div class="ttname"><a href="struct___i_p___p_a_c_k_e_t.html">_IP_PACKET</a></div><div class="ttdef"><b>Definition:</b> ip.h:77</div></div>
+<div class="ttc" id="struct_event_html"><div class="ttname"><a href="struct_event.html">Event</a></div><div class="ttdef"><b>Definition:</b> filtergraph.c:30</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

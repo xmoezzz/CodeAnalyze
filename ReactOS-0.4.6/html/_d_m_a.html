@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: Implementation Notes</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Implementation Notes </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Concepts:</p>
+<ul>
+<li><p class="startli">Map register</p>
+<p class="startli">Abstract encapsulation of physically contiguous buffer that resides in memory accessible by both the DMA device / controller and the system. The map registers are allocated and distributed on demand and are scarce resource.</p>
+<p class="startli">The actual use of map registers is to allow transfers from/to buffer located in physical memory at address inaccessible by the DMA device / controller directly. For such transfers the map register buffers are used as intermediate data storage.</p>
+</li>
+<li><p class="startli">Master adapter</p>
+<p class="startli"><a class="el" href="struct_a.html">A</a> container for map registers (typically corresponding to one physical bus connection type). There can be master adapters for 24-bit address ranges, 32-bit address ranges, etc. Every time a new DMA adapter is created it's associated with a corresponding master adapter that is used for any map register allocation requests.</p>
+</li>
+<li><p class="startli">Bus-master / Slave DMA</p>
+<p class="startli">Slave DMA is term used for DMA transfers done by the system (E)ISA controller as opposed to transfers mastered by the device itself (hence the name).</p>
+<p class="startli">For slave DMA special care is taken to actually access the system controller and handle the transfers. The relevant code is in HalpDmaInitializeEisaAdapter, HalReadDmaCounter, IoFlushAdapterBuffers and IoMapTransfer.</p>
+</li>
+</ul>
+<p>Implementation:</p>
+<ul>
+<li><p class="startli">Allocation of map registers</p>
+<p class="startli">Initial set of map registers is allocated on the system start to ensure that low memory won't get filled up later. Additional map registers are allocated as needed by HalpGrowMapBuffers. <a class="el" href="namespace_this.html">This</a> routine is called on two places:</p><ul>
+<li>HalGetAdapter, since we're at PASSIVE_LEVEL and it's known that more map registers will probably be needed.</li>
+<li>IoAllocateAdapterChannel (indirectly using HalpGrowMapBufferWorker since we're at DISPATCH_LEVEL and call HalpGrowMapBuffers directly) when no more map registers are free.</li>
+</ul>
+<p class="startli">Note that even if no more map registers can be allocated it's not the end of the world. The adapters waiting for free map registers are queued in the master adapter's queue and once one driver hands back it's map registers (using IoFreeMapRegisters or indirectly using the execution routine callback in IoAllocateAdapterChannel) the queue gets processed and the map registers are reassigned. </p>
+</li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

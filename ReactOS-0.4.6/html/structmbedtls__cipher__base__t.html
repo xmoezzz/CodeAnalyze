@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: mbedtls_cipher_base_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structmbedtls__cipher__base__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mbedtls_cipher_base_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="cipher__internal_8h_source.html">cipher_internal.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a0c4c819c23b0a579445f92a4bee7d577"><td class="memItemLeft" align="right" valign="top">mbedtls_cipher_id_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#a0c4c819c23b0a579445f92a4bee7d577">cipher</a></td></tr>
+<tr class="separator:a0c4c819c23b0a579445f92a4bee7d577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57bc9b81dd43b63915b37ab56b0468d"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#ab57bc9b81dd43b63915b37ab56b0468d">ecb_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx, mbedtls_operation_t <a class="el" href="interfacevoid.html">mode</a>, const unsigned char *input, unsigned char *output)</td></tr>
+<tr class="separator:ab57bc9b81dd43b63915b37ab56b0468d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205924b0ffe7b35d4b74a7a4c6675ddf"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#a205924b0ffe7b35d4b74a7a4c6675ddf">cbc_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx, mbedtls_operation_t <a class="el" href="interfacevoid.html">mode</a>, size_t length, unsigned char *iv, const unsigned char *input, unsigned char *output)</td></tr>
+<tr class="separator:a205924b0ffe7b35d4b74a7a4c6675ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06361a67ea8a128d3a58b4f99ee6cf5f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#a06361a67ea8a128d3a58b4f99ee6cf5f">cfb_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx, mbedtls_operation_t <a class="el" href="interfacevoid.html">mode</a>, size_t length, size_t *iv_off, unsigned char *iv, const unsigned char *input, unsigned char *output)</td></tr>
+<tr class="separator:a06361a67ea8a128d3a58b4f99ee6cf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d68fe4b133c56acb5b05029b8f60ea"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#ac3d68fe4b133c56acb5b05029b8f60ea">ctr_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx, size_t length, size_t *nc_off, unsigned char *nonce_counter, unsigned char *stream_block, const unsigned char *input, unsigned char *output)</td></tr>
+<tr class="separator:ac3d68fe4b133c56acb5b05029b8f60ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52099766d7c09f16e702d78b6819d9e9"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#a52099766d7c09f16e702d78b6819d9e9">stream_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx, size_t length, const unsigned char *input, unsigned char *output)</td></tr>
+<tr class="separator:a52099766d7c09f16e702d78b6819d9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775aad5b31782d29bb0fd9414c366a6a"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#a775aad5b31782d29bb0fd9414c366a6a">setkey_enc_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx, const unsigned char *<a class="el" href="structkey.html">key</a>, unsigned int key_bitlen)</td></tr>
+<tr class="separator:a775aad5b31782d29bb0fd9414c366a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946b52cf0745a0d098781804a68d958c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#a946b52cf0745a0d098781804a68d958c">setkey_dec_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx, const unsigned char *<a class="el" href="structkey.html">key</a>, unsigned int key_bitlen)</td></tr>
+<tr class="separator:a946b52cf0745a0d098781804a68d958c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b0567a8a1644bc9325d08f74bbca99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#a95b0567a8a1644bc9325d08f74bbca99">ctx_alloc_func</a> )(<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a95b0567a8a1644bc9325d08f74bbca99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb84630477b19baf2831369e69965a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__cipher__base__t.html#abbb84630477b19baf2831369e69965a8">ctx_free_func</a> )(<a class="el" href="interfacevoid.html">void</a> *ctx)</td></tr>
+<tr class="separator:abbb84630477b19baf2831369e69965a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Base cipher information. The non-mode specific functions and values. </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a205924b0ffe7b35d4b74a7a4c6675ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205924b0ffe7b35d4b74a7a4c6675ddf">&#9670;&nbsp;</a></span>cbc_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* mbedtls_cipher_base_t::cbc_func) (<a class="el" href="interfacevoid.html">void</a> *ctx, mbedtls_operation_t <a class="el" href="interfacevoid.html">mode</a>, size_t length, unsigned char *iv, const unsigned char *input, unsigned char *output)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encrypt using CBC </p>
+
+</div>
+</div>
+<a id="a06361a67ea8a128d3a58b4f99ee6cf5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06361a67ea8a128d3a58b4f99ee6cf5f">&#9670;&nbsp;</a></span>cfb_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* mbedtls_cipher_base_t::cfb_func) (<a class="el" href="interfacevoid.html">void</a> *ctx, mbedtls_operation_t <a class="el" href="interfacevoid.html">mode</a>, size_t length, size_t *iv_off, unsigned char *iv, const unsigned char *input, unsigned char *output)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encrypt using CFB (Full length) </p>
+
+</div>
+</div>
+<a id="a0c4c819c23b0a579445f92a4bee7d577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4c819c23b0a579445f92a4bee7d577">&#9670;&nbsp;</a></span>cipher</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mbedtls_cipher_id_t mbedtls_cipher_base_t::cipher</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Base Cipher type (e.g. MBEDTLS_CIPHER_ID_AES) </p>
+
+</div>
+</div>
+<a id="ac3d68fe4b133c56acb5b05029b8f60ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d68fe4b133c56acb5b05029b8f60ea">&#9670;&nbsp;</a></span>ctr_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* mbedtls_cipher_base_t::ctr_func) (<a class="el" href="interfacevoid.html">void</a> *ctx, size_t length, size_t *nc_off, unsigned char *nonce_counter, unsigned char *stream_block, const unsigned char *input, unsigned char *output)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encrypt using CTR </p>
+
+</div>
+</div>
+<a id="a95b0567a8a1644bc9325d08f74bbca99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95b0567a8a1644bc9325d08f74bbca99">&#9670;&nbsp;</a></span>ctx_alloc_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a>*(* mbedtls_cipher_base_t::ctx_alloc_func) (<a class="el" href="interfacevoid.html">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocate a new context </p>
+
+</div>
+</div>
+<a id="abbb84630477b19baf2831369e69965a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb84630477b19baf2831369e69965a8">&#9670;&nbsp;</a></span>ctx_free_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a>(* mbedtls_cipher_base_t::ctx_free_func) (<a class="el" href="interfacevoid.html">void</a> *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Free the given context </p>
+
+</div>
+</div>
+<a id="ab57bc9b81dd43b63915b37ab56b0468d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57bc9b81dd43b63915b37ab56b0468d">&#9670;&nbsp;</a></span>ecb_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* mbedtls_cipher_base_t::ecb_func) (<a class="el" href="interfacevoid.html">void</a> *ctx, mbedtls_operation_t <a class="el" href="interfacevoid.html">mode</a>, const unsigned char *input, unsigned char *output)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encrypt using ECB </p>
+
+</div>
+</div>
+<a id="a946b52cf0745a0d098781804a68d958c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a946b52cf0745a0d098781804a68d958c">&#9670;&nbsp;</a></span>setkey_dec_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* mbedtls_cipher_base_t::setkey_dec_func) (<a class="el" href="interfacevoid.html">void</a> *ctx, const unsigned char *<a class="el" href="structkey.html">key</a>, unsigned int key_bitlen)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set key for decryption purposes </p>
+
+</div>
+</div>
+<a id="a775aad5b31782d29bb0fd9414c366a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775aad5b31782d29bb0fd9414c366a6a">&#9670;&nbsp;</a></span>setkey_enc_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* mbedtls_cipher_base_t::setkey_enc_func) (<a class="el" href="interfacevoid.html">void</a> *ctx, const unsigned char *<a class="el" href="structkey.html">key</a>, unsigned int key_bitlen)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set key for encryption purposes </p>
+
+</div>
+</div>
+<a id="a52099766d7c09f16e702d78b6819d9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52099766d7c09f16e702d78b6819d9e9">&#9670;&nbsp;</a></span>stream_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* mbedtls_cipher_base_t::stream_func) (<a class="el" href="interfacevoid.html">void</a> *ctx, size_t length, const unsigned char *input, unsigned char *output)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encrypt using STREAM </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/reactos/libs/mbedtls/<a class="el" href="cipher__internal_8h_source.html">cipher_internal.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

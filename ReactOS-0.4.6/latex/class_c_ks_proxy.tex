@@ -1,0 +1,310 @@
+\hypertarget{class_c_ks_proxy}{}\section{C\+Ks\+Proxy类 参考}
+\label{class_c_ks_proxy}\index{C\+Ks\+Proxy@{C\+Ks\+Proxy}}
+类 C\+Ks\+Proxy 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_c_ks_proxy}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a950b1470410a42634e72610512f7e519}\label{class_c_ks_proxy_a950b1470410a42634e72610512f7e519}} 
+typedef std\+::vector$<$ \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$ $>$ {\bfseries Proxy\+Plugin\+Vector}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a334e6bc0ba31aa72000a6471db481bba}\label{class_c_ks_proxy_a334e6bc0ba31aa72000a6471db481bba}} 
+typedef std\+::vector$<$ \hyperlink{interface_i_pin}{I\+Pin} $\ast$ $>$ {\bfseries Pin\+Vector}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a66ab75e4bacdb29b7ac7f05edc260989}\label{class_c_ks_proxy_a66ab75e4bacdb29b7ac7f05edc260989}} 
+S\+T\+D\+M\+E\+T\+H\+O\+D\+I\+MP {\bfseries Query\+Interface} (R\+E\+F\+I\+ID Interface\+Id, \hyperlink{interfacevoid}{P\+V\+O\+ID} $\ast$Interface)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a58c9e60986675a1e387b1e12eaffc738}\label{class_c_ks_proxy_a58c9e60986675a1e387b1e12eaffc738}} 
+{\bfseries S\+T\+D\+M\+E\+T\+H\+O\+D\+I\+M\+P\+\_\+} (U\+L\+O\+NG) Add\+Ref()
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_afa2adfb06deed773140d43258f828b2e}\label{class_c_ks_proxy_afa2adfb06deed773140d43258f828b2e}} 
+{\bfseries S\+T\+D\+M\+E\+T\+H\+O\+D\+I\+M\+P\+\_\+} (U\+L\+O\+NG) Release()
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_abcd9c6e679992cfa213ea9fd5f3799d7}\label{class_c_ks_proxy_abcd9c6e679992cfa213ea9fd5f3799d7}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Class\+ID} (\hyperlink{struct___i_i_d}{C\+L\+S\+ID} $\ast$p\+Class\+ID)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a370f1a3647354ce09fcba35fed2e879f}\label{class_c_ks_proxy_a370f1a3647354ce09fcba35fed2e879f}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Stop} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a8e91a3bb88ac38f3b23e47e0be53bd6b}\label{class_c_ks_proxy_a8e91a3bb88ac38f3b23e47e0be53bd6b}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Pause} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ab19da6e02e18d28e6417640e714f35f9}\label{class_c_ks_proxy_ab19da6e02e18d28e6417640e714f35f9}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Run} (R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME t\+Start)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_af7c8872168b35d3f2e22db9a7f29058e}\label{class_c_ks_proxy_af7c8872168b35d3f2e22db9a7f29058e}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+State} (D\+W\+O\+RD dw\+Milli\+Secs\+Timeout, F\+I\+L\+T\+E\+R\+\_\+\+S\+T\+A\+TE $\ast$\hyperlink{struct_state}{State})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a4055a427aa2132f0a6325be8af26a6a2}\label{class_c_ks_proxy_a4055a427aa2132f0a6325be8af26a6a2}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Sync\+Source} (\hyperlink{interface_i_reference_clock}{I\+Reference\+Clock} $\ast$p\+Clock)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aa5a84bff7149f17d36cf1902cd0871ff}\label{class_c_ks_proxy_aa5a84bff7149f17d36cf1902cd0871ff}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Sync\+Source} (\hyperlink{interface_i_reference_clock}{I\+Reference\+Clock} $\ast$$\ast$p\+Clock)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a9a8c1ff492a4d94adeaa154fe2c9def5}\label{class_c_ks_proxy_a9a8c1ff492a4d94adeaa154fe2c9def5}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Enum\+Pins} (\hyperlink{interface_i_enum_pins}{I\+Enum\+Pins} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aea4b1d0f8ecedfd9c91d0cc0eedc829d}\label{class_c_ks_proxy_aea4b1d0f8ecedfd9c91d0cc0eedc829d}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Find\+Pin} (L\+P\+C\+W\+S\+TR Id, \hyperlink{interface_i_pin}{I\+Pin} $\ast$$\ast$pp\+Pin)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a04ee40d2e90a2916d72328f5745790b7}\label{class_c_ks_proxy_a04ee40d2e90a2916d72328f5745790b7}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Filter\+Info} (\hyperlink{struct_i_base_filter_1_1___filter_info}{F\+I\+L\+T\+E\+R\+\_\+\+I\+N\+FO} $\ast$p\+Info)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a46a82f204da11882ce75b2dcc52527c2}\label{class_c_ks_proxy_a46a82f204da11882ce75b2dcc52527c2}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Join\+Filter\+Graph} (\hyperlink{interface_i_filter_graph}{I\+Filter\+Graph} $\ast$p\+Graph, L\+P\+C\+W\+S\+TR p\+Name)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aed4dfcb6d163ab7d3b596ea94373bc89}\label{class_c_ks_proxy_aed4dfcb6d163ab7d3b596ea94373bc89}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Vendor\+Info} (L\+P\+W\+S\+TR $\ast$p\+Vendor\+Info)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a5b40adf8e482bdc0dddf53257ec67700}\label{class_c_ks_proxy_a5b40adf8e482bdc0dddf53257ec67700}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Time} (R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$p\+Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_af1afc0c32b2163f964fcc607a8b1f166}\label{class_c_ks_proxy_af1afc0c32b2163f964fcc607a8b1f166}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Advise\+Time} (R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME base\+Time, R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME stream\+Time, H\+E\+V\+E\+NT h\+Event, D\+W\+O\+R\+D\+\_\+\+P\+TR $\ast$pdw\+Advise\+Cookie)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a0d9920de23e87c98720d63d72e0ba6bb}\label{class_c_ks_proxy_a0d9920de23e87c98720d63d72e0ba6bb}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Advise\+Periodic} (R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME start\+Time, R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME period\+Time, H\+S\+E\+M\+A\+P\+H\+O\+RE h\+Semaphore, D\+W\+O\+R\+D\+\_\+\+P\+TR $\ast$pdw\+Advise\+Cookie)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a60efa4455ad805bc9be772beeb236db5}\label{class_c_ks_proxy_a60efa4455ad805bc9be772beeb236db5}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Unadvise} (D\+W\+O\+R\+D\+\_\+\+P\+TR dw\+Advise\+Cookie)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ad18012d302aab6af48842c7acf3ce1fd}\label{class_c_ks_proxy_ad18012d302aab6af48842c7acf3ce1fd}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Capabilities} (D\+W\+O\+RD $\ast$p\+Capabilities)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a8313dbf1913ac41411d86d1929b7ee3a}\label{class_c_ks_proxy_a8313dbf1913ac41411d86d1929b7ee3a}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Check\+Capabilities} (D\+W\+O\+RD $\ast$p\+Capabilities)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a85812c9b2b2dc3da757f8834e0313c9f}\label{class_c_ks_proxy_a85812c9b2b2dc3da757f8834e0313c9f}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Is\+Format\+Supported} (const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Format)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_acaae2214bb409957ecd8a6ddea2131e6}\label{class_c_ks_proxy_acaae2214bb409957ecd8a6ddea2131e6}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Preferred\+Format} (\hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Format)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a168f276381645c28c9ec7991a169959c}\label{class_c_ks_proxy_a168f276381645c28c9ec7991a169959c}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Time\+Format} (\hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Format)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a241a44c65ea209c6188d71dd2a37069a}\label{class_c_ks_proxy_a241a44c65ea209c6188d71dd2a37069a}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Is\+Using\+Time\+Format} (const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Format)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a3f73f33da90a46389ecd14e4ce0cfe49}\label{class_c_ks_proxy_a3f73f33da90a46389ecd14e4ce0cfe49}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Time\+Format} (const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Format)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a418ab11c749be3e68ffbc48bdb1affac}\label{class_c_ks_proxy_a418ab11c749be3e68ffbc48bdb1affac}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Duration} (L\+O\+N\+G\+L\+O\+NG $\ast$p\+Duration)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a4efedad0008b5183816dc8f102b762dc}\label{class_c_ks_proxy_a4efedad0008b5183816dc8f102b762dc}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Stop\+Position} (L\+O\+N\+G\+L\+O\+NG $\ast$p\+Stop)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a73b9b1f1ea4de09c16ac800687dc9284}\label{class_c_ks_proxy_a73b9b1f1ea4de09c16ac800687dc9284}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Current\+Position} (L\+O\+N\+G\+L\+O\+NG $\ast$p\+Current)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aa46e281fbec8a9de451b32cc82fb2f6d}\label{class_c_ks_proxy_aa46e281fbec8a9de451b32cc82fb2f6d}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Convert\+Time\+Format} (L\+O\+N\+G\+L\+O\+NG $\ast$p\+Target, const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Target\+Format, L\+O\+N\+G\+L\+O\+NG Source, const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Source\+Format)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_adf0cf0292a8f5c402b7713d278ee9b90}\label{class_c_ks_proxy_adf0cf0292a8f5c402b7713d278ee9b90}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Positions} (L\+O\+N\+G\+L\+O\+NG $\ast$p\+Current, D\+W\+O\+RD dw\+Current\+Flags, L\+O\+N\+G\+L\+O\+NG $\ast$p\+Stop, D\+W\+O\+RD dw\+Stop\+Flags)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_af3ccda9e48954dfa0d4e887dec84cc23}\label{class_c_ks_proxy_af3ccda9e48954dfa0d4e887dec84cc23}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Positions} (L\+O\+N\+G\+L\+O\+NG $\ast$p\+Current, L\+O\+N\+G\+L\+O\+NG $\ast$p\+Stop)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a621b0163490085c8ba3ccf7b6cade4ab}\label{class_c_ks_proxy_a621b0163490085c8ba3ccf7b6cade4ab}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Available} (L\+O\+N\+G\+L\+O\+NG $\ast$p\+Earliest, L\+O\+N\+G\+L\+O\+NG $\ast$p\+Latest)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ab38f7677f2f4e935f7c84902b732929e}\label{class_c_ks_proxy_ab38f7677f2f4e935f7c84902b732929e}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Rate} (double d\+Rate)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a2025a31edccc2cc7f1f22bd0ba98716d}\label{class_c_ks_proxy_a2025a31edccc2cc7f1f22bd0ba98716d}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Rate} (double $\ast$pd\+Rate)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aa98fef3b4dd67e4c7127cf8230d2f773}\label{class_c_ks_proxy_aa98fef3b4dd67e4c7127cf8230d2f773}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Preroll} (L\+O\+N\+G\+L\+O\+NG $\ast$pll\+Preroll)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a5185f33ce13cc306f0ef9570e2b4cd51}\label{class_c_ks_proxy_a5185f33ce13cc306f0ef9570e2b4cd51}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set} (\hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Prop\+Set, D\+W\+O\+RD dw\+Prop\+ID, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Instance\+Data, D\+W\+O\+RD cb\+Instance\+Data, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Prop\+Data, D\+W\+O\+RD cb\+Prop\+Data)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aaed4c70d2f7830e45460fa9e12e131ee}\label{class_c_ks_proxy_aaed4c70d2f7830e45460fa9e12e131ee}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get} (\hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Prop\+Set, D\+W\+O\+RD dw\+Prop\+ID, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Instance\+Data, D\+W\+O\+RD cb\+Instance\+Data, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Prop\+Data, D\+W\+O\+RD cb\+Prop\+Data, D\+W\+O\+RD $\ast$pcb\+Returned)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a3cf0890a89ae3a3977f1bc7f2657ded6}\label{class_c_ks_proxy_a3cf0890a89ae3a3977f1bc7f2657ded6}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Supported} (\hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Prop\+Set, D\+W\+O\+RD dw\+Prop\+ID, D\+W\+O\+RD $\ast$p\+Type\+Support)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a22df222389ad932f2197d41bab8e4b08}\label{class_c_ks_proxy_a22df222389ad932f2197d41bab8e4b08}} 
+U\+L\+O\+NG S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Misc\+Flags} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a0542c44b38a13fdd631e16efee836d7e}\label{class_c_ks_proxy_a0542c44b38a13fdd631e16efee836d7e}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Property} (\hyperlink{struct_k_s_i_d_e_n_t_i_f_i_e_r}{P\+K\+S\+P\+R\+O\+P\+E\+R\+TY} \hyperlink{struct_property}{Property}, U\+L\+O\+NG Property\+Length, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} Property\+Data, U\+L\+O\+NG Data\+Length, U\+L\+O\+NG $\ast$Bytes\+Returned)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a2627f4339e2d26d462db59324dbb3978}\label{class_c_ks_proxy_a2627f4339e2d26d462db59324dbb3978}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Method} (\hyperlink{struct_k_s_i_d_e_n_t_i_f_i_e_r}{P\+K\+S\+M\+E\+T\+H\+OD} Method, U\+L\+O\+NG Method\+Length, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} Method\+Data, U\+L\+O\+NG Data\+Length, U\+L\+O\+NG $\ast$Bytes\+Returned)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_af613c17e91c07cf8fc1353dae46730b9}\label{class_c_ks_proxy_af613c17e91c07cf8fc1353dae46730b9}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Event} (\hyperlink{struct_k_s_i_d_e_n_t_i_f_i_e_r}{P\+K\+S\+E\+V\+E\+NT} \hyperlink{struct_event}{Event}, U\+L\+O\+NG Event\+Length, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} Event\+Data, U\+L\+O\+NG Data\+Length, U\+L\+O\+NG $\ast$Bytes\+Returned)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a2a18941841aa8e5cb3f5701956308cb7}\label{class_c_ks_proxy_a2a18941841aa8e5cb3f5701956308cb7}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Create\+Node\+Instance} (U\+L\+O\+NG Node\+Id, U\+L\+O\+NG Flags, A\+C\+C\+E\+S\+S\+\_\+\+M\+A\+SK Desired\+Access, \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$Unk\+Outer, \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} Interface\+Id, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} $\ast$Interface)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a80a6fbc433e28e43631000b8f3b4131a}\label{class_c_ks_proxy_a80a6fbc433e28e43631000b8f3b4131a}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Add\+Aggregate} (IN \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} Aggregate\+Class)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a39b0790c7d78fde5cb7ab4b3ab52a5c4}\label{class_c_ks_proxy_a39b0790c7d78fde5cb7ab4b3ab52a5c4}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Remove\+Aggregate} (\hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} Aggregate\+Class)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_afc1893ca1309c7758ca0e0f88d6a8c42}\label{class_c_ks_proxy_afc1893ca1309c7758ca0e0f88d6a8c42}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+Time} (L\+O\+N\+G\+L\+O\+NG $\ast$Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a0c1ca6f2b73cd3992e52eb606393578b}\label{class_c_ks_proxy_a0c1ca6f2b73cd3992e52eb606393578b}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Set\+Time} (L\+O\+N\+G\+L\+O\+NG Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a0b105833c638b755c72b6675df5c643b}\label{class_c_ks_proxy_a0b105833c638b755c72b6675df5c643b}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+Physical\+Time} (L\+O\+N\+G\+L\+O\+NG $\ast$Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a206c5360f41a7bc141b7fa1aaea540e9}\label{class_c_ks_proxy_a206c5360f41a7bc141b7fa1aaea540e9}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Set\+Physical\+Time} (L\+O\+N\+G\+L\+O\+NG Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a4b2fb64655a854e52581f89e4278957b}\label{class_c_ks_proxy_a4b2fb64655a854e52581f89e4278957b}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+Correlated\+Time} (\hyperlink{struct_k_s_c_o_r_r_e_l_a_t_e_d___t_i_m_e}{K\+S\+C\+O\+R\+R\+E\+L\+A\+T\+E\+D\+\_\+\+T\+I\+ME} $\ast$Correlated\+Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ab92f41b0ded6abdf6e0fd500a9c7e76b}\label{class_c_ks_proxy_ab92f41b0ded6abdf6e0fd500a9c7e76b}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Set\+Correlated\+Time} (\hyperlink{struct_k_s_c_o_r_r_e_l_a_t_e_d___t_i_m_e}{K\+S\+C\+O\+R\+R\+E\+L\+A\+T\+E\+D\+\_\+\+T\+I\+ME} $\ast$Correlated\+Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aedb0a42ff457ebae6add8eb9f414ab8d}\label{class_c_ks_proxy_aedb0a42ff457ebae6add8eb9f414ab8d}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+Correlated\+Physical\+Time} (\hyperlink{struct_k_s_c_o_r_r_e_l_a_t_e_d___t_i_m_e}{K\+S\+C\+O\+R\+R\+E\+L\+A\+T\+E\+D\+\_\+\+T\+I\+ME} $\ast$Correlated\+Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aa489e488371a0c18f3c70e4cb6e72856}\label{class_c_ks_proxy_aa489e488371a0c18f3c70e4cb6e72856}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Set\+Correlated\+Physical\+Time} (\hyperlink{struct_k_s_c_o_r_r_e_l_a_t_e_d___t_i_m_e}{K\+S\+C\+O\+R\+R\+E\+L\+A\+T\+E\+D\+\_\+\+T\+I\+ME} $\ast$Correlated\+Time)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aa19b20a12e954e2a3a12ae4bc3b8b25d}\label{class_c_ks_proxy_aa19b20a12e954e2a3a12ae4bc3b8b25d}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+Resolution} (\hyperlink{struct_k_s_r_e_s_o_l_u_t_i_o_n}{K\+S\+R\+E\+S\+O\+L\+U\+T\+I\+ON} $\ast$Resolution)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a9b1b9e6a34490d39f92a4c1043f23081}\label{class_c_ks_proxy_a9b1b9e6a34490d39f92a4c1043f23081}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+State} (K\+S\+S\+T\+A\+TE $\ast$\hyperlink{struct_state}{State})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a8042a3437146ca554908a12bdee0e15f}\label{class_c_ks_proxy_a8042a3437146ca554908a12bdee0e15f}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Register} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a03ea4bdf24bec272297600a9eeb05c6d}\label{class_c_ks_proxy_a03ea4bdf24bec272297600a9eeb05c6d}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Unregister} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ae11c0138c470e5f6b845e9884a8ea5cf}\label{class_c_ks_proxy_ae11c0138c470e5f6b845e9884a8ea5cf}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Init\+New} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a01bd3cef2166f45d459cd11816bf58f7}\label{class_c_ks_proxy_a01bd3cef2166f45d459cd11816bf58f7}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Load} (\hyperlink{interface_i_property_bag}{I\+Property\+Bag} $\ast$p\+Prop\+Bag, \hyperlink{interface_i_error_log}{I\+Error\+Log} $\ast$p\+Error\+Log)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ae8d1ecb501064b7d8b75ba76f4699b22}\label{class_c_ks_proxy_ae8d1ecb501064b7d8b75ba76f4699b22}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Save} (\hyperlink{interface_i_property_bag}{I\+Property\+Bag} $\ast$p\+Prop\+Bag, B\+O\+OL f\+Clear\+Dirty, B\+O\+OL f\+Save\+All\+Properties)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a0dabd81507bdf218ba54ebc7758eada0}\label{class_c_ks_proxy_a0dabd81507bdf218ba54ebc7758eada0}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+Object\+Handle} ()
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aff15179c7865cc1e90af5427990cb429}\label{class_c_ks_proxy_aff15179c7865cc1e90af5427990cb429}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Ks\+Get\+Clock\+Handle} ()
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aedda2c0d11c399a467587cb29172deed}\label{class_c_ks_proxy_aedda2c0d11c399a467587cb29172deed}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Device\+Info} (\hyperlink{struct___i_i_d}{C\+L\+S\+ID} $\ast$pclsid\+Interface\+Class, L\+P\+W\+S\+TR $\ast$pwsz\+Symbolic\+Link)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_acb8da6d07ec6d82dee06df5b5f4162d0}\label{class_c_ks_proxy_acb8da6d07ec6d82dee06df5b5f4162d0}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Reassociate} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a63ffbdfa08e82c50034c16483f6bbf5b}\label{class_c_ks_proxy_a63ffbdfa08e82c50034c16483f6bbf5b}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Disassociate} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ab8cfb5db59b34cae15bd53ef5df3f96c}\label{class_c_ks_proxy_ab8cfb5db59b34cae15bd53ef5df3f96c}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Is\+Dirty} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a8edddcaae8afe24ae12fdfa00200cb57}\label{class_c_ks_proxy_a8edddcaae8afe24ae12fdfa00200cb57}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Load} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stm)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a2703d1473c5251e4ec318dc4e4ed4c86}\label{class_c_ks_proxy_a2703d1473c5251e4ec318dc4e4ed4c86}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Save} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stm, B\+O\+OL f\+Clear\+Dirty)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ac01d7cc0eb29a72ac679ff3e5b9129bb}\label{class_c_ks_proxy_ac01d7cc0eb29a72ac679ff3e5b9129bb}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Size\+Max} (\hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} $\ast$pcb\+Size)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_afa6a721d431da0cefdf6e9e869a2c995}\label{class_c_ks_proxy_afa6a721d431da0cefdf6e9e869a2c995}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Pages} (\hyperlink{struct_i_specify_property_pages_1_1tag_c_a_u_u_i_d}{C\+A\+U\+U\+ID} $\ast$p\+Pages)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aedee571fc5bab4abdae73aa3475c92c0}\label{class_c_ks_proxy_aedee571fc5bab4abdae73aa3475c92c0}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Supported\+Sets} (\hyperlink{interface_g_u_i_d}{L\+P\+G\+U\+ID} $\ast$p\+Out\+Guid, P\+U\+L\+O\+NG Num\+Guids)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_acfcd561b8758a3a6a29c529187518c16}\label{class_c_ks_proxy_acfcd561b8758a3a6a29c529187518c16}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Load\+Proxy\+Plugins} (\hyperlink{interface_g_u_i_d}{L\+P\+G\+U\+ID} p\+Guids, U\+L\+O\+NG Num\+Guids)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_aee5f5c0ce583a05b4d0c300e40220ced}\label{class_c_ks_proxy_aee5f5c0ce583a05b4d0c300e40220ced}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Number\+Of\+Pins} (P\+U\+L\+O\+NG Num\+Pins)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a1a6efbb8c2edb5b31ea5cd0c28540b86}\label{class_c_ks_proxy_a1a6efbb8c2edb5b31ea5cd0c28540b86}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Pin\+Instance\+Count} (U\+L\+O\+NG Pin\+Id, \hyperlink{struct_k_s_p_i_n___c_i_n_s_t_a_n_c_e_s}{P\+K\+S\+P\+I\+N\+\_\+\+C\+I\+N\+S\+T\+A\+N\+C\+ES} Instances)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_add6e589c2c68712121673e016dbcb51c}\label{class_c_ks_proxy_add6e589c2c68712121673e016dbcb51c}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Pin\+Dataflow} (U\+L\+O\+NG Pin\+Id, K\+S\+P\+I\+N\+\_\+\+D\+A\+T\+A\+F\+L\+OW $\ast$Data\+Flow)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_afac9c1de0c382a50953ff2b823133089}\label{class_c_ks_proxy_afac9c1de0c382a50953ff2b823133089}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Pin\+Name} (U\+L\+O\+NG Pin\+Id, K\+S\+P\+I\+N\+\_\+\+D\+A\+T\+A\+F\+L\+OW Data\+Flow, U\+L\+O\+NG Pin\+Count, L\+P\+W\+S\+TR $\ast$Out\+Pin\+Name)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a9f4b53bf74cbe85e7c0f606a99e41402}\label{class_c_ks_proxy_a9f4b53bf74cbe85e7c0f606a99e41402}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Pin\+Communication} (U\+L\+O\+NG Pin\+Id, K\+S\+P\+I\+N\+\_\+\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+ON $\ast$Communication)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a9dc5bc1acb19183a0fd85cd91d2ddf80}\label{class_c_ks_proxy_a9dc5bc1acb19183a0fd85cd91d2ddf80}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Create\+Pins} ()
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a93829c0e46b9614d1574a1c6a560bea4}\label{class_c_ks_proxy_a93829c0e46b9614d1574a1c6a560bea4}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Media\+Seeking\+Formats} (\hyperlink{struct_k_s_m_u_l_t_i_p_l_e___i_t_e_m}{P\+K\+S\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+I\+T\+EM} $\ast$Format\+List)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a547afbcac0e446a174c25449d4dc2e2b}\label{class_c_ks_proxy_a547afbcac0e446a174c25449d4dc2e2b}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Create\+Clock\+Instance} ()
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ac7e7452297798ddeeef890e42ea931ca}\label{class_c_ks_proxy_ac7e7452297798ddeeef890e42ea931ca}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Perform\+Clock\+Property} (U\+L\+O\+NG Property\+Id, U\+L\+O\+NG Property\+Flags, \hyperlink{interfacevoid}{P\+V\+O\+ID} Output\+Buffer, U\+L\+O\+NG Output\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_ab86b509532ca5664de4f2326a907cce1}\label{class_c_ks_proxy_ab86b509532ca5664de4f2326a907cce1}} 
+H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Pin\+State} (K\+S\+S\+T\+A\+TE \hyperlink{struct_state}{State})
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a861e29713bfbb8ff892799a82de6fc9c}\label{class_c_ks_proxy_a861e29713bfbb8ff892799a82de6fc9c}} 
+L\+O\+NG {\bfseries m\+\_\+\+Ref}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a5e29831abeaf616a45669dd10124108d}\label{class_c_ks_proxy_a5e29831abeaf616a45669dd10124108d}} 
+\hyperlink{interface_i_filter_graph}{I\+Filter\+Graph} $\ast$ {\bfseries m\+\_\+p\+Graph}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a20ce85f83bd92c2e17d1d6d525000a4e}\label{class_c_ks_proxy_a20ce85f83bd92c2e17d1d6d525000a4e}} 
+\hyperlink{interface_i_reference_clock}{I\+Reference\+Clock} $\ast$ {\bfseries m\+\_\+\+Reference\+Clock}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a4794ef1b883c995d6d60b135b991bc84}\label{class_c_ks_proxy_a4794ef1b883c995d6d60b135b991bc84}} 
+F\+I\+L\+T\+E\+R\+\_\+\+S\+T\+A\+TE {\bfseries m\+\_\+\+Filter\+State}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a572ca134f8a7fe6473cbe8b422b4ccbe}\label{class_c_ks_proxy_a572ca134f8a7fe6473cbe8b422b4ccbe}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Device}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a5af065ebae74d8f1367e74f33209c117}\label{class_c_ks_proxy_a5af065ebae74d8f1367e74f33209c117}} 
+Proxy\+Plugin\+Vector {\bfseries m\+\_\+\+Plugins}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a5bfb88ea90d4c9f717aac5b465f69d95}\label{class_c_ks_proxy_a5bfb88ea90d4c9f717aac5b465f69d95}} 
+Pin\+Vector {\bfseries m\+\_\+\+Pins}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a9cc3f9a0bacde2062313932524e9827d}\label{class_c_ks_proxy_a9cc3f9a0bacde2062313932524e9827d}} 
+L\+P\+W\+S\+TR {\bfseries m\+\_\+\+Device\+Path}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a15fc720291ecbdce3d62e090389341a4}\label{class_c_ks_proxy_a15fc720291ecbdce3d62e090389341a4}} 
+\hyperlink{struct___i_i_d}{C\+L\+S\+ID} {\bfseries m\+\_\+\+Device\+Interface\+G\+U\+ID}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_a59a8201131858364ce408cf7d042a5ee}\label{class_c_ks_proxy_a59a8201131858364ce408cf7d042a5ee}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Clock}
+\item 
+\mbox{\Hypertarget{class_c_ks_proxy_abab50ee6c084be493d40f30cfd09f9ec}\label{class_c_ks_proxy_abab50ee6c084be493d40f30cfd09f9ec}} 
+\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON} {\bfseries m\+\_\+\+Lock}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/directx/ksproxy/proxy.\+cpp\end{DoxyCompactItemize}

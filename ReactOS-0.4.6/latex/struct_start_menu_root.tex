@@ -1,0 +1,93 @@
+\hypertarget{struct_start_menu_root}{}\section{Start\+Menu\+Root结构体 参考}
+\label{struct_start_menu_root}\index{Start\+Menu\+Root@{Start\+Menu\+Root}}
+
+
+Startmenu root window  
+
+
+
+
+{\ttfamily \#include $<$startmenu.\+h$>$}
+
+类 Start\+Menu\+Root 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{struct_start_menu_root}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_ada3d538ea2e028e1ca4d1d91bb8829b2}\label{struct_start_menu_root_ada3d538ea2e028e1ca4d1d91bb8829b2}} 
+typedef \hyperlink{struct_start_menu_handler}{Start\+Menu\+Handler} {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_ad9d007308b49419a786221085a663ded}\label{struct_start_menu_root_ad9d007308b49419a786221085a663ded}} 
+{\bfseries Start\+Menu\+Root} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, const \hyperlink{struct_start_menu_root_create_info}{Start\+Menu\+Root\+Create\+Info} \&info)
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_ae258289bc80b3e51274072b9b8eedf74}\label{struct_start_menu_root_ae258289bc80b3e51274072b9b8eedf74}} 
+\hyperlink{interfacevoid}{void} {\bfseries Track\+Startmenu} ()
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_a3747075a2b8c0c041a2fe1dc3adabf9e}\label{struct_start_menu_root_a3747075a2b8c0c041a2fe1dc3adabf9e}} 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_start_menu_root_a3747075a2b8c0c041a2fe1dc3adabf9e}{Close\+Start\+Menu} (int id=0)
+\begin{DoxyCompactList}\small\item\em close all windows of the start menu popup \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_start_menu_root_a88f2fadb59a607bad32b86537fe3d8c1}\label{struct_start_menu_root_a88f2fadb59a607bad32b86537fe3d8c1}} 
+bool {\bfseries Is\+Start\+Menu\+Visible} () const
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_abfaddc7059198d9b5dc222e7eae1931f}\label{struct_start_menu_root_abfaddc7059198d9b5dc222e7eae1931f}} 
+int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_a239cfdf354a1d98b7c26dddb1315298a}\label{struct_start_menu_root_a239cfdf354a1d98b7c26dddb1315298a}} 
+static \hyperlink{interfacevoid}{H\+W\+ND} {\bfseries Create} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Desktop\+Bar, int icon\+\_\+size)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_ae23d35548b5174d067d73f2bfe8dcf12}\label{struct_start_menu_root_ae23d35548b5174d067d73f2bfe8dcf12}} 
+\hyperlink{interfacevoid}{H\+W\+ND} {\bfseries \+\_\+hwnd\+Start\+Button}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_a501aa635665e7003e7a868668aaada34}\label{struct_start_menu_root_a501aa635665e7003e7a868668aaada34}} 
+L\+R\+E\+S\+U\+LT {\bfseries Init} (\hyperlink{structtag_c_r_e_a_t_e_s_t_r_u_c_t_a}{L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+CT} pcs)
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_af93f1a00a428e67f032a55e21c90a292}\label{struct_start_menu_root_af93f1a00a428e67f032a55e21c90a292}} 
+L\+R\+E\+S\+U\+LT {\bfseries Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_a20fd1890f0b018d70e0a3f9e3d7eda22}\label{struct_start_menu_root_a20fd1890f0b018d70e0a3f9e3d7eda22}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries Add\+Entries} ()
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_aaf031cbec701c7467853751caf575674}\label{struct_start_menu_root_aaf031cbec701c7467853751caf575674}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries Process\+Key} (int vk)
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_abbe12ee3425f99c1f4d9409b64d8f9f8}\label{struct_start_menu_root_abbe12ee3425f99c1f4d9409b64d8f9f8}} 
+\hyperlink{interfacevoid}{void} {\bfseries Paint} (Paint\+Canvas \&canvas)
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_a1ca14880e95f4520125a86f7af3c12b3}\label{struct_start_menu_root_a1ca14880e95f4520125a86f7af3c12b3}} 
+\hyperlink{interfacevoid}{void} {\bfseries Read\+Logo\+Size} ()
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_a3261c8f80086d21531abc3a63a5cf083}\label{struct_start_menu_root_a3261c8f80086d21531abc3a63a5cf083}} 
+U\+I\+NT {\bfseries Get\+Logo\+Res\+Id} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_root_a9b3c1e5267c1acc807da0150dbe859d6}\label{struct_start_menu_root_a9b3c1e5267c1acc807da0150dbe859d6}} 
+\hyperlink{structtag_s_i_z_e}{S\+I\+ZE} {\bfseries \+\_\+logo\+\_\+size}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Startmenu root window 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/startmenu.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/startmenu.\+cpp\end{DoxyCompactItemize}

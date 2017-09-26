@@ -1,0 +1,175 @@
+\hypertarget{interface_i_ole_command_target}{}\section{I\+Ole\+Command\+Target接口 参考}
+\label{interface_i_ole_command_target}\index{I\+Ole\+Command\+Target@{I\+Ole\+Command\+Target}}
+类 I\+Ole\+Command\+Target 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_i_ole_command_target}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d}{\+\_\+tag\+O\+L\+E\+C\+MD}
+\item 
+struct \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d_t_e_x_t}{\+\_\+tag\+O\+L\+E\+C\+M\+D\+T\+E\+XT}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a65b579c2f0c1fe0906956077df076932}\label{interface_i_ole_command_target_a65b579c2f0c1fe0906956077df076932}} 
+enum {\bfseries O\+L\+E\+C\+M\+DF} \{ \newline
+{\bfseries O\+L\+E\+C\+M\+D\+F\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED} = 0x1, 
+{\bfseries O\+L\+E\+C\+M\+D\+F\+\_\+\+E\+N\+A\+B\+L\+ED} = 0x2, 
+{\bfseries O\+L\+E\+C\+M\+D\+F\+\_\+\+L\+A\+T\+C\+H\+ED} = 0x4, 
+{\bfseries O\+L\+E\+C\+M\+D\+F\+\_\+\+N\+I\+N\+C\+H\+ED} = 0x8, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+F\+\_\+\+I\+N\+V\+I\+S\+I\+B\+LE} = 0x10, 
+{\bfseries O\+L\+E\+C\+M\+D\+F\+\_\+\+D\+E\+F\+H\+I\+D\+E\+O\+N\+C\+T\+X\+T\+M\+E\+NU} = 0x20
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_ab3c66103b836e47df850c3c5a24f8965}\label{interface_i_ole_command_target_ab3c66103b836e47df850c3c5a24f8965}} 
+enum {\bfseries O\+L\+E\+C\+M\+D\+T\+E\+X\+TF} \{ {\bfseries O\+L\+E\+C\+M\+D\+T\+E\+X\+T\+F\+\_\+\+N\+O\+NE} = 0, 
+{\bfseries O\+L\+E\+C\+M\+D\+T\+E\+X\+T\+F\+\_\+\+N\+A\+ME} = 1, 
+{\bfseries O\+L\+E\+C\+M\+D\+T\+E\+X\+T\+F\+\_\+\+S\+T\+A\+T\+US} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a4fd47ce92815a6edeab4142cc5975350}\label{interface_i_ole_command_target_a4fd47ce92815a6edeab4142cc5975350}} 
+enum {\bfseries O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+PT} \{ {\bfseries O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+P\+T\+\_\+\+D\+O\+D\+E\+F\+A\+U\+LT} = 0, 
+{\bfseries O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+P\+T\+\_\+\+P\+R\+O\+M\+P\+T\+U\+S\+ER} = 1, 
+{\bfseries O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+P\+T\+\_\+\+D\+O\+N\+T\+P\+R\+O\+M\+P\+T\+U\+S\+ER} = 2, 
+{\bfseries O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+P\+T\+\_\+\+S\+H\+O\+W\+H\+E\+LP} = 3
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a4e208db9dcdddb884238b15d55fb1846}\label{interface_i_ole_command_target_a4e208db9dcdddb884238b15d55fb1846}} 
+enum {\bfseries O\+L\+E\+C\+M\+D\+ID} \{ \newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+O\+P\+EN} = 1, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+N\+EW} = 2, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+A\+VE} = 3, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+A\+V\+E\+AS} = 4, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+A\+V\+E\+C\+O\+P\+Y\+AS} = 5, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+R\+I\+NT} = 6, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+R\+I\+N\+T\+P\+R\+E\+V\+I\+EW} = 7, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+A\+G\+E\+S\+E\+T\+UP} = 8, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+P\+E\+LL} = 9, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES} = 10, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+C\+UT} = 11, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+C\+O\+PY} = 12, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+A\+S\+TE} = 13, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+A\+S\+T\+E\+S\+P\+E\+C\+I\+AL} = 14, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+N\+DO} = 15, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+R\+E\+DO} = 16, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+E\+L\+E\+C\+T\+A\+LL} = 17, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+C\+L\+E\+A\+R\+S\+E\+L\+E\+C\+T\+I\+ON} = 18, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+Z\+O\+OM} = 19, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+G\+E\+T\+Z\+O\+O\+M\+R\+A\+N\+GE} = 20, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+P\+D\+A\+T\+E\+C\+O\+M\+M\+A\+N\+DS} = 21, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+R\+E\+F\+R\+E\+SH} = 22, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+T\+OP} = 23, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+H\+I\+D\+E\+T\+O\+O\+L\+B\+A\+RS} = 24, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+E\+T\+P\+R\+O\+G\+R\+E\+S\+S\+M\+AX} = 25, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+E\+T\+P\+R\+O\+G\+R\+E\+S\+S\+P\+OS} = 26, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+E\+T\+P\+R\+O\+G\+R\+E\+S\+S\+T\+E\+XT} = 27, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+E\+T\+T\+I\+T\+LE} = 28, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+E\+T\+D\+O\+W\+N\+L\+O\+A\+D\+S\+T\+A\+TE} = 29, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+T\+O\+P\+D\+O\+W\+N\+L\+O\+AD} = 30, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+O\+N\+T\+O\+O\+L\+B\+A\+R\+A\+C\+T\+I\+V\+A\+T\+ED} = 31, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+F\+I\+ND} = 32, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+D\+E\+L\+E\+TE} = 33, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+H\+T\+T\+P\+E\+Q\+U\+IV} = 34, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+H\+T\+T\+P\+E\+Q\+U\+I\+V\+\_\+\+D\+O\+NE} = 35, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+ON} = 36, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+O\+N\+U\+N\+L\+O\+AD} = 37, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+B\+A\+G2} = 38, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+R\+E\+R\+E\+F\+R\+E\+SH} = 39, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+H\+O\+W\+S\+C\+R\+I\+P\+T\+E\+R\+R\+OR} = 40, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+H\+O\+W\+M\+E\+S\+S\+A\+GE} = 41, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+H\+O\+W\+F\+I\+ND} = 42, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+H\+O\+W\+P\+A\+G\+E\+S\+E\+T\+UP} = 43, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+H\+O\+W\+P\+R\+I\+NT} = 44, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+C\+L\+O\+SE} = 45, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+A\+L\+L\+O\+W\+U\+I\+L\+E\+S\+S\+S\+A\+V\+E\+AS} = 46, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+D\+O\+N\+T\+D\+O\+W\+N\+L\+O\+A\+D\+C\+SS} = 47, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+P\+D\+A\+T\+E\+P\+A\+G\+E\+S\+T\+A\+T\+US} = 48, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+R\+I\+N\+T2} = 49, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+R\+I\+N\+T\+P\+R\+E\+V\+I\+E\+W2} = 50, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+E\+T\+P\+R\+I\+N\+T\+T\+E\+M\+P\+L\+A\+TE} = 51, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+G\+E\+T\+P\+R\+I\+N\+T\+T\+E\+M\+P\+L\+A\+TE} = 52, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+A\+G\+E\+A\+C\+T\+I\+O\+N\+B\+L\+O\+C\+K\+ED} = 55, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+A\+G\+E\+A\+C\+T\+I\+O\+N\+U\+I\+Q\+U\+E\+RY} = 56, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+F\+O\+C\+U\+S\+V\+I\+E\+W\+C\+O\+N\+T\+R\+O\+LS} = 57, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+F\+O\+C\+U\+S\+V\+I\+E\+W\+C\+O\+N\+T\+R\+O\+L\+S\+Q\+U\+E\+RY} = 58, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+H\+O\+W\+P\+A\+G\+E\+A\+C\+T\+I\+O\+N\+M\+E\+NU} = 59, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+A\+D\+D\+T\+R\+A\+V\+E\+L\+E\+N\+T\+RY} = 60, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+P\+D\+A\+T\+E\+T\+R\+A\+V\+E\+L\+E\+N\+T\+RY} = 61, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+P\+D\+A\+T\+E\+B\+A\+C\+K\+F\+O\+R\+W\+A\+R\+D\+S\+T\+A\+TE} = 62, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+O\+P\+T\+I\+C\+A\+L\+\_\+\+Z\+O\+OM} = 63, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+O\+P\+T\+I\+C\+A\+L\+\_\+\+G\+E\+T\+Z\+O\+O\+M\+R\+A\+N\+GE} = 64, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+W\+I\+N\+D\+O\+W\+S\+T\+A\+T\+E\+C\+H\+A\+N\+G\+ED} = 65, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+A\+C\+T\+I\+V\+E\+X\+I\+N\+S\+T\+A\+L\+L\+S\+C\+O\+PE} = 66, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+P\+D\+A\+T\+E\+T\+R\+A\+V\+E\+L\+E\+N\+T\+R\+Y\+\_\+\+D\+A\+T\+A\+R\+E\+C\+O\+V\+E\+RY} = 67, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+S\+H\+O\+W\+T\+A\+S\+K\+D\+LG} = 68, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+O\+P\+S\+T\+A\+T\+E\+E\+V\+E\+NT} = 69, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+V\+I\+E\+W\+P\+O\+R\+T\+\_\+\+M\+O\+DE} = 70, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+L\+A\+Y\+O\+U\+T\+\_\+\+V\+I\+E\+W\+P\+O\+R\+T\+\_\+\+W\+I\+D\+TH} = 71, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+V\+I\+E\+W\+P\+O\+R\+T\+\_\+\+E\+X\+C\+L\+U\+D\+E\+\_\+\+B\+O\+T\+T\+OM} = 72, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+S\+E\+R\+\_\+\+O\+P\+T\+I\+C\+A\+L\+\_\+\+Z\+O\+OM} = 73, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+P\+A\+G\+E\+A\+V\+A\+I\+L\+A\+B\+LE} = 74, 
+\newline
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+G\+E\+T\+U\+S\+E\+R\+S\+C\+A\+L\+A\+B\+LE} = 75, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+R\+ET} = 76, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+TY} = 77, 
+{\bfseries O\+L\+E\+C\+M\+D\+I\+D\+\_\+\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+B\+A\+CK} = 78
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_aa000c6b56cb2c8e3216328cd59daeef7}\label{interface_i_ole_command_target_aa000c6b56cb2c8e3216328cd59daeef7}} 
+typedef \hyperlink{interface_i_ole_command_target}{I\+Ole\+Command\+Target} $\ast$ {\bfseries L\+P\+O\+L\+E\+C\+O\+M\+M\+A\+N\+D\+T\+A\+R\+G\+ET}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_ae93b78f4b0f536ead1e9ae795807f71c}\label{interface_i_ole_command_target_ae93b78f4b0f536ead1e9ae795807f71c}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Ole\+Command\+Target\+::\+O\+L\+E\+C\+M\+DF {\bfseries O\+L\+E\+C\+M\+DF}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a557a75a729bc40863a0611c255219d8f}\label{interface_i_ole_command_target_a557a75a729bc40863a0611c255219d8f}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d}{I\+Ole\+Command\+Target\+::\+\_\+tag\+O\+L\+E\+C\+MD} {\bfseries O\+L\+E\+C\+MD}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a531d269b2d9c7d82670fb4628d83d94d}\label{interface_i_ole_command_target_a531d269b2d9c7d82670fb4628d83d94d}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d_t_e_x_t}{I\+Ole\+Command\+Target\+::\+\_\+tag\+O\+L\+E\+C\+M\+D\+T\+E\+XT} {\bfseries O\+L\+E\+C\+M\+D\+T\+E\+XT}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_ad0d07128baf01db2c74e7d0037519484}\label{interface_i_ole_command_target_ad0d07128baf01db2c74e7d0037519484}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Ole\+Command\+Target\+::\+O\+L\+E\+C\+M\+D\+T\+E\+X\+TF {\bfseries O\+L\+E\+C\+M\+D\+T\+E\+X\+TF}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a39f3fc8cac067ab8138fb5b3258b28e4}\label{interface_i_ole_command_target_a39f3fc8cac067ab8138fb5b3258b28e4}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Ole\+Command\+Target\+::\+O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+PT {\bfseries O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+PT}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_accaf953172fe4a762d4a0c4c8453652c}\label{interface_i_ole_command_target_accaf953172fe4a762d4a0c4c8453652c}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Ole\+Command\+Target\+::\+O\+L\+E\+C\+M\+D\+ID {\bfseries O\+L\+E\+C\+M\+D\+ID}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a17e08d0c34828a1c98c24b525931cb89}\label{interface_i_ole_command_target_a17e08d0c34828a1c98c24b525931cb89}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Status} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Cmd\+Group, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Cmds, \mbox{[}in, out, size\+\_\+is(c\+Cmds)\mbox{]} \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d}{O\+L\+E\+C\+MD} prg\+Cmds\mbox{[}$\,$\mbox{]}, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d_t_e_x_t}{O\+L\+E\+C\+M\+D\+T\+E\+XT} $\ast$p\+Cmd\+Text)
+\item 
+\mbox{\Hypertarget{interface_i_ole_command_target_a61914bb83e31724f76e1bd6b51ad2fd0}\label{interface_i_ole_command_target_a61914bb83e31724f76e1bd6b51ad2fd0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exec} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Cmd\+Group, \mbox{[}in\mbox{]} D\+W\+O\+RD n\+Cmd\+ID, \mbox{[}in\mbox{]} D\+W\+O\+RD n\+Cmdexecopt, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pva\+In, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pva\+Out)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/docobj.\+idl\end{DoxyCompactItemize}

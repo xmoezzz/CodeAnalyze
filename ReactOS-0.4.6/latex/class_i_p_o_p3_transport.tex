@@ -1,0 +1,85 @@
+\hypertarget{class_i_p_o_p3_transport}{}\section{I\+P\+O\+P3\+Transport接口 参考}
+\label{class_i_p_o_p3_transport}\index{I\+P\+O\+P3\+Transport@{I\+P\+O\+P3\+Transport}}
+类 I\+P\+O\+P3\+Transport 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_i_p_o_p3_transport}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_ae1c71ed4a95a1ff9da1e0d6ee7686287}\label{class_i_p_o_p3_transport_ae1c71ed4a95a1ff9da1e0d6ee7686287}} 
+enum {\bfseries tag\+P\+O\+P3\+C\+M\+D\+T\+Y\+PE} \{ {\bfseries P\+O\+P3\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+O\+P\+ID}, 
+{\bfseries P\+O\+P3\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+M\+A\+R\+K\+ED}, 
+{\bfseries P\+O\+P3\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+A\+LL}
+ \}
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_ad33bf746735cf20b20ca4abc64ce46dd}\label{class_i_p_o_p3_transport_ad33bf746735cf20b20ca4abc64ce46dd}} 
+enum {\bfseries tag\+P\+O\+P3\+M\+A\+R\+K\+T\+Y\+PE} \{ \newline
+{\bfseries P\+O\+P3\+\_\+\+M\+A\+R\+K\+\_\+\+F\+O\+R\+\_\+\+T\+OP} = 0x01, 
+{\bfseries P\+O\+P3\+\_\+\+M\+A\+R\+K\+\_\+\+F\+O\+R\+\_\+\+R\+E\+TR} = 0x02, 
+{\bfseries P\+O\+P3\+\_\+\+M\+A\+R\+K\+\_\+\+F\+O\+R\+\_\+\+D\+E\+LE} = 0x04, 
+{\bfseries P\+O\+P3\+\_\+\+M\+A\+R\+K\+\_\+\+F\+O\+R\+\_\+\+U\+I\+DL} = 0x08, 
+\newline
+{\bfseries P\+O\+P3\+\_\+\+M\+A\+R\+K\+\_\+\+F\+O\+R\+\_\+\+L\+I\+ST} = 0x10
+ \}
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a617289750e2f8202836d361ef89e000f}\label{class_i_p_o_p3_transport_a617289750e2f8202836d361ef89e000f}} 
+typedef \hyperlink{interfaceenum}{enum} I\+P\+O\+P3\+Transport\+::tag\+P\+O\+P3\+C\+M\+D\+T\+Y\+PE {\bfseries P\+O\+P3\+C\+M\+D\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a8921dc81277d5feae21c10ca0aee2123}\label{class_i_p_o_p3_transport_a8921dc81277d5feae21c10ca0aee2123}} 
+typedef \hyperlink{interfaceenum}{enum} I\+P\+O\+P3\+Transport\+::tag\+P\+O\+P3\+M\+A\+R\+K\+T\+Y\+PE {\bfseries P\+O\+P3\+M\+A\+R\+K\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a41c4e3259993bd5a520b9b67bce9883c}\label{class_i_p_o_p3_transport_a41c4e3259993bd5a520b9b67bce9883c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Init\+New} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Log\+File\+Path, \mbox{[}in\mbox{]} \hyperlink{interface_i_p_o_p3_callback}{I\+P\+O\+P3\+Callback} $\ast$p\+Callback)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a9a89aa49206339e314ff7996ea3864c9}\label{class_i_p_o_p3_transport_a9a89aa49206339e314ff7996ea3864c9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Mark\+Item} (\mbox{[}in\mbox{]} P\+O\+P3\+M\+A\+R\+K\+T\+Y\+PE marktype, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Pop\+Id, \mbox{[}in\mbox{]} boolean f\+Marked)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_ac73a7963c03b125ec9d1ae3d165aaa1e}\label{class_i_p_o_p3_transport_ac73a7963c03b125ec9d1ae3d165aaa1e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+A\+U\+TH} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Auth\+Type)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a5dfa069f9859278ad2903699d76a821d}\label{class_i_p_o_p3_transport_a5dfa069f9859278ad2903699d76a821d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+U\+S\+ER} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+User\+Name)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a97fbc144d23afef499a617ffba768107}\label{class_i_p_o_p3_transport_a97fbc144d23afef499a617ffba768107}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+P\+A\+SS} (\mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Password)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a3fe62d893ceabff8a1b34fe65e7c676c}\label{class_i_p_o_p3_transport_a3fe62d893ceabff8a1b34fe65e7c676c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+L\+I\+ST} (\mbox{[}in\mbox{]} P\+O\+P3\+C\+M\+D\+T\+Y\+PE cmdtype, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Pop\+Id)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a9234e18a7d766aea390e9886be556806}\label{class_i_p_o_p3_transport_a9234e18a7d766aea390e9886be556806}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+T\+OP} (\mbox{[}in\mbox{]} P\+O\+P3\+C\+M\+D\+T\+Y\+PE cmdtype, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Pop\+Id, \mbox{[}in\mbox{]} D\+W\+O\+RD c\+Preview\+Lines)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a3eef61fced37df22574bd5e240284098}\label{class_i_p_o_p3_transport_a3eef61fced37df22574bd5e240284098}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+Q\+U\+IT} ()
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a89bb4ea984c7a4edef8390b7b5ae86b9}\label{class_i_p_o_p3_transport_a89bb4ea984c7a4edef8390b7b5ae86b9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+S\+T\+AT} ()
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_af2e156583f3dafb1df6981f70aa5dc90}\label{class_i_p_o_p3_transport_af2e156583f3dafb1df6981f70aa5dc90}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+N\+O\+OP} ()
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a98ac19f6b805a3bc23a14d9f88e21028}\label{class_i_p_o_p3_transport_a98ac19f6b805a3bc23a14d9f88e21028}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+R\+S\+ET} ()
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_a1d3147a8544ddeeadde478986ce4f6cd}\label{class_i_p_o_p3_transport_a1d3147a8544ddeeadde478986ce4f6cd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+U\+I\+DL} (\mbox{[}in\mbox{]} P\+O\+P3\+C\+M\+D\+T\+Y\+PE cmdtype, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Pop\+Id)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_ac5de1c293f7c07f5932366a903a41b48}\label{class_i_p_o_p3_transport_ac5de1c293f7c07f5932366a903a41b48}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+D\+E\+LE} (\mbox{[}in\mbox{]} P\+O\+P3\+C\+M\+D\+T\+Y\+PE cmdtype, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Pop\+Id)
+\item 
+\mbox{\Hypertarget{class_i_p_o_p3_transport_ad090a011203377846248e1a1fa128378}\label{class_i_p_o_p3_transport_ad090a011203377846248e1a1fa128378}} 
+H\+R\+E\+S\+U\+LT {\bfseries Command\+R\+E\+TR} (\mbox{[}in\mbox{]} P\+O\+P3\+C\+M\+D\+T\+Y\+PE cmdtype, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Pop\+Id)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/inetcomm/inetcomm.\+idl\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/imnxport.\+idl\end{DoxyCompactItemize}

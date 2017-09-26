@@ -1,0 +1,102 @@
+\hypertarget{pem_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/pem.h 文件参考}
+\label{pem_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/pem.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/pem.\+h}}
+
+
+Privacy Enhanced Mail (P\+EM) decoding  
+
+
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{Indent}\textbf{ P\+EM Error codes}\par
+{\em These error codes are returned in case of errors reading the P\+EM data. }\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_a9fca39bb5d4a6845239221a53685a2dc}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+F\+O\+O\+T\+E\+R\+\_\+\+P\+R\+E\+S\+E\+NT}~-\/0x1080
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_a820cf2ffc66f354f3d8f621cac7b4eda}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA}~-\/0x1100
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_a97ca9753a0adeb688b3093506c60a41e}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED}~-\/0x1180
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_a7709c4b0616a4d6ec0184204ace4d4b3}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+C\+\_\+\+IV}~-\/0x1200
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_a28b7a955389ec2e9a8b7a7d3f13ad746}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+\_\+\+A\+LG}~-\/0x1280
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_ab883990c7b4a373519ab3b25ec945cd8}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}~-\/0x1300
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_aea98f44a528310c53398a49c90469861}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}~-\/0x1380
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_a58b1dec72e6a2586a1bda819ea768ad1}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}~-\/0x1400
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pem_8h_a5db6f46565c6078d041253c3a00d2ae6}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}~-\/0x1480
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Privacy Enhanced Mail (P\+EM) decoding 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{pem_8h_a97ca9753a0adeb688b3093506c60a41e}\label{pem_8h_a97ca9753a0adeb688b3093506c60a41e}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED}{MBEDTLS\_ERR\_PEM\_ALLOC\_FAILED}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED~-\/0x1180}
+
+Failed to allocate memory. \mbox{\Hypertarget{pem_8h_a5db6f46565c6078d041253c3a00d2ae6}\label{pem_8h_a5db6f46565c6078d041253c3a00d2ae6}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}{MBEDTLS\_ERR\_PEM\_BAD\_INPUT\_DATA}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA~-\/0x1480}
+
+Bad input parameters to function. \mbox{\Hypertarget{pem_8h_a58b1dec72e6a2586a1bda819ea768ad1}\label{pem_8h_a58b1dec72e6a2586a1bda819ea768ad1}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}{MBEDTLS\_ERR\_PEM\_FEATURE\_UNAVAILABLE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE~-\/0x1400}
+
+Unavailable feature, e.\+g. hashing/encryption combination. \mbox{\Hypertarget{pem_8h_a820cf2ffc66f354f3d8f621cac7b4eda}\label{pem_8h_a820cf2ffc66f354f3d8f621cac7b4eda}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA}{MBEDTLS\_ERR\_PEM\_INVALID\_DATA}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA~-\/0x1100}
+
+P\+EM string is not as expected. \mbox{\Hypertarget{pem_8h_a7709c4b0616a4d6ec0184204ace4d4b3}\label{pem_8h_a7709c4b0616a4d6ec0184204ace4d4b3}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+C\+\_\+\+IV@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+C\+\_\+\+IV}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+C\+\_\+\+IV@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+C\+\_\+\+IV}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+C\+\_\+\+IV}{MBEDTLS\_ERR\_PEM\_INVALID\_ENC\_IV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+C\+\_\+\+IV~-\/0x1200}
+
+R\+SA IV is not in hex-\/format. \mbox{\Hypertarget{pem_8h_a9fca39bb5d4a6845239221a53685a2dc}\label{pem_8h_a9fca39bb5d4a6845239221a53685a2dc}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+F\+O\+O\+T\+E\+R\+\_\+\+P\+R\+E\+S\+E\+NT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+F\+O\+O\+T\+E\+R\+\_\+\+P\+R\+E\+S\+E\+NT}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+F\+O\+O\+T\+E\+R\+\_\+\+P\+R\+E\+S\+E\+NT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+F\+O\+O\+T\+E\+R\+\_\+\+P\+R\+E\+S\+E\+NT}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+F\+O\+O\+T\+E\+R\+\_\+\+P\+R\+E\+S\+E\+NT}{MBEDTLS\_ERR\_PEM\_NO\_HEADER\_FOOTER\_PRESENT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+F\+O\+O\+T\+E\+R\+\_\+\+P\+R\+E\+S\+E\+NT~-\/0x1080}
+
+No P\+EM header or footer found. \mbox{\Hypertarget{pem_8h_aea98f44a528310c53398a49c90469861}\label{pem_8h_aea98f44a528310c53398a49c90469861}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}{MBEDTLS\_ERR\_PEM\_PASSWORD\_MISMATCH}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH~-\/0x1380}
+
+Given private key password does not allow for correct decryption. \mbox{\Hypertarget{pem_8h_ab883990c7b4a373519ab3b25ec945cd8}\label{pem_8h_ab883990c7b4a373519ab3b25ec945cd8}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+R\+E\+Q\+U\+I\+R\+ED@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+R\+E\+Q\+U\+I\+R\+ED@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}{MBEDTLS\_ERR\_PEM\_PASSWORD\_REQUIRED}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+R\+E\+Q\+U\+I\+R\+ED~-\/0x1300}
+
+Private key password can\textquotesingle{}t be empty. \mbox{\Hypertarget{pem_8h_a28b7a955389ec2e9a8b7a7d3f13ad746}\label{pem_8h_a28b7a955389ec2e9a8b7a7d3f13ad746}} 
+\index{pem.\+h@{pem.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+\_\+\+A\+LG@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+\_\+\+A\+LG}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+\_\+\+A\+LG@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+\_\+\+A\+LG}!pem.\+h@{pem.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+\_\+\+A\+LG}{MBEDTLS\_ERR\_PEM\_UNKNOWN\_ENC\_ALG}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+E\+M\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+\_\+\+A\+LG~-\/0x1280}
+
+Unsupported key encryption algorithm. 

@@ -1,0 +1,65 @@
+\hypertarget{struct_f_f___i_o_m_a_n}{}\section{F\+F\+\_\+\+I\+O\+M\+A\+N结构体 参考}
+\label{struct_f_f___i_o_m_a_n}\index{F\+F\+\_\+\+I\+O\+M\+AN@{F\+F\+\_\+\+I\+O\+M\+AN}}
+
+
+\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} Object. \hyperlink{struct_a}{A} developer should not touch these values.  
+
+
+
+
+{\ttfamily \#include $<$ff\+\_\+ioman.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a1c396db72149a4ccfc8c2e4ad5a1459c}\label{struct_f_f___i_o_m_a_n_a1c396db72149a4ccfc8c2e4ad5a1459c}} 
+\hyperlink{struct_f_f___b_l_k___d_e_v_i_c_e}{F\+F\+\_\+\+B\+L\+K\+\_\+\+D\+E\+V\+I\+CE} $\ast$ \hyperlink{struct_f_f___i_o_m_a_n_a1c396db72149a4ccfc8c2e4ad5a1459c}{p\+Blk\+Device}
+\begin{DoxyCompactList}\small\item\em Pointer to a Block device description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a2cd1d983c47ad30787c5099814c0a571}\label{struct_f_f___i_o_m_a_n_a2cd1d983c47ad30787c5099814c0a571}} 
+F\+F\+\_\+\+P\+A\+R\+T\+I\+T\+I\+ON $\ast$ \hyperlink{struct_f_f___i_o_m_a_n_a2cd1d983c47ad30787c5099814c0a571}{p\+Partition}
+\begin{DoxyCompactList}\small\item\em Pointer to a partition description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a7225c2232a65441979a8328fe34596d1}\label{struct_f_f___i_o_m_a_n_a7225c2232a65441979a8328fe34596d1}} 
+F\+F\+\_\+\+B\+U\+F\+F\+ER $\ast$ \hyperlink{struct_f_f___i_o_m_a_n_a7225c2232a65441979a8328fe34596d1}{p\+Buffers}
+\begin{DoxyCompactList}\small\item\em Pointer to the first buffer description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a2beb60745c406469ec2729bb52e02c97}\label{struct_f_f___i_o_m_a_n_a2beb60745c406469ec2729bb52e02c97}} 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{struct_f_f___i_o_m_a_n_a2beb60745c406469ec2729bb52e02c97}{p\+Semaphore}
+\begin{DoxyCompactList}\small\item\em Pointer to a Semaphore object. (For buffer description modifications only!). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_aebf39f62fcd33e834bb3bb9383a08a2b}\label{struct_f_f___i_o_m_a_n_aebf39f62fcd33e834bb3bb9383a08a2b}} 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{struct_f_f___i_o_m_a_n_aebf39f62fcd33e834bb3bb9383a08a2b}{p\+Blk\+Dev\+Semaphore}
+\begin{DoxyCompactList}\small\item\em Semaphore to guarantee Atomic access to the underlying block device, if required. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a31da4eb1719d86e7a20a87cc4953c328}\label{struct_f_f___i_o_m_a_n_a31da4eb1719d86e7a20a87cc4953c328}} 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{struct_f_f___i_o_m_a_n_a31da4eb1719d86e7a20a87cc4953c328}{First\+File}
+\begin{DoxyCompactList}\small\item\em Pointer to the first \hyperlink{class_file}{File} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a76bd178dee1d2deac19d471d82f204c8}\label{struct_f_f___i_o_m_a_n_a76bd178dee1d2deac19d471d82f204c8}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$ \hyperlink{struct_f_f___i_o_m_a_n_a76bd178dee1d2deac19d471d82f204c8}{p\+Cache\+Mem}
+\begin{DoxyCompactList}\small\item\em Pointer to a block of memory for the cache. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_aeee468025c8b1cab5c7370c403c93779}\label{struct_f_f___i_o_m_a_n_aeee468025c8b1cab5c7370c403c93779}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 \hyperlink{struct_f_f___i_o_m_a_n_aeee468025c8b1cab5c7370c403c93779}{Last\+Replaced}
+\begin{DoxyCompactList}\small\item\em Marks which sector was last replaced in the cache. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a31f61a84ae732cff7f3a5f50feae5f8e}\label{struct_f_f___i_o_m_a_n_a31f61a84ae732cff7f3a5f50feae5f8e}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 \hyperlink{struct_f_f___i_o_m_a_n_a31f61a84ae732cff7f3a5f50feae5f8e}{Blk\+Size}
+\begin{DoxyCompactList}\small\item\em The Block size that I\+O\+M\+AN is configured to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a665d1e4cb234f2da085508e92a6c7188}\label{struct_f_f___i_o_m_a_n_a665d1e4cb234f2da085508e92a6c7188}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 \hyperlink{struct_f_f___i_o_m_a_n_a665d1e4cb234f2da085508e92a6c7188}{Cache\+Size}
+\begin{DoxyCompactList}\small\item\em Size of the cache in number of Sectors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a846ef72e0b6afee1cabae2f9ceebc7b6}\label{struct_f_f___i_o_m_a_n_a846ef72e0b6afee1cabae2f9ceebc7b6}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 \hyperlink{struct_f_f___i_o_m_a_n_a846ef72e0b6afee1cabae2f9ceebc7b6}{Prevent\+Flush}
+\begin{DoxyCompactList}\small\item\em Flushing to disk only allowed when 0 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a6b518d5429b73220e1ba1f77c277ccd6}\label{struct_f_f___i_o_m_a_n_a6b518d5429b73220e1ba1f77c277ccd6}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 \hyperlink{struct_f_f___i_o_m_a_n_a6b518d5429b73220e1ba1f77c277ccd6}{Mem\+Allocation}
+\begin{DoxyCompactList}\small\item\em Bit-\/\+Mask identifying allocated pointers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_f_f___i_o_m_a_n_a154fd60a275bf0bba8ca6426f943f06f}\label{struct_f_f___i_o_m_a_n_a154fd60a275bf0bba8ca6426f943f06f}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 \hyperlink{struct_f_f___i_o_m_a_n_a154fd60a275bf0bba8ca6426f943f06f}{Locks}
+\begin{DoxyCompactList}\small\item\em Lock Flag for F\+AT \& \hyperlink{struct_d_i_r}{D\+IR} Locking etc (\hyperlink{namespace_this}{This} must be accessed via a semaphore). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} Object. \hyperlink{struct_a}{A} developer should not touch these values. 
+
+In the commercial version these values are encapsulated. In the open-\/source version they are left completely open, in case someone really \char`\"{}needs\char`\"{} \+:P to do something stupid and access their members themselves. Also to help the open-\/source community help me improve Full\+F\+AT, and aid understanding.
+
+T\+H\+IS W\+O\+U\+LD BE V\+E\+RY S\+T\+U\+P\+ID, SO D\+ON\textquotesingle{}T DO IT. Unless your\textquotesingle{}re writing a patch or something! 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/fullfat/\hyperlink{ff__ioman_8h}{ff\+\_\+ioman.\+h}\end{DoxyCompactItemize}

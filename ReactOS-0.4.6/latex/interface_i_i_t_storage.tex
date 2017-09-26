@@ -1,0 +1,47 @@
+\hypertarget{interface_i_i_t_storage}{}\section{I\+I\+T\+Storage接口 参考}
+\label{interface_i_i_t_storage}\index{I\+I\+T\+Storage@{I\+I\+T\+Storage}}
+类 I\+I\+T\+Storage 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_i_t_storage}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_a94b6923d1fab3af92f343a335c1490a9}\label{interface_i_i_t_storage_a94b6923d1fab3af92f343a335c1490a9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stg\+Create\+Docfile} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwcs\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved, \mbox{[}out\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$$\ast$ppstg\+Open)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_a8f3ea0e7c8c202255b7eb8bfa1ebd00a}\label{interface_i_i_t_storage_a8f3ea0e7c8c202255b7eb8bfa1ebd00a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stg\+Create\+Docfile\+On\+I\+Lock\+Bytes} (\mbox{[}in\mbox{]} \hyperlink{interface_i_lock_bytes}{I\+Lock\+Bytes} $\ast$plkbyt, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved, \mbox{[}out\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$$\ast$ppstg\+Open)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_a6e87eae254ecaab57038565b37f841d5}\label{interface_i_i_t_storage_a6e87eae254ecaab57038565b37f841d5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stg\+Is\+Storage\+File} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwcs\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_a32dbcf2c2084c03b55934960d5cd1d55}\label{interface_i_i_t_storage_a32dbcf2c2084c03b55934960d5cd1d55}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stg\+Is\+Storage\+I\+Lock\+Bytes} (\mbox{[}in\mbox{]} \hyperlink{interface_i_lock_bytes}{I\+Lock\+Bytes} $\ast$plkbyt)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_ad5acf532f127e505c2c9cf6a46069038}\label{interface_i_i_t_storage_ad5acf532f127e505c2c9cf6a46069038}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stg\+Open\+Storage} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwcs\+Name, \mbox{[}in\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$pstg\+Priority, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} S\+NB snb\+Exclude, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved, \mbox{[}out\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$$\ast$ppstg\+Open)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_ad1bce3d7d62169e0297dcbd06ac7507e}\label{interface_i_i_t_storage_ad1bce3d7d62169e0297dcbd06ac7507e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stg\+Open\+Storage\+On\+I\+Lock\+Bytes} (\mbox{[}in\mbox{]} \hyperlink{interface_i_lock_bytes}{I\+Lock\+Bytes} $\ast$plkbyt, \mbox{[}in\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$p\+Stg\+Priority, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Mode, \mbox{[}in\mbox{]} S\+NB snb\+Exclude, \mbox{[}in\mbox{]} D\+W\+O\+RD reserved, \mbox{[}out\mbox{]} \hyperlink{interface_i_storage}{I\+Storage} $\ast$$\ast$ppstg\+Open)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_a1d91ab87c3986df35895a2acceac6958}\label{interface_i_i_t_storage_a1d91ab87c3986df35895a2acceac6958}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stg\+Set\+Times} (\mbox{[}in\mbox{]} W\+C\+H\+AR const $\ast$lpsz\+Name, \mbox{[}in\mbox{]} \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} const $\ast$pctime, \mbox{[}in\mbox{]} \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} const $\ast$patime, \mbox{[}in\mbox{]} \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} const $\ast$pmtime)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_ab80b920b42d766c368165c7ef50ad6f6}\label{interface_i_i_t_storage_ab80b920b42d766c368165c7ef50ad6f6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Control\+Data} (\mbox{[}in\mbox{]} \hyperlink{struct___i_t_s___control___data}{P\+I\+T\+S\+\_\+\+Control\+\_\+\+Data} p\+Control\+Data)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_a54d0b7f8fca539ee22c487b1b1656286}\label{interface_i_i_t_storage_a54d0b7f8fca539ee22c487b1b1656286}} 
+H\+R\+E\+S\+U\+LT {\bfseries Default\+Control\+Data} (\mbox{[}out\mbox{]} \hyperlink{struct___i_t_s___control___data}{P\+I\+T\+S\+\_\+\+Control\+\_\+\+Data} $\ast$pp\+Control\+Data)
+\item 
+\mbox{\Hypertarget{interface_i_i_t_storage_ab74f5dccd90c81866353aa838abefd62}\label{interface_i_i_t_storage_ab74f5dccd90c81866353aa838abefd62}} 
+H\+R\+E\+S\+U\+LT {\bfseries Compact} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwcs\+Name, \mbox{[}in\mbox{]} E\+Compaction\+Lev i\+Lev)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/wine/itss.\+idl\end{DoxyCompactItemize}

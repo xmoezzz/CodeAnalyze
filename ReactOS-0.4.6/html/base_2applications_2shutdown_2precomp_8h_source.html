@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/base/applications/shutdown/precomp.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c1b2e0909f1c4310dd91c770835bdebd.html">base</a></li><li class="navelem"><a class="el" href="dir_4c9ae90bc7172d82b0d81dd39614066e.html">applications</a></li><li class="navelem"><a class="el" href="dir_df9ef2f76f2f2b3b4ab7d87bbc835ecd.html">shutdown</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">precomp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __SHUTDOWN_PRECOMP_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __SHUTDOWN_PRECOMP_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* INCLUDES ******************************************************************/</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;windef.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;winbase.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;winreg.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;winuser.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;conutils.h&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;resource.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/* DEFINES *******************************************************************/</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MAX_MESSAGE_SIZE    512</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define MAX_MAJOR_CODE      256</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define MAX_MINOR_CODE      65536</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define MAX_TIMEOUT         315360000</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/* Reason Code List */</span></div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct___r_e_a_s_o_n.html">   25</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___r_e_a_s_o_n.html">_REASON</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    LPWSTR prefix;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> major;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> minor;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    DWORD flag;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <a class="code" href="struct___r_e_a_s_o_n.html">REASON</a>, *<a class="code" href="struct___r_e_a_s_o_n.html">PREASON</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/* Used to determine how to shutdown the system. */</span></div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_command_line_options.html">   34</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_command_line_options.html">CommandLineOptions</a></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    BOOL abort;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    BOOL force;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    BOOL logoff;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    BOOL restart;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    BOOL shutdown;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    BOOL document_reason;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    BOOL hibernate;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    DWORD shutdown_delay;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    LPWSTR remote_system;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    LPWSTR <a class="code" href="structmessage.html">message</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    DWORD reason;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    BOOL show_gui;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> DWORD defaultReason;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/* PROTOTYPES *****************************************************************/</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* misc.c */</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;BOOL CheckCommentLength(LPCWSTR);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;DWORD ParseReasonCode(LPCWSTR);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="interfacevoid.html">VOID</a> DisplayError(DWORD dwError);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">/* gui.c */</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;BOOL ShutdownGuiMain(<span class="keyword">struct</span> <a class="code" href="struct_command_line_options.html">CommandLineOptions</a> opts);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SHUTDOWN_PRECOMP_H */</span><span class="preprocessor"></span></div><div class="ttc" id="structmessage_html"><div class="ttname"><a href="structmessage.html">message</a></div><div class="ttdef"><b>Definition:</b> tftpd.h:59</div></div>
+<div class="ttc" id="struct_command_line_options_html"><div class="ttname"><a href="struct_command_line_options.html">CommandLineOptions</a></div><div class="ttdef"><b>Definition:</b> precomp.h:34</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+<div class="ttc" id="struct___r_e_a_s_o_n_html"><div class="ttname"><a href="struct___r_e_a_s_o_n.html">_REASON</a></div><div class="ttdef"><b>Definition:</b> precomp.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

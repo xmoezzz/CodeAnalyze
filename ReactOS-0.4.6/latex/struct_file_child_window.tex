@@ -1,0 +1,160 @@
+\hypertarget{struct_file_child_window}{}\section{File\+Child\+Window结构体 参考}
+\label{struct_file_child_window}\index{File\+Child\+Window@{File\+Child\+Window}}
+
+
+M\+DI child window displaying file lists  
+
+
+
+
+{\ttfamily \#include $<$filechild.\+h$>$}
+
+类 File\+Child\+Window 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{struct_file_child_window}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a307cefb3c97e08032ae24ee35879426d}\label{struct_file_child_window_a307cefb3c97e08032ae24ee35879426d}} 
+typedef \hyperlink{struct_ext_context_menu_handler_t}{Ext\+Context\+Menu\+HandlerT}$<$ \hyperlink{struct_child_window}{Child\+Window} $>$ {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_file_child_window_a3c224e72029662287701798a817342b0}{File\+Child\+Window} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, const \hyperlink{struct_file_child_wnd_info}{File\+Child\+Wnd\+Info} \&info)
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a2544942f446aa1b822e9f108781c5042}\label{struct_file_child_window_a2544942f446aa1b822e9f108781c5042}} 
+const \hyperlink{struct_root}{Root} \& {\bfseries get\+\_\+root} () const
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a1b1d75045f1bb905305bfa4f8e27f2f7}\label{struct_file_child_window_a1b1d75045f1bb905305bfa4f8e27f2f7}} 
+\hyperlink{interfacevoid}{void} {\bfseries set\+\_\+focus\+\_\+pane} (\hyperlink{struct_pane}{Pane} $\ast$pane)
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a6de3477a51fede06f127ba3a122575b3}\label{struct_file_child_window_a6de3477a51fede06f127ba3a122575b3}} 
+\hyperlink{interfacevoid}{void} {\bfseries switch\+\_\+focus\+\_\+pane} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a73336896755c3d4e25cbac162e03805e}\label{struct_file_child_window_a73336896755c3d4e25cbac162e03805e}} 
+static \hyperlink{struct_file_child_window}{File\+Child\+Window} $\ast$ {\bfseries create} (const \hyperlink{struct_file_child_wnd_info}{File\+Child\+Wnd\+Info} \&info)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_ab786efc5f2f557e2a50ae655727c29a8}\label{struct_file_child_window_ab786efc5f2f557e2a50ae655727c29a8}} 
+L\+R\+E\+S\+U\+LT {\bfseries Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_file_child_window_aa8d9f2b12273327820bb54d042c76b78}\label{struct_file_child_window_aa8d9f2b12273327820bb54d042c76b78}} 
+int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a6afae299b4803c0eeae7bb079e1cb305}\label{struct_file_child_window_a6afae299b4803c0eeae7bb079e1cb305}} 
+int {\bfseries Notify} (int id, \hyperlink{structtag_n_m_h_d_r}{N\+M\+H\+DR} $\ast$pnmh)
+\item 
+\mbox{\Hypertarget{struct_file_child_window_ad6ce3f9f968afb8f94bfd1c313448beb}\label{struct_file_child_window_ad6ce3f9f968afb8f94bfd1c313448beb}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries resize\+\_\+children} (int cx, int cy)
+\item 
+virtual String \hyperlink{struct_file_child_window_aed746ad1a9c8ebb3d07032b111f402bd}{jump\+\_\+to\+\_\+int} (L\+P\+C\+T\+S\+TR url)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_file_child_window_a6966bc5ed4f9a7dec37670237ea871e9}{scan\+\_\+entry} (\hyperlink{struct_entry}{Entry} $\ast$entry)
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a38767c8f27d7a22f159f2248a7e7e3e0}\label{struct_file_child_window_a38767c8f27d7a22f159f2248a7e7e3e0}} 
+bool {\bfseries expand\+\_\+entry} (\hyperlink{struct_entry}{Entry} $\ast$dir)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_file_child_window_a150ccb0046f5e847a6129d33a3843da7}{set\+\_\+curdir} (\hyperlink{struct_entry}{Entry} $\ast$entry)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_file_child_window_a32a45a31f8f8ea8d9a2cf9f0a06553aa}{activate\+\_\+entry} (\hyperlink{struct_pane}{Pane} $\ast$pane)
+\item 
+\mbox{\Hypertarget{struct_file_child_window_ae8c69935748143285a44462f69792c42}\label{struct_file_child_window_ae8c69935748143285a44462f69792c42}} 
+\hyperlink{interfacevoid}{void} {\bfseries refresh} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_aa8a7bae9193d29e96947c6934d1f908f}\label{struct_file_child_window_aa8a7bae9193d29e96947c6934d1f908f}} 
+static \hyperlink{interfacevoid}{void} {\bfseries collapse\+\_\+entry} (\hyperlink{struct_pane}{Pane} $\ast$pane, \hyperlink{struct_entry}{Entry} $\ast$dir)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a2d1ef937886696a3eb293917abad904d}\label{struct_file_child_window_a2d1ef937886696a3eb293917abad904d}} 
+\hyperlink{struct_root}{Root} {\bfseries \+\_\+root}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_ac2f0b60d2ae1ea6fef5ffc9671216955}\label{struct_file_child_window_ac2f0b60d2ae1ea6fef5ffc9671216955}} 
+\hyperlink{struct_pane}{Pane} $\ast$ {\bfseries \+\_\+left}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a7425dbe2c45d8a1ffb7024bcfe8d96d3}\label{struct_file_child_window_a7425dbe2c45d8a1ffb7024bcfe8d96d3}} 
+\hyperlink{struct_pane}{Pane} $\ast$ {\bfseries \+\_\+right}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a15aad34e55f50b839cb0be378f573452}\label{struct_file_child_window_a15aad34e55f50b839cb0be378f573452}} 
+T\+C\+H\+AR {\bfseries \+\_\+path} \mbox{[}M\+A\+X\+\_\+\+P\+A\+TH\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_file_child_window_a8b09ed32f46ab7f8f391f37c772d3a8c}\label{struct_file_child_window_a8b09ed32f46ab7f8f391f37c772d3a8c}} 
+bool {\bfseries \+\_\+header\+\_\+wdths\+\_\+ok}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+M\+DI child window displaying file lists 
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{struct_file_child_window_a3c224e72029662287701798a817342b0}\label{struct_file_child_window_a3c224e72029662287701798a817342b0}} 
+\index{File\+Child\+Window@{File\+Child\+Window}!File\+Child\+Window@{File\+Child\+Window}}
+\index{File\+Child\+Window@{File\+Child\+Window}!File\+Child\+Window@{File\+Child\+Window}}
+\subsubsection{\texorpdfstring{File\+Child\+Window()}{FileChildWindow()}}
+{\footnotesize\ttfamily File\+Child\+Window\+::\+File\+Child\+Window (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{H\+W\+ND}}]{hwnd,  }\item[{const \hyperlink{struct_file_child_wnd_info}{File\+Child\+Wnd\+Info} \&}]{info }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000027}{待办事项}]use O\+W\+M\+\_\+\+R\+O\+O\+T\+ED flag \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000028}{待办事项}]Is not-\/explore-\/mode for \hyperlink{struct_file_child_window}{File\+Child\+Window} completely implemented? \end{DoxyRefDesc}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_file_child_window_a32a45a31f8f8ea8d9a2cf9f0a06553aa}\label{struct_file_child_window_a32a45a31f8f8ea8d9a2cf9f0a06553aa}} 
+\index{File\+Child\+Window@{File\+Child\+Window}!activate\+\_\+entry@{activate\+\_\+entry}}
+\index{activate\+\_\+entry@{activate\+\_\+entry}!File\+Child\+Window@{File\+Child\+Window}}
+\subsubsection{\texorpdfstring{activate\+\_\+entry()}{activate\_entry()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} File\+Child\+Window\+::activate\+\_\+entry (\begin{DoxyParamCaption}\item[{\hyperlink{struct_pane}{Pane} $\ast$}]{pane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000030}{待办事项}]enable using R\+E\+T\+U\+RN key accelerator \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_file_child_window_aed746ad1a9c8ebb3d07032b111f402bd}\label{struct_file_child_window_aed746ad1a9c8ebb3d07032b111f402bd}} 
+\index{File\+Child\+Window@{File\+Child\+Window}!jump\+\_\+to\+\_\+int@{jump\+\_\+to\+\_\+int}}
+\index{jump\+\_\+to\+\_\+int@{jump\+\_\+to\+\_\+int}!File\+Child\+Window@{File\+Child\+Window}}
+\subsubsection{\texorpdfstring{jump\+\_\+to\+\_\+int()}{jump\_to\_int()}}
+{\footnotesize\ttfamily String File\+Child\+Window\+::jump\+\_\+to\+\_\+int (\begin{DoxyParamCaption}\item[{L\+P\+C\+T\+S\+TR}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000032}{待办事项}]use fname \end{DoxyRefDesc}
+
+
+实现了 \hyperlink{struct_child_window}{Child\+Window}.
+
+\mbox{\Hypertarget{struct_file_child_window_a6966bc5ed4f9a7dec37670237ea871e9}\label{struct_file_child_window_a6966bc5ed4f9a7dec37670237ea871e9}} 
+\index{File\+Child\+Window@{File\+Child\+Window}!scan\+\_\+entry@{scan\+\_\+entry}}
+\index{scan\+\_\+entry@{scan\+\_\+entry}!File\+Child\+Window@{File\+Child\+Window}}
+\subsubsection{\texorpdfstring{scan\+\_\+entry()}{scan\_entry()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} File\+Child\+Window\+::scan\+\_\+entry (\begin{DoxyParamCaption}\item[{\hyperlink{struct_entry}{Entry} $\ast$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000031}{待办事项}]use modifyable sort order instead of fixed file system default \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_file_child_window_a150ccb0046f5e847a6129d33a3843da7}\label{struct_file_child_window_a150ccb0046f5e847a6129d33a3843da7}} 
+\index{File\+Child\+Window@{File\+Child\+Window}!set\+\_\+curdir@{set\+\_\+curdir}}
+\index{set\+\_\+curdir@{set\+\_\+curdir}!File\+Child\+Window@{File\+Child\+Window}}
+\subsubsection{\texorpdfstring{set\+\_\+curdir()}{set\_curdir()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} File\+Child\+Window\+::set\+\_\+curdir (\begin{DoxyParamCaption}\item[{\hyperlink{struct_entry}{Entry} $\ast$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000029}{待办事项}]make configurable (\hyperlink{namespace_this}{This} call takes really {\itshape very} long compared to all other processing!) \end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/filechild.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/filechild.\+cpp\end{DoxyCompactItemize}

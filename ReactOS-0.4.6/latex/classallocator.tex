@@ -1,0 +1,73 @@
+\hypertarget{classallocator}{}\section{allocator$<$ \+\_\+\+Tp $>$ 模板类 参考}
+\label{classallocator}\index{allocator$<$ \+\_\+\+Tp $>$@{allocator$<$ \+\_\+\+Tp $>$}}
+类 allocator$<$ \+\_\+\+Tp $>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classallocator}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classallocator_a2badd638d497e4c01900d4979d458213}\label{classallocator_a2badd638d497e4c01900d4979d458213}} 
+typedef \+\_\+\+Tp {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classallocator_aab1964003a74fbc5521a774155c2f698}\label{classallocator_aab1964003a74fbc5521a774155c2f698}} 
+typedef \+\_\+\+Tp $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classallocator_ad4e452b63f6d9acf986ac0876ee16180}\label{classallocator_ad4e452b63f6d9acf986ac0876ee16180}} 
+typedef const \+\_\+\+Tp $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classallocator_a4ad322119175ae6cfbc435f95bfa1d0f}\label{classallocator_a4ad322119175ae6cfbc435f95bfa1d0f}} 
+typedef \+\_\+\+Tp \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classallocator_a609e5d6b1dc84e32dbfed593a41b62f2}\label{classallocator_a609e5d6b1dc84e32dbfed593a41b62f2}} 
+typedef const \+\_\+\+Tp \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classallocator_abbe9c7af09c3aaa0cf8b47698a046f20}\label{classallocator_abbe9c7af09c3aaa0cf8b47698a046f20}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classallocator_a5664b1ae7f0984e257c4847050144d2e}\label{classallocator_a5664b1ae7f0984e257c4847050144d2e}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classallocator_a91c54a62acd3cbb66682ba03541e6227}\label{classallocator_a91c54a62acd3cbb66682ba03541e6227}} 
+{\bfseries allocator} (const \hyperlink{classallocator}{allocator}$<$ \+\_\+\+Tp $>$ \&) \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classallocator_a9f7cbab187419c7634ffffde76759b3d}\label{classallocator_a9f7cbab187419c7634ffffde76759b3d}} 
+{\bfseries allocator} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classallocator}{allocator}$<$ \+\_\+\+Tp $>$ $>$ src) \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classallocator_ac556f85e370c114f297632bd18b738f5}\label{classallocator_ac556f85e370c114f297632bd18b738f5}} 
+pointer {\bfseries address} (reference \+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{classallocator_a0282b673478c70ef8e4b6403fc676f83}\label{classallocator_a0282b673478c70ef8e4b6403fc676f83}} 
+const\+\_\+pointer {\bfseries address} (const\+\_\+reference \+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{classallocator_abe1b868d52e0de2713fe559a0003631e}\label{classallocator_abe1b868d52e0de2713fe559a0003631e}} 
+\+\_\+\+Tp $\ast$ {\bfseries allocate} (size\+\_\+type \+\_\+\+\_\+n, const \hyperlink{interfacevoid}{void} $\ast$=0)
+\item 
+\mbox{\Hypertarget{classallocator_a00bfd25b0cf4a225a658344f7ef32a1a}\label{classallocator_a00bfd25b0cf4a225a658344f7ef32a1a}} 
+\hyperlink{interfacevoid}{void} {\bfseries deallocate} (pointer \+\_\+\+\_\+p, size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classallocator_a13856f4e8c3ebca357d3f5c7afe7d0f8}\label{classallocator_a13856f4e8c3ebca357d3f5c7afe7d0f8}} 
+\hyperlink{interfacevoid}{void} {\bfseries deallocate} (pointer \+\_\+\+\_\+p) const
+\item 
+\mbox{\Hypertarget{classallocator_a22640776dba1b7bc8a0815f00924256c}\label{classallocator_a22640776dba1b7bc8a0815f00924256c}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{classallocator_a7d25acd3512d010a008ce2a8ad883e4c}\label{classallocator_a7d25acd3512d010a008ce2a8ad883e4c}} 
+\hyperlink{interfacevoid}{void} {\bfseries construct} (pointer \+\_\+\+\_\+p, const\+\_\+reference \+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{classallocator_a5d8119b8a470bd5a5facbc6c0a8b11d5}\label{classallocator_a5d8119b8a470bd5a5facbc6c0a8b11d5}} 
+\hyperlink{interfacevoid}{void} {\bfseries destroy} (pointer \+\_\+\+\_\+p)
+\item 
+\mbox{\Hypertarget{classallocator_a467e4cdb680d1017da34311f1350e986}\label{classallocator_a467e4cdb680d1017da34311f1350e986}} 
+\+\_\+\+Tp $\ast$ {\bfseries \+\_\+\+M\+\_\+allocate} (size\+\_\+type \+\_\+\+\_\+n, size\+\_\+type \&\+\_\+\+\_\+allocated\+\_\+n)
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+alloc.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,182 @@
+\hypertarget{md2_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/md2.h 文件参考}
+\label{md2_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/md2.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/md2.\+h}}
+
+
+M\+D2 message digest algorithm (hash function)  
+
+
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context}
+\begin{DoxyCompactList}\small\item\em M\+D2 context structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{md2_8h_a13c177d87d53058704c37e0c29fef8b5}{mbedtls\+\_\+md2\+\_\+init} (\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Initialize M\+D2 context \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{md2_8h_aa4e7e7bee8322a4409c1d562a9b5efa4}{mbedtls\+\_\+md2\+\_\+free} (\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Clear M\+D2 context \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{md2_8h_a5249f3b20d5177e694896696b3cad1c0}{mbedtls\+\_\+md2\+\_\+clone} (\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$dst, const \hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$src)
+\begin{DoxyCompactList}\small\item\em Clone (the state of) an M\+D2 context \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{md2_8h_a382611d7c80ee04c4cacb8ea1ce63603}{mbedtls\+\_\+md2\+\_\+starts} (\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em M\+D2 context setup \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{md2_8h_a4c557d51eb64f85549a89ea54f23fa9a}{mbedtls\+\_\+md2\+\_\+update} (\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$ctx, const unsigned char $\ast$input, size\+\_\+t ilen)
+\begin{DoxyCompactList}\small\item\em M\+D2 process buffer \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{md2_8h_a0774dfae35c9040ba19ee2213a59935e}{mbedtls\+\_\+md2\+\_\+finish} (\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$ctx, unsigned char output\mbox{[}16\mbox{]})
+\begin{DoxyCompactList}\small\item\em M\+D2 final digest \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{md2_8h_ae38f7d94f0e578afdf640e99eb68135d}{mbedtls\+\_\+md2} (const unsigned char $\ast$input, size\+\_\+t ilen, unsigned char output\mbox{[}16\mbox{]})
+\begin{DoxyCompactList}\small\item\em Output = M\+D2( input buffer ) \end{DoxyCompactList}\item 
+int \hyperlink{md2_8h_a3105f3b90315ffa54e2923c89f680d9f}{mbedtls\+\_\+md2\+\_\+self\+\_\+test} (int verbose)
+\begin{DoxyCompactList}\small\item\em Checkup routine \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{md2_8h_a490b39ec88fec878791c43b6460492a7}\label{md2_8h_a490b39ec88fec878791c43b6460492a7}} 
+\hyperlink{interfacevoid}{void} {\bfseries mbedtls\+\_\+md2\+\_\+process} (\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+M\+D2 message digest algorithm (hash function) 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{md2_8h_ae38f7d94f0e578afdf640e99eb68135d}\label{md2_8h_ae38f7d94f0e578afdf640e99eb68135d}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2@{mbedtls\+\_\+md2}}
+\index{mbedtls\+\_\+md2@{mbedtls\+\_\+md2}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2()}{mbedtls\_md2()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+md2 (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{input,  }\item[{size\+\_\+t}]{ilen,  }\item[{unsigned char}]{output\mbox{[}16\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Output = M\+D2( input buffer ) 
+
+
+\begin{DoxyParams}{参数}
+{\em input} & buffer holding the data \\
+\hline
+{\em ilen} & length of the input data \\
+\hline
+{\em output} & M\+D2 checksum result \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{md2_8h_a5249f3b20d5177e694896696b3cad1c0}\label{md2_8h_a5249f3b20d5177e694896696b3cad1c0}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2\+\_\+clone@{mbedtls\+\_\+md2\+\_\+clone}}
+\index{mbedtls\+\_\+md2\+\_\+clone@{mbedtls\+\_\+md2\+\_\+clone}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2\+\_\+clone()}{mbedtls\_md2\_clone()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+md2\+\_\+clone (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$}]{dst,  }\item[{const \hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+Clone (the state of) an M\+D2 context 
+
+
+\begin{DoxyParams}{参数}
+{\em dst} & The destination context \\
+\hline
+{\em src} & The context to be cloned \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{md2_8h_a0774dfae35c9040ba19ee2213a59935e}\label{md2_8h_a0774dfae35c9040ba19ee2213a59935e}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2\+\_\+finish@{mbedtls\+\_\+md2\+\_\+finish}}
+\index{mbedtls\+\_\+md2\+\_\+finish@{mbedtls\+\_\+md2\+\_\+finish}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2\+\_\+finish()}{mbedtls\_md2\_finish()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+md2\+\_\+finish (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$}]{ctx,  }\item[{unsigned char}]{output\mbox{[}16\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+M\+D2 final digest 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & M\+D2 context \\
+\hline
+{\em output} & M\+D2 checksum result \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{md2_8h_aa4e7e7bee8322a4409c1d562a9b5efa4}\label{md2_8h_aa4e7e7bee8322a4409c1d562a9b5efa4}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2\+\_\+free@{mbedtls\+\_\+md2\+\_\+free}}
+\index{mbedtls\+\_\+md2\+\_\+free@{mbedtls\+\_\+md2\+\_\+free}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2\+\_\+free()}{mbedtls\_md2\_free()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+md2\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Clear M\+D2 context 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & M\+D2 context to be cleared \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{md2_8h_a13c177d87d53058704c37e0c29fef8b5}\label{md2_8h_a13c177d87d53058704c37e0c29fef8b5}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2\+\_\+init@{mbedtls\+\_\+md2\+\_\+init}}
+\index{mbedtls\+\_\+md2\+\_\+init@{mbedtls\+\_\+md2\+\_\+init}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2\+\_\+init()}{mbedtls\_md2\_init()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+md2\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Initialize M\+D2 context 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & M\+D2 context to be initialized \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{md2_8h_a3105f3b90315ffa54e2923c89f680d9f}\label{md2_8h_a3105f3b90315ffa54e2923c89f680d9f}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2\+\_\+self\+\_\+test@{mbedtls\+\_\+md2\+\_\+self\+\_\+test}}
+\index{mbedtls\+\_\+md2\+\_\+self\+\_\+test@{mbedtls\+\_\+md2\+\_\+self\+\_\+test}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2\+\_\+self\+\_\+test()}{mbedtls\_md2\_self\_test()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+md2\+\_\+self\+\_\+test (\begin{DoxyParamCaption}\item[{int}]{verbose }\end{DoxyParamCaption})}
+
+
+
+Checkup routine 
+
+\begin{DoxyReturn}{返回}
+0 if successful, or 1 if the test failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{md2_8h_a382611d7c80ee04c4cacb8ea1ce63603}\label{md2_8h_a382611d7c80ee04c4cacb8ea1ce63603}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2\+\_\+starts@{mbedtls\+\_\+md2\+\_\+starts}}
+\index{mbedtls\+\_\+md2\+\_\+starts@{mbedtls\+\_\+md2\+\_\+starts}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2\+\_\+starts()}{mbedtls\_md2\_starts()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+md2\+\_\+starts (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+M\+D2 context setup 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & context to be initialized \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{md2_8h_a4c557d51eb64f85549a89ea54f23fa9a}\label{md2_8h_a4c557d51eb64f85549a89ea54f23fa9a}} 
+\index{md2.\+h@{md2.\+h}!mbedtls\+\_\+md2\+\_\+update@{mbedtls\+\_\+md2\+\_\+update}}
+\index{mbedtls\+\_\+md2\+\_\+update@{mbedtls\+\_\+md2\+\_\+update}!md2.\+h@{md2.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+md2\+\_\+update()}{mbedtls\_md2\_update()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+md2\+\_\+update (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__md2__context}{mbedtls\+\_\+md2\+\_\+context} $\ast$}]{ctx,  }\item[{const unsigned char $\ast$}]{input,  }\item[{size\+\_\+t}]{ilen }\end{DoxyParamCaption})}
+
+
+
+M\+D2 process buffer 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & M\+D2 context \\
+\hline
+{\em input} & buffer holding the data \\
+\hline
+{\em ilen} & length of the input data \\
+\hline
+\end{DoxyParams}

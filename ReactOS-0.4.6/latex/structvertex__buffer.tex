@@ -1,0 +1,78 @@
+\hypertarget{structvertex__buffer}{}\section{vertex\+\_\+buffer结构体 参考}
+\label{structvertex__buffer}\index{vertex\+\_\+buffer@{vertex\+\_\+buffer}}
+
+
+{\ttfamily \#include $<$t\+\_\+context.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \hyperlink{structvertex__buffer_a0effd747a55027c36761aa6bbf104696}{Size}
+\item 
+G\+Luint \hyperlink{structvertex__buffer_a57863134e7679f774853f5226e2489ae}{Count}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_ab344e72d47068a93979c085c4a628f86}\label{structvertex__buffer_ab344e72d47068a93979c085c4a628f86}} 
+G\+Luint $\ast$ {\bfseries Elts}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_aa3d51b76c5f9779a7fe5744ceb06be7a}\label{structvertex__buffer_aa3d51b76c5f9779a7fe5744ceb06be7a}} 
+\hyperlink{struct_g_lvector4f}{G\+Lvector4f} $\ast$ {\bfseries Eye\+Ptr}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_ac8971de7c58966b4ea88e14f4ffda61c}\label{structvertex__buffer_ac8971de7c58966b4ea88e14f4ffda61c}} 
+\hyperlink{struct_g_lvector4f}{G\+Lvector4f} $\ast$ {\bfseries Clip\+Ptr}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_a386513e1b4bd59d297054df5f9c0039e}\label{structvertex__buffer_a386513e1b4bd59d297054df5f9c0039e}} 
+\hyperlink{struct_g_lvector4f}{G\+Lvector4f} $\ast$ {\bfseries Ndc\+Ptr}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_ac1a30bac50c586adcda0a54b2979e612}\label{structvertex__buffer_ac1a30bac50c586adcda0a54b2979e612}} 
+G\+Lubyte {\bfseries Clip\+Or\+Mask}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_a5dab759f5fb2559abe6827462ab12079}\label{structvertex__buffer_a5dab759f5fb2559abe6827462ab12079}} 
+G\+Lubyte {\bfseries Clip\+And\+Mask}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_a8aa61b6b419fc37996f7d202260b32fe}\label{structvertex__buffer_a8aa61b6b419fc37996f7d202260b32fe}} 
+G\+Lubyte $\ast$ {\bfseries Clip\+Mask}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_a4394eb3c9e62cf19d885b9848049ce51}\label{structvertex__buffer_a4394eb3c9e62cf19d885b9848049ce51}} 
+G\+Lfloat $\ast$ {\bfseries Normal\+Length\+Ptr}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_aff1d89c09878b87821434a22c428102f}\label{structvertex__buffer_aff1d89c09878b87821434a22c428102f}} 
+G\+Lboolean $\ast$ {\bfseries Edge\+Flag}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_ae5d4a0824be4adc37000aeb6fecea4f3}\label{structvertex__buffer_ae5d4a0824be4adc37000aeb6fecea4f3}} 
+\hyperlink{struct_g_lvector4f}{G\+Lvector4f} $\ast$ {\bfseries Backface\+Index\+Ptr}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_ad1fd4d09cf1fabaeaf4a9bdc485cd31e}\label{structvertex__buffer_ad1fd4d09cf1fabaeaf4a9bdc485cd31e}} 
+\hyperlink{struct_g_lvector4f}{G\+Lvector4f} $\ast$ {\bfseries Backface\+Color\+Ptr}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_a1887b0b51a5239e83980d382e83a98a3}\label{structvertex__buffer_a1887b0b51a5239e83980d382e83a98a3}} 
+const \hyperlink{interfacestruct}{struct} \hyperlink{struct__mesa__prim}{\+\_\+mesa\+\_\+prim} $\ast$ {\bfseries Primitive}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_ad2b157a8b87de213690a9faef5daf379}\label{structvertex__buffer_ad2b157a8b87de213690a9faef5daf379}} 
+G\+Luint {\bfseries Primitive\+Count}
+\item 
+\mbox{\Hypertarget{structvertex__buffer_adeab5892e64a92e4b38ad84f07bd6922}\label{structvertex__buffer_adeab5892e64a92e4b38ad84f07bd6922}} 
+\hyperlink{struct_g_lvector4f}{G\+Lvector4f} $\ast$ {\bfseries Attrib\+Ptr} \mbox{[}\+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+AX\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Contains the current state of a running pipeline. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structvertex__buffer_a57863134e7679f774853f5226e2489ae}\label{structvertex__buffer_a57863134e7679f774853f5226e2489ae}} 
+\index{vertex\+\_\+buffer@{vertex\+\_\+buffer}!Count@{Count}}
+\index{Count@{Count}!vertex\+\_\+buffer@{vertex\+\_\+buffer}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily G\+Luint vertex\+\_\+buffer\+::\+Count}
+
+Number of vertices currently in buffer \mbox{\Hypertarget{structvertex__buffer_a0effd747a55027c36761aa6bbf104696}\label{structvertex__buffer_a0effd747a55027c36761aa6bbf104696}} 
+\index{vertex\+\_\+buffer@{vertex\+\_\+buffer}!Size@{Size}}
+\index{Size@{Size}!vertex\+\_\+buffer@{vertex\+\_\+buffer}}
+\subsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily G\+Luint vertex\+\_\+buffer\+::\+Size}
+
+Max vertices per vertex buffer, constant 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/tnl/\hyperlink{t__context_8h}{t\+\_\+context.\+h}\end{DoxyCompactItemize}

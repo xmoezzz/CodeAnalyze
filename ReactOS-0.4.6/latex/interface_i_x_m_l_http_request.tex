@@ -1,0 +1,62 @@
+\hypertarget{interface_i_x_m_l_http_request}{}\section{I\+X\+M\+L\+Http\+Request接口 参考}
+\label{interface_i_x_m_l_http_request}\index{I\+X\+M\+L\+Http\+Request@{I\+X\+M\+L\+Http\+Request}}
+类 I\+X\+M\+L\+Http\+Request 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_x_m_l_http_request}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a40875e7fe858c371a52f50e788cae9c2}\label{interface_i_x_m_l_http_request_a40875e7fe858c371a52f50e788cae9c2}} 
+H\+R\+E\+S\+U\+LT {\bfseries open} (\mbox{[}in\mbox{]} B\+S\+TR bstr\+Method, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Url, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} var\+Async, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} var\+User, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} var\+Password)
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a972909618e68621ce29d6d9fc9faf28e}\label{interface_i_x_m_l_http_request_a972909618e68621ce29d6d9fc9faf28e}} 
+H\+R\+E\+S\+U\+LT {\bfseries set\+Request\+Header} (\mbox{[}in\mbox{]} B\+S\+TR bstr\+Header, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Value)
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_af62f767e66538155d47097ec8bba03e8}\label{interface_i_x_m_l_http_request_af62f767e66538155d47097ec8bba03e8}} 
+H\+R\+E\+S\+U\+LT {\bfseries get\+Response\+Header} (\mbox{[}in\mbox{]} B\+S\+TR bstr\+Header, \mbox{[}out, retval\mbox{]} B\+S\+TR $\ast$pbstr\+Value)
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a30d48ed758e8751a15836fa4535a18a0}\label{interface_i_x_m_l_http_request_a30d48ed758e8751a15836fa4535a18a0}} 
+H\+R\+E\+S\+U\+LT {\bfseries get\+All\+Response\+Headers} (\mbox{[}out, retval\mbox{]} B\+S\+TR $\ast$pbstr\+Headers)
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a02c6f75593e4eb93cccb15359313ef63}\label{interface_i_x_m_l_http_request_a02c6f75593e4eb93cccb15359313ef63}} 
+H\+R\+E\+S\+U\+LT {\bfseries send} (\mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} var\+Body)
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a8ba43aa24bc18f89ca429c380db8c9dd}\label{interface_i_x_m_l_http_request_a8ba43aa24bc18f89ca429c380db8c9dd}} 
+H\+R\+E\+S\+U\+LT {\bfseries abort} ()
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_ab73850e839a2d787cd5d6ea198c40945}\label{interface_i_x_m_l_http_request_ab73850e839a2d787cd5d6ea198c40945}} 
+L\+O\+NG {\bfseries status}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a582a2fdeed82e4a58acdb3881023711d}\label{interface_i_x_m_l_http_request_a582a2fdeed82e4a58acdb3881023711d}} 
+B\+S\+TR {\bfseries status\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_ada1aa2bc30a8267eaa19ad64b64e5814}\label{interface_i_x_m_l_http_request_ada1aa2bc30a8267eaa19ad64b64e5814}} 
+\hyperlink{interface_i_dispatch}{I\+Dispatch} {\bfseries response\+X\+ML}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a09cefc96984c0d859b330f055d3b83d9}\label{interface_i_x_m_l_http_request_a09cefc96984c0d859b330f055d3b83d9}} 
+B\+S\+TR {\bfseries response\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a69937da05949288f9b770aed6657dc7e}\label{interface_i_x_m_l_http_request_a69937da05949288f9b770aed6657dc7e}} 
+\hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} {\bfseries response\+Body}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a4d5356e2b36cca002e3cad0abce86393}\label{interface_i_x_m_l_http_request_a4d5356e2b36cca002e3cad0abce86393}} 
+\hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} {\bfseries response\+Stream}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_ab61e0726fe1cb2874bf2031d4b1832ad}\label{interface_i_x_m_l_http_request_ab61e0726fe1cb2874bf2031d4b1832ad}} 
+L\+O\+NG {\bfseries ready\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_i_x_m_l_http_request_a8d58ac8779196365fa4c440032f6ed8a}\label{interface_i_x_m_l_http_request_a8d58ac8779196365fa4c440032f6ed8a}} 
+\hyperlink{interface_i_dispatch}{I\+Dispatch} {\bfseries onreadystatechange}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/xmldom.\+idl\end{DoxyCompactItemize}

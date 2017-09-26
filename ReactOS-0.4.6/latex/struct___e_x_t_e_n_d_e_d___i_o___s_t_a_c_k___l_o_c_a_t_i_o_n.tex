@@ -1,0 +1,222 @@
+\hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n}{}\section{\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+I\+O\+\_\+\+S\+T\+A\+C\+K\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N结构体 参考}
+\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n}\index{\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+I\+O\+\_\+\+S\+T\+A\+C\+K\+\_\+\+L\+O\+C\+A\+T\+I\+ON@{\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+I\+O\+\_\+\+S\+T\+A\+C\+K\+\_\+\+L\+O\+C\+A\+T\+I\+ON}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_aa9a4933626bbd07e9e4fe4acaf35a9c3}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_aa9a4933626bbd07e9e4fe4acaf35a9c3}} 
+U\+C\+H\+AR {\bfseries Major\+Function}
+\item 
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_ab837a178b4ee8a6891a74e70df287332}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_ab837a178b4ee8a6891a74e70df287332}} 
+U\+C\+H\+AR {\bfseries Minor\+Function}
+\item 
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a031e20eb283c7bb3e8e03a55f3769ae8}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a031e20eb283c7bb3e8e03a55f3769ae8}} 
+U\+C\+H\+AR {\bfseries Flags}
+\item 
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a33bd62bd7097f4d205d7ea164d8dd001}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a33bd62bd7097f4d205d7ea164d8dd001}} 
+U\+C\+H\+AR {\bfseries Control}
+\item 
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a76709710f70c30617a0b51cd3663a38f}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a76709710f70c30617a0b51cd3663a38f}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\hyperlink{struct___i_o___s_e_c_u_r_i_t_y___c_o_n_t_e_x_t}{PIO\_SECURITY\_CONTEXT} {\bfseries SecurityContext}\\
+\>\>ULONG {\bfseries Options}\\
+\>\>USHORT {\bfseries FileAttributes}\\
+\>\>USHORT {\bfseries ShareAccess}\\
+\>\>ULONG {\bfseries EaLength}\\
+\>\} {\bfseries Create}\\
+\>struct \{\\
+\>\>\hyperlink{struct___i_o___s_e_c_u_r_i_t_y___c_o_n_t_e_x_t}{PIO\_SECURITY\_CONTEXT} {\bfseries SecurityContext}\\
+\>\>ULONG {\bfseries Options}\\
+\>\>USHORT {\bfseries Reserved}\\
+\>\>USHORT {\bfseries ShareAccess}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___n_a_m_e_d___p_i_p_e___c_r_e_a_t_e___p_a_r_a_m_e_t_e_r_s}{\_NAMED\_PIPE\_CREATE\_PARAMETERS} $\ast$ {\bfseries Parameters}\\
+\>\} {\bfseries CreatePipe}\\
+\>struct \{\\
+\>\>\hyperlink{struct___i_o___s_e_c_u_r_i_t_y___c_o_n_t_e_x_t}{PIO\_SECURITY\_CONTEXT} {\bfseries SecurityContext}\\
+\>\>ULONG {\bfseries Options}\\
+\>\>USHORT {\bfseries Reserved}\\
+\>\>USHORT {\bfseries ShareAccess}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___m_a_i_l_s_l_o_t___c_r_e_a_t_e___p_a_r_a_m_e_t_e_r_s}{\_MAILSLOT\_CREATE\_PARAMETERS} $\ast$ {\bfseries Parameters}\\
+\>\} {\bfseries CreateMailslot}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Key}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{LARGE\_INTEGER} {\bfseries ByteOffset}\\
+\>\} {\bfseries Read}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries Key}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{LARGE\_INTEGER} {\bfseries ByteOffset}\\
+\>\} {\bfseries Write}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>\hyperlink{struct___u_n_i_c_o_d_e___s_t_r_i_n_g}{PUNICODE\_STRING} {\bfseries FileName}\\
+\>\>FILE\_INFORMATION\_CLASS {\bfseries FileInformationClass}\\
+\>\>ULONG {\bfseries FileIndex}\\
+\>\} {\bfseries QueryDirectory}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>ULONG {\bfseries CompletionFilter}\\
+\>\} {\bfseries NotifyDirectory}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>FILE\_INFORMATION\_CLASS {\bfseries FileInformationClass}\\
+\>\} {\bfseries QueryFile}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>FILE\_INFORMATION\_CLASS {\bfseries FileInformationClass}\\
+\>\>PFILE\_OBJECT {\bfseries FileObject}\\
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_1_1_0D2043_1_1_0D2052_a48c0765a939ec47c9e6df6d6b6b16cec}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_1_1_0D2043_1_1_0D2052_a48c0765a939ec47c9e6df6d6b6b16cec}} 
+\>\>union \{\\
+\mbox{\Hypertarget{union___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_1_1_0D2043_1_1_0D2052_1_1_0D2082_ab2247372c4b1c0750e79004942e28cd3}\label{union___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_1_1_0D2043_1_1_0D2052_1_1_0D2082_ab2247372c4b1c0750e79004942e28cd3}} 
+\>\>\>struct \{\\
+\>\>\>\>\hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{BOOLEAN} {\bfseries ReplaceIfExists}\\
+\>\>\>\>\hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{BOOLEAN} {\bfseries AdvanceOnly}\\
+\>\>\>\} \\
+\>\>\>ULONG {\bfseries ClusterCount}\\
+\>\>\>\hyperlink{interfacevoid}{HANDLE} {\bfseries DeleteHandle}\\
+\>\>\} \\
+\>\} {\bfseries SetFile}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries EaList}\\
+\>\>ULONG {\bfseries EaListLength}\\
+\>\>ULONG {\bfseries EaIndex}\\
+\>\} {\bfseries QueryEa}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\} {\bfseries SetEa}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>FS\_INFORMATION\_CLASS {\bfseries FsInformationClass}\\
+\>\} {\bfseries QueryVolume}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>FS\_INFORMATION\_CLASS {\bfseries FsInformationClass}\\
+\>\} {\bfseries SetVolume}\\
+\>struct \{\\
+\>\>ULONG {\bfseries OutputBufferLength}\\
+\>\>ULONG {\bfseries InputBufferLength}\\
+\>\>ULONG {\bfseries FsControlCode}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Type3InputBuffer}\\
+\>\} {\bfseries FileSystemControl}\\
+\>struct \{\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{PLARGE\_INTEGER} {\bfseries Length}\\
+\>\>ULONG {\bfseries Key}\\
+\>\>\hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{LARGE\_INTEGER} {\bfseries ByteOffset}\\
+\>\} {\bfseries LockControl}\\
+\>struct \{\\
+\>\>ULONG {\bfseries OutputBufferLength}\\
+\>\>ULONG {\bfseries InputBufferLength}\\
+\>\>ULONG {\bfseries IoControlCode}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Type3InputBuffer}\\
+\>\} {\bfseries DeviceIoControl}\\
+\>struct \{\\
+\>\>SECURITY\_INFORMATION {\bfseries SecurityInformation}\\
+\>\>ULONG POINTER\_ALIGNMENT {\bfseries Length}\\
+\>\} {\bfseries QuerySecurity}\\
+\>struct \{\\
+\>\>SECURITY\_INFORMATION {\bfseries SecurityInformation}\\
+\>\>\hyperlink{struct___s_e_c_u_r_i_t_y___d_e_s_c_r_i_p_t_o_r}{PSECURITY\_DESCRIPTOR} {\bfseries SecurityDescriptor}\\
+\>\} {\bfseries SetSecurity}\\
+\>struct \{\\
+\>\>\hyperlink{struct___v_p_b}{PVPB} {\bfseries Vpb}\\
+\>\>\hyperlink{struct___d_e_v_i_c_e___o_b_j_e_c_t}{PDEVICE\_OBJECT} {\bfseries DeviceObject}\\
+\>\} {\bfseries MountVolume}\\
+\>struct \{\\
+\>\>\hyperlink{struct___v_p_b}{PVPB} {\bfseries Vpb}\\
+\>\>\hyperlink{struct___d_e_v_i_c_e___o_b_j_e_c_t}{PDEVICE\_OBJECT} {\bfseries DeviceObject}\\
+\>\} {\bfseries VerifyVolume}\\
+\>struct \{\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___s_c_s_i___r_e_q_u_e_s_t___b_l_o_c_k}{\_SCSI\_REQUEST\_BLOCK} $\ast$ {\bfseries Srb}\\
+\>\} {\bfseries Scsi}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\>\hyperlink{struct___s_i_d}{PSID} {\bfseries StartSid}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{struct___f_i_l_e___g_e_t___q_u_o_t_a___i_n_f_o_r_m_a_t_i_o_n}{\_FILE\_GET\_QUOTA\_INFORMATION} $\ast$ {\bfseries SidList}\\
+\>\>ULONG {\bfseries SidListLength}\\
+\>\} {\bfseries QueryQuota}\\
+\>struct \{\\
+\>\>ULONG {\bfseries Length}\\
+\>\} {\bfseries SetQuota}\\
+\>struct \{\\
+\>\>DEVICE\_RELATION\_TYPE {\bfseries Type}\\
+\>\} {\bfseries QueryDeviceRelations}\\
+\>struct \{\\
+\>\>CONST \hyperlink{interface_g_u_i_d}{GUID} $\ast$ {\bfseries InterfaceType}\\
+\>\>USHORT {\bfseries Size}\\
+\>\>USHORT {\bfseries Version}\\
+\>\>\hyperlink{struct___i_n_t_e_r_f_a_c_e}{PINTERFACE} {\bfseries Interface}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries InterfaceSpecificData}\\
+\>\} {\bfseries QueryInterface}\\
+\>struct \{\\
+\>\>PDEVICE\_CAPABILITIES {\bfseries Capabilities}\\
+\>\} {\bfseries DeviceCapabilities}\\
+\>struct \{\\
+\>\>\hyperlink{struct___i_o___r_e_s_o_u_r_c_e___r_e_q_u_i_r_e_m_e_n_t_s___l_i_s_t}{PIO\_RESOURCE\_REQUIREMENTS\_LIST} {\bfseries IoResourceRequirementList}\\
+\>\} {\bfseries FilterResourceRequirements}\\
+\>struct \{\\
+\>\>ULONG {\bfseries WhichSpace}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Buffer}\\
+\>\>ULONG {\bfseries Offset}\\
+\>\>ULONG {\bfseries Length}\\
+\>\} {\bfseries ReadWriteConfig}\\
+\>struct \{\\
+\>\>\hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{BOOLEAN} {\bfseries Lock}\\
+\>\} {\bfseries SetLock}\\
+\>struct \{\\
+\>\>BUS\_QUERY\_ID\_TYPE {\bfseries IdType}\\
+\>\} {\bfseries QueryId}\\
+\>struct \{\\
+\>\>DEVICE\_TEXT\_TYPE {\bfseries DeviceTextType}\\
+\>\>LCID {\bfseries LocaleId}\\
+\>\} {\bfseries QueryDeviceText}\\
+\>struct \{\\
+\>\>\hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{BOOLEAN} {\bfseries InPath}\\
+\>\>\hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{BOOLEAN} {\bfseries Reserved} \mbox{[}3\mbox{]}\\
+\>\>DEVICE\_USAGE\_NOTIFICATION\_TYPE {\bfseries Type}\\
+\>\} {\bfseries UsageNotification}\\
+\>struct \{\\
+\>\>SYSTEM\_POWER\_STATE {\bfseries PowerState}\\
+\>\} {\bfseries WaitWake}\\
+\>struct \{\\
+\>\>\hyperlink{struct___p_o_w_e_r___s_e_q_u_e_n_c_e}{PPOWER\_SEQUENCE} {\bfseries PowerSequence}\\
+\>\} {\bfseries PowerSequence}\\
+\>struct \{\\
+\>\>ULONG {\bfseries SystemContext}\\
+\>\>POWER\_STATE\_TYPE {\bfseries Type}\\
+\>\>\hyperlink{union___p_o_w_e_r___s_t_a_t_e}{POWER\_STATE} {\bfseries State}\\
+\>\>POWER\_ACTION {\bfseries ShutdownType}\\
+\>\} {\bfseries Power}\\
+\>struct \{\\
+\>\>\hyperlink{struct___c_m___r_e_s_o_u_r_c_e___l_i_s_t}{PCM\_RESOURCE\_LIST} {\bfseries AllocatedResources}\\
+\>\>\hyperlink{struct___c_m___r_e_s_o_u_r_c_e___l_i_s_t}{PCM\_RESOURCE\_LIST} {\bfseries AllocatedResourcesTranslated}\\
+\>\} {\bfseries StartDevice}\\
+\>struct \{\\
+\>\>ULONG\_PTR {\bfseries ProviderId}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries DataPath}\\
+\>\>ULONG {\bfseries BufferSize}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Buffer}\\
+\>\} {\bfseries WMI}\\
+\>struct \{\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Argument1}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Argument2}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Argument3}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries Argument4}\\
+\>\} {\bfseries Others}\\
+\} {\bfseries Parameters}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_aead01afa15e85d4fd559c45970d2ff08}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_aead01afa15e85d4fd559c45970d2ff08}} 
+P\+I\+O\+\_\+\+C\+O\+M\+P\+L\+E\+T\+I\+O\+N\+\_\+\+R\+O\+U\+T\+I\+NE {\bfseries Completion\+Routine}
+\item 
+\mbox{\Hypertarget{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a939276bd1bfdb417a2553cafa3793d65}\label{struct___e_x_t_e_n_d_e_d___i_o___s_t_a_c_k___l_o_c_a_t_i_o_n_a939276bd1bfdb417a2553cafa3793d65}} 
+\hyperlink{interfacevoid}{P\+V\+O\+ID} {\bfseries Context}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/ndk/iotypes.\+h\end{DoxyCompactItemize}

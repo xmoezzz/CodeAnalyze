@@ -1,0 +1,44 @@
+\hypertarget{interface_i_cor_debug_code}{}\section{I\+Cor\+Debug\+Code接口 参考}
+\label{interface_i_cor_debug_code}\index{I\+Cor\+Debug\+Code@{I\+Cor\+Debug\+Code}}
+类 I\+Cor\+Debug\+Code 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug_code}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_a4747750385227cb7db18837c864ba855}\label{interface_i_cor_debug_code_a4747750385227cb7db18837c864ba855}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+IL} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$pb\+IL)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_a5476762aee7cad2d0da7afc89d9ef860}\label{interface_i_cor_debug_code_a5476762aee7cad2d0da7afc89d9ef860}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Function} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_function}{I\+Cor\+Debug\+Function} $\ast$$\ast$pp\+Function)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_a3d1f06ebe317f046ba1a74472fdadf98}\label{interface_i_cor_debug_code_a3d1f06ebe317f046ba1a74472fdadf98}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Address} (\mbox{[}out\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS $\ast$p\+Start)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_ad4f6596b2d4cf765ea427bcb00212090}\label{interface_i_cor_debug_code_ad4f6596b2d4cf765ea427bcb00212090}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Size} (\mbox{[}out\mbox{]} U\+L\+O\+N\+G32 $\ast$pc\+Bytes)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_a0374555edc9d2b54cbb02ba43b0f64a0}\label{interface_i_cor_debug_code_a0374555edc9d2b54cbb02ba43b0f64a0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Breakpoint} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G32 offset, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_function_breakpoint}{I\+Cor\+Debug\+Function\+Breakpoint} $\ast$$\ast$pp\+Breakpoint)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_a34f5ddb19792cb58cb2240170e03b145}\label{interface_i_cor_debug_code_a34f5ddb19792cb58cb2240170e03b145}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Code} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G32 start\+Offset, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 end\+Offset, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 c\+Buffer\+Alloc, \mbox{[}out\mbox{]} B\+Y\+TE buffer\mbox{[}$\,$\mbox{]}, \mbox{[}out\mbox{]} U\+L\+O\+N\+G32 $\ast$pc\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_a1a88532e36d0a7ed180375783623de29}\label{interface_i_cor_debug_code_a1a88532e36d0a7ed180375783623de29}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Version\+Number} (\mbox{[}out\mbox{]} U\+L\+O\+N\+G32 $\ast$n\+Version)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_aa5a0634172002fafcbe1e3fa12af7e09}\label{interface_i_cor_debug_code_aa5a0634172002fafcbe1e3fa12af7e09}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+I\+L\+To\+Native\+Mapping} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G32 c\+Map, \mbox{[}out\mbox{]} U\+L\+O\+N\+G32 $\ast$pc\+Map, \mbox{[}out\mbox{]} \hyperlink{struct_c_o_r___d_e_b_u_g___i_l___t_o___n_a_t_i_v_e___m_a_p}{C\+O\+R\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+L\+\_\+\+T\+O\+\_\+\+N\+A\+T\+I\+V\+E\+\_\+\+M\+AP} \hyperlink{classmap}{map}\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_code_a0c7bbd410935fea343658df1ad70c6ef}\label{interface_i_cor_debug_code_a0c7bbd410935fea343658df1ad70c6ef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+En\+C\+Remap\+Sequence\+Points} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G32 c\+Map, \mbox{[}out\mbox{]} U\+L\+O\+N\+G32 $\ast$pc\+Map, \mbox{[}out\mbox{]} U\+L\+O\+N\+G32 offsets\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

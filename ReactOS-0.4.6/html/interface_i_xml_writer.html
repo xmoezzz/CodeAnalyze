@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IXmlWriter接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_xml_writer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IXmlWriter接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IXmlWriter 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_xml_writer.png" usemap="#IXmlWriter_map" alt=""/>
+  <map id="IXmlWriter_map" name="IXmlWriter_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,70,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac15c76211e2e90d1503b422d47a2b759"><td class="memItemLeft" align="right" valign="top"><a id="ac15c76211e2e90d1503b422d47a2b759"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetOutput</b> ([in] <a class="el" href="interface_i_unknown.html">IUnknown</a> *pOutput)</td></tr>
+<tr class="separator:ac15c76211e2e90d1503b422d47a2b759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa469ff587306a4e824b3f149ce886a7e"><td class="memItemLeft" align="right" valign="top"><a id="aa469ff587306a4e824b3f149ce886a7e"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetProperty</b> ([in] UINT nProperty, [out] LONG_PTR *ppValue)</td></tr>
+<tr class="separator:aa469ff587306a4e824b3f149ce886a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e335394d0d845c4a5a2993b050f44d3"><td class="memItemLeft" align="right" valign="top"><a id="a8e335394d0d845c4a5a2993b050f44d3"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetProperty</b> ([in] UINT nProperty, [in] LONG_PTR pValue)</td></tr>
+<tr class="separator:a8e335394d0d845c4a5a2993b050f44d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e48e560bd1594e2ddca11d943dd8198"><td class="memItemLeft" align="right" valign="top"><a id="a0e48e560bd1594e2ddca11d943dd8198"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteAttributes</b> ([in] <a class="el" href="interface_i_xml_reader.html">IXmlReader</a> *pReader, [in] BOOL fWriteDefaultAttributes)</td></tr>
+<tr class="separator:a0e48e560bd1594e2ddca11d943dd8198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5be939c7810856e6b9816fe5617891"><td class="memItemLeft" align="right" valign="top"><a id="aad5be939c7810856e6b9816fe5617891"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteAttributeString</b> ([in] LPCWSTR pwszPrefix, [in] LPCWSTR pwszLocalName, [in] LPCWSTR pwszNamespaceUri, [in] LPCWSTR pwszValue)</td></tr>
+<tr class="separator:aad5be939c7810856e6b9816fe5617891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812d73486787e79d0db2a36c46f39c32"><td class="memItemLeft" align="right" valign="top"><a id="a812d73486787e79d0db2a36c46f39c32"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCData</b> ([in] LPCWSTR pwszText)</td></tr>
+<tr class="separator:a812d73486787e79d0db2a36c46f39c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084f129d080d7dcc76141f5b2cfe4fbf"><td class="memItemLeft" align="right" valign="top"><a id="a084f129d080d7dcc76141f5b2cfe4fbf"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCharEntity</b> ([in] WCHAR wch)</td></tr>
+<tr class="separator:a084f129d080d7dcc76141f5b2cfe4fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4904409e2db8c9fdfe98c49a8422ff"><td class="memItemLeft" align="right" valign="top"><a id="a3d4904409e2db8c9fdfe98c49a8422ff"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteChars</b> ([in] const WCHAR *pwch, [in] UINT cwch)</td></tr>
+<tr class="separator:a3d4904409e2db8c9fdfe98c49a8422ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3172cc1c2cdc96c2d571617df02f52f0"><td class="memItemLeft" align="right" valign="top"><a id="a3172cc1c2cdc96c2d571617df02f52f0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteComment</b> ([in] LPCWSTR pwszComment)</td></tr>
+<tr class="separator:a3172cc1c2cdc96c2d571617df02f52f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab154c2118240afcd1b1241f1de11b83a"><td class="memItemLeft" align="right" valign="top"><a id="ab154c2118240afcd1b1241f1de11b83a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteDocType</b> ([in] LPCWSTR pwszName, [in] LPCWSTR pwszPublicId, [in] LPCWSTR pwszSystemId, [in] LPCWSTR pwszSubset)</td></tr>
+<tr class="separator:ab154c2118240afcd1b1241f1de11b83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426a5da5bdadd47cf27fab453f38d150"><td class="memItemLeft" align="right" valign="top"><a id="a426a5da5bdadd47cf27fab453f38d150"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteElementString</b> ([in] LPCWSTR pwszPrefix, [in] LPCWSTR pwszLocalName, [in] LPCWSTR pwszNamespaceUri, [in] LPCWSTR pwszValue)</td></tr>
+<tr class="separator:a426a5da5bdadd47cf27fab453f38d150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb69fb06f5704e9e97c0fcab29f91ac"><td class="memItemLeft" align="right" valign="top"><a id="a5bb69fb06f5704e9e97c0fcab29f91ac"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteEndDocument</b> ()</td></tr>
+<tr class="separator:a5bb69fb06f5704e9e97c0fcab29f91ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce60c5ada392f0221198dd09516bafb"><td class="memItemLeft" align="right" valign="top"><a id="a3ce60c5ada392f0221198dd09516bafb"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteEndElement</b> ()</td></tr>
+<tr class="separator:a3ce60c5ada392f0221198dd09516bafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791f57c8a9cd922284ffda12f387b07c"><td class="memItemLeft" align="right" valign="top"><a id="a791f57c8a9cd922284ffda12f387b07c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteEntityRef</b> ([in] LPCWSTR pwszName)</td></tr>
+<tr class="separator:a791f57c8a9cd922284ffda12f387b07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5297e0cbd9d15b1dbf233f964549d1c1"><td class="memItemLeft" align="right" valign="top"><a id="a5297e0cbd9d15b1dbf233f964549d1c1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteFullEndElement</b> ()</td></tr>
+<tr class="separator:a5297e0cbd9d15b1dbf233f964549d1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717b5b9071b19ad6d6ad495003c49210"><td class="memItemLeft" align="right" valign="top"><a id="a717b5b9071b19ad6d6ad495003c49210"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteName</b> ([in] LPCWSTR pwszName)</td></tr>
+<tr class="separator:a717b5b9071b19ad6d6ad495003c49210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a276643af17b79cc831e0ab912676f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a276643af17b79cc831e0ab912676f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteNmToken</b> ([in] LPCWSTR pwszNmToken)</td></tr>
+<tr class="separator:aa7a276643af17b79cc831e0ab912676f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4436895aded56b40b0595b3632cfdc"><td class="memItemLeft" align="right" valign="top"><a id="a6d4436895aded56b40b0595b3632cfdc"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteNode</b> ([in] <a class="el" href="interface_i_xml_reader.html">IXmlReader</a> *pReader, [in] BOOL fWriteDefaultAttributes)</td></tr>
+<tr class="separator:a6d4436895aded56b40b0595b3632cfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f83a2367276a5d9eb1c29839c70a88"><td class="memItemLeft" align="right" valign="top"><a id="a48f83a2367276a5d9eb1c29839c70a88"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteNodeShallow</b> ([in] <a class="el" href="interface_i_xml_reader.html">IXmlReader</a> *pReader, [in] BOOL fWriteDefaultAttributes)</td></tr>
+<tr class="separator:a48f83a2367276a5d9eb1c29839c70a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76be2db7bc80d6e8e0243862b1801f42"><td class="memItemLeft" align="right" valign="top"><a id="a76be2db7bc80d6e8e0243862b1801f42"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteProcessingInstruction</b> ([in] LPCWSTR pwszName, [in] LPCWSTR pwszText)</td></tr>
+<tr class="separator:a76be2db7bc80d6e8e0243862b1801f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf260b98307e728cd71adea44f5c984a"><td class="memItemLeft" align="right" valign="top"><a id="aaf260b98307e728cd71adea44f5c984a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteQualifiedName</b> ([in] LPCWSTR pwszLocalName, [in] LPCWSTR pwszNamespaceUri)</td></tr>
+<tr class="separator:aaf260b98307e728cd71adea44f5c984a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016c0454530439d66a3a30b2a2783647"><td class="memItemLeft" align="right" valign="top"><a id="a016c0454530439d66a3a30b2a2783647"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteRaw</b> ([in] LPCWSTR pwszData)</td></tr>
+<tr class="separator:a016c0454530439d66a3a30b2a2783647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72903dc355fc1a87a937fcae457446c8"><td class="memItemLeft" align="right" valign="top"><a id="a72903dc355fc1a87a937fcae457446c8"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteRawChars</b> ([in] const WCHAR *pwch, [in] UINT cwch)</td></tr>
+<tr class="separator:a72903dc355fc1a87a937fcae457446c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193ade65066ee4a89f97414c24f4678b"><td class="memItemLeft" align="right" valign="top"><a id="a193ade65066ee4a89f97414c24f4678b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStartDocument</b> ([in] XmlStandalone standalone)</td></tr>
+<tr class="separator:a193ade65066ee4a89f97414c24f4678b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c16bbd6fe0a6f98804f98a57301207"><td class="memItemLeft" align="right" valign="top"><a id="ad2c16bbd6fe0a6f98804f98a57301207"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStartElement</b> ([in] LPCWSTR pwszPrefix, [in] LPCWSTR pwszLocalName, [in] LPCWSTR pwszNamespaceUri)</td></tr>
+<tr class="separator:ad2c16bbd6fe0a6f98804f98a57301207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1f82012f496079194ddb3301b851b0"><td class="memItemLeft" align="right" valign="top"><a id="a9e1f82012f496079194ddb3301b851b0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteString</b> ([in] LPCWSTR pwszText)</td></tr>
+<tr class="separator:a9e1f82012f496079194ddb3301b851b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c62514ff70307e67a4959c3d9907cd1"><td class="memItemLeft" align="right" valign="top"><a id="a8c62514ff70307e67a4959c3d9907cd1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteSurrogateCharEntity</b> ([in] WCHAR wchLow, [in] WCHAR wchHigh)</td></tr>
+<tr class="separator:a8c62514ff70307e67a4959c3d9907cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69efc3be64b5d34766529e08c7dad6ef"><td class="memItemLeft" align="right" valign="top"><a id="a69efc3be64b5d34766529e08c7dad6ef"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteWhitespace</b> ([in] LPCWSTR pwszWhitespace)</td></tr>
+<tr class="separator:a69efc3be64b5d34766529e08c7dad6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d613069e0097e920937085ee17d2b18"><td class="memItemLeft" align="right" valign="top"><a id="a9d613069e0097e920937085ee17d2b18"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> ()</td></tr>
+<tr class="separator:a9d613069e0097e920937085ee17d2b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="xmllite_8idl_source.html">xmllite.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

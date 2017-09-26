@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/drivers/lwip/src/core/mem.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_2c85cff4f1cef242b8656be9a8ac1f31.html">drivers</a></li><li class="navelem"><a class="el" href="dir_96ee20e854c60754e26b655afd09dbca.html">lwip</a></li><li class="navelem"><a class="el" href="dir_ead4725ee7eaa6e080332f3f984ccc64.html">src</a></li><li class="navelem"><a class="el" href="dir_22a6bd8b988ddbe67052e47417ed1651.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">mem.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="opt_8h_source.html">lwip/opt.h</a>&quot;</code><br />
+<code>#include &quot;lwip/def.h&quot;</code><br />
+<code>#include &quot;lwip/mem.h&quot;</code><br />
+<code>#include &quot;lwip/sys.h&quot;</code><br />
+<code>#include &quot;lwip/stats.h&quot;</code><br />
+<code>#include &quot;lwip/err.h&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmem.html">mem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a278694c2333c9826f21ddd2c2d220f66"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a278694c2333c9826f21ddd2c2d220f66">MIN_SIZE</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a278694c2333c9826f21ddd2c2d220f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c704b85f71b6e61b0098b4a0a743cd"><td class="memItemLeft" align="right" valign="top"><a id="a97c704b85f71b6e61b0098b4a0a743cd"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_SIZE_ALIGNED</b>&#160;&#160;&#160;LWIP_MEM_ALIGN_SIZE(<a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a278694c2333c9826f21ddd2c2d220f66">MIN_SIZE</a>)</td></tr>
+<tr class="separator:a97c704b85f71b6e61b0098b4a0a743cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9cedd48e9a482120e29c010352ee5c"><td class="memItemLeft" align="right" valign="top"><a id="ade9cedd48e9a482120e29c010352ee5c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SIZEOF_STRUCT_MEM</b>&#160;&#160;&#160;LWIP_MEM_ALIGN_SIZE(sizeof(<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structmem.html">mem</a>))</td></tr>
+<tr class="separator:ade9cedd48e9a482120e29c010352ee5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ed2097d5d3e2ca4599b2ca3d91493a"><td class="memItemLeft" align="right" valign="top"><a id="a78ed2097d5d3e2ca4599b2ca3d91493a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MEM_SIZE_ALIGNED</b>&#160;&#160;&#160;LWIP_MEM_ALIGN_SIZE(<a class="el" href="opt_8h.html#a2dcf8c45f945dd0c4301a94700f2112c">MEM_SIZE</a>)</td></tr>
+<tr class="separator:a78ed2097d5d3e2ca4599b2ca3d91493a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa8ffb4c7a8b4c0404ad4278cc801d0"><td class="memItemLeft" align="right" valign="top"><a id="a4fa8ffb4c7a8b4c0404ad4278cc801d0"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_RAM_HEAP_POINTER</b>&#160;&#160;&#160;<a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#ad177a0dcced85a03aad566e9ccbf127a">ram_heap</a></td></tr>
+<tr class="separator:a4fa8ffb4c7a8b4c0404ad4278cc801d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581c4edded02d92caf7a938c801a618e"><td class="memItemLeft" align="right" valign="top"><a id="a581c4edded02d92caf7a938c801a618e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEM_FREE_DECL_PROTECT</b>()</td></tr>
+<tr class="separator:a581c4edded02d92caf7a938c801a618e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef413072690259b59ce27e49df19e307"><td class="memItemLeft" align="right" valign="top"><a id="aef413072690259b59ce27e49df19e307"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEM_FREE_PROTECT</b>()&#160;&#160;&#160;sys_mutex_lock(&amp;mem_mutex)</td></tr>
+<tr class="separator:aef413072690259b59ce27e49df19e307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a24c0593943bb1e64c1243dddfae50"><td class="memItemLeft" align="right" valign="top"><a id="aa8a24c0593943bb1e64c1243dddfae50"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEM_FREE_UNPROTECT</b>()&#160;&#160;&#160;sys_mutex_unlock(&amp;mem_mutex)</td></tr>
+<tr class="separator:aa8a24c0593943bb1e64c1243dddfae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016a07ea84e1d75386765b90015b6698"><td class="memItemLeft" align="right" valign="top"><a id="a016a07ea84e1d75386765b90015b6698"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEM_ALLOC_DECL_PROTECT</b>()</td></tr>
+<tr class="separator:a016a07ea84e1d75386765b90015b6698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c644ac3ac94ed977bb165eeb6ff741a"><td class="memItemLeft" align="right" valign="top"><a id="a3c644ac3ac94ed977bb165eeb6ff741a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEM_ALLOC_PROTECT</b>()</td></tr>
+<tr class="separator:a3c644ac3ac94ed977bb165eeb6ff741a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0643ce3aa197952517914e1d644150a"><td class="memItemLeft" align="right" valign="top"><a id="af0643ce3aa197952517914e1d644150a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEM_ALLOC_UNPROTECT</b>()</td></tr>
+<tr class="separator:af0643ce3aa197952517914e1d644150a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a44a136e3b70c36abb6f8dc060c778113"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a44a136e3b70c36abb6f8dc060c778113">mem_init</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a44a136e3b70c36abb6f8dc060c778113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65169147c44e9db60d997819af9b455c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a65169147c44e9db60d997819af9b455c">mem_free</a> (<a class="el" href="interfacevoid.html">void</a> *rmem)</td></tr>
+<tr class="separator:a65169147c44e9db60d997819af9b455c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0214c1c0d4acf856fb3ec76818a5a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a2f0214c1c0d4acf856fb3ec76818a5a9">mem_trim</a> (<a class="el" href="interfacevoid.html">void</a> *rmem, mem_size_t newsize)</td></tr>
+<tr class="separator:a2f0214c1c0d4acf856fb3ec76818a5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932aa40d85b14cb7331625e012d12335"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a932aa40d85b14cb7331625e012d12335">mem_malloc</a> (mem_size_t size)</td></tr>
+<tr class="separator:a932aa40d85b14cb7331625e012d12335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bdc525971701883f2065e7fb257a24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#ab0bdc525971701883f2065e7fb257a24">mem_calloc</a> (mem_size_t count, mem_size_t size)</td></tr>
+<tr class="separator:ab0bdc525971701883f2065e7fb257a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ad177a0dcced85a03aad566e9ccbf127a"><td class="memItemLeft" align="right" valign="top">u8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#ad177a0dcced85a03aad566e9ccbf127a">ram_heap</a> [MEM_SIZE_ALIGNED+(2 *SIZEOF_STRUCT_MEM)+<a class="el" href="opt_8h.html#a97343214666ee6dcb18c0bd77b441ea7">MEM_ALIGNMENT</a>]</td></tr>
+<tr class="separator:ad177a0dcced85a03aad566e9ccbf127a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Dynamic memory manager</p>
+<p><a class="el" href="namespace_this.html">This</a> is a lightweight replacement for the standard <a class="el" href="struct_c.html">C</a> library malloc().</p>
+<p>If you want to use the standard <a class="el" href="struct_c.html">C</a> library malloc() instead, define MEM_LIBC_MALLOC to 1 in your <a class="el" href="lwipopts_8h_source.html">lwipopts.h</a></p>
+<p>To let <a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a932aa40d85b14cb7331625e012d12335">mem_malloc()</a> use pools (prevents fragmentation and is much faster than a heap but might waste some memory), define MEM_USE_POOLS to 1, define MEM_USE_CUSTOM_POOLS to 1 and create a file "lwippools.h" that includes a list of pools like this (more pools can be added between _START and _END):</p>
+<p>Define three pools with sizes 256, 512, and 1512 bytes LWIP_MALLOC_MEMPOOL_START LWIP_MALLOC_MEMPOOL(20, 256) LWIP_MALLOC_MEMPOOL(10, 512) LWIP_MALLOC_MEMPOOL(5, 1512) LWIP_MALLOC_MEMPOOL_END </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a278694c2333c9826f21ddd2c2d220f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a278694c2333c9826f21ddd2c2d220f66">&#9670;&nbsp;</a></span>MIN_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MIN_SIZE&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>All allocated blocks will be MIN_SIZE bytes big, at least! MIN_SIZE can be overridden to suit your needs. Smaller values save space, larger values could prevent too small blocks to fragment the RAM too much. </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ab0bdc525971701883f2065e7fb257a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bdc525971701883f2065e7fb257a24">&#9670;&nbsp;</a></span>mem_calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a>* mem_calloc </td>
+          <td>(</td>
+          <td class="paramtype">mem_size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mem_size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contiguously allocates enough space for count objects that are size bytes of memory each and returns a pointer to the allocated memory.</p>
+<p>The allocated memory is filled with bytes of value zero.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>number of objects to allocate </td></tr>
+    <tr><td class="paramname">size</td><td>size of the objects to allocate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to allocated memory / NULL pointer if there is an error </dd></dl>
+
+</div>
+</div>
+<a id="a65169147c44e9db60d997819af9b455c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65169147c44e9db60d997819af9b455c">&#9670;&nbsp;</a></span>mem_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> mem_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>rmem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Put a struct mem back on the heap</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rmem</td><td>is the data portion of a struct mem as returned by a previous call to <a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a932aa40d85b14cb7331625e012d12335">mem_malloc()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44a136e3b70c36abb6f8dc060c778113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a136e3b70c36abb6f8dc060c778113">&#9670;&nbsp;</a></span>mem_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> mem_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zero the heap and initialize start, end and lowest-free </p>
+
+</div>
+</div>
+<a id="a932aa40d85b14cb7331625e012d12335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932aa40d85b14cb7331625e012d12335">&#9670;&nbsp;</a></span>mem_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a>* mem_malloc </td>
+          <td>(</td>
+          <td class="paramtype">mem_size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adam's <a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a932aa40d85b14cb7331625e012d12335">mem_malloc()</a> plus solution for bug #17922 Allocate a block of memory with a minimum of 'size' bytes.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>is the minimum size of the requested block in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to allocated memory or NULL if no free memory was found.</dd></dl>
+<p>Note that the returned value will always be aligned (as defined by MEM_ALIGNMENT). </p>
+
+</div>
+</div>
+<a id="a2f0214c1c0d4acf856fb3ec76818a5a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0214c1c0d4acf856fb3ec76818a5a9">&#9670;&nbsp;</a></span>mem_trim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a>* mem_trim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>rmem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mem_size_t&#160;</td>
+          <td class="paramname"><em>newsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shrink memory returned by <a class="el" href="sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c.html#a932aa40d85b14cb7331625e012d12335">mem_malloc()</a>.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rmem</td><td>pointer to memory allocated by mem_malloc the is to be shrinked </td></tr>
+    <tr><td class="paramname">newsize</td><td>required size after shrinking (needs to be smaller than or equal to the previous size) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>for compatibility reasons: is always == rmem, at the moment or NULL if newsize is &gt; old size, in which case rmem is NOT touched or freed! </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="ad177a0dcced85a03aad566e9ccbf127a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad177a0dcced85a03aad566e9ccbf127a">&#9670;&nbsp;</a></span>ram_heap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8_t ram_heap[MEM_SIZE_ALIGNED+(2 *SIZEOF_STRUCT_MEM)+<a class="el" href="opt_8h.html#a97343214666ee6dcb18c0bd77b441ea7">MEM_ALIGNMENT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If you want to relocate the heap to external memory, simply define LWIP_RAM_HEAP_POINTER as a void-pointer to that location. If so, make sure the memory at that location is big enough (see below on how that space is calculated). the heap. we need one struct mem at the end and some room for alignment </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,82 @@
+\hypertarget{interfacens_i_selection}{}\section{ns\+I\+Selection接口 参考}
+\label{interfacens_i_selection}\index{ns\+I\+Selection@{ns\+I\+Selection}}
+类 ns\+I\+Selection 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacens_i_selection}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a3d1cec9b1110d131b364bc308aed97b9}\label{interfacens_i_selection_a3d1cec9b1110d131b364bc308aed97b9}} 
+nsresult {\bfseries Get\+Anchor\+Node} (\hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$$\ast$a\+Anchor\+Node)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a4bfc4cc12f75fba96f460acb51e2ce2c}\label{interfacens_i_selection_a4bfc4cc12f75fba96f460acb51e2ce2c}} 
+nsresult {\bfseries Get\+Anchor\+Offset} (int32\+\_\+t $\ast$a\+Anchor\+Offset)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_aa28f57430074a9e9e9375bb8c2c12d14}\label{interfacens_i_selection_aa28f57430074a9e9e9375bb8c2c12d14}} 
+nsresult {\bfseries Get\+Focus\+Node} (\hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$$\ast$a\+Focus\+Node)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a0c180084d241900a20df692ee939f221}\label{interfacens_i_selection_a0c180084d241900a20df692ee939f221}} 
+nsresult {\bfseries Get\+Focus\+Offset} (int32\+\_\+t $\ast$a\+Focus\+Offset)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a3bd91451f40af6debea359677341f588}\label{interfacens_i_selection_a3bd91451f40af6debea359677341f588}} 
+nsresult {\bfseries Get\+Is\+Collapsed} (bool $\ast$a\+Is\+Collapsed)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_ab6bc0de56120f39bc4767e21e51564dc}\label{interfacens_i_selection_ab6bc0de56120f39bc4767e21e51564dc}} 
+bool {\bfseries Collapsed} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a17ad090a94cdf5dc13a6ef3f411c87d5}\label{interfacens_i_selection_a17ad090a94cdf5dc13a6ef3f411c87d5}} 
+nsresult {\bfseries Get\+Range\+Count} (int32\+\_\+t $\ast$a\+Range\+Count)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_afd6c2b54e4d4af63cd908fa1e05b9ddf}\label{interfacens_i_selection_afd6c2b54e4d4af63cd908fa1e05b9ddf}} 
+nsresult {\bfseries Get\+Range\+At} (int32\+\_\+t index, \hyperlink{interfacens_i_d_o_m_range}{ns\+I\+D\+O\+M\+Range} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a8881eb93e5d63b06e9d2a9c167d980cc}\label{interfacens_i_selection_a8881eb93e5d63b06e9d2a9c167d980cc}} 
+nsresult {\bfseries Collapse} (\hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$parent\+Node, int32\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a3f6dcb95440c4c81f0f0a867ea91b8bf}\label{interfacens_i_selection_a3f6dcb95440c4c81f0f0a867ea91b8bf}} 
+nsresult {\bfseries Collapse\+Native} (\hyperlink{interfacens_i_supports}{ns\+I\+Node} $\ast$parent\+Node, int32\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_af30ccc364f949b41175423f8b18ab4e4}\label{interfacens_i_selection_af30ccc364f949b41175423f8b18ab4e4}} 
+nsresult {\bfseries Extend} (\hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$parent\+Node, int32\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a752c447bce986f8fbf3b6e7adad72ce8}\label{interfacens_i_selection_a752c447bce986f8fbf3b6e7adad72ce8}} 
+nsresult {\bfseries Extend\+Native} (\hyperlink{interfacens_i_supports}{ns\+I\+Node} $\ast$parent\+Node, int32\+\_\+t offset)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a7ed4be76947b060e1af7ad6b45725318}\label{interfacens_i_selection_a7ed4be76947b060e1af7ad6b45725318}} 
+nsresult {\bfseries Collapse\+To\+Start} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_af75e9d899498ffbf520b07c6a29123f4}\label{interfacens_i_selection_af75e9d899498ffbf520b07c6a29123f4}} 
+nsresult {\bfseries Collapse\+To\+End} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a0bfb34b310addfc0e2d9265c033fab30}\label{interfacens_i_selection_a0bfb34b310addfc0e2d9265c033fab30}} 
+nsresult {\bfseries Contains\+Node} (\hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$node, bool entirely\+Contained, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_aa133a1fd743000da935a2d60565b5901}\label{interfacens_i_selection_aa133a1fd743000da935a2d60565b5901}} 
+nsresult {\bfseries Select\+All\+Children} (\hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$parent\+Node)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_aa4330f5cb56e0d5d3288af171d79613b}\label{interfacens_i_selection_aa4330f5cb56e0d5d3288af171d79613b}} 
+nsresult {\bfseries Add\+Range} (\hyperlink{interfacens_i_d_o_m_range}{ns\+I\+D\+O\+M\+Range} $\ast$range)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a9f3e80b6b355db347530d99fb82e30ae}\label{interfacens_i_selection_a9f3e80b6b355db347530d99fb82e30ae}} 
+nsresult {\bfseries Remove\+Range} (\hyperlink{interfacens_i_d_o_m_range}{ns\+I\+D\+O\+M\+Range} $\ast$range)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a501f5e0e50f92f9fd56cb1b669896619}\label{interfacens_i_selection_a501f5e0e50f92f9fd56cb1b669896619}} 
+nsresult {\bfseries Remove\+All\+Ranges} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_aa5834f01c00d5b65669df0711d5cdf74}\label{interfacens_i_selection_aa5834f01c00d5b65669df0711d5cdf74}} 
+nsresult {\bfseries Delete\+From\+Document} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a8074b2a5b54e620bf5d23debbad85910}\label{interfacens_i_selection_a8074b2a5b54e620bf5d23debbad85910}} 
+nsresult {\bfseries To\+String} (\hyperlink{structns_string_container}{ns\+A\+String} $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_selection_a796040867e8b4e9c236453646b4d85c1}\label{interfacens_i_selection_a796040867e8b4e9c236453646b4d85c1}} 
+nsresult {\bfseries Modify} (const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$alter, const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$direction, const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$granularity)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

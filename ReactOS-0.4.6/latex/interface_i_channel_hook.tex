@@ -1,0 +1,48 @@
+\hypertarget{interface_i_channel_hook}{}\section{I\+Channel\+Hook接口 参考}
+\label{interface_i_channel_hook}\index{I\+Channel\+Hook@{I\+Channel\+Hook}}
+类 I\+Channel\+Hook 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_channel_hook}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_channel_hook_1_1_s_channel_hook_call_info}{S\+Channel\+Hook\+Call\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_ac78ddd72e818dc3e2868d1b7427a31bc}\label{interface_i_channel_hook_ac78ddd72e818dc3e2868d1b7427a31bc}} 
+typedef \hyperlink{interface_i_channel_hook}{I\+Channel\+Hook} $\ast$ {\bfseries L\+P\+C\+H\+A\+N\+N\+E\+L\+H\+O\+OK}
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_a91229fd7d45c95e03a68db7929669eda}\label{interface_i_channel_hook_a91229fd7d45c95e03a68db7929669eda}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_channel_hook_1_1_s_channel_hook_call_info}{I\+Channel\+Hook\+::\+S\+Channel\+Hook\+Call\+Info} {\bfseries S\+Channel\+Hook\+Call\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_a58771f0c87d63c58f3a18bd8952ebb80}\label{interface_i_channel_hook_a58771f0c87d63c58f3a18bd8952ebb80}} 
+\hyperlink{interfacevoid}{void} {\bfseries Client\+Get\+Size} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} u\+Extent, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$p\+Data\+Size)
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_afa65b2fed984c63397994ee8e1f436b6}\label{interface_i_channel_hook_afa65b2fed984c63397994ee8e1f436b6}} 
+\hyperlink{interfacevoid}{void} {\bfseries Client\+Fill\+Buffer} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} u\+Extent, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}in, out\mbox{]} U\+L\+O\+NG $\ast$p\+Data\+Size, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Data\+Buffer)
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_a6317f00306447961ef078fdd4e646be0}\label{interface_i_channel_hook_a6317f00306447961ef078fdd4e646be0}} 
+\hyperlink{interfacevoid}{void} {\bfseries Client\+Notify} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} u\+Extent, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}in\mbox{]} U\+L\+O\+NG cb\+Data\+Size, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Data\+Buffer, \mbox{[}in\mbox{]} D\+W\+O\+RD l\+Data\+Rep, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr\+Fault)
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_aa5f0402a3d1f50a668ff28fe1d8b20ee}\label{interface_i_channel_hook_aa5f0402a3d1f50a668ff28fe1d8b20ee}} 
+\hyperlink{interfacevoid}{void} {\bfseries Server\+Notify} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} u\+Extent, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}in\mbox{]} U\+L\+O\+NG cb\+Data\+Size, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Data\+Buffer, \mbox{[}in\mbox{]} D\+W\+O\+RD l\+Data\+Rep)
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_a8b7dcfe56b961c6982f72e039d6155c6}\label{interface_i_channel_hook_a8b7dcfe56b961c6982f72e039d6155c6}} 
+\hyperlink{interfacevoid}{void} {\bfseries Server\+Get\+Size} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} u\+Extent, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr\+Fault, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$p\+Data\+Size)
+\item 
+\mbox{\Hypertarget{interface_i_channel_hook_ae6a56816ee191f6d092f9e25a35a24f9}\label{interface_i_channel_hook_ae6a56816ee191f6d092f9e25a35a24f9}} 
+\hyperlink{interfacevoid}{void} {\bfseries Server\+Fill\+Buffer} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} u\+Extent, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}in, out\mbox{]} U\+L\+O\+NG $\ast$p\+Data\+Size, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Data\+Buffer, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr\+Fault)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

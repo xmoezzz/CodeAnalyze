@@ -1,0 +1,61 @@
+\hypertarget{class_fast_allocator}{}\section{Fast\+Allocator类 参考}
+\label{class_fast_allocator}\index{Fast\+Allocator@{Fast\+Allocator}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_fast_allocator_1_1_block}{Block}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fast_allocator_ad99d8a7eb2ab54abd4e5de71a0d4aa3c}\label{class_fast_allocator_ad99d8a7eb2ab54abd4e5de71a0d4aa3c}} 
+enum \{ {\bfseries k\+Block\+Count} = 1500, 
+{\bfseries k\+Min\+Block\+Size} = 48
+ \}
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fast_allocator_a99c8d738ddce7bd8ebf5435f074353d2}\label{class_fast_allocator_a99c8d738ddce7bd8ebf5435f074353d2}} 
+static \hyperlink{interfacevoid}{void} $\ast$ {\bfseries Allocate} (size\+\_\+t s)
+\item 
+\mbox{\Hypertarget{class_fast_allocator_a9efa06baa4c74c5f8f3b18b72249a25a}\label{class_fast_allocator_a9efa06baa4c74c5f8f3b18b72249a25a}} 
+static bool {\bfseries Free} (\hyperlink{interfacevoid}{void} $\ast$p)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_fast_allocator_1_1_block}{Block} $\ast$ {\bfseries m\+Blocks}
+\item 
+\mbox{\Hypertarget{class_fast_allocator_ad4b208fad96d51f85d7c075506bd5d2f}\label{class_fast_allocator_ad4b208fad96d51f85d7c075506bd5d2f}} 
+static \hyperlink{struct_fast_allocator_1_1_block}{Block} $\ast$ {\bfseries m\+Free}
+\item 
+\mbox{\Hypertarget{class_fast_allocator_a389615f3bfb2e682e63fe32af69c54c6}\label{class_fast_allocator_a389615f3bfb2e682e63fe32af69c54c6}} 
+static size\+\_\+t {\bfseries m\+Used}
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fast_allocator_af38287fd339032a36d09967eff6f7133}\label{class_fast_allocator_af38287fd339032a36d09967eff6f7133}} 
+\hyperlink{interfacestruct}{struct} {\bfseries Block}
+\end{DoxyCompactItemize}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{class_fast_allocator_a2b2c1a90566161832babd27ce0eafcfd}\label{class_fast_allocator_a2b2c1a90566161832babd27ce0eafcfd}} 
+\index{Fast\+Allocator@{Fast\+Allocator}!m\+Blocks@{m\+Blocks}}
+\index{m\+Blocks@{m\+Blocks}!Fast\+Allocator@{Fast\+Allocator}}
+\subsubsection{\texorpdfstring{m\+Blocks}{mBlocks}}
+{\footnotesize\ttfamily \hyperlink{struct_fast_allocator_1_1_block}{Fast\+Allocator\+::\+Block} $\ast$ Fast\+Allocator\+::m\+Blocks\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}
+=
+(\hyperlink{struct_fast_allocator_1_1_block}{FastAllocator::Block}*)EH\_CSTD::calloc( \textcolor{keyword}{sizeof}(
+      \hyperlink{struct_fast_allocator_1_1_block}{FastAllocator::Block}), FastAllocator::kBlockCount )
+\end{DoxyCode}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/test/eh/nc\+\_\+alloc.\+cpp\end{DoxyCompactItemize}

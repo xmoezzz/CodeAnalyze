@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: connection_ops结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structconnection__ops-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">connection_ops结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:acc81922ba39384831bac8f5cb6f71a2c"><td class="memItemLeft" align="right" valign="top"><a id="acc81922ba39384831bac8f5cb6f71a2c"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="separator:acc81922ba39384831bac8f5cb6f71a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273062d8372e3d7135b82ed605d4f3d9"><td class="memItemLeft" align="right" valign="top"><a id="a273062d8372e3d7135b82ed605d4f3d9"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>epm_protocols</b> [2]</td></tr>
+<tr class="separator:a273062d8372e3d7135b82ed605d4f3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8869a1f40eecf242093cc02f27ef39"><td class="memItemLeft" align="right" valign="top"><a id="acb8869a1f40eecf242093cc02f27ef39"></a>
+<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>alloc</b> )(<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:acb8869a1f40eecf242093cc02f27ef39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91d77c6eb875b4dc66497c54f6625e2"><td class="memItemLeft" align="right" valign="top"><a id="aa91d77c6eb875b4dc66497c54f6625e2"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>open_connection_client</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:aa91d77c6eb875b4dc66497c54f6625e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f6569786a0cf662f1b3dcd1cda83e8"><td class="memItemLeft" align="right" valign="top"><a id="ac6f6569786a0cf662f1b3dcd1cda83e8"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>handoff</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *old_conn, <a class="el" href="struct___rpc_connection.html">RpcConnection</a> *new_conn)</td></tr>
+<tr class="separator:ac6f6569786a0cf662f1b3dcd1cda83e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e784479387e2921cc5d598a94243610"><td class="memItemLeft" align="right" valign="top"><a id="a1e784479387e2921cc5d598a94243610"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn, <a class="el" href="interfacevoid.html">void</a> *buffer, unsigned int len)</td></tr>
+<tr class="separator:a1e784479387e2921cc5d598a94243610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0f01ccf30a5a00aaff142dcbe32857"><td class="memItemLeft" align="right" valign="top"><a id="a6d0f01ccf30a5a00aaff142dcbe32857"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn, const <a class="el" href="interfacevoid.html">void</a> *buffer, unsigned int len)</td></tr>
+<tr class="separator:a6d0f01ccf30a5a00aaff142dcbe32857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1db4bf639b4b543307e62369f9ab90f"><td class="memItemLeft" align="right" valign="top"><a id="ac1db4bf639b4b543307e62369f9ab90f"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:ac1db4bf639b4b543307e62369f9ab90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fc9219fd8555f1701ece1a558115e3"><td class="memItemLeft" align="right" valign="top"><a id="ac9fc9219fd8555f1701ece1a558115e3"></a>
+<a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>close_read</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:ac9fc9219fd8555f1701ece1a558115e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97b47838198b05d696f2abd24fbddf7"><td class="memItemLeft" align="right" valign="top"><a id="af97b47838198b05d696f2abd24fbddf7"></a>
+<a class="el" href="interfacevoid.html">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>cancel_call</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:af97b47838198b05d696f2abd24fbddf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4dfe4a1b6e0cd09ee8d47bca5f1d618"><td class="memItemLeft" align="right" valign="top"><a id="ad4dfe4a1b6e0cd09ee8d47bca5f1d618"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>is_server_listening</b> )(const char *<a class="el" href="structendpoint.html">endpoint</a>)</td></tr>
+<tr class="separator:ad4dfe4a1b6e0cd09ee8d47bca5f1d618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4445d84a31b5c2595500be0d1b7926"><td class="memItemLeft" align="right" valign="top"><a id="abb4445d84a31b5c2595500be0d1b7926"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>wait_for_incoming_data</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:abb4445d84a31b5c2595500be0d1b7926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b73a10123c5eab82cfc8788a06fc64b"><td class="memItemLeft" align="right" valign="top"><a id="a0b73a10123c5eab82cfc8788a06fc64b"></a>
+size_t(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_top_of_tower</b> )(unsigned char *tower_data, const char *networkaddr, const char *<a class="el" href="structendpoint.html">endpoint</a>)</td></tr>
+<tr class="separator:a0b73a10123c5eab82cfc8788a06fc64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6375a463365627883d4cefea6f0e8a6"><td class="memItemLeft" align="right" valign="top"><a id="aa6375a463365627883d4cefea6f0e8a6"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>parse_top_of_tower</b> )(const unsigned char *tower_data, size_t tower_size, char **networkaddr, char **<a class="el" href="structendpoint.html">endpoint</a>)</td></tr>
+<tr class="separator:aa6375a463365627883d4cefea6f0e8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac96908ccb1abc5b0debe85d3ccc0fdb"><td class="memItemLeft" align="right" valign="top"><a id="aac96908ccb1abc5b0debe85d3ccc0fdb"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>receive_fragment</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn, <a class="el" href="union_rpc_pkt_hdr.html">RpcPktHdr</a> **<a class="el" href="class_header.html">Header</a>, <a class="el" href="interfacevoid.html">void</a> **Payload)</td></tr>
+<tr class="separator:aac96908ccb1abc5b0debe85d3ccc0fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac460ba448a2a0befc41f7a627f00e795"><td class="memItemLeft" align="right" valign="top"><a id="ac460ba448a2a0befc41f7a627f00e795"></a>
+BOOL(*&#160;</td><td class="memItemRight" valign="bottom"><b>is_authorized</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:ac460ba448a2a0befc41f7a627f00e795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387bc77e6eaf89ce9b3f76daae1df048"><td class="memItemLeft" align="right" valign="top"><a id="a387bc77e6eaf89ce9b3f76daae1df048"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>authorize</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn, BOOL first_time, unsigned char *in_buffer, unsigned int in_len, unsigned char *out_buffer, unsigned int *out_len)</td></tr>
+<tr class="separator:a387bc77e6eaf89ce9b3f76daae1df048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278b757a36c56d30f6bb8282db6e2ac5"><td class="memItemLeft" align="right" valign="top"><a id="a278b757a36c56d30f6bb8282db6e2ac5"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>secure_packet</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *Connection, <a class="el" href="interfaceenum.html">enum</a> secure_packet_direction dir, <a class="el" href="union_rpc_pkt_hdr.html">RpcPktHdr</a> *hdr, unsigned int hdr_size, unsigned char *stub_data, unsigned int stub_data_size, <a class="el" href="struct_rpc_auth_verifier.html">RpcAuthVerifier</a> *auth_hdr, unsigned char *auth_value, unsigned int auth_value_size)</td></tr>
+<tr class="separator:a278b757a36c56d30f6bb8282db6e2ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1632e4db8047aeea6d21a41b8490027"><td class="memItemLeft" align="right" valign="top"><a id="ac1632e4db8047aeea6d21a41b8490027"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>impersonate_client</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:ac1632e4db8047aeea6d21a41b8490027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbe5bb396520af2a57cfb14eceaa527"><td class="memItemLeft" align="right" valign="top"><a id="a9dbe5bb396520af2a57cfb14eceaa527"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>revert_to_self</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *conn)</td></tr>
+<tr class="separator:a9dbe5bb396520af2a57cfb14eceaa527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e822716d8dfce83938a6977a858f88b"><td class="memItemLeft" align="right" valign="top"><a id="a9e822716d8dfce83938a6977a858f88b"></a>
+RPC_STATUS(*&#160;</td><td class="memItemRight" valign="bottom"><b>inquire_auth_client</b> )(<a class="el" href="struct___rpc_connection.html">RpcConnection</a> *, <a class="el" href="interfacevoid.html">RPC_AUTHZ_HANDLE</a> *, RPC_WSTR *, ULONG *, ULONG *, ULONG *, ULONG)</td></tr>
+<tr class="separator:a9e822716d8dfce83938a6977a858f88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/win32/rpcrt4/<a class="el" href="rpc__binding_8h_source.html">rpc_binding.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

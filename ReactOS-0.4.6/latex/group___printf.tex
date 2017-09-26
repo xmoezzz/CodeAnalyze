@@ -1,0 +1,368 @@
+\hypertarget{group___printf}{}\section{Printf}
+\label{group___printf}\index{Printf@{Printf}}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+printf \hyperlink{group___printf_gaed17251b0f7e8f42cb5ddeb74feef6f7}{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S2} ((format, va\+\_\+alist), T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vprintf \hyperlink{group___printf_ga1b4cbeca40314883d90a26034076651b}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((format, \hyperlink{structargs}{args}), T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, va\+\_\+list \hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+printfv \hyperlink{group___printf_gafdccde42df6e234ff1fd0b065494addc}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((format, \hyperlink{structargs}{args}), T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, trio\+\_\+pointer\+\_\+t $\ast$\hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+fprintf \hyperlink{group___printf_gada44b3387088f4aff6b57bc324fba8c1}{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3} ((\hyperlink{structfile}{file}, format, va\+\_\+alist), \hyperlink{struct__iobuf}{F\+I\+LE} $\ast$\hyperlink{structfile}{file}, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vfprintf \hyperlink{group___printf_ga68754f77b19801518809f3c14c9df557}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((\hyperlink{structfile}{file}, format, \hyperlink{structargs}{args}), \hyperlink{struct__iobuf}{F\+I\+LE} $\ast$\hyperlink{structfile}{file}, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, va\+\_\+list \hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+fprintfv \hyperlink{group___printf_gaf01545f1b005bd19669cb5c54cccedd2}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((\hyperlink{structfile}{file}, format, \hyperlink{structargs}{args}), \hyperlink{struct__iobuf}{F\+I\+LE} $\ast$\hyperlink{structfile}{file}, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, trio\+\_\+pointer\+\_\+t $\ast$\hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+dprintf \hyperlink{group___printf_ga5ea6293443e3c6e9153736794e1aad2f}{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3} ((fd, format, va\+\_\+alist), int fd, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vdprintf \hyperlink{group___printf_ga2e382fc08f3d8404bda0e5a4c065478f}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((fd, format, \hyperlink{structargs}{args}), int fd, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, va\+\_\+list \hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+dprintfv \hyperlink{group___printf_gadedc718262f86e06365842f0b284e9ba}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((fd, format, \hyperlink{structargs}{args}), int fd, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, trio\+\_\+pointer\+\_\+t $\ast$\hyperlink{structargs}{args})
+\item 
+\mbox{\Hypertarget{group___printf_ga37e6b5278eebe8b68ec771b119acacac}\label{group___printf_ga37e6b5278eebe8b68ec771b119acacac}} 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+cprintf {\bfseries T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4} ((\hyperlink{structstream}{stream}, closure, format, va\+\_\+alist), trio\+\_\+outstream\+\_\+t \hyperlink{structstream}{stream}, trio\+\_\+pointer\+\_\+t closure, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL)
+\item 
+\mbox{\Hypertarget{group___printf_ga1b19a221acd953bfa682fae8d5bcd559}\label{group___printf_ga1b19a221acd953bfa682fae8d5bcd559}} 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vcprintf {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S4} ((\hyperlink{structstream}{stream}, closure, format, \hyperlink{structargs}{args}), trio\+\_\+outstream\+\_\+t \hyperlink{structstream}{stream}, trio\+\_\+pointer\+\_\+t closure, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, va\+\_\+list \hyperlink{structargs}{args})
+\item 
+\mbox{\Hypertarget{group___printf_ga9dfac472300b741766ea195435fefe48}\label{group___printf_ga9dfac472300b741766ea195435fefe48}} 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+cprintfv {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S4} ((\hyperlink{structstream}{stream}, closure, format, \hyperlink{structargs}{args}), trio\+\_\+outstream\+\_\+t \hyperlink{structstream}{stream}, trio\+\_\+pointer\+\_\+t closure, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, \hyperlink{interfacevoid}{void} $\ast$$\ast$\hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+sprintf \hyperlink{group___printf_ga423758d23360f7795a633c3d499ddbd3}{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3} ((buffer, format, va\+\_\+alist), char $\ast$buffer, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vsprintf \hyperlink{group___printf_gafb7e47f130c137dea2f951c21572965f}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((buffer, format, \hyperlink{structargs}{args}), char $\ast$buffer, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, va\+\_\+list \hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+sprintfv \hyperlink{group___printf_ga03eb87c3ed9e1631ba812117b3f50de6}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((buffer, format, \hyperlink{structargs}{args}), char $\ast$buffer, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, trio\+\_\+pointer\+\_\+t $\ast$\hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+snprintf \hyperlink{group___printf_gac60c2a2193d4cd5508cb2e89db8da81c}{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4} ((buffer, max, format, va\+\_\+alist), char $\ast$buffer, size\+\_\+t max, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vsnprintf \hyperlink{group___printf_gab057914c4b9769ae473bafb189959f4e}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4} ((buffer, max, format, \hyperlink{structargs}{args}), char $\ast$buffer, size\+\_\+t max, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, va\+\_\+list \hyperlink{structargs}{args})
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+snprintfv \hyperlink{group___printf_ga0cba6608a07030ebdebed4d13d6248f8}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4} ((buffer, max, format, \hyperlink{structargs}{args}), char $\ast$buffer, size\+\_\+t max, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, trio\+\_\+pointer\+\_\+t $\ast$\hyperlink{structargs}{args})
+\item 
+\mbox{\Hypertarget{group___printf_ga11c947f47ef9f355d2ac035b6a869089}\label{group___printf_ga11c947f47ef9f355d2ac035b6a869089}} 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+asprintf {\bfseries T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3} ((result, format, va\+\_\+alist), char $\ast$$\ast$result, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL)
+\item 
+\mbox{\Hypertarget{group___printf_ga18524c9cc1e68fbbb37ed173e8964fd1}\label{group___printf_ga18524c9cc1e68fbbb37ed173e8964fd1}} 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vasprintf {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S3} ((result, format, \hyperlink{structargs}{args}), char $\ast$$\ast$result, T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$format, va\+\_\+list \hyperlink{structargs}{args})
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{group___printf_ga1b4cbeca40314883d90a26034076651b}\label{group___printf_ga1b4cbeca40314883d90a26034076651b}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2()}{TRIO\_ARGS2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vscanf T\+R\+I\+O\+\_\+\+A\+R\+G\+S2 (\begin{DoxyParamCaption}\item[{(format, \hyperlink{structargs}{args})}]{,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})}
+
+Print to standard output stream.
+
+
+\begin{DoxyParams}{参数}
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gafdccde42df6e234ff1fd0b065494addc}\label{group___printf_gafdccde42df6e234ff1fd0b065494addc}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S2()}{TRIO\_ARGS2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+scanfv T\+R\+I\+O\+\_\+\+A\+R\+G\+S2 (\begin{DoxyParamCaption}\item[{(format, \hyperlink{structargs}{args})}]{,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{trio\+\_\+pointer\+\_\+t $\ast$}]{args }\end{DoxyParamCaption})}
+
+Print to standard output stream.
+
+
+\begin{DoxyParams}{参数}
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_ga68754f77b19801518809f3c14c9df557}\label{group___printf_ga68754f77b19801518809f3c14c9df557}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3()}{TRIO\_ARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vfscanf T\+R\+I\+O\+\_\+\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(\hyperlink{structfile}{file}, format, \hyperlink{structargs}{args})}]{,  }\item[{\hyperlink{struct__iobuf}{F\+I\+LE} $\ast$}]{file,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})}
+
+Print to file.
+
+
+\begin{DoxyParams}{参数}
+{\em file} & \hyperlink{class_file}{File} pointer. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gaf01545f1b005bd19669cb5c54cccedd2}\label{group___printf_gaf01545f1b005bd19669cb5c54cccedd2}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3()}{TRIO\_ARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+fscanfv T\+R\+I\+O\+\_\+\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(\hyperlink{structfile}{file}, format, \hyperlink{structargs}{args})}]{,  }\item[{\hyperlink{struct__iobuf}{F\+I\+LE} $\ast$}]{file,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{trio\+\_\+pointer\+\_\+t $\ast$}]{args }\end{DoxyParamCaption})}
+
+Print to file.
+
+
+\begin{DoxyParams}{参数}
+{\em file} & \hyperlink{class_file}{File} pointer. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_ga2e382fc08f3d8404bda0e5a4c065478f}\label{group___printf_ga2e382fc08f3d8404bda0e5a4c065478f}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3()}{TRIO\_ARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vdscanf T\+R\+I\+O\+\_\+\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(fd, format, \hyperlink{structargs}{args})}]{,  }\item[{int}]{fd,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})}
+
+Print to file descriptor.
+
+
+\begin{DoxyParams}{参数}
+{\em fd} & \hyperlink{class_file}{File} descriptor. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gadedc718262f86e06365842f0b284e9ba}\label{group___printf_gadedc718262f86e06365842f0b284e9ba}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3()}{TRIO\_ARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+dscanfv T\+R\+I\+O\+\_\+\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(fd, format, \hyperlink{structargs}{args})}]{,  }\item[{int}]{fd,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{trio\+\_\+pointer\+\_\+t $\ast$}]{args }\end{DoxyParamCaption})}
+
+Print to file descriptor.
+
+
+\begin{DoxyParams}{参数}
+{\em fd} & \hyperlink{class_file}{File} descriptor. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gafb7e47f130c137dea2f951c21572965f}\label{group___printf_gafb7e47f130c137dea2f951c21572965f}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3()}{TRIO\_ARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vsprintf T\+R\+I\+O\+\_\+\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(buffer, format, \hyperlink{structargs}{args})}]{,  }\item[{char $\ast$}]{buffer,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})}
+
+Print to string.
+
+
+\begin{DoxyParams}{参数}
+{\em buffer} & Output string. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_ga03eb87c3ed9e1631ba812117b3f50de6}\label{group___printf_ga03eb87c3ed9e1631ba812117b3f50de6}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S3()}{TRIO\_ARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+sprintfv T\+R\+I\+O\+\_\+\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(buffer, format, \hyperlink{structargs}{args})}]{,  }\item[{char $\ast$}]{buffer,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{trio\+\_\+pointer\+\_\+t $\ast$}]{args }\end{DoxyParamCaption})}
+
+Print to string.
+
+
+\begin{DoxyParams}{参数}
+{\em buffer} & Output string. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gab057914c4b9769ae473bafb189959f4e}\label{group___printf_gab057914c4b9769ae473bafb189959f4e}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S4@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4()}{TRIO\_ARGS4()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+vsnprintfcat T\+R\+I\+O\+\_\+\+A\+R\+G\+S4 (\begin{DoxyParamCaption}\item[{(buffer, max, format, \hyperlink{structargs}{args})}]{,  }\item[{char $\ast$}]{buffer,  }\item[{size\+\_\+t}]{max,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})}
+
+Print at most {\ttfamily max} characters to string.
+
+
+\begin{DoxyParams}{参数}
+{\em buffer} & Output string. \\
+\hline
+{\em max} & Maximum number of characters to print. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_ga0cba6608a07030ebdebed4d13d6248f8}\label{group___printf_ga0cba6608a07030ebdebed4d13d6248f8}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S4@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S4()}{TRIO\_ARGS4()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+snprintfv T\+R\+I\+O\+\_\+\+A\+R\+G\+S4 (\begin{DoxyParamCaption}\item[{(buffer, max, format, \hyperlink{structargs}{args})}]{,  }\item[{char $\ast$}]{buffer,  }\item[{size\+\_\+t}]{max,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{trio\+\_\+pointer\+\_\+t $\ast$}]{args }\end{DoxyParamCaption})}
+
+Print at most {\ttfamily max} characters to string.
+
+
+\begin{DoxyParams}{参数}
+{\em buffer} & Output string. \\
+\hline
+{\em max} & Maximum number of characters to print. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em args} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gaed17251b0f7e8f42cb5ddeb74feef6f7}\label{group___printf_gaed17251b0f7e8f42cb5ddeb74feef6f7}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S2}}
+\index{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S2@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S2}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S2()}{TRIO\_VARGS2()}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+scanf T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S2 (\begin{DoxyParamCaption}\item[{(format, va\+\_\+alist)}]{,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL}]{ }\end{DoxyParamCaption})}
+
+Print to standard output stream.
+
+
+\begin{DoxyParams}{参数}
+{\em format} & Formatting string. \\
+\hline
+{\em ...} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters.
+\end{DoxyReturn}
+Scan characters from standard input stream.
+
+
+\begin{DoxyParams}{参数}
+{\em format} & Formatting string. \\
+\hline
+{\em ...} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of scanned characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gada44b3387088f4aff6b57bc324fba8c1}\label{group___printf_gada44b3387088f4aff6b57bc324fba8c1}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3()}{TRIO\_VARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+fscanf T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(\hyperlink{structfile}{file}, format, va\+\_\+alist)}]{,  }\item[{\hyperlink{struct__iobuf}{F\+I\+LE} $\ast$}]{file,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL}]{ }\end{DoxyParamCaption})}
+
+Print to file.
+
+
+\begin{DoxyParams}{参数}
+{\em file} & \hyperlink{class_file}{File} pointer. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em ...} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_ga5ea6293443e3c6e9153736794e1aad2f}\label{group___printf_ga5ea6293443e3c6e9153736794e1aad2f}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3()}{TRIO\_VARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+dscanf T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(fd, format, va\+\_\+alist)}]{,  }\item[{int}]{fd,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL}]{ }\end{DoxyParamCaption})}
+
+Print to file descriptor.
+
+
+\begin{DoxyParams}{参数}
+{\em fd} & \hyperlink{class_file}{File} descriptor. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em ...} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_ga423758d23360f7795a633c3d499ddbd3}\label{group___printf_ga423758d23360f7795a633c3d499ddbd3}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3}}
+\index{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3()}{TRIO\_VARGS3()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+sprintf T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S3 (\begin{DoxyParamCaption}\item[{(buffer, format, va\+\_\+alist)}]{,  }\item[{char $\ast$}]{buffer,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL}]{ }\end{DoxyParamCaption})}
+
+Print to string.
+
+
+\begin{DoxyParams}{参数}
+{\em buffer} & Output string. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em ...} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___printf_gac60c2a2193d4cd5508cb2e89db8da81c}\label{group___printf_gac60c2a2193d4cd5508cb2e89db8da81c}} 
+\index{Printf@{Printf}!T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4}}
+\index{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4@{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4}!Printf@{Printf}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4()}{TRIO\_VARGS4()}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+snprintfcat T\+R\+I\+O\+\_\+\+V\+A\+R\+G\+S4 (\begin{DoxyParamCaption}\item[{(buffer, max, format, va\+\_\+alist)}]{,  }\item[{char $\ast$}]{buffer,  }\item[{size\+\_\+t}]{max,  }\item[{T\+R\+I\+O\+\_\+\+C\+O\+N\+ST char $\ast$}]{format,  }\item[{T\+R\+I\+O\+\_\+\+V\+A\+\_\+\+D\+E\+CL}]{ }\end{DoxyParamCaption})}
+
+Print at most {\ttfamily max} characters to string.
+
+
+\begin{DoxyParams}{参数}
+{\em buffer} & Output string. \\
+\hline
+{\em max} & Maximum number of characters to print. \\
+\hline
+{\em format} & Formatting string. \\
+\hline
+{\em ...} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Number of printed characters. 
+\end{DoxyReturn}

@@ -1,0 +1,97 @@
+\hypertarget{structmbedtls__gcm__context}{}\section{mbedtls\+\_\+gcm\+\_\+context结构体 参考}
+\label{structmbedtls__gcm__context}\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+
+
+G\+CM context structure  
+
+
+
+
+{\ttfamily \#include $<$gcm.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmbedtls__cipher__context__t}{mbedtls\+\_\+cipher\+\_\+context\+\_\+t} \hyperlink{structmbedtls__gcm__context_a3687a336bb05c025fb3861ca99cd945d}{cipher\+\_\+ctx}
+\item 
+uint64\+\_\+t \hyperlink{structmbedtls__gcm__context_af5731ab9002f0b1b913e66071e1138fc}{HL} \mbox{[}16\mbox{]}
+\item 
+uint64\+\_\+t \hyperlink{structmbedtls__gcm__context_a5935337c8028cc6fec0c5b9c7d0d4fd8}{HH} \mbox{[}16\mbox{]}
+\item 
+uint64\+\_\+t \hyperlink{structmbedtls__gcm__context_a7ca348b10a75f1ab46f7c5067c1ab6e7}{len}
+\item 
+uint64\+\_\+t \hyperlink{structmbedtls__gcm__context_aabc65285117dd4b35998a328648faa20}{add\+\_\+len}
+\item 
+unsigned char \hyperlink{structmbedtls__gcm__context_a0ad9a8fb116959218c800b0bc3caeaba}{base\+\_\+ectr} \mbox{[}16\mbox{]}
+\item 
+unsigned char \hyperlink{structmbedtls__gcm__context_a1a7eb48ed5911aeb2dd983da6cfd32bb}{y} \mbox{[}16\mbox{]}
+\item 
+unsigned char \hyperlink{structmbedtls__gcm__context_a772f2b1c947e9a3631f55b241c421aca}{buf} \mbox{[}16\mbox{]}
+\item 
+int \hyperlink{structmbedtls__gcm__context_a48f2fbbac9f7bb46411fea24ac433628}{mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+G\+CM context structure 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structmbedtls__gcm__context_aabc65285117dd4b35998a328648faa20}\label{structmbedtls__gcm__context_aabc65285117dd4b35998a328648faa20}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!add\+\_\+len@{add\+\_\+len}}
+\index{add\+\_\+len@{add\+\_\+len}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{add\+\_\+len}{add\_len}}
+{\footnotesize\ttfamily uint64\+\_\+t mbedtls\+\_\+gcm\+\_\+context\+::add\+\_\+len}
+
+Total add length \mbox{\Hypertarget{structmbedtls__gcm__context_a0ad9a8fb116959218c800b0bc3caeaba}\label{structmbedtls__gcm__context_a0ad9a8fb116959218c800b0bc3caeaba}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!base\+\_\+ectr@{base\+\_\+ectr}}
+\index{base\+\_\+ectr@{base\+\_\+ectr}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{base\+\_\+ectr}{base\_ectr}}
+{\footnotesize\ttfamily unsigned char mbedtls\+\_\+gcm\+\_\+context\+::base\+\_\+ectr\mbox{[}16\mbox{]}}
+
+First E\+C\+TR for tag \mbox{\Hypertarget{structmbedtls__gcm__context_a772f2b1c947e9a3631f55b241c421aca}\label{structmbedtls__gcm__context_a772f2b1c947e9a3631f55b241c421aca}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!buf@{buf}}
+\index{buf@{buf}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily unsigned char mbedtls\+\_\+gcm\+\_\+context\+::buf\mbox{[}16\mbox{]}}
+
+buf working value \mbox{\Hypertarget{structmbedtls__gcm__context_a3687a336bb05c025fb3861ca99cd945d}\label{structmbedtls__gcm__context_a3687a336bb05c025fb3861ca99cd945d}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!cipher\+\_\+ctx@{cipher\+\_\+ctx}}
+\index{cipher\+\_\+ctx@{cipher\+\_\+ctx}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{cipher\+\_\+ctx}{cipher\_ctx}}
+{\footnotesize\ttfamily \hyperlink{structmbedtls__cipher__context__t}{mbedtls\+\_\+cipher\+\_\+context\+\_\+t} mbedtls\+\_\+gcm\+\_\+context\+::cipher\+\_\+ctx}
+
+cipher context used \mbox{\Hypertarget{structmbedtls__gcm__context_a5935337c8028cc6fec0c5b9c7d0d4fd8}\label{structmbedtls__gcm__context_a5935337c8028cc6fec0c5b9c7d0d4fd8}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!HH@{HH}}
+\index{HH@{HH}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{HH}{HH}}
+{\footnotesize\ttfamily uint64\+\_\+t mbedtls\+\_\+gcm\+\_\+context\+::\+HH\mbox{[}16\mbox{]}}
+
+Precalculated H\+Table \mbox{\Hypertarget{structmbedtls__gcm__context_af5731ab9002f0b1b913e66071e1138fc}\label{structmbedtls__gcm__context_af5731ab9002f0b1b913e66071e1138fc}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!HL@{HL}}
+\index{HL@{HL}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{HL}{HL}}
+{\footnotesize\ttfamily uint64\+\_\+t mbedtls\+\_\+gcm\+\_\+context\+::\+HL\mbox{[}16\mbox{]}}
+
+Precalculated H\+Table \mbox{\Hypertarget{structmbedtls__gcm__context_a7ca348b10a75f1ab46f7c5067c1ab6e7}\label{structmbedtls__gcm__context_a7ca348b10a75f1ab46f7c5067c1ab6e7}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!len@{len}}
+\index{len@{len}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{len}{len}}
+{\footnotesize\ttfamily uint64\+\_\+t mbedtls\+\_\+gcm\+\_\+context\+::len}
+
+Total data length \mbox{\Hypertarget{structmbedtls__gcm__context_a48f2fbbac9f7bb46411fea24ac433628}\label{structmbedtls__gcm__context_a48f2fbbac9f7bb46411fea24ac433628}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!mode@{mode}}
+\index{mode@{mode}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily int mbedtls\+\_\+gcm\+\_\+context\+::mode}
+
+Encrypt or Decrypt \mbox{\Hypertarget{structmbedtls__gcm__context_a1a7eb48ed5911aeb2dd983da6cfd32bb}\label{structmbedtls__gcm__context_a1a7eb48ed5911aeb2dd983da6cfd32bb}} 
+\index{mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}!y@{y}}
+\index{y@{y}!mbedtls\+\_\+gcm\+\_\+context@{mbedtls\+\_\+gcm\+\_\+context}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily unsigned char mbedtls\+\_\+gcm\+\_\+context\+::y\mbox{[}16\mbox{]}}
+
+Y working value 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/\hyperlink{gcm_8h}{gcm.\+h}\end{DoxyCompactItemize}

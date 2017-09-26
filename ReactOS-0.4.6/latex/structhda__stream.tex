@@ -1,0 +1,125 @@
+\hypertarget{structhda__stream}{}\section{hda\+\_\+stream结构体 参考}
+\label{structhda__stream}\index{hda\+\_\+stream@{hda\+\_\+stream}}
+
+
+{\ttfamily \#include $<$driver.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structhda__stream_ae4ce466b2590e888d461b9f3d0f17b96}\label{structhda__stream_ae4ce466b2590e888d461b9f3d0f17b96}} 
+uint8 {\bfseries Read8} (uint32 reg)
+\item 
+\mbox{\Hypertarget{structhda__stream_a35a8bf930a4bb88ad133d58009900b0b}\label{structhda__stream_a35a8bf930a4bb88ad133d58009900b0b}} 
+uint16 {\bfseries Read16} (uint32 reg)
+\item 
+\mbox{\Hypertarget{structhda__stream_a883fda23c8c0ca2e83ef27b3efaa2fa0}\label{structhda__stream_a883fda23c8c0ca2e83ef27b3efaa2fa0}} 
+uint32 {\bfseries Read32} (uint32 reg)
+\item 
+\mbox{\Hypertarget{structhda__stream_abfe1cbd56b2d7b99984325edbd3cf7be}\label{structhda__stream_abfe1cbd56b2d7b99984325edbd3cf7be}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write8} (uint32 reg, uint8 \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{structhda__stream_a057d0f32e692b5b4369af6b38d57eeae}\label{structhda__stream_a057d0f32e692b5b4369af6b38d57eeae}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write16} (uint32 reg, uint16 \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{structhda__stream_a585744d5e9053c7f91d762b9e9354b12}\label{structhda__stream_a585744d5e9053c7f91d762b9e9354b12}} 
+\hyperlink{interfacevoid}{void} {\bfseries Write32} (uint32 reg, uint32 \hyperlink{unionvalue}{value})
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structhda__stream_afa083a5ff3069b64cdd5bef45d4a413a}\label{structhda__stream_afa083a5ff3069b64cdd5bef45d4a413a}} 
+uint32 {\bfseries id}
+\item 
+\mbox{\Hypertarget{structhda__stream_aee6b3e8611cc99da9d3d6c0c432eba28}\label{structhda__stream_aee6b3e8611cc99da9d3d6c0c432eba28}} 
+uint32 {\bfseries offset}
+\item 
+\mbox{\Hypertarget{structhda__stream_a63c56501dcdb15c379038df14ee8f7b1}\label{structhda__stream_a63c56501dcdb15c379038df14ee8f7b1}} 
+bool {\bfseries running}
+\item 
+\mbox{\Hypertarget{structhda__stream_a872f2b8b1d8dcd69274f577db0bc352d}\label{structhda__stream_a872f2b8b1d8dcd69274f577db0bc352d}} 
+spinlock {\bfseries lock}
+\item 
+\mbox{\Hypertarget{structhda__stream_a0839932f5d533406319b7309165cad63}\label{structhda__stream_a0839932f5d533406319b7309165cad63}} 
+uint32 {\bfseries type}
+\item 
+\mbox{\Hypertarget{structhda__stream_acfd8a20a7106647362689250cff5a39f}\label{structhda__stream_acfd8a20a7106647362689250cff5a39f}} 
+\hyperlink{structhda__controller}{hda\+\_\+controller} $\ast$ {\bfseries controller}
+\item 
+\mbox{\Hypertarget{structhda__stream_aa86e9b6924d98377945cd68d2564ac76}\label{structhda__stream_aa86e9b6924d98377945cd68d2564ac76}} 
+uint32 {\bfseries pin\+\_\+widget}
+\item 
+\mbox{\Hypertarget{structhda__stream_a2af74684d0edc0027c445b783ffe884e}\label{structhda__stream_a2af74684d0edc0027c445b783ffe884e}} 
+uint32 {\bfseries io\+\_\+widgets} \mbox{[}M\+A\+X\+\_\+\+I\+O\+\_\+\+W\+I\+D\+G\+E\+TS\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__stream_ad3e1028b70d4cd6dbc1556b1580e4fdb}\label{structhda__stream_ad3e1028b70d4cd6dbc1556b1580e4fdb}} 
+uint32 {\bfseries num\+\_\+io\+\_\+widgets}
+\item 
+\mbox{\Hypertarget{structhda__stream_a4768167aee98a562747df8e1e83ef95c}\label{structhda__stream_a4768167aee98a562747df8e1e83ef95c}} 
+uint32 {\bfseries sample\+\_\+rate}
+\item 
+\mbox{\Hypertarget{structhda__stream_a0b73154a122d647315ef4eec6a04ba94}\label{structhda__stream_a0b73154a122d647315ef4eec6a04ba94}} 
+uint32 {\bfseries sample\+\_\+format}
+\item 
+\mbox{\Hypertarget{structhda__stream_af9a0091424766d8f00ee74b0aa48f766}\label{structhda__stream_af9a0091424766d8f00ee74b0aa48f766}} 
+uint32 {\bfseries num\+\_\+buffers}
+\item 
+\mbox{\Hypertarget{structhda__stream_a03825e0301fa7928e3dc0e0736def382}\label{structhda__stream_a03825e0301fa7928e3dc0e0736def382}} 
+uint32 {\bfseries num\+\_\+channels}
+\item 
+\mbox{\Hypertarget{structhda__stream_a4bde88034cfe596a8fe32d8ea8cd6e07}\label{structhda__stream_a4bde88034cfe596a8fe32d8ea8cd6e07}} 
+uint32 {\bfseries buffer\+\_\+length}
+\item 
+\mbox{\Hypertarget{structhda__stream_a65410117e0759216b3009326a82b5d17}\label{structhda__stream_a65410117e0759216b3009326a82b5d17}} 
+uint32 {\bfseries buffer\+\_\+size}
+\item 
+\mbox{\Hypertarget{structhda__stream_a968737de925139d26d99a60e05cb724f}\label{structhda__stream_a968737de925139d26d99a60e05cb724f}} 
+uint32 {\bfseries sample\+\_\+size}
+\item 
+\mbox{\Hypertarget{structhda__stream_a029a4f44b2204c4863cfb94917e284a1}\label{structhda__stream_a029a4f44b2204c4863cfb94917e284a1}} 
+uint8 $\ast$ {\bfseries buffers} \mbox{[}S\+T\+R\+E\+A\+M\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+RS\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__stream_ac4943bed188eed599f7562f3010fda5c}\label{structhda__stream_ac4943bed188eed599f7562f3010fda5c}} 
+phys\+\_\+addr\+\_\+t {\bfseries physical\+\_\+buffers} \mbox{[}S\+T\+R\+E\+A\+M\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+RS\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__stream_a35038d0a6875076caabebcad187c550c}\label{structhda__stream_a35038d0a6875076caabebcad187c550c}} 
+volatile bigtime\+\_\+t {\bfseries real\+\_\+time}
+\item 
+\mbox{\Hypertarget{structhda__stream_ac05ac091025f43715996efc686dee269}\label{structhda__stream_ac05ac091025f43715996efc686dee269}} 
+volatile uint64 {\bfseries frames\+\_\+count}
+\item 
+\mbox{\Hypertarget{structhda__stream_a4c1cbffd16158e5fcdd54c6785238d40}\label{structhda__stream_a4c1cbffd16158e5fcdd54c6785238d40}} 
+uint32 {\bfseries last\+\_\+link\+\_\+frame\+\_\+position}
+\item 
+\mbox{\Hypertarget{structhda__stream_a10150de12a0646f6b63499b934411c1a}\label{structhda__stream_a10150de12a0646f6b63499b934411c1a}} 
+volatile int32 {\bfseries buffer\+\_\+cycle}
+\item 
+\mbox{\Hypertarget{structhda__stream_aa188f2af04282c2ae9b2a23787597d61}\label{structhda__stream_aa188f2af04282c2ae9b2a23787597d61}} 
+uint32 {\bfseries rate}
+\item 
+\mbox{\Hypertarget{structhda__stream_a11b6b1e00a53f9058b483ba7daf0a15e}\label{structhda__stream_a11b6b1e00a53f9058b483ba7daf0a15e}} 
+uint32 {\bfseries bps}
+\item 
+\mbox{\Hypertarget{structhda__stream_a36ef69007f3f183c1f4356cfd477d9c8}\label{structhda__stream_a36ef69007f3f183c1f4356cfd477d9c8}} 
+area\+\_\+id {\bfseries buffer\+\_\+area}
+\item 
+\mbox{\Hypertarget{structhda__stream_a59f0b75dead0ec9b5659f4d96c2a7b48}\label{structhda__stream_a59f0b75dead0ec9b5659f4d96c2a7b48}} 
+area\+\_\+id {\bfseries buffer\+\_\+descriptors\+\_\+area}
+\item 
+\mbox{\Hypertarget{structhda__stream_a78849979d0002f41fb7c5ce528e26a69}\label{structhda__stream_a78849979d0002f41fb7c5ce528e26a69}} 
+phys\+\_\+addr\+\_\+t {\bfseries physical\+\_\+buffer\+\_\+descriptors}
+\item 
+\mbox{\Hypertarget{structhda__stream_aeb3f74963fb08a753ea502aa791ee362}\label{structhda__stream_aeb3f74963fb08a753ea502aa791ee362}} 
+int32 {\bfseries incorrect\+\_\+position\+\_\+count}
+\item 
+\mbox{\Hypertarget{structhda__stream_a1fed75557d70b4cf8a0d984e1df977e5}\label{structhda__stream_a1fed75557d70b4cf8a0d984e1df977e5}} 
+bool {\bfseries use\+\_\+dma\+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{namespace_this}{This} structure describes a single stream of audio data, which is can have multiple channels (for stereo or better). 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/wdm/audio/hdaudbus/driver.\+h\end{DoxyCompactItemize}

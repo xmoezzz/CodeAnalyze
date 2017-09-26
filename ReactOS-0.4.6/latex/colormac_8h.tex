@@ -1,0 +1,125 @@
+\hypertarget{colormac_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/colormac.h 文件参考}
+\label{colormac_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/colormac.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/colormac.\+h}}
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}macros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtypes.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{Indent}\textbf{ Generic color packing macros. All inputs should be G\+Lubytes.}\par
+{\em \begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000002}{待办事项}]We may move these into \hyperlink{texstore_8h}{texstore.\+h} at some point. \end{DoxyRefDesc}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{colormac_8h_a5039352b372a8bdfcde4c928f1b5e39c}\label{colormac_8h_a5039352b372a8bdfcde4c928f1b5e39c}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+8888}(\hyperlink{class_x}{X},  Y,  Z,  W)~(((\hyperlink{class_x}{X}) $<$$<$ 24) $\vert$ ((Y) $<$$<$ 16) $\vert$ ((Z) $<$$<$ 8) $\vert$ (W))
+\item 
+\mbox{\Hypertarget{colormac_8h_aba72f603b2d0a2d2c3fecea46ecd5131}\label{colormac_8h_aba72f603b2d0a2d2c3fecea46ecd5131}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+8888\+\_\+\+R\+EV}(\hyperlink{class_x}{X},  Y,  Z,  W)~(((W) $<$$<$ 24) $\vert$ ((Z) $<$$<$ 16) $\vert$ ((Y) $<$$<$ 8) $\vert$ (\hyperlink{class_x}{X}))
+\item 
+\mbox{\Hypertarget{colormac_8h_a04a4a2257577b08c0805610cc66a1123}\label{colormac_8h_a04a4a2257577b08c0805610cc66a1123}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+888}(\hyperlink{class_x}{X},  Y,  Z)~(((\hyperlink{class_x}{X}) $<$$<$ 16) $\vert$ ((Y) $<$$<$ 8) $\vert$ (Z))
+\item 
+\mbox{\Hypertarget{colormac_8h_a2c7f2d0d167dec91738857ceb2e2b92f}\label{colormac_8h_a2c7f2d0d167dec91738857ceb2e2b92f}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+565}(\hyperlink{class_x}{X},  Y,  Z)~((((\hyperlink{class_x}{X}) \& 0xf8) $<$$<$ 8) $\vert$ (((\+Y) \& 0xfc) $<$$<$ 3) $\vert$ (((\+Z) \& 0xf8) $>$$>$ 3))
+\item 
+\mbox{\Hypertarget{colormac_8h_ae203d7f670432887d9801e154360959b}\label{colormac_8h_ae203d7f670432887d9801e154360959b}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+565\+\_\+\+R\+EV}(\hyperlink{class_x}{X},  Y,  Z)~(((\hyperlink{class_x}{X}) \& 0xf8) $\vert$ ((\+Y) \& 0xe0) $>$$>$ 5 $\vert$ (((\+Y) \& 0x1c) $<$$<$ 11) $\vert$ (((\+Z) \& 0xf8) $<$$<$ 5))
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+5551}(R,  G,  B,  \hyperlink{struct_a}{A})
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555}(\hyperlink{struct_a}{A},  B,  G,  R)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555\+\_\+\+R\+EV}(\hyperlink{struct_a}{A},  B,  G,  R)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+UB}(\hyperlink{struct_a}{A},  B,  G,  R)
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+US}(\hyperlink{struct_a}{A},  B,  G,  R)
+\item 
+\mbox{\Hypertarget{colormac_8h_a692241d93ffdd2e24f3e0e5a1a8fb69f}\label{colormac_8h_a692241d93ffdd2e24f3e0e5a1a8fb69f}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+4444}(R,  G,  B,  \hyperlink{struct_a}{A})~((((R) \& 0xf0) $<$$<$ 8) $\vert$ (((\+G) \& 0xf0) $<$$<$ 4) $\vert$ ((\+B) \& 0xf0) $\vert$ ((\+A) $>$$>$ 4))
+\item 
+\mbox{\Hypertarget{colormac_8h_a3c8346279f7696129ee98293af847138}\label{colormac_8h_a3c8346279f7696129ee98293af847138}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+4444\+\_\+\+R\+EV}(R,  G,  B,  \hyperlink{struct_a}{A})~((((B) \& 0xf0) $<$$<$ 8) $\vert$ (((\+A) \& 0xf0) $<$$<$ 4) $\vert$ ((\+R) \& 0xf0) $\vert$ ((\+G) $>$$>$ 4))
+\item 
+\mbox{\Hypertarget{colormac_8h_a595597b5c9e985a3c5285aebc9b7b36f}\label{colormac_8h_a595597b5c9e985a3c5285aebc9b7b36f}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+44}(L,  \hyperlink{struct_a}{A})~(((L) \& 0xf0) $\vert$ (((\+A) \& 0xf0) $>$$>$ 4))
+\item 
+\mbox{\Hypertarget{colormac_8h_aa1aa0e9cee75e05dda063e39642d1040}\label{colormac_8h_aa1aa0e9cee75e05dda063e39642d1040}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+88}(L,  \hyperlink{struct_a}{A})~(((L) $<$$<$ 8) $\vert$ (\hyperlink{struct_a}{A}))
+\item 
+\mbox{\Hypertarget{colormac_8h_a18133a6a03ea268802b018df3ce52c30}\label{colormac_8h_a18133a6a03ea268802b018df3ce52c30}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+88\+\_\+\+R\+EV}(L,  \hyperlink{struct_a}{A})~(((\hyperlink{struct_a}{A}) $<$$<$ 8) $\vert$ (L))
+\item 
+\mbox{\Hypertarget{colormac_8h_a2a424e495510748760210acaedbbb6fa}\label{colormac_8h_a2a424e495510748760210acaedbbb6fa}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1616}(L,  \hyperlink{struct_a}{A})~(((L) $<$$<$ 16) $\vert$ (\hyperlink{struct_a}{A}))
+\item 
+\mbox{\Hypertarget{colormac_8h_a6c4a879f06acb8abd9bdfe07da480ada}\label{colormac_8h_a6c4a879f06acb8abd9bdfe07da480ada}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1616\+\_\+\+R\+EV}(L,  \hyperlink{struct_a}{A})~(((\hyperlink{struct_a}{A}) $<$$<$ 16) $\vert$ (L))
+\item 
+\mbox{\Hypertarget{colormac_8h_acd2bc988066f1c8438198e2b8cce4d34}\label{colormac_8h_acd2bc988066f1c8438198e2b8cce4d34}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+332}(R,  G,  B)~(((R) \& 0xe0) $\vert$ (((\+G) \& 0xe0) $>$$>$ 3) $\vert$ (((\+B) \& 0xc0) $>$$>$ 6))
+\item 
+\mbox{\Hypertarget{colormac_8h_a5b8cbc3958e0b06ff5b5eea1fbb3a6ec}\label{colormac_8h_a5b8cbc3958e0b06ff5b5eea1fbb3a6ec}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+233}(B,  G,  R)~(((B) \& 0xc0) $\vert$ (((\+G) \& 0xe0) $>$$>$ 2) $\vert$ (((\+R) \& 0xe0) $>$$>$ 5))
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Color-\/related macros 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{colormac_8h_a32985e2f1a2c894a997898e4e857f96e}\label{colormac_8h_a32985e2f1a2c894a997898e4e857f96e}} 
+\index{colormac.\+h@{colormac.\+h}!P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555}}
+\index{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555}!colormac.\+h@{colormac.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555}{PACK\_COLOR\_1555}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B,  }\item[{}]{G,  }\item[{}]{R }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+((((B) & 0xf8) << 7) | (((G) & 0xf8) << 2) | (((R) & 0xf8) >> 3) |  \(\backslash\)
+    (((\hyperlink{struct_a}{A}) & 0x80) << 8))
+\end{DoxyCode}
+\mbox{\Hypertarget{colormac_8h_ade95b4bb434be4e1f1c8052b964e88a2}\label{colormac_8h_ade95b4bb434be4e1f1c8052b964e88a2}} 
+\index{colormac.\+h@{colormac.\+h}!P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555\+\_\+\+R\+EV@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555\+\_\+\+R\+EV}}
+\index{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555\+\_\+\+R\+EV@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555\+\_\+\+R\+EV}!colormac.\+h@{colormac.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555\+\_\+\+R\+EV}{PACK\_COLOR\_1555\_REV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+1555\+\_\+\+R\+EV(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B,  }\item[{}]{G,  }\item[{}]{R }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+((((B) & 0xf8) >> 1) | (((G) & 0xc0) >> 6) | (((G) & 0x38) << 10) | (((R) & 0xf8) << 5) |   \(\backslash\)
+    ((\hyperlink{struct_a}{A}) ? 0x80 : 0))
+\end{DoxyCode}
+\mbox{\Hypertarget{colormac_8h_a5723f733941fcab5aadb6b6ab574d44a}\label{colormac_8h_a5723f733941fcab5aadb6b6ab574d44a}} 
+\index{colormac.\+h@{colormac.\+h}!P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+UB@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+UB}}
+\index{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+UB@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+UB}!colormac.\+h@{colormac.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+UB}{PACK\_COLOR\_2101010\_UB}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+UB(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B,  }\item[{}]{G,  }\item[{}]{R }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(((B) << 22) | ((G) << 12) | ((R) << 2) |   \(\backslash\)
+    (((\hyperlink{struct_a}{A}) & 0xc0) << 24))
+\end{DoxyCode}
+\mbox{\Hypertarget{colormac_8h_a3de89a3b4d5ed4fc77ea8db721deeadd}\label{colormac_8h_a3de89a3b4d5ed4fc77ea8db721deeadd}} 
+\index{colormac.\+h@{colormac.\+h}!P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+US@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+US}}
+\index{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+US@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+US}!colormac.\+h@{colormac.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+US}{PACK\_COLOR\_2101010\_US}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+2101010\+\_\+\+US(\begin{DoxyParamCaption}\item[{}]{\hyperlink{struct_a}{A},  }\item[{}]{B,  }\item[{}]{G,  }\item[{}]{R }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+((((B) >> 6) << 20) | (((G) >> 6) << 10) | ((R) >> 6) | \(\backslash\)
+    (((\hyperlink{struct_a}{A}) >> 14) << 30))
+\end{DoxyCode}
+\mbox{\Hypertarget{colormac_8h_a86f913ee3a646c2726fb719e15da8cb9}\label{colormac_8h_a86f913ee3a646c2726fb719e15da8cb9}} 
+\index{colormac.\+h@{colormac.\+h}!P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+5551@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+5551}}
+\index{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+5551@{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+5551}!colormac.\+h@{colormac.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+5551}{PACK\_COLOR\_5551}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} P\+A\+C\+K\+\_\+\+C\+O\+L\+O\+R\+\_\+5551(\begin{DoxyParamCaption}\item[{}]{R,  }\item[{}]{G,  }\item[{}]{B,  }\item[{}]{\hyperlink{struct_a}{A} }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+((((R) & 0xf8) << 8) | (((G) & 0xf8) << 3) | (((B) & 0xf8) >> 2) |  \(\backslash\)
+    ((\hyperlink{struct_a}{A}) >> 7))
+\end{DoxyCode}

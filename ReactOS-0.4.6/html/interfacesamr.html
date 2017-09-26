@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: samr接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacesamr-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">samr接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a52ebb23c3355cec821dcb121e5933050"><td class="memItemLeft" align="right" valign="top"><a id="a52ebb23c3355cec821dcb121e5933050"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrConnect</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] PSAMPR_SERVER_NAME ServerName, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *ServerHandle, [in] ACCESS_MASK DesiredAccess)</td></tr>
+<tr class="separator:a52ebb23c3355cec821dcb121e5933050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1746c5563132b0d8cc469adaaa5db866"><td class="memItemLeft" align="right" valign="top"><a id="a1746c5563132b0d8cc469adaaa5db866"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrCloseHandle</b> ([in, out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *SamHandle)</td></tr>
+<tr class="separator:a1746c5563132b0d8cc469adaaa5db866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596792225ba717d6ed8cef0a9fae774b"><td class="memItemLeft" align="right" valign="top"><a id="a596792225ba717d6ed8cef0a9fae774b"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetSecurityObject</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> ObjectHandle, [in] SECURITY_INFORMATION SecurityInformation, [in] <a class="el" href="struct___s_a_m_p_r___s_r___s_e_c_u_r_i_t_y___d_e_s_c_r_i_p_t_o_r.html">PSAMPR_SR_SECURITY_DESCRIPTOR</a> SecurityDescriptor)</td></tr>
+<tr class="separator:a596792225ba717d6ed8cef0a9fae774b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89716227ef0f62dea90d8f19667fdf8f"><td class="memItemLeft" align="right" valign="top"><a id="a89716227ef0f62dea90d8f19667fdf8f"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQuerySecurityObject</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> ObjectHandle, [in] SECURITY_INFORMATION SecurityInformation, [out] <a class="el" href="struct___s_a_m_p_r___s_r___s_e_c_u_r_i_t_y___d_e_s_c_r_i_p_t_o_r.html">PSAMPR_SR_SECURITY_DESCRIPTOR</a> *SecurityDescriptor)</td></tr>
+<tr class="separator:a89716227ef0f62dea90d8f19667fdf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5116e754bc8176ddfbe948c69181aff9"><td class="memItemLeft" align="right" valign="top"><a id="a5116e754bc8176ddfbe948c69181aff9"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrShutdownSamServer</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> ServerHandle)</td></tr>
+<tr class="separator:a5116e754bc8176ddfbe948c69181aff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36187ef786b7a6bd5e391787cce06c0"><td class="memItemLeft" align="right" valign="top"><a id="ae36187ef786b7a6bd5e391787cce06c0"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrLookupDomainInSamServer</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> ServerHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> <a class="el" href="struct_name_rec__.html">Name</a>, [out] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> *DomainId)</td></tr>
+<tr class="separator:ae36187ef786b7a6bd5e391787cce06c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65a38de91f99bd956b019a3db39c17a"><td class="memItemLeft" align="right" valign="top"><a id="ab65a38de91f99bd956b019a3db39c17a"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrEnumerateDomainsInSamServer</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> ServerHandle, [in, out] unsigned long *EnumerationContext, [out] <a class="el" href="struct___s_a_m_p_r___e_n_u_m_e_r_a_t_i_o_n___b_u_f_f_e_r.html">PSAMPR_ENUMERATION_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>, [in] unsigned long PreferedMaximumLength, [out] unsigned long *CountReturned)</td></tr>
+<tr class="separator:ab65a38de91f99bd956b019a3db39c17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae012e2ef6be2596f4b8c079370d5328f"><td class="memItemLeft" align="right" valign="top"><a id="ae012e2ef6be2596f4b8c079370d5328f"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrOpenDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> ServerHandle, [in] ACCESS_MASK DesiredAccess, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> DomainId, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *DomainHandle)</td></tr>
+<tr class="separator:ae012e2ef6be2596f4b8c079370d5328f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04772020c87e750d7cd5c1901fd84a39"><td class="memItemLeft" align="right" valign="top"><a id="a04772020c87e750d7cd5c1901fd84a39"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryInformationDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_INFORMATION_CLASS DomainInformationClass, [out, switch_is(DomainInformationClass)] <a class="el" href="union___s_a_m_p_r___d_o_m_a_i_n___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_DOMAIN_INFO_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a04772020c87e750d7cd5c1901fd84a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f816ae2f7594897bc6fe4d6672a72c"><td class="memItemLeft" align="right" valign="top"><a id="a14f816ae2f7594897bc6fe4d6672a72c"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetInformationDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_INFORMATION_CLASS DomainInformationClass, [in, switch_is(DomainInformationClass)] <a class="el" href="union___s_a_m_p_r___d_o_m_a_i_n___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_DOMAIN_INFO_BUFFER</a> DomainInformation)</td></tr>
+<tr class="separator:a14f816ae2f7594897bc6fe4d6672a72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91452a6c9774db889908182bd875c93"><td class="memItemLeft" align="right" valign="top"><a id="aa91452a6c9774db889908182bd875c93"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrCreateGroupInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> <a class="el" href="struct_name_rec__.html">Name</a>, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *GroupHandle, [out] unsigned long *RelativeId)</td></tr>
+<tr class="separator:aa91452a6c9774db889908182bd875c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac453b0be0a2ad6ba60ed7406e45d10ea"><td class="memItemLeft" align="right" valign="top"><a id="ac453b0be0a2ad6ba60ed7406e45d10ea"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrEnumerateGroupsInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in, out] unsigned long *EnumerationContext, [out] <a class="el" href="struct___s_a_m_p_r___e_n_u_m_e_r_a_t_i_o_n___b_u_f_f_e_r.html">PSAMPR_ENUMERATION_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>, [in] unsigned long PreferedMaximumLength, [out] unsigned long *CountReturned)</td></tr>
+<tr class="separator:ac453b0be0a2ad6ba60ed7406e45d10ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fca447f24839e48af665df480bceae"><td class="memItemLeft" align="right" valign="top"><a id="a62fca447f24839e48af665df480bceae"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrCreateUserInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> <a class="el" href="struct_name_rec__.html">Name</a>, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *UserHandle, [out] unsigned long *RelativeId)</td></tr>
+<tr class="separator:a62fca447f24839e48af665df480bceae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36db9e153ea02ff14550f3e25beae13"><td class="memItemLeft" align="right" valign="top"><a id="af36db9e153ea02ff14550f3e25beae13"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrEnumerateUsersInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in, out] unsigned long *EnumerationContext, [in] unsigned long UserAccountControl, [out] <a class="el" href="struct___s_a_m_p_r___e_n_u_m_e_r_a_t_i_o_n___b_u_f_f_e_r.html">PSAMPR_ENUMERATION_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>, [in] unsigned long PreferedMaximumLength, [out] unsigned long *CountReturned)</td></tr>
+<tr class="separator:af36db9e153ea02ff14550f3e25beae13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad679e62f7e89e0c2d3cb063e3c489f6"><td class="memItemLeft" align="right" valign="top"><a id="aad679e62f7e89e0c2d3cb063e3c489f6"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrCreateAliasInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> AccountName, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *AliasHandle, [out] unsigned long *RelativeId)</td></tr>
+<tr class="separator:aad679e62f7e89e0c2d3cb063e3c489f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc4c6585938817b34d5abbdc80b4745"><td class="memItemLeft" align="right" valign="top"><a id="a8fc4c6585938817b34d5abbdc80b4745"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrEnumerateAliasesInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in, out] unsigned long *EnumerationContext, [out] <a class="el" href="struct___s_a_m_p_r___e_n_u_m_e_r_a_t_i_o_n___b_u_f_f_e_r.html">PSAMPR_ENUMERATION_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>, [in] unsigned long PreferedMaximumLength, [out] unsigned long *CountReturned)</td></tr>
+<tr class="separator:a8fc4c6585938817b34d5abbdc80b4745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a0d9328d20a473b780468401f18b7a"><td class="memItemLeft" align="right" valign="top"><a id="a82a0d9328d20a473b780468401f18b7a"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetAliasMembership</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] <a class="el" href="struct___s_a_m_p_r___p_s_i_d___a_r_r_a_y.html">PSAMPR_PSID_ARRAY</a> SidArray, [out] <a class="el" href="struct___s_a_m_p_r___u_l_o_n_g___a_r_r_a_y.html">PSAMPR_ULONG_ARRAY</a> Membership)</td></tr>
+<tr class="separator:a82a0d9328d20a473b780468401f18b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdf04293a1433eaa73ad6ca99acff14"><td class="memItemLeft" align="right" valign="top"><a id="a7fdf04293a1433eaa73ad6ca99acff14"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrLookupNamesInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in, range(0, 1000)] unsigned long Count, [in, size_is(1000), length_is(Count)] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">RPC_UNICODE_STRING</a> Names[*], [out] <a class="el" href="struct___s_a_m_p_r___u_l_o_n_g___a_r_r_a_y.html">PSAMPR_ULONG_ARRAY</a> RelativeIds, [out] <a class="el" href="struct___s_a_m_p_r___u_l_o_n_g___a_r_r_a_y.html">PSAMPR_ULONG_ARRAY</a> Use)</td></tr>
+<tr class="separator:a7fdf04293a1433eaa73ad6ca99acff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7f647157c8cadef73b4f9fe1a7dbcb"><td class="memItemLeft" align="right" valign="top"><a id="a2d7f647157c8cadef73b4f9fe1a7dbcb"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrLookupIdsInDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in, range(0, 1000)] unsigned long Count, [in, size_is(1000), length_is(Count)] unsigned long *RelativeIds, [out] <a class="el" href="struct___s_a_m_p_r___r_e_t_u_r_n_e_d___u_s_t_r_i_n_g___a_r_r_a_y.html">PSAMPR_RETURNED_USTRING_ARRAY</a> Names, [out] <a class="el" href="struct___s_a_m_p_r___u_l_o_n_g___a_r_r_a_y.html">PSAMPR_ULONG_ARRAY</a> Use)</td></tr>
+<tr class="separator:a2d7f647157c8cadef73b4f9fe1a7dbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2129d3d7ed1340ea7aa2ae63124912"><td class="memItemLeft" align="right" valign="top"><a id="a2b2129d3d7ed1340ea7aa2ae63124912"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrOpenGroup</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] ACCESS_MASK DesiredAccess, [in] unsigned long GroupId, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *GroupHandle)</td></tr>
+<tr class="separator:a2b2129d3d7ed1340ea7aa2ae63124912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033f34be17346a998b32726167b1778b"><td class="memItemLeft" align="right" valign="top"><a id="a033f34be17346a998b32726167b1778b"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryInformationGroup</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> GroupHandle, [in] GROUP_INFORMATION_CLASS GroupInformationClass, [out, switch_is(GroupInformationClass)] <a class="el" href="union___s_a_m_p_r___g_r_o_u_p___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_GROUP_INFO_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a033f34be17346a998b32726167b1778b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d18a9ab8bb95e75fd9d4daeb8f1b802"><td class="memItemLeft" align="right" valign="top"><a id="a1d18a9ab8bb95e75fd9d4daeb8f1b802"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetInformationGroup</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> GroupHandle, [in] GROUP_INFORMATION_CLASS GroupInformationClass, [in, switch_is(GroupInformationClass)] <a class="el" href="union___s_a_m_p_r___g_r_o_u_p___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_GROUP_INFO_BUFFER</a> <a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a1d18a9ab8bb95e75fd9d4daeb8f1b802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00a92fac7c2c72fab0907207652fcd6"><td class="memItemLeft" align="right" valign="top"><a id="af00a92fac7c2c72fab0907207652fcd6"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrAddMemberToGroup</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> GroupHandle, [in] unsigned long MemberId, [in] unsigned long Attributes)</td></tr>
+<tr class="separator:af00a92fac7c2c72fab0907207652fcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6852aa54875fd41900f06a08bd1fd5e2"><td class="memItemLeft" align="right" valign="top"><a id="a6852aa54875fd41900f06a08bd1fd5e2"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrDeleteGroup</b> ([in, out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *GroupHandle)</td></tr>
+<tr class="separator:a6852aa54875fd41900f06a08bd1fd5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76647d34c8ed4ab6865db5b3df06652"><td class="memItemLeft" align="right" valign="top"><a id="af76647d34c8ed4ab6865db5b3df06652"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrRemoveMemberFromGroup</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> GroupHandle, [in] unsigned long MemberId)</td></tr>
+<tr class="separator:af76647d34c8ed4ab6865db5b3df06652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0363df223be0f2566c4fe017948971b9"><td class="memItemLeft" align="right" valign="top"><a id="a0363df223be0f2566c4fe017948971b9"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetMembersInGroup</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> GroupHandle, [out] <a class="el" href="struct___s_a_m_p_r___g_e_t___m_e_m_b_e_r_s___b_u_f_f_e_r.html">PSAMPR_GET_MEMBERS_BUFFER</a> *Members)</td></tr>
+<tr class="separator:a0363df223be0f2566c4fe017948971b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5f515f25a03035adbabb66ec8d0561"><td class="memItemLeft" align="right" valign="top"><a id="aeb5f515f25a03035adbabb66ec8d0561"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetMemberAttributesOfGroup</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> GroupHandle, [in] unsigned long MemberId, [in] unsigned long Attributes)</td></tr>
+<tr class="separator:aeb5f515f25a03035adbabb66ec8d0561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2596ef52e3f3cd459d3c7c16f94f9a"><td class="memItemLeft" align="right" valign="top"><a id="a0c2596ef52e3f3cd459d3c7c16f94f9a"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrOpenAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] ACCESS_MASK DesiredAccess, [in] ULONG AliasId, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *AliasHandle)</td></tr>
+<tr class="separator:a0c2596ef52e3f3cd459d3c7c16f94f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b4928dab3907b6a6b6b8d31978e5f7"><td class="memItemLeft" align="right" valign="top"><a id="a83b4928dab3907b6a6b6b8d31978e5f7"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryInformationAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> AliasHandle, [in] ALIAS_INFORMATION_CLASS AliasInformationClass, [out, switch_is(AliasInformationClass)] <a class="el" href="union___s_a_m_p_r___a_l_i_a_s___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_ALIAS_INFO_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a83b4928dab3907b6a6b6b8d31978e5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e0a5708d65cdf562936325ed0d3565"><td class="memItemLeft" align="right" valign="top"><a id="ab3e0a5708d65cdf562936325ed0d3565"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetInformationAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> AliasHandle, [in] ALIAS_INFORMATION_CLASS AliasInformationClass, [in, switch_is(AliasInformationClass)] <a class="el" href="union___s_a_m_p_r___a_l_i_a_s___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_ALIAS_INFO_BUFFER</a> <a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:ab3e0a5708d65cdf562936325ed0d3565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac883617e183071fcc00cfe05faa29d27"><td class="memItemLeft" align="right" valign="top"><a id="ac883617e183071fcc00cfe05faa29d27"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrDeleteAlias</b> ([in, out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *AliasHandle)</td></tr>
+<tr class="separator:ac883617e183071fcc00cfe05faa29d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca39cde14a8b8ffb2e8bc7bb1bd3700"><td class="memItemLeft" align="right" valign="top"><a id="a6ca39cde14a8b8ffb2e8bc7bb1bd3700"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrAddMemberToAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> AliasHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> MemberId)</td></tr>
+<tr class="separator:a6ca39cde14a8b8ffb2e8bc7bb1bd3700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb561b1a03a880cad47b2080ce7cb5e8"><td class="memItemLeft" align="right" valign="top"><a id="afb561b1a03a880cad47b2080ce7cb5e8"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrRemoveMemberFromAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> AliasHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> MemberId)</td></tr>
+<tr class="separator:afb561b1a03a880cad47b2080ce7cb5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec161539ea7d81cfab208850dc0dfd5"><td class="memItemLeft" align="right" valign="top"><a id="a4ec161539ea7d81cfab208850dc0dfd5"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetMembersInAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> AliasHandle, [out] <a class="el" href="struct___s_a_m_p_r___p_s_i_d___a_r_r_a_y___o_u_t.html">PSAMPR_PSID_ARRAY_OUT</a> Members)</td></tr>
+<tr class="separator:a4ec161539ea7d81cfab208850dc0dfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4fdfb52d2d0de5ab9316f6203d4839"><td class="memItemLeft" align="right" valign="top"><a id="a2c4fdfb52d2d0de5ab9316f6203d4839"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrOpenUser</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] ACCESS_MASK DesiredAccess, [in] ULONG UserId, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *UserHandle)</td></tr>
+<tr class="separator:a2c4fdfb52d2d0de5ab9316f6203d4839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8efe12272cbc629e774747f023cee0"><td class="memItemLeft" align="right" valign="top"><a id="aec8efe12272cbc629e774747f023cee0"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrDeleteUser</b> ([in, out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *UserHandle)</td></tr>
+<tr class="separator:aec8efe12272cbc629e774747f023cee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca298b872a2f41c4ebbe9d2b037264e9"><td class="memItemLeft" align="right" valign="top"><a id="aca298b872a2f41c4ebbe9d2b037264e9"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryInformationUser</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle, [in] USER_INFORMATION_CLASS UserInformationClass, [out, switch_is(UserInformationClass)] <a class="el" href="union___s_a_m_p_r___u_s_e_r___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_USER_INFO_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:aca298b872a2f41c4ebbe9d2b037264e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b77807daf0884568fffbcbb179229f"><td class="memItemLeft" align="right" valign="top"><a id="a81b77807daf0884568fffbcbb179229f"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetInformationUser</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle, [in] USER_INFORMATION_CLASS UserInformationClass, [in, switch_is(UserInformationClass)] <a class="el" href="union___s_a_m_p_r___u_s_e_r___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_USER_INFO_BUFFER</a> <a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a81b77807daf0884568fffbcbb179229f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392bd8c7c75902b95f8e5ad7e0fa0eca"><td class="memItemLeft" align="right" valign="top"><a id="a392bd8c7c75902b95f8e5ad7e0fa0eca"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrChangePasswordUser</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle, [in] unsigned char LmPresent, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_LM_OWF_PASSWORD</a> OldLmEncryptedWithNewLm, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_LM_OWF_PASSWORD</a> NewLmEncryptedWithOldLm, [in] unsigned char NtPresent, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_NT_OWF_PASSWORD</a> OldNtEncryptedWithNewNt, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_NT_OWF_PASSWORD</a> NewNtEncryptedWithOldNt, [in] unsigned char NtCrossEncryptionPresent, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_NT_OWF_PASSWORD</a> NewNtEncryptedWithNewLm, [in] unsigned char LmCrossEncryptionPresent, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_LM_OWF_PASSWORD</a> NewLmEncryptedWithNewNt)</td></tr>
+<tr class="separator:a392bd8c7c75902b95f8e5ad7e0fa0eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e65e807b3487b2615a24325ce704480"><td class="memItemLeft" align="right" valign="top"><a id="a0e65e807b3487b2615a24325ce704480"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetGroupsForUser</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle, [out] <a class="el" href="struct___s_a_m_p_r___g_e_t___g_r_o_u_p_s___b_u_f_f_e_r.html">PSAMPR_GET_GROUPS_BUFFER</a> *Groups)</td></tr>
+<tr class="separator:a0e65e807b3487b2615a24325ce704480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef3416cf1611c07e0cf9aa02657f01f"><td class="memItemLeft" align="right" valign="top"><a id="a9ef3416cf1611c07e0cf9aa02657f01f"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryDisplayInformation</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_DISPLAY_INFORMATION DisplayInformationClass, [in] unsigned long Index, [in] unsigned long EntryCount, [in] unsigned long PreferredMaximumLength, [out] unsigned long *TotalAvailable, [out] unsigned long *TotalReturned, [out, switch_is(DisplayInformationClass)] <a class="el" href="union___s_a_m_p_r___d_i_s_p_l_a_y___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_DISPLAY_INFO_BUFFER</a> <a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a9ef3416cf1611c07e0cf9aa02657f01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcac7bbee317f5c501f1ebed4432a50"><td class="memItemLeft" align="right" valign="top"><a id="aafcac7bbee317f5c501f1ebed4432a50"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetDisplayEnumerationIndex</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_DISPLAY_INFORMATION DisplayInformationClass, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Prefix, [out] unsigned long *Index)</td></tr>
+<tr class="separator:aafcac7bbee317f5c501f1ebed4432a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8cfb295dac8f2d732e5089312eec171"><td class="memItemLeft" align="right" valign="top"><a id="af8cfb295dac8f2d732e5089312eec171"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrTestPrivateFunctionsDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle)</td></tr>
+<tr class="separator:af8cfb295dac8f2d732e5089312eec171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656c7976d4271d03ef0a70ef1c25a7c7"><td class="memItemLeft" align="right" valign="top"><a id="a656c7976d4271d03ef0a70ef1c25a7c7"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrTestPrivateFunctionsUser</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle)</td></tr>
+<tr class="separator:a656c7976d4271d03ef0a70ef1c25a7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e96e10c909be558958a049fa25d0f0"><td class="memItemLeft" align="right" valign="top"><a id="aa1e96e10c909be558958a049fa25d0f0"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetUserDomainPasswordInformation</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle, [out] <a class="el" href="struct___u_s_e_r___d_o_m_a_i_n___p_a_s_s_w_o_r_d___i_n_f_o_r_m_a_t_i_o_n.html">PUSER_DOMAIN_PASSWORD_INFORMATION</a> PasswordInformation)</td></tr>
+<tr class="separator:aa1e96e10c909be558958a049fa25d0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3053637252b12cb17307aec6311cb32c"><td class="memItemLeft" align="right" valign="top"><a id="a3053637252b12cb17307aec6311cb32c"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrRemoveMemberFromForeignDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> MemberSid)</td></tr>
+<tr class="separator:a3053637252b12cb17307aec6311cb32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4f2764452bf384add31415cd31f87a"><td class="memItemLeft" align="right" valign="top"><a id="a4c4f2764452bf384add31415cd31f87a"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryInformationDomain2</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_INFORMATION_CLASS DomainInformationClass, [out, switch_is(DomainInformationClass)] <a class="el" href="union___s_a_m_p_r___d_o_m_a_i_n___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_DOMAIN_INFO_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a4c4f2764452bf384add31415cd31f87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641ad74aafd5bfdb0726c5367f7759c"><td class="memItemLeft" align="right" valign="top"><a id="a4641ad74aafd5bfdb0726c5367f7759c"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryInformationUser2</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle, [in] USER_INFORMATION_CLASS UserInformationClass, [out, switch_is(UserInformationClass)] <a class="el" href="union___s_a_m_p_r___u_s_e_r___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_USER_INFO_BUFFER</a> *<a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a4641ad74aafd5bfdb0726c5367f7759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe2d1df4d1cbee3a7574f24fbcf0d8b"><td class="memItemLeft" align="right" valign="top"><a id="adbe2d1df4d1cbee3a7574f24fbcf0d8b"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryDisplayInformation2</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_DISPLAY_INFORMATION DisplayInformationClass, [in] unsigned long Index, [in] unsigned long EntryCount, [in] unsigned long PreferredMaximumLength, [out] unsigned long *TotalAvailable, [out] unsigned long *TotalReturned, [out, switch_is(DisplayInformationClass)] <a class="el" href="union___s_a_m_p_r___d_i_s_p_l_a_y___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_DISPLAY_INFO_BUFFER</a> <a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:adbe2d1df4d1cbee3a7574f24fbcf0d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb7c67b7de2a417754491ce26d9c436"><td class="memItemLeft" align="right" valign="top"><a id="acdb7c67b7de2a417754491ce26d9c436"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetDisplayEnumerationIndex2</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_DISPLAY_INFORMATION DisplayInformationClass, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Prefix, [out] unsigned long *Index)</td></tr>
+<tr class="separator:acdb7c67b7de2a417754491ce26d9c436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7bd857f0d138b34be776c45847e1d5"><td class="memItemLeft" align="right" valign="top"><a id="aee7bd857f0d138b34be776c45847e1d5"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrCreateUser2InDomain</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> <a class="el" href="struct_name_rec__.html">Name</a>, [in] unsigned long AccountType, [in] ACCESS_MASK DesiredAccess, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *UserHandle, [out] unsigned long *GrantedAccess, [out] unsigned long *RelativeId)</td></tr>
+<tr class="separator:aee7bd857f0d138b34be776c45847e1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1306ebcba269e2f8c8e6e66ff7bd6bf0"><td class="memItemLeft" align="right" valign="top"><a id="a1306ebcba269e2f8c8e6e66ff7bd6bf0"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrQueryDisplayInformation3</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> DomainHandle, [in] DOMAIN_DISPLAY_INFORMATION DisplayInformationClass, [in] unsigned long Index, [in] unsigned long EntryCount, [in] unsigned long PreferredMaximumLength, [out] unsigned long *TotalAvailable, [out] unsigned long *TotalReturned, [out, switch_is(DisplayInformationClass)] <a class="el" href="union___s_a_m_p_r___d_i_s_p_l_a_y___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_DISPLAY_INFO_BUFFER</a> <a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a1306ebcba269e2f8c8e6e66ff7bd6bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555a21821898d740ad1dc7c13ff90698"><td class="memItemLeft" align="right" valign="top"><a id="a555a21821898d740ad1dc7c13ff90698"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrAddMultipleMembersToAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> AliasHandle, [in] <a class="el" href="struct___s_a_m_p_r___p_s_i_d___a_r_r_a_y.html">PSAMPR_PSID_ARRAY</a> MembersBuffer)</td></tr>
+<tr class="separator:a555a21821898d740ad1dc7c13ff90698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ec5850d2d1304fa99e938ed275da8a"><td class="memItemLeft" align="right" valign="top"><a id="af6ec5850d2d1304fa99e938ed275da8a"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrRemoveMultipleMembersFromAlias</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> AliasHandle, [in] <a class="el" href="struct___s_a_m_p_r___p_s_i_d___a_r_r_a_y.html">PSAMPR_PSID_ARRAY</a> MembersBuffer)</td></tr>
+<tr class="separator:af6ec5850d2d1304fa99e938ed275da8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c8e116d1e1e63c6598500282f7785c"><td class="memItemLeft" align="right" valign="top"><a id="aa6c8e116d1e1e63c6598500282f7785c"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrOemChangePasswordUser2</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_p_c___s_t_r_i_n_g.html">PRPC_STRING</a> ServerName, [in] <a class="el" href="struct___r_p_c___s_t_r_i_n_g.html">PRPC_STRING</a> UserName, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___s_a_m_p_r___e_n_c_r_y_p_t_e_d___u_s_e_r___p_a_s_s_w_o_r_d.html">PSAMPR_ENCRYPTED_USER_PASSWORD</a> NewPasswordEncryptedWithOldLm, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_LM_OWF_PASSWORD</a> OldLmOwfPasswordEncryptedWithNewLm)</td></tr>
+<tr class="separator:aa6c8e116d1e1e63c6598500282f7785c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad498a1a160ce1c3e620d4aaf1bf3efe2"><td class="memItemLeft" align="right" valign="top"><a id="ad498a1a160ce1c3e620d4aaf1bf3efe2"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrUnicodeChangePasswordUser2</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> ServerName, [in] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> UserName, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___s_a_m_p_r___e_n_c_r_y_p_t_e_d___u_s_e_r___p_a_s_s_w_o_r_d.html">PSAMPR_ENCRYPTED_USER_PASSWORD</a> NewPasswordEncryptedWithOldNt, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_NT_OWF_PASSWORD</a> OldNtOwfPasswordEncryptedWithNewNt, [in] unsigned char LmPresent, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___s_a_m_p_r___e_n_c_r_y_p_t_e_d___u_s_e_r___p_a_s_s_w_o_r_d.html">PSAMPR_ENCRYPTED_USER_PASSWORD</a> NewPasswordEncryptedWithOldLm, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_LM_OWF_PASSWORD</a> OldLmOwfPasswordEncryptedWithNewNt)</td></tr>
+<tr class="separator:ad498a1a160ce1c3e620d4aaf1bf3efe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7c54b6a0c74cfe1d28c9d5ae22fcb6"><td class="memItemLeft" align="right" valign="top"><a id="afe7c54b6a0c74cfe1d28c9d5ae22fcb6"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetDomainPasswordInformation</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Unused, [out] <a class="el" href="struct___u_s_e_r___d_o_m_a_i_n___p_a_s_s_w_o_r_d___i_n_f_o_r_m_a_t_i_o_n.html">PUSER_DOMAIN_PASSWORD_INFORMATION</a> PasswordInformation)</td></tr>
+<tr class="separator:afe7c54b6a0c74cfe1d28c9d5ae22fcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2abd36c6d667db4867c454ee84f101"><td class="memItemLeft" align="right" valign="top"><a id="a9c2abd36c6d667db4867c454ee84f101"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrConnect2</b> ([in, <a class="el" href="interfaceunique.html">unique</a>, <a class="el" href="structstring.html">string</a>] PSAMPR_SERVER_NAME ServerName, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *ServerHandle, [in] ACCESS_MASK DesiredAccess)</td></tr>
+<tr class="separator:a9c2abd36c6d667db4867c454ee84f101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dedd1d6abbb0b46bb32029e4f554291"><td class="memItemLeft" align="right" valign="top"><a id="a1dedd1d6abbb0b46bb32029e4f554291"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetInformationUser2</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> UserHandle, [in] USER_INFORMATION_CLASS UserInformationClass, [in, switch_is(UserInformationClass)] <a class="el" href="union___s_a_m_p_r___u_s_e_r___i_n_f_o___b_u_f_f_e_r.html">PSAMPR_USER_INFO_BUFFER</a> <a class="el" href="class_buffer.html">Buffer</a>)</td></tr>
+<tr class="separator:a1dedd1d6abbb0b46bb32029e4f554291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be638323092dc5448b7643a959c87c1"><td class="memItemLeft" align="right" valign="top"><a id="a2be638323092dc5448b7643a959c87c1"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetBootKeyInformation</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a2be638323092dc5448b7643a959c87c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d88076cef097fefbe9384dfe5bdbc79"><td class="memItemLeft" align="right" valign="top"><a id="a5d88076cef097fefbe9384dfe5bdbc79"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrGetBootKeyInformation</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a5d88076cef097fefbe9384dfe5bdbc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5ffd15e1745cc5ce7281cf2a14deee"><td class="memItemLeft" align="right" valign="top"><a id="a9a5ffd15e1745cc5ce7281cf2a14deee"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrConnect3</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a9a5ffd15e1745cc5ce7281cf2a14deee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687018e19f08e33b8a4cdacb5e59ca10"><td class="memItemLeft" align="right" valign="top"><a id="a687018e19f08e33b8a4cdacb5e59ca10"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrConnect4</b> ([in, <a class="el" href="interfaceunique.html">unique</a>, <a class="el" href="structstring.html">string</a>] PSAMPR_SERVER_NAME ServerName, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *ServerHandle, [in] unsigned long ClientRevision, [in] ACCESS_MASK DesiredAccess)</td></tr>
+<tr class="separator:a687018e19f08e33b8a4cdacb5e59ca10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6cdc67440027ac7df65a054462f17d"><td class="memItemLeft" align="right" valign="top"><a id="a1f6cdc67440027ac7df65a054462f17d"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrUnicodeChangePasswordUser3</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a1f6cdc67440027ac7df65a054462f17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae502c2f0359049ce4ec5290164c0fe34"><td class="memItemLeft" align="right" valign="top"><a id="ae502c2f0359049ce4ec5290164c0fe34"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrConnect5</b> ([in, <a class="el" href="interfaceunique.html">unique</a>, <a class="el" href="structstring.html">string</a>] PSAMPR_SERVER_NAME ServerName, [in] ACCESS_MASK DesiredAccess, [in] unsigned long InVersion, [in, switch_is(InVersion)] SAMPR_REVISION_INFO *InRevisionInfo, [out] unsigned long *OutVersion, [out, switch_is(*OutVersion)] SAMPR_REVISION_INFO *OutRevisionInfo, [out] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> *ServerHandle)</td></tr>
+<tr class="separator:ae502c2f0359049ce4ec5290164c0fe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d1068e6563bb7a4510614b5073812b"><td class="memItemLeft" align="right" valign="top"><a id="a37d1068e6563bb7a4510614b5073812b"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrRidToSid</b> ([in] <a class="el" href="interfacevoid.html">SAMPR_HANDLE</a> ObjectHandle, [in] unsigned long Rid, [out] <a class="el" href="struct___r_p_c___s_i_d.html">PRPC_SID</a> *Sid)</td></tr>
+<tr class="separator:a37d1068e6563bb7a4510614b5073812b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec9253433f355871b9968e5c31b26ee"><td class="memItemLeft" align="right" valign="top"><a id="acec9253433f355871b9968e5c31b26ee"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrSetDSRMPassword</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___r_p_c___u_n_i_c_o_d_e___s_t_r_i_n_g.html">PRPC_UNICODE_STRING</a> Unused, [in] unsigned long UserId, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="struct___e_n_c_r_y_p_t_e_d___l_m___o_w_f___p_a_s_s_w_o_r_d.html">PENCRYPTED_NT_OWF_PASSWORD</a> EncryptedNtOwfPassword)</td></tr>
+<tr class="separator:acec9253433f355871b9968e5c31b26ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac041235b930d2ddc5ab8911d181665e3"><td class="memItemLeft" align="right" valign="top"><a id="ac041235b930d2ddc5ab8911d181665e3"></a>
+NTSTATUS __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>SamrValidatePassword</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> Handle, [in] PASSWORD_POLICY_VALIDATION_TYPE ValidationType, [in, switch_is(ValidationType)] <a class="el" href="union___s_a_m___v_a_l_i_d_a_t_e___i_n_p_u_t___a_r_g.html">PSAM_VALIDATE_INPUT_ARG</a> InputArg, [out, switch_is(ValidationType)] <a class="el" href="union___s_a_m___v_a_l_i_d_a_t_e___o_u_t_p_u_t___a_r_g.html">PSAM_VALIDATE_OUTPUT_ARG</a> *OutputArg)</td></tr>
+<tr class="separator:ac041235b930d2ddc5ab8911d181665e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/reactos/idl/<a class="el" href="sam_8idl_source.html">sam.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

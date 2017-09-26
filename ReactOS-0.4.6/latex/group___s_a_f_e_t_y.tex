@@ -1,0 +1,30 @@
+\hypertarget{group___s_a_f_e_t_y}{}\section{Process Safety for Full\+F\+AT}
+\label{group___s_a_f_e_t_y}\index{Process Safety for Full\+F\+AT@{Process Safety for Full\+F\+AT}}
+
+
+Provides semaphores, and thread-\/safety for Full\+F\+AT.  
+
+
+\subsection*{文件}
+\begin{DoxyCompactItemize}
+\item 
+文件 \hyperlink{ff__safety_8h}{ff\+\_\+safety.\+h}
+\item 
+文件 \hyperlink{ff__safety_8c}{ff\+\_\+safety.\+c}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Provides semaphores, and thread-\/safety for Full\+F\+AT. 
+
+\hyperlink{namespace_this}{This} module aims to be as portable as possible. \hyperlink{class_it}{It} is necessary to modify the functions F\+F\+\_\+\+Create\+Semaphore, F\+F\+\_\+\+Pend\+Semaphore, F\+F\+\_\+\+Release\+Semaphore, and F\+F\+\_\+\+Destroy\+Semaphore, as appropriate for your platform.
+
+If your application has no OS and is therefore single threaded, simply have\+:
+
+F\+F\+\_\+\+Create\+Semaphore() return N\+U\+LL.
+
+F\+F\+\_\+\+Pend\+Semaphore() should do nothing.
+
+F\+F\+\_\+\+Release\+Semaphore() should do nothing.
+
+F\+F\+\_\+\+Destroy\+Semaphore() should do nothing. 

@@ -1,0 +1,108 @@
+\hypertarget{blend_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/blend.c 文件参考}
+\label{blend_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/blend.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/blend.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{blend_8c_a997c333567c7864699112b072d11aea2}{\+\_\+mesa\+\_\+\+Blend\+Func} (\hyperlink{interfacevoid}{G\+Lenum} sfactor, \hyperlink{interfacevoid}{G\+Lenum} dfactor)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{blend_8c_ac395d6413bf4459d52b2531c7fb319c6}{\+\_\+mesa\+\_\+\+Alpha\+Func} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{func}, G\+Lclampf ref)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{blend_8c_ac87c0f056a168aa85c7612f973e2c011}{\+\_\+mesa\+\_\+\+Logic\+Op} (\hyperlink{interfacevoid}{G\+Lenum} opcode)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{blend_8c_a05dca39456fef464ff3177c6ffa56d1f}{\+\_\+mesa\+\_\+\+Color\+Mask} (G\+Lboolean red, G\+Lboolean green, G\+Lboolean blue, G\+Lboolean alpha)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Initialization}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{blend_8c_ab354dad090cb2a1eaa6981227f569fb6}{\+\_\+mesa\+\_\+init\+\_\+color} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Blending operations. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{blend_8c_ac395d6413bf4459d52b2531c7fb319c6}\label{blend_8c_ac395d6413bf4459d52b2531c7fb319c6}} 
+\index{blend.\+c@{blend.\+c}!\+\_\+mesa\+\_\+\+Alpha\+Func@{\+\_\+mesa\+\_\+\+Alpha\+Func}}
+\index{\+\_\+mesa\+\_\+\+Alpha\+Func@{\+\_\+mesa\+\_\+\+Alpha\+Func}!blend.\+c@{blend.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Alpha\+Func()}{\_mesa\_AlphaFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Alpha\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{func,  }\item[{G\+Lclampf}]{ref }\end{DoxyParamCaption})}
+
+Specify the alpha test function.
+
+
+\begin{DoxyParams}{参数}
+{\em func} & alpha comparison function. \\
+\hline
+{\em ref} & reference value.\\
+\hline
+\end{DoxyParams}
+Verifies the parameters and updates \hyperlink{structgl__colorbuffer__attrib}{gl\+\_\+colorbuffer\+\_\+attrib}. On a change, flushes the vertices and notifies the driver via \hyperlink{structdd__function__table_acac707afa03c90c474a07ecd73c23ccd}{dd\+\_\+function\+\_\+table\+::\+Alpha\+Func} callback. \mbox{\Hypertarget{blend_8c_a997c333567c7864699112b072d11aea2}\label{blend_8c_a997c333567c7864699112b072d11aea2}} 
+\index{blend.\+c@{blend.\+c}!\+\_\+mesa\+\_\+\+Blend\+Func@{\+\_\+mesa\+\_\+\+Blend\+Func}}
+\index{\+\_\+mesa\+\_\+\+Blend\+Func@{\+\_\+mesa\+\_\+\+Blend\+Func}!blend.\+c@{blend.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Blend\+Func()}{\_mesa\_BlendFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Blend\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{sfactor,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{dfactor }\end{DoxyParamCaption})}
+
+Specify the blending operation.
+
+
+\begin{DoxyParams}{参数}
+{\em sfactor} & source factor operator. \\
+\hline
+{\em dfactor} & destination factor operator.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Blend\+Func 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{blend_8c_a05dca39456fef464ff3177c6ffa56d1f}\label{blend_8c_a05dca39456fef464ff3177c6ffa56d1f}} 
+\index{blend.\+c@{blend.\+c}!\+\_\+mesa\+\_\+\+Color\+Mask@{\+\_\+mesa\+\_\+\+Color\+Mask}}
+\index{\+\_\+mesa\+\_\+\+Color\+Mask@{\+\_\+mesa\+\_\+\+Color\+Mask}!blend.\+c@{blend.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Color\+Mask()}{\_mesa\_ColorMask()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Color\+Mask (\begin{DoxyParamCaption}\item[{G\+Lboolean}]{red,  }\item[{G\+Lboolean}]{green,  }\item[{G\+Lboolean}]{blue,  }\item[{G\+Lboolean}]{alpha }\end{DoxyParamCaption})}
+
+Enable or disable writing of frame buffer color components.
+
+
+\begin{DoxyParams}{参数}
+{\em red} & whether to mask writing of the red color component. \\
+\hline
+{\em green} & whether to mask writing of the green color component. \\
+\hline
+{\em blue} & whether to mask writing of the blue color component. \\
+\hline
+{\em alpha} & whether to mask writing of the alpha color component.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Color\+Mask().
+\end{DoxySeeAlso}
+Sets the appropriate value of \hyperlink{structgl__colorbuffer__attrib_a9e6af968def517a64fe7573d7fd87b0f}{gl\+\_\+colorbuffer\+\_\+attrib\+::\+Color\+Mask}. On a change, flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_a0f4498a49a4045be1ba912ce28caf884}{dd\+\_\+function\+\_\+table\+::\+Color\+Mask} callback. \mbox{\Hypertarget{blend_8c_ab354dad090cb2a1eaa6981227f569fb6}\label{blend_8c_ab354dad090cb2a1eaa6981227f569fb6}} 
+\index{blend.\+c@{blend.\+c}!\+\_\+mesa\+\_\+init\+\_\+color@{\+\_\+mesa\+\_\+init\+\_\+color}}
+\index{\+\_\+mesa\+\_\+init\+\_\+color@{\+\_\+mesa\+\_\+init\+\_\+color}!blend.\+c@{blend.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+color()}{\_mesa\_init\_color()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+color (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialization of the context\textquotesingle{}s \hyperlink{struct_color}{Color} attribute group.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+Initializes the related fields in the context color attribute group, \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Color. \mbox{\Hypertarget{blend_8c_ac87c0f056a168aa85c7612f973e2c011}\label{blend_8c_ac87c0f056a168aa85c7612f973e2c011}} 
+\index{blend.\+c@{blend.\+c}!\+\_\+mesa\+\_\+\+Logic\+Op@{\+\_\+mesa\+\_\+\+Logic\+Op}}
+\index{\+\_\+mesa\+\_\+\+Logic\+Op@{\+\_\+mesa\+\_\+\+Logic\+Op}!blend.\+c@{blend.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Logic\+Op()}{\_mesa\_LogicOp()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Logic\+Op (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{opcode }\end{DoxyParamCaption})}
+
+Specify a logic pixel operation for color index rendering.
+
+
+\begin{DoxyParams}{参数}
+{\em opcode} & operation.\\
+\hline
+\end{DoxyParams}
+Verifies that {\ttfamily opcode} is a valid enum and updates \hyperlink{structgl__colorbuffer__attrib_a7ebb2076111c79ae1bd365675082050f}{gl\+\_\+colorbuffer\+\_\+attrib\+::\+Logic\+Op}. On a change, flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_a0a18048817ee65f99d555958cd79c83d}{dd\+\_\+function\+\_\+table\+::\+Logic\+Opcode} callback. 

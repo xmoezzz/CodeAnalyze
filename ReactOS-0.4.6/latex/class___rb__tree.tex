@@ -1,0 +1,422 @@
+\hypertarget{class___rb__tree}{}\section{\+\_\+\+Rb\+\_\+tree$<$ \+\_\+\+Key, \+\_\+\+Compare, \+\_\+\+Value, \+\_\+\+Key\+Of\+Value, \+\_\+\+Traits, $>$ 模板类 参考}
+\label{class___rb__tree}\index{\+\_\+\+Rb\+\_\+tree$<$ \+\_\+\+Key, \+\_\+\+Compare, \+\_\+\+Value, \+\_\+\+Key\+Of\+Value, \+\_\+\+Traits, $>$@{\+\_\+\+Rb\+\_\+tree$<$ \+\_\+\+Key, \+\_\+\+Compare, \+\_\+\+Value, \+\_\+\+Key\+Of\+Value, \+\_\+\+Traits, $>$}}
+类 \+\_\+\+Rb\+\_\+tree$<$ \+\_\+\+Key, \+\_\+\+Compare, \+\_\+\+Value, \+\_\+\+Key\+Of\+Value, \+\_\+\+Traits, $>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class___rb__tree}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a00251b0f4d762cb04f3c90ed7128bca4}\label{class___rb__tree_a00251b0f4d762cb04f3c90ed7128bca4}} 
+typedef \+\_\+\+Key {\bfseries key\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a27000a2b9c860b61b0a9e9ba04eb9d70}\label{class___rb__tree_a27000a2b9c860b61b0a9e9ba04eb9d70}} 
+typedef \+\_\+\+Value {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a99ecb0a7a572ca1e81611f43f8dce463}\label{class___rb__tree_a99ecb0a7a572ca1e81611f43f8dce463}} 
+typedef \+\_\+\+Traits\+::pointer {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{class___rb__tree_aad7a09ff3d72197c66531488ccc26100}\label{class___rb__tree_aad7a09ff3d72197c66531488ccc26100}} 
+typedef const value\+\_\+type $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a6f1620702c5564777d7f1297e64c899e}\label{class___rb__tree_a6f1620702c5564777d7f1297e64c899e}} 
+typedef \+\_\+\+Traits\+::reference {\bfseries reference}
+\item 
+\mbox{\Hypertarget{class___rb__tree_ad01a3ade0a97e99c15f6e9523c5325df}\label{class___rb__tree_ad01a3ade0a97e99c15f6e9523c5325df}} 
+typedef const value\+\_\+type \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a266fe40f125489c3d24cd940439aeb5a}\label{class___rb__tree_a266fe40f125489c3d24cd940439aeb5a}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0082dafe3db310d3d2790b557c27faac}\label{class___rb__tree_a0082dafe3db310d3d2790b557c27faac}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a97fb2ca0096cd72fcd5ddce9da19afd0}\label{class___rb__tree_a97fb2ca0096cd72fcd5ddce9da19afd0}} 
+typedef \hyperlink{structbidirectional__iterator__tag}{bidirectional\+\_\+iterator\+\_\+tag} {\bfseries \+\_\+\+Iterator\+\_\+category}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a84353ea35eed62ede964a2a9058da966}\label{class___rb__tree_a84353ea35eed62ede964a2a9058da966}} 
+typedef \+\_\+\+Base\+::allocator\+\_\+type {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0f18450b3939f9b0f327c462147d9df0}\label{class___rb__tree_a0f18450b3939f9b0f327c462147d9df0}} 
+typedef \+\_\+\+Traits\+::\+\_\+\+Non\+Const\+Traits {\bfseries \+\_\+\+Non\+Const\+Traits}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a799d3ddc6b124de99245d82894414061}\label{class___rb__tree_a799d3ddc6b124de99245d82894414061}} 
+typedef \+\_\+\+Traits\+::\+\_\+\+Const\+Traits {\bfseries \+\_\+\+Const\+Traits}
+\item 
+\mbox{\Hypertarget{class___rb__tree_af97151c593ea3e77a7acf5ab762f43b6}\label{class___rb__tree_af97151c593ea3e77a7acf5ab762f43b6}} 
+typedef \hyperlink{struct___rb__tree__iterator}{\+\_\+\+Rb\+\_\+tree\+\_\+iterator}$<$ value\+\_\+type, \+\_\+\+Non\+Const\+Traits $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a75b16825233d9200e1d039df9cf53115}\label{class___rb__tree_a75b16825233d9200e1d039df9cf53115}} 
+typedef \hyperlink{struct___rb__tree__iterator}{\+\_\+\+Rb\+\_\+tree\+\_\+iterator}$<$ value\+\_\+type, \+\_\+\+Const\+Traits $>$ {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a68c0aa7eba3808f8bf3479895496e702}\label{class___rb__tree_a68c0aa7eba3808f8bf3479895496e702}} 
+typedef \+\_\+\+Base\+::key\+\_\+type {\bfseries key\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a37911dd525d0a1711df02954524becbf}\label{class___rb__tree_a37911dd525d0a1711df02954524becbf}} 
+typedef \+\_\+\+Traits\+::\+\_\+\+Non\+Const\+Traits {\bfseries \+\_\+\+Non\+Const\+Ite\+Traits}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0e26226e8d51245dc6b9e342a95deb58}\label{class___rb__tree_a0e26226e8d51245dc6b9e342a95deb58}} 
+typedef \+\_\+\+Traits\+::\+\_\+\+Const\+Traits {\bfseries \+\_\+\+Const\+Ite\+Traits}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a97cda42ec8a27029ee0e789c10ddef77}\label{class___rb__tree_a97cda42ec8a27029ee0e789c10ddef77}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___d_b_g__iter}{\+\_\+\+D\+B\+G\+\_\+iter}$<$ \hyperlink{class___rb__tree__base}{\+\_\+\+Base}, \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \+\_\+\+Dbg\+Traits$<$ \+\_\+\+Non\+Const\+Ite\+Traits $>$ $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0875efb53d91523df4620cb5976be57a}\label{class___rb__tree_a0875efb53d91523df4620cb5976be57a}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___d_b_g__iter}{\+\_\+\+D\+B\+G\+\_\+iter}$<$ \hyperlink{class___rb__tree__base}{\+\_\+\+Base}, \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \+\_\+\+Dbg\+Traits$<$ \+\_\+\+Const\+Ite\+Traits $>$ $>$ {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a046e86cd002e4c2802bb26c4bb7c0044}\label{class___rb__tree_a046e86cd002e4c2802bb26c4bb7c0044}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (const \+\_\+\+Compare \&\+\_\+\+\_\+comp)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ace2f35110a37d9ae54510c10cfeedd81}\label{class___rb__tree_ace2f35110a37d9ae54510c10cfeedd81}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (const \+\_\+\+Compare \&\+\_\+\+\_\+comp, const allocator\+\_\+type \&\+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ab9fd048c4fc21ba02d1ae9654a79f628}\label{class___rb__tree_ab9fd048c4fc21ba02d1ae9654a79f628}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (const \hyperlink{class___rb__tree}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0a615c7749fb4638e794865d46d7d63c}\label{class___rb__tree_a0a615c7749fb4638e794865d46d7d63c}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{class___rb__tree}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ac76b589ceff19b1079d8021b6cc1969c}\label{class___rb__tree_ac76b589ceff19b1079d8021b6cc1969c}} 
+\hyperlink{class___rb__tree}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{class___rb__tree}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a1dec96808160f238cc9384187c6f2bc6}\label{class___rb__tree_a1dec96808160f238cc9384187c6f2bc6}} 
+\+\_\+\+Compare {\bfseries key\+\_\+comp} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a486abe49327f50c6b0ff37ee49b9613e}\label{class___rb__tree_a486abe49327f50c6b0ff37ee49b9613e}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_a254b33f105ef2a436405d00cce4df727}\label{class___rb__tree_a254b33f105ef2a436405d00cce4df727}} 
+\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a95e0a2f7e0945e25395673a8fa4fa7f9}\label{class___rb__tree_a95e0a2f7e0945e25395673a8fa4fa7f9}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_aedcacd0394e44e888b48f680db4a5e39}\label{class___rb__tree_aedcacd0394e44e888b48f680db4a5e39}} 
+\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a61186b3ac3df38f4e47235389b290d8b}\label{class___rb__tree_a61186b3ac3df38f4e47235389b290d8b}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_a1bca0b075ac4d40e7483b9cbfea4a41d}\label{class___rb__tree_a1bca0b075ac4d40e7483b9cbfea4a41d}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a14167a8ba8e81d5a47051f36bf0cbfa6}\label{class___rb__tree_a14167a8ba8e81d5a47051f36bf0cbfa6}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_a3e8e88b085e12867ef46c774b6e442e1}\label{class___rb__tree_a3e8e88b085e12867ef46c774b6e442e1}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rend} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_af6b577cf9ef2e4b93faa875b653fb3d2}\label{class___rb__tree_af6b577cf9ef2e4b93faa875b653fb3d2}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a39c6e6ca9210e2b95577239b30c35be4}\label{class___rb__tree_a39c6e6ca9210e2b95577239b30c35be4}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_aed335a7da1ab20f4194cefaca4525ae2}\label{class___rb__tree_aed335a7da1ab20f4194cefaca4525ae2}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a50abd1f75a8b605ae1dd9b71ea57f17d}\label{class___rb__tree_a50abd1f75a8b605ae1dd9b71ea57f17d}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{class___rb__tree}{\+\_\+\+Self} \&\+\_\+\+\_\+t)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a9c3341e15daa1b6565adb48129b2999b}\label{class___rb__tree_a9c3341e15daa1b6565adb48129b2999b}} 
+\hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{iterator}, bool $>$ {\bfseries insert\+\_\+unique} (const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a63eaaa3df2b57c0b8edb1f6fd7b696bb}\label{class___rb__tree_a63eaaa3df2b57c0b8edb1f6fd7b696bb}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries insert\+\_\+equal} (const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a543605b6f4a0c8b4629d86c76db3d297}\label{class___rb__tree_a543605b6f4a0c8b4629d86c76db3d297}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries insert\+\_\+unique} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a394e0635116e83f209d3e4a9981d4384}\label{class___rb__tree_a394e0635116e83f209d3e4a9981d4384}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries insert\+\_\+equal} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_aad72e1ea4939387b8a0a0ce41f64a924}\label{class___rb__tree_aad72e1ea4939387b8a0a0ce41f64a924}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+first, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_adc384a6f81880cd81d50cdcca33276ba}\label{class___rb__tree_adc384a6f81880cd81d50cdcca33276ba}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a4bfd057bf66c2221c901218b9a391049}\label{class___rb__tree_a4bfd057bf66c2221c901218b9a391049}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+first, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_abe35892b552c7d97c151fc3d1dffd5d9}\label{class___rb__tree_abe35892b552c7d97c151fc3d1dffd5d9}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_af89f7874d20abb8202f08ab325016d57}\label{class___rb__tree_af89f7874d20abb8202f08ab325016d57}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ab8df439a948f8f5639c085762bdf2455}\label{class___rb__tree_ab8df439a948f8f5639c085762bdf2455}} 
+size\+\_\+type {\bfseries erase} (const key\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_aafe958b5bcca96f3998bffe2857e71a0}\label{class___rb__tree_aafe958b5bcca96f3998bffe2857e71a0}} 
+size\+\_\+type {\bfseries erase\+\_\+unique} (const key\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a48cc43832ff42eb33c3e86672f55ca50}\label{class___rb__tree_a48cc43832ff42eb33c3e86672f55ca50}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+first, \hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a43e8dc76a7b15275154fa8100c7a653b}\label{class___rb__tree_a43e8dc76a7b15275154fa8100c7a653b}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const key\+\_\+type $\ast$\+\_\+\+\_\+first, const key\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a20d7c9bd64c1e0b67381c0f038c28b2d}\label{class___rb__tree_a20d7c9bd64c1e0b67381c0f038c28b2d}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_a3714dcaf12c53e2b4b4a847c519090cd}\label{class___rb__tree_a3714dcaf12c53e2b4b4a847c519090cd}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+k)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a5bf5224e2d3a3286161fb132329d12b6}\label{class___rb__tree_a5bf5224e2d3a3286161fb132329d12b6}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+k) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a504ae60eaffe045a9a33d7b537e0d396}\label{class___rb__tree_a504ae60eaffe045a9a33d7b537e0d396}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries count} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a036f51cdd0a00c3296335338508ecb10}\label{class___rb__tree_a036f51cdd0a00c3296335338508ecb10}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries lower\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0282d9c49edc5330ceb352cdf0cfb0e1}\label{class___rb__tree_a0282d9c49edc5330ceb352cdf0cfb0e1}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries lower\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a6924090c59ac58fc25279c31b6413282}\label{class___rb__tree_a6924090c59ac58fc25279c31b6413282}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries upper\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a21064bcd2d2c007a4387159073ce3d73}\label{class___rb__tree_a21064bcd2d2c007a4387159073ce3d73}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries upper\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a3fe62161edfd2ac095d1c825b6bcf42a}\label{class___rb__tree_a3fe62161edfd2ac095d1c825b6bcf42a}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{iterator}, \hyperlink{struct___rb__tree__iterator}{iterator} $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0195db7b12403526c29a41407d898cf7}\label{class___rb__tree_a0195db7b12403526c29a41407d898cf7}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator}, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a8c21e26a576b361e54e9f82ef967f48e}\label{class___rb__tree_a8c21e26a576b361e54e9f82ef967f48e}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{iterator}, \hyperlink{struct___rb__tree__iterator}{iterator} $>$ {\bfseries equal\+\_\+range\+\_\+unique} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a31ce190bfc0d827852c917f9e220b45f}\label{class___rb__tree_a31ce190bfc0d827852c917f9e220b45f}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator}, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} $>$ {\bfseries equal\+\_\+range\+\_\+unique} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a046e86cd002e4c2802bb26c4bb7c0044}\label{class___rb__tree_a046e86cd002e4c2802bb26c4bb7c0044}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (const \+\_\+\+Compare \&\+\_\+\+\_\+comp)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ace2f35110a37d9ae54510c10cfeedd81}\label{class___rb__tree_ace2f35110a37d9ae54510c10cfeedd81}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (const \+\_\+\+Compare \&\+\_\+\+\_\+comp, const allocator\+\_\+type \&\+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ab9fd048c4fc21ba02d1ae9654a79f628}\label{class___rb__tree_ab9fd048c4fc21ba02d1ae9654a79f628}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (const \hyperlink{class___rb__tree}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0a615c7749fb4638e794865d46d7d63c}\label{class___rb__tree_a0a615c7749fb4638e794865d46d7d63c}} 
+{\bfseries \+\_\+\+Rb\+\_\+tree} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{class___rb__tree}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ad5340d4cd5eb7596845ab3acc7401772}\label{class___rb__tree_ad5340d4cd5eb7596845ab3acc7401772}} 
+\hyperlink{class___rb__tree}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{class___rb__tree}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a1ee7252c63a788cf5355b15c1c8931e3}\label{class___rb__tree_a1ee7252c63a788cf5355b15c1c8931e3}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a1dec96808160f238cc9384187c6f2bc6}\label{class___rb__tree_a1dec96808160f238cc9384187c6f2bc6}} 
+\+\_\+\+Compare {\bfseries key\+\_\+comp} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a486abe49327f50c6b0ff37ee49b9613e}\label{class___rb__tree_a486abe49327f50c6b0ff37ee49b9613e}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_a254b33f105ef2a436405d00cce4df727}\label{class___rb__tree_a254b33f105ef2a436405d00cce4df727}} 
+\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a95e0a2f7e0945e25395673a8fa4fa7f9}\label{class___rb__tree_a95e0a2f7e0945e25395673a8fa4fa7f9}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_aedcacd0394e44e888b48f680db4a5e39}\label{class___rb__tree_aedcacd0394e44e888b48f680db4a5e39}} 
+\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a61186b3ac3df38f4e47235389b290d8b}\label{class___rb__tree_a61186b3ac3df38f4e47235389b290d8b}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_a1bca0b075ac4d40e7483b9cbfea4a41d}\label{class___rb__tree_a1bca0b075ac4d40e7483b9cbfea4a41d}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a14167a8ba8e81d5a47051f36bf0cbfa6}\label{class___rb__tree_a14167a8ba8e81d5a47051f36bf0cbfa6}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_a3e8e88b085e12867ef46c774b6e442e1}\label{class___rb__tree_a3e8e88b085e12867ef46c774b6e442e1}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rend} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_af6b577cf9ef2e4b93faa875b653fb3d2}\label{class___rb__tree_af6b577cf9ef2e4b93faa875b653fb3d2}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a39c6e6ca9210e2b95577239b30c35be4}\label{class___rb__tree_a39c6e6ca9210e2b95577239b30c35be4}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_aed335a7da1ab20f4194cefaca4525ae2}\label{class___rb__tree_aed335a7da1ab20f4194cefaca4525ae2}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a504ae60eaffe045a9a33d7b537e0d396}\label{class___rb__tree_a504ae60eaffe045a9a33d7b537e0d396}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT size\+\_\+type {\bfseries count} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a50abd1f75a8b605ae1dd9b71ea57f17d}\label{class___rb__tree_a50abd1f75a8b605ae1dd9b71ea57f17d}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{class___rb__tree}{\+\_\+\+Self} \&\+\_\+\+\_\+t)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a3714dcaf12c53e2b4b4a847c519090cd}\label{class___rb__tree_a3714dcaf12c53e2b4b4a847c519090cd}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+k)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a5bf5224e2d3a3286161fb132329d12b6}\label{class___rb__tree_a5bf5224e2d3a3286161fb132329d12b6}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries find} (const \+\_\+\+KT \&\+\_\+\+\_\+k) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a036f51cdd0a00c3296335338508ecb10}\label{class___rb__tree_a036f51cdd0a00c3296335338508ecb10}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries lower\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0282d9c49edc5330ceb352cdf0cfb0e1}\label{class___rb__tree_a0282d9c49edc5330ceb352cdf0cfb0e1}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries lower\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a6924090c59ac58fc25279c31b6413282}\label{class___rb__tree_a6924090c59ac58fc25279c31b6413282}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries upper\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a21064bcd2d2c007a4387159073ce3d73}\label{class___rb__tree_a21064bcd2d2c007a4387159073ce3d73}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} {\bfseries upper\+\_\+bound} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a3fe62161edfd2ac095d1c825b6bcf42a}\label{class___rb__tree_a3fe62161edfd2ac095d1c825b6bcf42a}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{iterator}, \hyperlink{struct___rb__tree__iterator}{iterator} $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0195db7b12403526c29a41407d898cf7}\label{class___rb__tree_a0195db7b12403526c29a41407d898cf7}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator}, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} $>$ {\bfseries equal\+\_\+range} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a8c21e26a576b361e54e9f82ef967f48e}\label{class___rb__tree_a8c21e26a576b361e54e9f82ef967f48e}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{iterator}, \hyperlink{struct___rb__tree__iterator}{iterator} $>$ {\bfseries equal\+\_\+range\+\_\+unique} (const \+\_\+\+KT \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a31ce190bfc0d827852c917f9e220b45f}\label{class___rb__tree_a31ce190bfc0d827852c917f9e220b45f}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+C\+O\+N\+T\+\_\+\+E\+XT \hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator}, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} $>$ {\bfseries equal\+\_\+range\+\_\+unique} (const \+\_\+\+KT \&\+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class___rb__tree_aea3a80c1a3fb327c166f05a00a0b18ec}\label{class___rb__tree_aea3a80c1a3fb327c166f05a00a0b18ec}} 
+\hyperlink{structpair}{pair}$<$ \hyperlink{struct___rb__tree__iterator}{iterator}, bool $>$ {\bfseries insert\+\_\+unique} (const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_aae2985ed9d0315bdccad75347fe73f0a}\label{class___rb__tree_aae2985ed9d0315bdccad75347fe73f0a}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries insert\+\_\+equal} (const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a8c3d8c5ffd203a15952873e3d8e73285}\label{class___rb__tree_a8c3d8c5ffd203a15952873e3d8e73285}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries insert\+\_\+unique} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a7f0cd9818ad101f0bba100676e824329}\label{class___rb__tree_a7f0cd9818ad101f0bba100676e824329}} 
+\hyperlink{struct___rb__tree__iterator}{iterator} {\bfseries insert\+\_\+equal} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_aad72e1ea4939387b8a0a0ce41f64a924}\label{class___rb__tree_aad72e1ea4939387b8a0a0ce41f64a924}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+first, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_adc384a6f81880cd81d50cdcca33276ba}\label{class___rb__tree_adc384a6f81880cd81d50cdcca33276ba}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+unique} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a4bfd057bf66c2221c901218b9a391049}\label{class___rb__tree_a4bfd057bf66c2221c901218b9a391049}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (\hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+first, \hyperlink{struct___rb__tree__iterator}{const\+\_\+iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_abe35892b552c7d97c151fc3d1dffd5d9}\label{class___rb__tree_abe35892b552c7d97c151fc3d1dffd5d9}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert\+\_\+equal} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_af89f7874d20abb8202f08ab325016d57}\label{class___rb__tree_af89f7874d20abb8202f08ab325016d57}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ab8df439a948f8f5639c085762bdf2455}\label{class___rb__tree_ab8df439a948f8f5639c085762bdf2455}} 
+size\+\_\+type {\bfseries erase} (const key\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_aafe958b5bcca96f3998bffe2857e71a0}\label{class___rb__tree_aafe958b5bcca96f3998bffe2857e71a0}} 
+size\+\_\+type {\bfseries erase\+\_\+unique} (const key\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a48cc43832ff42eb33c3e86672f55ca50}\label{class___rb__tree_a48cc43832ff42eb33c3e86672f55ca50}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (\hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+first, \hyperlink{struct___rb__tree__iterator}{iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a43e8dc76a7b15275154fa8100c7a653b}\label{class___rb__tree_a43e8dc76a7b15275154fa8100c7a653b}} 
+\hyperlink{interfacevoid}{void} {\bfseries erase} (const key\+\_\+type $\ast$\+\_\+\+\_\+first, const key\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a20d7c9bd64c1e0b67381c0f038c28b2d}\label{class___rb__tree_a20d7c9bd64c1e0b67381c0f038c28b2d}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a95da28295911cb839cf6481f83f679dd}\label{class___rb__tree_a95da28295911cb839cf6481f83f679dd}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+I\+D\+I\+R\+E\+C\+T\+I\+O\+N\+A\+L\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+T\+E\+R\+A\+T\+O\+RS}
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a894dafe81be4e4d388e101c6ba1186c7}\label{class___rb__tree_a894dafe81be4e4d388e101c6ba1186c7}} 
+typedef \hyperlink{struct___rb__tree__node__base}{\+\_\+\+Rb\+\_\+tree\+\_\+node\+\_\+base} $\ast$ {\bfseries \+\_\+\+Base\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{class___rb__tree_afd5f6d30267a9f18471e2403272b275c}\label{class___rb__tree_afd5f6d30267a9f18471e2403272b275c}} 
+typedef \hyperlink{struct___rb__tree__node}{\+\_\+\+Rb\+\_\+tree\+\_\+node}$<$ \+\_\+\+Value $>$ {\bfseries \+\_\+\+Node}
+\item 
+\mbox{\Hypertarget{class___rb__tree_ae9995afc839f722213b2e9f4683700c1}\label{class___rb__tree_ae9995afc839f722213b2e9f4683700c1}} 
+typedef \hyperlink{struct___rb__tree__node}{\+\_\+\+Node} $\ast$ {\bfseries \+\_\+\+Link\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a01684d3f5d0c8854cfab8320addef6a0}\label{class___rb__tree_a01684d3f5d0c8854cfab8320addef6a0}} 
+typedef \+\_\+\+Rb\+\_\+tree\+\_\+\+Color\+\_\+type {\bfseries \+\_\+\+Color\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a321754e498b278d9aec3693c0e77bbb9}\label{class___rb__tree_a321754e498b278d9aec3693c0e77bbb9}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} {\bfseries \+\_\+\+M\+\_\+create\+\_\+node} (const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a28da4f9f35a1547134263da2be5594c7}\label{class___rb__tree_a28da4f9f35a1547134263da2be5594c7}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} {\bfseries \+\_\+\+M\+\_\+clone\+\_\+node} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_acee983c6dfe62a827d5ed7b9f78fdd91}\label{class___rb__tree_acee983c6dfe62a827d5ed7b9f78fdd91}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} {\bfseries \+\_\+\+M\+\_\+root} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a16268b5676f61fa679d768e0d169f846}\label{class___rb__tree_a16268b5676f61fa679d768e0d169f846}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} {\bfseries \+\_\+\+M\+\_\+leftmost} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a1792c23fb0134e5f718cc2d878083e8a}\label{class___rb__tree_a1792c23fb0134e5f718cc2d878083e8a}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} {\bfseries \+\_\+\+M\+\_\+rightmost} () const
+\item 
+\mbox{\Hypertarget{class___rb__tree_a9e75f574a3b84725f770825f3ecd0a73}\label{class___rb__tree_a9e75f574a3b84725f770825f3ecd0a73}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \& {\bfseries \+\_\+\+M\+\_\+root} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_aeb3d336122025845a7b44192b259e79b}\label{class___rb__tree_aeb3d336122025845a7b44192b259e79b}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \& {\bfseries \+\_\+\+M\+\_\+leftmost} ()
+\item 
+\mbox{\Hypertarget{class___rb__tree_af11ada548038f718168cdbdbc763d9c0}\label{class___rb__tree_af11ada548038f718168cdbdbc763d9c0}} 
+\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \& {\bfseries \+\_\+\+M\+\_\+rightmost} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a09cd2da00285d7864adcfd5f497bc5df}\label{class___rb__tree_a09cd2da00285d7864adcfd5f497bc5df}} 
+static \hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \&\+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+left} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a0b3c5ac442760c04071974d5dea724a1}\label{class___rb__tree_a0b3c5ac442760c04071974d5dea724a1}} 
+static \hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \&\+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+right} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a2e382bb61279f741bd87acf0592fcfcc}\label{class___rb__tree_a2e382bb61279f741bd87acf0592fcfcc}} 
+static \hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \&\+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+parent} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a5a45da543c9ca2ac470da2c7f850acd4}\label{class___rb__tree_a5a45da543c9ca2ac470da2c7f850acd4}} 
+static value\+\_\+type \&\+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+value} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a6fc8da7cf20228c5ad329c530539488f}\label{class___rb__tree_a6fc8da7cf20228c5ad329c530539488f}} 
+static const \+\_\+\+Key \&\+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+key} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a4e6477a4a2f614686ecc27ab982b1f7d}\label{class___rb__tree_a4e6477a4a2f614686ecc27ab982b1f7d}} 
+static \+\_\+\+Color\+\_\+type \&\+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+color} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_a5741a2cc9b4afff8af00d1f614331c43}\label{class___rb__tree_a5741a2cc9b4afff8af00d1f614331c43}} 
+static \hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+minimum} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class___rb__tree_ae9bc9e28fa9b0446570c832e9dabbe14}\label{class___rb__tree_ae9bc9e28fa9b0446570c832e9dabbe14}} 
+static \hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+maximum} (\hyperlink{struct___rb__tree__node__base}{\+\_\+\+Base\+\_\+ptr} \+\_\+\+\_\+x)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a26b4a543410e04a4773ae62bbe3be85a}\label{class___rb__tree_a26b4a543410e04a4773ae62bbe3be85a}} 
+size\+\_\+type {\bfseries \+\_\+\+M\+\_\+node\+\_\+count}
+\item 
+\mbox{\Hypertarget{class___rb__tree_a632b2016b7e11b7587153270e9d7188b}\label{class___rb__tree_a632b2016b7e11b7587153270e9d7188b}} 
+\+\_\+\+Compare {\bfseries \+\_\+\+M\+\_\+key\+\_\+compare}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+tree.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+tree.\+c\end{DoxyCompactItemize}

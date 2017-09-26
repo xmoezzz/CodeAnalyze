@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IMoniker接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_moniker-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IMoniker接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IMoniker 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_moniker.png" usemap="#IMoniker_map" alt=""/>
+  <map id="IMoniker_map" name="IMoniker_map">
+<area href="interface_i_persist_stream.html" alt="IPersistStream" shape="rect" coords="0,112,92,136"/>
+<area href="interface_i_persist.html" alt="IPersist" shape="rect" coords="0,56,92,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,92,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad653a1be0d42c7c5c8ed9f5d63f648ce"><td class="memItemLeft" align="right" valign="top"><a id="ad653a1be0d42c7c5c8ed9f5d63f648ce"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagMKSYS</b> { <br />
+&#160;&#160;<b>MKSYS_NONE</b> = 0, 
+<b>MKSYS_GENERICCOMPOSITE</b> = 1, 
+<b>MKSYS_FILEMONIKER</b> = 2, 
+<b>MKSYS_ANTIMONIKER</b> = 3, 
+<br />
+&#160;&#160;<b>MKSYS_ITEMMONIKER</b> = 4, 
+<b>MKSYS_POINTERMONIKER</b> = 5, 
+<b>MKSYS_CLASSMONIKER</b> = 7
+<br />
+ }</td></tr>
+<tr class="separator:ad653a1be0d42c7c5c8ed9f5d63f648ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f8016d2349c1ac4c4cc35c55707ec6"><td class="memItemLeft" align="right" valign="top"><a id="a48f8016d2349c1ac4c4cc35c55707ec6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tagMKREDUCE</b> { <b>MKRREDUCE_ONE</b> = 3 &lt;&lt; 16, 
+<b>MKRREDUCE_TOUSER</b> = 2 &lt;&lt; 16, 
+<b>MKRREDUCE_THROUGHUSER</b> = 1 &lt;&lt; 16, 
+<b>MKRREDUCE_ALL</b> = 0
+ }</td></tr>
+<tr class="separator:a48f8016d2349c1ac4c4cc35c55707ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4edaf7cd64938c8c87018bee36a36c2f"><td class="memItemLeft" align="right" valign="top"><a id="a4edaf7cd64938c8c87018bee36a36c2f"></a>
+typedef <a class="el" href="interface_i_moniker.html">IMoniker</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPMONIKER</b></td></tr>
+<tr class="separator:a4edaf7cd64938c8c87018bee36a36c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea58843bcb6d2841fde7a28fa58083c5"><td class="memItemLeft" align="right" valign="top"><a id="aea58843bcb6d2841fde7a28fa58083c5"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IMoniker::tagMKSYS&#160;</td><td class="memItemRight" valign="bottom"><b>MKSYS</b></td></tr>
+<tr class="separator:aea58843bcb6d2841fde7a28fa58083c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04037ba9b588180b242b004d42ed855"><td class="memItemLeft" align="right" valign="top"><a id="ae04037ba9b588180b242b004d42ed855"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IMoniker::tagMKREDUCE&#160;</td><td class="memItemRight" valign="bottom"><b>MKRREDUCE</b></td></tr>
+<tr class="separator:ae04037ba9b588180b242b004d42ed855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_persist_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_persist_stream')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_persist_stream.html">IPersistStream</a></td></tr>
+<tr class="memitem:a8f88cfd0a716fba78bb1f425870e7a10 inherit pub_types_interface_i_persist_stream"><td class="memItemLeft" align="right" valign="top"><a id="a8f88cfd0a716fba78bb1f425870e7a10"></a>
+typedef <a class="el" href="interface_i_persist_stream.html">IPersistStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPPERSISTSTREAM</b></td></tr>
+<tr class="separator:a8f88cfd0a716fba78bb1f425870e7a10 inherit pub_types_interface_i_persist_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_persist"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_persist')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_persist.html">IPersist</a></td></tr>
+<tr class="memitem:a687ceef44a96d253c5bc83e201edd93c inherit pub_types_interface_i_persist"><td class="memItemLeft" align="right" valign="top"><a id="a687ceef44a96d253c5bc83e201edd93c"></a>
+typedef <a class="el" href="interface_i_persist.html">IPersist</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPPERSIST</b></td></tr>
+<tr class="separator:a687ceef44a96d253c5bc83e201edd93c inherit pub_types_interface_i_persist"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5b908ab57f5fb29049b364f98f850772"><td class="memItemLeft" align="right" valign="top"><a id="a5b908ab57f5fb29049b364f98f850772"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>BindToObject</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [in] REFIID riidResult, [out, iid_is(riidResult)] <a class="el" href="interfacevoid.html">void</a> **ppvResult)</td></tr>
+<tr class="separator:a5b908ab57f5fb29049b364f98f850772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874aeec7ac8a077ac978e1376ee50138"><td class="memItemLeft" align="right" valign="top"><a id="a874aeec7ac8a077ac978e1376ee50138"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteBindToObject</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [in] REFIID riidResult, [out, iid_is(riidResult)] <a class="el" href="interface_i_unknown.html">IUnknown</a> **ppvResult)</td></tr>
+<tr class="separator:a874aeec7ac8a077ac978e1376ee50138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902ef045db76f8fe4d78928dcfd86f40"><td class="memItemLeft" align="right" valign="top"><a id="a902ef045db76f8fe4d78928dcfd86f40"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>BindToStorage</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObj)</td></tr>
+<tr class="separator:a902ef045db76f8fe4d78928dcfd86f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c82794cd66b0c51176b500b841dfc9"><td class="memItemLeft" align="right" valign="top"><a id="a96c82794cd66b0c51176b500b841dfc9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteBindToStorage</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interface_i_unknown.html">IUnknown</a> **ppvObj)</td></tr>
+<tr class="separator:a96c82794cd66b0c51176b500b841dfc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d508da1e365db6ceefdaf1afcae55df"><td class="memItemLeft" align="right" valign="top"><a id="a5d508da1e365db6ceefdaf1afcae55df"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Reduce</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in] DWORD dwReduceHowFar, [in, out, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> **ppmkToLeft, [out] <a class="el" href="interface_i_moniker.html">IMoniker</a> **ppmkReduced)</td></tr>
+<tr class="separator:a5d508da1e365db6ceefdaf1afcae55df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131053015d0037ac8d22dd9aae6a5293"><td class="memItemLeft" align="right" valign="top"><a id="a131053015d0037ac8d22dd9aae6a5293"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ComposeWith</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkRight, [in] BOOL fOnlyIfNotGeneric, [out] <a class="el" href="interface_i_moniker.html">IMoniker</a> **ppmkComposite)</td></tr>
+<tr class="separator:a131053015d0037ac8d22dd9aae6a5293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf46de07becfd0cda59c3f580fcda93"><td class="memItemLeft" align="right" valign="top"><a id="abaf46de07becfd0cda59c3f580fcda93"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> ([in] BOOL fForward, [out] <a class="el" href="interface_i_enum_moniker.html">IEnumMoniker</a> **ppenumMoniker)</td></tr>
+<tr class="separator:abaf46de07becfd0cda59c3f580fcda93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d095942c83d83a8397e8b8fb15b3e85"><td class="memItemLeft" align="right" valign="top"><a id="a2d095942c83d83a8397e8b8fb15b3e85"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsEqual</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkOtherMoniker)</td></tr>
+<tr class="separator:a2d095942c83d83a8397e8b8fb15b3e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30d145ac064a6ea321362c998990016"><td class="memItemLeft" align="right" valign="top"><a id="aa30d145ac064a6ea321362c998990016"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Hash</b> ([out] DWORD *pdwHash)</td></tr>
+<tr class="separator:aa30d145ac064a6ea321362c998990016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c15951e6a52f15ff2e8b8f110baaec"><td class="memItemLeft" align="right" valign="top"><a id="ae2c15951e6a52f15ff2e8b8f110baaec"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsRunning</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkNewlyRunning)</td></tr>
+<tr class="separator:ae2c15951e6a52f15ff2e8b8f110baaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dedbb42a2c7a2061511129f0ed57f3f"><td class="memItemLeft" align="right" valign="top"><a id="a3dedbb42a2c7a2061511129f0ed57f3f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeOfLastChange</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [out] <a class="el" href="struct___f_i_l_e_t_i_m_e.html">FILETIME</a> *pFileTime)</td></tr>
+<tr class="separator:a3dedbb42a2c7a2061511129f0ed57f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966f58924f1431d9c3cb783dff637a6d"><td class="memItemLeft" align="right" valign="top"><a id="a966f58924f1431d9c3cb783dff637a6d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Inverse</b> ([out] <a class="el" href="interface_i_moniker.html">IMoniker</a> **ppmk)</td></tr>
+<tr class="separator:a966f58924f1431d9c3cb783dff637a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0293b77bf5588d19aebbd2f6222e0f4c"><td class="memItemLeft" align="right" valign="top"><a id="a0293b77bf5588d19aebbd2f6222e0f4c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CommonPrefixWith</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkOther, [out] <a class="el" href="interface_i_moniker.html">IMoniker</a> **ppmkPrefix)</td></tr>
+<tr class="separator:a0293b77bf5588d19aebbd2f6222e0f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6688f9a72b6ce2dc182b8bae8d41dad"><td class="memItemLeft" align="right" valign="top"><a id="ad6688f9a72b6ce2dc182b8bae8d41dad"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RelativePathTo</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkOther, [out] <a class="el" href="interface_i_moniker.html">IMoniker</a> **ppmkRelPath)</td></tr>
+<tr class="separator:ad6688f9a72b6ce2dc182b8bae8d41dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799d1eb85554a06431add7b2cf5e269c"><td class="memItemLeft" align="right" valign="top"><a id="a799d1eb85554a06431add7b2cf5e269c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayName</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [out] LPOLESTR *ppszDisplayName)</td></tr>
+<tr class="separator:a799d1eb85554a06431add7b2cf5e269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8b728fca8b65b3f5d74a2984831e83"><td class="memItemLeft" align="right" valign="top"><a id="ada8b728fca8b65b3f5d74a2984831e83"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>ParseDisplayName</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_ctx.html">IBindCtx</a> *pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_moniker.html">IMoniker</a> *pmkToLeft, [in] LPOLESTR pszDisplayName, [out] ULONG *pchEaten, [out] <a class="el" href="interface_i_moniker.html">IMoniker</a> **ppmkOut)</td></tr>
+<tr class="separator:ada8b728fca8b65b3f5d74a2984831e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625d1e18ab485a291bf2ed45123c3cdd"><td class="memItemLeft" align="right" valign="top"><a id="a625d1e18ab485a291bf2ed45123c3cdd"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsSystemMoniker</b> ([out] DWORD *pdwMksys)</td></tr>
+<tr class="separator:a625d1e18ab485a291bf2ed45123c3cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_persist_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_persist_stream')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_persist_stream.html">IPersistStream</a></td></tr>
+<tr class="memitem:aff664c9bffb0c6763b746270f1349536 inherit pub_methods_interface_i_persist_stream"><td class="memItemLeft" align="right" valign="top"><a id="aff664c9bffb0c6763b746270f1349536"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsDirty</b> ()</td></tr>
+<tr class="separator:aff664c9bffb0c6763b746270f1349536 inherit pub_methods_interface_i_persist_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac841b8b2fe3250b276cbade686bffa54 inherit pub_methods_interface_i_persist_stream"><td class="memItemLeft" align="right" valign="top"><a id="ac841b8b2fe3250b276cbade686bffa54"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_stream.html">IStream</a> *pStm)</td></tr>
+<tr class="separator:ac841b8b2fe3250b276cbade686bffa54 inherit pub_methods_interface_i_persist_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a349e28afe8ae965d602defb7bc649 inherit pub_methods_interface_i_persist_stream"><td class="memItemLeft" align="right" valign="top"><a id="a22a349e28afe8ae965d602defb7bc649"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_stream.html">IStream</a> *pStm, [in] BOOL fClearDirty)</td></tr>
+<tr class="separator:a22a349e28afe8ae965d602defb7bc649 inherit pub_methods_interface_i_persist_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406de9b1cb22487919ee1b8f25dae599 inherit pub_methods_interface_i_persist_stream"><td class="memItemLeft" align="right" valign="top"><a id="a406de9b1cb22487919ee1b8f25dae599"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSizeMax</b> ([out] <a class="el" href="struct___u_l_a_r_g_e___i_n_t_e_g_e_r.html">ULARGE_INTEGER</a> *pcbSize)</td></tr>
+<tr class="separator:a406de9b1cb22487919ee1b8f25dae599 inherit pub_methods_interface_i_persist_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_persist"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_persist')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_persist.html">IPersist</a></td></tr>
+<tr class="memitem:a898270b681e7e646ab96df1916470b16 inherit pub_methods_interface_i_persist"><td class="memItemLeft" align="right" valign="top"><a id="a898270b681e7e646ab96df1916470b16"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassID</b> ([out] <a class="el" href="struct___i_i_d.html">CLSID</a> *pClassID)</td></tr>
+<tr class="separator:a898270b681e7e646ab96df1916470b16 inherit pub_methods_interface_i_persist"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="objidl_8idl_source.html">objidl.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

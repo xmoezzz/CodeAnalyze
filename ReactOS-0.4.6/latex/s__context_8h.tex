@@ -1,0 +1,285 @@
+\hypertarget{s__context_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/swrast/s\+\_\+context.h 文件参考}
+\label{s__context_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/s\+\_\+context.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/s\+\_\+context.\+h}}
+
+
+Software rasterization context and private types.  
+
+
+{\ttfamily \#include \char`\"{}main/compiler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main/mtypes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}swrast.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}s\+\_\+span.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structswrast__texture__image}{swrast\+\_\+texture\+\_\+image}
+\item 
+struct \hyperlink{structswrast__renderbuffer}{swrast\+\_\+renderbuffer}
+\item 
+struct \hyperlink{struct_s_wcontext}{S\+Wcontext}
+\begin{DoxyCompactList}\small\item\em Per-\/context state that\textquotesingle{}s private to the software rasterizer module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_ga92615fda58d9dd2b7ef1560e2be75f83}{A\+L\+P\+H\+A\+T\+E\+S\+T\+\_\+\+B\+IT}~0x001
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_ga75020080d440ecb465d8e2cbd7ba7e11}{B\+L\+E\+N\+D\+\_\+\+B\+IT}~0x002
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_gab09edfd3d45e7985cf9814658f1ab2b4}{D\+E\+P\+T\+H\+\_\+\+B\+IT}~0x004
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_ga5877c4822762ac53270b01b64abae8e8}{F\+O\+G\+\_\+\+B\+IT}~0x008
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_ga4e8030f81604a461c46f99700ffca407}{L\+O\+G\+I\+C\+\_\+\+O\+P\+\_\+\+B\+IT}~0x010
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_gaf936a8727f3daebdd95ba28d785e9a2c}{C\+L\+I\+P\+\_\+\+B\+IT}~0x020
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_ga2d518cffe05585e2dbe0f14f43c02c78}{S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+IT}~0x040
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_gaabc7afe07f6b93a0fe97c3da1c1aad96}{M\+A\+S\+K\+I\+N\+G\+\_\+\+B\+IT}~0x080
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_gafa5e731a2d4a879b62b1ca7128da3637}{M\+U\+L\+T\+I\+\_\+\+D\+R\+A\+W\+\_\+\+B\+IT}~0x400
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_ga80c0c2a542bdc376bd1c1a1aa489eec8}{T\+E\+X\+T\+U\+R\+E\+\_\+\+B\+IT}~0x1000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___bitmasks_ga43565c180e2466c433d6aa71bc83ac70}{C\+L\+A\+M\+P\+I\+N\+G\+\_\+\+B\+IT}~0x8000
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+S\+W\+R\+A\+S\+T\+\_\+\+N\+E\+W\+\_\+\+R\+A\+S\+T\+E\+R\+M\+A\+SK}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{s__context_8h_af6afbf9caf265da6bc08311b832919a1}{R\+G\+B\+A\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+I\+ZE}(T\+Y\+PE)
+\item 
+\mbox{\Hypertarget{s__context_8h_a3095cb11e7575aa5d59a16d3ca96fb22}\label{s__context_8h_a3095cb11e7575aa5d59a16d3ca96fb22}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+F\+R\+A\+C\+\_\+\+B\+I\+TS}~11
+\item 
+\mbox{\Hypertarget{s__context_8h_aeb9d20454864e45cb43911f148fe3879}\label{s__context_8h_aeb9d20454864e45cb43911f148fe3879}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+S\+H\+I\+FT}~F\+I\+X\+E\+D\+\_\+\+F\+R\+A\+C\+\_\+\+B\+I\+TS
+\item 
+\mbox{\Hypertarget{s__context_8h_ac94941c5a694fcf68a0af5022a189e5d}\label{s__context_8h_ac94941c5a694fcf68a0af5022a189e5d}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+O\+NE}~(1 $<$$<$ F\+I\+X\+E\+D\+\_\+\+S\+H\+I\+FT)
+\item 
+\mbox{\Hypertarget{s__context_8h_a30cc134c1181cd26f991a9986452cbb7}\label{s__context_8h_a30cc134c1181cd26f991a9986452cbb7}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+H\+A\+LF}~(1 $<$$<$ (F\+I\+X\+E\+D\+\_\+\+S\+H\+I\+FT-\/1))
+\item 
+\mbox{\Hypertarget{s__context_8h_a4d991715ed6592ede246925f1e330b66}\label{s__context_8h_a4d991715ed6592ede246925f1e330b66}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+F\+R\+A\+C\+\_\+\+M\+A\+SK}~(F\+I\+X\+E\+D\+\_\+\+O\+NE -\/ 1)
+\item 
+\mbox{\Hypertarget{s__context_8h_a32c45960cd0741f1a83ab70769d1c449}\label{s__context_8h_a32c45960cd0741f1a83ab70769d1c449}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+I\+N\+T\+\_\+\+M\+A\+SK}~($\sim$F\+I\+X\+E\+D\+\_\+\+F\+R\+A\+C\+\_\+\+M\+A\+SK)
+\item 
+\mbox{\Hypertarget{s__context_8h_a8c89ff2b8f6c285b465515806f394f72}\label{s__context_8h_a8c89ff2b8f6c285b465515806f394f72}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+E\+P\+S\+I\+L\+ON}~1
+\item 
+\mbox{\Hypertarget{s__context_8h_a9698efe2e6043036b56012d893b44b83}\label{s__context_8h_a9698efe2e6043036b56012d893b44b83}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+S\+C\+A\+LE}~((float) F\+I\+X\+E\+D\+\_\+\+O\+NE)
+\item 
+\mbox{\Hypertarget{s__context_8h_a1e99d2567357f7b7992b009f1424ca9a}\label{s__context_8h_a1e99d2567357f7b7992b009f1424ca9a}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+I\+X\+E\+D\+\_\+\+D\+B\+L\+\_\+\+S\+C\+A\+LE}~((double) F\+I\+X\+E\+D\+\_\+\+O\+NE)
+\item 
+\mbox{\Hypertarget{s__context_8h_a410020facd9b528d71cb847076e84843}\label{s__context_8h_a410020facd9b528d71cb847076e84843}} 
+\#\hyperlink{structdefine}{define} {\bfseries Float\+To\+Fixed}(\hyperlink{class_x}{X})~(I\+R\+O\+U\+ND((\hyperlink{class_x}{X}) $\ast$ F\+I\+X\+E\+D\+\_\+\+S\+C\+A\+LE))
+\item 
+\mbox{\Hypertarget{s__context_8h_a3e3e13435479eed93ffef20090621c52}\label{s__context_8h_a3e3e13435479eed93ffef20090621c52}} 
+\#\hyperlink{structdefine}{define} {\bfseries Fixed\+To\+Double}(\hyperlink{class_x}{X})~((\hyperlink{class_x}{X}) $\ast$ (1.\+0 / F\+I\+X\+E\+D\+\_\+\+D\+B\+L\+\_\+\+S\+C\+A\+LE))
+\item 
+\mbox{\Hypertarget{s__context_8h_adb75c157af77db35cd341de0a3880ae5}\label{s__context_8h_adb75c157af77db35cd341de0a3880ae5}} 
+\#\hyperlink{structdefine}{define} {\bfseries Int\+To\+Fixed}(I)~((I) $<$$<$ F\+I\+X\+E\+D\+\_\+\+S\+H\+I\+FT)
+\item 
+\mbox{\Hypertarget{s__context_8h_a6303f14c188c3c5ffd0a6b3a8a31cf39}\label{s__context_8h_a6303f14c188c3c5ffd0a6b3a8a31cf39}} 
+\#\hyperlink{structdefine}{define} {\bfseries Fixed\+To\+Int}(\hyperlink{class_x}{X})~((\hyperlink{class_x}{X}) $>$$>$ F\+I\+X\+E\+D\+\_\+\+S\+H\+I\+FT)
+\item 
+\mbox{\Hypertarget{s__context_8h_aa77cec3bc430c1e5213fd396e60c9e59}\label{s__context_8h_aa77cec3bc430c1e5213fd396e60c9e59}} 
+\#\hyperlink{structdefine}{define} {\bfseries Fixed\+To\+Uns}(\hyperlink{class_x}{X})~(((unsigned int)(\hyperlink{class_x}{X})) $>$$>$ F\+I\+X\+E\+D\+\_\+\+S\+H\+I\+FT)
+\item 
+\mbox{\Hypertarget{s__context_8h_ac28ff61e0e3a4c3ca86dfff5cc3fabd8}\label{s__context_8h_ac28ff61e0e3a4c3ca86dfff5cc3fabd8}} 
+\#\hyperlink{structdefine}{define} {\bfseries Fixed\+Ceil}(\hyperlink{class_x}{X})~(((\hyperlink{class_x}{X}) + F\+I\+X\+E\+D\+\_\+\+O\+NE -\/ F\+I\+X\+E\+D\+\_\+\+E\+P\+S\+I\+L\+ON) \& F\+I\+X\+E\+D\+\_\+\+I\+N\+T\+\_\+\+M\+A\+SK)
+\item 
+\mbox{\Hypertarget{s__context_8h_ac6da9781e016328ed107e2888cea072a}\label{s__context_8h_ac6da9781e016328ed107e2888cea072a}} 
+\#\hyperlink{structdefine}{define} {\bfseries Fixed\+Floor}(\hyperlink{class_x}{X})~((\hyperlink{class_x}{X}) \& F\+I\+X\+E\+D\+\_\+\+I\+N\+T\+\_\+\+M\+A\+SK)
+\item 
+\mbox{\Hypertarget{s__context_8h_a1fdd7a05ff8465153ed236358e87a620}\label{s__context_8h_a1fdd7a05ff8465153ed236358e87a620}} 
+\#\hyperlink{structdefine}{define} {\bfseries Fixed\+To\+Float}(\hyperlink{class_x}{X})~((\hyperlink{class_x}{X}) $\ast$ (1.\+0\+F / F\+I\+X\+E\+D\+\_\+\+S\+C\+A\+L\+E))
+\item 
+\mbox{\Hypertarget{s__context_8h_a0a2838a73808541a1fc8bec21ccbcf66}\label{s__context_8h_a0a2838a73808541a1fc8bec21ccbcf66}} 
+\#\hyperlink{structdefine}{define} {\bfseries Pos\+Float\+To\+Fixed}(\hyperlink{class_x}{X})~Float\+To\+Fixed(\hyperlink{class_x}{X})
+\item 
+\mbox{\Hypertarget{s__context_8h_aa4c1e0544fd04121d8686e276cebf19d}\label{s__context_8h_aa4c1e0544fd04121d8686e276cebf19d}} 
+\#\hyperlink{structdefine}{define} {\bfseries Signed\+Float\+To\+Fixed}(\hyperlink{class_x}{X})~Float\+To\+Fixed(\hyperlink{class_x}{X})
+\item 
+\mbox{\Hypertarget{s__context_8h_ad2f72c282cd7dd5919cbeb6d4c25254b}\label{s__context_8h_ad2f72c282cd7dd5919cbeb6d4c25254b}} 
+\#\hyperlink{structdefine}{define} {\bfseries Chan\+To\+Fixed}(\hyperlink{class_x}{X})~(\hyperlink{class_x}{X})
+\item 
+\mbox{\Hypertarget{s__context_8h_a2ee3be824a8b12256467716555d510d9}\label{s__context_8h_a2ee3be824a8b12256467716555d510d9}} 
+\#\hyperlink{structdefine}{define} {\bfseries Fixed\+To\+Chan}(\hyperlink{class_x}{X})~(\hyperlink{class_x}{X})
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{s__context_8h_aa46d7d3a0b1c756f0719b3fef33efb21}{A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+B\+E\+G\+IN}
+\item 
+\mbox{\Hypertarget{s__context_8h_a297b06fd24f271fe1a05ef301e0448cb}\label{s__context_8h_a297b06fd24f271fe1a05ef301e0448cb}} 
+\#\hyperlink{structdefine}{define} {\bfseries A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+E\+ND}~\} \}
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{s__context_8h_a471a956665103018bca3d9531bb77822}\label{s__context_8h_a471a956665103018bca3d9531bb77822}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries texture\+\_\+sample\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$t\+Obj, G\+Luint n, const G\+Lfloat texcoords\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]}, const G\+Lfloat lambda\mbox{[}$\,$\mbox{]}, G\+Lfloat rgba\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]})
+\item 
+\mbox{\Hypertarget{s__context_8h_a0788d3762d0c3c76e4c094d8078b4c27}\label{s__context_8h_a0788d3762d0c3c76e4c094d8078b4c27}} 
+typedef G\+Luint {\bfseries n}
+\item 
+\mbox{\Hypertarget{s__context_8h_a1968845b10e1bf1b7563f4d748c27e65}\label{s__context_8h_a1968845b10e1bf1b7563f4d748c27e65}} 
+typedef G\+Luint const G\+Lubyte {\bfseries mask}\mbox{[}$\,$\mbox{]} = -\/1
+\item 
+\mbox{\Hypertarget{s__context_8h_a2a98ddb6f79ec1048ff9e15cdd2422ba}\label{s__context_8h_a2a98ddb6f79ec1048ff9e15cdd2422ba}} 
+typedef G\+Luint const G\+Lubyte \hyperlink{interfacevoid}{G\+Lvoid} $\ast$ {\bfseries src}
+\item 
+\mbox{\Hypertarget{s__context_8h_a85e59cd56e10d0a7f49ab199f277d486}\label{s__context_8h_a85e59cd56e10d0a7f49ab199f277d486}} 
+typedef G\+Luint const G\+Lubyte \hyperlink{interfacevoid}{G\+Lvoid} const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$ {\bfseries dst}
+\item 
+\mbox{\Hypertarget{s__context_8h_a7ea9149f64592d7dd4f0dbbf8a67ee50}\label{s__context_8h_a7ea9149f64592d7dd4f0dbbf8a67ee50}} 
+typedef G\+Luint const G\+Lubyte \hyperlink{interfacevoid}{G\+Lvoid} const \hyperlink{interfacevoid}{G\+Lvoid} \hyperlink{interfacevoid}{G\+Lenum} {\bfseries chan\+Type}
+\item 
+\mbox{\Hypertarget{s__context_8h_a841cfa455465c91535f506e7978ac836}\label{s__context_8h_a841cfa455465c91535f506e7978ac836}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries swrast\+\_\+point\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$)
+\item 
+\mbox{\Hypertarget{s__context_8h_a36d17265d0a02e4301756fecccd276a7}\label{s__context_8h_a36d17265d0a02e4301756fecccd276a7}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries swrast\+\_\+line\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$)
+\item 
+\mbox{\Hypertarget{s__context_8h_a00d4b618eff131d5d25e2ccff5e733f2}\label{s__context_8h_a00d4b618eff131d5d25e2ccff5e733f2}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries swrast\+\_\+tri\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$, const \hyperlink{struct_s_wvertex}{S\+Wvertex} $\ast$)
+\item 
+\mbox{\Hypertarget{s__context_8h_a154f1fb8f50e99b1345502ba78597ab9}\label{s__context_8h_a154f1fb8f50e99b1345502ba78597ab9}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries validate\+\_\+texture\+\_\+image\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, G\+Luint face, G\+Luint level)
+\item 
+typedef \hyperlink{interfacevoid}{void}($\ast$ \hyperlink{s__context_8h_a83698752aabb7ffd9baabd0e72618393}{Fetch\+Texel\+Func}) (const \hyperlink{interfacestruct}{struct} \hyperlink{structswrast__texture__image}{swrast\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint col, G\+Lint row, G\+Lint img, G\+Lfloat $\ast$texel\+Out)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{s__context_8h_adf1a5cb872a1adf2dfb2508cea0489d5}\label{s__context_8h_adf1a5cb872a1adf2dfb2508cea0489d5}} 
+typedef {\bfseries void} (\+\_\+\+A\+S\+M\+A\+P\+IP blend\+\_\+func)(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx
+\item 
+\mbox{\Hypertarget{s__context_8h_a580958d86d36e258042e52c621153de2}\label{s__context_8h_a580958d86d36e258042e52c621153de2}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+validate\+\_\+derived} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{s__context_8h_adf428497b6aec4bfccb9ed99a91ddd24}\label{s__context_8h_adf428497b6aec4bfccb9ed99a91ddd24}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+update\+\_\+texture\+\_\+samplers} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__context_8h_ad3fb43a1c42862ba8ed2300ebf9bc03e}{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+start} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__context_8h_abcdbf00652678d19f9a9870141fe0cbb}{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+finish} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__context_8h_ad2a110b59fdaa71cef5615210b800424}{\+\_\+swrast\+\_\+map\+\_\+textures} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__context_8h_a44a9fb0051a1c1140a2debd26e24de57}{\+\_\+swrast\+\_\+unmap\+\_\+textures} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{s__context_8h_a89e4aa10a697cf671dcfda79179ede3d}\label{s__context_8h_a89e4aa10a697cf671dcfda79179ede3d}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+map\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj)
+\item 
+\mbox{\Hypertarget{s__context_8h_ad262c99488679a1cc9d86f350f584833}\label{s__context_8h_ad262c99488679a1cc9d86f350f584833}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+swrast\+\_\+unmap\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__context_8h_a6a61a91ca1e7d594691f4e88cbd9a26d}{\+\_\+swrast\+\_\+map\+\_\+renderbuffers} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{s__context_8h_ad4af3c69a1747f58c4ba72d11504ef62}{\+\_\+swrast\+\_\+unmap\+\_\+renderbuffers} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Software rasterization context and private types. 
+
+\begin{DoxyAuthor}{作者}
+Keith Whitwell \href{mailto:keith@tungstengraphics.com}{\tt keith@tungstengraphics.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{s__context_8h_a559e13aadc2a3dbd5b798ad9c5d38b4d}\label{s__context_8h_a559e13aadc2a3dbd5b798ad9c5d38b4d}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!\+\_\+\+S\+W\+R\+A\+S\+T\+\_\+\+N\+E\+W\+\_\+\+R\+A\+S\+T\+E\+R\+M\+A\+SK@{\+\_\+\+S\+W\+R\+A\+S\+T\+\_\+\+N\+E\+W\+\_\+\+R\+A\+S\+T\+E\+R\+M\+A\+SK}}
+\index{\+\_\+\+S\+W\+R\+A\+S\+T\+\_\+\+N\+E\+W\+\_\+\+R\+A\+S\+T\+E\+R\+M\+A\+SK@{\+\_\+\+S\+W\+R\+A\+S\+T\+\_\+\+N\+E\+W\+\_\+\+R\+A\+S\+T\+E\+R\+M\+A\+SK}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+S\+W\+R\+A\+S\+T\+\_\+\+N\+E\+W\+\_\+\+R\+A\+S\+T\+E\+R\+M\+A\+SK}{\_SWRAST\_NEW\_RASTERMASK}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} \+\_\+\+S\+W\+R\+A\+S\+T\+\_\+\+N\+E\+W\+\_\+\+R\+A\+S\+T\+E\+R\+M\+A\+SK}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(\hyperlink{mtypes_8h_adbdb321b5645d2d6e88c021d58e5dab5}{\_NEW\_BUFFERS}|  \(\backslash\)
+                    \_NEW\_SCISSOR|   \(\backslash\)
+                    \_NEW\_COLOR| \(\backslash\)
+                    \_NEW\_DEPTH| \(\backslash\)
+                    \_NEW\_FOG|   \(\backslash\)
+                    \_NEW\_STENCIL|   \(\backslash\)
+                    \_NEW\_TEXTURE|   \(\backslash\)
+                    \_NEW\_VIEWPORT|  \(\backslash\)
+                    \_NEW\_DEPTH)
+\end{DoxyCode}
+\mbox{\Hypertarget{s__context_8h_aa46d7d3a0b1c756f0719b3fef33efb21}\label{s__context_8h_aa46d7d3a0b1c756f0719b3fef33efb21}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+B\+E\+G\+IN@{A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+B\+E\+G\+IN}}
+\index{A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+B\+E\+G\+IN@{A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+B\+E\+G\+IN}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+B\+E\+G\+IN}{ATTRIB\_LOOP\_BEGIN}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+T\+T\+R\+I\+B\+\_\+\+L\+O\+O\+P\+\_\+\+B\+E\+G\+IN}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\{                                                     \(\backslash\)
+      GLuint a;                                          \(\backslash\)
+      for (a = 0; a < swrast->\_NumActiveAttribs; a++) \{  \(\backslash\)
+         const GLuint \hyperlink{structattr}{attr} = swrast->\_ActiveAttribs[a];
+\end{DoxyCode}
+For looping over fragment attributes in the pointe, line triangle rasterizers. \mbox{\Hypertarget{s__context_8h_af6afbf9caf265da6bc08311b832919a1}\label{s__context_8h_af6afbf9caf265da6bc08311b832919a1}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!R\+G\+B\+A\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+I\+ZE@{R\+G\+B\+A\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+I\+ZE}}
+\index{R\+G\+B\+A\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+I\+ZE@{R\+G\+B\+A\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+I\+ZE}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{R\+G\+B\+A\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+I\+ZE}{RGBA\_PIXEL\_SIZE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} R\+G\+B\+A\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+I\+ZE(\begin{DoxyParamCaption}\item[{}]{T\+Y\+PE }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+((TYPE == GL\_UNSIGNED\_BYTE) ? 4 * \textcolor{keyword}{sizeof}(GLubyte) :      \(\backslash\)
+          ((TYPE == GL\_UNSIGNED\_SHORT) ? 4 * \textcolor{keyword}{sizeof}(GLushort)     \(\backslash\)
+           : 4 * \textcolor{keyword}{sizeof}(GLfloat)))
+\end{DoxyCode}
+Size of an R\+G\+BA pixel, in bytes, for given datatype. 
+
+\subsection{类型定义说明}
+\mbox{\Hypertarget{s__context_8h_a83698752aabb7ffd9baabd0e72618393}\label{s__context_8h_a83698752aabb7ffd9baabd0e72618393}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!Fetch\+Texel\+Func@{Fetch\+Texel\+Func}}
+\index{Fetch\+Texel\+Func@{Fetch\+Texel\+Func}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{Fetch\+Texel\+Func}{FetchTexelFunc}}
+{\footnotesize\ttfamily typedef \hyperlink{interfacevoid}{void}($\ast$ Fetch\+Texel\+Func) (const \hyperlink{interfacestruct}{struct} \hyperlink{structswrast__texture__image}{swrast\+\_\+texture\+\_\+image} $\ast$tex\+Image, G\+Lint col, G\+Lint row, G\+Lint img, G\+Lfloat $\ast$texel\+Out)}
+
+Fetch a texel from texture image at given position. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{s__context_8h_a6a61a91ca1e7d594691f4e88cbd9a26d}\label{s__context_8h_a6a61a91ca1e7d594691f4e88cbd9a26d}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!\+\_\+swrast\+\_\+map\+\_\+renderbuffers@{\+\_\+swrast\+\_\+map\+\_\+renderbuffers}}
+\index{\+\_\+swrast\+\_\+map\+\_\+renderbuffers@{\+\_\+swrast\+\_\+map\+\_\+renderbuffers}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+map\+\_\+renderbuffers()}{\_swrast\_map\_renderbuffers()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+map\+\_\+renderbuffers (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Map the renderbuffers we\textquotesingle{}ll use for tri/line/point rendering. \mbox{\Hypertarget{s__context_8h_ad2a110b59fdaa71cef5615210b800424}\label{s__context_8h_ad2a110b59fdaa71cef5615210b800424}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!\+\_\+swrast\+\_\+map\+\_\+textures@{\+\_\+swrast\+\_\+map\+\_\+textures}}
+\index{\+\_\+swrast\+\_\+map\+\_\+textures@{\+\_\+swrast\+\_\+map\+\_\+textures}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+map\+\_\+textures()}{\_swrast\_map\_textures()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+map\+\_\+textures (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Map all textures for reading prior to software rendering. \mbox{\Hypertarget{s__context_8h_abcdbf00652678d19f9a9870141fe0cbb}\label{s__context_8h_abcdbf00652678d19f9a9870141fe0cbb}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!\+\_\+swrast\+\_\+span\+\_\+render\+\_\+finish@{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+finish}}
+\index{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+finish@{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+finish}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+finish()}{\_swrast\_span\_render\_finish()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+span\+\_\+render\+\_\+finish (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+called via swrast-\/$>$Driver.\+Span\+Render\+Finish() \mbox{\Hypertarget{s__context_8h_ad3fb43a1c42862ba8ed2300ebf9bc03e}\label{s__context_8h_ad3fb43a1c42862ba8ed2300ebf9bc03e}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!\+\_\+swrast\+\_\+span\+\_\+render\+\_\+start@{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+start}}
+\index{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+start@{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+start}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+span\+\_\+render\+\_\+start()}{\_swrast\_span\_render\_start()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+span\+\_\+render\+\_\+start (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+called via swrast-\/$>$Driver.\+Span\+Render\+Start() \mbox{\Hypertarget{s__context_8h_ad4af3c69a1747f58c4ba72d11504ef62}\label{s__context_8h_ad4af3c69a1747f58c4ba72d11504ef62}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!\+\_\+swrast\+\_\+unmap\+\_\+renderbuffers@{\+\_\+swrast\+\_\+unmap\+\_\+renderbuffers}}
+\index{\+\_\+swrast\+\_\+unmap\+\_\+renderbuffers@{\+\_\+swrast\+\_\+unmap\+\_\+renderbuffers}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+unmap\+\_\+renderbuffers()}{\_swrast\_unmap\_renderbuffers()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+unmap\+\_\+renderbuffers (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Unmap renderbuffers after rendering. \mbox{\Hypertarget{s__context_8h_a44a9fb0051a1c1140a2debd26e24de57}\label{s__context_8h_a44a9fb0051a1c1140a2debd26e24de57}} 
+\index{s\+\_\+context.\+h@{s\+\_\+context.\+h}!\+\_\+swrast\+\_\+unmap\+\_\+textures@{\+\_\+swrast\+\_\+unmap\+\_\+textures}}
+\index{\+\_\+swrast\+\_\+unmap\+\_\+textures@{\+\_\+swrast\+\_\+unmap\+\_\+textures}!s\+\_\+context.\+h@{s\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+swrast\+\_\+unmap\+\_\+textures()}{\_swrast\_unmap\_textures()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+swrast\+\_\+unmap\+\_\+textures (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Unmap all textures for reading prior to software rendering. 

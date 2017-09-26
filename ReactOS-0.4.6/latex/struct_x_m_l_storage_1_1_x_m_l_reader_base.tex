@@ -1,0 +1,117 @@
+\hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base}{}\section{X\+M\+L\+Storage\+:\+:X\+M\+L\+Reader\+Base结构体 参考}
+\label{struct_x_m_l_storage_1_1_x_m_l_reader_base}\index{X\+M\+L\+Storage\+::\+X\+M\+L\+Reader\+Base@{X\+M\+L\+Storage\+::\+X\+M\+L\+Reader\+Base}}
+
+
+X\+ML reader base class  
+
+
+
+
+{\ttfamily \#include $<$xmlstorage.\+h$>$}
+
+类 X\+M\+L\+Storage\+:\+:X\+M\+L\+Reader\+Base 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_x_m_l_storage_1_1_x_m_l_reader_base}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a3619ad91fd017f28d4df348bd276c030}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a3619ad91fd017f28d4df348bd276c030}} 
+{\bfseries X\+M\+L\+Reader\+Base} (\hyperlink{struct_x_m_l_storage_1_1_x_m_l_node}{X\+M\+L\+Node} $\ast$node)
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a399e08ba5731460a84e872bc5322a063}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a399e08ba5731460a84e872bc5322a063}} 
+bool {\bfseries parse} ()
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a3fdcd7e3541beceacbd55b0b4ad2acb2}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a3fdcd7e3541beceacbd55b0b4ad2acb2}} 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader_base_a3fdcd7e3541beceacbd55b0b4ad2acb2}{read} ()
+\begin{DoxyCompactList}\small\item\em read X\+ML stream into X\+ML tree below \+\_\+pos \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_afcdca2e27bb822c92ac1c8c58f1d6e5b}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_afcdca2e27bb822c92ac1c8c58f1d6e5b}} 
+std\+::string \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader_base_afcdca2e27bb822c92ac1c8c58f1d6e5b}{get\+\_\+position} () const
+\begin{DoxyCompactList}\small\item\em return current parser position as string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_ad35f337bbbb304ed914e3afdd37d95f7}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_ad35f337bbbb304ed914e3afdd37d95f7}} 
+const \hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Format} \& {\bfseries get\+\_\+format} () const
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_ac1e9e2aaac7a3b70bd8cbf84ba71cb75}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_ac1e9e2aaac7a3b70bd8cbf84ba71cb75}} 
+const char $\ast$ {\bfseries get\+\_\+endl} () const
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_ac3299d3ac3bb09e933f662ec6013ef93}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_ac3299d3ac3bb09e933f662ec6013ef93}} 
+const \hyperlink{struct_x_m_l_storage_1_1_x_m_l_error_list}{X\+M\+L\+Error\+List} \& {\bfseries get\+\_\+errors} () const
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a2c11b953a9e7b2f2d3884806bafd170e}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a2c11b953a9e7b2f2d3884806bafd170e}} 
+const \hyperlink{struct_x_m_l_storage_1_1_x_m_l_error_list}{X\+M\+L\+Error\+List} \& {\bfseries get\+\_\+warnings} () const
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a015221f9ff1d0e0501d077ded0f41438}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a015221f9ff1d0e0501d077ded0f41438}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear\+\_\+errors} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_af920b7270cda6647d8089262aa435d0f}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_af920b7270cda6647d8089262aa435d0f}} 
+enum \{ {\bfseries T\+A\+G\+\_\+\+N\+O\+NE}, 
+{\bfseries T\+A\+G\+\_\+\+S\+T\+A\+RT}, 
+{\bfseries T\+A\+G\+\_\+\+E\+ND}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a57b853549c1a3f8ac5f17577f05d1724}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a57b853549c1a3f8ac5f17577f05d1724}} 
+virtual int {\bfseries get} ()=0
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a24ae151486d9944db9fba64307551d3b}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a24ae151486d9944db9fba64307551d3b}} 
+int {\bfseries eat\+\_\+endl} ()
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a445261640670478c73941e375875541d}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a445261640670478c73941e375875541d}} 
+\hyperlink{interfacevoid}{void} {\bfseries finish\+\_\+read} ()
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a2a79dba25ffe2739f26550fa778e5131}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a2a79dba25ffe2739f26550fa778e5131}} 
+virtual \hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader_base_a2a79dba25ffe2739f26550fa778e5131}{Xml\+Decl\+Handler} (const char $\ast$version, const char $\ast$encoding, int standalone)
+\begin{DoxyCompactList}\small\item\em store X\+ML version and encoding into X\+ML reader \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a13f8c23bfe885e07aab003e23facd674}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a13f8c23bfe885e07aab003e23facd674}} 
+virtual \hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader_base_a13f8c23bfe885e07aab003e23facd674}{Start\+Element\+Handler} (const \hyperlink{struct_x_m_l_storage_1_1_x_s___string}{X\+S\+\_\+\+String} \&\hyperlink{structname}{name}, const \hyperlink{struct_x_m_l_storage_1_1_x_m_l_node_1_1_attribute_map}{X\+M\+L\+Node\+::\+Attribute\+Map} \&attributes)
+\begin{DoxyCompactList}\small\item\em notifications about X\+ML start tag \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a570595f5d3ac16ac722a083e4a5a3233}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a570595f5d3ac16ac722a083e4a5a3233}} 
+virtual \hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader_base_a570595f5d3ac16ac722a083e4a5a3233}{End\+Element\+Handler} ()
+\begin{DoxyCompactList}\small\item\em notifications about X\+ML end tag \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_ae1bce2399c532cfdcef669d7ebb47236}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_ae1bce2399c532cfdcef669d7ebb47236}} 
+virtual \hyperlink{interfacevoid}{void} \hyperlink{struct_x_m_l_storage_1_1_x_m_l_reader_base_ae1bce2399c532cfdcef669d7ebb47236}{Default\+Handler} (const std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em store content, white space and comments \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_ad8a49f6ba14dfa708066c0ddbeab1e7d}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_ad8a49f6ba14dfa708066c0ddbeab1e7d}} 
+\hyperlink{struct_x_m_l_storage_1_1_x_m_l_pos}{X\+M\+L\+Pos} {\bfseries \+\_\+pos}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a6578483e48b2de9b22957c495432d46b}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a6578483e48b2de9b22957c495432d46b}} 
+std\+::string {\bfseries \+\_\+content}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a274b562841f1e4983428366d6b39d8e8}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a274b562841f1e4983428366d6b39d8e8}} 
+\hyperlink{interfaceenum}{enum} X\+M\+L\+Storage\+::\+X\+M\+L\+Reader\+Base\+:: \{ ... \}  {\bfseries \+\_\+last\+\_\+tag}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a4da79a315ecaff4ab72fa85fd43e6d6c}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a4da79a315ecaff4ab72fa85fd43e6d6c}} 
+\hyperlink{struct_x_m_l_storage_1_1_x_m_l_error_list}{X\+M\+L\+Error\+List} {\bfseries \+\_\+errors}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a65dad55180fd9b351d00e82b55413690}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a65dad55180fd9b351d00e82b55413690}} 
+\hyperlink{struct_x_m_l_storage_1_1_x_m_l_error_list}{X\+M\+L\+Error\+List} {\bfseries \+\_\+warnings}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a9627bbb1df1ed59df8d8230684964562}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a9627bbb1df1ed59df8d8230684964562}} 
+\hyperlink{struct_x_m_l_storage_1_1_x_m_l_format}{X\+M\+L\+Format} {\bfseries \+\_\+format}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_ac7a1033d1b7f09832f64868fe6e2250a}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_ac7a1033d1b7f09832f64868fe6e2250a}} 
+bool {\bfseries \+\_\+endl\+\_\+defined}
+\item 
+\mbox{\Hypertarget{struct_x_m_l_storage_1_1_x_m_l_reader_base_a219e50992bead065f79f17736c40d434}\label{struct_x_m_l_storage_1_1_x_m_l_reader_base_a219e50992bead065f79f17736c40d434}} 
+bool {\bfseries \+\_\+utf8}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+X\+ML reader base class 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/\hyperlink{xmlstorage_8h}{xmlstorage.\+h}\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/\hyperlink{xmlstorage_8cpp}{xmlstorage.\+cpp}\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/\hyperlink{xs-native_8cpp}{xs-\/native.\+cpp}\end{DoxyCompactItemize}

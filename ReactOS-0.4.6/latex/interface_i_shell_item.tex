@@ -1,0 +1,59 @@
+\hypertarget{interface_i_shell_item}{}\section{I\+Shell\+Item接口 参考}
+\label{interface_i_shell_item}\index{I\+Shell\+Item@{I\+Shell\+Item}}
+类 I\+Shell\+Item 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_shell_item}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a6c445dca3e72cf6d413c39145da2d591}\label{interface_i_shell_item_a6c445dca3e72cf6d413c39145da2d591}} 
+enum {\bfseries S\+I\+G\+DN} \{ \newline
+{\bfseries S\+I\+G\+D\+N\+\_\+\+N\+O\+R\+M\+A\+L\+D\+I\+S\+P\+L\+AY} = 0, 
+{\bfseries S\+I\+G\+D\+N\+\_\+\+P\+A\+R\+E\+N\+T\+R\+E\+L\+A\+T\+I\+V\+E\+P\+A\+R\+S\+I\+NG} = 0x80018001, 
+{\bfseries S\+I\+G\+D\+N\+\_\+\+D\+E\+S\+K\+T\+O\+P\+A\+B\+S\+O\+L\+U\+T\+E\+P\+A\+R\+S\+I\+NG} = 0x80028000, 
+{\bfseries S\+I\+G\+D\+N\+\_\+\+P\+A\+R\+E\+N\+T\+R\+E\+L\+A\+T\+I\+V\+E\+E\+D\+I\+T\+I\+NG} = 0x80031001, 
+\newline
+{\bfseries S\+I\+G\+D\+N\+\_\+\+D\+E\+S\+K\+T\+O\+P\+A\+B\+S\+O\+L\+U\+T\+E\+E\+D\+I\+T\+I\+NG} = 0x8004c000, 
+{\bfseries S\+I\+G\+D\+N\+\_\+\+F\+I\+L\+E\+S\+Y\+S\+P\+A\+TH} = 0x80058000, 
+{\bfseries S\+I\+G\+D\+N\+\_\+\+U\+RL} = 0x80068000, 
+{\bfseries S\+I\+G\+D\+N\+\_\+\+P\+A\+R\+E\+N\+T\+R\+E\+L\+A\+T\+I\+V\+E\+F\+O\+R\+A\+D\+D\+R\+E\+S\+S\+B\+AR} = 0x8007c001, 
+\newline
+{\bfseries S\+I\+G\+D\+N\+\_\+\+P\+A\+R\+E\+N\+T\+R\+E\+L\+A\+T\+I\+VE} = 0x80080001
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a07c640de308ed9efe44c73539e04b406}\label{interface_i_shell_item_a07c640de308ed9efe44c73539e04b406}} 
+enum {\bfseries \+\_\+\+S\+I\+C\+H\+I\+N\+TF} \{ {\bfseries S\+I\+C\+H\+I\+N\+T\+\_\+\+D\+I\+S\+P\+L\+AY} = 0x00000000, 
+{\bfseries S\+I\+C\+H\+I\+N\+T\+\_\+\+C\+A\+N\+O\+N\+I\+C\+AL} = 0x10000000, 
+{\bfseries S\+I\+C\+H\+I\+N\+T\+\_\+\+T\+E\+S\+T\+\_\+\+F\+I\+L\+E\+S\+Y\+S\+P\+A\+T\+H\+\_\+\+I\+F\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL} = 0x20000000, 
+{\bfseries S\+I\+C\+H\+I\+N\+T\+\_\+\+A\+L\+L\+F\+I\+E\+L\+DS} = 0x80000000
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a9a6ac950746f67c22d178599cd248c3a}\label{interface_i_shell_item_a9a6ac950746f67c22d178599cd248c3a}} 
+typedef D\+W\+O\+RD {\bfseries S\+I\+C\+H\+I\+N\+TF}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a441005279bd86e6881b185ae2874ea9a}\label{interface_i_shell_item_a441005279bd86e6881b185ae2874ea9a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Bind\+To\+Handler} (\mbox{[}in\mbox{]} \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rbhid, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Out)
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a96d1640296f8dc673a4c65f65a983309}\label{interface_i_shell_item_a96d1640296f8dc673a4c65f65a983309}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Parent} (\mbox{[}out\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$$\ast$ppsi)
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a207a15e991213a59c9621016f457b521}\label{interface_i_shell_item_a207a15e991213a59c9621016f457b521}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Display\+Name} (\mbox{[}in\mbox{]} S\+I\+G\+DN sigdn\+Name, \mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$ppsz\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a74299750e1ea45fe0d145bc4186a458e}\label{interface_i_shell_item_a74299750e1ea45fe0d145bc4186a458e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Attributes} (\mbox{[}in\mbox{]} S\+F\+G\+A\+OF sfgao\+Mask, \mbox{[}out\mbox{]} S\+F\+G\+A\+OF $\ast$psfgao\+Attribs)
+\item 
+\mbox{\Hypertarget{interface_i_shell_item_a98c64517fce3b75b1bf98c35c03d7141}\label{interface_i_shell_item_a98c64517fce3b75b1bf98c35c03d7141}} 
+H\+R\+E\+S\+U\+LT {\bfseries Compare} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$psi, \mbox{[}in\mbox{]} S\+I\+C\+H\+I\+N\+TF hint, \mbox{[}out\mbox{]} int $\ast$pi\+Order)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IWMWriterAdvanced接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_w_m_writer_advanced-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IWMWriterAdvanced接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IWMWriterAdvanced 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_w_m_writer_advanced.png" usemap="#IWMWriterAdvanced_map" alt=""/>
+  <map id="IWMWriterAdvanced_map" name="IWMWriterAdvanced_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,136,24"/>
+<area href="interface_i_w_m_writer_advanced2.html" alt="IWMWriterAdvanced2" shape="rect" coords="0,112,136,136"/>
+<area href="interface_i_w_m_writer_advanced3.html" alt="IWMWriterAdvanced3" shape="rect" coords="0,168,136,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9f126458dca80094d5600a97ec56d0d0"><td class="memItemLeft" align="right" valign="top"><a id="a9f126458dca80094d5600a97ec56d0d0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSinkCount</b> ([out] DWORD *pcSinks)</td></tr>
+<tr class="separator:a9f126458dca80094d5600a97ec56d0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1068abd8b07977ca4670a3a47298a4"><td class="memItemLeft" align="right" valign="top"><a id="a9e1068abd8b07977ca4670a3a47298a4"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSink</b> ([in] DWORD dwSinkNum, [out] <a class="el" href="interface_i_w_m_writer_sink.html">IWMWriterSink</a> **ppSink)</td></tr>
+<tr class="separator:a9e1068abd8b07977ca4670a3a47298a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c69b98177c1c5901ce8bbf476b563b0"><td class="memItemLeft" align="right" valign="top"><a id="a0c69b98177c1c5901ce8bbf476b563b0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>AddSink</b> ([in] <a class="el" href="interface_i_w_m_writer_sink.html">IWMWriterSink</a> *pSink)</td></tr>
+<tr class="separator:a0c69b98177c1c5901ce8bbf476b563b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b64c4cb541e2d91e7edf62121b55ef"><td class="memItemLeft" align="right" valign="top"><a id="a05b64c4cb541e2d91e7edf62121b55ef"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSink</b> ([in] <a class="el" href="interface_i_w_m_writer_sink.html">IWMWriterSink</a> *pSink)</td></tr>
+<tr class="separator:a05b64c4cb541e2d91e7edf62121b55ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b34f458f208bb6142d5c0e2baa3a1e9"><td class="memItemLeft" align="right" valign="top"><a id="a9b34f458f208bb6142d5c0e2baa3a1e9"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStreamSample</b> ([in] WORD wStreamNum, [in] QWORD cnsSampleTime, [in] DWORD msSampleSendTime, [in] QWORD cnsSampleDuration, [in] DWORD dwFlags, [in] <a class="el" href="interface_i_n_s_s_buffer.html">INSSBuffer</a> *pSample)</td></tr>
+<tr class="separator:a9b34f458f208bb6142d5c0e2baa3a1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2c73041d96086a092055b6bd8c92a2"><td class="memItemLeft" align="right" valign="top"><a id="a1a2c73041d96086a092055b6bd8c92a2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetLiveSource</b> (BOOL fIsLiveSource)</td></tr>
+<tr class="separator:a1a2c73041d96086a092055b6bd8c92a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ceb37850bb22ab3c13509fe03364a2"><td class="memItemLeft" align="right" valign="top"><a id="a45ceb37850bb22ab3c13509fe03364a2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsRealTime</b> ([out] BOOL *pfRealTime)</td></tr>
+<tr class="separator:a45ceb37850bb22ab3c13509fe03364a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068ae9fd4c14d17729a1f872f55dd9ef"><td class="memItemLeft" align="right" valign="top"><a id="a068ae9fd4c14d17729a1f872f55dd9ef"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetWriterTime</b> ([out] QWORD *pCurrentTime)</td></tr>
+<tr class="separator:a068ae9fd4c14d17729a1f872f55dd9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100d5366b6367b15d33762cca14fb72d"><td class="memItemLeft" align="right" valign="top"><a id="a100d5366b6367b15d33762cca14fb72d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetStatistics</b> ([in] WORD wStreamNum, [out] <a class="el" href="struct___w_m_writer_statistics.html">WM_WRITER_STATISTICS</a> *pStats)</td></tr>
+<tr class="separator:a100d5366b6367b15d33762cca14fb72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334f4aad33483a3beaead13d08ffef7d"><td class="memItemLeft" align="right" valign="top"><a id="a334f4aad33483a3beaead13d08ffef7d"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetSyncTolerance</b> ([in] DWORD msWindow)</td></tr>
+<tr class="separator:a334f4aad33483a3beaead13d08ffef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcd3f0d12b628bb7b75dfeded7579b6"><td class="memItemLeft" align="right" valign="top"><a id="adfcd3f0d12b628bb7b75dfeded7579b6"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSyncTolerance</b> ([out] DWORD *pmsWindow)</td></tr>
+<tr class="separator:adfcd3f0d12b628bb7b75dfeded7579b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="wmsdkidl_8idl_source.html">wmsdkidl.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

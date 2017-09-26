@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/include/reactos/wmiioctl.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_f392f966fdfa958006dd89b2d26c104a.html">include</a></li><li class="navelem"><a class="el" href="dir_1fa98287edbac1d069b3283b7ba87594.html">reactos</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">wmiioctl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define IOCTL_WMI_QUERY_ALL_DATA CTL_CODE(FILE_DEVICE_UNKNOWN, 0x00, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224000</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define IOCTL_WMI_SINGLE_INSTANCE CTL_CODE(FILE_DEVICE_UNKNOWN, 0x01, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224004</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define IOCTL_WMI_SET_SINGLE_INSTANCE CTL_CODE(FILE_DEVICE_UNKNOWN, 0x02, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x228008</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define IOCTL_WMI_SET_SINGLE_ITEM CTL_CODE(FILE_DEVICE_UNKNOWN, 0x03, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x22800C</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define IOCTL_WMI_09 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x09, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x228024</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define IOCTL_WMI_20 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x20, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x220080</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define IOCTL_WMI_21 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x21, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x220084</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define IOCTL_WMI_22 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x22, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x220088</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define IOCTL_WMI_TRACE_EVENT CTL_CODE(FILE_DEVICE_UNKNOWN, 0x23, METHOD_NEITHER, FILE_WRITE_ACCESS) // 0x22808F</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define IOCTL_WMI_24 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x24, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x220090</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define IOCTL_WMI_25 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x25, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x220094</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define IOCTL_WMI_TRACE_USER_MESSAGE CTL_CODE(FILE_DEVICE_UNKNOWN, 0x28, METHOD_NEITHER, FILE_WRITE_ACCESS) // 0x2280A3</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define IOCTL_WMI_SET_MARK CTL_CODE(FILE_DEVICE_UNKNOWN, 0x29, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x2200A4</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define IOCTL_WMI_2a CTL_CODE(FILE_DEVICE_UNKNOWN, 0x2a, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x2200A8</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define IOCTL_WMI_2b CTL_CODE(FILE_DEVICE_UNKNOWN, 0x2b, METHOD_BUFFERED, FILE_ANY_ACCESS) // 0x2200AC</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define IOCTL_WMI_42 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x42, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224108</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define IOCTL_WMI_47 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x47, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x22811C</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define IOCTL_WMI_49 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x49, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224124</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define IOCTL_WMI_4b CTL_CODE(FILE_DEVICE_UNKNOWN, 0x4b, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x22812C</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define IOCTL_WMI_4c CTL_CODE(FILE_DEVICE_UNKNOWN, 0x4c, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x228130</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define IOCTL_WMI_4d CTL_CODE(FILE_DEVICE_UNKNOWN, 0x4d, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224134</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define IOCTL_WMI_4e CTL_CODE(FILE_DEVICE_UNKNOWN, 0x4e, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224138</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define IOCTL_WMI_4f CTL_CODE(FILE_DEVICE_UNKNOWN, 0x4f, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x22413C</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define IOCTL_WMI_OPEN_GUID_FOR_EVENTS CTL_CODE(FILE_DEVICE_UNKNOWN, 0x50, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224140</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define IOCTL_WMI_RECEIVE_NOTIFICATIONS CTL_CODE(FILE_DEVICE_UNKNOWN, 0x51, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x228144</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define IOCTL_WMI_52 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x52, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224148</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define IOCTL_WMI_REGISTER_GUIDS CTL_CODE(FILE_DEVICE_UNKNOWN, 0x53, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x22414C, called from ntdll!EtwpRegisterGuids</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define IOCTL_WMI_54 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x54, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224150</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define IOCTL_WMI_55 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x55, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224154</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define IOCTL_WMI_56 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x56, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224158</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define IOCTL_WMI_UNREGISTER_GUIDS CTL_CODE(FILE_DEVICE_UNKNOWN, 0x57, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x22415C, called from ntdll!WmiUnregisterGuids</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define IOCTL_WMI_58 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x58, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224160</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define IOCTL_WMI_59 CTL_CODE(FILE_DEVICE_UNKNOWN, 0x59, METHOD_BUFFERED, FILE_READ_ACCESS) // 0x224164</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define IOCTL_WMI_5a CTL_CODE(FILE_DEVICE_UNKNOWN, 0x5a, METHOD_BUFFERED, FILE_WRITE_ACCESS) // 0x228168</span></div></div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

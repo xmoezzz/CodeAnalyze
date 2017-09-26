@@ -1,0 +1,81 @@
+\hypertarget{interface_i_cor_debug_stepper}{}\section{I\+Cor\+Debug\+Stepper接口 参考}
+\label{interface_i_cor_debug_stepper}\index{I\+Cor\+Debug\+Stepper@{I\+Cor\+Debug\+Stepper}}
+类 I\+Cor\+Debug\+Stepper 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug_stepper}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_cor_debug_stepper_1_1_c_o_r___d_e_b_u_g___s_t_e_p___r_a_n_g_e}{C\+O\+R\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+E\+P\+\_\+\+R\+A\+N\+GE}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a9e153b6d5085f1a61f46b846beca7508}\label{interface_i_cor_debug_stepper_a9e153b6d5085f1a61f46b846beca7508}} 
+enum {\bfseries Cor\+Debug\+Intercept} \{ \newline
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+N\+O\+NE} = 0x0, 
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+I\+N\+IT} = 0x01, 
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+ER} = 0x02, 
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+S\+E\+C\+U\+R\+I\+TY} = 0x04, 
+\newline
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+O\+L\+I\+CY} = 0x08, 
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+I\+ON} = 0x10, 
+{\bfseries I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+A\+LL} = 0xffff
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a447ffc2e81ff74dd65aa32421cd88ac4}\label{interface_i_cor_debug_stepper_a447ffc2e81ff74dd65aa32421cd88ac4}} 
+enum {\bfseries Cor\+Debug\+Unmapped\+Stop} \{ \newline
+{\bfseries S\+T\+O\+P\+\_\+\+N\+O\+NE} = 0x0, 
+{\bfseries S\+T\+O\+P\+\_\+\+P\+R\+O\+L\+OG} = 0x01, 
+{\bfseries S\+T\+O\+P\+\_\+\+E\+P\+I\+L\+OG} = 0x02, 
+{\bfseries S\+T\+O\+P\+\_\+\+N\+O\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+I\+N\+FO} = 0x04, 
+\newline
+{\bfseries S\+T\+O\+P\+\_\+\+O\+T\+H\+E\+R\+\_\+\+U\+N\+M\+A\+P\+P\+ED} = 0x08, 
+{\bfseries S\+T\+O\+P\+\_\+\+U\+N\+M\+A\+N\+A\+G\+ED} = 0x10, 
+{\bfseries S\+T\+O\+P\+\_\+\+A\+LL} = 0xffff
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a9b0d377743fcb0c08c3d4d76880fd6e3}\label{interface_i_cor_debug_stepper_a9b0d377743fcb0c08c3d4d76880fd6e3}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Stepper\+::\+Cor\+Debug\+Intercept {\bfseries Cor\+Debug\+Intercept}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a0c1ce51beeb379bdbf49fb95955d870f}\label{interface_i_cor_debug_stepper_a0c1ce51beeb379bdbf49fb95955d870f}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Stepper\+::\+Cor\+Debug\+Unmapped\+Stop {\bfseries Cor\+Debug\+Unmapped\+Stop}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a02415a60152a72b7ed934c4bd348ce3a}\label{interface_i_cor_debug_stepper_a02415a60152a72b7ed934c4bd348ce3a}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_cor_debug_stepper_1_1_c_o_r___d_e_b_u_g___s_t_e_p___r_a_n_g_e}{I\+Cor\+Debug\+Stepper\+::\+C\+O\+R\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+E\+P\+\_\+\+R\+A\+N\+GE} {\bfseries C\+O\+R\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+E\+P\+\_\+\+R\+A\+N\+GE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_aadf140f3a2ca94cb6689b4433fbdc4da}\label{interface_i_cor_debug_stepper_aadf140f3a2ca94cb6689b4433fbdc4da}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Active} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$pb\+Active)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a899a24a521d6b288422832cc0ff6d6e6}\label{interface_i_cor_debug_stepper_a899a24a521d6b288422832cc0ff6d6e6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Deactivate} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_adac5b1c7dc0516b769515d477bb463d5}\label{interface_i_cor_debug_stepper_adac5b1c7dc0516b769515d477bb463d5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Intercept\+Mask} (\mbox{[}in\mbox{]} Cor\+Debug\+Intercept mask)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_abd98119cf85d0b582d080631020af755}\label{interface_i_cor_debug_stepper_abd98119cf85d0b582d080631020af755}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Unmapped\+Stop\+Mask} (\mbox{[}in\mbox{]} Cor\+Debug\+Unmapped\+Stop mask)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a9cdb5a329dd242a2f41836b03af670e5}\label{interface_i_cor_debug_stepper_a9cdb5a329dd242a2f41836b03af670e5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Step} (\mbox{[}in\mbox{]} B\+O\+OL b\+Step\+In)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a1183b979dab9e0a02ec04aa1dced6add}\label{interface_i_cor_debug_stepper_a1183b979dab9e0a02ec04aa1dced6add}} 
+H\+R\+E\+S\+U\+LT {\bfseries Step\+Range} (\mbox{[}in\mbox{]} B\+O\+OL b\+Step\+In, \mbox{[}in\mbox{]} \hyperlink{struct_i_cor_debug_stepper_1_1_c_o_r___d_e_b_u_g___s_t_e_p___r_a_n_g_e}{C\+O\+R\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+E\+P\+\_\+\+R\+A\+N\+GE} ranges\mbox{[}$\,$\mbox{]}, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 c\+Range\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_acd94035f35cf7c43dbadbbd1652b8d6a}\label{interface_i_cor_debug_stepper_acd94035f35cf7c43dbadbbd1652b8d6a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Step\+Out} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_stepper_a1c7711fa588d3927c1f35dc5ce77da82}\label{interface_i_cor_debug_stepper_a1c7711fa588d3927c1f35dc5ce77da82}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Range\+IL} (\mbox{[}in\mbox{]} B\+O\+OL b\+IL)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

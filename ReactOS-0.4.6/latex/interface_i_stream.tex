@@ -1,0 +1,91 @@
+\hypertarget{interface_i_stream}{}\section{I\+Stream接口 参考}
+\label{interface_i_stream}\index{I\+Stream@{I\+Stream}}
+类 I\+Stream 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_stream}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_stream_1_1tag_s_t_a_t_s_t_g}{tag\+S\+T\+A\+T\+S\+TG}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_stream_a54a3c991a43df261bc305da077a5f43f}\label{interface_i_stream_a54a3c991a43df261bc305da077a5f43f}} 
+enum {\bfseries tag\+S\+T\+G\+TY} \{ {\bfseries S\+T\+G\+T\+Y\+\_\+\+S\+T\+O\+R\+A\+GE} = 1, 
+{\bfseries S\+T\+G\+T\+Y\+\_\+\+S\+T\+R\+E\+AM} = 2, 
+{\bfseries S\+T\+G\+T\+Y\+\_\+\+L\+O\+C\+K\+B\+Y\+T\+ES} = 3, 
+{\bfseries S\+T\+G\+T\+Y\+\_\+\+P\+R\+O\+P\+E\+R\+TY} = 4
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_stream_a1dbec423101cf058b10681e164ac37b3}\label{interface_i_stream_a1dbec423101cf058b10681e164ac37b3}} 
+enum {\bfseries tag\+S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+EK} \{ {\bfseries S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+E\+K\+\_\+\+S\+ET} = 0, 
+{\bfseries S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+E\+K\+\_\+\+C\+UR} = 1, 
+{\bfseries S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+E\+K\+\_\+\+E\+ND} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_stream_ad106495e0dddb8a64d6a08c207fbb494}\label{interface_i_stream_ad106495e0dddb8a64d6a08c207fbb494}} 
+enum {\bfseries tag\+L\+O\+C\+K\+T\+Y\+PE} \{ {\bfseries L\+O\+C\+K\+\_\+\+W\+R\+I\+TE} = 1, 
+{\bfseries L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+S\+I\+VE} = 2, 
+{\bfseries L\+O\+C\+K\+\_\+\+O\+N\+L\+Y\+O\+N\+CE} = 4
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_stream_a509f4f346c0786398bfe9631a98ede1b}\label{interface_i_stream_a509f4f346c0786398bfe9631a98ede1b}} 
+typedef \hyperlink{interface_i_stream}{I\+Stream} $\ast$ {\bfseries L\+P\+S\+T\+R\+E\+AM}
+\item 
+\mbox{\Hypertarget{interface_i_stream_aa42cb72505f64f50739f8081a82bce07}\label{interface_i_stream_aa42cb72505f64f50739f8081a82bce07}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_stream_1_1tag_s_t_a_t_s_t_g}{I\+Stream\+::tag\+S\+T\+A\+T\+S\+TG} {\bfseries S\+T\+A\+T\+S\+TG}
+\item 
+\mbox{\Hypertarget{interface_i_stream_a2a362d5ca4dfd5efdaacf3aaa0019c67}\label{interface_i_stream_a2a362d5ca4dfd5efdaacf3aaa0019c67}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Stream\+::tag\+S\+T\+G\+TY {\bfseries S\+T\+G\+TY}
+\item 
+\mbox{\Hypertarget{interface_i_stream_ad0ff81fa4cef1d394f91737406193cee}\label{interface_i_stream_ad0ff81fa4cef1d394f91737406193cee}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Stream\+::tag\+S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+EK {\bfseries S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+EK}
+\item 
+\mbox{\Hypertarget{interface_i_stream_a08275bdd96dc1e857321b54c41d696f8}\label{interface_i_stream_a08275bdd96dc1e857321b54c41d696f8}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Stream\+::tag\+L\+O\+C\+K\+T\+Y\+PE {\bfseries L\+O\+C\+K\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_stream_aa8c75b3b4f70e3cf241e43e2a1aa2b10}\label{interface_i_stream_aa8c75b3b4f70e3cf241e43e2a1aa2b10}} 
+H\+R\+E\+S\+U\+LT {\bfseries Seek} (\mbox{[}in\mbox{]} \hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} dlib\+Move, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Origin, \mbox{[}out\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} $\ast$plib\+New\+Position)
+\item 
+\mbox{\Hypertarget{interface_i_stream_acec7c7b63320bfe1d506aff096bdd1b7}\label{interface_i_stream_acec7c7b63320bfe1d506aff096bdd1b7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Seek} (\mbox{[}in\mbox{]} \hyperlink{union___l_a_r_g_e___i_n_t_e_g_e_r}{L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} dlib\+Move, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Origin, \mbox{[}out\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} $\ast$plib\+New\+Position)
+\item 
+\mbox{\Hypertarget{interface_i_stream_a34414bf422a0a5cd41d420fe1bad9c37}\label{interface_i_stream_a34414bf422a0a5cd41d420fe1bad9c37}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Size} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} lib\+New\+Size)
+\item 
+\mbox{\Hypertarget{interface_i_stream_a0f824386aef7571c36b818fee9d003bb}\label{interface_i_stream_a0f824386aef7571c36b818fee9d003bb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Copy\+To} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$pstm, \mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} cb, \mbox{[}out\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} $\ast$pcb\+Read, \mbox{[}out\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} $\ast$pcb\+Written)
+\item 
+\mbox{\Hypertarget{interface_i_stream_ae3c34181b0a9eb64a158fda411b83233}\label{interface_i_stream_ae3c34181b0a9eb64a158fda411b83233}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Copy\+To} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$pstm, \mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} cb, \mbox{[}out\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} $\ast$pcb\+Read, \mbox{[}out\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} $\ast$pcb\+Written)
+\item 
+\mbox{\Hypertarget{interface_i_stream_a5646f0707ddda796a3c61d7e107da999}\label{interface_i_stream_a5646f0707ddda796a3c61d7e107da999}} 
+H\+R\+E\+S\+U\+LT {\bfseries Commit} (\mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Commit\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_stream_aa62ea59d76e1836bf7096f52cb9329e8}\label{interface_i_stream_aa62ea59d76e1836bf7096f52cb9329e8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Revert} ()
+\item 
+\mbox{\Hypertarget{interface_i_stream_af7c473f4f4149aa955bd24a2596f169b}\label{interface_i_stream_af7c473f4f4149aa955bd24a2596f169b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Lock\+Region} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} lib\+Offset, \mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} cb, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Lock\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_stream_aa315c049f196c4480e63c8640ddecca5}\label{interface_i_stream_aa315c049f196c4480e63c8640ddecca5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unlock\+Region} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} lib\+Offset, \mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} cb, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Lock\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_stream_a912ca5d18d263cee0fee57313c9911c1}\label{interface_i_stream_a912ca5d18d263cee0fee57313c9911c1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stat} (\mbox{[}out\mbox{]} \hyperlink{struct_i_stream_1_1tag_s_t_a_t_s_t_g}{S\+T\+A\+T\+S\+TG} $\ast$pstatstg, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Stat\+Flag)
+\item 
+\mbox{\Hypertarget{interface_i_stream_ab108d3280c83114fd90f892cf31f81dd}\label{interface_i_stream_ab108d3280c83114fd90f892cf31f81dd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Clone} (\mbox{[}out\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$$\ast$ppstm)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

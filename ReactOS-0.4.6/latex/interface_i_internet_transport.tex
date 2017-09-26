@@ -1,0 +1,71 @@
+\hypertarget{interface_i_internet_transport}{}\section{I\+Internet\+Transport接口 参考}
+\label{interface_i_internet_transport}\index{I\+Internet\+Transport@{I\+Internet\+Transport}}
+类 I\+Internet\+Transport 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_internet_transport}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_af97e3d6d9a4540b4995150eb6c4207a4}\label{interface_i_internet_transport_af97e3d6d9a4540b4995150eb6c4207a4}} 
+enum {\bfseries tag\+I\+X\+P\+I\+S\+S\+T\+A\+TE} \{ {\bfseries I\+X\+P\+\_\+\+I\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries I\+X\+P\+\_\+\+I\+S\+\_\+\+B\+U\+SY}, 
+{\bfseries I\+X\+P\+\_\+\+I\+S\+\_\+\+R\+E\+A\+DY}, 
+{\bfseries I\+X\+P\+\_\+\+I\+S\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+ED}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_ab1652478829d0ff34aa06db709094581}\label{interface_i_internet_transport_ab1652478829d0ff34aa06db709094581}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Internet\+Transport\+::tag\+I\+X\+P\+I\+S\+S\+T\+A\+TE {\bfseries I\+X\+P\+I\+S\+S\+T\+A\+TE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_a809c13082981143ce37e6f44f2801e27}\label{interface_i_internet_transport_a809c13082981143ce37e6f44f2801e27}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Server\+Info} (\mbox{[}in, out\mbox{]} L\+P\+I\+N\+E\+T\+S\+E\+R\+V\+ER p\+Inet\+Server)
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_a960f7ae41315bd15a704fbf365c74000}\label{interface_i_internet_transport_a960f7ae41315bd15a704fbf365c74000}} 
+I\+X\+P\+T\+Y\+PE {\bfseries Get\+I\+X\+P\+Type} ()
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_a9885dc494b535eb84b8eff3ec109b50b}\label{interface_i_internet_transport_a9885dc494b535eb84b8eff3ec109b50b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+State} (\mbox{[}in\mbox{]} I\+X\+P\+I\+S\+S\+T\+A\+TE isstate)
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_ad399729a99a9e1fffe93cc5fb541a179}\label{interface_i_internet_transport_ad399729a99a9e1fffe93cc5fb541a179}} 
+H\+R\+E\+S\+U\+LT {\bfseries Inet\+Server\+From\+Account} (\mbox{[}in\mbox{]} \hyperlink{interface_i_imn_account}{I\+Imn\+Account} $\ast$p\+Account, \mbox{[}in, out\mbox{]} L\+P\+I\+N\+E\+T\+S\+E\+R\+V\+ER p\+Inet\+Server)
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_addac963f7f384cc14e2d289f02f359f4}\label{interface_i_internet_transport_addac963f7f384cc14e2d289f02f359f4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Connect} (\mbox{[}in\mbox{]} L\+P\+I\+N\+E\+T\+S\+E\+R\+V\+ER p\+Inet\+Server, \mbox{[}in\mbox{]} boolean f\+Authenticate, \mbox{[}in\mbox{]} boolean f\+Command\+Logging)
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_ae57755ff17f591671d2e63785e4e3714}\label{interface_i_internet_transport_ae57755ff17f591671d2e63785e4e3714}} 
+H\+R\+E\+S\+U\+LT {\bfseries Hands\+Off\+Callback} ()
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_ab2ecd7debd58973c787b61bbcbea9770}\label{interface_i_internet_transport_ab2ecd7debd58973c787b61bbcbea9770}} 
+H\+R\+E\+S\+U\+LT {\bfseries Disconnect} ()
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_a038ece0d4be9877547c6b5223cdfac59}\label{interface_i_internet_transport_a038ece0d4be9877547c6b5223cdfac59}} 
+H\+R\+E\+S\+U\+LT {\bfseries Drop\+Connection} ()
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_a07bbbdcaa0290bb8219cbe2ea7804f14}\label{interface_i_internet_transport_a07bbbdcaa0290bb8219cbe2ea7804f14}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Status} (\mbox{[}out\mbox{]} I\+X\+P\+S\+T\+A\+T\+US $\ast$p\+Current\+Status)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_a80953888ae9af3aef2cd494b465268a9}\label{interface_i_internet_transport_a80953888ae9af3aef2cd494b465268a9}} 
+const boolean {\bfseries iit\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+TE} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_a9335484fbd44b23d0d677b67d6859d17}\label{interface_i_internet_transport_a9335484fbd44b23d0d677b67d6859d17}} 
+const boolean {\bfseries iit\+D\+O\+N\+T\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+Te} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_aafe753e18c133444f5d7310fcaded12b}\label{interface_i_internet_transport_aafe753e18c133444f5d7310fcaded12b}} 
+const boolean {\bfseries iit\+E\+N\+A\+B\+L\+E\+\_\+\+O\+N\+C\+O\+M\+M\+A\+ND} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{interface_i_internet_transport_abb2acaa462d689d1a96355a50671d00b}\label{interface_i_internet_transport_abb2acaa462d689d1a96355a50671d00b}} 
+const boolean {\bfseries iit\+D\+I\+S\+A\+B\+L\+E\+\_\+\+O\+N\+C\+O\+M\+M\+A\+ND} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/imnxport.\+idl\end{DoxyCompactItemize}

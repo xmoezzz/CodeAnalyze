@@ -1,0 +1,64 @@
+\hypertarget{common__x86_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/x86/common\+\_\+x86.c 文件参考}
+\label{common__x86_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/x86/common\+\_\+x86.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/x86/common\+\_\+x86.\+c}}
+{\ttfamily \#include \char`\"{}main/imports.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}common\+\_\+x86\+\_\+asm.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pseh/pseh2.\+h$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{common__x86_8c_a9e16298c304b185e272777378a1c4632}\label{common__x86_8c_a9e16298c304b185e272777378a1c4632}} 
+G\+Luint \+\_\+\+A\+S\+M\+A\+PI {\bfseries \+\_\+mesa\+\_\+x86\+\_\+has\+\_\+cpuid} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{common__x86_8c_a0fbab2aa5dd93724ab9690e68a924e8f}\label{common__x86_8c_a0fbab2aa5dd93724ab9690e68a924e8f}} 
+\hyperlink{interfacevoid}{void} \+\_\+\+A\+S\+M\+A\+PI {\bfseries \+\_\+mesa\+\_\+x86\+\_\+cpuid} (G\+Luint op, G\+Luint $\ast$reg\+\_\+eax, G\+Luint $\ast$reg\+\_\+ebx, G\+Luint $\ast$reg\+\_\+ecx, G\+Luint $\ast$reg\+\_\+edx)
+\item 
+\mbox{\Hypertarget{common__x86_8c_af00c8617ed8b2e322d076c51fec4abf6}\label{common__x86_8c_af00c8617ed8b2e322d076c51fec4abf6}} 
+G\+Luint \+\_\+\+A\+S\+M\+A\+PI {\bfseries \+\_\+mesa\+\_\+x86\+\_\+cpuid\+\_\+eax} (G\+Luint op)
+\item 
+\mbox{\Hypertarget{common__x86_8c_ab839d1144ff9dab6d5ff69973f869583}\label{common__x86_8c_ab839d1144ff9dab6d5ff69973f869583}} 
+G\+Luint \+\_\+\+A\+S\+M\+A\+PI {\bfseries \+\_\+mesa\+\_\+x86\+\_\+cpuid\+\_\+ebx} (G\+Luint op)
+\item 
+\mbox{\Hypertarget{common__x86_8c_aac5f11ea09f71e5c6735ab54582fe7a6}\label{common__x86_8c_aac5f11ea09f71e5c6735ab54582fe7a6}} 
+G\+Luint \+\_\+\+A\+S\+M\+A\+PI {\bfseries \+\_\+mesa\+\_\+x86\+\_\+cpuid\+\_\+ecx} (G\+Luint op)
+\item 
+\mbox{\Hypertarget{common__x86_8c_a6002804ab46fa63b24a385d42d030e6e}\label{common__x86_8c_a6002804ab46fa63b24a385d42d030e6e}} 
+G\+Luint \+\_\+\+A\+S\+M\+A\+PI {\bfseries \+\_\+mesa\+\_\+x86\+\_\+cpuid\+\_\+edx} (G\+Luint op)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{common__x86_8c_a33a238c9d79bdd61b141f3aea5292830}{\+\_\+mesa\+\_\+get\+\_\+x86\+\_\+features} (\hyperlink{interfacevoid}{void})
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{common__x86_8c_a1c831c512bc0110053830b23ad8d5909}{\+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features} = 0x0
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Check C\+PU capabilities \& initialize optimized funtions for this particular processor.
+
+Changed by Andre Werthmann for using the new S\+SE functions.
+
+\begin{DoxyAuthor}{作者}
+Holger Waechtler \href{mailto:holger@akaflieg.extern.tu-berlin.de}{\tt holger@akaflieg.\+extern.\+tu-\/berlin.\+de} 
+
+Andre Werthmann \href{mailto:wertmann@cs.uni-potsdam.de}{\tt wertmann@cs.\+uni-\/potsdam.\+de} 
+\end{DoxyAuthor}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{common__x86_8c_a33a238c9d79bdd61b141f3aea5292830}\label{common__x86_8c_a33a238c9d79bdd61b141f3aea5292830}} 
+\index{common\+\_\+x86.\+c@{common\+\_\+x86.\+c}!\+\_\+mesa\+\_\+get\+\_\+x86\+\_\+features@{\+\_\+mesa\+\_\+get\+\_\+x86\+\_\+features}}
+\index{\+\_\+mesa\+\_\+get\+\_\+x86\+\_\+features@{\+\_\+mesa\+\_\+get\+\_\+x86\+\_\+features}!common\+\_\+x86.\+c@{common\+\_\+x86.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+x86\+\_\+features()}{\_mesa\_get\_x86\_features()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+get\+\_\+x86\+\_\+features (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+Initialize the \+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features bitfield. \hyperlink{namespace_this}{This} is a no-\/op if called more than once. 
+
+\subsection{变量说明}
+\mbox{\Hypertarget{common__x86_8c_a1c831c512bc0110053830b23ad8d5909}\label{common__x86_8c_a1c831c512bc0110053830b23ad8d5909}} 
+\index{common\+\_\+x86.\+c@{common\+\_\+x86.\+c}!\+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features@{\+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features}}
+\index{\+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features@{\+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features}!common\+\_\+x86.\+c@{common\+\_\+x86.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features}{\_mesa\_x86\_cpu\_features}}
+{\footnotesize\ttfamily int \+\_\+mesa\+\_\+x86\+\_\+cpu\+\_\+features = 0x0}
+
+Bitmask of X86\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+x bits 

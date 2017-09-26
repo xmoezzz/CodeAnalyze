@@ -1,0 +1,134 @@
+\hypertarget{interface_i_net_connection}{}\section{I\+Net\+Connection接口 参考}
+\label{interface_i_net_connection}\index{I\+Net\+Connection@{I\+Net\+Connection}}
+类 I\+Net\+Connection 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_net_connection}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_net_connection_1_1tag_n_e_t_c_o_n___p_r_o_p_e_r_t_i_e_s}{tag\+N\+E\+T\+C\+O\+N\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a926b0d07437ca3673f3554097dca9ac0}\label{interface_i_net_connection_a926b0d07437ca3673f3554097dca9ac0}} 
+enum {\bfseries tag\+N\+E\+T\+C\+O\+N\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+F\+L\+A\+GS} \{ \newline
+{\bfseries N\+C\+C\+F\+\_\+\+N\+O\+NE} = 0x0000, 
+{\bfseries N\+C\+C\+F\+\_\+\+A\+L\+L\+\_\+\+U\+S\+E\+RS} = 0x0001, 
+{\bfseries N\+C\+C\+F\+\_\+\+A\+L\+L\+O\+W\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+I\+ON} = 0x0002, 
+{\bfseries N\+C\+C\+F\+\_\+\+A\+L\+L\+O\+W\+\_\+\+R\+E\+M\+O\+V\+AL} = 0x0004, 
+\newline
+{\bfseries N\+C\+C\+F\+\_\+\+A\+L\+L\+O\+W\+\_\+\+R\+E\+N\+A\+ME} = 0x0008, 
+{\bfseries N\+C\+C\+F\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+O\+N\+LY} = 0x0020, 
+{\bfseries N\+C\+C\+F\+\_\+\+O\+U\+T\+G\+O\+I\+N\+G\+\_\+\+O\+N\+LY} = 0x0040, 
+{\bfseries N\+C\+C\+F\+\_\+\+B\+R\+A\+N\+D\+ED} = 0x0080, 
+\newline
+{\bfseries N\+C\+C\+F\+\_\+\+S\+H\+A\+R\+ED} = 0x0100, 
+{\bfseries N\+C\+C\+F\+\_\+\+B\+R\+I\+D\+G\+ED} = 0x0200, 
+{\bfseries N\+C\+C\+F\+\_\+\+F\+I\+R\+E\+W\+A\+L\+L\+ED} = 0x0400, 
+{\bfseries N\+C\+C\+F\+\_\+\+D\+E\+F\+A\+U\+LT} = 0x0800, 
+\newline
+{\bfseries N\+C\+C\+F\+\_\+\+H\+O\+M\+E\+N\+E\+T\+\_\+\+C\+A\+P\+A\+B\+LE} = 0x1000, 
+{\bfseries N\+C\+C\+F\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+P\+R\+I\+V\+A\+TE} = 0x2000, 
+{\bfseries N\+C\+C\+F\+\_\+\+Q\+U\+A\+R\+A\+N\+T\+I\+N\+ED} = 0x4000, 
+{\bfseries N\+C\+C\+F\+\_\+\+R\+E\+S\+E\+R\+V\+ED} = 0x8000, 
+\newline
+{\bfseries N\+C\+C\+F\+\_\+\+B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+SK} = 0x000\+F0000, 
+{\bfseries N\+C\+C\+F\+\_\+\+L\+A\+N\+\_\+\+M\+A\+SK} = 0x00\+F00000
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a85847d2adc938e7608ef14eaa1a329a2}\label{interface_i_net_connection_a85847d2adc938e7608ef14eaa1a329a2}} 
+enum {\bfseries tag\+N\+E\+T\+C\+O\+N\+\_\+\+S\+T\+A\+T\+US} \{ \newline
+{\bfseries N\+C\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries N\+C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+{\bfseries N\+C\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries N\+C\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+I\+NG}, 
+\newline
+{\bfseries N\+C\+S\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+N\+O\+T\+\_\+\+P\+R\+E\+S\+E\+NT}, 
+{\bfseries N\+C\+S\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}, 
+{\bfseries N\+C\+S\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+L\+F\+U\+N\+C\+T\+I\+ON}, 
+{\bfseries N\+C\+S\+\_\+\+M\+E\+D\+I\+A\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+\newline
+{\bfseries N\+C\+S\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+NG}, 
+{\bfseries N\+C\+S\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+E\+D\+ED}, 
+{\bfseries N\+C\+S\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries N\+C\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+D\+D\+R\+E\+SS}, 
+\newline
+{\bfseries N\+C\+S\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+L\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_aad48c8583739933c107ac2e13a85921e}\label{interface_i_net_connection_aad48c8583739933c107ac2e13a85921e}} 
+enum {\bfseries tag\+N\+E\+T\+C\+O\+N\+\_\+\+T\+Y\+PE} \{ \newline
+{\bfseries N\+C\+T\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+N\+N\+E\+CT}, 
+{\bfseries N\+C\+T\+\_\+\+I\+N\+B\+O\+U\+ND}, 
+{\bfseries N\+C\+T\+\_\+\+I\+N\+T\+E\+R\+N\+ET}, 
+{\bfseries N\+C\+T\+\_\+\+L\+AN}, 
+\newline
+{\bfseries N\+C\+T\+\_\+\+P\+H\+O\+NE}, 
+{\bfseries N\+C\+T\+\_\+\+T\+U\+N\+N\+EL}, 
+{\bfseries N\+C\+T\+\_\+\+B\+R\+I\+D\+GE}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a3c02f26cef2c2492f28e60a904d698dc}\label{interface_i_net_connection_a3c02f26cef2c2492f28e60a904d698dc}} 
+enum {\bfseries tag\+N\+E\+T\+C\+O\+N\+\_\+\+M\+E\+D\+I\+A\+T\+Y\+PE} \{ \newline
+{\bfseries N\+C\+M\+\_\+\+N\+O\+NE}, 
+{\bfseries N\+C\+M\+\_\+\+D\+I\+R\+E\+CT}, 
+{\bfseries N\+C\+M\+\_\+\+I\+S\+DN}, 
+{\bfseries N\+C\+M\+\_\+\+L\+AN}, 
+\newline
+{\bfseries N\+C\+M\+\_\+\+P\+H\+O\+NE}, 
+{\bfseries N\+C\+M\+\_\+\+T\+U\+N\+N\+EL}, 
+{\bfseries N\+C\+M\+\_\+\+P\+P\+P\+OE}, 
+{\bfseries N\+C\+M\+\_\+\+B\+R\+I\+D\+GE}, 
+\newline
+{\bfseries N\+C\+M\+\_\+\+S\+H\+A\+R\+E\+D\+A\+C\+C\+E\+S\+S\+H\+O\+S\+T\+\_\+\+L\+AN}, 
+{\bfseries N\+C\+M\+\_\+\+S\+H\+A\+R\+E\+D\+A\+C\+C\+E\+S\+S\+H\+O\+S\+T\+\_\+\+R\+AS}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a27209bc9641bb7296eb64956a0ee439f}\label{interface_i_net_connection_a27209bc9641bb7296eb64956a0ee439f}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Net\+Connection\+::tag\+N\+E\+T\+C\+O\+N\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+F\+L\+A\+GS {\bfseries N\+E\+T\+C\+O\+N\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+F\+L\+A\+GS}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a0d28ba8038e00cef52999b3b8688fd54}\label{interface_i_net_connection_a0d28ba8038e00cef52999b3b8688fd54}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Net\+Connection\+::tag\+N\+E\+T\+C\+O\+N\+\_\+\+S\+T\+A\+T\+US {\bfseries N\+E\+T\+C\+O\+N\+\_\+\+S\+T\+A\+T\+US}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a4954a85a2065b50cbcebc5c6123eafb3}\label{interface_i_net_connection_a4954a85a2065b50cbcebc5c6123eafb3}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Net\+Connection\+::tag\+N\+E\+T\+C\+O\+N\+\_\+\+T\+Y\+PE {\bfseries N\+E\+T\+C\+O\+N\+\_\+\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_ac01962f7a1e7ff75a347ae26580f6228}\label{interface_i_net_connection_ac01962f7a1e7ff75a347ae26580f6228}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Net\+Connection\+::tag\+N\+E\+T\+C\+O\+N\+\_\+\+M\+E\+D\+I\+A\+T\+Y\+PE {\bfseries N\+E\+T\+C\+O\+N\+\_\+\+M\+E\+D\+I\+A\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a6138562bca8efb24214a02f56d2a937d}\label{interface_i_net_connection_a6138562bca8efb24214a02f56d2a937d}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_net_connection_1_1tag_n_e_t_c_o_n___p_r_o_p_e_r_t_i_e_s}{I\+Net\+Connection\+::tag\+N\+E\+T\+C\+O\+N\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES} {\bfseries N\+E\+T\+C\+O\+N\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a198c0c94d8c8a1852a55790daf5f8065}\label{interface_i_net_connection_a198c0c94d8c8a1852a55790daf5f8065}} 
+H\+R\+E\+S\+U\+LT {\bfseries Connect} ()
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a8aaeb0f53f878dc1246ecc45699cd0f9}\label{interface_i_net_connection_a8aaeb0f53f878dc1246ecc45699cd0f9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Disconnect} ()
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a641ae87388db32acc1af0fd77e77c65a}\label{interface_i_net_connection_a641ae87388db32acc1af0fd77e77c65a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete} ()
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_ab027d2b91fbedb902ccf050edf99ca88}\label{interface_i_net_connection_ab027d2b91fbedb902ccf050edf99ca88}} 
+H\+R\+E\+S\+U\+LT {\bfseries Duplicate} (\mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR pszw\+Duplicate\+Name, \mbox{[}out\mbox{]} \hyperlink{interface_i_net_connection}{I\+Net\+Connection} $\ast$$\ast$pp\+Con)
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_a9e41a1aea7e3defb3069be31b651a325}\label{interface_i_net_connection_a9e41a1aea7e3defb3069be31b651a325}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Properties} (\mbox{[}out\mbox{]} \hyperlink{struct_i_net_connection_1_1tag_n_e_t_c_o_n___p_r_o_p_e_r_t_i_e_s}{N\+E\+T\+C\+O\+N\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES} $\ast$$\ast$pp\+Props)
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_af324d8c2a91d14d118f6f242edbcac4d}\label{interface_i_net_connection_af324d8c2a91d14d118f6f242edbcac4d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Ui\+Object\+Class\+Id} (\mbox{[}out, ref\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} $\ast$pclsid)
+\item 
+\mbox{\Hypertarget{interface_i_net_connection_aab5458c13f8e2da6b6e44d62b4b90a64}\label{interface_i_net_connection_aab5458c13f8e2da6b6e44d62b4b90a64}} 
+H\+R\+E\+S\+U\+LT {\bfseries Rename} (\mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR pszw\+New\+Name)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/netcon.\+idl\end{DoxyCompactItemize}

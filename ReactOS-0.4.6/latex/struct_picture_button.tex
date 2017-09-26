@@ -1,0 +1,70 @@
+\hypertarget{struct_picture_button}{}\section{Picture\+Button结构体 参考}
+\label{struct_picture_button}\index{Picture\+Button@{Picture\+Button}}
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+类 Picture\+Button 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{struct_picture_button}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_picture_button_a307e87cc74abca8784c19a25c65bf1ba}\label{struct_picture_button_a307e87cc74abca8784c19a25c65bf1ba}} 
+typedef \hyperlink{struct_ownerdrawn_button}{Ownerdrawn\+Button} {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_picture_button_a0dd177b06e4d7fa8de8fb66de562a846}\label{struct_picture_button_a0dd177b06e4d7fa8de8fb66de562a846}} 
+{\bfseries Picture\+Button} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, H\+I\+C\+ON h\+Icon, H\+B\+R\+U\+SH hbrush=Get\+Sys\+Color\+Brush(C\+O\+L\+O\+R\+\_\+\+B\+T\+N\+F\+A\+CE), bool flat=false)
+\item 
+\mbox{\Hypertarget{struct_picture_button_a83de91b74e668182158e5f74d641b40b}\label{struct_picture_button_a83de91b74e668182158e5f74d641b40b}} 
+{\bfseries Picture\+Button} (\hyperlink{interfacevoid}{H\+W\+ND} hparent, int id, H\+I\+C\+ON h\+Icon, H\+B\+R\+U\+SH hbrush=Get\+Sys\+Color\+Brush(C\+O\+L\+O\+R\+\_\+\+B\+T\+N\+F\+A\+CE), bool flat=false)
+\item 
+\mbox{\Hypertarget{struct_picture_button_a52768f352b14cc7c064e5edd769152ac}\label{struct_picture_button_a52768f352b14cc7c064e5edd769152ac}} 
+{\bfseries Picture\+Button} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, H\+B\+I\+T\+M\+AP h\+Bmp, H\+B\+R\+U\+SH hbrush=Get\+Sys\+Color\+Brush(C\+O\+L\+O\+R\+\_\+\+B\+T\+N\+F\+A\+CE), bool flat=false)
+\item 
+\mbox{\Hypertarget{struct_picture_button_a76837f3a69ea569eef7ce6386edb2da2}\label{struct_picture_button_a76837f3a69ea569eef7ce6386edb2da2}} 
+{\bfseries Picture\+Button} (\hyperlink{interfacevoid}{H\+W\+ND} hparent, int id, H\+B\+I\+T\+M\+AP h\+Bmp, H\+B\+R\+U\+SH hbrush=Get\+Sys\+Color\+Brush(C\+O\+L\+O\+R\+\_\+\+B\+T\+N\+F\+A\+CE), bool flat=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_picture_button_a998054d3abdb1ad75a8c803b4e2b5756}\label{struct_picture_button_a998054d3abdb1ad75a8c803b4e2b5756}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries Draw\+Item} (\hyperlink{structtag_d_r_a_w_i_t_e_m_s_t_r_u_c_t}{L\+P\+D\+R\+A\+W\+I\+T\+E\+M\+S\+T\+R\+U\+CT} dis)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_picture_button_a3be2e79e951238c00409b7e5868aa18c}\label{struct_picture_button_a3be2e79e951238c00409b7e5868aa18c}} 
+H\+I\+C\+ON {\bfseries \+\_\+h\+Icon}
+\item 
+\mbox{\Hypertarget{struct_picture_button_a30a445c67dfe40847ee693e361aaaef7}\label{struct_picture_button_a30a445c67dfe40847ee693e361aaaef7}} 
+H\+B\+I\+T\+M\+AP {\bfseries \+\_\+h\+Bmp}
+\item 
+\mbox{\Hypertarget{struct_picture_button_abad6eb5c295777db2de00303073f6e44}\label{struct_picture_button_abad6eb5c295777db2de00303073f6e44}} 
+H\+B\+R\+U\+SH {\bfseries \+\_\+h\+Brush}
+\item 
+\mbox{\Hypertarget{struct_picture_button_a373ebf42e4d9caf22feb91262542f6e9}\label{struct_picture_button_a373ebf42e4d9caf22feb91262542f6e9}} 
+int {\bfseries \+\_\+cx}
+\item 
+\mbox{\Hypertarget{struct_picture_button_ab915ef3c4f704381a05f2bfea5839a7d}\label{struct_picture_button_ab915ef3c4f704381a05f2bfea5839a7d}} 
+int {\bfseries \+\_\+cy}
+\item 
+\mbox{\Hypertarget{struct_picture_button_a3bb02432a86f79fb32569e4c9796cf4b}\label{struct_picture_button_a3bb02432a86f79fb32569e4c9796cf4b}} 
+bool {\bfseries \+\_\+flat}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Subclass button controls to paint pictures left to the labels. The buttons should have set the style bit B\+S\+\_\+\+O\+W\+N\+E\+R\+D\+R\+AW. The owning window should use the \hyperlink{struct_owner_draw_parent}{Owner\+Draw\+Parent} template to route owner draw messages to the buttons. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/window.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/window.\+cpp\end{DoxyCompactItemize}

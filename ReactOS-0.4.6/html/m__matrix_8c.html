@@ -1,0 +1,1292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/dll/opengl/mesa/math/m_matrix.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c938f8a9ae7e172e1ee48b60f4a9b17a.html">dll</a></li><li class="navelem"><a class="el" href="dir_f28df4588c441543404e0bf042ec3ed8.html">opengl</a></li><li class="navelem"><a class="el" href="dir_8f911cde560d768cee55606d872b51f5.html">mesa</a></li><li class="navelem"><a class="el" href="dir_35a85d5914b91d479edf150f47e0418c.html">math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">m_matrix.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;precomp.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga46c11f5e5ed8d400da4f5bb05aca0112"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga46c11f5e5ed8d400da4f5bb05aca0112">MAT_FLAG_IDENTITY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga46c11f5e5ed8d400da4f5bb05aca0112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbc6bb67558ead333d77b39078073f43"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#gafbc6bb67558ead333d77b39078073f43">MAT_FLAG_GENERAL</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:gafbc6bb67558ead333d77b39078073f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dd0c612ad9a4c9c4ed5e2ff0e879368"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga3dd0c612ad9a4c9c4ed5e2ff0e879368">MAT_FLAG_ROTATION</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:ga3dd0c612ad9a4c9c4ed5e2ff0e879368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0abc46abbd9895235ab498ab31185f3b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga0abc46abbd9895235ab498ab31185f3b">MAT_FLAG_TRANSLATION</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:ga0abc46abbd9895235ab498ab31185f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5da236659e222eff1c0ebdb94c948f44"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga5da236659e222eff1c0ebdb94c948f44">MAT_FLAG_UNIFORM_SCALE</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="separator:ga5da236659e222eff1c0ebdb94c948f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f106ce9c0ec229289103dd5b7cdc65c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga5f106ce9c0ec229289103dd5b7cdc65c">MAT_FLAG_GENERAL_SCALE</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:ga5f106ce9c0ec229289103dd5b7cdc65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa154aca726c0da4fe90f5ba95d2becec"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#gaa154aca726c0da4fe90f5ba95d2becec">MAT_FLAG_GENERAL_3D</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:gaa154aca726c0da4fe90f5ba95d2becec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94cf14e5c8dbb53cfac903e9f92f696c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga94cf14e5c8dbb53cfac903e9f92f696c">MAT_FLAG_PERSPECTIVE</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="separator:ga94cf14e5c8dbb53cfac903e9f92f696c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24714171aad96fb6b3a02e02384a0f0c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga24714171aad96fb6b3a02e02384a0f0c">MAT_FLAG_SINGULAR</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:ga24714171aad96fb6b3a02e02384a0f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e885b91f94c09a8b74bbd93acccc306"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga8e885b91f94c09a8b74bbd93acccc306">MAT_DIRTY_TYPE</a>&#160;&#160;&#160;0x100</td></tr>
+<tr class="separator:ga8e885b91f94c09a8b74bbd93acccc306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94d6afafd36d74f41e089fe72d868a8f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga94d6afafd36d74f41e089fe72d868a8f">MAT_DIRTY_FLAGS</a>&#160;&#160;&#160;0x200</td></tr>
+<tr class="separator:ga94d6afafd36d74f41e089fe72d868a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga181bdf9c68ab249ba1de19e19ac7edb7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga181bdf9c68ab249ba1de19e19ac7edb7">MAT_DIRTY_INVERSE</a>&#160;&#160;&#160;0x400</td></tr>
+<tr class="separator:ga181bdf9c68ab249ba1de19e19ac7edb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0381a1be37902db79ae16d57059f8f25"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga0381a1be37902db79ae16d57059f8f25">MAT_FLAGS_ANGLE_PRESERVING</a></td></tr>
+<tr class="separator:ga0381a1be37902db79ae16d57059f8f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbfd3b9cd83257f3d28d089484b611ad"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#gabbfd3b9cd83257f3d28d089484b611ad">MAT_FLAGS_GEOMETRY</a></td></tr>
+<tr class="separator:gabbfd3b9cd83257f3d28d089484b611ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ff6f6732ace580b20fb74607bc94d15"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga1ff6f6732ace580b20fb74607bc94d15">MAT_FLAGS_LENGTH_PRESERVING</a></td></tr>
+<tr class="separator:ga1ff6f6732ace580b20fb74607bc94d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9aae4e97635565e672763f258b2de1d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#gaf9aae4e97635565e672763f258b2de1d">MAT_FLAGS_3D</a></td></tr>
+<tr class="separator:gaf9aae4e97635565e672763f258b2de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61563a06605a889426fe5a9ab04d3f98"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mat_flags.html#ga61563a06605a889426fe5a9ab04d3f98">MAT_DIRTY</a></td></tr>
+<tr class="separator:ga61563a06605a889426fe5a9ab04d3f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc055a2999580d23e8d433b181f5b2e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a6bc055a2999580d23e8d433b181f5b2e">TEST_MAT_FLAGS</a>(mat,  a)&#160;&#160;&#160;((<a class="el" href="group___mat_flags.html#gabbfd3b9cd83257f3d28d089484b611ad">MAT_FLAGS_GEOMETRY</a> &amp; (~(a)) &amp; ((mat)-&gt;flags) ) == 0)</td></tr>
+<tr class="separator:a6bc055a2999580d23e8d433b181f5b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fad4ee8b40909b70143ff909580d07"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a04fad4ee8b40909b70143ff909580d07">MAT</a>(m,  r,  c)&#160;&#160;&#160;(m)[(c)*4+(r)]</td></tr>
+<tr class="separator:a04fad4ee8b40909b70143ff909580d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memItemLeft" align="right" valign="top"><a id="ad1fefc30502b40fc6aebcb46d0a3b262"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>M</b>(row,  col)&#160;&#160;&#160;m[col*4+row]</td></tr>
+<tr class="separator:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memItemLeft" align="right" valign="top"><a id="ad1fefc30502b40fc6aebcb46d0a3b262"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>M</b>(row,  col)&#160;&#160;&#160;m[col*4+row]</td></tr>
+<tr class="separator:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memItemLeft" align="right" valign="top"><a id="ad1fefc30502b40fc6aebcb46d0a3b262"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>M</b>(row,  col)&#160;&#160;&#160;m[col*4+row]</td></tr>
+<tr class="separator:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memItemLeft" align="right" valign="top"><a id="ad1fefc30502b40fc6aebcb46d0a3b262"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>M</b>(row,  col)&#160;&#160;&#160;m[row + col*4]</td></tr>
+<tr class="separator:ad1fefc30502b40fc6aebcb46d0a3b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6540db69cb0fc02ba34be13a9e795f2b"><td class="memItemLeft" align="right" valign="top">GLboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a6540db69cb0fc02ba34be13a9e795f2b">_math_matrix_is_length_preserving</a> (const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:a6540db69cb0fc02ba34be13a9e795f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229386960a58433c0839083f27b4bd48"><td class="memItemLeft" align="right" valign="top">GLboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a229386960a58433c0839083f27b4bd48">_math_matrix_has_rotation</a> (const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:a229386960a58433c0839083f27b4bd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259c8fc70e93438f30101dc5b1387e43"><td class="memItemLeft" align="right" valign="top"><a id="a259c8fc70e93438f30101dc5b1387e43"></a>
+GLboolean&#160;</td><td class="memItemRight" valign="bottom"><b>_math_matrix_is_general_scale</b> (const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:a259c8fc70e93438f30101dc5b1387e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6637e785f47429f32d8191b136ea84"><td class="memItemLeft" align="right" valign="top"><a id="a4a6637e785f47429f32d8191b136ea84"></a>
+GLboolean&#160;</td><td class="memItemRight" valign="bottom"><b>_math_matrix_is_dirty</b> (const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:a4a6637e785f47429f32d8191b136ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76107f653a970333c78b6285ce3ede9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a76107f653a970333c78b6285ce3ede9e">_mesa_transform_vector</a> (GLfloat u[4], const GLfloat v[4], const GLfloat m[16])</td></tr>
+<tr class="separator:a76107f653a970333c78b6285ce3ede9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Matrix output</div></td></tr>
+<tr class="memitem:a1797c3f04a8b12319534ad8976b78bea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a1797c3f04a8b12319534ad8976b78bea">_math_matrix_print</a> (const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:a1797c3f04a8b12319534ad8976b78bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Matrix generation</div></td></tr>
+<tr class="memitem:a91272919a1b1068bdff427b5766a21c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a91272919a1b1068bdff427b5766a21c6">_math_matrix_rotate</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat, GLfloat angle, GLfloat x, GLfloat y, GLfloat z)</td></tr>
+<tr class="separator:a91272919a1b1068bdff427b5766a21c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02426579330037dfaa19a4602ed03377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a02426579330037dfaa19a4602ed03377">_math_matrix_frustum</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat, GLfloat left, GLfloat right, GLfloat bottom, GLfloat top, GLfloat nearval, GLfloat farval)</td></tr>
+<tr class="separator:a02426579330037dfaa19a4602ed03377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa13fd3c18845d6a643a4d1101bf38b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#aaa13fd3c18845d6a643a4d1101bf38b8">_math_matrix_ortho</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat, GLfloat left, GLfloat right, GLfloat bottom, GLfloat top, GLfloat nearval, GLfloat farval)</td></tr>
+<tr class="separator:aaa13fd3c18845d6a643a4d1101bf38b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb78815e44604a101a83a936774eae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a2fb78815e44604a101a83a936774eae8">_math_matrix_scale</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat, GLfloat x, GLfloat y, GLfloat z)</td></tr>
+<tr class="separator:a2fb78815e44604a101a83a936774eae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3b58d8a82d466302f64ad873b04853"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a3b3b58d8a82d466302f64ad873b04853">_math_matrix_translate</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat, GLfloat x, GLfloat y, GLfloat z)</td></tr>
+<tr class="separator:a3b3b58d8a82d466302f64ad873b04853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450a36764f9f45fcbff7dc016818af2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a450a36764f9f45fcbff7dc016818af2b">_math_matrix_viewport</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m, GLint x, GLint y, GLint width, GLint height, GLfloat zNear, GLfloat zFar, GLfloat depthMax)</td></tr>
+<tr class="separator:a450a36764f9f45fcbff7dc016818af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc2d962dd4a5850afd72cf26cdeef36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#abdc2d962dd4a5850afd72cf26cdeef36">_math_matrix_set_identity</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat)</td></tr>
+<tr class="separator:abdc2d962dd4a5850afd72cf26cdeef36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Matrix setup</div></td></tr>
+<tr class="memitem:ac401f4e4b18dfb9249ff41b8f54452d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#ac401f4e4b18dfb9249ff41b8f54452d8">_math_matrix_copy</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *to, const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *from)</td></tr>
+<tr class="separator:ac401f4e4b18dfb9249ff41b8f54452d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d55b9bc3e3682179458e1cfd7ad9c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a60d55b9bc3e3682179458e1cfd7ad9c8">_math_matrix_loadf</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat, const GLfloat *m)</td></tr>
+<tr class="separator:a60d55b9bc3e3682179458e1cfd7ad9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca778f328dc0a4627c3dd8b59985b4a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#aca778f328dc0a4627c3dd8b59985b4a2">_math_matrix_ctr</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:aca778f328dc0a4627c3dd8b59985b4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe74bd56f4f2dd4b9f202c690ba668b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a8fe74bd56f4f2dd4b9f202c690ba668b">_math_matrix_dtr</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:a8fe74bd56f4f2dd4b9f202c690ba668b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d443b50346e5f57b379c576bbdee6c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a3d443b50346e5f57b379c576bbdee6c5">_math_matrix_alloc_inv</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *m)</td></tr>
+<tr class="separator:a3d443b50346e5f57b379c576bbdee6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Matrix transpose</div></td></tr>
+<tr class="memitem:a634b7f4af55678e5f96edba89afeed1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a634b7f4af55678e5f96edba89afeed1a">_math_transposef</a> (GLfloat to[16], const GLfloat from[16])</td></tr>
+<tr class="separator:a634b7f4af55678e5f96edba89afeed1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa9590df3d6dbec72e7f384f618fc8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#affa9590df3d6dbec72e7f384f618fc8c">_math_transposed</a> (GLdouble to[16], const GLdouble from[16])</td></tr>
+<tr class="separator:affa9590df3d6dbec72e7f384f618fc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64deb51a4d9b1a2533f0a2e48de007d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a64deb51a4d9b1a2533f0a2e48de007d5">_math_transposefd</a> (GLfloat to[16], const GLdouble from[16])</td></tr>
+<tr class="separator:a64deb51a4d9b1a2533f0a2e48de007d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Matrix multiplication</h2></td></tr>
+<tr class="memitem:a77187b94e6ac6de10299d1d23dd38618"><td class="memItemLeft" align="right" valign="top"><a id="a77187b94e6ac6de10299d1d23dd38618"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>A</b>(row,  col)&#160;&#160;&#160;a[(col&lt;&lt;2)+row]</td></tr>
+<tr class="separator:a77187b94e6ac6de10299d1d23dd38618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef327dc00409b9ad0c2f7f402c4d843"><td class="memItemLeft" align="right" valign="top"><a id="a8ef327dc00409b9ad0c2f7f402c4d843"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>B</b>(row,  col)&#160;&#160;&#160;b[(col&lt;&lt;2)+row]</td></tr>
+<tr class="separator:a8ef327dc00409b9ad0c2f7f402c4d843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592aafc4689d3c4c6f226a0e0d71fded"><td class="memItemLeft" align="right" valign="top"><a id="a592aafc4689d3c4c6f226a0e0d71fded"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>P</b>(row,  col)&#160;&#160;&#160;product[(col&lt;&lt;2)+row]</td></tr>
+<tr class="separator:a592aafc4689d3c4c6f226a0e0d71fded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a51de0408c7005807f5004abdf89d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#ab0a51de0408c7005807f5004abdf89d1">_math_matrix_mul_matrix</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *dest, const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *a, const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *b)</td></tr>
+<tr class="separator:ab0a51de0408c7005807f5004abdf89d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c0aa9d2ddbc06be9c4c40d5488661d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a89c0aa9d2ddbc06be9c4c40d5488661d">_math_matrix_mul_floats</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *dest, const GLfloat *m)</td></tr>
+<tr class="separator:a89c0aa9d2ddbc06be9c4c40d5488661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Matrix inversion</h2></td></tr>
+<tr class="memitem:ab05eff8e781b00b86776d167de0be400"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#ab05eff8e781b00b86776d167de0be400">SWAP_ROWS</a>(a,  b)&#160;&#160;&#160;{ GLfloat *_tmp = a; (a)=(b); (b)=_tmp; }</td></tr>
+<tr class="separator:ab05eff8e781b00b86776d167de0be400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581d4a5d314f972400c9f04a497c46d4"><td class="memItemLeft" align="right" valign="top">typedef GLboolean(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a581d4a5d314f972400c9f04a497c46d4">inv_mat_func</a>) (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat)</td></tr>
+<tr class="separator:a581d4a5d314f972400c9f04a497c46d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Matrix analysis</h2></td></tr>
+<tr class="memitem:a4e902ee4d3bb5bcf61e23119d53c6d73"><td class="memItemLeft" align="right" valign="top"><a id="a4e902ee4d3bb5bcf61e23119d53c6d73"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ZERO</b>(x)&#160;&#160;&#160;(1&lt;&lt;x)</td></tr>
+<tr class="separator:a4e902ee4d3bb5bcf61e23119d53c6d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7753b50341bd40cad76a49199f781c64"><td class="memItemLeft" align="right" valign="top"><a id="a7753b50341bd40cad76a49199f781c64"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ONE</b>(x)&#160;&#160;&#160;(1&lt;&lt;(x+16))</td></tr>
+<tr class="separator:a7753b50341bd40cad76a49199f781c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7570cdf78f7dab80af153828d05c4b"><td class="memItemLeft" align="right" valign="top"><a id="a0f7570cdf78f7dab80af153828d05c4b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_NO_TRX</b>&#160;&#160;&#160;(ZERO(12) | ZERO(13) | ZERO(14))</td></tr>
+<tr class="separator:a0f7570cdf78f7dab80af153828d05c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7b43458d53f448fed513b2f410d5d4"><td class="memItemLeft" align="right" valign="top"><a id="afb7b43458d53f448fed513b2f410d5d4"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_NO_2D_SCALE</b>&#160;&#160;&#160;( ONE(0)  | ONE(5))</td></tr>
+<tr class="separator:afb7b43458d53f448fed513b2f410d5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb26c9f23517af9a6ea3b3b1f2695c42"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_IDENTITY</b></td></tr>
+<tr class="separator:afb26c9f23517af9a6ea3b3b1f2695c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b003079026357983da8e7ac817cb1c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_2D_NO_ROT</b></td></tr>
+<tr class="separator:aa1b003079026357983da8e7ac817cb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6427b6a78e002a8e1c6f2149892155"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_2D</b></td></tr>
+<tr class="separator:a7e6427b6a78e002a8e1c6f2149892155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595f6d12148a7e8acc9808c2134face4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_3D_NO_ROT</b></td></tr>
+<tr class="separator:a595f6d12148a7e8acc9808c2134face4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bbcdaa4432e5e3b245419f1e085e27"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_3D</b></td></tr>
+<tr class="separator:a20bbcdaa4432e5e3b245419f1e085e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aface04bfa63f4e967a9b118e75660460"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_PERSPECTIVE</b></td></tr>
+<tr class="separator:aface04bfa63f4e967a9b118e75660460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3644f84794a8bfdacf39c4b2c2495fc"><td class="memItemLeft" align="right" valign="top"><a id="ac3644f84794a8bfdacf39c4b2c2495fc"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SQ</b>(x)&#160;&#160;&#160;((x)*(x))</td></tr>
+<tr class="separator:ac3644f84794a8bfdacf39c4b2c2495fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbf9ed3e4980c01f46b5cd373e061c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__matrix_8c.html#a2dbf9ed3e4980c01f46b5cd373e061c9">_math_matrix_analyse</a> (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat)</td></tr>
+<tr class="separator:a2dbf9ed3e4980c01f46b5cd373e061c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="class_matrix.html">Matrix</a> operations.</p>
+<dl class="section note"><dt>注解</dt><dd><ol type="1">
+<li>4x4 transformation matrices are stored in memory in column major order.</li>
+<li>Points/vertices are to be thought of as column vectors.</li>
+<li>Transformation of a point p by a matrix M is: p' = M * p </li>
+</ol>
+</dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a7e6427b6a78e002a8e1c6f2149892155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6427b6a78e002a8e1c6f2149892155">&#9670;&nbsp;</a></span>MASK_2D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MASK_2D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(                      ZERO(8)  |           \</div><div class="line">                                    ZERO(9)  |           \</div><div class="line">              ZERO(2)  | ZERO(6)  |  ONE(10) | ZERO(14) |\</div><div class="line">              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aa1b003079026357983da8e7ac817cb1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b003079026357983da8e7ac817cb1c">&#9670;&nbsp;</a></span>MASK_2D_NO_ROT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MASK_2D_NO_ROT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(           ZERO(4)  | ZERO(8)  |           \</div><div class="line">              ZERO(1)  |            ZERO(9)  |           \</div><div class="line">              ZERO(2)  | ZERO(6)  |  ONE(10) | ZERO(14) |\</div><div class="line">              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a20bbcdaa4432e5e3b245419f1e085e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bbcdaa4432e5e3b245419f1e085e27">&#9670;&nbsp;</a></span>MASK_3D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MASK_3D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(                                           \</div><div class="line">                                                         \</div><div class="line">                                                         \</div><div class="line">              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a595f6d12148a7e8acc9808c2134face4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595f6d12148a7e8acc9808c2134face4">&#9670;&nbsp;</a></span>MASK_3D_NO_ROT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MASK_3D_NO_ROT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(           ZERO(4)  | ZERO(8)  |           \</div><div class="line">              ZERO(1)  |            ZERO(9)  |           \</div><div class="line">              ZERO(2)  | ZERO(6)  |                      \</div><div class="line">              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="afb26c9f23517af9a6ea3b3b1f2695c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb26c9f23517af9a6ea3b3b1f2695c42">&#9670;&nbsp;</a></span>MASK_IDENTITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MASK_IDENTITY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">( ONE(0)  | ZERO(4)  | ZERO(8)  | ZERO(12) |\</div><div class="line">              ZERO(1)  |  ONE(5)  | ZERO(9)  | ZERO(13) |\</div><div class="line">              ZERO(2)  | ZERO(6)  |  ONE(10) | ZERO(14) |\</div><div class="line">              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aface04bfa63f4e967a9b118e75660460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aface04bfa63f4e967a9b118e75660460">&#9670;&nbsp;</a></span>MASK_PERSPECTIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MASK_PERSPECTIVE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(           ZERO(4)  |            ZERO(12) |\</div><div class="line">              ZERO(1)  |                       ZERO(13) |\</div><div class="line">              ZERO(2)  | ZERO(6)  |                      \</div><div class="line">              ZERO(3)  | ZERO(7)  |            ZERO(15) )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a04fad4ee8b40909b70143ff909580d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fad4ee8b40909b70143ff909580d07">&#9670;&nbsp;</a></span>MAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MAT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(m)[(c)*4+(r)]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>References an element of 4x4 matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>matrix array. </td></tr>
+    <tr><td class="paramname">c</td><td>column of the desired element. </td></tr>
+    <tr><td class="paramname">r</td><td>row of the desired element.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>value of the desired element.</dd></dl>
+<p>Calculate the linear storage index of the element and references it. </p>
+
+</div>
+</div>
+<a id="ab05eff8e781b00b86776d167de0be400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05eff8e781b00b86776d167de0be400">&#9670;&nbsp;</a></span>SWAP_ROWS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> SWAP_ROWS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;{ GLfloat *_tmp = a; (a)=(b); (b)=_tmp; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Swaps the values of two floating pointer variables.</p>
+<p>Used by invert_matrix_general() to swap the row pointers. </p>
+
+</div>
+</div>
+<a id="a6bc055a2999580d23e8d433b181f5b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc055a2999580d23e8d433b181f5b2e">&#9670;&nbsp;</a></span>TEST_MAT_FLAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> TEST_MAT_FLAGS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mat, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="group___mat_flags.html#gabbfd3b9cd83257f3d28d089484b611ad">MAT_FLAGS_GEOMETRY</a> &amp; (~(a)) &amp; ((mat)-&gt;flags) ) == 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_test.html">Test</a> geometry related matrix flags.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>a pointer to a <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> structure. </td></tr>
+    <tr><td class="paramname">a</td><td>flags mask.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>non-zero if all geometry related matrix flags are contained within the mask, or zero otherwise. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a581d4a5d314f972400c9f04a497c46d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581d4a5d314f972400c9f04a497c46d4">&#9670;&nbsp;</a></span>inv_mat_func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GLboolean(* inv_mat_func) (<a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *mat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_matrix.html">Matrix</a> inversion function pointer type. </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a3d443b50346e5f57b379c576bbdee6c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d443b50346e5f57b379c576bbdee6c5">&#9670;&nbsp;</a></span>_math_matrix_alloc_inv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_alloc_inv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocate a matrix inverse.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Allocates the matrix inverse, <a class="el" href="struct_g_lmatrix.html#a9db637b7b21b2bd9b320a5b1bb6dd4ac">GLmatrix::inv</a>, and sets it to Identity. </p>
+
+</div>
+</div>
+<a id="a2dbf9ed3e4980c01f46b5cd373e061c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbf9ed3e4980c01f46b5cd373e061c9">&#9670;&nbsp;</a></span>_math_matrix_analyse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_analyse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Analyze and update a matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If the matrix type is dirty then calls either analyse_from_scratch() or analyse_from_flags() to determine its type, according to whether the flags are dirty or not, respectively. If the matrix has an inverse and it's dirty then calls matrix_invert(). Finally clears the dirty flags. </p>
+
+</div>
+</div>
+<a id="ac401f4e4b18dfb9249ff41b8f54452d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac401f4e4b18dfb9249ff41b8f54452d8">&#9670;&nbsp;</a></span>_math_matrix_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>from</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy a matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>destination matrix. </td></tr>
+    <tr><td class="paramname">from</td><td>source matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Copies all fields in <a class="el" href="struct_g_lmatrix.html">GLmatrix</a>, creating an inverse array if necessary. </p>
+
+</div>
+</div>
+<a id="aca778f328dc0a4627c3dd8b59985b4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca778f328dc0a4627c3dd8b59985b4a2">&#9670;&nbsp;</a></span>_math_matrix_ctr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_ctr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_matrix.html">Matrix</a> constructor.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Initialize the <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> fields. </p>
+
+</div>
+</div>
+<a id="a8fe74bd56f4f2dd4b9f202c690ba668b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe74bd56f4f2dd4b9f202c690ba668b">&#9670;&nbsp;</a></span>_math_matrix_dtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_dtr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_matrix.html">Matrix</a> destructor.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Frees the data in a <a class="el" href="struct_g_lmatrix.html">GLmatrix</a>. </p>
+
+</div>
+</div>
+<a id="a02426579330037dfaa19a4602ed03377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02426579330037dfaa19a4602ed03377">&#9670;&nbsp;</a></span>_math_matrix_frustum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_frustum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>bottom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>nearval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>farval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apply a perspective projection matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>matrix to apply the projection. </td></tr>
+    <tr><td class="paramname">left</td><td>left clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">right</td><td>right clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">bottom</td><td>bottom clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">top</td><td>top clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">nearval</td><td>distance to the near clipping plane. </td></tr>
+    <tr><td class="paramname">farval</td><td>distance to the far clipping plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Creates the projection matrix and multiplies it with <code>mat</code>, marking the MAT_FLAG_PERSPECTIVE flag. </p>
+
+</div>
+</div>
+<a id="a229386960a58433c0839083f27b4bd48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229386960a58433c0839083f27b4bd48">&#9670;&nbsp;</a></span>_math_matrix_has_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLboolean _math_matrix_has_rotation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_test.html">Test</a> if the given matrix does any rotation. (or perhaps if the upper-left 3x3 is non-identity) </p>
+
+</div>
+</div>
+<a id="a6540db69cb0fc02ba34be13a9e795f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6540db69cb0fc02ba34be13a9e795f2b">&#9670;&nbsp;</a></span>_math_matrix_is_length_preserving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLboolean _math_matrix_is_length_preserving </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_test.html">Test</a> if the given matrix preserves vector lengths. </p>
+
+</div>
+</div>
+<a id="a60d55b9bc3e3682179458e1cfd7ad9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d55b9bc3e3682179458e1cfd7ad9c8">&#9670;&nbsp;</a></span>_math_matrix_loadf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_loadf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Loads a matrix array into <a class="el" href="struct_g_lmatrix.html">GLmatrix</a>.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>matrix array. </td></tr>
+    <tr><td class="paramname">mat</td><td>matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Copies <code>m</code> into <a class="el" href="struct_g_lmatrix.html#aed91ed72e8180733f0deb2807bf9afc5">GLmatrix::m</a> and marks the MAT_FLAG_GENERAL and MAT_DIRTY flags. </p>
+
+</div>
+</div>
+<a id="a89c0aa9d2ddbc06be9c4c40d5488661d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c0aa9d2ddbc06be9c4c40d5488661d">&#9670;&nbsp;</a></span>_math_matrix_mul_floats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_mul_floats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_matrix.html">Matrix</a> multiplication.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>left and destination matrix. </td></tr>
+    <tr><td class="paramname">m</td><td>right matrix array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Marks the matrix flags with general flag, and type and inverse dirty flags. Calls matmul4() for the multiplication. </p>
+
+</div>
+</div>
+<a id="ab0a51de0408c7005807f5004abdf89d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a51de0408c7005807f5004abdf89d1">&#9670;&nbsp;</a></span>_math_matrix_mul_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_mul_matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_matrix.html">Matrix</a> multiplication.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>destination matrix. </td></tr>
+    <tr><td class="paramname">a</td><td>left matrix. </td></tr>
+    <tr><td class="paramname">b</td><td>right matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Joins both flags and marks the type and inverse as dirty. Calls matmul34() if both matrices are 3D, or matmul4() otherwise. </p>
+
+</div>
+</div>
+<a id="aaa13fd3c18845d6a643a4d1101bf38b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa13fd3c18845d6a643a4d1101bf38b8">&#9670;&nbsp;</a></span>_math_matrix_ortho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_ortho </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>bottom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>nearval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>farval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apply an orthographic projection matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>matrix to apply the projection. </td></tr>
+    <tr><td class="paramname">left</td><td>left clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">right</td><td>right clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">bottom</td><td>bottom clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">top</td><td>top clipping plane coordinate. </td></tr>
+    <tr><td class="paramname">nearval</td><td>distance to the near clipping plane. </td></tr>
+    <tr><td class="paramname">farval</td><td>distance to the far clipping plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Creates the projection matrix and multiplies it with <code>mat</code>, marking the MAT_FLAG_GENERAL_SCALE and MAT_FLAG_TRANSLATION flags. </p>
+
+</div>
+</div>
+<a id="a1797c3f04a8b12319534ad8976b78bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1797c3f04a8b12319534ad8976b78bea">&#9670;&nbsp;</a></span>_math_matrix_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_print </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dumps the contents of a <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> structure.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>pointer to the <a class="el" href="struct_g_lmatrix.html">GLmatrix</a> structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91272919a1b1068bdff427b5766a21c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91272919a1b1068bdff427b5766a21c6">&#9670;&nbsp;</a></span>_math_matrix_rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_rotate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate a 4x4 transformation matrix from glRotate parameters, and post-multiply the input matrix by it.</p>
+<dl class="section author"><dt>作者</dt><dd><a class="el" href="namespace_this.html">This</a> function was contributed by Erich Boleyn (<a href="#" onclick="location.href='mai'+'lto:'+'eri'+'ch'+'@ur'+'uk'+'.or'+'g'; return false;">erich<span style="display: none;">.nosp@m.</span>@uru<span style="display: none;">.nosp@m.</span>k.org</a>). Optimizations contributed by Rudolf Opalla (<a href="#" onclick="location.href='mai'+'lto:'+'rud'+'i@'+'khm'+'.d'+'e'; return false;">rudi@<span style="display: none;">.nosp@m.</span>khm.<span style="display: none;">.nosp@m.</span>de</a>). </dd></dl>
+
+</div>
+</div>
+<a id="a2fb78815e44604a101a83a936774eae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb78815e44604a101a83a936774eae8">&#9670;&nbsp;</a></span>_math_matrix_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_scale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Multiply a matrix with a general scaling matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>matrix. </td></tr>
+    <tr><td class="paramname">x</td><td>x axis scale factor. </td></tr>
+    <tr><td class="paramname">y</td><td>y axis scale factor. </td></tr>
+    <tr><td class="paramname">z</td><td>z axis scale factor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Multiplies in-place the elements of <code>mat</code> by the scale factors. Checks if the scales factors are roughly the same, marking the MAT_FLAG_UNIFORM_SCALE flag, or MAT_FLAG_GENERAL_SCALE. Marks the MAT_DIRTY_TYPE and MAT_DIRTY_INVERSE dirty flags. </p>
+
+</div>
+</div>
+<a id="abdc2d962dd4a5850afd72cf26cdeef36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc2d962dd4a5850afd72cf26cdeef36">&#9670;&nbsp;</a></span>_math_matrix_set_identity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_set_identity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a matrix to the identity matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Copies ::Identity into <code><a class="el" href="struct_g_lmatrix.html#aed91ed72e8180733f0deb2807bf9afc5">GLmatrix::m</a></code>, and into <a class="el" href="struct_g_lmatrix.html#a9db637b7b21b2bd9b320a5b1bb6dd4ac">GLmatrix::inv</a> if not NULL. Sets the matrix type to identity, and clear the dirty flags. </p>
+
+</div>
+</div>
+<a id="a3b3b58d8a82d466302f64ad873b04853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3b58d8a82d466302f64ad873b04853">&#9670;&nbsp;</a></span>_math_matrix_translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_translate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Multiply a matrix with a translation matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>matrix. </td></tr>
+    <tr><td class="paramname">x</td><td>translation vector x coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>translation vector y coordinate. </td></tr>
+    <tr><td class="paramname">z</td><td>translation vector z coordinate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Adds the translation coordinates to the elements of <code>mat</code> in-place. Marks the MAT_FLAG_TRANSLATION flag, and the MAT_DIRTY_TYPE and MAT_DIRTY_INVERSE dirty flags. </p>
+
+</div>
+</div>
+<a id="a450a36764f9f45fcbff7dc016818af2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450a36764f9f45fcbff7dc016818af2b">&#9670;&nbsp;</a></span>_math_matrix_viewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_matrix_viewport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_lmatrix.html">GLmatrix</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>zNear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>zFar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>depthMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set matrix to do viewport and depthrange mapping. Transforms Normalized Device Coords to window/Z values. </p>
+
+</div>
+</div>
+<a id="affa9590df3d6dbec72e7f384f618fc8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa9590df3d6dbec72e7f384f618fc8c">&#9670;&nbsp;</a></span>_math_transposed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_transposed </td>
+          <td>(</td>
+          <td class="paramtype">GLdouble&#160;</td>
+          <td class="paramname"><em>to</em>[16], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLdouble&#160;</td>
+          <td class="paramname"><em>from</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transpose a GLdouble matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>destination array. </td></tr>
+    <tr><td class="paramname">from</td><td>source array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a634b7f4af55678e5f96edba89afeed1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634b7f4af55678e5f96edba89afeed1a">&#9670;&nbsp;</a></span>_math_transposef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_transposef </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>to</em>[16], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat&#160;</td>
+          <td class="paramname"><em>from</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transpose a GLfloat matrix.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>destination array. </td></tr>
+    <tr><td class="paramname">from</td><td>source array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64deb51a4d9b1a2533f0a2e48de007d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64deb51a4d9b1a2533f0a2e48de007d5">&#9670;&nbsp;</a></span>_math_transposefd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _math_transposefd </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>to</em>[16], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLdouble&#160;</td>
+          <td class="paramname"><em>from</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transpose a GLdouble matrix and convert to GLfloat.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>destination array. </td></tr>
+    <tr><td class="paramname">from</td><td>source array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a76107f653a970333c78b6285ce3ede9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76107f653a970333c78b6285ce3ede9e">&#9670;&nbsp;</a></span>_mesa_transform_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _mesa_transform_vector </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>u</em>[4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat&#160;</td>
+          <td class="paramname"><em>v</em>[4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat&#160;</td>
+          <td class="paramname"><em>m</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transform a 4-element row vector (1x4 matrix) by a 4x4 matrix. <a class="el" href="namespace_this.html">This</a> function is used for transforming clipping plane equations and spotlight directions. Mathematically, u = v * m. Input: v - input vector m - transformation matrix Output: u - transformed vector </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,41 @@
+\hypertarget{interface_i_resource_manager}{}\section{I\+Resource\+Manager接口 参考}
+\label{interface_i_resource_manager}\index{I\+Resource\+Manager@{I\+Resource\+Manager}}
+类 I\+Resource\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_resource_manager}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_ad751acd319d90199554cdd06b3e3445a}\label{interface_i_resource_manager_ad751acd319d90199554cdd06b3e3445a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR p\+Name, \mbox{[}in\mbox{]} L\+O\+NG c\+Resource, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pl\+Token)
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_aa58d75ce2ad743837de77471cf4c5343}\label{interface_i_resource_manager_aa58d75ce2ad743837de77471cf4c5343}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Group} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR p\+Name, \mbox{[}in\mbox{]} L\+O\+NG c\+Resource, \mbox{[}in, size\+\_\+is(c\+Resource)\mbox{]} L\+O\+NG $\ast$pal\+Tokens, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pl\+Token)
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_acb0a5e5cea9778dde6f90d9777e2c2ac}\label{interface_i_resource_manager_acb0a5e5cea9778dde6f90d9777e2c2ac}} 
+H\+R\+E\+S\+U\+LT {\bfseries Request\+Resource} (\mbox{[}in\mbox{]} L\+O\+NG id\+Resource, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Focus\+Object, \mbox{[}in\mbox{]} \hyperlink{interface_i_resource_consumer}{I\+Resource\+Consumer} $\ast$p\+Consumer)
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_a96881d7df0bc6f99af735631d484d792}\label{interface_i_resource_manager_a96881d7df0bc6f99af735631d484d792}} 
+H\+R\+E\+S\+U\+LT {\bfseries Notify\+Acquire} (\mbox{[}in\mbox{]} L\+O\+NG id\+Resource, \mbox{[}in\mbox{]} \hyperlink{interface_i_resource_consumer}{I\+Resource\+Consumer} $\ast$p\+Consumer, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr)
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_abe85391e826259d747d92030d47ef58d}\label{interface_i_resource_manager_abe85391e826259d747d92030d47ef58d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Notify\+Release} (\mbox{[}in\mbox{]} L\+O\+NG id\+Resource, \mbox{[}in\mbox{]} \hyperlink{interface_i_resource_consumer}{I\+Resource\+Consumer} $\ast$p\+Consumer, \mbox{[}in\mbox{]} B\+O\+OL b\+Still\+Want)
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_a957f147fb38a9cdb758b26ad222837b4}\label{interface_i_resource_manager_a957f147fb38a9cdb758b26ad222837b4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Cancel\+Request} (\mbox{[}in\mbox{]} L\+O\+NG id\+Resource, \mbox{[}in\mbox{]} \hyperlink{interface_i_resource_consumer}{I\+Resource\+Consumer} $\ast$p\+Consumer)
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_a06bbbcd4fbaf787bfa50360ea825069a}\label{interface_i_resource_manager_a06bbbcd4fbaf787bfa50360ea825069a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Focus} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Focus\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_resource_manager_ae9d6639263a52d7a2727821144be90f3}\label{interface_i_resource_manager_ae9d6639263a52d7a2727821144be90f3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Release\+Focus} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Focus\+Object)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/axextend.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{struct___m_m_p_f_n}{}\section{\+\_\+\+M\+M\+P\+F\+N结构体 参考}
+\label{struct___m_m_p_f_n}\index{\+\_\+\+M\+M\+P\+FN@{\+\_\+\+M\+M\+P\+FN}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___m_m_p_f_n_aadebe879b21a33b019f4cc48e298f75c}\label{struct___m_m_p_f_n_aadebe879b21a33b019f4cc48e298f75c}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>PFN\_NUMBER {\bfseries Flink}\\
+\>ULONG {\bfseries WsIndex}\\
+\>\hyperlink{struct___k_e_v_e_n_t}{PKEVENT} {\bfseries Event}\\
+\>NTSTATUS {\bfseries ReadStatus}\\
+\>\hyperlink{struct___s_i_n_g_l_e___l_i_s_t___e_n_t_r_y}{SINGLE\_LIST\_ENTRY} {\bfseries NextStackPfn}\\
+\>SWAPENTRY {\bfseries SwapEntry}\\
+\} {\bfseries u1}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___m_m_p_f_n_a41217a6486b435da702536fcc18aa484}\label{struct___m_m_p_f_n_a41217a6486b435da702536fcc18aa484}} 
+\hyperlink{struct___m_m_p_t_e}{P\+M\+M\+P\+TE} {\bfseries Pte\+Address}
+\item 
+\mbox{\Hypertarget{struct___m_m_p_f_n_a752a7fe03869ff51e98e6120666a1a78}\label{struct___m_m_p_f_n_a752a7fe03869ff51e98e6120666a1a78}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>PFN\_NUMBER {\bfseries Blink}\\
+\>ULONG\_PTR {\bfseries ShareCount}\\
+\} {\bfseries u2}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___m_m_p_f_n_aee47bd8d0f8822e360a0e0b075b222e2}\label{struct___m_m_p_f_n_aee47bd8d0f8822e360a0e0b075b222e2}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\mbox{\Hypertarget{union___m_m_p_f_n_1_1_0D1446_ab66d188dc0ee9e4f4c6fd8f0638b8091}\label{union___m_m_p_f_n_1_1_0D1446_ab66d188dc0ee9e4f4c6fd8f0638b8091}} 
+\>struct \{\\
+\>\>USHORT {\bfseries ReferenceCount}\\
+\>\>\hyperlink{struct___m_m_p_f_n_e_n_t_r_y}{MMPFNENTRY} {\bfseries e1}\\
+\>\} \\
+\>struct \{\\
+\>\>USHORT {\bfseries ReferenceCount}\\
+\>\>USHORT {\bfseries ShortFlags}\\
+\>\} {\bfseries e2}\\
+\} {\bfseries u3}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___m_m_p_f_n_a6076d3e60969ff83cb54e08ab0cc47c7}\label{struct___m_m_p_f_n_a6076d3e60969ff83cb54e08ab0cc47c7}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct___m_m_p_t_e}{MMPTE} {\bfseries OriginalPte}\\
+\>LONG {\bfseries AweReferenceCount}\\
+\>\hyperlink{struct___m_m___r_m_a_p___e_n_t_r_y}{PMM\_RMAP\_ENTRY} {\bfseries RmapListHead}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___m_m_p_f_n_a769ba83093e702604827f45509a267bc}\label{struct___m_m_p_f_n_a769ba83093e702604827f45509a267bc}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>ULONG\_PTR {\bfseries EntireFrame}\\
+\mbox{\Hypertarget{union___m_m_p_f_n_1_1_0D1449_a078db55205c4dd2c6b699eb7c5131167}\label{union___m_m_p_f_n_1_1_0D1449_a078db55205c4dd2c6b699eb7c5131167}} 
+\>struct \{\\
+\>\>ULONG\_PTR {\bfseries PteFrame}:25\\
+\>\>ULONG\_PTR {\bfseries InPageError}:1\\
+\>\>ULONG\_PTR {\bfseries VerifierAllocation}:1\\
+\>\>ULONG\_PTR {\bfseries AweAllocation}:1\\
+\>\>ULONG\_PTR {\bfseries Priority}:3\\
+\>\>ULONG\_PTR {\bfseries MustBeCached}:1\\
+\>\} \\
+\} {\bfseries u4}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct___m_m_p_f_n_a26cbbed1fd3a4dbdb46f5abc8f3bb6c5}\label{struct___m_m_p_f_n_a26cbbed1fd3a4dbdb46f5abc8f3bb6c5}} 
+\hyperlink{struct___m_m_w_s_l_e}{M\+M\+W\+S\+LE} {\bfseries Wsle}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/ntoskrnl/include/internal/mm.\+h\end{DoxyCompactItemize}

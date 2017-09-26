@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/drivers/multimedia/audio/sound/wave.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_283433fb0e3adc3d407d1e24f0718b0e.html">drivers</a></li><li class="navelem"><a class="el" href="dir_a8ad196045eb83f7657c731b78792f87.html">multimedia</a></li><li class="navelem"><a class="el" href="dir_40a7b25f6d6d307ade729f6e899d803f.html">audio</a></li><li class="navelem"><a class="el" href="dir_9c925215e84890a17972a290cca59534.html">sound</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">wave.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;KIRQL irql;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;KAFFINITY affinity;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;pshpack1.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="struct_w_a_v_e___h_d_r.html">    5</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>       rID[4]  ;                   <span class="comment">//4 0</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>        rLen    ;                       <span class="comment">//4 4</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   wID[4] ;                        <span class="comment">//4 8</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   fID[4] ;                        <span class="comment">//4 12</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>        fLen ;                          <span class="comment">//4 16</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>      wFormatTag ;                <span class="comment">//2 18</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  nChannels ;             <span class="comment">//2 20</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>        nSamplesPerSec ;        <span class="comment">//2 22</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>        nAvgBytesPerSec ;   <span class="comment">//2 24</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  nBlockAlign ;           <span class="comment">//2 26</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  FormatSpecific ;        <span class="comment">//2 28</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   dID[4] ;                        <span class="comment">//4 30</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>        dLen ;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*  data;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}<a class="code" href="struct_w_a_v_e___h_d_r.html">WAVE_HDR</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;poppack.h&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> sb16_play(<a class="code" href="struct_w_a_v_e___h_d_r.html">WAVE_HDR</a>* wave);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> dump_wav(<a class="code" href="struct_w_a_v_e___h_d_r.html">WAVE_HDR</a>* wave);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="_processor_bind_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a> playRoutine(<a class="code" href="struct___k_i_n_t_e_r_r_u_p_t.html">PKINTERRUPT</a> Interrupt,<a class="code" href="interfacevoid.html">PVOID</a> ServiceContext);</div><div class="ttc" id="_processor_bind_8h_html_a112e3146cb38b6ee95e64d85842e380a"><div class="ttname"><a href="_processor_bind_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a></div><div class="ttdeci">unsigned char BOOLEAN</div><div class="ttdef"><b>Definition:</b> ProcessorBind.h:185</div></div>
+<div class="ttc" id="struct_w_a_v_e___h_d_r_html"><div class="ttname"><a href="struct_w_a_v_e___h_d_r.html">WAVE_HDR</a></div><div class="ttdef"><b>Definition:</b> wave.h:5</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+<div class="ttc" id="struct___k_i_n_t_e_r_r_u_p_t_html"><div class="ttname"><a href="struct___k_i_n_t_e_r_r_u_p_t.html">_KINTERRUPT</a></div><div class="ttdef"><b>Definition:</b> ketypes.h:823</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

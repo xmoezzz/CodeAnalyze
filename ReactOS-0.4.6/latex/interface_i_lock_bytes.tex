@@ -1,0 +1,49 @@
+\hypertarget{interface_i_lock_bytes}{}\section{I\+Lock\+Bytes接口 参考}
+\label{interface_i_lock_bytes}\index{I\+Lock\+Bytes@{I\+Lock\+Bytes}}
+类 I\+Lock\+Bytes 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_lock_bytes}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_a1e793de0ac0c4b328fb183b8e64b7e98}\label{interface_i_lock_bytes_a1e793de0ac0c4b328fb183b8e64b7e98}} 
+typedef \hyperlink{interface_i_lock_bytes}{I\+Lock\+Bytes} $\ast$ {\bfseries L\+P\+L\+O\+C\+K\+B\+Y\+T\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_ad381df39c1d72828f22fb8e0a4e0fc28}\label{interface_i_lock_bytes_ad381df39c1d72828f22fb8e0a4e0fc28}} 
+H\+R\+E\+S\+U\+LT {\bfseries Read\+At} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} ul\+Offset, \mbox{[}out, size\+\_\+is(cb), length\+\_\+is($\ast$pcb\+Read)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$pv, \mbox{[}in\mbox{]} U\+L\+O\+NG cb, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcb\+Read)
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_a24b3813965679de4b80418be20658249}\label{interface_i_lock_bytes_a24b3813965679de4b80418be20658249}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Read\+At} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} ul\+Offset, \mbox{[}out, size\+\_\+is(cb), length\+\_\+is($\ast$pcb\+Read)\mbox{]} byte $\ast$pv, \mbox{[}in\mbox{]} U\+L\+O\+NG cb, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcb\+Read)
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_a8cf4266df159541e420edf3b4c9a1fe4}\label{interface_i_lock_bytes_a8cf4266df159541e420edf3b4c9a1fe4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Write\+At} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} ul\+Offset, \mbox{[}in, size\+\_\+is(cb)\mbox{]} const \hyperlink{interfacevoid}{void} $\ast$pv, \mbox{[}in\mbox{]} U\+L\+O\+NG cb, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcb\+Written)
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_ac49f2fc0c929dada777649ab0d9bb9d6}\label{interface_i_lock_bytes_ac49f2fc0c929dada777649ab0d9bb9d6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Write\+At} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} ul\+Offset, \mbox{[}in, size\+\_\+is(cb)\mbox{]} const byte $\ast$pv, \mbox{[}in\mbox{]} U\+L\+O\+NG cb, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcb\+Written)
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_a9b559d9e1a2690a0bf46f027824fe4fb}\label{interface_i_lock_bytes_a9b559d9e1a2690a0bf46f027824fe4fb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Flush} ()
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_aba92bd4a94a5cb023b6229307acd6006}\label{interface_i_lock_bytes_aba92bd4a94a5cb023b6229307acd6006}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Size} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} cb)
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_a8f8c8ed36a346048231c48354f8accc8}\label{interface_i_lock_bytes_a8f8c8ed36a346048231c48354f8accc8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Lock\+Region} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} lib\+Offset, \mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} cb, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Lock\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_af075e9d6b141c020647425949b489510}\label{interface_i_lock_bytes_af075e9d6b141c020647425949b489510}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unlock\+Region} (\mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} lib\+Offset, \mbox{[}in\mbox{]} \hyperlink{struct___u_l_a_r_g_e___i_n_t_e_g_e_r}{U\+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER} cb, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Lock\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_lock_bytes_a36909ceb41bab2bcbd75f4afbc36f6d7}\label{interface_i_lock_bytes_a36909ceb41bab2bcbd75f4afbc36f6d7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stat} (\mbox{[}out\mbox{]} S\+T\+A\+T\+S\+TG $\ast$pstatstg, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Stat\+Flag)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

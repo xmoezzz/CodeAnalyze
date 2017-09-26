@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/modules/rosapps/applications/explorer-old/utility/xmlstorage.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_455a3560abea4864820da1bb9abc4f47.html">modules</a></li><li class="navelem"><a class="el" href="dir_2ac4fadfe2a22516c77666bc1d042cf6.html">rosapps</a></li><li class="navelem"><a class="el" href="dir_b55192eb6dc0306191a7b6a891424cae.html">applications</a></li><li class="navelem"><a class="el" href="dir_2f71201ccec793b3ae1db6138c86e70d.html">explorer-old</a></li><li class="navelem"><a class="el" href="dir_26ecbf8aca1ffb55a0b612d94d5dd73c.html">utility</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">xmlstorage.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;wchar.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stack&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+</div>
+<p><a href="xmlstorage_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_s___string.html">XMLStorage::XS_String</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">string class for TCHAR strings  <a href="struct_x_m_l_storage_1_1_x_s___string.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1tifstream.html">XMLStorage::tifstream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1tofstream.html">XMLStorage::tofstream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_error.html">XMLStorage::XMLError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML Error with message and location  <a href="struct_x_m_l_storage_1_1_x_m_l_error.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_error_list.html">XMLStorage::XMLErrorList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of <a class="el" href="struct_x_m_l_storage_1_1_x_m_l_error.html" title="XML Error with message and location ">XMLError</a> entries  <a href="struct_x_m_l_storage_1_1_x_m_l_error_list.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_style_sheet.html">XMLStorage::StyleSheet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML Stylesheet entry  <a href="struct_x_m_l_storage_1_1_style_sheet.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_style_sheet_list.html">XMLStorage::StyleSheetList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of <a class="el" href="struct_x_m_l_storage_1_1_style_sheet.html" title="XML Stylesheet entry ">StyleSheet</a> entries  <a href="struct_x_m_l_storage_1_1_style_sheet_list.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_doc_type.html">XMLStorage::DocType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML document type description  <a href="struct_x_m_l_storage_1_1_doc_type.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_format.html">XMLStorage::XMLFormat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Management of XML file headers and formating  <a href="struct_x_m_l_storage_1_1_x_m_l_format.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_path_element.html">XMLStorage::XPathElement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_path.html">XMLStorage::XPath</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_node.html">XMLStorage::XMLNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">in memory representation of an XML node  <a href="struct_x_m_l_storage_1_1_x_m_l_node.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_node_1_1_attribute_map.html">XMLStorage::XMLNode::AttributeMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">map of XML node attributes  <a href="struct_x_m_l_storage_1_1_x_m_l_node_1_1_attribute_map.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_node_1_1_children.html">XMLStorage::XMLNode::Children</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal children node list  <a href="struct_x_m_l_storage_1_1_x_m_l_node_1_1_children.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_children_filter.html">XMLStorage::XMLChildrenFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator access to children nodes with name filtering  <a href="struct_x_m_l_storage_1_1_x_m_l_children_filter.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_children_filter_1_1iterator.html">XMLStorage::XMLChildrenFilter::iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal iterator class  <a href="struct_x_m_l_storage_1_1_x_m_l_children_filter_1_1iterator.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1const___x_m_l_children_filter.html">XMLStorage::const_XMLChildrenFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">read only iterator access to children nodes with name filtering  <a href="struct_x_m_l_storage_1_1const___x_m_l_children_filter.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1const___x_m_l_children_filter_1_1const__iterator.html">XMLStorage::const_XMLChildrenFilter::const_iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal iterator class  <a href="struct_x_m_l_storage_1_1const___x_m_l_children_filter_1_1const__iterator.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_pos.html">XMLStorage::XMLPos</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator for XML trees  <a href="struct_x_m_l_storage_1_1_x_m_l_pos.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1const___x_m_l_pos.html">XMLStorage::const_XMLPos</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator for XML trees  <a href="struct_x_m_l_storage_1_1const___x_m_l_pos.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_bool.html">XMLStorage::XMLBool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for boolean data  <a href="struct_x_m_l_storage_1_1_x_m_l_bool.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_bool_ref.html">XMLStorage::XMLBoolRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for boolean data with write access  <a href="struct_x_m_l_storage_1_1_x_m_l_bool_ref.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_int.html">XMLStorage::XMLInt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for integer data  <a href="struct_x_m_l_storage_1_1_x_m_l_int.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_int_ref.html">XMLStorage::XMLIntRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for integer data with write access  <a href="struct_x_m_l_storage_1_1_x_m_l_int_ref.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_double.html">XMLStorage::XMLDouble</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for numeric data  <a href="struct_x_m_l_storage_1_1_x_m_l_double.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_double_ref.html">XMLStorage::XMLDoubleRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for numeric data with write access  <a href="struct_x_m_l_storage_1_1_x_m_l_double_ref.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_string.html">XMLStorage::XMLString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for string data  <a href="struct_x_m_l_storage_1_1_x_m_l_string.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_string_ref.html">XMLStorage::XMLStringRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type converter for string data with write access  <a href="struct_x_m_l_storage_1_1_x_m_l_string_ref.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_property.html">XMLStorage::XMLProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a key/value pair for property data access  <a href="struct_x_m_l_storage_1_1_x_m_l_property.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_property_reader.html">XMLStorage::XMLPropertyReader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">utility class to read property settings from a XML tree  <a href="struct_x_m_l_storage_1_1_x_m_l_property_reader.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_property_reader_1_1const__iterator.html">XMLStorage::XMLPropertyReader::const_iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal iterator class  <a href="struct_x_m_l_storage_1_1_x_m_l_property_reader_1_1const__iterator.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_reader_base.html">XMLStorage::XMLReaderBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML reader base class  <a href="struct_x_m_l_storage_1_1_x_m_l_reader_base.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_reader.html">XMLStorage::XMLReader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML file reader  <a href="struct_x_m_l_storage_1_1_x_m_l_reader.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_doc.html">XMLStorage::XMLDoc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML document holder  <a href="struct_x_m_l_storage_1_1_x_m_l_doc.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_message.html">XMLStorage::XMLMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML message wrapper  <a href="struct_x_m_l_storage_1_1_x_m_l_message.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_message_from_string.html">XMLStorage::XMLMessageFromString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper structure to read XML messages from strings  <a href="struct_x_m_l_storage_1_1_x_m_l_message_from_string.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_message_reader.html">XMLStorage::XMLMessageReader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reader for XML Messages  <a href="struct_x_m_l_storage_1_1_x_m_l_message_reader.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_writer.html">XMLStorage::XMLWriter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">on the fly XML writer  <a href="struct_x_m_l_storage_1_1_x_m_l_writer.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry.html">XMLStorage::XMLWriter::StackEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">container for <a class="el" href="struct_x_m_l_storage_1_1_x_m_l_writer.html" title="on the fly XML writer ">XMLWriter</a> state information  <a href="struct_x_m_l_storage_1_1_x_m_l_writer_1_1_stack_entry.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6047b56818c357e5386c51c58b90808d"><td class="memItemLeft" align="right" valign="top"><a id="a6047b56818c357e5386c51c58b90808d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_STRING_UTF8</b></td></tr>
+<tr class="separator:a6047b56818c357e5386c51c58b90808d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2978f60d40d64f3605b5a99f66f292a9"><td class="memItemLeft" align="right" valign="top"><a id="a2978f60d40d64f3605b5a99f66f292a9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TEXT</b>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="separator:a2978f60d40d64f3605b5a99f66f292a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493d8925a19bc687f8f6b693aefebc34"><td class="memItemLeft" align="right" valign="top"><a id="a493d8925a19bc687f8f6b693aefebc34"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_ttoi</b>&#160;&#160;&#160;atoi</td></tr>
+<tr class="separator:a493d8925a19bc687f8f6b693aefebc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d483a46d24b40308cab4b44d147d7f"><td class="memItemLeft" align="right" valign="top"><a id="a65d483a46d24b40308cab4b44d147d7f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tfopen</b>&#160;&#160;&#160;fopen</td></tr>
+<tr class="separator:a65d483a46d24b40308cab4b44d147d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab013b2108c1bd9d00dba51373e6572ff"><td class="memItemLeft" align="right" valign="top"><a id="ab013b2108c1bd9d00dba51373e6572ff"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tcstod</b>&#160;&#160;&#160;strtod</td></tr>
+<tr class="separator:ab013b2108c1bd9d00dba51373e6572ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad253c68ce58b12b277fedc2d785d7977"><td class="memItemLeft" align="right" valign="top"><a id="ad253c68ce58b12b277fedc2d785d7977"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tcslen</b>&#160;&#160;&#160;strlen</td></tr>
+<tr class="separator:ad253c68ce58b12b277fedc2d785d7977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc80dac9ea1b6e6d7a5b973298f60150"><td class="memItemLeft" align="right" valign="top"><a id="acc80dac9ea1b6e6d7a5b973298f60150"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tcsstr</b>&#160;&#160;&#160;strstr</td></tr>
+<tr class="separator:acc80dac9ea1b6e6d7a5b973298f60150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb8b876e7495cfb11a152cdf728815c"><td class="memItemLeft" align="right" valign="top"><a id="aabb8b876e7495cfb11a152cdf728815c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_snprintf</b>&#160;&#160;&#160;snprintf</td></tr>
+<tr class="separator:aabb8b876e7495cfb11a152cdf728815c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0cc0637768c5eda50cb458f023066a"><td class="memItemLeft" align="right" valign="top"><a id="aad0cc0637768c5eda50cb458f023066a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_sntprintf</b>&#160;&#160;&#160;snprintf</td></tr>
+<tr class="separator:aad0cc0637768c5eda50cb458f023066a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b75ef7f799a84b01d28530d06c53daf"><td class="memItemLeft" align="right" valign="top"><a id="a1b75ef7f799a84b01d28530d06c53daf"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_vsnprintf</b>&#160;&#160;&#160;vsnprintf</td></tr>
+<tr class="separator:a1b75ef7f799a84b01d28530d06c53daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83037e2bca4efd02d8da78b2725a100"><td class="memItemLeft" align="right" valign="top"><a id="ac83037e2bca4efd02d8da78b2725a100"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_vsntprintf</b>&#160;&#160;&#160;vsnprintf</td></tr>
+<tr class="separator:ac83037e2bca4efd02d8da78b2725a100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a35e08b2dedf0975d11794eb8de4805"><td class="memItemLeft" align="right" valign="top"><a id="a3a35e08b2dedf0975d11794eb8de4805"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_stricmp</b>&#160;&#160;&#160;strcasecmp</td></tr>
+<tr class="separator:a3a35e08b2dedf0975d11794eb8de4805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21f4013c5b4809d681426a52e3a9187"><td class="memItemLeft" align="right" valign="top"><a id="ae21f4013c5b4809d681426a52e3a9187"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tcsicmp</b>&#160;&#160;&#160;strcasecmp</td></tr>
+<tr class="separator:ae21f4013c5b4809d681426a52e3a9187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a19b1831112e876b010468ec15916f"><td class="memItemLeft" align="right" valign="top"><a id="a16a19b1831112e876b010468ec15916f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>strnicmp</b>&#160;&#160;&#160;strncasecmp</td></tr>
+<tr class="separator:a16a19b1831112e876b010468ec15916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73bb733e1922cfb964b0ff6228e3089"><td class="memItemLeft" align="right" valign="top"><a id="aa73bb733e1922cfb964b0ff6228e3089"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tcsnicmp</b>&#160;&#160;&#160;strncasecmp</td></tr>
+<tr class="separator:aa73bb733e1922cfb964b0ff6228e3089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46130dc86f2322714bba26960b64e7bb"><td class="memItemLeft" align="right" valign="top"><a id="a46130dc86f2322714bba26960b64e7bb"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BUFFER_LEN</b>&#160;&#160;&#160;2048</td></tr>
+<tr class="separator:a46130dc86f2322714bba26960b64e7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361523ff05245ab33123b7b110165c9c"><td class="memItemLeft" align="right" valign="top"><a id="a361523ff05245ab33123b7b110165c9c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_CHAR</b>&#160;&#160;&#160;char</td></tr>
+<tr class="separator:a361523ff05245ab33123b7b110165c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb3768481b97aa18d61a30a5f9e4ad0"><td class="memItemLeft" align="right" valign="top"><a id="a6bb3768481b97aa18d61a30a5f9e4ad0"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_TEXT</b>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="separator:a6bb3768481b97aa18d61a30a5f9e4ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcdd695052e2f61b0458251b6086cc3"><td class="memItemLeft" align="right" valign="top"><a id="abdcdd695052e2f61b0458251b6086cc3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LPXSSTR</b>&#160;&#160;&#160;LPSTR</td></tr>
+<tr class="separator:abdcdd695052e2f61b0458251b6086cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f634aa526b00fb66b430de768c6943"><td class="memItemLeft" align="right" valign="top"><a id="a61f634aa526b00fb66b430de768c6943"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LPCXSSTR</b>&#160;&#160;&#160;LPCSTR</td></tr>
+<tr class="separator:a61f634aa526b00fb66b430de768c6943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6d3969b8dfad4cfe8c7fa962853a64"><td class="memItemLeft" align="right" valign="top"><a id="abd6d3969b8dfad4cfe8c7fa962853a64"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_cmp</b>&#160;&#160;&#160;strcmp</td></tr>
+<tr class="separator:abd6d3969b8dfad4cfe8c7fa962853a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada71b3a0baa5e412cec4857cc3d8c95c"><td class="memItemLeft" align="right" valign="top"><a id="ada71b3a0baa5e412cec4857cc3d8c95c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_icmp</b>&#160;&#160;&#160;_stricmp</td></tr>
+<tr class="separator:ada71b3a0baa5e412cec4857cc3d8c95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38fbd721bb09418c8ce7b4a246c0ed2"><td class="memItemLeft" align="right" valign="top"><a id="ae38fbd721bb09418c8ce7b4a246c0ed2"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_ncmp</b>&#160;&#160;&#160;strncmp</td></tr>
+<tr class="separator:ae38fbd721bb09418c8ce7b4a246c0ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32276474cd0c53dfa71ffc8aa1aa846d"><td class="memItemLeft" align="right" valign="top"><a id="a32276474cd0c53dfa71ffc8aa1aa846d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_nicmp</b>&#160;&#160;&#160;strnicmp</td></tr>
+<tr class="separator:a32276474cd0c53dfa71ffc8aa1aa846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4519b71e2a95c1f67d95e39dd9297979"><td class="memItemLeft" align="right" valign="top"><a id="a4519b71e2a95c1f67d95e39dd9297979"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_toi</b>&#160;&#160;&#160;atoi</td></tr>
+<tr class="separator:a4519b71e2a95c1f67d95e39dd9297979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012559f0519852ef9e7f2862a290fa9c"><td class="memItemLeft" align="right" valign="top"><a id="a012559f0519852ef9e7f2862a290fa9c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_tod</b>&#160;&#160;&#160;strtod</td></tr>
+<tr class="separator:a012559f0519852ef9e7f2862a290fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8842e03141fc5a2fce977963f0fb4ced"><td class="memItemLeft" align="right" valign="top"><a id="a8842e03141fc5a2fce977963f0fb4ced"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_len</b>&#160;&#160;&#160;strlen</td></tr>
+<tr class="separator:a8842e03141fc5a2fce977963f0fb4ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14f262bc19afeed86d4784d3ddb4446"><td class="memItemLeft" align="right" valign="top"><a id="ac14f262bc19afeed86d4784d3ddb4446"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_snprintf</b>&#160;&#160;&#160;_snprintf</td></tr>
+<tr class="separator:ac14f262bc19afeed86d4784d3ddb4446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90fecb5fa1d29635d488e2a7d256d672"><td class="memItemLeft" align="right" valign="top"><a id="a90fecb5fa1d29635d488e2a7d256d672"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_vsnprintf</b>&#160;&#160;&#160;_vsnprintf</td></tr>
+<tr class="separator:a90fecb5fa1d29635d488e2a7d256d672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad836fd6f9eb4ba5a3b92c6346cae7199"><td class="memItemLeft" align="right" valign="top"><a id="ad836fd6f9eb4ba5a3b92c6346cae7199"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_strstr</b>&#160;&#160;&#160;strstr</td></tr>
+<tr class="separator:ad836fd6f9eb4ba5a3b92c6346cae7199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaec5a1a05fc8c491579deaf1a6da21d"><td class="memItemLeft" align="right" valign="top"><a id="aeaec5a1a05fc8c491579deaf1a6da21d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>COUNTOF</b>(b)&#160;&#160;&#160;(sizeof(b)/sizeof(b[0]))</td></tr>
+<tr class="separator:aeaec5a1a05fc8c491579deaf1a6da21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fa839aa8403d4a56c1c0f332db0b95"><td class="memItemLeft" align="right" valign="top"><a id="a18fa839aa8403d4a56c1c0f332db0b95"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_EMPTY_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;&quot;)</td></tr>
+<tr class="separator:a18fa839aa8403d4a56c1c0f332db0b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4431838b48b79cca66984de25a2971ca"><td class="memItemLeft" align="right" valign="top"><a id="a4431838b48b79cca66984de25a2971ca"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_TRUE_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;true&quot;)</td></tr>
+<tr class="separator:a4431838b48b79cca66984de25a2971ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa2016460edb99a57c503b3b9423a51"><td class="memItemLeft" align="right" valign="top"><a id="a5fa2016460edb99a57c503b3b9423a51"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_FALSE_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;false&quot;)</td></tr>
+<tr class="separator:a5fa2016460edb99a57c503b3b9423a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac846812eea7d254a9139781c918e79c5"><td class="memItemLeft" align="right" valign="top"><a id="ac846812eea7d254a9139781c918e79c5"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_INTFMT_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;%d&quot;)</td></tr>
+<tr class="separator:ac846812eea7d254a9139781c918e79c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc652954a112ee2129b6715a86cb287"><td class="memItemLeft" align="right" valign="top"><a id="a1bc652954a112ee2129b6715a86cb287"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_FLOATFMT_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;%f&quot;)</td></tr>
+<tr class="separator:a1bc652954a112ee2129b6715a86cb287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be59764ab9e45541b5fbedd2667ee7d"><td class="memItemLeft" align="right" valign="top"><a id="a5be59764ab9e45541b5fbedd2667ee7d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_KEY_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;key&quot;)</td></tr>
+<tr class="separator:a5be59764ab9e45541b5fbedd2667ee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0f63c7d99f466d02a2ffd4662d9c60"><td class="memItemLeft" align="right" valign="top"><a id="a4d0f63c7d99f466d02a2ffd4662d9c60"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_VALUE_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;value&quot;)</td></tr>
+<tr class="separator:a4d0f63c7d99f466d02a2ffd4662d9c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a35c0b2fb12bd4afbd85af429d47024"><td class="memItemLeft" align="right" valign="top"><a id="a2a35c0b2fb12bd4afbd85af429d47024"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_PROPERTY_STR</b>&#160;&#160;&#160;XS_TEXT(&quot;property&quot;)</td></tr>
+<tr class="separator:a2a35c0b2fb12bd4afbd85af429d47024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691e796d4f9de815bf58a0f56717f2b3"><td class="memItemLeft" align="right" valign="top"><a id="a691e796d4f9de815bf58a0f56717f2b3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_EMPTY</b>&#160;&#160;&#160;XS_EMPTY_STR</td></tr>
+<tr class="separator:a691e796d4f9de815bf58a0f56717f2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d73068a789bcafdbdf101266ffe458c"><td class="memItemLeft" align="right" valign="top"><a id="a4d73068a789bcafdbdf101266ffe458c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_TRUE</b>&#160;&#160;&#160;XS_TRUE_STR</td></tr>
+<tr class="separator:a4d73068a789bcafdbdf101266ffe458c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77f931b7b16f03200f28b4067778d81"><td class="memItemLeft" align="right" valign="top"><a id="ae77f931b7b16f03200f28b4067778d81"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_FALSE</b>&#160;&#160;&#160;XS_FALSE_STR</td></tr>
+<tr class="separator:ae77f931b7b16f03200f28b4067778d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5c2629e4afa8327c5b65bc7da813e9"><td class="memItemLeft" align="right" valign="top"><a id="a7c5c2629e4afa8327c5b65bc7da813e9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_INTFMT</b>&#160;&#160;&#160;XS_INTFMT_STR</td></tr>
+<tr class="separator:a7c5c2629e4afa8327c5b65bc7da813e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa375f9c6a165aae67ec0e5a194750530"><td class="memItemLeft" align="right" valign="top"><a id="aa375f9c6a165aae67ec0e5a194750530"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XS_FLOATFMT</b>&#160;&#160;&#160;XS_FLOATFMT_STR</td></tr>
+<tr class="separator:aa375f9c6a165aae67ec0e5a194750530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0213fdba9ddee7074346bb69c637f42e"><td class="memItemLeft" align="right" valign="top"><a id="a0213fdba9ddee7074346bb69c637f42e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CDATA_START</b>&#160;&#160;&#160;&quot;&lt;![CDATA[&quot;</td></tr>
+<tr class="separator:a0213fdba9ddee7074346bb69c637f42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cde77e5cbeeaaddde303fe2cca3aac"><td class="memItemLeft" align="right" valign="top"><a id="af2cde77e5cbeeaaddde303fe2cca3aac"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CDATA_END</b>&#160;&#160;&#160;&quot;]]&gt;&quot;</td></tr>
+<tr class="separator:af2cde77e5cbeeaaddde303fe2cca3aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2822ecbbb65989ad365aa1082274a019"><td class="memItemLeft" align="right" valign="top"><a id="a2822ecbbb65989ad365aa1082274a019"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XML_INDENT_SPACE</b>&#160;&#160;&#160;&quot;  &quot;</td></tr>
+<tr class="separator:a2822ecbbb65989ad365aa1082274a019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd76457f513559e5d9ccaee73fb0c1ba"><td class="memItemLeft" align="right" valign="top"><a id="acd76457f513559e5d9ccaee73fb0c1ba"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_XMLSTORAGE_H</b></td></tr>
+<tr class="separator:acd76457f513559e5d9ccaee73fb0c1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:aebb9e13210d88d43e32e735ada43a425"><td class="memItemLeft" align="right" valign="top"><a id="aebb9e13210d88d43e32e735ada43a425"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>CHAR</b></td></tr>
+<tr class="separator:aebb9e13210d88d43e32e735ada43a425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a55157af863ed18b326cbb1df248ae"><td class="memItemLeft" align="right" valign="top"><a id="a58a55157af863ed18b326cbb1df248ae"></a>
+typedef __wchar_t&#160;</td><td class="memItemRight" valign="bottom"><b>WCHAR</b></td></tr>
+<tr class="separator:a58a55157af863ed18b326cbb1df248ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4bb67531a9bf6f0b9c6ad76aeba587"><td class="memItemLeft" align="right" valign="top"><a id="a4f4bb67531a9bf6f0b9c6ad76aeba587"></a>
+typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>UCHAR</b></td></tr>
+<tr class="separator:a4f4bb67531a9bf6f0b9c6ad76aeba587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8ad456b40595d5a6179c5a52f7539b"><td class="memItemLeft" align="right" valign="top"><a id="a4b8ad456b40595d5a6179c5a52f7539b"></a>
+typedef char *&#160;</td><td class="memItemRight" valign="bottom"><b>LPSTR</b></td></tr>
+<tr class="separator:a4b8ad456b40595d5a6179c5a52f7539b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbea528b1294c9a1dfda3dfa33ff1472"><td class="memItemLeft" align="right" valign="top"><a id="adbea528b1294c9a1dfda3dfa33ff1472"></a>
+typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>LPCSTR</b></td></tr>
+<tr class="separator:adbea528b1294c9a1dfda3dfa33ff1472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e55464ecbbed26711caa219bdac4b01"><td class="memItemLeft" align="right" valign="top"><a id="a0e55464ecbbed26711caa219bdac4b01"></a>
+typedef WCHAR *&#160;</td><td class="memItemRight" valign="bottom"><b>LPWSTR</b></td></tr>
+<tr class="separator:a0e55464ecbbed26711caa219bdac4b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953ac8f1ccdf4601c2f44fc9a10fc232"><td class="memItemLeft" align="right" valign="top"><a id="a953ac8f1ccdf4601c2f44fc9a10fc232"></a>
+typedef const WCHAR *&#160;</td><td class="memItemRight" valign="bottom"><b>LPCWSTR</b></td></tr>
+<tr class="separator:a953ac8f1ccdf4601c2f44fc9a10fc232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bdb8ce5895c7e261aadc2529637546"><td class="memItemLeft" align="right" valign="top"><a id="a03bdb8ce5895c7e261aadc2529637546"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>TCHAR</b></td></tr>
+<tr class="separator:a03bdb8ce5895c7e261aadc2529637546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac2e99f75daf890cfe2f9fa06c57026"><td class="memItemLeft" align="right" valign="top"><a id="adac2e99f75daf890cfe2f9fa06c57026"></a>
+typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>_TUCHAR</b></td></tr>
+<tr class="separator:adac2e99f75daf890cfe2f9fa06c57026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efb6efbf3faf21b4bd1f2271e05e47c"><td class="memItemLeft" align="right" valign="top"><a id="a5efb6efbf3faf21b4bd1f2271e05e47c"></a>
+typedef CHAR *&#160;</td><td class="memItemRight" valign="bottom"><b>PTSTR</b></td></tr>
+<tr class="separator:a5efb6efbf3faf21b4bd1f2271e05e47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e8865a2c66502edd8e96f101035fec"><td class="memItemLeft" align="right" valign="top"><a id="ac2e8865a2c66502edd8e96f101035fec"></a>
+typedef CHAR *&#160;</td><td class="memItemRight" valign="bottom"><b>LPTSTR</b></td></tr>
+<tr class="separator:ac2e8865a2c66502edd8e96f101035fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa909047731271086e62ce749a5371db4"><td class="memItemLeft" align="right" valign="top"><a id="aa909047731271086e62ce749a5371db4"></a>
+typedef const CHAR *&#160;</td><td class="memItemRight" valign="bottom"><b>LPCTSTR</b></td></tr>
+<tr class="separator:aa909047731271086e62ce749a5371db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286a0cccd94509e1f87b529e26cb47e2"><td class="memItemLeft" align="right" valign="top"><a id="a286a0cccd94509e1f87b529e26cb47e2"></a>
+typedef std::ostringstream&#160;</td><td class="memItemRight" valign="bottom"><b>XMLStorage::fast_ostringstream</b></td></tr>
+<tr class="separator:a286a0cccd94509e1f87b529e26cb47e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ab9024cb3c12e28d126a06aec400aec65"><td class="memItemLeft" align="right" valign="top"><a id="ab9024cb3c12e28d126a06aec400aec65"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PRETTY_FLAGS</b> { <b>PRETTY_PLAIN</b> = 0, 
+<b>PRETTY_LINEFEED</b> = 1, 
+<b>PRETTY_INDENT</b> = 2
+ }</td></tr>
+<tr class="separator:ab9024cb3c12e28d126a06aec400aec65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384e8ed47866fe059e3ad92b8d89d462"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xmlstorage_8h.html#a384e8ed47866fe059e3ad92b8d89d462">XMLStorage::WRITE_MODE</a> { <b>FORMAT_PLAIN</b>, 
+<a class="el" href="xmlstorage_8h.html#a384e8ed47866fe059e3ad92b8d89d462a6fc91ad7679a875b652e0bd6f710cd3a">XMLStorage::FORMAT_SMART</a>, 
+<a class="el" href="xmlstorage_8h.html#a384e8ed47866fe059e3ad92b8d89d462a80ae5c96d76425b4112e8f1395e3fbba">XMLStorage::FORMAT_ORIGINAL</a>, 
+<a class="el" href="xmlstorage_8h.html#a384e8ed47866fe059e3ad92b8d89d462aed36ca07a8158f58c46e6a7c1ecf3c83">XMLStorage::FORMAT_PRETTY</a>
+ }</td></tr>
+<tr class="separator:a384e8ed47866fe059e3ad92b8d89d462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad61b72de0d363937c9eb52cd9e2bb2b5"><td class="memItemLeft" align="right" valign="top"><a id="ad61b72de0d363937c9eb52cd9e2bb2b5"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>XMLStorage::get_xmlsym_end_utf8</b> (const char *p)</td></tr>
+<tr class="separator:ad61b72de0d363937c9eb52cd9e2bb2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5263a0e06dc978ac40c4dfcc215e851"><td class="memItemLeft" align="right" valign="top"><a id="ac5263a0e06dc978ac40c4dfcc215e851"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xmlstorage_8cpp.html#ac5263a0e06dc978ac40c4dfcc215e851">XMLStorage::EncodeXMLString</a> (const XS_String &amp;str, bool cdata)</td></tr>
+<tr class="memdesc:ac5263a0e06dc978ac40c4dfcc215e851"><td class="mdescLeft">&#160;</td><td class="mdescRight">encode XML string literals <br /></td></tr>
+<tr class="separator:ac5263a0e06dc978ac40c4dfcc215e851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2ead828244be01a4a5e4822b60eeb0"><td class="memItemLeft" align="right" valign="top"><a id="afe2ead828244be01a4a5e4822b60eeb0"></a>
+XS_String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xmlstorage_8cpp.html#afe2ead828244be01a4a5e4822b60eeb0">XMLStorage::DecodeXMLString</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:afe2ead828244be01a4a5e4822b60eeb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">decode XML string literals <br /></td></tr>
+<tr class="separator:afe2ead828244be01a4a5e4822b60eeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6283065f367b140bbf11b1485e1dcd78"><td class="memTemplParams" colspan="2"><a id="a6283065f367b140bbf11b1485e1dcd78"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6283065f367b140bbf11b1485e1dcd78"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>XMLStorage::read_option</b> (T &amp;var, const_XMLPos &amp;cfg, LPCXSSTR <a class="el" href="structkey.html">key</a>)</td></tr>
+<tr class="separator:a6283065f367b140bbf11b1485e1dcd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e0c748e4d92558fac7ba4337962364"><td class="memTemplParams" colspan="2"><a id="a83e0c748e4d92558fac7ba4337962364"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a83e0c748e4d92558fac7ba4337962364"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>XMLStorage::read_option</b> (int &amp;var, const_XMLPos &amp;cfg, LPCXSSTR <a class="el" href="structkey.html">key</a>)</td></tr>
+<tr class="separator:a83e0c748e4d92558fac7ba4337962364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>XMLStorage header file </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="file_a384e8ed47866fe059e3ad92b8d89d462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_a384e8ed47866fe059e3ad92b8d89d462">&#9670;&nbsp;</a></span>WRITE_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceenum.html">enum</a> <a class="el" href="xmlstorage_8h.html#a384e8ed47866fe059e3ad92b8d89d462">XMLStorage::WRITE_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a384e8ed47866fe059e3ad92b8d89d462a6fc91ad7679a875b652e0bd6f710cd3a"></a>FORMAT_SMART&#160;</td><td class="fielddoc"><p>write XML without any white space </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a384e8ed47866fe059e3ad92b8d89d462a80ae5c96d76425b4112e8f1395e3fbba"></a>FORMAT_ORIGINAL&#160;</td><td class="fielddoc"><p>preserve original white space and comments if present; pretty print otherwise </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a384e8ed47866fe059e3ad92b8d89d462aed36ca07a8158f58c46e6a7c1ecf3c83"></a>FORMAT_PRETTY&#160;</td><td class="fielddoc"><p>write XML stream preserving original white space and comments </p>
+<p>pretty print node to stream without preserving original white space </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

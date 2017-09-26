@@ -1,0 +1,116 @@
+\hypertarget{stencil_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/stencil.c 文件参考}
+\label{stencil_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/stencil.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/stencil.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{stencil_8c_a45e8bba2d108228ac99f830d0782a81d}{\+\_\+mesa\+\_\+\+Clear\+Stencil} (G\+Lint s)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{stencil_8c_a4ec34f3ed79d8a57156efecd779af218}{\+\_\+mesa\+\_\+\+Stencil\+Func} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{func}, G\+Lint ref, G\+Luint mask)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{stencil_8c_a7555f733f50cf98062d210f5a9c70ad8}{\+\_\+mesa\+\_\+\+Stencil\+Mask} (G\+Luint mask)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{stencil_8c_a99e190c3bfb426d1feeef24e50a37045}{\+\_\+mesa\+\_\+\+Stencil\+Op} (\hyperlink{interfacevoid}{G\+Lenum} fail, \hyperlink{interfacevoid}{G\+Lenum} zfail, \hyperlink{interfacevoid}{G\+Lenum} zpass)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{stencil_8c_a15a99e0840679fa9da759e80763a9976}{\+\_\+mesa\+\_\+update\+\_\+stencil} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{stencil_8c_ab6f41f16de80971a8e488831f617cf91}{\+\_\+mesa\+\_\+init\+\_\+stencil} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Stencil operations. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{stencil_8c_a45e8bba2d108228ac99f830d0782a81d}\label{stencil_8c_a45e8bba2d108228ac99f830d0782a81d}} 
+\index{stencil.\+c@{stencil.\+c}!\+\_\+mesa\+\_\+\+Clear\+Stencil@{\+\_\+mesa\+\_\+\+Clear\+Stencil}}
+\index{\+\_\+mesa\+\_\+\+Clear\+Stencil@{\+\_\+mesa\+\_\+\+Clear\+Stencil}!stencil.\+c@{stencil.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Clear\+Stencil()}{\_mesa\_ClearStencil()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Clear\+Stencil (\begin{DoxyParamCaption}\item[{G\+Lint}]{s }\end{DoxyParamCaption})}
+
+Set the clear value for the stencil buffer.
+
+
+\begin{DoxyParams}{参数}
+{\em s} & clear value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Clear\+Stencil().
+\end{DoxySeeAlso}
+Updates \hyperlink{structgl__stencil__attrib_afec9916b90cdd432302632e3f8e8aa2b}{gl\+\_\+stencil\+\_\+attrib\+::\+Clear}. On change flushes the vertices and notifies the driver via the \hyperlink{structdd__function__table_ae1cc680b898261ec9a25547884009527}{dd\+\_\+function\+\_\+table\+::\+Clear\+Stencil} callback. \mbox{\Hypertarget{stencil_8c_ab6f41f16de80971a8e488831f617cf91}\label{stencil_8c_ab6f41f16de80971a8e488831f617cf91}} 
+\index{stencil.\+c@{stencil.\+c}!\+\_\+mesa\+\_\+init\+\_\+stencil@{\+\_\+mesa\+\_\+init\+\_\+stencil}}
+\index{\+\_\+mesa\+\_\+init\+\_\+stencil@{\+\_\+mesa\+\_\+init\+\_\+stencil}!stencil.\+c@{stencil.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+stencil()}{\_mesa\_init\_stencil()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+stencil (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialize the context stipple state.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+Initializes \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Stencil attribute group. \mbox{\Hypertarget{stencil_8c_a4ec34f3ed79d8a57156efecd779af218}\label{stencil_8c_a4ec34f3ed79d8a57156efecd779af218}} 
+\index{stencil.\+c@{stencil.\+c}!\+\_\+mesa\+\_\+\+Stencil\+Func@{\+\_\+mesa\+\_\+\+Stencil\+Func}}
+\index{\+\_\+mesa\+\_\+\+Stencil\+Func@{\+\_\+mesa\+\_\+\+Stencil\+Func}!stencil.\+c@{stencil.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Stencil\+Func()}{\_mesa\_StencilFunc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Stencil\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{func,  }\item[{G\+Lint}]{ref,  }\item[{G\+Luint}]{mask }\end{DoxyParamCaption})}
+
+Set the function and reference value for stencil testing.
+
+
+\begin{DoxyParams}{参数}
+{\em func} & test function. \\
+\hline
+{\em ref} & reference value. \\
+\hline
+{\em mask} & bitmask.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Stencil\+Func().
+\end{DoxySeeAlso}
+Verifies the parameters and updates the respective values in \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Stencil. On change flushes the vertices and notifies the driver via the dd\+\_\+function\+\_\+table\+::\+Stencil\+Func callback. \mbox{\Hypertarget{stencil_8c_a7555f733f50cf98062d210f5a9c70ad8}\label{stencil_8c_a7555f733f50cf98062d210f5a9c70ad8}} 
+\index{stencil.\+c@{stencil.\+c}!\+\_\+mesa\+\_\+\+Stencil\+Mask@{\+\_\+mesa\+\_\+\+Stencil\+Mask}}
+\index{\+\_\+mesa\+\_\+\+Stencil\+Mask@{\+\_\+mesa\+\_\+\+Stencil\+Mask}!stencil.\+c@{stencil.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Stencil\+Mask()}{\_mesa\_StencilMask()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Stencil\+Mask (\begin{DoxyParamCaption}\item[{G\+Luint}]{mask }\end{DoxyParamCaption})}
+
+Set the stencil writing mask.
+
+
+\begin{DoxyParams}{参数}
+{\em mask} & bit-\/mask to enable/disable writing of individual bits in the stencil planes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Stencil\+Mask().
+\end{DoxySeeAlso}
+Updates \hyperlink{structgl__stencil__attrib_a1d8e770dacbcb8c3bcc302413065ff34}{gl\+\_\+stencil\+\_\+attrib\+::\+Write\+Mask}. On change flushes the vertices and notifies the driver via the dd\+\_\+function\+\_\+table\+::\+Stencil\+Mask callback. \mbox{\Hypertarget{stencil_8c_a99e190c3bfb426d1feeef24e50a37045}\label{stencil_8c_a99e190c3bfb426d1feeef24e50a37045}} 
+\index{stencil.\+c@{stencil.\+c}!\+\_\+mesa\+\_\+\+Stencil\+Op@{\+\_\+mesa\+\_\+\+Stencil\+Op}}
+\index{\+\_\+mesa\+\_\+\+Stencil\+Op@{\+\_\+mesa\+\_\+\+Stencil\+Op}!stencil.\+c@{stencil.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Stencil\+Op()}{\_mesa\_StencilOp()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Stencil\+Op (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{fail,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{zfail,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{zpass }\end{DoxyParamCaption})}
+
+Set the stencil test actions.
+
+
+\begin{DoxyParams}{参数}
+{\em fail} & action to take when stencil test fails. \\
+\hline
+{\em zfail} & action to take when stencil test passes, but depth test fails. \\
+\hline
+{\em zpass} & action to take when stencil test passes and the depth test passes (or depth testing is not enabled).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Stencil\+Op().
+\end{DoxySeeAlso}
+Verifies the parameters and updates the respective fields in \+\_\+\+\_\+struct gl\+\_\+context\+Rec\+::\+Stencil. On change flushes the vertices and notifies the driver via the dd\+\_\+function\+\_\+table\+::\+Stencil\+Op callback. \mbox{\Hypertarget{stencil_8c_a15a99e0840679fa9da759e80763a9976}\label{stencil_8c_a15a99e0840679fa9da759e80763a9976}} 
+\index{stencil.\+c@{stencil.\+c}!\+\_\+mesa\+\_\+update\+\_\+stencil@{\+\_\+mesa\+\_\+update\+\_\+stencil}}
+\index{\+\_\+mesa\+\_\+update\+\_\+stencil@{\+\_\+mesa\+\_\+update\+\_\+stencil}!stencil.\+c@{stencil.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+update\+\_\+stencil()}{\_mesa\_update\_stencil()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+update\+\_\+stencil (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Update derived stencil state. 

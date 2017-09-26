@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: CDMAMemoryManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_c_d_m_a_memory_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CDMAMemoryManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 CDMAMemoryManager 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_c_d_m_a_memory_manager.png" usemap="#CDMAMemoryManager_map" alt=""/>
+  <map id="CDMAMemoryManager_map" name="CDMAMemoryManager_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a532ec652e46271a15180b50abd73e7d7"><td class="memItemLeft" align="right" valign="top"><a id="a532ec652e46271a15180b50abd73e7d7"></a>
+STDMETHODIMP&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> (REFIID InterfaceId, <a class="el" href="interfacevoid.html">PVOID</a> *Interface)</td></tr>
+<tr class="separator:a532ec652e46271a15180b50abd73e7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a380a44e4ddfe860dc870eb50c485c"><td class="memItemLeft" align="right" valign="top"><a id="a76a380a44e4ddfe860dc870eb50c485c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>STDMETHODIMP_</b> (ULONG) AddRef()</td></tr>
+<tr class="separator:a76a380a44e4ddfe860dc870eb50c485c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc7fd8808a907fb41c70b446b626684"><td class="memItemLeft" align="right" valign="top"><a id="a6cc7fd8808a907fb41c70b446b626684"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>STDMETHODIMP_</b> (ULONG) Release()</td></tr>
+<tr class="separator:a6cc7fd8808a907fb41c70b446b626684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9450ef0b969bf809da7c2ed554777e7b"><td class="memItemLeft" align="right" valign="top"><a id="a9450ef0b969bf809da7c2ed554777e7b"></a>
+virtual NTSTATUS&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (IN PUSBHARDWAREDEVICE Device, IN PKSPIN_LOCK Lock, IN ULONG DmaBufferSize, IN <a class="el" href="interfacevoid.html">PVOID</a> VirtualBase, IN <a class="el" href="union___l_a_r_g_e___i_n_t_e_g_e_r.html">PHYSICAL_ADDRESS</a> PhysicalAddress, IN ULONG DefaultBlockSize)</td></tr>
+<tr class="separator:a9450ef0b969bf809da7c2ed554777e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17891051da867fde7fffd7d619bc3c9"><td class="memItemLeft" align="right" valign="top"><a id="ab17891051da867fde7fffd7d619bc3c9"></a>
+virtual NTSTATUS&#160;</td><td class="memItemRight" valign="bottom"><b>Allocate</b> (IN ULONG Size, OUT <a class="el" href="interfacevoid.html">PVOID</a> *OutVirtualBase, OUT <a class="el" href="union___l_a_r_g_e___i_n_t_e_g_e_r.html">PPHYSICAL_ADDRESS</a> OutPhysicalAddress)</td></tr>
+<tr class="separator:ab17891051da867fde7fffd7d619bc3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446fddf53b1bbf01994cc539f2542559"><td class="memItemLeft" align="right" valign="top"><a id="a446fddf53b1bbf01994cc539f2542559"></a>
+virtual NTSTATUS&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> (IN <a class="el" href="interfacevoid.html">PVOID</a> VirtualBase, IN ULONG Size)</td></tr>
+<tr class="separator:a446fddf53b1bbf01994cc539f2542559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c18a24c0119afa83daa7b8e2c386ad1"><td class="memItemLeft" align="right" valign="top"><a id="a2c18a24c0119afa83daa7b8e2c386ad1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CDMAMemoryManager</b> (<a class="el" href="interface_i_unknown.html">IUnknown</a> *OuterUnknown)</td></tr>
+<tr class="separator:a2c18a24c0119afa83daa7b8e2c386ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a1c101dcc4b2e553eb495578d5b53f967"><td class="memItemLeft" align="right" valign="top"><a id="a1c101dcc4b2e553eb495578d5b53f967"></a>
+LONG&#160;</td><td class="memItemRight" valign="bottom"><b>m_Ref</b></td></tr>
+<tr class="separator:a1c101dcc4b2e553eb495578d5b53f967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf989b40950d7e32b49cbe8edf371677"><td class="memItemLeft" align="right" valign="top"><a id="abf989b40950d7e32b49cbe8edf371677"></a>
+PUSBHARDWAREDEVICE&#160;</td><td class="memItemRight" valign="bottom"><b>m_Device</b></td></tr>
+<tr class="separator:abf989b40950d7e32b49cbe8edf371677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8f6e2d51571c87c634f8ef1164fc14"><td class="memItemLeft" align="right" valign="top"><a id="a4f8f6e2d51571c87c634f8ef1164fc14"></a>
+PKSPIN_LOCK&#160;</td><td class="memItemRight" valign="bottom"><b>m_Lock</b></td></tr>
+<tr class="separator:a4f8f6e2d51571c87c634f8ef1164fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c18c62d87c38ee3c9af5fd8039f5b6"><td class="memItemLeft" align="right" valign="top"><a id="a24c18c62d87c38ee3c9af5fd8039f5b6"></a>
+LONG&#160;</td><td class="memItemRight" valign="bottom"><b>m_DmaBufferSize</b></td></tr>
+<tr class="separator:a24c18c62d87c38ee3c9af5fd8039f5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b62060210cec4595b4605ae2ba69f4"><td class="memItemLeft" align="right" valign="top"><a id="a46b62060210cec4595b4605ae2ba69f4"></a>
+<a class="el" href="interfacevoid.html">PVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_VirtualBase</b></td></tr>
+<tr class="separator:a46b62060210cec4595b4605ae2ba69f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad8e93d116a6b66fccff76cdbb87e16"><td class="memItemLeft" align="right" valign="top"><a id="a2ad8e93d116a6b66fccff76cdbb87e16"></a>
+<a class="el" href="union___l_a_r_g_e___i_n_t_e_g_e_r.html">PHYSICAL_ADDRESS</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PhysicalAddress</b></td></tr>
+<tr class="separator:a2ad8e93d116a6b66fccff76cdbb87e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa22dcb26c4c6233770a96b0c07cdfb"><td class="memItemLeft" align="right" valign="top"><a id="a8aa22dcb26c4c6233770a96b0c07cdfb"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>m_BlockSize</b></td></tr>
+<tr class="separator:a8aa22dcb26c4c6233770a96b0c07cdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd9037e1baada7723832d0925cd05d7"><td class="memItemLeft" align="right" valign="top"><a id="abdd9037e1baada7723832d0925cd05d7"></a>
+PULONG&#160;</td><td class="memItemRight" valign="bottom"><b>m_BitmapBuffer</b></td></tr>
+<tr class="separator:abdd9037e1baada7723832d0925cd05d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42d005c7c8b3e0a938a3028b262a0f9"><td class="memItemLeft" align="right" valign="top"><a id="ac42d005c7c8b3e0a938a3028b262a0f9"></a>
+<a class="el" href="struct___r_t_l___b_i_t_m_a_p.html">RTL_BITMAP</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Bitmap</b></td></tr>
+<tr class="separator:ac42d005c7c8b3e0a938a3028b262a0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/lib/drivers/libusb/memory_manager.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

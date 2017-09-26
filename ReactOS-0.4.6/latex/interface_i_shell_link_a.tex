@@ -1,0 +1,94 @@
+\hypertarget{interface_i_shell_link_a}{}\section{I\+Shell\+Link\+A接口 参考}
+\label{interface_i_shell_link_a}\index{I\+Shell\+LinkA@{I\+Shell\+LinkA}}
+类 I\+Shell\+LinkA 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_shell_link_a}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a2198d8d4e75e3f24085311e20924ec1e}\label{interface_i_shell_link_a_a2198d8d4e75e3f24085311e20924ec1e}} 
+enum {\bfseries S\+L\+R\+\_\+\+F\+L\+A\+GS} \{ \newline
+{\bfseries S\+L\+R\+\_\+\+N\+O\+\_\+\+UI} = 0x0001, 
+{\bfseries S\+L\+R\+\_\+\+A\+N\+Y\+\_\+\+M\+A\+T\+CH} = 0x0002, 
+{\bfseries S\+L\+R\+\_\+\+U\+P\+D\+A\+TE} = 0x0004, 
+{\bfseries S\+L\+R\+\_\+\+N\+O\+U\+P\+D\+A\+TE} = 0x0008, 
+\newline
+{\bfseries S\+L\+R\+\_\+\+N\+O\+S\+E\+A\+R\+CH} = 0x0010, 
+{\bfseries S\+L\+R\+\_\+\+N\+O\+T\+R\+A\+CK} = 0x0020, 
+{\bfseries S\+L\+R\+\_\+\+N\+O\+L\+I\+N\+K\+I\+N\+FO} = 0x0040, 
+{\bfseries S\+L\+R\+\_\+\+I\+N\+V\+O\+K\+E\+\_\+\+M\+SI} = 0x0080, 
+\newline
+{\bfseries S\+L\+R\+\_\+\+N\+O\+\_\+\+U\+I\+\_\+\+W\+I\+T\+H\+\_\+\+M\+S\+G\+\_\+\+P\+U\+MP} = 0x0101
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_af88b37acb794ce0d21db34bf2eac05e1}\label{interface_i_shell_link_a_af88b37acb794ce0d21db34bf2eac05e1}} 
+enum {\bfseries S\+L\+G\+P\+\_\+\+F\+L\+A\+GS} \{ {\bfseries S\+L\+G\+P\+\_\+\+S\+H\+O\+R\+T\+P\+A\+TH} = 0x0001, 
+{\bfseries S\+L\+G\+P\+\_\+\+U\+N\+C\+P\+R\+I\+O\+R\+I\+TY} = 0x0002, 
+{\bfseries S\+L\+G\+P\+\_\+\+R\+A\+W\+P\+A\+TH} = 0x0004
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a39f61205c0352dbd8d60c6cbbc35930c}\label{interface_i_shell_link_a_a39f61205c0352dbd8d60c6cbbc35930c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Path} (\mbox{[}out, size\+\_\+is(cch)\mbox{]} L\+P\+S\+TR psz\+File, \mbox{[}in\mbox{]} int cch, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct_w_i_n32___f_i_n_d___d_a_t_a_a}{W\+I\+N32\+\_\+\+F\+I\+N\+D\+\_\+\+D\+A\+T\+AA} $\ast$pfd, \mbox{[}in\mbox{]} D\+W\+O\+RD f\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a7089cc784350b3a8fe15ef9f508ab43a}\label{interface_i_shell_link_a_a7089cc784350b3a8fe15ef9f508ab43a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+I\+D\+List} (\mbox{[}out\mbox{]} L\+P\+I\+T\+E\+M\+I\+D\+L\+I\+ST $\ast$ppidl)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a708dd593d255147a3207a9daf727be41}\label{interface_i_shell_link_a_a708dd593d255147a3207a9daf727be41}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+I\+D\+List} (\mbox{[}in\mbox{]} L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a430c1d87198396dea6d8cc32d1e76d52}\label{interface_i_shell_link_a_a430c1d87198396dea6d8cc32d1e76d52}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Description} (\mbox{[}out, size\+\_\+is(cch)\mbox{]} L\+P\+S\+TR psz\+Name, \mbox{[}in\mbox{]} int cch)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a891eb396593c044d80c9dbe9100059e4}\label{interface_i_shell_link_a_a891eb396593c044d80c9dbe9100059e4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Description} (\mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_af77af8f207c7465b3e5ec8b86e7352a7}\label{interface_i_shell_link_a_af77af8f207c7465b3e5ec8b86e7352a7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Working\+Directory} (\mbox{[}out, size\+\_\+is(cch)\mbox{]} L\+P\+S\+TR psz\+Dir, \mbox{[}in\mbox{]} int cch)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_aeccccb06f2c6e8b88e714ab662279283}\label{interface_i_shell_link_a_aeccccb06f2c6e8b88e714ab662279283}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Working\+Directory} (\mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Dir)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_afbbb879ce8d25cd63c0d6404a25afa8c}\label{interface_i_shell_link_a_afbbb879ce8d25cd63c0d6404a25afa8c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Arguments} (\mbox{[}out, size\+\_\+is(cch)\mbox{]} L\+P\+S\+TR psz\+Args, \mbox{[}in\mbox{]} int cch)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a2c25c88a3b7be4c25281c9c34dd4948d}\label{interface_i_shell_link_a_a2c25c88a3b7be4c25281c9c34dd4948d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Arguments} (\mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Args)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_ad5fc9007c9d52ad0ad1021125a90f4ab}\label{interface_i_shell_link_a_ad5fc9007c9d52ad0ad1021125a90f4ab}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Hotkey} (\mbox{[}out\mbox{]} W\+O\+RD $\ast$pw\+Hotkey)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_afec156d4c608b68f1db0b29a0102d9db}\label{interface_i_shell_link_a_afec156d4c608b68f1db0b29a0102d9db}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Hotkey} (\mbox{[}in\mbox{]} W\+O\+RD w\+Hotkey)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_ac84284ebaeebb15dd7df31d8dfe5d2a2}\label{interface_i_shell_link_a_ac84284ebaeebb15dd7df31d8dfe5d2a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Show\+Cmd} (\mbox{[}out\mbox{]} int $\ast$pi\+Show\+Cmd)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a6ceb3faa22d8b2619b42254efde754ec}\label{interface_i_shell_link_a_a6ceb3faa22d8b2619b42254efde754ec}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Show\+Cmd} (\mbox{[}in\mbox{]} int i\+Show\+Cmd)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a844c0ef92fd8202b60c886b279c5ca7e}\label{interface_i_shell_link_a_a844c0ef92fd8202b60c886b279c5ca7e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Icon\+Location} (\mbox{[}out, size\+\_\+is(cch)\mbox{]} L\+P\+S\+TR psz\+Icon\+Path, \mbox{[}in\mbox{]} int cch, \mbox{[}out\mbox{]} int $\ast$pi\+Icon)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a662df211550ed613851da76c403ddd65}\label{interface_i_shell_link_a_a662df211550ed613851da76c403ddd65}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Icon\+Location} (\mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Icon\+Path, \mbox{[}in\mbox{]} int i\+Icon)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a38be7fa09c11620ad77bfce3375f565f}\label{interface_i_shell_link_a_a38be7fa09c11620ad77bfce3375f565f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Relative\+Path} (\mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Path\+Rel, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reserved)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a72bf71aff34ccf6013bb86590ecd3d4e}\label{interface_i_shell_link_a_a72bf71aff34ccf6013bb86590ecd3d4e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Resolve} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} D\+W\+O\+RD f\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_shell_link_a_a155af4163adb72e749410b5fdf0b1f38}\label{interface_i_shell_link_a_a155af4163adb72e749410b5fdf0b1f38}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Path} (\mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+File)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

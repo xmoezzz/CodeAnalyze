@@ -1,0 +1,193 @@
+\hypertarget{class_c_hci}{}\section{C\+Hci类 参考}
+\label{class_c_hci}\index{C\+Hci@{C\+Hci}}
+类 C\+Hci 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_hci}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_afe226701fc5e2f46b43d4fa34168ecdd}\label{class_c_hci_afe226701fc5e2f46b43d4fa34168ecdd}} 
+virtual D\+W\+O\+RD {\bfseries Start\+Event\+Listener} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a0b99c2da2ab8553edd461967981700bb}\label{class_c_hci_a0b99c2da2ab8553edd461967981700bb}} 
+virtual D\+W\+O\+RD {\bfseries Stop\+Event\+Listener} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a75c4ca0dd2c7b222f7442509fc59a24c}\label{class_c_hci_a75c4ca0dd2c7b222f7442509fc59a24c}} 
+virtual D\+W\+O\+RD {\bfseries On\+Event} (\hyperlink{struct_f_b_t___h_c_i___e_v_e_n_t___h_e_a_d_e_r}{P\+F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+H\+E\+A\+D\+ER} p\+Event, D\+W\+O\+RD Length)
+\item 
+\mbox{\Hypertarget{class_c_hci_aa09bf4fd9dfb3e8ec46a78266e295d37}\label{class_c_hci_aa09bf4fd9dfb3e8ec46a78266e295d37}} 
+virtual D\+W\+O\+RD {\bfseries On\+Command\+Complete} (B\+Y\+TE Num\+H\+C\+I\+Command\+Packets, U\+S\+H\+O\+RT Command\+Opcode, B\+Y\+TE $\ast$Parameters, D\+W\+O\+RD Parameter\+Length)
+\item 
+\mbox{\Hypertarget{class_c_hci_a4613960747fbb538be3a776213e8fe70}\label{class_c_hci_a4613960747fbb538be3a776213e8fe70}} 
+virtual D\+W\+O\+RD {\bfseries On\+Command\+Status} (B\+Y\+TE Status, B\+Y\+TE Num\+H\+C\+I\+Command\+Packets, U\+S\+H\+O\+RT Command\+Opcode)
+\item 
+\mbox{\Hypertarget{class_c_hci_af60aa66b4510d8d9acc399848601fb38}\label{class_c_hci_af60aa66b4510d8d9acc399848601fb38}} 
+virtual D\+W\+O\+RD {\bfseries On\+Connection\+Request} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, U\+L\+O\+NG Class\+Of\+Device\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Link\+Type)
+\item 
+\mbox{\Hypertarget{class_c_hci_a3260c73f6f766862a29a719677784b43}\label{class_c_hci_a3260c73f6f766862a29a719677784b43}} 
+virtual D\+W\+O\+RD {\bfseries On\+Connection\+Complete} (B\+Y\+TE Status, U\+S\+H\+O\+RT Connection\+Handle, B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Link\+Type, B\+Y\+TE Encryption\+Mode)
+\item 
+\mbox{\Hypertarget{class_c_hci_ae5cd1ad7982dc8ebb0dcbf25b7931d53}\label{class_c_hci_ae5cd1ad7982dc8ebb0dcbf25b7931d53}} 
+virtual D\+W\+O\+RD {\bfseries On\+Disconnection\+Complete} (B\+Y\+TE Status, U\+S\+H\+O\+RT Connection\+Handle, B\+Y\+TE Reason)
+\item 
+\mbox{\Hypertarget{class_c_hci_afa108374cc401eccbfe662030faee4b7}\label{class_c_hci_afa108374cc401eccbfe662030faee4b7}} 
+virtual D\+W\+O\+RD {\bfseries On\+Inquiry\+Complete} (B\+Y\+TE Status, B\+Y\+TE Num\+Responses)
+\item 
+\mbox{\Hypertarget{class_c_hci_ad1e52dcf792f8cc2c112504b33ed92e8}\label{class_c_hci_ad1e52dcf792f8cc2c112504b33ed92e8}} 
+virtual D\+W\+O\+RD {\bfseries On\+Inquiry\+Result} (B\+Y\+TE Num\+Responses, B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Page\+Scan\+Repetition\+Mode\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Page\+Scan\+Period\+Mode\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Page\+Scan\+Mode\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Class\+Of\+Device\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+I\+ZE\mbox{]}, U\+S\+H\+O\+RT Clock\+Offset\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_ac34d7b0ddd7aedc0e0b2fc579fd9f355}\label{class_c_hci_ac34d7b0ddd7aedc0e0b2fc579fd9f355}} 
+virtual D\+W\+O\+RD {\bfseries On\+Remote\+Name\+Request\+Complete} (B\+Y\+TE Status, B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Remote\+Name\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_ad19b7bda76da41c0fc01c01886522d9f}\label{class_c_hci_ad19b7bda76da41c0fc01c01886522d9f}} 
+virtual D\+W\+O\+RD {\bfseries On\+Role\+Change} (B\+Y\+TE Status, B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Role)
+\item 
+\mbox{\Hypertarget{class_c_hci_a63f66d3f8f50d27cc8adcb5439e5dbe2}\label{class_c_hci_a63f66d3f8f50d27cc8adcb5439e5dbe2}} 
+virtual D\+W\+O\+RD {\bfseries On\+P\+I\+N\+Code\+Request} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_aad9badc542d41de9aa60cf6d6b20fc8c}\label{class_c_hci_aad9badc542d41de9aa60cf6d6b20fc8c}} 
+virtual D\+W\+O\+RD {\bfseries On\+Link\+Key\+Notification} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Link\+Key\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+L\+I\+N\+K\+\_\+\+K\+E\+Y\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a52532ed8bcbee4b1bfa1a8727abb4cb3}\label{class_c_hci_a52532ed8bcbee4b1bfa1a8727abb4cb3}} 
+virtual D\+W\+O\+RD {\bfseries On\+Link\+Key\+Request} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a82359c5a7c7873de3fc9ec7575dcab94}\label{class_c_hci_a82359c5a7c7873de3fc9ec7575dcab94}} 
+virtual D\+W\+O\+RD {\bfseries On\+Authentication\+Complete} (B\+Y\+TE Status, U\+S\+H\+O\+RT Connection\+Handle)
+\item 
+\mbox{\Hypertarget{class_c_hci_a08275af38a127795ecd4df4efa6cbfd4}\label{class_c_hci_a08275af38a127795ecd4df4efa6cbfd4}} 
+virtual D\+W\+O\+RD {\bfseries On\+Read\+Local\+Name\+Complete} (B\+Y\+TE Status, B\+Y\+TE \hyperlink{struct_name_rec__}{Name}\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a717f66afa8d4640b7b05182a0143c6f8}\label{class_c_hci_a717f66afa8d4640b7b05182a0143c6f8}} 
+virtual D\+W\+O\+RD {\bfseries On\+Unknown} (\hyperlink{struct_f_b_t___h_c_i___e_v_e_n_t___h_e_a_d_e_r}{P\+F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+H\+E\+A\+D\+ER} p\+Event, D\+W\+O\+RD Length)
+\item 
+\mbox{\Hypertarget{class_c_hci_a525931bf135ebc73ba14f74e8a2a4e85}\label{class_c_hci_a525931bf135ebc73ba14f74e8a2a4e85}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Reset} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a06c9a90033f288c9d66df68583fc939b}\label{class_c_hci_a06c9a90033f288c9d66df68583fc939b}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Inquiry} (U\+L\+O\+NG L\+AP, B\+Y\+TE Inquiry\+Length, B\+Y\+TE Num\+Responses)
+\item 
+\mbox{\Hypertarget{class_c_hci_a75a2e34086fe4897657c3bc1173485ee}\label{class_c_hci_a75a2e34086fe4897657c3bc1173485ee}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Inquiry\+Cancel} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a0105cfc4545188e61515d8c2c5ba8b98}\label{class_c_hci_a0105cfc4545188e61515d8c2c5ba8b98}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Read\+B\+D\+A\+D\+DR} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a87c8ccae16cce2fe484274a0510e4858}\label{class_c_hci_a87c8ccae16cce2fe484274a0510e4858}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Write\+Scan\+Enable} (B\+Y\+TE Scan\+Enable)
+\item 
+\mbox{\Hypertarget{class_c_hci_ab0d81d11ba7c55b1ac051e5f4662e09a}\label{class_c_hci_ab0d81d11ba7c55b1ac051e5f4662e09a}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Write\+Authentication\+Enable} (B\+Y\+TE Scan\+Enable)
+\item 
+\mbox{\Hypertarget{class_c_hci_a9f0bce59a383e7af633e76c3be00a88c}\label{class_c_hci_a9f0bce59a383e7af633e76c3be00a88c}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Set\+Event\+Filter} (B\+Y\+TE Filter\+Type, B\+Y\+TE Filter\+Condition\+Type, B\+Y\+TE Condition\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+M\+A\+X\+\_\+\+C\+O\+N\+D\+I\+T\+I\+O\+N\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Condition\+Bytes)
+\item 
+\mbox{\Hypertarget{class_c_hci_afb82a50bc94f3d8c61ce68541d6b57e8}\label{class_c_hci_afb82a50bc94f3d8c61ce68541d6b57e8}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Read\+Class\+Of\+Device} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a91649719e6044574f412b279adb2e73b}\label{class_c_hci_a91649719e6044574f412b279adb2e73b}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Write\+Class\+Of\+Device} (B\+Y\+TE Class\+Of\+Device\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a32047f95127df67529fc13ea9e1d3192}\label{class_c_hci_a32047f95127df67529fc13ea9e1d3192}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Create\+Connection} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, U\+S\+H\+O\+RT Packet\+Type, B\+Y\+TE Page\+Scan\+Repetition\+Mode, B\+Y\+TE Page\+Scan\+Mode, U\+S\+H\+O\+RT Clock\+Offset, B\+Y\+TE Allow\+Role\+Switch)
+\item 
+\mbox{\Hypertarget{class_c_hci_a4d22d0264d21745a92bc5b5665f5c426}\label{class_c_hci_a4d22d0264d21745a92bc5b5665f5c426}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Accept\+Connection\+Request} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Role\+Switch)
+\item 
+\mbox{\Hypertarget{class_c_hci_a6769ed07d5d38804bee139d5649c95e2}\label{class_c_hci_a6769ed07d5d38804bee139d5649c95e2}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Disconnect} (U\+S\+H\+O\+RT Connection\+Handle, B\+Y\+TE Reason)
+\item 
+\mbox{\Hypertarget{class_c_hci_af84ce5aef29ca243f5fb0ee5ebdf7257}\label{class_c_hci_af84ce5aef29ca243f5fb0ee5ebdf7257}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Write\+Link\+Supervision\+Timeout} (U\+S\+H\+O\+RT Connection\+Handle, U\+S\+H\+O\+RT Link\+Supervision\+Timeout)
+\item 
+\mbox{\Hypertarget{class_c_hci_a1458ac6ef3f865bb625fae37fc23d2e4}\label{class_c_hci_a1458ac6ef3f865bb625fae37fc23d2e4}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Write\+Page\+Timeout} (U\+S\+H\+O\+RT Page\+Timeout)
+\item 
+\mbox{\Hypertarget{class_c_hci_a414eac312911df2586d251d293267d66}\label{class_c_hci_a414eac312911df2586d251d293267d66}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Remote\+Name\+Request} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Page\+Scan\+Repetition\+Mode, B\+Y\+TE Page\+Scan\+Mode, U\+S\+H\+O\+RT Clock\+Offset)
+\item 
+\mbox{\Hypertarget{class_c_hci_afd9a81bacbad802b473d2326b5829677}\label{class_c_hci_afd9a81bacbad802b473d2326b5829677}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Read\+Local\+Name} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a01ee5b6409953431a80cb4c14ef87817}\label{class_c_hci_a01ee5b6409953431a80cb4c14ef87817}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Change\+Local\+Name} (B\+Y\+TE \hyperlink{struct_name_rec__}{Name}\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_afc131196dd7f3ff8ed28eb4c8918b4d0}\label{class_c_hci_afc131196dd7f3ff8ed28eb4c8918b4d0}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Switch\+Role} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Role)
+\item 
+\mbox{\Hypertarget{class_c_hci_acce3363d9ebb8e86069f4c768dd90bc6}\label{class_c_hci_acce3363d9ebb8e86069f4c768dd90bc6}} 
+virtual D\+W\+O\+RD {\bfseries Send\+P\+I\+N\+Code\+Request\+Reply} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE P\+I\+N\+Code\+Length, B\+Y\+TE P\+I\+N\+Code\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+P\+I\+N\+\_\+\+C\+O\+D\+E\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a76bb7bd3265296b336b3a6b24ced6f03}\label{class_c_hci_a76bb7bd3265296b336b3a6b24ced6f03}} 
+virtual D\+W\+O\+RD {\bfseries Send\+P\+I\+N\+Code\+Request\+Negative\+Reply} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a4502c6a0dbb627c94b7a3d29dc79fbb6}\label{class_c_hci_a4502c6a0dbb627c94b7a3d29dc79fbb6}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Link\+Key\+Request\+Reply} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE Link\+Key\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+L\+I\+N\+K\+\_\+\+K\+E\+Y\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a8cd0354d3d557ef333a4814bf84cd314}\label{class_c_hci_a8cd0354d3d557ef333a4814bf84cd314}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Link\+Key\+Request\+Negative\+Reply} (B\+Y\+TE B\+D\+\_\+\+A\+D\+DR\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+\mbox{\Hypertarget{class_c_hci_a9ee011f808bb7b9897f0451bd08a0b13}\label{class_c_hci_a9ee011f808bb7b9897f0451bd08a0b13}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Read\+Local\+Version\+Information} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_hci_a7432749b2e8e52862558eb855346e437}\label{class_c_hci_a7432749b2e8e52862558eb855346e437}} 
+D\+W\+O\+RD {\bfseries Compare\+B\+D\+A\+D\+D\+Rs} (B\+Y\+TE B\+D\+\_\+\+A\+D\+D\+R1\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]}, B\+Y\+TE B\+D\+\_\+\+A\+D\+D\+R2\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+B\+D\+A\+D\+D\+R\+\_\+\+S\+I\+ZE\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_aa43095ff3d49124347184aec9fba74a7}\label{class_c_hci_aa43095ff3d49124347184aec9fba74a7}} 
+static L\+P\+C\+T\+S\+TR {\bfseries Get\+Event\+Text} (B\+Y\+TE \hyperlink{struct_event}{Event})
+\item 
+\mbox{\Hypertarget{class_c_hci_a74865dea05f781e40a01939642663712}\label{class_c_hci_a74865dea05f781e40a01939642663712}} 
+static L\+P\+C\+T\+S\+TR {\bfseries Get\+Status\+Text} (B\+Y\+TE Status)
+\item 
+\mbox{\Hypertarget{class_c_hci_aef574826467070e2df1728aa79f31b78}\label{class_c_hci_aef574826467070e2df1728aa79f31b78}} 
+static L\+P\+C\+T\+S\+TR {\bfseries Get\+Manufacturer\+Name} (U\+S\+H\+O\+RT Company)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_ad85efac0efdd4c47276c85d70fbabbbf}\label{class_c_hci_ad85efac0efdd4c47276c85d70fbabbbf}} 
+virtual D\+W\+O\+RD {\bfseries Send\+Hci\+Command} (\hyperlink{struct_f_b_t___h_c_i___c_m_d___h_e_a_d_e_r}{P\+F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+C\+M\+D\+\_\+\+H\+E\+A\+D\+ER} lp\+Command, D\+W\+O\+RD dw\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_c_hci_aa825794e3ecb082355b04453635c2684}\label{class_c_hci_aa825794e3ecb082355b04453635c2684}} 
+D\+W\+O\+RD {\bfseries Send\+Listen\+For\+Event} (\hyperlink{struct___o_v_e_r_l_a_p_p_e_d}{O\+V\+E\+R\+L\+A\+P\+P\+ED} $\ast$p\+Overlapped, B\+Y\+TE $\ast$p\+Event\+Buffer)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_aa1984e11e64c4301e9445aa4ede978fa}\label{class_c_hci_aa1984e11e64c4301e9445aa4ede978fa}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Stop\+Listening\+Event}
+\item 
+\mbox{\Hypertarget{class_c_hci_ac1e49fa2b1aa3397d568e77c0c8fb3d8}\label{class_c_hci_ac1e49fa2b1aa3397d568e77c0c8fb3d8}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Listener\+Ready\+Event}
+\item 
+\mbox{\Hypertarget{class_c_hci_aeee6d75bfbabbaa5675cb8aa11e7f0a5}\label{class_c_hci_aeee6d75bfbabbaa5675cb8aa11e7f0a5}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Listener\+Thread}
+\item 
+\mbox{\Hypertarget{class_c_hci_a6dab9ce087aa0799648c8e11d6e0f135}\label{class_c_hci_a6dab9ce087aa0799648c8e11d6e0f135}} 
+D\+W\+O\+RD {\bfseries m\+\_\+dw\+Listener\+Thread\+Id}
+\item 
+\mbox{\Hypertarget{class_c_hci_a77e1b61e4fa5e01bb9a08e24b3b54bbc}\label{class_c_hci_a77e1b61e4fa5e01bb9a08e24b3b54bbc}} 
+\hyperlink{struct___o_v_e_r_l_a_p_p_e_d}{O\+V\+E\+R\+L\+A\+P\+P\+ED} {\bfseries m\+\_\+\+Overlappeds} \mbox{[}H\+C\+I\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+O\+V\+E\+R\+L\+A\+P\+P\+E\+D\+\_\+\+L\+I\+S\+T\+E\+NS\mbox{]}
+\item 
+\mbox{\Hypertarget{class_c_hci_a6ee3f62c14066ad3d34fbe6b4f29b351}\label{class_c_hci_a6ee3f62c14066ad3d34fbe6b4f29b351}} 
+B\+Y\+TE {\bfseries m\+\_\+p\+Event\+Buffers} \mbox{[}H\+C\+I\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+O\+V\+E\+R\+L\+A\+P\+P\+E\+D\+\_\+\+L\+I\+S\+T\+E\+NS\mbox{]}\mbox{[}F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_hci_a3aa7fb8a4530e8f15c775ee43b8703e8}\label{class_c_hci_a3aa7fb8a4530e8f15c775ee43b8703e8}} 
+static friend D\+W\+O\+RD C\+A\+L\+L\+B\+A\+CK {\bfseries Listener} (\hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Context)
+\item 
+\mbox{\Hypertarget{class_c_hci_ae0d644fa476312d54b6007e725871cfb}\label{class_c_hci_ae0d644fa476312d54b6007e725871cfb}} 
+static friend D\+W\+O\+RD {\bfseries Event\+Handler} (\hyperlink{struct_f_b_t___h_c_i___e_v_e_n_t___h_e_a_d_e_r}{P\+F\+B\+T\+\_\+\+H\+C\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+H\+E\+A\+D\+ER} p\+Event, D\+W\+O\+RD Length)
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/bluetooth/fbtusb/include/fbthci.\+h\end{DoxyCompactItemize}

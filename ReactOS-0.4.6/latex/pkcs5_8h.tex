@@ -1,0 +1,158 @@
+\hypertarget{pkcs5_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/pkcs5.h 文件参考}
+\label{pkcs5_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/pkcs5.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/pkcs5.\+h}}
+
+
+P\+K\+CS\#5 functions  
+
+
+{\ttfamily \#include \char`\"{}asn1.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}md.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs5_8h_a12ca62fa36fecf6a6d9d9218601255f7}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}~-\/0x2f80
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs5_8h_ab1258962a0e536ca372ee144565f108a}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}~-\/0x2f00
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs5_8h_a2162372c89339c4a6da1b9d01e08ee90}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}~-\/0x2e80
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs5_8h_adb5b742465ef7f4fb9f282880ceecfeb}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}~-\/0x2e00
+\item 
+\mbox{\Hypertarget{pkcs5_8h_a306c6ad661f0f626dc76769571c84ad1}\label{pkcs5_8h_a306c6ad661f0f626dc76769571c84ad1}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S5\+\_\+\+D\+E\+C\+R\+Y\+PT}~0
+\item 
+\mbox{\Hypertarget{pkcs5_8h_a8405a6ac15d294e3d9f5efb48284a4ca}\label{pkcs5_8h_a8405a6ac15d294e3d9f5efb48284a4ca}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S5\+\_\+\+E\+N\+C\+R\+Y\+PT}~1
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pkcs5_8h_aaeb7b4b406e07afe3d8aa807a30d28cd}{mbedtls\+\_\+pkcs5\+\_\+pbes2} (const \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$pbe\+\_\+params, int \hyperlink{interfacevoid}{mode}, const unsigned char $\ast$pwd, size\+\_\+t pwdlen, const unsigned char $\ast$data, size\+\_\+t datalen, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em P\+K\+CS\#5 P\+B\+E\+S2 function \end{DoxyCompactList}\item 
+int \hyperlink{pkcs5_8h_a73ec933de2a4f010604b525640338b1e}{mbedtls\+\_\+pkcs5\+\_\+pbkdf2\+\_\+hmac} (\hyperlink{structmbedtls__md__context__t}{mbedtls\+\_\+md\+\_\+context\+\_\+t} $\ast$ctx, const unsigned char $\ast$password, size\+\_\+t plen, const unsigned char $\ast$salt, size\+\_\+t slen, unsigned int iteration\+\_\+count, uint32\+\_\+t key\+\_\+length, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em P\+K\+CS\#5 P\+B\+K\+D\+F2 using H\+M\+AC \end{DoxyCompactList}\item 
+int \hyperlink{pkcs5_8h_a918e7f20c7ad1204980e7ec69869deb3}{mbedtls\+\_\+pkcs5\+\_\+self\+\_\+test} (int verbose)
+\begin{DoxyCompactList}\small\item\em Checkup routine \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+P\+K\+CS\#5 functions 
+
+\begin{DoxyAuthor}{作者}
+Mathias Olsson \href{mailto:mathias@kompetensum.com}{\tt mathias@kompetensum.\+com}
+\end{DoxyAuthor}
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{pkcs5_8h_a12ca62fa36fecf6a6d9d9218601255f7}\label{pkcs5_8h_a12ca62fa36fecf6a6d9d9218601255f7}} 
+\index{pkcs5.\+h@{pkcs5.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}!pkcs5.\+h@{pkcs5.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}{MBEDTLS\_ERR\_PKCS5\_BAD\_INPUT\_DATA}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA~-\/0x2f80}
+
+Bad input parameters to function. \mbox{\Hypertarget{pkcs5_8h_a2162372c89339c4a6da1b9d01e08ee90}\label{pkcs5_8h_a2162372c89339c4a6da1b9d01e08ee90}} 
+\index{pkcs5.\+h@{pkcs5.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}!pkcs5.\+h@{pkcs5.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}{MBEDTLS\_ERR\_PKCS5\_FEATURE\_UNAVAILABLE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE~-\/0x2e80}
+
+Requested encryption or digest alg not available. \mbox{\Hypertarget{pkcs5_8h_ab1258962a0e536ca372ee144565f108a}\label{pkcs5_8h_ab1258962a0e536ca372ee144565f108a}} 
+\index{pkcs5.\+h@{pkcs5.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}!pkcs5.\+h@{pkcs5.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}{MBEDTLS\_ERR\_PKCS5\_INVALID\_FORMAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT~-\/0x2f00}
+
+Unexpected A\+S\+N.\+1 data. \mbox{\Hypertarget{pkcs5_8h_adb5b742465ef7f4fb9f282880ceecfeb}\label{pkcs5_8h_adb5b742465ef7f4fb9f282880ceecfeb}} 
+\index{pkcs5.\+h@{pkcs5.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}!pkcs5.\+h@{pkcs5.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}{MBEDTLS\_ERR\_PKCS5\_PASSWORD\_MISMATCH}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S5\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH~-\/0x2e00}
+
+Given private key password does not allow for correct decryption. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{pkcs5_8h_aaeb7b4b406e07afe3d8aa807a30d28cd}\label{pkcs5_8h_aaeb7b4b406e07afe3d8aa807a30d28cd}} 
+\index{pkcs5.\+h@{pkcs5.\+h}!mbedtls\+\_\+pkcs5\+\_\+pbes2@{mbedtls\+\_\+pkcs5\+\_\+pbes2}}
+\index{mbedtls\+\_\+pkcs5\+\_\+pbes2@{mbedtls\+\_\+pkcs5\+\_\+pbes2}!pkcs5.\+h@{pkcs5.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+pkcs5\+\_\+pbes2()}{mbedtls\_pkcs5\_pbes2()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+pkcs5\+\_\+pbes2 (\begin{DoxyParamCaption}\item[{const \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$}]{pbe\+\_\+params,  }\item[{int}]{mode,  }\item[{const unsigned char $\ast$}]{pwd,  }\item[{size\+\_\+t}]{pwdlen,  }\item[{const unsigned char $\ast$}]{data,  }\item[{size\+\_\+t}]{datalen,  }\item[{unsigned char $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+P\+K\+CS\#5 P\+B\+E\+S2 function 
+
+
+\begin{DoxyParams}{参数}
+{\em pbe\+\_\+params} & the A\+S\+N.\+1 algorithm parameters \\
+\hline
+{\em mode} & either M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S5\+\_\+\+D\+E\+C\+R\+Y\+PT or M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S5\+\_\+\+E\+N\+C\+R\+Y\+PT \\
+\hline
+{\em pwd} & password to use when generating key \\
+\hline
+{\em pwdlen} & length of password \\
+\hline
+{\em data} & data to process \\
+\hline
+{\em datalen} & length of data \\
+\hline
+{\em output} & output buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on success, or a M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+XX code if verification fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pkcs5_8h_a73ec933de2a4f010604b525640338b1e}\label{pkcs5_8h_a73ec933de2a4f010604b525640338b1e}} 
+\index{pkcs5.\+h@{pkcs5.\+h}!mbedtls\+\_\+pkcs5\+\_\+pbkdf2\+\_\+hmac@{mbedtls\+\_\+pkcs5\+\_\+pbkdf2\+\_\+hmac}}
+\index{mbedtls\+\_\+pkcs5\+\_\+pbkdf2\+\_\+hmac@{mbedtls\+\_\+pkcs5\+\_\+pbkdf2\+\_\+hmac}!pkcs5.\+h@{pkcs5.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+pkcs5\+\_\+pbkdf2\+\_\+hmac()}{mbedtls\_pkcs5\_pbkdf2\_hmac()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+pkcs5\+\_\+pbkdf2\+\_\+hmac (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__md__context__t}{mbedtls\+\_\+md\+\_\+context\+\_\+t} $\ast$}]{ctx,  }\item[{const unsigned char $\ast$}]{password,  }\item[{size\+\_\+t}]{plen,  }\item[{const unsigned char $\ast$}]{salt,  }\item[{size\+\_\+t}]{slen,  }\item[{unsigned int}]{iteration\+\_\+count,  }\item[{uint32\+\_\+t}]{key\+\_\+length,  }\item[{unsigned char $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+P\+K\+CS\#5 P\+B\+K\+D\+F2 using H\+M\+AC 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & Generic H\+M\+AC context \\
+\hline
+{\em password} & Password to use when generating key \\
+\hline
+{\em plen} & Length of password \\
+\hline
+{\em salt} & Salt to use when generating key \\
+\hline
+{\em slen} & Length of salt \\
+\hline
+{\em iteration\+\_\+count} & Iteration count \\
+\hline
+{\em key\+\_\+length} & Length of generated key in bytes \\
+\hline
+{\em output} & Generated key. Must be at least as big as key\+\_\+length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on success, or a M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+XX code if verification fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pkcs5_8h_a918e7f20c7ad1204980e7ec69869deb3}\label{pkcs5_8h_a918e7f20c7ad1204980e7ec69869deb3}} 
+\index{pkcs5.\+h@{pkcs5.\+h}!mbedtls\+\_\+pkcs5\+\_\+self\+\_\+test@{mbedtls\+\_\+pkcs5\+\_\+self\+\_\+test}}
+\index{mbedtls\+\_\+pkcs5\+\_\+self\+\_\+test@{mbedtls\+\_\+pkcs5\+\_\+self\+\_\+test}!pkcs5.\+h@{pkcs5.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+pkcs5\+\_\+self\+\_\+test()}{mbedtls\_pkcs5\_self\_test()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+pkcs5\+\_\+self\+\_\+test (\begin{DoxyParamCaption}\item[{int}]{verbose }\end{DoxyParamCaption})}
+
+
+
+Checkup routine 
+
+\begin{DoxyReturn}{返回}
+0 if successful, or 1 if the test failed 
+\end{DoxyReturn}

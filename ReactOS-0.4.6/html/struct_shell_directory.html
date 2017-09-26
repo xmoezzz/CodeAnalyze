@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ShellDirectory结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="struct_shell_directory-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ShellDirectory结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>shell folder entry  
+ <a href="struct_shell_directory.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="shellfs_8h_source.html">shellfs.h</a>&gt;</code></p>
+<div class="dynheader">
+类 ShellDirectory 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="struct_shell_directory.png" usemap="#ShellDirectory_map" alt=""/>
+  <map id="ShellDirectory_map" name="ShellDirectory_map">
+<area href="struct_shell_entry.html" title="shell file/directory entry " alt="ShellEntry" shape="rect" coords="0,56,93,80"/>
+<area href="struct_directory.html" title="base for all directory entries " alt="Directory" shape="rect" coords="103,56,196,80"/>
+<area href="struct_entry.html" title="base of all file and directory entries " alt="Entry" shape="rect" coords="0,0,93,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af3dfaf11610e25fa2cde67b286a47948"><td class="memItemLeft" align="right" valign="top"><a id="af3dfaf11610e25fa2cde67b286a47948"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellDirectory</b> (<a class="el" href="struct_shell_folder.html">ShellFolder</a> &amp;root_folder, const <a class="el" href="struct_shell_path.html">ShellPath</a> &amp;shell_path, <a class="el" href="interfacevoid.html">HWND</a> hwnd)</td></tr>
+<tr class="separator:af3dfaf11610e25fa2cde67b286a47948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4f84640cfc4d5d804e7daf963f3b4e"><td class="memItemLeft" align="right" valign="top"><a id="a0c4f84640cfc4d5d804e7daf963f3b4e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellDirectory</b> (<a class="el" href="struct_shell_directory.html">ShellDirectory</a> *parent, LPITEMIDLIST shell_path, <a class="el" href="interfacevoid.html">HWND</a> hwnd)</td></tr>
+<tr class="separator:a0c4f84640cfc4d5d804e7daf963f3b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2a8e0641a34a34520cb4518e71de5d"><td class="memItemLeft" align="right" valign="top"><a id="aec2a8e0641a34a34520cb4518e71de5d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellDirectory</b> (const <a class="el" href="struct_shell_directory.html">ShellDirectory</a> &amp;other)</td></tr>
+<tr class="separator:aec2a8e0641a34a34520cb4518e71de5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a98f03c13704875a3ba8a9290fd1ca"><td class="memItemLeft" align="right" valign="top"><a id="a67a98f03c13704875a3ba8a9290fd1ca"></a>
+virtual <a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>read_directory</b> (int scan_flags=0)</td></tr>
+<tr class="separator:a67a98f03c13704875a3ba8a9290fd1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafc2cc0af15afd1262e8e0b0e9153a3"><td class="memItemLeft" align="right" valign="top"><a id="acafc2cc0af15afd1262e8e0b0e9153a3"></a>
+virtual const <a class="el" href="interfacevoid.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_next_path_component</b> (const <a class="el" href="interfacevoid.html">void</a> *) const</td></tr>
+<tr class="separator:acafc2cc0af15afd1262e8e0b0e9153a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7619a6f9c80a85f5dda749ecaaf3197"><td class="memItemLeft" align="right" valign="top"><a id="ad7619a6f9c80a85f5dda749ecaaf3197"></a>
+virtual <a class="el" href="struct_entry.html">Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>find_entry</b> (const <a class="el" href="interfacevoid.html">void</a> *)</td></tr>
+<tr class="separator:ad7619a6f9c80a85f5dda749ecaaf3197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f9c77d4dc355a67e799e7f2b7bf4c7"><td class="memItemLeft" align="right" valign="top"><a id="ae5f9c77d4dc355a67e799e7f2b7bf4c7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_path</b> (PTSTR <a class="el" href="structpath.html">path</a>, size_t path_count) const</td></tr>
+<tr class="separator:ae5f9c77d4dc355a67e799e7f2b7bf4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3e8cb0b0041c47c2b4b2bcb0b3c01c"><td class="memItemLeft" align="right" valign="top"><a id="a2c3e8cb0b0041c47c2b4b2bcb0b3c01c"></a>
+virtual <a class="el" href="struct_shell_folder.html">ShellFolder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_shell_folder</b> () const</td></tr>
+<tr class="separator:a2c3e8cb0b0041c47c2b4b2bcb0b3c01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ee77ac5f0c82b982987da8dd25d4b1"><td class="memItemLeft" align="right" valign="top"><a id="a24ee77ac5f0c82b982987da8dd25d4b1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>extract_icons</b> (ICONCACHE_FLAGS flags)</td></tr>
+<tr class="separator:a24ee77ac5f0c82b982987da8dd25d4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_shell_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_shell_entry')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="struct_shell_entry.html">ShellEntry</a></td></tr>
+<tr class="memitem:af2eda60b996c9ea087d3d87634d2d3cd inherit pub_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="af2eda60b996c9ea087d3d87634d2d3cd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellEntry</b> (<a class="el" href="struct_entry.html">Entry</a> *parent, LPITEMIDLIST shell_path)</td></tr>
+<tr class="separator:af2eda60b996c9ea087d3d87634d2d3cd inherit pub_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa862cd94c4255b2b06972920c362ff2a inherit pub_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="aa862cd94c4255b2b06972920c362ff2a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellEntry</b> (<a class="el" href="struct_entry.html">Entry</a> *parent, const <a class="el" href="struct_shell_path.html">ShellPath</a> &amp;shell_path)</td></tr>
+<tr class="separator:aa862cd94c4255b2b06972920c362ff2a inherit pub_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd9b3e7e37b07dc40adb8cc529e53f8 inherit pub_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="a8dd9b3e7e37b07dc40adb8cc529e53f8"></a>
+virtual <a class="el" href="struct_shell_path.html">ShellPath</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_absolute_pidl</b> () const</td></tr>
+<tr class="separator:a8dd9b3e7e37b07dc40adb8cc529e53f8 inherit pub_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66a6d88195783371cef7b8dc51b90ce inherit pub_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="ab66a6d88195783371cef7b8dc51b90ce"></a>
+virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetUIObjectOf</b> (<a class="el" href="interfacevoid.html">HWND</a> hWnd, REFIID riid, <a class="el" href="interfacevoid.html">LPVOID</a> *ppvOut)</td></tr>
+<tr class="separator:ab66a6d88195783371cef7b8dc51b90ce inherit pub_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3db3e8efdfdee25df49a20c35529079 inherit pub_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="ac3db3e8efdfdee25df49a20c35529079"></a>
+virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>launch_entry</b> (<a class="el" href="interfacevoid.html">HWND</a> hwnd, UINT nCmdShow=SW_SHOWNORMAL)</td></tr>
+<tr class="separator:ac3db3e8efdfdee25df49a20c35529079 inherit pub_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1172ae9fa4a3b2b5249971e9ac704de9 inherit pub_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="a1172ae9fa4a3b2b5249971e9ac704de9"></a>
+virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>do_context_menu</b> (<a class="el" href="interfacevoid.html">HWND</a> hwnd, const <a class="el" href="structtag_p_o_i_n_t.html">POINT</a> &amp;pptScreen, <a class="el" href="struct_ctx_menu_interfaces.html">CtxMenuInterfaces</a> &amp;cm_ifs)</td></tr>
+<tr class="separator:a1172ae9fa4a3b2b5249971e9ac704de9 inherit pub_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7cc01aaed708bbc68b0cd64550bd09 inherit pub_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="a3e7cc01aaed708bbc68b0cd64550bd09"></a>
+<a class="el" href="interface_i_shell_folder.html">IShellFolder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_parent_folder</b> () const</td></tr>
+<tr class="separator:a3e7cc01aaed708bbc68b0cd64550bd09 inherit pub_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_entry')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="struct_entry.html">Entry</a></td></tr>
+<tr class="memitem:a3d12df727ac63b6aa78371c7e214273e inherit pub_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a3d12df727ac63b6aa78371c7e214273e"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>free_subentries</b> ()</td></tr>
+<tr class="separator:a3d12df727ac63b6aa78371c7e214273e inherit pub_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b0ecb89c8f4d79f5401b892b3ac190 inherit pub_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entry.html#a60b0ecb89c8f4d79f5401b892b3ac190">read_directory_base</a> (SORT_ORDER sortOrder=SORT_NAME, int scan_flags=0)</td></tr>
+<tr class="separator:a60b0ecb89c8f4d79f5401b892b3ac190 inherit pub_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb32cbf83a19acc0c4e29e1b9d809202 inherit pub_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="abb32cbf83a19acc0c4e29e1b9d809202"></a>
+<a class="el" href="struct_entry.html">Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>read_tree</b> (const <a class="el" href="interfacevoid.html">void</a> *<a class="el" href="structpath.html">path</a>, SORT_ORDER sortOrder=SORT_NAME, int scan_flags=0)</td></tr>
+<tr class="separator:abb32cbf83a19acc0c4e29e1b9d809202 inherit pub_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26396ac0773b36c0c4d3ed4b165ac21d inherit pub_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a26396ac0773b36c0c4d3ed4b165ac21d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sort_directory</b> (SORT_ORDER sortOrder)</td></tr>
+<tr class="separator:a26396ac0773b36c0c4d3ed4b165ac21d inherit pub_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7af5ff20fa83e4962caf8e59e1ee437 inherit pub_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entry.html#ac7af5ff20fa83e4962caf8e59e1ee437">smart_scan</a> (SORT_ORDER sortOrder=SORT_NAME, int scan_flags=0)</td></tr>
+<tr class="separator:ac7af5ff20fa83e4962caf8e59e1ee437 inherit pub_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1a2a587274e3a7bc229f98b16e4744 inherit pub_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a9b1a2a587274e3a7bc229f98b16e4744"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>extract_icon</b> (ICONCACHE_FLAGS flags=ICF_NORMAL)</td></tr>
+<tr class="separator:a9b1a2a587274e3a7bc229f98b16e4744 inherit pub_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5401cf583fa727c09937f040d4e3f60 inherit pub_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="ae5401cf583fa727c09937f040d4e3f60"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>safe_extract_icon</b> (ICONCACHE_FLAGS flags=ICF_NORMAL)</td></tr>
+<tr class="separator:ae5401cf583fa727c09937f040d4e3f60 inherit pub_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9a35d0d2f90518ef13601fdfb1262e30"><td class="memItemLeft" align="right" valign="top"><a id="a9a35d0d2f90518ef13601fdfb1262e30"></a>
+<a class="el" href="struct_shell_folder.html">ShellFolder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_folder</b></td></tr>
+<tr class="separator:a9a35d0d2f90518ef13601fdfb1262e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a5b7139055110bebf662a586e1b84f"><td class="memItemLeft" align="right" valign="top"><a id="ac7a5b7139055110bebf662a586e1b84f"></a>
+<a class="el" href="interfacevoid.html">HWND</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_hwnd</b></td></tr>
+<tr class="separator:ac7a5b7139055110bebf662a586e1b84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_shell_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_shell_entry')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="struct_shell_entry.html">ShellEntry</a></td></tr>
+<tr class="memitem:adf0bb6eefbbae32e05316b8c6e6b21c6 inherit pub_attribs_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="adf0bb6eefbbae32e05316b8c6e6b21c6"></a>
+<a class="el" href="struct_shell_path.html">ShellPath</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_pidl</b></td></tr>
+<tr class="separator:adf0bb6eefbbae32e05316b8c6e6b21c6 inherit pub_attribs_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_entry')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="struct_entry.html">Entry</a></td></tr>
+<tr class="memitem:ac2f98827296edee00ac27ea720a0e619 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="ac2f98827296edee00ac27ea720a0e619"></a>
+<a class="el" href="struct_entry.html">Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_next</b></td></tr>
+<tr class="separator:ac2f98827296edee00ac27ea720a0e619 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9774edcec3a81e2aabf3f1ad72e6ef38 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a9774edcec3a81e2aabf3f1ad72e6ef38"></a>
+<a class="el" href="struct_entry.html">Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_down</b></td></tr>
+<tr class="separator:a9774edcec3a81e2aabf3f1ad72e6ef38 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf7cc82f80f9f4e01b2efb064608a4f inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="aaaf7cc82f80f9f4e01b2efb064608a4f"></a>
+<a class="el" href="struct_entry.html">Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_up</b></td></tr>
+<tr class="separator:aaaf7cc82f80f9f4e01b2efb064608a4f inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a9acbc80a662b61b1d92cd03a78e12 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a40a9acbc80a662b61b1d92cd03a78e12"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_expanded</b></td></tr>
+<tr class="separator:a40a9acbc80a662b61b1d92cd03a78e12 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd65ac8c59247de976629d38299826d inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="afbd65ac8c59247de976629d38299826d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_scanned</b></td></tr>
+<tr class="separator:afbd65ac8c59247de976629d38299826d inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a7dbf3009d2df9fbdb444d4e9811c2 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="af3a7dbf3009d2df9fbdb444d4e9811c2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_level</b></td></tr>
+<tr class="separator:af3a7dbf3009d2df9fbdb444d4e9811c2 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33f975ffd41a604bcb3d57d46f935f4 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="aa33f975ffd41a604bcb3d57d46f935f4"></a>
+<a class="el" href="struct_w_i_n32___f_i_n_d___d_a_t_a_a.html">WIN32_FIND_DATA</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_data</b></td></tr>
+<tr class="separator:aa33f975ffd41a604bcb3d57d46f935f4 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239bacdfdc966a99031ac84e433adca1 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a239bacdfdc966a99031ac84e433adca1"></a>
+SFGAOF&#160;</td><td class="memItemRight" valign="bottom"><b>_shell_attribs</b></td></tr>
+<tr class="separator:a239bacdfdc966a99031ac84e433adca1 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb8f9c9f41dbb6087674a8b6888ecf2 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a0eb8f9c9f41dbb6087674a8b6888ecf2"></a>
+LPTSTR&#160;</td><td class="memItemRight" valign="bottom"><b>_display_name</b></td></tr>
+<tr class="separator:a0eb8f9c9f41dbb6087674a8b6888ecf2 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3823d50d73fbe9233f5c8201d7bb8d63 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a3823d50d73fbe9233f5c8201d7bb8d63"></a>
+LPTSTR&#160;</td><td class="memItemRight" valign="bottom"><b>_type_name</b></td></tr>
+<tr class="separator:a3823d50d73fbe9233f5c8201d7bb8d63 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c2c0bd8cbbf47692cb375963746eeb inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a64c2c0bd8cbbf47692cb375963746eeb"></a>
+LPTSTR&#160;</td><td class="memItemRight" valign="bottom"><b>_content</b></td></tr>
+<tr class="separator:a64c2c0bd8cbbf47692cb375963746eeb inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405da020f46e291295ab0cbdd5f2a726 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a405da020f46e291295ab0cbdd5f2a726"></a>
+ENTRY_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>_etype</b></td></tr>
+<tr class="separator:a405da020f46e291295ab0cbdd5f2a726 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5200edc57c7cbdfb2b747c9ec661d0 inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a1b5200edc57c7cbdfb2b747c9ec661d0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_icon_id</b></td></tr>
+<tr class="separator:a1b5200edc57c7cbdfb2b747c9ec661d0 inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476581cf65f416884c549e98a16986ae inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a476581cf65f416884c549e98a16986ae"></a>
+<a class="el" href="struct___b_y___h_a_n_d_l_e___f_i_l_e___i_n_f_o_r_m_a_t_i_o_n.html">BY_HANDLE_FILE_INFORMATION</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_bhfi</b></td></tr>
+<tr class="separator:a476581cf65f416884c549e98a16986ae inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bba893a418d6ebea6b0d0ff6fc3aae inherit pub_attribs_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a76bba893a418d6ebea6b0d0ff6fc3aae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_bhfi_valid</b></td></tr>
+<tr class="separator:a76bba893a418d6ebea6b0d0ff6fc3aae inherit pub_attribs_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a9f9d1f9e7e3aae40719790c50351431e"><td class="memItemLeft" align="right" valign="top"><a id="a9f9d1f9e7e3aae40719790c50351431e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fill_w32fdata_shell</b> (LPCITEMIDLIST pidl, SFGAOF attribs, <a class="el" href="struct_w_i_n32___f_i_n_d___d_a_t_a_a.html">WIN32_FIND_DATA</a> *, <a class="el" href="struct___b_y___h_a_n_d_l_e___f_i_l_e___i_n_f_o_r_m_a_t_i_o_n.html">BY_HANDLE_FILE_INFORMATION</a> *, bool do_access=true)</td></tr>
+<tr class="separator:a9f9d1f9e7e3aae40719790c50351431e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_struct_shell_entry"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_struct_shell_entry')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="struct_shell_entry.html">ShellEntry</a></td></tr>
+<tr class="memitem:a607fe3be336cc7116737266ef8543669 inherit pro_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="a607fe3be336cc7116737266ef8543669"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellEntry</b> (LPITEMIDLIST shell_path)</td></tr>
+<tr class="separator:a607fe3be336cc7116737266ef8543669 inherit pro_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c546f2d1a81659633d0bf38e294ff5c inherit pro_methods_struct_shell_entry"><td class="memItemLeft" align="right" valign="top"><a id="a1c546f2d1a81659633d0bf38e294ff5c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellEntry</b> (const <a class="el" href="struct_shell_path.html">ShellPath</a> &amp;shell_path)</td></tr>
+<tr class="separator:a1c546f2d1a81659633d0bf38e294ff5c inherit pro_methods_struct_shell_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_struct_entry"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_struct_entry')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="struct_entry.html">Entry</a></td></tr>
+<tr class="memitem:a5ce1d466cffb47445b3870a0c693f250 inherit pro_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a5ce1d466cffb47445b3870a0c693f250"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entry</b> (ENTRY_TYPE etype)</td></tr>
+<tr class="separator:a5ce1d466cffb47445b3870a0c693f250 inherit pro_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75b5572337f8b25f2456d66722a9e84 inherit pro_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="ad75b5572337f8b25f2456d66722a9e84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entry</b> (<a class="el" href="struct_entry.html">Entry</a> *parent, ENTRY_TYPE etype)</td></tr>
+<tr class="separator:ad75b5572337f8b25f2456d66722a9e84 inherit pro_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c62e07d86951008cc8a0d60632c262 inherit pro_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a98c62e07d86951008cc8a0d60632c262"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entry</b> (const <a class="el" href="struct_entry.html">Entry</a> &amp;)</td></tr>
+<tr class="separator:a98c62e07d86951008cc8a0d60632c262 inherit pro_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7240ded1cd8236289afefcf29fcae521 inherit pro_methods_struct_entry"><td class="memItemLeft" align="right" valign="top"><a id="a7240ded1cd8236289afefcf29fcae521"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_path_base</b> (PTSTR <a class="el" href="structpath.html">path</a>, size_t path_count, ENTRY_TYPE etype) const</td></tr>
+<tr class="separator:a7240ded1cd8236289afefcf29fcae521 inherit pro_methods_struct_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_struct_directory"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_struct_directory')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="struct_directory.html">Directory</a></td></tr>
+<tr class="memitem:ae7f7e34795e1cae1bc0c18a1576929b2 inherit pro_attribs_struct_directory"><td class="memItemLeft" align="right" valign="top"><a id="ae7f7e34795e1cae1bc0c18a1576929b2"></a>
+<a class="el" href="interfacevoid.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_path</b></td></tr>
+<tr class="separator:ae7f7e34795e1cae1bc0c18a1576929b2 inherit pro_attribs_struct_directory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>shell folder entry </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/explorer-old/shell/<a class="el" href="shellfs_8h_source.html">shellfs.h</a></li>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/explorer-old/shell/shellfs.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,57 @@
+\hypertarget{interface_i_known_folder_manager}{}\section{I\+Known\+Folder\+Manager接口 参考}
+\label{interface_i_known_folder_manager}\index{I\+Known\+Folder\+Manager@{I\+Known\+Folder\+Manager}}
+类 I\+Known\+Folder\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_known_folder_manager}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_ad70b5096cee0647c407b98194b6ceec5}\label{interface_i_known_folder_manager_ad70b5096cee0647c407b98194b6ceec5}} 
+enum {\bfseries tag\+F\+F\+F\+P\+\_\+\+M\+O\+DE} \{ {\bfseries F\+F\+F\+P\+\_\+\+E\+X\+A\+C\+T\+M\+A\+T\+CH}, 
+{\bfseries F\+F\+F\+P\+\_\+\+N\+E\+A\+R\+E\+S\+T\+P\+A\+R\+E\+N\+T\+M\+A\+T\+CH}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_a0c2a4c1f57a9f62cafffa124832f3601}\label{interface_i_known_folder_manager_a0c2a4c1f57a9f62cafffa124832f3601}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Known\+Folder\+Manager\+::tag\+F\+F\+F\+P\+\_\+\+M\+O\+DE {\bfseries F\+F\+F\+P\+\_\+\+M\+O\+DE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_ac484f05b087f88d3b02dd7ce76624bc6}\label{interface_i_known_folder_manager_ac484f05b087f88d3b02dd7ce76624bc6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Folder\+Id\+From\+Csidl} (\mbox{[}in\mbox{]} int n\+Csidl, \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} $\ast$pfid)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_a1bdabf80f81e53407f644be44af6126b}\label{interface_i_known_folder_manager_a1bdabf80f81e53407f644be44af6126b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Folder\+Id\+To\+Csidl} (\mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{R\+E\+F\+K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} rfid, \mbox{[}out\mbox{]} int $\ast$pn\+Csidl)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_ad78b0ac9222f0a396fd39cbd1858f040}\label{interface_i_known_folder_manager_ad78b0ac9222f0a396fd39cbd1858f040}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Folder\+Ids} (\mbox{[}out, size\+\_\+is(, $\ast$p\+Count)\mbox{]} \hyperlink{interface_g_u_i_d}{K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} $\ast$$\ast$pp\+K\+F\+Id, \mbox{[}in, out\mbox{]} U\+I\+NT $\ast$p\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_ad2570f0f423d7427ce526008c8137568}\label{interface_i_known_folder_manager_ad2570f0f423d7427ce526008c8137568}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Folder} (\mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{R\+E\+F\+K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} rfid, \mbox{[}out\mbox{]} I\+Known\+Folder $\ast$$\ast$ppkf)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_a34ab7ba4c796116008b49511fd0783c6}\label{interface_i_known_folder_manager_a34ab7ba4c796116008b49511fd0783c6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Folder\+By\+Name} (\mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+Canonical\+Name, \mbox{[}out\mbox{]} I\+Known\+Folder $\ast$$\ast$ppkf)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_a57ae85f5d3a2a88e8e64048fae8b66de}\label{interface_i_known_folder_manager_a57ae85f5d3a2a88e8e64048fae8b66de}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Folder} (\mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{R\+E\+F\+K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} rfid, \mbox{[}in\mbox{]} \hyperlink{structtag_k_n_o_w_n_f_o_l_d_e_r___d_e_f_i_n_i_t_i_o_n}{K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON} const $\ast$p\+K\+FD)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_ae6999769a461b62b29d989c21180866d}\label{interface_i_known_folder_manager_ae6999769a461b62b29d989c21180866d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Folder} (\mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{R\+E\+F\+K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} rfid)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_a94c8a41fb2aaa4b4677cc2385ff6aa68}\label{interface_i_known_folder_manager_a94c8a41fb2aaa4b4677cc2385ff6aa68}} 
+H\+R\+E\+S\+U\+LT {\bfseries Find\+Folder\+From\+Path} (\mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+Path, \mbox{[}in\mbox{]} F\+F\+F\+P\+\_\+\+M\+O\+DE \hyperlink{interfacevoid}{mode}, \mbox{[}out\mbox{]} I\+Known\+Folder $\ast$$\ast$ppkf)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_adbbf37746646e15f31384bf4511ffd77}\label{interface_i_known_folder_manager_adbbf37746646e15f31384bf4511ffd77}} 
+H\+R\+E\+S\+U\+LT {\bfseries Find\+Folder\+From\+I\+D\+List} (\mbox{[}in\mbox{]} \hyperlink{struct___i_t_e_m_i_d_l_i_s_t___a_b_s_o_l_u_t_e}{P\+C\+I\+D\+L\+I\+S\+T\+\_\+\+A\+B\+S\+O\+L\+U\+TE} pidl, \mbox{[}out\mbox{]} I\+Known\+Folder $\ast$$\ast$ppkf)
+\item 
+\mbox{\Hypertarget{interface_i_known_folder_manager_a3348745d2d500af01a9327266ba60acd}\label{interface_i_known_folder_manager_a3348745d2d500af01a9327266ba60acd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Redirect} (\mbox{[}in\mbox{]} \hyperlink{interface_g_u_i_d}{R\+E\+F\+K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} rfid, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} K\+F\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+F\+L\+A\+GS flags, \mbox{[}in, \hyperlink{interfaceunique}{unique}, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+Target\+Path, \mbox{[}in\mbox{]} U\+I\+NT c\+Folders, \mbox{[}in, size\+\_\+is(c\+Folders), \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_g_u_i_d}{K\+N\+O\+W\+N\+F\+O\+L\+D\+E\+R\+ID} const $\ast$p\+Exclusion, \mbox{[}out, \hyperlink{structstring}{string}\mbox{]} L\+P\+W\+S\+TR $\ast$ppsz\+Error)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

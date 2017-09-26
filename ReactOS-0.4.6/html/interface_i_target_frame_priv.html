@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ITargetFramePriv接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_target_frame_priv-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ITargetFramePriv接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ITargetFramePriv 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_target_frame_priv.png" usemap="#ITargetFramePriv_map" alt=""/>
+  <map id="ITargetFramePriv_map" name="ITargetFramePriv_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,117,24"/>
+<area href="interface_i_target_frame_priv2.html" alt="ITargetFramePriv2" shape="rect" coords="0,112,117,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2352fe9e07d04284db6e81fd543cbd03"><td class="memItemLeft" align="right" valign="top"><a id="a2352fe9e07d04284db6e81fd543cbd03"></a>
+typedef <a class="el" href="interface_i_target_frame_priv.html">ITargetFramePriv</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPTARGETFRAMEPRIV</b></td></tr>
+<tr class="separator:a2352fe9e07d04284db6e81fd543cbd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a41ffeee3aa5cc4c9626868f0cfce2072"><td class="memItemLeft" align="right" valign="top"><a id="a41ffeee3aa5cc4c9626868f0cfce2072"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>FindFrameDownwards</b> ([in] LPCWSTR pszTargetName, [in] DWORD dwFlags, [out] <a class="el" href="interface_i_unknown.html">IUnknown</a> **ppunkTargetFrame)</td></tr>
+<tr class="separator:a41ffeee3aa5cc4c9626868f0cfce2072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149d03d477deeeffb41709668bf6246a"><td class="memItemLeft" align="right" valign="top"><a id="a149d03d477deeeffb41709668bf6246a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>FindFrameInContext</b> ([in] LPCWSTR pszTargetName, [in] <a class="el" href="interface_i_unknown.html">IUnknown</a> *punkContextFrame, [in] DWORD dwFlags, [out] <a class="el" href="interface_i_unknown.html">IUnknown</a> **ppunkTargetFrame)</td></tr>
+<tr class="separator:a149d03d477deeeffb41709668bf6246a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af96f999a3af04a8000cb3357f017fe14"><td class="memItemLeft" align="right" valign="top"><a id="af96f999a3af04a8000cb3357f017fe14"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>OnChildFrameActivate</b> ([in] <a class="el" href="interface_i_unknown.html">IUnknown</a> *pUnkChildFrame)</td></tr>
+<tr class="separator:af96f999a3af04a8000cb3357f017fe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c48ee3f13adf5eff484a99070088b00"><td class="memItemLeft" align="right" valign="top"><a id="a2c48ee3f13adf5eff484a99070088b00"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>OnChildFrameDeactivate</b> ([in] <a class="el" href="interface_i_unknown.html">IUnknown</a> *pUnkChildFrame)</td></tr>
+<tr class="separator:a2c48ee3f13adf5eff484a99070088b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb093e14cb457f5dbdbedca660285eb"><td class="memItemLeft" align="right" valign="top"><a id="abeb093e14cb457f5dbdbedca660285eb"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>NavigateHack</b> ([in] DWORD grfHLNF, [in, <a class="el" href="interfaceunique.html">unique</a>] LPBC pbc, [in, <a class="el" href="interfaceunique.html">unique</a>] <a class="el" href="interface_i_bind_status_callback.html">IBindStatusCallback</a> *pibsc, [in, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR pszTargetName, [in] LPCWSTR pszUrl, [in, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR pszLocation)</td></tr>
+<tr class="separator:abeb093e14cb457f5dbdbedca660285eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42a7c57ad72cfe200a45495d9c8ede2"><td class="memItemLeft" align="right" valign="top"><a id="ae42a7c57ad72cfe200a45495d9c8ede2"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>FindBrowserByIndex</b> ([in] DWORD dwID, [out] <a class="el" href="interface_i_unknown.html">IUnknown</a> **ppunkBrowser)</td></tr>
+<tr class="separator:ae42a7c57ad72cfe200a45495d9c8ede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="htiface_8idl_source.html">htiface.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

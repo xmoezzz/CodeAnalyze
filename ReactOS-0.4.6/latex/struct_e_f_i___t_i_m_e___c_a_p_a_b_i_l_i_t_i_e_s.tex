@@ -1,0 +1,44 @@
+\hypertarget{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s}{}\section{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+E\+S结构体 参考}
+\label{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s}\index{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES@{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}}
+
+
+{\ttfamily \#include $<$Uefi\+Spec.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} \hyperlink{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_a5e302cf166017eacf05df9de37f09338}{Resolution}
+\item 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} \hyperlink{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_aa0b470bb2621aad93ca9d510b0c2571e}{Accuracy}
+\item 
+\hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{B\+O\+O\+L\+E\+AN} \hyperlink{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_ab2dce3f0b8c903fb192b57d2b9b3df47}{Sets\+To\+Zero}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{namespace_this}{This} provides the capabilities of the real time clock device as exposed through the E\+FI interfaces. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_aa0b470bb2621aad93ca9d510b0c2571e}\label{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_aa0b470bb2621aad93ca9d510b0c2571e}} 
+\index{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES@{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}!Accuracy@{Accuracy}}
+\index{Accuracy@{Accuracy}!E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES@{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}}
+\subsubsection{\texorpdfstring{Accuracy}{Accuracy}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+E\+S\+::\+Accuracy}
+
+Provides the timekeeping accuracy of the real-\/time clock in an error rate of 1\+E-\/6 parts per million. For a clock with an accuracy of 50 parts per million, the value in this field would be 50,000,000. \mbox{\Hypertarget{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_a5e302cf166017eacf05df9de37f09338}\label{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_a5e302cf166017eacf05df9de37f09338}} 
+\index{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES@{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}!Resolution@{Resolution}}
+\index{Resolution@{Resolution}!E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES@{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}}
+\subsubsection{\texorpdfstring{Resolution}{Resolution}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+E\+S\+::\+Resolution}
+
+Provides the reporting resolution of the real-\/time clock device in counts per second. For a normal P\+C-\/\+AT C\+M\+OS R\+TC device, this value would be 1 Hz, or 1, to indicate that the device only reports the time to the resolution of 1 second. \mbox{\Hypertarget{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_ab2dce3f0b8c903fb192b57d2b9b3df47}\label{struct_e_f_i___t_i_m_e___c_a_p_a_b_i_l_i_t_i_e_s_ab2dce3f0b8c903fb192b57d2b9b3df47}} 
+\index{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES@{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}!Sets\+To\+Zero@{Sets\+To\+Zero}}
+\index{Sets\+To\+Zero@{Sets\+To\+Zero}!E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES@{E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}}
+\subsubsection{\texorpdfstring{Sets\+To\+Zero}{SetsToZero}}
+{\footnotesize\ttfamily \hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{B\+O\+O\+L\+E\+AN} E\+F\+I\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+E\+S\+::\+Sets\+To\+Zero}
+
+\hyperlink{struct_a}{A} T\+R\+UE indicates that a time set operation clears the device\textquotesingle{}s time below the Resolution reporting level. \hyperlink{struct_a}{A} F\+A\+L\+SE indicates that the state below the Resolution level of the device is not cleared when the time is set. Normal P\+C-\/\+AT C\+M\+OS R\+TC devices set this value to F\+A\+L\+SE. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/boot/environ/include/efi/\hyperlink{_uefi_spec_8h}{Uefi\+Spec.\+h}\end{DoxyCompactItemize}

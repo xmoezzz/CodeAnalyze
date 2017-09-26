@@ -1,0 +1,100 @@
+\hypertarget{structmbedtls__cipher__base__t}{}\section{mbedtls\+\_\+cipher\+\_\+base\+\_\+t结构体 参考}
+\label{structmbedtls__cipher__base__t}\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+
+
+{\ttfamily \#include $<$cipher\+\_\+internal.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+mbedtls\+\_\+cipher\+\_\+id\+\_\+t \hyperlink{structmbedtls__cipher__base__t_a0c4c819c23b0a579445f92a4bee7d577}{cipher}
+\item 
+int($\ast$ \hyperlink{structmbedtls__cipher__base__t_ab57bc9b81dd43b63915b37ab56b0468d}{ecb\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+operation\+\_\+t \hyperlink{interfacevoid}{mode}, const unsigned char $\ast$input, unsigned char $\ast$output)
+\item 
+int($\ast$ \hyperlink{structmbedtls__cipher__base__t_a205924b0ffe7b35d4b74a7a4c6675ddf}{cbc\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+operation\+\_\+t \hyperlink{interfacevoid}{mode}, size\+\_\+t length, unsigned char $\ast$iv, const unsigned char $\ast$input, unsigned char $\ast$output)
+\item 
+int($\ast$ \hyperlink{structmbedtls__cipher__base__t_a06361a67ea8a128d3a58b4f99ee6cf5f}{cfb\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+operation\+\_\+t \hyperlink{interfacevoid}{mode}, size\+\_\+t length, size\+\_\+t $\ast$iv\+\_\+off, unsigned char $\ast$iv, const unsigned char $\ast$input, unsigned char $\ast$output)
+\item 
+int($\ast$ \hyperlink{structmbedtls__cipher__base__t_ac3d68fe4b133c56acb5b05029b8f60ea}{ctr\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, size\+\_\+t length, size\+\_\+t $\ast$nc\+\_\+off, unsigned char $\ast$nonce\+\_\+counter, unsigned char $\ast$stream\+\_\+block, const unsigned char $\ast$input, unsigned char $\ast$output)
+\item 
+int($\ast$ \hyperlink{structmbedtls__cipher__base__t_a52099766d7c09f16e702d78b6819d9e9}{stream\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, size\+\_\+t length, const unsigned char $\ast$input, unsigned char $\ast$output)
+\item 
+int($\ast$ \hyperlink{structmbedtls__cipher__base__t_a775aad5b31782d29bb0fd9414c366a6a}{setkey\+\_\+enc\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$\hyperlink{structkey}{key}, unsigned int key\+\_\+bitlen)
+\item 
+int($\ast$ \hyperlink{structmbedtls__cipher__base__t_a946b52cf0745a0d098781804a68d958c}{setkey\+\_\+dec\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$\hyperlink{structkey}{key}, unsigned int key\+\_\+bitlen)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$($\ast$ \hyperlink{structmbedtls__cipher__base__t_a95b0567a8a1644bc9325d08f74bbca99}{ctx\+\_\+alloc\+\_\+func} )(\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structmbedtls__cipher__base__t_abbb84630477b19baf2831369e69965a8}{ctx\+\_\+free\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Base cipher information. The non-\/mode specific functions and values. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structmbedtls__cipher__base__t_a205924b0ffe7b35d4b74a7a4c6675ddf}\label{structmbedtls__cipher__base__t_a205924b0ffe7b35d4b74a7a4c6675ddf}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!cbc\+\_\+func@{cbc\+\_\+func}}
+\index{cbc\+\_\+func@{cbc\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{cbc\+\_\+func}{cbc\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::cbc\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+operation\+\_\+t \hyperlink{interfacevoid}{mode}, size\+\_\+t length, unsigned char $\ast$iv, const unsigned char $\ast$input, unsigned char $\ast$output)}
+
+Encrypt using C\+BC \mbox{\Hypertarget{structmbedtls__cipher__base__t_a06361a67ea8a128d3a58b4f99ee6cf5f}\label{structmbedtls__cipher__base__t_a06361a67ea8a128d3a58b4f99ee6cf5f}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!cfb\+\_\+func@{cfb\+\_\+func}}
+\index{cfb\+\_\+func@{cfb\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{cfb\+\_\+func}{cfb\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::cfb\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+operation\+\_\+t \hyperlink{interfacevoid}{mode}, size\+\_\+t length, size\+\_\+t $\ast$iv\+\_\+off, unsigned char $\ast$iv, const unsigned char $\ast$input, unsigned char $\ast$output)}
+
+Encrypt using C\+FB (Full length) \mbox{\Hypertarget{structmbedtls__cipher__base__t_a0c4c819c23b0a579445f92a4bee7d577}\label{structmbedtls__cipher__base__t_a0c4c819c23b0a579445f92a4bee7d577}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!cipher@{cipher}}
+\index{cipher@{cipher}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{cipher}{cipher}}
+{\footnotesize\ttfamily mbedtls\+\_\+cipher\+\_\+id\+\_\+t mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::cipher}
+
+Base Cipher type (e.\+g. M\+B\+E\+D\+T\+L\+S\+\_\+\+C\+I\+P\+H\+E\+R\+\_\+\+I\+D\+\_\+\+A\+ES) \mbox{\Hypertarget{structmbedtls__cipher__base__t_ac3d68fe4b133c56acb5b05029b8f60ea}\label{structmbedtls__cipher__base__t_ac3d68fe4b133c56acb5b05029b8f60ea}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!ctr\+\_\+func@{ctr\+\_\+func}}
+\index{ctr\+\_\+func@{ctr\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{ctr\+\_\+func}{ctr\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::ctr\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, size\+\_\+t length, size\+\_\+t $\ast$nc\+\_\+off, unsigned char $\ast$nonce\+\_\+counter, unsigned char $\ast$stream\+\_\+block, const unsigned char $\ast$input, unsigned char $\ast$output)}
+
+Encrypt using C\+TR \mbox{\Hypertarget{structmbedtls__cipher__base__t_a95b0567a8a1644bc9325d08f74bbca99}\label{structmbedtls__cipher__base__t_a95b0567a8a1644bc9325d08f74bbca99}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!ctx\+\_\+alloc\+\_\+func@{ctx\+\_\+alloc\+\_\+func}}
+\index{ctx\+\_\+alloc\+\_\+func@{ctx\+\_\+alloc\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{ctx\+\_\+alloc\+\_\+func}{ctx\_alloc\_func}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::ctx\+\_\+alloc\+\_\+func) (\hyperlink{interfacevoid}{void})}
+
+Allocate a new context \mbox{\Hypertarget{structmbedtls__cipher__base__t_abbb84630477b19baf2831369e69965a8}\label{structmbedtls__cipher__base__t_abbb84630477b19baf2831369e69965a8}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!ctx\+\_\+free\+\_\+func@{ctx\+\_\+free\+\_\+func}}
+\index{ctx\+\_\+free\+\_\+func@{ctx\+\_\+free\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{ctx\+\_\+free\+\_\+func}{ctx\_free\_func}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::ctx\+\_\+free\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx)}
+
+Free the given context \mbox{\Hypertarget{structmbedtls__cipher__base__t_ab57bc9b81dd43b63915b37ab56b0468d}\label{structmbedtls__cipher__base__t_ab57bc9b81dd43b63915b37ab56b0468d}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!ecb\+\_\+func@{ecb\+\_\+func}}
+\index{ecb\+\_\+func@{ecb\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{ecb\+\_\+func}{ecb\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::ecb\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+operation\+\_\+t \hyperlink{interfacevoid}{mode}, const unsigned char $\ast$input, unsigned char $\ast$output)}
+
+Encrypt using E\+CB \mbox{\Hypertarget{structmbedtls__cipher__base__t_a946b52cf0745a0d098781804a68d958c}\label{structmbedtls__cipher__base__t_a946b52cf0745a0d098781804a68d958c}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!setkey\+\_\+dec\+\_\+func@{setkey\+\_\+dec\+\_\+func}}
+\index{setkey\+\_\+dec\+\_\+func@{setkey\+\_\+dec\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{setkey\+\_\+dec\+\_\+func}{setkey\_dec\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::setkey\+\_\+dec\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$\hyperlink{structkey}{key}, unsigned int key\+\_\+bitlen)}
+
+Set key for decryption purposes \mbox{\Hypertarget{structmbedtls__cipher__base__t_a775aad5b31782d29bb0fd9414c366a6a}\label{structmbedtls__cipher__base__t_a775aad5b31782d29bb0fd9414c366a6a}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!setkey\+\_\+enc\+\_\+func@{setkey\+\_\+enc\+\_\+func}}
+\index{setkey\+\_\+enc\+\_\+func@{setkey\+\_\+enc\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{setkey\+\_\+enc\+\_\+func}{setkey\_enc\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::setkey\+\_\+enc\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$\hyperlink{structkey}{key}, unsigned int key\+\_\+bitlen)}
+
+Set key for encryption purposes \mbox{\Hypertarget{structmbedtls__cipher__base__t_a52099766d7c09f16e702d78b6819d9e9}\label{structmbedtls__cipher__base__t_a52099766d7c09f16e702d78b6819d9e9}} 
+\index{mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}!stream\+\_\+func@{stream\+\_\+func}}
+\index{stream\+\_\+func@{stream\+\_\+func}!mbedtls\+\_\+cipher\+\_\+base\+\_\+t@{mbedtls\+\_\+cipher\+\_\+base\+\_\+t}}
+\subsubsection{\texorpdfstring{stream\+\_\+func}{stream\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+cipher\+\_\+base\+\_\+t\+::stream\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, size\+\_\+t length, const unsigned char $\ast$input, unsigned char $\ast$output)}
+
+Encrypt using S\+T\+R\+E\+AM 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/\hyperlink{cipher__internal_8h}{cipher\+\_\+internal.\+h}\end{DoxyCompactItemize}

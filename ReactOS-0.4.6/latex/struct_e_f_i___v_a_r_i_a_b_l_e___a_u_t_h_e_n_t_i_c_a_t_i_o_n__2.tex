@@ -1,0 +1,36 @@
+\hypertarget{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2}{}\section{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2结构体 参考}
+\label{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2}\index{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2}}
+
+
+{\ttfamily \#include $<$Uefi\+Multi\+Phase.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_e_f_i___t_i_m_e}{E\+F\+I\+\_\+\+T\+I\+ME} \hyperlink{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2_a6ea5235eefe94e28a5c9f7859c2b6724}{Time\+Stamp}
+\item 
+\hyperlink{struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d}{W\+I\+N\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+U\+E\+F\+I\+\_\+\+G\+U\+ID} \hyperlink{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2_acbd6043762b123eab1e7e4320eb533a7}{Auth\+Info}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+When the attribute E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+A\+S\+E\+D\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+E\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+C\+C\+E\+SS is set, then the \hyperlink{struct_data}{Data} buffer shall begin with an instance of a complete (and serialized) \hyperlink{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2}{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2} descriptor. The descriptor shall be followed by the new variable value and Data\+Size shall reflect the combined size of the descriptor and the new variable value. The authentication descriptor is not part of the variable data and is not returned by subsequent calls to Get\+Variable(). 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2_acbd6043762b123eab1e7e4320eb533a7}\label{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2_acbd6043762b123eab1e7e4320eb533a7}} 
+\index{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2}!Auth\+Info@{Auth\+Info}}
+\index{Auth\+Info@{Auth\+Info}!E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2}}
+\subsubsection{\texorpdfstring{Auth\+Info}{AuthInfo}}
+{\footnotesize\ttfamily \hyperlink{struct_w_i_n___c_e_r_t_i_f_i_c_a_t_e___u_e_f_i___g_u_i_d}{W\+I\+N\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+U\+E\+F\+I\+\_\+\+G\+U\+ID} E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2\+::\+Auth\+Info}
+
+Only a Cert\+Type of E\+F\+I\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+K\+C\+S7\+\_\+\+G\+U\+ID is accepted. \mbox{\Hypertarget{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2_a6ea5235eefe94e28a5c9f7859c2b6724}\label{struct_e_f_i___v_a_r_i_a_b_l_e___a_u_t_h_e_n_t_i_c_a_t_i_o_n__2_a6ea5235eefe94e28a5c9f7859c2b6724}} 
+\index{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2}!Time\+Stamp@{Time\+Stamp}}
+\index{Time\+Stamp@{Time\+Stamp}!E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2@{E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2}}
+\subsubsection{\texorpdfstring{Time\+Stamp}{TimeStamp}}
+{\footnotesize\ttfamily \hyperlink{struct_e_f_i___t_i_m_e}{E\+F\+I\+\_\+\+T\+I\+ME} E\+F\+I\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+2\+::\+Time\+Stamp}
+
+For the Time\+Stamp value, components Pad1, Nanosecond, Time\+Zone, Daylight and Pad2 shall be set to 0. \hyperlink{namespace_this}{This} means that the time shall always be expressed in G\+MT. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/boot/environ/include/efi/\hyperlink{_uefi_multi_phase_8h}{Uefi\+Multi\+Phase.\+h}\end{DoxyCompactItemize}

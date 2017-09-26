@@ -1,0 +1,60 @@
+\hypertarget{struct_s_wvertex}{}\section{S\+Wvertex结构体 参考}
+\label{struct_s_wvertex}\index{S\+Wvertex@{S\+Wvertex}}
+
+
+Data-\/structure to handle vertices in the software rasterizer.  
+
+
+
+
+{\ttfamily \#include $<$swrast.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_s_wvertex_ae5a42a5bb68f7a9ecf3f659fbd548365}\label{struct_s_wvertex_ae5a42a5bb68f7a9ecf3f659fbd548365}} 
+G\+Lfloat {\bfseries attrib} \mbox{[}F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+AX\mbox{]}\mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_s_wvertex_ae0eae898075b1491de5f5a0b4dcf2899}\label{struct_s_wvertex_ae0eae898075b1491de5f5a0b4dcf2899}} 
+G\+Lchan {\bfseries color} \mbox{[}4\mbox{]}
+\item 
+G\+Lfloat \hyperlink{struct_s_wvertex_a5af8503a89227ee0f4524cf17db6d3e8}{point\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Data-\/structure to handle vertices in the software rasterizer. 
+
+The software rasterizer now uses this format for vertices. Thus a \textquotesingle{}Raster\+Setup\textquotesingle{} stage or other translation is required between the tnl module and the swrast rasterization functions. \hyperlink{namespace_this}{This} serves to isolate the swrast module from the internals of the tnl module, and improve its usefulness as a fallback mechanism for hardware drivers.
+
+wpos = attr\mbox{[}F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+W\+P\+OS\mbox{]} and M\+U\+ST BE T\+HE F\+I\+R\+ST values in the vertex because of the tnl clipping code.
+
+wpos\mbox{[}0\mbox{]} and \mbox{[}1\mbox{]} are the screen-\/coords of \hyperlink{struct_s_wvertex}{S\+Wvertex}. wpos\mbox{[}2\mbox{]} is the z-\/buffer coord (if 16-\/bit Z buffer, in range \mbox{[}0,65535\mbox{]}). wpos\mbox{[}3\mbox{]} is 1/w where w is the clip-\/space W coord. \hyperlink{namespace_this}{This} is the value that clip\{X\+YZ\} were multiplied by to get ndc\{X\+YZ\}.
+
+Full software drivers\+:
+\begin{DoxyItemize}
+\item Register the rastersetup and triangle functions from utils/software\+\_\+helper.
+\item On statechange, update the rasterization pointers in that module.
+\end{DoxyItemize}
+
+Rasterization hardware drivers\+:
+\begin{DoxyItemize}
+\item Keep native rastersetup.
+\item Implement native twoside,offset and unfilled triangle setup.
+\item Implement a translator from native vertices to swrast vertices.
+\item On partial fallback (mix of accelerated and unaccelerated prims), call a pass-\/through function which translates native vertices to S\+Wvertices and calls the appropriate swrast function.
+\item On total fallback (vertex format insufficient for state or all primitives unaccelerated), hook in swrast\+\_\+setup instead. 
+\end{DoxyItemize}
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct_s_wvertex_a5af8503a89227ee0f4524cf17db6d3e8}\label{struct_s_wvertex_a5af8503a89227ee0f4524cf17db6d3e8}} 
+\index{S\+Wvertex@{S\+Wvertex}!point\+Size@{point\+Size}}
+\index{point\+Size@{point\+Size}!S\+Wvertex@{S\+Wvertex}}
+\subsubsection{\texorpdfstring{point\+Size}{pointSize}}
+{\footnotesize\ttfamily G\+Lfloat S\+Wvertex\+::point\+Size}
+
+integer color 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/\hyperlink{swrast_8h}{swrast.\+h}\end{DoxyCompactItemize}

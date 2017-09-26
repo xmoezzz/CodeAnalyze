@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/dll/opengl/mesa/swrast/s_blend.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c938f8a9ae7e172e1ee48b60f4a9b17a.html">dll</a></li><li class="navelem"><a class="el" href="dir_f28df4588c441543404e0bf042ec3ed8.html">opengl</a></li><li class="navelem"><a class="el" href="dir_8f911cde560d768cee55606d872b51f5.html">mesa</a></li><li class="navelem"><a class="el" href="dir_66aa1828768a51ed9417f2c7ede88719.html">swrast</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">s_blend.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>software blending.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;precomp.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:af9121250d2558619ac5dc944d2e10efb"><td class="memItemLeft" align="right" valign="top"><a id="af9121250d2558619ac5dc944d2e10efb"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_BLENDAPI</b></td></tr>
+<tr class="separator:af9121250d2558619ac5dc944d2e10efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e403ae320d8289f78a7fe098933096"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s__blend_8c.html#a95e403ae320d8289f78a7fe098933096">DIV255</a>(<a class="el" href="class_x.html">X</a>)&#160;&#160;&#160;(divtemp = (<a class="el" href="class_x.html">X</a>), ((divtemp &lt;&lt; 8) + divtemp + 256) &gt;&gt; 16)</td></tr>
+<tr class="separator:a95e403ae320d8289f78a7fe098933096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a51a5a76584a2ac8597e3c5cb4bd453f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s__blend_8c.html#a51a5a76584a2ac8597e3c5cb4bd453f4">_swrast_choose_blend_func</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, <a class="el" href="interfacevoid.html">GLenum</a> chanType)</td></tr>
+<tr class="separator:a51a5a76584a2ac8597e3c5cb4bd453f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac072e587c40ca52b6483e171c83eced4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s__blend_8c.html#ac072e587c40ca52b6483e171c83eced4">_swrast_blend_span</a> (<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *ctx, <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__renderbuffer.html">gl_renderbuffer</a> *rb, <a class="el" href="structsw__span.html">SWspan</a> *span)</td></tr>
+<tr class="separator:ac072e587c40ca52b6483e171c83eced4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>software blending. </p>
+<dl class="section author"><dt>作者</dt><dd>Brian Paul</dd></dl>
+<p>Only a few blend modes have been optimized (min, max, transparency, add) more optimized cases can easily be added if needed. Celestia uses glBlendFunc(GL_SRC_ALPHA, GL_ONE), for example. </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a95e403ae320d8289f78a7fe098933096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e403ae320d8289f78a7fe098933096">&#9670;&nbsp;</a></span>DIV255</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DIV255</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="class_x.html">X</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(divtemp = (<a class="el" href="class_x.html">X</a>), ((divtemp &lt;&lt; 8) + divtemp + 256) &gt;&gt; 16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Integer divide by 255 Declare "int divtemp" before using. <a class="el" href="namespace_this.html">This</a> satisfies Glean and should be reasonably fast. Contributed by Nathan Hand. </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ac072e587c40ca52b6483e171c83eced4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac072e587c40ca52b6483e171c83eced4">&#9670;&nbsp;</a></span>_swrast_blend_span()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _swrast_blend_span </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__renderbuffer.html">gl_renderbuffer</a> *&#160;</td>
+          <td class="paramname"><em>rb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsw__span.html">SWspan</a> *&#160;</td>
+          <td class="paramname"><em>span</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apply the blending operator to a span of pixels. We can handle horizontal runs of pixels (spans) or arrays of x/y pixel coordinates. </p>
+
+</div>
+</div>
+<a id="a51a5a76584a2ac8597e3c5cb4bd453f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a5a76584a2ac8597e3c5cb4bd453f4">&#9670;&nbsp;</a></span>_swrast_choose_blend_func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> _swrast_choose_blend_func </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structgl__context.html">gl_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">GLenum</a>&#160;</td>
+          <td class="paramname"><em>chanType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Analyze current blending parameters to pick fastest blending function. Result: the ctx-&gt;Color.BlendFunc pointer is updated. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

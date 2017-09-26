@@ -1,0 +1,111 @@
+\hypertarget{structgl__shared__state}{}\section{gl\+\_\+shared\+\_\+state结构体 参考}
+\label{structgl__shared__state}\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+
+
+{\ttfamily \#include $<$mtypes.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} \hyperlink{structgl__shared__state_ad1848576f749312009f9b08da0a9a662}{Mutex}
+\item 
+G\+Lint \hyperlink{structgl__shared__state_a34b9fe91376740f6a093ba97997664a2}{Ref\+Count}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct__mesa___hash_table}{\+\_\+mesa\+\_\+\+Hash\+Table} $\ast$ \hyperlink{structgl__shared__state_a27d2206482abf69a1e034d52695aa3fd}{Display\+List}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct__mesa___hash_table}{\+\_\+mesa\+\_\+\+Hash\+Table} $\ast$ \hyperlink{structgl__shared__state_a854a7050be955d4578d63f561f8d6ab6}{Tex\+Objects}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{structgl__shared__state_ac0afd416c85bcc8e88df36c20fac03e6}{Default\+Tex} \mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{structgl__shared__state_a26c7b5a32fa072428a75f3b9498403f1}{Fallback\+Tex}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$ \hyperlink{structgl__shared__state_a7faa72a342d8230fcb3625c38b32057b}{Null\+Buffer\+Obj}
+\item 
+\mbox{\Hypertarget{structgl__shared__state_a9611fad2a29cb8c31c56f4f87d91ebd5}\label{structgl__shared__state_a9611fad2a29cb8c31c56f4f87d91ebd5}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct__mesa___hash_table}{\+\_\+mesa\+\_\+\+Hash\+Table} $\ast$ {\bfseries Buffer\+Objects}
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{structgl__shared__state_ac6708d3375b660229f23fb3f297767ae}{Driver\+Data}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Thread safety and statechange notification for texture}\par
+{\em objects.
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000005}{待办事项}]Improve the granularity of locking. \end{DoxyRefDesc}
+}\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} \hyperlink{structgl__shared__state_a8a687c018bb540987db7ca181c522b6f}{Tex\+Mutex}
+\item 
+G\+Luint \hyperlink{structgl__shared__state_aadfde9b62cb193b3a2852566f61fff9d}{Texture\+State\+Stamp}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+\hyperlink{struct_state}{State} which can be shared by multiple contexts\+: 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structgl__shared__state_ac0afd416c85bcc8e88df36c20fac03e6}\label{structgl__shared__state_ac0afd416c85bcc8e88df36c20fac03e6}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Default\+Tex@{Default\+Tex}}
+\index{Default\+Tex@{Default\+Tex}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Default\+Tex}{DefaultTex}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ gl\+\_\+shared\+\_\+state\+::\+Default\+Tex\mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}}
+
+Default texture objects (shared by all texture units) \mbox{\Hypertarget{structgl__shared__state_a27d2206482abf69a1e034d52695aa3fd}\label{structgl__shared__state_a27d2206482abf69a1e034d52695aa3fd}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Display\+List@{Display\+List}}
+\index{Display\+List@{Display\+List}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Display\+List}{DisplayList}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{struct__mesa___hash_table}{\+\_\+mesa\+\_\+\+Hash\+Table}$\ast$ gl\+\_\+shared\+\_\+state\+::\+Display\+List}
+
+Display lists hash table \mbox{\Hypertarget{structgl__shared__state_ac6708d3375b660229f23fb3f297767ae}\label{structgl__shared__state_ac6708d3375b660229f23fb3f297767ae}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Driver\+Data@{Driver\+Data}}
+\index{Driver\+Data@{Driver\+Data}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Driver\+Data}{DriverData}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ gl\+\_\+shared\+\_\+state\+::\+Driver\+Data}
+
+Device driver shared state \mbox{\Hypertarget{structgl__shared__state_a26c7b5a32fa072428a75f3b9498403f1}\label{structgl__shared__state_a26c7b5a32fa072428a75f3b9498403f1}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Fallback\+Tex@{Fallback\+Tex}}
+\index{Fallback\+Tex@{Fallback\+Tex}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Fallback\+Tex}{FallbackTex}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ gl\+\_\+shared\+\_\+state\+::\+Fallback\+Tex}
+
+Fallback texture used when a bound texture is incomplete \mbox{\Hypertarget{structgl__shared__state_ad1848576f749312009f9b08da0a9a662}\label{structgl__shared__state_ad1848576f749312009f9b08da0a9a662}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Mutex@{Mutex}}
+\index{Mutex@{Mutex}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Mutex}{Mutex}}
+{\footnotesize\ttfamily \hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} gl\+\_\+shared\+\_\+state\+::\+Mutex}
+
+for thread safety \mbox{\Hypertarget{structgl__shared__state_a7faa72a342d8230fcb3625c38b32057b}\label{structgl__shared__state_a7faa72a342d8230fcb3625c38b32057b}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Null\+Buffer\+Obj@{Null\+Buffer\+Obj}}
+\index{Null\+Buffer\+Obj@{Null\+Buffer\+Obj}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Null\+Buffer\+Obj}{NullBufferObj}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object}$\ast$ gl\+\_\+shared\+\_\+state\+::\+Null\+Buffer\+Obj}
+
+Default buffer object for vertex arrays that aren\textquotesingle{}t in V\+B\+Os \mbox{\Hypertarget{structgl__shared__state_a34b9fe91376740f6a093ba97997664a2}\label{structgl__shared__state_a34b9fe91376740f6a093ba97997664a2}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Ref\+Count@{Ref\+Count}}
+\index{Ref\+Count@{Ref\+Count}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Ref\+Count}{RefCount}}
+{\footnotesize\ttfamily G\+Lint gl\+\_\+shared\+\_\+state\+::\+Ref\+Count}
+
+Reference count \mbox{\Hypertarget{structgl__shared__state_a8a687c018bb540987db7ca181c522b6f}\label{structgl__shared__state_a8a687c018bb540987db7ca181c522b6f}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Tex\+Mutex@{Tex\+Mutex}}
+\index{Tex\+Mutex@{Tex\+Mutex}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Tex\+Mutex}{TexMutex}}
+{\footnotesize\ttfamily \hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} gl\+\_\+shared\+\_\+state\+::\+Tex\+Mutex}
+
+texobj thread safety \mbox{\Hypertarget{structgl__shared__state_a854a7050be955d4578d63f561f8d6ab6}\label{structgl__shared__state_a854a7050be955d4578d63f561f8d6ab6}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Tex\+Objects@{Tex\+Objects}}
+\index{Tex\+Objects@{Tex\+Objects}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Tex\+Objects}{TexObjects}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{struct__mesa___hash_table}{\+\_\+mesa\+\_\+\+Hash\+Table}$\ast$ gl\+\_\+shared\+\_\+state\+::\+Tex\+Objects}
+
+Texture objects hash table \mbox{\Hypertarget{structgl__shared__state_aadfde9b62cb193b3a2852566f61fff9d}\label{structgl__shared__state_aadfde9b62cb193b3a2852566f61fff9d}} 
+\index{gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}!Texture\+State\+Stamp@{Texture\+State\+Stamp}}
+\index{Texture\+State\+Stamp@{Texture\+State\+Stamp}!gl\+\_\+shared\+\_\+state@{gl\+\_\+shared\+\_\+state}}
+\subsubsection{\texorpdfstring{Texture\+State\+Stamp}{TextureStateStamp}}
+{\footnotesize\ttfamily G\+Luint gl\+\_\+shared\+\_\+state\+::\+Texture\+State\+Stamp}
+
+state notification for shared tex 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{mtypes_8h}{mtypes.\+h}\end{DoxyCompactItemize}

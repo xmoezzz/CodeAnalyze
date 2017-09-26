@@ -1,0 +1,158 @@
+\hypertarget{struct_entry}{}\section{Entry结构体 参考}
+\label{struct_entry}\index{Entry@{Entry}}
+
+
+base of all file and directory entries  
+
+
+
+
+{\ttfamily \#include $<$entries.\+h$>$}
+
+类 Entry 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.555556cm]{struct_entry}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_entry_a3d12df727ac63b6aa78371c7e214273e}\label{struct_entry_a3d12df727ac63b6aa78371c7e214273e}} 
+\hyperlink{interfacevoid}{void} {\bfseries free\+\_\+subentries} ()
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_entry_a60b0ecb89c8f4d79f5401b892b3ac190}{read\+\_\+directory\+\_\+base} (S\+O\+R\+T\+\_\+\+O\+R\+D\+ER sort\+Order=S\+O\+R\+T\+\_\+\+N\+A\+ME, int scan\+\_\+flags=0)
+\item 
+\mbox{\Hypertarget{struct_entry_abb32cbf83a19acc0c4e29e1b9d809202}\label{struct_entry_abb32cbf83a19acc0c4e29e1b9d809202}} 
+\hyperlink{struct_entry}{Entry} $\ast$ {\bfseries read\+\_\+tree} (const \hyperlink{interfacevoid}{void} $\ast$\hyperlink{structpath}{path}, S\+O\+R\+T\+\_\+\+O\+R\+D\+ER sort\+Order=S\+O\+R\+T\+\_\+\+N\+A\+ME, int scan\+\_\+flags=0)
+\item 
+\mbox{\Hypertarget{struct_entry_a26396ac0773b36c0c4d3ed4b165ac21d}\label{struct_entry_a26396ac0773b36c0c4d3ed4b165ac21d}} 
+\hyperlink{interfacevoid}{void} {\bfseries sort\+\_\+directory} (S\+O\+R\+T\+\_\+\+O\+R\+D\+ER sort\+Order)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_entry_ac7af5ff20fa83e4962caf8e59e1ee437}{smart\+\_\+scan} (S\+O\+R\+T\+\_\+\+O\+R\+D\+ER sort\+Order=S\+O\+R\+T\+\_\+\+N\+A\+ME, int scan\+\_\+flags=0)
+\item 
+\mbox{\Hypertarget{struct_entry_a9b1a2a587274e3a7bc229f98b16e4744}\label{struct_entry_a9b1a2a587274e3a7bc229f98b16e4744}} 
+int {\bfseries extract\+\_\+icon} (I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS flags=I\+C\+F\+\_\+\+N\+O\+R\+M\+AL)
+\item 
+\mbox{\Hypertarget{struct_entry_ae5401cf583fa727c09937f040d4e3f60}\label{struct_entry_ae5401cf583fa727c09937f040d4e3f60}} 
+int {\bfseries safe\+\_\+extract\+\_\+icon} (I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS flags=I\+C\+F\+\_\+\+N\+O\+R\+M\+AL)
+\item 
+\mbox{\Hypertarget{struct_entry_a5506dc6d29a4d159de5c8b5cb0197f31}\label{struct_entry_a5506dc6d29a4d159de5c8b5cb0197f31}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries read\+\_\+directory} (int scan\+\_\+flags=0)
+\item 
+\mbox{\Hypertarget{struct_entry_adc142050e4b1348926858bb51fd9bac9}\label{struct_entry_adc142050e4b1348926858bb51fd9bac9}} 
+virtual const \hyperlink{interfacevoid}{void} $\ast$ {\bfseries get\+\_\+next\+\_\+path\+\_\+component} (const \hyperlink{interfacevoid}{void} $\ast$) const
+\item 
+\mbox{\Hypertarget{struct_entry_aaf1b856a1548daa6d0c40a3508b727fd}\label{struct_entry_aaf1b856a1548daa6d0c40a3508b727fd}} 
+virtual \hyperlink{struct_entry}{Entry} $\ast$ {\bfseries find\+\_\+entry} (const \hyperlink{interfacevoid}{void} $\ast$)
+\item 
+\mbox{\Hypertarget{struct_entry_a9d3a58e86843290c945766dbbdcda69a}\label{struct_entry_a9d3a58e86843290c945766dbbdcda69a}} 
+virtual bool {\bfseries get\+\_\+path} (P\+T\+S\+TR \hyperlink{structpath}{path}, size\+\_\+t path\+\_\+count) const =0
+\item 
+\mbox{\Hypertarget{struct_entry_ad63d0782dfeb7522c5fd81db55e7adf8}\label{struct_entry_ad63d0782dfeb7522c5fd81db55e7adf8}} 
+virtual \hyperlink{struct_shell_path}{Shell\+Path} {\bfseries create\+\_\+absolute\+\_\+pidl} () const
+\item 
+\mbox{\Hypertarget{struct_entry_a7128c668ed5172f4d0e555b1a176dc14}\label{struct_entry_a7128c668ed5172f4d0e555b1a176dc14}} 
+virtual H\+R\+E\+S\+U\+LT {\bfseries Get\+U\+I\+Object\+Of} (\hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd, R\+E\+F\+I\+ID riid, \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} $\ast$ppv\+Out)
+\item 
+\mbox{\Hypertarget{struct_entry_af66895f5ec5166037f667d23ca0407d0}\label{struct_entry_af66895f5ec5166037f667d23ca0407d0}} 
+virtual \hyperlink{struct_shell_folder}{Shell\+Folder} {\bfseries get\+\_\+shell\+\_\+folder} () const
+\item 
+\mbox{\Hypertarget{struct_entry_a24e77b870903275e7e6725cb08839938}\label{struct_entry_a24e77b870903275e7e6725cb08839938}} 
+virtual B\+O\+OL {\bfseries launch\+\_\+entry} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, U\+I\+NT n\+Cmd\+Show=S\+W\+\_\+\+S\+H\+O\+W\+N\+O\+R\+M\+AL)
+\item 
+\mbox{\Hypertarget{struct_entry_a874278e3a7716ac46ac8d256c5ce41dd}\label{struct_entry_a874278e3a7716ac46ac8d256c5ce41dd}} 
+virtual H\+R\+E\+S\+U\+LT {\bfseries do\+\_\+context\+\_\+menu} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&pos, \hyperlink{struct_ctx_menu_interfaces}{Ctx\+Menu\+Interfaces} \&cm\+\_\+ifs)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_entry_ac2f98827296edee00ac27ea720a0e619}\label{struct_entry_ac2f98827296edee00ac27ea720a0e619}} 
+\hyperlink{struct_entry}{Entry} $\ast$ {\bfseries \+\_\+next}
+\item 
+\mbox{\Hypertarget{struct_entry_a9774edcec3a81e2aabf3f1ad72e6ef38}\label{struct_entry_a9774edcec3a81e2aabf3f1ad72e6ef38}} 
+\hyperlink{struct_entry}{Entry} $\ast$ {\bfseries \+\_\+down}
+\item 
+\mbox{\Hypertarget{struct_entry_aaaf7cc82f80f9f4e01b2efb064608a4f}\label{struct_entry_aaaf7cc82f80f9f4e01b2efb064608a4f}} 
+\hyperlink{struct_entry}{Entry} $\ast$ {\bfseries \+\_\+up}
+\item 
+\mbox{\Hypertarget{struct_entry_a40a9acbc80a662b61b1d92cd03a78e12}\label{struct_entry_a40a9acbc80a662b61b1d92cd03a78e12}} 
+bool {\bfseries \+\_\+expanded}
+\item 
+\mbox{\Hypertarget{struct_entry_afbd65ac8c59247de976629d38299826d}\label{struct_entry_afbd65ac8c59247de976629d38299826d}} 
+bool {\bfseries \+\_\+scanned}
+\item 
+\mbox{\Hypertarget{struct_entry_af3a7dbf3009d2df9fbdb444d4e9811c2}\label{struct_entry_af3a7dbf3009d2df9fbdb444d4e9811c2}} 
+int {\bfseries \+\_\+level}
+\item 
+\mbox{\Hypertarget{struct_entry_aa33f975ffd41a604bcb3d57d46f935f4}\label{struct_entry_aa33f975ffd41a604bcb3d57d46f935f4}} 
+\hyperlink{struct_w_i_n32___f_i_n_d___d_a_t_a_a}{W\+I\+N32\+\_\+\+F\+I\+N\+D\+\_\+\+D\+A\+TA} {\bfseries \+\_\+data}
+\item 
+\mbox{\Hypertarget{struct_entry_a239bacdfdc966a99031ac84e433adca1}\label{struct_entry_a239bacdfdc966a99031ac84e433adca1}} 
+S\+F\+G\+A\+OF {\bfseries \+\_\+shell\+\_\+attribs}
+\item 
+\mbox{\Hypertarget{struct_entry_a0eb8f9c9f41dbb6087674a8b6888ecf2}\label{struct_entry_a0eb8f9c9f41dbb6087674a8b6888ecf2}} 
+L\+P\+T\+S\+TR {\bfseries \+\_\+display\+\_\+name}
+\item 
+\mbox{\Hypertarget{struct_entry_a3823d50d73fbe9233f5c8201d7bb8d63}\label{struct_entry_a3823d50d73fbe9233f5c8201d7bb8d63}} 
+L\+P\+T\+S\+TR {\bfseries \+\_\+type\+\_\+name}
+\item 
+\mbox{\Hypertarget{struct_entry_a64c2c0bd8cbbf47692cb375963746eeb}\label{struct_entry_a64c2c0bd8cbbf47692cb375963746eeb}} 
+L\+P\+T\+S\+TR {\bfseries \+\_\+content}
+\item 
+\mbox{\Hypertarget{struct_entry_a405da020f46e291295ab0cbdd5f2a726}\label{struct_entry_a405da020f46e291295ab0cbdd5f2a726}} 
+E\+N\+T\+R\+Y\+\_\+\+T\+Y\+PE {\bfseries \+\_\+etype}
+\item 
+\mbox{\Hypertarget{struct_entry_a1b5200edc57c7cbdfb2b747c9ec661d0}\label{struct_entry_a1b5200edc57c7cbdfb2b747c9ec661d0}} 
+int {\bfseries \+\_\+icon\+\_\+id}
+\item 
+\mbox{\Hypertarget{struct_entry_a476581cf65f416884c549e98a16986ae}\label{struct_entry_a476581cf65f416884c549e98a16986ae}} 
+\hyperlink{struct___b_y___h_a_n_d_l_e___f_i_l_e___i_n_f_o_r_m_a_t_i_o_n}{B\+Y\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON} {\bfseries \+\_\+bhfi}
+\item 
+\mbox{\Hypertarget{struct_entry_a76bba893a418d6ebea6b0d0ff6fc3aae}\label{struct_entry_a76bba893a418d6ebea6b0d0ff6fc3aae}} 
+bool {\bfseries \+\_\+bhfi\+\_\+valid}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_entry_a5ce1d466cffb47445b3870a0c693f250}\label{struct_entry_a5ce1d466cffb47445b3870a0c693f250}} 
+{\bfseries Entry} (E\+N\+T\+R\+Y\+\_\+\+T\+Y\+PE etype)
+\item 
+\mbox{\Hypertarget{struct_entry_ad75b5572337f8b25f2456d66722a9e84}\label{struct_entry_ad75b5572337f8b25f2456d66722a9e84}} 
+{\bfseries Entry} (\hyperlink{struct_entry}{Entry} $\ast$parent, E\+N\+T\+R\+Y\+\_\+\+T\+Y\+PE etype)
+\item 
+\mbox{\Hypertarget{struct_entry_a98c62e07d86951008cc8a0d60632c262}\label{struct_entry_a98c62e07d86951008cc8a0d60632c262}} 
+{\bfseries Entry} (const \hyperlink{struct_entry}{Entry} \&)
+\item 
+\mbox{\Hypertarget{struct_entry_a7240ded1cd8236289afefcf29fcae521}\label{struct_entry_a7240ded1cd8236289afefcf29fcae521}} 
+bool {\bfseries get\+\_\+path\+\_\+base} (P\+T\+S\+TR \hyperlink{structpath}{path}, size\+\_\+t path\+\_\+count, E\+N\+T\+R\+Y\+\_\+\+T\+Y\+PE etype) const
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+base of all file and directory entries 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_entry_a60b0ecb89c8f4d79f5401b892b3ac190}\label{struct_entry_a60b0ecb89c8f4d79f5401b892b3ac190}} 
+\index{Entry@{Entry}!read\+\_\+directory\+\_\+base@{read\+\_\+directory\+\_\+base}}
+\index{read\+\_\+directory\+\_\+base@{read\+\_\+directory\+\_\+base}!Entry@{Entry}}
+\subsubsection{\texorpdfstring{read\+\_\+directory\+\_\+base()}{read\_directory\_base()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Entry\+::read\+\_\+directory\+\_\+base (\begin{DoxyParamCaption}\item[{S\+O\+R\+T\+\_\+\+O\+R\+D\+ER}]{sort\+Order = {\ttfamily SORT\+\_\+NAME},  }\item[{int}]{scan\+\_\+flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000025}{待办事项}]\+\_\+prescan\+\_\+nodes should not be used for reading the start menu. \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_entry_ac7af5ff20fa83e4962caf8e59e1ee437}\label{struct_entry_ac7af5ff20fa83e4962caf8e59e1ee437}} 
+\index{Entry@{Entry}!smart\+\_\+scan@{smart\+\_\+scan}}
+\index{smart\+\_\+scan@{smart\+\_\+scan}!Entry@{Entry}}
+\subsubsection{\texorpdfstring{smart\+\_\+scan()}{smart\_scan()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Entry\+::smart\+\_\+scan (\begin{DoxyParamCaption}\item[{S\+O\+R\+T\+\_\+\+O\+R\+D\+ER}]{sort\+Order = {\ttfamily SORT\+\_\+NAME},  }\item[{int}]{scan\+\_\+flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000026}{待办事项}]We could use I\+Shell\+Folder2\+::\+Get\+Default\+Column to determine sort order. \end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/entries.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/entries.\+cpp\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/shellfs.\+cpp\end{DoxyCompactItemize}

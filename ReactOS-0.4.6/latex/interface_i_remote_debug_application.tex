@@ -1,0 +1,50 @@
+\hypertarget{interface_i_remote_debug_application}{}\section{I\+Remote\+Debug\+Application接口 参考}
+\label{interface_i_remote_debug_application}\index{I\+Remote\+Debug\+Application@{I\+Remote\+Debug\+Application}}
+类 I\+Remote\+Debug\+Application 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_remote_debug_application}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_afb63540fd851ac1169a11a61410a9444}\label{interface_i_remote_debug_application_afb63540fd851ac1169a11a61410a9444}} 
+H\+R\+E\+S\+U\+LT {\bfseries Resume\+From\+Break\+Point} (\mbox{[}in\mbox{]} \hyperlink{interface_i_remote_debug_application_thread}{I\+Remote\+Debug\+Application\+Thread} $\ast$prpt\+Focus, \mbox{[}in\mbox{]} B\+R\+E\+A\+K\+R\+E\+S\+U\+M\+E\+A\+C\+T\+I\+ON bra, \mbox{[}in\mbox{]} E\+R\+R\+O\+R\+R\+E\+S\+U\+M\+E\+A\+C\+T\+I\+ON era)
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_a9ee2165c85154659433345ee072fea00}\label{interface_i_remote_debug_application_a9ee2165c85154659433345ee072fea00}} 
+H\+R\+E\+S\+U\+LT {\bfseries Cause\+Break} ()
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_a7377af0a961ce70a0e8aae8bcdb8d4f7}\label{interface_i_remote_debug_application_a7377af0a961ce70a0e8aae8bcdb8d4f7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Connect\+Debugger} (\mbox{[}in\mbox{]} \hyperlink{interface_i_application_debugger}{I\+Application\+Debugger} $\ast$pad)
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_a3d4b3c7fe571a5e2c3dada9baa8e4c48}\label{interface_i_remote_debug_application_a3d4b3c7fe571a5e2c3dada9baa8e4c48}} 
+H\+R\+E\+S\+U\+LT {\bfseries Disconnect\+Debugger} ()
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_a8171fcef3f506a24948b4fd3c4515013}\label{interface_i_remote_debug_application_a8171fcef3f506a24948b4fd3c4515013}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Debugger} (\mbox{[}out\mbox{]} \hyperlink{interface_i_application_debugger}{I\+Application\+Debugger} $\ast$$\ast$pad)
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_a7685373f6d84746c42c8f86c28ab5251}\label{interface_i_remote_debug_application_a7685373f6d84746c42c8f86c28ab5251}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Instance\+At\+Application} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Unk\+Outer, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Cls\+Context, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppv\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_ad3590cac6307e9d8bae403491034ed8e}\label{interface_i_remote_debug_application_ad3590cac6307e9d8bae403491034ed8e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Alive} ()
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_a7814699abc522d4194359be069322358}\label{interface_i_remote_debug_application_a7814699abc522d4194359be069322358}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Threads} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_remote_debug_application_threads}{I\+Enum\+Remote\+Debug\+Application\+Threads} $\ast$$\ast$pperdat)
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_a5127645f5f7a2a4152ef3688e79e8bcf}\label{interface_i_remote_debug_application_a5127645f5f7a2a4152ef3688e79e8bcf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Name} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_aba2c2053464c340758aa7b89a43ba125}\label{interface_i_remote_debug_application_aba2c2053464c340758aa7b89a43ba125}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Root\+Node} (\mbox{[}out\mbox{]} \hyperlink{interface_i_debug_application_node}{I\+Debug\+Application\+Node} $\ast$$\ast$ppdan\+Root)
+\item 
+\mbox{\Hypertarget{interface_i_remote_debug_application_ab3cab0f132f54783c06c76613506687f}\label{interface_i_remote_debug_application_ab3cab0f132f54783c06c76613506687f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Global\+Expression\+Contexts} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_debug_expression_contexts}{I\+Enum\+Debug\+Expression\+Contexts} $\ast$$\ast$ppedec)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/activdbg.\+idl\end{DoxyCompactItemize}

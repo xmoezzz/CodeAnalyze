@@ -1,0 +1,109 @@
+\hypertarget{structmbedtls__pk__info__t}{}\section{mbedtls\+\_\+pk\+\_\+info\+\_\+t结构体 参考}
+\label{structmbedtls__pk__info__t}\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pk_8h_a3fe41eff5605ae727eb9d28dad297020}{mbedtls\+\_\+pk\+\_\+type\+\_\+t} \hyperlink{structmbedtls__pk__info__t_a1290aa516e4b5889952f56edf331c313}{type}
+\item 
+const char $\ast$ \hyperlink{structmbedtls__pk__info__t_a6390c0e7c7597efec2033fcbea53697c}{name}
+\item 
+size\+\_\+t($\ast$ \hyperlink{structmbedtls__pk__info__t_ab024ac521ddf1ea0837df0a88a0a4e19}{get\+\_\+bitlen} )(const \hyperlink{interfacevoid}{void} $\ast$)
+\item 
+int($\ast$ \hyperlink{structmbedtls__pk__info__t_af64d12bcc605260ebfbd24a8c6258e1f}{can\+\_\+do} )(\hyperlink{pk_8h_a3fe41eff5605ae727eb9d28dad297020}{mbedtls\+\_\+pk\+\_\+type\+\_\+t} \hyperlink{structmbedtls__pk__info__t_a1290aa516e4b5889952f56edf331c313}{type})
+\item 
+int($\ast$ \hyperlink{structmbedtls__pk__info__t_aba8b768e152806bc28322004a522dc0c}{verify\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+md\+\_\+type\+\_\+t md\+\_\+alg, const unsigned char $\ast$\hyperlink{structhash}{hash}, size\+\_\+t hash\+\_\+len, const unsigned char $\ast$sig, size\+\_\+t sig\+\_\+len)
+\item 
+int($\ast$ \hyperlink{structmbedtls__pk__info__t_a22d9de47693a6f2368d66d7d66db8093}{sign\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+md\+\_\+type\+\_\+t md\+\_\+alg, const unsigned char $\ast$\hyperlink{structhash}{hash}, size\+\_\+t hash\+\_\+len, unsigned char $\ast$sig, size\+\_\+t $\ast$sig\+\_\+len, int($\ast$f\+\_\+rng)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng)
+\item 
+int($\ast$ \hyperlink{structmbedtls__pk__info__t_a32ef1fda6aedac78d5a28af612531162}{decrypt\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$input, size\+\_\+t ilen, unsigned char $\ast$output, size\+\_\+t $\ast$olen, size\+\_\+t osize, int($\ast$f\+\_\+rng)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng)
+\item 
+int($\ast$ \hyperlink{structmbedtls__pk__info__t_ae6aa9a5ebdd68db1fa364d786d9a1118}{encrypt\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$input, size\+\_\+t ilen, unsigned char $\ast$output, size\+\_\+t $\ast$olen, size\+\_\+t osize, int($\ast$f\+\_\+rng)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng)
+\item 
+int($\ast$ \hyperlink{structmbedtls__pk__info__t_ad370e83d7f46d53d963b2d88593f2589}{check\+\_\+pair\+\_\+func} )(const \hyperlink{interfacevoid}{void} $\ast$pub, const \hyperlink{interfacevoid}{void} $\ast$prv)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$($\ast$ \hyperlink{structmbedtls__pk__info__t_af188821fd46e2d130bd0b36f7ad201ec}{ctx\+\_\+alloc\+\_\+func} )(\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structmbedtls__pk__info__t_a4741fa700325cbdb932e43a1ce04067e}{ctx\+\_\+free\+\_\+func} )(\hyperlink{interfacevoid}{void} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{structmbedtls__pk__info__t_a61420d1702a434ff7084147cdc86bed3}{debug\+\_\+func} )(const \hyperlink{interfacevoid}{void} $\ast$ctx, \hyperlink{structmbedtls__pk__debug__item}{mbedtls\+\_\+pk\+\_\+debug\+\_\+item} $\ast$items)
+\end{DoxyCompactItemize}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structmbedtls__pk__info__t_af64d12bcc605260ebfbd24a8c6258e1f}\label{structmbedtls__pk__info__t_af64d12bcc605260ebfbd24a8c6258e1f}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!can\+\_\+do@{can\+\_\+do}}
+\index{can\+\_\+do@{can\+\_\+do}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{can\+\_\+do}{can\_do}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::can\+\_\+do) (\hyperlink{pk_8h_a3fe41eff5605ae727eb9d28dad297020}{mbedtls\+\_\+pk\+\_\+type\+\_\+t} \hyperlink{structmbedtls__pk__info__t_a1290aa516e4b5889952f56edf331c313}{type})}
+
+Tell if the context implements this type (e.\+g. E\+C\+K\+EY can do E\+C\+D\+SA) \mbox{\Hypertarget{structmbedtls__pk__info__t_ad370e83d7f46d53d963b2d88593f2589}\label{structmbedtls__pk__info__t_ad370e83d7f46d53d963b2d88593f2589}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!check\+\_\+pair\+\_\+func@{check\+\_\+pair\+\_\+func}}
+\index{check\+\_\+pair\+\_\+func@{check\+\_\+pair\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{check\+\_\+pair\+\_\+func}{check\_pair\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::check\+\_\+pair\+\_\+func) (const \hyperlink{interfacevoid}{void} $\ast$pub, const \hyperlink{interfacevoid}{void} $\ast$prv)}
+
+Check public-\/private key pair \mbox{\Hypertarget{structmbedtls__pk__info__t_af188821fd46e2d130bd0b36f7ad201ec}\label{structmbedtls__pk__info__t_af188821fd46e2d130bd0b36f7ad201ec}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!ctx\+\_\+alloc\+\_\+func@{ctx\+\_\+alloc\+\_\+func}}
+\index{ctx\+\_\+alloc\+\_\+func@{ctx\+\_\+alloc\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{ctx\+\_\+alloc\+\_\+func}{ctx\_alloc\_func}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::ctx\+\_\+alloc\+\_\+func) (\hyperlink{interfacevoid}{void})}
+
+Allocate a new context \mbox{\Hypertarget{structmbedtls__pk__info__t_a4741fa700325cbdb932e43a1ce04067e}\label{structmbedtls__pk__info__t_a4741fa700325cbdb932e43a1ce04067e}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!ctx\+\_\+free\+\_\+func@{ctx\+\_\+free\+\_\+func}}
+\index{ctx\+\_\+free\+\_\+func@{ctx\+\_\+free\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{ctx\+\_\+free\+\_\+func}{ctx\_free\_func}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::ctx\+\_\+free\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx)}
+
+Free the given context \mbox{\Hypertarget{structmbedtls__pk__info__t_a61420d1702a434ff7084147cdc86bed3}\label{structmbedtls__pk__info__t_a61420d1702a434ff7084147cdc86bed3}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!debug\+\_\+func@{debug\+\_\+func}}
+\index{debug\+\_\+func@{debug\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{debug\+\_\+func}{debug\_func}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::debug\+\_\+func) (const \hyperlink{interfacevoid}{void} $\ast$ctx, \hyperlink{structmbedtls__pk__debug__item}{mbedtls\+\_\+pk\+\_\+debug\+\_\+item} $\ast$items)}
+
+Interface with the debug module \mbox{\Hypertarget{structmbedtls__pk__info__t_a32ef1fda6aedac78d5a28af612531162}\label{structmbedtls__pk__info__t_a32ef1fda6aedac78d5a28af612531162}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!decrypt\+\_\+func@{decrypt\+\_\+func}}
+\index{decrypt\+\_\+func@{decrypt\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{decrypt\+\_\+func}{decrypt\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::decrypt\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$input, size\+\_\+t ilen, unsigned char $\ast$output, size\+\_\+t $\ast$olen, size\+\_\+t osize, int($\ast$f\+\_\+rng)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng)}
+
+Decrypt message \mbox{\Hypertarget{structmbedtls__pk__info__t_ae6aa9a5ebdd68db1fa364d786d9a1118}\label{structmbedtls__pk__info__t_ae6aa9a5ebdd68db1fa364d786d9a1118}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!encrypt\+\_\+func@{encrypt\+\_\+func}}
+\index{encrypt\+\_\+func@{encrypt\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{encrypt\+\_\+func}{encrypt\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::encrypt\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, const unsigned char $\ast$input, size\+\_\+t ilen, unsigned char $\ast$output, size\+\_\+t $\ast$olen, size\+\_\+t osize, int($\ast$f\+\_\+rng)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng)}
+
+Encrypt message \mbox{\Hypertarget{structmbedtls__pk__info__t_ab024ac521ddf1ea0837df0a88a0a4e19}\label{structmbedtls__pk__info__t_ab024ac521ddf1ea0837df0a88a0a4e19}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!get\+\_\+bitlen@{get\+\_\+bitlen}}
+\index{get\+\_\+bitlen@{get\+\_\+bitlen}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+\_\+bitlen}{get\_bitlen}}
+{\footnotesize\ttfamily size\+\_\+t($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::get\+\_\+bitlen) (const \hyperlink{interfacevoid}{void} $\ast$)}
+
+Get key size in bits \mbox{\Hypertarget{structmbedtls__pk__info__t_a6390c0e7c7597efec2033fcbea53697c}\label{structmbedtls__pk__info__t_a6390c0e7c7597efec2033fcbea53697c}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!name@{name}}
+\index{name@{name}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const char$\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::name}
+
+Type name \mbox{\Hypertarget{structmbedtls__pk__info__t_a22d9de47693a6f2368d66d7d66db8093}\label{structmbedtls__pk__info__t_a22d9de47693a6f2368d66d7d66db8093}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!sign\+\_\+func@{sign\+\_\+func}}
+\index{sign\+\_\+func@{sign\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{sign\+\_\+func}{sign\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::sign\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+md\+\_\+type\+\_\+t md\+\_\+alg, const unsigned char $\ast$\hyperlink{structhash}{hash}, size\+\_\+t hash\+\_\+len, unsigned char $\ast$sig, size\+\_\+t $\ast$sig\+\_\+len, int($\ast$f\+\_\+rng)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng)}
+
+Make signature \mbox{\Hypertarget{structmbedtls__pk__info__t_a1290aa516e4b5889952f56edf331c313}\label{structmbedtls__pk__info__t_a1290aa516e4b5889952f56edf331c313}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!type@{type}}
+\index{type@{type}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \hyperlink{pk_8h_a3fe41eff5605ae727eb9d28dad297020}{mbedtls\+\_\+pk\+\_\+type\+\_\+t} mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::type}
+
+Public key type \mbox{\Hypertarget{structmbedtls__pk__info__t_aba8b768e152806bc28322004a522dc0c}\label{structmbedtls__pk__info__t_aba8b768e152806bc28322004a522dc0c}} 
+\index{mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}!verify\+\_\+func@{verify\+\_\+func}}
+\index{verify\+\_\+func@{verify\+\_\+func}!mbedtls\+\_\+pk\+\_\+info\+\_\+t@{mbedtls\+\_\+pk\+\_\+info\+\_\+t}}
+\subsubsection{\texorpdfstring{verify\+\_\+func}{verify\_func}}
+{\footnotesize\ttfamily int($\ast$ mbedtls\+\_\+pk\+\_\+info\+\_\+t\+::verify\+\_\+func) (\hyperlink{interfacevoid}{void} $\ast$ctx, mbedtls\+\_\+md\+\_\+type\+\_\+t md\+\_\+alg, const unsigned char $\ast$\hyperlink{structhash}{hash}, size\+\_\+t hash\+\_\+len, const unsigned char $\ast$sig, size\+\_\+t sig\+\_\+len)}
+
+Verify signature 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/pk\+\_\+internal.\+h\end{DoxyCompactItemize}

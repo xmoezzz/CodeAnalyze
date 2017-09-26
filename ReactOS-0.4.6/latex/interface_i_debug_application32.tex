@@ -1,0 +1,77 @@
+\hypertarget{interface_i_debug_application32}{}\section{I\+Debug\+Application32接口 参考}
+\label{interface_i_debug_application32}\index{I\+Debug\+Application32@{I\+Debug\+Application32}}
+类 I\+Debug\+Application32 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_debug_application32}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_ae0d8729710b5e99f6fddff88e4b933c7}\label{interface_i_debug_application32_ae0d8729710b5e99f6fddff88e4b933c7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Name} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pstr\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a2e60bfc8927f182c458a1b246d59a78c}\label{interface_i_debug_application32_a2e60bfc8927f182c458a1b246d59a78c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Step\+Out\+Complete} ()
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a963a6a31ded776848dcdd232dbdd8d5a}\label{interface_i_debug_application32_a963a6a31ded776848dcdd232dbdd8d5a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Debug\+Output} (\mbox{[}in\mbox{]} L\+P\+C\+O\+L\+E\+S\+TR pstr)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_aae74e8469f8664261cfc54f9a423c160}\label{interface_i_debug_application32_aae74e8469f8664261cfc54f9a423c160}} 
+H\+R\+E\+S\+U\+LT {\bfseries Start\+Debug\+Session} ()
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a58b7d549a8349c1197375fe32d2335dd}\label{interface_i_debug_application32_a58b7d549a8349c1197375fe32d2335dd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Handle\+Break\+Point} (\mbox{[}in\mbox{]} B\+R\+E\+A\+K\+R\+E\+A\+S\+ON br, \mbox{[}out\mbox{]} B\+R\+E\+A\+K\+R\+E\+S\+U\+M\+E\+A\+C\+T\+I\+ON $\ast$pbra)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_ab252eb95b973d883d412222fb1f803a9}\label{interface_i_debug_application32_ab252eb95b973d883d412222fb1f803a9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Close} ()
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a2de0be3b68fd537b8747f64e5cc00842}\label{interface_i_debug_application32_a2de0be3b68fd537b8747f64e5cc00842}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Break\+Flags} (\mbox{[}out\mbox{]} A\+P\+P\+B\+R\+E\+A\+K\+F\+L\+A\+GS $\ast$pabf, \mbox{[}out\mbox{]} \hyperlink{interface_i_remote_debug_application_thread}{I\+Remote\+Debug\+Application\+Thread} $\ast$$\ast$pprdat\+Stepping\+Thread)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a1ed31a3b23e4edc231e9c0da6f4657bb}\label{interface_i_debug_application32_a1ed31a3b23e4edc231e9c0da6f4657bb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Current\+Thread} (\mbox{[}out\mbox{]} \hyperlink{interface_i_debug_application_thread}{I\+Debug\+Application\+Thread} $\ast$$\ast$pat)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a2605fcdc3314623a67fa2dc17d6f3692}\label{interface_i_debug_application32_a2605fcdc3314623a67fa2dc17d6f3692}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Async\+Debug\+Operation} (\mbox{[}in\mbox{]} \hyperlink{interface_i_debug_sync_operation}{I\+Debug\+Sync\+Operation} $\ast$psdo, \mbox{[}out\mbox{]} \hyperlink{interface_i_debug_async_operation}{I\+Debug\+Async\+Operation} $\ast$$\ast$ppado)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_af0a0ffbd77dc60f3116a4699f3273020}\label{interface_i_debug_application32_af0a0ffbd77dc60f3116a4699f3273020}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Stack\+Frame\+Sniffer} (\mbox{[}in\mbox{]} \hyperlink{interface_i_debug_stack_frame_sniffer}{I\+Debug\+Stack\+Frame\+Sniffer} $\ast$pdsfs, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_acac3714aa89a48b080db0fd4f4b15683}\label{interface_i_debug_application32_acac3714aa89a48b080db0fd4f4b15683}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Stack\+Frame\+Sniffer} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_ad45451ccfceba35427e8ca98277cdce3}\label{interface_i_debug_application32_ad45451ccfceba35427e8ca98277cdce3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Current\+Thread\+Is\+Debugger\+Thread} ()
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a0ade8848d6d13323e9b54ee3a9727d37}\label{interface_i_debug_application32_a0ade8848d6d13323e9b54ee3a9727d37}} 
+H\+R\+E\+S\+U\+LT {\bfseries Synchronous\+Call\+In\+Debugger\+Thread} (\mbox{[}in\mbox{]} \hyperlink{interface_i_debug_thread_call32}{I\+Debug\+Thread\+Call32} $\ast$pptc, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Param1, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Param2, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Param3)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a53fbef48727e78e5c500238b0bdeb37c}\label{interface_i_debug_application32_a53fbef48727e78e5c500238b0bdeb37c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Application\+Node} (\mbox{[}out\mbox{]} \hyperlink{interface_i_debug_application_node}{I\+Debug\+Application\+Node} $\ast$$\ast$ppdan\+New)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a1bec488bb01d485e37557e4644d88aae}\label{interface_i_debug_application32_a1bec488bb01d485e37557e4644d88aae}} 
+H\+R\+E\+S\+U\+LT {\bfseries Fire\+Debugger\+Event} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} riid, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a1e1446881f7c4ae0c69c7cef70ea74d3}\label{interface_i_debug_application32_a1e1446881f7c4ae0c69c7cef70ea74d3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Handle\+Runtime\+Error} (\mbox{[}in\mbox{]} \hyperlink{interface_i_active_script_error_debug}{I\+Active\+Script\+Error\+Debug} $\ast$p\+Error\+Debug, \mbox{[}in\mbox{]} \hyperlink{interface_i_active_script_site}{I\+Active\+Script\+Site} $\ast$p\+Script\+Site, \mbox{[}out\mbox{]} B\+R\+E\+A\+K\+R\+E\+S\+U\+M\+E\+A\+C\+T\+I\+ON $\ast$pbra, \mbox{[}out\mbox{]} E\+R\+R\+O\+R\+R\+E\+S\+U\+M\+E\+A\+C\+T\+I\+ON $\ast$perra, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Call\+On\+Script\+Error)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a4cb72ff853f463fd9b53afcb4b297aac}\label{interface_i_debug_application32_a4cb72ff853f463fd9b53afcb4b297aac}} 
+B\+O\+OL {\bfseries F\+Can\+Jit\+Debug} ()
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a5e0d37c3f6aaed45fbfae9abdcdec38b}\label{interface_i_debug_application32_a5e0d37c3f6aaed45fbfae9abdcdec38b}} 
+B\+O\+OL {\bfseries F\+Is\+Auto\+Jit\+Debug\+Enabled} ()
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a8151fd71fe8980813b3c8ef7e4bcd03b}\label{interface_i_debug_application32_a8151fd71fe8980813b3c8ef7e4bcd03b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Global\+Expression\+Context\+Provider} (\mbox{[}in\mbox{]} \hyperlink{interface_i_provide_expression_contexts}{I\+Provide\+Expression\+Contexts} $\ast$pdsfs, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_debug_application32_a762b041663373e3bef90383887b53a66}\label{interface_i_debug_application32_a762b041663373e3bef90383887b53a66}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Global\+Expression\+Context\+Provider} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Cookie)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/activdbg.\+idl\end{DoxyCompactItemize}

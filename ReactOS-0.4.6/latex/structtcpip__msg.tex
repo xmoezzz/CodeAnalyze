@@ -1,0 +1,31 @@
+\hypertarget{structtcpip__msg}{}\section{tcpip\+\_\+msg结构体 参考}
+\label{structtcpip__msg}\index{tcpip\+\_\+msg@{tcpip\+\_\+msg}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtcpip__msg_a5b992b509c516199c800c913993574c1}\label{structtcpip__msg_a5b992b509c516199c800c913993574c1}} 
+\hyperlink{interfaceenum}{enum} tcpip\+\_\+msg\+\_\+type {\bfseries type}
+\item 
+\mbox{\Hypertarget{structtcpip__msg_a68b745804255e3b227ec2f5ef0f8e136}\label{structtcpip__msg_a68b745804255e3b227ec2f5ef0f8e136}} 
+\hyperlink{struct__sys__sem__t}{sys\+\_\+sem\+\_\+t} $\ast$ {\bfseries sem}
+\item 
+\mbox{\Hypertarget{structtcpip__msg_a359112f6e62a4735a26e41596e7da914}\label{structtcpip__msg_a359112f6e62a4735a26e41596e7da914}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{structpbuf}{pbuf} $\ast$ {\bfseries p}\\
+\>\>\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ {\bfseries netif}\\
+\>\} {\bfseries inp}\\
+\>struct \{\\
+\>\>tcpip\_callback\_fn {\bfseries function}\\
+\>\>\hyperlink{interfacevoid}{void} $\ast$ {\bfseries ctx}\\
+\>\} {\bfseries cb}\\
+\} {\bfseries msg}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/include/lwip/tcpip.\+h\end{DoxyCompactItemize}

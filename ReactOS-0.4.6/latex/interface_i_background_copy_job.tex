@@ -1,0 +1,168 @@
+\hypertarget{interface_i_background_copy_job}{}\section{I\+Background\+Copy\+Job接口 参考}
+\label{interface_i_background_copy_job}\index{I\+Background\+Copy\+Job@{I\+Background\+Copy\+Job}}
+类 I\+Background\+Copy\+Job 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_background_copy_job}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_background_copy_job_1_1___b_g___f_i_l_e___i_n_f_o}{\+\_\+\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+FO}
+\item 
+struct \hyperlink{struct_i_background_copy_job_1_1___b_g___j_o_b___p_r_o_g_r_e_s_s}{\+\_\+\+B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+G\+R\+E\+SS}
+\item 
+struct \hyperlink{struct_i_background_copy_job_1_1___b_g___j_o_b___t_i_m_e_s}{\+\_\+\+B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+I\+M\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_af32afd85fe2cdf33eacba4c1df2bedeb}\label{interface_i_background_copy_job_af32afd85fe2cdf33eacba4c1df2bedeb}} 
+enum {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+I\+O\+R\+I\+TY} \{ {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND} = 0, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+GH} = 1, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL} = 2, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+OW} = 3
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a5ebaf030376dc7b68bdab4616ae299ba}\label{interface_i_background_copy_job_a5ebaf030376dc7b68bdab4616ae299ba}} 
+enum {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+TE} \{ \newline
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+U\+ED} = 0, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG} = 1, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+R\+I\+NG} = 2, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+U\+S\+P\+E\+N\+D\+ED} = 3, 
+\newline
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+E\+R\+R\+OR} = 4, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+R\+A\+N\+S\+I\+E\+N\+T\+\_\+\+E\+R\+R\+OR} = 5, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+R\+ED} = 6, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+C\+K\+N\+O\+W\+L\+E\+D\+G\+ED} = 7, 
+\newline
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+A\+N\+C\+E\+L\+L\+ED} = 8
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a65f03a5cf253aed6d10aeeb7b3a59a86}\label{interface_i_background_copy_job_a65f03a5cf253aed6d10aeeb7b3a59a86}} 
+enum {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+Y\+PE} \{ {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+O\+W\+N\+L\+O\+AD} = 0, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+P\+L\+O\+AD} = 1, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+R\+E\+P\+LY} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_ade8875f7ba7ae60f002674d0b427f717}\label{interface_i_background_copy_job_ade8875f7ba7ae60f002674d0b427f717}} 
+enum {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+U\+S\+A\+GE} \{ {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+U\+S\+A\+G\+E\+\_\+\+P\+R\+E\+C\+O\+N\+F\+IG}, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+U\+S\+A\+G\+E\+\_\+\+N\+O\+\_\+\+P\+R\+O\+XY}, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+U\+S\+A\+G\+E\+\_\+\+O\+V\+E\+R\+R\+I\+DE}, 
+{\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+U\+S\+A\+G\+E\+\_\+\+A\+U\+T\+O\+D\+E\+T\+E\+CT}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a00c48c979d8a3fdadb5b825f7c8cf999}\label{interface_i_background_copy_job_a00c48c979d8a3fdadb5b825f7c8cf999}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_background_copy_job_1_1___b_g___f_i_l_e___i_n_f_o}{I\+Background\+Copy\+Job\+::\+\_\+\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+FO} {\bfseries B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+FO}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_af042f44f49003280b0d2fe5437d90ba9}\label{interface_i_background_copy_job_af042f44f49003280b0d2fe5437d90ba9}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_background_copy_job_1_1___b_g___j_o_b___p_r_o_g_r_e_s_s}{I\+Background\+Copy\+Job\+::\+\_\+\+B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+G\+R\+E\+SS} {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+G\+R\+E\+SS}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a5a2087a19b72a3474e2515d1b7928d85}\label{interface_i_background_copy_job_a5a2087a19b72a3474e2515d1b7928d85}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_background_copy_job_1_1___b_g___j_o_b___t_i_m_e_s}{I\+Background\+Copy\+Job\+::\+\_\+\+B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+I\+M\+ES} {\bfseries B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+I\+M\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a32317c86ed371fcd4b4c56d6781e9bc5}\label{interface_i_background_copy_job_a32317c86ed371fcd4b4c56d6781e9bc5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+File\+Set} (\mbox{[}in\mbox{]} U\+L\+O\+NG c\+File\+Count, \mbox{[}in, size\+\_\+is(c\+File\+Count)\mbox{]} \hyperlink{struct_i_background_copy_job_1_1___b_g___f_i_l_e___i_n_f_o}{B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+FO} $\ast$p\+File\+Set)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a0af4f5e9973c03dcc57ae32f349a670a}\label{interface_i_background_copy_job_a0af4f5e9973c03dcc57ae32f349a670a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+File} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR Remote\+Url, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR Local\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a713661711549d8ccc83d206e22956db2}\label{interface_i_background_copy_job_a713661711549d8ccc83d206e22956db2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Files} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_background_copy_files}{I\+Enum\+Background\+Copy\+Files} $\ast$$\ast$p\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a74cf9be366fabe363627baa34d614b5f}\label{interface_i_background_copy_job_a74cf9be366fabe363627baa34d614b5f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Suspend} ()
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_acdc008d75ce8e003df26f961f7540d05}\label{interface_i_background_copy_job_acdc008d75ce8e003df26f961f7540d05}} 
+H\+R\+E\+S\+U\+LT {\bfseries Resume} ()
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a648d93db91fcb4ba22f29cd8b2275dea}\label{interface_i_background_copy_job_a648d93db91fcb4ba22f29cd8b2275dea}} 
+H\+R\+E\+S\+U\+LT {\bfseries Cancel} ()
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a64567b28e7d737fc1a94cb943449dce8}\label{interface_i_background_copy_job_a64567b28e7d737fc1a94cb943449dce8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Complete} ()
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a438e4b0462c8c40f00509fdf4ff2f50f}\label{interface_i_background_copy_job_a438e4b0462c8c40f00509fdf4ff2f50f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Id} (\mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_af5ea171e2c69e2adb9834ceb81692919}\label{interface_i_background_copy_job_af5ea171e2c69e2adb9834ceb81692919}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Type} (\mbox{[}out\mbox{]} B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+Y\+PE $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_ab1ea380475bdfd8c08504857c73d76ef}\label{interface_i_background_copy_job_ab1ea380475bdfd8c08504857c73d76ef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Progress} (\mbox{[}out\mbox{]} \hyperlink{struct_i_background_copy_job_1_1___b_g___j_o_b___p_r_o_g_r_e_s_s}{B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+G\+R\+E\+SS} $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_af49f3fc4f21e1ea01ff370e5d8bd52fc}\label{interface_i_background_copy_job_af49f3fc4f21e1ea01ff370e5d8bd52fc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Times} (\mbox{[}out\mbox{]} \hyperlink{struct_i_background_copy_job_1_1___b_g___j_o_b___t_i_m_e_s}{B\+G\+\_\+\+J\+O\+B\+\_\+\+T\+I\+M\+ES} $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_ae1282ff1c2d0d36a7fb08d89fcdfd79b}\label{interface_i_background_copy_job_ae1282ff1c2d0d36a7fb08d89fcdfd79b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+State} (\mbox{[}out\mbox{]} B\+G\+\_\+\+J\+O\+B\+\_\+\+S\+T\+A\+TE $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a460aeaaa883934afccfd365aa2406760}\label{interface_i_background_copy_job_a460aeaaa883934afccfd365aa2406760}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Error} (\mbox{[}out\mbox{]} \hyperlink{interface_i_background_copy_error}{I\+Background\+Copy\+Error} $\ast$$\ast$pp\+Error)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a23e0ce5f73f06a508fa01ca472c11c10}\label{interface_i_background_copy_job_a23e0ce5f73f06a508fa01ca472c11c10}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Owner} (\mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a5314151b8e6fa994790393d7782cc43b}\label{interface_i_background_copy_job_a5314151b8e6fa994790393d7782cc43b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Display\+Name} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_af5022e5dc3ea650705b29ea2c4122acf}\label{interface_i_background_copy_job_af5022e5dc3ea650705b29ea2c4122acf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Display\+Name} (\mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_aff86ae5411bd7cec30f2c811a20e73bf}\label{interface_i_background_copy_job_aff86ae5411bd7cec30f2c811a20e73bf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Description} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_aa79948c7648f7cd02f9742f31ec1b811}\label{interface_i_background_copy_job_aa79948c7648f7cd02f9742f31ec1b811}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Description} (\mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a71f943c5e1dabadc5584926f58f96d3e}\label{interface_i_background_copy_job_a71f943c5e1dabadc5584926f58f96d3e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Priority} (\mbox{[}in\mbox{]} B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+I\+O\+R\+I\+TY Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a1216711ef1b3aa46c85d73c4943e1e49}\label{interface_i_background_copy_job_a1216711ef1b3aa46c85d73c4943e1e49}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Priority} (\mbox{[}out\mbox{]} B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+I\+O\+R\+I\+TY $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a1f634ff9f88d9eeeb2cf8e4dcb16900f}\label{interface_i_background_copy_job_a1f634ff9f88d9eeeb2cf8e4dcb16900f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Notify\+Flags} (\mbox{[}in\mbox{]} U\+L\+O\+NG Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_aab5456a70dd0770a807146c063a6268d}\label{interface_i_background_copy_job_aab5456a70dd0770a807146c063a6268d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Notify\+Flags} (\mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_aedc91b7362e956aef58ae0a99a0360e7}\label{interface_i_background_copy_job_aedc91b7362e956aef58ae0a99a0360e7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Notify\+Interface} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a6df83212ef83abe7fd77d45353457c4c}\label{interface_i_background_copy_job_a6df83212ef83abe7fd77d45353457c4c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Notify\+Interface} (\mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$p\+Val)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_ad4866579dcbbffd53857b9cae67f1770}\label{interface_i_background_copy_job_ad4866579dcbbffd53857b9cae67f1770}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Minimum\+Retry\+Delay} (\mbox{[}in\mbox{]} U\+L\+O\+NG Seconds)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_aece9eae24494111ca70c125f1c378c93}\label{interface_i_background_copy_job_aece9eae24494111ca70c125f1c378c93}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Minimum\+Retry\+Delay} (\mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$Seconds)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_ae5c6ddb324e8a229006f376fd5656571}\label{interface_i_background_copy_job_ae5c6ddb324e8a229006f376fd5656571}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+No\+Progress\+Timeout} (\mbox{[}in\mbox{]} U\+L\+O\+NG Seconds)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a148b3e90b01c724f992d240913de01c5}\label{interface_i_background_copy_job_a148b3e90b01c724f992d240913de01c5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+No\+Progress\+Timeout} (\mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$Seconds)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_ab0128bffeeea84160e0a98f015a6b563}\label{interface_i_background_copy_job_ab0128bffeeea84160e0a98f015a6b563}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Error\+Count} (\mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$Errors)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_a67761525d6263eef3468dfc5f8f11af4}\label{interface_i_background_copy_job_a67761525d6263eef3468dfc5f8f11af4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Proxy\+Settings} (\mbox{[}in\mbox{]} B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+U\+S\+A\+GE Proxy\+Usage, \mbox{[}in, \hyperlink{structstring}{string}, \hyperlink{interfaceunique}{unique}\mbox{]} const W\+C\+H\+AR $\ast$Proxy\+List, \mbox{[}in, \hyperlink{structstring}{string}, \hyperlink{interfaceunique}{unique}\mbox{]} const W\+C\+H\+AR $\ast$Proxy\+Bypass\+List)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_ac5e9b47cdeb60e35f95854b262fa340e}\label{interface_i_background_copy_job_ac5e9b47cdeb60e35f95854b262fa340e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Proxy\+Settings} (\mbox{[}out\mbox{]} B\+G\+\_\+\+J\+O\+B\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+U\+S\+A\+GE $\ast$p\+Proxy\+Usage, \mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$p\+Proxy\+List, \mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$p\+Proxy\+Bypass\+List)
+\item 
+\mbox{\Hypertarget{interface_i_background_copy_job_aaae9754a310812c980535f2730b70d8f}\label{interface_i_background_copy_job_aaae9754a310812c980535f2730b70d8f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Take\+Ownership} ()
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/bits.\+idl\end{DoxyCompactItemize}

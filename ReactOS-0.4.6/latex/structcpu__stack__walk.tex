@@ -1,0 +1,38 @@
+\hypertarget{structcpu__stack__walk}{}\section{cpu\+\_\+stack\+\_\+walk结构体 参考}
+\label{structcpu__stack__walk}\index{cpu\+\_\+stack\+\_\+walk@{cpu\+\_\+stack\+\_\+walk}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcpu__stack__walk_a3cef9f31d36237260c739c8983b76a48}\label{structcpu__stack__walk_a3cef9f31d36237260c739c8983b76a48}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries h\+Process}
+\item 
+\mbox{\Hypertarget{structcpu__stack__walk_afe2026d8ae221bf72e8b1f0e31be3b79}\label{structcpu__stack__walk_afe2026d8ae221bf72e8b1f0e31be3b79}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries h\+Thread}
+\item 
+\mbox{\Hypertarget{structcpu__stack__walk_adaa96730dfcb91526c6014dffc41317d}\label{structcpu__stack__walk_adaa96730dfcb91526c6014dffc41317d}} 
+B\+O\+OL {\bfseries is32}
+\item 
+\mbox{\Hypertarget{structcpu__stack__walk_a3bf1ecdc96ffb6f53e4769bec6cd9d11}\label{structcpu__stack__walk_a3bf1ecdc96ffb6f53e4769bec6cd9d11}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>PREAD\_PROCESS\_MEMORY\_ROUTINE {\bfseries f\_read\_mem}\\
+\>\>PTRANSLATE\_ADDRESS\_ROUTINE {\bfseries f\_xlat\_adr}\\
+\>\>PFUNCTION\_TABLE\_ACCESS\_ROUTINE {\bfseries f\_tabl\_acs}\\
+\>\>PGET\_MODULE\_BASE\_ROUTINE {\bfseries f\_modl\_bas}\\
+\>\} {\bfseries s32}\\
+\>struct \{\\
+\>\>PREAD\_PROCESS\_MEMORY\_ROUTINE64 {\bfseries f\_read\_mem}\\
+\>\>PTRANSLATE\_ADDRESS\_ROUTINE64 {\bfseries f\_xlat\_adr}\\
+\>\>PFUNCTION\_TABLE\_ACCESS\_ROUTINE64 {\bfseries f\_tabl\_acs}\\
+\>\>PGET\_MODULE\_BASE\_ROUTINE64 {\bfseries f\_modl\_bas}\\
+\>\} {\bfseries s64}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/dbghelp/dbghelp\+\_\+private.\+h\end{DoxyCompactItemize}

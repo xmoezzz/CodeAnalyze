@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/dll/win32/secur32/wine/util.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c938f8a9ae7e172e1ee48b60f4a9b17a.html">dll</a></li><li class="navelem"><a class="el" href="dir_9169ed7afd52b0e166a18dc6ffe86d82.html">win32</a></li><li class="navelem"><a class="el" href="dir_5e0410ef5447d4426ea76a40bca6a603.html">secur32</a></li><li class="navelem"><a class="el" href="dir_9c00f9ca7b4f5c16c6e7f6e916614837.html">wine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">util.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef __WINE_UTIL_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define __WINE_UTIL_H__</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/* Functions from util.c */</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ULONG ComputeCrc32(<span class="keyword">const</span> BYTE *pData, INT iLen, ULONG initial_crc) DECLSPEC_HIDDEN;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;SECURITY_STATUS SECUR32_CreateNTLM1SessionKey(PBYTE password, <span class="keywordtype">int</span> len, PBYTE session_key) DECLSPEC_HIDDEN;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;SECURITY_STATUS SECUR32_CreateNTLM2SubKeys(<a class="code" href="struct___nego_helper.html">PNegoHelper</a> helper) DECLSPEC_HIDDEN;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<a class="code" href="structtag__arc4__info.html">arc4_info</a> *SECUR32_arc4Alloc(<span class="keywordtype">void</span>) DECLSPEC_HIDDEN;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> SECUR32_arc4Init(<a class="code" href="structtag__arc4__info.html">arc4_info</a> *a4i, <span class="keyword">const</span> BYTE *<a class="code" href="structkey.html">key</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> keyLen) DECLSPEC_HIDDEN;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> SECUR32_arc4Process(<a class="code" href="structtag__arc4__info.html">arc4_info</a> *a4i, BYTE *inoutString, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> length) DECLSPEC_HIDDEN;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> SECUR32_arc4Cleanup(<a class="code" href="structtag__arc4__info.html">arc4_info</a> *a4i) DECLSPEC_HIDDEN;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __WINE_UTIL_H__ */</span><span class="preprocessor"></span></div><div class="ttc" id="structtag__arc4__info_html"><div class="ttname"><a href="structtag__arc4__info.html">tag_arc4_info</a></div><div class="ttdef"><b>Definition:</b> ntlm.h:16</div></div>
+<div class="ttc" id="struct___nego_helper_html"><div class="ttname"><a href="struct___nego_helper.html">_NegoHelper</a></div><div class="ttdef"><b>Definition:</b> ntlm.h:21</div></div>
+<div class="ttc" id="structkey_html"><div class="ttname"><a href="structkey.html">key</a></div><div class="ttdef"><b>Definition:</b> path.c:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: _StorageType&lt; _Tp &gt; 模板结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="struct___storage_type-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">_StorageType&lt; _Tp &gt; 模板结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad8fc37c8da5e94bd646f970189a1dfbb"><td class="memItemLeft" align="right" valign="top"><a id="ad8fc37c8da5e94bd646f970189a1dfbb"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>use_void_ptr</b> = (sizeof(_UseVoidPtrStorageType(_PODType(), __null_rep())) == sizeof(char*))
+ }</td></tr>
+<tr class="separator:ad8fc37c8da5e94bd646f970189a1dfbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dacabc4c811d5e5b0f2bfee4178b3bd"><td class="memItemLeft" align="right" valign="top"><a id="a3dacabc4c811d5e5b0f2bfee4178b3bd"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>use_const_void_ptr</b> = (sizeof(_UseConstVoidPtrStorageType(_PODType(), __null_rep())) == sizeof(char*))
+ }</td></tr>
+<tr class="separator:a3dacabc4c811d5e5b0f2bfee4178b3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af373c63e21d6ac847fb5f68c24db16"><td class="memItemLeft" align="right" valign="top"><a id="a2af373c63e21d6ac847fb5f68c24db16"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>use_volatile_void_ptr</b> = (sizeof(_UseVolatileVoidPtrStorageType(_PODType(), __null_rep())) == sizeof(char*))
+ }</td></tr>
+<tr class="separator:a2af373c63e21d6ac847fb5f68c24db16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49554231626bcc1fe111770441d5754"><td class="memItemLeft" align="right" valign="top"><a id="aa49554231626bcc1fe111770441d5754"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>use_const_volatile_void_ptr</b> = (sizeof(_UseConstVolatileVoidPtrStorageType(_PODType(), __null_rep())) == sizeof(char*))
+ }</td></tr>
+<tr class="separator:aa49554231626bcc1fe111770441d5754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e431f5f6eb329c29b19c47b8e464bc"><td class="memItemLeft" align="right" valign="top"><a id="a04e431f5f6eb329c29b19c47b8e464bc"></a>
+typedef <a class="el" href="struct____type__traits.html">__type_traits</a>&lt; _Tp &gt;::is_POD_type&#160;</td><td class="memItemRight" valign="bottom"><b>_PODType</b></td></tr>
+<tr class="separator:a04e431f5f6eb329c29b19c47b8e464bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a312bfe93ff7caadecfa59e85ffd983"><td class="memItemLeft" align="right" valign="top"><a id="a1a312bfe93ff7caadecfa59e85ffd983"></a>
+typedef <a class="el" href="struct____select.html">__select</a>&lt;!use_const_volatile_void_ptr, _Tp, typename <a class="el" href="struct____select.html">__select</a>&lt; use_void_ptr, <a class="el" href="interfacevoid.html">void</a> *, typename <a class="el" href="struct____select.html">__select</a>&lt; use_const_void_ptr, const <a class="el" href="interfacevoid.html">void</a> *, typename <a class="el" href="struct____select.html">__select</a>&lt; use_volatile_void_ptr, volatile <a class="el" href="interfacevoid.html">void</a> *, const volatile <a class="el" href="interfacevoid.html">void</a> * &gt;::_Ret &gt;::_Ret &gt;::_Ret &gt;::_Ret&#160;</td><td class="memItemRight" valign="bottom"><b>_QualifiedType</b></td></tr>
+<tr class="separator:a1a312bfe93ff7caadecfa59e85ffd983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64522f9113eaa9cc3b1672971807e201"><td class="memItemLeft" align="right" valign="top"><a id="a64522f9113eaa9cc3b1672971807e201"></a>
+typedef _QualifiedType&#160;</td><td class="memItemRight" valign="bottom"><b>_Type</b></td></tr>
+<tr class="separator:a64522f9113eaa9cc3b1672971807e201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4463d383083566b98681633089ea9cbc"><td class="memItemLeft" align="right" valign="top"><a id="a4463d383083566b98681633089ea9cbc"></a>
+static _Tp&#160;</td><td class="memItemRight" valign="bottom"><b>__null_rep</b> ()</td></tr>
+<tr class="separator:a4463d383083566b98681633089ea9cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/c++/stlport/stl/pointers/<a class="el" href="__tools_8h_source.html">_tools.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IRangeList接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="interface_i_range_list-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IRangeList接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IRangeList 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_range_list.png" usemap="#IRangeList_map" alt=""/>
+  <map id="IRangeList_map" name="IRangeList_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,70,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aebeb37ba50c5870f6d5bbf853b83f2cf"><td class="memItemLeft" align="right" valign="top"><a id="aebeb37ba50c5870f6d5bbf853b83f2cf"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="separator:aebeb37ba50c5870f6d5bbf853b83f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc57d4a771b9cef60278cd394530a438"><td class="memItemLeft" align="right" valign="top"><a id="acc57d4a771b9cef60278cd394530a438"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsInRange</b> ([in] const ULONG <a class="el" href="unionvalue.html">value</a>)</td></tr>
+<tr class="separator:acc57d4a771b9cef60278cd394530a438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5591f40db3c1497f378d66725897d7b"><td class="memItemLeft" align="right" valign="top"><a id="ab5591f40db3c1497f378d66725897d7b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Min</b> ([out] ULONG *pulMin)</td></tr>
+<tr class="separator:ab5591f40db3c1497f378d66725897d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57878a30e4c1be59d5107d6f4eb805c"><td class="memItemLeft" align="right" valign="top"><a id="aa57878a30e4c1be59d5107d6f4eb805c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Max</b> ([out] ULONG *pulMax)</td></tr>
+<tr class="separator:aa57878a30e4c1be59d5107d6f4eb805c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494cdec5daceb90fb0553caeb3eda502"><td class="memItemLeft" align="right" valign="top"><a id="a494cdec5daceb90fb0553caeb3eda502"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> ([out] byte **ppbDestination, [out] ULONG *pulSizeOfDestination)</td></tr>
+<tr class="separator:a494cdec5daceb90fb0553caeb3eda502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31095d16d26fa85ea1aeb3c0714ca4e0"><td class="memItemLeft" align="right" valign="top"><a id="a31095d16d26fa85ea1aeb3c0714ca4e0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> ([in, size_is(ulSizeOfSource)] byte *pbSource, [in] const ULONG ulSizeOfSource)</td></tr>
+<tr class="separator:a31095d16d26fa85ea1aeb3c0714ca4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80303f71c847b52b94c2d73f14214aba"><td class="memItemLeft" align="right" valign="top"><a id="a80303f71c847b52b94c2d73f14214aba"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>AddRange</b> ([in] const ULONG low, [in] const ULONG high)</td></tr>
+<tr class="separator:a80303f71c847b52b94c2d73f14214aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e329364c2ca587ce72675eee02fda3"><td class="memItemLeft" align="right" valign="top"><a id="a51e329364c2ca587ce72675eee02fda3"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>AddSingleValue</b> ([in] const ULONG <a class="el" href="unionvalue.html">value</a>)</td></tr>
+<tr class="separator:a51e329364c2ca587ce72675eee02fda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc585cf697c720391d5e1668f8d9bd4"><td class="memItemLeft" align="right" valign="top"><a id="a4cc585cf697c720391d5e1668f8d9bd4"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>AddRangeList</b> ([in] const <a class="el" href="interface_i_range_list.html">IRangeList</a> *prl)</td></tr>
+<tr class="separator:a4cc585cf697c720391d5e1668f8d9bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad27bccb6b099c00cb1fd82a87f78a00"><td class="memItemLeft" align="right" valign="top"><a id="aad27bccb6b099c00cb1fd82a87f78a00"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteRange</b> ([in] const ULONG low, [in] const ULONG high)</td></tr>
+<tr class="separator:aad27bccb6b099c00cb1fd82a87f78a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e7b48938e53a90d5b320e9e0febed6"><td class="memItemLeft" align="right" valign="top"><a id="af1e7b48938e53a90d5b320e9e0febed6"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteSingleValue</b> ([in] const ULONG <a class="el" href="unionvalue.html">value</a>)</td></tr>
+<tr class="separator:af1e7b48938e53a90d5b320e9e0febed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5517373398d2f259fb7e88cbf0b371"><td class="memItemLeft" align="right" valign="top"><a id="a8e5517373398d2f259fb7e88cbf0b371"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteRangeList</b> ([in] const <a class="el" href="interface_i_range_list.html">IRangeList</a> *prl)</td></tr>
+<tr class="separator:a8e5517373398d2f259fb7e88cbf0b371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a28bfd93715c62395836870d2eb855b"><td class="memItemLeft" align="right" valign="top"><a id="a8a28bfd93715c62395836870d2eb855b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>MinOfRange</b> ([in] const ULONG <a class="el" href="unionvalue.html">value</a>, [out] ULONG *pulMinOfRange)</td></tr>
+<tr class="separator:a8a28bfd93715c62395836870d2eb855b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9318f54ed0885f12e6700f43aa0ad02"><td class="memItemLeft" align="right" valign="top"><a id="ae9318f54ed0885f12e6700f43aa0ad02"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>MaxOfRange</b> ([in] const ULONG <a class="el" href="unionvalue.html">value</a>, [out] ULONG *pulMaxOfRange)</td></tr>
+<tr class="separator:ae9318f54ed0885f12e6700f43aa0ad02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9788440024297e4b83e595f8a508062"><td class="memItemLeft" align="right" valign="top"><a id="ae9788440024297e4b83e595f8a508062"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RangeToIMAPString</b> ([out] LPSTR *ppszDestination, [out] LPDWORD pdwLengthOfDestination)</td></tr>
+<tr class="separator:ae9788440024297e4b83e595f8a508062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade22054ddc33b181ec1a329e5427a094"><td class="memItemLeft" align="right" valign="top"><a id="ade22054ddc33b181ec1a329e5427a094"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Next</b> ([in] const ULONG current, [out] ULONG *pulNext)</td></tr>
+<tr class="separator:ade22054ddc33b181ec1a329e5427a094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f10606bc206b6713d257186b3dca616"><td class="memItemLeft" align="right" valign="top"><a id="a3f10606bc206b6713d257186b3dca616"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Prev</b> ([in] const ULONG current, [out] ULONG *pulPrev)</td></tr>
+<tr class="separator:a3f10606bc206b6713d257186b3dca616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce8248a974115d4e6809a017c2c0f94"><td class="memItemLeft" align="right" valign="top"><a id="a4ce8248a974115d4e6809a017c2c0f94"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>Cardinality</b> ([out] ULONG *pulCardinality)</td></tr>
+<tr class="separator:a4ce8248a974115d4e6809a017c2c0f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3147c7ca2bce22027b81c1c04f034bdc"><td class="memItemLeft" align="right" valign="top"><a id="a3147c7ca2bce22027b81c1c04f034bdc"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CardinalityFrom</b> ([in] const ULONG ulStartPoint, [out] ULONG *pulCardinalityFrom)</td></tr>
+<tr class="separator:a3147c7ca2bce22027b81c1c04f034bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa3893534892623a0ea4b8462d5743711"><td class="memItemLeft" align="right" valign="top"><a id="aa3893534892623a0ea4b8462d5743711"></a>
+const ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>RL_RANGE_ERROR</b> = ((ULONG)-1)</td></tr>
+<tr class="separator:aa3893534892623a0ea4b8462d5743711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af732e4a1d196b6d9d6ba32af932629aa"><td class="memItemLeft" align="right" valign="top"><a id="af732e4a1d196b6d9d6ba32af932629aa"></a>
+const ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>RL_LAST_MESSAGE</b> = ((ULONG)-1)</td></tr>
+<tr class="separator:af732e4a1d196b6d9d6ba32af932629aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="imnxport_8idl_source.html">imnxport.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

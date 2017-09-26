@@ -1,0 +1,86 @@
+\hypertarget{interface_i_wbem_services}{}\section{I\+Wbem\+Services接口 参考}
+\label{interface_i_wbem_services}\index{I\+Wbem\+Services@{I\+Wbem\+Services}}
+类 I\+Wbem\+Services 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_wbem_services}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a3d89d2885a5a1a84e850553be1705633}\label{interface_i_wbem_services_a3d89d2885a5a1a84e850553be1705633}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open\+Namespace} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Namespace, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} \hyperlink{interface_i_wbem_services}{I\+Wbem\+Services} $\ast$$\ast$pp\+Working\+Namespace, \mbox{[}out\mbox{]} I\+Wbem\+Call\+Result $\ast$$\ast$pp\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a854c4353b4345e8f0b3fa1efe9a17797}\label{interface_i_wbem_services_a854c4353b4345e8f0b3fa1efe9a17797}} 
+H\+R\+E\+S\+U\+LT {\bfseries Cancel\+Async\+Call} (\mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Sink)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a66cc8db2f591eacafb48351ef7c92f8e}\label{interface_i_wbem_services_a66cc8db2f591eacafb48351ef7c92f8e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Object\+Sink} (\mbox{[}in\mbox{]} long l\+Flags, \mbox{[}out\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$$\ast$pp\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a01e4416554a6b0efc653519e4a11fc89}\label{interface_i_wbem_services_a01e4416554a6b0efc653519e4a11fc89}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Object} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Object\+Path, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$$\ast$pp\+Object, \mbox{[}out\mbox{]} I\+Wbem\+Call\+Result $\ast$$\ast$pp\+Call\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_ac6b403c111ded2c34de6108941789c3d}\label{interface_i_wbem_services_ac6b403c111ded2c34de6108941789c3d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Object\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Object\+Path, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_ad5839527e0e4cb70c47c9c643620c5ad}\label{interface_i_wbem_services_ad5839527e0e4cb70c47c9c643620c5ad}} 
+H\+R\+E\+S\+U\+LT {\bfseries Put\+Class} (\mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$p\+Object, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} I\+Wbem\+Call\+Result $\ast$$\ast$pp\+Call\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a4e94c5a72a1b1b568203f7399238ca72}\label{interface_i_wbem_services_a4e94c5a72a1b1b568203f7399238ca72}} 
+H\+R\+E\+S\+U\+LT {\bfseries Put\+Class\+Async} (\mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$p\+Object, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_ada1c011c5b0012179f5f7d3f23851a80}\label{interface_i_wbem_services_ada1c011c5b0012179f5f7d3f23851a80}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete\+Class} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Class, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} I\+Wbem\+Call\+Result $\ast$$\ast$pp\+Call\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_abc489b64ea25eaae6528722346aacc4a}\label{interface_i_wbem_services_abc489b64ea25eaae6528722346aacc4a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete\+Class\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Class, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_abc8c2f08569ba45ff8418704ffa8c572}\label{interface_i_wbem_services_abc8c2f08569ba45ff8418704ffa8c572}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Class\+Enum} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Superclass, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_wbem_class_object}{I\+Enum\+Wbem\+Class\+Object} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a136e15260bdf5cbd15f2e7cd644393f4}\label{interface_i_wbem_services_a136e15260bdf5cbd15f2e7cd644393f4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Class\+Enum\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Superclass, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a4d0f3e069a3999c44b8df6aa05ab8143}\label{interface_i_wbem_services_a4d0f3e069a3999c44b8df6aa05ab8143}} 
+H\+R\+E\+S\+U\+LT {\bfseries Put\+Instance} (\mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$p\+Inst, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} I\+Wbem\+Call\+Result $\ast$$\ast$pp\+Call\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a7aabc96807e492812d8035b0cd2dcf3a}\label{interface_i_wbem_services_a7aabc96807e492812d8035b0cd2dcf3a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Put\+Instance\+Async} (\mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$p\+Inst, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a9898680d0749852157555f2ddb9d42af}\label{interface_i_wbem_services_a9898680d0749852157555f2ddb9d42af}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete\+Instance} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Object\+Path, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} I\+Wbem\+Call\+Result $\ast$$\ast$pp\+Call\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_ab4b21e71eba9314a7174d2f0ecd7d14a}\label{interface_i_wbem_services_ab4b21e71eba9314a7174d2f0ecd7d14a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete\+Instance\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Object\+Path, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a3e3c446c57d3151d8e9c9fd460e6ba3d}\label{interface_i_wbem_services_a3e3c446c57d3151d8e9c9fd460e6ba3d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Instance\+Enum} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Filter, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_wbem_class_object}{I\+Enum\+Wbem\+Class\+Object} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_aa59d2926c6a4e286d3f8738cbb15e459}\label{interface_i_wbem_services_aa59d2926c6a4e286d3f8738cbb15e459}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Instance\+Enum\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Filter, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a31d34ab313bc8f6c4f77adc4ce0feb5d}\label{interface_i_wbem_services_a31d34ab313bc8f6c4f77adc4ce0feb5d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exec\+Query} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Query\+Language, \mbox{[}in\mbox{]} const B\+S\+TR str\+Query, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_wbem_class_object}{I\+Enum\+Wbem\+Class\+Object} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a11199b16db3c933020f6976511b20354}\label{interface_i_wbem_services_a11199b16db3c933020f6976511b20354}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exec\+Query\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Query\+Language, \mbox{[}in\mbox{]} const B\+S\+TR str\+Query, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a92d0fd148945755f1f42c28020a6daa2}\label{interface_i_wbem_services_a92d0fd148945755f1f42c28020a6daa2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exec\+Notification\+Query} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Query\+Language, \mbox{[}in\mbox{]} const B\+S\+TR str\+Query, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_wbem_class_object}{I\+Enum\+Wbem\+Class\+Object} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a64a45c5861f271c38d4a86e4dd71a8c7}\label{interface_i_wbem_services_a64a45c5861f271c38d4a86e4dd71a8c7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exec\+Notification\+Query\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Query\+Language, \mbox{[}in\mbox{]} const B\+S\+TR str\+Query, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a9a10236725667f60f9383df475356839}\label{interface_i_wbem_services_a9a10236725667f60f9383df475356839}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exec\+Method} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Object\+Path, \mbox{[}in\mbox{]} const B\+S\+TR str\+Method\+Name, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$p\+In\+Params, \mbox{[}out\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$$\ast$pp\+Out\+Params, \mbox{[}out\mbox{]} I\+Wbem\+Call\+Result $\ast$$\ast$pp\+Call\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_wbem_services_a30439fe7cd02a62b7f5135690eff1f69}\label{interface_i_wbem_services_a30439fe7cd02a62b7f5135690eff1f69}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exec\+Method\+Async} (\mbox{[}in\mbox{]} const B\+S\+TR str\+Object\+Path, \mbox{[}in\mbox{]} const B\+S\+TR str\+Method\+Name, \mbox{[}in\mbox{]} long l\+Flags, \mbox{[}in\mbox{]} I\+Wbem\+Context $\ast$p\+Ctx, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_class_object}{I\+Wbem\+Class\+Object} $\ast$p\+In\+Params, \mbox{[}in\mbox{]} \hyperlink{interface_i_wbem_object_sink}{I\+Wbem\+Object\+Sink} $\ast$p\+Response\+Handler)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wbemcli.\+idl\end{DoxyCompactItemize}

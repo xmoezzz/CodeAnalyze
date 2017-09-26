@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: IBackgroundCopyJobHttpOptions接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_background_copy_job_http_options-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IBackgroundCopyJobHttpOptions接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 IBackgroundCopyJobHttpOptions 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_background_copy_job_http_options.png" usemap="#IBackgroundCopyJobHttpOptions_map" alt=""/>
+  <map id="IBackgroundCopyJobHttpOptions_map" name="IBackgroundCopyJobHttpOptions_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,199,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ac2677eccd322206a19d09f5319708ca5"><td class="memItemLeft" align="right" valign="top"><a id="ac2677eccd322206a19d09f5319708ca5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>BG_CERT_STORE_LOCATION</b> { <br />
+&#160;&#160;<b>BG_CERT_STORE_LOCATION_CURRENT_USER</b>, 
+<b>BG_CERT_STORE_LOCATION_LOCAL_MACHINE</b>, 
+<b>BG_CERT_STORE_LOCATION_CURRENT_SERVICE</b>, 
+<b>BG_CERT_STORE_LOCATION_SERVICES</b>, 
+<br />
+&#160;&#160;<b>BG_CERT_STORE_LOCATION_USERS</b>, 
+<b>BG_CERT_STORE_LOCATION_CURRENT_USER_GROUP_POLICY</b>, 
+<b>BG_CERT_STORE_LOCATION_LOCAL_MACHINE_GROUP_POLICY</b>, 
+<b>BG_CERT_STORE_LOCATION_LOCAL_MACHINE_ENTERPRISE</b>
+<br />
+ }</td></tr>
+<tr class="separator:ac2677eccd322206a19d09f5319708ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa922b516c5da632b02fe1dffb0a4f325"><td class="memItemLeft" align="right" valign="top"><a id="aa922b516c5da632b02fe1dffb0a4f325"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetClientCertificateByID</b> ([in] BG_CERT_STORE_LOCATION StoreLocation, [in] LPCWSTR StoreName, [in, size_is(20), ref] BYTE *pCertHashBlob)</td></tr>
+<tr class="separator:aa922b516c5da632b02fe1dffb0a4f325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1777422cee24d736db5b465d28ba59bf"><td class="memItemLeft" align="right" valign="top"><a id="a1777422cee24d736db5b465d28ba59bf"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetClientCertificateByName</b> ([in] BG_CERT_STORE_LOCATION StoreLocation, [in] LPCWSTR StoreName, [in] LPCWSTR SubjectName)</td></tr>
+<tr class="separator:a1777422cee24d736db5b465d28ba59bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b6802ec5eb8952dc9a1a84f6ca735f"><td class="memItemLeft" align="right" valign="top"><a id="af1b6802ec5eb8952dc9a1a84f6ca735f"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveClientCertificate</b> ()</td></tr>
+<tr class="separator:af1b6802ec5eb8952dc9a1a84f6ca735f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456ec592a3b873b0622220edb4881f96"><td class="memItemLeft" align="right" valign="top"><a id="a456ec592a3b873b0622220edb4881f96"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetClientCertificate</b> ([out, ref] BG_CERT_STORE_LOCATION *pStoreLocation, [out, ref] LPWSTR *pStoreName, [out, size_is(, 20), ref] BYTE **ppCertHashBlob, [out, ref] LPWSTR *pSubjectName)</td></tr>
+<tr class="separator:a456ec592a3b873b0622220edb4881f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4a2be470c8a509a2fda80123af2d0c"><td class="memItemLeft" align="right" valign="top"><a id="a7d4a2be470c8a509a2fda80123af2d0c"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomHeaders</b> ([in, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR RequestHeaders)</td></tr>
+<tr class="separator:a7d4a2be470c8a509a2fda80123af2d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4bee1b9a4eb6b5187469b96d400374"><td class="memItemLeft" align="right" valign="top"><a id="a8a4bee1b9a4eb6b5187469b96d400374"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetCustomHeaders</b> ([out] LPWSTR *pRequestHeaders)</td></tr>
+<tr class="separator:a8a4bee1b9a4eb6b5187469b96d400374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576c7b244abdbe502fe95fdb937e9d9a"><td class="memItemLeft" align="right" valign="top"><a id="a576c7b244abdbe502fe95fdb937e9d9a"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetSecurityFlags</b> ([in] ULONG Flags)</td></tr>
+<tr class="separator:a576c7b244abdbe502fe95fdb937e9d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ba1f70de2159f52ed11b91e3e536ea"><td class="memItemLeft" align="right" valign="top"><a id="af0ba1f70de2159f52ed11b91e3e536ea"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSecurityFlags</b> ([out, ref] ULONG *pFlags)</td></tr>
+<tr class="separator:af0ba1f70de2159f52ed11b91e3e536ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="bits2__5_8idl_source.html">bits2_5.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

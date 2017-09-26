@@ -1,0 +1,50 @@
+\hypertarget{interface_i_w_m_writer_advanced}{}\section{I\+W\+M\+Writer\+Advanced接口 参考}
+\label{interface_i_w_m_writer_advanced}\index{I\+W\+M\+Writer\+Advanced@{I\+W\+M\+Writer\+Advanced}}
+类 I\+W\+M\+Writer\+Advanced 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_w_m_writer_advanced}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a9f126458dca80094d5600a97ec56d0d0}\label{interface_i_w_m_writer_advanced_a9f126458dca80094d5600a97ec56d0d0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Sink\+Count} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pc\+Sinks)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a9e1068abd8b07977ca4670a3a47298a4}\label{interface_i_w_m_writer_advanced_a9e1068abd8b07977ca4670a3a47298a4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Sink} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Sink\+Num, \mbox{[}out\mbox{]} \hyperlink{interface_i_w_m_writer_sink}{I\+W\+M\+Writer\+Sink} $\ast$$\ast$pp\+Sink)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a0c69b98177c1c5901ce8bbf476b563b0}\label{interface_i_w_m_writer_advanced_a0c69b98177c1c5901ce8bbf476b563b0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Sink} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_writer_sink}{I\+W\+M\+Writer\+Sink} $\ast$p\+Sink)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a05b64c4cb541e2d91e7edf62121b55ef}\label{interface_i_w_m_writer_advanced_a05b64c4cb541e2d91e7edf62121b55ef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Sink} (\mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_writer_sink}{I\+W\+M\+Writer\+Sink} $\ast$p\+Sink)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a9b34f458f208bb6142d5c0e2baa3a1e9}\label{interface_i_w_m_writer_advanced_a9b34f458f208bb6142d5c0e2baa3a1e9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Write\+Stream\+Sample} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}in\mbox{]} Q\+W\+O\+RD cns\+Sample\+Time, \mbox{[}in\mbox{]} D\+W\+O\+RD ms\+Sample\+Send\+Time, \mbox{[}in\mbox{]} Q\+W\+O\+RD cns\+Sample\+Duration, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} \hyperlink{interface_i_n_s_s_buffer}{I\+N\+S\+S\+Buffer} $\ast$p\+Sample)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a1a2c73041d96086a092055b6bd8c92a2}\label{interface_i_w_m_writer_advanced_a1a2c73041d96086a092055b6bd8c92a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Live\+Source} (B\+O\+OL f\+Is\+Live\+Source)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a45ceb37850bb22ab3c13509fe03364a2}\label{interface_i_w_m_writer_advanced_a45ceb37850bb22ab3c13509fe03364a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Real\+Time} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Real\+Time)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a068ae9fd4c14d17729a1f872f55dd9ef}\label{interface_i_w_m_writer_advanced_a068ae9fd4c14d17729a1f872f55dd9ef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Writer\+Time} (\mbox{[}out\mbox{]} Q\+W\+O\+RD $\ast$p\+Current\+Time)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a100d5366b6367b15d33762cca14fb72d}\label{interface_i_w_m_writer_advanced_a100d5366b6367b15d33762cca14fb72d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Statistics} (\mbox{[}in\mbox{]} W\+O\+RD w\+Stream\+Num, \mbox{[}out\mbox{]} \hyperlink{struct___w_m_writer_statistics}{W\+M\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+S\+T\+A\+T\+I\+S\+T\+I\+CS} $\ast$p\+Stats)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_a334f4aad33483a3beaead13d08ffef7d}\label{interface_i_w_m_writer_advanced_a334f4aad33483a3beaead13d08ffef7d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Sync\+Tolerance} (\mbox{[}in\mbox{]} D\+W\+O\+RD ms\+Window)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_writer_advanced_adfcd3f0d12b628bb7b75dfeded7579b6}\label{interface_i_w_m_writer_advanced_adfcd3f0d12b628bb7b75dfeded7579b6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Sync\+Tolerance} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pms\+Window)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wmsdkidl.\+idl\end{DoxyCompactItemize}

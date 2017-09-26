@@ -1,0 +1,48 @@
+\hypertarget{interface_i_internet_session}{}\section{I\+Internet\+Session接口 参考}
+\label{interface_i_internet_session}\index{I\+Internet\+Session@{I\+Internet\+Session}}
+类 I\+Internet\+Session 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_internet_session}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_a377004fe6e739124b1a1e259ef84a7c1}\label{interface_i_internet_session_a377004fe6e739124b1a1e259ef84a7c1}} 
+enum {\bfseries \+\_\+tag\+O\+I\+B\+D\+G\+\_\+\+F\+L\+A\+GS} \{ {\bfseries O\+I\+B\+D\+G\+\_\+\+A\+P\+A\+R\+T\+M\+E\+N\+T\+T\+H\+R\+E\+A\+D\+ED} = 0x0100, 
+{\bfseries O\+I\+B\+D\+G\+\_\+\+D\+A\+T\+A\+O\+N\+LY} = 0x1000
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_a94034557527ba9faa6349a5b5114e538}\label{interface_i_internet_session_a94034557527ba9faa6349a5b5114e538}} 
+typedef \hyperlink{interface_i_internet_session}{I\+Internet\+Session} $\ast$ {\bfseries L\+P\+I\+I\+N\+T\+E\+R\+N\+E\+T\+S\+E\+S\+S\+I\+ON}
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_a951601e012b447929dcd0b61df5290f1}\label{interface_i_internet_session_a951601e012b447929dcd0b61df5290f1}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Internet\+Session\+::\+\_\+tag\+O\+I\+B\+D\+G\+\_\+\+F\+L\+A\+GS {\bfseries O\+I\+B\+D\+G\+\_\+\+F\+L\+A\+GS}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_a018913649c4117163cc53574ec33823a}\label{interface_i_internet_session_a018913649c4117163cc53574ec33823a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Name\+Space} (\mbox{[}in\mbox{]} \hyperlink{interface_i_class_factory}{I\+Class\+Factory} $\ast$p\+CF, \mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Protocol, \mbox{[}in\mbox{]} U\+L\+O\+NG c\+Patterns, \mbox{[}in\mbox{]} const L\+P\+C\+W\+S\+TR $\ast$ppwz\+Patterns, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reserved)
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_ae9c66004ed0409262e2bfe1a584aa81d}\label{interface_i_internet_session_ae9c66004ed0409262e2bfe1a584aa81d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Name\+Space} (\mbox{[}in\mbox{]} \hyperlink{interface_i_class_factory}{I\+Class\+Factory} $\ast$p\+CF, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR psz\+Protocol)
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_a5b1001db33b4436b541dc44a715c51a2}\label{interface_i_internet_session_a5b1001db33b4436b541dc44a715c51a2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Mime\+Filter} (\mbox{[}in\mbox{]} \hyperlink{interface_i_class_factory}{I\+Class\+Factory} $\ast$p\+CF, \mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_af4fbd962a586b2aee513255fb96c2b97}\label{interface_i_internet_session_af4fbd962a586b2aee513255fb96c2b97}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Mime\+Filter} (\mbox{[}in\mbox{]} \hyperlink{interface_i_class_factory}{I\+Class\+Factory} $\ast$p\+CF, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_a5ea56470e174f7b22803901602ab6fd4}\label{interface_i_internet_session_a5ea56470e174f7b22803901602ab6fd4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Binding} (\mbox{[}in\mbox{]} L\+P\+BC p\+BC, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR sz\+Url, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$p\+Unk\+Outer, \mbox{[}out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$pp\+Unk, \mbox{[}out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_internet_protocol}{I\+Internet\+Protocol} $\ast$$\ast$pp\+O\+Inet\+Prot, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Option)
+\item 
+\mbox{\Hypertarget{interface_i_internet_session_a5bdb00b50cee271e3aa4efa12a618b81}\label{interface_i_internet_session_a5bdb00b50cee271e3aa4efa12a618b81}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Session\+Option} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Option, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Buffer, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Buffer\+Length, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reserved)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/urlmon.\+idl\end{DoxyCompactItemize}

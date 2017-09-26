@@ -1,0 +1,56 @@
+\hypertarget{texstate_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/texstate.c 文件参考}
+\label{texstate_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/texstate.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/texstate.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texstate_8c_a900e9056ef6a68dff5e9b44aec3417b6}{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+state} (const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$src, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$dst)
+\item 
+\mbox{\Hypertarget{texstate_8c_abdecf225c4dfc42fcef1c5063ec2f44f}\label{texstate_8c_abdecf225c4dfc42fcef1c5063ec2f44f}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+print\+\_\+texunit\+\_\+state} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texstate_8c_aa6d9b1ceca663d348998530dd12529db}{\+\_\+mesa\+\_\+update\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint new\+\_\+state)
+\item 
+G\+Lboolean \hyperlink{texstate_8c_a099b260f3b77caaac26a6a808a4c883d}{\+\_\+mesa\+\_\+init\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texstate_8c_a9d135bc2bd78127d1f84f66776f128fc}{\+\_\+mesa\+\_\+free\+\_\+texture\+\_\+data} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texstate_8c_abb21052cf962b7e083f972a0ed480a9f}{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Texture state handling. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{texstate_8c_a900e9056ef6a68dff5e9b44aec3417b6}\label{texstate_8c_a900e9056ef6a68dff5e9b44aec3417b6}} 
+\index{texstate.\+c@{texstate.\+c}!\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+state@{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+state}}
+\index{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+state@{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+state}!texstate.\+c@{texstate.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+state()}{\_mesa\_copy\_texture\_state()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+state (\begin{DoxyParamCaption}\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{src,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Used by gl\+X\+Copy\+Context to copy texture state from one context to another. \mbox{\Hypertarget{texstate_8c_a9d135bc2bd78127d1f84f66776f128fc}\label{texstate_8c_a9d135bc2bd78127d1f84f66776f128fc}} 
+\index{texstate.\+c@{texstate.\+c}!\+\_\+mesa\+\_\+free\+\_\+texture\+\_\+data@{\+\_\+mesa\+\_\+free\+\_\+texture\+\_\+data}}
+\index{\+\_\+mesa\+\_\+free\+\_\+texture\+\_\+data@{\+\_\+mesa\+\_\+free\+\_\+texture\+\_\+data}!texstate.\+c@{texstate.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+free\+\_\+texture\+\_\+data()}{\_mesa\_free\_texture\_data()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+free\+\_\+texture\+\_\+data (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Free dynamically-\/allocted texture data attached to the given context. \mbox{\Hypertarget{texstate_8c_a099b260f3b77caaac26a6a808a4c883d}\label{texstate_8c_a099b260f3b77caaac26a6a808a4c883d}} 
+\index{texstate.\+c@{texstate.\+c}!\+\_\+mesa\+\_\+init\+\_\+texture@{\+\_\+mesa\+\_\+init\+\_\+texture}}
+\index{\+\_\+mesa\+\_\+init\+\_\+texture@{\+\_\+mesa\+\_\+init\+\_\+texture}!texstate.\+c@{texstate.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+texture()}{\_mesa\_init\_texture()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+init\+\_\+texture (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialize texture state for the given context. \mbox{\Hypertarget{texstate_8c_abb21052cf962b7e083f972a0ed480a9f}\label{texstate_8c_abb21052cf962b7e083f972a0ed480a9f}} 
+\index{texstate.\+c@{texstate.\+c}!\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+texture@{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+texture}}
+\index{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+texture@{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+texture}!texstate.\+c@{texstate.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+texture()}{\_mesa\_update\_default\_objects\_texture()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+texture (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Update the default texture objects in the given context to reference those specified in the shared state and release those referencing the old shared state. \mbox{\Hypertarget{texstate_8c_aa6d9b1ceca663d348998530dd12529db}\label{texstate_8c_aa6d9b1ceca663d348998530dd12529db}} 
+\index{texstate.\+c@{texstate.\+c}!\+\_\+mesa\+\_\+update\+\_\+texture@{\+\_\+mesa\+\_\+update\+\_\+texture}}
+\index{\+\_\+mesa\+\_\+update\+\_\+texture@{\+\_\+mesa\+\_\+update\+\_\+texture}!texstate.\+c@{texstate.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+update\+\_\+texture()}{\_mesa\_update\_texture()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+update\+\_\+texture (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{new\+\_\+state }\end{DoxyParamCaption})}
+
+Update texture-\/related derived state. 

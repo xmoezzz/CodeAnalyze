@@ -1,0 +1,74 @@
+\hypertarget{interface_i_cor_runtime_host}{}\section{I\+Cor\+Runtime\+Host接口 参考}
+\label{interface_i_cor_runtime_host}\index{I\+Cor\+Runtime\+Host@{I\+Cor\+Runtime\+Host}}
+类 I\+Cor\+Runtime\+Host 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_runtime_host}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a70ea51a4cce3313535afa10c3d898c35}\label{interface_i_cor_runtime_host_a70ea51a4cce3313535afa10c3d898c35}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Logical\+Thread\+State} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a376afc54a10f7db49116eae1411d99bf}\label{interface_i_cor_runtime_host_a376afc54a10f7db49116eae1411d99bf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete\+Logical\+Thread\+State} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a1a6571fd72b1a1fe2172049d68189df6}\label{interface_i_cor_runtime_host_a1a6571fd72b1a1fe2172049d68189df6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Switch\+In\+Logical\+Thread\+State} (\mbox{[}in\mbox{]} D\+W\+O\+RD $\ast$fiber\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a876d50bb66742146619123c55fb1cb50}\label{interface_i_cor_runtime_host_a876d50bb66742146619123c55fb1cb50}} 
+H\+R\+E\+S\+U\+LT {\bfseries Switch\+Out\+Logical\+Thread\+State} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$$\ast$fiber\+Cookie)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a4a16edcb14814d8c81a8cb206ecec8a8}\label{interface_i_cor_runtime_host_a4a16edcb14814d8c81a8cb206ecec8a8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Locks\+Held\+By\+Logical\+Thread} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_af38f37dfb754627a7d48991749b34f3b}\label{interface_i_cor_runtime_host_af38f37dfb754627a7d48991749b34f3b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Map\+File} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+File, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{H\+M\+O\+D\+U\+LE} $\ast$map\+Address)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a3dc1d1ad1584b33c4b1999ff27daaa15}\label{interface_i_cor_runtime_host_a3dc1d1ad1584b33c4b1999ff27daaa15}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Configuration} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_configuration}{I\+Cor\+Configuration} $\ast$$\ast$p\+Configuration)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a39c824242a43009a4a319111b8f6c9cf}\label{interface_i_cor_runtime_host_a39c824242a43009a4a319111b8f6c9cf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a4a081ecc1f774bba78189683c48399ef}\label{interface_i_cor_runtime_host_a4a081ecc1f774bba78189683c48399ef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stop} ()
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a488b2d2e4725838b6469cfe4872d27bd}\label{interface_i_cor_runtime_host_a488b2d2e4725838b6469cfe4872d27bd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Domain} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR friendly\+Name, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$identity\+Array, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$app\+Domain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_ab627262a82ad94e45bb7391875fffe87}\label{interface_i_cor_runtime_host_ab627262a82ad94e45bb7391875fffe87}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Default\+Domain} (\mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$p\+App\+Domain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_aa4e9b08c278e847e7a056904a8b03b21}\label{interface_i_cor_runtime_host_aa4e9b08c278e847e7a056904a8b03b21}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Domains} (\mbox{[}out\mbox{]} \hyperlink{interfacevoid}{H\+D\+O\+M\+A\+I\+N\+E\+N\+UM} $\ast$h\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a23cfa678b6bdfc0c8a93ac5fd9e1e439}\label{interface_i_cor_runtime_host_a23cfa678b6bdfc0c8a93ac5fd9e1e439}} 
+H\+R\+E\+S\+U\+LT {\bfseries Next\+Domain} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+D\+O\+M\+A\+I\+N\+E\+N\+UM} h\+Enum, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$app\+Domain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a5f45c032d2b2a8288ca20aa920857660}\label{interface_i_cor_runtime_host_a5f45c032d2b2a8288ca20aa920857660}} 
+H\+R\+E\+S\+U\+LT {\bfseries Close\+Enum} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+D\+O\+M\+A\+I\+N\+E\+N\+UM} h\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_ae32290bee7aa7883c0e6ad16701c81bf}\label{interface_i_cor_runtime_host_ae32290bee7aa7883c0e6ad16701c81bf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Domain\+Ex} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR friendly\+Name, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$setup, \mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$evidence, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$app\+Domain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a9a3b87daafd1550ec6ad57dce939aab0}\label{interface_i_cor_runtime_host_a9a3b87daafd1550ec6ad57dce939aab0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Domain\+Setup} (\mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$app\+Domain\+Setup)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a3a29d090136063897458db963f31489a}\label{interface_i_cor_runtime_host_a3a29d090136063897458db963f31489a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Evidence} (\mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$evidence)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_ab30887d02569c83ae825a952adeb8304}\label{interface_i_cor_runtime_host_ab30887d02569c83ae825a952adeb8304}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unload\+Domain} (\mbox{[}in\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$app\+Domain)
+\item 
+\mbox{\Hypertarget{interface_i_cor_runtime_host_a49b72e08850090a5dceb5527e51838c8}\label{interface_i_cor_runtime_host_a49b72e08850090a5dceb5527e51838c8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Current\+Domain} (\mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$app\+Domain)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/mscoree.\+idl\end{DoxyCompactItemize}

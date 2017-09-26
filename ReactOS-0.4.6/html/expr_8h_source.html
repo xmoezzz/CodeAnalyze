@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/tools/widl/expr.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_9c53316092205aba2949ea451094faa9.html">tools</a></li><li class="navelem"><a class="el" href="dir_317071533e2567f87a99b92c016c1caa.html">widl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">expr.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Expression Abstract Syntax Tree Functions</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright 2002 Ove Kaaven</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright 2006-2008 Robert Shearman</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * This library is free software; you can redistribute it and/or</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * modify it under the terms of the GNU Lesser General Public</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * License as published by the Free Software Foundation; either</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * version 2.1 of the License, or (at your option) any later version.</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * This library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * Lesser General Public License for more details.</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * License along with this library; if not, write to the Free Software</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structexpr__loc.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structexpr__loc.html">expr_loc</a></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct__var__t.html">var_t</a> *v;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structattr.html">attr</a>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_expr(<span class="keyword">enum</span> expr_type type);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_exprl(<span class="keyword">enum</span> expr_type type, <span class="keywordtype">int</span> val);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_exprd(<span class="keyword">enum</span> expr_type type, <span class="keywordtype">double</span> val);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_exprs(<span class="keyword">enum</span> expr_type type, <span class="keywordtype">char</span> *val);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_exprt(<span class="keyword">enum</span> expr_type type, <a class="code" href="struct__var__t.html">var_t</a> *var, <a class="code" href="struct__expr__t.html">expr_t</a> *<a class="code" href="structexpr.html">expr</a>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_expr1(<span class="keyword">enum</span> expr_type type, <a class="code" href="struct__expr__t.html">expr_t</a> *expr);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_expr2(<span class="keyword">enum</span> expr_type type, <a class="code" href="struct__expr__t.html">expr_t</a> *exp1, <a class="code" href="struct__expr__t.html">expr_t</a> *exp2);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct__expr__t.html">expr_t</a> *make_expr3(<span class="keyword">enum</span> expr_type type, <a class="code" href="struct__expr__t.html">expr_t</a> *expr1, <a class="code" href="struct__expr__t.html">expr_t</a> *expr2, <a class="code" href="struct__expr__t.html">expr_t</a> *expr3);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="struct__type__t.html">type_t</a> *expr_resolve_type(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structexpr__loc.html">expr_loc</a> *<a class="code" href="structexpr__loc.html">expr_loc</a>, <span class="keyword">const</span> <a class="code" href="struct__type__t.html">type_t</a> *cont_type, <span class="keyword">const</span> <a class="code" href="struct__expr__t.html">expr_t</a> *expr);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> compare_expr(<span class="keyword">const</span> <a class="code" href="struct__expr__t.html">expr_t</a> *a, <span class="keyword">const</span> <a class="code" href="struct__expr__t.html">expr_t</a> *b);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> write_expr(<a class="code" href="struct__iobuf.html">FILE</a> *h, <span class="keyword">const</span> <a class="code" href="struct__expr__t.html">expr_t</a> *e, <span class="keywordtype">int</span> brackets, <span class="keywordtype">int</span> toplevel, <span class="keyword">const</span> <span class="keywordtype">char</span> *toplevel_prefix,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                       <span class="keyword">const</span> <a class="code" href="struct__type__t.html">type_t</a> *cont_type, <span class="keyword">const</span> <span class="keywordtype">char</span> *local_var_prefix);</div><div class="ttc" id="struct__expr__t_html"><div class="ttname"><a href="struct__expr__t.html">_expr_t</a></div><div class="ttdef"><b>Definition:</b> widltypes.h:306</div></div>
+<div class="ttc" id="structexpr_html"><div class="ttname"><a href="structexpr.html">expr</a></div><div class="ttdef"><b>Definition:</b> query.h:74</div></div>
+<div class="ttc" id="structexpr__loc_html"><div class="ttname"><a href="structexpr__loc.html">expr_loc</a></div><div class="ttdef"><b>Definition:</b> expr.h:22</div></div>
+<div class="ttc" id="struct__iobuf_html"><div class="ttname"><a href="struct__iobuf.html">_iobuf</a></div><div class="ttdef"><b>Definition:</b> mbstring.h:19</div></div>
+<div class="ttc" id="structattr_html"><div class="ttname"><a href="structattr.html">attr</a></div><div class="ttdef"><b>Definition:</b> cookie.c:158</div></div>
+<div class="ttc" id="struct__var__t_html"><div class="ttname"><a href="struct__var__t.html">_var_t</a></div><div class="ttdef"><b>Definition:</b> widltypes.h:448</div></div>
+<div class="ttc" id="struct__type__t_html"><div class="ttname"><a href="struct__type__t.html">_type_t</a></div><div class="ttdef"><b>Definition:</b> widltypes.h:415</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

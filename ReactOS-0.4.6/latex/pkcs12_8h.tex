@@ -1,0 +1,204 @@
+\hypertarget{pkcs12_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/pkcs12.h 文件参考}
+\label{pkcs12_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/pkcs12.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/pkcs12.\+h}}
+
+
+P\+K\+CS\#12 Personal Information Exchange Syntax  
+
+
+{\ttfamily \#include \char`\"{}md.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cipher.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}asn1.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs12_8h_ac856f81d3cbc3baeaa848b33d991209b}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}~-\/0x1\+F80
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs12_8h_ae887e38a4caab392fc5086bcceed7af9}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}~-\/0x1\+F00
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs12_8h_a92e9101410d452e508c88a7231e23996}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}~-\/0x1\+E80
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs12_8h_ab3313f9e7321d23b3af93e97a544ffdb}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}~-\/0x1\+E00
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs12_8h_ad9b0f41c74cd6a8e072c84b5d310b331}{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY}~1
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs12_8h_ad8ac9a220c8d237a9a5bc972daed1c13}{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV}~2
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{pkcs12_8h_a91d3d19fb1a5cd18648f363eff8617ec}{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY}~3
+\item 
+\mbox{\Hypertarget{pkcs12_8h_a41364d57177059b3ffb3167139e741b4}\label{pkcs12_8h_a41364d57177059b3ffb3167139e741b4}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+D\+E\+C\+R\+Y\+PT}~0
+\item 
+\mbox{\Hypertarget{pkcs12_8h_ae833899c432600a15030b761d1e34d44}\label{pkcs12_8h_ae833899c432600a15030b761d1e34d44}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+E\+N\+C\+R\+Y\+PT}~1
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pkcs12_8h_af865b866a1e1b6f5513f5904f1fdf2fa}{mbedtls\+\_\+pkcs12\+\_\+pbe\+\_\+sha1\+\_\+rc4\+\_\+128} (\hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$pbe\+\_\+params, int \hyperlink{interfacevoid}{mode}, const unsigned char $\ast$pwd, size\+\_\+t pwdlen, const unsigned char $\ast$input, size\+\_\+t len, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em P\+K\+C\+S12 Password Based function (encryption / decryption) for pbe\+With\+S\+H\+A\+And128\+Bit\+R\+C4 \end{DoxyCompactList}\item 
+int \hyperlink{pkcs12_8h_aeca4c569f386fd7ece7fcfb4efc95a29}{mbedtls\+\_\+pkcs12\+\_\+pbe} (\hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$pbe\+\_\+params, int \hyperlink{interfacevoid}{mode}, mbedtls\+\_\+cipher\+\_\+type\+\_\+t cipher\+\_\+type, mbedtls\+\_\+md\+\_\+type\+\_\+t md\+\_\+type, const unsigned char $\ast$pwd, size\+\_\+t pwdlen, const unsigned char $\ast$input, size\+\_\+t len, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em P\+K\+C\+S12 Password Based function (encryption / decryption) for cipher-\/based and mbedtls\+\_\+md-\/based P\+BE\textquotesingle{}s \end{DoxyCompactList}\item 
+int \hyperlink{pkcs12_8h_a5e58a53e1f2194583f1e48fc2ffef627}{mbedtls\+\_\+pkcs12\+\_\+derivation} (unsigned char $\ast$data, size\+\_\+t datalen, const unsigned char $\ast$pwd, size\+\_\+t pwdlen, const unsigned char $\ast$salt, size\+\_\+t saltlen, mbedtls\+\_\+md\+\_\+type\+\_\+t \hyperlink{md_8h_a36c5d8bda1905e0434708f0ef5912dda}{mbedtls\+\_\+md}, int id, int iterations)
+\begin{DoxyCompactList}\small\item\em The P\+K\+CS\#12 derivation function uses a password and a salt to produce pseudo-\/random bits for a particular \char`\"{}purpose\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+P\+K\+CS\#12 Personal Information Exchange Syntax 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{pkcs12_8h_ac856f81d3cbc3baeaa848b33d991209b}\label{pkcs12_8h_ac856f81d3cbc3baeaa848b33d991209b}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}{MBEDTLS\_ERR\_PKCS12\_BAD\_INPUT\_DATA}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA~-\/0x1\+F80}
+
+Bad input parameters to function. \mbox{\Hypertarget{pkcs12_8h_ae887e38a4caab392fc5086bcceed7af9}\label{pkcs12_8h_ae887e38a4caab392fc5086bcceed7af9}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}{MBEDTLS\_ERR\_PKCS12\_FEATURE\_UNAVAILABLE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE~-\/0x1\+F00}
+
+Feature not available, e.\+g. unsupported encryption scheme. \mbox{\Hypertarget{pkcs12_8h_ab3313f9e7321d23b3af93e97a544ffdb}\label{pkcs12_8h_ab3313f9e7321d23b3af93e97a544ffdb}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH}{MBEDTLS\_ERR\_PKCS12\_PASSWORD\_MISMATCH}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+M\+I\+S\+M\+A\+T\+CH~-\/0x1\+E00}
+
+Given private key password does not allow for correct decryption. \mbox{\Hypertarget{pkcs12_8h_a92e9101410d452e508c88a7231e23996}\label{pkcs12_8h_a92e9101410d452e508c88a7231e23996}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}{MBEDTLS\_ERR\_PKCS12\_PBE\_INVALID\_FORMAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT~-\/0x1\+E80}
+
+P\+BE A\+S\+N.\+1 data not as expected. \mbox{\Hypertarget{pkcs12_8h_ad8ac9a220c8d237a9a5bc972daed1c13}\label{pkcs12_8h_ad8ac9a220c8d237a9a5bc972daed1c13}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV@{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV@{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV}{MBEDTLS\_PKCS12\_DERIVE\_IV}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV~2}
+
+initialization vector \mbox{\Hypertarget{pkcs12_8h_ad9b0f41c74cd6a8e072c84b5d310b331}\label{pkcs12_8h_ad9b0f41c74cd6a8e072c84b5d310b331}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY@{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY@{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY}{MBEDTLS\_PKCS12\_DERIVE\_KEY}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY~1}
+
+encryption/decryption key \mbox{\Hypertarget{pkcs12_8h_a91d3d19fb1a5cd18648f363eff8617ec}\label{pkcs12_8h_a91d3d19fb1a5cd18648f363eff8617ec}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY@{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY@{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY}{MBEDTLS\_PKCS12\_DERIVE\_MAC\_KEY}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY~3}
+
+integrity / M\+AC key 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{pkcs12_8h_a5e58a53e1f2194583f1e48fc2ffef627}\label{pkcs12_8h_a5e58a53e1f2194583f1e48fc2ffef627}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!mbedtls\+\_\+pkcs12\+\_\+derivation@{mbedtls\+\_\+pkcs12\+\_\+derivation}}
+\index{mbedtls\+\_\+pkcs12\+\_\+derivation@{mbedtls\+\_\+pkcs12\+\_\+derivation}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+pkcs12\+\_\+derivation()}{mbedtls\_pkcs12\_derivation()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+pkcs12\+\_\+derivation (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{data,  }\item[{size\+\_\+t}]{datalen,  }\item[{const unsigned char $\ast$}]{pwd,  }\item[{size\+\_\+t}]{pwdlen,  }\item[{const unsigned char $\ast$}]{salt,  }\item[{size\+\_\+t}]{saltlen,  }\item[{mbedtls\+\_\+md\+\_\+type\+\_\+t}]{mbedtls\+\_\+md,  }\item[{int}]{id,  }\item[{int}]{iterations }\end{DoxyParamCaption})}
+
+
+
+The P\+K\+CS\#12 derivation function uses a password and a salt to produce pseudo-\/random bits for a particular \char`\"{}purpose\char`\"{}. 
+
+Depending on the given id, this function can produce an encryption/decryption key, an nitialization vector or an integrity key.
+
+
+\begin{DoxyParams}{参数}
+{\em data} & buffer to store the derived data in \\
+\hline
+{\em datalen} & length to fill \\
+\hline
+{\em pwd} & password to use (may be N\+U\+LL if no password is used) \\
+\hline
+{\em pwdlen} & length of the password (may be 0) \\
+\hline
+{\em salt} & salt buffer to use \\
+\hline
+{\em saltlen} & length of the salt \\
+\hline
+{\em mbedtls\+\_\+md} & mbedtls\+\_\+md type to use during the derivation \\
+\hline
+{\em id} & id that describes the purpose (can be M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+K\+EY, M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+IV or M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+D\+E\+R\+I\+V\+E\+\_\+\+M\+A\+C\+\_\+\+K\+EY) \\
+\hline
+{\em iterations} & number of iterations\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, or a MD, B\+I\+G\+N\+UM type error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pkcs12_8h_aeca4c569f386fd7ece7fcfb4efc95a29}\label{pkcs12_8h_aeca4c569f386fd7ece7fcfb4efc95a29}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!mbedtls\+\_\+pkcs12\+\_\+pbe@{mbedtls\+\_\+pkcs12\+\_\+pbe}}
+\index{mbedtls\+\_\+pkcs12\+\_\+pbe@{mbedtls\+\_\+pkcs12\+\_\+pbe}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+pkcs12\+\_\+pbe()}{mbedtls\_pkcs12\_pbe()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+pkcs12\+\_\+pbe (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$}]{pbe\+\_\+params,  }\item[{int}]{mode,  }\item[{mbedtls\+\_\+cipher\+\_\+type\+\_\+t}]{cipher\+\_\+type,  }\item[{mbedtls\+\_\+md\+\_\+type\+\_\+t}]{md\+\_\+type,  }\item[{const unsigned char $\ast$}]{pwd,  }\item[{size\+\_\+t}]{pwdlen,  }\item[{const unsigned char $\ast$}]{input,  }\item[{size\+\_\+t}]{len,  }\item[{unsigned char $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+P\+K\+C\+S12 Password Based function (encryption / decryption) for cipher-\/based and mbedtls\+\_\+md-\/based P\+BE\textquotesingle{}s 
+
+
+\begin{DoxyParams}{参数}
+{\em pbe\+\_\+params} & an A\+S\+N1 buffer containing the pkcs-\/12\+Pbe\+Params structure \\
+\hline
+{\em mode} & either M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+E\+N\+C\+R\+Y\+PT or M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+D\+E\+C\+R\+Y\+PT \\
+\hline
+{\em cipher\+\_\+type} & the cipher used \\
+\hline
+{\em md\+\_\+type} & the mbedtls\+\_\+md used \\
+\hline
+{\em pwd} & the password used (may be N\+U\+LL if no password is used) \\
+\hline
+{\em pwdlen} & length of the password (may be 0) \\
+\hline
+{\em input} & the input data \\
+\hline
+{\em len} & data length \\
+\hline
+{\em output} & the output buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, or a M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+XX code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pkcs12_8h_af865b866a1e1b6f5513f5904f1fdf2fa}\label{pkcs12_8h_af865b866a1e1b6f5513f5904f1fdf2fa}} 
+\index{pkcs12.\+h@{pkcs12.\+h}!mbedtls\+\_\+pkcs12\+\_\+pbe\+\_\+sha1\+\_\+rc4\+\_\+128@{mbedtls\+\_\+pkcs12\+\_\+pbe\+\_\+sha1\+\_\+rc4\+\_\+128}}
+\index{mbedtls\+\_\+pkcs12\+\_\+pbe\+\_\+sha1\+\_\+rc4\+\_\+128@{mbedtls\+\_\+pkcs12\+\_\+pbe\+\_\+sha1\+\_\+rc4\+\_\+128}!pkcs12.\+h@{pkcs12.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+pkcs12\+\_\+pbe\+\_\+sha1\+\_\+rc4\+\_\+128()}{mbedtls\_pkcs12\_pbe\_sha1\_rc4\_128()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+pkcs12\+\_\+pbe\+\_\+sha1\+\_\+rc4\+\_\+128 (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$}]{pbe\+\_\+params,  }\item[{int}]{mode,  }\item[{const unsigned char $\ast$}]{pwd,  }\item[{size\+\_\+t}]{pwdlen,  }\item[{const unsigned char $\ast$}]{input,  }\item[{size\+\_\+t}]{len,  }\item[{unsigned char $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+P\+K\+C\+S12 Password Based function (encryption / decryption) for pbe\+With\+S\+H\+A\+And128\+Bit\+R\+C4 
+
+
+\begin{DoxyParams}{参数}
+{\em pbe\+\_\+params} & an A\+S\+N1 buffer containing the pkcs-\/12\+Pbe\+Params structure \\
+\hline
+{\em mode} & either M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+E\+N\+C\+R\+Y\+PT or M\+B\+E\+D\+T\+L\+S\+\_\+\+P\+K\+C\+S12\+\_\+\+P\+B\+E\+\_\+\+D\+E\+C\+R\+Y\+PT \\
+\hline
+{\em pwd} & the password used (may be N\+U\+LL if no password is used) \\
+\hline
+{\em pwdlen} & length of the password (may be 0) \\
+\hline
+{\em input} & the input data \\
+\hline
+{\em len} & data length \\
+\hline
+{\em output} & the output buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, or a M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+XX code 
+\end{DoxyReturn}

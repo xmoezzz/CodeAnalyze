@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: utf_converter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
+<a href="classutf__converter-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">utf_converter类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ac573e63f01db39d5991b3fde2ff2dc8d"><td class="memItemLeft" align="right" valign="top"><a id="ac573e63f01db39d5991b3fde2ff2dc8d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>enc_types</b> { <br />
+&#160;&#160;<b>detect</b>, 
+<b>utf8</b>, 
+<b>utf16le</b>, 
+<b>utf16be</b>, 
+<br />
+&#160;&#160;<b>utf32le</b>, 
+<b>utf32be</b>
+<br />
+ }</td></tr>
+<tr class="separator:ac573e63f01db39d5991b3fde2ff2dc8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a17751acf7ecc7c13386c7e58ce1141"><td class="memItemLeft" align="right" valign="top"><a id="a9a17751acf7ecc7c13386c7e58ce1141"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>err_types</b> { <br />
+&#160;&#160;<b>none</b>, 
+<b>iopen</b>, 
+<b>oopen</b>, 
+<b>eof</b>, 
+<br />
+&#160;&#160;<b>read</b>, 
+<b>write</b>, 
+<b>decode</b>
+<br />
+ }</td></tr>
+<tr class="separator:a9a17751acf7ecc7c13386c7e58ce1141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2574bd5cecb5b8a46e1bec330a349753"><td class="memItemLeft" align="right" valign="top"><a id="a2574bd5cecb5b8a46e1bec330a349753"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>bom_types</b> { <b>bom</b>, 
+<b>nobom</b>
+ }</td></tr>
+<tr class="separator:a2574bd5cecb5b8a46e1bec330a349753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2fa77e006e0d8ed2ed87fd87e1a4082e"><td class="memItemLeft" align="right" valign="top"><a id="a2fa77e006e0d8ed2ed87fd87e1a4082e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>utf_converter</b> (<a class="el" href="structstring.html">string</a> ifname, <a class="el" href="structstring.html">string</a> ofname, bom_types ofbom=bom, enc_types enc=detect)</td></tr>
+<tr class="separator:a2fa77e006e0d8ed2ed87fd87e1a4082e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e4df7465bace73900bda4b6c370b4b"><td class="memItemLeft" align="right" valign="top"><a id="a85e4df7465bace73900bda4b6c370b4b"></a>
+err_types&#160;</td><td class="memItemRight" valign="bottom"><b>getError</b> ()</td></tr>
+<tr class="separator:a85e4df7465bace73900bda4b6c370b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b82ecb11ae7e239d63ff749f5cb9b7"><td class="memItemLeft" align="right" valign="top"><a id="ae4b82ecb11ae7e239d63ff749f5cb9b7"></a>
+enc_types&#160;</td><td class="memItemRight" valign="bottom"><b>getBOM</b> ()</td></tr>
+<tr class="separator:ae4b82ecb11ae7e239d63ff749f5cb9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17146b0b071723d75da98dc375c3b77e"><td class="memItemLeft" align="right" valign="top"><a id="a17146b0b071723d75da98dc375c3b77e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getByte</b> (unsigned char &amp;c)</td></tr>
+<tr class="separator:a17146b0b071723d75da98dc375c3b77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b6616ef5820e942161e1fa87121485"><td class="memItemLeft" align="right" valign="top"><a id="a28b6616ef5820e942161e1fa87121485"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getWord</b> (unsigned short &amp;w)</td></tr>
+<tr class="separator:a28b6616ef5820e942161e1fa87121485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6b5b8d767ba4a390d3affa27ddd635"><td class="memItemLeft" align="right" valign="top"><a id="aed6b5b8d767ba4a390d3affa27ddd635"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getDWord</b> (wchar_t &amp;d)</td></tr>
+<tr class="separator:aed6b5b8d767ba4a390d3affa27ddd635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ca3e7629d6475f25abcb4b9646c037"><td class="memItemLeft" align="right" valign="top"><a id="a15ca3e7629d6475f25abcb4b9646c037"></a>
+wchar_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_wchar_t</b> ()</td></tr>
+<tr class="separator:a15ca3e7629d6475f25abcb4b9646c037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97981bcd421302543bacf53ed0e3e112"><td class="memItemLeft" align="right" valign="top"><a id="a97981bcd421302543bacf53ed0e3e112"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convert2utf16le</b> ()</td></tr>
+<tr class="separator:a97981bcd421302543bacf53ed0e3e112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ac95a995f4836917eda5dbd8eaea6f420"><td class="memItemLeft" align="right" valign="top"><a id="ac95a995f4836917eda5dbd8eaea6f420"></a>
+err_types&#160;</td><td class="memItemRight" valign="bottom"><b>error</b></td></tr>
+<tr class="separator:ac95a995f4836917eda5dbd8eaea6f420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b36f592864abe055d39c973e48e89b9"><td class="memItemLeft" align="right" valign="top"><a id="a0b36f592864abe055d39c973e48e89b9"></a>
+enc_types&#160;</td><td class="memItemRight" valign="bottom"><b>encoding</b></td></tr>
+<tr class="separator:a0b36f592864abe055d39c973e48e89b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea5ff7a1a3a79276af28cad31cdb959"><td class="memItemLeft" align="right" valign="top"><a id="a1ea5ff7a1a3a79276af28cad31cdb959"></a>
+bom_types&#160;</td><td class="memItemRight" valign="bottom"><b>bom_type</b></td></tr>
+<tr class="separator:a1ea5ff7a1a3a79276af28cad31cdb959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91b86a15c5a7bb25143384408dcb143"><td class="memItemLeft" align="right" valign="top"><a id="af91b86a15c5a7bb25143384408dcb143"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b> [4]</td></tr>
+<tr class="separator:af91b86a15c5a7bb25143384408dcb143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac652b5794a769062a68700536ea73728"><td class="memItemLeft" align="right" valign="top"><a id="ac652b5794a769062a68700536ea73728"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>fill</b></td></tr>
+<tr class="separator:ac652b5794a769062a68700536ea73728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe32ca75f04ae948b68cff6af4977a5"><td class="memItemLeft" align="right" valign="top"><a id="a9fe32ca75f04ae948b68cff6af4977a5"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>index</b></td></tr>
+<tr class="separator:a9fe32ca75f04ae948b68cff6af4977a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca5d2f86ee8ece7ca51b43e4d7e65c4"><td class="memItemLeft" align="right" valign="top"><a id="a2ca5d2f86ee8ece7ca51b43e4d7e65c4"></a>
+<a class="el" href="classbasic__fstream.html">fstream</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputfile</b></td></tr>
+<tr class="separator:a2ca5d2f86ee8ece7ca51b43e4d7e65c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaacec06d519c78a108a5bff3754dacb8"><td class="memItemLeft" align="right" valign="top"><a id="aaacec06d519c78a108a5bff3754dacb8"></a>
+<a class="el" href="classbasic__fstream.html">fstream</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputfile</b></td></tr>
+<tr class="separator:aaacec06d519c78a108a5bff3754dacb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+静态 Protected 属性</h2></td></tr>
+<tr class="memitem:a2344354f8e9923372bd845c30faa10f0"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>utf8table</b> [64]</td></tr>
+<tr class="separator:a2344354f8e9923372bd845c30faa10f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a2344354f8e9923372bd845c30faa10f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2344354f8e9923372bd845c30faa10f0">&#9670;&nbsp;</a></span>utf8table</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char utf_converter::utf8table</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">1, 9, 17, 25, 33, 41, 49, 57, 65, 73, 81, 89, 97, 105, 113, 121,</div><div class="line">129, 137, 145, 153, 161, 169, 177, 185, 193, 201, 209, 217, 225, 233, 241, 249,</div><div class="line">2, 10, 18, 26, 34, 42, 50, 58, 66, 74, 82, 90, 98, 106, 114, 122,</div><div class="line">3, 11, 19, 27, 35, 43, 51, 59, 4, 12, 20, 28, 5, 13, 6, 7</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/tools/utf16le/utf16le.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

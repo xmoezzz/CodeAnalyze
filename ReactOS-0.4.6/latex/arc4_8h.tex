@@ -1,0 +1,129 @@
+\hypertarget{arc4_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/arc4.h 文件参考}
+\label{arc4_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/arc4.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/arc4.\+h}}
+
+
+The A\+R\+C\+F\+O\+UR stream cipher  
+
+
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context}
+\begin{DoxyCompactList}\small\item\em A\+R\+C4 context structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{arc4_8h_a7795c92c7a8a4b9cf715da081665ccfd}{mbedtls\+\_\+arc4\+\_\+init} (\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Initialize A\+R\+C4 context \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{arc4_8h_a888a4167caf8503e9e82a132c7b89313}{mbedtls\+\_\+arc4\+\_\+free} (\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Clear A\+R\+C4 context \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{arc4_8h_a6a689a989cb433e41181caef8d8bf4ba}{mbedtls\+\_\+arc4\+\_\+setup} (\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$ctx, const unsigned char $\ast$\hyperlink{structkey}{key}, unsigned int keylen)
+\begin{DoxyCompactList}\small\item\em A\+R\+C4 key schedule \end{DoxyCompactList}\item 
+int \hyperlink{arc4_8h_a51d378246f0c277a68352cdac782e8fb}{mbedtls\+\_\+arc4\+\_\+crypt} (\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$ctx, size\+\_\+t length, const unsigned char $\ast$input, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em A\+R\+C4 cipher function \end{DoxyCompactList}\item 
+int \hyperlink{arc4_8h_aba830fee9057fa1c63dcc38c7caf7730}{mbedtls\+\_\+arc4\+\_\+self\+\_\+test} (int verbose)
+\begin{DoxyCompactList}\small\item\em Checkup routine \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+The A\+R\+C\+F\+O\+UR stream cipher 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{arc4_8h_a51d378246f0c277a68352cdac782e8fb}\label{arc4_8h_a51d378246f0c277a68352cdac782e8fb}} 
+\index{arc4.\+h@{arc4.\+h}!mbedtls\+\_\+arc4\+\_\+crypt@{mbedtls\+\_\+arc4\+\_\+crypt}}
+\index{mbedtls\+\_\+arc4\+\_\+crypt@{mbedtls\+\_\+arc4\+\_\+crypt}!arc4.\+h@{arc4.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+arc4\+\_\+crypt()}{mbedtls\_arc4\_crypt()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+arc4\+\_\+crypt (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$}]{ctx,  }\item[{size\+\_\+t}]{length,  }\item[{const unsigned char $\ast$}]{input,  }\item[{unsigned char $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+A\+R\+C4 cipher function 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & A\+R\+C4 context \\
+\hline
+{\em length} & length of the input data \\
+\hline
+{\em input} & buffer holding the input data \\
+\hline
+{\em output} & buffer for the output data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arc4_8h_a888a4167caf8503e9e82a132c7b89313}\label{arc4_8h_a888a4167caf8503e9e82a132c7b89313}} 
+\index{arc4.\+h@{arc4.\+h}!mbedtls\+\_\+arc4\+\_\+free@{mbedtls\+\_\+arc4\+\_\+free}}
+\index{mbedtls\+\_\+arc4\+\_\+free@{mbedtls\+\_\+arc4\+\_\+free}!arc4.\+h@{arc4.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+arc4\+\_\+free()}{mbedtls\_arc4\_free()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+arc4\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Clear A\+R\+C4 context 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & A\+R\+C4 context to be cleared \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{arc4_8h_a7795c92c7a8a4b9cf715da081665ccfd}\label{arc4_8h_a7795c92c7a8a4b9cf715da081665ccfd}} 
+\index{arc4.\+h@{arc4.\+h}!mbedtls\+\_\+arc4\+\_\+init@{mbedtls\+\_\+arc4\+\_\+init}}
+\index{mbedtls\+\_\+arc4\+\_\+init@{mbedtls\+\_\+arc4\+\_\+init}!arc4.\+h@{arc4.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+arc4\+\_\+init()}{mbedtls\_arc4\_init()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+arc4\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Initialize A\+R\+C4 context 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & A\+R\+C4 context to be initialized \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{arc4_8h_aba830fee9057fa1c63dcc38c7caf7730}\label{arc4_8h_aba830fee9057fa1c63dcc38c7caf7730}} 
+\index{arc4.\+h@{arc4.\+h}!mbedtls\+\_\+arc4\+\_\+self\+\_\+test@{mbedtls\+\_\+arc4\+\_\+self\+\_\+test}}
+\index{mbedtls\+\_\+arc4\+\_\+self\+\_\+test@{mbedtls\+\_\+arc4\+\_\+self\+\_\+test}!arc4.\+h@{arc4.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+arc4\+\_\+self\+\_\+test()}{mbedtls\_arc4\_self\_test()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+arc4\+\_\+self\+\_\+test (\begin{DoxyParamCaption}\item[{int}]{verbose }\end{DoxyParamCaption})}
+
+
+
+Checkup routine 
+
+\begin{DoxyReturn}{返回}
+0 if successful, or 1 if the test failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{arc4_8h_a6a689a989cb433e41181caef8d8bf4ba}\label{arc4_8h_a6a689a989cb433e41181caef8d8bf4ba}} 
+\index{arc4.\+h@{arc4.\+h}!mbedtls\+\_\+arc4\+\_\+setup@{mbedtls\+\_\+arc4\+\_\+setup}}
+\index{mbedtls\+\_\+arc4\+\_\+setup@{mbedtls\+\_\+arc4\+\_\+setup}!arc4.\+h@{arc4.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+arc4\+\_\+setup()}{mbedtls\_arc4\_setup()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+arc4\+\_\+setup (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__arc4__context}{mbedtls\+\_\+arc4\+\_\+context} $\ast$}]{ctx,  }\item[{const unsigned char $\ast$}]{key,  }\item[{unsigned int}]{keylen }\end{DoxyParamCaption})}
+
+
+
+A\+R\+C4 key schedule 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & A\+R\+C4 context to be setup \\
+\hline
+{\em key} & the secret key \\
+\hline
+{\em keylen} & length of the key, in bytes \\
+\hline
+\end{DoxyParams}

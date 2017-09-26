@@ -1,0 +1,70 @@
+\hypertarget{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l}{}\section{\+\_\+\+I\+M\+A\+G\+E\+\_\+\+A\+U\+X\+\_\+\+S\+Y\+M\+B\+O\+L联合体 参考}
+\label{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l}\index{\+\_\+\+I\+M\+A\+G\+E\+\_\+\+A\+U\+X\+\_\+\+S\+Y\+M\+B\+OL@{\+\_\+\+I\+M\+A\+G\+E\+\_\+\+A\+U\+X\+\_\+\+S\+Y\+M\+B\+OL}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_af4592ce4c233edf981651b5d61fc2a56}\label{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_af4592ce4c233edf981651b5d61fc2a56}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>DWORD {\bfseries TagIndex}\\
+\>union \{\\
+\>\>struct \{\\
+\>\>\>WORD {\bfseries Linenumber}\\
+\>\>\>WORD {\bfseries Size}\\
+\>\>\} {\bfseries LnSz}\\
+\>\>DWORD {\bfseries TotalSize}\\
+\>\} {\bfseries Misc}\\
+\>union \{\\
+\>\>struct \{\\
+\>\>\>DWORD {\bfseries PointerToLinenumber}\\
+\>\>\>DWORD {\bfseries PointerToNextFunction}\\
+\>\>\} {\bfseries Function}\\
+\>\>struct \{\\
+\>\>\>WORD {\bfseries Dimension} \mbox{[}4\mbox{]}\\
+\>\>\} {\bfseries Array}\\
+\>\} {\bfseries FcnAry}\\
+\>WORD {\bfseries TvIndex}\\
+\} {\bfseries Sym}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_aa840943753a6283116b7c19ad66e80a6}\label{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_aa840943753a6283116b7c19ad66e80a6}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>BYTE {\bfseries Name} \mbox{[}IMAGE\_SIZEOF\_SYMBOL\mbox{]}\\
+\} {\bfseries File}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_a9842f0c6302e10b9a8bc3fbc00df59b1}\label{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_a9842f0c6302e10b9a8bc3fbc00df59b1}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>DWORD {\bfseries Length}\\
+\>WORD {\bfseries NumberOfRelocations}\\
+\>WORD {\bfseries NumberOfLinenumbers}\\
+\>DWORD {\bfseries CheckSum}\\
+\>SHORT {\bfseries Number}\\
+\>BYTE {\bfseries Selection}\\
+\>BYTE {\bfseries bReserved}\\
+\>SHORT {\bfseries HighNumber}\\
+\} {\bfseries Section}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_ae64d715aff510acb5ec6f68fca38e280}\label{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_ae64d715aff510acb5ec6f68fca38e280}} 
+\hyperlink{struct_i_m_a_g_e___a_u_x___s_y_m_b_o_l___t_o_k_e_n___d_e_f}{I\+M\+A\+G\+E\+\_\+\+A\+U\+X\+\_\+\+S\+Y\+M\+B\+O\+L\+\_\+\+T\+O\+K\+E\+N\+\_\+\+D\+EF} {\bfseries Token\+Def}
+\item 
+\mbox{\Hypertarget{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_a4e103f0ad47e21c821d3f5e1f95efda8}\label{union___i_m_a_g_e___a_u_x___s_y_m_b_o_l_a4e103f0ad47e21c821d3f5e1f95efda8}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>DWORD {\bfseries crc}\\
+\>BYTE {\bfseries rgbReserved} \mbox{[}14\mbox{]}\\
+\} {\bfseries CRC}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该联合体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/xdk/winnt\+\_\+old.\+h\end{DoxyCompactItemize}

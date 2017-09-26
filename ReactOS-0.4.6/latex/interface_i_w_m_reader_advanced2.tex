@@ -1,0 +1,62 @@
+\hypertarget{interface_i_w_m_reader_advanced2}{}\section{I\+W\+M\+Reader\+Advanced2接口 参考}
+\label{interface_i_w_m_reader_advanced2}\index{I\+W\+M\+Reader\+Advanced2@{I\+W\+M\+Reader\+Advanced2}}
+类 I\+W\+M\+Reader\+Advanced2 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_i_w_m_reader_advanced2}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_a813b6b5068ddf5d5da92f3948059e417}\label{interface_i_w_m_reader_advanced2_a813b6b5068ddf5d5da92f3948059e417}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Play\+Mode} (\mbox{[}in\mbox{]} W\+M\+T\+\_\+\+P\+L\+A\+Y\+\_\+\+M\+O\+DE Mode)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_abf1b3b4c48dd11c4fdda7e8d1f95f107}\label{interface_i_w_m_reader_advanced2_abf1b3b4c48dd11c4fdda7e8d1f95f107}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Play\+Mode} (\mbox{[}out\mbox{]} W\+M\+T\+\_\+\+P\+L\+A\+Y\+\_\+\+M\+O\+DE $\ast$p\+Mode)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_af080814eeff56e33e0cd3c07575a887b}\label{interface_i_w_m_reader_advanced2_af080814eeff56e33e0cd3c07575a887b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Buffer\+Progress} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Percent, \mbox{[}out\mbox{]} Q\+W\+O\+RD $\ast$pcns\+Buffering)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_ab57440dd29f891ff7320f12efdf1b066}\label{interface_i_w_m_reader_advanced2_ab57440dd29f891ff7320f12efdf1b066}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Download\+Progress} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Percent, \mbox{[}out\mbox{]} Q\+W\+O\+RD $\ast$pqw\+Bytes\+Downloaded, \mbox{[}out\mbox{]} Q\+W\+O\+RD $\ast$pcns\+Download)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_a3c2fcf9781498aa648ec874a13702f8d}\label{interface_i_w_m_reader_advanced2_a3c2fcf9781498aa648ec874a13702f8d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Save\+As\+Progress} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Percent)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_a2cdacaf9b7a902bb61eeae4c25bf534d}\label{interface_i_w_m_reader_advanced2_a2cdacaf9b7a902bb61eeae4c25bf534d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Save\+File\+As} (\mbox{[}in\mbox{]} const W\+C\+H\+AR $\ast$pwsz\+Filename)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_aeb9d40b3bf83640a8529985241d39f6b}\label{interface_i_w_m_reader_advanced2_aeb9d40b3bf83640a8529985241d39f6b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Protocol\+Name} (\mbox{[}out, size\+\_\+is($\ast$pcch\+Protocol)\mbox{]} W\+C\+H\+AR $\ast$pwsz\+Protocol, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Protocol)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_ada73703920ca8dccb22f41ac3b77d3fb}\label{interface_i_w_m_reader_advanced2_ada73703920ca8dccb22f41ac3b77d3fb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Start\+At\+Marker} (\mbox{[}in\mbox{]} W\+O\+RD w\+Marker\+Index, \mbox{[}in\mbox{]} Q\+W\+O\+RD cns\+Duration, \mbox{[}in\mbox{]} float f\+Rate, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$pv\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_a2adf88a7ac16e66e4cb3a7626a00726d}\label{interface_i_w_m_reader_advanced2_a2adf88a7ac16e66e4cb3a7626a00726d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Output\+Setting} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR psz\+Name, \mbox{[}out\mbox{]} W\+M\+T\+\_\+\+A\+T\+T\+R\+\_\+\+D\+A\+T\+A\+T\+Y\+PE $\ast$p\+Type, \mbox{[}out, size\+\_\+is($\ast$pcb\+Length)\mbox{]} B\+Y\+TE $\ast$p\+Value, \mbox{[}in, out\mbox{]} W\+O\+RD $\ast$pcb\+Length)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_a01faba0c6c78a5cb32e9a50d187d13be}\label{interface_i_w_m_reader_advanced2_a01faba0c6c78a5cb32e9a50d187d13be}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Output\+Setting} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Output\+Num, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR psz\+Name, \mbox{[}in\mbox{]} W\+M\+T\+\_\+\+A\+T\+T\+R\+\_\+\+D\+A\+T\+A\+T\+Y\+PE Type, \mbox{[}in, size\+\_\+is(cb\+Length)\mbox{]} const B\+Y\+TE $\ast$p\+Value, \mbox{[}in\mbox{]} W\+O\+RD cb\+Length)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_abe3a31dd820ac9e012d2d919f9f94808}\label{interface_i_w_m_reader_advanced2_abe3a31dd820ac9e012d2d919f9f94808}} 
+H\+R\+E\+S\+U\+LT {\bfseries Preroll} (\mbox{[}in\mbox{]} Q\+W\+O\+RD cns\+Start, \mbox{[}in\mbox{]} Q\+W\+O\+RD cns\+Duration, \mbox{[}in\mbox{]} float f\+Rate)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_ae12c7e007e911907c424d7be02cd5697}\label{interface_i_w_m_reader_advanced2_ae12c7e007e911907c424d7be02cd5697}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Log\+Client\+ID} (\mbox{[}in\mbox{]} B\+O\+OL f\+Log\+Client\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_ab1c1360803532b0df971401bd42aeb2b}\label{interface_i_w_m_reader_advanced2_ab1c1360803532b0df971401bd42aeb2b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Log\+Client\+ID} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Log\+Client\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_a6fc73ab5c09bd1859aaa8b7119e02ef1}\label{interface_i_w_m_reader_advanced2_a6fc73ab5c09bd1859aaa8b7119e02ef1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stop\+Buffering} ()
+\item 
+\mbox{\Hypertarget{interface_i_w_m_reader_advanced2_aba23337a4147e20a653eb7cb91d4fa6b}\label{interface_i_w_m_reader_advanced2_aba23337a4147e20a653eb7cb91d4fa6b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open\+Stream} (\mbox{[}in\mbox{]} \hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream, \mbox{[}in\mbox{]} \hyperlink{interface_i_w_m_reader_callback}{I\+W\+M\+Reader\+Callback} $\ast$p\+Callback, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$pv\+Context)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wmsdkidl.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{struct___rope___rope_rep}{}\section{\+\_\+\+Rope\+\_\+\+Rope\+Rep$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ 模板结构体 参考}
+\label{struct___rope___rope_rep}\index{\+\_\+\+Rope\+\_\+\+Rope\+Rep$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$@{\+\_\+\+Rope\+\_\+\+Rope\+Rep$<$ \+\_\+\+Char\+T, \+\_\+\+Alloc $>$}}
+类 \+\_\+\+Rope\+\_\+\+Rope\+Rep$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.629108cm]{struct___rope___rope_rep}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a1757b4dc84d05bd38356e6b0ddf07c30}\label{struct___rope___rope_rep_a1757b4dc84d05bd38356e6b0ddf07c30}} 
+enum \{ {\bfseries \+\_\+\+S\+\_\+max\+\_\+rope\+\_\+depth} = \+\_\+\+\_\+\+R\+O\+P\+E\+\_\+\+M\+A\+X\+\_\+\+D\+E\+P\+TH
+ \}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_ab707d6ee3822eabec2929f0de0823184}\label{struct___rope___rope_rep_ab707d6ee3822eabec2929f0de0823184}} 
+enum {\bfseries \+\_\+\+Tag} \{ {\bfseries \+\_\+\+S\+\_\+leaf}, 
+{\bfseries \+\_\+\+S\+\_\+concat}, 
+{\bfseries \+\_\+\+S\+\_\+substringfn}, 
+{\bfseries \+\_\+\+S\+\_\+function}
+ \}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_ac99dad0dcd64da637f4c55a28a8e2b7d}\label{struct___rope___rope_rep_ac99dad0dcd64da637f4c55a28a8e2b7d}} 
+enum \{ {\bfseries \+\_\+\+S\+\_\+alloc\+\_\+granularity} = 8
+ \}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a252aae689e4f22c5e0db177e95bc2c55}\label{struct___rope___rope_rep_a252aae689e4f22c5e0db177e95bc2c55}} 
+typedef \hyperlink{struct___rope___rope_rep}{\+\_\+\+Rope\+\_\+\+Rope\+Rep}$<$ \+\_\+\+CharT, \+\_\+\+Alloc $>$ {\bfseries \+\_\+\+Self}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a8c6a1ace4f1ce5afb26b90b6f6156214}\label{struct___rope___rope_rep_a8c6a1ace4f1ce5afb26b90b6f6156214}} 
+typedef \+\_\+\+Alloc {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_af893a960ed6ea88c1874b6168e2d8d7c}\label{struct___rope___rope_rep_af893a960ed6ea88c1874b6168e2d8d7c}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+T\+Y\+P\+E\+N\+A\+ME \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___basic_char_type}{\+\_\+\+Basic\+Char\+Type}$<$ \+\_\+\+CharT $>$\+::\+\_\+\+Ret {\bfseries \+\_\+\+Is\+Basic\+Char\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a7c8df0d1709c188805f4245326d29368}\label{struct___rope___rope_rep_a7c8df0d1709c188805f4245326d29368}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a4087fed54c89f2140bf807587d797a35}\label{struct___rope___rope_rep_a4087fed54c89f2140bf807587d797a35}} 
+{\bfseries \+\_\+\+Rope\+\_\+\+Rope\+Rep} (\+\_\+\+Tag \+\_\+\+\_\+t, unsigned char \+\_\+\+\_\+d, bool \+\_\+\+\_\+b, size\+\_\+t \+\_\+p\+\_\+size, allocator\+\_\+type \+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_aaf2e59bf58d52307979ca1b7da3f625a}\label{struct___rope___rope_rep_aaf2e59bf58d52307979ca1b7da3f625a}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+free\+\_\+c\+\_\+string} ()
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_afdfa789bd96d7f0a71ac076f7bbb027b}\label{struct___rope___rope_rep_afdfa789bd96d7f0a71ac076f7bbb027b}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+free\+\_\+tree} ()
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_afda35226b118852a3579d2459bfbd6e5}\label{struct___rope___rope_rep_afda35226b118852a3579d2459bfbd6e5}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+unref\+\_\+nonnil} ()
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_af198d3c0c32ead11289b7245722af297}\label{struct___rope___rope_rep_af198d3c0c32ead11289b7245722af297}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+ref\+\_\+nonnil} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a82555e71e05ea74367c0b825dd99aa25}\label{struct___rope___rope_rep_a82555e71e05ea74367c0b825dd99aa25}} 
+static size\+\_\+t {\bfseries \+\_\+\+S\+\_\+rounded\+\_\+up\+\_\+size} (size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a3d202f610eaa2ed6cd1c520dc087fff9}\label{struct___rope___rope_rep_a3d202f610eaa2ed6cd1c520dc087fff9}} 
+static \hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+S\+\_\+free\+\_\+string} (\+\_\+\+CharT $\ast$\+\_\+\+\_\+s, size\+\_\+t \+\_\+\+\_\+len, allocator\+\_\+type \+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a83b5d734e4f814b9a0cb4390f765b7e8}\label{struct___rope___rope_rep_a83b5d734e4f814b9a0cb4390f765b7e8}} 
+static \hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+S\+\_\+unref} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Self} $\ast$\+\_\+\+\_\+t)
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a66f30136be471e07ce221a1130d82621}\label{struct___rope___rope_rep_a66f30136be471e07ce221a1130d82621}} 
+static \hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+S\+\_\+ref} (\hyperlink{struct___rope___rope_rep}{\+\_\+\+Self} $\ast$\+\_\+\+\_\+t)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a3c7d25e4172e8b2c50fcf0878956ec5b}\label{struct___rope___rope_rep_a3c7d25e4172e8b2c50fcf0878956ec5b}} 
+\+\_\+\+Tag {\bfseries \+\_\+\+M\+\_\+tag}\+:8
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_ab982b69e52634c451b8ed21464321130}\label{struct___rope___rope_rep_ab982b69e52634c451b8ed21464321130}} 
+bool {\bfseries \+\_\+\+M\+\_\+is\+\_\+balanced}\+:8
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_aa946810e2ea93fc03306a14b6a074b59}\label{struct___rope___rope_rep_aa946810e2ea93fc03306a14b6a074b59}} 
+unsigned char {\bfseries \+\_\+\+M\+\_\+depth}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_a34ab5fa6fc522c359b9fcc80e4a10d4a}\label{struct___rope___rope_rep_a34ab5fa6fc522c359b9fcc80e4a10d4a}} 
+\+\_\+\+CharT $\ast$\+\_\+\+S\+T\+L\+P\+\_\+\+V\+O\+L\+A\+T\+I\+LE {\bfseries \+\_\+\+M\+\_\+c\+\_\+string}
+\item 
+\mbox{\Hypertarget{struct___rope___rope_rep_ad026203a2e2864f3387e8b63bef6bac3}\label{struct___rope___rope_rep_ad026203a2e2864f3387e8b63bef6bac3}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{class___s_t_l_p__alloc__proxy}{\+\_\+\+S\+T\+L\+P\+\_\+alloc\+\_\+proxy}$<$ size\+\_\+t, \+\_\+\+CharT, allocator\+\_\+type $>$ {\bfseries \+\_\+\+M\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+rope.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+rope.\+c\end{DoxyCompactItemize}

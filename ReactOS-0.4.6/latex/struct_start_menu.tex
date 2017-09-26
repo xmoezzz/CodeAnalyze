@@ -1,0 +1,235 @@
+\hypertarget{struct_start_menu}{}\section{Start\+Menu结构体 参考}
+\label{struct_start_menu}\index{Start\+Menu@{Start\+Menu}}
+
+
+{\ttfamily \#include $<$startmenu.\+h$>$}
+
+类 Start\+Menu 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.262626cm]{struct_start_menu}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a0fa1b10c4027d020d036f394bb16451c}\label{struct_start_menu_a0fa1b10c4027d020d036f394bb16451c}} 
+typedef \hyperlink{struct_ext_context_menu_handler_t}{Ext\+Context\+Menu\+HandlerT}$<$ \hyperlink{struct_owner_draw_parent}{Owner\+Draw\+Parent}$<$ \hyperlink{struct_dialog_window}{Dialog\+Window} $>$ $>$ {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a5462b241ebd3847e4666facd965ec188}\label{struct_start_menu_a5462b241ebd3847e4666facd965ec188}} 
+{\bfseries Start\+Menu} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, int icon\+\_\+size=I\+C\+O\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+LL)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a354c9acb282d1801e388f13c1e8159e8}\label{struct_start_menu_a354c9acb282d1801e388f13c1e8159e8}} 
+{\bfseries Start\+Menu} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, const \hyperlink{struct_start_menu_create_info}{Start\+Menu\+Create\+Info} \&create\+\_\+info, int icon\+\_\+size=I\+C\+O\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+M\+A\+LL)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a676d8cc1fc756c2ad32b62168d3d5a92}\label{struct_start_menu_a676d8cc1fc756c2ad32b62168d3d5a92}} 
+static \hyperlink{interfacevoid}{H\+W\+ND} {\bfseries Create} (int x, int y, const \hyperlink{classlist}{Start\+Menu\+Folders} \&, \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, L\+P\+C\+T\+S\+TR title, C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO creator=s\+\_\+def\+\_\+creator, \hyperlink{interfacevoid}{void} $\ast$info=N\+U\+LL, const String \&filter=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_af2e07c4a05740c7272836e3b1cff5ead}\label{struct_start_menu_af2e07c4a05740c7272836e3b1cff5ead}} 
+static C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO {\bfseries s\+\_\+def\+\_\+creator} = S\+T\+A\+R\+T\+M\+E\+N\+U\+\_\+\+C\+R\+E\+A\+T\+OR(\hyperlink{struct_start_menu}{Start\+Menu})
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a4eb846b54fe1a55fc1ac205194d49c73}\label{struct_start_menu_a4eb846b54fe1a55fc1ac205194d49c73}} 
+enum {\bfseries S\+C\+R\+O\+L\+L\+\_\+\+M\+O\+DE} \{ {\bfseries S\+C\+R\+O\+L\+L\+\_\+\+N\+OT}, 
+{\bfseries S\+C\+R\+O\+L\+L\+\_\+\+UP}, 
+{\bfseries S\+C\+R\+O\+L\+L\+\_\+\+D\+O\+WN}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a64b3dfc79f4e26e0aa0c7413d235a8d0}\label{struct_start_menu_a64b3dfc79f4e26e0aa0c7413d235a8d0}} 
+L\+R\+E\+S\+U\+LT {\bfseries Init} (\hyperlink{structtag_c_r_e_a_t_e_s_t_r_u_c_t_a}{L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+CT} pcs)
+\item 
+L\+R\+E\+S\+U\+LT \hyperlink{struct_start_menu_a12aaba6be3ac789748b012dffac0cacd}{Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a8e1b728f1a9fed1037e674d48fbeb58e}\label{struct_start_menu_a8e1b728f1a9fed1037e674d48fbeb58e}} 
+int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\item 
+\mbox{\Hypertarget{struct_start_menu_a38cda378c21fe2a30fc86ae89d94b91c}\label{struct_start_menu_a38cda378c21fe2a30fc86ae89d94b91c}} 
+\hyperlink{interfacevoid}{void} {\bfseries Resize\+Buttons} (int cx)
+\item 
+\mbox{\Hypertarget{struct_start_menu_ae39319eb67abd395ce3f5098ff63c68f}\label{struct_start_menu_ae39319eb67abd395ce3f5098ff63c68f}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries Add\+Entries} ()
+\item 
+Shell\+Entry\+Map\+::iterator \hyperlink{struct_start_menu_a3649f39dcdb77983e7f3e4de8bc9d1bf}{Add\+Entry} (const String \&title, I\+C\+O\+N\+\_\+\+ID icon\+\_\+id, \hyperlink{struct_entry}{Entry} $\ast$entry)
+\item 
+\mbox{\Hypertarget{struct_start_menu_aee9e06b22c8e77eece05dc4ecdc4103c}\label{struct_start_menu_aee9e06b22c8e77eece05dc4ecdc4103c}} 
+Shell\+Entry\+Map\+::iterator {\bfseries Add\+Entry} (const String \&title, I\+C\+O\+N\+\_\+\+ID icon\+\_\+id=I\+C\+I\+D\+\_\+\+N\+O\+NE, int id=-\/1)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a0f450d8140d1b3500e31b1f8c0f8842d}\label{struct_start_menu_a0f450d8140d1b3500e31b1f8c0f8842d}} 
+Shell\+Entry\+Map\+::iterator {\bfseries Add\+Entry} (const \hyperlink{struct_shell_folder}{Shell\+Folder} \hyperlink{structfolder}{folder}, \hyperlink{struct_shell_entry}{Shell\+Entry} $\ast$entry)
+\item 
+\mbox{\Hypertarget{struct_start_menu_aabdb13dccbb9e66362903ae5f1e7668c}\label{struct_start_menu_aabdb13dccbb9e66362903ae5f1e7668c}} 
+Shell\+Entry\+Map\+::iterator {\bfseries Add\+Entry} (const \hyperlink{struct_shell_folder}{Shell\+Folder} \hyperlink{structfolder}{folder}, \hyperlink{struct_entry}{Entry} $\ast$entry)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a72237a844a98246d7d0977847d056cc3}\label{struct_start_menu_a72237a844a98246d7d0977847d056cc3}} 
+\hyperlink{interfacevoid}{void} {\bfseries Add\+Shell\+Entries} (const \hyperlink{struct_shell_directory}{Shell\+Directory} \&dir, int max=-\/1, const String \&ignore=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{struct_start_menu_a8bccdece1fb4a2e026532e70c21cb6e0}\label{struct_start_menu_a8bccdece1fb4a2e026532e70c21cb6e0}} 
+\hyperlink{interfacevoid}{void} {\bfseries Add\+Button} (L\+P\+C\+T\+S\+TR title, I\+C\+O\+N\+\_\+\+ID icon\+\_\+id=I\+C\+I\+D\+\_\+\+N\+O\+NE, bool has\+Submenu=false, int id=-\/1, bool enabled=true)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a5bcbca38c9a7270c3e759a7c1eaa5d44}\label{struct_start_menu_a5bcbca38c9a7270c3e759a7c1eaa5d44}} 
+\hyperlink{interfacevoid}{void} {\bfseries Add\+Separator} ()
+\item 
+\mbox{\Hypertarget{struct_start_menu_ae2171eb344d910728b834449669a4c2d}\label{struct_start_menu_ae2171eb344d910728b834449669a4c2d}} 
+bool {\bfseries Close\+Submenus} ()
+\item 
+\mbox{\Hypertarget{struct_start_menu_a1be54bed1f865377c0f92eec9a05e121}\label{struct_start_menu_a1be54bed1f865377c0f92eec9a05e121}} 
+bool {\bfseries Close\+Other\+Submenus} (int id=0)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a0e32d312cd3907b18373a8d5dd4a43a2}\label{struct_start_menu_a0e32d312cd3907b18373a8d5dd4a43a2}} 
+\hyperlink{interfacevoid}{void} {\bfseries Create\+Submenu} (int id, L\+P\+C\+T\+S\+TR title, C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO creator=s\+\_\+def\+\_\+creator, \hyperlink{interfacevoid}{void} $\ast$info=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a2ac2fefdba83c5f31f6ce1d952f1d432}\label{struct_start_menu_a2ac2fefdba83c5f31f6ce1d952f1d432}} 
+bool {\bfseries Create\+Submenu} (int id, int \hyperlink{structfolder}{folder}, L\+P\+C\+T\+S\+TR title, C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO creator=s\+\_\+def\+\_\+creator, \hyperlink{interfacevoid}{void} $\ast$info=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{struct_start_menu_ad638075d365aae4dc45972d42a0d7f3b}\label{struct_start_menu_ad638075d365aae4dc45972d42a0d7f3b}} 
+bool {\bfseries Create\+Submenu} (int id, int folder1, int folder2, L\+P\+C\+T\+S\+TR title, C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO creator=s\+\_\+def\+\_\+creator, \hyperlink{interfacevoid}{void} $\ast$info=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{struct_start_menu_aa3506a7441ba3f31e220d5c89e8bc96c}\label{struct_start_menu_aa3506a7441ba3f31e220d5c89e8bc96c}} 
+\hyperlink{interfacevoid}{void} {\bfseries Create\+Submenu} (int id, const \hyperlink{classlist}{Start\+Menu\+Folders} \&new\+\_\+folders, L\+P\+C\+T\+S\+TR title, C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO creator=s\+\_\+def\+\_\+creator, \hyperlink{interfacevoid}{void} $\ast$info=N\+U\+LL)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_start_menu_ac72c647cac3307a5f0b80e19ed5c155a}{Activate\+Entry} (int id, const \hyperlink{classset}{Shell\+Entry\+Set} \&entries)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a5415ca11743817f68e853c72efa39604}\label{struct_start_menu_a5415ca11743817f68e853c72efa39604}} 
+virtual \hyperlink{interfacevoid}{void} \hyperlink{struct_start_menu_a5415ca11743817f68e853c72efa39604}{Close\+Start\+Menu} (int id=0)
+\begin{DoxyCompactList}\small\item\em close all windows of the start menu popup \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_start_menu_a4a9e20c5ae05d69f06478fedba9b01c2}\label{struct_start_menu_a4a9e20c5ae05d69f06478fedba9b01c2}} 
+bool {\bfseries Get\+Button\+Rect} (int id, \hyperlink{structtag_r_e_c_t}{P\+R\+E\+CT} prect) const
+\item 
+\mbox{\Hypertarget{struct_start_menu_ab89551189015d47181093fa9f939db12}\label{struct_start_menu_ab89551189015d47181093fa9f939db12}} 
+\hyperlink{interfacevoid}{void} {\bfseries Draw\+Floating\+Button} (H\+DC hdc)
+\item 
+\mbox{\Hypertarget{struct_start_menu_ab09a726b63f97d7702f9a6e0db56d6a3}\label{struct_start_menu_ab09a726b63f97d7702f9a6e0db56d6a3}} 
+\hyperlink{interfacevoid}{void} {\bfseries Get\+Floating\+Button\+Rect} (\hyperlink{structtag_r_e_c_t}{L\+P\+R\+E\+CT} prect)
+\item 
+\mbox{\Hypertarget{struct_start_menu_aa4c40d6a5f19484219c3d04c30c6e4ff}\label{struct_start_menu_aa4c40d6a5f19484219c3d04c30c6e4ff}} 
+\hyperlink{interfacevoid}{void} {\bfseries Get\+Arrow\+Button\+Rects} (\hyperlink{structtag_r_e_c_t}{L\+P\+R\+E\+CT} prect\+\_\+up, \hyperlink{structtag_r_e_c_t}{L\+P\+R\+E\+CT} prect\+\_\+down, int icon\+\_\+size)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a9b5e4b01944cb60db018e824f14268aa}\label{struct_start_menu_a9b5e4b01944cb60db018e824f14268aa}} 
+\hyperlink{interfacevoid}{void} {\bfseries Draw\+Arrows} (H\+DC hdc, int icon\+\_\+size)
+\item 
+\mbox{\Hypertarget{struct_start_menu_a8a1ec82542267083ed0b40a76948d297}\label{struct_start_menu_a8a1ec82542267083ed0b40a76948d297}} 
+\hyperlink{interfacevoid}{void} {\bfseries Paint} (Paint\+Canvas \&canvas)
+\item 
+\mbox{\Hypertarget{struct_start_menu_aff7cbe92bfeb77744834c4e4db9252e2}\label{struct_start_menu_aff7cbe92bfeb77744834c4e4db9252e2}} 
+\hyperlink{interfacevoid}{void} {\bfseries Update\+Icons} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_ae304d469738732ee35fdb147fb5fadce}\label{struct_start_menu_ae304d469738732ee35fdb147fb5fadce}} 
+static \hyperlink{struct_btn_window_class}{Btn\+Window\+Class} \& {\bfseries Get\+Wnd\+Classs} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a20a9ad48567c0f8a5da448c85b975ef2}\label{struct_start_menu_a20a9ad48567c0f8a5da448c85b975ef2}} 
+int {\bfseries \+\_\+next\+\_\+id}
+\item 
+\mbox{\Hypertarget{struct_start_menu_acb2dc66de9ee3876f926ffe172aaadaf}\label{struct_start_menu_acb2dc66de9ee3876f926ffe172aaadaf}} 
+\hyperlink{classmap}{Shell\+Entry\+Map} {\bfseries \+\_\+entries}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a15d9bb7958519a53285f921ff4f83e86}\label{struct_start_menu_a15d9bb7958519a53285f921ff4f83e86}} 
+\hyperlink{classlist}{Start\+Menu\+Shell\+Dirs} {\bfseries \+\_\+dirs}
+\item 
+\mbox{\Hypertarget{struct_start_menu_af5f6617e815f3b97d9dc1f6a5a99c472}\label{struct_start_menu_af5f6617e815f3b97d9dc1f6a5a99c472}} 
+int {\bfseries \+\_\+submenu\+\_\+id}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a4394ebefd98a0e77ee0bc5ce79ac9caa}\label{struct_start_menu_a4394ebefd98a0e77ee0bc5ce79ac9caa}} 
+Window\+Handle {\bfseries \+\_\+submenu}
+\item 
+\mbox{\Hypertarget{struct_start_menu_acd7e9e8a696d090366e440670cdb2c28}\label{struct_start_menu_acd7e9e8a696d090366e440670cdb2c28}} 
+int {\bfseries \+\_\+border\+\_\+left}
+\item 
+\mbox{\Hypertarget{struct_start_menu_aacf2a41ae02642d852c71c6d5fc5d1fc}\label{struct_start_menu_aacf2a41ae02642d852c71c6d5fc5d1fc}} 
+int {\bfseries \+\_\+border\+\_\+top}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a114c2c43f5b348f111877dd3ca63c099}\label{struct_start_menu_a114c2c43f5b348f111877dd3ca63c099}} 
+int {\bfseries \+\_\+bottom\+\_\+max}
+\item 
+\mbox{\Hypertarget{struct_start_menu_acdc457106b0b087d97bb9a6bece78f6c}\label{struct_start_menu_acdc457106b0b087d97bb9a6bece78f6c}} 
+bool {\bfseries \+\_\+floating\+\_\+btn}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a8c1947e0c7ca3048ac083fe5d20d9314}\label{struct_start_menu_a8c1947e0c7ca3048ac083fe5d20d9314}} 
+bool {\bfseries \+\_\+arrow\+\_\+btns}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a699865d7d8ca770a98cdf5948276bab9}\label{struct_start_menu_a699865d7d8ca770a98cdf5948276bab9}} 
+\hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} {\bfseries \+\_\+last\+\_\+pos}
+\item 
+\mbox{\Hypertarget{struct_start_menu_abb4432ba76859b9e81572db01a770b40}\label{struct_start_menu_abb4432ba76859b9e81572db01a770b40}} 
+\hyperlink{interfaceenum}{enum} Start\+Menu\+::\+S\+C\+R\+O\+L\+L\+\_\+\+M\+O\+DE {\bfseries \+\_\+scroll\+\_\+mode}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a75282373864c3c922c16066974aaf5d9}\label{struct_start_menu_a75282373864c3c922c16066974aaf5d9}} 
+int {\bfseries \+\_\+scroll\+\_\+pos}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a5ebced1b30d3e8134a17fa36695debb0}\label{struct_start_menu_a5ebced1b30d3e8134a17fa36695debb0}} 
+int {\bfseries \+\_\+invisible\+\_\+lines}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a674243e63aadbca3674ae1184a440225}\label{struct_start_menu_a674243e63aadbca3674ae1184a440225}} 
+\hyperlink{struct_start_menu_create_info}{Start\+Menu\+Create\+Info} {\bfseries \+\_\+create\+\_\+info}
+\item 
+\mbox{\Hypertarget{struct_start_menu_a99fbdb104358d45492eb4edf20c362a2}\label{struct_start_menu_a99fbdb104358d45492eb4edf20c362a2}} 
+int {\bfseries \+\_\+icon\+\_\+size}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Startmenu window. To create a start menu call its Create() function. 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_start_menu_ac72c647cac3307a5f0b80e19ed5c155a}\label{struct_start_menu_ac72c647cac3307a5f0b80e19ed5c155a}} 
+\index{Start\+Menu@{Start\+Menu}!Activate\+Entry@{Activate\+Entry}}
+\index{Activate\+Entry@{Activate\+Entry}!Start\+Menu@{Start\+Menu}}
+\subsubsection{\texorpdfstring{Activate\+Entry()}{ActivateEntry()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Start\+Menu\+::\+Activate\+Entry (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const \hyperlink{classset}{Shell\+Entry\+Set} \&}]{entries }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000064}{待办事项}]If the user explicitly clicked on a submenu, display this folder as floating start menu. \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000065}{待办事项}]launch in the background; specify correct H\+W\+ND for error message box titles \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_start_menu_a3649f39dcdb77983e7f3e4de8bc9d1bf}\label{struct_start_menu_a3649f39dcdb77983e7f3e4de8bc9d1bf}} 
+\index{Start\+Menu@{Start\+Menu}!Add\+Entry@{Add\+Entry}}
+\index{Add\+Entry@{Add\+Entry}!Start\+Menu@{Start\+Menu}}
+\subsubsection{\texorpdfstring{Add\+Entry()}{AddEntry()}}
+{\footnotesize\ttfamily Shell\+Entry\+Map\+::iterator Start\+Menu\+::\+Add\+Entry (\begin{DoxyParamCaption}\item[{const String \&}]{title,  }\item[{I\+C\+O\+N\+\_\+\+ID}]{icon\+\_\+id,  }\item[{\hyperlink{struct_entry}{Entry} $\ast$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000063}{待办事项}]speed up by using a map indexed by name \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_start_menu_a12aaba6be3ac789748b012dffac0cacd}\label{struct_start_menu_a12aaba6be3ac789748b012dffac0cacd}} 
+\index{Start\+Menu@{Start\+Menu}!Wnd\+Proc@{Wnd\+Proc}}
+\index{Wnd\+Proc@{Wnd\+Proc}!Start\+Menu@{Start\+Menu}}
+\subsubsection{\texorpdfstring{Wnd\+Proc()}{WndProc()}}
+{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT Start\+Menu\+::\+Wnd\+Proc (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{nmsg,  }\item[{W\+P\+A\+R\+AM}]{wparam,  }\item[{L\+P\+A\+R\+AM}]{lparam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000061}{待办事项}]do something similar to Start\+Menu\+Root\+::\+Track\+Startmenu() in order to automatically close submenus when clicking on the desktop background \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000062}{待办事项}]use Track\+Mouse\+Event() and W\+M\+\_\+\+M\+O\+U\+S\+E\+H\+O\+V\+ER to wait a bit before opening submenus \end{DoxyRefDesc}
+
+
+重载 \hyperlink{struct_window}{Window} .
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/startmenu.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/startmenu.\+cpp\end{DoxyCompactItemize}

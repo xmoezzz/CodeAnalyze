@@ -1,0 +1,70 @@
+\hypertarget{interfacens_i_i_o_service}{}\section{ns\+I\+I\+O\+Service接口 参考}
+\label{interfacens_i_i_o_service}\index{ns\+I\+I\+O\+Service@{ns\+I\+I\+O\+Service}}
+类 ns\+I\+I\+O\+Service 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacens_i_i_o_service}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a388e463119438b98e273cabfe7a417ae}\label{interfacens_i_i_o_service_a388e463119438b98e273cabfe7a417ae}} 
+nsresult {\bfseries Get\+Protocol\+Handler} (const char $\ast$a\+Scheme, \hyperlink{interfacens_i_protocol_handler}{ns\+I\+Protocol\+Handler} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a2435081a0fdbd3e4aa0681b9279ca82d}\label{interfacens_i_i_o_service_a2435081a0fdbd3e4aa0681b9279ca82d}} 
+nsresult {\bfseries Get\+Protocol\+Flags} (const char $\ast$a\+Scheme, uint32\+\_\+t $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a13abae6d81c6819cdb983d17739fda46}\label{interfacens_i_i_o_service_a13abae6d81c6819cdb983d17739fda46}} 
+nsresult {\bfseries New\+U\+RI} (const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Spec, const char $\ast$a\+Origin\+Charset, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+Base\+U\+RI, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_ac051eed8d050e32495ecb8978990bcde}\label{interfacens_i_i_o_service_ac051eed8d050e32495ecb8978990bcde}} 
+nsresult {\bfseries New\+File\+U\+RI} (\hyperlink{interfacens_i_file}{ns\+I\+File} $\ast$a\+File, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_adfa5f8e407c15cdcb3e5b91244d2b2eb}\label{interfacens_i_i_o_service_adfa5f8e407c15cdcb3e5b91244d2b2eb}} 
+nsresult {\bfseries New\+Channel\+From\+U\+R\+I2} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$a\+Loading\+Node, \hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$a\+Loading\+Principal, \hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$a\+Triggering\+Principal, uint32\+\_\+t a\+Security\+Flags, uint32\+\_\+t a\+Content\+Policy\+Type, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a1d2a92e0a847c67e3afd9604f89ed0a7}\label{interfacens_i_i_o_service_a1d2a92e0a847c67e3afd9604f89ed0a7}} 
+nsresult {\bfseries New\+Channel\+From\+U\+R\+I\+With\+Load\+Info} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, \hyperlink{interfacens_i_supports}{ns\+I\+Load\+Info} $\ast$a\+Load\+Info, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_aa7989ee4cca069f101b65ae3d8e0125b}\label{interfacens_i_i_o_service_aa7989ee4cca069f101b65ae3d8e0125b}} 
+nsresult {\bfseries New\+Channel\+From\+U\+RI} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a47f095510829545ffd96dd08484f2c26}\label{interfacens_i_i_o_service_a47f095510829545ffd96dd08484f2c26}} 
+nsresult {\bfseries New\+Channel2} (const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Spec, const char $\ast$a\+Origin\+Charset, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+Base\+U\+RI, \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$a\+Loading\+Node, \hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$a\+Loading\+Principal, \hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$a\+Triggering\+Principal, uint32\+\_\+t a\+Security\+Flags, uint32\+\_\+t a\+Content\+Policy\+Type, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a76d95cea72c550d1932f09121b9e2524}\label{interfacens_i_i_o_service_a76d95cea72c550d1932f09121b9e2524}} 
+nsresult {\bfseries New\+Channel} (const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Spec, const char $\ast$a\+Origin\+Charset, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+Base\+U\+RI, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_ae3eb4ef1c03823968b27d222bc2e79b1}\label{interfacens_i_i_o_service_ae3eb4ef1c03823968b27d222bc2e79b1}} 
+nsresult {\bfseries Get\+Offline} (bool $\ast$a\+Offline)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_af8772194ea03b4eeb839cddfaffe5d53}\label{interfacens_i_i_o_service_af8772194ea03b4eeb839cddfaffe5d53}} 
+nsresult {\bfseries Set\+Offline} (bool a\+Offline)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a772129af226289c826e5634ddc173c0f}\label{interfacens_i_i_o_service_a772129af226289c826e5634ddc173c0f}} 
+nsresult {\bfseries Get\+Connectivity} (bool $\ast$a\+Connectivity)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_adfb15788d23948325a32a923e06eb083}\label{interfacens_i_i_o_service_adfb15788d23948325a32a923e06eb083}} 
+nsresult {\bfseries Set\+App\+Offline} (uint32\+\_\+t app\+Id, int32\+\_\+t state)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_aa87d4aacf8c9934f73a1d6303c89998f}\label{interfacens_i_i_o_service_aa87d4aacf8c9934f73a1d6303c89998f}} 
+nsresult {\bfseries Is\+App\+Offline} (uint32\+\_\+t app\+Id, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a6c55cb3e4d69283ae305ae4098699522}\label{interfacens_i_i_o_service_a6c55cb3e4d69283ae305ae4098699522}} 
+nsresult {\bfseries Get\+App\+Offline\+State} (uint32\+\_\+t app\+Id, int32\+\_\+t $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_adf6894a70ad5f67abba3b58692848f8d}\label{interfacens_i_i_o_service_adf6894a70ad5f67abba3b58692848f8d}} 
+nsresult {\bfseries Allow\+Port} (int32\+\_\+t a\+Port, const char $\ast$a\+Scheme, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a5a4fc6fc343c89448ad10b2f8a788e27}\label{interfacens_i_i_o_service_a5a4fc6fc343c89448ad10b2f8a788e27}} 
+nsresult {\bfseries Extract\+Scheme} (const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$url\+String, \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_i_o_service_a90df21973b22f8a12e4855bb74108811}\label{interfacens_i_i_o_service_a90df21973b22f8a12e4855bb74108811}} 
+nsresult {\bfseries New\+Load\+Info} (\hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$a\+Loading\+Principal, \hyperlink{interfacens_i_supports}{ns\+I\+Principal} $\ast$a\+Triggering\+Principal, \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$a\+Loading\+Node, uint32\+\_\+t a\+Security\+Flags, uint32\+\_\+t a\+Content\+Policy\+Type, \hyperlink{interfacens_i_supports}{ns\+I\+Load\+Info} $\ast$$\ast$\+\_\+retval)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/dll/3rdparty/libxslt/extra.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c938f8a9ae7e172e1ee48b60f4a9b17a.html">dll</a></li><li class="navelem"><a class="el" href="dir_d12d55ac1c43bab629579df16b884c78.html">3rdparty</a></li><li class="navelem"><a class="el" href="dir_aec75bc124370cba53a623ddc33f4c92.html">libxslt</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">extra.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Summary: interface for the non-standard features</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Description: implement some extension outside the XSLT namespace</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *              but not EXSLT with is in a different library.</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copy: See Copyright for the status of this software.</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Author: Daniel Veillard</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __XML_XSLT_EXTRA_H__</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __XML_XSLT_EXTRA_H__</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;libxml/xpath.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;xsltexports.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;xsltInternals.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define XSLT_LIBXSLT_NAMESPACE ((xmlChar *) &quot;http://xmlsoft.org/XSLT/namespace&quot;)</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define XSLT_SAXON_NAMESPACE ((xmlChar *) &quot;http://icl.com/saxon&quot;)</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define XSLT_XT_NAMESPACE ((xmlChar *) &quot;http://www.jclark.com/xt&quot;)</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define XSLT_XALAN_NAMESPACE ((xmlChar *)   \</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">                            &quot;org.apache.xalan.xslt.extensions.Redirect&quot;)</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define XSLT_NORM_SAXON_NAMESPACE ((xmlChar *)  \</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    &quot;http://nwalsh.com/xslt/ext/com.nwalsh.saxon.CVS&quot;)</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;XSLTPUBFUN <span class="keywordtype">void</span> XSLTCALL</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        xsltFunctionNodeSet (xmlXPathParserContextPtr ctxt,</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                     <span class="keywordtype">int</span> nargs);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;XSLTPUBFUN <span class="keywordtype">void</span> XSLTCALL</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        xsltDebug       (<a class="code" href="struct__xslt_transform_context.html">xsltTransformContextPtr</a> ctxt,</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                     <a class="code" href="struct__xml_node.html">xmlNodePtr</a> node,</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                     <a class="code" href="struct__xml_node.html">xmlNodePtr</a> inst,</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                     <a class="code" href="struct__xslt_style_pre_comp.html">xsltStylePreCompPtr</a> comp);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;XSLTPUBFUN <span class="keywordtype">void</span> XSLTCALL</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        xsltRegisterExtras  (<a class="code" href="struct__xslt_transform_context.html">xsltTransformContextPtr</a> ctxt);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;XSLTPUBFUN <span class="keywordtype">void</span> XSLTCALL</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        xsltRegisterAllExtras   (<span class="keywordtype">void</span>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __XML_XSLT_EXTRA_H__ */</span><span class="preprocessor"></span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="ttc" id="struct__xml_node_html"><div class="ttname"><a href="struct__xml_node.html">_xmlNode</a></div><div class="ttdef"><b>Definition:</b> tree.h:489</div></div>
+<div class="ttc" id="struct__xslt_style_pre_comp_html"><div class="ttname"><a href="struct__xslt_style_pre_comp.html">_xsltStylePreComp</a></div><div class="ttdef"><b>Definition:</b> xsltInternals.h:1369</div></div>
+<div class="ttc" id="struct__xslt_transform_context_html"><div class="ttname"><a href="struct__xslt_transform_context.html">_xsltTransformContext</a></div><div class="ttdef"><b>Definition:</b> xsltInternals.h:1676</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

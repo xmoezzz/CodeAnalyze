@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: SWvertex结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_s_wvertex-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">SWvertex结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Data-structure to handle vertices in the software rasterizer.  
+ <a href="struct_s_wvertex.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="swrast_8h_source.html">swrast.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ae5a42a5bb68f7a9ecf3f659fbd548365"><td class="memItemLeft" align="right" valign="top"><a id="ae5a42a5bb68f7a9ecf3f659fbd548365"></a>
+GLfloat&#160;</td><td class="memItemRight" valign="bottom"><b>attrib</b> [FRAG_ATTRIB_MAX][4]</td></tr>
+<tr class="separator:ae5a42a5bb68f7a9ecf3f659fbd548365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0eae898075b1491de5f5a0b4dcf2899"><td class="memItemLeft" align="right" valign="top"><a id="ae0eae898075b1491de5f5a0b4dcf2899"></a>
+GLchan&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> [4]</td></tr>
+<tr class="separator:ae0eae898075b1491de5f5a0b4dcf2899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af8503a89227ee0f4524cf17db6d3e8"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_wvertex.html#a5af8503a89227ee0f4524cf17db6d3e8">pointSize</a></td></tr>
+<tr class="separator:a5af8503a89227ee0f4524cf17db6d3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Data-structure to handle vertices in the software rasterizer. </p>
+<p>The software rasterizer now uses this format for vertices. Thus a 'RasterSetup' stage or other translation is required between the tnl module and the swrast rasterization functions. <a class="el" href="namespace_this.html">This</a> serves to isolate the swrast module from the internals of the tnl module, and improve its usefulness as a fallback mechanism for hardware drivers.</p>
+<p>wpos = attr[FRAG_ATTRIB_WPOS] and MUST BE THE FIRST values in the vertex because of the tnl clipping code.</p>
+<p>wpos[0] and [1] are the screen-coords of <a class="el" href="struct_s_wvertex.html" title="Data-structure to handle vertices in the software rasterizer. ">SWvertex</a>. wpos[2] is the z-buffer coord (if 16-bit Z buffer, in range [0,65535]). wpos[3] is 1/w where w is the clip-space W coord. <a class="el" href="namespace_this.html">This</a> is the value that clip{XYZ} were multiplied by to get ndc{XYZ}.</p>
+<p>Full software drivers:</p><ul>
+<li>Register the rastersetup and triangle functions from utils/software_helper.</li>
+<li>On statechange, update the rasterization pointers in that module.</li>
+</ul>
+<p>Rasterization hardware drivers:</p><ul>
+<li>Keep native rastersetup.</li>
+<li>Implement native twoside,offset and unfilled triangle setup.</li>
+<li>Implement a translator from native vertices to swrast vertices.</li>
+<li>On partial fallback (mix of accelerated and unaccelerated prims), call a pass-through function which translates native vertices to SWvertices and calls the appropriate swrast function.</li>
+<li>On total fallback (vertex format insufficient for state or all primitives unaccelerated), hook in swrast_setup instead. </li>
+</ul>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a5af8503a89227ee0f4524cf17db6d3e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af8503a89227ee0f4524cf17db6d3e8">&#9670;&nbsp;</a></span>pointSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat SWvertex::pointSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>integer color </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/opengl/mesa/swrast/<a class="el" href="swrast_8h_source.html">swrast.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

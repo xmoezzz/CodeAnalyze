@@ -1,0 +1,258 @@
+\hypertarget{structsock}{}\section{sock结构体 参考}
+\label{structsock}\index{sock@{sock}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsock_af26a94c93080134072a2644959aa6c71}\label{structsock_af26a94c93080134072a2644959aa6c71}} 
+\+\_\+\+\_\+u32 {\bfseries daddr}
+\item 
+\mbox{\Hypertarget{structsock_a4be25874d1c3b25cb63a3f87f754cb56}\label{structsock_a4be25874d1c3b25cb63a3f87f754cb56}} 
+\+\_\+\+\_\+u32 {\bfseries rcv\+\_\+saddr}
+\item 
+\mbox{\Hypertarget{structsock_a8a384e0e1c481bcb3fa98725f28ca326}\label{structsock_a8a384e0e1c481bcb3fa98725f28ca326}} 
+\+\_\+\+\_\+u16 {\bfseries dport}
+\item 
+\mbox{\Hypertarget{structsock_aaa0ef20a19dc6d311e93d39ff685d117}\label{structsock_aaa0ef20a19dc6d311e93d39ff685d117}} 
+unsigned short {\bfseries num}
+\item 
+\mbox{\Hypertarget{structsock_a9125476081a8a44ec8cf8336ad8c6127}\label{structsock_a9125476081a8a44ec8cf8336ad8c6127}} 
+int {\bfseries bound\+\_\+dev\+\_\+if}
+\item 
+\mbox{\Hypertarget{structsock_a1cfb106cedbc6686bbe6d3580d360bcf}\label{structsock_a1cfb106cedbc6686bbe6d3580d360bcf}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$ {\bfseries next}
+\item 
+\mbox{\Hypertarget{structsock_ac688e4e2d96f8033b5a25228e7c665a8}\label{structsock_ac688e4e2d96f8033b5a25228e7c665a8}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$$\ast$ {\bfseries pprev}
+\item 
+\mbox{\Hypertarget{structsock_adeb4690c2ee6da263d8a6d7b6d00bf5d}\label{structsock_adeb4690c2ee6da263d8a6d7b6d00bf5d}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$ {\bfseries bind\+\_\+next}
+\item 
+\mbox{\Hypertarget{structsock_a306fdca10e74d487bbb5fa730d3ce7d7}\label{structsock_a306fdca10e74d487bbb5fa730d3ce7d7}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$$\ast$ {\bfseries bind\+\_\+pprev}
+\item 
+\mbox{\Hypertarget{structsock_a405237cbbadcf167523ba4335486b27a}\label{structsock_a405237cbbadcf167523ba4335486b27a}} 
+volatile unsigned char {\bfseries state}
+\item 
+\mbox{\Hypertarget{structsock_a9720c2a31cc7c592356dacc62e4d5557}\label{structsock_a9720c2a31cc7c592356dacc62e4d5557}} 
+volatile unsigned char {\bfseries zapped}
+\item 
+\mbox{\Hypertarget{structsock_a597c3f6cabbcf0d8f5960a957bbe47c6}\label{structsock_a597c3f6cabbcf0d8f5960a957bbe47c6}} 
+\+\_\+\+\_\+u16 {\bfseries sport}
+\item 
+\mbox{\Hypertarget{structsock_a4cfb03639224ba4338dfaa304bcad2e4}\label{structsock_a4cfb03639224ba4338dfaa304bcad2e4}} 
+unsigned short {\bfseries family}
+\item 
+\mbox{\Hypertarget{structsock_aeb4e5664d159004a7265237ec40cbd2e}\label{structsock_aeb4e5664d159004a7265237ec40cbd2e}} 
+unsigned char {\bfseries reuse}
+\item 
+\mbox{\Hypertarget{structsock_a5ad0d2786296d30eabf5f425d52579e4}\label{structsock_a5ad0d2786296d30eabf5f425d52579e4}} 
+unsigned char {\bfseries shutdown}
+\item 
+\mbox{\Hypertarget{structsock_a03e9e62bde67740dc1f949c3728d8488}\label{structsock_a03e9e62bde67740dc1f949c3728d8488}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries refcnt}
+\item 
+\mbox{\Hypertarget{structsock_a51966357cbd8ac45072a02547be5ae16}\label{structsock_a51966357cbd8ac45072a02547be5ae16}} 
+\hyperlink{structsocket__lock__t}{socket\+\_\+lock\+\_\+t} {\bfseries lock}
+\item 
+\mbox{\Hypertarget{structsock_afdd1f0711936131b850751d75cecaa77}\label{structsock_afdd1f0711936131b850751d75cecaa77}} 
+int {\bfseries rcvbuf}
+\item 
+\mbox{\Hypertarget{structsock_a508ffc4da8f0ec24b68869840b700060}\label{structsock_a508ffc4da8f0ec24b68869840b700060}} 
+\hyperlink{struct____wait__queue__head}{wait\+\_\+queue\+\_\+head\+\_\+t} $\ast$ {\bfseries sleep}
+\item 
+\mbox{\Hypertarget{structsock_af1ffc97f4da0be5d66642970e9e5ca2e}\label{structsock_af1ffc97f4da0be5d66642970e9e5ca2e}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structdst__entry}{dst\+\_\+entry} $\ast$ {\bfseries dst\+\_\+cache}
+\item 
+\mbox{\Hypertarget{structsock_a49c1c52d82afe65188e66591f57c4f9d}\label{structsock_a49c1c52d82afe65188e66591f57c4f9d}} 
+\hyperlink{structrwlock__t}{rwlock\+\_\+t} {\bfseries dst\+\_\+lock}
+\item 
+\mbox{\Hypertarget{structsock_af7985b3192ebb7ef054dc02f752a4467}\label{structsock_af7985b3192ebb7ef054dc02f752a4467}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries rmem\+\_\+alloc}
+\item 
+\mbox{\Hypertarget{structsock_a6d5642bb31eaf1c0e230c50b7404e0e8}\label{structsock_a6d5642bb31eaf1c0e230c50b7404e0e8}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head} {\bfseries receive\+\_\+queue}
+\item 
+\mbox{\Hypertarget{structsock_a3656584b9724cac7ba55ee51bde91018}\label{structsock_a3656584b9724cac7ba55ee51bde91018}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries wmem\+\_\+alloc}
+\item 
+\mbox{\Hypertarget{structsock_ad185029bf8eda56278f6781c264b507b}\label{structsock_ad185029bf8eda56278f6781c264b507b}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head} {\bfseries write\+\_\+queue}
+\item 
+\mbox{\Hypertarget{structsock_a91b74d35bc28d1c8c8d723402a5aaae3}\label{structsock_a91b74d35bc28d1c8c8d723402a5aaae3}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries omem\+\_\+alloc}
+\item 
+\mbox{\Hypertarget{structsock_aa64e02b4065f9f4b18ea78d35a6c9e02}\label{structsock_aa64e02b4065f9f4b18ea78d35a6c9e02}} 
+int {\bfseries wmem\+\_\+queued}
+\item 
+\mbox{\Hypertarget{structsock_a2e46030ff3d0b653ca7c338880b5ee4c}\label{structsock_a2e46030ff3d0b653ca7c338880b5ee4c}} 
+int {\bfseries forward\+\_\+alloc}
+\item 
+\mbox{\Hypertarget{structsock_a3171f8e4491720873f727e70195d3595}\label{structsock_a3171f8e4491720873f727e70195d3595}} 
+\+\_\+\+\_\+u32 {\bfseries saddr}
+\item 
+\mbox{\Hypertarget{structsock_a1090ec5a7c696915632766f144d814fc}\label{structsock_a1090ec5a7c696915632766f144d814fc}} 
+unsigned int {\bfseries allocation}
+\item 
+\mbox{\Hypertarget{structsock_aee9f3adda71941436a12a6ca88aea0e7}\label{structsock_aee9f3adda71941436a12a6ca88aea0e7}} 
+int {\bfseries sndbuf}
+\item 
+\mbox{\Hypertarget{structsock_a06521951c948ac796a3d9fc342285052}\label{structsock_a06521951c948ac796a3d9fc342285052}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$ {\bfseries prev}
+\item 
+\mbox{\Hypertarget{structsock_ac786b7d99635d71e577e1f4c12f9b633}\label{structsock_ac786b7d99635d71e577e1f4c12f9b633}} 
+volatile char {\bfseries dead}
+\item 
+\mbox{\Hypertarget{structsock_a1e6d4f2dc695e64b920421d8a9f25bb2}\label{structsock_a1e6d4f2dc695e64b920421d8a9f25bb2}} 
+volatile char {\bfseries done}
+\item 
+\mbox{\Hypertarget{structsock_a79cde9009c092c567e96ac3390f42010}\label{structsock_a79cde9009c092c567e96ac3390f42010}} 
+volatile char {\bfseries urginline}
+\item 
+\mbox{\Hypertarget{structsock_a804d91a5b2288f2c9af4c0e1990cc07a}\label{structsock_a804d91a5b2288f2c9af4c0e1990cc07a}} 
+volatile char {\bfseries keepopen}
+\item 
+\mbox{\Hypertarget{structsock_ac9ac6bef4ddbaff39ef52a85c5173db2}\label{structsock_ac9ac6bef4ddbaff39ef52a85c5173db2}} 
+volatile char {\bfseries linger}
+\item 
+\mbox{\Hypertarget{structsock_aabbab41d1fbdc1d378e2e9c4a3c4eb5a}\label{structsock_aabbab41d1fbdc1d378e2e9c4a3c4eb5a}} 
+volatile char {\bfseries destroy}
+\item 
+\mbox{\Hypertarget{structsock_a2585af030f25c158e36ce99627064359}\label{structsock_a2585af030f25c158e36ce99627064359}} 
+volatile char {\bfseries no\+\_\+check}
+\item 
+\mbox{\Hypertarget{structsock_a47efc76d1ce40f3bdb3adc4aa002cf09}\label{structsock_a47efc76d1ce40f3bdb3adc4aa002cf09}} 
+volatile char {\bfseries broadcast}
+\item 
+\mbox{\Hypertarget{structsock_a5a806bb18b96fb8bcd77398118fdfa9d}\label{structsock_a5a806bb18b96fb8bcd77398118fdfa9d}} 
+volatile char {\bfseries bsdism}
+\item 
+\mbox{\Hypertarget{structsock_ab984b738a5bede31f7b82aea8dd585d9}\label{structsock_ab984b738a5bede31f7b82aea8dd585d9}} 
+unsigned char {\bfseries debug}
+\item 
+\mbox{\Hypertarget{structsock_ad2bfb56aa7a3d6fd14db42fb44f49dd3}\label{structsock_ad2bfb56aa7a3d6fd14db42fb44f49dd3}} 
+unsigned char {\bfseries rcvtstamp}
+\item 
+\mbox{\Hypertarget{structsock_a5cdd33b477e504fbbcb5f10e99ef5a87}\label{structsock_a5cdd33b477e504fbbcb5f10e99ef5a87}} 
+unsigned char {\bfseries use\+\_\+write\+\_\+queue}
+\item 
+\mbox{\Hypertarget{structsock_a08b338a1591850b14cb32172cc118ba8}\label{structsock_a08b338a1591850b14cb32172cc118ba8}} 
+unsigned char {\bfseries userlocks}
+\item 
+\mbox{\Hypertarget{structsock_a48d9450136802f535b8f8a2ebdae7163}\label{structsock_a48d9450136802f535b8f8a2ebdae7163}} 
+int {\bfseries route\+\_\+caps}
+\item 
+\mbox{\Hypertarget{structsock_afd478147b60434e21eeea98e73bcdc43}\label{structsock_afd478147b60434e21eeea98e73bcdc43}} 
+int {\bfseries proc}
+\item 
+\mbox{\Hypertarget{structsock_a5ac62db334c6fc4a4b38d998bc5921e4}\label{structsock_a5ac62db334c6fc4a4b38d998bc5921e4}} 
+unsigned long {\bfseries lingertime}
+\item 
+\mbox{\Hypertarget{structsock_a6408cef24aebff279dbd63dd679ed36d}\label{structsock_a6408cef24aebff279dbd63dd679ed36d}} 
+int {\bfseries hashent}
+\item 
+\mbox{\Hypertarget{structsock_a32ff74bbfe3e80b10ee6adf6e22ea72c}\label{structsock_a32ff74bbfe3e80b10ee6adf6e22ea72c}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$ {\bfseries pair}
+\item 
+\mbox{\Hypertarget{structsock_a091cca2e79fb676becbdb35cdd12e2be}\label{structsock_a091cca2e79fb676becbdb35cdd12e2be}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structsk__buff}{sk\_buff} $\ast$ {\bfseries head}\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structsk__buff}{sk\_buff} $\ast$ {\bfseries tail}\\
+\} {\bfseries backlog}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structsock_a12ccf8d9adf49eca5920f41b1f36e4c8}\label{structsock_a12ccf8d9adf49eca5920f41b1f36e4c8}} 
+\hyperlink{structrwlock__t}{rwlock\+\_\+t} {\bfseries callback\+\_\+lock}
+\item 
+\mbox{\Hypertarget{structsock_a2ec96f1f472f26a4ff8243017d3202b8}\label{structsock_a2ec96f1f472f26a4ff8243017d3202b8}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structsk__buff__head}{sk\+\_\+buff\+\_\+head} {\bfseries error\+\_\+queue}
+\item 
+\mbox{\Hypertarget{structsock_a8b7dcf7f45196c2dad2652c6f3f3e248}\label{structsock_a8b7dcf7f45196c2dad2652c6f3f3e248}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structproto}{proto} $\ast$ {\bfseries prot}
+\item 
+\mbox{\Hypertarget{structsock_a3b39cebc33a47b7e49705e19c157f243}\label{structsock_a3b39cebc33a47b7e49705e19c157f243}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{interfacestruct}{struct} \hyperlink{structtcp__opt}{tcp\_opt} {\bfseries af\_tcp}\\
+\} {\bfseries tp\_pinfo}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structsock_a485e0ce37e6b29b31ce271a4ec87d37f}\label{structsock_a485e0ce37e6b29b31ce271a4ec87d37f}} 
+int {\bfseries err}
+\item 
+\mbox{\Hypertarget{structsock_a0925f453e6c55e4ed9615bc559201a16}\label{structsock_a0925f453e6c55e4ed9615bc559201a16}} 
+int {\bfseries err\+\_\+soft}
+\item 
+\mbox{\Hypertarget{structsock_a6ef5f983bba4a2aef234115317f0c98e}\label{structsock_a6ef5f983bba4a2aef234115317f0c98e}} 
+unsigned short {\bfseries ack\+\_\+backlog}
+\item 
+\mbox{\Hypertarget{structsock_acb5565c6402f58bd44b77cd2f8d96970}\label{structsock_acb5565c6402f58bd44b77cd2f8d96970}} 
+unsigned short {\bfseries max\+\_\+ack\+\_\+backlog}
+\item 
+\mbox{\Hypertarget{structsock_ada64603e9c12d8cf4178e126efc8a986}\label{structsock_ada64603e9c12d8cf4178e126efc8a986}} 
+\+\_\+\+\_\+u32 {\bfseries priority}
+\item 
+\mbox{\Hypertarget{structsock_afb7fe254bc4082d526c1ff349dfc558e}\label{structsock_afb7fe254bc4082d526c1ff349dfc558e}} 
+unsigned short {\bfseries type}
+\item 
+\mbox{\Hypertarget{structsock_a6925636883780bca2a37bf489e5ae2da}\label{structsock_a6925636883780bca2a37bf489e5ae2da}} 
+unsigned char {\bfseries localroute}
+\item 
+\mbox{\Hypertarget{structsock_aaa37c23080b5fdc663833a4860d0183c}\label{structsock_aaa37c23080b5fdc663833a4860d0183c}} 
+unsigned char {\bfseries protocol}
+\item 
+\mbox{\Hypertarget{structsock_aed316c75be9586a03696292da92c75da}\label{structsock_aed316c75be9586a03696292da92c75da}} 
+int {\bfseries rcvlowat}
+\item 
+\mbox{\Hypertarget{structsock_a95d761acbf3fd677e774778f83b41e1f}\label{structsock_a95d761acbf3fd677e774778f83b41e1f}} 
+long {\bfseries rcvtimeo}
+\item 
+\mbox{\Hypertarget{structsock_a4b8949e7ec6cce9acf04982aeef154d2}\label{structsock_a4b8949e7ec6cce9acf04982aeef154d2}} 
+long {\bfseries sndtimeo}
+\item 
+\mbox{\Hypertarget{structsock_a1bd4b28fa8ef3a72d73475e2e832b248}\label{structsock_a1bd4b28fa8ef3a72d73475e2e832b248}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{interfacevoid}{void} $\ast$ {\bfseries destruct\_hook}\\
+\>\hyperlink{interfacestruct}{struct} netlink\_opt $\ast$ {\bfseries af\_netlink}\\
+\} {\bfseries protinfo}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structsock_a4a5a46f797ec73b5e8eb9c59ca7d71be}\label{structsock_a4a5a46f797ec73b5e8eb9c59ca7d71be}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structtimer__list}{timer\+\_\+list} {\bfseries timer}
+\item 
+\mbox{\Hypertarget{structsock_a52aa7bba02af37834a1ff9c8cf2140dd}\label{structsock_a52aa7bba02af37834a1ff9c8cf2140dd}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structtimeval}{timeval} {\bfseries stamp}
+\item 
+\mbox{\Hypertarget{structsock_a9e04d8d0e9bfedf031ad92a53b766655}\label{structsock_a9e04d8d0e9bfedf031ad92a53b766655}} 
+\hyperlink{interfacestruct}{struct} socket $\ast$ {\bfseries socket}
+\item 
+\mbox{\Hypertarget{structsock_a31a11c5fe5c8164c85ab54c49ea87bc1}\label{structsock_a31a11c5fe5c8164c85ab54c49ea87bc1}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries user\+\_\+data}
+\item 
+\mbox{\Hypertarget{structsock_a30c722e1f9a753b8895fd847e53d90b4}\label{structsock_a30c722e1f9a753b8895fd847e53d90b4}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries state\+\_\+change} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\item 
+\mbox{\Hypertarget{structsock_a444f3a1356006329a0e3913b36df9a45}\label{structsock_a444f3a1356006329a0e3913b36df9a45}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries data\+\_\+ready} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, int bytes)
+\item 
+\mbox{\Hypertarget{structsock_acc4a446bac6fe51cbef14f6e760a43f8}\label{structsock_acc4a446bac6fe51cbef14f6e760a43f8}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries write\+\_\+space} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\item 
+\mbox{\Hypertarget{structsock_a77d2e1db423802d0fafae8be0d93d71d}\label{structsock_a77d2e1db423802d0fafae8be0d93d71d}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries error\+\_\+report} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\item 
+\mbox{\Hypertarget{structsock_a6a839d04e6ae9862f27872ef1628f059}\label{structsock_a6a839d04e6ae9862f27872ef1628f059}} 
+int($\ast$ {\bfseries backlog\+\_\+rcv} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk, \hyperlink{interfacestruct}{struct} \hyperlink{structsk__buff}{sk\+\_\+buff} $\ast$skb)
+\item 
+\mbox{\Hypertarget{structsock_a279eaaacf3f91bdefa48d203561f7db0}\label{structsock_a279eaaacf3f91bdefa48d203561f7db0}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries destruct} )(\hyperlink{interfacestruct}{struct} \hyperlink{structsock}{sock} $\ast$sk)
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/network/tcpip/include/tcpcore.\+h\end{DoxyCompactItemize}

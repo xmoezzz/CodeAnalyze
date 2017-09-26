@@ -1,0 +1,265 @@
+\hypertarget{interfacens_i_editor}{}\section{ns\+I\+Editor接口 参考}
+\label{interfacens_i_editor}\index{ns\+I\+Editor@{ns\+I\+Editor}}
+类 ns\+I\+Editor 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacens_i_editor}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a1c7dc13b309aa57e25550bf6e20e4b6b}\label{interfacens_i_editor_a1c7dc13b309aa57e25550bf6e20e4b6b}} 
+nsresult {\bfseries Get\+Selection} (\mbox{[}out\mbox{]} \hyperlink{interfacens_i_selection}{ns\+I\+Selection} $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a41680f63243e0b99120c808a18c18745}\label{interfacens_i_editor_a41680f63243e0b99120c808a18c18745}} 
+nsresult {\bfseries Finalize\+Selection} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a2f4becc108abf0d2d49a6d62f187f82b}\label{interfacens_i_editor_a2f4becc108abf0d2d49a6d62f187f82b}} 
+nsresult {\bfseries Init} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_document}{ns\+I\+D\+O\+M\+Document} $\ast$doc, \hyperlink{interfacens_i_content}{ns\+I\+Content} $\ast$a\+Root, ns\+I\+Selection\+Controller $\ast$a\+Sel\+Con, uint32\+\_\+t a\+Flags, \hyperlink{structns_string_container}{ns\+A\+String} $\ast$initial\+Value)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_af29ddaebd4704a6b21b458cb908c875d}\label{interfacens_i_editor_af29ddaebd4704a6b21b458cb908c875d}} 
+nsresult {\bfseries Set\+Attribute\+Or\+Equivalent} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_element}{ns\+I\+D\+O\+M\+Element} $\ast$\hyperlink{structelement}{element}, \mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$source\+Attr\+Name, \mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$source\+Attr\+Value, \mbox{[}in\mbox{]} bool a\+Suppress\+Transaction)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a891507e87a02cd0fc194f29be3341624}\label{interfacens_i_editor_a891507e87a02cd0fc194f29be3341624}} 
+nsresult {\bfseries Remove\+Attribute\+Or\+Equivalent} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_element}{ns\+I\+D\+O\+M\+Element} $\ast$\hyperlink{structelement}{element}, \mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$source\+Attr\+Name, \mbox{[}in\mbox{]} bool a\+Suppress\+Transaction)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a582b6cc805c1fa89601950f8f0cf1f3c}\label{interfacens_i_editor_a582b6cc805c1fa89601950f8f0cf1f3c}} 
+nsresult {\bfseries Post\+Create} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ad0dcbfe8c94c25deeeddea1125519d89}\label{interfacens_i_editor_ad0dcbfe8c94c25deeeddea1125519d89}} 
+nsresult {\bfseries Pre\+Destroy} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a02eb7159d862c83d8ea4bc038e410130}\label{interfacens_i_editor_a02eb7159d862c83d8ea4bc038e410130}} 
+nsresult {\bfseries Get\+Flags} (\mbox{[}out\mbox{]} uint32\+\_\+t $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a8ed28409328489dfe640fddbbe1aa120}\label{interfacens_i_editor_a8ed28409328489dfe640fddbbe1aa120}} 
+nsresult {\bfseries Set\+Flags} (\mbox{[}in\mbox{]} uint32\+\_\+t val)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aa43e28a37344a5645bcd067e1b9f9a30}\label{interfacens_i_editor_aa43e28a37344a5645bcd067e1b9f9a30}} 
+nsresult {\bfseries Get\+Contents\+M\+I\+M\+E\+Type} (\mbox{[}out\mbox{]} char $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_afc794fc6c34db4ef9a7fd1f4b67cf5b2}\label{interfacens_i_editor_afc794fc6c34db4ef9a7fd1f4b67cf5b2}} 
+nsresult {\bfseries Set\+Contents\+M\+I\+M\+E\+Type} (\mbox{[}in\mbox{]} const char $\ast$val)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a428fd9895ec9239660a55afd10b4c529}\label{interfacens_i_editor_a428fd9895ec9239660a55afd10b4c529}} 
+nsresult {\bfseries Get\+Is\+Document\+Editable} (\mbox{[}out\mbox{]} bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ac223bdfa70a0ae80424395ae37185652}\label{interfacens_i_editor_ac223bdfa70a0ae80424395ae37185652}} 
+nsresult {\bfseries Get\+Is\+Selection\+Editable} (bool $\ast$a\+Is\+Selection\+Editable)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aed22e25a32a33074987dfd58b7a3d9d8}\label{interfacens_i_editor_aed22e25a32a33074987dfd58b7a3d9d8}} 
+nsresult {\bfseries Get\+Document} (\mbox{[}out\mbox{]} \hyperlink{interfacens_i_d_o_m_document}{ns\+I\+D\+O\+M\+Document} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a5e847ef304147eb5960487f90ce33783}\label{interfacens_i_editor_a5e847ef304147eb5960487f90ce33783}} 
+nsresult {\bfseries Get\+Root\+Element} (\mbox{[}out\mbox{]} \hyperlink{interfacens_i_d_o_m_element}{ns\+I\+D\+O\+M\+Element} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a8e16df4a18d746ca833fe2933bf83fc8}\label{interfacens_i_editor_a8e16df4a18d746ca833fe2933bf83fc8}} 
+nsresult {\bfseries Get\+Selection\+Controller} (\mbox{[}out\mbox{]} ns\+I\+Selection\+Controller $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_acbc14ea539525bc865edbfed71a86753}\label{interfacens_i_editor_acbc14ea539525bc865edbfed71a86753}} 
+nsresult {\bfseries Delete\+Selection} (int16\+\_\+t action, int16\+\_\+t a\+Strip\+Wrappers)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ab9ae85f1887d2b7553a50fe8a5acaca1}\label{interfacens_i_editor_ab9ae85f1887d2b7553a50fe8a5acaca1}} 
+nsresult {\bfseries Get\+Document\+Is\+Empty} (\mbox{[}out\mbox{]} bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a003f0995e38b9dfe202b8ba89d940e16}\label{interfacens_i_editor_a003f0995e38b9dfe202b8ba89d940e16}} 
+nsresult {\bfseries Get\+Document\+Modified} (\mbox{[}out\mbox{]} bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ae52b02f746b9e17de2319a4dc206428f}\label{interfacens_i_editor_ae52b02f746b9e17de2319a4dc206428f}} 
+nsresult {\bfseries Get\+Document\+Character\+Set} (\mbox{[}out\mbox{]} \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a038d3e5c0292ac090dcf7ff2eb9e64e9}\label{interfacens_i_editor_a038d3e5c0292ac090dcf7ff2eb9e64e9}} 
+nsresult {\bfseries Set\+Document\+Character\+Set} (\mbox{[}in\mbox{]} const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$val)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a3f2e2f9199268e48e847e817436a0947}\label{interfacens_i_editor_a3f2e2f9199268e48e847e817436a0947}} 
+nsresult {\bfseries Reset\+Modification\+Count} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a793e55c88c3d12ed9ea922bb48148f30}\label{interfacens_i_editor_a793e55c88c3d12ed9ea922bb48148f30}} 
+nsresult {\bfseries Get\+Modification\+Count} (\mbox{[}out\mbox{]} int32\+\_\+t $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a628f392df0a4fd19f81fd30d452f1939}\label{interfacens_i_editor_a628f392df0a4fd19f81fd30d452f1939}} 
+nsresult {\bfseries Increment\+Modification\+Count} (\mbox{[}in\mbox{]} int32\+\_\+t a\+Mod\+Count)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aba56eb22435f7d019ab135afda29232a}\label{interfacens_i_editor_aba56eb22435f7d019ab135afda29232a}} 
+nsresult {\bfseries Get\+Transaction\+Manager} (\mbox{[}out\mbox{]} ns\+I\+Transaction\+Manager $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a6cdc9e9a5eed69809e8427c3f228ec59}\label{interfacens_i_editor_a6cdc9e9a5eed69809e8427c3f228ec59}} 
+nsresult {\bfseries Set\+Transaction\+Manager} (ns\+I\+Transaction\+Manager $\ast$a\+Transaction\+Manager)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aef19f79fcabb49003a0582af0ac577b3}\label{interfacens_i_editor_aef19f79fcabb49003a0582af0ac577b3}} 
+nsresult {\bfseries Do\+Transaction} (\mbox{[}in\mbox{]} ns\+I\+Transaction $\ast$txn)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a3557fb9eb3e5abb529a111baf7342bae}\label{interfacens_i_editor_a3557fb9eb3e5abb529a111baf7342bae}} 
+nsresult {\bfseries Enable\+Undo} (\mbox{[}in\mbox{]} bool enable)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a402b1a5dbfb2538020448c8fc9e6a373}\label{interfacens_i_editor_a402b1a5dbfb2538020448c8fc9e6a373}} 
+nsresult {\bfseries Get\+Number\+Of\+Undo\+Items} (int32\+\_\+t $\ast$a\+Number\+Of\+Undo\+Items)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a7c35a1b58c5085b3d3f75ad743d4fb98}\label{interfacens_i_editor_a7c35a1b58c5085b3d3f75ad743d4fb98}} 
+nsresult {\bfseries Get\+Number\+Of\+Redo\+Items} (int32\+\_\+t $\ast$a\+Number\+Of\+Redo\+Items)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a93f227b1b37e550c583499e9e28ff9dc}\label{interfacens_i_editor_a93f227b1b37e550c583499e9e28ff9dc}} 
+nsresult {\bfseries Undo} (\mbox{[}in\mbox{]} uint32\+\_\+t count)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a1acd344867c66db2c1e62577eea680c1}\label{interfacens_i_editor_a1acd344867c66db2c1e62577eea680c1}} 
+nsresult {\bfseries Can\+Undo} (\mbox{[}out\mbox{]} bool $\ast$is\+Enabled, \mbox{[}out\mbox{]} bool $\ast$can\+Undo)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a7a953e74e6fa5efedf51073a08210c5c}\label{interfacens_i_editor_a7a953e74e6fa5efedf51073a08210c5c}} 
+nsresult {\bfseries Redo} (\mbox{[}in\mbox{]} uint32\+\_\+t count)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aa3bad1e5712f42e4685e51632f78b699}\label{interfacens_i_editor_aa3bad1e5712f42e4685e51632f78b699}} 
+nsresult {\bfseries Can\+Redo} (\mbox{[}out\mbox{]} bool $\ast$is\+Enabled, \mbox{[}out\mbox{]} bool $\ast$can\+Redo)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ab4514c3a96b91a5cd4ebbb3e12b02f88}\label{interfacens_i_editor_ab4514c3a96b91a5cd4ebbb3e12b02f88}} 
+nsresult {\bfseries Begin\+Transaction} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a5ce170b071e8f785a72d19c68e6bd53a}\label{interfacens_i_editor_a5ce170b071e8f785a72d19c68e6bd53a}} 
+nsresult {\bfseries End\+Transaction} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_adc8a0ae683cd55f06f736c556a3cd96f}\label{interfacens_i_editor_adc8a0ae683cd55f06f736c556a3cd96f}} 
+nsresult {\bfseries Begin\+Place\+Holder\+Transaction} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_supports}{ns\+I\+Atom} $\ast$\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a255ed60e2048cb0f819748a350a48709}\label{interfacens_i_editor_a255ed60e2048cb0f819748a350a48709}} 
+nsresult {\bfseries End\+Place\+Holder\+Transaction} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_afa0909f914fbdca3d40746434c9fa792}\label{interfacens_i_editor_afa0909f914fbdca3d40746434c9fa792}} 
+nsresult {\bfseries Should\+Txn\+Set\+Selection} (\mbox{[}out\mbox{]} bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aa9c8443715ccb79fd1cf748fdcfef86e}\label{interfacens_i_editor_aa9c8443715ccb79fd1cf748fdcfef86e}} 
+nsresult {\bfseries Set\+Should\+Txn\+Set\+Selection} (\mbox{[}in\mbox{]} bool should)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a578282fbec722c31709119a8397bcb9f}\label{interfacens_i_editor_a578282fbec722c31709119a8397bcb9f}} 
+nsresult {\bfseries Get\+Inline\+Spell\+Checker} (\mbox{[}out\mbox{]} ns\+I\+Inline\+Spell\+Checker $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a48a74ddcb629ef618b54b3d92df19321}\label{interfacens_i_editor_a48a74ddcb629ef618b54b3d92df19321}} 
+nsresult {\bfseries Sync\+Real\+Time\+Spell} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a729f6ce8fc86fee9c074cf4718161f22}\label{interfacens_i_editor_a729f6ce8fc86fee9c074cf4718161f22}} 
+nsresult {\bfseries Set\+Spellcheck\+User\+Override} (bool enable)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a075caae94f68dd9fdbe99c7ab2939298}\label{interfacens_i_editor_a075caae94f68dd9fdbe99c7ab2939298}} 
+nsresult {\bfseries Cut} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_afc292fe3a21d288a4d9441ef0de5c4cd}\label{interfacens_i_editor_afc292fe3a21d288a4d9441ef0de5c4cd}} 
+nsresult {\bfseries Can\+Cut} (\mbox{[}out\mbox{]} bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a098ae8430ce17c7a1b384e50cbe275ff}\label{interfacens_i_editor_a098ae8430ce17c7a1b384e50cbe275ff}} 
+nsresult {\bfseries Copy} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a76e98f0de47a1b3b79a9f4109c72f0c4}\label{interfacens_i_editor_a76e98f0de47a1b3b79a9f4109c72f0c4}} 
+nsresult {\bfseries Can\+Copy} (\mbox{[}out\mbox{]} bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a5d00f47557db59a32f3e79060e721e98}\label{interfacens_i_editor_a5d00f47557db59a32f3e79060e721e98}} 
+nsresult {\bfseries Can\+Delete} (bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a3c25430edbea8c0aa65bcc1f19b893bd}\label{interfacens_i_editor_a3c25430edbea8c0aa65bcc1f19b893bd}} 
+nsresult {\bfseries Paste} (\mbox{[}in\mbox{]} int32\+\_\+t a\+Selection\+Type)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a35a3129a439e1caeb1dae068fd827a3e}\label{interfacens_i_editor_a35a3129a439e1caeb1dae068fd827a3e}} 
+nsresult {\bfseries Paste\+Transferable} (\hyperlink{interfacens_i_supports}{ns\+I\+Transferable} $\ast$a\+Transferable)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ae2088116451ef32da01226dc63f66410}\label{interfacens_i_editor_ae2088116451ef32da01226dc63f66410}} 
+nsresult {\bfseries Can\+Paste} (\mbox{[}in\mbox{]} int32\+\_\+t a\+Selection\+Type, \mbox{[}out\mbox{]} bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_abb784198c41b3d68314b9faf772f76c6}\label{interfacens_i_editor_abb784198c41b3d68314b9faf772f76c6}} 
+nsresult {\bfseries Can\+Paste\+Transferable} (\hyperlink{interfacens_i_supports}{ns\+I\+Transferable} $\ast$a\+Transferable, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ad6f720b2bb0dac4ba842ff8294fabc93}\label{interfacens_i_editor_ad6f720b2bb0dac4ba842ff8294fabc93}} 
+nsresult {\bfseries Select\+All} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ac09aa4ed6162a9f5183ddb5d8d9dabe5}\label{interfacens_i_editor_ac09aa4ed6162a9f5183ddb5d8d9dabe5}} 
+nsresult {\bfseries Beginning\+Of\+Document} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a31c81a921addfe7c0103dba9a6a837a4}\label{interfacens_i_editor_a31c81a921addfe7c0103dba9a6a837a4}} 
+nsresult {\bfseries End\+Of\+Document} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a0577865ff0e0d9ad05e9c1733adea647}\label{interfacens_i_editor_a0577865ff0e0d9ad05e9c1733adea647}} 
+nsresult {\bfseries Set\+Attribute} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_element}{ns\+I\+D\+O\+M\+Element} $\ast$a\+Element, \mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$attributestr, \mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$attvalue)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a21a5645463af04a57f55e24910e31648}\label{interfacens_i_editor_a21a5645463af04a57f55e24910e31648}} 
+nsresult {\bfseries Get\+Attribute\+Value} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_element}{ns\+I\+D\+O\+M\+Element} $\ast$a\+Element, \mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$attributestr, \mbox{[}out\mbox{]} \hyperlink{structns_string_container}{ns\+A\+String} $\ast$result\+Value, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a8dcef42f65c7716ea5f4e9e0825b91ed}\label{interfacens_i_editor_a8dcef42f65c7716ea5f4e9e0825b91ed}} 
+nsresult {\bfseries Remove\+Attribute} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_element}{ns\+I\+D\+O\+M\+Element} $\ast$a\+Element, \mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+Attribute)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aa325318167c75e284e7e7c490598fc17}\label{interfacens_i_editor_aa325318167c75e284e7e7c490598fc17}} 
+nsresult {\bfseries Clone\+Attribute} (\mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$a\+Attribute, \mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$a\+Dest\+Node, \mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$a\+Source\+Node)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a953a1b6ed4fa67fbd11a98b18ad729db}\label{interfacens_i_editor_a953a1b6ed4fa67fbd11a98b18ad729db}} 
+nsresult {\bfseries Clone\+Attributes} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$dest\+Node, \mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$source\+Node)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a5c4ed70f1bda527f00dc04612d7d392b}\label{interfacens_i_editor_a5c4ed70f1bda527f00dc04612d7d392b}} 
+nsresult {\bfseries Create\+Node} (\mbox{[}in\mbox{]} const \hyperlink{structns_string_container}{ns\+A\+String} $\ast$\hyperlink{structtag}{tag}, \mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$parent, \mbox{[}in\mbox{]} int32\+\_\+t position, \mbox{[}out\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aaf0968da769772a2d14a50d6900d238d}\label{interfacens_i_editor_aaf0968da769772a2d14a50d6900d238d}} 
+nsresult {\bfseries Insert\+Node} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$node, \mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$parent, \mbox{[}in\mbox{]} int32\+\_\+t a\+Position)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_acf0cab27f1542f58e5a52575ca2ff4b8}\label{interfacens_i_editor_acf0cab27f1542f58e5a52575ca2ff4b8}} 
+nsresult {\bfseries Split\+Node} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$existing\+Right\+Node, \mbox{[}in\mbox{]} int32\+\_\+t offset, \mbox{[}out\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$$\ast$new\+Left\+Node)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a811fd84117b443a574697ceadc91c98e}\label{interfacens_i_editor_a811fd84117b443a574697ceadc91c98e}} 
+nsresult {\bfseries Join\+Nodes} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$left\+Node, \mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$right\+Node, \mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$parent)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aae27c7ae3948f2fb156baef88da5bcf2}\label{interfacens_i_editor_aae27c7ae3948f2fb156baef88da5bcf2}} 
+nsresult {\bfseries Delete\+Node} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$child)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_afb21f7253e601845d693ec99d6d1ef55}\label{interfacens_i_editor_afb21f7253e601845d693ec99d6d1ef55}} 
+bool {\bfseries Outputs\+Moz\+Dirty} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a94fcc2df539603fc18b033003a009b13}\label{interfacens_i_editor_a94fcc2df539603fc18b033003a009b13}} 
+nsresult {\bfseries Mark\+Node\+Dirty} (\mbox{[}in\mbox{]} \hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$node)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a974df091fa65447499daf1184bfbdb08}\label{interfacens_i_editor_a974df091fa65447499daf1184bfbdb08}} 
+nsresult {\bfseries Switch\+Text\+Direction} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ac2cbdb7c2688ebea2533cb01c369a95c}\label{interfacens_i_editor_ac2cbdb7c2688ebea2533cb01c369a95c}} 
+nsresult {\bfseries Output\+To\+String} (\mbox{[}in\mbox{]} \hyperlink{structns_string_container}{ns\+A\+String} format\+Type, \mbox{[}in\mbox{]} uint32\+\_\+t flags, \mbox{[}out\mbox{]} \hyperlink{structns_string_container}{ns\+A\+String} $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a1cbf300038c09762acf86f188ddc04f0}\label{interfacens_i_editor_a1cbf300038c09762acf86f188ddc04f0}} 
+nsresult {\bfseries Output\+To\+Stream} (\mbox{[}in\mbox{]} ns\+I\+Output\+Stream $\ast$a\+Stream, \mbox{[}in\mbox{]} \hyperlink{structns_string_container}{ns\+A\+String} $\ast$format\+Type, \mbox{[}in\mbox{]} \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$charset\+Override, \mbox{[}in\mbox{]} uint32\+\_\+t flags)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a1db591b2155084a5bd00b56f1740e142}\label{interfacens_i_editor_a1db591b2155084a5bd00b56f1740e142}} 
+nsresult {\bfseries Add\+Editor\+Observer} (ns\+I\+Editor\+Observer $\ast$observer)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a074a305d7f63db7c1f9611885965a024}\label{interfacens_i_editor_a074a305d7f63db7c1f9611885965a024}} 
+nsresult {\bfseries Remove\+Editor\+Observer} (ns\+I\+Editor\+Observer $\ast$observer)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_abe1f4368986e6782a8ea0badee0c5f23}\label{interfacens_i_editor_abe1f4368986e6782a8ea0badee0c5f23}} 
+nsresult {\bfseries Add\+Edit\+Action\+Listener} (\mbox{[}in\mbox{]} ns\+I\+Edit\+Action\+Listener $\ast$listener)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a43e8aa38ef1ef436f40a77dbdb06eed9}\label{interfacens_i_editor_a43e8aa38ef1ef436f40a77dbdb06eed9}} 
+nsresult {\bfseries Remove\+Edit\+Action\+Listener} (\mbox{[}in\mbox{]} ns\+I\+Edit\+Action\+Listener $\ast$listener)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ac15063b123af040f2abfbac77279b3b5}\label{interfacens_i_editor_ac15063b123af040f2abfbac77279b3b5}} 
+nsresult {\bfseries Add\+Document\+State\+Listener} (\mbox{[}in\mbox{]} ns\+I\+Document\+State\+Listener $\ast$listener)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a9f44634a41bb12ff5c75933515380ca3}\label{interfacens_i_editor_a9f44634a41bb12ff5c75933515380ca3}} 
+nsresult {\bfseries Remove\+Document\+State\+Listener} (\mbox{[}in\mbox{]} ns\+I\+Document\+State\+Listener $\ast$listener)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ad6352c92ca3560354c4ae072fba3552c}\label{interfacens_i_editor_ad6352c92ca3560354c4ae072fba3552c}} 
+nsresult {\bfseries Dump\+Content\+Tree} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a516dcb0d556ce807f0712e41995fd481}\label{interfacens_i_editor_a516dcb0d556ce807f0712e41995fd481}} 
+nsresult {\bfseries Debug\+Dump\+Content} ()
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_aca9ee4a175e3208b14ff990feda5b697}\label{interfacens_i_editor_aca9ee4a175e3208b14ff990feda5b697}} 
+nsresult {\bfseries Debug\+Unit\+Tests} (\mbox{[}out\mbox{]} int32\+\_\+t $\ast$out\+Num\+Tests, \mbox{[}out\mbox{]} int32\+\_\+t $\ast$out\+Num\+Tests\+Failed)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a2c3282f8c67baea6ea57f0f070a6dc79}\label{interfacens_i_editor_a2c3282f8c67baea6ea57f0f070a6dc79}} 
+bool {\bfseries Is\+Modifiable\+Node} (\hyperlink{interfacens_i_d_o_m_node}{ns\+I\+D\+O\+M\+Node} $\ast$a\+Node)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_ac8872f6dd61512cbfdbd397374da4fdb}\label{interfacens_i_editor_ac8872f6dd61512cbfdbd397374da4fdb}} 
+nsresult {\bfseries Get\+Suppress\+Dispatching\+Input\+Event} (bool $\ast$a\+Suppress\+Dispatching\+Input\+Event)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a01ca4b3ae6b505d6d52cdc1fa41dc203}\label{interfacens_i_editor_a01ca4b3ae6b505d6d52cdc1fa41dc203}} 
+nsresult {\bfseries Set\+Suppress\+Dispatching\+Input\+Event} (bool a\+Suppress\+Dispatching\+Input\+Event)
+\item 
+\mbox{\Hypertarget{interfacens_i_editor_a47d3be711b5e4bb536a119f9a077ce07}\label{interfacens_i_editor_a47d3be711b5e4bb536a119f9a077ce07}} 
+nsresult {\bfseries Get\+Is\+In\+Edit\+Action} (bool $\ast$a\+Is\+In\+Edit\+Action)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

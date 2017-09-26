@@ -1,0 +1,113 @@
+\hypertarget{group___special_quantities}{}\section{Special\+Quantities}
+\label{group___special_quantities}\index{Special\+Quantities@{Special\+Quantities}}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___special_quantities_ga798664928488de3a429b75377fb665b0}\label{group___special_quantities_ga798664928488de3a429b75377fb665b0}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+R\+I\+O\+\_\+\+T\+R\+UE}~(1 == 1)
+\item 
+\mbox{\Hypertarget{group___special_quantities_gaca3f677d738972b97ed1c430abff30b2}\label{group___special_quantities_gaca3f677d738972b97ed1c430abff30b2}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+R\+I\+O\+\_\+\+F\+A\+L\+SE}~(0 == 1)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double \hyperlink{group___special_quantities_ga2297b57060a605b6b0809a04a8d074c7}{trio\+\_\+nzero} (T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double \hyperlink{group___special_quantities_ga32a239c5ff735f34ec4d813e0b7c59f7}{trio\+\_\+pinf} (T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double \hyperlink{group___special_quantities_ga59b7b052ec7461d44e05e5aaf36197f4}{trio\+\_\+ninf} (T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double \hyperlink{group___special_quantities_gaccfad5a91a03898bf5e68f3d4040818e}{trio\+\_\+nan} (T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS)
+\item 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+isnan \hyperlink{group___special_quantities_ga820bb31d0a8e0106adeeb1b6b8857019}{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1} ((number), double number)
+\item 
+\mbox{\Hypertarget{group___special_quantities_ga9b3bbf3a298853235a0fc7f53911e156}\label{group___special_quantities_ga9b3bbf3a298853235a0fc7f53911e156}} 
+T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+fpclassify\+\_\+and\+\_\+signbit {\bfseries T\+R\+I\+O\+\_\+\+A\+R\+G\+S2} ((number, is\+\_\+negative), double number, int $\ast$is\+\_\+negative)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{group___special_quantities_ga820bb31d0a8e0106adeeb1b6b8857019}\label{group___special_quantities_ga820bb31d0a8e0106adeeb1b6b8857019}} 
+\index{Special\+Quantities@{Special\+Quantities}!T\+R\+I\+O\+\_\+\+A\+R\+G\+S1@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1}}
+\index{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1@{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1}!Special\+Quantities@{Special\+Quantities}}
+\subsubsection{\texorpdfstring{T\+R\+I\+O\+\_\+\+A\+R\+G\+S1()}{TRIO\_ARGS1()}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC int trio\+\_\+signbit T\+R\+I\+O\+\_\+\+A\+R\+G\+S1 (\begin{DoxyParamCaption}\item[{(number)}]{,  }\item[{double}]{number }\end{DoxyParamCaption})}
+
+Check for NaN.
+
+
+\begin{DoxyParams}{参数}
+{\em number} & An arbitrary floating-\/point number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Boolean value indicating whether or not the number is a NaN.
+\end{DoxyReturn}
+Check for infinity.
+
+
+\begin{DoxyParams}{参数}
+{\em number} & An arbitrary floating-\/point number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+1 if positive infinity, -\/1 if negative infinity, 0 otherwise.
+\end{DoxyReturn}
+Examine the sign of a number.
+
+
+\begin{DoxyParams}{参数}
+{\em number} & An arbitrary floating-\/point number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Boolean value indicating whether or not the number has the sign bit set (i.\+e. is negative). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___special_quantities_gaccfad5a91a03898bf5e68f3d4040818e}\label{group___special_quantities_gaccfad5a91a03898bf5e68f3d4040818e}} 
+\index{Special\+Quantities@{Special\+Quantities}!trio\+\_\+nan@{trio\+\_\+nan}}
+\index{trio\+\_\+nan@{trio\+\_\+nan}!Special\+Quantities@{Special\+Quantities}}
+\subsubsection{\texorpdfstring{trio\+\_\+nan()}{trio\_nan()}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double trio\+\_\+nan (\begin{DoxyParamCaption}\item[{T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS}]{ }\end{DoxyParamCaption})}
+
+Generate NaN.
+
+\begin{DoxyReturn}{返回}
+Floating-\/point representation of NaN. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___special_quantities_ga59b7b052ec7461d44e05e5aaf36197f4}\label{group___special_quantities_ga59b7b052ec7461d44e05e5aaf36197f4}} 
+\index{Special\+Quantities@{Special\+Quantities}!trio\+\_\+ninf@{trio\+\_\+ninf}}
+\index{trio\+\_\+ninf@{trio\+\_\+ninf}!Special\+Quantities@{Special\+Quantities}}
+\subsubsection{\texorpdfstring{trio\+\_\+ninf()}{trio\_ninf()}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double trio\+\_\+ninf (\begin{DoxyParamCaption}\item[{T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS}]{ }\end{DoxyParamCaption})}
+
+Generate negative infinity.
+
+\begin{DoxyReturn}{返回}
+Floating-\/point value of negative infinity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___special_quantities_ga2297b57060a605b6b0809a04a8d074c7}\label{group___special_quantities_ga2297b57060a605b6b0809a04a8d074c7}} 
+\index{Special\+Quantities@{Special\+Quantities}!trio\+\_\+nzero@{trio\+\_\+nzero}}
+\index{trio\+\_\+nzero@{trio\+\_\+nzero}!Special\+Quantities@{Special\+Quantities}}
+\subsubsection{\texorpdfstring{trio\+\_\+nzero()}{trio\_nzero()}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double trio\+\_\+nzero (\begin{DoxyParamCaption}\item[{T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS}]{ }\end{DoxyParamCaption})}
+
+Generate negative zero.
+
+\begin{DoxyReturn}{返回}
+Floating-\/point representation of negative zero. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___special_quantities_ga32a239c5ff735f34ec4d813e0b7c59f7}\label{group___special_quantities_ga32a239c5ff735f34ec4d813e0b7c59f7}} 
+\index{Special\+Quantities@{Special\+Quantities}!trio\+\_\+pinf@{trio\+\_\+pinf}}
+\index{trio\+\_\+pinf@{trio\+\_\+pinf}!Special\+Quantities@{Special\+Quantities}}
+\subsubsection{\texorpdfstring{trio\+\_\+pinf()}{trio\_pinf()}}
+{\footnotesize\ttfamily T\+R\+I\+O\+\_\+\+P\+U\+B\+L\+IC double trio\+\_\+pinf (\begin{DoxyParamCaption}\item[{T\+R\+I\+O\+\_\+\+N\+O\+A\+R\+GS}]{ }\end{DoxyParamCaption})}
+
+Generate positive infinity.
+
+\begin{DoxyReturn}{返回}
+Floating-\/point representation of positive infinity. 
+\end{DoxyReturn}

@@ -1,0 +1,102 @@
+\hypertarget{struct_task_bar}{}\section{Task\+Bar结构体 参考}
+\label{struct_task_bar}\index{Task\+Bar@{Task\+Bar}}
+
+
+Taskbar window  
+
+
+
+
+{\ttfamily \#include $<$taskbar.\+h$>$}
+
+类 Task\+Bar 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_task_bar}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_task_bar_ae70443ff292c5c042725631d2e67cbe6}\label{struct_task_bar_ae70443ff292c5c042725631d2e67cbe6}} 
+typedef \hyperlink{struct_window}{Window} {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_task_bar_aaf1cb1cfa01fbb743c2d924628b1a25f}\label{struct_task_bar_aaf1cb1cfa01fbb743c2d924628b1a25f}} 
+{\bfseries Task\+Bar} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_task_bar_abaf728a1e798828635e8c993a94d1292}\label{struct_task_bar_abaf728a1e798828635e8c993a94d1292}} 
+static \hyperlink{interfacevoid}{H\+W\+ND} {\bfseries Create} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_task_bar_a6cf5e25751e15492693770a4a79003fb}\label{struct_task_bar_a6cf5e25751e15492693770a4a79003fb}} 
+L\+R\+E\+S\+U\+LT {\bfseries Init} (\hyperlink{structtag_c_r_e_a_t_e_s_t_r_u_c_t_a}{L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+CT} pcs)
+\item 
+\mbox{\Hypertarget{struct_task_bar_ae158d4cdb75646680c52e29dfdf8ed13}\label{struct_task_bar_ae158d4cdb75646680c52e29dfdf8ed13}} 
+L\+R\+E\+S\+U\+LT {\bfseries Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_task_bar_a5f9fe765661d6a47bc27453f995e91ec}\label{struct_task_bar_a5f9fe765661d6a47bc27453f995e91ec}} 
+int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\item 
+\mbox{\Hypertarget{struct_task_bar_ae4c0a44b6d177c0264913f15aaadd788}\label{struct_task_bar_ae4c0a44b6d177c0264913f15aaadd788}} 
+int {\bfseries Notify} (int id, \hyperlink{structtag_n_m_h_d_r}{N\+M\+H\+DR} $\ast$pnmh)
+\item 
+\mbox{\Hypertarget{struct_task_bar_a016010cc686f8ce5b8e414e994cfc0f4}\label{struct_task_bar_a016010cc686f8ce5b8e414e994cfc0f4}} 
+\hyperlink{interfacevoid}{void} {\bfseries Activate\+App} (Task\+Bar\+Map\+::iterator it, bool can\+\_\+minimize=true, bool can\+\_\+restore=true)
+\item 
+\mbox{\Hypertarget{struct_task_bar_a93e3f7bd1cdad4db9c29e86e37ddd0ec}\label{struct_task_bar_a93e3f7bd1cdad4db9c29e86e37ddd0ec}} 
+\hyperlink{interfacevoid}{void} {\bfseries Show\+App\+System\+Menu} (Task\+Bar\+Map\+::iterator it)
+\item 
+\mbox{\Hypertarget{struct_task_bar_ac9b8289d9c6c4bcb691c0386b7307c98}\label{struct_task_bar_ac9b8289d9c6c4bcb691c0386b7307c98}} 
+\hyperlink{interfacevoid}{void} {\bfseries Refresh} ()
+\item 
+\mbox{\Hypertarget{struct_task_bar_a6bd831eee60a0b190a4049a7e222eaad}\label{struct_task_bar_a6bd831eee60a0b190a4049a7e222eaad}} 
+\hyperlink{interfacevoid}{void} {\bfseries Resize\+Buttons} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_task_bar_a5b8a40e4abce28611e0c48df4b859152}\label{struct_task_bar_a5b8a40e4abce28611e0c48df4b859152}} 
+static B\+O\+OL C\+A\+L\+L\+B\+A\+CK {\bfseries Enum\+Wnd\+Proc} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, L\+P\+A\+R\+AM lparam)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_task_bar_a2867d7dd7599c8a9eb7e049a53d5807c}\label{struct_task_bar_a2867d7dd7599c8a9eb7e049a53d5807c}} 
+Window\+Handle {\bfseries \+\_\+htoolbar}
+\item 
+\mbox{\Hypertarget{struct_task_bar_a791d4862fcb1f8a9c95adc4c4f7ecb2b}\label{struct_task_bar_a791d4862fcb1f8a9c95adc4c4f7ecb2b}} 
+\hyperlink{struct_task_bar_map}{Task\+Bar\+Map} {\bfseries \+\_\+map}
+\item 
+\mbox{\Hypertarget{struct_task_bar_a70a8d60e146ea127b046a7cdade1c64b}\label{struct_task_bar_a70a8d60e146ea127b046a7cdade1c64b}} 
+int {\bfseries \+\_\+next\+\_\+id}
+\item 
+\mbox{\Hypertarget{struct_task_bar_a5d3d8868ff8396e2d42a2a37a92e7bb4}\label{struct_task_bar_a5d3d8868ff8396e2d42a2a37a92e7bb4}} 
+Window\+Handle {\bfseries \+\_\+last\+\_\+foreground\+\_\+wnd}
+\item 
+\mbox{\Hypertarget{struct_task_bar_a13e294f0ba327151c64ef2944cc20c37}\label{struct_task_bar_a13e294f0ba327151c64ef2944cc20c37}} 
+int {\bfseries \+\_\+last\+\_\+btn\+\_\+width}
+\item 
+\mbox{\Hypertarget{struct_task_bar_aaf5efca46e8538bd32d34f4bfa94f6ac}\label{struct_task_bar_aaf5efca46e8538bd32d34f4bfa94f6ac}} 
+\hyperlink{structtag_m_i_n_i_m_i_z_e_d_m_e_t_r_i_c_s}{M\+I\+N\+I\+M\+I\+Z\+E\+D\+M\+E\+T\+R\+I\+CS} {\bfseries \+\_\+mm\+Metrics\+\_\+org}
+\item 
+\mbox{\Hypertarget{struct_task_bar_aa94edf151fd2083b3ae300a5c9eb54e3}\label{struct_task_bar_aa94edf151fd2083b3ae300a5c9eb54e3}} 
+const U\+I\+NT {\bfseries W\+M\+\_\+\+S\+H\+E\+L\+L\+H\+O\+OK}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Taskbar window 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/taskbar.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/taskbar.\+cpp\end{DoxyCompactItemize}

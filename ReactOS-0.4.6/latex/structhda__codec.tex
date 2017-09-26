@@ -1,0 +1,76 @@
+\hypertarget{structhda__codec}{}\section{hda\+\_\+codec结构体 参考}
+\label{structhda__codec}\index{hda\+\_\+codec@{hda\+\_\+codec}}
+
+
+{\ttfamily \#include $<$driver.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structhda__codec_a95a1f7a56cf2f3f189ee2966cd5f9911}\label{structhda__codec_a95a1f7a56cf2f3f189ee2966cd5f9911}} 
+uint16 {\bfseries vendor\+\_\+id}
+\item 
+\mbox{\Hypertarget{structhda__codec_a5d3c35f875e912253f9468fd65b7974b}\label{structhda__codec_a5d3c35f875e912253f9468fd65b7974b}} 
+uint16 {\bfseries product\+\_\+id}
+\item 
+\mbox{\Hypertarget{structhda__codec_a584f8dc7cb596fd59ba453d2625344fd}\label{structhda__codec_a584f8dc7cb596fd59ba453d2625344fd}} 
+uint8 {\bfseries major}
+\item 
+\mbox{\Hypertarget{structhda__codec_a4f8b7541241bc8f8cfc7612d5a7d5344}\label{structhda__codec_a4f8b7541241bc8f8cfc7612d5a7d5344}} 
+uint8 {\bfseries minor}
+\item 
+\mbox{\Hypertarget{structhda__codec_a588719ff2a83acbf6b8c07583326eeb2}\label{structhda__codec_a588719ff2a83acbf6b8c07583326eeb2}} 
+uint8 {\bfseries revision}
+\item 
+\mbox{\Hypertarget{structhda__codec_ae4ed0492e5de683ad6f4bba29a0bbfaa}\label{structhda__codec_ae4ed0492e5de683ad6f4bba29a0bbfaa}} 
+uint8 {\bfseries stepping}
+\item 
+\mbox{\Hypertarget{structhda__codec_a425a34c47416beb439b5eec8ffee4145}\label{structhda__codec_a425a34c47416beb439b5eec8ffee4145}} 
+uint8 {\bfseries addr}
+\item 
+\mbox{\Hypertarget{structhda__codec_aab8010938b6224baba069215366e90c7}\label{structhda__codec_aab8010938b6224baba069215366e90c7}} 
+uint32 {\bfseries quirks}
+\item 
+\mbox{\Hypertarget{structhda__codec_a959bc9256dcae0beb9caf47bc91f2d11}\label{structhda__codec_a959bc9256dcae0beb9caf47bc91f2d11}} 
+sem\+\_\+id {\bfseries response\+\_\+sem}
+\item 
+\mbox{\Hypertarget{structhda__codec_a715fbedd5c0609c078681510fa97b594}\label{structhda__codec_a715fbedd5c0609c078681510fa97b594}} 
+uint32 {\bfseries responses} \mbox{[}M\+A\+X\+\_\+\+C\+O\+D\+E\+C\+\_\+\+R\+E\+S\+P\+O\+N\+S\+ES\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__codec_adb463ccb10f0dd9313046a79f222aedf}\label{structhda__codec_adb463ccb10f0dd9313046a79f222aedf}} 
+uint32 {\bfseries response\+\_\+count}
+\item 
+\mbox{\Hypertarget{structhda__codec_a613dfc254b3b49abd95bda02e16b99a2}\label{structhda__codec_a613dfc254b3b49abd95bda02e16b99a2}} 
+sem\+\_\+id {\bfseries unsol\+\_\+response\+\_\+sem}
+\item 
+\mbox{\Hypertarget{structhda__codec_a25ccdf59c830778189ccc30aa52a197f}\label{structhda__codec_a25ccdf59c830778189ccc30aa52a197f}} 
+thread\+\_\+id {\bfseries unsol\+\_\+response\+\_\+thread}
+\item 
+\mbox{\Hypertarget{structhda__codec_a26a54b0fe4020c44ba0577be0e002473}\label{structhda__codec_a26a54b0fe4020c44ba0577be0e002473}} 
+uint32 {\bfseries unsol\+\_\+responses} \mbox{[}M\+A\+X\+\_\+\+C\+O\+D\+E\+C\+\_\+\+U\+N\+S\+O\+L\+\_\+\+R\+E\+S\+P\+O\+N\+S\+ES\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__codec_a326a7075741d9ec202832913d9ab9291}\label{structhda__codec_a326a7075741d9ec202832913d9ab9291}} 
+uint32 {\bfseries unsol\+\_\+response\+\_\+read}
+\item 
+\mbox{\Hypertarget{structhda__codec_aed069c16c9eb117cb70fd19a2b51b468}\label{structhda__codec_aed069c16c9eb117cb70fd19a2b51b468}} 
+uint32 {\bfseries unsol\+\_\+response\+\_\+write}
+\item 
+\mbox{\Hypertarget{structhda__codec_a91a95c42da56fd9de529e9e710b867bb}\label{structhda__codec_a91a95c42da56fd9de529e9e710b867bb}} 
+\hyperlink{structhda__audio__group}{hda\+\_\+audio\+\_\+group} $\ast$ {\bfseries audio\+\_\+groups} \mbox{[}H\+D\+A\+\_\+\+M\+A\+X\+\_\+\+A\+U\+D\+I\+O\+\_\+\+G\+R\+O\+U\+PS\mbox{]}
+\item 
+\mbox{\Hypertarget{structhda__codec_acc32c3e6968e856ca39d585c0912c66b}\label{structhda__codec_acc32c3e6968e856ca39d585c0912c66b}} 
+uint32 {\bfseries num\+\_\+audio\+\_\+groups}
+\item 
+\mbox{\Hypertarget{structhda__codec_a6bd9a9fc5622c81cf17a76423ff8e8a6}\label{structhda__codec_a6bd9a9fc5622c81cf17a76423ff8e8a6}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structhda__controller}{hda\+\_\+controller} $\ast$ {\bfseries controller}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{namespace_this}{This} structure describes a single codec module in the H\+DA compliant device. \hyperlink{namespace_this}{This} is a discrete component, which can contain both Audio Function Groups, Modem Function Groups, and other customized (vendor specific) Function Groups.
+
+N\+O\+TE\+: A\+TM, only Audio Function Groups are supported. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/wdm/audio/hdaudbus/driver.\+h\end{DoxyCompactItemize}

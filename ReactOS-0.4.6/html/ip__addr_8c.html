@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/drivers/lwip/src/core/ipv4/ip_addr.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_2c85cff4f1cef242b8656be9a8ac1f31.html">drivers</a></li><li class="navelem"><a class="el" href="dir_96ee20e854c60754e26b655afd09dbca.html">lwip</a></li><li class="navelem"><a class="el" href="dir_ead4725ee7eaa6e080332f3f984ccc64.html">src</a></li><li class="navelem"><a class="el" href="dir_22a6bd8b988ddbe67052e47417ed1651.html">core</a></li><li class="navelem"><a class="el" href="dir_506f781615ed7253327529f1e64547ff.html">ipv4</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ip_addr.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="opt_8h_source.html">lwip/opt.h</a>&quot;</code><br />
+<code>#include &quot;lwip/ip_addr.h&quot;</code><br />
+<code>#include &quot;lwip/netif.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:afa26f4ff41cd4f7d61b1f0cbd6911057"><td class="memItemLeft" align="right" valign="top"><a id="afa26f4ff41cd4f7d61b1f0cbd6911057"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>in_range</b>(c,  lo,  up)&#160;&#160;&#160;((u8_t)c &gt;= lo &amp;&amp; (u8_t)c &lt;= up)</td></tr>
+<tr class="separator:afa26f4ff41cd4f7d61b1f0cbd6911057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889820984b313e4f379d998ce05892ec"><td class="memItemLeft" align="right" valign="top"><a id="a889820984b313e4f379d998ce05892ec"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isprint</b>(c)&#160;&#160;&#160;in_range(c, 0x20, 0x7f)</td></tr>
+<tr class="separator:a889820984b313e4f379d998ce05892ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e33e966a7ec3facaf0b2b4afaf5be5"><td class="memItemLeft" align="right" valign="top"><a id="a80e33e966a7ec3facaf0b2b4afaf5be5"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isdigit</b>(c)&#160;&#160;&#160;in_range(c, '0', '9')</td></tr>
+<tr class="separator:a80e33e966a7ec3facaf0b2b4afaf5be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992d0bf21267653eb2ea35a78816c09b"><td class="memItemLeft" align="right" valign="top"><a id="a992d0bf21267653eb2ea35a78816c09b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isxdigit</b>(c)&#160;&#160;&#160;(isdigit(c) || in_range(c, 'a', 'f') || in_range(c, '<a class="el" href="struct_a.html">A</a>', 'F'))</td></tr>
+<tr class="separator:a992d0bf21267653eb2ea35a78816c09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348a42f50b81be72be7b41de74c3dd5a"><td class="memItemLeft" align="right" valign="top"><a id="a348a42f50b81be72be7b41de74c3dd5a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>islower</b>(c)&#160;&#160;&#160;in_range(c, 'a', 'z')</td></tr>
+<tr class="separator:a348a42f50b81be72be7b41de74c3dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c009fd6c0f22a1da6995c59b701a58f"><td class="memItemLeft" align="right" valign="top"><a id="a0c009fd6c0f22a1da6995c59b701a58f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>isspace</b>(c)&#160;&#160;&#160;(c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v')</td></tr>
+<tr class="separator:a0c009fd6c0f22a1da6995c59b701a58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6cf43f27dbdc8f2b198e26ce940143a3"><td class="memItemLeft" align="right" valign="top">u8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip__addr_8c.html#a6cf43f27dbdc8f2b198e26ce940143a3">ip4_addr_isbroadcast</a> (u32_t addr, const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structnetif.html">netif</a> *<a class="el" href="structnetif.html">netif</a>)</td></tr>
+<tr class="separator:a6cf43f27dbdc8f2b198e26ce940143a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5810d404b0ad1b89ef1323ea1e78071"><td class="memItemLeft" align="right" valign="top">u8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip__addr_8c.html#ab5810d404b0ad1b89ef1323ea1e78071">ip4_addr_netmask_valid</a> (u32_t netmask)</td></tr>
+<tr class="separator:ab5810d404b0ad1b89ef1323ea1e78071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c05f9138da41115978409e547df9670"><td class="memItemLeft" align="right" valign="top">u32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip__addr_8c.html#a2c05f9138da41115978409e547df9670">ipaddr_addr</a> (const char *cp)</td></tr>
+<tr class="separator:a2c05f9138da41115978409e547df9670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de70fdd7fd36c5b6eaed8b855d5f151"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip__addr_8c.html#a4de70fdd7fd36c5b6eaed8b855d5f151">ipaddr_aton</a> (const char *cp, ip_addr_t *addr)</td></tr>
+<tr class="separator:a4de70fdd7fd36c5b6eaed8b855d5f151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace12d28aef35bb15962e8563aea571b1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip__addr_8c.html#ace12d28aef35bb15962e8563aea571b1">ipaddr_ntoa</a> (const ip_addr_t *addr)</td></tr>
+<tr class="separator:ace12d28aef35bb15962e8563aea571b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3684dabc0cae597ffb5b51d41f1d886f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip__addr_8c.html#a3684dabc0cae597ffb5b51d41f1d886f">ipaddr_ntoa_r</a> (const ip_addr_t *addr, char *buf, int buflen)</td></tr>
+<tr class="separator:a3684dabc0cae597ffb5b51d41f1d886f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a69542a2fb9d246797553fec03c313d7a"><td class="memItemLeft" align="right" valign="top"><a id="a69542a2fb9d246797553fec03c313d7a"></a>
+const ip_addr_t&#160;</td><td class="memItemRight" valign="bottom"><b>ip_addr_any</b> = { IPADDR_ANY }</td></tr>
+<tr class="separator:a69542a2fb9d246797553fec03c313d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11688e6c2bc5d17ba69950cb27ab7a6"><td class="memItemLeft" align="right" valign="top"><a id="af11688e6c2bc5d17ba69950cb27ab7a6"></a>
+const ip_addr_t&#160;</td><td class="memItemRight" valign="bottom"><b>ip_addr_broadcast</b> = { IPADDR_BROADCAST }</td></tr>
+<tr class="separator:af11688e6c2bc5d17ba69950cb27ab7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="namespace_this.html">This</a> is the IPv4 address tools implementation. </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a6cf43f27dbdc8f2b198e26ce940143a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf43f27dbdc8f2b198e26ce940143a3">&#9670;&nbsp;</a></span>ip4_addr_isbroadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8_t ip4_addr_isbroadcast </td>
+          <td>(</td>
+          <td class="paramtype">u32_t&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structnetif.html">netif</a> *&#160;</td>
+          <td class="paramname"><em>netif</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determine if an address is a broadcast address on a network interface</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>address to be checked </td></tr>
+    <tr><td class="paramname">netif</td><td>the network interface against which the address is checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>returns non-zero if the address is a broadcast address </dd></dl>
+
+</div>
+</div>
+<a id="ab5810d404b0ad1b89ef1323ea1e78071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5810d404b0ad1b89ef1323ea1e78071">&#9670;&nbsp;</a></span>ip4_addr_netmask_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8_t ip4_addr_netmask_valid </td>
+          <td>(</td>
+          <td class="paramtype">u32_t&#160;</td>
+          <td class="paramname"><em>netmask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if a netmask is valid (starting with ones, then only zeros)</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netmask</td><td>the IPv4 netmask to check (in network byte order!) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>1 if the netmask is valid, 0 if it is not </dd></dl>
+
+</div>
+</div>
+<a id="a2c05f9138da41115978409e547df9670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c05f9138da41115978409e547df9670">&#9670;&nbsp;</a></span>ipaddr_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32_t ipaddr_addr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ascii internet address interpretation routine. The value returned is in network order.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>IP address in ascii represenation (e.g. "127.0.0.1") </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>ip address in network order </dd></dl>
+
+</div>
+</div>
+<a id="a4de70fdd7fd36c5b6eaed8b855d5f151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de70fdd7fd36c5b6eaed8b855d5f151">&#9670;&nbsp;</a></span>ipaddr_aton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ipaddr_aton </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ip_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether "cp" is a valid ascii representation of an <a class="el" href="class_internet.html">Internet</a> address and convert to a binary address. Returns 1 if the address is valid, 0 if not. <a class="el" href="namespace_this.html">This</a> replaces inet_addr, the return value from which cannot distinguish between failure and a local broadcast address.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>IP address in ascii represenation (e.g. "127.0.0.1") </td></tr>
+    <tr><td class="paramname">addr</td><td>pointer to which to save the ip address in network order </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>1 if cp could be converted to addr, 0 on failure </dd></dl>
+
+</div>
+</div>
+<a id="ace12d28aef35bb15962e8563aea571b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace12d28aef35bb15962e8563aea571b1">&#9670;&nbsp;</a></span>ipaddr_ntoa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* ipaddr_ntoa </td>
+          <td>(</td>
+          <td class="paramtype">const ip_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert numeric IP address into decimal dotted ASCII representation. returns ptr to static buffer; not reentrant!</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>ip address in network order to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to a global static (!) buffer that holds the ASCII represenation of addr </dd></dl>
+
+</div>
+</div>
+<a id="a3684dabc0cae597ffb5b51d41f1d886f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3684dabc0cae597ffb5b51d41f1d886f">&#9670;&nbsp;</a></span>ipaddr_ntoa_r()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* ipaddr_ntoa_r </td>
+          <td>(</td>
+          <td class="paramtype">const ip_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buflen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Same as ipaddr_ntoa, but reentrant since a user-supplied buffer is used.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>ip address in network order to convert </td></tr>
+    <tr><td class="paramname">buf</td><td>target buffer where the string is stored </td></tr>
+    <tr><td class="paramname">buflen</td><td>length of buf </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>either pointer to buf which now holds the ASCII representation of addr or NULL if buf was too small </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

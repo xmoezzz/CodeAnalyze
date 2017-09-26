@@ -1,0 +1,283 @@
+\hypertarget{classios__base}{}\section{ios\+\_\+base类 参考}
+\label{classios__base}\index{ios\+\_\+base@{ios\+\_\+base}}
+类 ios\+\_\+base 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.448276cm]{classios__base}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classios__base_1_1failure}{failure}
+\item 
+class \hyperlink{classios__base_1_1_init}{Init}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classios__base_ac76e71dcaa651be2091a967c0e2f7369}\label{classios__base_ac76e71dcaa651be2091a967c0e2f7369}} 
+enum {\bfseries event} \{ {\bfseries erase\+\_\+event}, 
+{\bfseries imbue\+\_\+event}, 
+{\bfseries copyfmt\+\_\+event}
+ \}
+\item 
+\mbox{\Hypertarget{classios__base_a74902bbe102cf0cbbbe7c93a47373581}\label{classios__base_a74902bbe102cf0cbbbe7c93a47373581}} 
+typedef int {\bfseries fmtflags}
+\item 
+\mbox{\Hypertarget{classios__base_a71b7ab8328b5c7e7ec684acbdf14eddd}\label{classios__base_a71b7ab8328b5c7e7ec684acbdf14eddd}} 
+typedef int {\bfseries iostate}
+\item 
+\mbox{\Hypertarget{classios__base_a60aa901230527f9e3c253b9f39006925}\label{classios__base_a60aa901230527f9e3c253b9f39006925}} 
+typedef int {\bfseries openmode}
+\item 
+\mbox{\Hypertarget{classios__base_aac08884b8dcc93be02c6c4de662bbea0}\label{classios__base_aac08884b8dcc93be02c6c4de662bbea0}} 
+typedef int {\bfseries seekdir}
+\item 
+\mbox{\Hypertarget{classios__base_aad2e02b9eec0d58b71c5679ce7131c87}\label{classios__base_aad2e02b9eec0d58b71c5679ce7131c87}} 
+typedef fmtflags {\bfseries fmt\+\_\+flags}
+\item 
+\mbox{\Hypertarget{classios__base_a03a432ee2de748cea417811cf08b4419}\label{classios__base_a03a432ee2de748cea417811cf08b4419}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries event\+\_\+callback}) (event, \hyperlink{classios__base}{ios\+\_\+base} \&, int \+\_\+\+\_\+index)
+\item 
+\mbox{\Hypertarget{classios__base_a0d8a9479167369badef7f318e32e71b1}\label{classios__base_a0d8a9479167369badef7f318e32e71b1}} 
+typedef iostate {\bfseries io\+\_\+state}
+\item 
+\mbox{\Hypertarget{classios__base_af73e46714d39303f5431d3f3a870d21b}\label{classios__base_af73e46714d39303f5431d3f3a870d21b}} 
+typedef openmode {\bfseries open\+\_\+mode}
+\item 
+\mbox{\Hypertarget{classios__base_a64db83c79b87d4ff7b6f29f57456dc52}\label{classios__base_a64db83c79b87d4ff7b6f29f57456dc52}} 
+typedef seekdir {\bfseries seek\+\_\+dir}
+\item 
+\mbox{\Hypertarget{classios__base_afc8bfbd4b57c3babb637ba9ea3b017ee}\label{classios__base_afc8bfbd4b57c3babb637ba9ea3b017ee}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+D\+::streamoff {\bfseries streamoff}
+\item 
+\mbox{\Hypertarget{classios__base_a01830a98d2bb384b13344e8939616ff4}\label{classios__base_a01830a98d2bb384b13344e8939616ff4}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+D\+::streampos {\bfseries streampos}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classios__base_ab0186d236f8f309940513689ae0ba9be}\label{classios__base_ab0186d236f8f309940513689ae0ba9be}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, left=0x0001)
+\item 
+\mbox{\Hypertarget{classios__base_ae11c9b0eea8e4065b0c5da838af568cb}\label{classios__base_ae11c9b0eea8e4065b0c5da838af568cb}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, right=0x0002)
+\item 
+\mbox{\Hypertarget{classios__base_a33475c8d70f4cc917b0cfc4bd4b86fbf}\label{classios__base_a33475c8d70f4cc917b0cfc4bd4b86fbf}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, internal=0x0004)
+\item 
+\mbox{\Hypertarget{classios__base_add5f762731f8c6f92716604f0913ed7d}\label{classios__base_add5f762731f8c6f92716604f0913ed7d}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, dec=0x0008)
+\item 
+\mbox{\Hypertarget{classios__base_adbb9c573162729432a5a7d2186bc85af}\label{classios__base_adbb9c573162729432a5a7d2186bc85af}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, hex=0x0010)
+\item 
+\mbox{\Hypertarget{classios__base_ad55a974d20505bc6c8edbb168afcc6cd}\label{classios__base_ad55a974d20505bc6c8edbb168afcc6cd}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, oct=0x0020)
+\item 
+\mbox{\Hypertarget{classios__base_a5ef2ecb37ef11c8da8e13913dad46299}\label{classios__base_a5ef2ecb37ef11c8da8e13913dad46299}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, fixed=0x0040)
+\item 
+\mbox{\Hypertarget{classios__base_ac522609204de44b5ff5b9448fb866f9e}\label{classios__base_ac522609204de44b5ff5b9448fb866f9e}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, scientific=0x0080)
+\item 
+\mbox{\Hypertarget{classios__base_a0bf7c3c8b4d86fe610eb8458523a0c88}\label{classios__base_a0bf7c3c8b4d86fe610eb8458523a0c88}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, boolalpha=0x0100)
+\item 
+\mbox{\Hypertarget{classios__base_a16de713b94c53f44eca7d2d79ce16cda}\label{classios__base_a16de713b94c53f44eca7d2d79ce16cda}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, showbase=0x0200)
+\item 
+\mbox{\Hypertarget{classios__base_a56d4607e91af47fc724d551449752c9a}\label{classios__base_a56d4607e91af47fc724d551449752c9a}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, showpoint=0x0400)
+\item 
+\mbox{\Hypertarget{classios__base_a41912af27ccb65faee6dd1056cbf2351}\label{classios__base_a41912af27ccb65faee6dd1056cbf2351}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, showpos=0x0800)
+\item 
+\mbox{\Hypertarget{classios__base_ae6c156216de2f66424b0acbfb2a13211}\label{classios__base_ae6c156216de2f66424b0acbfb2a13211}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, skipws=0x1000)
+\item 
+\mbox{\Hypertarget{classios__base_a41e1e59fbe60a178f6673549442cd3c5}\label{classios__base_a41e1e59fbe60a178f6673549442cd3c5}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, unitbuf=0x2000)
+\item 
+\mbox{\Hypertarget{classios__base_a41b5f0432db60f56f9fcf0cc53ce1c5f}\label{classios__base_a41b5f0432db60f56f9fcf0cc53ce1c5f}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, uppercase=0x4000)
+\item 
+\mbox{\Hypertarget{classios__base_a56c80ebfb198307723c2d423de8385dd}\label{classios__base_a56c80ebfb198307723c2d423de8385dd}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, adjustfield=left$\vert$right$\vert$internal)
+\item 
+\mbox{\Hypertarget{classios__base_a12048c7e12be15e7c28216e5bae54209}\label{classios__base_a12048c7e12be15e7c28216e5bae54209}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, basefield=dec$\vert$hex$\vert$oct)
+\item 
+\mbox{\Hypertarget{classios__base_ab08139e5ce09f5c8db5bb85020f324a7}\label{classios__base_ab08139e5ce09f5c8db5bb85020f324a7}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, floatfield=scientific$\vert$fixed)
+\item 
+\mbox{\Hypertarget{classios__base_ad24d5efaea4f2ae0e95db45f1293eebe}\label{classios__base_ad24d5efaea4f2ae0e95db45f1293eebe}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, goodbit=0x00)
+\item 
+\mbox{\Hypertarget{classios__base_aefd60cd6fd654fceb1dd889ea741c545}\label{classios__base_aefd60cd6fd654fceb1dd889ea741c545}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, badbit=0x01)
+\item 
+\mbox{\Hypertarget{classios__base_a52099573c3a6e276c17966056373a797}\label{classios__base_a52099573c3a6e276c17966056373a797}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, eofbit=0x02)
+\item 
+\mbox{\Hypertarget{classios__base_a1676c18dd5bc2eb4d0f361f3143a30be}\label{classios__base_a1676c18dd5bc2eb4d0f361f3143a30be}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, failbit=0x04)
+\item 
+\mbox{\Hypertarget{classios__base_a703501e0ca0ae98e46e7b131ed6d95eb}\label{classios__base_a703501e0ca0ae98e46e7b131ed6d95eb}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, \+\_\+\+\_\+default\+\_\+mode=0x0)
+\item 
+\mbox{\Hypertarget{classios__base_a8bc9677f34d39e5d34ae45d16187b657}\label{classios__base_a8bc9677f34d39e5d34ae45d16187b657}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, app=0x01)
+\item 
+\mbox{\Hypertarget{classios__base_a298489f7d5e4fdcb4d05d0db769f9edf}\label{classios__base_a298489f7d5e4fdcb4d05d0db769f9edf}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, ate=0x02)
+\item 
+\mbox{\Hypertarget{classios__base_a4d6fa84752ce2cfec0a671c3fe304b96}\label{classios__base_a4d6fa84752ce2cfec0a671c3fe304b96}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, binary=0x04)
+\item 
+\mbox{\Hypertarget{classios__base_a0df40a5b3be2712e7b89d3da3dd3b4df}\label{classios__base_a0df40a5b3be2712e7b89d3da3dd3b4df}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, in=0x08)
+\item 
+\mbox{\Hypertarget{classios__base_a253d11ce17bcedec871ad038c29cc584}\label{classios__base_a253d11ce17bcedec871ad038c29cc584}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, out=0x10)
+\item 
+\mbox{\Hypertarget{classios__base_ac7d621764b170d137e426fd6bbc77a4e}\label{classios__base_ac7d621764b170d137e426fd6bbc77a4e}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, trunc=0x20)
+\item 
+\mbox{\Hypertarget{classios__base_a66f6003529566daf6d61cb8e9679effb}\label{classios__base_a66f6003529566daf6d61cb8e9679effb}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, beg=0x01)
+\item 
+\mbox{\Hypertarget{classios__base_ab718efc5abc54a48b523b7a4b33bc027}\label{classios__base_ab718efc5abc54a48b523b7a4b33bc027}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, cur=0x02)
+\item 
+\mbox{\Hypertarget{classios__base_ac4f4bba251dc51c7484490abfb71789c}\label{classios__base_ac4f4bba251dc51c7484490abfb71789c}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+N\+S\+T\+A\+NT} (int, end=0x04)
+\item 
+\mbox{\Hypertarget{classios__base_a2a73a30a8b157cc1cc92bb55b0a62e4a}\label{classios__base_a2a73a30a8b157cc1cc92bb55b0a62e4a}} 
+fmtflags {\bfseries flags} () const
+\item 
+\mbox{\Hypertarget{classios__base_a08a661b70857dc9c330d6ab975981aaf}\label{classios__base_a08a661b70857dc9c330d6ab975981aaf}} 
+fmtflags {\bfseries flags} (fmtflags \+\_\+\+\_\+flags)
+\item 
+\mbox{\Hypertarget{classios__base_a1fa7c1ac32510bb7f5905de4d9ca8e9b}\label{classios__base_a1fa7c1ac32510bb7f5905de4d9ca8e9b}} 
+fmtflags {\bfseries setf} (fmtflags \+\_\+\+\_\+flag)
+\item 
+\mbox{\Hypertarget{classios__base_a43aedd1eed519687b0cd51235ebd21b6}\label{classios__base_a43aedd1eed519687b0cd51235ebd21b6}} 
+fmtflags {\bfseries setf} (fmtflags \+\_\+\+\_\+flag, fmtflags \+\_\+\+\_\+mask)
+\item 
+\mbox{\Hypertarget{classios__base_a21868e705677ce3af444724d6f3c7242}\label{classios__base_a21868e705677ce3af444724d6f3c7242}} 
+\hyperlink{interfacevoid}{void} {\bfseries unsetf} (fmtflags \+\_\+\+\_\+mask)
+\item 
+\mbox{\Hypertarget{classios__base_aaa551b1db3b8e6e2fa3c1d65cfc89f68}\label{classios__base_aaa551b1db3b8e6e2fa3c1d65cfc89f68}} 
+streamsize {\bfseries precision} () const
+\item 
+\mbox{\Hypertarget{classios__base_ab0ac969d698ccb6e67d596850a00e5d7}\label{classios__base_ab0ac969d698ccb6e67d596850a00e5d7}} 
+streamsize {\bfseries precision} (streamsize \+\_\+\+\_\+newprecision)
+\item 
+\mbox{\Hypertarget{classios__base_a5e26dac22a8b4548f63a8fc55e8a7b69}\label{classios__base_a5e26dac22a8b4548f63a8fc55e8a7b69}} 
+streamsize {\bfseries width} () const
+\item 
+\mbox{\Hypertarget{classios__base_a186fc9038331ff790854832f27ed44c7}\label{classios__base_a186fc9038331ff790854832f27ed44c7}} 
+streamsize {\bfseries width} (streamsize \+\_\+\+\_\+newwidth)
+\item 
+\mbox{\Hypertarget{classios__base_aad41990008dd06d2411cd38f9f9b8d87}\label{classios__base_aad41990008dd06d2411cd38f9f9b8d87}} 
+\hyperlink{classlocale}{locale} {\bfseries imbue} (const \hyperlink{classlocale}{locale} \&)
+\item 
+\mbox{\Hypertarget{classios__base_a98f105ca8cca72e921f154c84baf548a}\label{classios__base_a98f105ca8cca72e921f154c84baf548a}} 
+\hyperlink{classlocale}{locale} {\bfseries getloc} () const
+\item 
+\mbox{\Hypertarget{classios__base_a24c60d5fe56db3eb05e0339dda5aee59}\label{classios__base_a24c60d5fe56db3eb05e0339dda5aee59}} 
+long \& {\bfseries iword} (int \+\_\+\+\_\+index)
+\item 
+\mbox{\Hypertarget{classios__base_adfed410ad06e65527f11f03d66c924bf}\label{classios__base_adfed410ad06e65527f11f03d66c924bf}} 
+\hyperlink{interfacevoid}{void} $\ast$\& {\bfseries pword} (int \+\_\+\+\_\+index)
+\item 
+\mbox{\Hypertarget{classios__base_a34fbbdff938e7a55c437d356d2943a37}\label{classios__base_a34fbbdff938e7a55c437d356d2943a37}} 
+\hyperlink{interfacevoid}{void} {\bfseries register\+\_\+callback} (event\+\_\+callback \+\_\+\+\_\+fn, int \+\_\+\+\_\+index)
+\item 
+\mbox{\Hypertarget{classios__base_a670467ce1f38511da36c85d136767561}\label{classios__base_a670467ce1f38511da36c85d136767561}} 
+{\bfseries operator void $\ast$} () const
+\item 
+\mbox{\Hypertarget{classios__base_ac86f326e107f2a09dfc34eb11bd46b90}\label{classios__base_ac86f326e107f2a09dfc34eb11bd46b90}} 
+bool {\bfseries operator!} () const
+\item 
+\mbox{\Hypertarget{classios__base_a0d520956ef7c6a63884adbc95014657e}\label{classios__base_a0d520956ef7c6a63884adbc95014657e}} 
+iostate {\bfseries rdstate} () const
+\item 
+\mbox{\Hypertarget{classios__base_ad8695dc14ae96d2f22a33ed8e8c7bf97}\label{classios__base_ad8695dc14ae96d2f22a33ed8e8c7bf97}} 
+bool {\bfseries good} () const
+\item 
+\mbox{\Hypertarget{classios__base_ab2233448026130a3fa0fa28d86092685}\label{classios__base_ab2233448026130a3fa0fa28d86092685}} 
+bool {\bfseries eof} () const
+\item 
+\mbox{\Hypertarget{classios__base_a51d93feb5de438a5c431a40f33e5772f}\label{classios__base_a51d93feb5de438a5c431a40f33e5772f}} 
+bool {\bfseries fail} () const
+\item 
+\mbox{\Hypertarget{classios__base_ad208dbe362b210f031a2fd0c5aa3142b}\label{classios__base_ad208dbe362b210f031a2fd0c5aa3142b}} 
+bool {\bfseries bad} () const
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classios__base_ae45687ccc9c866da48414c79ef207ee2}\label{classios__base_ae45687ccc9c866da48414c79ef207ee2}} 
+static int \+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries xalloc} ()
+\item 
+\mbox{\Hypertarget{classios__base_a6af846709e963e4327e0336ce95a75b4}\label{classios__base_a6af846709e963e4327e0336ce95a75b4}} 
+static bool \+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries sync\+\_\+with\+\_\+stdio} (bool \+\_\+\+\_\+sync=true)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classios__base_a7c2e29d2f3ae64162e5e09828179a315}\label{classios__base_a7c2e29d2f3ae64162e5e09828179a315}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+copy\+\_\+state} (const \hyperlink{classios__base}{ios\+\_\+base} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classios__base_a4cdb590623913812ba2df283c3d69090}\label{classios__base_a4cdb590623913812ba2df283c3d69090}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+setstate\+\_\+nothrow} (iostate \+\_\+\+\_\+state)
+\item 
+\mbox{\Hypertarget{classios__base_a2405cea5954443bf4efd35f00372862a}\label{classios__base_a2405cea5954443bf4efd35f00372862a}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+clear\+\_\+nothrow} (iostate \+\_\+\+\_\+state)
+\item 
+\mbox{\Hypertarget{classios__base_af00454075cb10a97d86fa9c2598610e7}\label{classios__base_af00454075cb10a97d86fa9c2598610e7}} 
+iostate {\bfseries \+\_\+\+M\+\_\+get\+\_\+exception\+\_\+mask} () const
+\item 
+\mbox{\Hypertarget{classios__base_aed5d8d28809954798cd99750ae6918c9}\label{classios__base_aed5d8d28809954798cd99750ae6918c9}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+set\+\_\+exception\+\_\+mask} (iostate \+\_\+\+\_\+mask)
+\item 
+\mbox{\Hypertarget{classios__base_a6e6d808a2289214db52c04ffadd8c203}\label{classios__base_a6e6d808a2289214db52c04ffadd8c203}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+check\+\_\+exception\+\_\+mask} ()
+\item 
+\mbox{\Hypertarget{classios__base_ad31917124d4ff61d4498cf50131fdde8}\label{classios__base_ad31917124d4ff61d4498cf50131fdde8}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+invoke\+\_\+callbacks} (event)
+\item 
+\mbox{\Hypertarget{classios__base_aff11acd7f9311cbd522332a9169d013d}\label{classios__base_aff11acd7f9311cbd522332a9169d013d}} 
+\hyperlink{interfacevoid}{void} \+\_\+\+S\+T\+L\+P\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+WS {\bfseries \+\_\+\+M\+\_\+throw\+\_\+failure} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classios__base_ac63009681540a793259bae95029d26e6}\label{classios__base_ac63009681540a793259bae95029d26e6}} 
+static \hyperlink{interfacevoid}{void} \+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+initialize} ()
+\item 
+\mbox{\Hypertarget{classios__base_a73b47ee9e922d276a0ee67577d2a7d29}\label{classios__base_a73b47ee9e922d276a0ee67577d2a7d29}} 
+static \hyperlink{interfacevoid}{void} \+\_\+\+S\+T\+L\+P\+\_\+\+C\+A\+LL {\bfseries \+\_\+\+S\+\_\+uninitialize} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classios__base_a6de59e947de9b9c3333ad2f2805e514c}\label{classios__base_a6de59e947de9b9c3333ad2f2805e514c}} 
+static bool {\bfseries \+\_\+\+S\+\_\+is\+\_\+synced} = true
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classios__base_ab3afe096d892713710032f1f1cd15948}\label{classios__base_ab3afe096d892713710032f1f1cd15948}} 
+class {\bfseries Init}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+ios\+\_\+base.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/src/ios.\+cpp\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/src/iostream.\+cpp\end{DoxyCompactItemize}

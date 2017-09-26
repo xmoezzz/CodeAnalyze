@@ -1,0 +1,46 @@
+\hypertarget{interface_i_media_filter}{}\section{I\+Media\+Filter接口 参考}
+\label{interface_i_media_filter}\index{I\+Media\+Filter@{I\+Media\+Filter}}
+类 I\+Media\+Filter 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_i_media_filter}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a53c5540495ce7a1990108c40ffb27692}\label{interface_i_media_filter_a53c5540495ce7a1990108c40ffb27692}} 
+enum {\bfseries \+\_\+\+Filter\+State} \{ {\bfseries State\+\_\+\+Stopped}, 
+{\bfseries State\+\_\+\+Paused}, 
+{\bfseries State\+\_\+\+Running}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a3c65380ad0ecb6b57485438530205220}\label{interface_i_media_filter_a3c65380ad0ecb6b57485438530205220}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Media\+Filter\+::\+\_\+\+Filter\+State {\bfseries F\+I\+L\+T\+E\+R\+\_\+\+S\+T\+A\+TE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a942a1a35b402936d85a8fa551388f7d0}\label{interface_i_media_filter_a942a1a35b402936d85a8fa551388f7d0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stop} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a1bfa370c92e31bb5968a4b3295661b2a}\label{interface_i_media_filter_a1bfa370c92e31bb5968a4b3295661b2a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Pause} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a0b5a1c7715965634321fb3a5cf922222}\label{interface_i_media_filter_a0b5a1c7715965634321fb3a5cf922222}} 
+H\+R\+E\+S\+U\+LT {\bfseries Run} (R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME t\+Start)
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a2d92dce7307a7d8122d8205436e542ff}\label{interface_i_media_filter_a2d92dce7307a7d8122d8205436e542ff}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+State} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Milli\+Secs\+Timeout, \mbox{[}out\mbox{]} F\+I\+L\+T\+E\+R\+\_\+\+S\+T\+A\+TE $\ast$\hyperlink{struct_state}{State})
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a95e946ad4ac8c53bd578b0052c019e29}\label{interface_i_media_filter_a95e946ad4ac8c53bd578b0052c019e29}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Sync\+Source} (\mbox{[}in\mbox{]} \hyperlink{interface_i_reference_clock}{I\+Reference\+Clock} $\ast$p\+Clock)
+\item 
+\mbox{\Hypertarget{interface_i_media_filter_a7a7ca416a46b2d374c7583a49fa39a5a}\label{interface_i_media_filter_a7a7ca416a46b2d374c7583a49fa39a5a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Sync\+Source} (\mbox{[}out\mbox{]} \hyperlink{interface_i_reference_clock}{I\+Reference\+Clock} $\ast$$\ast$p\+Clock)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/axcore.\+idl\end{DoxyCompactItemize}

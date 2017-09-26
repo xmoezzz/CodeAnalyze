@@ -1,0 +1,325 @@
+\hypertarget{texobj_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/texobj.h 文件参考}
+\label{texobj_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/texobj.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/texobj.\+h}}
+{\ttfamily \#include \char`\"{}compiler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}glheader.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{Indent}\textbf{ Internal functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{texobj_8h_a17fb56ce79c53c21b33f04e193ba2c97}{\+\_\+mesa\+\_\+lookup\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint id)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{texobj_8h_aa3ef140a785b00901e3d9d11b58107a1}{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+object} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint \hyperlink{structname}{name}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_af5265a44d6eb019f249bd1f177b8649b}{\+\_\+mesa\+\_\+initialize\+\_\+texture\+\_\+object} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$obj, G\+Luint \hyperlink{structname}{name}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_a8d713bebb9b5742852b7e9668d1d0169}{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+object} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$obj)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_a3cd14f7fbd765863c08dc2ec806e1ed7}{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+object} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$dest, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$src)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_a5caeb540e4bcc9dda09b210b2889a659}{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+object} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$obj)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_a8ab948cb414b721b2ee44e4ca97db5aa}{\+\_\+mesa\+\_\+reference\+\_\+texobj\+\_\+} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$$\ast$ptr, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_a448be6a2a870103454ae5ce159f229dc}{\+\_\+mesa\+\_\+test\+\_\+texobj\+\_\+completeness} (const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$obj)
+\item 
+G\+Lboolean \hyperlink{texobj_8h_acca29d5aa0d2ab282e5870a43edf11d1}{\+\_\+mesa\+\_\+cube\+\_\+complete} (const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_af5a2fda82463a533169135295050db8c}{\+\_\+mesa\+\_\+dirty\+\_\+texobj} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, G\+Lboolean invalidate\+\_\+state)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{texobj_8h_a38e815761c87d33c4a48fffe0e66bf03}{\+\_\+mesa\+\_\+get\+\_\+fallback\+\_\+texture} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{texobj_8h_ad49b18ca568a0b57afdf77ddd1b2ac57}\label{texobj_8h_ad49b18ca568a0b57afdf77ddd1b2ac57}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+unlock\+\_\+context\+\_\+textures} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{texobj_8h_a93efb659001bc73219c7a3627c057d27}{\+\_\+mesa\+\_\+lock\+\_\+context\+\_\+textures} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ A\+PI functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{texobj_8h_a81aabd665ce4b71e0be502072b23d7a5}{\+\_\+mesa\+\_\+\+Gen\+Textures} (G\+Lsizei n, G\+Luint $\ast$textures)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{texobj_8h_a89f6126d2bb38952a8127574d9fda481}{\+\_\+mesa\+\_\+\+Delete\+Textures} (G\+Lsizei n, const G\+Luint $\ast$textures)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{texobj_8h_a2987d92a1213c675f94a19751014dae3}{\+\_\+mesa\+\_\+\+Bind\+Texture} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Luint texture)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{texobj_8h_a9cf9c136b83815fffe69863724d3befb}{\+\_\+mesa\+\_\+\+Prioritize\+Textures} (G\+Lsizei n, const G\+Luint $\ast$textures, const G\+Lclampf $\ast$priorities)
+\item 
+G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{texobj_8h_a8f052d672c79e310e3745047c2cbeb5d}{\+\_\+mesa\+\_\+\+Are\+Textures\+Resident} (G\+Lsizei n, const G\+Luint $\ast$textures, G\+Lboolean $\ast$residences)
+\item 
+G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{texobj_8h_a872f0394cbe7510b136d4d3291bd850e}{\+\_\+mesa\+\_\+\+Is\+Texture} (G\+Luint texture)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Texture object management. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{texobj_8h_a8f052d672c79e310e3745047c2cbeb5d}\label{texobj_8h_a8f052d672c79e310e3745047c2cbeb5d}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+\+Are\+Textures\+Resident@{\+\_\+mesa\+\_\+\+Are\+Textures\+Resident}}
+\index{\+\_\+mesa\+\_\+\+Are\+Textures\+Resident@{\+\_\+mesa\+\_\+\+Are\+Textures\+Resident}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Are\+Textures\+Resident()}{\_mesa\_AreTexturesResident()}}
+{\footnotesize\ttfamily G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Are\+Textures\+Resident (\begin{DoxyParamCaption}\item[{G\+Lsizei}]{n,  }\item[{const G\+Luint $\ast$}]{tex\+Name,  }\item[{G\+Lboolean $\ast$}]{residences }\end{DoxyParamCaption})}
+
+See if textures are loaded in texture memory.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & number of textures to query. \\
+\hline
+{\em tex\+Name} & array with the texture names. \\
+\hline
+{\em residences} & array which will hold the residence status.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE if all textures are resident and {\ttfamily residences} is left unchanged,
+\end{DoxyReturn}
+Note\+: we assume all textures are always resident \mbox{\Hypertarget{texobj_8h_a2987d92a1213c675f94a19751014dae3}\label{texobj_8h_a2987d92a1213c675f94a19751014dae3}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+\+Bind\+Texture@{\+\_\+mesa\+\_\+\+Bind\+Texture}}
+\index{\+\_\+mesa\+\_\+\+Bind\+Texture@{\+\_\+mesa\+\_\+\+Bind\+Texture}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Bind\+Texture()}{\_mesa\_BindTexture()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Bind\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Luint}]{tex\+Name }\end{DoxyParamCaption})}
+
+Bind a named texture to a texturing target.
+
+
+\begin{DoxyParams}{参数}
+{\em target} & texture target. \\
+\hline
+{\em tex\+Name} & texture name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Bind\+Texture().
+\end{DoxySeeAlso}
+Determines the old texture object bound and returns immediately if rebinding the same texture. Get the current texture which is either a default texture if name is null, a named texture from the hash, or a new texture if the given texture name is new. Increments its reference count, binds it, and calls \hyperlink{structdd__function__table_adb02edc9fb93a4b96cfc999355ec5be7}{dd\+\_\+function\+\_\+table\+::\+Bind\+Texture}. Decrements the old texture reference count and deletes it if it reaches zero. \mbox{\Hypertarget{texobj_8h_a5caeb540e4bcc9dda09b210b2889a659}\label{texobj_8h_a5caeb540e4bcc9dda09b210b2889a659}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+object}}
+\index{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+object}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+object()}{\_mesa\_clear\_texture\_object()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj }\end{DoxyParamCaption})}
+
+Free all texture images of the given texture object.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em t} & texture object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{teximage_8c_ab056423e13458f61aa1baa189aa8df42}{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image()}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{texobj_8h_a3cd14f7fbd765863c08dc2ec806e1ed7}\label{texobj_8h_a3cd14f7fbd765863c08dc2ec806e1ed7}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+object}}
+\index{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+object}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+object()}{\_mesa\_copy\_texture\_object()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+copy\+\_\+texture\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{dest,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{src }\end{DoxyParamCaption})}
+
+Copy texture object state from one texture object to another. Use for gl\+Push/\+Pop\+Attrib.
+
+
+\begin{DoxyParams}{参数}
+{\em dest} & destination texture object. \\
+\hline
+{\em src} & source texture object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{texobj_8h_acca29d5aa0d2ab282e5870a43edf11d1}\label{texobj_8h_acca29d5aa0d2ab282e5870a43edf11d1}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+cube\+\_\+complete@{\+\_\+mesa\+\_\+cube\+\_\+complete}}
+\index{\+\_\+mesa\+\_\+cube\+\_\+complete@{\+\_\+mesa\+\_\+cube\+\_\+complete}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+cube\+\_\+complete()}{\_mesa\_cube\_complete()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+cube\+\_\+complete (\begin{DoxyParamCaption}\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj }\end{DoxyParamCaption})}
+
+Check if the given cube map texture is \char`\"{}cube complete\char`\"{} as defined in the Open\+GL specification. \mbox{\Hypertarget{texobj_8h_a8d713bebb9b5742852b7e9668d1d0169}\label{texobj_8h_a8d713bebb9b5742852b7e9668d1d0169}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+object}}
+\index{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+object}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+object()}{\_mesa\_delete\_texture\_object()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj }\end{DoxyParamCaption})}
+
+Deallocate a texture object struct. \hyperlink{class_it}{It} should have already been removed from the texture object pool. Called via ctx-\/$>$Driver.\+Delete\+Texture() if not overriden by a driver.
+
+
+\begin{DoxyParams}{参数}
+{\em shared} & the shared GL state to which the object belongs. \\
+\hline
+{\em tex\+Obj} & the texture object to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{texobj_8h_a89f6126d2bb38952a8127574d9fda481}\label{texobj_8h_a89f6126d2bb38952a8127574d9fda481}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+\+Delete\+Textures@{\+\_\+mesa\+\_\+\+Delete\+Textures}}
+\index{\+\_\+mesa\+\_\+\+Delete\+Textures@{\+\_\+mesa\+\_\+\+Delete\+Textures}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Delete\+Textures()}{\_mesa\_DeleteTextures()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Delete\+Textures (\begin{DoxyParamCaption}\item[{G\+Lsizei}]{n,  }\item[{const G\+Luint $\ast$}]{textures }\end{DoxyParamCaption})}
+
+Delete named textures.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & number of textures to be deleted. \\
+\hline
+{\em textures} & array of texture I\+Ds to be deleted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Delete\+Textures().
+\end{DoxySeeAlso}
+If we\textquotesingle{}re about to delete a texture that\textquotesingle{}s currently bound to any texture unit, unbind the texture first. Decrement the reference count on the texture object and delete it if it\textquotesingle{}s zero. Recall that texture objects can be shared among several rendering contexts. \mbox{\Hypertarget{texobj_8h_af5a2fda82463a533169135295050db8c}\label{texobj_8h_af5a2fda82463a533169135295050db8c}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+dirty\+\_\+texobj@{\+\_\+mesa\+\_\+dirty\+\_\+texobj}}
+\index{\+\_\+mesa\+\_\+dirty\+\_\+texobj@{\+\_\+mesa\+\_\+dirty\+\_\+texobj}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+dirty\+\_\+texobj()}{\_mesa\_dirty\_texobj()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+dirty\+\_\+texobj (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj,  }\item[{G\+Lboolean}]{invalidate\+\_\+state }\end{DoxyParamCaption})}
+
+Mark a texture object dirty. \hyperlink{class_it}{It} forces the object to be incomplete and optionally forces the context to re-\/validate its state.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em tex\+Obj} & texture object. \\
+\hline
+{\em invalidate\+\_\+state} & also invalidate context state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{texobj_8h_a81aabd665ce4b71e0be502072b23d7a5}\label{texobj_8h_a81aabd665ce4b71e0be502072b23d7a5}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+\+Gen\+Textures@{\+\_\+mesa\+\_\+\+Gen\+Textures}}
+\index{\+\_\+mesa\+\_\+\+Gen\+Textures@{\+\_\+mesa\+\_\+\+Gen\+Textures}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Gen\+Textures()}{\_mesa\_GenTextures()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Gen\+Textures (\begin{DoxyParamCaption}\item[{G\+Lsizei}]{n,  }\item[{G\+Luint $\ast$}]{textures }\end{DoxyParamCaption})}
+
+Generate texture names.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & number of texture names to be generated. \\
+\hline
+{\em textures} & an array in which will hold the generated texture names.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Gen\+Textures().
+\end{DoxySeeAlso}
+Calls \+\_\+mesa\+\_\+\+Hash\+Find\+Free\+Key\+Block() to find a block of free texture I\+Ds which are stored in {\ttfamily textures}. Corresponding empty texture objects are also generated. \mbox{\Hypertarget{texobj_8h_a38e815761c87d33c4a48fffe0e66bf03}\label{texobj_8h_a38e815761c87d33c4a48fffe0e66bf03}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+get\+\_\+fallback\+\_\+texture@{\+\_\+mesa\+\_\+get\+\_\+fallback\+\_\+texture}}
+\index{\+\_\+mesa\+\_\+get\+\_\+fallback\+\_\+texture@{\+\_\+mesa\+\_\+get\+\_\+fallback\+\_\+texture}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+fallback\+\_\+texture()}{\_mesa\_get\_fallback\_texture()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ \+\_\+mesa\+\_\+get\+\_\+fallback\+\_\+texture (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Return pointer to a default/fallback texture. The texture is a 2D 8x8 R\+G\+BA texture with all texels = (0,0,0,1). That\textquotesingle{}s the value a sampler should get when sampling from an incomplete texture. \mbox{\Hypertarget{texobj_8h_af5265a44d6eb019f249bd1f177b8649b}\label{texobj_8h_af5265a44d6eb019f249bd1f177b8649b}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+initialize\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+initialize\+\_\+texture\+\_\+object}}
+\index{\+\_\+mesa\+\_\+initialize\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+initialize\+\_\+texture\+\_\+object}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+initialize\+\_\+texture\+\_\+object()}{\_mesa\_initialize\_texture\_object()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+initialize\+\_\+texture\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{obj,  }\item[{G\+Luint}]{name,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+Initialize a new texture object to default values. 
+\begin{DoxyParams}{参数}
+{\em obj} & the texture object \\
+\hline
+{\em name} & the texture name \\
+\hline
+{\em target} & the texture target \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{texobj_8h_a872f0394cbe7510b136d4d3291bd850e}\label{texobj_8h_a872f0394cbe7510b136d4d3291bd850e}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+\+Is\+Texture@{\+\_\+mesa\+\_\+\+Is\+Texture}}
+\index{\+\_\+mesa\+\_\+\+Is\+Texture@{\+\_\+mesa\+\_\+\+Is\+Texture}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Is\+Texture()}{\_mesa\_IsTexture()}}
+{\footnotesize\ttfamily G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Is\+Texture (\begin{DoxyParamCaption}\item[{G\+Luint}]{texture }\end{DoxyParamCaption})}
+
+See if a name corresponds to a texture.
+
+
+\begin{DoxyParams}{参数}
+{\em texture} & texture name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE if texture name corresponds to a texture, or G\+L\+\_\+\+F\+A\+L\+SE otherwise.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+gl\+Is\+Texture().
+\end{DoxySeeAlso}
+Calls \+\_\+mesa\+\_\+\+Hash\+Lookup(). \mbox{\Hypertarget{texobj_8h_a93efb659001bc73219c7a3627c057d27}\label{texobj_8h_a93efb659001bc73219c7a3627c057d27}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+lock\+\_\+context\+\_\+textures@{\+\_\+mesa\+\_\+lock\+\_\+context\+\_\+textures}}
+\index{\+\_\+mesa\+\_\+lock\+\_\+context\+\_\+textures@{\+\_\+mesa\+\_\+lock\+\_\+context\+\_\+textures}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+lock\+\_\+context\+\_\+textures()}{\_mesa\_lock\_context\_textures()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+lock\+\_\+context\+\_\+textures (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Simplest implementation of texture locking\+: grab the shared tex mutex. Examine the shared context state timestamp and if there has been a change, set the appropriate bits in ctx-\/$>$New\+State.
+
+\hyperlink{namespace_this}{This} is used to deal with synchronizing things when a texture object is used/modified by different contexts (or threads) which are sharing the texture.
+
+See also \+\_\+mesa\+\_\+lock/unlock\+\_\+texture() in \hyperlink{teximage_8h}{teximage.\+h} \mbox{\Hypertarget{texobj_8h_a17fb56ce79c53c21b33f04e193ba2c97}\label{texobj_8h_a17fb56ce79c53c21b33f04e193ba2c97}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+lookup\+\_\+texture@{\+\_\+mesa\+\_\+lookup\+\_\+texture}}
+\index{\+\_\+mesa\+\_\+lookup\+\_\+texture@{\+\_\+mesa\+\_\+lookup\+\_\+texture}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+lookup\+\_\+texture()}{\_mesa\_lookup\_texture()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ \+\_\+mesa\+\_\+lookup\+\_\+texture (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{id }\end{DoxyParamCaption})}
+
+Return the \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} for a given ID. \mbox{\Hypertarget{texobj_8h_aa3ef140a785b00901e3d9d11b58107a1}\label{texobj_8h_aa3ef140a785b00901e3d9d11b58107a1}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+object}}
+\index{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+object@{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+object}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+object()}{\_mesa\_new\_texture\_object()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ \+\_\+mesa\+\_\+new\+\_\+texture\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{name,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+Allocate and initialize a new texture object. But don\textquotesingle{}t put it into the texture object hash table.
+
+Called via ctx-\/$>$Driver.\+New\+Texture\+Object, unless overridden by a device driver.
+
+
+\begin{DoxyParams}{参数}
+{\em shared} & the shared GL state structure to contain the texture object \\
+\hline
+{\em name} & integer name for the texture object \\
+\hline
+{\em target} & either G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1D, G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2D, G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+3D, G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+U\+B\+E\+\_\+\+M\+A\+P\+\_\+\+A\+RB or G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+NV. zero is ok for the sake of Gen\+Textures()\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to new texture object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{texobj_8h_a9cf9c136b83815fffe69863724d3befb}\label{texobj_8h_a9cf9c136b83815fffe69863724d3befb}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+\+Prioritize\+Textures@{\+\_\+mesa\+\_\+\+Prioritize\+Textures}}
+\index{\+\_\+mesa\+\_\+\+Prioritize\+Textures@{\+\_\+mesa\+\_\+\+Prioritize\+Textures}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Prioritize\+Textures()}{\_mesa\_PrioritizeTextures()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Prioritize\+Textures (\begin{DoxyParamCaption}\item[{G\+Lsizei}]{n,  }\item[{const G\+Luint $\ast$}]{tex\+Name,  }\item[{const G\+Lclampf $\ast$}]{priorities }\end{DoxyParamCaption})}
+
+Set texture priorities.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & number of textures. \\
+\hline
+{\em tex\+Name} & texture names. \\
+\hline
+{\em priorities} & corresponding texture priorities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+gl\+Prioritize\+Textures().
+\end{DoxySeeAlso}
+Looks up each texture in the hash, clamps the corresponding priority between 0.\+0 and 1.\+0, and calls dd\+\_\+function\+\_\+table\+::\+Prioritize\+Texture. \mbox{\Hypertarget{texobj_8h_a8ab948cb414b721b2ee44e4ca97db5aa}\label{texobj_8h_a8ab948cb414b721b2ee44e4ca97db5aa}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+reference\+\_\+texobj\+\_\+@{\+\_\+mesa\+\_\+reference\+\_\+texobj\+\_\+}}
+\index{\+\_\+mesa\+\_\+reference\+\_\+texobj\+\_\+@{\+\_\+mesa\+\_\+reference\+\_\+texobj\+\_\+}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+reference\+\_\+texobj\+\_\+()}{\_mesa\_reference\_texobj\_()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+reference\+\_\+texobj\+\_\+ (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$$\ast$}]{ptr,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex }\end{DoxyParamCaption})}
+
+Reference (or unreference) a texture object. If \textquotesingle{}$\ast$ptr\textquotesingle{}, decrement $\ast$ptr\textquotesingle{}s refcount (and delete if it becomes zero). If \textquotesingle{}tex\textquotesingle{} is non-\/null, increment its refcount. \hyperlink{namespace_this}{This} is normally only called from the \+\_\+mesa\+\_\+reference\+\_\+texobj() macro when there\textquotesingle{}s a real pointer change. \mbox{\Hypertarget{texobj_8h_a448be6a2a870103454ae5ce159f229dc}\label{texobj_8h_a448be6a2a870103454ae5ce159f229dc}} 
+\index{texobj.\+h@{texobj.\+h}!\+\_\+mesa\+\_\+test\+\_\+texobj\+\_\+completeness@{\+\_\+mesa\+\_\+test\+\_\+texobj\+\_\+completeness}}
+\index{\+\_\+mesa\+\_\+test\+\_\+texobj\+\_\+completeness@{\+\_\+mesa\+\_\+test\+\_\+texobj\+\_\+completeness}!texobj.\+h@{texobj.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+test\+\_\+texobj\+\_\+completeness()}{\_mesa\_test\_texobj\_completeness()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+test\+\_\+texobj\+\_\+completeness (\begin{DoxyParamCaption}\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{t }\end{DoxyParamCaption})}
+
+Examine a texture object to determine if it is complete.
+
+The gl\+\_\+texture\+\_\+object\+::\+Complete flag will be set to G\+L\+\_\+\+T\+R\+UE or G\+L\+\_\+\+F\+A\+L\+SE accordingly.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em t} & texture object.\\
+\hline
+\end{DoxyParams}
+According to the texture target, verifies that each of the mipmaps is present and has the expected size. 

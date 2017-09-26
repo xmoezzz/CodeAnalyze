@@ -1,0 +1,259 @@
+\hypertarget{netif_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/netif.c 文件参考}
+\label{netif_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/netif.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/netif.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/ip\+\_\+addr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/netif.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/tcp\+\_\+impl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/snmp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/igmp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}netif/etharp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/stats.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{netif_8c_a67d78318251432e9e4416f7ceab23ecb}\label{netif_8c_a67d78318251432e9e4416f7ceab23ecb}} 
+\#\hyperlink{structdefine}{define} {\bfseries N\+E\+T\+I\+F\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+CK}(n)
+\item 
+\mbox{\Hypertarget{netif_8c_aa4ea2644fa9858891412e976a24a0179}\label{netif_8c_aa4ea2644fa9858891412e976a24a0179}} 
+\#\hyperlink{structdefine}{define} {\bfseries N\+E\+T\+I\+F\+\_\+\+L\+I\+N\+K\+\_\+\+C\+A\+L\+L\+B\+A\+CK}(n)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{netif_8c_a0f4a53e47c840904f824a2a1c0d4ebf4}\label{netif_8c_a0f4a53e47c840904f824a2a1c0d4ebf4}} 
+\hyperlink{interfacevoid}{void} {\bfseries netif\+\_\+init} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ \hyperlink{netif_8c_aaaa8066c47023b576a5f403c3ba82597}{netif\+\_\+add} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif}, ip\+\_\+addr\+\_\+t $\ast$ipaddr, ip\+\_\+addr\+\_\+t $\ast$netmask, ip\+\_\+addr\+\_\+t $\ast$gw, \hyperlink{interfacevoid}{void} $\ast$state, netif\+\_\+init\+\_\+fn init, netif\+\_\+input\+\_\+fn input)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_a383f97a67057d0f3cd8bfff0534973fc}{netif\+\_\+set\+\_\+addr} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif}, ip\+\_\+addr\+\_\+t $\ast$ipaddr, ip\+\_\+addr\+\_\+t $\ast$netmask, ip\+\_\+addr\+\_\+t $\ast$gw)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_a9c6e541f0c184e1ea61a5cd8afe3e979}{netif\+\_\+remove} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ \hyperlink{netif_8c_a4b744acecfae7ee43e1df3ed7c6f8832}{netif\+\_\+find} (char $\ast$\hyperlink{structname}{name})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_ae495c5439172c15c703a84cb33806236}{netif\+\_\+set\+\_\+ipaddr} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif}, ip\+\_\+addr\+\_\+t $\ast$ipaddr)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_aa6db00ff3e674d3ff8580c82f5215f4e}{netif\+\_\+set\+\_\+gw} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif}, ip\+\_\+addr\+\_\+t $\ast$gw)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_a19b1df3b0b78d7505e3c4c196730ad91}{netif\+\_\+set\+\_\+netmask} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif}, ip\+\_\+addr\+\_\+t $\ast$netmask)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_ac90f290edd005238d62aa94c4ac9dea3}{netif\+\_\+set\+\_\+default} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_af19693be401a265a52d2a56c65753121}{netif\+\_\+set\+\_\+up} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_a641d07ed8c31fe5306bc01605a6790cf}{netif\+\_\+set\+\_\+down} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_ae0d2975f189277990e9d5276fdd9e9ea}{netif\+\_\+set\+\_\+link\+\_\+up} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{netif_8c_a34e37a1e8e358760dc1c43887922c7db}{netif\+\_\+set\+\_\+link\+\_\+down} (\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ \hyperlink{netif_8c_a1c8141eaa98f6dc6dfddbb23a706656c}{netif\+\_\+list}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ \hyperlink{netif_8c_a3d0925cbce550ed461907aee816713ba}{netif\+\_\+default}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+lw\+IP network interface abstraction 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{netif_8c_aaaa8066c47023b576a5f403c3ba82597}\label{netif_8c_aaaa8066c47023b576a5f403c3ba82597}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+add@{netif\+\_\+add}}
+\index{netif\+\_\+add@{netif\+\_\+add}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+add()}{netif\_add()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif}$\ast$ netif\+\_\+add (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{ipaddr,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{netmask,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{gw,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{state,  }\item[{netif\+\_\+init\+\_\+fn}]{init,  }\item[{netif\+\_\+input\+\_\+fn}]{input }\end{DoxyParamCaption})}
+
+Add a network interface to the list of lw\+IP netifs.
+
+
+\begin{DoxyParams}{参数}
+{\em netif} & a pre-\/allocated netif structure \\
+\hline
+{\em ipaddr} & IP address for the new netif \\
+\hline
+{\em netmask} & network mask for the new netif \\
+\hline
+{\em gw} & default gateway IP address for the new netif \\
+\hline
+{\em state} & opaque data passed to the new netif \\
+\hline
+{\em init} & callback function that initializes the interface \\
+\hline
+{\em input} & callback function that is called to pass ingress packets up in the protocol layer stack.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+netif, or N\+U\+LL if failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{netif_8c_a4b744acecfae7ee43e1df3ed7c6f8832}\label{netif_8c_a4b744acecfae7ee43e1df3ed7c6f8832}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+find@{netif\+\_\+find}}
+\index{netif\+\_\+find@{netif\+\_\+find}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+find()}{netif\_find()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif}$\ast$ netif\+\_\+find (\begin{DoxyParamCaption}\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Find a network interface by searching for its name
+
+
+\begin{DoxyParams}{参数}
+{\em name} & the name of the netif (like netif-\/$>$name) plus concatenated number in ascii representation (e.\+g. \textquotesingle{}en0\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{netif_8c_a9c6e541f0c184e1ea61a5cd8afe3e979}\label{netif_8c_a9c6e541f0c184e1ea61a5cd8afe3e979}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+remove@{netif\+\_\+remove}}
+\index{netif\+\_\+remove@{netif\+\_\+remove}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+remove()}{netif\_remove()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+remove (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Remove a network interface from the list of lw\+IP netifs.
+
+
+\begin{DoxyParams}{参数}
+{\em netif} & the network interface to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{netif_8c_a383f97a67057d0f3cd8bfff0534973fc}\label{netif_8c_a383f97a67057d0f3cd8bfff0534973fc}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+addr@{netif\+\_\+set\+\_\+addr}}
+\index{netif\+\_\+set\+\_\+addr@{netif\+\_\+set\+\_\+addr}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+addr()}{netif\_set\_addr()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+addr (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{ipaddr,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{netmask,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{gw }\end{DoxyParamCaption})}
+
+Change IP address configuration for a network interface (including netmask and default gateway).
+
+
+\begin{DoxyParams}{参数}
+{\em netif} & the network interface to change \\
+\hline
+{\em ipaddr} & the new IP address \\
+\hline
+{\em netmask} & the new netmask \\
+\hline
+{\em gw} & the new default gateway \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{netif_8c_ac90f290edd005238d62aa94c4ac9dea3}\label{netif_8c_ac90f290edd005238d62aa94c4ac9dea3}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+default@{netif\+\_\+set\+\_\+default}}
+\index{netif\+\_\+set\+\_\+default@{netif\+\_\+set\+\_\+default}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+default()}{netif\_set\_default()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+default (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Set a network interface as the default network interface (used to output all packets for which no specific route is found)
+
+
+\begin{DoxyParams}{参数}
+{\em netif} & the default network interface \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{netif_8c_a641d07ed8c31fe5306bc01605a6790cf}\label{netif_8c_a641d07ed8c31fe5306bc01605a6790cf}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+down@{netif\+\_\+set\+\_\+down}}
+\index{netif\+\_\+set\+\_\+down@{netif\+\_\+set\+\_\+down}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+down()}{netif\_set\_down()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+down (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Bring an interface down, disabling any traffic processing.
+
+\begin{DoxyNote}{注解}
+\+: Enabling D\+H\+CP on a down interface will make it come up once configured.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+dhcp\+\_\+start() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{netif_8c_aa6db00ff3e674d3ff8580c82f5215f4e}\label{netif_8c_aa6db00ff3e674d3ff8580c82f5215f4e}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+gw@{netif\+\_\+set\+\_\+gw}}
+\index{netif\+\_\+set\+\_\+gw@{netif\+\_\+set\+\_\+gw}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+gw()}{netif\_set\_gw()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+gw (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{gw }\end{DoxyParamCaption})}
+
+Change the default gateway for a network interface
+
+
+\begin{DoxyParams}{参数}
+{\em netif} & the network interface to change \\
+\hline
+{\em gw} & the new default gateway\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+call \hyperlink{netif_8c_a383f97a67057d0f3cd8bfff0534973fc}{netif\+\_\+set\+\_\+addr()} if you also want to change ip address and netmask 
+\end{DoxyNote}
+\mbox{\Hypertarget{netif_8c_ae495c5439172c15c703a84cb33806236}\label{netif_8c_ae495c5439172c15c703a84cb33806236}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+ipaddr@{netif\+\_\+set\+\_\+ipaddr}}
+\index{netif\+\_\+set\+\_\+ipaddr@{netif\+\_\+set\+\_\+ipaddr}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+ipaddr()}{netif\_set\_ipaddr()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+ipaddr (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{ipaddr }\end{DoxyParamCaption})}
+
+Change the IP address of a network interface
+
+
+\begin{DoxyParams}{参数}
+{\em netif} & the network interface to change \\
+\hline
+{\em ipaddr} & the new IP address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+call \hyperlink{netif_8c_a383f97a67057d0f3cd8bfff0534973fc}{netif\+\_\+set\+\_\+addr()} if you also want to change netmask and default gateway 
+\end{DoxyNote}
+\mbox{\Hypertarget{netif_8c_a34e37a1e8e358760dc1c43887922c7db}\label{netif_8c_a34e37a1e8e358760dc1c43887922c7db}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+link\+\_\+down@{netif\+\_\+set\+\_\+link\+\_\+down}}
+\index{netif\+\_\+set\+\_\+link\+\_\+down@{netif\+\_\+set\+\_\+link\+\_\+down}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+link\+\_\+down()}{netif\_set\_link\_down()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+link\+\_\+down (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Called by a driver when its link goes down \mbox{\Hypertarget{netif_8c_ae0d2975f189277990e9d5276fdd9e9ea}\label{netif_8c_ae0d2975f189277990e9d5276fdd9e9ea}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+link\+\_\+up@{netif\+\_\+set\+\_\+link\+\_\+up}}
+\index{netif\+\_\+set\+\_\+link\+\_\+up@{netif\+\_\+set\+\_\+link\+\_\+up}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+link\+\_\+up()}{netif\_set\_link\_up()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+link\+\_\+up (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Called by a driver when its link goes up \mbox{\Hypertarget{netif_8c_a19b1df3b0b78d7505e3c4c196730ad91}\label{netif_8c_a19b1df3b0b78d7505e3c4c196730ad91}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+netmask@{netif\+\_\+set\+\_\+netmask}}
+\index{netif\+\_\+set\+\_\+netmask@{netif\+\_\+set\+\_\+netmask}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+netmask()}{netif\_set\_netmask()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+netmask (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{netmask }\end{DoxyParamCaption})}
+
+Change the netmask of a network interface
+
+
+\begin{DoxyParams}{参数}
+{\em netif} & the network interface to change \\
+\hline
+{\em netmask} & the new netmask\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+call \hyperlink{netif_8c_a383f97a67057d0f3cd8bfff0534973fc}{netif\+\_\+set\+\_\+addr()} if you also want to change ip address and default gateway 
+\end{DoxyNote}
+\mbox{\Hypertarget{netif_8c_af19693be401a265a52d2a56c65753121}\label{netif_8c_af19693be401a265a52d2a56c65753121}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+set\+\_\+up@{netif\+\_\+set\+\_\+up}}
+\index{netif\+\_\+set\+\_\+up@{netif\+\_\+set\+\_\+up}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+set\+\_\+up()}{netif\_set\_up()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} netif\+\_\+set\+\_\+up (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Bring an interface up, available for processing traffic.
+
+\begin{DoxyNote}{注解}
+\+: Enabling D\+H\+CP on a down interface will make it come up once configured.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+dhcp\+\_\+start() 
+\end{DoxySeeAlso}
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{netif_8c_a3d0925cbce550ed461907aee816713ba}\label{netif_8c_a3d0925cbce550ed461907aee816713ba}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+default@{netif\+\_\+default}}
+\index{netif\+\_\+default@{netif\+\_\+default}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+default}{netif\_default}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif}$\ast$ netif\+\_\+default}
+
+The default network interface. \mbox{\Hypertarget{netif_8c_a1c8141eaa98f6dc6dfddbb23a706656c}\label{netif_8c_a1c8141eaa98f6dc6dfddbb23a706656c}} 
+\index{netif.\+c@{netif.\+c}!netif\+\_\+list@{netif\+\_\+list}}
+\index{netif\+\_\+list@{netif\+\_\+list}!netif.\+c@{netif.\+c}}
+\subsubsection{\texorpdfstring{netif\+\_\+list}{netif\_list}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif}$\ast$ netif\+\_\+list}
+
+The list of network interfaces. 

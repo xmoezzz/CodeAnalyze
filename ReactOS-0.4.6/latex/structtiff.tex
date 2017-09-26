@@ -1,0 +1,224 @@
+\hypertarget{structtiff}{}\section{tiff结构体 参考}
+\label{structtiff}\index{tiff@{tiff}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtiff_a6f3ae2e2468f2e568a713de6fe68d0c7}\label{structtiff_a6f3ae2e2468f2e568a713de6fe68d0c7}} 
+char $\ast$ {\bfseries tif\+\_\+name}
+\item 
+\mbox{\Hypertarget{structtiff_ab1b0f79327eb41e871708846f9fbcf7b}\label{structtiff_ab1b0f79327eb41e871708846f9fbcf7b}} 
+int {\bfseries tif\+\_\+fd}
+\item 
+\mbox{\Hypertarget{structtiff_aed8a99f194e71d26c3d1bfd491e1bc28}\label{structtiff_aed8a99f194e71d26c3d1bfd491e1bc28}} 
+int {\bfseries tif\+\_\+mode}
+\item 
+\mbox{\Hypertarget{structtiff_a73ef7bb5bdd7938e176e2444bfcb8060}\label{structtiff_a73ef7bb5bdd7938e176e2444bfcb8060}} 
+uint32 {\bfseries tif\+\_\+flags}
+\item 
+\mbox{\Hypertarget{structtiff_ac6433d7ae67e4fb99034a6a8ef80e12f}\label{structtiff_ac6433d7ae67e4fb99034a6a8ef80e12f}} 
+uint64 {\bfseries tif\+\_\+diroff}
+\item 
+\mbox{\Hypertarget{structtiff_a9b7474571265890dfc9a4d78f981357f}\label{structtiff_a9b7474571265890dfc9a4d78f981357f}} 
+uint64 {\bfseries tif\+\_\+nextdiroff}
+\item 
+\mbox{\Hypertarget{structtiff_a047652708f45314dae096c95dc612f44}\label{structtiff_a047652708f45314dae096c95dc612f44}} 
+uint64 $\ast$ {\bfseries tif\+\_\+dirlist}
+\item 
+\mbox{\Hypertarget{structtiff_afa2aa4267133a1134c16549385769a88}\label{structtiff_afa2aa4267133a1134c16549385769a88}} 
+uint16 {\bfseries tif\+\_\+dirlistsize}
+\item 
+\mbox{\Hypertarget{structtiff_a0f646e393cedf4fbf99b43e6d08f8603}\label{structtiff_a0f646e393cedf4fbf99b43e6d08f8603}} 
+uint16 {\bfseries tif\+\_\+dirnumber}
+\item 
+\mbox{\Hypertarget{structtiff_a842fae55fa77b28f44f1c1e796e78c54}\label{structtiff_a842fae55fa77b28f44f1c1e796e78c54}} 
+\hyperlink{struct_t_i_f_f_directory}{T\+I\+F\+F\+Directory} {\bfseries tif\+\_\+dir}
+\item 
+\mbox{\Hypertarget{structtiff_a4b7a10411be8042676498f38ccadeb6f}\label{structtiff_a4b7a10411be8042676498f38ccadeb6f}} 
+\hyperlink{struct_t_i_f_f_directory}{T\+I\+F\+F\+Directory} {\bfseries tif\+\_\+customdir}
+\item 
+\mbox{\Hypertarget{structtiff_a05116ca68e5a77179c11751f2d695c31}\label{structtiff_a05116ca68e5a77179c11751f2d695c31}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct_t_i_f_f_header_common}{TIFFHeaderCommon} {\bfseries common}\\
+\>\hyperlink{struct_t_i_f_f_header_classic}{TIFFHeaderClassic} {\bfseries classic}\\
+\>\hyperlink{struct_t_i_f_f_header_big}{TIFFHeaderBig} {\bfseries big}\\
+\} {\bfseries tif\_header}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structtiff_aed17db84937a925357ff4f839fb8db26}\label{structtiff_aed17db84937a925357ff4f839fb8db26}} 
+uint16 {\bfseries tif\+\_\+header\+\_\+size}
+\item 
+\mbox{\Hypertarget{structtiff_abaf44a714f818a48d971932b38788cfa}\label{structtiff_abaf44a714f818a48d971932b38788cfa}} 
+uint32 {\bfseries tif\+\_\+row}
+\item 
+\mbox{\Hypertarget{structtiff_a734c12d9aaa9a4bfbd789958d37c7f98}\label{structtiff_a734c12d9aaa9a4bfbd789958d37c7f98}} 
+uint16 {\bfseries tif\+\_\+curdir}
+\item 
+\mbox{\Hypertarget{structtiff_ab41e67eb0be8fbd82e5c34309caec962}\label{structtiff_ab41e67eb0be8fbd82e5c34309caec962}} 
+uint32 {\bfseries tif\+\_\+curstrip}
+\item 
+\mbox{\Hypertarget{structtiff_af34fe7dfda454597cccb559e23bf3429}\label{structtiff_af34fe7dfda454597cccb559e23bf3429}} 
+uint64 {\bfseries tif\+\_\+curoff}
+\item 
+\mbox{\Hypertarget{structtiff_a4dc01f505bc3be79e2d242237b9480b7}\label{structtiff_a4dc01f505bc3be79e2d242237b9480b7}} 
+uint64 {\bfseries tif\+\_\+dataoff}
+\item 
+\mbox{\Hypertarget{structtiff_a5c1d6102589f77906a0f3ea9f1922bbd}\label{structtiff_a5c1d6102589f77906a0f3ea9f1922bbd}} 
+uint16 {\bfseries tif\+\_\+nsubifd}
+\item 
+\mbox{\Hypertarget{structtiff_a0ab1c6e97549f0788677c7a40bc39000}\label{structtiff_a0ab1c6e97549f0788677c7a40bc39000}} 
+uint64 {\bfseries tif\+\_\+subifdoff}
+\item 
+\mbox{\Hypertarget{structtiff_ae572946786140a02f1ea86edc27e132a}\label{structtiff_ae572946786140a02f1ea86edc27e132a}} 
+uint32 {\bfseries tif\+\_\+col}
+\item 
+\mbox{\Hypertarget{structtiff_ac432d88667577004a9e97a4d6a17476c}\label{structtiff_ac432d88667577004a9e97a4d6a17476c}} 
+uint32 {\bfseries tif\+\_\+curtile}
+\item 
+\mbox{\Hypertarget{structtiff_ac7f2ffbd8f0486751d83a1134fc4b830}\label{structtiff_ac7f2ffbd8f0486751d83a1134fc4b830}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+tilesize}
+\item 
+\mbox{\Hypertarget{structtiff_aafa32d1172f916df7b7d0c830d1bb733}\label{structtiff_aafa32d1172f916df7b7d0c830d1bb733}} 
+int {\bfseries tif\+\_\+decodestatus}
+\item 
+\mbox{\Hypertarget{structtiff_a42e7f1c28114ae4a491e249934a63f6e}\label{structtiff_a42e7f1c28114ae4a491e249934a63f6e}} 
+T\+I\+F\+F\+Bool\+Method {\bfseries tif\+\_\+fixuptags}
+\item 
+\mbox{\Hypertarget{structtiff_abe08dcd02fe890dc0035931d243b9ad4}\label{structtiff_abe08dcd02fe890dc0035931d243b9ad4}} 
+T\+I\+F\+F\+Bool\+Method {\bfseries tif\+\_\+setupdecode}
+\item 
+\mbox{\Hypertarget{structtiff_a4e2b0b3478a50086850cf8fc7ca78cc3}\label{structtiff_a4e2b0b3478a50086850cf8fc7ca78cc3}} 
+T\+I\+F\+F\+Pre\+Method {\bfseries tif\+\_\+predecode}
+\item 
+\mbox{\Hypertarget{structtiff_a80c3bb6cfd21018924d9bbf43562f287}\label{structtiff_a80c3bb6cfd21018924d9bbf43562f287}} 
+T\+I\+F\+F\+Bool\+Method {\bfseries tif\+\_\+setupencode}
+\item 
+\mbox{\Hypertarget{structtiff_ab099e670a8fb6a130ba6197c1553bebd}\label{structtiff_ab099e670a8fb6a130ba6197c1553bebd}} 
+int {\bfseries tif\+\_\+encodestatus}
+\item 
+\mbox{\Hypertarget{structtiff_a4015c895c3eef2e1c1fe7e7ef73b9bd8}\label{structtiff_a4015c895c3eef2e1c1fe7e7ef73b9bd8}} 
+T\+I\+F\+F\+Pre\+Method {\bfseries tif\+\_\+preencode}
+\item 
+\mbox{\Hypertarget{structtiff_a88dbd3dfd0e86474022b12057d555b7b}\label{structtiff_a88dbd3dfd0e86474022b12057d555b7b}} 
+T\+I\+F\+F\+Bool\+Method {\bfseries tif\+\_\+postencode}
+\item 
+\mbox{\Hypertarget{structtiff_a74013e90cb3920be445a3def58b6a4fb}\label{structtiff_a74013e90cb3920be445a3def58b6a4fb}} 
+T\+I\+F\+F\+Code\+Method {\bfseries tif\+\_\+decoderow}
+\item 
+\mbox{\Hypertarget{structtiff_aa1adbf43b40eaa1033c6602264550d40}\label{structtiff_aa1adbf43b40eaa1033c6602264550d40}} 
+T\+I\+F\+F\+Code\+Method {\bfseries tif\+\_\+encoderow}
+\item 
+\mbox{\Hypertarget{structtiff_a5c2d723194935b7e42e6dcc46990541a}\label{structtiff_a5c2d723194935b7e42e6dcc46990541a}} 
+T\+I\+F\+F\+Code\+Method {\bfseries tif\+\_\+decodestrip}
+\item 
+\mbox{\Hypertarget{structtiff_a19d5259cd7ba5db969b40102353eb2ea}\label{structtiff_a19d5259cd7ba5db969b40102353eb2ea}} 
+T\+I\+F\+F\+Code\+Method {\bfseries tif\+\_\+encodestrip}
+\item 
+\mbox{\Hypertarget{structtiff_ae7ebc9fa68940e43c85a0e95361f67e7}\label{structtiff_ae7ebc9fa68940e43c85a0e95361f67e7}} 
+T\+I\+F\+F\+Code\+Method {\bfseries tif\+\_\+decodetile}
+\item 
+\mbox{\Hypertarget{structtiff_a267165e3cee2fd119f5188d0d6443b66}\label{structtiff_a267165e3cee2fd119f5188d0d6443b66}} 
+T\+I\+F\+F\+Code\+Method {\bfseries tif\+\_\+encodetile}
+\item 
+\mbox{\Hypertarget{structtiff_aa7bef3ea331dfead591fa3ee328c2f89}\label{structtiff_aa7bef3ea331dfead591fa3ee328c2f89}} 
+T\+I\+F\+F\+Void\+Method {\bfseries tif\+\_\+close}
+\item 
+\mbox{\Hypertarget{structtiff_a1db2f47aa654fbf73a49847336f5a2ab}\label{structtiff_a1db2f47aa654fbf73a49847336f5a2ab}} 
+T\+I\+F\+F\+Seek\+Method {\bfseries tif\+\_\+seek}
+\item 
+\mbox{\Hypertarget{structtiff_ab38b688dbaac74b1587df2ab116e37f3}\label{structtiff_ab38b688dbaac74b1587df2ab116e37f3}} 
+T\+I\+F\+F\+Void\+Method {\bfseries tif\+\_\+cleanup}
+\item 
+\mbox{\Hypertarget{structtiff_a6ea2d3cd462422a878877abe7b7b5010}\label{structtiff_a6ea2d3cd462422a878877abe7b7b5010}} 
+T\+I\+F\+F\+Strip\+Method {\bfseries tif\+\_\+defstripsize}
+\item 
+\mbox{\Hypertarget{structtiff_a0d76e386a076004d16128b626603d55d}\label{structtiff_a0d76e386a076004d16128b626603d55d}} 
+T\+I\+F\+F\+Tile\+Method {\bfseries tif\+\_\+deftilesize}
+\item 
+\mbox{\Hypertarget{structtiff_a8b63d8d183e7208b9bbd0354addb48cd}\label{structtiff_a8b63d8d183e7208b9bbd0354addb48cd}} 
+uint8 $\ast$ {\bfseries tif\+\_\+data}
+\item 
+\mbox{\Hypertarget{structtiff_a3497c1342a559a5a2fb1448e84594cc6}\label{structtiff_a3497c1342a559a5a2fb1448e84594cc6}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+scanlinesize}
+\item 
+\mbox{\Hypertarget{structtiff_a961f4a36ee1b1d0cfb8fd5fec5c2c97f}\label{structtiff_a961f4a36ee1b1d0cfb8fd5fec5c2c97f}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+scanlineskew}
+\item 
+\mbox{\Hypertarget{structtiff_af8ccc5951016dacf6335319b85edfe0d}\label{structtiff_af8ccc5951016dacf6335319b85edfe0d}} 
+uint8 $\ast$ {\bfseries tif\+\_\+rawdata}
+\item 
+\mbox{\Hypertarget{structtiff_ac74efe21c3a3ca6be7ac108bcb5a9e7f}\label{structtiff_ac74efe21c3a3ca6be7ac108bcb5a9e7f}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+rawdatasize}
+\item 
+\mbox{\Hypertarget{structtiff_acccfff166f9648fc8e5209bba7dd46ab}\label{structtiff_acccfff166f9648fc8e5209bba7dd46ab}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+rawdataoff}
+\item 
+\mbox{\Hypertarget{structtiff_a4c6055fe6967d8002a505a6b27b4e744}\label{structtiff_a4c6055fe6967d8002a505a6b27b4e744}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+rawdataloaded}
+\item 
+\mbox{\Hypertarget{structtiff_ae423c0f88e038d4432854c75c1fa9996}\label{structtiff_ae423c0f88e038d4432854c75c1fa9996}} 
+uint8 $\ast$ {\bfseries tif\+\_\+rawcp}
+\item 
+\mbox{\Hypertarget{structtiff_a4c7251edc7df8dd6e6588fba546c7d90}\label{structtiff_a4c7251edc7df8dd6e6588fba546c7d90}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+rawcc}
+\item 
+\mbox{\Hypertarget{structtiff_a6e47f0c379b692552f4df2ce0ea4fbc8}\label{structtiff_a6e47f0c379b692552f4df2ce0ea4fbc8}} 
+uint8 $\ast$ {\bfseries tif\+\_\+base}
+\item 
+\mbox{\Hypertarget{structtiff_a98a06f0e3c85e831eeb7654d38f57336}\label{structtiff_a98a06f0e3c85e831eeb7654d38f57336}} 
+tmsize\+\_\+t {\bfseries tif\+\_\+size}
+\item 
+\mbox{\Hypertarget{structtiff_abdd878f0175f15a67d70ca96304f893d}\label{structtiff_abdd878f0175f15a67d70ca96304f893d}} 
+T\+I\+F\+F\+Map\+File\+Proc {\bfseries tif\+\_\+mapproc}
+\item 
+\mbox{\Hypertarget{structtiff_a1bf06a5a3f42e40dfddc81a4e3bf7767}\label{structtiff_a1bf06a5a3f42e40dfddc81a4e3bf7767}} 
+T\+I\+F\+F\+Unmap\+File\+Proc {\bfseries tif\+\_\+unmapproc}
+\item 
+\mbox{\Hypertarget{structtiff_a6c9e5282821a7eb1fee483142145591a}\label{structtiff_a6c9e5282821a7eb1fee483142145591a}} 
+\hyperlink{interfacevoid}{thandle\+\_\+t} {\bfseries tif\+\_\+clientdata}
+\item 
+\mbox{\Hypertarget{structtiff_a06934e5a1b6f0f993144bfec7359ae6a}\label{structtiff_a06934e5a1b6f0f993144bfec7359ae6a}} 
+T\+I\+F\+F\+Read\+Write\+Proc {\bfseries tif\+\_\+readproc}
+\item 
+\mbox{\Hypertarget{structtiff_a09c8ddad9dccafb538446823dc9e09be}\label{structtiff_a09c8ddad9dccafb538446823dc9e09be}} 
+T\+I\+F\+F\+Read\+Write\+Proc {\bfseries tif\+\_\+writeproc}
+\item 
+\mbox{\Hypertarget{structtiff_a1c31747013e5b0578af7affc5630fa3b}\label{structtiff_a1c31747013e5b0578af7affc5630fa3b}} 
+T\+I\+F\+F\+Seek\+Proc {\bfseries tif\+\_\+seekproc}
+\item 
+\mbox{\Hypertarget{structtiff_a6014bc0fc4b0b6eb24fe9d5c41da8f98}\label{structtiff_a6014bc0fc4b0b6eb24fe9d5c41da8f98}} 
+T\+I\+F\+F\+Close\+Proc {\bfseries tif\+\_\+closeproc}
+\item 
+\mbox{\Hypertarget{structtiff_af98260e3851f9c3ed4841e410b8a41e4}\label{structtiff_af98260e3851f9c3ed4841e410b8a41e4}} 
+T\+I\+F\+F\+Size\+Proc {\bfseries tif\+\_\+sizeproc}
+\item 
+\mbox{\Hypertarget{structtiff_a68256081a61aba786919d3294e464fc5}\label{structtiff_a68256081a61aba786919d3294e464fc5}} 
+T\+I\+F\+F\+Post\+Method {\bfseries tif\+\_\+postdecode}
+\item 
+\mbox{\Hypertarget{structtiff_a60f4e669baf216684ed9a892197c5b11}\label{structtiff_a60f4e669baf216684ed9a892197c5b11}} 
+\hyperlink{struct___t_i_f_f_field}{T\+I\+F\+F\+Field} $\ast$$\ast$ {\bfseries tif\+\_\+fields}
+\item 
+\mbox{\Hypertarget{structtiff_a5160f0d0220f4eeb288a75670d5f7d5b}\label{structtiff_a5160f0d0220f4eeb288a75670d5f7d5b}} 
+size\+\_\+t {\bfseries tif\+\_\+nfields}
+\item 
+\mbox{\Hypertarget{structtiff_a0a96599d2db9aa8581993d9f200d224d}\label{structtiff_a0a96599d2db9aa8581993d9f200d224d}} 
+const \hyperlink{struct___t_i_f_f_field}{T\+I\+F\+F\+Field} $\ast$ {\bfseries tif\+\_\+foundfield}
+\item 
+\mbox{\Hypertarget{structtiff_a2c44dd87e4920023a7372bd6d220f3cc}\label{structtiff_a2c44dd87e4920023a7372bd6d220f3cc}} 
+\hyperlink{struct_t_i_f_f_tag_methods}{T\+I\+F\+F\+Tag\+Methods} {\bfseries tif\+\_\+tagmethods}
+\item 
+\mbox{\Hypertarget{structtiff_a6088fcaae4547b6714ccd0eda74cf39a}\label{structtiff_a6088fcaae4547b6714ccd0eda74cf39a}} 
+\hyperlink{structclient__info}{T\+I\+F\+F\+Client\+Info\+Link} $\ast$ {\bfseries tif\+\_\+clientinfo}
+\item 
+\mbox{\Hypertarget{structtiff_af4ad06d391680f3890e67ec45001e5c5}\label{structtiff_af4ad06d391680f3890e67ec45001e5c5}} 
+\hyperlink{struct___t_i_f_f_field_array}{T\+I\+F\+F\+Field\+Array} $\ast$ {\bfseries tif\+\_\+fieldscompat}
+\item 
+\mbox{\Hypertarget{structtiff_ad68a7100ccc6c4f2d4228e1a3775651d}\label{structtiff_ad68a7100ccc6c4f2d4228e1a3775651d}} 
+size\+\_\+t {\bfseries tif\+\_\+nfieldscompat}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/libtiff/tiffiop.\+h\end{DoxyCompactItemize}

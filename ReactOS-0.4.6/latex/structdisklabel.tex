@@ -1,0 +1,202 @@
+\hypertarget{structdisklabel}{}\section{disklabel结构体 参考}
+\label{structdisklabel}\index{disklabel@{disklabel}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdisklabel_1_1partition}{partition}
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structdisklabel_ab0580251dc18386ef40930cb4dc1a8a1}\label{structdisklabel_ab0580251dc18386ef40930cb4dc1a8a1}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+magic}
+\item 
+\mbox{\Hypertarget{structdisklabel_ae5e9ad8ed6ded42500647b8394129f8b}\label{structdisklabel_ae5e9ad8ed6ded42500647b8394129f8b}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+type}
+\item 
+\mbox{\Hypertarget{structdisklabel_ab5ccbe4deb8ba6579c8e3707392b26f9}\label{structdisklabel_ab5ccbe4deb8ba6579c8e3707392b26f9}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+subtype}
+\item 
+\mbox{\Hypertarget{structdisklabel_a4f0f898a2110cb65fd71aaef171df0d4}\label{structdisklabel_a4f0f898a2110cb65fd71aaef171df0d4}} 
+char {\bfseries d\+\_\+typename} \mbox{[}16\mbox{]}
+\item 
+\mbox{\Hypertarget{structdisklabel_aead1128f19b6f1054bf011f0bf24c873}\label{structdisklabel_aead1128f19b6f1054bf011f0bf24c873}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char {\bfseries un\_d\_packname} \mbox{[}16\mbox{]}\\
+\>struct \{\\
+\>\>char $\ast$ {\bfseries un\_d\_boot0}\\
+\>\>char $\ast$ {\bfseries un\_d\_boot1}\\
+\>\} {\bfseries un\_b}\\
+\} {\bfseries d\_un}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structdisklabel_ae0da809490e4f9aaec60f626070b46a8}\label{structdisklabel_ae0da809490e4f9aaec60f626070b46a8}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+secsize}
+\item 
+\mbox{\Hypertarget{structdisklabel_a735c089bf5c30fa46a29e8fa400da48b}\label{structdisklabel_a735c089bf5c30fa46a29e8fa400da48b}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+nsectors}
+\item 
+\mbox{\Hypertarget{structdisklabel_a4a87e0e4006fcbc95228bbeafd4f0be2}\label{structdisklabel_a4a87e0e4006fcbc95228bbeafd4f0be2}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+ntracks}
+\item 
+\mbox{\Hypertarget{structdisklabel_a5c059907166956a5ccd8daa446079842}\label{structdisklabel_a5c059907166956a5ccd8daa446079842}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+ncylinders}
+\item 
+\mbox{\Hypertarget{structdisklabel_a336f48a0a1fc4a74561bf30c31f2d172}\label{structdisklabel_a336f48a0a1fc4a74561bf30c31f2d172}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+secpercyl}
+\item 
+\mbox{\Hypertarget{structdisklabel_a9a2c924038ceaeb1a372048455f1964d}\label{structdisklabel_a9a2c924038ceaeb1a372048455f1964d}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+secperunit}
+\item 
+\mbox{\Hypertarget{structdisklabel_a336f90ff69b51dd6b5780142b5e164a7}\label{structdisklabel_a336f90ff69b51dd6b5780142b5e164a7}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+sparespertrack}
+\item 
+\mbox{\Hypertarget{structdisklabel_a1f2fcb7b6a51f789e80469bb58b474f6}\label{structdisklabel_a1f2fcb7b6a51f789e80469bb58b474f6}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+sparespercyl}
+\item 
+\mbox{\Hypertarget{structdisklabel_ac3f2b1e7d3f54d0b9e7d6e4786dbd692}\label{structdisklabel_ac3f2b1e7d3f54d0b9e7d6e4786dbd692}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+acylinders}
+\item 
+\mbox{\Hypertarget{structdisklabel_a565e7267a8b0cdea5c4100144940d351}\label{structdisklabel_a565e7267a8b0cdea5c4100144940d351}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+rpm}
+\item 
+\mbox{\Hypertarget{structdisklabel_a4265f71b6c98f3fec5eee76f0aff1e88}\label{structdisklabel_a4265f71b6c98f3fec5eee76f0aff1e88}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+interleave}
+\item 
+\mbox{\Hypertarget{structdisklabel_ae711ef3e7aad5e0d7603da7a95ffb889}\label{structdisklabel_ae711ef3e7aad5e0d7603da7a95ffb889}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+trackskew}
+\item 
+\mbox{\Hypertarget{structdisklabel_aa4cbf48789ecea709aa6244acb8f380f}\label{structdisklabel_aa4cbf48789ecea709aa6244acb8f380f}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+cylskew}
+\item 
+\mbox{\Hypertarget{structdisklabel_a39c121b0c82f20342477a0c455155fda}\label{structdisklabel_a39c121b0c82f20342477a0c455155fda}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+headswitch}
+\item 
+\mbox{\Hypertarget{structdisklabel_ad8ab3cd6cb8cda48c419becd9f13493b}\label{structdisklabel_ad8ab3cd6cb8cda48c419becd9f13493b}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+trkseek}
+\item 
+\mbox{\Hypertarget{structdisklabel_aea92be66ec1a77c462b2d26a4512c308}\label{structdisklabel_aea92be66ec1a77c462b2d26a4512c308}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+flags}
+\item 
+\mbox{\Hypertarget{structdisklabel_ae7fdadb0a7c1cab3572ffee52b2f7dcd}\label{structdisklabel_ae7fdadb0a7c1cab3572ffee52b2f7dcd}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+drivedata} \mbox{[}N\+D\+D\+A\+TA\mbox{]}
+\item 
+\mbox{\Hypertarget{structdisklabel_adc1ca1fb6cfb23a2e0799ce428dad1de}\label{structdisklabel_adc1ca1fb6cfb23a2e0799ce428dad1de}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+spare} \mbox{[}N\+S\+P\+A\+RE\mbox{]}
+\item 
+\mbox{\Hypertarget{structdisklabel_a41c402e54423bcb9bd341371400ce290}\label{structdisklabel_a41c402e54423bcb9bd341371400ce290}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+magic2}
+\item 
+\mbox{\Hypertarget{structdisklabel_adba9a7871f8d51fe8de5bf1d2c5d9481}\label{structdisklabel_adba9a7871f8d51fe8de5bf1d2c5d9481}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+checksum}
+\item 
+\mbox{\Hypertarget{structdisklabel_aea37a6c3755034ad9b0f381319517e90}\label{structdisklabel_aea37a6c3755034ad9b0f381319517e90}} 
+u\+\_\+int16\+\_\+t {\bfseries d\+\_\+npartitions}
+\item 
+\mbox{\Hypertarget{structdisklabel_a39948880763e7be5f457f2a4ad95641b}\label{structdisklabel_a39948880763e7be5f457f2a4ad95641b}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+bbsize}
+\item 
+\mbox{\Hypertarget{structdisklabel_a73d78381c6cb5c96e68c80f6e91fa501}\label{structdisklabel_a73d78381c6cb5c96e68c80f6e91fa501}} 
+u\+\_\+int32\+\_\+t {\bfseries d\+\_\+sbsize}
+\item 
+\mbox{\Hypertarget{structdisklabel_a44a707552b0a0f0ce0032c8a0afafc7e}\label{structdisklabel_a44a707552b0a0f0ce0032c8a0afafc7e}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structdisklabel_1_1partition}{disklabel\+::partition} {\bfseries d\+\_\+partitions} \mbox{[}M\+A\+X\+P\+A\+R\+T\+I\+T\+I\+O\+NS\mbox{]}
+\item 
+\mbox{\Hypertarget{structdisklabel_a433b5a2888ae29c9ba0ee33a6b4584f3}\label{structdisklabel_a433b5a2888ae29c9ba0ee33a6b4584f3}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+magic}
+\item 
+\mbox{\Hypertarget{structdisklabel_a44730180910b2ddc902cf0b962725491}\label{structdisklabel_a44730180910b2ddc902cf0b962725491}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+type}
+\item 
+\mbox{\Hypertarget{structdisklabel_a0c295ec87db0cd6322ee57ae28103ea7}\label{structdisklabel_a0c295ec87db0cd6322ee57ae28103ea7}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+subtype}
+\item 
+\mbox{\Hypertarget{structdisklabel_aadf3b114f52d155e593e8a825d514576}\label{structdisklabel_aadf3b114f52d155e593e8a825d514576}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char {\bfseries un\_d\_packname} \mbox{[}16\mbox{]}\\
+\>struct \{\\
+\>\>char $\ast$ {\bfseries un\_d\_boot0}\\
+\>\>char $\ast$ {\bfseries un\_d\_boot1}\\
+\>\} {\bfseries un\_b}\\
+\} {\bfseries d\_un}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structdisklabel_a474bd47d95036fd96671af616b7a21be}\label{structdisklabel_a474bd47d95036fd96671af616b7a21be}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+secsize}
+\item 
+\mbox{\Hypertarget{structdisklabel_a5047ee047c87fb8aa19ddc1b8a41ea4e}\label{structdisklabel_a5047ee047c87fb8aa19ddc1b8a41ea4e}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+nsectors}
+\item 
+\mbox{\Hypertarget{structdisklabel_a0f3cd4ca74b3a6aaf34228e79a9d11ba}\label{structdisklabel_a0f3cd4ca74b3a6aaf34228e79a9d11ba}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+ntracks}
+\item 
+\mbox{\Hypertarget{structdisklabel_aed54d2a3dfed7ace5bbf4c8a6a4a20cb}\label{structdisklabel_aed54d2a3dfed7ace5bbf4c8a6a4a20cb}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+ncylinders}
+\item 
+\mbox{\Hypertarget{structdisklabel_aaeb7e97c991595492df2f9356d67f5cc}\label{structdisklabel_aaeb7e97c991595492df2f9356d67f5cc}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+secpercyl}
+\item 
+\mbox{\Hypertarget{structdisklabel_a8ef0a758a93e49047b94532098af394b}\label{structdisklabel_a8ef0a758a93e49047b94532098af394b}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+secperunit}
+\item 
+\mbox{\Hypertarget{structdisklabel_a4c7dc0f0cdbdc4d62e42e7240bf03be5}\label{structdisklabel_a4c7dc0f0cdbdc4d62e42e7240bf03be5}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+sparespertrack}
+\item 
+\mbox{\Hypertarget{structdisklabel_a7438b24842c6c40fdb55c60b08c6af4b}\label{structdisklabel_a7438b24842c6c40fdb55c60b08c6af4b}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+sparespercyl}
+\item 
+\mbox{\Hypertarget{structdisklabel_a4a4f05eae7d457bea4008135a028dfa3}\label{structdisklabel_a4a4f05eae7d457bea4008135a028dfa3}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+acylinders}
+\item 
+\mbox{\Hypertarget{structdisklabel_acd2e4278de6a4c8e93dd9b1804ecaa70}\label{structdisklabel_acd2e4278de6a4c8e93dd9b1804ecaa70}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+rpm}
+\item 
+\mbox{\Hypertarget{structdisklabel_a6f4e3ca63296d305c6cbcd74cead0e08}\label{structdisklabel_a6f4e3ca63296d305c6cbcd74cead0e08}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+interleave}
+\item 
+\mbox{\Hypertarget{structdisklabel_a5d604b0d8b171e8a650b3d3ef0b8984b}\label{structdisklabel_a5d604b0d8b171e8a650b3d3ef0b8984b}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+trackskew}
+\item 
+\mbox{\Hypertarget{structdisklabel_a14023fda8a2cdee587084c8b69e8afa7}\label{structdisklabel_a14023fda8a2cdee587084c8b69e8afa7}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+cylskew}
+\item 
+\mbox{\Hypertarget{structdisklabel_a68cb8783bb6462e553c7dbc483364978}\label{structdisklabel_a68cb8783bb6462e553c7dbc483364978}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+headswitch}
+\item 
+\mbox{\Hypertarget{structdisklabel_a73358d015514180a60bcaca1d9b35346}\label{structdisklabel_a73358d015514180a60bcaca1d9b35346}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+trkseek}
+\item 
+\mbox{\Hypertarget{structdisklabel_ae438aa2d61d18c3f565ebefa611a9f3d}\label{structdisklabel_ae438aa2d61d18c3f565ebefa611a9f3d}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+flags}
+\item 
+\mbox{\Hypertarget{structdisklabel_ae15cb6bbc69e5d2be5a81f01c08f3295}\label{structdisklabel_ae15cb6bbc69e5d2be5a81f01c08f3295}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+drivedata} \mbox{[}N\+D\+D\+A\+TA\mbox{]}
+\item 
+\mbox{\Hypertarget{structdisklabel_acb7d1dccd78ac10ec5089b30fcaaac91}\label{structdisklabel_acb7d1dccd78ac10ec5089b30fcaaac91}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+spare} \mbox{[}N\+S\+P\+A\+RE\mbox{]}
+\item 
+\mbox{\Hypertarget{structdisklabel_a71bccbf7809c4f3244e2965c324b5312}\label{structdisklabel_a71bccbf7809c4f3244e2965c324b5312}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+magic2}
+\item 
+\mbox{\Hypertarget{structdisklabel_ab1387801b1e72b2ce339e0eb7689030b}\label{structdisklabel_ab1387801b1e72b2ce339e0eb7689030b}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+checksum}
+\item 
+\mbox{\Hypertarget{structdisklabel_a21ad6737e156b6b2405be341486c772d}\label{structdisklabel_a21ad6737e156b6b2405be341486c772d}} 
+\hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} {\bfseries d\+\_\+npartitions}
+\item 
+\mbox{\Hypertarget{structdisklabel_a6ba03df5b2abb8c611af8163184bc226}\label{structdisklabel_a6ba03df5b2abb8c611af8163184bc226}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+bbsize}
+\item 
+\mbox{\Hypertarget{structdisklabel_ab96d5d1966acd38da076ea15c74007bd}\label{structdisklabel_ab96d5d1966acd38da076ea15c74007bd}} 
+\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{U\+I\+N\+T32} {\bfseries d\+\_\+sbsize}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/ffs/inc/disklabel.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/fs\+\_\+rec/ffs.\+h\end{DoxyCompactItemize}

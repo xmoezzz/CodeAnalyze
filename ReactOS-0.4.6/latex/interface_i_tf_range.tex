@@ -1,0 +1,124 @@
+\hypertarget{interface_i_tf_range}{}\section{I\+Tf\+Range接口 参考}
+\label{interface_i_tf_range}\index{I\+Tf\+Range@{I\+Tf\+Range}}
+类 I\+Tf\+Range 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_tf_range}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_tf_range_1_1_t_f___h_a_l_t_c_o_n_d}{T\+F\+\_\+\+H\+A\+L\+T\+C\+O\+ND}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a24633316494369376b868625a4cec9a4}\label{interface_i_tf_range_a24633316494369376b868625a4cec9a4}} 
+enum {\bfseries Tf\+Gravity} \{ {\bfseries T\+F\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+B\+A\+C\+K\+W\+A\+RD} = 0, 
+{\bfseries T\+F\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+F\+O\+R\+W\+A\+RD} = 1
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_abdb232649ff8221654eaa588c461f808}\label{interface_i_tf_range_abdb232649ff8221654eaa588c461f808}} 
+enum {\bfseries Tf\+Shift\+Dir} \{ {\bfseries T\+F\+\_\+\+S\+D\+\_\+\+B\+A\+C\+K\+W\+A\+RD} = 0, 
+{\bfseries T\+F\+\_\+\+S\+D\+\_\+\+F\+O\+R\+W\+A\+RD} = 1
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a5c396aa65c5352c6092fa550727e8570}\label{interface_i_tf_range_a5c396aa65c5352c6092fa550727e8570}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_tf_range_1_1_t_f___h_a_l_t_c_o_n_d}{I\+Tf\+Range\+::\+T\+F\+\_\+\+H\+A\+L\+T\+C\+O\+ND} {\bfseries T\+F\+\_\+\+H\+A\+L\+T\+C\+O\+ND}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a1c023454d043f720e42ed87985d2b8b1}\label{interface_i_tf_range_a1c023454d043f720e42ed87985d2b8b1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Text} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}out, size\+\_\+is(cch\+Max), length\+\_\+is($\ast$pcch)\mbox{]} W\+C\+H\+AR $\ast$pch\+Text, \mbox{[}in\mbox{]} U\+L\+O\+NG cch\+Max, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcch)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a6530bb5682de398d3a842883316c5783}\label{interface_i_tf_range_a6530bb5682de398d3a842883316c5783}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Text} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in, size\+\_\+is(cch), \hyperlink{interfaceunique}{unique}\mbox{]} const W\+C\+H\+AR $\ast$pch\+Text, \mbox{[}in\mbox{]} L\+O\+NG cch)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a27d4c11a180d9506059b5c4d56ab60ab}\label{interface_i_tf_range_a27d4c11a180d9506059b5c4d56ab60ab}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Formatted\+Text} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}out\mbox{]} \hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$$\ast$pp\+Data\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_abf295a9fb8ceb61c5ea270ff519f53e5}\label{interface_i_tf_range_abf295a9fb8ceb61c5ea270ff519f53e5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Embedded} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid\+Service, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppunk)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_ab8f46de4be4ac386a77bedf15c9c1a1a}\label{interface_i_tf_range_ab8f46de4be4ac386a77bedf15c9c1a1a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Insert\+Embedded} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} \hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$p\+Data\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a390db16a9de79456cd99070ad260cbfb}\label{interface_i_tf_range_a390db16a9de79456cd99070ad260cbfb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Shift\+Start} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} L\+O\+NG cch\+Req, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pcch, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{struct_i_tf_range_1_1_t_f___h_a_l_t_c_o_n_d}{T\+F\+\_\+\+H\+A\+L\+T\+C\+O\+ND} $\ast$p\+Halt)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a9195f598bcfd24904ea856f74e9dafe5}\label{interface_i_tf_range_a9195f598bcfd24904ea856f74e9dafe5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Shift\+End} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} L\+O\+NG cch\+Req, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pcch, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const \hyperlink{struct_i_tf_range_1_1_t_f___h_a_l_t_c_o_n_d}{T\+F\+\_\+\+H\+A\+L\+T\+C\+O\+ND} $\ast$p\+Halt)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a00e928660919fcf7e2f1c5be080e9026}\label{interface_i_tf_range_a00e928660919fcf7e2f1c5be080e9026}} 
+H\+R\+E\+S\+U\+LT {\bfseries Shift\+Start\+To\+Range} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$p\+Range, \mbox{[}in\mbox{]} Tf\+Anchor a\+Pos)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a4a416d81f450132723cbb81c3cc76772}\label{interface_i_tf_range_a4a416d81f450132723cbb81c3cc76772}} 
+H\+R\+E\+S\+U\+LT {\bfseries Shift\+End\+To\+Range} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$p\+Range, \mbox{[}in\mbox{]} Tf\+Anchor a\+Pos)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_ac47c6bf380fef398c826ccee5c17d767}\label{interface_i_tf_range_ac47c6bf380fef398c826ccee5c17d767}} 
+H\+R\+E\+S\+U\+LT {\bfseries Shift\+Start\+Region} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} Tf\+Shift\+Dir dir, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+No\+Region)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a79ea858c7a98463a7e62fbc46758ce60}\label{interface_i_tf_range_a79ea858c7a98463a7e62fbc46758ce60}} 
+H\+R\+E\+S\+U\+LT {\bfseries Shift\+End\+Region} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} Tf\+Shift\+Dir dir, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+No\+Region)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a386133746110b1a417552c848d337643}\label{interface_i_tf_range_a386133746110b1a417552c848d337643}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Empty} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Empty)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a29af527955f90fac8dfe5081ade3c109}\label{interface_i_tf_range_a29af527955f90fac8dfe5081ade3c109}} 
+H\+R\+E\+S\+U\+LT {\bfseries Collapse} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} Tf\+Anchor a\+Pos)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a3540d9cb7b844ef63b7160902a62a107}\label{interface_i_tf_range_a3540d9cb7b844ef63b7160902a62a107}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Equal\+Start} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$p\+With, \mbox{[}in\mbox{]} Tf\+Anchor a\+Pos, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Equal)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_ae22e2a77a5d57f8081a109e341bd0a4f}\label{interface_i_tf_range_ae22e2a77a5d57f8081a109e341bd0a4f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Equal\+End} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$p\+With, \mbox{[}in\mbox{]} Tf\+Anchor a\+Pos, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Equal)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a2d4a710b41acbf267b88cf8a4bb86ace}\label{interface_i_tf_range_a2d4a710b41acbf267b88cf8a4bb86ace}} 
+H\+R\+E\+S\+U\+LT {\bfseries Compare\+Start} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$p\+With, \mbox{[}in\mbox{]} Tf\+Anchor a\+Pos, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pl\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a00ae6a110fd43eefe77a717c88ddaed4}\label{interface_i_tf_range_a00ae6a110fd43eefe77a717c88ddaed4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Compare\+End} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$p\+With, \mbox{[}in\mbox{]} Tf\+Anchor a\+Pos, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pl\+Result)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a23d35a1da7865e97dfa949dc6b07b36c}\label{interface_i_tf_range_a23d35a1da7865e97dfa949dc6b07b36c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Adjust\+For\+Insert} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} U\+L\+O\+NG cch\+Insert, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Insert\+Ok)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a894aa71e8f5fbcb552f82602c980140b}\label{interface_i_tf_range_a894aa71e8f5fbcb552f82602c980140b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Gravity} (\mbox{[}out\mbox{]} Tf\+Gravity $\ast$pg\+Start, \mbox{[}out\mbox{]} Tf\+Gravity $\ast$pg\+End)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_ad509ebcab19644cd074cc9d7ab415e82}\label{interface_i_tf_range_ad509ebcab19644cd074cc9d7ab415e82}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Gravity} (\mbox{[}in\mbox{]} Tf\+Edit\+Cookie ec, \mbox{[}in\mbox{]} Tf\+Gravity g\+Start, \mbox{[}in\mbox{]} Tf\+Gravity g\+End)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a31a537cba0106f59d9b0e70966204f32}\label{interface_i_tf_range_a31a537cba0106f59d9b0e70966204f32}} 
+H\+R\+E\+S\+U\+LT {\bfseries Clone} (\mbox{[}out\mbox{]} \hyperlink{interface_i_tf_range}{I\+Tf\+Range} $\ast$$\ast$pp\+Clone)
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a6c39e2c511753325cea83d071570c4be}\label{interface_i_tf_range_a6c39e2c511753325cea83d071570c4be}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Context} (\mbox{[}out\mbox{]} \hyperlink{interface_i_tf_context}{I\+Tf\+Context} $\ast$$\ast$pp\+Context)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_aa1537f559136a65b49867b2fbbd8a2b9}\label{interface_i_tf_range_aa1537f559136a65b49867b2fbbd8a2b9}} 
+const W\+C\+H\+AR {\bfseries T\+F\+\_\+\+C\+H\+A\+R\+\_\+\+E\+M\+B\+E\+D\+D\+ED} = T\+S\+\_\+\+C\+H\+A\+R\+\_\+\+E\+M\+B\+E\+D\+D\+ED
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a01028a24e2ef8630ca761aa9fa7b22db}\label{interface_i_tf_range_a01028a24e2ef8630ca761aa9fa7b22db}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+H\+F\+\_\+\+O\+B\+J\+E\+CT} = 1
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a2a01c4611d2b87969fe9bb46ccf58857}\label{interface_i_tf_range_a2a01c4611d2b87969fe9bb46ccf58857}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+T\+F\+\_\+\+M\+O\+V\+E\+S\+T\+A\+RT} = 1
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_ac0a98fe8715e895a7c9e555ddc3a67f7}\label{interface_i_tf_range_ac0a98fe8715e895a7c9e555ddc3a67f7}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+T\+F\+\_\+\+I\+G\+N\+O\+R\+E\+E\+ND} = 2
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_a3c3b94dd26e4955d1031c958276c6e2f}\label{interface_i_tf_range_a3c3b94dd26e4955d1031c958276c6e2f}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+S\+T\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON} = 1
+\item 
+\mbox{\Hypertarget{interface_i_tf_range_ad4c7c6fd6490e9300afa691e5f5d4b18}\label{interface_i_tf_range_ad4c7c6fd6490e9300afa691e5f5d4b18}} 
+const D\+W\+O\+RD {\bfseries T\+F\+\_\+\+I\+E\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON} = 1
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/msctf.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/drivers/filesystems/reiserfs/inc/linux/reiserfs_fs_i.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_283433fb0e3adc3d407d1e24f0718b0e.html">drivers</a></li><li class="navelem"><a class="el" href="dir_105e4ae8457a45db49d439aaa8683911.html">filesystems</a></li><li class="navelem"><a class="el" href="dir_4c5ce5c380599f27e5eb85342e629f26.html">reiserfs</a></li><li class="navelem"><a class="el" href="dir_3b7f1dfd12946ea1f854fc39772b8539.html">inc</a></li><li class="navelem"><a class="el" href="dir_8a26885259d9ec5905fa4b5a88776204.html">linux</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">reiserfs_fs_i.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _REISER_FS_I</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _REISER_FS_I</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;linux/list.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">struct </span><a class="code" href="structreiserfs__journal__list.html">reiserfs_journal_list</a>;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    i_item_key_version_mask    =  0x0001,</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    i_stat_data_version_mask   =  0x0002,</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    i_pack_on_close_mask       =  0x0004,</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    i_nopack_mask              =  0x0008,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    i_link_saved_unlink_mask   =  0x0010,</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    i_link_saved_truncate_mask =  0x0020,</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    i_priv_object              =  0x0080,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    i_has_xattr_dir            =  0x0100,</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    i_data_log                 =  0x0200,</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} reiserfs_inode_flags;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structreiserfs__inode__info.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structreiserfs__inode__info.html">reiserfs_inode_info</a> {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    __u32 i_key [4];<span class="comment">/* key is still 4 32 bit integers */</span></div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structreiserfs__inode__info.html#a08045363dd99c56bf8a7b66697898e7c">   36</a></span>&#160;    __u32 <a class="code" href="structreiserfs__inode__info.html#a08045363dd99c56bf8a7b66697898e7c">i_flags</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    __u32 i_first_direct_byte; <span class="comment">// offset of first byte stored in direct item.</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/* copy of persistent inode flags read from sd_attrs. */</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    __u32 i_attrs;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> i_prealloc_block; <span class="comment">/* first unused block of a sequence of unused blocks */</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> i_prealloc_count; <span class="comment">/* length of that sequence */</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">struct </span><a class="code" href="structlist__head.html">list_head</a> i_prealloc_list; <span class="comment">/* per-transaction list of inodes which</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">                                       * have preallocated blocks */</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">unsigned</span> new_packing_locality:1;  <span class="comment">/* new_packig_locality is created; new blocks</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">                       * for the contents of this directory should be</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">                       * displaced */</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/* we use these for fsync or O_SYNC to decide which transaction</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    ** needs to be committed in order for this inode to be properly</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">    ** flushed */</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> i_trans_id ;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span><a class="code" href="structreiserfs__journal__list.html">reiserfs_journal_list</a> *i_jl;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">struct </span>posix_acl *i_acl_access;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">struct </span>posix_acl *i_acl_default;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">struct </span>rw_semaphore xattr_sem;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">struct </span><a class="code" href="structinode.html">inode</a> vfs_inode;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structinode_html"><div class="ttname"><a href="structinode.html">inode</a></div><div class="ttdef"><b>Definition:</b> fs.h:97</div></div>
+<div class="ttc" id="structlist__head_html"><div class="ttname"><a href="structlist__head.html">list_head</a></div><div class="ttdef"><b>Definition:</b> list.h:15</div></div>
+<div class="ttc" id="structreiserfs__inode__info_html_a08045363dd99c56bf8a7b66697898e7c"><div class="ttname"><a href="structreiserfs__inode__info.html#a08045363dd99c56bf8a7b66697898e7c">reiserfs_inode_info::i_flags</a></div><div class="ttdeci">__u32 i_flags</div><div class="ttdef"><b>Definition:</b> reiserfs_fs_i.h:36</div></div>
+<div class="ttc" id="structreiserfs__inode__info_html"><div class="ttname"><a href="structreiserfs__inode__info.html">reiserfs_inode_info</a></div><div class="ttdef"><b>Definition:</b> reiserfs_fs_i.h:32</div></div>
+<div class="ttc" id="structreiserfs__journal__list_html"><div class="ttname"><a href="structreiserfs__journal__list.html">reiserfs_journal_list</a></div><div class="ttdef"><b>Definition:</b> reiserfs_fs_sb.h:148</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,68 @@
+\hypertarget{interface_i_cor_debug_module}{}\section{I\+Cor\+Debug\+Module接口 参考}
+\label{interface_i_cor_debug_module}\index{I\+Cor\+Debug\+Module@{I\+Cor\+Debug\+Module}}
+类 I\+Cor\+Debug\+Module 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug_module}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a891c7aadcdfe6a4eb0e368be1897e541}\label{interface_i_cor_debug_module_a891c7aadcdfe6a4eb0e368be1897e541}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Process} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$$\ast$pp\+Process)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a62264c4567900f8e143ffedbec5b3b1b}\label{interface_i_cor_debug_module_a62264c4567900f8e143ffedbec5b3b1b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Base\+Address} (\mbox{[}out\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS $\ast$p\+Address)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_afe94796059444959e7c36de14bd81e0e}\label{interface_i_cor_debug_module_afe94796059444959e7c36de14bd81e0e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Assembly} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_assembly}{I\+Cor\+Debug\+Assembly} $\ast$$\ast$pp\+Assembly)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a249b4ea4feac19e49e9559f74746228b}\label{interface_i_cor_debug_module_a249b4ea4feac19e49e9559f74746228b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Name} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G32 cch\+Name, \mbox{[}out\mbox{]} U\+L\+O\+N\+G32 $\ast$pcch\+Name, \mbox{[}out\mbox{]} W\+C\+H\+AR sz\+Name\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a6409058b796d7cd86926d2c95a0a2ddb}\label{interface_i_cor_debug_module_a6409058b796d7cd86926d2c95a0a2ddb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enable\+J\+I\+T\+Debugging} (\mbox{[}in\mbox{]} B\+O\+OL b\+Track\+J\+I\+T\+Info, \mbox{[}in\mbox{]} B\+O\+OL b\+Allow\+Jit\+Opts)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_aaeb23a0407bddf7fc540bacd7be5435b}\label{interface_i_cor_debug_module_aaeb23a0407bddf7fc540bacd7be5435b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enable\+Class\+Load\+Callbacks} (\mbox{[}in\mbox{]} B\+O\+OL b\+Class\+Load\+Callbacks)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a5bfaff259e96b5918a3a258f671c2e07}\label{interface_i_cor_debug_module_a5bfaff259e96b5918a3a258f671c2e07}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Function\+From\+Token} (\mbox{[}in\mbox{]} md\+Method\+Def method\+Def, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_function}{I\+Cor\+Debug\+Function} $\ast$$\ast$pp\+Function)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a6643c887dd3f8d80b485594819d17468}\label{interface_i_cor_debug_module_a6643c887dd3f8d80b485594819d17468}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Function\+From\+R\+VA} (\mbox{[}in\mbox{]} C\+O\+R\+D\+B\+\_\+\+A\+D\+D\+R\+E\+SS rva, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_function}{I\+Cor\+Debug\+Function} $\ast$$\ast$pp\+Function)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_aaa3939418bf86fb4318b03f60df0b0ab}\label{interface_i_cor_debug_module_aaa3939418bf86fb4318b03f60df0b0ab}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Class\+From\+Token} (\mbox{[}in\mbox{]} md\+Type\+Def type\+Def, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_class}{I\+Cor\+Debug\+Class} $\ast$$\ast$pp\+Class)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a7e1ad4410411253327e63c38bcf993bb}\label{interface_i_cor_debug_module_a7e1ad4410411253327e63c38bcf993bb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Breakpoint} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_module_breakpoint}{I\+Cor\+Debug\+Module\+Breakpoint} $\ast$$\ast$pp\+Breakpoint)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_aa1c45249c67c5856f7804313464eddaa}\label{interface_i_cor_debug_module_aa1c45249c67c5856f7804313464eddaa}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Edit\+And\+Continue\+Snapshot} (\mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_edit_and_continue_snapshot}{I\+Cor\+Debug\+Edit\+And\+Continue\+Snapshot} $\ast$$\ast$pp\+Edit\+And\+Continue\+Snapshot)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_aad0163efe9689cacf8330f7130de6d97}\label{interface_i_cor_debug_module_aad0163efe9689cacf8330f7130de6d97}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Meta\+Data\+Interface} (\mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$pp\+Obj)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_ae40b25cffe8f0a81e75ee53bc08ec729}\label{interface_i_cor_debug_module_ae40b25cffe8f0a81e75ee53bc08ec729}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Token} (\mbox{[}out\mbox{]} md\+Module $\ast$p\+Token)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_acf1c263b22e7a9ba550f89f83bb108cb}\label{interface_i_cor_debug_module_acf1c263b22e7a9ba550f89f83bb108cb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Dynamic} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$p\+Dynamic)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_aa29da1944521b83e4c79d30797c2ee5f}\label{interface_i_cor_debug_module_aa29da1944521b83e4c79d30797c2ee5f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Global\+Variable\+Value} (\mbox{[}in\mbox{]} md\+Field\+Def field\+Def, \mbox{[}out\mbox{]} \hyperlink{interface_i_cor_debug_value}{I\+Cor\+Debug\+Value} $\ast$$\ast$pp\+Value)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_aa7c97bbedcd1af70a7d0a3dad7dea4c3}\label{interface_i_cor_debug_module_aa7c97bbedcd1af70a7d0a3dad7dea4c3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Size} (\mbox{[}out\mbox{]} U\+L\+O\+N\+G32 $\ast$pc\+Bytes)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_module_a25cd5da20b09e1a636ed9257ee412f4a}\label{interface_i_cor_debug_module_a25cd5da20b09e1a636ed9257ee412f4a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+In\+Memory} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$p\+In\+Memory)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

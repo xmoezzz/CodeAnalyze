@@ -1,0 +1,104 @@
+\hypertarget{interface_i_scheduled_work_item}{}\section{I\+Scheduled\+Work\+Item接口 参考}
+\label{interface_i_scheduled_work_item}\index{I\+Scheduled\+Work\+Item@{I\+Scheduled\+Work\+Item}}
+类 I\+Scheduled\+Work\+Item 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_scheduled_work_item}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_aaa0647de457a7c9ed018d4623cceb528}\label{interface_i_scheduled_work_item_aaa0647de457a7c9ed018d4623cceb528}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Trigger} (\mbox{[}out\mbox{]} W\+O\+RD $\ast$pi\+New\+Trigger, \mbox{[}out\mbox{]} \hyperlink{interface_i_task_trigger}{I\+Task\+Trigger} $\ast$$\ast$pp\+Trigger)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_af1bbb277f5678e10c37d784a823d495a}\label{interface_i_scheduled_work_item_af1bbb277f5678e10c37d784a823d495a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete\+Trigger} (\mbox{[}in\mbox{]} W\+O\+RD i\+Trigger)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a3f23c8ba9c1fe79b9b23b5185faf2044}\label{interface_i_scheduled_work_item_a3f23c8ba9c1fe79b9b23b5185faf2044}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Trigger\+Count} (\mbox{[}out\mbox{]} W\+O\+RD $\ast$pl\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a3d7e13ce4a90aa89e93a54700cc2ea6d}\label{interface_i_scheduled_work_item_a3d7e13ce4a90aa89e93a54700cc2ea6d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Trigger} (\mbox{[}in\mbox{]} W\+O\+RD i\+Trigger, \mbox{[}out\mbox{]} \hyperlink{interface_i_task_trigger}{I\+Task\+Trigger} $\ast$$\ast$pp\+Trigger)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a700bd14489c37a61e55a8b12293ce6c0}\label{interface_i_scheduled_work_item_a700bd14489c37a61e55a8b12293ce6c0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Trigger\+String} (\mbox{[}in\mbox{]} W\+O\+RD i\+Trigger, \mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$ppwsz\+Trigger)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a67e47b3bb9db744a438bc511e8885c81}\label{interface_i_scheduled_work_item_a67e47b3bb9db744a438bc511e8885c81}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Run\+Times} (\mbox{[}in\mbox{]} const \hyperlink{struct___s_y_s_t_e_m_t_i_m_e}{L\+P\+S\+Y\+S\+T\+E\+M\+T\+I\+ME} pst\+Begin, \mbox{[}in\mbox{]} const \hyperlink{struct___s_y_s_t_e_m_t_i_m_e}{L\+P\+S\+Y\+S\+T\+E\+M\+T\+I\+ME} pst\+End, \mbox{[}in, out\mbox{]} W\+O\+RD $\ast$p\+Count, \mbox{[}out\mbox{]} \hyperlink{struct___s_y_s_t_e_m_t_i_m_e}{L\+P\+S\+Y\+S\+T\+E\+M\+T\+I\+ME} $\ast$rgst\+Task\+Times)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a85b8baf85d590421605a61a62d4bc1de}\label{interface_i_scheduled_work_item_a85b8baf85d590421605a61a62d4bc1de}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Next\+Run\+Time} (\mbox{[}out\mbox{]} \hyperlink{struct___s_y_s_t_e_m_t_i_m_e}{S\+Y\+S\+T\+E\+M\+T\+I\+ME} $\ast$pst\+Next\+Run)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_ad8f16822a9f9d0594be28609726b3d20}\label{interface_i_scheduled_work_item_ad8f16822a9f9d0594be28609726b3d20}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Idle\+Wait} (\mbox{[}in\mbox{]} W\+O\+RD w\+Idle\+Minutes, \mbox{[}in\mbox{]} W\+O\+RD w\+Deadline\+Minutes)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a2034d18d744e35f30c5dc52e77e299b6}\label{interface_i_scheduled_work_item_a2034d18d744e35f30c5dc52e77e299b6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Idle\+Wait} (\mbox{[}out\mbox{]} W\+O\+RD $\ast$pw\+Idle\+Minutes, \mbox{[}out\mbox{]} W\+O\+RD $\ast$pw\+Deadline\+Minutes)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a6182b863e69d7bd3c9324ca3aec41451}\label{interface_i_scheduled_work_item_a6182b863e69d7bd3c9324ca3aec41451}} 
+H\+R\+E\+S\+U\+LT {\bfseries Run} ()
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a8218c6af92bd08b18b725624ade3f49c}\label{interface_i_scheduled_work_item_a8218c6af92bd08b18b725624ade3f49c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Terminate} ()
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a408f7e589b3f419b7665fafb166a153f}\label{interface_i_scheduled_work_item_a408f7e589b3f419b7665fafb166a153f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Edit\+Work\+Item} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} h\+Parent, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reserved)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a1032bf635e03d7a4e56662e39328f8c0}\label{interface_i_scheduled_work_item_a1032bf635e03d7a4e56662e39328f8c0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Most\+Recent\+Run\+Time} (\mbox{[}out\mbox{]} \hyperlink{struct___s_y_s_t_e_m_t_i_m_e}{S\+Y\+S\+T\+E\+M\+T\+I\+ME} $\ast$pst\+Last\+Run)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a698b63b434af5a8fad304c5173dc56de}\label{interface_i_scheduled_work_item_a698b63b434af5a8fad304c5173dc56de}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Status} (\mbox{[}out\mbox{]} H\+R\+E\+S\+U\+LT $\ast$phr\+Status)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a8f10752ab476d2f011e8928975828f6f}\label{interface_i_scheduled_work_item_a8f10752ab476d2f011e8928975828f6f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Exit\+Code} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Exit\+Code)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_aca88114c23316d4ebb8ebccc442e8ed7}\label{interface_i_scheduled_work_item_aca88114c23316d4ebb8ebccc442e8ed7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Comment} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwsz\+Comment)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a23b8a16f14406186feb330bc5034c907}\label{interface_i_scheduled_work_item_a23b8a16f14406186feb330bc5034c907}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Comment} (\mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$ppwsz\+Comment)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_ada3cb74813145f98fa24a2708f5c9501}\label{interface_i_scheduled_work_item_ada3cb74813145f98fa24a2708f5c9501}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Creator} (L\+P\+C\+W\+S\+TR pwsz\+Creator)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_ab5bc2a241acb51cba21439b88d185863}\label{interface_i_scheduled_work_item_ab5bc2a241acb51cba21439b88d185863}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Creator} (\mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$ppwsz\+Creator)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a9bacb4fe5724840a163a51fa2a56eeb0}\label{interface_i_scheduled_work_item_a9bacb4fe5724840a163a51fa2a56eeb0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Work\+Item\+Data} (\mbox{[}in\mbox{]} W\+O\+RD c\+Bytes, \mbox{[}in\mbox{]} B\+Y\+TE rgb\+Data\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a7fce452e785ce19c38af3c2154692861}\label{interface_i_scheduled_work_item_a7fce452e785ce19c38af3c2154692861}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Work\+Item\+Data} (\mbox{[}out\mbox{]} W\+O\+RD $\ast$pc\+Bytes, \mbox{[}out\mbox{]} B\+Y\+TE $\ast$$\ast$pp\+Bytes)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_af8f45e30fe3acd37e1fe8e38d71a2e64}\label{interface_i_scheduled_work_item_af8f45e30fe3acd37e1fe8e38d71a2e64}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Error\+Retry\+Count} (W\+O\+RD w\+Retry\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a4d6f0255f1465d8d4beb0eaa79396667}\label{interface_i_scheduled_work_item_a4d6f0255f1465d8d4beb0eaa79396667}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Error\+Retry\+Count} (\mbox{[}out\mbox{]} W\+O\+RD $\ast$pw\+Retry\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a3ad0c57d1afe238ce4dfbe8dffc6c6eb}\label{interface_i_scheduled_work_item_a3ad0c57d1afe238ce4dfbe8dffc6c6eb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Error\+Retry\+Interval} (W\+O\+RD w\+Retry\+Interval)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_aecb8409bd36006fffa158bf7464a260d}\label{interface_i_scheduled_work_item_aecb8409bd36006fffa158bf7464a260d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Error\+Retry\+Interval} (\mbox{[}out\mbox{]} W\+O\+RD $\ast$pw\+Retry\+Interval)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_ad734c1e3f5d0b170652026e132c75d1f}\label{interface_i_scheduled_work_item_ad734c1e3f5d0b170652026e132c75d1f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Flags} (D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a382e6e9c326150f8d86ebe8d93db74aa}\label{interface_i_scheduled_work_item_a382e6e9c326150f8d86ebe8d93db74aa}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Flags} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a1a6d4d0527adfa684f046acc5f00f80e}\label{interface_i_scheduled_work_item_a1a6d4d0527adfa684f046acc5f00f80e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Account\+Information} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwsz\+Account\+Name, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwsz\+Password)
+\item 
+\mbox{\Hypertarget{interface_i_scheduled_work_item_a29031da1ff61a1cc9b338aaae9109f83}\label{interface_i_scheduled_work_item_a29031da1ff61a1cc9b338aaae9109f83}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Account\+Information} (\mbox{[}out\mbox{]} L\+P\+W\+S\+TR $\ast$ppwsz\+Account\+Name)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/mstask.\+idl\end{DoxyCompactItemize}

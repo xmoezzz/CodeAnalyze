@@ -1,0 +1,59 @@
+\hypertarget{interface_i_ole_undo_manager}{}\section{I\+Ole\+Undo\+Manager接口 参考}
+\label{interface_i_ole_undo_manager}\index{I\+Ole\+Undo\+Manager@{I\+Ole\+Undo\+Manager}}
+类 I\+Ole\+Undo\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_ole_undo_manager}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a55423d99fc2906a83215673c4c98b87c}\label{interface_i_ole_undo_manager_a55423d99fc2906a83215673c4c98b87c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Open} (\mbox{[}in\mbox{]} \hyperlink{interface_i_ole_parent_undo_unit}{I\+Ole\+Parent\+Undo\+Unit} $\ast$p\+P\+UU)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_adcaf574e3014398b20d6a944080c0b9b}\label{interface_i_ole_undo_manager_adcaf574e3014398b20d6a944080c0b9b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Close} (\mbox{[}in\mbox{]} \hyperlink{interface_i_ole_parent_undo_unit}{I\+Ole\+Parent\+Undo\+Unit} $\ast$p\+P\+UU, \mbox{[}in\mbox{]} B\+O\+OL f\+Commit)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a87fe9c99e4ca6a2d6d461351563c9d18}\label{interface_i_ole_undo_manager_a87fe9c99e4ca6a2d6d461351563c9d18}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add} (\mbox{[}in\mbox{]} \hyperlink{interface_i_ole_undo_unit}{I\+Ole\+Undo\+Unit} $\ast$p\+UU)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a2d9a03311d65571928fc91a2866febe3}\label{interface_i_ole_undo_manager_a2d9a03311d65571928fc91a2866febe3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Open\+Parent\+State} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+State)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a0fa2e472fa11d018388e9498082c31bc}\label{interface_i_ole_undo_manager_a0fa2e472fa11d018388e9498082c31bc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Discard\+From} (\mbox{[}in\mbox{]} \hyperlink{interface_i_ole_undo_unit}{I\+Ole\+Undo\+Unit} $\ast$p\+UU)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a8bd13968e00eaaeecb29036bb86d1059}\label{interface_i_ole_undo_manager_a8bd13968e00eaaeecb29036bb86d1059}} 
+H\+R\+E\+S\+U\+LT {\bfseries Undo\+To} (\mbox{[}in\mbox{]} \hyperlink{interface_i_ole_undo_unit}{I\+Ole\+Undo\+Unit} $\ast$p\+UU)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a98b362176c5e305bf9fb8b6d4d0ffe67}\label{interface_i_ole_undo_manager_a98b362176c5e305bf9fb8b6d4d0ffe67}} 
+H\+R\+E\+S\+U\+LT {\bfseries Redo\+To} (\mbox{[}in\mbox{]} \hyperlink{interface_i_ole_undo_unit}{I\+Ole\+Undo\+Unit} $\ast$p\+UU)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a7556e9d35d6f78d6b6d52b0c84a01507}\label{interface_i_ole_undo_manager_a7556e9d35d6f78d6b6d52b0c84a01507}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Undoable} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_ole_undo_units}{I\+Enum\+Ole\+Undo\+Units} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a4f7d5ecb57b9e23d2e6b4ef1037a30da}\label{interface_i_ole_undo_manager_a4f7d5ecb57b9e23d2e6b4ef1037a30da}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Redoable} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_ole_undo_units}{I\+Enum\+Ole\+Undo\+Units} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a9f22b8d5ee0e0f98d059bd6188cedac6}\label{interface_i_ole_undo_manager_a9f22b8d5ee0e0f98d059bd6188cedac6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Last\+Undo\+Description} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$p\+Bstr)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a772e0b87af62dad45bcbc53da27f84ee}\label{interface_i_ole_undo_manager_a772e0b87af62dad45bcbc53da27f84ee}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Last\+Redo\+Description} (\mbox{[}out\mbox{]} B\+S\+TR $\ast$p\+Bstr)
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_aac9a24cf414fd31cb1fe56d1483e8031}\label{interface_i_ole_undo_manager_aac9a24cf414fd31cb1fe56d1483e8031}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enable} (\mbox{[}in\mbox{]} B\+O\+OL f\+Enable)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_ole_undo_manager_a6781385ea4ebf7edf26c43542a38b350}\label{interface_i_ole_undo_manager_a6781385ea4ebf7edf26c43542a38b350}} 
+S\+I\+D\+\_\+\+S\+Ole\+Undo\+Manager typedef \hyperlink{interface_i_ole_undo_manager}{I\+Ole\+Undo\+Manager} $\ast$ {\bfseries L\+P\+O\+L\+E\+U\+N\+D\+O\+M\+A\+N\+A\+G\+ER}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/ocidl.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\hypertarget{ip__addr_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/ipv4/ip\+\_\+addr.c 文件参考}
+\label{ip__addr_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/ipv4/ip\+\_\+addr.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/ipv4/ip\+\_\+addr.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/ip\+\_\+addr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/netif.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ip__addr_8c_afa26f4ff41cd4f7d61b1f0cbd6911057}\label{ip__addr_8c_afa26f4ff41cd4f7d61b1f0cbd6911057}} 
+\#\hyperlink{structdefine}{define} {\bfseries in\+\_\+range}(c,  lo,  up)~((u8\+\_\+t)c $>$= lo \&\& (u8\+\_\+t)c $<$= up)
+\item 
+\mbox{\Hypertarget{ip__addr_8c_a889820984b313e4f379d998ce05892ec}\label{ip__addr_8c_a889820984b313e4f379d998ce05892ec}} 
+\#\hyperlink{structdefine}{define} {\bfseries isprint}(c)~in\+\_\+range(c, 0x20, 0x7f)
+\item 
+\mbox{\Hypertarget{ip__addr_8c_a80e33e966a7ec3facaf0b2b4afaf5be5}\label{ip__addr_8c_a80e33e966a7ec3facaf0b2b4afaf5be5}} 
+\#\hyperlink{structdefine}{define} {\bfseries isdigit}(c)~in\+\_\+range(c, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}9\textquotesingle{})
+\item 
+\mbox{\Hypertarget{ip__addr_8c_a992d0bf21267653eb2ea35a78816c09b}\label{ip__addr_8c_a992d0bf21267653eb2ea35a78816c09b}} 
+\#\hyperlink{structdefine}{define} {\bfseries isxdigit}(c)~(isdigit(c) $\vert$$\vert$ in\+\_\+range(c, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}f\textquotesingle{}) $\vert$$\vert$ in\+\_\+range(c, \textquotesingle{}\hyperlink{struct_a}{A}\textquotesingle{}, \textquotesingle{}F\textquotesingle{}))
+\item 
+\mbox{\Hypertarget{ip__addr_8c_a348a42f50b81be72be7b41de74c3dd5a}\label{ip__addr_8c_a348a42f50b81be72be7b41de74c3dd5a}} 
+\#\hyperlink{structdefine}{define} {\bfseries islower}(c)~in\+\_\+range(c, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}z\textquotesingle{})
+\item 
+\mbox{\Hypertarget{ip__addr_8c_a0c009fd6c0f22a1da6995c59b701a58f}\label{ip__addr_8c_a0c009fd6c0f22a1da6995c59b701a58f}} 
+\#\hyperlink{structdefine}{define} {\bfseries isspace}(c)~(c == \textquotesingle{} \textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}f\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}n\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}r\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}t\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}v\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+u8\+\_\+t \hyperlink{ip__addr_8c_a6cf43f27dbdc8f2b198e26ce940143a3}{ip4\+\_\+addr\+\_\+isbroadcast} (u32\+\_\+t addr, const \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$\hyperlink{structnetif}{netif})
+\item 
+u8\+\_\+t \hyperlink{ip__addr_8c_ab5810d404b0ad1b89ef1323ea1e78071}{ip4\+\_\+addr\+\_\+netmask\+\_\+valid} (u32\+\_\+t netmask)
+\item 
+u32\+\_\+t \hyperlink{ip__addr_8c_a2c05f9138da41115978409e547df9670}{ipaddr\+\_\+addr} (const char $\ast$cp)
+\item 
+int \hyperlink{ip__addr_8c_a4de70fdd7fd36c5b6eaed8b855d5f151}{ipaddr\+\_\+aton} (const char $\ast$cp, ip\+\_\+addr\+\_\+t $\ast$addr)
+\item 
+char $\ast$ \hyperlink{ip__addr_8c_ace12d28aef35bb15962e8563aea571b1}{ipaddr\+\_\+ntoa} (const ip\+\_\+addr\+\_\+t $\ast$addr)
+\item 
+char $\ast$ \hyperlink{ip__addr_8c_a3684dabc0cae597ffb5b51d41f1d886f}{ipaddr\+\_\+ntoa\+\_\+r} (const ip\+\_\+addr\+\_\+t $\ast$addr, char $\ast$buf, int buflen)
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ip__addr_8c_a69542a2fb9d246797553fec03c313d7a}\label{ip__addr_8c_a69542a2fb9d246797553fec03c313d7a}} 
+const ip\+\_\+addr\+\_\+t {\bfseries ip\+\_\+addr\+\_\+any} = \{ I\+P\+A\+D\+D\+R\+\_\+\+A\+NY \}
+\item 
+\mbox{\Hypertarget{ip__addr_8c_af11688e6c2bc5d17ba69950cb27ab7a6}\label{ip__addr_8c_af11688e6c2bc5d17ba69950cb27ab7a6}} 
+const ip\+\_\+addr\+\_\+t {\bfseries ip\+\_\+addr\+\_\+broadcast} = \{ I\+P\+A\+D\+D\+R\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST \}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{namespace_this}{This} is the I\+Pv4 address tools implementation. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{ip__addr_8c_a6cf43f27dbdc8f2b198e26ce940143a3}\label{ip__addr_8c_a6cf43f27dbdc8f2b198e26ce940143a3}} 
+\index{ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}!ip4\+\_\+addr\+\_\+isbroadcast@{ip4\+\_\+addr\+\_\+isbroadcast}}
+\index{ip4\+\_\+addr\+\_\+isbroadcast@{ip4\+\_\+addr\+\_\+isbroadcast}!ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}}
+\subsubsection{\texorpdfstring{ip4\+\_\+addr\+\_\+isbroadcast()}{ip4\_addr\_isbroadcast()}}
+{\footnotesize\ttfamily u8\+\_\+t ip4\+\_\+addr\+\_\+isbroadcast (\begin{DoxyParamCaption}\item[{u32\+\_\+t}]{addr,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$}]{netif }\end{DoxyParamCaption})}
+
+Determine if an address is a broadcast address on a network interface
+
+
+\begin{DoxyParams}{参数}
+{\em addr} & address to be checked \\
+\hline
+{\em netif} & the network interface against which the address is checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+returns non-\/zero if the address is a broadcast address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ip__addr_8c_ab5810d404b0ad1b89ef1323ea1e78071}\label{ip__addr_8c_ab5810d404b0ad1b89ef1323ea1e78071}} 
+\index{ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}!ip4\+\_\+addr\+\_\+netmask\+\_\+valid@{ip4\+\_\+addr\+\_\+netmask\+\_\+valid}}
+\index{ip4\+\_\+addr\+\_\+netmask\+\_\+valid@{ip4\+\_\+addr\+\_\+netmask\+\_\+valid}!ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}}
+\subsubsection{\texorpdfstring{ip4\+\_\+addr\+\_\+netmask\+\_\+valid()}{ip4\_addr\_netmask\_valid()}}
+{\footnotesize\ttfamily u8\+\_\+t ip4\+\_\+addr\+\_\+netmask\+\_\+valid (\begin{DoxyParamCaption}\item[{u32\+\_\+t}]{netmask }\end{DoxyParamCaption})}
+
+Checks if a netmask is valid (starting with ones, then only zeros)
+
+
+\begin{DoxyParams}{参数}
+{\em netmask} & the I\+Pv4 netmask to check (in network byte order!) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+1 if the netmask is valid, 0 if it is not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ip__addr_8c_a2c05f9138da41115978409e547df9670}\label{ip__addr_8c_a2c05f9138da41115978409e547df9670}} 
+\index{ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}!ipaddr\+\_\+addr@{ipaddr\+\_\+addr}}
+\index{ipaddr\+\_\+addr@{ipaddr\+\_\+addr}!ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}}
+\subsubsection{\texorpdfstring{ipaddr\+\_\+addr()}{ipaddr\_addr()}}
+{\footnotesize\ttfamily u32\+\_\+t ipaddr\+\_\+addr (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cp }\end{DoxyParamCaption})}
+
+Ascii internet address interpretation routine. The value returned is in network order.
+
+
+\begin{DoxyParams}{参数}
+{\em cp} & IP address in ascii represenation (e.\+g. \char`\"{}127.\+0.\+0.\+1\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+ip address in network order 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ip__addr_8c_a4de70fdd7fd36c5b6eaed8b855d5f151}\label{ip__addr_8c_a4de70fdd7fd36c5b6eaed8b855d5f151}} 
+\index{ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}!ipaddr\+\_\+aton@{ipaddr\+\_\+aton}}
+\index{ipaddr\+\_\+aton@{ipaddr\+\_\+aton}!ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}}
+\subsubsection{\texorpdfstring{ipaddr\+\_\+aton()}{ipaddr\_aton()}}
+{\footnotesize\ttfamily int ipaddr\+\_\+aton (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cp,  }\item[{ip\+\_\+addr\+\_\+t $\ast$}]{addr }\end{DoxyParamCaption})}
+
+Check whether \char`\"{}cp\char`\"{} is a valid ascii representation of an \hyperlink{class_internet}{Internet} address and convert to a binary address. Returns 1 if the address is valid, 0 if not. \hyperlink{namespace_this}{This} replaces inet\+\_\+addr, the return value from which cannot distinguish between failure and a local broadcast address.
+
+
+\begin{DoxyParams}{参数}
+{\em cp} & IP address in ascii represenation (e.\+g. \char`\"{}127.\+0.\+0.\+1\char`\"{}) \\
+\hline
+{\em addr} & pointer to which to save the ip address in network order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+1 if cp could be converted to addr, 0 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ip__addr_8c_ace12d28aef35bb15962e8563aea571b1}\label{ip__addr_8c_ace12d28aef35bb15962e8563aea571b1}} 
+\index{ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}!ipaddr\+\_\+ntoa@{ipaddr\+\_\+ntoa}}
+\index{ipaddr\+\_\+ntoa@{ipaddr\+\_\+ntoa}!ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}}
+\subsubsection{\texorpdfstring{ipaddr\+\_\+ntoa()}{ipaddr\_ntoa()}}
+{\footnotesize\ttfamily char$\ast$ ipaddr\+\_\+ntoa (\begin{DoxyParamCaption}\item[{const ip\+\_\+addr\+\_\+t $\ast$}]{addr }\end{DoxyParamCaption})}
+
+Convert numeric IP address into decimal dotted A\+S\+C\+II representation. returns ptr to static buffer; not reentrant!
+
+
+\begin{DoxyParams}{参数}
+{\em addr} & ip address in network order to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to a global static (!) buffer that holds the A\+S\+C\+II represenation of addr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ip__addr_8c_a3684dabc0cae597ffb5b51d41f1d886f}\label{ip__addr_8c_a3684dabc0cae597ffb5b51d41f1d886f}} 
+\index{ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}!ipaddr\+\_\+ntoa\+\_\+r@{ipaddr\+\_\+ntoa\+\_\+r}}
+\index{ipaddr\+\_\+ntoa\+\_\+r@{ipaddr\+\_\+ntoa\+\_\+r}!ip\+\_\+addr.\+c@{ip\+\_\+addr.\+c}}
+\subsubsection{\texorpdfstring{ipaddr\+\_\+ntoa\+\_\+r()}{ipaddr\_ntoa\_r()}}
+{\footnotesize\ttfamily char$\ast$ ipaddr\+\_\+ntoa\+\_\+r (\begin{DoxyParamCaption}\item[{const ip\+\_\+addr\+\_\+t $\ast$}]{addr,  }\item[{char $\ast$}]{buf,  }\item[{int}]{buflen }\end{DoxyParamCaption})}
+
+Same as ipaddr\+\_\+ntoa, but reentrant since a user-\/supplied buffer is used.
+
+
+\begin{DoxyParams}{参数}
+{\em addr} & ip address in network order to convert \\
+\hline
+{\em buf} & target buffer where the string is stored \\
+\hline
+{\em buflen} & length of buf \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+either pointer to buf which now holds the A\+S\+C\+II representation of addr or N\+U\+LL if buf was too small 
+\end{DoxyReturn}

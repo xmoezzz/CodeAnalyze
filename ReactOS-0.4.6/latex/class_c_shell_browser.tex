@@ -1,0 +1,764 @@
+\hypertarget{class_c_shell_browser}{}\section{C\+Shell\+Browser类 参考}
+\label{class_c_shell_browser}\index{C\+Shell\+Browser@{C\+Shell\+Browser}}
+类 C\+Shell\+Browser 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.867580cm]{class_c_shell_browser}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a55be995f542516548bb19c6138f45c90}\label{class_c_shell_browser_a55be995f542516548bb19c6138f45c90}} 
+H\+R\+E\+S\+U\+LT {\bfseries Initialize} (L\+P\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a0e276a5a5815e48cea8ab5330a315a35}\label{class_c_shell_browser_a0e276a5a5815e48cea8ab5330a315a35}} 
+H\+R\+E\+S\+U\+LT {\bfseries Browse\+To\+P\+I\+DL} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, long flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a0b5366311cadffcc7379e17b9585e41a}\label{class_c_shell_browser_a0b5366311cadffcc7379e17b9585e41a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Browse\+To\+Path} (\hyperlink{interface_i_shell_folder}{I\+Shell\+Folder} $\ast$new\+Shell\+Folder, L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST absolute\+P\+I\+DL, \hyperlink{struct_f_o_l_d_e_r_s_e_t_t_i_n_g_s}{F\+O\+L\+D\+E\+R\+S\+E\+T\+T\+I\+N\+GS} $\ast$folder\+Settings, long flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a409d46f43b3e8ad98079427f69dbad8e}\label{class_c_shell_browser_a409d46f43b3e8ad98079427f69dbad8e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Menu\+Band} (R\+E\+F\+I\+ID riid, \hyperlink{interfacevoid}{void} $\ast$$\ast$shell\+Menu)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a878fc56de03a55a7376fc8e65ce88870}\label{class_c_shell_browser_a878fc56de03a55a7376fc8e65ce88870}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Base\+Bar} (bool vertical, R\+E\+F\+I\+ID riid, \hyperlink{interfacevoid}{void} $\ast$$\ast$the\+Base\+Bar)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac6629cd11d18afb2f518d0c93d142511}\label{class_c_shell_browser_ac6629cd11d18afb2f518d0c93d142511}} 
+B\+O\+OL {\bfseries Is\+Band\+Loaded} (const \hyperlink{struct___i_i_d}{C\+L\+S\+ID} clsid\+Band, bool verticali, D\+W\+O\+RD $\ast$pdw\+Band\+ID)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab273fdac55f4d70d2110fddeeee1cfa8}\label{class_c_shell_browser_ab273fdac55f4d70d2110fddeeee1cfa8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Show\+Band} (const \hyperlink{struct___i_i_d}{C\+L\+S\+ID} \&class\+ID, bool vertical)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a709dca6c915bcd55999afbdfc9431eb6}\label{class_c_shell_browser_a709dca6c915bcd55999afbdfc9431eb6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Navigate\+To\+Parent} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aafaa8e0ee541a83f38a8adf8b2d3aff3}\label{class_c_shell_browser_aafaa8e0ee541a83f38a8adf8b2d3aff3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Do\+Folder\+Options} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a67c7a01b0a2df2b092082d35f347d407}\label{class_c_shell_browser_a67c7a01b0a2df2b092082d35f347d407}} 
+\hyperlink{interfacevoid}{void} {\bfseries Reposition\+Bars} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a37f996e87b32d9e5c8ad8b2a71c34544}\label{class_c_shell_browser_a37f996e87b32d9e5c8ad8b2a71c34544}} 
+H\+R\+E\+S\+U\+LT {\bfseries Build\+Explorer\+Band\+Menu} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad0858fab687937d5dd3a8e68d48a6843}\label{class_c_shell_browser_ad0858fab687937d5dd3a8e68d48a6843}} 
+H\+R\+E\+S\+U\+LT {\bfseries Build\+Explorer\+Band\+Category} (H\+M\+E\+NU h\+Bands\+Menu, \hyperlink{interface_g_u_i_d}{C\+A\+T\+ID} \hyperlink{structcategory}{category}, D\+W\+O\+RD dw\+Pos, U\+I\+NT $\ast$nb\+Found)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a0c49be53bd557576c2189bec5648fb9a}\label{class_c_shell_browser_a0c49be53bd557576c2189bec5648fb9a}} 
+B\+O\+OL {\bfseries Is\+Builtin\+Band} (\hyperlink{struct___i_i_d}{C\+L\+S\+ID} \&band\+ID)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a04801f00b8b8b92fa0bf0d8bb967b6fc}\label{class_c_shell_browser_a04801f00b8b8b92fa0bf0d8bb967b6fc}} 
+virtual W\+N\+D\+P\+R\+OC {\bfseries Get\+Window\+Proc} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac08d8aadf2bed869bd88145167313f84}\label{class_c_shell_browser_ac08d8aadf2bed869bd88145167313f84}} 
+H\+R\+E\+S\+U\+LT {\bfseries Fire\+Event} (D\+I\+S\+P\+ID disp\+Id\+Member, int arg\+Count, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$arguments)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a3e36940e089755f9a64f4274b69eb2ce}\label{class_c_shell_browser_a3e36940e089755f9a64f4274b69eb2ce}} 
+H\+R\+E\+S\+U\+LT {\bfseries Fire\+Navigate\+Complete} (const wchar\+\_\+t $\ast$new\+Directory)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_afcbe80f397b7e61e9b3c7aab09af6453}\label{class_c_shell_browser_afcbe80f397b7e61e9b3c7aab09af6453}} 
+H\+R\+E\+S\+U\+LT {\bfseries Fire\+Command\+State\+Change} (bool new\+State, int command\+ID)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_adc786341fc41c1e666abea7ffbcf27c4}\label{class_c_shell_browser_adc786341fc41c1e666abea7ffbcf27c4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Fire\+Command\+State\+Change\+All} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aa964acdcc42d8358a80adacacae50dc8}\label{class_c_shell_browser_aa964acdcc42d8358a80adacacae50dc8}} 
+H\+R\+E\+S\+U\+LT {\bfseries Update\+Forward\+Back\+State} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1d42fabe14a7fbaeeb8dacce0492dabb}\label{class_c_shell_browser_a1d42fabe14a7fbaeeb8dacce0492dabb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Update\+Up\+State} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a7f5f8253ead4cd31a2d68ee2f7e14a44}\label{class_c_shell_browser_a7f5f8253ead4cd31a2d68ee2f7e14a44}} 
+\hyperlink{interfacevoid}{void} {\bfseries Update\+Goto\+Menu} (H\+M\+E\+NU the\+Menu)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a71da592748ee4a634a1c6109b56369bd}\label{class_c_shell_browser_a71da592748ee4a634a1c6109b56369bd}} 
+\hyperlink{interfacevoid}{void} {\bfseries Update\+View\+Menu} (H\+M\+E\+NU the\+Menu)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a24219b4c2e82ed19ac44cd047bf28432}\label{class_c_shell_browser_a24219b4c2e82ed19ac44cd047bf28432}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Border\+DW} (\hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk\+Obj, \hyperlink{structtag_r_e_c_t}{L\+P\+R\+E\+CT} prc\+Border)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6df98a266c8e602e353aac9cf1466843}\label{class_c_shell_browser_a6df98a266c8e602e353aac9cf1466843}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Request\+Border\+Space\+DW} (\hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk\+Obj, L\+P\+C\+B\+O\+R\+D\+E\+R\+W\+I\+D\+T\+HS pbw)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a32eeed5e977394e57887a268ab77f968}\label{class_c_shell_browser_a32eeed5e977394e57887a268ab77f968}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Border\+Space\+DW} (\hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk\+Obj, L\+P\+C\+B\+O\+R\+D\+E\+R\+W\+I\+D\+T\+HS pbw)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a04c7ea1a2c980dad9f1bb6346875fcf7}\label{class_c_shell_browser_a04c7ea1a2c980dad9f1bb6346875fcf7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Status} (const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Cmd\+Group, U\+L\+O\+NG c\+Cmds, \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d}{O\+L\+E\+C\+MD} prg\+Cmds\mbox{[}$\,$\mbox{]}, \hyperlink{struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d_t_e_x_t}{O\+L\+E\+C\+M\+D\+T\+E\+XT} $\ast$p\+Cmd\+Text)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a9f00c299f5eb6907c0a88d87bd6e813a}\label{class_c_shell_browser_a9f00c299f5eb6907c0a88d87bd6e813a}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Exec} (const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Cmd\+Group, D\+W\+O\+RD n\+Cmd\+ID, D\+W\+O\+RD n\+Cmdexecopt, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pva\+In, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pva\+Out)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae3371c3e67bc8e38594db475d0bcdcdd}\label{class_c_shell_browser_ae3371c3e67bc8e38594db475d0bcdcdd}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Window} (\hyperlink{interfacevoid}{H\+W\+ND} $\ast$lphwnd)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a120909fce2a8b216560f384b6eb4261d}\label{class_c_shell_browser_a120909fce2a8b216560f384b6eb4261d}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Context\+Sensitive\+Help} (B\+O\+OL f\+Enter\+Mode)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aaa522b6493d99f1fa85dd45e9a5b9330}\label{class_c_shell_browser_aaa522b6493d99f1fa85dd45e9a5b9330}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Insert\+Menus\+SB} (H\+M\+E\+NU hmenu\+Shared, L\+P\+O\+L\+E\+M\+E\+N\+U\+G\+R\+O\+U\+P\+W\+I\+D\+T\+HS lp\+Menu\+Widths)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a0e44aa374b41949345b0154a08d99c92}\label{class_c_shell_browser_a0e44aa374b41949345b0154a08d99c92}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Menu\+SB} (H\+M\+E\+NU hmenu\+Shared, H\+O\+L\+E\+M\+E\+NU holemenu\+Res, \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Active\+Object)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae1d36c17ac3c2c3d4e5950472cfc2d67}\label{class_c_shell_browser_ae1d36c17ac3c2c3d4e5950472cfc2d67}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Remove\+Menus\+SB} (H\+M\+E\+NU hmenu\+Shared)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab05d036b48ed4ef40d007aacf861e4f7}\label{class_c_shell_browser_ab05d036b48ed4ef40d007aacf861e4f7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Status\+Text\+SB} (L\+P\+C\+O\+L\+E\+S\+TR psz\+Status\+Text)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a603a5b85ac435593b2447e2089194c50}\label{class_c_shell_browser_a603a5b85ac435593b2447e2089194c50}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Enable\+Modeless\+SB} (B\+O\+OL f\+Enable)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a14cf01fa6c7654ab767b9c295936e017}\label{class_c_shell_browser_a14cf01fa6c7654ab767b9c295936e017}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Translate\+Accelerator\+SB} (M\+SG $\ast$pmsg, W\+O\+RD w\+ID)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8e61469cd942f57d0a714f3c2206fa8c}\label{class_c_shell_browser_a8e61469cd942f57d0a714f3c2206fa8c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Browse\+Object} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, U\+I\+NT w\+Flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1c8c3e4bbb20cb5efddc5149baeccc80}\label{class_c_shell_browser_a1c8c3e4bbb20cb5efddc5149baeccc80}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+View\+State\+Stream} (D\+W\+O\+RD grf\+Mode, \hyperlink{interface_i_stream}{I\+Stream} $\ast$$\ast$pp\+Strm)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8b701c52ad7a276d3755b1db48bfeaeb}\label{class_c_shell_browser_a8b701c52ad7a276d3755b1db48bfeaeb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Control\+Window} (U\+I\+NT id, \hyperlink{interfacevoid}{H\+W\+ND} $\ast$lphwnd)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a97b314a348c2a1e69a0d2c3acd1bca19}\label{class_c_shell_browser_a97b314a348c2a1e69a0d2c3acd1bca19}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Send\+Control\+Msg} (U\+I\+NT id, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, L\+R\+E\+S\+U\+LT $\ast$pret)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a476f294ddb48dcd322157c8b7f6551ef}\label{class_c_shell_browser_a476f294ddb48dcd322157c8b7f6551ef}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Active\+Shell\+View} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$$\ast$ppshv)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a17b1af50fda86eafe67173f4989a4e8b}\label{class_c_shell_browser_a17b1af50fda86eafe67173f4989a4e8b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+View\+Window\+Active} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$ppshv)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a81f93fdae37d1cfa6dab1bdfa701174a}\label{class_c_shell_browser_a81f93fdae37d1cfa6dab1bdfa701174a}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Toolbar\+Items} (\hyperlink{struct___t_b_b_u_t_t_o_n}{L\+P\+T\+B\+B\+U\+T\+T\+ON} lp\+Buttons, U\+I\+NT n\+Buttons, U\+I\+NT u\+Flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a5d893d3c4c40da2b2788f505df63af7d}\label{class_c_shell_browser_a5d893d3c4c40da2b2788f505df63af7d}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Drag\+Enter} (\hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$p\+Data\+Obj, D\+W\+O\+RD grf\+Key\+State, \hyperlink{struct___p_o_i_n_t_l}{P\+O\+I\+N\+TL} pt, D\+W\+O\+RD $\ast$pdw\+Effect)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a9437d63b16ae4036f3bc52843a4899ea}\label{class_c_shell_browser_a9437d63b16ae4036f3bc52843a4899ea}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Drag\+Over} (D\+W\+O\+RD grf\+Key\+State, \hyperlink{struct___p_o_i_n_t_l}{P\+O\+I\+N\+TL} pt, D\+W\+O\+RD $\ast$pdw\+Effect)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a23e0f9cba46e68901758bdb8d658d4f4}\label{class_c_shell_browser_a23e0f9cba46e68901758bdb8d658d4f4}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Drag\+Leave} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a501f0c36d7fdf7aaf22adf50196f7fe3}\label{class_c_shell_browser_a501f0c36d7fdf7aaf22adf50196f7fe3}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Drop} (\hyperlink{interface_i_data_object}{I\+Data\+Object} $\ast$p\+Data\+Obj, D\+W\+O\+RD grf\+Key\+State, \hyperlink{struct___p_o_i_n_t_l}{P\+O\+I\+N\+TL} pt, D\+W\+O\+RD $\ast$pdw\+Effect)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a160cf5d58a1bbbb0a8353e64397615a9}\label{class_c_shell_browser_a160cf5d58a1bbbb0a8353e64397615a9}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Service} (\hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Service, R\+E\+F\+I\+ID riid, \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Object)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a3f3eb4a2e3239d75e5779bece7f23317}\label{class_c_shell_browser_a3f3eb4a2e3239d75e5779bece7f23317}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Property\+Bag} (long flags, R\+E\+F\+I\+ID riid, \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv\+Object)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab52f2ecface642cc4008876a66b382d1}\label{class_c_shell_browser_ab52f2ecface642cc4008876a66b382d1}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Type\+Info\+Count} (U\+I\+NT $\ast$pctinfo)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a076c28d7f3563d7351a8926fb0ff64f7}\label{class_c_shell_browser_a076c28d7f3563d7351a8926fb0ff64f7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Type\+Info} (U\+I\+NT i\+T\+Info, L\+C\+ID lcid, \hyperlink{interface_i_type_info}{I\+Type\+Info} $\ast$$\ast$pp\+T\+Info)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a51c520c856e7fcf2ad2ada00fcadccfb}\label{class_c_shell_browser_a51c520c856e7fcf2ad2ada00fcadccfb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+I\+Ds\+Of\+Names} (R\+E\+F\+I\+ID riid, L\+P\+O\+L\+E\+S\+TR $\ast$rgsz\+Names, U\+I\+NT c\+Names, L\+C\+ID lcid, D\+I\+S\+P\+ID $\ast$rg\+Disp\+Id)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_afd37606c6f0d6679a66007220d6ac13c}\label{class_c_shell_browser_afd37606c6f0d6679a66007220d6ac13c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Invoke} (D\+I\+S\+P\+ID disp\+Id\+Member, R\+E\+F\+I\+ID riid, L\+C\+ID lcid, W\+O\+RD w\+Flags, D\+I\+S\+P\+P\+A\+R\+A\+MS $\ast$p\+Disp\+Params, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$p\+Var\+Result, E\+X\+C\+E\+P\+I\+N\+FO $\ast$p\+Excep\+Info, U\+I\+NT $\ast$pu\+Arg\+Err)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6a8c5b4137c7535307e63eac112572b0}\label{class_c_shell_browser_a6a8c5b4137c7535307e63eac112572b0}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Parent\+Site} (\hyperlink{interface_i_ole_in_place_site}{I\+Ole\+In\+Place\+Site} $\ast$$\ast$ppipsite)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a02cb108a4c39d8f104ec26eeeea1f7ff}\label{class_c_shell_browser_a02cb108a4c39d8f104ec26eeeea1f7ff}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Title} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$psv, L\+P\+C\+W\+S\+TR psz\+Name)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a5c68795dd8160164c37c22e3d8b683fc}\label{class_c_shell_browser_a5c68795dd8160164c37c22e3d8b683fc}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Title} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$psv, L\+P\+W\+S\+TR psz\+Name, D\+W\+O\+RD cch\+Name)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a393a7436c64478bdaf4aa885a844b23b}\label{class_c_shell_browser_a393a7436c64478bdaf4aa885a844b23b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Ole\+Object} (\hyperlink{interface_i_ole_object}{I\+Ole\+Object} $\ast$$\ast$ppobjv)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a4b8cb6f5bd0cc75109ed92acf850823c}\label{class_c_shell_browser_a4b8cb6f5bd0cc75109ed92acf850823c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Travel\+Log} (\hyperlink{interface_i_travel_log}{I\+Travel\+Log} $\ast$$\ast$pptl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad4c9f8d65311b12defdc465ef9e74661}\label{class_c_shell_browser_ad4c9f8d65311b12defdc465ef9e74661}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Show\+Control\+Window} (U\+I\+NT id, B\+O\+OL f\+Show)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8cdbd3fe1e32b33dbfeadc7f9bd74719}\label{class_c_shell_browser_a8cdbd3fe1e32b33dbfeadc7f9bd74719}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Is\+Control\+Window\+Shown} (U\+I\+NT id, B\+O\+OL $\ast$pf\+Shown)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a0429585b1ae8b916afee06e8e41a12e2}\label{class_c_shell_browser_a0429585b1ae8b916afee06e8e41a12e2}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries I\+E\+Get\+Display\+Name} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, L\+P\+W\+S\+TR pwsz\+Name, U\+I\+NT u\+Flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a45e5cb5211988ddfa88b7566b5a81af8}\label{class_c_shell_browser_a45e5cb5211988ddfa88b7566b5a81af8}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries I\+E\+Parse\+Display\+Name} (U\+I\+NT ui\+CP, L\+P\+C\+W\+S\+TR pwsz\+Path, L\+P\+I\+T\+E\+M\+I\+D\+L\+I\+ST $\ast$ppidl\+Out)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a039bca2bf4e8a2e159bd5b84c2625f18}\label{class_c_shell_browser_a039bca2bf4e8a2e159bd5b84c2625f18}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Display\+Parse\+Error} (H\+R\+E\+S\+U\+LT hres, L\+P\+C\+W\+S\+TR pwsz\+Path)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a43ff6714250c6b152220a3aa4f81f7c0}\label{class_c_shell_browser_a43ff6714250c6b152220a3aa4f81f7c0}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Navigate\+To\+Pidl} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, D\+W\+O\+RD grf\+H\+L\+NF)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac019a48e6ec1e9dc6ff9abb7aea32b59}\label{class_c_shell_browser_ac019a48e6ec1e9dc6ff9abb7aea32b59}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Navigate\+State} (B\+N\+S\+T\+A\+TE bnstate)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8f1dcd1899b12c7d7d26d0ed263aa041}\label{class_c_shell_browser_a8f1dcd1899b12c7d7d26d0ed263aa041}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Navigate\+State} (B\+N\+S\+T\+A\+TE $\ast$pbnstate)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab204a596fe7e406dc9ddcb2b70333651}\label{class_c_shell_browser_ab204a596fe7e406dc9ddcb2b70333651}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Notify\+Redirect} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$psv, L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, B\+O\+OL $\ast$pf\+Did\+Browse)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8f66f11d26983e6e0439d328e86611c3}\label{class_c_shell_browser_a8f66f11d26983e6e0439d328e86611c3}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Update\+Window\+List} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a15617979a60043d99379bf3ef96d22c0}\label{class_c_shell_browser_a15617979a60043d99379bf3ef96d22c0}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Update\+Back\+Forward\+State} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a43667ac4799a6a3e3c1a771613781b34}\label{class_c_shell_browser_a43667ac4799a6a3e3c1a771613781b34}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Flags} (D\+W\+O\+RD dw\+Flags, D\+W\+O\+RD dw\+Flag\+Mask)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a167e15cb304eab72d01f537e6251e848}\label{class_c_shell_browser_a167e15cb304eab72d01f537e6251e848}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Flags} (D\+W\+O\+RD $\ast$pdw\+Flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac35b8603194bfd06c35d430742a982fb}\label{class_c_shell_browser_ac35b8603194bfd06c35d430742a982fb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Can\+Navigate\+Now} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aca4d4707c9bfcdd2462f9a1dd0ae098b}\label{class_c_shell_browser_aca4d4707c9bfcdd2462f9a1dd0ae098b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Pidl} (L\+P\+I\+T\+E\+M\+I\+D\+L\+I\+ST $\ast$ppidl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a85ad53da2a382e2879180f901289e56d}\label{class_c_shell_browser_a85ad53da2a382e2879180f901289e56d}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Referrer} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a278f399351c083c728d80c29c1963561}\label{class_c_shell_browser_a278f399351c083c728d80c29c1963561}} 
+virtual D\+W\+O\+RD S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Browser\+Index} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a56e1dd1dfc38ec5bd1a22360b888b9b7}\label{class_c_shell_browser_a56e1dd1dfc38ec5bd1a22360b888b9b7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Browser\+By\+Index} (D\+W\+O\+RD dw\+ID, \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppunk)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac1e4c47325430944289e223da8c68922}\label{class_c_shell_browser_ac1e4c47325430944289e223da8c68922}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+History\+Object} (\hyperlink{interface_i_ole_object}{I\+Ole\+Object} $\ast$$\ast$ppole, \hyperlink{interface_i_stream}{I\+Stream} $\ast$$\ast$pstm, \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$$\ast$ppbc)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_acd61338930b7ec9083fbf60040467526}\label{class_c_shell_browser_acd61338930b7ec9083fbf60040467526}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+History\+Object} (\hyperlink{interface_i_ole_object}{I\+Ole\+Object} $\ast$pole, B\+O\+OL f\+Is\+Local\+Anchor)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a29351330f61441b34954c84d6e3e5844}\label{class_c_shell_browser_a29351330f61441b34954c84d6e3e5844}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Cache\+O\+L\+E\+Server} (\hyperlink{interface_i_ole_object}{I\+Ole\+Object} $\ast$pole)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac46fc57c5dd05252990842e89cfa97ea}\label{class_c_shell_browser_ac46fc57c5dd05252990842e89cfa97ea}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Set\+Code\+Page} (\hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pvar\+In, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pvar\+Out)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a30bcf88146fb87cd016163879fdbbd34}\label{class_c_shell_browser_a30bcf88146fb87cd016163879fdbbd34}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Http\+Equiv} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$psv, B\+O\+OL f\+Done, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pvararg\+In, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pvararg\+Out)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_afbc01e9831fb353ce7d6c56c3dd931cd}\label{class_c_shell_browser_afbc01e9831fb353ce7d6c56c3dd931cd}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Palette} (H\+P\+A\+L\+E\+T\+TE $\ast$hpal)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a075f6b1d7635d5a9e91a1db6b6c2319e}\label{class_c_shell_browser_a075f6b1d7635d5a9e91a1db6b6c2319e}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Register\+Window} (B\+O\+OL f\+Force\+Register, int swc)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aeaaa783dfe9341397096ec94c21001ca}\label{class_c_shell_browser_aeaaa783dfe9341397096ec94c21001ca}} 
+virtual L\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Wnd\+Proc\+BS} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aa4f64401bf1d08211f2b2966dfa550f7}\label{class_c_shell_browser_aa4f64401bf1d08211f2b2966dfa550f7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+As\+Def\+Folder\+Settings} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_accbdb64e0dd7bd1202ae7db0bf239d43}\label{class_c_shell_browser_accbdb64e0dd7bd1202ae7db0bf239d43}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+View\+Rect} (\hyperlink{structtag_r_e_c_t}{R\+E\+CT} $\ast$\hyperlink{structtag_r_e_c_t}{prc})
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6d7af9f875c784ee62119be7c8c2a259}\label{class_c_shell_browser_a6d7af9f875c784ee62119be7c8c2a259}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Size} (W\+P\+A\+R\+AM w\+Param)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a261e18391915d58a3120bf8dd46ac0f2}\label{class_c_shell_browser_a261e18391915d58a3120bf8dd46ac0f2}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Create} (\hyperlink{interfacestruct}{struct} \hyperlink{structtag_c_r_e_a_t_e_s_t_r_u_c_t_w}{tag\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+C\+TW} $\ast$pcs)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aeab30cd46ac9b14a0be71e6c1029038c}\label{class_c_shell_browser_aeab30cd46ac9b14a0be71e6c1029038c}} 
+virtual L\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Command} (W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a48fe5eb5a94ca63c2118e8f322d3781b}\label{class_c_shell_browser_a48fe5eb5a94ca63c2118e8f322d3781b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Destroy} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a9d92d54056fa3c267be550014eb8d99d}\label{class_c_shell_browser_a9d92d54056fa3c267be550014eb8d99d}} 
+virtual L\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Notify} (\hyperlink{interfacestruct}{struct} \hyperlink{structtag_n_m_h_d_r}{tag\+N\+M\+H\+DR} $\ast$pnm)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab5d54205da05037fe878b9b560456d0d}\label{class_c_shell_browser_ab5d54205da05037fe878b9b560456d0d}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Set\+Focus} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a37dc5b0286942220d05bc1cd40e37b23}\label{class_c_shell_browser_a37dc5b0286942220d05bc1cd40e37b23}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries On\+Frame\+Window\+Activate\+BS} (B\+O\+OL f\+Active)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a7c555e2a7485b35b1ea3fc76a76660b4}\label{class_c_shell_browser_a7c555e2a7485b35b1ea3fc76a76660b4}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Release\+Shell\+View} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_add30a901c1e2a9bde5c0fdf2f56f639d}\label{class_c_shell_browser_add30a901c1e2a9bde5c0fdf2f56f639d}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Activate\+Pending\+View} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a7d530f17991d9b23669a22ad333e2164}\label{class_c_shell_browser_a7d530f17991d9b23669a22ad333e2164}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Create\+View\+Window} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$psv\+New, \hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$psv\+Old, \hyperlink{structtag_r_e_c_t}{L\+P\+R\+E\+CT} prc\+View, \hyperlink{interfacevoid}{H\+W\+ND} $\ast$phwnd)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a3c0e23e033fc4c093fb0c7de26a09611}\label{class_c_shell_browser_a3c0e23e033fc4c093fb0c7de26a09611}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Create\+Browser\+Prop\+Sheet\+Ext} (R\+E\+F\+I\+ID riid, \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a509c0389f9d59e7982a6cbcf84e86070}\label{class_c_shell_browser_a509c0389f9d59e7982a6cbcf84e86070}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+View\+Window} (\hyperlink{interfacevoid}{H\+W\+ND} $\ast$phwnd\+View)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a53a1b8c31093a49c9ecaa12381b13e5c}\label{class_c_shell_browser_a53a1b8c31093a49c9ecaa12381b13e5c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Base\+Browser\+Data} (\hyperlink{structbasebrowserdataxp}{L\+P\+C\+B\+A\+S\+E\+B\+R\+O\+W\+S\+E\+R\+D\+A\+TA} $\ast$pbbd)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a9ccd3681443be03c83594d4dab82fbf3}\label{class_c_shell_browser_a9ccd3681443be03c83594d4dab82fbf3}} 
+virtual \hyperlink{structbasebrowserdataxp}{L\+P\+B\+A\+S\+E\+B\+R\+O\+W\+S\+E\+R\+D\+A\+TA} S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Put\+Base\+Browser\+Data} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a5e7588204eda3d5612451c74a84eb031}\label{class_c_shell_browser_a5e7588204eda3d5612451c74a84eb031}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Initialize\+Travel\+Log} (\hyperlink{interface_i_travel_log}{I\+Travel\+Log} $\ast$ptl, D\+W\+O\+RD dw)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a26e40276c19031f236ad04b02857dd47}\label{class_c_shell_browser_a26e40276c19031f236ad04b02857dd47}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Top\+Browser} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a40fa69d87657def01f3cf07224892432}\label{class_c_shell_browser_a40fa69d87657def01f3cf07224892432}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Offline} (int i\+Cmd)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_afaf084081734bdb4056f737fa9cb2e55}\label{class_c_shell_browser_afaf084081734bdb4056f737fa9cb2e55}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Allow\+View\+Resize} (B\+O\+OL f)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad3a8112b4f3d08051ff98a27a36c8a79}\label{class_c_shell_browser_ad3a8112b4f3d08051ff98a27a36c8a79}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Activate\+State} (U\+I\+NT u)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aac5161e8fe0b4fae9d972c6e79320a72}\label{class_c_shell_browser_aac5161e8fe0b4fae9d972c6e79320a72}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Update\+Secure\+Lock\+Icon} (int e\+Secure\+Lock)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a4762ca330164408dbd9bc7d486e56013}\label{class_c_shell_browser_a4762ca330164408dbd9bc7d486e56013}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Initialize\+Download\+Manager} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8abc2968a945c1be205a131b0cc1f33a}\label{class_c_shell_browser_a8abc2968a945c1be205a131b0cc1f33a}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Initialize\+Transition\+Site} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac38c00010b61ef4879a7e0fb7bf031fe}\label{class_c_shell_browser_ac38c00010b61ef4879a7e0fb7bf031fe}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Initialize} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$pauto)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac85e6049f4fd776df099e5e35bfdaa8c}\label{class_c_shell_browser_ac85e6049f4fd776df099e5e35bfdaa8c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Cancel\+Pending\+Navigation\+Async} (\hyperlink{interfacevoid}{void})
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab0f7d53ac9d35a5548297ca467188e23}\label{class_c_shell_browser_ab0f7d53ac9d35a5548297ca467188e23}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Cancel\+Pending\+View} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a4067be3a128cf68f082874e59b8909bd}\label{class_c_shell_browser_a4067be3a128cf68f082874e59b8909bd}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+May\+Save\+Changes} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab40e156ba6c5f54a1d8dbde07c6dfc2c}\label{class_c_shell_browser_ab40e156ba6c5f54a1d8dbde07c6dfc2c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Pause\+Or\+Resume\+View} (B\+O\+OL f\+Paused)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aae6f42b1b226ef551c5841f524a60665}\label{class_c_shell_browser_aae6f42b1b226ef551c5841f524a60665}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Disable\+Modeless} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a471006d740a20ad0cda17f0e58760622}\label{class_c_shell_browser_a471006d740a20ad0cda17f0e58760622}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Navigate\+To\+Pidl} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, D\+W\+O\+RD grf\+H\+L\+NF, D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a4d288d045a6f461806d4565e8145a549}\label{class_c_shell_browser_a4d288d045a6f461806d4565e8145a549}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Try\+Shell2\+Rename} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$psv, L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl\+New)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a14d91b2ccd3f51c04aef8a0ceb84a114}\label{class_c_shell_browser_a14d91b2ccd3f51c04aef8a0ceb84a114}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Switch\+Activation\+Now} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a3dae94ff3e40684d85a910f8022b1a23}\label{class_c_shell_browser_a3dae94ff3e40684d85a910f8022b1a23}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Exec\+Children} (\hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk\+Bar, B\+O\+OL f\+Broadcast, const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Cmd\+Group, D\+W\+O\+RD n\+Cmd\+ID, D\+W\+O\+RD n\+Cmdexecopt, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+N\+T\+A\+RG} $\ast$pvararg\+In, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+N\+T\+A\+RG} $\ast$pvararg\+Out)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a71bc1b3f494193fb5ea403f548f0d087}\label{class_c_shell_browser_a71bc1b3f494193fb5ea403f548f0d087}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Send\+Children} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Bar, B\+O\+OL f\+Broadcast, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a794e41050457831a6ccf1736c88741f8}\label{class_c_shell_browser_a794e41050457831a6ccf1736c88741f8}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Folder\+Set\+Data} (\hyperlink{interfacestruct}{struct} \hyperlink{structtag_folder_set_data}{tag\+Folder\+Set\+Data} $\ast$pfsd)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a40ce77d0806874cb0286eedec1a1fa51}\label{class_c_shell_browser_a40ce77d0806874cb0286eedec1a1fa51}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+On\+Focus\+Change} (U\+I\+NT itb)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_add8c27d95c8178feddad53771c05509c}\label{class_c_shell_browser_add8c27d95c8178feddad53771c05509c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries v\+\_\+\+Show\+Hide\+Child\+Windows} (B\+O\+OL f\+Child\+Only)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac821595ebbb17e0254bc917f83d22235}\label{class_c_shell_browser_ac821595ebbb17e0254bc917f83d22235}} 
+virtual U\+I\+NT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+get\+\_\+itb\+Last\+Focus} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a2192c159e142568cdfee243fa575c974}\label{class_c_shell_browser_a2192c159e142568cdfee243fa575c974}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+put\+\_\+itb\+Last\+Focus} (U\+I\+NT itb\+Last\+Focus)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a74531887dc891c3be862c7aaffd391ae}\label{class_c_shell_browser_a74531887dc891c3be862c7aaffd391ae}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+U\+I\+Activate\+View} (U\+I\+NT u\+State)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6a0afbd98263a5690acc05744ed9e5cb}\label{class_c_shell_browser_a6a0afbd98263a5690acc05744ed9e5cb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Get\+View\+Border\+Rect} (\hyperlink{structtag_r_e_c_t}{R\+E\+CT} $\ast$\hyperlink{structtag_r_e_c_t}{prc})
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad6b4ef41c019a9215d1ff7d38820b9b7}\label{class_c_shell_browser_ad6b4ef41c019a9215d1ff7d38820b9b7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Update\+View\+Rect\+Size} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aef91d30fc297bc6efde8899fe102ae17}\label{class_c_shell_browser_aef91d30fc297bc6efde8899fe102ae17}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Resize\+Next\+Border} (U\+I\+NT itb)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a25831a2386edba2e8ebf2aac354df4ab}\label{class_c_shell_browser_a25831a2386edba2e8ebf2aac354df4ab}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Resize\+View} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a17ba783b294396744644a358d0acc6cb}\label{class_c_shell_browser_a17ba783b294396744644a358d0acc6cb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Get\+Effective\+Client\+Area} (\hyperlink{structtag_r_e_c_t}{L\+P\+R\+E\+CT} lprect\+Border, \hyperlink{interfacevoid}{H\+M\+O\+N\+I\+T\+OR} hmon)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a479751b937c61d6344de2b50e47d56c3}\label{class_c_shell_browser_a479751b937c61d6344de2b50e47d56c3}} 
+virtual \hyperlink{interface_i_stream}{I\+Stream} $\ast$S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries v\+\_\+\+Get\+View\+Stream} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, D\+W\+O\+RD grf\+Mode, L\+P\+C\+W\+S\+TR pwsz\+Name)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a62e17063aa149afc627236d47aa2e156}\label{class_c_shell_browser_a62e17063aa149afc627236d47aa2e156}} 
+virtual L\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Forward\+View\+Msg} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_abee85469a329d40594eceb10cfb827aa}\label{class_c_shell_browser_abee85469a329d40594eceb10cfb827aa}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Accelerator\+Menu} (H\+A\+C\+C\+EL hacc)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a63aa96ee46dab70941c1135e8e76cfb8}\label{class_c_shell_browser_a63aa96ee46dab70941c1135e8e76cfb8}} 
+virtual int S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Get\+Toolbar\+Count} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a5bbe51506a9f992f74ed3dc895fe93a3}\label{class_c_shell_browser_a5bbe51506a9f992f74ed3dc895fe93a3}} 
+virtual \hyperlink{struct_s_toolbar_item}{L\+P\+T\+O\+O\+L\+B\+A\+R\+I\+T\+EM} S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Get\+Toolbar\+Item} (int itb)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a03a7f8f9bb48b9f333429284886378cc}\label{class_c_shell_browser_a03a7f8f9bb48b9f333429284886378cc}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Save\+Toolbars} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$pstm)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad4eb486fe7dddf66b48880ac27bd0ddf}\label{class_c_shell_browser_ad4eb486fe7dddf66b48880ac27bd0ddf}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Load\+Toolbars} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$pstm)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac94d7f0609e950b051ce5d36907e3b86}\label{class_c_shell_browser_ac94d7f0609e950b051ce5d36907e3b86}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Close\+And\+Release\+Toolbars} (B\+O\+OL f\+Close)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6a1b719d36556892971e687f237b4103}\label{class_c_shell_browser_a6a1b719d36556892971e687f237b4103}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries v\+\_\+\+May\+Get\+Next\+Toolbar\+Focus} (\hyperlink{structtag_m_s_g}{L\+P\+M\+SG} lp\+Msg, U\+I\+NT itb\+Next, int citb, \hyperlink{struct_s_toolbar_item}{L\+P\+T\+O\+O\+L\+B\+A\+R\+I\+T\+EM} $\ast$pptbi, \hyperlink{interfacevoid}{H\+W\+ND} $\ast$phwnd)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac3047023716e6c12bc24868e6d9efe81}\label{class_c_shell_browser_ac3047023716e6c12bc24868e6d9efe81}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Resize\+Next\+Border\+Helper} (U\+I\+NT itb, B\+O\+OL b\+Use\+Hmonitor)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a019e8bbf7e804d4cf05ea101ec6d0f0a}\label{class_c_shell_browser_a019e8bbf7e804d4cf05ea101ec6d0f0a}} 
+virtual U\+I\+NT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Find\+T\+Bar} (\hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk\+Src)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a190758770bb337438dafdd18ae1e8599}\label{class_c_shell_browser_a190758770bb337438dafdd18ae1e8599}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Set\+Focus} (\hyperlink{struct_s_toolbar_item}{L\+P\+T\+O\+O\+L\+B\+A\+R\+I\+T\+EM} ptbi, \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \hyperlink{structtag_m_s_g}{L\+P\+M\+SG} lp\+Msg)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a15c37ac2b1838c87d46568bff5b2e07e}\label{class_c_shell_browser_a15c37ac2b1838c87d46568bff5b2e07e}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries v\+\_\+\+May\+Translate\+Accelerator} (M\+SG $\ast$pmsg)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a5eec40750432854b3d3a2dab9eb85d4c}\label{class_c_shell_browser_a5eec40750432854b3d3a2dab9eb85d4c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries \+\_\+\+Get\+Border\+D\+W\+Helper} (\hyperlink{interface_i_unknown}{I\+Unknown} $\ast$punk\+Src, \hyperlink{structtag_r_e_c_t}{L\+P\+R\+E\+CT} lprect\+Border, B\+O\+OL b\+Use\+Hmonitor)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a492c7b9e222276d03683de1b51acca77}\label{class_c_shell_browser_a492c7b9e222276d03683de1b51acca77}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries v\+\_\+\+Check\+Zone\+Crossing} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6ec4154beae9e7ba2819ad717c7d8b8e}\label{class_c_shell_browser_a6ec4154beae9e7ba2819ad717c7d8b8e}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Go\+Back} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_af439216c3da6fd567b5443742e3577df}\label{class_c_shell_browser_af439216c3da6fd567b5443742e3577df}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Go\+Forward} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae6a0c7fbb6c0a8c4568c3366e5c2e514}\label{class_c_shell_browser_ae6a0c7fbb6c0a8c4568c3366e5c2e514}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Go\+Home} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_acc5fd35c3c2e9d39f5dc994ca98c8844}\label{class_c_shell_browser_acc5fd35c3c2e9d39f5dc994ca98c8844}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Go\+Search} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_af376581eaff4d9fbff5baaaad531243c}\label{class_c_shell_browser_af376581eaff4d9fbff5baaaad531243c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Navigate} (B\+S\+TR U\+RL, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Flags, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Target\+Frame\+Name, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Post\+Data, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Headers)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_af7c2040d644563c1606e14d3481b706b}\label{class_c_shell_browser_af7c2040d644563c1606e14d3481b706b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Refresh} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac5ffa06641e67327d92f1c23fa24be7a}\label{class_c_shell_browser_ac5ffa06641e67327d92f1c23fa24be7a}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Refresh2} (\hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Level)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a23da43d0e184885d0e608fb61bf5a76f}\label{class_c_shell_browser_a23da43d0e184885d0e608fb61bf5a76f}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Stop} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_abb6fda1982f9b3d353a23aaac1177bb1}\label{class_c_shell_browser_abb6fda1982f9b3d353a23aaac1177bb1}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Application} (\hyperlink{interface_i_dispatch}{I\+Dispatch} $\ast$$\ast$pp\+Disp)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a465f8de076584c55105a88ec1cc818f1}\label{class_c_shell_browser_a465f8de076584c55105a88ec1cc818f1}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Parent} (\hyperlink{interface_i_dispatch}{I\+Dispatch} $\ast$$\ast$pp\+Disp)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1583348047c5673a5b99781c50bae691}\label{class_c_shell_browser_a1583348047c5673a5b99781c50bae691}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Container} (\hyperlink{interface_i_dispatch}{I\+Dispatch} $\ast$$\ast$pp\+Disp)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a67d19690ffca1fb89287cd35fb17fb73}\label{class_c_shell_browser_a67d19690ffca1fb89287cd35fb17fb73}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Document} (\hyperlink{interface_i_dispatch}{I\+Dispatch} $\ast$$\ast$pp\+Disp)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_adca5eb5121ff2a4b3a3141890503302c}\label{class_c_shell_browser_adca5eb5121ff2a4b3a3141890503302c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Top\+Level\+Container} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$p\+Bool)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aa765077e8c04fde838ae32456ccf3210}\label{class_c_shell_browser_aa765077e8c04fde838ae32456ccf3210}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Type} (B\+S\+TR $\ast$Type)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a7303560465bb16a3bcf048a11024cae9}\label{class_c_shell_browser_a7303560465bb16a3bcf048a11024cae9}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Left} (long $\ast$pl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a87cd48863b732711927d028ee24b99cb}\label{class_c_shell_browser_a87cd48863b732711927d028ee24b99cb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Left} (long Left)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_af7e166fbc34234a9a09b37f7ac128722}\label{class_c_shell_browser_af7e166fbc34234a9a09b37f7ac128722}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Top} (long $\ast$pl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aa0782a23a882d35de3dc3ac95c33f727}\label{class_c_shell_browser_aa0782a23a882d35de3dc3ac95c33f727}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Top} (long Top)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad82f7baf6442c546b08099c47d26eb3b}\label{class_c_shell_browser_ad82f7baf6442c546b08099c47d26eb3b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Width} (long $\ast$pl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a2cb0aece9dca44b01aa9d24eb01633b8}\label{class_c_shell_browser_a2cb0aece9dca44b01aa9d24eb01633b8}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Width} (long Width)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8ec98369fe1a927fccd71843479097be}\label{class_c_shell_browser_a8ec98369fe1a927fccd71843479097be}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Height} (long $\ast$pl)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_abf79f0d86b68db3424c588840e45926e}\label{class_c_shell_browser_abf79f0d86b68db3424c588840e45926e}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Height} (long Height)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a11fed698ede5f7984524d15b52192475}\label{class_c_shell_browser_a11fed698ede5f7984524d15b52192475}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Location\+Name} (B\+S\+TR $\ast$Location\+Name)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_abe8517297277167663afcd4dd8e30ab7}\label{class_c_shell_browser_abe8517297277167663afcd4dd8e30ab7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Location\+U\+RL} (B\+S\+TR $\ast$Location\+U\+RL)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a38dd481a8730372d950b75e0a52e7e65}\label{class_c_shell_browser_a38dd481a8730372d950b75e0a52e7e65}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Busy} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$p\+Bool)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a95b789c22d9ffd060617de382fb789bf}\label{class_c_shell_browser_a95b789c22d9ffd060617de382fb789bf}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Quit} ()
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a7747e024141bf55954b4a7d526637581}\label{class_c_shell_browser_a7747e024141bf55954b4a7d526637581}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Client\+To\+Window} (int $\ast$pcx, int $\ast$pcy)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a5fd1cffb64e9bb27fef923a67d4e9276}\label{class_c_shell_browser_a5fd1cffb64e9bb27fef923a67d4e9276}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Put\+Property} (B\+S\+TR \hyperlink{struct_property}{Property}, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} vt\+Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a2614decf5b14bb32ce444f48855da07e}\label{class_c_shell_browser_a2614decf5b14bb32ce444f48855da07e}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Property} (B\+S\+TR \hyperlink{struct_property}{Property}, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pvt\+Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae6b51993b91621dda1d1cd1356bb7621}\label{class_c_shell_browser_ae6b51993b91621dda1d1cd1356bb7621}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Name} (B\+S\+TR $\ast$\hyperlink{struct_name_rec__}{Name})
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae5e2ae10ef9fe7ac416dab6296a77955}\label{class_c_shell_browser_ae5e2ae10ef9fe7ac416dab6296a77955}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+H\+W\+ND} (S\+H\+A\+N\+D\+L\+E\+\_\+\+P\+TR $\ast$p\+H\+W\+ND)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a66649465eb247cddc94450012537bfb0}\label{class_c_shell_browser_a66649465eb247cddc94450012537bfb0}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Full\+Name} (B\+S\+TR $\ast$Full\+Name)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a86cec426c0fb1a726318e71fa557af33}\label{class_c_shell_browser_a86cec426c0fb1a726318e71fa557af33}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Path} (B\+S\+TR $\ast$Path)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae47fa3fed5b7f74d39234356766bcb33}\label{class_c_shell_browser_ae47fa3fed5b7f74d39234356766bcb33}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Visible} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$p\+Bool)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad7b759dfaef36518752b7a4c5aadc571}\label{class_c_shell_browser_ad7b759dfaef36518752b7a4c5aadc571}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Visible} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a503b80a8f21295b870f843cee6ed72d4}\label{class_c_shell_browser_a503b80a8f21295b870f843cee6ed72d4}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Status\+Bar} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$p\+Bool)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a94f5d43e7993bf00ab100e0ed62f1b55}\label{class_c_shell_browser_a94f5d43e7993bf00ab100e0ed62f1b55}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Status\+Bar} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a461fb8874c2cfa0829ce939e175ef8dd}\label{class_c_shell_browser_a461fb8874c2cfa0829ce939e175ef8dd}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Status\+Text} (B\+S\+TR $\ast$Status\+Text)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a95bb73d75959a0e25434dff3f73e1c05}\label{class_c_shell_browser_a95bb73d75959a0e25434dff3f73e1c05}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Status\+Text} (B\+S\+TR Status\+Text)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a565d657a9469d22cd12f242b9fbe09ea}\label{class_c_shell_browser_a565d657a9469d22cd12f242b9fbe09ea}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Tool\+Bar} (int $\ast$Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae4bfd9c88de82647982d1bbd3692b493}\label{class_c_shell_browser_ae4bfd9c88de82647982d1bbd3692b493}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Tool\+Bar} (int Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aea429c52bbae6467dbaffb9e9de78f1c}\label{class_c_shell_browser_aea429c52bbae6467dbaffb9e9de78f1c}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Menu\+Bar} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ac52e757dbda39cc2407355a18c6c1140}\label{class_c_shell_browser_ac52e757dbda39cc2407355a18c6c1140}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Menu\+Bar} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1fae1f377304fec674dbf9e922a3fb45}\label{class_c_shell_browser_a1fae1f377304fec674dbf9e922a3fb45}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Full\+Screen} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$pb\+Full\+Screen)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1c4e7f9dc0b82bfcb4ad7fafe5af9569}\label{class_c_shell_browser_a1c4e7f9dc0b82bfcb4ad7fafe5af9569}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Full\+Screen} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL b\+Full\+Screen)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aa98748370ddbfd40b76f992c9ee4cc3b}\label{class_c_shell_browser_aa98748370ddbfd40b76f992c9ee4cc3b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Navigate2} (\hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$U\+RL, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Flags, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Target\+Frame\+Name, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Post\+Data, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$Headers)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_afe96bdde47a06f9eca8ae3e2fddd52d7}\label{class_c_shell_browser_afe96bdde47a06f9eca8ae3e2fddd52d7}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Status\+WB} (O\+L\+E\+C\+M\+D\+ID cmd\+ID, O\+L\+E\+C\+M\+DF $\ast$pcmdf)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae47d4877f4fc728b0f79efa244777876}\label{class_c_shell_browser_ae47d4877f4fc728b0f79efa244777876}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Exec\+WB} (O\+L\+E\+C\+M\+D\+ID cmd\+ID, O\+L\+E\+C\+M\+D\+E\+X\+E\+C\+O\+PT cmdexecopt, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pva\+In, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pva\+Out)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a96ed62d241645f4bb5d3c204dbc80ae3}\label{class_c_shell_browser_a96ed62d241645f4bb5d3c204dbc80ae3}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Show\+Browser\+Bar} (\hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pva\+Clsid, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pvar\+Show, \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} $\ast$pvar\+Size)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_af6b6ff96c46e1f5764e0887fda202779}\label{class_c_shell_browser_af6b6ff96c46e1f5764e0887fda202779}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Ready\+State} (R\+E\+A\+D\+Y\+S\+T\+A\+TE $\ast$pl\+Ready\+State)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ada32d738bec2bba6fd9dfad1469c9f56}\label{class_c_shell_browser_ada32d738bec2bba6fd9dfad1469c9f56}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Offline} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$pb\+Offline)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a2ad0eef394e3c0bab5df872b60feaebb}\label{class_c_shell_browser_a2ad0eef394e3c0bab5df872b60feaebb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Offline} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL b\+Offline)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a27eafb6c84ae8119effaee22c223346e}\label{class_c_shell_browser_a27eafb6c84ae8119effaee22c223346e}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Silent} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$pb\+Silent)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a7b29fb7c6c88e64b4b6bf648cccbf2fc}\label{class_c_shell_browser_a7b29fb7c6c88e64b4b6bf648cccbf2fc}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Silent} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL b\+Silent)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ade92fc8573fd2eaabc0abf09c19831f2}\label{class_c_shell_browser_ade92fc8573fd2eaabc0abf09c19831f2}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Register\+As\+Browser} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$pb\+Register)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a9c29008376a16c6079e31cf979f4a561}\label{class_c_shell_browser_a9c29008376a16c6079e31cf979f4a561}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Register\+As\+Browser} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL b\+Register)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a38587418937f8dc02bf746ad185f3964}\label{class_c_shell_browser_a38587418937f8dc02bf746ad185f3964}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Register\+As\+Drop\+Target} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$pb\+Register)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a7fffa3a2dbde51d720a875e53d22c5eb}\label{class_c_shell_browser_a7fffa3a2dbde51d720a875e53d22c5eb}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Register\+As\+Drop\+Target} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL b\+Register)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae8e0190e8adfb66913ded990a8aff9fa}\label{class_c_shell_browser_ae8e0190e8adfb66913ded990a8aff9fa}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Theater\+Mode} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$pb\+Register)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a47dae3e0aa89c0a0574318479d331fe5}\label{class_c_shell_browser_a47dae3e0aa89c0a0574318479d331fe5}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Theater\+Mode} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL b\+Register)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_af1460804ed043aeab9b6babf003fe05d}\label{class_c_shell_browser_af1460804ed043aeab9b6babf003fe05d}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Address\+Bar} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a9d508ec3236639d755ffa3bb6e4bcb08}\label{class_c_shell_browser_a9d508ec3236639d755ffa3bb6e4bcb08}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Address\+Bar} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a977d6626c8b93111bfdbd14fca130e30}\label{class_c_shell_browser_a977d6626c8b93111bfdbd14fca130e30}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries get\+\_\+\+Resizable} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL $\ast$Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_abbe5541dfa79da69eea1ef6524366d5f}\label{class_c_shell_browser_abbe5541dfa79da69eea1ef6524366d5f}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries put\+\_\+\+Resizable} (V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+OL Value)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a2bbc39b6c996cffb1f4881b856743071}\label{class_c_shell_browser_a2bbc39b6c996cffb1f4881b856743071}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Find\+Window\+By\+Index} (D\+W\+O\+RD dw\+ID, \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$ppunk)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1cc7fd9c15936dbe25a22e66077242be}\label{class_c_shell_browser_a1cc7fd9c15936dbe25a22e66077242be}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Window\+Data} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream, \hyperlink{struct___w_i_n_d_o_w_d_a_t_a}{L\+P\+W\+I\+N\+D\+O\+W\+D\+A\+TA} p\+Win\+Data)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aa370f8fc40e76d216262ec191b4436db}\label{class_c_shell_browser_aa370f8fc40e76d216262ec191b4436db}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Load\+History\+Position} (L\+P\+W\+S\+TR psz\+Url\+Location, D\+W\+O\+RD dw\+Position)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a624d2f0503cbc04ad6ea20a5b360ef7a}\label{class_c_shell_browser_a624d2f0503cbc04ad6ea20a5b360ef7a}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Class\+ID} (\hyperlink{struct___i_i_d}{C\+L\+S\+ID} $\ast$p\+Class\+ID)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a9a4de0af03e8b083bf78c1d6b7012c8e}\label{class_c_shell_browser_a9a4de0af03e8b083bf78c1d6b7012c8e}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Load\+History} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream, \hyperlink{interface_i_bind_ctx}{I\+Bind\+Ctx} $\ast$pbc)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a30868e9607051d38e756b57215b684de}\label{class_c_shell_browser_a30868e9607051d38e756b57215b684de}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Save\+History} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_af6c3eda438251516ac62218e6bfd8079}\label{class_c_shell_browser_af6c3eda438251516ac62218e6bfd8079}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Set\+Position\+Cookie} (D\+W\+O\+RD dw\+Positioncookie)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae83c7c53518387243315f5d5d52082d9}\label{class_c_shell_browser_ae83c7c53518387243315f5d5d52082d9}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Position\+Cookie} (D\+W\+O\+RD $\ast$pdw\+Positioncookie)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6985cde94e4de603873e786343a1bf5b}\label{class_c_shell_browser_a6985cde94e4de603873e786343a1bf5b}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Create} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a34dd56eba86d864cff822dd2a1df931f}\label{class_c_shell_browser_a34dd56eba86d864cff822dd2a1df931f}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Destroy} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8113e7d49a1ada433d2da04ef61cdff5}\label{class_c_shell_browser_a8113e7d49a1ada433d2da04ef61cdff5}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Size} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6589f68ce060ff00ac2c335e058afdd8}\label{class_c_shell_browser_a6589f68ce060ff00ac2c335e058afdd8}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Init\+Menu\+Popup} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a10d29ee069f0155f98ed3edd4bb272ca}\label{class_c_shell_browser_a10d29ee069f0155f98ed3edd4bb272ca}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Set\+Focus} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a0c4efee29288d5938c346fee8cceb997}\label{class_c_shell_browser_a0c4efee29288d5938c346fee8cceb997}} 
+L\+R\+E\+S\+U\+LT {\bfseries Relay\+Msg\+To\+Shell\+View} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8d00a384e805fb8dcb4e99f5ace18569}\label{class_c_shell_browser_a8d00a384e805fb8dcb4e99f5ace18569}} 
+L\+R\+E\+S\+U\+LT {\bfseries Propagate\+Message} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ab0f76de58d8dcbfe60ca5293dbe931e1}\label{class_c_shell_browser_ab0f76de58d8dcbfe60ca5293dbe931e1}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Close} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a8fb76ad9cce515012e60bf0eb2da00e6}\label{class_c_shell_browser_a8fb76ad9cce515012e60bf0eb2da00e6}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Folder\+Options} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_abdfdd664a591d980bad0a349daa01137}\label{class_c_shell_browser_abdfdd664a591d980bad0a349daa01137}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Map\+Network\+Drive} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a94b172373ae71972e4136c86b3d9e3a7}\label{class_c_shell_browser_a94b172373ae71972e4136c86b3d9e3a7}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Disconnect\+Network\+Drive} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_aa772e709dbf80b4680ac6cf0247ad015}\label{class_c_shell_browser_aa772e709dbf80b4680ac6cf0247ad015}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+About\+React\+OS} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ad5d875cef2f61e96cd9654b372686480}\label{class_c_shell_browser_ad5d875cef2f61e96cd9654b372686480}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Go\+Back} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a6ede27c02aa0d2066f2b1fd500a26b57}\label{class_c_shell_browser_a6ede27c02aa0d2066f2b1fd500a26b57}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Go\+Forward} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a751ac41d0c8ef818d2a3bc8e976d8072}\label{class_c_shell_browser_a751ac41d0c8ef818d2a3bc8e976d8072}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Go\+Up\+Level} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1df1457da67bee407095d7e6ec361597}\label{class_c_shell_browser_a1df1457da67bee407095d7e6ec361597}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Backspace} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a698433afd24abfd1653509ce5465e137}\label{class_c_shell_browser_a698433afd24abfd1653509ce5465e137}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Go\+Home} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a5338a48e7685416565a7c307f862cac6}\label{class_c_shell_browser_a5338a48e7685416565a7c307f862cac6}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Organize\+Favorites} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a14e7cf8c62db1a85d09aee429464b768}\label{class_c_shell_browser_a14e7cf8c62db1a85d09aee429464b768}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Toggle\+Status\+Bar\+Visible} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a66a0c10c90c20a57152f5cdf8302b74a}\label{class_c_shell_browser_a66a0c10c90c20a57152f5cdf8302b74a}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Toggle\+Toolbar\+Lock} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a1d955003846b0298441a5ab552ed2616}\label{class_c_shell_browser_a1d955003846b0298441a5ab552ed2616}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Toggle\+Toolbar\+Band\+Visible} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a50464fde5a9cd40951ab081c9e9c2a19}\label{class_c_shell_browser_a50464fde5a9cd40951ab081c9e9c2a19}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Toggle\+Address\+Band\+Visible} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a50754e2e2712ac419fa415439674cd93}\label{class_c_shell_browser_a50754e2e2712ac419fa415439674cd93}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Toggle\+Links\+Band\+Visible} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a4648c698a91e42b61b84b78991f757d0}\label{class_c_shell_browser_a4648c698a91e42b61b84b78991f757d0}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Toggle\+Text\+Labels} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a502356c72cefcc67e9d3d26cd2399426}\label{class_c_shell_browser_a502356c72cefcc67e9d3d26cd2399426}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Toolbar\+Customize} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_ae1a9d7b3d49fb6ed60c47263e859a961}\label{class_c_shell_browser_ae1a9d7b3d49fb6ed60c47263e859a961}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Go\+Travel} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_acfd5d205653a31253d0719ee9d94c831}\label{class_c_shell_browser_acfd5d205653a31253d0719ee9d94c831}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Refresh} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_afb42a2f26b96f489c57171e7d13f3a3c}\label{class_c_shell_browser_afb42a2f26b96f489c57171e7d13f3a3c}} 
+L\+R\+E\+S\+U\+LT {\bfseries On\+Explorer\+Bar} (W\+O\+RD w\+Notify\+Code, W\+O\+RD w\+ID, \hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd\+Ctl, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a33eab90908404ddf445ce01e9baa8854}\label{class_c_shell_browser_a33eab90908404ddf445ce01e9baa8854}} 
+L\+R\+E\+S\+U\+LT {\bfseries Relay\+Commands} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, B\+O\+OL \&b\+Handled)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a576e897312fb8630e0ddb09a649c069f}\label{class_c_shell_browser_a576e897312fb8630e0ddb09a649c069f}} 
+H\+R\+E\+S\+U\+LT {\bfseries On\+Search} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_a83a918d926bb7fc0a1cb90dec8e4e0d5}\label{class_c_shell_browser_a83a918d926bb7fc0a1cb90dec8e4e0d5}} 
+static L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK {\bfseries Window\+Proc} (\hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+\mbox{\Hypertarget{class_c_shell_browser_adca4612326b3d9545c70d2e6d745f89c}\label{class_c_shell_browser_adca4612326b3d9545c70d2e6d745f89c}} 
+static \hyperlink{struct_a_t_l_1_1___a_t_l___w_n_d_c_l_a_s_s_i_n_f_o_w}{A\+T\+L\+::\+C\+Wnd\+Class\+Info} \& {\bfseries Get\+Wnd\+Class\+Info} ()
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/browseui/shellbrowser.\+cpp\end{DoxyCompactItemize}

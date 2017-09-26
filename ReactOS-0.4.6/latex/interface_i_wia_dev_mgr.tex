@@ -1,0 +1,72 @@
+\hypertarget{interface_i_wia_dev_mgr}{}\section{I\+Wia\+Dev\+Mgr接口 参考}
+\label{interface_i_wia_dev_mgr}\index{I\+Wia\+Dev\+Mgr@{I\+Wia\+Dev\+Mgr}}
+类 I\+Wia\+Dev\+Mgr 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_wia_dev_mgr}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a983860b561b4c6812d5876fcfc8044d1}\label{interface_i_wia_dev_mgr_a983860b561b4c6812d5876fcfc8044d1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Device\+Info} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flag, \mbox{[}retval, out\mbox{]} \hyperlink{interface_i_enum_w_i_a___d_e_v___i_n_f_o}{I\+Enum\+W\+I\+A\+\_\+\+D\+E\+V\+\_\+\+I\+N\+FO} $\ast$$\ast$pp\+I\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_ae235ce2162d6f84260fdb5be717b74f0}\label{interface_i_wia_dev_mgr_ae235ce2162d6f84260fdb5be717b74f0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Device} (\mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}out\mbox{]} \hyperlink{interface_i_wia_item}{I\+Wia\+Item} $\ast$$\ast$pp\+Wia\+Item\+Root)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a072198383dd81cc7588d9ac4d2e952cd}\label{interface_i_wia_dev_mgr_a072198383dd81cc7588d9ac4d2e952cd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Select\+Device\+Dlg} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Device\+Type, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in, out\mbox{]} B\+S\+TR $\ast$pbstr\+Device\+ID, \mbox{[}retval, out\mbox{]} \hyperlink{interface_i_wia_item}{I\+Wia\+Item} $\ast$$\ast$pp\+Item\+Root)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_ad27b97b1d79f18d23c20460625012f9b}\label{interface_i_wia_dev_mgr_ad27b97b1d79f18d23c20460625012f9b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Select\+Device\+Dlg\+ID} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Device\+Type, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}retval, out\mbox{]} B\+S\+TR $\ast$pbstr\+Device\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a1ef2e294c2a16f4434c3218e2864a185}\label{interface_i_wia_dev_mgr_a1ef2e294c2a16f4434c3218e2864a185}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Image\+Dlg} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Device\+Type, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} L\+O\+NG l\+Intent, \mbox{[}in\mbox{]} \hyperlink{interface_i_wia_item}{I\+Wia\+Item} $\ast$p\+Item\+Root, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Filename, \mbox{[}in, out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Format)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a94c53471ad46b7ed54ee3859b5c134cc}\label{interface_i_wia_dev_mgr_a94c53471ad46b7ed54ee3859b5c134cc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Event\+Callback\+Program} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Event\+G\+U\+ID, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Commandline, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Name, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Description, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Icon)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a6e302bde1b9b4ad9e852507bd6992610}\label{interface_i_wia_dev_mgr_a6e302bde1b9b4ad9e852507bd6992610}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Event\+Callback\+Interface} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Event\+G\+U\+ID, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_i_wia_event_callback}{I\+Wia\+Event\+Callback} $\ast$p\+I\+Wia\+Event\+Callback, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$p\+Event\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a7c788b580ea0a3e3aa1ced7213be73ec}\label{interface_i_wia_dev_mgr_a7c788b580ea0a3e3aa1ced7213be73ec}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Event\+Callback\+C\+L\+S\+ID} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Event\+G\+U\+ID, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Cls\+ID, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Name, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Description, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Icon)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_abf8f683a03ea42f7e542a16dc9f4869f}\label{interface_i_wia_dev_mgr_abf8f683a03ea42f7e542a16dc9f4869f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Device\+Dlg} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a983860b561b4c6812d5876fcfc8044d1}\label{interface_i_wia_dev_mgr_a983860b561b4c6812d5876fcfc8044d1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Device\+Info} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flag, \mbox{[}retval, out\mbox{]} \hyperlink{interface_i_enum_w_i_a___d_e_v___i_n_f_o}{I\+Enum\+W\+I\+A\+\_\+\+D\+E\+V\+\_\+\+I\+N\+FO} $\ast$$\ast$pp\+I\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_ae235ce2162d6f84260fdb5be717b74f0}\label{interface_i_wia_dev_mgr_ae235ce2162d6f84260fdb5be717b74f0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Device} (\mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}out\mbox{]} \hyperlink{interface_i_wia_item}{I\+Wia\+Item} $\ast$$\ast$pp\+Wia\+Item\+Root)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a072198383dd81cc7588d9ac4d2e952cd}\label{interface_i_wia_dev_mgr_a072198383dd81cc7588d9ac4d2e952cd}} 
+H\+R\+E\+S\+U\+LT {\bfseries Select\+Device\+Dlg} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Device\+Type, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in, out\mbox{]} B\+S\+TR $\ast$pbstr\+Device\+ID, \mbox{[}retval, out\mbox{]} \hyperlink{interface_i_wia_item}{I\+Wia\+Item} $\ast$$\ast$pp\+Item\+Root)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_ad27b97b1d79f18d23c20460625012f9b}\label{interface_i_wia_dev_mgr_ad27b97b1d79f18d23c20460625012f9b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Select\+Device\+Dlg\+ID} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Device\+Type, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}retval, out\mbox{]} B\+S\+TR $\ast$pbstr\+Device\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a1ef2e294c2a16f4434c3218e2864a185}\label{interface_i_wia_dev_mgr_a1ef2e294c2a16f4434c3218e2864a185}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Image\+Dlg} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Device\+Type, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} L\+O\+NG l\+Intent, \mbox{[}in\mbox{]} \hyperlink{interface_i_wia_item}{I\+Wia\+Item} $\ast$p\+Item\+Root, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Filename, \mbox{[}in, out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid\+Format)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a94c53471ad46b7ed54ee3859b5c134cc}\label{interface_i_wia_dev_mgr_a94c53471ad46b7ed54ee3859b5c134cc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Event\+Callback\+Program} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Event\+G\+U\+ID, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Commandline, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Name, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Description, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Icon)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a6e302bde1b9b4ad9e852507bd6992610}\label{interface_i_wia_dev_mgr_a6e302bde1b9b4ad9e852507bd6992610}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Event\+Callback\+Interface} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Event\+G\+U\+ID, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_i_wia_event_callback}{I\+Wia\+Event\+Callback} $\ast$p\+I\+Wia\+Event\+Callback, \mbox{[}out\mbox{]} \hyperlink{interface_i_unknown}{I\+Unknown} $\ast$$\ast$p\+Event\+Object)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_a7c788b580ea0a3e3aa1ced7213be73ec}\label{interface_i_wia_dev_mgr_a7c788b580ea0a3e3aa1ced7213be73ec}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Event\+Callback\+C\+L\+S\+ID} (\mbox{[}in\mbox{]} L\+O\+NG l\+Flags, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Device\+ID, \mbox{[}in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Event\+G\+U\+ID, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$p\+Cls\+ID, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Name, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Description, \mbox{[}in\mbox{]} B\+S\+TR bstr\+Icon)
+\item 
+\mbox{\Hypertarget{interface_i_wia_dev_mgr_abf8f683a03ea42f7e542a16dc9f4869f}\label{interface_i_wia_dev_mgr_abf8f683a03ea42f7e542a16dc9f4869f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Device\+Dlg} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent, \mbox{[}in\mbox{]} L\+O\+NG l\+Flags)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wia\+\_\+lh.\+idl\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/wia\+\_\+xp.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,432 @@
+\hypertarget{x509_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/x509.h 文件参考}
+\label{x509_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/x509.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/x509.\+h}}
+
+
+X.\+509 generic defines and structures  
+
+
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}asn1.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pk.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rsa.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gab98caf7dfede54b5c576b5a27a5c6a6a}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+I\+N\+T\+E\+R\+M\+E\+D\+I\+A\+T\+E\+\_\+\+CA}~8
+\item 
+\mbox{\Hypertarget{x509_8h_a2d4212e9f556d819dcf18ada06a22101}\label{x509_8h_a2d4212e9f556d819dcf18ada06a22101}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE}~(0x80)  /$\ast$ bit 0 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_ab2e4125f34eb6332cca653eccc8a1993}\label{x509_8h_ab2e4125f34eb6332cca653eccc8a1993}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+N\+O\+N\+\_\+\+R\+E\+P\+U\+D\+I\+A\+T\+I\+ON}~(0x40)  /$\ast$ bit 1 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_ad7e93b186781f0474f8662fb2a83c370}\label{x509_8h_ad7e93b186781f0474f8662fb2a83c370}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+K\+E\+Y\+\_\+\+E\+N\+C\+I\+P\+H\+E\+R\+M\+E\+NT}~(0x20)  /$\ast$ bit 2 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_ad3c4beaae071ce4418697df9c0950021}\label{x509_8h_ad3c4beaae071ce4418697df9c0950021}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+D\+A\+T\+A\+\_\+\+E\+N\+C\+I\+P\+H\+E\+R\+M\+E\+NT}~(0x10)  /$\ast$ bit 3 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_abce173357d84bc4597b12952a193011c}\label{x509_8h_abce173357d84bc4597b12952a193011c}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+K\+E\+Y\+\_\+\+A\+G\+R\+E\+E\+M\+E\+NT}~(0x08)  /$\ast$ bit 4 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a6937b6cde9a8a30a3967b6c2288e9d2d}\label{x509_8h_a6937b6cde9a8a30a3967b6c2288e9d2d}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+K\+E\+Y\+\_\+\+C\+E\+R\+T\+\_\+\+S\+I\+GN}~(0x04)  /$\ast$ bit 5 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a9a361131f89cd27e19449c991705c0f3}\label{x509_8h_a9a361131f89cd27e19449c991705c0f3}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+C\+R\+L\+\_\+\+S\+I\+GN}~(0x02)  /$\ast$ bit 6 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_abd29bada76bd07d4357cc15ed0596a4e}\label{x509_8h_abd29bada76bd07d4357cc15ed0596a4e}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+E\+N\+C\+I\+P\+H\+E\+R\+\_\+\+O\+N\+LY}~(0x01)  /$\ast$ bit 7 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a31fc57928d31156729c4a18726044bfd}\label{x509_8h_a31fc57928d31156729c4a18726044bfd}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+K\+U\+\_\+\+D\+E\+C\+I\+P\+H\+E\+R\+\_\+\+O\+N\+LY}~(0x8000)  /$\ast$ bit 8 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a379c1cbfec75822feb6ab8dd470f2f5f}\label{x509_8h_a379c1cbfec75822feb6ab8dd470f2f5f}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+S\+L\+\_\+\+C\+L\+I\+E\+NT}~(0x80)  /$\ast$ bit 0 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a632958cb9a2a77af495536a40e1b9fef}\label{x509_8h_a632958cb9a2a77af495536a40e1b9fef}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+S\+L\+\_\+\+S\+E\+R\+V\+ER}~(0x40)  /$\ast$ bit 1 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a435813d11986e4ffc168e13637b66f26}\label{x509_8h_a435813d11986e4ffc168e13637b66f26}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL}~(0x20)  /$\ast$ bit 2 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a0dc99e9a29593ae1ab51361870b5e555}\label{x509_8h_a0dc99e9a29593ae1ab51361870b5e555}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+G\+N\+I\+NG}~(0x10)  /$\ast$ bit 3 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_ae9295ed52a01788c7f8e52c850c251d4}\label{x509_8h_ae9295ed52a01788c7f8e52c850c251d4}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+S\+E\+R\+V\+ED}~(0x08)  /$\ast$ bit 4 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a831422b2f74283a90bf6f2e88113b5f8}\label{x509_8h_a831422b2f74283a90bf6f2e88113b5f8}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+S\+L\+\_\+\+CA}~(0x04)  /$\ast$ bit 5 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a11036f8e61fb3a5433508720360c8bfa}\label{x509_8h_a11036f8e61fb3a5433508720360c8bfa}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+I\+L\+\_\+\+CA}~(0x02)  /$\ast$ bit 6 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_a178dff35633f812860ff7abe7898a8a8}\label{x509_8h_a178dff35633f812860ff7abe7898a8a8}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+G\+N\+I\+N\+G\+\_\+\+CA}~(0x01)  /$\ast$ bit 7 $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_ad8156eef3be25ded825bae1b153650f3}\label{x509_8h_ad8156eef3be25ded825bae1b153650f3}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+A\+U\+T\+H\+O\+R\+I\+T\+Y\+\_\+\+K\+E\+Y\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+ER}~(1 $<$$<$ 0)
+\item 
+\mbox{\Hypertarget{x509_8h_a0fbc580797ae0f47e82baddd145eace0}\label{x509_8h_a0fbc580797ae0f47e82baddd145eace0}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+ER}~(1 $<$$<$ 1)
+\item 
+\mbox{\Hypertarget{x509_8h_ab5b0754499cfd36d9adf0b784f2481fe}\label{x509_8h_ab5b0754499cfd36d9adf0b784f2481fe}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+K\+E\+Y\+\_\+\+U\+S\+A\+GE}~(1 $<$$<$ 2)
+\item 
+\mbox{\Hypertarget{x509_8h_a02a696da4dcf947d016872f9c51a03a8}\label{x509_8h_a02a696da4dcf947d016872f9c51a03a8}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+P\+O\+L\+I\+C\+I\+ES}~(1 $<$$<$ 3)
+\item 
+\mbox{\Hypertarget{x509_8h_a81fb8d771984fe590760da1b7007b61d}\label{x509_8h_a81fb8d771984fe590760da1b7007b61d}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+M\+A\+P\+P\+I\+N\+GS}~(1 $<$$<$ 4)
+\item 
+\mbox{\Hypertarget{x509_8h_ab8d3394563832fc0b9e66631b8f188f3}\label{x509_8h_ab8d3394563832fc0b9e66631b8f188f3}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+A\+L\+T\+\_\+\+N\+A\+ME}~(1 $<$$<$ 5)    /$\ast$ Supported (D\+NS) $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_abdee54b2daa69c504a66354b9e5ba3b8}\label{x509_8h_abdee54b2daa69c504a66354b9e5ba3b8}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+I\+S\+S\+U\+E\+R\+\_\+\+A\+L\+T\+\_\+\+N\+A\+ME}~(1 $<$$<$ 6)
+\item 
+\mbox{\Hypertarget{x509_8h_a29722a5dd951872c1b3043bef6896372}\label{x509_8h_a29722a5dd951872c1b3043bef6896372}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+D\+I\+R\+E\+C\+T\+O\+R\+Y\+\_\+\+A\+T\+T\+RS}~(1 $<$$<$ 7)
+\item 
+\mbox{\Hypertarget{x509_8h_a93d7df2e17bb972b8910275b94580d46}\label{x509_8h_a93d7df2e17bb972b8910275b94580d46}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+B\+A\+S\+I\+C\+\_\+\+C\+O\+N\+S\+T\+R\+A\+I\+N\+TS}~(1 $<$$<$ 8)    /$\ast$ Supported $\ast$/
+\item 
+\mbox{\Hypertarget{x509_8h_ae492fe84ffb9c79e5529103b89bc653b}\label{x509_8h_ae492fe84ffb9c79e5529103b89bc653b}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+N\+S\+T\+R\+A\+I\+N\+TS}~(1 $<$$<$ 9)
+\item 
+\mbox{\Hypertarget{x509_8h_a1f04b1b5b387bccc5ae75226a0ddd59c}\label{x509_8h_a1f04b1b5b387bccc5ae75226a0ddd59c}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+C\+O\+N\+S\+T\+R\+A\+I\+N\+TS}~(1 $<$$<$ 10)
+\item 
+\mbox{\Hypertarget{x509_8h_a85cc3f91cf3f351fe1b32355da908e50}\label{x509_8h_a85cc3f91cf3f351fe1b32355da908e50}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+K\+E\+Y\+\_\+\+U\+S\+A\+GE}~(1 $<$$<$ 11)
+\item 
+\mbox{\Hypertarget{x509_8h_a0c0fe57c57131ca34311a993cb39757a}\label{x509_8h_a0c0fe57c57131ca34311a993cb39757a}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+C\+R\+L\+\_\+\+D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+TS}~(1 $<$$<$ 12)
+\item 
+\mbox{\Hypertarget{x509_8h_a77cab17825808958ed405b67a7cad14a}\label{x509_8h_a77cab17825808958ed405b67a7cad14a}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+I\+N\+I\+H\+I\+B\+I\+T\+\_\+\+A\+N\+Y\+P\+O\+L\+I\+CY}~(1 $<$$<$ 13)
+\item 
+\mbox{\Hypertarget{x509_8h_ad0c7bf2f1f2d64d8285687330c889d78}\label{x509_8h_ad0c7bf2f1f2d64d8285687330c889d78}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+F\+R\+E\+S\+H\+E\+S\+T\+\_\+\+C\+RL}~(1 $<$$<$ 14)
+\item 
+\mbox{\Hypertarget{x509_8h_add098308e1fa17307e23fbacba7b15d5}\label{x509_8h_add098308e1fa17307e23fbacba7b15d5}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+E\+X\+T\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+PE}~(1 $<$$<$ 16)
+\item 
+\mbox{\Hypertarget{x509_8h_ad323fe050402e90118e2613aaf234691}\label{x509_8h_ad323fe050402e90118e2613aaf234691}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+D\+ER}~1
+\item 
+\mbox{\Hypertarget{x509_8h_a192bfcae14f9e4a8f8ba8ebcb00a24e8}\label{x509_8h_a192bfcae14f9e4a8f8ba8ebcb00a24e8}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+P\+EM}~2
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{x509_8h_ae08ff254e779a13bd567f877400de7f9}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+D\+N\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}~256
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+S\+A\+F\+E\+\_\+\+S\+N\+P\+R\+I\+N\+TF}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ X509 Error codes}\par
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga185bc7f27a2b1f7742537a2377c52ee3}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}~-\/0x2080
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gab4e8e2e41bfe62e969343efaa2784103}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+O\+ID}~-\/0x2100
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga45b8366804b7e2cbf3e25011f054802c}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT}~-\/0x2180
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga527608dc04b2c831fe5b161ec26aab76}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+E\+R\+S\+I\+ON}~-\/0x2200
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga8124a68edabf35ed9323880584128f16}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+E\+R\+I\+AL}~-\/0x2280
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gae16cddbd42e08f6dd093cf4326e59413}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+LG}~-\/0x2300
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga8f61c2f303bf065af4f783e03f952ede}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+N\+A\+ME}~-\/0x2380
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gac36bf085ce8f7f57f039bda8828bd824}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TE}~-\/0x2400
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga022c175386f082b4e056e6268ee68cab}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE}~-\/0x2480
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaa0788dbf0325aea4ab566717514b4422}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS}~-\/0x2500
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gab80a4eb806328731def21ec2ebcbc365}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+V\+E\+R\+S\+I\+ON}~-\/0x2580
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga488f8616b42eae6fe3fb9815d43c976f}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+S\+I\+G\+\_\+\+A\+LG}~-\/0x2600
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gac489ce5e8ba417bcd86012ebbb7f5044}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+S\+I\+G\+\_\+\+M\+I\+S\+M\+A\+T\+CH}~-\/0x2680
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaba46df0041dcf48fa9d164d28cf3a154}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+C\+E\+R\+T\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+F\+A\+I\+L\+ED}~-\/0x2700
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaeb90af9ad906c5075b1ad625ebc26553}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+C\+E\+R\+T\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+F\+O\+R\+M\+AT}~-\/0x2780
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaeeef11ebf0b31a54a665b1a3fd65c3f7}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}~-\/0x2800
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gacf6d98c6cbb76728260d1dcb1fe3bc7d}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED}~-\/0x2880
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gad85d9c7aa5c30b9730297bef3386407c}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR}~-\/0x2900
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gab9516fc53ff90c547fd77d35c71feec7}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X509\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+LL}~-\/0x2980
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ X509 Verify codes}\par
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga5f03158dcacc5914872e38c68231b642}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+E\+X\+P\+I\+R\+ED}~0x01
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaddd96a9eb80fab17bce02d2a147ea504}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+R\+E\+V\+O\+K\+ED}~0x02
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga6e71468985ebf243ca7cfce5c3dea881}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+C\+N\+\_\+\+M\+I\+S\+M\+A\+T\+CH}~0x04
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga0e5b1d4c9c1a1a3227238c82042c1d1b}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+N\+O\+T\+\_\+\+T\+R\+U\+S\+T\+ED}~0x08
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gad1da8228ca957c2947fd329c32fc7ca4}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+R\+L\+\_\+\+N\+O\+T\+\_\+\+T\+R\+U\+S\+T\+ED}~0x10
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaebccb1707af21f2d3d6610a7c6485f32}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+R\+L\+\_\+\+E\+X\+P\+I\+R\+ED}~0x20
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga8bca03e3c2c89460bea17ab142b0b7ab}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+M\+I\+S\+S\+I\+NG}~0x40
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga1b87b2e1d26077023adf2a5c65a76776}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+S\+K\+I\+P\+\_\+\+V\+E\+R\+I\+FY}~0x80
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga76bdd50937a671ef62474b7e38e23e02}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+O\+T\+H\+ER}~0x0100
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gac769acbb18e53198ae2d2e63bd339cfa}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+F\+U\+T\+U\+RE}~0x0200
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gad93c0f614969729f7d13fb0a3acac68e}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+R\+L\+\_\+\+F\+U\+T\+U\+RE}~0x0400
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga28705c8c3091a013487df25842249c0f}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+K\+E\+Y\+\_\+\+U\+S\+A\+GE}~0x0800
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gac3dab3183efdbca7e988916e7fc1a02a}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+E\+X\+T\+\_\+\+K\+E\+Y\+\_\+\+U\+S\+A\+GE}~0x1000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaa383ae441177fa7a16fb2313bb48bb10}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+N\+S\+\_\+\+C\+E\+R\+T\+\_\+\+T\+Y\+PE}~0x2000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga41b54b526c11bf51cc431ef1a151816d}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+B\+A\+D\+\_\+\+MD}~0x4000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga9332fa1e09a373cc56234525b14546c4}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+B\+A\+D\+\_\+\+PK}~0x8000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaef5f9a34b327eb79750ebc3779e98282}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+E\+R\+T\+\_\+\+B\+A\+D\+\_\+\+K\+EY}~0x010000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gad3f810fb74f94164185b88b90fffa329}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+R\+L\+\_\+\+B\+A\+D\+\_\+\+MD}~0x020000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_ga182a6f1f465e566de7586e6ee8fa7c4e}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+R\+L\+\_\+\+B\+A\+D\+\_\+\+PK}~0x040000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gac2947ead6fd1035296826110ca74a364}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+B\+A\+D\+C\+R\+L\+\_\+\+B\+A\+D\+\_\+\+K\+EY}~0x080000
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{类型定义}
+\begin{Indent}\textbf{ Structures for parsing X.509 certificates, C\+R\+Ls and C\+S\+Rs}\par
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf}
+\item 
+typedef \hyperlink{structmbedtls__asn1__bitstring}{mbedtls\+\_\+asn1\+\_\+bitstring} \hyperlink{group__x509__module_gaf25a97602f25027e160f22f6d5590636}{mbedtls\+\_\+x509\+\_\+bitstring}
+\item 
+typedef \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} \hyperlink{group__x509__module_ga2272228c7776102328df31623af3168c}{mbedtls\+\_\+x509\+\_\+name}
+\item 
+typedef \hyperlink{structmbedtls__asn1__sequence}{mbedtls\+\_\+asn1\+\_\+sequence} \hyperlink{group__x509__module_gabd52d60a09315854d9ef849d02154f35}{mbedtls\+\_\+x509\+\_\+sequence}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} \hyperlink{group__x509__module_ga38827540a02fb2ddca08ec0917a8a41b}{mbedtls\+\_\+x509\+\_\+time}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{x509_8h_a576f34a7432238db229137bdfc3cfde0}{mbedtls\+\_\+x509\+\_\+dn\+\_\+gets} (char $\ast$buf, size\+\_\+t size, const \hyperlink{group__x509__module_ga2272228c7776102328df31623af3168c}{mbedtls\+\_\+x509\+\_\+name} $\ast$dn)
+\begin{DoxyCompactList}\small\item\em Store the certificate DN in printable form into buf; no more than size characters will be written. \end{DoxyCompactList}\item 
+int \hyperlink{x509_8h_af9ce1b81550ac7290706f99c71150e4d}{mbedtls\+\_\+x509\+\_\+serial\+\_\+gets} (char $\ast$buf, size\+\_\+t size, const \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$serial)
+\begin{DoxyCompactList}\small\item\em Store the certificate serial in printable form into buf; no more than size characters will be written. \end{DoxyCompactList}\item 
+int \hyperlink{x509_8h_aff59bcfa98af02a3b9a5086a6b48fcb5}{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+past} (const \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} $\ast$time)
+\begin{DoxyCompactList}\small\item\em Check a given \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} against the system time and tell if it\textquotesingle{}s in the past. \end{DoxyCompactList}\item 
+int \hyperlink{x509_8h_a294400391e6c19a208d8a279b8e1fee1}{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+future} (const \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} $\ast$time)
+\begin{DoxyCompactList}\small\item\em Check a given \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} against the system time and tell if it\textquotesingle{}s in the future. \end{DoxyCompactList}\item 
+int \hyperlink{x509_8h_a6a66d211cc827839cf46a7dfcb849dc0}{mbedtls\+\_\+x509\+\_\+self\+\_\+test} (int verbose)
+\begin{DoxyCompactList}\small\item\em Checkup routine \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{x509_8h_a1b6eb7a40a7f4f1b86d15e164543b536}\label{x509_8h_a1b6eb7a40a7f4f1b86d15e164543b536}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+name} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{group__x509__module_ga2272228c7776102328df31623af3168c}{mbedtls\+\_\+x509\+\_\+name} $\ast$cur)
+\item 
+\mbox{\Hypertarget{x509_8h_a6d841aa6a9b81bf0b5d5877ef7a1c11a}\label{x509_8h_a6d841aa6a9b81bf0b5d5877ef7a1c11a}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+alg\+\_\+null} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$alg)
+\item 
+\mbox{\Hypertarget{x509_8h_a96a6e579899dff8e0669977605a85178}\label{x509_8h_a96a6e579899dff8e0669977605a85178}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+alg} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$alg, \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$params)
+\item 
+\mbox{\Hypertarget{x509_8h_a158d0b17cd5ef8fa250f50129c46768b}\label{x509_8h_a158d0b17cd5ef8fa250f50129c46768b}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+rsassa\+\_\+pss\+\_\+params} (const \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$params, mbedtls\+\_\+md\+\_\+type\+\_\+t $\ast$md\+\_\+alg, mbedtls\+\_\+md\+\_\+type\+\_\+t $\ast$mgf\+\_\+md, int $\ast$salt\+\_\+len)
+\item 
+\mbox{\Hypertarget{x509_8h_ad1af83d0566030d2c2e61c49044f718a}\label{x509_8h_ad1af83d0566030d2c2e61c49044f718a}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+sig} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$sig)
+\item 
+\mbox{\Hypertarget{x509_8h_a8cea7dde1e6f17a99415b67c801ad2e1}\label{x509_8h_a8cea7dde1e6f17a99415b67c801ad2e1}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+sig\+\_\+alg} (const \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$sig\+\_\+oid, const \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$sig\+\_\+params, mbedtls\+\_\+md\+\_\+type\+\_\+t $\ast$md\+\_\+alg, \hyperlink{pk_8h_a3fe41eff5605ae727eb9d28dad297020}{mbedtls\+\_\+pk\+\_\+type\+\_\+t} $\ast$pk\+\_\+alg, \hyperlink{interfacevoid}{void} $\ast$$\ast$sig\+\_\+opts)
+\item 
+\mbox{\Hypertarget{x509_8h_a7b32401ce86b384066ca8e3287c52e1c}\label{x509_8h_a7b32401ce86b384066ca8e3287c52e1c}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+time} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} $\ast$time)
+\item 
+\mbox{\Hypertarget{x509_8h_ad0b8a43901d61cb6867a9178e803afa1}\label{x509_8h_ad0b8a43901d61cb6867a9178e803afa1}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+serial} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$serial)
+\item 
+\mbox{\Hypertarget{x509_8h_aac564b3b46292f598770e5f825460247}\label{x509_8h_aac564b3b46292f598770e5f825460247}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+get\+\_\+ext} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$ext, int \hyperlink{structtag}{tag})
+\item 
+\mbox{\Hypertarget{x509_8h_ac5eabb45f2953ac5c82487266614f50e}\label{x509_8h_ac5eabb45f2953ac5c82487266614f50e}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+sig\+\_\+alg\+\_\+gets} (char $\ast$buf, size\+\_\+t size, const \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$sig\+\_\+oid, \hyperlink{pk_8h_a3fe41eff5605ae727eb9d28dad297020}{mbedtls\+\_\+pk\+\_\+type\+\_\+t} pk\+\_\+alg, mbedtls\+\_\+md\+\_\+type\+\_\+t md\+\_\+alg, const \hyperlink{interfacevoid}{void} $\ast$sig\+\_\+opts)
+\item 
+\mbox{\Hypertarget{x509_8h_aba59e2cdba4bbf669d2515004c438643}\label{x509_8h_aba59e2cdba4bbf669d2515004c438643}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+key\+\_\+size\+\_\+helper} (char $\ast$buf, size\+\_\+t buf\+\_\+size, const char $\ast$\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{x509_8h_af9b151018f1d275c4228c4730cd1c0aa}\label{x509_8h_af9b151018f1d275c4228c4730cd1c0aa}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+string\+\_\+to\+\_\+names} (\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$$\ast$head, const char $\ast$\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{x509_8h_a33fbc6a4a09d4503e7d7a7c5f6124a5d}\label{x509_8h_a33fbc6a4a09d4503e7d7a7c5f6124a5d}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+set\+\_\+extension} (\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$$\ast$head, const char $\ast$oid, size\+\_\+t oid\+\_\+len, int critical, const unsigned char $\ast$val, size\+\_\+t val\+\_\+len)
+\item 
+\mbox{\Hypertarget{x509_8h_a0de4dd2a5d7fe95fa9b94e19260e29cf}\label{x509_8h_a0de4dd2a5d7fe95fa9b94e19260e29cf}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+write\+\_\+extensions} (unsigned char $\ast$$\ast$p, unsigned char $\ast$start, \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$first)
+\item 
+\mbox{\Hypertarget{x509_8h_a4787303446416e810ef20d7dcd9b993e}\label{x509_8h_a4787303446416e810ef20d7dcd9b993e}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+write\+\_\+names} (unsigned char $\ast$$\ast$p, unsigned char $\ast$start, \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$first)
+\item 
+\mbox{\Hypertarget{x509_8h_a125c85f0064135e1e35179df7d3a76b6}\label{x509_8h_a125c85f0064135e1e35179df7d3a76b6}} 
+int {\bfseries mbedtls\+\_\+x509\+\_\+write\+\_\+sig} (unsigned char $\ast$$\ast$p, unsigned char $\ast$start, const char $\ast$oid, size\+\_\+t oid\+\_\+len, unsigned char $\ast$sig, size\+\_\+t size)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+X.\+509 generic defines and structures 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{x509_8h_ae08ff254e779a13bd567f877400de7f9}\label{x509_8h_ae08ff254e779a13bd567f877400de7f9}} 
+\index{x509.\+h@{x509.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+D\+N\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+D\+N\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+D\+N\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+D\+N\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}!x509.\+h@{x509.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+D\+N\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}{MBEDTLS\_X509\_MAX\_DN\_NAME\_SIZE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+D\+N\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE~256}
+
+Maximum value size of a DN entry \mbox{\Hypertarget{x509_8h_a8c6f90558dfc5ee7d4fedd90bfd8fe6a}\label{x509_8h_a8c6f90558dfc5ee7d4fedd90bfd8fe6a}} 
+\index{x509.\+h@{x509.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+S\+A\+F\+E\+\_\+\+S\+N\+P\+R\+I\+N\+TF@{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+S\+A\+F\+E\+\_\+\+S\+N\+P\+R\+I\+N\+TF}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+S\+A\+F\+E\+\_\+\+S\+N\+P\+R\+I\+N\+TF@{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+S\+A\+F\+E\+\_\+\+S\+N\+P\+R\+I\+N\+TF}!x509.\+h@{x509.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+S\+A\+F\+E\+\_\+\+S\+N\+P\+R\+I\+N\+TF}{MBEDTLS\_X509\_SAFE\_SNPRINTF}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+S\+A\+F\+E\+\_\+\+S\+N\+P\+R\+I\+N\+TF}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                                    \(\backslash\)
+        if( ret < 0 || (\textcolor{keywordtype}{size\_t}) ret >= n )                  \(\backslash\)
+            return( \hyperlink{group__x509__module_gab9516fc53ff90c547fd77d35c71feec7}{MBEDTLS\_ERR\_X509\_BUFFER\_TOO\_SMALL} );    \(\backslash\)
+                                                            \(\backslash\)
+        n -= (size\_t) ret;                                  \(\backslash\)
+        p += (size\_t) ret;                                  \(\backslash\)
+    \} \textcolor{keywordflow}{while}( 0 )
+\end{DoxyCode}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{x509_8h_a576f34a7432238db229137bdfc3cfde0}\label{x509_8h_a576f34a7432238db229137bdfc3cfde0}} 
+\index{x509.\+h@{x509.\+h}!mbedtls\+\_\+x509\+\_\+dn\+\_\+gets@{mbedtls\+\_\+x509\+\_\+dn\+\_\+gets}}
+\index{mbedtls\+\_\+x509\+\_\+dn\+\_\+gets@{mbedtls\+\_\+x509\+\_\+dn\+\_\+gets}!x509.\+h@{x509.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+x509\+\_\+dn\+\_\+gets()}{mbedtls\_x509\_dn\_gets()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+x509\+\_\+dn\+\_\+gets (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{size\+\_\+t}]{size,  }\item[{const \hyperlink{group__x509__module_ga2272228c7776102328df31623af3168c}{mbedtls\+\_\+x509\+\_\+name} $\ast$}]{dn }\end{DoxyParamCaption})}
+
+
+
+Store the certificate DN in printable form into buf; no more than size characters will be written. 
+
+
+\begin{DoxyParams}{参数}
+{\em buf} & \hyperlink{class_buffer}{Buffer} to write to \\
+\hline
+{\em size} & Maximum size of buffer \\
+\hline
+{\em dn} & The X509 name to represent\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The length of the string written (not including the terminated nul byte), or a negative error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{x509_8h_a6a66d211cc827839cf46a7dfcb849dc0}\label{x509_8h_a6a66d211cc827839cf46a7dfcb849dc0}} 
+\index{x509.\+h@{x509.\+h}!mbedtls\+\_\+x509\+\_\+self\+\_\+test@{mbedtls\+\_\+x509\+\_\+self\+\_\+test}}
+\index{mbedtls\+\_\+x509\+\_\+self\+\_\+test@{mbedtls\+\_\+x509\+\_\+self\+\_\+test}!x509.\+h@{x509.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+x509\+\_\+self\+\_\+test()}{mbedtls\_x509\_self\_test()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+x509\+\_\+self\+\_\+test (\begin{DoxyParamCaption}\item[{int}]{verbose }\end{DoxyParamCaption})}
+
+
+
+Checkup routine 
+
+\begin{DoxyReturn}{返回}
+0 if successful, or 1 if the test failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{x509_8h_af9ce1b81550ac7290706f99c71150e4d}\label{x509_8h_af9ce1b81550ac7290706f99c71150e4d}} 
+\index{x509.\+h@{x509.\+h}!mbedtls\+\_\+x509\+\_\+serial\+\_\+gets@{mbedtls\+\_\+x509\+\_\+serial\+\_\+gets}}
+\index{mbedtls\+\_\+x509\+\_\+serial\+\_\+gets@{mbedtls\+\_\+x509\+\_\+serial\+\_\+gets}!x509.\+h@{x509.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+x509\+\_\+serial\+\_\+gets()}{mbedtls\_x509\_serial\_gets()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+x509\+\_\+serial\+\_\+gets (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{size\+\_\+t}]{size,  }\item[{const \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf} $\ast$}]{serial }\end{DoxyParamCaption})}
+
+
+
+Store the certificate serial in printable form into buf; no more than size characters will be written. 
+
+
+\begin{DoxyParams}{参数}
+{\em buf} & \hyperlink{class_buffer}{Buffer} to write to \\
+\hline
+{\em size} & Maximum size of buffer \\
+\hline
+{\em serial} & The X509 serial to represent\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The length of the string written (not including the terminated nul byte), or a negative error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{x509_8h_a294400391e6c19a208d8a279b8e1fee1}\label{x509_8h_a294400391e6c19a208d8a279b8e1fee1}} 
+\index{x509.\+h@{x509.\+h}!mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+future@{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+future}}
+\index{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+future@{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+future}!x509.\+h@{x509.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+future()}{mbedtls\_x509\_time\_is\_future()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+future (\begin{DoxyParamCaption}\item[{const \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} $\ast$}]{time }\end{DoxyParamCaption})}
+
+
+
+Check a given \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} against the system time and tell if it\textquotesingle{}s in the future. 
+
+\begin{DoxyNote}{注解}
+Intended usage is \char`\"{}if( is\+\_\+future( valid\+\_\+from ) ) E\+R\+R\+O\+R\char`\"{}. Hence the return value of 1 if on internal errors.
+\end{DoxyNote}
+
+\begin{DoxyParams}{参数}
+{\em time} & \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+1 if the given time is in the future or an error occured, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{x509_8h_aff59bcfa98af02a3b9a5086a6b48fcb5}\label{x509_8h_aff59bcfa98af02a3b9a5086a6b48fcb5}} 
+\index{x509.\+h@{x509.\+h}!mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+past@{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+past}}
+\index{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+past@{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+past}!x509.\+h@{x509.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+past()}{mbedtls\_x509\_time\_is\_past()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+x509\+\_\+time\+\_\+is\+\_\+past (\begin{DoxyParamCaption}\item[{const \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} $\ast$}]{time }\end{DoxyParamCaption})}
+
+
+
+Check a given \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} against the system time and tell if it\textquotesingle{}s in the past. 
+
+\begin{DoxyNote}{注解}
+Intended usage is \char`\"{}if( is\+\_\+past( valid\+\_\+to ) ) E\+R\+R\+O\+R\char`\"{}. Hence the return value of 1 if on internal errors.
+\end{DoxyNote}
+
+\begin{DoxyParams}{参数}
+{\em time} & \hyperlink{structmbedtls__x509__time}{mbedtls\+\_\+x509\+\_\+time} to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+1 if the given time is in the past or an error occured, 0 otherwise. 
+\end{DoxyReturn}

@@ -1,0 +1,128 @@
+\hypertarget{ff__dir_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/fullfat/ff\+\_\+dir.h 文件参考}
+\label{ff__dir_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/fullfat/ff\+\_\+dir.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/fullfat/ff\+\_\+dir.\+h}}
+{\ttfamily \#include \char`\"{}ff\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+error.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+ioman.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+blk.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+fat.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+fatdef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+memory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+hash.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+crc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+file.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT}
+\item 
+struct \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a426463fd46af9770b982cf7b1d7e4ae6}\label{ff__dir_8h_a426463fd46af9770b982cf7b1d7e4ae6}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Find\+First} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent, const F\+F\+\_\+\+T\+\_\+\+W\+C\+H\+AR $\ast$\hyperlink{structpath}{path})
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a826c50c9baffe233ba84fb1d05328156}\label{ff__dir_8h_a826c50c9baffe233ba84fb1d05328156}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Mk\+Dir} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, const F\+F\+\_\+\+T\+\_\+\+W\+C\+H\+AR $\ast$Path)
+\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__dir_8h_a6ab102ccc88ac028ecbf7d349a6afa2f}{F\+F\+\_\+\+Find\+Next} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent)
+\begin{DoxyCompactList}\small\item\em Get\textquotesingle{}s the next \hyperlink{struct_entry}{Entry} based on the data recorded in the \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__dir_8h_a9f4ef91fbb31caef893f0b424454e1cd}\label{ff__dir_8h_a9f4ef91fbb31caef893f0b424454e1cd}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Get\+Entry} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 n\+Entry, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_af6d3c710e4db40448af8ef2c6dc9be01}\label{ff__dir_8h_af6d3c710e4db40448af8ef2c6dc9be01}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Put\+Entry} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 \hyperlink{struct_entry}{Entry}, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a14675990f5687e1a4802983eb86b965f}\label{ff__dir_8h_a14675990f5687e1a4802983eb86b965f}} 
+F\+F\+\_\+\+T\+\_\+\+S\+I\+N\+T8 {\bfseries F\+F\+\_\+\+Find\+Entry} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, F\+F\+\_\+\+T\+\_\+\+I\+N\+T8 $\ast$\hyperlink{struct_name_rec__}{Name}, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent, F\+F\+\_\+\+T\+\_\+\+B\+O\+OL L\+F\+Ns)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_ae1a0f89e747bb0d06440d721bd36ea50}\label{ff__dir_8h_ae1a0f89e747bb0d06440d721bd36ea50}} 
+\hyperlink{interfacevoid}{void} {\bfseries F\+F\+\_\+\+Populate\+Short\+Dirent} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$Entry\+Buffer)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a54151939e556ea794db0b101bcefaeff}\label{ff__dir_8h_a54151939e556ea794db0b101bcefaeff}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Populate\+Long\+Dirent} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 n\+Entry, \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT} $\ast$p\+Fetch\+Context)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a70dd208bfe5897b53e366bea100e6f0d}\label{ff__dir_8h_a70dd208bfe5897b53e366bea100e6f0d}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Init\+Entry\+Fetch} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 ul\+Dir\+Cluster, \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT} $\ast$p\+Context)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a22eea289ef37e40ceed4323600aa7eda}\label{ff__dir_8h_a22eea289ef37e40ceed4323600aa7eda}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Fetch\+Entry\+With\+Context} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 ul\+Entry, \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT} $\ast$p\+Context, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$p\+Entry\+Buffer)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a053dbf30672151bf020ad2b532140309}\label{ff__dir_8h_a053dbf30672151bf020ad2b532140309}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Push\+Entry\+With\+Context} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 ul\+Entry, \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT} $\ast$p\+Context, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$p\+Entry\+Buffer)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a3cdd95da94e27605543610c96bce55f6}\label{ff__dir_8h_a3cdd95da94e27605543610c96bce55f6}} 
+\hyperlink{interfacevoid}{void} {\bfseries F\+F\+\_\+\+Cleanup\+Entry\+Fetch} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT} $\ast$p\+Context)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_aab7b7ac95901679dca1ab35c3ef569b3}\label{ff__dir_8h_aab7b7ac95901679dca1ab35c3ef569b3}} 
+F\+F\+\_\+\+T\+\_\+\+S\+I\+N\+T8 {\bfseries F\+F\+\_\+\+Push\+Entry} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 n\+Entry, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$buffer, \hyperlink{interfacevoid}{void} $\ast$p\+Param)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a0c4b80b622274ae111ef72c707a39a7b}\label{ff__dir_8h_a0c4b80b622274ae111ef72c707a39a7b}} 
+F\+F\+\_\+\+T\+\_\+\+B\+O\+OL {\bfseries F\+F\+\_\+is\+End\+Of\+Dir} (F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$Entry\+Buffer)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_aad92ec320d0ee63cc6883fb57de899d4}\label{ff__dir_8h_aad92ec320d0ee63cc6883fb57de899d4}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Find\+Next\+In\+Dir} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent, \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT} $\ast$p\+Fetch\+Context)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a0c55da76625dc20672474f0f9073b2b7}\label{ff__dir_8h_a0c55da76625dc20672474f0f9073b2b7}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Find\+Entry\+In\+Dir} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, const F\+F\+\_\+\+T\+\_\+\+W\+C\+H\+AR $\ast$\hyperlink{structname}{name}, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 pa\+\_\+\+Attrib, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a3c748d0771d82f3431fa18b6f75fcdf7}\label{ff__dir_8h_a3c748d0771d82f3431fa18b6f75fcdf7}} 
+F\+F\+\_\+\+T\+\_\+\+S\+I\+N\+T8 {\bfseries F\+F\+\_\+\+Create\+Short\+Name} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, F\+F\+\_\+\+T\+\_\+\+W\+C\+H\+AR $\ast$Short\+Name, F\+F\+\_\+\+T\+\_\+\+W\+C\+H\+AR $\ast$Long\+Name)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_aa75afa98981a4f7817763836bac411e0}\label{ff__dir_8h_aa75afa98981a4f7817763836bac411e0}} 
+\hyperlink{interfacevoid}{void} {\bfseries F\+F\+\_\+lock\+D\+IR} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a754b460423920974ae51f8d9d45161ae}\label{ff__dir_8h_a754b460423920974ae51f8d9d45161ae}} 
+\hyperlink{interfacevoid}{void} {\bfseries F\+F\+\_\+unlock\+D\+IR} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_aaebd7772bb441ca7864521ede8299f0f}\label{ff__dir_8h_aaebd7772bb441ca7864521ede8299f0f}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Create\+File} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, F\+F\+\_\+\+T\+\_\+\+W\+C\+H\+AR $\ast$\hyperlink{struct___file_name}{File\+Name}, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a9a8e5efbbe19c75e8eee39666b4c222f}\label{ff__dir_8h_a9a8e5efbbe19c75e8eee39666b4c222f}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Create\+Dirent} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster, \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$p\+Dirent)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_ad5a7b09830f63e672a4b74207b0c707c}\label{ff__dir_8h_ad5a7b09830f63e672a4b74207b0c707c}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Extend\+Directory} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Dir\+Cluster)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_abe40cf220cdfcffde0f3070ba56bd602}\label{ff__dir_8h_abe40cf220cdfcffde0f3070ba56bd602}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Find\+Dir} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, const F\+F\+\_\+\+T\+\_\+\+W\+C\+H\+AR $\ast$\hyperlink{structpath}{path}, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 path\+Len, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\mbox{\Hypertarget{ff__dir_8h_a66f7e0ce53017b55cd4b82ee73c6faab}\label{ff__dir_8h_a66f7e0ce53017b55cd4b82ee73c6faab}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Rm\+L\+F\+Ns} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 us\+Dir\+Entry, \hyperlink{struct_f_f___f_e_t_c_h___c_o_n_t_e_x_t}{F\+F\+\_\+\+F\+E\+T\+C\+H\+\_\+\+C\+O\+N\+T\+E\+XT} $\ast$p\+Context)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\begin{DoxyAuthor}{作者}
+James Walmsley 
+\end{DoxyAuthor}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{ff__dir_8h_a6ab102ccc88ac028ecbf7d349a6afa2f}\label{ff__dir_8h_a6ab102ccc88ac028ecbf7d349a6afa2f}} 
+\index{ff\+\_\+dir.\+h@{ff\+\_\+dir.\+h}!F\+F\+\_\+\+Find\+Next@{F\+F\+\_\+\+Find\+Next}}
+\index{F\+F\+\_\+\+Find\+Next@{F\+F\+\_\+\+Find\+Next}!ff\+\_\+dir.\+h@{ff\+\_\+dir.\+h}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Find\+Next()}{FF\_FindNext()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+\+Find\+Next (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{\hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} $\ast$}]{p\+Dirent }\end{DoxyParamCaption})}
+
+
+
+Get\textquotesingle{}s the next \hyperlink{struct_entry}{Entry} based on the data recorded in the \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} object. 
+
+All values recorded in p\+Dirent must be preserved to and between calls to \hyperlink{ff__dir_8c_a6ab102ccc88ac028ecbf7d349a6afa2f}{F\+F\+\_\+\+Find\+Next()}. Please see \begin{DoxySeeAlso}{参见}
+\hyperlink{ff__dir_8c_a2af711e4aa9004e66694e4b797ccb3cd}{F\+F\+\_\+\+Find\+First()} for find initialisation.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object that was created by \hyperlink{ff__ioman_8h_a927ed90ba0df23750609840d05938ef4}{F\+F\+\_\+\+Create\+I\+O\+M\+A\+N()}. \\
+\hline
+{\em p\+Dirent} & \hyperlink{struct_f_f___d_i_r_e_n_t}{F\+F\+\_\+\+D\+I\+R\+E\+NT} object to store the entry information. (As initialised by \hyperlink{ff__dir_8c_a2af711e4aa9004e66694e4b797ccb3cd}{F\+F\+\_\+\+Find\+First()}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+F\+F\+\_\+\+E\+R\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+F\+A\+I\+L\+ED is device access failed. 
+\end{DoxyReturn}

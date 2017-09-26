@@ -1,0 +1,162 @@
+\hypertarget{struct_desktop_bar}{}\section{Desktop\+Bar结构体 参考}
+\label{struct_desktop_bar}\index{Desktop\+Bar@{Desktop\+Bar}}
+
+
+desktop bar window, also known as \char`\"{}system tray\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$desktopbar.\+h$>$}
+
+类 Desktop\+Bar 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{struct_desktop_bar}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a839613b1cc5458c2bf3a730dff0f70c8}\label{struct_desktop_bar_a839613b1cc5458c2bf3a730dff0f70c8}} 
+typedef \hyperlink{struct_owner_draw_parent}{Owner\+Draw\+Parent}$<$ \hyperlink{struct_window}{Window} $>$ {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_ad209df8c99d07cdb580e0cc66c423b79}\label{struct_desktop_bar_ad209df8c99d07cdb580e0cc66c423b79}} 
+{\bfseries Desktop\+Bar} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_af2eab6394a1c8c97fe094d012f4691ba}\label{struct_desktop_bar_af2eab6394a1c8c97fe094d012f4691ba}} 
+static \hyperlink{interfacevoid}{H\+W\+ND} {\bfseries Create} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a2b351f7fc1b444f16a16bb17faae94d1}\label{struct_desktop_bar_a2b351f7fc1b444f16a16bb17faae94d1}} 
+L\+R\+E\+S\+U\+LT {\bfseries Init} (\hyperlink{structtag_c_r_e_a_t_e_s_t_r_u_c_t_a}{L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+CT} pcs)
+\item 
+L\+R\+E\+S\+U\+LT \hyperlink{struct_desktop_bar_ada798df262ee57ae2d3e9f8a3ee38d0d}{Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a1458cb65d00ebea4a98f37c5b647368a}\label{struct_desktop_bar_a1458cb65d00ebea4a98f37c5b647368a}} 
+int {\bfseries Notify} (int id, \hyperlink{structtag_n_m_h_d_r}{N\+M\+H\+DR} $\ast$pnmh)
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a81eeafe16eae3fe827bb964e47da9554}\label{struct_desktop_bar_a81eeafe16eae3fe827bb964e47da9554}} 
+int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_desktop_bar_a09a6f166765537c7f7bcc41220ea3d58}{Resize} (int cx, int cy)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_desktop_bar_a47e1906c84e318b43d8e33bf141a4ea6}{Control\+Resize} (W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_desktop_bar_a3a29770a6acbd3e0b6e0cb286d462b58}{Register\+Hotkeys} ()
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_desktop_bar_ad78702ec191b91c67e845ea72978e241}{Process\+Hot\+Key} (int id\+\_\+hotkey)
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a26e9bb3ce32a9f7f267c6b9cc904dae8}\label{struct_desktop_bar_a26e9bb3ce32a9f7f267c6b9cc904dae8}} 
+\hyperlink{interfacevoid}{void} {\bfseries Show\+Or\+Hide\+Start\+Menu} ()
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_af35dd6a55dfb3804deb6220b70bd079f}\label{struct_desktop_bar_af35dd6a55dfb3804deb6220b70bd079f}} 
+L\+R\+E\+S\+U\+LT {\bfseries Process\+Copy\+Data} (\hyperlink{structtag_c_o_p_y_d_a_t_a_s_t_r_u_c_t}{C\+O\+P\+Y\+D\+A\+T\+A\+S\+T\+R\+U\+CT} $\ast$pcd)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_ab0ddef577e7d0546b7b939bf76621f11}\label{struct_desktop_bar_ab0ddef577e7d0546b7b939bf76621f11}} 
+\hyperlink{structtag_r_e_c_t}{R\+E\+CT} {\bfseries \+\_\+work\+\_\+area\+\_\+org}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_ae41816979855cf3e314c62777c8d203c}\label{struct_desktop_bar_ae41816979855cf3e314c62777c8d203c}} 
+int {\bfseries \+\_\+taskbar\+\_\+pos}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a441f7ffabe13a7f4e9529ba26bad0fd3}\label{struct_desktop_bar_a441f7ffabe13a7f4e9529ba26bad0fd3}} 
+Window\+Handle {\bfseries \+\_\+hwnd\+Task\+Bar}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a25677ba10f212acf0a20f18d5a2c8c50}\label{struct_desktop_bar_a25677ba10f212acf0a20f18d5a2c8c50}} 
+Window\+Handle {\bfseries \+\_\+hwnd\+Notify}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a234d37197ac346e39e173956171efb72}\label{struct_desktop_bar_a234d37197ac346e39e173956171efb72}} 
+Window\+Handle {\bfseries \+\_\+hwnd\+Quick\+Launch}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a0f5b73eed4fbf5c655a1a41009da3447}\label{struct_desktop_bar_a0f5b73eed4fbf5c655a1a41009da3447}} 
+Window\+Handle {\bfseries \+\_\+hwndrebar}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a5b91f2d5e9f4f1881f3421dcfe972540}\label{struct_desktop_bar_a5b91f2d5e9f4f1881f3421dcfe972540}} 
+Window\+Handle {\bfseries \+\_\+hwnd\+Start\+Button}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_acfd137f61dd47bd241e05a735fd868f9}\label{struct_desktop_bar_acfd137f61dd47bd241e05a735fd868f9}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct_start_menu_root}{Start\+Menu\+Root} $\ast$ {\bfseries \+\_\+start\+Menu\+Root}
+\item 
+\mbox{\Hypertarget{struct_desktop_bar_a10920400cb863002e45acbdc6619d50d}\label{struct_desktop_bar_a10920400cb863002e45acbdc6619d50d}} 
+const U\+I\+NT {\bfseries W\+M\+\_\+\+T\+A\+S\+K\+B\+A\+R\+C\+R\+E\+A\+T\+ED}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+desktop bar window, also known as \char`\"{}system tray\char`\"{} 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_desktop_bar_a47e1906c84e318b43d8e33bf141a4ea6}\label{struct_desktop_bar_a47e1906c84e318b43d8e33bf141a4ea6}} 
+\index{Desktop\+Bar@{Desktop\+Bar}!Control\+Resize@{Control\+Resize}}
+\index{Control\+Resize@{Control\+Resize}!Desktop\+Bar@{Desktop\+Bar}}
+\subsubsection{\texorpdfstring{Control\+Resize()}{ControlResize()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Desktop\+Bar\+::\+Control\+Resize (\begin{DoxyParamCaption}\item[{W\+P\+A\+R\+AM}]{wparam,  }\item[{L\+P\+A\+R\+AM}]{lparam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000055}{待办事项}]write code for taskbar being at sides or top. \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000056}{待办事项}]Taskbar is at the top of the screen \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000057}{待办事项}]Taskbar is at the left of the screen \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000058}{待办事项}]Taskbar is at the right of the screen \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_desktop_bar_ad78702ec191b91c67e845ea72978e241}\label{struct_desktop_bar_ad78702ec191b91c67e845ea72978e241}} 
+\index{Desktop\+Bar@{Desktop\+Bar}!Process\+Hot\+Key@{Process\+Hot\+Key}}
+\index{Process\+Hot\+Key@{Process\+Hot\+Key}!Desktop\+Bar@{Desktop\+Bar}}
+\subsubsection{\texorpdfstring{Process\+Hot\+Key()}{ProcessHotKey()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Desktop\+Bar\+::\+Process\+Hot\+Key (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+hotkey }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000052}{待办事项}]implement all common hotkeys \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_desktop_bar_a3a29770a6acbd3e0b6e0cb286d462b58}\label{struct_desktop_bar_a3a29770a6acbd3e0b6e0cb286d462b58}} 
+\index{Desktop\+Bar@{Desktop\+Bar}!Register\+Hotkeys@{Register\+Hotkeys}}
+\index{Register\+Hotkeys@{Register\+Hotkeys}!Desktop\+Bar@{Desktop\+Bar}}
+\subsubsection{\texorpdfstring{Register\+Hotkeys()}{RegisterHotkeys()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Desktop\+Bar\+::\+Register\+Hotkeys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000051}{待办事项}]register all common hotkeys \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_desktop_bar_a09a6f166765537c7f7bcc41220ea3d58}\label{struct_desktop_bar_a09a6f166765537c7f7bcc41220ea3d58}} 
+\index{Desktop\+Bar@{Desktop\+Bar}!Resize@{Resize}}
+\index{Resize@{Resize}!Desktop\+Bar@{Desktop\+Bar}}
+\subsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Desktop\+Bar\+::\+Resize (\begin{DoxyParamCaption}\item[{int}]{cx,  }\item[{int}]{cy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000054}{待办事项}]general children resizing algorithm \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_desktop_bar_ada798df262ee57ae2d3e9f8a3ee38d0d}\label{struct_desktop_bar_ada798df262ee57ae2d3e9f8a3ee38d0d}} 
+\index{Desktop\+Bar@{Desktop\+Bar}!Wnd\+Proc@{Wnd\+Proc}}
+\index{Wnd\+Proc@{Wnd\+Proc}!Desktop\+Bar@{Desktop\+Bar}}
+\subsubsection{\texorpdfstring{Wnd\+Proc()}{WndProc()}}
+{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT Desktop\+Bar\+::\+Wnd\+Proc (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{nmsg,  }\item[{W\+P\+A\+R\+AM}]{wparam,  }\item[{L\+P\+A\+R\+AM}]{lparam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000053}{待办事项}]read desktop bar settings \end{DoxyRefDesc}
+
+
+重载 \hyperlink{struct_window}{Window} .
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/desktopbar.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/taskbar/desktopbar.\+cpp\end{DoxyCompactItemize}

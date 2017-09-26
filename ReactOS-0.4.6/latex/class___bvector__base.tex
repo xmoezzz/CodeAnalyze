@@ -1,0 +1,58 @@
+\hypertarget{class___bvector__base}{}\section{\+\_\+\+Bvector\+\_\+base$<$ \+\_\+\+Alloc $>$ 模板类 参考}
+\label{class___bvector__base}\index{\+\_\+\+Bvector\+\_\+base$<$ \+\_\+\+Alloc $>$@{\+\_\+\+Bvector\+\_\+base$<$ \+\_\+\+Alloc $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___bvector__base_a79d8b0ab0a93495312341dc18a9563a1}\label{class___bvector__base_a79d8b0ab0a93495312341dc18a9563a1}} 
+typedef \+\_\+\+Alloc {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___bvector__base_a19e33337e31301ec461cfc6e481de671}\label{class___bvector__base_a19e33337e31301ec461cfc6e481de671}} 
+typedef unsigned int {\bfseries \+\_\+\+\_\+chunk\+\_\+type}
+\item 
+\mbox{\Hypertarget{class___bvector__base_a406f2f62121d3248666287474370c6a8}\label{class___bvector__base_a406f2f62121d3248666287474370c6a8}} 
+typedef \hyperlink{struct___alloc__traits}{\+\_\+\+Alloc\+\_\+traits}$<$ \+\_\+\+\_\+chunk\+\_\+type, \+\_\+\+Alloc $>$\+::allocator\+\_\+type {\bfseries \+\_\+\+\_\+chunk\+\_\+allocator\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___bvector__base_acdc811789287e3831f1e197d1ba24bc6}\label{class___bvector__base_acdc811789287e3831f1e197d1ba24bc6}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{class___bvector__base_a511e80eebb8b2fb30ea3de87c8c6210f}\label{class___bvector__base_a511e80eebb8b2fb30ea3de87c8c6210f}} 
+{\bfseries \+\_\+\+Bvector\+\_\+base} (const allocator\+\_\+type \&\+\_\+\+\_\+a)
+\item 
+\mbox{\Hypertarget{class___bvector__base_a2e5c0c0f6d2ed05f895b74107f34f380}\label{class___bvector__base_a2e5c0c0f6d2ed05f895b74107f34f380}} 
+{\bfseries \+\_\+\+Bvector\+\_\+base} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{class___bvector__base}{\+\_\+\+Self} $>$ src)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___bvector__base_a8fb0d97b2fe28c45103c8f1473aef411}\label{class___bvector__base_a8fb0d97b2fe28c45103c8f1473aef411}} 
+\+\_\+\+\_\+chunk\+\_\+type $\ast$ {\bfseries \+\_\+\+M\+\_\+bit\+\_\+alloc} (size\+\_\+t \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{class___bvector__base_a8fe3d76af7fb32d61a76e494d01e70ac}\label{class___bvector__base_a8fe3d76af7fb32d61a76e494d01e70ac}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+deallocate} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___bvector__base_a5c1ec75f1d76a6bf2c8f571dfff1df2d}\label{class___bvector__base_a5c1ec75f1d76a6bf2c8f571dfff1df2d}} 
+static size\+\_\+t {\bfseries \+\_\+\+M\+\_\+bits\+\_\+to\+\_\+chunks} (size\+\_\+t \+\_\+\+\_\+n\+\_\+bits)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class___bvector__base_a6297d2f8764d408d7ae14c4e3599fb75}\label{class___bvector__base_a6297d2f8764d408d7ae14c4e3599fb75}} 
+\hyperlink{struct___bit__iter}{\+\_\+\+Bit\+\_\+iterator} {\bfseries \+\_\+\+M\+\_\+start}
+\item 
+\mbox{\Hypertarget{class___bvector__base_afdd71f40f351242d81baaca591e75c0e}\label{class___bvector__base_afdd71f40f351242d81baaca591e75c0e}} 
+\hyperlink{struct___bit__iter}{\+\_\+\+Bit\+\_\+iterator} {\bfseries \+\_\+\+M\+\_\+finish}
+\item 
+\mbox{\Hypertarget{class___bvector__base_adb3e4f38efbf36ecef073b0a657d0075}\label{class___bvector__base_adb3e4f38efbf36ecef073b0a657d0075}} 
+\hyperlink{class___s_t_l_p__alloc__proxy}{\+\_\+\+S\+T\+L\+P\+\_\+alloc\+\_\+proxy}$<$ \+\_\+\+\_\+chunk\+\_\+type $\ast$, \+\_\+\+\_\+chunk\+\_\+type, \+\_\+\+\_\+chunk\+\_\+allocator\+\_\+type $>$ {\bfseries \+\_\+\+M\+\_\+end\+\_\+of\+\_\+storage}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+bvector.\+h\end{DoxyCompactItemize}

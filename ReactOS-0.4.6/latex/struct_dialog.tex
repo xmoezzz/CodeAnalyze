@@ -1,0 +1,69 @@
+\hypertarget{struct_dialog}{}\section{Dialog结构体 参考}
+\label{struct_dialog}\index{Dialog@{Dialog}}
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+类 Dialog 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.643836cm]{struct_dialog}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_dialog_a9292840f5bca89c263483255104782d3}\label{struct_dialog_a9292840f5bca89c263483255104782d3}} 
+typedef \hyperlink{struct_window}{Window} {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_dialog_a2378ad158f672f7c7086bb47bd4d24ad}\label{struct_dialog_a2378ad158f672f7c7086bb47bd4d24ad}} 
+{\bfseries Dialog} (\hyperlink{interfacevoid}{H\+W\+ND})
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{struct_dialog_a68e10e3226c95864b8570595adc6a39c}{Do\+Modal} (U\+I\+NT nid, C\+R\+E\+A\+T\+O\+R\+F\+U\+NC creator, \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent=0)
+\item 
+static int \hyperlink{struct_dialog_a70b9e81d26f712c4079ae96c9009edbb}{Do\+Modal} (U\+I\+NT nid, C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO creator, const \hyperlink{interfacevoid}{void} $\ast$info, \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Parent=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_dialog_af66b0bf35da9b2058a88ff84b60155fd}\label{struct_dialog_af66b0bf35da9b2058a88ff84b60155fd}} 
+L\+R\+E\+S\+U\+LT {\bfseries Wnd\+Proc} (U\+I\+NT nmsg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+\item 
+\mbox{\Hypertarget{struct_dialog_afc104d0dbd615555f1b61f705d3f816a}\label{struct_dialog_afc104d0dbd615555f1b61f705d3f816a}} 
+int {\bfseries Command} (int id, int \hyperlink{structcode}{code})
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+The class \hyperlink{struct_dialog}{Dialog} implements modal dialogs. \hyperlink{struct_a}{A} \hyperlink{struct_dialog}{Dialog} object should be constructed by calling \hyperlink{struct_dialog_a68e10e3226c95864b8570595adc6a39c}{Dialog\+::\+Do\+Modal()} and specifying the class using the W\+I\+N\+D\+O\+W\+\_\+\+C\+R\+E\+A\+T\+O\+R() macro. 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_dialog_a68e10e3226c95864b8570595adc6a39c}\label{struct_dialog_a68e10e3226c95864b8570595adc6a39c}} 
+\index{Dialog@{Dialog}!Do\+Modal@{Do\+Modal}}
+\index{Do\+Modal@{Do\+Modal}!Dialog@{Dialog}}
+\subsubsection{\texorpdfstring{Do\+Modal()}{DoModal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Dialog\+::\+Do\+Modal (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{nid,  }\item[{C\+R\+E\+A\+T\+O\+R\+F\+U\+NC}]{creator,  }\item[{\hyperlink{interfacevoid}{H\+W\+ND}}]{hwnd\+Parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000085}{待办事项}]call Window\+::pretranslate\+\_\+msg() \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_dialog_a70b9e81d26f712c4079ae96c9009edbb}\label{struct_dialog_a70b9e81d26f712c4079ae96c9009edbb}} 
+\index{Dialog@{Dialog}!Do\+Modal@{Do\+Modal}}
+\index{Do\+Modal@{Do\+Modal}!Dialog@{Dialog}}
+\subsubsection{\texorpdfstring{Do\+Modal()}{DoModal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Dialog\+::\+Do\+Modal (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{nid,  }\item[{C\+R\+E\+A\+T\+O\+R\+F\+U\+N\+C\+\_\+\+I\+N\+FO}]{creator,  }\item[{const \hyperlink{interfacevoid}{void} $\ast$}]{info,  }\item[{\hyperlink{interfacevoid}{H\+W\+ND}}]{hwnd\+Parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000086}{待办事项}]call Window\+::pretranslate\+\_\+msg() \end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/window.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/utility/window.\+cpp\end{DoxyCompactItemize}

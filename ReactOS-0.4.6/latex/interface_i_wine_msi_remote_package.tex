@@ -1,0 +1,83 @@
+\hypertarget{interface_i_wine_msi_remote_package}{}\section{I\+Wine\+Msi\+Remote\+Package接口 参考}
+\label{interface_i_wine_msi_remote_package}\index{I\+Wine\+Msi\+Remote\+Package@{I\+Wine\+Msi\+Remote\+Package}}
+类 I\+Wine\+Msi\+Remote\+Package 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_wine_msi_remote_package}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_ab3b293280d0892f2b9426f6537ae1836}\label{interface_i_wine_msi_remote_package_ab3b293280d0892f2b9426f6537ae1836}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Msi\+Handle} (\mbox{[}in\mbox{]} M\+S\+I\+H\+A\+N\+D\+LE \hyperlink{structhandle}{handle})
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a9512a58845faea102a2b09196f9df60f}\label{interface_i_wine_msi_remote_package_a9512a58845faea102a2b09196f9df60f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Active\+Database} (\mbox{[}out\mbox{]} M\+S\+I\+H\+A\+N\+D\+LE $\ast$\hyperlink{structhandle}{handle})
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a6a4855f46283eabf58054d11bc0bb1e5}\label{interface_i_wine_msi_remote_package_a6a4855f46283eabf58054d11bc0bb1e5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Property} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{structproperty}{property}, \mbox{[}out, size\+\_\+is($\ast$size)\mbox{]} B\+S\+TR \hyperlink{unionvalue}{value}, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$size)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a52f0d3f463501621b5d0771c611f83f3}\label{interface_i_wine_msi_remote_package_a52f0d3f463501621b5d0771c611f83f3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Property} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{structproperty}{property}, \mbox{[}in\mbox{]} B\+S\+TR \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a2d16b5bbed8f182d8f240928d33b6dc9}\label{interface_i_wine_msi_remote_package_a2d16b5bbed8f182d8f240928d33b6dc9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Process\+Message} (\mbox{[}in\mbox{]} I\+N\+S\+T\+A\+L\+L\+M\+E\+S\+S\+A\+GE \hyperlink{structmessage}{message}, \mbox{[}in\mbox{]} M\+S\+I\+H\+A\+N\+D\+LE \hyperlink{structrecord}{record})
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_af9321ca9a071d50c785076c799826ad3}\label{interface_i_wine_msi_remote_package_af9321ca9a071d50c785076c799826ad3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Do\+Action} (\mbox{[}in\mbox{]} B\+S\+TR action)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_acb0eda78924e43b0f7fbd7dd34f72a52}\label{interface_i_wine_msi_remote_package_acb0eda78924e43b0f7fbd7dd34f72a52}} 
+H\+R\+E\+S\+U\+LT {\bfseries Sequence} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{structtable}{table}, \mbox{[}in\mbox{]} int sequence)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_acbda6fe76ae350c752eb662d1f0b7417}\label{interface_i_wine_msi_remote_package_acbda6fe76ae350c752eb662d1f0b7417}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Target\+Path} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{structfolder}{folder}, \mbox{[}out, size\+\_\+is($\ast$size)\mbox{]} B\+S\+TR \hyperlink{unionvalue}{value}, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$size)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a84d9b7c07e2124b1611eae17a7e90a4c}\label{interface_i_wine_msi_remote_package_a84d9b7c07e2124b1611eae17a7e90a4c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Target\+Path} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{structfolder}{folder}, \mbox{[}in\mbox{]} B\+S\+TR \hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a028d5331ba652377ec9be2e5cd8f916a}\label{interface_i_wine_msi_remote_package_a028d5331ba652377ec9be2e5cd8f916a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Source\+Path} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{structfolder}{folder}, \mbox{[}out, size\+\_\+is($\ast$size)\mbox{]} B\+S\+TR \hyperlink{unionvalue}{value}, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$size)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a361f88f9eec16dd257332b2a2450f6b4}\label{interface_i_wine_msi_remote_package_a361f88f9eec16dd257332b2a2450f6b4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Mode} (\mbox{[}in\mbox{]} M\+S\+I\+R\+U\+N\+M\+O\+DE \hyperlink{interfacevoid}{mode}, \mbox{[}out\mbox{]} B\+O\+OL $\ast$ret)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a82792d61066e029150dad32b4ae89904}\label{interface_i_wine_msi_remote_package_a82792d61066e029150dad32b4ae89904}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Mode} (\mbox{[}in\mbox{]} M\+S\+I\+R\+U\+N\+M\+O\+DE \hyperlink{interfacevoid}{mode}, \mbox{[}in\mbox{]} B\+O\+OL state)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a878c3c66d0b1ac757006dd2afc421076}\label{interface_i_wine_msi_remote_package_a878c3c66d0b1ac757006dd2afc421076}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Feature\+State} (\mbox{[}in\mbox{]} B\+S\+TR feature, \mbox{[}out\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE $\ast$installed, \mbox{[}out\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE $\ast$action)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_ac9158b03d06461bfd86c287ae029cc6a}\label{interface_i_wine_msi_remote_package_ac9158b03d06461bfd86c287ae029cc6a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Feature\+State} (\mbox{[}in\mbox{]} B\+S\+TR feature, \mbox{[}in\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE state)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_af7fe9fe2999d1ec9f45a6c527d4ef31f}\label{interface_i_wine_msi_remote_package_af7fe9fe2999d1ec9f45a6c527d4ef31f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Component\+State} (\mbox{[}in\mbox{]} B\+S\+TR component, \mbox{[}out\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE $\ast$installed, \mbox{[}out\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE $\ast$action)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a2900414386b350245f214b742d300ee5}\label{interface_i_wine_msi_remote_package_a2900414386b350245f214b742d300ee5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Component\+State} (\mbox{[}in\mbox{]} B\+S\+TR component, \mbox{[}in\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE state)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a0276be91210dca80b167028b6629ad86}\label{interface_i_wine_msi_remote_package_a0276be91210dca80b167028b6629ad86}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Language} (\mbox{[}out\mbox{]} L\+A\+N\+G\+ID $\ast$language)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a01fa99b3332cc45f1e16fda771fed86a}\label{interface_i_wine_msi_remote_package_a01fa99b3332cc45f1e16fda771fed86a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Install\+Level} (\mbox{[}in\mbox{]} int level)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_aee7b6442d3b5153e9ee751aff8de5fca}\label{interface_i_wine_msi_remote_package_aee7b6442d3b5153e9ee751aff8de5fca}} 
+H\+R\+E\+S\+U\+LT {\bfseries Format\+Record} (\mbox{[}in\mbox{]} M\+S\+I\+H\+A\+N\+D\+LE \hyperlink{structrecord}{record}, \mbox{[}out\mbox{]} B\+S\+TR $\ast$\hyperlink{unionvalue}{value})
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_a2f94ba97f79b5a0439bd461dc4432a43}\label{interface_i_wine_msi_remote_package_a2f94ba97f79b5a0439bd461dc4432a43}} 
+H\+R\+E\+S\+U\+LT {\bfseries Evaluate\+Condition} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{interfacevoid}{condition})
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_af552b05225e37fbd8f42644591eb32ba}\label{interface_i_wine_msi_remote_package_af552b05225e37fbd8f42644591eb32ba}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Feature\+Cost} (\mbox{[}in\mbox{]} B\+S\+TR feature, \mbox{[}in\mbox{]} I\+NT cost\+\_\+tree, \mbox{[}in\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE state, \mbox{[}out\mbox{]} I\+NT $\ast$cost)
+\item 
+\mbox{\Hypertarget{interface_i_wine_msi_remote_package_ab2e5f09cc75792e6fb367c7c4bbec4c2}\label{interface_i_wine_msi_remote_package_ab2e5f09cc75792e6fb367c7c4bbec4c2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Component\+Costs} (\mbox{[}in\mbox{]} B\+S\+TR component, \mbox{[}in\mbox{]} D\+W\+O\+RD index, \mbox{[}in\mbox{]} I\+N\+S\+T\+A\+L\+L\+S\+T\+A\+TE state, \mbox{[}out, size\+\_\+is($\ast$buflen)\mbox{]} B\+S\+TR \hyperlink{structdrive}{drive}, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$buflen, \mbox{[}out\mbox{]} I\+NT $\ast$cost, \mbox{[}out\mbox{]} I\+NT $\ast$temp)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/msi/msiserver.\+idl\end{DoxyCompactItemize}

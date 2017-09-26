@@ -1,0 +1,69 @@
+\hypertarget{api__loopback_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/api\+\_\+loopback.c 文件参考}
+\label{api__loopback_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/api\+\_\+loopback.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/api\+\_\+loopback.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a66163eb1c47d4dbe64838e8bb6449747}\label{api__loopback_8c_a66163eb1c47d4dbe64838e8bb6449747}} 
+\#\hyperlink{structdefine}{define} {\bfseries C\+O\+L\+O\+RF}(r,  g,  b,  a)~C\+A\+L\+L\+\_\+\+Color4f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (r,g,b,a))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a7bca31e9f6192f06105f8cd71e520162}\label{api__loopback_8c_a7bca31e9f6192f06105f8cd71e520162}} 
+\#\hyperlink{structdefine}{define} {\bfseries V\+E\+R\+T\+E\+X2}(x,  y)~C\+A\+L\+L\+\_\+\+Vertex2f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (x,y))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_aac119234b3d2db6120760d8103276bfc}\label{api__loopback_8c_aac119234b3d2db6120760d8103276bfc}} 
+\#\hyperlink{structdefine}{define} {\bfseries V\+E\+R\+T\+E\+X3}(x,  y,  z)~C\+A\+L\+L\+\_\+\+Vertex3f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (x,y,z))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_adecadc127585b9b7bcda03c9cec49520}\label{api__loopback_8c_adecadc127585b9b7bcda03c9cec49520}} 
+\#\hyperlink{structdefine}{define} {\bfseries V\+E\+R\+T\+E\+X4}(x,  y,  z,  w)~C\+A\+L\+L\+\_\+\+Vertex4f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (x,y,z,w))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a26c312084543cfc8a852305eee58998e}\label{api__loopback_8c_a26c312084543cfc8a852305eee58998e}} 
+\#\hyperlink{structdefine}{define} {\bfseries N\+O\+R\+M\+AL}(x,  y,  z)~C\+A\+L\+L\+\_\+\+Normal3f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (x,y,z))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_aa994acdbd6992a8e17be273cabac1dcc}\label{api__loopback_8c_aa994acdbd6992a8e17be273cabac1dcc}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+E\+X\+C\+O\+O\+R\+D1}(s)~C\+A\+L\+L\+\_\+\+Tex\+Coord1f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (s))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_adf35275167944615d1ffb5b40511f2be}\label{api__loopback_8c_adf35275167944615d1ffb5b40511f2be}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+E\+X\+C\+O\+O\+R\+D2}(s,  t)~C\+A\+L\+L\+\_\+\+Tex\+Coord2f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (s,t))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a4d014cf47ff514e56abcad39177dd307}\label{api__loopback_8c_a4d014cf47ff514e56abcad39177dd307}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+E\+X\+C\+O\+O\+R\+D3}(s,  t,  u)~C\+A\+L\+L\+\_\+\+Tex\+Coord3f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (s,t,u))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_ab1483ecab704e7a08a3b2cb1b84837b6}\label{api__loopback_8c_ab1483ecab704e7a08a3b2cb1b84837b6}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+E\+X\+C\+O\+O\+R\+D4}(s,  t,  u,  v)~C\+A\+L\+L\+\_\+\+Tex\+Coord4f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (s,t,u,v))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a37920005b38bff449ca2fdb430b1d8ba}\label{api__loopback_8c_a37920005b38bff449ca2fdb430b1d8ba}} 
+\#\hyperlink{structdefine}{define} {\bfseries I\+N\+D\+EX}(c)~C\+A\+L\+L\+\_\+\+Indexf(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (c))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a18604629596123a0001b9fedf93d88e2}\label{api__loopback_8c_a18604629596123a0001b9fedf93d88e2}} 
+\#\hyperlink{structdefine}{define} {\bfseries E\+V\+A\+L\+C\+O\+O\+R\+D1}(x)~C\+A\+L\+L\+\_\+\+Eval\+Coord1f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (x))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a197699c27b0adc94e3e45476f9e04bef}\label{api__loopback_8c_a197699c27b0adc94e3e45476f9e04bef}} 
+\#\hyperlink{structdefine}{define} {\bfseries E\+V\+A\+L\+C\+O\+O\+R\+D2}(x,  y)~C\+A\+L\+L\+\_\+\+Eval\+Coord2f(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (x,y))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a8253c5389226c50b668f2c10f1b61fb7}\label{api__loopback_8c_a8253c5389226c50b668f2c10f1b61fb7}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+T\+E\+R\+I\+A\+L\+FV}(a,  b,  c)~C\+A\+L\+L\+\_\+\+Materialfv(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (a,b,c))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a3598e6f30e6c50ace5f66ad6804a2d01}\label{api__loopback_8c_a3598e6f30e6c50ace5f66ad6804a2d01}} 
+\#\hyperlink{structdefine}{define} {\bfseries R\+E\+C\+TF}(a,  b,  c,  d)~C\+A\+L\+L\+\_\+\+Rectf(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (a,b,c,d))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a67aaac2760dd983036aa57ceef211e11}\label{api__loopback_8c_a67aaac2760dd983036aa57ceef211e11}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+O\+G\+C\+O\+O\+R\+DF}(x)~C\+A\+L\+L\+\_\+\+Fog\+Coordf\+E\+XT(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (x))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a7923ab5eb7e4dadcf9410ff23907a0e2}\label{api__loopback_8c_a7923ab5eb7e4dadcf9410ff23907a0e2}} 
+\#\hyperlink{structdefine}{define} {\bfseries A\+T\+T\+R\+I\+B1\+NV}(index,  x)~C\+A\+L\+L\+\_\+\+Vertex\+Attrib1f\+NV(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (index,x))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a091944fe55193e74f7c84e0ed17398d9}\label{api__loopback_8c_a091944fe55193e74f7c84e0ed17398d9}} 
+\#\hyperlink{structdefine}{define} {\bfseries A\+T\+T\+R\+I\+B2\+NV}(index,  x,  y)~C\+A\+L\+L\+\_\+\+Vertex\+Attrib2f\+NV(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (index,x,y))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a46ae40b912c320570f2e768b99caf411}\label{api__loopback_8c_a46ae40b912c320570f2e768b99caf411}} 
+\#\hyperlink{structdefine}{define} {\bfseries A\+T\+T\+R\+I\+B3\+NV}(index,  x,  y,  z)~C\+A\+L\+L\+\_\+\+Vertex\+Attrib3f\+NV(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (index,x,y,z))
+\item 
+\mbox{\Hypertarget{api__loopback_8c_a0ccf1e59b1b48192f1b9f1fa8b57a955}\label{api__loopback_8c_a0ccf1e59b1b48192f1b9f1fa8b57a955}} 
+\#\hyperlink{structdefine}{define} {\bfseries A\+T\+T\+R\+I\+B4\+NV}(index,  x,  y,  z,  w)~C\+A\+L\+L\+\_\+\+Vertex\+Attrib4f\+NV(G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH(), (index,x,y,z,w))
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\begin{DoxyAuthor}{作者}
+Keith Whitwell \href{mailto:keith@tungstengraphics.com}{\tt keith@tungstengraphics.\+com} 
+\end{DoxyAuthor}

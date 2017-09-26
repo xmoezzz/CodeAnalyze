@@ -1,0 +1,65 @@
+\hypertarget{struct_a_l_l_o_c_a_t_o_r}{}\section{A\+L\+L\+O\+C\+A\+T\+O\+R结构体 参考}
+\label{struct_a_l_l_o_c_a_t_o_r}\index{A\+L\+L\+O\+C\+A\+T\+OR@{A\+L\+L\+O\+C\+A\+T\+OR}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_adfeadf9367f91069ef64d5553b0f490b}\label{struct_a_l_l_o_c_a_t_o_r_adfeadf9367f91069ef64d5553b0f490b}} 
+I\+Ks\+Allocator\+Vtbl $\ast$ {\bfseries lp\+Vtbl}
+\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_a4c5398ec653d91386e04cb93a3dc2a10}\label{struct_a_l_l_o_c_a_t_o_r_a4c5398ec653d91386e04cb93a3dc2a10}} 
+L\+O\+NG {\bfseries ref}
+\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_aa90120193aa7461c9f2004236821a667}\label{struct_a_l_l_o_c_a_t_o_r_aa90120193aa7461c9f2004236821a667}} 
+\hyperlink{struct_k_s_i_o_b_j_e_c_t___h_e_a_d_e_r}{P\+K\+S\+I\+O\+B\+J\+E\+C\+T\+\_\+\+H\+E\+A\+D\+ER} {\bfseries Header}
+\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_a94388b0b062f9ef8c7d0d9f1363a72bf}\label{struct_a_l_l_o_c_a_t_o_r_a94388b0b062f9ef8c7d0d9f1363a72bf}} 
+A\+L\+L\+O\+C\+A\+T\+O\+R\+\_\+\+T\+Y\+PE {\bfseries Type}
+\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_a377fb8916c8749ba03cfe1e736a6d373}\label{struct_a_l_l_o_c_a_t_o_r_a377fb8916c8749ba03cfe1e736a6d373}} 
+\hyperlink{struct_k_s_s_t_r_e_a_m_a_l_l_o_c_a_t_o_r___s_t_a_t_u_s}{K\+S\+S\+T\+R\+E\+A\+M\+A\+L\+L\+O\+C\+A\+T\+O\+R\+\_\+\+S\+T\+A\+T\+US} {\bfseries Status}
+\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_a5cde0ded9ae6f9a4da518aac6240f948}\label{struct_a_l_l_o_c_a_t_o_r_a5cde0ded9ae6f9a4da518aac6240f948}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>NPAGED\_LOOKASIDE\_LIST {\bfseries NPagedList}\\
+\>PAGED\_LOOKASIDE\_LIST {\bfseries PagedList}\\
+\>\hyperlink{interfacevoid}{PVOID} {\bfseries CustomList}\\
+\} {\bfseries u}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_a1d16d1a73ca0ceb9e20cc8bf19cd18de}\label{struct_a_l_l_o_c_a_t_o_r_a1d16d1a73ca0ceb9e20cc8bf19cd18de}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>PFNKSDEFAULTALLOCATE {\bfseries DefaultAllocate}\\
+\>PFNKSPAGEDPOOLALLOCATE {\bfseries PagedPool}\\
+\>PFNKSNPAGEDPOOLALLOCATE {\bfseries NPagedPool}\\
+\} {\bfseries Allocate}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_ac10ee67c4a42c67745b547437f1b1ce0}\label{struct_a_l_l_o_c_a_t_o_r_ac10ee67c4a42c67745b547437f1b1ce0}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>PFNKSDEFAULTFREE {\bfseries DefaultFree}\\
+\>PFNKSPAGEDPOOLFREE {\bfseries PagedPool}\\
+\>PFNKSNPAGEDPOOLFREE {\bfseries NPagedPool}\\
+\} {\bfseries Free}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct_a_l_l_o_c_a_t_o_r_a1ab21a342241220f127c39bfb7f284dc}\label{struct_a_l_l_o_c_a_t_o_r_a1ab21a342241220f127c39bfb7f284dc}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>PFNKSDELETEALLOCATOR {\bfseries DefaultDelete}\\
+\>PFNKSNPAGEDPOOLDELETE {\bfseries NPagedPool}\\
+\>PFNKSPAGEDPOOLDELETE {\bfseries PagedPool}\\
+\} {\bfseries Delete}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/ksfilter/ks/allocators.\+c\end{DoxyCompactItemize}

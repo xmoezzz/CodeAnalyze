@@ -1,0 +1,121 @@
+\hypertarget{struct_icon_cache}{}\section{Icon\+Cache结构体 参考}
+\label{struct_icon_cache}\index{Icon\+Cache@{Icon\+Cache}}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a368d610487d5dab6396ca860d77c7aa2}\label{struct_icon_cache_a368d610487d5dab6396ca860d77c7aa2}} 
+\hyperlink{interfacevoid}{void} {\bfseries init} ()
+\item 
+const \hyperlink{struct_icon}{Icon} \& \hyperlink{struct_icon_cache_aa765b3e3ca0eea6f221fa25ad6c11c7c}{extract} (L\+P\+C\+T\+S\+TR \hyperlink{structpath}{path}, I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS flags=I\+C\+F\+\_\+\+N\+O\+R\+M\+AL)
+\item 
+const \hyperlink{struct_icon}{Icon} \& \hyperlink{struct_icon_cache_a62b18f8a6dc71ed7632c22879728f472}{extract} (L\+P\+C\+T\+S\+TR \hyperlink{structpath}{path}, int icon\+\_\+idx, I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS flags=I\+C\+F\+\_\+\+H\+I\+C\+ON)
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a443f93225214f5b73cd0943ae8fd1622}\label{struct_icon_cache_a443f93225214f5b73cd0943ae8fd1622}} 
+const \hyperlink{struct_icon}{Icon} \& {\bfseries extract} (I\+Extract\+Icon $\ast$p\+Extract, L\+P\+C\+T\+S\+TR \hyperlink{structpath}{path}, int icon\+\_\+idx, I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS flags=I\+C\+F\+\_\+\+H\+I\+C\+ON)
+\item 
+const \hyperlink{struct_icon}{Icon} \& \hyperlink{struct_icon_cache_a0f47a9cd0630185ccef96fddcdb40083}{extract} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl, I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS flags=I\+C\+F\+\_\+\+N\+O\+R\+M\+AL)
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a8bbcc8db8286c3798280338a775da425}\label{struct_icon_cache_a8bbcc8db8286c3798280338a775da425}} 
+const \hyperlink{struct_icon}{Icon} \& {\bfseries add} (H\+I\+C\+ON h\+Icon, I\+C\+O\+N\+\_\+\+T\+Y\+PE type=I\+T\+\_\+\+D\+Y\+N\+A\+M\+IC)
+\item 
+\mbox{\Hypertarget{struct_icon_cache_ad07f72508a0d560a50f063f2d24c4020}\label{struct_icon_cache_ad07f72508a0d560a50f063f2d24c4020}} 
+const \hyperlink{struct_icon}{Icon} \& {\bfseries add} (int sys\+\_\+idx)
+\item 
+\mbox{\Hypertarget{struct_icon_cache_ac5a78b7b5bb27ff168ac9807be88d089}\label{struct_icon_cache_ac5a78b7b5bb27ff168ac9807be88d089}} 
+const \hyperlink{struct_icon}{Icon} \& {\bfseries get\+\_\+icon} (int icon\+\_\+id)
+\item 
+\mbox{\Hypertarget{struct_icon_cache_aeedde35af6a26f587a55b56fe340276e}\label{struct_icon_cache_aeedde35af6a26f587a55b56fe340276e}} 
+\hyperlink{struct___i_m_a_g_e_l_i_s_t}{H\+I\+M\+A\+G\+E\+L\+I\+ST} {\bfseries get\+\_\+sys\+\_\+imagelist} () const
+\item 
+\mbox{\Hypertarget{struct_icon_cache_ae9547ed3d64eda815eb1f91e36ce176f}\label{struct_icon_cache_ae9547ed3d64eda815eb1f91e36ce176f}} 
+\hyperlink{interfacevoid}{void} {\bfseries free\+\_\+icon} (int icon\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a357988f2144b1507d70ade9714ebc351}\label{struct_icon_cache_a357988f2144b1507d70ade9714ebc351}} 
+typedef \hyperlink{classmap}{map}$<$ int, \hyperlink{struct_icon}{Icon} $>$ {\bfseries Icon\+Map}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a31c57cd9a2c97fa33366e6492377b21c}\label{struct_icon_cache_a31c57cd9a2c97fa33366e6492377b21c}} 
+typedef \hyperlink{structpair}{pair}$<$ String, int $>$ {\bfseries Cache\+Key}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a99611edcdc4294fd36db60933ee66b75}\label{struct_icon_cache_a99611edcdc4294fd36db60933ee66b75}} 
+typedef \hyperlink{classmap}{map}$<$ \hyperlink{structpair}{Cache\+Key}, I\+C\+O\+N\+\_\+\+ID $>$ {\bfseries Path\+Cache\+Map}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a1a27db5dcf5f99da8ed634f447fb0ed1}\label{struct_icon_cache_a1a27db5dcf5f99da8ed634f447fb0ed1}} 
+typedef \hyperlink{structpair}{pair}$<$ String, \hyperlink{structpair}{pair}$<$ int, int $>$ $>$ {\bfseries Idx\+Cache\+Key}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_ad6b663e3b4d7e4fac9b2dfcb8ece859d}\label{struct_icon_cache_ad6b663e3b4d7e4fac9b2dfcb8ece859d}} 
+typedef \hyperlink{classmap}{map}$<$ \hyperlink{structpair}{Idx\+Cache\+Key}, I\+C\+O\+N\+\_\+\+ID $>$ {\bfseries Idx\+Cache\+Map}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a5cdeda0231d7949bbee6205e37fb9766}\label{struct_icon_cache_a5cdeda0231d7949bbee6205e37fb9766}} 
+typedef \hyperlink{structpair}{pair}$<$ \hyperlink{struct_shell_path}{Shell\+Path}, int $>$ {\bfseries Pidl\+Cache\+Key}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a6f5a56313aa13267f2b7d34c0dd71fcd}\label{struct_icon_cache_a6f5a56313aa13267f2b7d34c0dd71fcd}} 
+typedef \hyperlink{classmap}{map}$<$ \hyperlink{structpair}{Pidl\+Cache\+Key}, I\+C\+O\+N\+\_\+\+ID $>$ {\bfseries Pidl\+Cache\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_ad73e6367cab4ad377a4db65f9e7df6f1}\label{struct_icon_cache_ad73e6367cab4ad377a4db65f9e7df6f1}} 
+Icon\+Map {\bfseries \+\_\+icons}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a4a8198a5dea92dd8a12e405c578ef143}\label{struct_icon_cache_a4a8198a5dea92dd8a12e405c578ef143}} 
+Path\+Cache\+Map {\bfseries \+\_\+path\+Cache}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a6b161cc0ec7ffddf3624f391d05e8b06}\label{struct_icon_cache_a6b161cc0ec7ffddf3624f391d05e8b06}} 
+Idx\+Cache\+Map {\bfseries \+\_\+idx\+Cache}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a9cebf62cc5743f141d2e36ad9cce34f0}\label{struct_icon_cache_a9cebf62cc5743f141d2e36ad9cce34f0}} 
+Pidl\+Cache\+Map {\bfseries \+\_\+pidlcache}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_ae0c618168e481b7aa7333f4fdc56cf37}\label{struct_icon_cache_ae0c618168e481b7aa7333f4fdc56cf37}} 
+\hyperlink{struct___i_m_a_g_e_l_i_s_t}{H\+I\+M\+A\+G\+E\+L\+I\+ST} {\bfseries \+\_\+himl\+Sys\+\_\+small}
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_icon_cache_a1e39040137152a498b82c3bf2233efce}\label{struct_icon_cache_a1e39040137152a498b82c3bf2233efce}} 
+static int {\bfseries s\+\_\+next\+\_\+id} = I\+C\+I\+D\+\_\+\+D\+Y\+N\+A\+M\+IC
+\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_icon_cache_aa765b3e3ca0eea6f221fa25ad6c11c7c}\label{struct_icon_cache_aa765b3e3ca0eea6f221fa25ad6c11c7c}} 
+\index{Icon\+Cache@{Icon\+Cache}!extract@{extract}}
+\index{extract@{extract}!Icon\+Cache@{Icon\+Cache}}
+\subsubsection{\texorpdfstring{extract()}{extract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily const \hyperlink{struct_icon}{Icon} \& Icon\+Cache\+::extract (\begin{DoxyParamCaption}\item[{L\+P\+C\+T\+S\+TR}]{path,  }\item[{I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS}]{flags = {\ttfamily ICF\+\_\+NORMAL} }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000018}{待办事项}]limit cache size \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000019}{待办事项}]limit cache size \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_icon_cache_a62b18f8a6dc71ed7632c22879728f472}\label{struct_icon_cache_a62b18f8a6dc71ed7632c22879728f472}} 
+\index{Icon\+Cache@{Icon\+Cache}!extract@{extract}}
+\index{extract@{extract}!Icon\+Cache@{Icon\+Cache}}
+\subsubsection{\texorpdfstring{extract()}{extract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily const \hyperlink{struct_icon}{Icon} \& Icon\+Cache\+::extract (\begin{DoxyParamCaption}\item[{L\+P\+C\+T\+S\+TR}]{path,  }\item[{int}]{icon\+\_\+idx,  }\item[{I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS}]{flags = {\ttfamily ICF\+\_\+HICON} }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000020}{待办事项}]retreive \char`\"{}http\+://.../favicon.\+ico\char`\"{} format icons \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_icon_cache_a0f47a9cd0630185ccef96fddcdb40083}\label{struct_icon_cache_a0f47a9cd0630185ccef96fddcdb40083}} 
+\index{Icon\+Cache@{Icon\+Cache}!extract@{extract}}
+\index{extract@{extract}!Icon\+Cache@{Icon\+Cache}}
+\subsubsection{\texorpdfstring{extract()}{extract()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily const \hyperlink{struct_icon}{Icon} \& Icon\+Cache\+::extract (\begin{DoxyParamCaption}\item[{L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST}]{pidl,  }\item[{I\+C\+O\+N\+C\+A\+C\+H\+E\+\_\+\+F\+L\+A\+GS}]{flags = {\ttfamily ICF\+\_\+NORMAL} }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000021}{待办事项}]limit cache size \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000022}{待办事项}]limit cache size \end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/globals.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/explorer.\+cpp\end{DoxyCompactItemize}

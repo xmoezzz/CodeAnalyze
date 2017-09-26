@@ -1,0 +1,356 @@
+\hypertarget{_e_1_2_react_o_s-0_84_86_2win32ss_2gdi_2gdi32_2objects_2utils_8c-example}{}\section{E\+:/\+React\+O\+S-\/0.\+4.\+6/win32ss/gdi/gdi32/objects/utils.\+c}
+P\+B\+I\+T\+M\+A\+P\+I\+N\+FO New\+Bitmap\+Info; U\+I\+NT New\+Bitmap\+Info\+Size;
+
+New\+Bitmap\+Info = Convert\+Bitmap\+Info(Old\+Bitmap\+Info, D\+I\+B\+\_\+\+R\+G\+B\+\_\+\+C\+O\+L\+O\+RS, \&New\+Bitmap\+Info\+Size, F\+A\+L\+SE); if (New\+Bitmap\+Info) \{ $<$do something=\char`\"{}\char`\"{} with=\char`\"{}\char`\"{} the=\char`\"{}\char`\"{} bitmap=\char`\"{}\char`\"{} info$>$=\char`\"{}\char`\"{}$>$ if (New\+Bitmap\+Info != Old\+Bitmap\+Info) Rtl\+Free\+Heap(\+Rtl\+Get\+Process\+Heap(), 0, New\+Bitmap\+Info); \}
+
+
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#include <precomp.h>}
+
+BOOL WINAPI
+CalculateColorTableSize(
+    CONST \hyperlink{struct_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER} *BitmapInfoHeader,
+    UINT *ColorSpec,
+    UINT *ColorTableSize)
+\{
+    WORD BitCount;
+    DWORD ClrUsed;
+    DWORD Compression;
+
+    \textcolor{comment}{/*}
+\textcolor{comment}{     * At first get some basic parameters from the passed BitmapInfoHeader}
+\textcolor{comment}{     * structure. It can have one of the following formats:}
+\textcolor{comment}{     * - BITMAPCOREHEADER (the oldest one with totally different layout}
+\textcolor{comment}{     *                     from the others)}
+\textcolor{comment}{     * - BITMAPINFOHEADER (the standard and most common header)}
+\textcolor{comment}{     * - BITMAPV4HEADER (extension of BITMAPINFOHEADER)}
+\textcolor{comment}{     * - BITMAPV5HEADER (extension of BITMAPV4HEADER)}
+\textcolor{comment}{     */}
+
+    \textcolor{keywordflow}{if} (BitmapInfoHeader->biSize == \textcolor{keyword}{sizeof}(\hyperlink{structtag_b_i_t_m_a_p_c_o_r_e_h_e_a_d_e_r}{BITMAPCOREHEADER}))
+    \{
+        BitCount = ((\hyperlink{structtag_b_i_t_m_a_p_c_o_r_e_h_e_a_d_e_r}{LPBITMAPCOREHEADER})BitmapInfoHeader)->bcBitCount;
+        ClrUsed = 0;
+        Compression = BI\_RGB;
+    \}
+    \textcolor{keywordflow}{else}
+    \{
+        BitCount = BitmapInfoHeader->biBitCount;
+        ClrUsed = BitmapInfoHeader->biClrUsed;
+        Compression = BitmapInfoHeader->biCompression;
+    \}
+
+    \textcolor{keywordflow}{switch} (Compression)
+    \{
+    \textcolor{keywordflow}{case} BI\_BITFIELDS:
+        \textcolor{keywordflow}{if} (*ColorSpec == DIB\_PAL\_COLORS)
+            *ColorSpec = DIB\_RGB\_COLORS;
+
+        \textcolor{keywordflow}{if} (BitCount != 16 && BitCount != 32)
+            \textcolor{keywordflow}{return} FALSE;
+
+        \textcolor{comment}{/*}
+\textcolor{comment}{         * For BITMAPV4HEADER/BITMAPV5HEADER the masks are included in}
+\textcolor{comment}{         * the structure itself (bV4RedMask, bV4GreenMask, and bV4BlueMask).}
+\textcolor{comment}{         * For BITMAPINFOHEADER the color masks are stored in the palette.}
+\textcolor{comment}{         */}
+
+        \textcolor{keywordflow}{if} (BitmapInfoHeader->biSize > \textcolor{keyword}{sizeof}(\hyperlink{struct_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}))
+            *ColorTableSize = 0;
+        \textcolor{keywordflow}{else}
+            *ColorTableSize = 3;
+
+        \textcolor{keywordflow}{return} TRUE;
+
+    \textcolor{keywordflow}{case} BI\_RGB:
+        \textcolor{keywordflow}{switch} (BitCount)
+        \{
+        \textcolor{keywordflow}{case} 1:
+            *ColorTableSize = ClrUsed ? min(ClrUsed, 2) : 2;
+            \textcolor{keywordflow}{return} TRUE;
+
+        \textcolor{keywordflow}{case} 4:
+            *ColorTableSize = ClrUsed ? min(ClrUsed, 16) : 16;
+            \textcolor{keywordflow}{return} TRUE;
+
+        \textcolor{keywordflow}{case} 8:
+            *ColorTableSize = ClrUsed ? min(ClrUsed, 256) : 256;
+            \textcolor{keywordflow}{return} TRUE;
+
+        \textcolor{keywordflow}{default}:
+            \textcolor{keywordflow}{if} (*ColorSpec == DIB\_PAL\_COLORS)
+                *ColorSpec = DIB\_RGB\_COLORS;
+            \textcolor{keywordflow}{if} (BitCount != 16 && BitCount != 24 && BitCount != 32)
+                \textcolor{keywordflow}{return} FALSE;
+            *ColorTableSize = ClrUsed;
+            \textcolor{keywordflow}{return} TRUE;
+        \}
+
+    \textcolor{keywordflow}{case} BI\_RLE4:
+        \textcolor{keywordflow}{if} (BitCount == 4)
+        \{
+            *ColorTableSize = ClrUsed ? min(ClrUsed, 16) : 16;
+            \textcolor{keywordflow}{return} TRUE;
+        \}
+        \textcolor{keywordflow}{return} FALSE;
+
+    \textcolor{keywordflow}{case} BI\_RLE8:
+        \textcolor{keywordflow}{if} (BitCount == 8)
+        \{
+            *ColorTableSize = ClrUsed ? min(ClrUsed, 256) : 256;
+            \textcolor{keywordflow}{return} TRUE;
+        \}
+        \textcolor{keywordflow}{return} FALSE;
+
+    \textcolor{keywordflow}{case} BI\_JPEG:
+    \textcolor{keywordflow}{case} BI\_PNG:
+        *ColorTableSize = ClrUsed;
+        \textcolor{keywordflow}{return} TRUE;
+
+    \textcolor{keywordflow}{default}:
+        \textcolor{keywordflow}{return} FALSE;
+    \}
+\}
+
+\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o}{LPBITMAPINFO} WINAPI
+ConvertBitmapInfo(
+    CONST \hyperlink{structtag_b_i_t_m_a_p_i_n_f_o}{BITMAPINFO} *BitmapInfo,
+    UINT ColorSpec,
+    UINT *BitmapInfoSize,
+    BOOL FollowedByData)
+\{
+    \hyperlink{structtag_b_i_t_m_a_p_i_n_f_o}{LPBITMAPINFO} NewBitmapInfo = (\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o}{LPBITMAPINFO})BitmapInfo;
+    \hyperlink{struct___b_i_t_m_a_p_c_o_r_e_i_n_f_o}{LPBITMAPCOREINFO} CoreBitmapInfo = (\hyperlink{struct___b_i_t_m_a_p_c_o_r_e_i_n_f_o}{LPBITMAPCOREINFO})BitmapInfo;
+    DWORD Size = 0;
+    ULONG DataSize = 0;
+    UINT PaletteEntryCount = 0;
+
+    \textcolor{comment}{/*}
+\textcolor{comment}{     * At first check if the passed BitmapInfo structure has valid size. It}
+\textcolor{comment}{     * can have one of these headers: BITMAPCOREHEADER, BITMAPINFOHEADER,}
+\textcolor{comment}{     * BITMAPV4HEADER or BITMAPV5HEADER (see CalculateColorTableSize for}
+\textcolor{comment}{     * description).}
+\textcolor{comment}{     */}
+
+    \textcolor{keywordflow}{if} ( !BitmapInfo ||
+            (BitmapInfo->bmiHeader.biSize != \textcolor{keyword}{sizeof}(\hyperlink{structtag_b_i_t_m_a_p_c_o_r_e_h_e_a_d_e_r}{BITMAPCOREHEADER}) &&
+             (BitmapInfo->bmiHeader.biSize < \textcolor{keyword}{sizeof}(\hyperlink{struct_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}) ||
+              BitmapInfo->bmiHeader.biSize > \textcolor{keyword}{sizeof}(BITMAPV5HEADER))))
+    \{
+        \textcolor{keywordflow}{return} NULL;
+    \}
+
+    \textcolor{comment}{/*}
+\textcolor{comment}{     * Now calculate the color table size. Also if the bitmap info contains}
+\textcolor{comment}{     * invalid color information it's rejected here.}
+\textcolor{comment}{     */}
+
+    \textcolor{keywordflow}{if} (!CalculateColorTableSize(&BitmapInfo->bmiHeader, &ColorSpec,
+                                 &PaletteEntryCount))
+    \{
+        \textcolor{keywordflow}{return} NULL;
+    \}
+
+    \textcolor{comment}{/*}
+\textcolor{comment}{     * Calculate the size of image data if applicable. We must be careful}
+\textcolor{comment}{     * to do proper aligning on line ends.}
+\textcolor{comment}{     */}
+
+    \textcolor{keywordflow}{if} (FollowedByData)
+    \{
+        DataSize = GdiGetBitmapBitsSize((\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o}{PBITMAPINFO})BitmapInfo );
+    \}
+
+    \textcolor{comment}{/*}
+\textcolor{comment}{     * If BitmapInfo was originally BITMAPCOREINFO then we need to convert}
+\textcolor{comment}{     * it to the standard BITMAPINFO layout.}
+\textcolor{comment}{     */}
+
+    \textcolor{keywordflow}{if} (BitmapInfo->bmiHeader.biSize == \textcolor{keyword}{sizeof}(\hyperlink{structtag_b_i_t_m_a_p_c_o_r_e_h_e_a_d_e_r}{BITMAPCOREHEADER}))
+    \{
+        Size = \textcolor{keyword}{sizeof}(\hyperlink{struct_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER});
+        \textcolor{keywordflow}{if} (ColorSpec == DIB\_RGB\_COLORS)
+            Size += PaletteEntryCount * \textcolor{keyword}{sizeof}(\hyperlink{structtag_r_g_b_q_u_a_d}{RGBQUAD});
+        \textcolor{keywordflow}{else}
+            Size += PaletteEntryCount * \textcolor{keyword}{sizeof}(USHORT);
+        Size += DataSize;
+
+        NewBitmapInfo = RtlAllocateHeap(RtlGetProcessHeap(), 0, Size);
+        \textcolor{keywordflow}{if} (NewBitmapInfo == NULL)
+        \{
+            \textcolor{keywordflow}{return} NULL;
+        \}
+
+        NewBitmapInfo->bmiHeader.biSize = \textcolor{keyword}{sizeof}(\hyperlink{struct_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER});
+        NewBitmapInfo->bmiHeader.biWidth = CoreBitmapInfo->bmciHeader.bcWidth;
+        NewBitmapInfo->bmiHeader.biHeight = CoreBitmapInfo->bmciHeader.bcHeight;
+        NewBitmapInfo->bmiHeader.biPlanes = CoreBitmapInfo->bmciHeader.bcPlanes;
+        NewBitmapInfo->bmiHeader.biBitCount = CoreBitmapInfo->bmciHeader.bcBitCount;
+        NewBitmapInfo->bmiHeader.biCompression = BI\_RGB;
+        NewBitmapInfo->bmiHeader.biSizeImage = 0;
+        NewBitmapInfo->bmiHeader.biXPelsPerMeter = 0;
+        NewBitmapInfo->bmiHeader.biYPelsPerMeter = 0;
+        NewBitmapInfo->bmiHeader.biClrUsed = 0;
+        NewBitmapInfo->bmiHeader.biClrImportant = 0;
+
+        \textcolor{keywordflow}{if} (PaletteEntryCount != 0)
+        \{
+            \textcolor{keywordflow}{if} (ColorSpec == DIB\_RGB\_COLORS)
+            \{
+                ULONG Index;
+
+                \textcolor{keywordflow}{for} (Index = 0; Index < PaletteEntryCount; Index++)
+                \{
+                    NewBitmapInfo->bmiColors[Index].rgbRed =
+                        CoreBitmapInfo->bmciColors[Index].rgbtRed;
+                    NewBitmapInfo->bmiColors[Index].rgbGreen =
+                        CoreBitmapInfo->bmciColors[Index].rgbtGreen;
+                    NewBitmapInfo->bmiColors[Index].rgbBlue =
+                        CoreBitmapInfo->bmciColors[Index].rgbtBlue;
+                    NewBitmapInfo->bmiColors[Index].rgbReserved = 0;
+                \}
+            \}
+            \textcolor{keywordflow}{else}
+            \{
+                RtlCopyMemory(NewBitmapInfo->bmiColors,
+                              CoreBitmapInfo->bmciColors,
+                              PaletteEntryCount * \textcolor{keyword}{sizeof}(USHORT));
+            \}
+        \}
+
+        \textcolor{keywordflow}{if} (FollowedByData)
+        \{
+            ULONG\_PTR NewDataPtr, OldDataPtr;
+
+            \textcolor{keywordflow}{if} (ColorSpec == DIB\_RGB\_COLORS)
+            \{
+                NewDataPtr = (ULONG\_PTR)(NewBitmapInfo->bmiColors +
+                                         PaletteEntryCount);
+                OldDataPtr = (ULONG\_PTR)(CoreBitmapInfo->bmciColors +
+                                         PaletteEntryCount);
+            \}
+            \textcolor{keywordflow}{else}
+            \{
+                NewDataPtr = (ULONG\_PTR)(NewBitmapInfo->bmiColors) +
+                             PaletteEntryCount * \textcolor{keyword}{sizeof}(USHORT);
+                OldDataPtr = (ULONG\_PTR)(CoreBitmapInfo->bmciColors) +
+                             PaletteEntryCount * \textcolor{keyword}{sizeof}(USHORT);
+            \}
+
+            RtlCopyMemory((\hyperlink{interfacevoid}{PVOID})NewDataPtr, (\hyperlink{interfacevoid}{PVOID})OldDataPtr, DataSize);
+        \}
+    \}
+    \textcolor{keywordflow}{else}
+    \{
+        \textcolor{comment}{/* Verify some data validity */}
+        \textcolor{keywordflow}{switch} (BitmapInfo->bmiHeader.biCompression)
+        \{
+            \textcolor{keywordflow}{case} BI\_RLE8:
+                \textcolor{keywordflow}{if} (BitmapInfo->bmiHeader.biBitCount != 8)
+                    \textcolor{keywordflow}{return} NULL;
+                \textcolor{keywordflow}{if} (BitmapInfo->bmiHeader.biHeight < 0)
+                    \textcolor{keywordflow}{return} NULL;
+                \textcolor{keywordflow}{break};
+            \textcolor{keywordflow}{case} BI\_RLE4:
+                \textcolor{keywordflow}{if} (BitmapInfo->bmiHeader.biBitCount != 4)
+                    \textcolor{keywordflow}{return} NULL;
+                \textcolor{keywordflow}{if} (BitmapInfo->bmiHeader.biHeight < 0)
+                    \textcolor{keywordflow}{return} NULL;
+                \textcolor{keywordflow}{break};
+            \textcolor{keywordflow}{default}:
+                \textcolor{keywordflow}{break};
+        \}
+
+        \textcolor{comment}{/* Non "standard" formats must have a valid size set */}
+        \textcolor{keywordflow}{if} ((BitmapInfo->bmiHeader.biCompression != BI\_RGB) &&
+                (BitmapInfo->bmiHeader.biCompression != BI\_BITFIELDS))
+        \{
+            \textcolor{keywordflow}{if} (BitmapInfo->bmiHeader.biSizeImage == 0)
+                \textcolor{keywordflow}{return} NULL;
+        \}
+    \}
+
+    Size = NewBitmapInfo->bmiHeader.biSize;
+    \textcolor{keywordflow}{if} (ColorSpec == DIB\_RGB\_COLORS)
+        Size += PaletteEntryCount * \textcolor{keyword}{sizeof}(\hyperlink{structtag_r_g_b_q_u_a_d}{RGBQUAD});
+    \textcolor{keywordflow}{else}
+        Size += PaletteEntryCount * \textcolor{keyword}{sizeof}(USHORT);
+    Size += DataSize;
+    *BitmapInfoSize = Size;
+
+    \textcolor{keywordflow}{return} NewBitmapInfo;
+\}
+
+\hyperlink{interfacevoid}{VOID}
+WINAPI
+LogFontA2W(\hyperlink{structtag_l_o_g_f_o_n_t_w}{LPLOGFONTW} pW, CONST \hyperlink{struct_l_o_g_f_o_n_t_a}{LOGFONTA} *pA)
+\{
+\textcolor{preprocessor}{#define COPYS(f,len) MultiByteToWideChar ( CP\_THREAD\_ACP, 0, pA->f, len, pW->f, len )}
+\textcolor{preprocessor}{#define COPYN(f) pW->f = pA->f}
+
+    COPYN(lfHeight);
+    COPYN(lfWidth);
+    COPYN(lfEscapement);
+    COPYN(lfOrientation);
+    COPYN(lfWeight);
+    COPYN(lfItalic);
+    COPYN(lfUnderline);
+    COPYN(lfStrikeOut);
+    COPYN(lfCharSet);
+    COPYN(lfOutPrecision);
+    COPYN(lfClipPrecision);
+    COPYN(lfQuality);
+    COPYN(lfPitchAndFamily);
+    COPYS(lfFaceName,LF\_FACESIZE);
+    pW->lfFaceName[LF\_FACESIZE - 1] = \textcolor{charliteral}{'\(\backslash\)0'};
+
+\textcolor{preprocessor}{#undef COPYN}
+\textcolor{preprocessor}{#undef COPYS}
+\}
+
+\hyperlink{interfacevoid}{VOID}
+WINAPI
+LogFontW2A(\hyperlink{structtag_l_o_g_f_o_n_t_a}{LPLOGFONTA} pA, CONST \hyperlink{struct_l_o_g_f_o_n_t_w}{LOGFONTW} *pW)
+\{
+\textcolor{preprocessor}{#define COPYS(f,len) WideCharToMultiByte ( CP\_THREAD\_ACP, 0, pW->f, len, pA->f, len, NULL, NULL )}
+\textcolor{preprocessor}{#define COPYN(f) pA->f = pW->f}
+
+    COPYN(lfHeight);
+    COPYN(lfWidth);
+    COPYN(lfEscapement);
+    COPYN(lfOrientation);
+    COPYN(lfWeight);
+    COPYN(lfItalic);
+    COPYN(lfUnderline);
+    COPYN(lfStrikeOut);
+    COPYN(lfCharSet);
+    COPYN(lfOutPrecision);
+    COPYN(lfClipPrecision);
+    COPYN(lfQuality);
+    COPYN(lfPitchAndFamily);
+    COPYS(lfFaceName,LF\_FACESIZE);
+    pA->lfFaceName[LF\_FACESIZE - 1] = \textcolor{charliteral}{'\(\backslash\)0'};
+
+\textcolor{preprocessor}{#undef COPYN}
+\textcolor{preprocessor}{#undef COPYS}
+\}
+
+\hyperlink{interfacevoid}{VOID}
+WINAPI
+EnumLogFontExW2A( \hyperlink{structtag_e_n_u_m_l_o_g_f_o_n_t_e_x_a}{LPENUMLOGFONTEXA} fontA, CONST \hyperlink{structtag_e_n_u_m_l_o_g_f_o_n_t_e_x_w}{ENUMLOGFONTEXW} *fontW )
+\{
+    LogFontW2A( (\hyperlink{structtag_l_o_g_f_o_n_t_a}{LPLOGFONTA})fontA, (CONST \hyperlink{struct_l_o_g_f_o_n_t_w}{LOGFONTW} *)fontW );
+
+    WideCharToMultiByte( CP\_THREAD\_ACP, 0, fontW->elfFullName, -1,
+                         (LPSTR) fontA->elfFullName, LF\_FULLFACESIZE, NULL, NULL );
+    fontA->elfFullName[LF\_FULLFACESIZE-1] = \textcolor{charliteral}{'\(\backslash\)0'};
+    WideCharToMultiByte( CP\_THREAD\_ACP, 0, fontW->elfStyle, -1,
+                         (LPSTR) fontA->elfStyle, LF\_FACESIZE, NULL, NULL );
+    fontA->elfStyle[LF\_FACESIZE-1] = \textcolor{charliteral}{'\(\backslash\)0'};
+    WideCharToMultiByte( CP\_THREAD\_ACP, 0, fontW->elfScript, -1,
+                         (LPSTR) fontA->elfScript, LF\_FACESIZE, NULL, NULL );
+    fontA->elfScript[LF\_FACESIZE-1] = \textcolor{charliteral}{'\(\backslash\)0'};
+\}
+
+\end{DoxyCodeInclude}
+ 

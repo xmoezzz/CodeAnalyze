@@ -1,0 +1,213 @@
+\hypertarget{group__mpg123__output}{}\section{mpg123 output audio format}
+\label{group__mpg123__output}\index{mpg123 output audio format@{mpg123 output audio format}}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__mpg123__output_ga94df916cae2fc81b8a6df88c1728eb1c}{mpg123\+\_\+channelcount} \{ \hyperlink{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca5429c88158462f4290639ec505227c0c}{M\+P\+G123\+\_\+\+M\+O\+NO} = 1, 
+\hyperlink{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca52d7aff6b35da496e7f430b37c0d4602}{M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__output_gac01392beb95e85d2ba165d4a3630f52a}{mpg123\+\_\+rates} (const long $\ast$$\ast$\hyperlink{classlist}{list}, size\+\_\+t $\ast$number)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} \hyperlink{group__mpg123__output_gabdf7009c888364527de2bdf37aa36185}{mpg123\+\_\+encodings} (const int $\ast$$\ast$\hyperlink{classlist}{list}, size\+\_\+t $\ast$number)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gaf12bd45d9040973c8c7b7b9411a530b5}{mpg123\+\_\+encsize} (int encoding)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_ga931ca238347de394901c3baa13e7a8f8}{mpg123\+\_\+format\+\_\+none} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_ga65a28420ccab9021abd44ae95db8b1b6}{mpg123\+\_\+format\+\_\+all} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gadad5794afc300a997e517dbe397dc2c7}{mpg123\+\_\+format} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long rate, int channels, int encodings)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gae30accfd052c88aad47820c5bb149cda}{mpg123\+\_\+format\+\_\+support} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long rate, int encoding)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gae5e04c7522d620e122009db359cc6dc5}{mpg123\+\_\+getformat} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long $\ast$rate, int $\ast$channels, int $\ast$encoding)
+\item 
+\hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int \hyperlink{group__mpg123__output_gadf21a63d9ab2fc87e271962f6f583876}{mpg123\+\_\+getformat2} (\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$mh, long $\ast$rate, int $\ast$channels, int $\ast$encoding, int clear\+\_\+flag)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions to get and select the format of the decoded audio.
+
+Before you dive in, please be warned that you might get confused by this. \hyperlink{namespace_this}{This} seems to happen a lot, therefore I am trying to explain in advance.
+
+The mpg123 library decides what output format to use when encountering the first frame in a stream, or actually any frame that is still valid but differs from the frames before in the prompted output format. At such a deciding point, an internal table of allowed encodings, sampling rates and channel setups is consulted. According to this table, an output format is chosen and the decoding engine set up accordingly (including optimized routines for different output formats). \hyperlink{namespace_this}{This} might seem unusual but it just follows from the non-\/existence of \char`\"{}\+M\+P\+E\+G audio files\char`\"{} with defined overall properties. There are streams, streams are concatenations of (semi) independent frames. We store streams on disk and call them \char`\"{}\+M\+P\+E\+G audio files\char`\"{}, but that does not change their nature as the decoder is concerned (the L\+A\+M\+E/\+Xing header for gapless decoding makes things interesting again).
+
+To get to the point\+: What you do with \hyperlink{group__mpg123__output_gadad5794afc300a997e517dbe397dc2c7}{mpg123\+\_\+format()} and friends is to fill the internal table of allowed formats before it is used. That includes removing support for some formats or adding your forced sample rate (see M\+P\+G123\+\_\+\+F\+O\+R\+C\+E\+\_\+\+R\+A\+TE) that will be used with the crude internal resampler. Also keep in mind that the sample encoding is just a question of choice -- the M\+P\+EG frames do only indicate their native sampling rate and channel count. If you want to decode to integer or float samples, 8 or 16 bit ... that is your decision. In a \char`\"{}clean\char`\"{} world, libmpg123 would always decode to 32 bit float and let you handle any sample conversion. But there are optimized routines that work faster by directly decoding to the desired encoding / accuracy. We prefer efficiency over conceptual tidyness.
+
+People often start out thinking that \hyperlink{group__mpg123__output_gadad5794afc300a997e517dbe397dc2c7}{mpg123\+\_\+format()} should change the actual decoding format on the fly. That is wrong. \hyperlink{class_it}{It} only has effect on the next natural change of output format, when libmpg123 will consult its format table again. To make life easier, you might want to call \hyperlink{group__mpg123__output_ga931ca238347de394901c3baa13e7a8f8}{mpg123\+\_\+format\+\_\+none()} before any thing else and then just allow one desired encoding and a limited set of sample rates / channel choices that you actually intend to deal with. You can force libmpg123 to decode everything to 44100 K\+Hz, stereo, 16 bit integer ... it will duplicate mono channels and even do resampling if needed (unless that feature is disabled in the build, same with some encodings). But I have to stress that the resampling of libmpg123 is very crude and doesn\textquotesingle{}t even contain any kind of \char`\"{}proper\char`\"{} interpolation.
+
+In any case, watch out for M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+F\+O\+R\+M\+AT as return message from decoding routines and call \hyperlink{group__mpg123__output_gae5e04c7522d620e122009db359cc6dc5}{mpg123\+\_\+getformat()} to get the currently active output format. 
+
+\subsection{枚举类型说明}
+\mbox{\Hypertarget{group__mpg123__output_ga94df916cae2fc81b8a6df88c1728eb1c}\label{group__mpg123__output_ga94df916cae2fc81b8a6df88c1728eb1c}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+channelcount@{mpg123\+\_\+channelcount}}
+\index{mpg123\+\_\+channelcount@{mpg123\+\_\+channelcount}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+channelcount}{mpg123\_channelcount}}
+{\footnotesize\ttfamily \hyperlink{interfaceenum}{enum} \hyperlink{group__mpg123__output_ga94df916cae2fc81b8a6df88c1728eb1c}{mpg123\+\_\+channelcount}}
+
+They can be combined into one number (3) to indicate mono and stereo... \begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+P\+G123\+\_\+\+M\+O\+NO@{M\+P\+G123\+\_\+\+M\+O\+NO}!mpg123 output audio format@{mpg123 output audio format}}\index{mpg123 output audio format@{mpg123 output audio format}!M\+P\+G123\+\_\+\+M\+O\+NO@{M\+P\+G123\+\_\+\+M\+O\+NO}}}\mbox{\Hypertarget{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca5429c88158462f4290639ec505227c0c}\label{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca5429c88158462f4290639ec505227c0c}} 
+M\+P\+G123\+\_\+\+M\+O\+NO&mono \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO@{M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO}!mpg123 output audio format@{mpg123 output audio format}}\index{mpg123 output audio format@{mpg123 output audio format}!M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO@{M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO}}}\mbox{\Hypertarget{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca52d7aff6b35da496e7f430b37c0d4602}\label{group__mpg123__output_gga94df916cae2fc81b8a6df88c1728eb1ca52d7aff6b35da496e7f430b37c0d4602}} 
+M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO&stereo \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{group__mpg123__output_gabdf7009c888364527de2bdf37aa36185}\label{group__mpg123__output_gabdf7009c888364527de2bdf37aa36185}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+encodings@{mpg123\+\_\+encodings}}
+\index{mpg123\+\_\+encodings@{mpg123\+\_\+encodings}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+encodings()}{mpg123\_encodings()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} mpg123\+\_\+encodings (\begin{DoxyParamCaption}\item[{const int $\ast$$\ast$}]{list,  }\item[{size\+\_\+t $\ast$}]{number }\end{DoxyParamCaption})}
+
+An array of supported audio encodings. An audio encoding is one of the fully qualified members of mpg123\+\_\+enc\+\_\+enum (M\+P\+G123\+\_\+\+E\+N\+C\+\_\+\+S\+I\+G\+N\+E\+D\+\_\+16, not M\+P\+G123\+\_\+\+S\+I\+G\+N\+ED). 
+\begin{DoxyParams}{参数}
+{\em list} & Store a pointer to the encodings array there. \\
+\hline
+{\em number} & Store the number of encodings there. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__mpg123__output_gaf12bd45d9040973c8c7b7b9411a530b5}\label{group__mpg123__output_gaf12bd45d9040973c8c7b7b9411a530b5}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+encsize@{mpg123\+\_\+encsize}}
+\index{mpg123\+\_\+encsize@{mpg123\+\_\+encsize}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+encsize()}{mpg123\_encsize()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+encsize (\begin{DoxyParamCaption}\item[{int}]{encoding }\end{DoxyParamCaption})}
+
+Return the size (in bytes) of one mono sample of the named encoding. 
+\begin{DoxyParams}{参数}
+{\em encoding} & The encoding value to analyze. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+positive size of encoding in bytes, 0 on invalid encoding. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__output_gadad5794afc300a997e517dbe397dc2c7}\label{group__mpg123__output_gadad5794afc300a997e517dbe397dc2c7}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+format@{mpg123\+\_\+format}}
+\index{mpg123\+\_\+format@{mpg123\+\_\+format}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+format()}{mpg123\_format()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+format (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{long}]{rate,  }\item[{int}]{channels,  }\item[{int}]{encodings }\end{DoxyParamCaption})}
+
+Set the audio format support of a mpg123\+\_\+handle in detail\+: 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em rate} & The sample rate value (in Hertz). \\
+\hline
+{\em channels} & \hyperlink{struct_a}{A} combination of M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO and M\+P\+G123\+\_\+\+M\+O\+NO. \\
+\hline
+{\em encodings} & \hyperlink{struct_a}{A} combination of accepted encodings for rate and channels, p.\+ex M\+P\+G123\+\_\+\+E\+N\+C\+\_\+\+S\+I\+G\+N\+E\+D16 $\vert$ M\+P\+G123\+\_\+\+E\+N\+C\+\_\+\+U\+L\+A\+W\+\_\+8 (or 0 for no support). Please note that some encodings may not be supported in the library build and thus will be ignored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success, M\+P\+G123\+\_\+\+E\+RR if there was an error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__output_ga65a28420ccab9021abd44ae95db8b1b6}\label{group__mpg123__output_ga65a28420ccab9021abd44ae95db8b1b6}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+format\+\_\+all@{mpg123\+\_\+format\+\_\+all}}
+\index{mpg123\+\_\+format\+\_\+all@{mpg123\+\_\+format\+\_\+all}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+format\+\_\+all()}{mpg123\_format\_all()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+format\+\_\+all (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Configure mpg123 handle to accept all formats (also any custom rate you may set) -- this is default. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__output_ga931ca238347de394901c3baa13e7a8f8}\label{group__mpg123__output_ga931ca238347de394901c3baa13e7a8f8}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+format\+\_\+none@{mpg123\+\_\+format\+\_\+none}}
+\index{mpg123\+\_\+format\+\_\+none@{mpg123\+\_\+format\+\_\+none}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+format\+\_\+none()}{mpg123\_format\_none()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+format\+\_\+none (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh }\end{DoxyParamCaption})}
+
+Configure a mpg123 handle to accept no output format at all, use before specifying supported formats with mpg123\+\_\+format 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__output_gae30accfd052c88aad47820c5bb149cda}\label{group__mpg123__output_gae30accfd052c88aad47820c5bb149cda}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+format\+\_\+support@{mpg123\+\_\+format\+\_\+support}}
+\index{mpg123\+\_\+format\+\_\+support@{mpg123\+\_\+format\+\_\+support}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+format\+\_\+support()}{mpg123\_format\_support()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+format\+\_\+support (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{long}]{rate,  }\item[{int}]{encoding }\end{DoxyParamCaption})}
+
+Check to see if a specific format at a specific rate is supported by mpg123\+\_\+handle. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em rate} & sampling rate \\
+\hline
+{\em encoding} & encoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 for no support (that includes invalid parameters), M\+P\+G123\+\_\+\+S\+T\+E\+R\+EO, M\+P\+G123\+\_\+\+M\+O\+NO or M\+P\+G123\+\_\+\+S\+T\+E\+R\+E\+O$\vert$\+M\+P\+G123\+\_\+\+M\+O\+NO. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__output_gae5e04c7522d620e122009db359cc6dc5}\label{group__mpg123__output_gae5e04c7522d620e122009db359cc6dc5}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+getformat@{mpg123\+\_\+getformat}}
+\index{mpg123\+\_\+getformat@{mpg123\+\_\+getformat}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+getformat()}{mpg123\_getformat()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+getformat (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{long $\ast$}]{rate,  }\item[{int $\ast$}]{channels,  }\item[{int $\ast$}]{encoding }\end{DoxyParamCaption})}
+
+Get the current output format written to the addresses given. If the stream is freshly loaded, this will try to parse enough of it to give you the format to come. \hyperlink{namespace_this}{This} clears the flag that would otherwise make the first decoding call return M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+F\+O\+R\+M\+AT. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em rate} & sampling rate return address \\
+\hline
+{\em channels} & channel count return address \\
+\hline
+{\em encoding} & encoding return address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__output_gadf21a63d9ab2fc87e271962f6f583876}\label{group__mpg123__output_gadf21a63d9ab2fc87e271962f6f583876}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+getformat2@{mpg123\+\_\+getformat2}}
+\index{mpg123\+\_\+getformat2@{mpg123\+\_\+getformat2}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+getformat2()}{mpg123\_getformat2()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} int mpg123\+\_\+getformat2 (\begin{DoxyParamCaption}\item[{\hyperlink{group__mpg123__init_ga6728e2839a395f3a07d4514da659faca}{mpg123\+\_\+handle} $\ast$}]{mh,  }\item[{long $\ast$}]{rate,  }\item[{int $\ast$}]{channels,  }\item[{int $\ast$}]{encoding,  }\item[{int}]{clear\+\_\+flag }\end{DoxyParamCaption})}
+
+Get the current output format written to the addresses given. \hyperlink{namespace_this}{This} differs from plain \hyperlink{group__mpg123__output_gae5e04c7522d620e122009db359cc6dc5}{mpg123\+\_\+getformat()} in that you can choose {\itshape not} to clear the flag that would trigger the next decoding call to return M\+P\+G123\+\_\+\+N\+E\+W\+\_\+\+F\+O\+R\+M\+AT in case of a new format arriving. 
+\begin{DoxyParams}{参数}
+{\em mh} & handle \\
+\hline
+{\em rate} & sampling rate return address \\
+\hline
+{\em channels} & channel count return address \\
+\hline
+{\em encoding} & encoding return address \\
+\hline
+{\em clear\+\_\+flag} & if true, clear internal format flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+M\+P\+G123\+\_\+\+OK on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mpg123__output_gac01392beb95e85d2ba165d4a3630f52a}\label{group__mpg123__output_gac01392beb95e85d2ba165d4a3630f52a}} 
+\index{mpg123 output audio format@{mpg123 output audio format}!mpg123\+\_\+rates@{mpg123\+\_\+rates}}
+\index{mpg123\+\_\+rates@{mpg123\+\_\+rates}!mpg123 output audio format@{mpg123 output audio format}}
+\subsubsection{\texorpdfstring{mpg123\+\_\+rates()}{mpg123\_rates()}}
+{\footnotesize\ttfamily \hyperlink{mpg123_8h_a2ba98cfba3f760879df70e755b2a61cc}{M\+P\+G123\+\_\+\+E\+X\+P\+O\+RT} \hyperlink{interfacevoid}{void} mpg123\+\_\+rates (\begin{DoxyParamCaption}\item[{const long $\ast$$\ast$}]{list,  }\item[{size\+\_\+t $\ast$}]{number }\end{DoxyParamCaption})}
+
+An array of supported standard sample rates These are possible native sample rates of M\+P\+EG audio files. You can still force mpg123 to resample to a different one, but by default you will only get audio in one of these samplings. 
+\begin{DoxyParams}{参数}
+{\em list} & Store a pointer to the sample rates array there. \\
+\hline
+{\em number} & Store the number of sample rates there. \\
+\hline
+\end{DoxyParams}

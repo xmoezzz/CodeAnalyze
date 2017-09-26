@@ -1,0 +1,92 @@
+\hypertarget{struct_f_a_t_drive}{}\section{F\+A\+T\+Drive结构体 参考}
+\label{struct_f_a_t_drive}\index{F\+A\+T\+Drive@{F\+A\+T\+Drive}}
+
+
+F\+AT drive root entry  
+
+
+
+
+{\ttfamily \#include $<$fatfs.\+h$>$}
+
+类 F\+A\+T\+Drive 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{struct_f_a_t_drive}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a766da43d93a04a6f8ccafc0a8f86e039}\label{struct_f_a_t_drive_a766da43d93a04a6f8ccafc0a8f86e039}} 
+{\bfseries F\+A\+T\+Drive} (L\+P\+C\+T\+S\+TR \hyperlink{structpath}{path})
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_adb22ad32e6d5d26ba4b3d322e88c9876}\label{struct_f_a_t_drive_adb22ad32e6d5d26ba4b3d322e88c9876}} 
+bool {\bfseries read\+\_\+sector} (D\+W\+O\+RD sec, \hyperlink{class_buffer}{Buffer} $\ast$buf, int len)
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_ad21eec8fae4ce7f450d0ba1b30e76c5e}\label{struct_f_a_t_drive_ad21eec8fae4ce7f450d0ba1b30e76c5e}} 
+D\+W\+O\+RD {\bfseries read\+\_\+\+F\+AT} (D\+W\+O\+RD Clus, bool \&ok)
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_afa01108fcbacdf38367264a04a23a380}\label{struct_f_a_t_drive_afa01108fcbacdf38367264a04a23a380}} 
+\hyperlink{interfacevoid}{void} {\bfseries small\+\_\+cache} ()
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_aa3c8cb8f2abd96c529243f7c384fd138}\label{struct_f_a_t_drive_aa3c8cb8f2abd96c529243f7c384fd138}} 
+\hyperlink{interfacevoid}{void} {\bfseries reset\+\_\+cache} ()
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a5b75ce5eeb306175dfe47b810cb9b782}\label{struct_f_a_t_drive_a5b75ce5eeb306175dfe47b810cb9b782}} 
+bool {\bfseries read\+\_\+cache} (D\+W\+O\+RD sec, \hyperlink{class_buffer}{Buffer} $\ast$$\ast$bufptr)
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a88bbe476407a4de0ad8f7145d2559755}\label{struct_f_a_t_drive_a88bbe476407a4de0ad8f7145d2559755}} 
+int {\bfseries get\+\_\+cache\+\_\+buffer} ()
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_ab529640e0874911d2f18a33ba78d01e2}\label{struct_f_a_t_drive_ab529640e0874911d2f18a33ba78d01e2}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries \+\_\+h\+Drive}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_aa3725c6e691d71174c948a7149e00ca6}\label{struct_f_a_t_drive_aa3725c6e691d71174c948a7149e00ca6}} 
+\hyperlink{struct_boot_sector}{Boot\+Sector} {\bfseries \+\_\+boot\+\_\+sector}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a29dbfedbbf1a5a7b24bdbb165ee1f549}\label{struct_f_a_t_drive_a29dbfedbbf1a5a7b24bdbb165ee1f549}} 
+int {\bfseries \+\_\+bufl}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a6601727cb389b4319a80f87469d9f9e6}\label{struct_f_a_t_drive_a6601727cb389b4319a80f87469d9f9e6}} 
+int {\bfseries \+\_\+bufents}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a8f77c04fe696bab6e1cbd3d37d486708}\label{struct_f_a_t_drive_a8f77c04fe696bab6e1cbd3d37d486708}} 
+int {\bfseries \+\_\+\+S\+Clus}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_acc4ddab5c855afcefa38ef07d253fb1a}\label{struct_f_a_t_drive_acc4ddab5c855afcefa38ef07d253fb1a}} 
+\hyperlink{struct_cache}{Cache} $\ast$ {\bfseries \+\_\+\+F\+A\+T\+Cache}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_ae82502c370702a483900ab8a8f796d9e}\label{struct_f_a_t_drive_ae82502c370702a483900ab8a8f796d9e}} 
+int {\bfseries \+\_\+\+Cache\+Count}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a0d0cc309912d363754061ccb79b5676c}\label{struct_f_a_t_drive_a0d0cc309912d363754061ccb79b5676c}} 
+D\+W\+O\+RD $\ast$ {\bfseries \+\_\+\+Cache\+Sec}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a661664ecab2cf40d72908ae4cb7f7ce6}\label{struct_f_a_t_drive_a661664ecab2cf40d72908ae4cb7f7ce6}} 
+int $\ast$ {\bfseries \+\_\+\+Cache\+Cnt}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_abec6a752318cc1000430ff2bf8d895d1}\label{struct_f_a_t_drive_abec6a752318cc1000430ff2bf8d895d1}} 
+bool $\ast$ {\bfseries \+\_\+\+Cache\+Dty}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a6a84eddf3d06c7f4a828a4c7e05bd4d3}\label{struct_f_a_t_drive_a6a84eddf3d06c7f4a828a4c7e05bd4d3}} 
+int {\bfseries \+\_\+\+Caches}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a46a4609b4e44828914045a6276c01170}\label{struct_f_a_t_drive_a46a4609b4e44828914045a6276c01170}} 
+bool {\bfseries \+\_\+cache\+\_\+empty}
+\item 
+\mbox{\Hypertarget{struct_f_a_t_drive_a9d34f357df5c570e72d91c57c8a07988}\label{struct_f_a_t_drive_a9d34f357df5c570e72d91c57c8a07988}} 
+int {\bfseries \+\_\+read\+\_\+ahead}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+F\+AT drive root entry 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/fatfs.\+h\end{DoxyCompactItemize}

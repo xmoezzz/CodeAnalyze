@@ -1,0 +1,62 @@
+\hypertarget{interface_irot}{}\section{Irot接口 参考}
+\label{interface_irot}\index{Irot@{Irot}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_irot_1_1tag_interface_data}{tag\+Interface\+Data}
+\item 
+struct \hyperlink{struct_irot_1_1tag_interface_list}{tag\+Interface\+List}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_irot_aefec38f4934dccb90f6250cb32088586}\label{interface_irot_aefec38f4934dccb90f6250cb32088586}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_irot_1_1tag_interface_data}{Irot\+::tag\+Interface\+Data} {\bfseries Interface\+Data}
+\item 
+\mbox{\Hypertarget{interface_irot_a2a27b4dabf5d84b8dfe8abeaebbedb4d}\label{interface_irot_a2a27b4dabf5d84b8dfe8abeaebbedb4d}} 
+typedef \hyperlink{struct_irot_1_1tag_interface_data}{Interface\+Data} $\ast$ {\bfseries P\+Interface\+Data}
+\item 
+\mbox{\Hypertarget{interface_irot_ab9c461436eb04d85dde166bdddd452ff}\label{interface_irot_ab9c461436eb04d85dde166bdddd452ff}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_irot_1_1tag_interface_list}{Irot\+::tag\+Interface\+List} {\bfseries Interface\+List}
+\item 
+\mbox{\Hypertarget{interface_irot_aba0d3b6b7addb52dd4fb4bb8a73df776}\label{interface_irot_aba0d3b6b7addb52dd4fb4bb8a73df776}} 
+typedef \hyperlink{struct_irot_1_1tag_interface_list}{Interface\+List} $\ast$ {\bfseries P\+Interface\+List}
+\item 
+\mbox{\Hypertarget{interface_irot_a3702d82efc1d96be76541969f2e6dbef}\label{interface_irot_a3702d82efc1d96be76541969f2e6dbef}} 
+typedef D\+W\+O\+RD {\bfseries Irot\+Cookie}
+\item 
+\mbox{\Hypertarget{interface_irot_a413196123aaaa34171e36f72a25b8705}\label{interface_irot_a413196123aaaa34171e36f72a25b8705}} 
+typedef \hyperlink{interfacevoid}{handle\+\_\+t} {\bfseries Irot\+Handle}
+\item 
+\mbox{\Hypertarget{interface_irot_aca7e08b938175c6e8f5eb6a9fe69ff1c}\label{interface_irot_aca7e08b938175c6e8f5eb6a9fe69ff1c}} 
+typedef \hyperlink{interfacevoid}{void} $\ast$ {\bfseries Irot\+Context\+Handle}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_irot_a6b83abac29cb0b221372aac1a807c2d6}\label{interface_irot_a6b83abac29cb0b221372aac1a807c2d6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Irot\+Register} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{Irot\+Handle} h, \mbox{[}in\mbox{]} const Moniker\+Comparison\+Data $\ast$moniker\+\_\+data, \mbox{[}in\mbox{]} const \hyperlink{struct_irot_1_1tag_interface_data}{Interface\+Data} $\ast$\hyperlink{structobject}{object}, \mbox{[}in\mbox{]} const \hyperlink{struct_irot_1_1tag_interface_data}{Interface\+Data} $\ast$\hyperlink{structmoniker}{moniker}, \mbox{[}in\mbox{]} const \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} $\ast$time, \mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Flags, \mbox{[}out\mbox{]} Irot\+Cookie $\ast$cookie, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{Irot\+Context\+Handle} $\ast$ctxt\+\_\+handle)
+\item 
+\mbox{\Hypertarget{interface_irot_ad2bbff57d3afbea865a99e955d232bfb}\label{interface_irot_ad2bbff57d3afbea865a99e955d232bfb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Irot\+Revoke} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{Irot\+Handle} h, \mbox{[}in\mbox{]} Irot\+Cookie cookie, \mbox{[}in, out\mbox{]} \hyperlink{interfacevoid}{Irot\+Context\+Handle} $\ast$ctxt\+\_\+handle, \mbox{[}out\mbox{]} \hyperlink{struct_irot_1_1tag_interface_data}{P\+Interface\+Data} $\ast$\hyperlink{structobject}{object}, \mbox{[}out\mbox{]} \hyperlink{struct_irot_1_1tag_interface_data}{P\+Interface\+Data} $\ast$\hyperlink{structmoniker}{moniker})
+\item 
+\mbox{\Hypertarget{interface_irot_a97855f0b6f395f44df5a49d01752709b}\label{interface_irot_a97855f0b6f395f44df5a49d01752709b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Irot\+Is\+Running} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{Irot\+Handle} h, \mbox{[}in\mbox{]} const Moniker\+Comparison\+Data $\ast$moniker\+\_\+data)
+\item 
+\mbox{\Hypertarget{interface_irot_a2b0c3762010d394948457b383bc1454c}\label{interface_irot_a2b0c3762010d394948457b383bc1454c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Irot\+Get\+Object} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{Irot\+Handle} h, \mbox{[}in\mbox{]} const Moniker\+Comparison\+Data $\ast$moniker\+\_\+data, \mbox{[}out\mbox{]} \hyperlink{struct_irot_1_1tag_interface_data}{P\+Interface\+Data} $\ast$obj, \mbox{[}out\mbox{]} Irot\+Cookie $\ast$cookie)
+\item 
+\mbox{\Hypertarget{interface_irot_a00e91029c2b1d2cfa42ebb9e30262eeb}\label{interface_irot_a00e91029c2b1d2cfa42ebb9e30262eeb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Irot\+Note\+Change\+Time} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{Irot\+Handle} h, \mbox{[}in\mbox{]} Irot\+Cookie cookie, \mbox{[}in\mbox{]} const \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} $\ast$time)
+\item 
+\mbox{\Hypertarget{interface_irot_a6926034c98f20e70ba3e8d604d9ed4db}\label{interface_irot_a6926034c98f20e70ba3e8d604d9ed4db}} 
+H\+R\+E\+S\+U\+LT {\bfseries Irot\+Get\+Time\+Of\+Last\+Change} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{Irot\+Handle} h, \mbox{[}in\mbox{]} const Moniker\+Comparison\+Data $\ast$moniker\+\_\+data, \mbox{[}out\mbox{]} \hyperlink{struct___f_i_l_e_t_i_m_e}{F\+I\+L\+E\+T\+I\+ME} $\ast$time)
+\item 
+\mbox{\Hypertarget{interface_irot_af7a7d9df1bc40ac2a51571da212f90fb}\label{interface_irot_af7a7d9df1bc40ac2a51571da212f90fb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Irot\+Enum\+Running} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{Irot\+Handle} h, \mbox{[}out\mbox{]} \hyperlink{struct_irot_1_1tag_interface_list}{P\+Interface\+List} $\ast$\hyperlink{classlist}{list})
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/wine/irot.\+idl\end{DoxyCompactItemize}

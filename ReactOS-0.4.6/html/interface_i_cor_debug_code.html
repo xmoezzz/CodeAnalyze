@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ICorDebugCode接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_cor_debug_code-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ICorDebugCode接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ICorDebugCode 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_cor_debug_code.png" usemap="#ICorDebugCode_map" alt=""/>
+  <map id="ICorDebugCode_map" name="ICorDebugCode_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,103,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4747750385227cb7db18837c864ba855"><td class="memItemLeft" align="right" valign="top"><a id="a4747750385227cb7db18837c864ba855"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>IsIL</b> ([out] BOOL *pbIL)</td></tr>
+<tr class="separator:a4747750385227cb7db18837c864ba855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5476762aee7cad2d0da7afc89d9ef860"><td class="memItemLeft" align="right" valign="top"><a id="a5476762aee7cad2d0da7afc89d9ef860"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunction</b> ([out] <a class="el" href="interface_i_cor_debug_function.html">ICorDebugFunction</a> **ppFunction)</td></tr>
+<tr class="separator:a5476762aee7cad2d0da7afc89d9ef860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1f06ebe317f046ba1a74472fdadf98"><td class="memItemLeft" align="right" valign="top"><a id="a3d1f06ebe317f046ba1a74472fdadf98"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetAddress</b> ([out] CORDB_ADDRESS *pStart)</td></tr>
+<tr class="separator:a3d1f06ebe317f046ba1a74472fdadf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f6596b2d4cf765ea427bcb00212090"><td class="memItemLeft" align="right" valign="top"><a id="ad4f6596b2d4cf765ea427bcb00212090"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> ([out] ULONG32 *pcBytes)</td></tr>
+<tr class="separator:ad4f6596b2d4cf765ea427bcb00212090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0374555edc9d2b54cbb02ba43b0f64a0"><td class="memItemLeft" align="right" valign="top"><a id="a0374555edc9d2b54cbb02ba43b0f64a0"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBreakpoint</b> ([in] ULONG32 offset, [out] <a class="el" href="interface_i_cor_debug_function_breakpoint.html">ICorDebugFunctionBreakpoint</a> **ppBreakpoint)</td></tr>
+<tr class="separator:a0374555edc9d2b54cbb02ba43b0f64a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f5ddb19792cb58cb2240170e03b145"><td class="memItemLeft" align="right" valign="top"><a id="a34f5ddb19792cb58cb2240170e03b145"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetCode</b> ([in] ULONG32 startOffset, [in] ULONG32 endOffset, [in] ULONG32 cBufferAlloc, [out] BYTE buffer[], [out] ULONG32 *pcBufferSize)</td></tr>
+<tr class="separator:a34f5ddb19792cb58cb2240170e03b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a88532e36d0a7ed180375783623de29"><td class="memItemLeft" align="right" valign="top"><a id="a1a88532e36d0a7ed180375783623de29"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersionNumber</b> ([out] ULONG32 *nVersion)</td></tr>
+<tr class="separator:a1a88532e36d0a7ed180375783623de29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a0634172002fafcbe1e3fa12af7e09"><td class="memItemLeft" align="right" valign="top"><a id="aa5a0634172002fafcbe1e3fa12af7e09"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetILToNativeMapping</b> ([in] ULONG32 cMap, [out] ULONG32 *pcMap, [out] <a class="el" href="struct_c_o_r___d_e_b_u_g___i_l___t_o___n_a_t_i_v_e___m_a_p.html">COR_DEBUG_IL_TO_NATIVE_MAP</a> <a class="el" href="classmap.html">map</a>[])</td></tr>
+<tr class="separator:aa5a0634172002fafcbe1e3fa12af7e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7bbd410935fea343658df1ad70c6ef"><td class="memItemLeft" align="right" valign="top"><a id="a0c7bbd410935fea343658df1ad70c6ef"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnCRemapSequencePoints</b> ([in] ULONG32 cMap, [out] ULONG32 *pcMap, [out] ULONG32 offsets[])</td></tr>
+<tr class="separator:a0c7bbd410935fea343658df1ad70c6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="cordebug_8idl_source.html">cordebug.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

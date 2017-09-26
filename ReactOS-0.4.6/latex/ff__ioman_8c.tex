@@ -1,0 +1,243 @@
+\hypertarget{ff__ioman_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/3rdparty/fullfat/ff\+\_\+ioman.c 文件参考}
+\label{ff__ioman_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/fullfat/ff\+\_\+ioman.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/fullfat/ff\+\_\+ioman.\+c}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+ioman.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+fatdef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ff\+\_\+crc.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_a979eac11eb231f5438f056a32edf798e}\label{ff__ioman_8c_a979eac11eb231f5438f056a32edf798e}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+F\+\_\+\+G\+P\+T\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+S\+I\+ZE}~0x54
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_a2ae757c1e719cd3d55374fcdefafe085}\label{ff__ioman_8c_a2ae757c1e719cd3d55374fcdefafe085}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+F\+\_\+\+G\+P\+T\+\_\+\+H\+E\+A\+D\+\_\+\+T\+O\+T\+A\+L\+\_\+\+E\+N\+T\+R\+I\+ES}~0x50
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_aaa5e3c4d7c9dbeb80c0948a5af16b83a}\label{ff__ioman_8c_aaa5e3c4d7c9dbeb80c0948a5af16b83a}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+F\+\_\+\+G\+P\+T\+\_\+\+H\+E\+A\+D\+\_\+\+P\+A\+R\+T\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+L\+BA}~0x48
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_aa2648745742e1ff949acdc409cbd7bd5}\label{ff__ioman_8c_aa2648745742e1ff949acdc409cbd7bd5}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+F\+\_\+\+G\+P\+T\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+F\+I\+R\+S\+T\+\_\+\+S\+E\+C\+T\+O\+R\+\_\+\+L\+BA}~0x20
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_a32e1ba780ba0e22870e72da70b738491}\label{ff__ioman_8c_a32e1ba780ba0e22870e72da70b738491}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+F\+\_\+\+G\+P\+T\+\_\+\+H\+E\+A\+D\+\_\+\+C\+RC}~0x10
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_a48adb3b08623479527bac74d7e1b1b3b}\label{ff__ioman_8c_a48adb3b08623479527bac74d7e1b1b3b}} 
+\#\hyperlink{structdefine}{define} {\bfseries F\+F\+\_\+\+G\+P\+T\+\_\+\+H\+E\+A\+D\+\_\+\+L\+E\+N\+G\+TH}~0x0C
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_a2d2f710040c348eeb2d976f0ba6038d3}\label{ff__ioman_8c_a2d2f710040c348eeb2d976f0ba6038d3}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Count\+Free\+Clusters} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\item 
+\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$ \hyperlink{ff__ioman_8c_a927ed90ba0df23750609840d05938ef4}{F\+F\+\_\+\+Create\+I\+O\+M\+AN} (F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$p\+Cache\+Mem, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Size, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 Blk\+Size, F\+F\+\_\+\+E\+R\+R\+OR $\ast$p\+Error)
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object, to initialise Full\+F\+AT \end{DoxyCompactList}\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__ioman_8c_aac481cd59e88e192d0e03f7f4872e96a}{F\+F\+\_\+\+Destroy\+I\+O\+M\+AN} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\begin{DoxyCompactList}\small\item\em Destroys an \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object, and frees all assigned memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__ioman_8c_a1b28fa12974666e441d3bd6bfbb7fb1c}\label{ff__ioman_8c_a1b28fa12974666e441d3bd6bfbb7fb1c}} 
+F\+F\+\_\+\+B\+U\+F\+F\+ER $\ast$ {\bfseries F\+F\+\_\+\+Get\+Buffer} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Sector, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 Mode)
+\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__ioman_8c_ac730db857825e1b0070a9769a26bbc3b}{F\+F\+\_\+\+Register\+Blk\+Device} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16 Blk\+Size, F\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+KS fn\+Write\+Blocks, F\+F\+\_\+\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+KS fn\+Read\+Blocks, \hyperlink{interfacevoid}{void} $\ast$p\+Param)
+\begin{DoxyCompactList}\small\item\em Registers a device driver with Full\+F\+AT \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__ioman_8c_a065eb06ea88fe0669f50469c2081fe39}\label{ff__ioman_8c_a065eb06ea88fe0669f50469c2081fe39}} 
+F\+F\+\_\+\+T\+\_\+\+S\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Block\+Read} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 ul\+Sector\+L\+BA, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 ul\+Num\+Sectors, \hyperlink{interfacevoid}{void} $\ast$p\+Buffer)
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_a95d45404a3d9d3f468e0baf5c24dab41}\label{ff__ioman_8c_a95d45404a3d9d3f468e0baf5c24dab41}} 
+F\+F\+\_\+\+T\+\_\+\+S\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Block\+Write} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 ul\+Sector\+L\+BA, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 ul\+Num\+Sectors, \hyperlink{interfacevoid}{void} $\ast$p\+Buffer)
+\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__ioman_8c_acc359415c92544fffb30c14da2b2927d}{F\+F\+\_\+\+Mount\+Partition} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 Partition\+Number)
+\begin{DoxyCompactList}\small\item\em Mounts the Specified partition, the volume specified by the \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object provided. \end{DoxyCompactList}\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__ioman_8c_a5b905b4f181bb20e690eac6af44f97b2}{F\+F\+\_\+\+Unregister\+Blk\+Device} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\begin{DoxyCompactList}\small\item\em Unregister a Blockdevice, so that the I\+O\+M\+AN can be re-\/used for another device. \end{DoxyCompactList}\item 
+F\+F\+\_\+\+E\+R\+R\+OR \hyperlink{ff__ioman_8c_a0937a9e9ec98706b9ca089621b625c5b}{F\+F\+\_\+\+Unmount\+Partition} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\begin{DoxyCompactList}\small\item\em Unmounts the active partition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__ioman_8c_ac0b026fab125d2ce4d93d13c94b08c48}\label{ff__ioman_8c_ac0b026fab125d2ce4d93d13c94b08c48}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Increase\+Free\+Clusters} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Count)
+\item 
+\mbox{\Hypertarget{ff__ioman_8c_a0f8d9a3090d231f2fe20cba3ace74c0e}\label{ff__ioman_8c_a0f8d9a3090d231f2fe20cba3ace74c0e}} 
+F\+F\+\_\+\+E\+R\+R\+OR {\bfseries F\+F\+\_\+\+Decrease\+Free\+Clusters} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman, F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 Count)
+\item 
+F\+F\+\_\+\+T\+\_\+\+S\+I\+N\+T32 \hyperlink{ff__ioman_8c_aabcdec87a868138e049ee82aa0d63f58}{F\+F\+\_\+\+Get\+Partition\+Block\+Size} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\begin{DoxyCompactList}\small\item\em Returns the Block-\/size of a mounted Partition \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ff__ioman_8c_a6e6be153062fb720ab5c2c5cf74e17f8}\label{ff__ioman_8c_a6e6be153062fb720ab5c2c5cf74e17f8}} 
+F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32 {\bfseries F\+F\+\_\+\+Get\+Volume\+Size} (\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$p\+Ioman)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\begin{DoxyAuthor}{作者}
+James Walmsley 
+\end{DoxyAuthor}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{ff__ioman_8c_a927ed90ba0df23750609840d05938ef4}\label{ff__ioman_8c_a927ed90ba0df23750609840d05938ef4}} 
+\index{ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}!F\+F\+\_\+\+Create\+I\+O\+M\+AN@{F\+F\+\_\+\+Create\+I\+O\+M\+AN}}
+\index{F\+F\+\_\+\+Create\+I\+O\+M\+AN@{F\+F\+\_\+\+Create\+I\+O\+M\+AN}!ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Create\+I\+O\+M\+A\+N()}{FF\_CreateIOMAN()}}
+{\footnotesize\ttfamily \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN}$\ast$ F\+F\+\_\+\+Create\+I\+O\+M\+AN (\begin{DoxyParamCaption}\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8 $\ast$}]{p\+Cache\+Mem,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T32}]{Size,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16}]{Blk\+Size,  }\item[{F\+F\+\_\+\+E\+R\+R\+OR $\ast$}]{p\+Error }\end{DoxyParamCaption})}
+
+
+
+Creates an \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object, to initialise Full\+F\+AT 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Cache\+Mem} & Pointer to a buffer for the cache. (N\+U\+LL if ok to Malloc). \\
+\hline
+{\em Size} & The size of the provided buffer, or size of the cache to be created. (Must be atleast 2 $\ast$ Blk\+Size). Always a multiple of Blk\+Size. \\
+\hline
+{\em Blk\+Size} & The block size of devices to be attached. If in doubt use 512. \\
+\hline
+{\em p\+Error} & Pointer to a signed byte for error checking. Can be N\+U\+LL if not required. \\
+\hline
+{\em p\+Error} & To be checked when a N\+U\+LL pointer is returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Returns a pointer to an \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} type object. N\+U\+LL on Error, check the contents of 
+
+p\+Error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ff__ioman_8c_aac481cd59e88e192d0e03f7f4872e96a}\label{ff__ioman_8c_aac481cd59e88e192d0e03f7f4872e96a}} 
+\index{ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}!F\+F\+\_\+\+Destroy\+I\+O\+M\+AN@{F\+F\+\_\+\+Destroy\+I\+O\+M\+AN}}
+\index{F\+F\+\_\+\+Destroy\+I\+O\+M\+AN@{F\+F\+\_\+\+Destroy\+I\+O\+M\+AN}!ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Destroy\+I\+O\+M\+A\+N()}{FF\_DestroyIOMAN()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+\+Destroy\+I\+O\+M\+AN (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman }\end{DoxyParamCaption})}
+
+
+
+Destroys an \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object, and frees all assigned memory. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & Pointer to an \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object, as returned from F\+F\+\_\+\+Create\+I\+O\+M\+AN.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+F\+F\+\_\+\+E\+R\+R\+\_\+\+N\+O\+NE on sucess, or a documented error code on failure. (F\+F\+\_\+\+E\+R\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+O\+I\+N\+T\+ER) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ff__ioman_8c_aabcdec87a868138e049ee82aa0d63f58}\label{ff__ioman_8c_aabcdec87a868138e049ee82aa0d63f58}} 
+\index{ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}!F\+F\+\_\+\+Get\+Partition\+Block\+Size@{F\+F\+\_\+\+Get\+Partition\+Block\+Size}}
+\index{F\+F\+\_\+\+Get\+Partition\+Block\+Size@{F\+F\+\_\+\+Get\+Partition\+Block\+Size}!ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Get\+Partition\+Block\+Size()}{FF\_GetPartitionBlockSize()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+T\+\_\+\+S\+I\+N\+T32 F\+F\+\_\+\+Get\+Partition\+Block\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman }\end{DoxyParamCaption})}
+
+
+
+Returns the Block-\/size of a mounted Partition 
+
+The purpose of this function is to provide A\+PI access to information that might be useful in special cases. Like U\+SB sticks that require a sector knocking sequence for security. After the sector knock, some secure U\+SB sticks then present a different Block\+Size.
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} Object returned from \hyperlink{ff__ioman_8c_a927ed90ba0df23750609840d05938ef4}{F\+F\+\_\+\+Create\+I\+O\+M\+A\+N()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The blocksize of the partition. \hyperlink{struct_a}{A} value less than 0 when an error occurs. 
+
+Any negative value can be cast to the F\+F\+\_\+\+E\+R\+R\+OR type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ff__ioman_8c_acc359415c92544fffb30c14da2b2927d}\label{ff__ioman_8c_acc359415c92544fffb30c14da2b2927d}} 
+\index{ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}!F\+F\+\_\+\+Mount\+Partition@{F\+F\+\_\+\+Mount\+Partition}}
+\index{F\+F\+\_\+\+Mount\+Partition@{F\+F\+\_\+\+Mount\+Partition}!ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Mount\+Partition()}{FF\_MountPartition()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+\+Mount\+Partition (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T8}]{Partition\+Number }\end{DoxyParamCaption})}
+
+
+
+Mounts the Specified partition, the volume specified by the \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object provided. 
+
+The device drivers must adhere to the specification provided by F\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+KS and F\+F\+\_\+\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+KS.
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object. \\
+\hline
+{\em Partition\+Number} & The primary partition number to be mounted. (0 -\/ 3).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on success. 
+
+F\+F\+\_\+\+E\+R\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+O\+I\+N\+T\+ER if a p\+Ioman object wasn\textquotesingle{}t provided. 
+
+F\+F\+\_\+\+E\+R\+R\+\_\+\+I\+O\+M\+A\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+T\+I\+T\+I\+O\+N\+\_\+\+N\+UM if the partition number is out of range. 
+
+F\+F\+\_\+\+E\+R\+R\+\_\+\+I\+O\+M\+A\+N\+\_\+\+N\+O\+\_\+\+M\+O\+U\+N\+T\+A\+B\+L\+E\+\_\+\+P\+A\+R\+T\+I\+T\+I\+ON if no partition was found. 
+
+F\+F\+\_\+\+E\+R\+R\+\_\+\+I\+O\+M\+A\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+O\+R\+M\+AT if the master boot record or partition boot block didn\textquotesingle{}t provide sensible data. 
+
+F\+F\+\_\+\+E\+R\+R\+\_\+\+I\+O\+M\+A\+N\+\_\+\+N\+O\+T\+\_\+\+F\+A\+T\+\_\+\+F\+O\+R\+M\+A\+T\+T\+ED if the volume or partition couldn\textquotesingle{}t be determined to be F\+AT. (
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{ff__config_8h_source}{ff\+\_\+config.\+h}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{ff__ioman_8c_ac730db857825e1b0070a9769a26bbc3b}\label{ff__ioman_8c_ac730db857825e1b0070a9769a26bbc3b}} 
+\index{ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}!F\+F\+\_\+\+Register\+Blk\+Device@{F\+F\+\_\+\+Register\+Blk\+Device}}
+\index{F\+F\+\_\+\+Register\+Blk\+Device@{F\+F\+\_\+\+Register\+Blk\+Device}!ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Register\+Blk\+Device()}{FF\_RegisterBlkDevice()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+\+Register\+Blk\+Device (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman,  }\item[{F\+F\+\_\+\+T\+\_\+\+U\+I\+N\+T16}]{Blk\+Size,  }\item[{F\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+KS}]{fn\+Write\+Blocks,  }\item[{F\+F\+\_\+\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+KS}]{fn\+Read\+Blocks,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{p\+Param }\end{DoxyParamCaption})}
+
+
+
+Registers a device driver with Full\+F\+AT 
+
+The device drivers must adhere to the specification provided by F\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+KS and F\+F\+\_\+\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+KS.
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object. \\
+\hline
+{\em Blk\+Size} & Block Size that the driver deals in. (Minimum 512, larger values must be a multiple of 512). \\
+\hline
+{\em fn\+Write\+Blocks} & Pointer to the Write Blocks to device function, as described by F\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+KS. \\
+\hline
+{\em fn\+Read\+Blocks} & Pointer to the Read Blocks from device function, as described by F\+F\+\_\+\+R\+E\+A\+D\+\_\+\+B\+L\+O\+C\+KS. \\
+\hline
+{\em p\+Param} & Pointer to a parameter for use in the functions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 on success, F\+F\+\_\+\+E\+R\+R\+\_\+\+I\+O\+M\+A\+N\+\_\+\+D\+E\+V\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+E\+GD if a device was already hooked, F\+F\+\_\+\+E\+R\+R\+\_\+\+I\+O\+M\+A\+N\+\_\+\+N\+U\+L\+L\+\_\+\+P\+O\+I\+N\+T\+ER if a p\+Ioman object wasn\textquotesingle{}t provided. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ff__ioman_8c_a0937a9e9ec98706b9ca089621b625c5b}\label{ff__ioman_8c_a0937a9e9ec98706b9ca089621b625c5b}} 
+\index{ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}!F\+F\+\_\+\+Unmount\+Partition@{F\+F\+\_\+\+Unmount\+Partition}}
+\index{F\+F\+\_\+\+Unmount\+Partition@{F\+F\+\_\+\+Unmount\+Partition}!ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Unmount\+Partition()}{FF\_UnmountPartition()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+\+Unmount\+Partition (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman }\end{DoxyParamCaption})}
+
+
+
+Unmounts the active partition. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} Object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+F\+F\+\_\+\+E\+R\+R\+\_\+\+N\+O\+NE on success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ff__ioman_8c_a5b905b4f181bb20e690eac6af44f97b2}\label{ff__ioman_8c_a5b905b4f181bb20e690eac6af44f97b2}} 
+\index{ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}!F\+F\+\_\+\+Unregister\+Blk\+Device@{F\+F\+\_\+\+Unregister\+Blk\+Device}}
+\index{F\+F\+\_\+\+Unregister\+Blk\+Device@{F\+F\+\_\+\+Unregister\+Blk\+Device}!ff\+\_\+ioman.\+c@{ff\+\_\+ioman.\+c}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+Unregister\+Blk\+Device()}{FF\_UnregisterBlkDevice()}}
+{\footnotesize\ttfamily F\+F\+\_\+\+E\+R\+R\+OR F\+F\+\_\+\+Unregister\+Blk\+Device (\begin{DoxyParamCaption}\item[{\hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} $\ast$}]{p\+Ioman }\end{DoxyParamCaption})}
+
+
+
+Unregister a Blockdevice, so that the I\+O\+M\+AN can be re-\/used for another device. 
+
+Any active partitions must be Unmounted first.
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Ioman} & \hyperlink{struct_f_f___i_o_m_a_n}{F\+F\+\_\+\+I\+O\+M\+AN} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+F\+F\+\_\+\+E\+R\+R\+\_\+\+N\+O\+NE on success. 
+\end{DoxyReturn}

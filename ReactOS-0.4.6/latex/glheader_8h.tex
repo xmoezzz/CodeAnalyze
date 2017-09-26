@@ -1,0 +1,225 @@
+\hypertarget{glheader_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/glheader.h 文件参考}
+\label{glheader_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/glheader.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/glheader.\+h}}
+{\ttfamily \#include $<$G\+L/gl.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glext.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$winbase.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../opengl32/opengl32.\+h\char`\"{}}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{glheader_8h_a120fb070bddb21f0bd899f50252c4cb5}\label{glheader_8h_a120fb070bddb21f0bd899f50252c4cb5}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}
+\item 
+\mbox{\Hypertarget{glheader_8h_a7792d1cb5a9ac979eaa34f2386e73a7a}\label{glheader_8h_a7792d1cb5a9ac979eaa34f2386e73a7a}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glthread\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+U\+T\+EX}(\hyperlink{structname}{name})~static \hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{\+\_\+glthread\+\_\+\+Mutex} \hyperlink{structname}{name} = \{(\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n___d_e_b_u_g}{P\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+B\+UG})-\/1, -\/1, 0, 0, 0, 0\}
+\item 
+\mbox{\Hypertarget{glheader_8h_af6e33939dbbe8bcd6382725147d8f7a5}\label{glheader_8h_af6e33939dbbe8bcd6382725147d8f7a5}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glthread\+\_\+\+I\+N\+I\+T\+\_\+\+M\+U\+T\+EX}(\hyperlink{structname}{name})~Initialize\+Critical\+Section(\&\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{glheader_8h_a64ee66fed4ffa7060090c0195a49bf96}\label{glheader_8h_a64ee66fed4ffa7060090c0195a49bf96}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glthread\+\_\+\+D\+E\+S\+T\+R\+O\+Y\+\_\+\+M\+U\+T\+EX}(\hyperlink{structname}{name})~Delete\+Critical\+Section(\&\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{glheader_8h_a63fd912c4d4e8a92ae5d20f0d14631fc}\label{glheader_8h_a63fd912c4d4e8a92ae5d20f0d14631fc}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glthread\+\_\+\+L\+O\+C\+K\+\_\+\+M\+U\+T\+EX}(\hyperlink{structname}{name})~Enter\+Critical\+Section(\&\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{glheader_8h_aa060a41e99f7009ef0b03b94da511480}\label{glheader_8h_aa060a41e99f7009ef0b03b94da511480}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glthread\+\_\+\+U\+N\+L\+O\+C\+K\+\_\+\+M\+U\+T\+EX}(\hyperlink{structname}{name})~Leave\+Critical\+Section(\&\hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{glheader_8h_aac0fafcd364c91feaedaeb82afa8b184}\label{glheader_8h_aac0fafcd364c91feaedaeb82afa8b184}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+E\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+C\+O\+N\+T\+E\+XT}(\+\_\+\+\_\+ctx\+\_\+\+\_\+)~\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context}$\ast$ \+\_\+\+\_\+ctx\+\_\+\+\_\+ = (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context}$\ast$)Int\+Get\+Current\+I\+C\+D\+Private()
+\item 
+\mbox{\Hypertarget{glheader_8h_ae912e3025fb14e1d8e98fa898ff84a8f}\label{glheader_8h_ae912e3025fb14e1d8e98fa898ff84a8f}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+E\+T\+\_\+\+D\+I\+S\+P\+A\+T\+CH}()~((\hyperlink{interfacestruct}{struct} \+\_\+glapi\+\_\+table$\ast$)Int\+Get\+Current\+Dispatch\+Table())
+\item 
+\mbox{\Hypertarget{glheader_8h_a9c89fb123d0c15d4ac8e8a315364301f}\label{glheader_8h_a9c89fb123d0c15d4ac8e8a315364301f}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glapi\+\_\+set\+\_\+dispatch}(\hyperlink{structtable}{table})~Int\+Set\+Current\+Dispatch\+Table((const \hyperlink{struct_____g_ldispatch_table_rec}{G\+L\+D\+I\+S\+P\+A\+T\+C\+H\+T\+A\+B\+LE}$\ast$)(\hyperlink{structtable}{table}))
+\item 
+\mbox{\Hypertarget{glheader_8h_a79f9c84f3235281aff9ca48d9a6cf9a6}\label{glheader_8h_a79f9c84f3235281aff9ca48d9a6cf9a6}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glapi\+\_\+get\+\_\+dispatch\+\_\+table\+\_\+size}()~(O\+P\+E\+N\+G\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+110\+\_\+\+E\+N\+T\+R\+I\+ES)
+\item 
+\mbox{\Hypertarget{glheader_8h_a976d92d381155be7e9f96edf5ee22f0d}\label{glheader_8h_a976d92d381155be7e9f96edf5ee22f0d}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glapi\+\_\+get\+\_\+context}()~((\hyperlink{interfacevoid}{void}$\ast$)Int\+Get\+Current\+I\+C\+D\+Private())
+\item 
+\mbox{\Hypertarget{glheader_8h_ada8f9f4504d6fc9fe90e2eaed055b46d}\label{glheader_8h_ada8f9f4504d6fc9fe90e2eaed055b46d}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+glapi\+\_\+set\+\_\+context}(\+\_\+\+\_\+ctx\+\_\+\+\_\+)~Int\+Set\+Current\+I\+C\+D\+Private((\hyperlink{interfacevoid}{void}$\ast$)(\+\_\+\+\_\+ctx\+\_\+\+\_\+))
+\item 
+\mbox{\Hypertarget{glheader_8h_adb7e71e2c7c36c9788223afed8c27d61}\label{glheader_8h_adb7e71e2c7c36c9788223afed8c27d61}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+O\+ES}~0x8\+D65
+\item 
+\mbox{\Hypertarget{glheader_8h_a4be001d607f5f1fa944db63aebb9593b}\label{glheader_8h_a4be001d607f5f1fa944db63aebb9593b}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+S\+A\+M\+P\+L\+E\+R\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+O\+ES}~0x8\+D66
+\item 
+\mbox{\Hypertarget{glheader_8h_aaf00709896bac29dd47c2c3ead76facf}\label{glheader_8h_aaf00709896bac29dd47c2c3ead76facf}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+B\+I\+N\+D\+I\+N\+G\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+O\+ES}~0x8\+D67
+\item 
+\mbox{\Hypertarget{glheader_8h_a68a841437ed0a52fa6edf4bc0a4d7b88}\label{glheader_8h_a68a841437ed0a52fa6edf4bc0a4d7b88}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U\+N\+I\+T\+S\+\_\+\+O\+ES}~0x8\+D68
+\item 
+\mbox{\Hypertarget{glheader_8h_ae5b99d354c7123ecb55b4f294b21eb43}\label{glheader_8h_ae5b99d354c7123ecb55b4f294b21eb43}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+O\+ES}~0x8\+B9C
+\item 
+\mbox{\Hypertarget{glheader_8h_a833ad95b39f71ecd7c190df00c94e263}\label{glheader_8h_a833ad95b39f71ecd7c190df00c94e263}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+ES}~0x898A
+\item 
+\mbox{\Hypertarget{glheader_8h_aa2c2c210722159ff60a81a9d0c3e3e7a}\label{glheader_8h_aa2c2c210722159ff60a81a9d0c3e3e7a}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+T\+R\+I\+D\+E\+\_\+\+O\+ES}~0x898B
+\item 
+\mbox{\Hypertarget{glheader_8h_aa301ff4978cf3fe298905e9d0c0ca2cf}\label{glheader_8h_aa301ff4978cf3fe298905e9d0c0ca2cf}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+O\+ES}~0x898C
+\item 
+\mbox{\Hypertarget{glheader_8h_af3d2804678e5af9cdfb2962bf5c64723}\label{glheader_8h_af3d2804678e5af9cdfb2962bf5c64723}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+I\+N\+D\+I\+N\+G\+\_\+\+O\+ES}~0x8\+B9F
+\item 
+\mbox{\Hypertarget{glheader_8h_ac30e6a8f0ec986a2cabc1628109c5581}\label{glheader_8h_ac30e6a8f0ec986a2cabc1628109c5581}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+R\+O\+P\+\_\+\+R\+E\+C\+T\+\_\+\+O\+ES}~0x8\+B9D
+\item 
+\mbox{\Hypertarget{glheader_8h_abba627710fbf97372dc1390faa78119f}\label{glheader_8h_abba627710fbf97372dc1390faa78119f}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+O\+ES}~0x8741
+\item 
+\mbox{\Hypertarget{glheader_8h_a7175b4e16310c573ebd6d4c278815b1a}\label{glheader_8h_a7175b4e16310c573ebd6d4c278815b1a}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+R\+G\+B565}~0x8\+D62
+\item 
+\mbox{\Hypertarget{glheader_8h_a34eb0657465d31472a31152b39930df6}\label{glheader_8h_a34eb0657465d31472a31152b39930df6}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+G\+E\+N\+\_\+\+S\+T\+R\+\_\+\+O\+ES}~0x8\+D60
+\item 
+\mbox{\Hypertarget{glheader_8h_a1be95f1f4245ec7831c9bccd1c68786d}\label{glheader_8h_a1be95f1f4245ec7831c9bccd1c68786d}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E4\+\_\+\+R\+G\+B8\+\_\+\+O\+ES}~0x8\+B90
+\item 
+\mbox{\Hypertarget{glheader_8h_abb7cc05b87f6e4eef774e69ef15cc3ca}\label{glheader_8h_abb7cc05b87f6e4eef774e69ef15cc3ca}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E4\+\_\+\+R\+G\+B\+A8\+\_\+\+O\+ES}~0x8\+B91
+\item 
+\mbox{\Hypertarget{glheader_8h_a1cffbd65f55c57d0fed78f9d2e655429}\label{glheader_8h_a1cffbd65f55c57d0fed78f9d2e655429}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E4\+\_\+\+R5\+\_\+\+G6\+\_\+\+B5\+\_\+\+O\+ES}~0x8\+B92
+\item 
+\mbox{\Hypertarget{glheader_8h_a0404b50e230cac95d4824e7d011a1dfa}\label{glheader_8h_a0404b50e230cac95d4824e7d011a1dfa}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E4\+\_\+\+R\+G\+B\+A4\+\_\+\+O\+ES}~0x8\+B93
+\item 
+\mbox{\Hypertarget{glheader_8h_aa65fce5597e2f8b8815517d98c216f1a}\label{glheader_8h_aa65fce5597e2f8b8815517d98c216f1a}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E4\+\_\+\+R\+G\+B5\+\_\+\+A1\+\_\+\+O\+ES}~0x8\+B94
+\item 
+\mbox{\Hypertarget{glheader_8h_a87053af95d0653c53dd8d64210362f03}\label{glheader_8h_a87053af95d0653c53dd8d64210362f03}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E8\+\_\+\+R\+G\+B8\+\_\+\+O\+ES}~0x8\+B95
+\item 
+\mbox{\Hypertarget{glheader_8h_ae341610849333ce2bd5541ad2b9c507b}\label{glheader_8h_ae341610849333ce2bd5541ad2b9c507b}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E8\+\_\+\+R\+G\+B\+A8\+\_\+\+O\+ES}~0x8\+B96
+\item 
+\mbox{\Hypertarget{glheader_8h_a8634fcc55745d703a4364084efd8462b}\label{glheader_8h_a8634fcc55745d703a4364084efd8462b}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E8\+\_\+\+R5\+\_\+\+G6\+\_\+\+B5\+\_\+\+O\+ES}~0x8\+B97
+\item 
+\mbox{\Hypertarget{glheader_8h_a21896135c91c41950555a3d832c2feae}\label{glheader_8h_a21896135c91c41950555a3d832c2feae}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E8\+\_\+\+R\+G\+B\+A4\+\_\+\+O\+ES}~0x8\+B98
+\item 
+\mbox{\Hypertarget{glheader_8h_a5d1a5f5b0b61efa1d3e4414f0cc422fa}\label{glheader_8h_a5d1a5f5b0b61efa1d3e4414f0cc422fa}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+A\+L\+E\+T\+T\+E8\+\_\+\+R\+G\+B5\+\_\+\+A1\+\_\+\+O\+ES}~0x8\+B99
+\item 
+\mbox{\Hypertarget{glheader_8h_ab6f148fb7c6753e5202613994e488f5f}\label{glheader_8h_ab6f148fb7c6753e5202613994e488f5f}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+M\+O\+D\+E\+L\+V\+I\+E\+W\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+S\+\_\+\+I\+N\+T\+\_\+\+B\+I\+T\+S\+\_\+\+O\+ES}~0x898D
+\item 
+\mbox{\Hypertarget{glheader_8h_a835f24a37bcc8eac4f12f83aee9f18e0}\label{glheader_8h_a835f24a37bcc8eac4f12f83aee9f18e0}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+P\+R\+O\+J\+E\+C\+T\+I\+O\+N\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+S\+\_\+\+I\+N\+T\+\_\+\+B\+I\+T\+S\+\_\+\+O\+ES}~0x898E
+\item 
+\mbox{\Hypertarget{glheader_8h_a15f8f363a93c79c77586a727ce407292}\label{glheader_8h_a15f8f363a93c79c77586a727ce407292}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+F\+L\+O\+A\+T\+\_\+\+A\+S\+\_\+\+I\+N\+T\+\_\+\+B\+I\+T\+S\+\_\+\+O\+ES}~0x898F
+\item 
+\mbox{\Hypertarget{glheader_8h_adc6d2c7df44f965c51065ab7fa840aea}\label{glheader_8h_adc6d2c7df44f965c51065ab7fa840aea}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+F\+O\+R\+M\+A\+TS}~0x8\+D\+F8
+\item 
+\mbox{\Hypertarget{glheader_8h_a07099841915f789a8c8ea8d970cfc104}\label{glheader_8h_a07099841915f789a8c8ea8d970cfc104}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+N\+U\+M\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+F\+O\+R\+M\+A\+TS}~0x8\+D\+F9
+\item 
+\mbox{\Hypertarget{glheader_8h_a4b036bea79b9f3573e806baf1354b4ad}\label{glheader_8h_a4b036bea79b9f3573e806baf1354b4ad}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+M\+P\+I\+L\+ER}~0x8\+D\+FA
+\item 
+\mbox{\Hypertarget{glheader_8h_aad1ff55895b595032dff16c9d9a59b6d}\label{glheader_8h_aad1ff55895b595032dff16c9d9a59b6d}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+M\+A\+X\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+U\+N\+I\+F\+O\+R\+M\+\_\+\+V\+E\+C\+T\+O\+RS}~0x8\+D\+FB
+\item 
+\mbox{\Hypertarget{glheader_8h_a11d8be2b8a6ec2e68c1ade0fc77bf4fd}\label{glheader_8h_a11d8be2b8a6ec2e68c1ade0fc77bf4fd}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+M\+A\+X\+\_\+\+V\+A\+R\+Y\+I\+N\+G\+\_\+\+V\+E\+C\+T\+O\+RS}~0x8\+D\+FC
+\item 
+\mbox{\Hypertarget{glheader_8h_abe9d5e7ca4026377a6a79fc3de8428dc}\label{glheader_8h_abe9d5e7ca4026377a6a79fc3de8428dc}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+\_\+\+M\+A\+X\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+U\+N\+I\+F\+O\+R\+M\+\_\+\+V\+E\+C\+T\+O\+RS}~0x8\+D\+FD
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{glheader_8h_ab834b297172938c0ad83ad423b1104b7}{G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+M\+E\+SA}~0x9999
+\item 
+\mbox{\Hypertarget{glheader_8h_a469be69ad75b8720ad5f00160bd671b7}\label{glheader_8h_a469be69ad75b8720ad5f00160bd671b7}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+N\+O\+NE}~0x8000
+\item 
+\mbox{\Hypertarget{glheader_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}\label{glheader_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}~0x8001
+\item 
+\mbox{\Hypertarget{glheader_8h_abe725d7d3c640b7c698114ef27b2b2df}\label{glheader_8h_abe725d7d3c640b7c698114ef27b2b2df}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}~0x8002
+\item 
+\mbox{\Hypertarget{glheader_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}\label{glheader_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}~0x8003
+\item 
+\mbox{\Hypertarget{glheader_8h_a8fea3c0abfe2929ee257ecf1a137c259}\label{glheader_8h_a8fea3c0abfe2929ee257ecf1a137c259}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}~0x8004
+\item 
+\mbox{\Hypertarget{glheader_8h_a0b8e43514dcd363ad0c3ad8938c2b836}\label{glheader_8h_a0b8e43514dcd363ad0c3ad8938c2b836}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}~0x8005
+\item 
+\mbox{\Hypertarget{glheader_8h_a9928d6f51bedefef8538e2ce3a631fb0}\label{glheader_8h_a9928d6f51bedefef8538e2ce3a631fb0}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}~0x8006
+\item 
+\mbox{\Hypertarget{glheader_8h_ac2755eb66996189e7554da1f380d98fa}\label{glheader_8h_ac2755eb66996189e7554da1f380d98fa}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}~0x8007
+\item 
+\mbox{\Hypertarget{glheader_8h_a752fccf1e81a8cb94773fc5192662623}\label{glheader_8h_a752fccf1e81a8cb94773fc5192662623}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}~0x8008
+\item 
+\mbox{\Hypertarget{glheader_8h_a71e88eac4edd6b4b55287b4467893075}\label{glheader_8h_a71e88eac4edd6b4b55287b4467893075}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}~0x8009
+\item 
+\mbox{\Hypertarget{glheader_8h_adadd435abcc247be896391d019ebfbea}\label{glheader_8h_adadd435abcc247be896391d019ebfbea}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}~0x800D
+\item 
+\mbox{\Hypertarget{glheader_8h_ab23ced13cd5a60a93a8531d16a413fb5}\label{glheader_8h_ab23ced13cd5a60a93a8531d16a413fb5}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}~0x8061
+\item 
+\mbox{\Hypertarget{glheader_8h_a2468bfb6a251c336e6396f5aca2c9674}\label{glheader_8h_a2468bfb6a251c336e6396f5aca2c9674}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}~0x8062
+\item 
+\mbox{\Hypertarget{glheader_8h_a4fe2af57efb0ec3acb654db3824fc91c}\label{glheader_8h_a4fe2af57efb0ec3acb654db3824fc91c}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}~0x8063
+\item 
+\mbox{\Hypertarget{glheader_8h_a139db61d3057b17b2f058ba5d4f57606}\label{glheader_8h_a139db61d3057b17b2f058ba5d4f57606}} 
+\#\hyperlink{structdefine}{define} {\bfseries G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}~0x\+F\+F\+F\+F\+F\+F\+FF
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{glheader_8h_a8b44ed1e4ae22edf55a4a0b751b1965d}\label{glheader_8h_a8b44ed1e4ae22edf55a4a0b751b1965d}} 
+typedef \hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON} {\bfseries \+\_\+glthread\+\_\+\+Mutex}
+\item 
+typedef int \hyperlink{glheader_8h_ad6d3fa892df40dedf48ee6d84529ae5e}{G\+Lfixed}
+\item 
+\mbox{\Hypertarget{glheader_8h_aac646db97e8fa0aa9c61138e828743a0}\label{glheader_8h_aac646db97e8fa0aa9c61138e828743a0}} 
+typedef int {\bfseries G\+Lclampx}
+\item 
+\mbox{\Hypertarget{glheader_8h_af257f88d4c552c56f0e0eaae7f3bcf70}\label{glheader_8h_af257f88d4c552c56f0e0eaae7f3bcf70}} 
+typedef \hyperlink{interfacevoid}{void} $\ast$ {\bfseries G\+Legl\+Image\+O\+ES}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Wrapper for \hyperlink{gl_8h_source}{G\+L/gl.\+h} and \hyperlink{glext_8h_source}{G\+L/glext.\+h} 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{glheader_8h_ab834b297172938c0ad83ad423b1104b7}\label{glheader_8h_ab834b297172938c0ad83ad423b1104b7}} 
+\index{glheader.\+h@{glheader.\+h}!G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+M\+E\+SA@{G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+M\+E\+SA}}
+\index{G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+M\+E\+SA@{G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+M\+E\+SA}!glheader.\+h@{glheader.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+M\+E\+SA}{GL\_SHADER\_PROGRAM\_MESA}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} G\+L\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+M\+E\+SA~0x9999}
+
+Internal token to represent a G\+L\+SL shader program (a collection of one or more shaders that get linked together). Note that G\+L\+SL shaders and shader programs share one name space (one hash table) so we need a value that\textquotesingle{}s different from any of the G\+L\+\_\+\+V\+E\+R\+T\+E\+X/\+F\+R\+A\+G\+M\+E\+N\+T/\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+P\+R\+O\+G\+R\+AM tokens. 
+
+\subsection{类型定义说明}
+\mbox{\Hypertarget{glheader_8h_ad6d3fa892df40dedf48ee6d84529ae5e}\label{glheader_8h_ad6d3fa892df40dedf48ee6d84529ae5e}} 
+\index{glheader.\+h@{glheader.\+h}!G\+Lfixed@{G\+Lfixed}}
+\index{G\+Lfixed@{G\+Lfixed}!glheader.\+h@{glheader.\+h}}
+\subsubsection{\texorpdfstring{G\+Lfixed}{GLfixed}}
+{\footnotesize\ttfamily typedef int \hyperlink{glheader_8h_ad6d3fa892df40dedf48ee6d84529ae5e}{G\+Lfixed}}
+
+G\+L\+\_\+\+F\+I\+X\+ED is defined in \hyperlink{glext_8h_source}{glext.\+h} version 64 but these typedefs aren\textquotesingle{}t (yet). 

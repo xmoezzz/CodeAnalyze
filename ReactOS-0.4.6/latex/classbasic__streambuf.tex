@@ -1,0 +1,183 @@
+\hypertarget{classbasic__streambuf}{}\section{basic\+\_\+streambuf$<$ \+\_\+\+CharT, \+\_\+\+Traits $>$ 模板类 参考}
+\label{classbasic__streambuf}\index{basic\+\_\+streambuf$<$ \+\_\+\+Char\+T, \+\_\+\+Traits $>$@{basic\+\_\+streambuf$<$ \+\_\+\+Char\+T, \+\_\+\+Traits $>$}}
+类 basic\+\_\+streambuf$<$ \+\_\+\+CharT, \+\_\+\+Traits $>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbasic__streambuf}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a10b43892a7668294d4ea4fceb31ee60c}\label{classbasic__streambuf_a10b43892a7668294d4ea4fceb31ee60c}} 
+typedef \+\_\+\+CharT {\bfseries char\+\_\+type}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_addaa1803211cc560c894192298529a3d}\label{classbasic__streambuf_addaa1803211cc560c894192298529a3d}} 
+typedef \+\_\+\+Traits\+::int\+\_\+type {\bfseries int\+\_\+type}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ad43e615d3f580f7a37a56a27efbaad63}\label{classbasic__streambuf_ad43e615d3f580f7a37a56a27efbaad63}} 
+typedef \+\_\+\+Traits\+::pos\+\_\+type {\bfseries pos\+\_\+type}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aaf8cb054032871a37952dce3902704fb}\label{classbasic__streambuf_aaf8cb054032871a37952dce3902704fb}} 
+typedef \+\_\+\+Traits\+::off\+\_\+type {\bfseries off\+\_\+type}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a60d8b8bb7d2290147e369cfb5d4e3712}\label{classbasic__streambuf_a60d8b8bb7d2290147e369cfb5d4e3712}} 
+typedef \+\_\+\+Traits {\bfseries traits\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ae4b8684791655d71511e58a2e58d216d}\label{classbasic__streambuf_ae4b8684791655d71511e58a2e58d216d}} 
+char\+\_\+type $\ast$ {\bfseries \+\_\+\+M\+\_\+eback} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ac3f9295be5aad8f94594c385f845aa80}\label{classbasic__streambuf_ac3f9295be5aad8f94594c385f845aa80}} 
+char\+\_\+type $\ast$ {\bfseries \+\_\+\+M\+\_\+gptr} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ac7de3ed825a3d15f4571332bc1d2f7ee}\label{classbasic__streambuf_ac7de3ed825a3d15f4571332bc1d2f7ee}} 
+char\+\_\+type $\ast$ {\bfseries \+\_\+\+M\+\_\+egptr} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a4115cb8df84e71b4aec9ed3e553496f0}\label{classbasic__streambuf_a4115cb8df84e71b4aec9ed3e553496f0}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+gbump} (int \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ae39fa793da1566c745622d1897519205}\label{classbasic__streambuf_ae39fa793da1566c745622d1897519205}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+setg} (char\+\_\+type $\ast$\+\_\+\+\_\+gbegin, char\+\_\+type $\ast$\+\_\+\+\_\+gnext, char\+\_\+type $\ast$\+\_\+\+\_\+gend)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a0eeef489db67115e64d25c79563cbf9b}\label{classbasic__streambuf_a0eeef489db67115e64d25c79563cbf9b}} 
+\hyperlink{classbasic__streambuf}{basic\+\_\+streambuf}$<$ \+\_\+\+CharT, \+\_\+\+Traits $>$ $\ast$ {\bfseries pubsetbuf} (char\+\_\+type $\ast$\+\_\+\+\_\+s, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a6f631954d319f6b18a12926824b85399}\label{classbasic__streambuf_a6f631954d319f6b18a12926824b85399}} 
+pos\+\_\+type {\bfseries pubseekoff} (off\+\_\+type \+\_\+\+\_\+offset, ios\+\_\+base\+::seekdir \+\_\+\+\_\+way, ios\+\_\+base\+::openmode \+\_\+\+\_\+mod=ios\+\_\+base\+::in$\vert$ios\+\_\+base\+::out)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ab3688bb63a81abef6743a7292742928e}\label{classbasic__streambuf_ab3688bb63a81abef6743a7292742928e}} 
+pos\+\_\+type {\bfseries pubseekpos} (pos\+\_\+type \+\_\+\+\_\+sp, ios\+\_\+base\+::openmode \+\_\+\+\_\+mod=ios\+\_\+base\+::in$\vert$ios\+\_\+base\+::out)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a7b62dd3998cf719186b51617074fb9ba}\label{classbasic__streambuf_a7b62dd3998cf719186b51617074fb9ba}} 
+int {\bfseries pubsync} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_af5cd4fded8f3bebc8129ec9c28f0e906}\label{classbasic__streambuf_af5cd4fded8f3bebc8129ec9c28f0e906}} 
+int\+\_\+type {\bfseries sputc} (char\+\_\+type \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_af093182ac6b0446ad0495af558807168}\label{classbasic__streambuf_af093182ac6b0446ad0495af558807168}} 
+streamsize {\bfseries sputn} (const char\+\_\+type $\ast$\+\_\+\+\_\+s, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a0f770225cbe6d68f0bef07e652c15d53}\label{classbasic__streambuf_a0f770225cbe6d68f0bef07e652c15d53}} 
+streamsize {\bfseries \+\_\+\+M\+\_\+sputnc} (char\+\_\+type \+\_\+\+\_\+c, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aca41ffbcfbd24e0ae766f2f071dd0c5c}\label{classbasic__streambuf_aca41ffbcfbd24e0ae766f2f071dd0c5c}} 
+streamsize {\bfseries in\+\_\+avail} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a392c0271c1fd73246bb672ace6e1dd0a}\label{classbasic__streambuf_a392c0271c1fd73246bb672ace6e1dd0a}} 
+int\+\_\+type {\bfseries snextc} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_abb29c7ec66827b4ce0bb5adb5a314826}\label{classbasic__streambuf_abb29c7ec66827b4ce0bb5adb5a314826}} 
+int\+\_\+type {\bfseries sbumpc} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ac7ce7e250f981ec9743058d6bda57c13}\label{classbasic__streambuf_ac7ce7e250f981ec9743058d6bda57c13}} 
+int\+\_\+type {\bfseries sgetc} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a4b4e21551df814b980996c16292a3cf1}\label{classbasic__streambuf_a4b4e21551df814b980996c16292a3cf1}} 
+streamsize {\bfseries sgetn} (char\+\_\+type $\ast$\+\_\+\+\_\+s, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a4c97ec8b3736798928c9263270c4b925}\label{classbasic__streambuf_a4c97ec8b3736798928c9263270c4b925}} 
+int\+\_\+type {\bfseries sputbackc} (char\+\_\+type \+\_\+\+\_\+c)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aff86e96a8579b5c8fb70d0d76989e434}\label{classbasic__streambuf_aff86e96a8579b5c8fb70d0d76989e434}} 
+int\+\_\+type {\bfseries sungetc} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a844df3c713fce63296506d1bde314d01}\label{classbasic__streambuf_a844df3c713fce63296506d1bde314d01}} 
+\hyperlink{classlocale}{locale} {\bfseries pubimbue} (const \hyperlink{classlocale}{locale} \&)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a67974da9e2893b2362724e89ccae99f5}\label{classbasic__streambuf_a67974da9e2893b2362724e89ccae99f5}} 
+\hyperlink{classlocale}{locale} {\bfseries getloc} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ab4b0eaf6d13d556635080cabf0fafeb3}\label{classbasic__streambuf_ab4b0eaf6d13d556635080cabf0fafeb3}} 
+\hyperlink{interfacevoid}{void} {\bfseries stossc} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_afad0040f527c0b3585a3122755b03697}\label{classbasic__streambuf_afad0040f527c0b3585a3122755b03697}} 
+char\+\_\+type $\ast$ {\bfseries eback} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aee3e83d262aa58bc560dfdef0dfd49d3}\label{classbasic__streambuf_aee3e83d262aa58bc560dfdef0dfd49d3}} 
+char\+\_\+type $\ast$ {\bfseries gptr} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a8709d18b41cf18aa215d3fd39b028031}\label{classbasic__streambuf_a8709d18b41cf18aa215d3fd39b028031}} 
+char\+\_\+type $\ast$ {\bfseries egptr} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aec0994a3a5ca9d4f4d1af93a63122f70}\label{classbasic__streambuf_aec0994a3a5ca9d4f4d1af93a63122f70}} 
+\hyperlink{interfacevoid}{void} {\bfseries gbump} (int \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ad665468c2d92541af3f078fbc191c301}\label{classbasic__streambuf_ad665468c2d92541af3f078fbc191c301}} 
+\hyperlink{interfacevoid}{void} {\bfseries setg} (char\+\_\+type $\ast$\+\_\+\+\_\+gbegin, char\+\_\+type $\ast$\+\_\+\+\_\+gnext, char\+\_\+type $\ast$\+\_\+\+\_\+gend)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ad5847c2403a08d9ef55e7af5326baac8}\label{classbasic__streambuf_ad5847c2403a08d9ef55e7af5326baac8}} 
+char\+\_\+type $\ast$ {\bfseries pbase} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aa889281ce5b001d66c57cfbf80104c14}\label{classbasic__streambuf_aa889281ce5b001d66c57cfbf80104c14}} 
+char\+\_\+type $\ast$ {\bfseries pptr} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aba87e521e42689d11af8d03ecd493bdb}\label{classbasic__streambuf_aba87e521e42689d11af8d03ecd493bdb}} 
+char\+\_\+type $\ast$ {\bfseries epptr} () const
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a7cb6f760824314729fc3d1b230c49d6c}\label{classbasic__streambuf_a7cb6f760824314729fc3d1b230c49d6c}} 
+\hyperlink{interfacevoid}{void} {\bfseries pbump} (int \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a865c87fc1ec4a684275f69ceb783b319}\label{classbasic__streambuf_a865c87fc1ec4a684275f69ceb783b319}} 
+\hyperlink{interfacevoid}{void} {\bfseries setp} (char\+\_\+type $\ast$\+\_\+\+\_\+pbegin, char\+\_\+type $\ast$\+\_\+\+\_\+pend)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aee925cc203dba870200a64b8b217389c}\label{classbasic__streambuf_aee925cc203dba870200a64b8b217389c}} 
+virtual \hyperlink{classbasic__streambuf}{basic\+\_\+streambuf}$<$ \+\_\+\+CharT, \+\_\+\+Traits $>$ $\ast$ {\bfseries setbuf} (char\+\_\+type $\ast$, streamsize)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a11e15e3ba5974b811c4c3d0bf8ea9c62}\label{classbasic__streambuf_a11e15e3ba5974b811c4c3d0bf8ea9c62}} 
+virtual pos\+\_\+type {\bfseries seekoff} (off\+\_\+type, ios\+\_\+base\+::seekdir, ios\+\_\+base\+::openmode=ios\+\_\+base\+::in$\vert$ios\+\_\+base\+::out)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aa79c53d296946c759134b9ce4fd4d00a}\label{classbasic__streambuf_aa79c53d296946c759134b9ce4fd4d00a}} 
+virtual pos\+\_\+type {\bfseries seekpos} (pos\+\_\+type, ios\+\_\+base\+::openmode=ios\+\_\+base\+::in$\vert$ios\+\_\+base\+::out)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_acec4ccb6d665f880001aa70c70060246}\label{classbasic__streambuf_acec4ccb6d665f880001aa70c70060246}} 
+virtual int {\bfseries sync} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ac6535c3c41d0ac7d96a74011712f36d5}\label{classbasic__streambuf_ac6535c3c41d0ac7d96a74011712f36d5}} 
+virtual streamsize {\bfseries showmanyc} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a7403acdc30aa0678bf1f9d211b61f3df}\label{classbasic__streambuf_a7403acdc30aa0678bf1f9d211b61f3df}} 
+virtual streamsize {\bfseries xsgetn} (char\+\_\+type $\ast$\+\_\+\+\_\+s, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a62281ccd88bd9b8170f3fed591159ad8}\label{classbasic__streambuf_a62281ccd88bd9b8170f3fed591159ad8}} 
+virtual int\+\_\+type {\bfseries underflow} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a3fedf5760885ac886babdcd61551dd8e}\label{classbasic__streambuf_a3fedf5760885ac886babdcd61551dd8e}} 
+virtual int\+\_\+type {\bfseries uflow} ()
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_aa52f47549971b3ff1a9911f1f483e3f1}\label{classbasic__streambuf_aa52f47549971b3ff1a9911f1f483e3f1}} 
+virtual int\+\_\+type {\bfseries pbackfail} (int\+\_\+type=traits\+\_\+type\+::eof())
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a2e291c3500330e91d2804732aa7e6378}\label{classbasic__streambuf_a2e291c3500330e91d2804732aa7e6378}} 
+virtual streamsize {\bfseries xsputn} (const char\+\_\+type $\ast$\+\_\+\+\_\+s, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a42a6a559f327db707cff30331d9487a5}\label{classbasic__streambuf_a42a6a559f327db707cff30331d9487a5}} 
+virtual streamsize {\bfseries \+\_\+\+M\+\_\+xsputnc} (char\+\_\+type \+\_\+\+\_\+c, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ac38845d71302ed21ca10a618f02c0170}\label{classbasic__streambuf_ac38845d71302ed21ca10a618f02c0170}} 
+virtual int\+\_\+type {\bfseries overflow} (int\+\_\+type=traits\+\_\+type\+::eof())
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a5d907ab85e8b6f735cae029fe62364c0}\label{classbasic__streambuf_a5d907ab85e8b6f735cae029fe62364c0}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries imbue} (const \hyperlink{classlocale}{locale} \&)
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_a7740739c36f908f696b86f7503b521bb}\label{classbasic__streambuf_a7740739c36f908f696b86f7503b521bb}} 
+class {\bfseries basic\+\_\+istream$<$ \+\_\+\+Char\+T, \+\_\+\+Traits $>$}
+\item 
+\mbox{\Hypertarget{classbasic__streambuf_ac6fb84d26ebf75a5954a21092d863248}\label{classbasic__streambuf_ac6fb84d26ebf75a5954a21092d863248}} 
+class {\bfseries basic\+\_\+ostream$<$ \+\_\+\+Char\+T, \+\_\+\+Traits $>$}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+iosfwd.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+streambuf.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+streambuf.\+c\end{DoxyCompactItemize}

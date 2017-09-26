@@ -1,0 +1,100 @@
+\hypertarget{interfacens_i_protocol_handler}{}\section{ns\+I\+Protocol\+Handler接口 参考}
+\label{interfacens_i_protocol_handler}\index{ns\+I\+Protocol\+Handler@{ns\+I\+Protocol\+Handler}}
+类 ns\+I\+Protocol\+Handler 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfacens_i_protocol_handler}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_ae4fa32a8bfa4f831f9c96a9248355592}\label{interfacens_i_protocol_handler_ae4fa32a8bfa4f831f9c96a9248355592}} 
+nsresult {\bfseries Get\+Scheme} (\hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Scheme)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_ad5e0b73ada2b659bf198aa1d19ee9e1b}\label{interfacens_i_protocol_handler_ad5e0b73ada2b659bf198aa1d19ee9e1b}} 
+nsresult {\bfseries Get\+Default\+Port} (int32\+\_\+t $\ast$a\+Default\+Port)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a516a377fcee57dcc494a7de19c6883e6}\label{interfacens_i_protocol_handler_a516a377fcee57dcc494a7de19c6883e6}} 
+nsresult {\bfseries Get\+Protocol\+Flags} (uint32\+\_\+t $\ast$a\+Protocol\+Flags)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_ac8701cb8ba12b744cb75b12f649cb218}\label{interfacens_i_protocol_handler_ac8701cb8ba12b744cb75b12f649cb218}} 
+nsresult {\bfseries New\+U\+RI} (const \hyperlink{structns_c_string_container}{ns\+A\+C\+String} $\ast$a\+Spec, const char $\ast$a\+Origin\+Charset, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+Base\+U\+RI, \hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a96ca187fc83873c46013dc71d99d260b}\label{interfacens_i_protocol_handler_a96ca187fc83873c46013dc71d99d260b}} 
+nsresult {\bfseries New\+Channel2} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, \hyperlink{interfacens_i_supports}{ns\+I\+Load\+Info} $\ast$a\+Loadinfo, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_aff6a33214ab0a3a97b7d4f7802e04192}\label{interfacens_i_protocol_handler_aff6a33214ab0a3a97b7d4f7802e04192}} 
+nsresult {\bfseries New\+Channel} (\hyperlink{interfacens_i_u_r_i}{ns\+I\+U\+RI} $\ast$a\+U\+RI, \hyperlink{interfacens_i_channel}{ns\+I\+Channel} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_ae878478dbd9dce9b9ac514c13380d18c}\label{interfacens_i_protocol_handler_ae878478dbd9dce9b9ac514c13380d18c}} 
+nsresult {\bfseries Allow\+Port} (int32\+\_\+t port, const char $\ast$scheme, bool $\ast$\+\_\+retval)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a3320a6648faf075e4d6319cc642977dc}\label{interfacens_i_protocol_handler_a3320a6648faf075e4d6319cc642977dc}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+S\+TD} = 0
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_ae58e808d4eb69a0459866430154812d3}\label{interfacens_i_protocol_handler_ae58e808d4eb69a0459866430154812d3}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+N\+O\+R\+E\+L\+A\+T\+I\+VE} = (1$<$$<$0)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a1d72d7e9a0471f22718a5b3844364df4}\label{interfacens_i_protocol_handler_a1d72d7e9a0471f22718a5b3844364df4}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+N\+O\+A\+U\+TH} = (1$<$$<$1)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_ae300e0fc4d1634f030b86a3df2282a29}\label{interfacens_i_protocol_handler_ae300e0fc4d1634f030b86a3df2282a29}} 
+const unsigned long {\bfseries A\+L\+L\+O\+W\+S\+\_\+\+P\+R\+O\+XY} = (1$<$$<$2)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_af6794b11ddafc126911c0a25b89e381a}\label{interfacens_i_protocol_handler_af6794b11ddafc126911c0a25b89e381a}} 
+const unsigned long {\bfseries A\+L\+L\+O\+W\+S\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+H\+T\+TP} = (1$<$$<$3)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a65dc42993a730fc0ac6a9604d02fe6f6}\label{interfacens_i_protocol_handler_a65dc42993a730fc0ac6a9604d02fe6f6}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+I\+N\+H\+E\+R\+I\+T\+S\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+C\+O\+N\+T\+E\+XT} = (1$<$$<$4)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a8d1f5980a4b3db03a34c798f4fcbd167}\label{interfacens_i_protocol_handler_a8d1f5980a4b3db03a34c798f4fcbd167}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+F\+O\+R\+B\+I\+D\+S\+\_\+\+A\+U\+T\+O\+M\+A\+T\+I\+C\+\_\+\+D\+O\+C\+U\+M\+E\+N\+T\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT} = (1$<$$<$5)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_aa93b5376b8c52532ebe15097208592de}\label{interfacens_i_protocol_handler_aa93b5376b8c52532ebe15097208592de}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+L\+O\+A\+D\+A\+B\+L\+E\+\_\+\+B\+Y\+\_\+\+A\+N\+Y\+O\+NE} = (1$<$$<$6)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a24974cbfde631507d2106b63c82df326}\label{interfacens_i_protocol_handler_a24974cbfde631507d2106b63c82df326}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+D\+A\+N\+G\+E\+R\+O\+U\+S\+\_\+\+T\+O\+\_\+\+L\+O\+AD} = (1$<$$<$7)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_af08b13157235125aa43c6b52af8c98f6}\label{interfacens_i_protocol_handler_af08b13157235125aa43c6b52af8c98f6}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+I\+S\+\_\+\+U\+I\+\_\+\+R\+E\+S\+O\+U\+R\+CE} = (1$<$$<$8)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a7f84371a28d7bd6249d43998070703ab}\label{interfacens_i_protocol_handler_a7f84371a28d7bd6249d43998070703ab}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+I\+S\+\_\+\+L\+O\+C\+A\+L\+\_\+\+F\+I\+LE} = (1$<$$<$9)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_af47c00f97f0f9611f2eae91d48c5bbb6}\label{interfacens_i_protocol_handler_af47c00f97f0f9611f2eae91d48c5bbb6}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+L\+O\+A\+D\+A\+B\+L\+E\+\_\+\+B\+Y\+\_\+\+S\+U\+B\+S\+U\+M\+E\+RS} = (1$<$$<$10)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a08e6aae31681de1ad97c58fec5a9438c}\label{interfacens_i_protocol_handler_a08e6aae31681de1ad97c58fec5a9438c}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+D\+O\+E\+S\+\_\+\+N\+O\+T\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+D\+A\+TA} = (1$<$$<$11)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a42aa2be67830b1360120ebed56a7bd00}\label{interfacens_i_protocol_handler_a42aa2be67830b1360120ebed56a7bd00}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+I\+S\+\_\+\+L\+O\+C\+A\+L\+\_\+\+R\+E\+S\+O\+U\+R\+CE} = (1$<$$<$12)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_aecda88004bdcdaa62fe6594f724b9e09}\label{interfacens_i_protocol_handler_aecda88004bdcdaa62fe6594f724b9e09}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+O\+P\+E\+N\+I\+N\+G\+\_\+\+E\+X\+E\+C\+U\+T\+E\+S\+\_\+\+S\+C\+R\+I\+PT} = (1$<$$<$13)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_abce01d578f827bf615002fe22fbde7f6}\label{interfacens_i_protocol_handler_abce01d578f827bf615002fe22fbde7f6}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+N\+O\+N\+\_\+\+P\+E\+R\+S\+I\+S\+T\+A\+B\+LE} = (1$<$$<$14)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a950372bfa4d9d3aae03eb573144b7203}\label{interfacens_i_protocol_handler_a950372bfa4d9d3aae03eb573144b7203}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+F\+O\+R\+B\+I\+D\+S\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+A\+C\+C\+E\+SS} = (1$<$$<$15)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_ad59e7c6498ed7802dc0d37f2aa33a888}\label{interfacens_i_protocol_handler_ad59e7c6498ed7802dc0d37f2aa33a888}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+C\+R\+O\+S\+S\+\_\+\+O\+R\+I\+G\+I\+N\+\_\+\+N\+E\+E\+D\+S\+\_\+\+W\+E\+B\+A\+P\+P\+S\+\_\+\+P\+E\+RM} = (1$<$$<$16)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a6b125610a32205093f7bfa745e54eb1a}\label{interfacens_i_protocol_handler_a6b125610a32205093f7bfa745e54eb1a}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+S\+Y\+N\+C\+\_\+\+L\+O\+A\+D\+\_\+\+I\+S\+\_\+\+OK} = (1$<$$<$17)
+\item 
+\mbox{\Hypertarget{interfacens_i_protocol_handler_a01f85f49e4aedf12e11f10e94ab329d9}\label{interfacens_i_protocol_handler_a01f85f49e4aedf12e11f10e94ab329d9}} 
+const unsigned long {\bfseries U\+R\+I\+\_\+\+S\+A\+F\+E\+\_\+\+T\+O\+\_\+\+L\+O\+A\+D\+\_\+\+I\+N\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+T\+E\+XT} = (1$<$$<$18)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

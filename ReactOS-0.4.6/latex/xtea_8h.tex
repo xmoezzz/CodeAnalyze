@@ -1,0 +1,178 @@
+\hypertarget{xtea_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/xtea.h 文件参考}
+\label{xtea_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/xtea.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/xtea.\+h}}
+
+
+X\+T\+EA block cipher (32-\/bit)  
+
+
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context}
+\begin{DoxyCompactList}\small\item\em X\+T\+EA context structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{xtea_8h_a52a8e7d7e042c6d11541312838130069}\label{xtea_8h_a52a8e7d7e042c6d11541312838130069}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X\+T\+E\+A\+\_\+\+E\+N\+C\+R\+Y\+PT}~1
+\item 
+\mbox{\Hypertarget{xtea_8h_af5ddb7bfc34c65a4b48926f087ab5c26}\label{xtea_8h_af5ddb7bfc34c65a4b48926f087ab5c26}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X\+T\+E\+A\+\_\+\+D\+E\+C\+R\+Y\+PT}~0
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{xtea_8h_addf91fc82370cb27115b725ceb261b3d}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH}~-\/0x0028
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xtea_8h_ade30d4f60411e181757ffab0da902e75}{mbedtls\+\_\+xtea\+\_\+init} (\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Initialize X\+T\+EA context \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xtea_8h_a55eea1f415f3ed5dbf488fa0d9fb5cab}{mbedtls\+\_\+xtea\+\_\+free} (\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Clear X\+T\+EA context \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{xtea_8h_a3de8a424080f233f2a71c76b93bab130}{mbedtls\+\_\+xtea\+\_\+setup} (\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$ctx, const unsigned char \hyperlink{structkey}{key}\mbox{[}16\mbox{]})
+\begin{DoxyCompactList}\small\item\em X\+T\+EA key schedule \end{DoxyCompactList}\item 
+int \hyperlink{xtea_8h_a73a0ce1ac62aa079107736ef2aa4b21d}{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+ecb} (\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$ctx, int \hyperlink{interfacevoid}{mode}, const unsigned char input\mbox{[}8\mbox{]}, unsigned char output\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em X\+T\+EA cipher function \end{DoxyCompactList}\item 
+int \hyperlink{xtea_8h_ad0458b0fba8f223b9343e06e714f50e9}{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+cbc} (\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$ctx, int \hyperlink{interfacevoid}{mode}, size\+\_\+t length, unsigned char iv\mbox{[}8\mbox{]}, const unsigned char $\ast$input, unsigned char $\ast$output)
+\begin{DoxyCompactList}\small\item\em X\+T\+EA C\+BC cipher function \end{DoxyCompactList}\item 
+int \hyperlink{xtea_8h_ac9684542d55cc9d81ea8260f70a4a239}{mbedtls\+\_\+xtea\+\_\+self\+\_\+test} (int verbose)
+\begin{DoxyCompactList}\small\item\em Checkup routine \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+X\+T\+EA block cipher (32-\/bit) 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{xtea_8h_addf91fc82370cb27115b725ceb261b3d}\label{xtea_8h_addf91fc82370cb27115b725ceb261b3d}} 
+\index{xtea.\+h@{xtea.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH}!xtea.\+h@{xtea.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH}{MBEDTLS\_ERR\_XTEA\_INVALID\_INPUT\_LENGTH}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH~-\/0x0028}
+
+The data input has an invalid length. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{xtea_8h_ad0458b0fba8f223b9343e06e714f50e9}\label{xtea_8h_ad0458b0fba8f223b9343e06e714f50e9}} 
+\index{xtea.\+h@{xtea.\+h}!mbedtls\+\_\+xtea\+\_\+crypt\+\_\+cbc@{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+cbc}}
+\index{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+cbc@{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+cbc}!xtea.\+h@{xtea.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+cbc()}{mbedtls\_xtea\_crypt\_cbc()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+xtea\+\_\+crypt\+\_\+cbc (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$}]{ctx,  }\item[{int}]{mode,  }\item[{size\+\_\+t}]{length,  }\item[{unsigned char}]{iv\mbox{[}8\mbox{]},  }\item[{const unsigned char $\ast$}]{input,  }\item[{unsigned char $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+X\+T\+EA C\+BC cipher function 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & X\+T\+EA context \\
+\hline
+{\em mode} & M\+B\+E\+D\+T\+L\+S\+\_\+\+X\+T\+E\+A\+\_\+\+E\+N\+C\+R\+Y\+PT or M\+B\+E\+D\+T\+L\+S\+\_\+\+X\+T\+E\+A\+\_\+\+D\+E\+C\+R\+Y\+PT \\
+\hline
+{\em length} & the length of input, multiple of 8 \\
+\hline
+{\em iv} & initialization vector for C\+BC mode \\
+\hline
+{\em input} & input block \\
+\hline
+{\em output} & output block\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+X\+T\+E\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+L\+E\+N\+G\+TH if the length \% 8 != 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xtea_8h_a73a0ce1ac62aa079107736ef2aa4b21d}\label{xtea_8h_a73a0ce1ac62aa079107736ef2aa4b21d}} 
+\index{xtea.\+h@{xtea.\+h}!mbedtls\+\_\+xtea\+\_\+crypt\+\_\+ecb@{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+ecb}}
+\index{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+ecb@{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+ecb}!xtea.\+h@{xtea.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+xtea\+\_\+crypt\+\_\+ecb()}{mbedtls\_xtea\_crypt\_ecb()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+xtea\+\_\+crypt\+\_\+ecb (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$}]{ctx,  }\item[{int}]{mode,  }\item[{const unsigned char}]{input\mbox{[}8\mbox{]},  }\item[{unsigned char}]{output\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+X\+T\+EA cipher function 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & X\+T\+EA context \\
+\hline
+{\em mode} & M\+B\+E\+D\+T\+L\+S\+\_\+\+X\+T\+E\+A\+\_\+\+E\+N\+C\+R\+Y\+PT or M\+B\+E\+D\+T\+L\+S\+\_\+\+X\+T\+E\+A\+\_\+\+D\+E\+C\+R\+Y\+PT \\
+\hline
+{\em input} & 8-\/byte input block \\
+\hline
+{\em output} & 8-\/byte output block\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xtea_8h_a55eea1f415f3ed5dbf488fa0d9fb5cab}\label{xtea_8h_a55eea1f415f3ed5dbf488fa0d9fb5cab}} 
+\index{xtea.\+h@{xtea.\+h}!mbedtls\+\_\+xtea\+\_\+free@{mbedtls\+\_\+xtea\+\_\+free}}
+\index{mbedtls\+\_\+xtea\+\_\+free@{mbedtls\+\_\+xtea\+\_\+free}!xtea.\+h@{xtea.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+xtea\+\_\+free()}{mbedtls\_xtea\_free()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+xtea\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Clear X\+T\+EA context 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & X\+T\+EA context to be cleared \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{xtea_8h_ade30d4f60411e181757ffab0da902e75}\label{xtea_8h_ade30d4f60411e181757ffab0da902e75}} 
+\index{xtea.\+h@{xtea.\+h}!mbedtls\+\_\+xtea\+\_\+init@{mbedtls\+\_\+xtea\+\_\+init}}
+\index{mbedtls\+\_\+xtea\+\_\+init@{mbedtls\+\_\+xtea\+\_\+init}!xtea.\+h@{xtea.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+xtea\+\_\+init()}{mbedtls\_xtea\_init()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+xtea\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Initialize X\+T\+EA context 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & X\+T\+EA context to be initialized \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{xtea_8h_ac9684542d55cc9d81ea8260f70a4a239}\label{xtea_8h_ac9684542d55cc9d81ea8260f70a4a239}} 
+\index{xtea.\+h@{xtea.\+h}!mbedtls\+\_\+xtea\+\_\+self\+\_\+test@{mbedtls\+\_\+xtea\+\_\+self\+\_\+test}}
+\index{mbedtls\+\_\+xtea\+\_\+self\+\_\+test@{mbedtls\+\_\+xtea\+\_\+self\+\_\+test}!xtea.\+h@{xtea.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+xtea\+\_\+self\+\_\+test()}{mbedtls\_xtea\_self\_test()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+xtea\+\_\+self\+\_\+test (\begin{DoxyParamCaption}\item[{int}]{verbose }\end{DoxyParamCaption})}
+
+
+
+Checkup routine 
+
+\begin{DoxyReturn}{返回}
+0 if successful, or 1 if the test failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xtea_8h_a3de8a424080f233f2a71c76b93bab130}\label{xtea_8h_a3de8a424080f233f2a71c76b93bab130}} 
+\index{xtea.\+h@{xtea.\+h}!mbedtls\+\_\+xtea\+\_\+setup@{mbedtls\+\_\+xtea\+\_\+setup}}
+\index{mbedtls\+\_\+xtea\+\_\+setup@{mbedtls\+\_\+xtea\+\_\+setup}!xtea.\+h@{xtea.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+xtea\+\_\+setup()}{mbedtls\_xtea\_setup()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+xtea\+\_\+setup (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__xtea__context}{mbedtls\+\_\+xtea\+\_\+context} $\ast$}]{ctx,  }\item[{const unsigned char}]{key\mbox{[}16\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+X\+T\+EA key schedule 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & X\+T\+EA context to be initialized \\
+\hline
+{\em key} & the secret key \\
+\hline
+\end{DoxyParams}

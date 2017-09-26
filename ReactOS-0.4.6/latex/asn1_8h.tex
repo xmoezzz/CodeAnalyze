@@ -1,0 +1,478 @@
+\hypertarget{asn1_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/asn1.h 文件参考}
+\label{asn1_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/asn1.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/asn1.\+h}}
+
+
+Generic A\+S\+N.\+1 parsing  
+
+
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}bignum.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf}
+\item 
+struct \hyperlink{structmbedtls__asn1__bitstring}{mbedtls\+\_\+asn1\+\_\+bitstring}
+\item 
+struct \hyperlink{structmbedtls__asn1__sequence}{mbedtls\+\_\+asn1\+\_\+sequence}
+\item 
+struct \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{asn1_8h_ac2f2e00874ca486c912c33bb4f7bb16a}{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+S\+I\+ZE}(x)~(sizeof(x) -\/ 1)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{asn1_8h_a0b81f225b3551ec7c4da69b2d183d10b}{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+C\+MP}(oid\+\_\+str,  oid\+\_\+buf)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ A\+S\+N1 Error codes}\par
+{\em These error codes are OR\textquotesingle{}ed to X509 error codes for higher error granularity. A\+S\+N1 is a standard to specify data structures. }\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__asn1__module_ga284c12cf03a4ffeee89a63750f00dfdd}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+D\+A\+TA}~-\/0x0060
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__asn1__module_gab055945fda47ad0e16dc59f8c5ecb86e}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+U\+N\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+T\+AG}~-\/0x0062
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__asn1__module_ga0ebe8e0a4894533db505303504eea59b}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+L\+E\+N\+G\+TH}~-\/0x0064
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__asn1__module_gacf6fad8d80fa050c3463539412674a20}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+M\+I\+S\+M\+A\+T\+CH}~-\/0x0066
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__asn1__module_ga9ac36bf8c63a9968afe1d35d0569e4d8}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA}~-\/0x0068
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__asn1__module_gab7d40360e48e414ffa1a4df1961723d2}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED}~-\/0x006A
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__asn1__module_gaf9bf64017ed866c846b506e80dc15e94}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+B\+U\+F\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+LL}~-\/0x006C
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ D\+ER constants}\par
+{\em These constants comply with D\+ER encoded the A\+N\+S1 type tags. D\+ER encoding uses hexadecimal representation. An example D\+ER sequence is\+:~\newline
+
+\begin{DoxyItemize}
+\item 0x02 -- tag indicating I\+N\+T\+E\+G\+ER
+\item 0x01 -- length in octets
+\item 0x05 -- value Such sequences are typically read into {\ttfamily \hyperlink{group__x509__module_ga4d02c9e8e4e2934555e0d132cd2976dc}{mbedtls\+\_\+x509\+\_\+buf}}. 
+\end{DoxyItemize}}\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+B\+O\+O\+L\+E\+AN}~0x01
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+I\+N\+T\+E\+G\+ER}~0x02
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+B\+I\+T\+\_\+\+S\+T\+R\+I\+NG}~0x03
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+O\+C\+T\+E\+T\+\_\+\+S\+T\+R\+I\+NG}~0x04
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+N\+U\+LL}~0x05
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+O\+ID}~0x06
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+U\+T\+F8\+\_\+\+S\+T\+R\+I\+NG}~0x0C
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}~0x10
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+S\+ET}~0x11
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+P\+R\+I\+N\+T\+A\+B\+L\+E\+\_\+\+S\+T\+R\+I\+NG}~0x13
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+T61\+\_\+\+S\+T\+R\+I\+NG}~0x14
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+I\+A5\+\_\+\+S\+T\+R\+I\+NG}~0x16
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+U\+T\+C\+\_\+\+T\+I\+ME}~0x17
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+G\+E\+N\+E\+R\+A\+L\+I\+Z\+E\+D\+\_\+\+T\+I\+ME}~0x18
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+U\+N\+I\+V\+E\+R\+S\+A\+L\+\_\+\+S\+T\+R\+I\+NG}~0x1C
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+B\+M\+P\+\_\+\+S\+T\+R\+I\+NG}~0x1E
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+P\+R\+I\+M\+I\+T\+I\+VE}~0x00
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED}~0x20
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+A\+S\+N1\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+P\+E\+C\+I\+F\+IC}~0x80
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Functions to parse A\+SN.1 data structures}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} \hyperlink{asn1_8h_a92008d574dc457ec6c925ef29631545b}{mbedtls\+\_\+asn1\+\_\+buf}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__bitstring}{mbedtls\+\_\+asn1\+\_\+bitstring} \hyperlink{asn1_8h_adfc9b9fed6d69849942d4a63ece7513d}{mbedtls\+\_\+asn1\+\_\+bitstring}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__sequence}{mbedtls\+\_\+asn1\+\_\+sequence} \hyperlink{asn1_8h_a21302e30db75b1b5e3387b16958080bf}{mbedtls\+\_\+asn1\+\_\+sequence}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} \hyperlink{asn1_8h_a3f3ca4991620a3ab05d747d00a6cb70e}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}
+\item 
+int \hyperlink{asn1_8h_ad45c1d0ed3694fe903342cb32647bfb1}{mbedtls\+\_\+asn1\+\_\+get\+\_\+len} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, size\+\_\+t $\ast$len)
+\begin{DoxyCompactList}\small\item\em Get the length of an A\+S\+N.\+1 element. Updates the pointer to immediately behind the length. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_ae8d7dd42a3b99b61d2ef60bc0c2eaf0d}{mbedtls\+\_\+asn1\+\_\+get\+\_\+tag} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, size\+\_\+t $\ast$len, int \hyperlink{structtag}{tag})
+\begin{DoxyCompactList}\small\item\em Get the tag and length of the tag. Check for the requested tag. Updates the pointer to immediately behind the tag and length. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_aec9e4bbd8690a8ab17cabf87893dbd2b}{mbedtls\+\_\+asn1\+\_\+get\+\_\+bool} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, int $\ast$val)
+\begin{DoxyCompactList}\small\item\em Retrieve a boolean A\+S\+N.\+1 tag and its value. Updates the pointer to immediately behind the full tag. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_a7f8a8b447c11f2200cc5aa8033801b72}{mbedtls\+\_\+asn1\+\_\+get\+\_\+int} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, int $\ast$val)
+\begin{DoxyCompactList}\small\item\em Retrieve an integer A\+S\+N.\+1 tag and its value. Updates the pointer to immediately behind the full tag. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_ae2dcf021cf1326b62e2f23aa3bda69d0}{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{structmbedtls__asn1__bitstring}{mbedtls\+\_\+asn1\+\_\+bitstring} $\ast$bs)
+\begin{DoxyCompactList}\small\item\em Retrieve a bitstring A\+S\+N.\+1 tag and its value. Updates the pointer to immediately behind the full tag. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_a0f9d2d846b16d5ce18ad99de6224313b}{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring\+\_\+null} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, size\+\_\+t $\ast$len)
+\begin{DoxyCompactList}\small\item\em Retrieve a bitstring A\+S\+N.\+1 tag without unused bits and its value. Updates the pointer to the beginning of the bit/octet string. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_a872d62128956b3574bb0e681536c0d6b}{mbedtls\+\_\+asn1\+\_\+get\+\_\+sequence\+\_\+of} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{structmbedtls__asn1__sequence}{mbedtls\+\_\+asn1\+\_\+sequence} $\ast$cur, int \hyperlink{structtag}{tag})
+\begin{DoxyCompactList}\small\item\em Parses and splits an A\+S\+N.\+1 \char`\"{}\+S\+E\+Q\+U\+E\+N\+C\+E O\+F $<$tag$>$\char`\"{} Updated the pointer to immediately behind the full sequence tag. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_a48e235454b64aa67c9472a6579706b05}{mbedtls\+\_\+asn1\+\_\+get\+\_\+mpi} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{structmbedtls__mpi}{mbedtls\+\_\+mpi} $\ast$\hyperlink{class_x}{X})
+\begin{DoxyCompactList}\small\item\em Retrieve a M\+PI value from an integer A\+S\+N.\+1 tag. Updates the pointer to immediately behind the full tag. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_add253579640ea717f368d9a0f6085be0}{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$alg, \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$params)
+\begin{DoxyCompactList}\small\item\em Retrieve an Algorithm\+Identifier A\+S\+N.\+1 sequence. Updates the pointer to immediately behind the full Algorithm\+Identifier. \end{DoxyCompactList}\item 
+int \hyperlink{asn1_8h_adad023ecf92a50d47eaf206705efdb0e}{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg\+\_\+null} (unsigned char $\ast$$\ast$p, const unsigned char $\ast$end, \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$alg)
+\begin{DoxyCompactList}\small\item\em Retrieve an Algorithm\+Identifier A\+S\+N.\+1 sequence with N\+U\+LL or no params. Updates the pointer to immediately behind the full Algorithm\+Identifier. \end{DoxyCompactList}\item 
+\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$ \hyperlink{asn1_8h_aabe93ade4a012da5d20cf668eededa75}{mbedtls\+\_\+asn1\+\_\+find\+\_\+named\+\_\+data} (\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$\hyperlink{classlist}{list}, const char $\ast$oid, size\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Find a specific named\+\_\+data entry in a sequence or list based on the O\+ID. \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{asn1_8h_a46abb857e148f22a616b56b66a781506}{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data} (\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$entry)
+\begin{DoxyCompactList}\small\item\em Free a \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} entry \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{asn1_8h_afd1a084a9285cebcd289bf6df0e6c021}{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data\+\_\+list} (\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$$\ast$head)
+\begin{DoxyCompactList}\small\item\em Free all entries in a \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} list Head will be set to N\+U\+LL \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Generic A\+S\+N.\+1 parsing 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{asn1_8h_a0b81f225b3551ec7c4da69b2d183d10b}\label{asn1_8h_a0b81f225b3551ec7c4da69b2d183d10b}} 
+\index{asn1.\+h@{asn1.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+C\+MP@{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+C\+MP}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+C\+MP@{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+C\+MP}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+C\+MP}{MBEDTLS\_OID\_CMP}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+C\+MP(\begin{DoxyParamCaption}\item[{}]{oid\+\_\+str,  }\item[{}]{oid\+\_\+buf }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+( ( \hyperlink{asn1_8h_ac2f2e00874ca486c912c33bb4f7bb16a}{MBEDTLS\_OID\_SIZE}(oid\_str) != (oid\_buf)->len ) ||                \(\backslash\)
+          memcmp( (oid\_str), (oid\_buf)->p, (oid\_buf)->len) != 0 )
+\end{DoxyCode}
+Compares an \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} structure to a reference O\+ID.
+
+Only works for \textquotesingle{}defined\textquotesingle{} oid\+\_\+str values (M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+H\+M\+A\+C\+\_\+\+S\+H\+A1), you cannot use a \textquotesingle{}unsigned char $\ast$oid\textquotesingle{} here! \mbox{\Hypertarget{asn1_8h_ac2f2e00874ca486c912c33bb4f7bb16a}\label{asn1_8h_ac2f2e00874ca486c912c33bb4f7bb16a}} 
+\index{asn1.\+h@{asn1.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+S\+I\+ZE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+S\+I\+ZE}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+S\+I\+ZE@{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+S\+I\+ZE}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+S\+I\+ZE}{MBEDTLS\_OID\_SIZE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+O\+I\+D\+\_\+\+S\+I\+ZE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(sizeof(x) -\/ 1)}
+
+Returns the size of the binary string, without the trailing \textbackslash{}0 
+
+\subsection{类型定义说明}
+\mbox{\Hypertarget{asn1_8h_adfc9b9fed6d69849942d4a63ece7513d}\label{asn1_8h_adfc9b9fed6d69849942d4a63ece7513d}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+bitstring@{mbedtls\+\_\+asn1\+\_\+bitstring}}
+\index{mbedtls\+\_\+asn1\+\_\+bitstring@{mbedtls\+\_\+asn1\+\_\+bitstring}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+bitstring}{mbedtls\_asn1\_bitstring}}
+{\footnotesize\ttfamily typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__bitstring}{mbedtls\+\_\+asn1\+\_\+bitstring}
+ \hyperlink{structmbedtls__asn1__bitstring}{mbedtls\+\_\+asn1\+\_\+bitstring}}
+
+Container for A\+S\+N1 bit strings. \mbox{\Hypertarget{asn1_8h_a92008d574dc457ec6c925ef29631545b}\label{asn1_8h_a92008d574dc457ec6c925ef29631545b}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+buf@{mbedtls\+\_\+asn1\+\_\+buf}}
+\index{mbedtls\+\_\+asn1\+\_\+buf@{mbedtls\+\_\+asn1\+\_\+buf}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+buf}{mbedtls\_asn1\_buf}}
+{\footnotesize\ttfamily typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf}
+ \hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf}}
+
+Type-\/length-\/value structure that allows for A\+S\+N1 using D\+ER. \mbox{\Hypertarget{asn1_8h_a3f3ca4991620a3ab05d747d00a6cb70e}\label{asn1_8h_a3f3ca4991620a3ab05d747d00a6cb70e}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+named\+\_\+data@{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}}
+\index{mbedtls\+\_\+asn1\+\_\+named\+\_\+data@{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}{mbedtls\_asn1\_named\_data}}
+{\footnotesize\ttfamily typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}
+ \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}}
+
+Container for a sequence or list of \textquotesingle{}named\textquotesingle{} A\+S\+N.\+1 data items \mbox{\Hypertarget{asn1_8h_a21302e30db75b1b5e3387b16958080bf}\label{asn1_8h_a21302e30db75b1b5e3387b16958080bf}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+sequence@{mbedtls\+\_\+asn1\+\_\+sequence}}
+\index{mbedtls\+\_\+asn1\+\_\+sequence@{mbedtls\+\_\+asn1\+\_\+sequence}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+sequence}{mbedtls\_asn1\_sequence}}
+{\footnotesize\ttfamily typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__asn1__sequence}{mbedtls\+\_\+asn1\+\_\+sequence}
+ \hyperlink{structmbedtls__asn1__sequence}{mbedtls\+\_\+asn1\+\_\+sequence}}
+
+Container for a sequence of A\+S\+N.\+1 items 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{asn1_8h_aabe93ade4a012da5d20cf668eededa75}\label{asn1_8h_aabe93ade4a012da5d20cf668eededa75}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+find\+\_\+named\+\_\+data@{mbedtls\+\_\+asn1\+\_\+find\+\_\+named\+\_\+data}}
+\index{mbedtls\+\_\+asn1\+\_\+find\+\_\+named\+\_\+data@{mbedtls\+\_\+asn1\+\_\+find\+\_\+named\+\_\+data}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+find\+\_\+named\+\_\+data()}{mbedtls\_asn1\_find\_named\_data()}}
+{\footnotesize\ttfamily \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data}$\ast$ mbedtls\+\_\+asn1\+\_\+find\+\_\+named\+\_\+data (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$}]{list,  }\item[{const char $\ast$}]{oid,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Find a specific named\+\_\+data entry in a sequence or list based on the O\+ID. 
+
+
+\begin{DoxyParams}{参数}
+{\em list} & The list to seek through \\
+\hline
+{\em oid} & The O\+ID to look for \\
+\hline
+{\em len} & Size of the O\+ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+N\+U\+LL if not found, or a pointer to the existing entry. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_a46abb857e148f22a616b56b66a781506}\label{asn1_8h_a46abb857e148f22a616b56b66a781506}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data@{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data}}
+\index{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data@{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data()}{mbedtls\_asn1\_free\_named\_data()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$}]{entry }\end{DoxyParamCaption})}
+
+
+
+Free a \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} entry 
+
+
+\begin{DoxyParams}{参数}
+{\em entry} & The named data entry to free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{asn1_8h_afd1a084a9285cebcd289bf6df0e6c021}\label{asn1_8h_afd1a084a9285cebcd289bf6df0e6c021}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data\+\_\+list@{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data\+\_\+list}}
+\index{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data\+\_\+list@{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data\+\_\+list}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data\+\_\+list()}{mbedtls\_asn1\_free\_named\_data\_list()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+asn1\+\_\+free\+\_\+named\+\_\+data\+\_\+list (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} $\ast$$\ast$}]{head }\end{DoxyParamCaption})}
+
+
+
+Free all entries in a \hyperlink{structmbedtls__asn1__named__data}{mbedtls\+\_\+asn1\+\_\+named\+\_\+data} list Head will be set to N\+U\+LL 
+
+
+\begin{DoxyParams}{参数}
+{\em head} & Pointer to the head of the list of named data entries to free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{asn1_8h_add253579640ea717f368d9a0f6085be0}\label{asn1_8h_add253579640ea717f368d9a0f6085be0}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+alg@{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg@{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg()}{mbedtls\_asn1\_get\_alg()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+alg (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{\hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$}]{alg,  }\item[{\hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Retrieve an Algorithm\+Identifier A\+S\+N.\+1 sequence. Updates the pointer to immediately behind the full Algorithm\+Identifier. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em alg} & The buffer to receive the O\+ID \\
+\hline
+{\em params} & The buffer to receive the params (if any)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 or M\+PI error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_adad023ecf92a50d47eaf206705efdb0e}\label{asn1_8h_adad023ecf92a50d47eaf206705efdb0e}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+alg\+\_\+null@{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg\+\_\+null}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg\+\_\+null@{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg\+\_\+null}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+alg\+\_\+null()}{mbedtls\_asn1\_get\_alg\_null()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+alg\+\_\+null (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{\hyperlink{structmbedtls__asn1__buf}{mbedtls\+\_\+asn1\+\_\+buf} $\ast$}]{alg }\end{DoxyParamCaption})}
+
+
+
+Retrieve an Algorithm\+Identifier A\+S\+N.\+1 sequence with N\+U\+LL or no params. Updates the pointer to immediately behind the full Algorithm\+Identifier. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em alg} & The buffer to receive the O\+ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 or M\+PI error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_ae2dcf021cf1326b62e2f23aa3bda69d0}\label{asn1_8h_ae2dcf021cf1326b62e2f23aa3bda69d0}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring@{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring@{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring()}{mbedtls\_asn1\_get\_bitstring()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{\hyperlink{structmbedtls__asn1__bitstring}{mbedtls\+\_\+asn1\+\_\+bitstring} $\ast$}]{bs }\end{DoxyParamCaption})}
+
+
+
+Retrieve a bitstring A\+S\+N.\+1 tag and its value. Updates the pointer to immediately behind the full tag. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em bs} & The variable that will receive the value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_a0f9d2d846b16d5ce18ad99de6224313b}\label{asn1_8h_a0f9d2d846b16d5ce18ad99de6224313b}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring\+\_\+null@{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring\+\_\+null}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring\+\_\+null@{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring\+\_\+null}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring\+\_\+null()}{mbedtls\_asn1\_get\_bitstring\_null()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+bitstring\+\_\+null (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{size\+\_\+t $\ast$}]{len }\end{DoxyParamCaption})}
+
+
+
+Retrieve a bitstring A\+S\+N.\+1 tag without unused bits and its value. Updates the pointer to the beginning of the bit/octet string. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em len} & Length of the actual bit/octect string in bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_aec9e4bbd8690a8ab17cabf87893dbd2b}\label{asn1_8h_aec9e4bbd8690a8ab17cabf87893dbd2b}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+bool@{mbedtls\+\_\+asn1\+\_\+get\+\_\+bool}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+bool@{mbedtls\+\_\+asn1\+\_\+get\+\_\+bool}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+bool()}{mbedtls\_asn1\_get\_bool()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+bool (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{int $\ast$}]{val }\end{DoxyParamCaption})}
+
+
+
+Retrieve a boolean A\+S\+N.\+1 tag and its value. Updates the pointer to immediately behind the full tag. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em val} & The variable that will receive the value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_a7f8a8b447c11f2200cc5aa8033801b72}\label{asn1_8h_a7f8a8b447c11f2200cc5aa8033801b72}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+int@{mbedtls\+\_\+asn1\+\_\+get\+\_\+int}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+int@{mbedtls\+\_\+asn1\+\_\+get\+\_\+int}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+int()}{mbedtls\_asn1\_get\_int()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+int (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{int $\ast$}]{val }\end{DoxyParamCaption})}
+
+
+
+Retrieve an integer A\+S\+N.\+1 tag and its value. Updates the pointer to immediately behind the full tag. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em val} & The variable that will receive the value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_ad45c1d0ed3694fe903342cb32647bfb1}\label{asn1_8h_ad45c1d0ed3694fe903342cb32647bfb1}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+len@{mbedtls\+\_\+asn1\+\_\+get\+\_\+len}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+len@{mbedtls\+\_\+asn1\+\_\+get\+\_\+len}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+len()}{mbedtls\_asn1\_get\_len()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+len (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{size\+\_\+t $\ast$}]{len }\end{DoxyParamCaption})}
+
+
+
+Get the length of an A\+S\+N.\+1 element. Updates the pointer to immediately behind the length. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em len} & The variable that will receive the value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+D\+A\+TA on reaching end of data, M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+L\+E\+N\+G\+TH if length is unparseable. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_a48e235454b64aa67c9472a6579706b05}\label{asn1_8h_a48e235454b64aa67c9472a6579706b05}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+mpi@{mbedtls\+\_\+asn1\+\_\+get\+\_\+mpi}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+mpi@{mbedtls\+\_\+asn1\+\_\+get\+\_\+mpi}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+mpi()}{mbedtls\_asn1\_get\_mpi()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+mpi (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{\hyperlink{structmbedtls__mpi}{mbedtls\+\_\+mpi} $\ast$}]{X }\end{DoxyParamCaption})}
+
+
+
+Retrieve a M\+PI value from an integer A\+S\+N.\+1 tag. Updates the pointer to immediately behind the full tag. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em \hyperlink{class_x}{X}} & The M\+PI that will receive the value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 or M\+PI error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_a872d62128956b3574bb0e681536c0d6b}\label{asn1_8h_a872d62128956b3574bb0e681536c0d6b}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+sequence\+\_\+of@{mbedtls\+\_\+asn1\+\_\+get\+\_\+sequence\+\_\+of}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+sequence\+\_\+of@{mbedtls\+\_\+asn1\+\_\+get\+\_\+sequence\+\_\+of}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+sequence\+\_\+of()}{mbedtls\_asn1\_get\_sequence\_of()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+sequence\+\_\+of (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{\hyperlink{structmbedtls__asn1__sequence}{mbedtls\+\_\+asn1\+\_\+sequence} $\ast$}]{cur,  }\item[{int}]{tag }\end{DoxyParamCaption})}
+
+
+
+Parses and splits an A\+S\+N.\+1 \char`\"{}\+S\+E\+Q\+U\+E\+N\+C\+E O\+F $<$tag$>$\char`\"{} Updated the pointer to immediately behind the full sequence tag. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em cur} & First variable in the chain to fill \\
+\hline
+{\em tag} & Type of sequence\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful or a specific A\+S\+N.\+1 error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{asn1_8h_ae8d7dd42a3b99b61d2ef60bc0c2eaf0d}\label{asn1_8h_ae8d7dd42a3b99b61d2ef60bc0c2eaf0d}} 
+\index{asn1.\+h@{asn1.\+h}!mbedtls\+\_\+asn1\+\_\+get\+\_\+tag@{mbedtls\+\_\+asn1\+\_\+get\+\_\+tag}}
+\index{mbedtls\+\_\+asn1\+\_\+get\+\_\+tag@{mbedtls\+\_\+asn1\+\_\+get\+\_\+tag}!asn1.\+h@{asn1.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+asn1\+\_\+get\+\_\+tag()}{mbedtls\_asn1\_get\_tag()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+asn1\+\_\+get\+\_\+tag (\begin{DoxyParamCaption}\item[{unsigned char $\ast$$\ast$}]{p,  }\item[{const unsigned char $\ast$}]{end,  }\item[{size\+\_\+t $\ast$}]{len,  }\item[{int}]{tag }\end{DoxyParamCaption})}
+
+
+
+Get the tag and length of the tag. Check for the requested tag. Updates the pointer to immediately behind the tag and length. 
+
+
+\begin{DoxyParams}{参数}
+{\em p} & The position in the A\+S\+N.\+1 data \\
+\hline
+{\em end} & End of data \\
+\hline
+{\em len} & The variable that will receive the length \\
+\hline
+{\em tag} & The expected tag\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+A\+S\+N1\+\_\+\+U\+N\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+T\+AG if tag did not match requested tag, or another specific A\+S\+N.\+1 error code. 
+\end{DoxyReturn}

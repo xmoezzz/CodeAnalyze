@@ -1,0 +1,77 @@
+\hypertarget{interface_i_taskbar_list3}{}\section{I\+Taskbar\+List3接口 参考}
+\label{interface_i_taskbar_list3}\index{I\+Taskbar\+List3@{I\+Taskbar\+List3}}
+类 I\+Taskbar\+List3 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_i_taskbar_list3}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_af847b8c43151a062d8fb363ccab64310}\label{interface_i_taskbar_list3_af847b8c43151a062d8fb363ccab64310}} 
+enum {\bfseries T\+B\+P\+F\+L\+AG} \{ \newline
+{\bfseries T\+B\+P\+F\+\_\+\+N\+O\+P\+R\+O\+G\+R\+E\+SS} = 0x0000, 
+{\bfseries T\+B\+P\+F\+\_\+\+I\+N\+D\+E\+T\+E\+R\+M\+I\+N\+A\+TE} = 0x0001, 
+{\bfseries T\+B\+P\+F\+\_\+\+N\+O\+R\+M\+AL} = 0x0002, 
+{\bfseries T\+B\+P\+F\+\_\+\+E\+R\+R\+OR} = 0x0004, 
+\newline
+{\bfseries T\+B\+P\+F\+\_\+\+P\+A\+U\+S\+ED} = 0x0008
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a335b9c311e43ab7fa47ca7945d8d2e8a}\label{interface_i_taskbar_list3_a335b9c311e43ab7fa47ca7945d8d2e8a}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Taskbar\+List3\+::\+T\+B\+P\+F\+L\+AG {\bfseries T\+B\+P\+F\+L\+AG}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_ab5098e029a489df4159ff075faf6ae9f}\label{interface_i_taskbar_list3_ab5098e029a489df4159ff075faf6ae9f}} 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+E\+N\+U\+M\+\_\+\+F\+L\+A\+G\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS} (T\+B\+P\+F\+L\+AG)\char`\"{}) H\+R\+E\+S\+U\+LT Set\+Progress\+Value( \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a976cc2cc89e2e80a5a94e3da4bbf7993}\label{interface_i_taskbar_list3_a976cc2cc89e2e80a5a94e3da4bbf7993}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Progress\+State} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} T\+B\+P\+F\+L\+AG tbp\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a5f63317a6baf0dca11af0c307277ef0f}\label{interface_i_taskbar_list3_a5f63317a6baf0dca11af0c307277ef0f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Tab} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Tab, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+M\+DI)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_aeaaa0701a73055a96500ebc8089546c5}\label{interface_i_taskbar_list3_aeaaa0701a73055a96500ebc8089546c5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Tab} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Tab)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a1faeee691190097f4fd112348a576fcc}\label{interface_i_taskbar_list3_a1faeee691190097f4fd112348a576fcc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Tab\+Order} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Tab, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Insert\+Before)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_abe63e85d20e43d1d33c0798d0220d772}\label{interface_i_taskbar_list3_abe63e85d20e43d1d33c0798d0220d772}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Tab\+Active} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Tab, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+M\+DI, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reserved)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_aeee3d306428a2a3e0aa0c9ed564a8218}\label{interface_i_taskbar_list3_aeee3d306428a2a3e0aa0c9ed564a8218}} 
+H\+R\+E\+S\+U\+LT {\bfseries Thumb\+Bar\+Add\+Buttons} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} U\+I\+NT c\+Buttons, \mbox{[}in, size\+\_\+is(c\+Buttons)\mbox{]} L\+P\+T\+H\+U\+M\+B\+B\+U\+T\+T\+ON p\+Button)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_aaf04a9f085f2e13ee8ac21ce78269747}\label{interface_i_taskbar_list3_aaf04a9f085f2e13ee8ac21ce78269747}} 
+H\+R\+E\+S\+U\+LT {\bfseries Thumb\+Bar\+Update\+Buttons} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} U\+I\+NT c\+Buttons, \mbox{[}in, size\+\_\+is(c\+Buttons)\mbox{]} L\+P\+T\+H\+U\+M\+B\+B\+U\+T\+T\+ON p\+Button)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a6c34a6a8170f62509363285c7614620a}\label{interface_i_taskbar_list3_a6c34a6a8170f62509363285c7614620a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Thumb\+Bar\+Set\+Image\+List} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} \hyperlink{struct___i_m_a_g_e_l_i_s_t}{H\+I\+M\+A\+G\+E\+L\+I\+ST} himl)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a3047376aad0a6ff8cf5ad3d4c4de0e21}\label{interface_i_taskbar_list3_a3047376aad0a6ff8cf5ad3d4c4de0e21}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Overlay\+Icon} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} H\+I\+C\+ON h\+Icon, \mbox{[}in, \hyperlink{interfaceunique}{unique}, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+Description)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a8fa860135852547a00dea0ce271e22cf}\label{interface_i_taskbar_list3_a8fa860135852547a00dea0ce271e22cf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Thumbnail\+Tooltip} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in, \hyperlink{interfaceunique}{unique}, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+Tip)
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a3fcfeb464c804260c35c0d3a0da7b0a7}\label{interface_i_taskbar_list3_a3fcfeb464c804260c35c0d3a0da7b0a7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Thumbnail\+Clip} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+W\+ND} hwnd, \mbox{[}in\mbox{]} \hyperlink{structtag_r_e_c_t}{R\+E\+CT} $\ast$prc\+Clip)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_af3f7e91fe4caa567b8c555f55141e5e0}\label{interface_i_taskbar_list3_af3f7e91fe4caa567b8c555f55141e5e0}} 
+U\+L\+O\+N\+G\+L\+O\+NG {\bfseries ull\+Completed}
+\item 
+\mbox{\Hypertarget{interface_i_taskbar_list3_a653b5bf6a2840009cc9ce7b1b869c573}\label{interface_i_taskbar_list3_a653b5bf6a2840009cc9ce7b1b869c573}} 
+U\+L\+O\+N\+G\+L\+O\+NG U\+L\+O\+N\+G\+L\+O\+NG {\bfseries ull\+Total}
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{struct_stack_allocator}{}\section{Stack\+Allocator$<$ \+\_\+\+Tp $>$ 模板结构体 参考}
+\label{struct_stack_allocator}\index{Stack\+Allocator$<$ \+\_\+\+Tp $>$@{Stack\+Allocator$<$ \+\_\+\+Tp $>$}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_stack_allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_ae216ac1269940a86db58fc6037b75a1e}\label{struct_stack_allocator_ae216ac1269940a86db58fc6037b75a1e}} 
+typedef \+\_\+\+Tp {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_aafa22044639f5186d4dcf6742cd6d645}\label{struct_stack_allocator_aafa22044639f5186d4dcf6742cd6d645}} 
+typedef value\+\_\+type $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a1db3ede34bae31b732c279bb36e711f2}\label{struct_stack_allocator_a1db3ede34bae31b732c279bb36e711f2}} 
+typedef const \+\_\+\+Tp $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a9f6170c482a7b3e9d0696541bc091a71}\label{struct_stack_allocator_a9f6170c482a7b3e9d0696541bc091a71}} 
+typedef \+\_\+\+Tp \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a5b36a7ac0898708660736d21af48a5fa}\label{struct_stack_allocator_a5b36a7ac0898708660736d21af48a5fa}} 
+typedef const \+\_\+\+Tp \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a0fcb34ee22f22a115f1021b99132a668}\label{struct_stack_allocator_a0fcb34ee22f22a115f1021b99132a668}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a8e83289e3bc77806fbc175d098a06d6e}\label{struct_stack_allocator_a8e83289e3bc77806fbc175d098a06d6e}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a11d6722090970aea4c404a381cb0d339}\label{struct_stack_allocator_a11d6722090970aea4c404a381cb0d339}} 
+{\bfseries Stack\+Allocator} (char $\ast$beg, char $\ast$end)
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a5dec1025d666cf46c1f7208e8a6c76d4}\label{struct_stack_allocator_a5dec1025d666cf46c1f7208e8a6c76d4}} 
+const \hyperlink{struct_state}{State} \& {\bfseries get\+State} () const
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_ab1db832c8f44b05213793b8522198e34}\label{struct_stack_allocator_ab1db832c8f44b05213793b8522198e34}} 
+{\footnotesize template$<$class \+\_\+\+Other\+Tp $>$ }\\{\bfseries Stack\+Allocator} (\hyperlink{struct_stack_allocator}{Stack\+Allocator}$<$ \+\_\+\+Other\+Tp $>$ const \&other)
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a0203ece568efe6edc734d5ae7e2ae3e6}\label{struct_stack_allocator_a0203ece568efe6edc734d5ae7e2ae3e6}} 
+\+\_\+\+Tp $\ast$ {\bfseries allocate} (size\+\_\+type n, \hyperlink{interfacevoid}{void} $\ast$=0)
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a9e67dedd9536c4f5d406b0deda6d17c6}\label{struct_stack_allocator_a9e67dedd9536c4f5d406b0deda6d17c6}} 
+\hyperlink{interfacevoid}{void} {\bfseries deallocate} (pointer p, size\+\_\+type n)
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_ae3844de104a6ae6f90b766ac16a072bc}\label{struct_stack_allocator_ae3844de104a6ae6f90b766ac16a072bc}} 
+pointer {\bfseries address} (reference \+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a5a2f70a7bb9179aea445d3c872bbfeed}\label{struct_stack_allocator_a5a2f70a7bb9179aea445d3c872bbfeed}} 
+const\+\_\+pointer {\bfseries address} (const\+\_\+reference \+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_aaa26099b0c6da3029d99957205c6fda0}\label{struct_stack_allocator_aaa26099b0c6da3029d99957205c6fda0}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a8f41d7ba9dcd93465aca7a5e29a4feab}\label{struct_stack_allocator_a8f41d7ba9dcd93465aca7a5e29a4feab}} 
+\hyperlink{interfacevoid}{void} {\bfseries construct} (pointer \+\_\+\+\_\+p, const\+\_\+reference \+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a1e3f1ccd24dbf46c7315a2adc17c43ad}\label{struct_stack_allocator_a1e3f1ccd24dbf46c7315a2adc17c43ad}} 
+\hyperlink{interfacevoid}{void} {\bfseries destroy} (pointer \+\_\+\+\_\+p)
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_ae87af94d65c8032ffe21242e152d0a04}\label{struct_stack_allocator_ae87af94d65c8032ffe21242e152d0a04}} 
+bool {\bfseries ok} () const
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a660afbfe5f8502fbf220df77faa3e6f3}\label{struct_stack_allocator_a660afbfe5f8502fbf220df77faa3e6f3}} 
+\hyperlink{interfacevoid}{void} {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_af1cf381361389c5ef39c2ecc32572bc2}\label{struct_stack_allocator_af1cf381361389c5ef39c2ecc32572bc2}} 
+bool {\bfseries swaped} () const
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a9bdee443605659ae6ae6ab2896654d51}\label{struct_stack_allocator_a9bdee443605659ae6ae6ab2896654d51}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{struct_stack_allocator}{Stack\+Allocator} \&other)
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_abb9deda666e75fd810f9780e4b68c7f7}\label{struct_stack_allocator_abb9deda666e75fd810f9780e4b68c7f7}} 
+bool {\bfseries operator==} (\hyperlink{struct_stack_allocator}{Stack\+Allocator} const \&other) const
+\item 
+\mbox{\Hypertarget{struct_stack_allocator_a14ebd26aa4cd04d22a935cc246d08bf2}\label{struct_stack_allocator_a14ebd26aa4cd04d22a935cc246d08bf2}} 
+bool {\bfseries operator!=} (\hyperlink{struct_stack_allocator}{Stack\+Allocator} const \&other) const
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/test/unit/stack\+\_\+allocator.\+h\end{DoxyCompactItemize}

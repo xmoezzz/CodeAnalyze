@@ -1,0 +1,96 @@
+\hypertarget{interfacestruct}{}\section{struct接口 参考}
+\label{interfacestruct}\index{struct@{struct}}
+类 struct 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.800000cm]{interfacestruct}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacestruct_acfe10488d43964cb63bc2997a2e464b4}\label{interfacestruct_acfe10488d43964cb63bc2997a2e464b4}} 
+enum \{ \newline
+{\bfseries M\+E\+R\+I\+T\+\_\+\+P\+R\+E\+F\+E\+R\+R\+ED} = 0x800000, 
+{\bfseries M\+E\+R\+I\+T\+\_\+\+N\+O\+R\+M\+AL} = 0x600000, 
+{\bfseries M\+E\+R\+I\+T\+\_\+\+U\+N\+L\+I\+K\+E\+LY} = 0x400000, 
+{\bfseries M\+E\+R\+I\+T\+\_\+\+D\+O\+\_\+\+N\+O\+T\+\_\+\+U\+SE} = 0x200000, 
+\newline
+{\bfseries M\+E\+R\+I\+T\+\_\+\+S\+W\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+OR} = 0x100000, 
+{\bfseries M\+E\+R\+I\+T\+\_\+\+H\+W\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+OR} = 0x100050
+ \}
+\item 
+\mbox{\Hypertarget{interfacestruct_a83f37c689f4aa79975b7b92fa4dc7199}\label{interfacestruct_a83f37c689f4aa79975b7b92fa4dc7199}} 
+typedef I\+Enum\+S\+T\+A\+T\+P\+R\+O\+P\+S\+E\+T\+S\+TG $\ast$ {\bfseries L\+P\+E\+N\+U\+M\+S\+T\+A\+T\+P\+R\+O\+P\+S\+E\+T\+S\+TG}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacestruct_ac30e6d4eb24aa637df61b0efa1617260}\label{interfacestruct_ac30e6d4eb24aa637df61b0efa1617260}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Filter} (\mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} clsid, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR \hyperlink{struct_name_rec__}{Name}, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Merit)
+\item 
+\mbox{\Hypertarget{interfacestruct_ab1cdee604caa174cc4654f2f2eca465e}\label{interfacestruct_ab1cdee604caa174cc4654f2f2eca465e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Filter\+Instance} (\mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} clsid, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR \hyperlink{struct_name_rec__}{Name}, \mbox{[}out\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} $\ast$M\+R\+Id)
+\item 
+\mbox{\Hypertarget{interfacestruct_a5d40d722517fc4850ec89db6b0ef1da9}\label{interfacestruct_a5d40d722517fc4850ec89db6b0ef1da9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Pin} (\mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} Filter, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR \hyperlink{struct_name_rec__}{Name}, \mbox{[}in\mbox{]} B\+O\+OL b\+Rendered, \mbox{[}in\mbox{]} B\+O\+OL b\+Output, \mbox{[}in\mbox{]} B\+O\+OL b\+Zero, \mbox{[}in\mbox{]} B\+O\+OL b\+Many, \mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} Connects\+To\+Filter, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR Connects\+To\+Pin)
+\item 
+\mbox{\Hypertarget{interfacestruct_a9ef9dd89f2b80105fd91953249b985be}\label{interfacestruct_a9ef9dd89f2b80105fd91953249b985be}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Pin\+Type} (\mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} cls\+Filter, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR str\+Name, \mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} cls\+Major\+Type, \mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} cls\+Sub\+Type)
+\item 
+\mbox{\Hypertarget{interfacestruct_a536c485a15cad46172e494c07ac75b8d}\label{interfacestruct_a536c485a15cad46172e494c07ac75b8d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Filter} (\mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} Filter)
+\item 
+\mbox{\Hypertarget{interfacestruct_a7b4867ebab24530fddb0d22dfa7cf94f}\label{interfacestruct_a7b4867ebab24530fddb0d22dfa7cf94f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Filter\+Instance} (\mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} M\+R\+Id)
+\item 
+\mbox{\Hypertarget{interfacestruct_af51ee7e26b2a540a1500a0acc32d3239}\label{interfacestruct_af51ee7e26b2a540a1500a0acc32d3239}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Pin} (\mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} Filter, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR \hyperlink{struct_name_rec__}{Name})
+\item 
+\mbox{\Hypertarget{interfacestruct_a07c99127408a7eb68d7d1717f5e80327}\label{interfacestruct_a07c99127408a7eb68d7d1717f5e80327}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Matching\+Filters} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_reg_filters}{I\+Enum\+Reg\+Filters} $\ast$$\ast$pp\+Enum, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Merit, \mbox{[}in\mbox{]} B\+O\+OL b\+Input\+Needed, \mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} cls\+In\+Maj, \mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} cls\+In\+Sub, \mbox{[}in\mbox{]} B\+O\+OL b\+Render, \mbox{[}in\mbox{]} B\+O\+OL b\+Outut\+Needed, \mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} cls\+Out\+Maj, \mbox{[}in\mbox{]} \hyperlink{struct___i_i_d}{C\+L\+S\+ID} cls\+Out\+Sub)
+\item 
+\mbox{\Hypertarget{interfacestruct_a74de188e2a7d3c1895669054238c0ed7}\label{interfacestruct_a74de188e2a7d3c1895669054238c0ed7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Error\+Tolerance} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Tolerance)
+\item 
+\mbox{\Hypertarget{interfacestruct_af8d9857012b44df8d040cc4283f54311}\label{interfacestruct_af8d9857012b44df8d040cc4283f54311}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Error\+Tolerance} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Tolerance)
+\item 
+\mbox{\Hypertarget{interfacestruct_a3825dcfc927dc660a9124c75698a3d0a}\label{interfacestruct_a3825dcfc927dc660a9124c75698a3d0a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Activate} (\mbox{[}in\mbox{]} R\+E\+F\+I\+ID iid, \mbox{[}in\mbox{]} \hyperlink{interface_i_m_m_device}{I\+M\+M\+Device} $\ast$p\+Device, \mbox{[}in\mbox{]} P\+R\+O\+P\+V\+A\+R\+I\+A\+NT $\ast$p\+Activation\+Params, \mbox{[}out, iid\+\_\+is(iid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv)
+\item 
+\mbox{\Hypertarget{interfacestruct_a154edc5db7c7cc172d206aff8d35d944}\label{interfacestruct_a154edc5db7c7cc172d206aff8d35d944}} 
+H\+R\+E\+S\+U\+LT {\bfseries Next} (\mbox{[}in\mbox{]} U\+L\+O\+NG celt, \mbox{[}out, size\+\_\+is(celt), length\+\_\+is($\ast$pcelt\+Fetched)\mbox{]} S\+T\+A\+T\+P\+R\+O\+P\+S\+E\+T\+S\+TG $\ast$rgelt, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcelt\+Fetched)
+\item 
+\mbox{\Hypertarget{interfacestruct_a5cb4391d5bf99491d3849a3c17989b76}\label{interfacestruct_a5cb4391d5bf99491d3849a3c17989b76}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Next} (\mbox{[}in\mbox{]} U\+L\+O\+NG celt, \mbox{[}out, size\+\_\+is(celt), length\+\_\+is($\ast$pcelt\+Fetched)\mbox{]} S\+T\+A\+T\+P\+R\+O\+P\+S\+E\+T\+S\+TG $\ast$rgelt, \mbox{[}out\mbox{]} U\+L\+O\+NG $\ast$pcelt\+Fetched)
+\item 
+\mbox{\Hypertarget{interfacestruct_a146b9cbfedb8c62ad65b067e56881fef}\label{interfacestruct_a146b9cbfedb8c62ad65b067e56881fef}} 
+H\+R\+E\+S\+U\+LT {\bfseries Skip} (\mbox{[}in\mbox{]} U\+L\+O\+NG celt)
+\item 
+\mbox{\Hypertarget{interfacestruct_a84c08d68e88d6008b6c3dccab2a56572}\label{interfacestruct_a84c08d68e88d6008b6c3dccab2a56572}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{interfacestruct_af0d0b4bd8644620474c0662bc326d70f}\label{interfacestruct_af0d0b4bd8644620474c0662bc326d70f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Clone} (\mbox{[}out\mbox{]} I\+Enum\+S\+T\+A\+T\+P\+R\+O\+P\+S\+E\+T\+S\+TG $\ast$$\ast$ppenum)
+\item 
+\mbox{\Hypertarget{interfacestruct_ae108c5a056603502fc519dc7ca671647}\label{interfacestruct_ae108c5a056603502fc519dc7ca671647}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Zone\+Attributes\+Ex} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Zone, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{struct_i_internet_zone_manager_1_1___z_o_n_e_a_t_t_r_i_b_u_t_e_s}{Z\+O\+N\+E\+A\+T\+T\+R\+I\+B\+U\+T\+ES} $\ast$p\+Zone\+Attributes, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interfacestruct_ad8db36f1c698b289ba5cb3421b09951a}\label{interfacestruct_ad8db36f1c698b289ba5cb3421b09951a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Zone\+Security\+State} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Zone\+Index, \mbox{[}in\mbox{]} B\+O\+OL f\+Respect\+Policy, \mbox{[}in, out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+State, \mbox{[}in, out\mbox{]} B\+O\+OL $\ast$pf\+Policy\+Encountered)
+\item 
+\mbox{\Hypertarget{interfacestruct_a3f5c0112c9a3220fdc508014c83660cf}\label{interfacestruct_a3f5c0112c9a3220fdc508014c83660cf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+I\+E\+Security\+State} (\mbox{[}in\mbox{]} B\+O\+OL f\+Respect\+Policy, \mbox{[}in, out\mbox{]} L\+P\+D\+W\+O\+RD pdw\+State, \mbox{[}in, out\mbox{]} B\+O\+OL $\ast$pf\+Policy\+Encountered, \mbox{[}in\mbox{]} B\+O\+OL f\+No\+Cache)
+\item 
+\mbox{\Hypertarget{interfacestruct_a020f1077782923895f7f7899874bd50f}\label{interfacestruct_a020f1077782923895f7f7899874bd50f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Fix\+Insecure\+Settings} (\hyperlink{interfacevoid}{void})
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/axextend.\+idl\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/propidl.\+idl\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/mmdeviceapi.\+idl\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/urlmon.\+idl\end{DoxyCompactItemize}

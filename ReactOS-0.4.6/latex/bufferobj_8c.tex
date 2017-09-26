@@ -1,0 +1,171 @@
+\hypertarget{bufferobj_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/bufferobj.c 文件参考}
+\label{bufferobj_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/bufferobj.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/bufferobj.\+c}}
+
+
+Functions for the G\+L\+\_\+\+A\+R\+B\+\_\+vertex/pixel\+\_\+buffer\+\_\+object extensions.  
+
+
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{bufferobj_8c_a7bf958a4212f187195e01a949aa400c0}{\+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object\+\_\+} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$$\ast$ptr, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$buf\+Obj)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{bufferobj_8c_a637b807cff312c66e4ce6f64f7817983}{\+\_\+mesa\+\_\+initialize\+\_\+buffer\+\_\+object} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$obj, G\+Luint \hyperlink{structname}{name}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{bufferobj_8c_aa12781c11b0d448bcfe223ca3f7047ad}{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+objects} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{bufferobj_8c_ab337f2eecb21e18b59b9d3c814b8219f}{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+buffer\+\_\+objects} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$ \hyperlink{bufferobj_8c_a5064c3412d9f5fc51aa7cf40a39fea92}{\+\_\+mesa\+\_\+lookup\+\_\+bufferobj} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint buffer)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{bufferobj_8c_a6e5d8b74527bf37d7e7e227f1dc615c4}{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+object\+\_\+functions} (\hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} $\ast$driver)
+\item 
+\mbox{\Hypertarget{bufferobj_8c_ac61c3b9d42001c4d9316e1a7c203f7ec}\label{bufferobj_8c_ac61c3b9d42001c4d9316e1a7c203f7ec}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Bind\+Buffer\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Luint buffer)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{bufferobj_8c_af6ef264b3dfdfcb2a813b9803d729815}{\+\_\+mesa\+\_\+\+Delete\+Buffers\+A\+RB} (G\+Lsizei n, const G\+Luint $\ast$ids)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{bufferobj_8c_a1a5e2a9e452434b33843a4ae4b463740}{\+\_\+mesa\+\_\+\+Gen\+Buffers\+A\+RB} (G\+Lsizei n, G\+Luint $\ast$buffer)
+\item 
+G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{bufferobj_8c_ac091f487c3541fd37c72273022b2e8bb}{\+\_\+mesa\+\_\+\+Is\+Buffer\+A\+RB} (G\+Luint id)
+\item 
+\mbox{\Hypertarget{bufferobj_8c_a521f55ca5a65d9920da4cd9594be06b7}\label{bufferobj_8c_a521f55ca5a65d9920da4cd9594be06b7}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Buffer\+Data\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lsizeiptr\+A\+RB size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data, \hyperlink{interfacevoid}{G\+Lenum} usage)
+\item 
+\mbox{\Hypertarget{bufferobj_8c_a1e98636a22e0a2a4431cf24a432307ce}\label{bufferobj_8c_a1e98636a22e0a2a4431cf24a432307ce}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Buffer\+Sub\+Data\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lintptr\+A\+RB offset, G\+Lsizeiptr\+A\+RB size, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$data)
+\item 
+\mbox{\Hypertarget{bufferobj_8c_a8a723e8402e1b3f429d6196cedbd9d44}\label{bufferobj_8c_a8a723e8402e1b3f429d6196cedbd9d44}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Get\+Buffer\+Sub\+Data\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lintptr\+A\+RB offset, G\+Lsizeiptr\+A\+RB size, \hyperlink{interfacevoid}{void} $\ast$data)
+\item 
+\mbox{\Hypertarget{bufferobj_8c_ab5a4f1f71725640aab6201f6c540a92e}\label{bufferobj_8c_ab5a4f1f71725640aab6201f6c540a92e}} 
+\hyperlink{interfacevoid}{void} $\ast$G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Map\+Buffer\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} access)
+\item 
+\mbox{\Hypertarget{bufferobj_8c_aa16c730fb14b04091cd7343843e4656d}\label{bufferobj_8c_aa16c730fb14b04091cd7343843e4656d}} 
+G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Unmap\+Buffer\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\mbox{\Hypertarget{bufferobj_8c_ac4f2b3b4a284ff19572ced98bc6881c4}\label{bufferobj_8c_ac4f2b3b4a284ff19572ced98bc6881c4}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteriv\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, G\+Lint $\ast$params)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{bufferobj_8c_a576e356bb5bf30c0db96a5d6dbb9e7b9}{\+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteri64v} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, G\+Lint64 $\ast$params)
+\item 
+\mbox{\Hypertarget{bufferobj_8c_a56109d3c13a21700c3a84d164fe70c54}\label{bufferobj_8c_a56109d3c13a21700c3a84d164fe70c54}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Get\+Buffer\+Pointerv\+A\+RB} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{pname}, \hyperlink{interfacevoid}{G\+Lvoid} $\ast$$\ast$params)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{bufferobj_8c_a7885551bc70baeb2a888b9cac6f0a3cd}{\+\_\+mesa\+\_\+\+Map\+Buffer\+Range} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lintptr offset, G\+Lsizeiptr length, G\+Lbitfield access)
+\item 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \hyperlink{bufferobj_8c_aa94c05cfc502aa2b5c188242ba200912}{\+\_\+mesa\+\_\+\+Flush\+Mapped\+Buffer\+Range} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lintptr offset, G\+Lsizeiptr length)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions for the G\+L\+\_\+\+A\+R\+B\+\_\+vertex/pixel\+\_\+buffer\+\_\+object extensions. 
+
+\begin{DoxyAuthor}{作者}
+Brian Paul, Ian Romanick 
+\end{DoxyAuthor}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{bufferobj_8c_af6ef264b3dfdfcb2a813b9803d729815}\label{bufferobj_8c_af6ef264b3dfdfcb2a813b9803d729815}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+\+Delete\+Buffers\+A\+RB@{\+\_\+mesa\+\_\+\+Delete\+Buffers\+A\+RB}}
+\index{\+\_\+mesa\+\_\+\+Delete\+Buffers\+A\+RB@{\+\_\+mesa\+\_\+\+Delete\+Buffers\+A\+RB}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Delete\+Buffers\+A\+R\+B()}{\_mesa\_DeleteBuffersARB()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Delete\+Buffers\+A\+RB (\begin{DoxyParamCaption}\item[{G\+Lsizei}]{n,  }\item[{const G\+Luint $\ast$}]{ids }\end{DoxyParamCaption})}
+
+Delete a set of buffer objects.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & Number of buffer objects to delete. \\
+\hline
+{\em ids} & Array of {\ttfamily n} buffer object I\+Ds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bufferobj_8c_aa94c05cfc502aa2b5c188242ba200912}\label{bufferobj_8c_aa94c05cfc502aa2b5c188242ba200912}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+\+Flush\+Mapped\+Buffer\+Range@{\+\_\+mesa\+\_\+\+Flush\+Mapped\+Buffer\+Range}}
+\index{\+\_\+mesa\+\_\+\+Flush\+Mapped\+Buffer\+Range@{\+\_\+mesa\+\_\+\+Flush\+Mapped\+Buffer\+Range}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Flush\+Mapped\+Buffer\+Range()}{\_mesa\_FlushMappedBufferRange()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Flush\+Mapped\+Buffer\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Lintptr}]{offset,  }\item[{G\+Lsizeiptr}]{length }\end{DoxyParamCaption})}
+
+See G\+L\+\_\+\+A\+R\+B\+\_\+map\+\_\+buffer\+\_\+range spec \mbox{\Hypertarget{bufferobj_8c_a1a5e2a9e452434b33843a4ae4b463740}\label{bufferobj_8c_a1a5e2a9e452434b33843a4ae4b463740}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+\+Gen\+Buffers\+A\+RB@{\+\_\+mesa\+\_\+\+Gen\+Buffers\+A\+RB}}
+\index{\+\_\+mesa\+\_\+\+Gen\+Buffers\+A\+RB@{\+\_\+mesa\+\_\+\+Gen\+Buffers\+A\+RB}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Gen\+Buffers\+A\+R\+B()}{\_mesa\_GenBuffersARB()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Gen\+Buffers\+A\+RB (\begin{DoxyParamCaption}\item[{G\+Lsizei}]{n,  }\item[{G\+Luint $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+Generate a set of unique buffer object I\+Ds and store them in {\ttfamily buffer}.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & Number of I\+Ds to generate. \\
+\hline
+{\em buffer} & Array of {\ttfamily n} locations to store the I\+Ds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bufferobj_8c_a576e356bb5bf30c0db96a5d6dbb9e7b9}\label{bufferobj_8c_a576e356bb5bf30c0db96a5d6dbb9e7b9}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteri64v@{\+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteri64v}}
+\index{\+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteri64v@{\+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteri64v}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteri64v()}{\_mesa\_GetBufferParameteri64v()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Get\+Buffer\+Parameteri64v (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{pname,  }\item[{G\+Lint64 $\ast$}]{params }\end{DoxyParamCaption})}
+
+New in GL 3.\+2 \hyperlink{namespace_this}{This} is pretty much a duplicate of Get\+Buffer\+Parameteriv() but the G\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+RB attribute will be 64-\/bits on a 64-\/bit system. \mbox{\Hypertarget{bufferobj_8c_a6e5d8b74527bf37d7e7e227f1dc615c4}\label{bufferobj_8c_a6e5d8b74527bf37d7e7e227f1dc615c4}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+object\+\_\+functions@{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+object\+\_\+functions}}
+\index{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+object\+\_\+functions@{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+object\+\_\+functions}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+object\+\_\+functions()}{\_mesa\_init\_buffer\_object\_functions()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+object\+\_\+functions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structdd__function__table}{dd\+\_\+function\+\_\+table} $\ast$}]{driver }\end{DoxyParamCaption})}
+
+Plug default/fallback buffer object functions into the device driver hooks. \mbox{\Hypertarget{bufferobj_8c_aa12781c11b0d448bcfe223ca3f7047ad}\label{bufferobj_8c_aa12781c11b0d448bcfe223ca3f7047ad}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+objects@{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+objects}}
+\index{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+objects@{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+objects}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+objects()}{\_mesa\_init\_buffer\_objects()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+buffer\+\_\+objects (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialize the state associated with buffer objects \mbox{\Hypertarget{bufferobj_8c_a637b807cff312c66e4ce6f64f7817983}\label{bufferobj_8c_a637b807cff312c66e4ce6f64f7817983}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+initialize\+\_\+buffer\+\_\+object@{\+\_\+mesa\+\_\+initialize\+\_\+buffer\+\_\+object}}
+\index{\+\_\+mesa\+\_\+initialize\+\_\+buffer\+\_\+object@{\+\_\+mesa\+\_\+initialize\+\_\+buffer\+\_\+object}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+initialize\+\_\+buffer\+\_\+object()}{\_mesa\_initialize\_buffer\_object()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+initialize\+\_\+buffer\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$}]{obj,  }\item[{G\+Luint}]{name,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+Initialize a buffer object to default values. \mbox{\Hypertarget{bufferobj_8c_ac091f487c3541fd37c72273022b2e8bb}\label{bufferobj_8c_ac091f487c3541fd37c72273022b2e8bb}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+\+Is\+Buffer\+A\+RB@{\+\_\+mesa\+\_\+\+Is\+Buffer\+A\+RB}}
+\index{\+\_\+mesa\+\_\+\+Is\+Buffer\+A\+RB@{\+\_\+mesa\+\_\+\+Is\+Buffer\+A\+RB}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Is\+Buffer\+A\+R\+B()}{\_mesa\_IsBufferARB()}}
+{\footnotesize\ttfamily G\+Lboolean G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Is\+Buffer\+A\+RB (\begin{DoxyParamCaption}\item[{G\+Luint}]{id }\end{DoxyParamCaption})}
+
+Determine if ID is the name of a buffer object.
+
+
+\begin{DoxyParams}{参数}
+{\em id} & ID of the potential buffer object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+{\ttfamily G\+L\+\_\+\+T\+R\+UE} if {\ttfamily id} is the name of a buffer object, {\ttfamily G\+L\+\_\+\+F\+A\+L\+SE} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bufferobj_8c_a5064c3412d9f5fc51aa7cf40a39fea92}\label{bufferobj_8c_a5064c3412d9f5fc51aa7cf40a39fea92}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+lookup\+\_\+bufferobj@{\+\_\+mesa\+\_\+lookup\+\_\+bufferobj}}
+\index{\+\_\+mesa\+\_\+lookup\+\_\+bufferobj@{\+\_\+mesa\+\_\+lookup\+\_\+bufferobj}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+lookup\+\_\+bufferobj()}{\_mesa\_lookup\_bufferobj()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object}$\ast$ \+\_\+mesa\+\_\+lookup\+\_\+bufferobj (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Luint}]{buffer }\end{DoxyParamCaption})}
+
+Return the \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} for the given ID. Always return N\+U\+LL for ID 0. \mbox{\Hypertarget{bufferobj_8c_a7885551bc70baeb2a888b9cac6f0a3cd}\label{bufferobj_8c_a7885551bc70baeb2a888b9cac6f0a3cd}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+\+Map\+Buffer\+Range@{\+\_\+mesa\+\_\+\+Map\+Buffer\+Range}}
+\index{\+\_\+mesa\+\_\+\+Map\+Buffer\+Range@{\+\_\+mesa\+\_\+\+Map\+Buffer\+Range}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+\+Map\+Buffer\+Range()}{\_mesa\_MapBufferRange()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ G\+L\+A\+P\+I\+E\+N\+T\+RY \+\_\+mesa\+\_\+\+Map\+Buffer\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Lintptr}]{offset,  }\item[{G\+Lsizeiptr}]{length,  }\item[{G\+Lbitfield}]{access }\end{DoxyParamCaption})}
+
+See G\+L\+\_\+\+A\+R\+B\+\_\+map\+\_\+buffer\+\_\+range spec \mbox{\Hypertarget{bufferobj_8c_a7bf958a4212f187195e01a949aa400c0}\label{bufferobj_8c_a7bf958a4212f187195e01a949aa400c0}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object\+\_\+@{\+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object\+\_\+}}
+\index{\+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object\+\_\+@{\+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object\+\_\+}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object\+\_\+()}{\_mesa\_reference\_buffer\_object\_()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object\+\_\+ (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$$\ast$}]{ptr,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__buffer__object}{gl\+\_\+buffer\+\_\+object} $\ast$}]{buf\+Obj }\end{DoxyParamCaption})}
+
+Set ptr to buf\+Obj w/ reference counting. \hyperlink{namespace_this}{This} is normally only called from the \+\_\+mesa\+\_\+reference\+\_\+buffer\+\_\+object() macro when there\textquotesingle{}s a real pointer change. \mbox{\Hypertarget{bufferobj_8c_ab337f2eecb21e18b59b9d3c814b8219f}\label{bufferobj_8c_ab337f2eecb21e18b59b9d3c814b8219f}} 
+\index{bufferobj.\+c@{bufferobj.\+c}!\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+buffer\+\_\+objects@{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+buffer\+\_\+objects}}
+\index{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+buffer\+\_\+objects@{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+buffer\+\_\+objects}!bufferobj.\+c@{bufferobj.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+buffer\+\_\+objects()}{\_mesa\_update\_default\_objects\_buffer\_objects()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+update\+\_\+default\+\_\+objects\+\_\+buffer\+\_\+objects (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Update the default buffer objects in the given context to reference those specified in the shared state and release those referencing the old shared state. 

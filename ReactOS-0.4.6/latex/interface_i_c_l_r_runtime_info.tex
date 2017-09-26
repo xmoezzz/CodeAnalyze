@@ -1,0 +1,53 @@
+\hypertarget{interface_i_c_l_r_runtime_info}{}\section{I\+C\+L\+R\+Runtime\+Info接口 参考}
+\label{interface_i_c_l_r_runtime_info}\index{I\+C\+L\+R\+Runtime\+Info@{I\+C\+L\+R\+Runtime\+Info}}
+类 I\+C\+L\+R\+Runtime\+Info 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_c_l_r_runtime_info}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_aeb5b3d22fd003afeb1ec91f4ab80ef60}\label{interface_i_c_l_r_runtime_info_aeb5b3d22fd003afeb1ec91f4ab80ef60}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Version\+String} (\mbox{[}out, size\+\_\+is($\ast$pcch\+Buffer)\mbox{]} L\+P\+W\+S\+TR pwz\+Buffer, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Buffer)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_adf4d82eb6be5eb55b842324637ae21f1}\label{interface_i_c_l_r_runtime_info_adf4d82eb6be5eb55b842324637ae21f1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Runtime\+Directory} (\mbox{[}out, size\+\_\+is($\ast$pcch\+Buffer)\mbox{]} L\+P\+W\+S\+TR pwz\+Buffer, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Buffer)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_aa26cd0b8147fd3e33952c52d0559afa9}\label{interface_i_c_l_r_runtime_info_aa26cd0b8147fd3e33952c52d0559afa9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Loaded} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} hnd\+Process, \mbox{[}out, retval\mbox{]} B\+O\+OL $\ast$pb\+Loaded)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_a927d96caacc244a00779d9656ccefa07}\label{interface_i_c_l_r_runtime_info_a927d96caacc244a00779d9656ccefa07}} 
+H\+R\+E\+S\+U\+LT {\bfseries Load\+Error\+String} (\mbox{[}in\mbox{]} U\+I\+NT i\+Resource\+ID, \mbox{[}out, size\+\_\+is($\ast$pcch\+Buffer)\mbox{]} L\+P\+W\+S\+TR pwz\+Buffer, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Buffer, \mbox{[}in\mbox{]} L\+O\+NG i\+Localeid)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_a09edc4f387ebd8c2b72d0168755a634a}\label{interface_i_c_l_r_runtime_info_a09edc4f387ebd8c2b72d0168755a634a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Load\+Library} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Dll\+Name, \mbox{[}out, retval\mbox{]} \hyperlink{interfacevoid}{H\+M\+O\+D\+U\+LE} $\ast$phnd\+Module)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_a916c0a43e0203cf0bbac1c2446762ebb}\label{interface_i_c_l_r_runtime_info_a916c0a43e0203cf0bbac1c2446762ebb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Proc\+Address} (\mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Proc\+Name, \mbox{[}out, retval\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} $\ast$pp\+Proc)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_acacbf1e505341f97ac4b82ff0a2641d2}\label{interface_i_c_l_r_runtime_info_acacbf1e505341f97ac4b82ff0a2641d2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Interface} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid), retval\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} $\ast$pp\+Unk)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_a20010106b21d2f069d38a72dbf36e0ff}\label{interface_i_c_l_r_runtime_info_a20010106b21d2f069d38a72dbf36e0ff}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Loadable} (\mbox{[}out, retval\mbox{]} B\+O\+OL $\ast$pb\+Loadable)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_a6b7e7fc1fc36ef26d48ef0a10a3eb785}\label{interface_i_c_l_r_runtime_info_a6b7e7fc1fc36ef26d48ef0a10a3eb785}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Default\+Startup\+Flags} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Startup\+Flags, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Host\+Config\+File)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_a2c432c944d02ea4912034565fc1ea726}\label{interface_i_c_l_r_runtime_info_a2c432c944d02ea4912034565fc1ea726}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Default\+Startup\+Flags} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Startup\+Flags, \mbox{[}out, size\+\_\+is($\ast$pcch\+Host\+Config\+File)\mbox{]} L\+P\+W\+S\+TR pwz\+Host\+Config\+File, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcch\+Host\+Config\+File)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_abac41fa4058bd607a0e302d297f61db4}\label{interface_i_c_l_r_runtime_info_abac41fa4058bd607a0e302d297f61db4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Bind\+As\+Legacy\+V2\+Runtime} ()
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_info_ae07db2687b4ace7dde139940515827b6}\label{interface_i_c_l_r_runtime_info_ae07db2687b4ace7dde139940515827b6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Started} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$pb\+Started, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Startup\+Flags)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/metahost.\+idl\end{DoxyCompactItemize}

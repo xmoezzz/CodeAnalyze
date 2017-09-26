@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: tcpip_msg结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structtcpip__msg-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">tcpip_msg结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a5b992b509c516199c800c913993574c1"><td class="memItemLeft" align="right" valign="top"><a id="a5b992b509c516199c800c913993574c1"></a>
+<a class="el" href="interfaceenum.html">enum</a> tcpip_msg_type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:a5b992b509c516199c800c913993574c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b745804255e3b227ec2f5ef0f8e136"><td class="memItemLeft" align="right" valign="top"><a id="a68b745804255e3b227ec2f5ef0f8e136"></a>
+<a class="el" href="struct__sys__sem__t.html">sys_sem_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sem</b></td></tr>
+<tr class="separator:a68b745804255e3b227ec2f5ef0f8e136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359112f6e62a4735a26e41596e7da914"><td class="memItemLeft" ><a id="a359112f6e62a4735a26e41596e7da914"></a>
+union {</td></tr>
+<tr class="memitem:a404e5eae437114a6f55a418c40a19e29"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a4016fc11a184213eaf0150ba05b388b2"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structpbuf.html">pbuf</a> *&#160;&#160;&#160;<b>p</b></td></tr>
+<tr class="separator:a4016fc11a184213eaf0150ba05b388b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbc44b3072b829c111cacaefc614d6a"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structnetif.html">netif</a> *&#160;&#160;&#160;<b>netif</b></td></tr>
+<tr class="separator:abbbc44b3072b829c111cacaefc614d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404e5eae437114a6f55a418c40a19e29"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>inp</b></td></tr>
+<tr class="separator:a404e5eae437114a6f55a418c40a19e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ce3e65cbeaab7b295e50ce259f52b4"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a8f15e0b1f61249b7817a56897307204f"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;tcpip_callback_fn&#160;&#160;&#160;<b>function</b></td></tr>
+<tr class="separator:a8f15e0b1f61249b7817a56897307204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8928f8b9c0fe5a713920a70543503f29"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="interfacevoid.html">void</a> *&#160;&#160;&#160;<b>ctx</b></td></tr>
+<tr class="separator:a8928f8b9c0fe5a713920a70543503f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ce3e65cbeaab7b295e50ce259f52b4"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>cb</b></td></tr>
+<tr class="separator:aa5ce3e65cbeaab7b295e50ce259f52b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359112f6e62a4735a26e41596e7da914"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>msg</b></td></tr>
+<tr class="separator:a359112f6e62a4735a26e41596e7da914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/lib/drivers/lwip/src/include/lwip/<a class="el" href="sdk_2lib_2drivers_2lwip_2src_2include_2lwip_2tcpip_8h_source.html">tcpip.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

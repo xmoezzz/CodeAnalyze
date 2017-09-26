@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/base/applications/network/telnet/src/tncon.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_c1b2e0909f1c4310dd91c770835bdebd.html">base</a></li><li class="navelem"><a class="el" href="dir_4c9ae90bc7172d82b0d81dd39614066e.html">applications</a></li><li class="navelem"><a class="el" href="dir_57e1c7e79c087c805b9143a98b7bf6e6.html">network</a></li><li class="navelem"><a class="el" href="dir_1ca346a31a1f76b91947f80d535d5906.html">telnet</a></li><li class="navelem"><a class="el" href="dir_91c2276bd4381a435ef0d06eaaa4cc8f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tncon.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;tparams.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//#include &quot;tnclip.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//#include &quot;ttelhndl.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">enum</span> {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    SC_UP,</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    SC_DOWN,</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    SC_ESC,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    SC_MOUSE</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">enum</span> {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    TNNOCON,</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    TNPROMPT,</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    TNSCROLLBACK,</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    TNSPAWN,</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    TNDONE</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> telProcessConsole(<a class="code" href="struct_net_params.html">NetParams</a> *pParams, <a class="code" href="class_key_translator.html">KeyTranslator</a> &amp;KeyTrans,</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                      <a class="code" href="class_t_console.html">TConsole</a> &amp;Console, <a class="code" href="class_t_network.html">TNetwork</a> &amp;Network, <a class="code" href="class_t_mouse.html">TMouse</a> &amp;Mouse,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                      <a class="code" href="class_tnclip.html">Tnclip</a> &amp;Clipboard, <a class="code" href="interfacevoid.html">HANDLE</a> hThread);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;WORD scrollkeys ();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Thomas Briggs 8/17/98</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;BOOL WINAPI ControlEventHandler(DWORD);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Bryan Montgomery 10/14/98</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> setTNetwork(<a class="code" href="class_t_network.html">TNetwork</a>);</div><div class="ttc" id="class_key_translator_html"><div class="ttname"><a href="class_key_translator.html">KeyTranslator</a></div><div class="ttdef"><b>Definition:</b> keytrans.h:51</div></div>
+<div class="ttc" id="class_t_mouse_html"><div class="ttname"><a href="class_t_mouse.html">TMouse</a></div><div class="ttdef"><b>Definition:</b> tmouse.h:6</div></div>
+<div class="ttc" id="struct_net_params_html"><div class="ttname"><a href="struct_net_params.html">NetParams</a></div><div class="ttdef"><b>Definition:</b> tparams.h:5</div></div>
+<div class="ttc" id="class_t_console_html"><div class="ttname"><a href="class_t_console.html">TConsole</a></div><div class="ttdef"><b>Definition:</b> tconsole.h:60</div></div>
+<div class="ttc" id="class_tnclip_html"><div class="ttname"><a href="class_tnclip.html">Tnclip</a></div><div class="ttdef"><b>Definition:</b> tnclip.h:6</div></div>
+<div class="ttc" id="class_t_network_html"><div class="ttname"><a href="class_t_network.html">TNetwork</a></div><div class="ttdef"><b>Definition:</b> tnetwork.h:12</div></div>
+<div class="ttc" id="interfacevoid_html"><div class="ttname"><a href="interfacevoid.html">void</a></div><div class="ttdef"><b>Definition:</b> nsiface.idl:2306</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

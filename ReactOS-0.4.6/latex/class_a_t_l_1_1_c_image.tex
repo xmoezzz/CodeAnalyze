@@ -1,0 +1,326 @@
+\hypertarget{class_a_t_l_1_1_c_image}{}\section{A\+TL\+:\+:C\+Image类 参考}
+\label{class_a_t_l_1_1_c_image}\index{A\+T\+L\+::\+C\+Image@{A\+T\+L\+::\+C\+Image}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_t_l_1_1_c_image_1_1_c_o_m_m_o_n}{C\+O\+M\+M\+ON}
+\item 
+struct \hyperlink{struct_a_t_l_1_1_c_image_1_1_e_x_t_e_n_s_i_o_n___e_n_t_r_y}{E\+X\+T\+E\+N\+S\+I\+O\+N\+\_\+\+E\+N\+T\+RY}
+\item 
+struct \hyperlink{struct_a_t_l_1_1_c_image_1_1_f_i_l_t_e_r___d_a_t_a}{F\+I\+L\+T\+E\+R\+\_\+\+D\+A\+TA}
+\item 
+struct \hyperlink{struct_a_t_l_1_1_c_image_1_1_f_o_r_m_a_t___e_n_t_r_y}{F\+O\+R\+M\+A\+T\+\_\+\+E\+N\+T\+RY}
+\item 
+struct \hyperlink{struct_a_t_l_1_1_c_image_1_1_m_y_b_i_t_m_a_p_i_n_f_o_e_x}{M\+Y\+B\+I\+T\+M\+A\+P\+I\+N\+F\+O\+EX}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a6f4ceacb435d28a640f178fa409343ec}\label{class_a_t_l_1_1_c_image_a6f4ceacb435d28a640f178fa409343ec}} 
+enum \{ {\bfseries create\+Alpha\+Channel} = 1
+ \}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a6ae8d1e6eadfeafe7abe9ef0dcd5a3aa}\label{class_a_t_l_1_1_c_image_a6ae8d1e6eadfeafe7abe9ef0dcd5a3aa}} 
+enum {\bfseries D\+I\+B\+Orientation} \{ {\bfseries D\+I\+B\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}, 
+{\bfseries D\+I\+B\+O\+R\+\_\+\+B\+O\+T\+T\+O\+M\+UP}, 
+{\bfseries D\+I\+B\+O\+R\+\_\+\+T\+O\+P\+D\+O\+WN}
+ \}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_afaebabf047d6248b69dc09a5d3b3e5da}\label{class_a_t_l_1_1_c_image_afaebabf047d6248b69dc09a5d3b3e5da}} 
+enum {\bfseries Exclude\+Flags} \{ \newline
+{\bfseries exclude\+G\+IF} = 0x01, 
+{\bfseries exclude\+B\+MP} = 0x02, 
+{\bfseries exclude\+E\+MF} = 0x04, 
+{\bfseries exclude\+W\+MF} = 0x08, 
+\newline
+{\bfseries exclude\+J\+P\+EG} = 0x10, 
+{\bfseries exclude\+P\+NG} = 0x20, 
+{\bfseries exclude\+T\+I\+FF} = 0x40, 
+{\bfseries exclude\+Icon} = 0x80, 
+\newline
+{\bfseries exclude\+Other} = 0x80000000, 
+{\bfseries exclude\+Default\+Load} = 0, 
+{\bfseries exclude\+Default\+Save} = exclude\+Icon $\vert$ exclude\+E\+MF $\vert$ exclude\+W\+MF
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a976492a58d6e0eac8010973aa80ef5a2}\label{class_a_t_l_1_1_c_image_a976492a58d6e0eac8010973aa80ef5a2}} 
+{\bfseries operator H\+B\+I\+T\+M\+AP} ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a077b963263fa3708df95fe29090d5886}\label{class_a_t_l_1_1_c_image_a077b963263fa3708df95fe29090d5886}} 
+\hyperlink{interfacevoid}{void} {\bfseries Attach} (H\+B\+I\+T\+M\+AP h\+Bitmap, D\+I\+B\+Orientation e\+Orientation=D\+I\+B\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT)
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a8237e4e5114954d1f53f6455bcf91b2f}\label{class_a_t_l_1_1_c_image_a8237e4e5114954d1f53f6455bcf91b2f}} 
+H\+B\+I\+T\+M\+AP {\bfseries Detach} ()  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a6c6935be815d88716a2fe3a10d398db8}\label{class_a_t_l_1_1_c_image_a6c6935be815d88716a2fe3a10d398db8}} 
+H\+DC {\bfseries Get\+DC} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a99460fbf76b878e8b66dd05cdac05180}\label{class_a_t_l_1_1_c_image_a99460fbf76b878e8b66dd05cdac05180}} 
+\hyperlink{interfacevoid}{void} {\bfseries Release\+DC} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a1c9311117156b20f9a77223c568c3c6f}\label{class_a_t_l_1_1_c_image_a1c9311117156b20f9a77223c568c3c6f}} 
+B\+O\+OL {\bfseries Alpha\+Blend} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, int x\+Src, int y\+Src, int n\+Src\+Width, int n\+Src\+Height, B\+Y\+TE b\+Src\+Alpha=0x\+F\+F, B\+Y\+T\+E b\+Blend\+Op=\+A\+C\+\_\+\+S\+R\+C\+\_\+\+O\+V\+E\+R) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_afbc35d8c7e3dec47fae197b118dd18d0}\label{class_a_t_l_1_1_c_image_afbc35d8c7e3dec47fae197b118dd18d0}} 
+B\+O\+OL {\bfseries Alpha\+Blend} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, B\+Y\+TE b\+Src\+Alpha=0x\+F\+F, B\+Y\+T\+E b\+Blend\+Op=\+A\+C\+\_\+\+S\+R\+C\+\_\+\+O\+V\+E\+R) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a309f54bc56e6d35bba705a2385607429}\label{class_a_t_l_1_1_c_image_a309f54bc56e6d35bba705a2385607429}} 
+B\+O\+OL {\bfseries Alpha\+Blend} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Dest, B\+Y\+TE b\+Src\+Alpha=0x\+F\+F, B\+Y\+T\+E b\+Blend\+Op=\+A\+C\+\_\+\+S\+R\+C\+\_\+\+O\+V\+E\+R) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ac090e2014231cb296fd365c678f746d0}\label{class_a_t_l_1_1_c_image_ac090e2014231cb296fd365c678f746d0}} 
+B\+O\+OL {\bfseries Alpha\+Blend} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Src, B\+Y\+TE b\+Src\+Alpha=0x\+F\+F, B\+Y\+T\+E b\+Blend\+Op=\+A\+C\+\_\+\+S\+R\+C\+\_\+\+O\+V\+E\+R) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a5d9e08f0e10a569bbbfc7155bc38f19c}\label{class_a_t_l_1_1_c_image_a5d9e08f0e10a569bbbfc7155bc38f19c}} 
+B\+O\+OL {\bfseries Bit\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, int x\+Src, int y\+Src, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a1929e8b3407aa9c1525b146f6e18b29d}\label{class_a_t_l_1_1_c_image_a1929e8b3407aa9c1525b146f6e18b29d}} 
+B\+O\+OL {\bfseries Bit\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ad10751bc076707e3bfb6dad450fb6614}\label{class_a_t_l_1_1_c_image_ad10751bc076707e3bfb6dad450fb6614}} 
+B\+O\+OL {\bfseries Bit\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Dest, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a014dfd0d52010953fef341e1b628aa64}\label{class_a_t_l_1_1_c_image_a014dfd0d52010953fef341e1b628aa64}} 
+B\+O\+OL {\bfseries Bit\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Src, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a0a2328019c33d961579c9420f04f8378}\label{class_a_t_l_1_1_c_image_a0a2328019c33d961579c9420f04f8378}} 
+B\+O\+OL {\bfseries Create} (int n\+Width, int n\+Height, int n\+B\+PP, D\+W\+O\+RD dw\+Flags=0)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a3c0c8e255ce5225270b1a77307a27ecb}\label{class_a_t_l_1_1_c_image_a3c0c8e255ce5225270b1a77307a27ecb}} 
+B\+O\+OL {\bfseries Create\+Ex} (int n\+Width, int n\+Height, int n\+B\+PP, D\+W\+O\+RD e\+Compression, const D\+W\+O\+RD $\ast$pdw\+Bitmasks=N\+U\+LL, D\+W\+O\+RD dw\+Flags=0)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a656331813b8fe1fa6032aa740ea433ef}\label{class_a_t_l_1_1_c_image_a656331813b8fe1fa6032aa740ea433ef}} 
+\hyperlink{interfacevoid}{void} {\bfseries Destroy} ()  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_afa945a69ea1d3a892593fce224fbcf67}\label{class_a_t_l_1_1_c_image_afa945a69ea1d3a892593fce224fbcf67}} 
+B\+O\+OL {\bfseries Draw} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, int x\+Src, int y\+Src, int n\+Src\+Width, int n\+Src\+Height) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_af04b4480737a8f64fe74b8708f7c6b0d}\label{class_a_t_l_1_1_c_image_af04b4480737a8f64fe74b8708f7c6b0d}} 
+B\+O\+OL {\bfseries Draw} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Src) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a0291a4f418232386f073a970b510fe13}\label{class_a_t_l_1_1_c_image_a0291a4f418232386f073a970b510fe13}} 
+B\+O\+OL {\bfseries Draw} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a39c4783e91e64aeffb984fcdacd00633}\label{class_a_t_l_1_1_c_image_a39c4783e91e64aeffb984fcdacd00633}} 
+B\+O\+OL {\bfseries Draw} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Dest) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a955c4fb6516a9ec66ae54d1ff87f15ee}\label{class_a_t_l_1_1_c_image_a955c4fb6516a9ec66ae54d1ff87f15ee}} 
+B\+O\+OL {\bfseries Draw} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a8add6f286e143f198a0c721d9fd19309}\label{class_a_t_l_1_1_c_image_a8add6f286e143f198a0c721d9fd19309}} 
+B\+O\+OL {\bfseries Draw} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a58007d3dfdb1ff72b75243b11f73e5e5}\label{class_a_t_l_1_1_c_image_a58007d3dfdb1ff72b75243b11f73e5e5}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries Get\+Bits} ()  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a15c6202e3017d27c5e462994bd90d0ea}\label{class_a_t_l_1_1_c_image_a15c6202e3017d27c5e462994bd90d0ea}} 
+int {\bfseries Get\+B\+PP} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a7f6d922199a09c5cda81ce9073293465}\label{class_a_t_l_1_1_c_image_a7f6d922199a09c5cda81ce9073293465}} 
+\hyperlink{interfacevoid}{void} {\bfseries Get\+Color\+Table} (U\+I\+NT i\+First\+Color, U\+I\+NT n\+Colors, \hyperlink{structtag_r_g_b_q_u_a_d}{R\+G\+B\+Q\+U\+AD} $\ast$prgb\+Colors) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ab957bac092c0d334b2e0752afb32abb7}\label{class_a_t_l_1_1_c_image_ab957bac092c0d334b2e0752afb32abb7}} 
+int {\bfseries Get\+Height} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a3d81b7f050bee0855510bcf8dfc0bc21}\label{class_a_t_l_1_1_c_image_a3d81b7f050bee0855510bcf8dfc0bc21}} 
+int {\bfseries Get\+Max\+Color\+Table\+Entries} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a325edaad7234df4a36a13e69096986c9}\label{class_a_t_l_1_1_c_image_a325edaad7234df4a36a13e69096986c9}} 
+int {\bfseries Get\+Pitch} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ae5e82d9e2d0aaf929ac1f3f98b4f537d}\label{class_a_t_l_1_1_c_image_ae5e82d9e2d0aaf929ac1f3f98b4f537d}} 
+C\+O\+L\+O\+R\+R\+EF {\bfseries Get\+Pixel} (int x, int y) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ad6d3470cd25c66a1e1c81ff4858099a4}\label{class_a_t_l_1_1_c_image_ad6d3470cd25c66a1e1c81ff4858099a4}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries Get\+Pixel\+Address} (int x, int y)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ab70c358b6d12aa864710c62a5e14fa0d}\label{class_a_t_l_1_1_c_image_ab70c358b6d12aa864710c62a5e14fa0d}} 
+C\+O\+L\+O\+R\+R\+EF {\bfseries Get\+Transparent\+Color} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aabca79ffbdcae52f256d7672ece6dd1e}\label{class_a_t_l_1_1_c_image_aabca79ffbdcae52f256d7672ece6dd1e}} 
+int {\bfseries Get\+Width} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_abdc829c5c8fdca2b620b20de87899c73}\label{class_a_t_l_1_1_c_image_abdc829c5c8fdca2b620b20de87899c73}} 
+bool {\bfseries Is\+D\+I\+B\+Section} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aa9ed326f2176fdaa2fa30c960c512bf9}\label{class_a_t_l_1_1_c_image_aa9ed326f2176fdaa2fa30c960c512bf9}} 
+bool {\bfseries Is\+Indexed} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ab287f70c4c66ac616e607deb714f9def}\label{class_a_t_l_1_1_c_image_ab287f70c4c66ac616e607deb714f9def}} 
+bool {\bfseries Is\+Null} () const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a20cc822e23bb1f422aa88cd2457b36c2}\label{class_a_t_l_1_1_c_image_a20cc822e23bb1f422aa88cd2457b36c2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Load} (L\+P\+C\+T\+S\+TR psz\+File\+Name)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a56c6c1ed850d84e6dcc491e5e8946b1b}\label{class_a_t_l_1_1_c_image_a56c6c1ed850d84e6dcc491e5e8946b1b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Load} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a15da9a4cfc91a0eb542c7395926b0bf2}\label{class_a_t_l_1_1_c_image_a15da9a4cfc91a0eb542c7395926b0bf2}} 
+\hyperlink{interfacevoid}{void} {\bfseries Load\+From\+Resource} (\hyperlink{interfacevoid}{H\+I\+N\+S\+T\+A\+N\+CE} h\+Instance, L\+P\+C\+T\+S\+TR psz\+Resource\+Name)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ace24f1e35b53b3db8cd78d387b085106}\label{class_a_t_l_1_1_c_image_ace24f1e35b53b3db8cd78d387b085106}} 
+\hyperlink{interfacevoid}{void} {\bfseries Load\+From\+Resource} (\hyperlink{interfacevoid}{H\+I\+N\+S\+T\+A\+N\+CE} h\+Instance, U\+I\+NT n\+I\+D\+Resource)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a6c3b70ebaa76844c410fa619b0c5df9e}\label{class_a_t_l_1_1_c_image_a6c3b70ebaa76844c410fa619b0c5df9e}} 
+B\+O\+OL {\bfseries Mask\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, int x\+Src, int y\+Src, H\+B\+I\+T\+M\+AP hbm\+Mask, int x\+Mask, int y\+Mask, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ac2085e4ce68e43564585b0d2f4f76eb3}\label{class_a_t_l_1_1_c_image_ac2085e4ce68e43564585b0d2f4f76eb3}} 
+B\+O\+OL {\bfseries Mask\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Src, H\+B\+I\+T\+M\+AP hbm\+Mask, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Mask, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a0f3f5761bf5da9758727de675b32f4aa}\label{class_a_t_l_1_1_c_image_a0f3f5761bf5da9758727de675b32f4aa}} 
+B\+O\+OL {\bfseries Mask\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, H\+B\+I\+T\+M\+AP hbm\+Mask, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a106a35efe68e98fa8d1207f1221b1f14}\label{class_a_t_l_1_1_c_image_a106a35efe68e98fa8d1207f1221b1f14}} 
+B\+O\+OL {\bfseries Mask\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Dest, H\+B\+I\+T\+M\+AP hbm\+Mask, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aa47ccfebb16a29d55b893765fed9f7a5}\label{class_a_t_l_1_1_c_image_aa47ccfebb16a29d55b893765fed9f7a5}} 
+B\+O\+OL {\bfseries Plg\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} $\ast$p\+Points, int x\+Src, int y\+Src, int n\+Src\+Width, int n\+Src\+Height, H\+B\+I\+T\+M\+AP hbm\+Mask=N\+U\+LL, int x\+Mask=0, int y\+Mask=0) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ab49f9e8370619b9b022f7e1118604948}\label{class_a_t_l_1_1_c_image_ab49f9e8370619b9b022f7e1118604948}} 
+B\+O\+OL {\bfseries Plg\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} $\ast$p\+Points, H\+B\+I\+T\+M\+AP hbm\+Mask=N\+U\+LL) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aac87b2675fa63cced75b2f6fc2bfd93b}\label{class_a_t_l_1_1_c_image_aac87b2675fa63cced75b2f6fc2bfd93b}} 
+B\+O\+OL {\bfseries Plg\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} $\ast$p\+Points, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Src, H\+B\+I\+T\+M\+AP hbm\+Mask, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} \&point\+Mask) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aef78f4da3045bb30d8a0c5dcf0ce5722}\label{class_a_t_l_1_1_c_image_aef78f4da3045bb30d8a0c5dcf0ce5722}} 
+B\+O\+OL {\bfseries Plg\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_p_o_i_n_t}{P\+O\+I\+NT} $\ast$p\+Points, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Src, H\+B\+I\+T\+M\+AP hbm\+Mask=N\+U\+LL) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ac97a85823be20e174b20b5fcac42e4c7}\label{class_a_t_l_1_1_c_image_ac97a85823be20e174b20b5fcac42e4c7}} 
+\hyperlink{interfacevoid}{void} {\bfseries Release\+G\+D\+I\+Plus} ()  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a284e6fa3b5bdbbed6b96881a87d40731}\label{class_a_t_l_1_1_c_image_a284e6fa3b5bdbbed6b96881a87d40731}} 
+H\+R\+E\+S\+U\+LT {\bfseries Save} (\hyperlink{interface_i_stream}{I\+Stream} $\ast$p\+Stream, \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$guid\+File\+Type) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a3e08d0e2827bcebf097379d21fbe4984}\label{class_a_t_l_1_1_c_image_a3e08d0e2827bcebf097379d21fbe4984}} 
+H\+R\+E\+S\+U\+LT {\bfseries Save} (L\+P\+C\+T\+S\+TR psz\+File\+Name, \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+File\+Type=G\+U\+I\+D\+\_\+\+N\+U\+LL) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a89cac753cae1f0298f7dc99e9d8939e8}\label{class_a_t_l_1_1_c_image_a89cac753cae1f0298f7dc99e9d8939e8}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Color\+Table} (U\+I\+NT i\+First\+Color, U\+I\+NT n\+Colors, const \hyperlink{structtag_r_g_b_q_u_a_d}{R\+G\+B\+Q\+U\+AD} $\ast$prgb\+Colors)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ada9c324b5b858a5f2a36da5e867e30c4}\label{class_a_t_l_1_1_c_image_ada9c324b5b858a5f2a36da5e867e30c4}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Pixel} (int x, int y, C\+O\+L\+O\+R\+R\+EF color)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_afe314a9eb32ba6290c8f845998c9be13}\label{class_a_t_l_1_1_c_image_afe314a9eb32ba6290c8f845998c9be13}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Pixel\+Indexed} (int x, int y, int i\+Index)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a25ffca9dac052fcfeb2152d67a45670c}\label{class_a_t_l_1_1_c_image_a25ffca9dac052fcfeb2152d67a45670c}} 
+\hyperlink{interfacevoid}{void} {\bfseries Set\+Pixel\+R\+GB} (int x, int y, B\+Y\+TE r, B\+Y\+TE g, B\+Y\+TE b)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ac9c918698db463c531e430ed050edf39}\label{class_a_t_l_1_1_c_image_ac9c918698db463c531e430ed050edf39}} 
+C\+O\+L\+O\+R\+R\+EF {\bfseries Set\+Transparent\+Color} (C\+O\+L\+O\+R\+R\+EF rgb\+Transparent)  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_adee8fddca388cde337a92e5c9e313844}\label{class_a_t_l_1_1_c_image_adee8fddca388cde337a92e5c9e313844}} 
+B\+O\+OL {\bfseries Stretch\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, int x\+Src, int y\+Src, int n\+Src\+Width, int n\+Src\+Height, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a5466daa65f6f3f1f44f658fd96b79b77}\label{class_a_t_l_1_1_c_image_a5466daa65f6f3f1f44f658fd96b79b77}} 
+B\+O\+OL {\bfseries Stretch\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a9b917787eed52b9e8cd85b5b711a6a82}\label{class_a_t_l_1_1_c_image_a9b917787eed52b9e8cd85b5b711a6a82}} 
+B\+O\+OL {\bfseries Stretch\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aa3b1221e17b29721ab48b4ddacc45ea5}\label{class_a_t_l_1_1_c_image_aa3b1221e17b29721ab48b4ddacc45ea5}} 
+B\+O\+OL {\bfseries Stretch\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Src, D\+W\+O\+RD dw\+R\+OP=S\+R\+C\+C\+O\+PY) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a89d7399c4b3379f2d53859ce9b45c9c8}\label{class_a_t_l_1_1_c_image_a89d7399c4b3379f2d53859ce9b45c9c8}} 
+B\+O\+OL {\bfseries Transparent\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, int x\+Src, int y\+Src, int n\+Src\+Width, int n\+Src\+Height, U\+I\+NT cr\+Transparent=C\+L\+R\+\_\+\+I\+N\+V\+A\+L\+ID) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a740cafcfaf053ddfb0d6bf84ae7a0d3f}\label{class_a_t_l_1_1_c_image_a740cafcfaf053ddfb0d6bf84ae7a0d3f}} 
+B\+O\+OL {\bfseries Transparent\+Blt} (H\+DC h\+Dest\+DC, int x\+Dest, int y\+Dest, int n\+Dest\+Width, int n\+Dest\+Height, U\+I\+NT cr\+Transparent=C\+L\+R\+\_\+\+I\+N\+V\+A\+L\+ID) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aa4f3ccd33f596b01a3612c3b8fd49c46}\label{class_a_t_l_1_1_c_image_aa4f3ccd33f596b01a3612c3b8fd49c46}} 
+B\+O\+OL {\bfseries Transparent\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, U\+I\+NT cr\+Transparent=C\+L\+R\+\_\+\+I\+N\+V\+A\+L\+ID) const  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_acc2ff4855ac61bbfec68f5e6df321896}\label{class_a_t_l_1_1_c_image_acc2ff4855ac61bbfec68f5e6df321896}} 
+B\+O\+OL {\bfseries Transparent\+Blt} (H\+DC h\+Dest\+DC, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Dest, const \hyperlink{structtag_r_e_c_t}{R\+E\+CT} \&rect\+Src, U\+I\+NT cr\+Transparent=C\+L\+R\+\_\+\+I\+N\+V\+A\+L\+ID) const  throw ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_af9fe2676fe34c24ba353a9a2db09e7b5}\label{class_a_t_l_1_1_c_image_af9fe2676fe34c24ba353a9a2db09e7b5}} 
+static B\+O\+OL {\bfseries Is\+Transparency\+Supported} ()  throw ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a44bc5e512242278854653752427a7813}\label{class_a_t_l_1_1_c_image_a44bc5e512242278854653752427a7813}} 
+static H\+R\+E\+S\+U\+LT {\bfseries Get\+Importer\+Filter\+String} (\hyperlink{class_a_t_l_1_1_c_simple_string_t}{C\+Simple\+String} \&str\+Importers, \hyperlink{class_a_t_l_1_1_c_simple_array}{C\+Simple\+Array}$<$ \hyperlink{interface_g_u_i_d}{G\+U\+ID} $>$ \&aguid\+File\+Types, L\+P\+C\+T\+S\+TR psz\+All\+Files\+Description=N\+U\+LL, D\+W\+O\+RD dw\+Exclude=exclude\+Default\+Load, T\+C\+H\+AR ch\+Separator=T\+E\+XT(\textquotesingle{}$\vert$\textquotesingle{}))
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_abac2beefa1d04edb5f190827b1b35e8a}\label{class_a_t_l_1_1_c_image_abac2beefa1d04edb5f190827b1b35e8a}} 
+static H\+R\+E\+S\+U\+LT {\bfseries Get\+Exporter\+Filter\+String} (\hyperlink{class_a_t_l_1_1_c_simple_string_t}{C\+Simple\+String} \&str\+Exporters, \hyperlink{class_a_t_l_1_1_c_simple_array}{C\+Simple\+Array}$<$ \hyperlink{interface_g_u_i_d}{G\+U\+ID} $>$ \&aguid\+File\+Types, L\+P\+C\+T\+S\+TR psz\+All\+Files\+Description=N\+U\+LL, D\+W\+O\+RD dw\+Exclude=exclude\+Default\+Save, T\+C\+H\+AR ch\+Separator=T\+E\+XT(\textquotesingle{}$\vert$\textquotesingle{}))
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ab927b31498d3a7e20e570c07f29e1b62}\label{class_a_t_l_1_1_c_image_ab927b31498d3a7e20e570c07f29e1b62}} 
+L\+P\+C\+W\+S\+TR {\bfseries Get\+File\+Extension} (L\+P\+C\+W\+S\+TR psz\+File\+Name) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ad345cab6a845d46f7f654c610d9b990a}\label{class_a_t_l_1_1_c_image_ad345cab6a845d46f7f654c610d9b990a}} 
+C\+O\+L\+O\+R\+R\+EF {\bfseries R\+G\+B\+From\+Palette\+Index} (int i\+Index) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aaeafefe12c0e0b2dfc7119febbedc14c}\label{class_a_t_l_1_1_c_image_aaeafefe12c0e0b2dfc7119febbedc14c}} 
+const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$ {\bfseries File\+Type\+From\+Extension} (L\+P\+C\+W\+S\+TR psz\+Ext) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a6c051cefca9b405c80042a4ef781736b}\label{class_a_t_l_1_1_c_image_a6c051cefca9b405c80042a4ef781736b}} 
+bool {\bfseries Get\+Clsid\+From\+File\+Type} (\hyperlink{struct___i_i_d}{C\+L\+S\+ID} $\ast$clsid, const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$guid) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_abed3027fd5ece1bd049fda556915eaf2}\label{class_a_t_l_1_1_c_image_abed3027fd5ece1bd049fda556915eaf2}} 
+int {\bfseries Get\+Encoder\+Clsid} (L\+P\+C\+W\+S\+TR mime, \hyperlink{struct___i_i_d}{C\+L\+S\+ID} $\ast$clsid) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_acad784c8b179cc7eee6324c7086eeebc}\label{class_a_t_l_1_1_c_image_acad784c8b179cc7eee6324c7086eeebc}} 
+bool {\bfseries Is\+Guid\+Equal} (const \hyperlink{interface_g_u_i_d}{G\+U\+ID} \&guid1, const \hyperlink{interface_g_u_i_d}{G\+U\+ID} \&guid2) const
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_abd281e14a315921024c6b44d6337e64a}\label{class_a_t_l_1_1_c_image_abd281e14a315921024c6b44d6337e64a}} 
+\hyperlink{interfacevoid}{void} {\bfseries Attach\+Internal} (H\+B\+I\+T\+M\+AP h\+Bitmap, D\+I\+B\+Orientation e\+Orientation, L\+O\+NG i\+Trans\+Color)
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a67f40ab6c45d879a14844cf76a6f7b78}\label{class_a_t_l_1_1_c_image_a67f40ab6c45d879a14844cf76a6f7b78}} 
+B\+O\+OL {\bfseries Create\+Internal} (int n\+Width, int n\+Height, int n\+B\+PP, D\+W\+O\+RD e\+Compression, const D\+W\+O\+RD $\ast$pdw\+Bitmasks=N\+U\+LL, D\+W\+O\+RD dw\+Flags=0)  throw ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aaecf7dfecc383d95375235ea9f9925e4}\label{class_a_t_l_1_1_c_image_aaecf7dfecc383d95375235ea9f9925e4}} 
+static H\+R\+E\+S\+U\+LT {\bfseries Get\+Common\+Filter\+String} (\hyperlink{class_a_t_l_1_1_c_simple_string_t}{C\+Simple\+String} \&str\+Filter, \hyperlink{class_a_t_l_1_1_c_simple_array}{C\+Simple\+Array}$<$ \hyperlink{interface_g_u_i_d}{G\+U\+ID} $>$ \&aguid\+File\+Types, L\+P\+C\+T\+S\+TR psz\+All\+Files\+Description, D\+W\+O\+RD dw\+Exclude, T\+C\+H\+AR ch\+Separator)
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_acc1dbbdf8d989d2947b939cebd31a7ba}\label{class_a_t_l_1_1_c_image_acc1dbbdf8d989d2947b939cebd31a7ba}} 
+static \hyperlink{struct_a_t_l_1_1_c_image_1_1_c_o_m_m_o_n}{C\+O\+M\+M\+ON} $\ast$\& {\bfseries Get\+Common\+Ptr} ()
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a5f62d367e3e04e2299c448db69c9c7c9}\label{class_a_t_l_1_1_c_image_a5f62d367e3e04e2299c448db69c9c7c9}} 
+static \hyperlink{struct_a_t_l_1_1_c_image_1_1_c_o_m_m_o_n}{C\+O\+M\+M\+ON} \& {\bfseries Get\+Common} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a03798c6bebc0c900ed0c22900c7fdb1b}\label{class_a_t_l_1_1_c_image_a03798c6bebc0c900ed0c22900c7fdb1b}} 
+H\+B\+I\+T\+M\+AP {\bfseries m\+\_\+hbm}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ab0f7d4a0eb0d98e3adf1840a6a75064a}\label{class_a_t_l_1_1_c_image_ab0f7d4a0eb0d98e3adf1840a6a75064a}} 
+\hyperlink{interfacevoid}{H\+G\+D\+I\+O\+BJ} {\bfseries m\+\_\+hbm\+Old}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_ad15417a7c7b5c3a7eece88b82b92f62c}\label{class_a_t_l_1_1_c_image_ad15417a7c7b5c3a7eece88b82b92f62c}} 
+H\+DC {\bfseries m\+\_\+h\+DC}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a02e800b1977d5b5fe46c3ee7bf4d749d}\label{class_a_t_l_1_1_c_image_a02e800b1977d5b5fe46c3ee7bf4d749d}} 
+D\+I\+B\+Orientation {\bfseries m\+\_\+e\+Orientation}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_aab022344c089f42e6d364f2631a3c863}\label{class_a_t_l_1_1_c_image_aab022344c089f42e6d364f2631a3c863}} 
+bool {\bfseries m\+\_\+b\+Has\+Alpha\+Ch}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a1b9baeb9bcb5c758b536ea198d19c943}\label{class_a_t_l_1_1_c_image_a1b9baeb9bcb5c758b536ea198d19c943}} 
+bool {\bfseries m\+\_\+b\+Is\+D\+I\+B\+Sec}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a0ba9526f21995d1f8ffb6a35a1371f8f}\label{class_a_t_l_1_1_c_image_a0ba9526f21995d1f8ffb6a35a1371f8f}} 
+C\+O\+L\+O\+R\+R\+EF {\bfseries m\+\_\+rgb\+Trans\+Color}
+\item 
+\mbox{\Hypertarget{class_a_t_l_1_1_c_image_a6a0e820d902d6d4576a667704cd96c61}\label{class_a_t_l_1_1_c_image_a6a0e820d902d6d4576a667704cd96c61}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct___b_i_t_m_a_p}{BITMAP} {\bfseries m\_bm}\\
+\>\hyperlink{structtag_d_i_b_s_e_c_t_i_o_n}{DIBSECTION} {\bfseries m\_ds}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/atl/atlimage.\+h\end{DoxyCompactItemize}

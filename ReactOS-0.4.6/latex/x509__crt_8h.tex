@@ -1,0 +1,80 @@
+\hypertarget{x509__crt_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/x509\+\_\+crt.h 文件参考}
+\label{x509__crt_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/x509\+\_\+crt.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/x509\+\_\+crt.\+h}}
+
+
+X.\+509 certificate parsing and writing  
+
+
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}x509.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}x509\+\_\+crl.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt}
+\item 
+struct \hyperlink{structmbedtls__x509__crt__profile}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile}
+\item 
+struct \hyperlink{structmbedtls__x509write__cert}{mbedtls\+\_\+x509write\+\_\+cert}
+\end{DoxyCompactItemize}
+\subsection*{Structures and functions for parsing and writing X.509 certificates}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group__x509__module_gaedcb73f1c615c266a348a0c62763c5de}{M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+I\+D\+\_\+\+F\+L\+AG}(id)~( 1 $<$$<$ ( id -\/ 1 ) )
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+C\+R\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1}~0
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+C\+R\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+2}~1
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+C\+R\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3}~2
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+R\+F\+C5280\+\_\+\+M\+A\+X\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+L\+EN}~32
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+R\+F\+C5280\+\_\+\+U\+T\+C\+\_\+\+T\+I\+M\+E\+\_\+\+L\+EN}~15
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+B\+E\+D\+T\+L\+S\+\_\+\+X509\+\_\+\+M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN}~512
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} \hyperlink{group__x509__module_ga836544fec94d5bc02bc97aa87885b9d9}{mbedtls\+\_\+x509\+\_\+crt}
+\item 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{structmbedtls__x509write__cert}{mbedtls\+\_\+x509write\+\_\+cert} \hyperlink{group__x509__module_gacc3115587f8d882a7a137c38d6939e07}{mbedtls\+\_\+x509write\+\_\+cert}
+\item 
+const \hyperlink{structmbedtls__x509__crt__profile}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile} \hyperlink{group__x509__module_ga9cd2de10ffeff0f339abcc1ba7e26fdf}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile\+\_\+default}
+\item 
+const \hyperlink{structmbedtls__x509__crt__profile}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile} \hyperlink{group__x509__module_ga8ab1f8a044fd25f76ecb4ba15c6d5bcd}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile\+\_\+next}
+\item 
+const \hyperlink{structmbedtls__x509__crt__profile}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile} \hyperlink{group__x509__module_gaf09067a39129236125e353a68ceb45d6}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile\+\_\+suiteb}
+\item 
+int \hyperlink{group__x509__module_ga003c2483a2691e025641fa9d68d4a96a}{mbedtls\+\_\+x509\+\_\+crt\+\_\+parse\+\_\+der} (\hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$chain, const unsigned char $\ast$buf, size\+\_\+t buflen)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} a single D\+ER formatted certificate and add it to the chained list. \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_ga033567483649030f7f859db4f4cb7e14}{mbedtls\+\_\+x509\+\_\+crt\+\_\+parse} (\hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$chain, const unsigned char $\ast$buf, size\+\_\+t buflen)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_parse}{Parse} one or more certificates and add them to the chained list. Parses permissively. If some certificates can be parsed, the result is the number of failed certificates it encountered. If none complete correctly, the first error is returned. \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_gabaf30f2269fc3b6608b25871f9d09da6}{mbedtls\+\_\+x509\+\_\+crt\+\_\+info} (char $\ast$buf, size\+\_\+t size, const char $\ast$prefix, const \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$crt)
+\begin{DoxyCompactList}\small\item\em Returns an informational string about the certificate. \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_gae88f1d8e6696eb2beeffe0a708219e6b}{mbedtls\+\_\+x509\+\_\+crt\+\_\+verify\+\_\+info} (char $\ast$buf, size\+\_\+t size, const char $\ast$prefix, uint32\+\_\+t flags)
+\begin{DoxyCompactList}\small\item\em Returns an informational string about the verification status of a certificate. \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_ga98ed4504e4f832b735a230acf54fcde3}{mbedtls\+\_\+x509\+\_\+crt\+\_\+verify} (\hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$crt, \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$trust\+\_\+ca, \hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} $\ast$ca\+\_\+crl, const char $\ast$cn, uint32\+\_\+t $\ast$flags, int($\ast$f\+\_\+vrfy)(\hyperlink{interfacevoid}{void} $\ast$, \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$, int, uint32\+\_\+t $\ast$), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+vrfy)
+\begin{DoxyCompactList}\small\item\em Verify the certificate signature \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_gaf044a51e5b5bc854bf12aeeccb440e55}{mbedtls\+\_\+x509\+\_\+crt\+\_\+verify\+\_\+with\+\_\+profile} (\hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$crt, \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$trust\+\_\+ca, \hyperlink{structmbedtls__x509__crl}{mbedtls\+\_\+x509\+\_\+crl} $\ast$ca\+\_\+crl, const \hyperlink{structmbedtls__x509__crt__profile}{mbedtls\+\_\+x509\+\_\+crt\+\_\+profile} $\ast$profile, const char $\ast$cn, uint32\+\_\+t $\ast$flags, int($\ast$f\+\_\+vrfy)(\hyperlink{interfacevoid}{void} $\ast$, \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$, int, uint32\+\_\+t $\ast$), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+vrfy)
+\begin{DoxyCompactList}\small\item\em Verify the certificate signature according to profile \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_ga0ab7857ffd82467207e718bb9f0131a2}{mbedtls\+\_\+x509\+\_\+crt\+\_\+check\+\_\+key\+\_\+usage} (const \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$crt, unsigned int usage)
+\begin{DoxyCompactList}\small\item\em Check usage of certificate against key\+Usage extension. \end{DoxyCompactList}\item 
+int \hyperlink{group__x509__module_gad21c0e75a3fdbeb1f65e4d339e479df3}{mbedtls\+\_\+x509\+\_\+crt\+\_\+check\+\_\+extended\+\_\+key\+\_\+usage} (const \hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$crt, const char $\ast$usage\+\_\+oid, size\+\_\+t usage\+\_\+len)
+\begin{DoxyCompactList}\small\item\em Check usage of certificate against extented\+Jey\+Usage. \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{group__x509__module_ga016dd06bc770e77b84005f305df20ed1}{mbedtls\+\_\+x509\+\_\+crt\+\_\+init} (\hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$crt)
+\begin{DoxyCompactList}\small\item\em Initialize a certificate (chain) \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{group__x509__module_gab33c1e4e20bea7ce536119f54a113c6b}{mbedtls\+\_\+x509\+\_\+crt\+\_\+free} (\hyperlink{structmbedtls__x509__crt}{mbedtls\+\_\+x509\+\_\+crt} $\ast$crt)
+\begin{DoxyCompactList}\small\item\em Unallocate all certificate data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+X.\+509 certificate parsing and writing 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 

@@ -1,0 +1,322 @@
+\hypertarget{teximage_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/teximage.c 文件参考}
+\label{teximage_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/teximage.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/teximage.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcb__info}{cb\+\_\+info}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{teximage_8c_a3f10ff8e57f08a5c716390ea3a5fd39e}{N\+E\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+T\+A\+TE}~(\hyperlink{mtypes_8h_adbdb321b5645d2d6e88c021d58e5dab5}{\+\_\+\+N\+E\+W\+\_\+\+B\+U\+F\+F\+E\+RS} $\vert$ \hyperlink{mtypes_8h_a881b84b6bb35eda5c682fbdcd4a1972c}{\+\_\+\+N\+E\+W\+\_\+\+P\+I\+X\+EL})
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lint \hyperlink{teximage_8c_a5d62d6baab91d5ce7a62f99d674a0191}{\+\_\+mesa\+\_\+base\+\_\+tex\+\_\+format} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lint \hyperlink{interfacevoid}{internal\+Format})
+\item 
+G\+Luint \hyperlink{teximage_8c_abb9c94f3f8f473269c615d71ac8581ac}{\+\_\+mesa\+\_\+tex\+\_\+target\+\_\+to\+\_\+face} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$ \hyperlink{teximage_8c_a4afc67c9ad1c85ffc325f35cf9665cc0}{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{teximage_8c_a7e91bb0449513919ffd0344ed5040570}{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)
+\item 
+G\+Lboolean \hyperlink{teximage_8c_ab9e40efe8fbee7e05c429da16475dde6}{\+\_\+mesa\+\_\+is\+\_\+proxy\+\_\+texture} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{teximage_8c_acf2af1ad0321d800ae4793a25b0001a5}{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+object} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$ \hyperlink{teximage_8c_a77497b35a409eb24f32a5e955254fd0b}{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$ \hyperlink{teximage_8c_a46bb58bbf3802223e8b7fcb883eb12d1}{\+\_\+mesa\+\_\+get\+\_\+tex\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level)
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$ \hyperlink{teximage_8c_a65d2a08874b415819b03e488ab8b41c7}{\+\_\+mesa\+\_\+get\+\_\+proxy\+\_\+tex\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level)
+\item 
+G\+Lint \hyperlink{teximage_8c_a9b89c04c762aecfdbaa5fca4480119ea}{\+\_\+mesa\+\_\+max\+\_\+texture\+\_\+levels} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+G\+Lint \hyperlink{teximage_8c_a3ff240d6e223fa125174b21ee4c18f69}{\+\_\+mesa\+\_\+get\+\_\+texture\+\_\+dimensions} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{teximage_8c_ad02f4d78c8e7d5d55e37129f15b9a5ed}{\+\_\+mesa\+\_\+init\+\_\+teximage\+\_\+fields} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$img, G\+Lsizei width, G\+Lsizei height, G\+Lsizei depth, G\+Lint border, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{internal\+Format}, gl\+\_\+format format)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{teximage_8c_ab056423e13458f61aa1baa189aa8df42}{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$tex\+Image)
+\item 
+G\+Lboolean \hyperlink{teximage_8c_aa537493a055b8ba2056feeefa53f2ca3}{\+\_\+mesa\+\_\+test\+\_\+proxy\+\_\+teximage} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, G\+Lint width, G\+Lint height, G\+Lint depth, G\+Lint border)
+\item 
+gl\+\_\+format \hyperlink{teximage_8c_a9ae7e4d05c8ce49d590afe9f7488a020}{\+\_\+mesa\+\_\+choose\+\_\+texture\+\_\+format} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$tex\+Obj, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{internal\+Format}, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type)
+\item 
+\mbox{\Hypertarget{teximage_8c_a68746b3117b5254da34c239c00b71a67}\label{teximage_8c_a68746b3117b5254da34c239c00b71a67}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Tex\+Image1D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lsizei width, G\+Lint border, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels)
+\item 
+\mbox{\Hypertarget{teximage_8c_a800b3a3ed9fdf8fbdba4a7797ef73362}\label{teximage_8c_a800b3a3ed9fdf8fbdba4a7797ef73362}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Tex\+Image2D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint \hyperlink{interfacevoid}{internal\+Format}, G\+Lsizei width, G\+Lsizei height, G\+Lint border, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels)
+\item 
+\mbox{\Hypertarget{teximage_8c_aa3af50298eede509635de093d07d2df9}\label{teximage_8c_aa3af50298eede509635de093d07d2df9}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Tex\+Sub\+Image1D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint xoffset, G\+Lsizei width, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels)
+\item 
+\mbox{\Hypertarget{teximage_8c_a8aa3e08d3b46b6dc7ba1aa3df6c3c540}\label{teximage_8c_a8aa3e08d3b46b6dc7ba1aa3df6c3c540}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Tex\+Sub\+Image2D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint xoffset, G\+Lint yoffset, G\+Lsizei width, G\+Lsizei height, \hyperlink{interfacevoid}{G\+Lenum} format, \hyperlink{interfacevoid}{G\+Lenum} type, const \hyperlink{interfacevoid}{G\+Lvoid} $\ast$pixels)
+\item 
+\mbox{\Hypertarget{teximage_8c_a673d9f645736ec7caadb1316f81225b4}\label{teximage_8c_a673d9f645736ec7caadb1316f81225b4}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Copy\+Tex\+Image1D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{internal\+Format}, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lint border)
+\item 
+\mbox{\Hypertarget{teximage_8c_ab1ba8d75d8334a444a74b7bee3d828d8}\label{teximage_8c_ab1ba8d75d8334a444a74b7bee3d828d8}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Copy\+Tex\+Image2D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, \hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{internal\+Format}, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height, G\+Lint border)
+\item 
+\mbox{\Hypertarget{teximage_8c_ab140eb7f4a852901171336de72a3773a}\label{teximage_8c_ab140eb7f4a852901171336de72a3773a}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Copy\+Tex\+Sub\+Image1D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint xoffset, G\+Lint x, G\+Lint y, G\+Lsizei width)
+\item 
+\mbox{\Hypertarget{teximage_8c_aa66aec314aaa8e61d0ffea4e11a7d9b1}\label{teximage_8c_aa66aec314aaa8e61d0ffea4e11a7d9b1}} 
+\hyperlink{interfacevoid}{void} G\+L\+A\+P\+I\+E\+N\+T\+RY {\bfseries \+\_\+mesa\+\_\+\+Copy\+Tex\+Sub\+Image2D} (\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{interfacevoid}{target}, G\+Lint level, G\+Lint xoffset, G\+Lint yoffset, G\+Lint x, G\+Lint y, G\+Lsizei width, G\+Lsizei height)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Texture image-\/related functions. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{teximage_8c_a3f10ff8e57f08a5c716390ea3a5fd39e}\label{teximage_8c_a3f10ff8e57f08a5c716390ea3a5fd39e}} 
+\index{teximage.\+c@{teximage.\+c}!N\+E\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+T\+A\+TE@{N\+E\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+T\+A\+TE}}
+\index{N\+E\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+T\+A\+TE@{N\+E\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+T\+A\+TE}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{N\+E\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+T\+A\+TE}{NEW\_COPY\_TEX\_STATE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} N\+E\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+T\+A\+TE~(\hyperlink{mtypes_8h_adbdb321b5645d2d6e88c021d58e5dab5}{\+\_\+\+N\+E\+W\+\_\+\+B\+U\+F\+F\+E\+RS} $\vert$ \hyperlink{mtypes_8h_a881b84b6bb35eda5c682fbdcd4a1972c}{\+\_\+\+N\+E\+W\+\_\+\+P\+I\+X\+EL})}
+
+\hyperlink{struct_state}{State} changes which we care about for gl\+Copy\+Tex\mbox{[}Sub\mbox{]}\hyperlink{class_image}{Image()} calls. In particular, we care about pixel transfer state and buffer state (such as gl\+Read\+Buffer to make sure we read from the right renderbuffer). 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{teximage_8c_a5d62d6baab91d5ce7a62f99d674a0191}\label{teximage_8c_a5d62d6baab91d5ce7a62f99d674a0191}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+base\+\_\+tex\+\_\+format@{\+\_\+mesa\+\_\+base\+\_\+tex\+\_\+format}}
+\index{\+\_\+mesa\+\_\+base\+\_\+tex\+\_\+format@{\+\_\+mesa\+\_\+base\+\_\+tex\+\_\+format}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+base\+\_\+tex\+\_\+format()}{\_mesa\_base\_tex\_format()}}
+{\footnotesize\ttfamily G\+Lint \+\_\+mesa\+\_\+base\+\_\+tex\+\_\+format (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{G\+Lint}]{internal\+Format }\end{DoxyParamCaption})}
+
+Return the simple base format for a given internal texture format. For example, given G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+C\+E12\+\_\+\+A\+L\+P\+H\+A4, return G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em internal\+Format} & the internal texture format token or 1, 2, 3, or 4.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the corresponding  base internal format (G\+L\+\_\+\+A\+L\+P\+HA, G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE, G\+L\+\_\+\+L\+U\+M\+A\+N\+C\+E\+\_\+\+A\+L\+P\+HA, G\+L\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY, G\+L\+\_\+\+R\+GB, or G\+L\+\_\+\+R\+G\+BA), or -\/1 if invalid enum.
+\end{DoxyReturn}
+\hyperlink{namespace_this}{This} is the format which is used during texture application (i.\+e. the texture format and env mode determine the arithmetic used.
+
+X\+XX this could be static \mbox{\Hypertarget{teximage_8c_a9ae7e4d05c8ce49d590afe9f7488a020}\label{teximage_8c_a9ae7e4d05c8ce49d590afe9f7488a020}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+choose\+\_\+texture\+\_\+format@{\+\_\+mesa\+\_\+choose\+\_\+texture\+\_\+format}}
+\index{\+\_\+mesa\+\_\+choose\+\_\+texture\+\_\+format@{\+\_\+mesa\+\_\+choose\+\_\+texture\+\_\+format}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+choose\+\_\+texture\+\_\+format()}{\_mesa\_choose\_texture\_format()}}
+{\footnotesize\ttfamily gl\+\_\+format \+\_\+mesa\+\_\+choose\+\_\+texture\+\_\+format (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Lint}]{level,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{internal\+Format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{type }\end{DoxyParamCaption})}
+
+Choose the actual hardware format for a texture image. Try to use the same format as the previous image level when possible. Otherwise, ask the driver for the best format. \hyperlink{class_it}{It}\textquotesingle{}s important to try to choose a consistant format for all levels for efficient texture memory layout/allocation. In particular, this comes up during automatic mipmap generation. \mbox{\Hypertarget{teximage_8c_ab056423e13458f61aa1baa189aa8df42}\label{teximage_8c_ab056423e13458f61aa1baa189aa8df42}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image@{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image}}
+\index{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image@{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image()}{\_mesa\_clear\_texture\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+clear\+\_\+texture\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{tex\+Image }\end{DoxyParamCaption})}
+
+Free and clear fields of the \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} struct.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em tex\+Image} & texture image structure to be cleared.\\
+\hline
+\end{DoxyParams}
+After the call, {\ttfamily tex\+Image} will have no data associated with it. Its fields are cleared so that its parent object will test incomplete. \mbox{\Hypertarget{teximage_8c_a7e91bb0449513919ffd0344ed5040570}\label{teximage_8c_a7e91bb0449513919ffd0344ed5040570}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+image@{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+image}}
+\index{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+image@{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+image}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+image()}{\_mesa\_delete\_texture\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+delete\+\_\+texture\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{tex\+Image }\end{DoxyParamCaption})}
+
+Free a \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} and associated data. \hyperlink{namespace_this}{This} function is a fallback called via ctx-\/$>$Driver.\+Delete\+Texture\+Image().
+
+
+\begin{DoxyParams}{参数}
+{\em tex\+Image} & texture image.\\
+\hline
+\end{DoxyParams}
+Free the texture image structure and the associated image data. \mbox{\Hypertarget{teximage_8c_a65d2a08874b415819b03e488ab8b41c7}\label{teximage_8c_a65d2a08874b415819b03e488ab8b41c7}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+get\+\_\+proxy\+\_\+tex\+\_\+image@{\+\_\+mesa\+\_\+get\+\_\+proxy\+\_\+tex\+\_\+image}}
+\index{\+\_\+mesa\+\_\+get\+\_\+proxy\+\_\+tex\+\_\+image@{\+\_\+mesa\+\_\+get\+\_\+proxy\+\_\+tex\+\_\+image}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+proxy\+\_\+tex\+\_\+image()}{\_mesa\_get\_proxy\_tex\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}$\ast$ \+\_\+mesa\+\_\+get\+\_\+proxy\+\_\+tex\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Lint}]{level }\end{DoxyParamCaption})}
+
+Return pointer to the specified proxy texture image. Note that proxy textures are per-\/context, not per-\/texture unit. \begin{DoxyReturn}{返回}
+pointer to texture image or N\+U\+LL if invalid target, invalid level, or out of memory. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{teximage_8c_a46bb58bbf3802223e8b7fcb883eb12d1}\label{teximage_8c_a46bb58bbf3802223e8b7fcb883eb12d1}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+get\+\_\+tex\+\_\+image@{\+\_\+mesa\+\_\+get\+\_\+tex\+\_\+image}}
+\index{\+\_\+mesa\+\_\+get\+\_\+tex\+\_\+image@{\+\_\+mesa\+\_\+get\+\_\+tex\+\_\+image}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+tex\+\_\+image()}{\_mesa\_get\_tex\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}$\ast$ \+\_\+mesa\+\_\+get\+\_\+tex\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Lint}]{level }\end{DoxyParamCaption})}
+
+Like \hyperlink{teximage_8c_a77497b35a409eb24f32a5e955254fd0b}{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image()} but if the image doesn\textquotesingle{}t exist, allocate it and install it. Only return N\+U\+LL if passed a bad parameter or run out of memory. \mbox{\Hypertarget{teximage_8c_a3ff240d6e223fa125174b21ee4c18f69}\label{teximage_8c_a3ff240d6e223fa125174b21ee4c18f69}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+get\+\_\+texture\+\_\+dimensions@{\+\_\+mesa\+\_\+get\+\_\+texture\+\_\+dimensions}}
+\index{\+\_\+mesa\+\_\+get\+\_\+texture\+\_\+dimensions@{\+\_\+mesa\+\_\+get\+\_\+texture\+\_\+dimensions}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+get\+\_\+texture\+\_\+dimensions()}{\_mesa\_get\_texture\_dimensions()}}
+{\footnotesize\ttfamily G\+Lint \+\_\+mesa\+\_\+get\+\_\+texture\+\_\+dimensions (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+Return number of dimensions per mipmap level for the given texture target. \mbox{\Hypertarget{teximage_8c_ad02f4d78c8e7d5d55e37129f15b9a5ed}\label{teximage_8c_ad02f4d78c8e7d5d55e37129f15b9a5ed}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+init\+\_\+teximage\+\_\+fields@{\+\_\+mesa\+\_\+init\+\_\+teximage\+\_\+fields}}
+\index{\+\_\+mesa\+\_\+init\+\_\+teximage\+\_\+fields@{\+\_\+mesa\+\_\+init\+\_\+teximage\+\_\+fields}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+teximage\+\_\+fields()}{\_mesa\_init\_teximage\_fields()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+teximage\+\_\+fields (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} $\ast$}]{img,  }\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height,  }\item[{G\+Lsizei}]{depth,  }\item[{G\+Lint}]{border,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{internal\+Format,  }\item[{gl\+\_\+format}]{format }\end{DoxyParamCaption})}
+
+Initialize basic fields of the \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} struct.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em img} & texture image structure to be initialized. \\
+\hline
+{\em width} & image width. \\
+\hline
+{\em height} & image height. \\
+\hline
+{\em depth} & image depth. \\
+\hline
+{\em border} & image border. \\
+\hline
+{\em internal\+Format} & internal format. \\
+\hline
+{\em format} & the actual hardware format (one of M\+E\+S\+A\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+$\ast$)\\
+\hline
+\end{DoxyParams}
+Fills in the fields of {\ttfamily img} with the given information. Note\+: width, height and depth include the border. \mbox{\Hypertarget{teximage_8c_ab9e40efe8fbee7e05c429da16475dde6}\label{teximage_8c_ab9e40efe8fbee7e05c429da16475dde6}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+is\+\_\+proxy\+\_\+texture@{\+\_\+mesa\+\_\+is\+\_\+proxy\+\_\+texture}}
+\index{\+\_\+mesa\+\_\+is\+\_\+proxy\+\_\+texture@{\+\_\+mesa\+\_\+is\+\_\+proxy\+\_\+texture}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+is\+\_\+proxy\+\_\+texture()}{\_mesa\_is\_proxy\_texture()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+is\+\_\+proxy\+\_\+texture (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+\hyperlink{class_test}{Test} if a target is a proxy target.
+
+
+\begin{DoxyParams}{参数}
+{\em target} & texture target.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE if the target is a proxy target, G\+L\+\_\+\+F\+A\+L\+SE otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{teximage_8c_a9b89c04c762aecfdbaa5fca4480119ea}\label{teximage_8c_a9b89c04c762aecfdbaa5fca4480119ea}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+max\+\_\+texture\+\_\+levels@{\+\_\+mesa\+\_\+max\+\_\+texture\+\_\+levels}}
+\index{\+\_\+mesa\+\_\+max\+\_\+texture\+\_\+levels@{\+\_\+mesa\+\_\+max\+\_\+texture\+\_\+levels}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+max\+\_\+texture\+\_\+levels()}{\_mesa\_max\_texture\_levels()}}
+{\footnotesize\ttfamily G\+Lint \+\_\+mesa\+\_\+max\+\_\+texture\+\_\+levels (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+Get the maximum number of allowed mipmap levels.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em target} & texture target.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the maximum number of allowed mipmap levels for the given texture target, or zero if passed a bad target.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{structgl__constants}{gl\+\_\+constants}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{teximage_8c_a4afc67c9ad1c85ffc325f35cf9665cc0}\label{teximage_8c_a4afc67c9ad1c85ffc325f35cf9665cc0}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+image@{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+image}}
+\index{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+image@{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+image}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+new\+\_\+texture\+\_\+image()}{\_mesa\_new\_texture\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}$\ast$ \+\_\+mesa\+\_\+new\+\_\+texture\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Allocate a texture image structure.
+
+Called via ctx-\/$>$Driver.\+New\+Texture\+Image() unless overriden by a device driver.
+
+\begin{DoxyReturn}{返回}
+a pointer to \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image} struct with all fields initialized to zero. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{teximage_8c_a77497b35a409eb24f32a5e955254fd0b}\label{teximage_8c_a77497b35a409eb24f32a5e955254fd0b}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image@{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image}}
+\index{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image@{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image()}{\_mesa\_select\_tex\_image()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__image}{gl\+\_\+texture\+\_\+image}$\ast$ \+\_\+mesa\+\_\+select\+\_\+tex\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{const \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$}]{tex\+Obj,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Lint}]{level }\end{DoxyParamCaption})}
+
+Get a texture image pointer from a texture object, given a texture target and mipmap level. The target and level parameters should have already been error-\/checked.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em tex\+Obj} & texture unit. \\
+\hline
+{\em target} & texture target. \\
+\hline
+{\em level} & image level.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to the texture image structure, or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{teximage_8c_acf2af1ad0321d800ae4793a25b0001a5}\label{teximage_8c_acf2af1ad0321d800ae4793a25b0001a5}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+object@{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+object}}
+\index{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+object@{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+object}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+select\+\_\+tex\+\_\+object()}{\_mesa\_select\_tex\_object()}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ \+\_\+mesa\+\_\+select\+\_\+tex\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+Get the texture object that corresponds to the target of the given texture unit. The target should have already been checked for validity.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em tex\+Unit} & texture unit. \\
+\hline
+{\em target} & texture target.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to the texture object on success, or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{teximage_8c_aa537493a055b8ba2056feeefa53f2ca3}\label{teximage_8c_aa537493a055b8ba2056feeefa53f2ca3}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+test\+\_\+proxy\+\_\+teximage@{\+\_\+mesa\+\_\+test\+\_\+proxy\+\_\+teximage}}
+\index{\+\_\+mesa\+\_\+test\+\_\+proxy\+\_\+teximage@{\+\_\+mesa\+\_\+test\+\_\+proxy\+\_\+teximage}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+test\+\_\+proxy\+\_\+teximage()}{\_mesa\_test\_proxy\_teximage()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+mesa\+\_\+test\+\_\+proxy\+\_\+teximage (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target,  }\item[{G\+Lint}]{level,  }\item[{G\+Lint}]{internal\+Format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{format,  }\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{type,  }\item[{G\+Lint}]{width,  }\item[{G\+Lint}]{height,  }\item[{G\+Lint}]{depth,  }\item[{G\+Lint}]{border }\end{DoxyParamCaption})}
+
+\hyperlink{namespace_this}{This} is the fallback for Driver.\+Test\+Proxy\+Tex\+Image(). \hyperlink{class_test}{Test} the texture level, width, height and depth against the ctx-\/$>$Const limits for textures.
+
+\hyperlink{struct_a}{A} hardware driver might override this function if, for example, the max 3D texture size is 512x512x64 (i.\+e. not a cube).
+
+Note that width, height, depth == 0 is not an error. However, a texture with zero width/height/depth will be considered \char`\"{}incomplete\char`\"{} and texturing will effectively be disabled.
+
+
+\begin{DoxyParams}{参数}
+{\em target} & one of G\+L\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1D, G\+L\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2D, G\+L\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+3D, G\+L\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+NV, G\+L\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+U\+B\+E\+\_\+\+M\+A\+P\+\_\+\+A\+RB. \\
+\hline
+{\em level} & as passed to gl\+Tex\+Image \\
+\hline
+{\em internal\+Format} & as passed to gl\+Tex\+Image \\
+\hline
+{\em format} & as passed to gl\+Tex\+Image \\
+\hline
+{\em type} & as passed to gl\+Tex\+Image \\
+\hline
+{\em width} & as passed to gl\+Tex\+Image \\
+\hline
+{\em height} & as passed to gl\+Tex\+Image \\
+\hline
+{\em depth} & as passed to gl\+Tex\+Image \\
+\hline
+{\em border} & as passed to gl\+Tex\+Image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+G\+L\+\_\+\+T\+R\+UE if the image is acceptable, G\+L\+\_\+\+F\+A\+L\+SE if not acceptable. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{teximage_8c_abb9c94f3f8f473269c615d71ac8581ac}\label{teximage_8c_abb9c94f3f8f473269c615d71ac8581ac}} 
+\index{teximage.\+c@{teximage.\+c}!\+\_\+mesa\+\_\+tex\+\_\+target\+\_\+to\+\_\+face@{\+\_\+mesa\+\_\+tex\+\_\+target\+\_\+to\+\_\+face}}
+\index{\+\_\+mesa\+\_\+tex\+\_\+target\+\_\+to\+\_\+face@{\+\_\+mesa\+\_\+tex\+\_\+target\+\_\+to\+\_\+face}!teximage.\+c@{teximage.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+tex\+\_\+target\+\_\+to\+\_\+face()}{\_mesa\_tex\_target\_to\_face()}}
+{\footnotesize\ttfamily G\+Luint \+\_\+mesa\+\_\+tex\+\_\+target\+\_\+to\+\_\+face (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{G\+Lenum}}]{target }\end{DoxyParamCaption})}
+
+Is the given texture format a generic compressed format? For cube map faces, return a face index in \mbox{[}0,5\mbox{]}. For other targets return 0; 

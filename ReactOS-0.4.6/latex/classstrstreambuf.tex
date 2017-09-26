@@ -1,0 +1,86 @@
+\hypertarget{classstrstreambuf}{}\section{strstreambuf类 参考}
+\label{classstrstreambuf}\index{strstreambuf@{strstreambuf}}
+类 strstreambuf 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstrstreambuf}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a4017d32b331f560ef490d6c6d72fe8e7}\label{classstrstreambuf_a4017d32b331f560ef490d6c6d72fe8e7}} 
+typedef \hyperlink{classchar__traits}{char\+\_\+traits}$<$ char $>$ {\bfseries \+\_\+\+Traits}
+\item 
+\mbox{\Hypertarget{classstrstreambuf_ab7b32022b6c33862b28ef259f57e2523}\label{classstrstreambuf_ab7b32022b6c33862b28ef259f57e2523}} 
+typedef \hyperlink{classbasic__streambuf}{basic\+\_\+streambuf}$<$ char, \hyperlink{classchar__traits}{char\+\_\+traits}$<$ char $>$ $>$ {\bfseries \+\_\+\+Base}
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a7e2ad1df0453c318b5543f2d47e06517}\label{classstrstreambuf_a7e2ad1df0453c318b5543f2d47e06517}} 
+typedef \hyperlink{interfacevoid}{void} $\ast$($\ast$ {\bfseries \+\_\+\+\_\+alloc\+\_\+fn}) (size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a9c9562418d8e7933fbd2eb0f4c453245}\label{classstrstreambuf_a9c9562418d8e7933fbd2eb0f4c453245}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries \+\_\+\+\_\+free\+\_\+fn}) (\hyperlink{interfacevoid}{void} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstrstreambuf_ae43a297e873fd120204b4fbc77433278}\label{classstrstreambuf_ae43a297e873fd120204b4fbc77433278}} 
+{\bfseries strstreambuf} (streamsize \+\_\+\+Initial\+\_\+capacity=0)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a5b93ed7c241069ae6bc9655a4516b773}\label{classstrstreambuf_a5b93ed7c241069ae6bc9655a4516b773}} 
+{\bfseries strstreambuf} (\+\_\+\+\_\+alloc\+\_\+fn, \+\_\+\+\_\+free\+\_\+fn)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_aef32b3d0e86c0eadd90d960f779db0bc}\label{classstrstreambuf_aef32b3d0e86c0eadd90d960f779db0bc}} 
+{\bfseries strstreambuf} (char $\ast$\+\_\+\+\_\+get, streamsize \+\_\+\+\_\+n, char $\ast$\+\_\+\+\_\+put=0)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a94f6d55cecb6c7478abe1646b72abc89}\label{classstrstreambuf_a94f6d55cecb6c7478abe1646b72abc89}} 
+{\bfseries strstreambuf} (signed char $\ast$\+\_\+\+\_\+get, streamsize \+\_\+\+\_\+n, signed char $\ast$\+\_\+\+\_\+put=0)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a788469386707ace5df036b4db652fcc5}\label{classstrstreambuf_a788469386707ace5df036b4db652fcc5}} 
+{\bfseries strstreambuf} (unsigned char $\ast$\+\_\+\+\_\+get, streamsize \+\_\+\+\_\+n, unsigned char $\ast$\+\_\+\+\_\+put=0)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a13fb9ac2da4467f092d3bf01a62de9ee}\label{classstrstreambuf_a13fb9ac2da4467f092d3bf01a62de9ee}} 
+{\bfseries strstreambuf} (const char $\ast$\+\_\+\+\_\+get, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a7f98440f4ad5e69f0797f2f669a6f39a}\label{classstrstreambuf_a7f98440f4ad5e69f0797f2f669a6f39a}} 
+{\bfseries strstreambuf} (const signed char $\ast$\+\_\+\+\_\+get, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a7957ab4d2b448690f8f26dcf05ce478b}\label{classstrstreambuf_a7957ab4d2b448690f8f26dcf05ce478b}} 
+{\bfseries strstreambuf} (const unsigned char $\ast$\+\_\+\+\_\+get, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a2f1f667e8f096a2d85b7fa9ea6e30a77}\label{classstrstreambuf_a2f1f667e8f096a2d85b7fa9ea6e30a77}} 
+\hyperlink{interfacevoid}{void} {\bfseries freeze} (bool=true)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_ac9cc2a922403d370a34ea5c2bb90adec}\label{classstrstreambuf_ac9cc2a922403d370a34ea5c2bb90adec}} 
+char $\ast$ {\bfseries str} ()
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a33fc21ae316b075863e766413a39920b}\label{classstrstreambuf_a33fc21ae316b075863e766413a39920b}} 
+int {\bfseries pcount} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstrstreambuf_ad1f06e1545acc32b62896b8b0a95e1dc}\label{classstrstreambuf_ad1f06e1545acc32b62896b8b0a95e1dc}} 
+virtual int\+\_\+type {\bfseries overflow} (int\+\_\+type \+\_\+\+\_\+c=\+\_\+\+Traits\+::eof())
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a66e9b14481222e41abeaa61935d9131c}\label{classstrstreambuf_a66e9b14481222e41abeaa61935d9131c}} 
+virtual int\+\_\+type {\bfseries pbackfail} (int\+\_\+type \+\_\+\+\_\+c=\+\_\+\+Traits\+::eof())
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a120fef763c6d78f93aa0a03caa221e49}\label{classstrstreambuf_a120fef763c6d78f93aa0a03caa221e49}} 
+virtual int\+\_\+type {\bfseries underflow} ()
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a084cd1fe375cff3597bdeb1901e0aa1e}\label{classstrstreambuf_a084cd1fe375cff3597bdeb1901e0aa1e}} 
+virtual \hyperlink{classbasic__streambuf}{\+\_\+\+Base} $\ast$ {\bfseries setbuf} (char $\ast$\+\_\+\+\_\+buf, streamsize \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a34580fc2504992ac381212f23e7e85c8}\label{classstrstreambuf_a34580fc2504992ac381212f23e7e85c8}} 
+virtual pos\+\_\+type {\bfseries seekoff} (off\+\_\+type \+\_\+\+\_\+off, ios\+\_\+base\+::seekdir \+\_\+\+\_\+dir, ios\+\_\+base\+::openmode \+\_\+\+\_\+mode=ios\+\_\+base\+::in$\vert$ios\+\_\+base\+::out)
+\item 
+\mbox{\Hypertarget{classstrstreambuf_a36b10a8320f019904ef7c21e95240090}\label{classstrstreambuf_a36b10a8320f019904ef7c21e95240090}} 
+virtual pos\+\_\+type {\bfseries seekpos} (pos\+\_\+type \+\_\+\+\_\+pos, ios\+\_\+base\+::openmode \+\_\+\+\_\+mode=ios\+\_\+base\+::in$\vert$ios\+\_\+base\+::out)
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+strstream.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/src/strstream.\+cpp\end{DoxyCompactItemize}

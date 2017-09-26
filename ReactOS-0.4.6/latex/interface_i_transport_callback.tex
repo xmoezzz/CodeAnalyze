@@ -1,0 +1,56 @@
+\hypertarget{interface_i_transport_callback}{}\section{I\+Transport\+Callback接口 参考}
+\label{interface_i_transport_callback}\index{I\+Transport\+Callback@{I\+Transport\+Callback}}
+类 I\+Transport\+Callback 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_transport_callback}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_transport_callback_1_1tag_i_x_p_r_e_s_u_l_t}{tag\+I\+X\+P\+R\+E\+S\+U\+LT}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_af412819b8f035ba5beef56be11eb4af7}\label{interface_i_transport_callback_af412819b8f035ba5beef56be11eb4af7}} 
+enum {\bfseries tag\+C\+M\+D\+T\+Y\+PE} \{ {\bfseries C\+M\+D\+\_\+\+S\+E\+ND}, 
+{\bfseries C\+M\+D\+\_\+\+R\+E\+SP}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_a65b7f6e8bd5e748d9eb45819cc2e418c}\label{interface_i_transport_callback_a65b7f6e8bd5e748d9eb45819cc2e418c}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_transport_callback_1_1tag_i_x_p_r_e_s_u_l_t}{I\+Transport\+Callback\+::tag\+I\+X\+P\+R\+E\+S\+U\+LT} {\bfseries I\+X\+P\+R\+E\+S\+U\+LT}
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_af4e3db523768f1dbf2572c1c9ee8c1d8}\label{interface_i_transport_callback_af4e3db523768f1dbf2572c1c9ee8c1d8}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_transport_callback_1_1tag_i_x_p_r_e_s_u_l_t}{I\+Transport\+Callback\+::tag\+I\+X\+P\+R\+E\+S\+U\+LT} $\ast$ {\bfseries L\+P\+I\+X\+P\+R\+E\+S\+U\+LT}
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_af746c6f8eddbc62ec8fd4ba27a3c0b34}\label{interface_i_transport_callback_af746c6f8eddbc62ec8fd4ba27a3c0b34}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Transport\+Callback\+::tag\+C\+M\+D\+T\+Y\+PE {\bfseries C\+M\+D\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_a1ad57be24f193d4cf56a3160a13f2277}\label{interface_i_transport_callback_a1ad57be24f193d4cf56a3160a13f2277}} 
+H\+R\+E\+S\+U\+LT {\bfseries On\+Timeout} (\mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Timeout, \mbox{[}in\mbox{]} \hyperlink{interface_i_internet_transport}{I\+Internet\+Transport} $\ast$p\+Transport)
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_ab981927e57be4edf673de6ac28d2491e}\label{interface_i_transport_callback_ab981927e57be4edf673de6ac28d2491e}} 
+H\+R\+E\+S\+U\+LT {\bfseries On\+Logon\+Prompt} (\mbox{[}in, out\mbox{]} L\+P\+I\+N\+E\+T\+S\+E\+R\+V\+ER p\+Inet\+Server, \mbox{[}in\mbox{]} \hyperlink{interface_i_internet_transport}{I\+Internet\+Transport} $\ast$p\+Transport)
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_a09ac5e1f2a184a006c8e38ddeab0d844}\label{interface_i_transport_callback_a09ac5e1f2a184a006c8e38ddeab0d844}} 
+I\+NT {\bfseries On\+Prompt} (\mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr\+Error, \mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Text, \mbox{[}in\mbox{]} L\+P\+C\+S\+TR psz\+Caption, \mbox{[}in\mbox{]} U\+I\+NT u\+Type, \mbox{[}in\mbox{]} \hyperlink{interface_i_internet_transport}{I\+Internet\+Transport} $\ast$p\+Transport)
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_a7aaec083db91ba17ff8ef2b6578fc387}\label{interface_i_transport_callback_a7aaec083db91ba17ff8ef2b6578fc387}} 
+H\+R\+E\+S\+U\+LT {\bfseries On\+Status} (\mbox{[}in\mbox{]} I\+X\+P\+S\+T\+A\+T\+US ixpstatus, \mbox{[}in\mbox{]} \hyperlink{interface_i_internet_transport}{I\+Internet\+Transport} $\ast$p\+Transport)
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_a4e340e5e0876459218e941a955330a63}\label{interface_i_transport_callback_a4e340e5e0876459218e941a955330a63}} 
+H\+R\+E\+S\+U\+LT {\bfseries On\+Error} (\mbox{[}in\mbox{]} I\+X\+P\+S\+T\+A\+T\+US ixpstatus, \mbox{[}in\mbox{]} \hyperlink{struct_i_transport_callback_1_1tag_i_x_p_r_e_s_u_l_t}{L\+P\+I\+X\+P\+R\+E\+S\+U\+LT} p\+Result, \mbox{[}in\mbox{]} \hyperlink{interface_i_internet_transport}{I\+Internet\+Transport} $\ast$p\+Transport)
+\item 
+\mbox{\Hypertarget{interface_i_transport_callback_a913ae160ea978b202430a5ba5a631457}\label{interface_i_transport_callback_a913ae160ea978b202430a5ba5a631457}} 
+H\+R\+E\+S\+U\+LT {\bfseries On\+Command} (\mbox{[}in\mbox{]} C\+M\+D\+T\+Y\+PE cmdtype, \mbox{[}in\mbox{]} L\+P\+S\+TR psz\+Line, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr\+Response, \mbox{[}in\mbox{]} \hyperlink{interface_i_internet_transport}{I\+Internet\+Transport} $\ast$p\+Transport)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/imnxport.\+idl\end{DoxyCompactItemize}

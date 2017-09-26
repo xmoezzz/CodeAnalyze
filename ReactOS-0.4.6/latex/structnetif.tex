@@ -1,0 +1,122 @@
+\hypertarget{structnetif}{}\section{netif结构体 参考}
+\label{structnetif}\index{netif@{netif}}
+
+
+{\ttfamily \#include $<$netif.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif} $\ast$ \hyperlink{structnetif_ae77736b64df442242795220d76be6b86}{next}
+\item 
+ip\+\_\+addr\+\_\+t \hyperlink{structnetif_a9776aaee37ea8f07b9ddc0f8b4e7e866}{ip\+\_\+addr}
+\item 
+\mbox{\Hypertarget{structnetif_a5192f2fa2533f13cfde07d9d5bb0db2b}\label{structnetif_a5192f2fa2533f13cfde07d9d5bb0db2b}} 
+ip\+\_\+addr\+\_\+t {\bfseries netmask}
+\item 
+\mbox{\Hypertarget{structnetif_a353875b68ea303d237d1c3406134ec76}\label{structnetif_a353875b68ea303d237d1c3406134ec76}} 
+ip\+\_\+addr\+\_\+t {\bfseries gw}
+\item 
+netif\+\_\+input\+\_\+fn \hyperlink{structnetif_a8fe4f1b7b0d710216287da9615164a5c}{input}
+\item 
+netif\+\_\+output\+\_\+fn \hyperlink{structnetif_a8e1dcfe65db487feecd244355f39215e}{output}
+\item 
+netif\+\_\+linkoutput\+\_\+fn \hyperlink{structnetif_acaaac9b415a7be73eb8a287c8ed18a8d}{linkoutput}
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{structnetif_a809cc57c0dff09c5c9ae45b02c2002f3}{state}
+\item 
+u16\+\_\+t \hyperlink{structnetif_aca7d56b4e0f822b0ced2885f222b8d48}{mtu}
+\item 
+u8\+\_\+t \hyperlink{structnetif_afe1181561cb16241f3cb5ed01e567d42}{hwaddr\+\_\+len}
+\item 
+u8\+\_\+t \hyperlink{structnetif_ab91f76223d5a7f1a64f03ac9dd7113a4}{hwaddr} \mbox{[}N\+E\+T\+I\+F\+\_\+\+M\+A\+X\+\_\+\+H\+W\+A\+D\+D\+R\+\_\+\+L\+EN\mbox{]}
+\item 
+u8\+\_\+t \hyperlink{structnetif_a1c171db6097bbb6f09f63549a66e00ea}{flags}
+\item 
+char \hyperlink{structnetif_a32fca6ffd28bb9af3f891a378827a67e}{name} \mbox{[}2\mbox{]}
+\item 
+u8\+\_\+t \hyperlink{structnetif_ab7ef01e505dd2feb781fe86756b1c973}{num}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Generic data structure used for all lw\+IP network interfaces. The following fields should be filled in by the initialization function for the device driver\+: hwaddr\+\_\+len, hwaddr\mbox{[}\mbox{]}, mtu, flags 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structnetif_a1c171db6097bbb6f09f63549a66e00ea}\label{structnetif_a1c171db6097bbb6f09f63549a66e00ea}} 
+\index{netif@{netif}!flags@{flags}}
+\index{flags@{flags}!netif@{netif}}
+\subsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily u8\+\_\+t netif\+::flags}
+
+flags (see N\+E\+T\+I\+F\+\_\+\+F\+L\+A\+G\+\_\+ above) \mbox{\Hypertarget{structnetif_ab91f76223d5a7f1a64f03ac9dd7113a4}\label{structnetif_ab91f76223d5a7f1a64f03ac9dd7113a4}} 
+\index{netif@{netif}!hwaddr@{hwaddr}}
+\index{hwaddr@{hwaddr}!netif@{netif}}
+\subsubsection{\texorpdfstring{hwaddr}{hwaddr}}
+{\footnotesize\ttfamily u8\+\_\+t netif\+::hwaddr\mbox{[}N\+E\+T\+I\+F\+\_\+\+M\+A\+X\+\_\+\+H\+W\+A\+D\+D\+R\+\_\+\+L\+EN\mbox{]}}
+
+link level hardware address of this interface \mbox{\Hypertarget{structnetif_afe1181561cb16241f3cb5ed01e567d42}\label{structnetif_afe1181561cb16241f3cb5ed01e567d42}} 
+\index{netif@{netif}!hwaddr\+\_\+len@{hwaddr\+\_\+len}}
+\index{hwaddr\+\_\+len@{hwaddr\+\_\+len}!netif@{netif}}
+\subsubsection{\texorpdfstring{hwaddr\+\_\+len}{hwaddr\_len}}
+{\footnotesize\ttfamily u8\+\_\+t netif\+::hwaddr\+\_\+len}
+
+number of bytes used in hwaddr \mbox{\Hypertarget{structnetif_a8fe4f1b7b0d710216287da9615164a5c}\label{structnetif_a8fe4f1b7b0d710216287da9615164a5c}} 
+\index{netif@{netif}!input@{input}}
+\index{input@{input}!netif@{netif}}
+\subsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily netif\+\_\+input\+\_\+fn netif\+::input}
+
+\hyperlink{namespace_this}{This} function is called by the network device driver to pass a packet up the T\+C\+P/\+IP stack. \mbox{\Hypertarget{structnetif_a9776aaee37ea8f07b9ddc0f8b4e7e866}\label{structnetif_a9776aaee37ea8f07b9ddc0f8b4e7e866}} 
+\index{netif@{netif}!ip\+\_\+addr@{ip\+\_\+addr}}
+\index{ip\+\_\+addr@{ip\+\_\+addr}!netif@{netif}}
+\subsubsection{\texorpdfstring{ip\+\_\+addr}{ip\_addr}}
+{\footnotesize\ttfamily ip\+\_\+addr\+\_\+t netif\+::ip\+\_\+addr}
+
+IP address configuration in network byte order \mbox{\Hypertarget{structnetif_acaaac9b415a7be73eb8a287c8ed18a8d}\label{structnetif_acaaac9b415a7be73eb8a287c8ed18a8d}} 
+\index{netif@{netif}!linkoutput@{linkoutput}}
+\index{linkoutput@{linkoutput}!netif@{netif}}
+\subsubsection{\texorpdfstring{linkoutput}{linkoutput}}
+{\footnotesize\ttfamily netif\+\_\+linkoutput\+\_\+fn netif\+::linkoutput}
+
+\hyperlink{namespace_this}{This} function is called by the A\+RP module when it wants to send a packet on the interface. \hyperlink{namespace_this}{This} function outputs the pbuf as-\/is on the link medium. \mbox{\Hypertarget{structnetif_aca7d56b4e0f822b0ced2885f222b8d48}\label{structnetif_aca7d56b4e0f822b0ced2885f222b8d48}} 
+\index{netif@{netif}!mtu@{mtu}}
+\index{mtu@{mtu}!netif@{netif}}
+\subsubsection{\texorpdfstring{mtu}{mtu}}
+{\footnotesize\ttfamily u16\+\_\+t netif\+::mtu}
+
+maximum transfer unit (in bytes) \mbox{\Hypertarget{structnetif_a32fca6ffd28bb9af3f891a378827a67e}\label{structnetif_a32fca6ffd28bb9af3f891a378827a67e}} 
+\index{netif@{netif}!name@{name}}
+\index{name@{name}!netif@{netif}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char netif\+::name\mbox{[}2\mbox{]}}
+
+descriptive abbreviation \mbox{\Hypertarget{structnetif_ae77736b64df442242795220d76be6b86}\label{structnetif_ae77736b64df442242795220d76be6b86}} 
+\index{netif@{netif}!next@{next}}
+\index{next@{next}!netif@{netif}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structnetif}{netif}$\ast$ netif\+::next}
+
+pointer to next in linked list \mbox{\Hypertarget{structnetif_ab7ef01e505dd2feb781fe86756b1c973}\label{structnetif_ab7ef01e505dd2feb781fe86756b1c973}} 
+\index{netif@{netif}!num@{num}}
+\index{num@{num}!netif@{netif}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily u8\+\_\+t netif\+::num}
+
+number of this interface \mbox{\Hypertarget{structnetif_a8e1dcfe65db487feecd244355f39215e}\label{structnetif_a8e1dcfe65db487feecd244355f39215e}} 
+\index{netif@{netif}!output@{output}}
+\index{output@{output}!netif@{netif}}
+\subsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily netif\+\_\+output\+\_\+fn netif\+::output}
+
+\hyperlink{namespace_this}{This} function is called by the IP module when it wants to send a packet on the interface. \hyperlink{namespace_this}{This} function typically first resolves the hardware address, then sends the packet. \mbox{\Hypertarget{structnetif_a809cc57c0dff09c5c9ae45b02c2002f3}\label{structnetif_a809cc57c0dff09c5c9ae45b02c2002f3}} 
+\index{netif@{netif}!state@{state}}
+\index{state@{state}!netif@{netif}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ netif\+::state}
+
+\hyperlink{namespace_this}{This} field can be set by the device driver and could point to state information for the device. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/include/lwip/netif.\+h\end{DoxyCompactItemize}

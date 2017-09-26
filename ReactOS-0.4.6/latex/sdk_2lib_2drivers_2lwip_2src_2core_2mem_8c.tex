@@ -1,0 +1,173 @@
+\hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/mem.c 文件参考}
+\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/mem.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/mem.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/mem.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/sys.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/stats.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/err.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmem}{mem}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a278694c2333c9826f21ddd2c2d220f66}{M\+I\+N\+\_\+\+S\+I\+ZE}~12
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a97c704b85f71b6e61b0098b4a0a743cd}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a97c704b85f71b6e61b0098b4a0a743cd}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+G\+N\+ED}~L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+\_\+\+S\+I\+ZE(\hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a278694c2333c9826f21ddd2c2d220f66}{M\+I\+N\+\_\+\+S\+I\+ZE})
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ade9cedd48e9a482120e29c010352ee5c}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ade9cedd48e9a482120e29c010352ee5c}} 
+\#\hyperlink{structdefine}{define} {\bfseries S\+I\+Z\+E\+O\+F\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+M\+EM}~L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+\_\+\+S\+I\+ZE(sizeof(\hyperlink{interfacestruct}{struct} \hyperlink{structmem}{mem}))
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a78ed2097d5d3e2ca4599b2ca3d91493a}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a78ed2097d5d3e2ca4599b2ca3d91493a}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+E\+M\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+G\+N\+ED}~L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+\_\+\+S\+I\+ZE(\hyperlink{opt_8h_a2dcf8c45f945dd0c4301a94700f2112c}{M\+E\+M\+\_\+\+S\+I\+ZE})
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a4fa8ffb4c7a8b4c0404ad4278cc801d0}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a4fa8ffb4c7a8b4c0404ad4278cc801d0}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+W\+I\+P\+\_\+\+R\+A\+M\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+ER}~\hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ad177a0dcced85a03aad566e9ccbf127a}{ram\+\_\+heap}
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a581c4edded02d92caf7a938c801a618e}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a581c4edded02d92caf7a938c801a618e}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+F\+R\+E\+E\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+T\+E\+CT}()
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_aef413072690259b59ce27e49df19e307}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_aef413072690259b59ce27e49df19e307}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+F\+R\+E\+E\+\_\+\+P\+R\+O\+T\+E\+CT}()~sys\+\_\+mutex\+\_\+lock(\&mem\+\_\+mutex)
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_aa8a24c0593943bb1e64c1243dddfae50}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_aa8a24c0593943bb1e64c1243dddfae50}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+F\+R\+E\+E\+\_\+\+U\+N\+P\+R\+O\+T\+E\+CT}()~sys\+\_\+mutex\+\_\+unlock(\&mem\+\_\+mutex)
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a016a07ea84e1d75386765b90015b6698}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a016a07ea84e1d75386765b90015b6698}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+T\+E\+CT}()
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a3c644ac3ac94ed977bb165eeb6ff741a}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a3c644ac3ac94ed977bb165eeb6ff741a}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+P\+R\+O\+T\+E\+CT}()
+\item 
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_af0643ce3aa197952517914e1d644150a}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_af0643ce3aa197952517914e1d644150a}} 
+\#\hyperlink{structdefine}{define} {\bfseries L\+W\+I\+P\+\_\+\+M\+E\+M\+\_\+\+A\+L\+L\+O\+C\+\_\+\+U\+N\+P\+R\+O\+T\+E\+CT}()
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a44a136e3b70c36abb6f8dc060c778113}{mem\+\_\+init} (\hyperlink{interfacevoid}{void})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a65169147c44e9db60d997819af9b455c}{mem\+\_\+free} (\hyperlink{interfacevoid}{void} $\ast$rmem)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a2f0214c1c0d4acf856fb3ec76818a5a9}{mem\+\_\+trim} (\hyperlink{interfacevoid}{void} $\ast$rmem, mem\+\_\+size\+\_\+t newsize)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a932aa40d85b14cb7331625e012d12335}{mem\+\_\+malloc} (mem\+\_\+size\+\_\+t size)
+\item 
+\hyperlink{interfacevoid}{void} $\ast$ \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ab0bdc525971701883f2065e7fb257a24}{mem\+\_\+calloc} (mem\+\_\+size\+\_\+t count, mem\+\_\+size\+\_\+t size)
+\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+u8\+\_\+t \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ad177a0dcced85a03aad566e9ccbf127a}{ram\+\_\+heap} \mbox{[}M\+E\+M\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+G\+N\+ED+(2 $\ast$S\+I\+Z\+E\+O\+F\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+M\+EM)+\hyperlink{opt_8h_a97343214666ee6dcb18c0bd77b441ea7}{M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Dynamic memory manager
+
+\hyperlink{namespace_this}{This} is a lightweight replacement for the standard \hyperlink{struct_c}{C} library malloc().
+
+If you want to use the standard \hyperlink{struct_c}{C} library malloc() instead, define M\+E\+M\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+L\+L\+OC to 1 in your \hyperlink{lwipopts_8h_source}{lwipopts.\+h}
+
+To let \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a932aa40d85b14cb7331625e012d12335}{mem\+\_\+malloc()} use pools (prevents fragmentation and is much faster than a heap but might waste some memory), define M\+E\+M\+\_\+\+U\+S\+E\+\_\+\+P\+O\+O\+LS to 1, define M\+E\+M\+\_\+\+U\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+P\+O\+O\+LS to 1 and create a file \char`\"{}lwippools.\+h\char`\"{} that includes a list of pools like this (more pools can be added between \+\_\+\+S\+T\+A\+RT and \+\_\+\+E\+ND)\+:
+
+Define three pools with sizes 256, 512, and 1512 bytes L\+W\+I\+P\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+M\+E\+M\+P\+O\+O\+L\+\_\+\+S\+T\+A\+RT L\+W\+I\+P\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+M\+E\+M\+P\+O\+O\+L(20, 256) L\+W\+I\+P\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+M\+E\+M\+P\+O\+O\+L(10, 512) L\+W\+I\+P\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+M\+E\+M\+P\+O\+O\+L(5, 1512) L\+W\+I\+P\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+M\+E\+M\+P\+O\+O\+L\+\_\+\+E\+ND 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a278694c2333c9826f21ddd2c2d220f66}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a278694c2333c9826f21ddd2c2d220f66}} 
+\index{sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}!M\+I\+N\+\_\+\+S\+I\+ZE@{M\+I\+N\+\_\+\+S\+I\+ZE}}
+\index{M\+I\+N\+\_\+\+S\+I\+ZE@{M\+I\+N\+\_\+\+S\+I\+ZE}!sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}}
+\subsubsection{\texorpdfstring{M\+I\+N\+\_\+\+S\+I\+ZE}{MIN\_SIZE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+I\+N\+\_\+\+S\+I\+ZE~12}
+
+All allocated blocks will be M\+I\+N\+\_\+\+S\+I\+ZE bytes big, at least! M\+I\+N\+\_\+\+S\+I\+ZE can be overridden to suit your needs. Smaller values save space, larger values could prevent too small blocks to fragment the R\+AM too much. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ab0bdc525971701883f2065e7fb257a24}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ab0bdc525971701883f2065e7fb257a24}} 
+\index{sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}!mem\+\_\+calloc@{mem\+\_\+calloc}}
+\index{mem\+\_\+calloc@{mem\+\_\+calloc}!sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}}
+\subsubsection{\texorpdfstring{mem\+\_\+calloc()}{mem\_calloc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ mem\+\_\+calloc (\begin{DoxyParamCaption}\item[{mem\+\_\+size\+\_\+t}]{count,  }\item[{mem\+\_\+size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Contiguously allocates enough space for count objects that are size bytes of memory each and returns a pointer to the allocated memory.
+
+The allocated memory is filled with bytes of value zero.
+
+
+\begin{DoxyParams}{参数}
+{\em count} & number of objects to allocate \\
+\hline
+{\em size} & size of the objects to allocate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to allocated memory / N\+U\+LL pointer if there is an error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a65169147c44e9db60d997819af9b455c}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a65169147c44e9db60d997819af9b455c}} 
+\index{sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}!mem\+\_\+free@{mem\+\_\+free}}
+\index{mem\+\_\+free@{mem\+\_\+free}!sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}}
+\subsubsection{\texorpdfstring{mem\+\_\+free()}{mem\_free()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mem\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void} $\ast$}]{rmem }\end{DoxyParamCaption})}
+
+Put a struct mem back on the heap
+
+
+\begin{DoxyParams}{参数}
+{\em rmem} & is the data portion of a struct mem as returned by a previous call to \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a932aa40d85b14cb7331625e012d12335}{mem\+\_\+malloc()} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a44a136e3b70c36abb6f8dc060c778113}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a44a136e3b70c36abb6f8dc060c778113}} 
+\index{sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}!mem\+\_\+init@{mem\+\_\+init}}
+\index{mem\+\_\+init@{mem\+\_\+init}!sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}}
+\subsubsection{\texorpdfstring{mem\+\_\+init()}{mem\_init()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mem\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void}}]{ }\end{DoxyParamCaption})}
+
+Zero the heap and initialize start, end and lowest-\/free \mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a932aa40d85b14cb7331625e012d12335}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a932aa40d85b14cb7331625e012d12335}} 
+\index{sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}!mem\+\_\+malloc@{mem\+\_\+malloc}}
+\index{mem\+\_\+malloc@{mem\+\_\+malloc}!sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}}
+\subsubsection{\texorpdfstring{mem\+\_\+malloc()}{mem\_malloc()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ mem\+\_\+malloc (\begin{DoxyParamCaption}\item[{mem\+\_\+size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Adam\textquotesingle{}s \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a932aa40d85b14cb7331625e012d12335}{mem\+\_\+malloc()} plus solution for bug \#17922 Allocate a block of memory with a minimum of \textquotesingle{}size\textquotesingle{} bytes.
+
+
+\begin{DoxyParams}{参数}
+{\em size} & is the minimum size of the requested block in bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to allocated memory or N\+U\+LL if no free memory was found.
+\end{DoxyReturn}
+Note that the returned value will always be aligned (as defined by M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT). \mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a2f0214c1c0d4acf856fb3ec76818a5a9}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a2f0214c1c0d4acf856fb3ec76818a5a9}} 
+\index{sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}!mem\+\_\+trim@{mem\+\_\+trim}}
+\index{mem\+\_\+trim@{mem\+\_\+trim}!sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}}
+\subsubsection{\texorpdfstring{mem\+\_\+trim()}{mem\_trim()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}$\ast$ mem\+\_\+trim (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void} $\ast$}]{rmem,  }\item[{mem\+\_\+size\+\_\+t}]{newsize }\end{DoxyParamCaption})}
+
+Shrink memory returned by \hyperlink{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_a932aa40d85b14cb7331625e012d12335}{mem\+\_\+malloc()}.
+
+
+\begin{DoxyParams}{参数}
+{\em rmem} & pointer to memory allocated by mem\+\_\+malloc the is to be shrinked \\
+\hline
+{\em newsize} & required size after shrinking (needs to be smaller than or equal to the previous size) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+for compatibility reasons\+: is always == rmem, at the moment or N\+U\+LL if newsize is $>$ old size, in which case rmem is N\+OT touched or freed! 
+\end{DoxyReturn}
+
+
+\subsection{变量说明}
+\mbox{\Hypertarget{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ad177a0dcced85a03aad566e9ccbf127a}\label{sdk_2lib_2drivers_2lwip_2src_2core_2mem_8c_ad177a0dcced85a03aad566e9ccbf127a}} 
+\index{sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}!ram\+\_\+heap@{ram\+\_\+heap}}
+\index{ram\+\_\+heap@{ram\+\_\+heap}!sdk/lib/drivers/lwip/src/core/mem.\+c@{sdk/lib/drivers/lwip/src/core/mem.\+c}}
+\subsubsection{\texorpdfstring{ram\+\_\+heap}{ram\_heap}}
+{\footnotesize\ttfamily u8\+\_\+t ram\+\_\+heap\mbox{[}M\+E\+M\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+G\+N\+ED+(2 $\ast$S\+I\+Z\+E\+O\+F\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+\+M\+EM)+\hyperlink{opt_8h_a97343214666ee6dcb18c0bd77b441ea7}{M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}\mbox{]}}
+
+If you want to relocate the heap to external memory, simply define L\+W\+I\+P\+\_\+\+R\+A\+M\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+ER as a void-\/pointer to that location. If so, make sure the memory at that location is big enough (see below on how that space is calculated). the heap. we need one struct mem at the end and some room for alignment 

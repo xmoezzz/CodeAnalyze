@@ -1,0 +1,59 @@
+\hypertarget{interface_i_tf_category_mgr}{}\section{I\+Tf\+Category\+Mgr接口 参考}
+\label{interface_i_tf_category_mgr}\index{I\+Tf\+Category\+Mgr@{I\+Tf\+Category\+Mgr}}
+类 I\+Tf\+Category\+Mgr 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_tf_category_mgr}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a9fdfc02937055e088b878f2d922f6db5}\label{interface_i_tf_category_mgr_a9fdfc02937055e088b878f2d922f6db5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Category} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rcatid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_ab26287ea499ff7133daef428486ecaad}\label{interface_i_tf_category_mgr_ab26287ea499ff7133daef428486ecaad}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Category} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rcatid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a3aabefe72239170a1d126092d8f4f580}\label{interface_i_tf_category_mgr_a3aabefe72239170a1d126092d8f4f580}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Categories\+In\+Item} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_g_u_i_d}{I\+Enum\+G\+U\+ID} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a8d094b2349d25a8827acd476b4eebc70}\label{interface_i_tf_category_mgr_a8d094b2349d25a8827acd476b4eebc70}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Items\+In\+Category} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rcatid, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_g_u_i_d}{I\+Enum\+G\+U\+ID} $\ast$$\ast$pp\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a233102349affdfe73999ebe0b11ec249}\label{interface_i_tf_category_mgr_a233102349affdfe73999ebe0b11ec249}} 
+H\+R\+E\+S\+U\+LT {\bfseries Find\+Closest\+Category} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pcatid, \mbox{[}in, size\+\_\+is(ul\+Count)\mbox{]} const \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$$\ast$ppcatid\+List, \mbox{[}in\mbox{]} U\+L\+O\+NG ul\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_af8abb13d1a97aeab4717de9b317c543f}\label{interface_i_tf_category_mgr_af8abb13d1a97aeab4717de9b317c543f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+G\+U\+I\+D\+Description} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}in, size\+\_\+is(cch)\mbox{]} const W\+C\+H\+AR $\ast$pch\+Desc, \mbox{[}in\mbox{]} U\+L\+O\+NG cch)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a87593ef7124256a5f1f119c17fc0fc2a}\label{interface_i_tf_category_mgr_a87593ef7124256a5f1f119c17fc0fc2a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+G\+U\+I\+D\+Description} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a839fdeeba235bb2e91ac997a93c25dc5}\label{interface_i_tf_category_mgr_a839fdeeba235bb2e91ac997a93c25dc5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+G\+U\+I\+D\+Description} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}out\mbox{]} B\+S\+TR $\ast$pbstr\+Desc)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a24f52fb618b44f3d5abe564db454704e}\label{interface_i_tf_category_mgr_a24f52fb618b44f3d5abe564db454704e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+G\+U\+I\+D\+D\+W\+O\+RD} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}in\mbox{]} D\+W\+O\+RD dw)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_ab53d408d1d16d40f18cb9615265231ad}\label{interface_i_tf_category_mgr_ab53d408d1d16d40f18cb9615265231ad}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+G\+U\+I\+D\+D\+W\+O\+RD} (\mbox{[}in\mbox{]} R\+E\+F\+C\+L\+S\+ID rclsid, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a705a1b39b68297b80a078d1a81aba398}\label{interface_i_tf_category_mgr_a705a1b39b68297b80a078d1a81aba398}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+G\+U\+I\+D\+D\+W\+O\+RD} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_afeafa90559a7a419b07fb134805afe74}\label{interface_i_tf_category_mgr_afeafa90559a7a419b07fb134805afe74}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+G\+U\+ID} (\mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}out\mbox{]} Tf\+Guid\+Atom $\ast$pguidatom)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a891435239516e212b4e8e1664cc94830}\label{interface_i_tf_category_mgr_a891435239516e212b4e8e1664cc94830}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+G\+U\+ID} (\mbox{[}in\mbox{]} Tf\+Guid\+Atom guidatom, \mbox{[}out\mbox{]} \hyperlink{interface_g_u_i_d}{G\+U\+ID} $\ast$pguid)
+\item 
+\mbox{\Hypertarget{interface_i_tf_category_mgr_a733ae0926192a5e8f379ab46a598e743}\label{interface_i_tf_category_mgr_a733ae0926192a5e8f379ab46a598e743}} 
+H\+R\+E\+S\+U\+LT {\bfseries Is\+Equal\+Tf\+Guid\+Atom} (\mbox{[}in\mbox{]} Tf\+Guid\+Atom guidatom, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} rguid, \mbox{[}out\mbox{]} B\+O\+OL $\ast$pf\+Equal)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/msctf.\+idl\end{DoxyCompactItemize}

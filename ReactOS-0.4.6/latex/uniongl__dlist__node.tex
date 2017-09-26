@@ -1,0 +1,53 @@
+\hypertarget{uniongl__dlist__node}{}\section{gl\+\_\+dlist\+\_\+node联合体 参考}
+\label{uniongl__dlist__node}\index{gl\+\_\+dlist\+\_\+node@{gl\+\_\+dlist\+\_\+node}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_a839076f9f4a5a73180a19c4c571c48f6}\label{uniongl__dlist__node_a839076f9f4a5a73180a19c4c571c48f6}} 
+\hyperlink{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}{Op\+Code} {\bfseries opcode}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_a2c2d2627408b37032d41817c8e8c9dc6}\label{uniongl__dlist__node_a2c2d2627408b37032d41817c8e8c9dc6}} 
+G\+Lboolean {\bfseries b}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_a9f8bd8522b38b3b6fbf1bf62f7098507}\label{uniongl__dlist__node_a9f8bd8522b38b3b6fbf1bf62f7098507}} 
+G\+Lbitfield {\bfseries bf}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_af7597c164f6c3a62f9655d9d7d91df3d}\label{uniongl__dlist__node_af7597c164f6c3a62f9655d9d7d91df3d}} 
+G\+Lubyte {\bfseries ub}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_a3ef8723c81dc5e5f8fe6b97eb389270a}\label{uniongl__dlist__node_a3ef8723c81dc5e5f8fe6b97eb389270a}} 
+G\+Lshort {\bfseries s}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_a6a4a9e81ecb0f3619732e6543f6f63eb}\label{uniongl__dlist__node_a6a4a9e81ecb0f3619732e6543f6f63eb}} 
+G\+Lushort {\bfseries us}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_aeb29f0cfb438a0ee4b4bd68a9d76d6e6}\label{uniongl__dlist__node_aeb29f0cfb438a0ee4b4bd68a9d76d6e6}} 
+G\+Lint {\bfseries i}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_adc97ed2be8b44d9f61ad7b9d8030d10c}\label{uniongl__dlist__node_adc97ed2be8b44d9f61ad7b9d8030d10c}} 
+G\+Luint {\bfseries ui}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_a6ecb803fdba0e4654211245be5c9cd1b}\label{uniongl__dlist__node_a6ecb803fdba0e4654211245be5c9cd1b}} 
+\hyperlink{interfacevoid}{G\+Lenum} {\bfseries e}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_a7fd0f10669b3d9f9f085602aafed49ff}\label{uniongl__dlist__node_a7fd0f10669b3d9f9f085602aafed49ff}} 
+G\+Lfloat {\bfseries f}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_ac78b160a0228f9f81e13b0140b6c3558}\label{uniongl__dlist__node_ac78b160a0228f9f81e13b0140b6c3558}} 
+\hyperlink{interfacevoid}{G\+Lvoid} $\ast$ {\bfseries data}
+\item 
+\mbox{\Hypertarget{uniongl__dlist__node_aa69a137e2d7faaebebda31cf3708bbc1}\label{uniongl__dlist__node_aa69a137e2d7faaebebda31cf3708bbc1}} 
+\hyperlink{interfacevoid}{void} $\ast$ {\bfseries next}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Display list node.
+
+Display list instructions are stored as sequences of \char`\"{}nodes\char`\"{}. Nodes are allocated in blocks. Each block has B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE nodes. Blocks are linked together with a pointer.
+
+Each instruction in the display list is stored as a sequence of contiguous nodes in memory. Each node is the union of a variety of data types. 
+
+该联合体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{dlist_8c}{dlist.\+c}\end{DoxyCompactItemize}

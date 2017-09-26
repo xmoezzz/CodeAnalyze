@@ -1,0 +1,321 @@
+\hypertarget{simple__list_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/simple\+\_\+list.h 文件参考}
+\label{simple__list_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/simple\+\_\+list.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/simple\+\_\+list.\+h}}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsimple__node}{simple\+\_\+node}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a9eef5543e07db72f8d4d4706764ba0f8}{remove\+\_\+from\+\_\+list}(elem)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a6658c6db5c1a75d8eac1a2b44c8827bc}{insert\+\_\+at\+\_\+head}(\hyperlink{classlist}{list},  elem)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a68442d08d14973df59ef5cd3dc819975}{insert\+\_\+at\+\_\+tail}(\hyperlink{classlist}{list},  elem)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a30d1b93cb5704a94f5548245d1a2d47f}{move\+\_\+to\+\_\+head}(\hyperlink{classlist}{list},  elem)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a340df7d6c770bc8902cb52451f1d7cc3}{move\+\_\+to\+\_\+tail}(\hyperlink{classlist}{list},  elem)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_acd26cdc4dc660ef619fd313ae02395e0}{make\+\_\+empty\+\_\+list}(sentinal)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_aafe770e32c6399b42eccb8947c49a5c8}{first\+\_\+elem}(\hyperlink{classlist}{list})~((\hyperlink{classlist}{list})-\/$>$next)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a447b74d502b70fea3a8930f711c309bb}{last\+\_\+elem}(\hyperlink{classlist}{list})~((\hyperlink{classlist}{list})-\/$>$prev)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_ad48abc62d0b2cae5dbd2614bc235a0f0}{next\+\_\+elem}(elem)~((elem)-\/$>$next)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a4872ba8b8efbf239200ab84622f9106b}{prev\+\_\+elem}(elem)~((elem)-\/$>$prev)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_ad90e93adeb521612d2928b19cb3f65cd}{at\+\_\+end}(\hyperlink{classlist}{list},  elem)~((elem) == (\hyperlink{classlist}{list}))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a0be10b494a6559b5e1d81eafaeb686e9}{is\+\_\+empty\+\_\+list}(\hyperlink{classlist}{list})~((\hyperlink{classlist}{list})-\/$>$next == (\hyperlink{classlist}{list}))
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_ad1ffbaf162fc8ece27018b9df1051bff}{foreach}(ptr,  \hyperlink{classlist}{list})~for( ptr=(\hyperlink{classlist}{list})-\/$>$next ;  ptr!=\hyperlink{classlist}{list} ;  ptr=(ptr)-\/$>$next )
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{simple__list_8h_a69a4e2e90cb13f628b93387aaae1e99f}{foreach\+\_\+s}(ptr,  t,  \hyperlink{classlist}{list})~for(ptr=(\hyperlink{classlist}{list})-\/$>$next,t=(ptr)-\/$>$next; \hyperlink{classlist}{list} != ptr; ptr=t, t=(t)-\/$>$next)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Simple macros for type-\/safe, intrusive lists.
+
+Intended to work with a list sentinal which is created as an empty list. Insert \& delete are O(1).
+
+\begin{DoxyAuthor}{作者}
+(\hyperlink{struct_c}{C}) 1997, Keith Whitwell 
+\end{DoxyAuthor}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{simple__list_8h_ad90e93adeb521612d2928b19cb3f65cd}\label{simple__list_8h_ad90e93adeb521612d2928b19cb3f65cd}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!at\+\_\+end@{at\+\_\+end}}
+\index{at\+\_\+end@{at\+\_\+end}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{at\+\_\+end}{at\_end}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} at\+\_\+end(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list},  }\item[{}]{elem }\end{DoxyParamCaption})~((elem) == (\hyperlink{classlist}{list}))}
+
+\hyperlink{class_test}{Test} whether element is at end of the list.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list. \\
+\hline
+{\em elem} & element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+non-\/zero if element is at end of list, or zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{simple__list_8h_aafe770e32c6399b42eccb8947c49a5c8}\label{simple__list_8h_aafe770e32c6399b42eccb8947c49a5c8}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!first\+\_\+elem@{first\+\_\+elem}}
+\index{first\+\_\+elem@{first\+\_\+elem}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{first\+\_\+elem}{first\_elem}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} first\+\_\+elem(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list} }\end{DoxyParamCaption})~((\hyperlink{classlist}{list})-\/$>$next)}
+
+Get list first element.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to first element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{simple__list_8h_ad1ffbaf162fc8ece27018b9df1051bff}\label{simple__list_8h_ad1ffbaf162fc8ece27018b9df1051bff}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!foreach@{foreach}}
+\index{foreach@{foreach}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{foreach}{foreach}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} foreach(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{\hyperlink{classlist}{list} }\end{DoxyParamCaption})~for( ptr=(\hyperlink{classlist}{list})-\/$>$next ;  ptr!=\hyperlink{classlist}{list} ;  ptr=(ptr)-\/$>$next )}
+
+Walk through the elements of a list.
+
+
+\begin{DoxyParams}{参数}
+{\em ptr} & pointer to the current element. \\
+\hline
+{\em list} & list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+\hyperlink{class_it}{It} should be followed by a \{ \} block or a single statement, as in a {\ttfamily for} loop. 
+\end{DoxyNote}
+\mbox{\Hypertarget{simple__list_8h_a69a4e2e90cb13f628b93387aaae1e99f}\label{simple__list_8h_a69a4e2e90cb13f628b93387aaae1e99f}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!foreach\+\_\+s@{foreach\+\_\+s}}
+\index{foreach\+\_\+s@{foreach\+\_\+s}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{foreach\+\_\+s}{foreach\_s}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} foreach\+\_\+s(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{t,  }\item[{}]{\hyperlink{classlist}{list} }\end{DoxyParamCaption})~for(ptr=(\hyperlink{classlist}{list})-\/$>$next,t=(ptr)-\/$>$next; \hyperlink{classlist}{list} != ptr; ptr=t, t=(t)-\/$>$next)}
+
+Walk through the elements of a list.
+
+Same as \hyperlink{simple__list_8h_ad1ffbaf162fc8ece27018b9df1051bff}{foreach} but lets you unlink the current value during a list traversal. Useful for freeing a list, element by element.
+
+
+\begin{DoxyParams}{参数}
+{\em ptr} & pointer to the current element. \\
+\hline
+{\em t} & temporary pointer. \\
+\hline
+{\em list} & list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+\hyperlink{class_it}{It} should be followed by a \{ \} block or a single statement, as in a {\ttfamily for} loop. 
+\end{DoxyNote}
+\mbox{\Hypertarget{simple__list_8h_a6658c6db5c1a75d8eac1a2b44c8827bc}\label{simple__list_8h_a6658c6db5c1a75d8eac1a2b44c8827bc}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!insert\+\_\+at\+\_\+head@{insert\+\_\+at\+\_\+head}}
+\index{insert\+\_\+at\+\_\+head@{insert\+\_\+at\+\_\+head}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{insert\+\_\+at\+\_\+head}{insert\_at\_head}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} insert\+\_\+at\+\_\+head(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list},  }\item[{}]{elem }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   (elem)->prev = \hyperlink{classlist}{list};             \(\backslash\)
+   (elem)->next = (\hyperlink{classlist}{list})->next;         \(\backslash\)
+   (\hyperlink{classlist}{list})->next->prev = elem;           \(\backslash\)
+   (\hyperlink{classlist}{list})->next = elem;             \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Insert an element to the list head.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list. \\
+\hline
+{\em elem} & element to insert. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{simple__list_8h_a68442d08d14973df59ef5cd3dc819975}\label{simple__list_8h_a68442d08d14973df59ef5cd3dc819975}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!insert\+\_\+at\+\_\+tail@{insert\+\_\+at\+\_\+tail}}
+\index{insert\+\_\+at\+\_\+tail@{insert\+\_\+at\+\_\+tail}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{insert\+\_\+at\+\_\+tail}{insert\_at\_tail}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} insert\+\_\+at\+\_\+tail(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list},  }\item[{}]{elem }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   (elem)->next = \hyperlink{classlist}{list};             \(\backslash\)
+   (elem)->prev = (\hyperlink{classlist}{list})->prev;         \(\backslash\)
+   (\hyperlink{classlist}{list})->prev->next = elem;           \(\backslash\)
+   (\hyperlink{classlist}{list})->prev = elem;             \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Insert an element to the list tail.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list. \\
+\hline
+{\em elem} & element to insert. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{simple__list_8h_a0be10b494a6559b5e1d81eafaeb686e9}\label{simple__list_8h_a0be10b494a6559b5e1d81eafaeb686e9}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!is\+\_\+empty\+\_\+list@{is\+\_\+empty\+\_\+list}}
+\index{is\+\_\+empty\+\_\+list@{is\+\_\+empty\+\_\+list}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+empty\+\_\+list}{is\_empty\_list}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} is\+\_\+empty\+\_\+list(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list} }\end{DoxyParamCaption})~((\hyperlink{classlist}{list})-\/$>$next == (\hyperlink{classlist}{list}))}
+
+\hyperlink{class_test}{Test} if a list is empty.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+non-\/zero if list empty, or zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{simple__list_8h_a447b74d502b70fea3a8930f711c309bb}\label{simple__list_8h_a447b74d502b70fea3a8930f711c309bb}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!last\+\_\+elem@{last\+\_\+elem}}
+\index{last\+\_\+elem@{last\+\_\+elem}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{last\+\_\+elem}{last\_elem}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} last\+\_\+elem(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list} }\end{DoxyParamCaption})~((\hyperlink{classlist}{list})-\/$>$prev)}
+
+Get list last element.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to last element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{simple__list_8h_acd26cdc4dc660ef619fd313ae02395e0}\label{simple__list_8h_acd26cdc4dc660ef619fd313ae02395e0}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!make\+\_\+empty\+\_\+list@{make\+\_\+empty\+\_\+list}}
+\index{make\+\_\+empty\+\_\+list@{make\+\_\+empty\+\_\+list}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+empty\+\_\+list}{make\_empty\_list}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} make\+\_\+empty\+\_\+list(\begin{DoxyParamCaption}\item[{}]{sentinal }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   (sentinal)->next = sentinal;         \(\backslash\)
+   (sentinal)->prev = sentinal;         \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Make a empty list empty.
+
+
+\begin{DoxyParams}{参数}
+{\em sentinal} & list (sentinal element). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{simple__list_8h_a30d1b93cb5704a94f5548245d1a2d47f}\label{simple__list_8h_a30d1b93cb5704a94f5548245d1a2d47f}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!move\+\_\+to\+\_\+head@{move\+\_\+to\+\_\+head}}
+\index{move\+\_\+to\+\_\+head@{move\+\_\+to\+\_\+head}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{move\+\_\+to\+\_\+head}{move\_to\_head}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} move\+\_\+to\+\_\+head(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list},  }\item[{}]{elem }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   remove\_from\_list(elem);          \(\backslash\)
+   insert\_at\_head(\hyperlink{classlist}{list}, elem);          \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Move an element to the list head.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list. \\
+\hline
+{\em elem} & element to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{simple__list_8h_a340df7d6c770bc8902cb52451f1d7cc3}\label{simple__list_8h_a340df7d6c770bc8902cb52451f1d7cc3}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!move\+\_\+to\+\_\+tail@{move\+\_\+to\+\_\+tail}}
+\index{move\+\_\+to\+\_\+tail@{move\+\_\+to\+\_\+tail}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{move\+\_\+to\+\_\+tail}{move\_to\_tail}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} move\+\_\+to\+\_\+tail(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classlist}{list},  }\item[{}]{elem }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   remove\_from\_list(elem);          \(\backslash\)
+   insert\_at\_tail(\hyperlink{classlist}{list}, elem);          \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Move an element to the list tail.
+
+
+\begin{DoxyParams}{参数}
+{\em list} & list. \\
+\hline
+{\em elem} & element to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{simple__list_8h_ad48abc62d0b2cae5dbd2614bc235a0f0}\label{simple__list_8h_ad48abc62d0b2cae5dbd2614bc235a0f0}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!next\+\_\+elem@{next\+\_\+elem}}
+\index{next\+\_\+elem@{next\+\_\+elem}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{next\+\_\+elem}{next\_elem}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} next\+\_\+elem(\begin{DoxyParamCaption}\item[{}]{elem }\end{DoxyParamCaption})~((elem)-\/$>$next)}
+
+Get next element.
+
+
+\begin{DoxyParams}{参数}
+{\em elem} & element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to next element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{simple__list_8h_a4872ba8b8efbf239200ab84622f9106b}\label{simple__list_8h_a4872ba8b8efbf239200ab84622f9106b}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!prev\+\_\+elem@{prev\+\_\+elem}}
+\index{prev\+\_\+elem@{prev\+\_\+elem}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{prev\+\_\+elem}{prev\_elem}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} prev\+\_\+elem(\begin{DoxyParamCaption}\item[{}]{elem }\end{DoxyParamCaption})~((elem)-\/$>$prev)}
+
+Get previous element.
+
+
+\begin{DoxyParams}{参数}
+{\em elem} & element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+pointer to previous element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{simple__list_8h_a9eef5543e07db72f8d4d4706764ba0f8}\label{simple__list_8h_a9eef5543e07db72f8d4d4706764ba0f8}} 
+\index{simple\+\_\+list.\+h@{simple\+\_\+list.\+h}!remove\+\_\+from\+\_\+list@{remove\+\_\+from\+\_\+list}}
+\index{remove\+\_\+from\+\_\+list@{remove\+\_\+from\+\_\+list}!simple\+\_\+list.\+h@{simple\+\_\+list.\+h}}
+\subsubsection{\texorpdfstring{remove\+\_\+from\+\_\+list}{remove\_from\_list}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} remove\+\_\+from\+\_\+list(\begin{DoxyParamCaption}\item[{}]{elem }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   (elem)->next->prev = (elem)->prev;       \(\backslash\)
+   (elem)->prev->next = (elem)->next;       \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Remove an element from list.
+
+
+\begin{DoxyParams}{参数}
+{\em elem} & element to remove. \\
+\hline
+\end{DoxyParams}

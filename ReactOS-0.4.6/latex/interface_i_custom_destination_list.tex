@@ -1,0 +1,54 @@
+\hypertarget{interface_i_custom_destination_list}{}\section{I\+Custom\+Destination\+List接口 参考}
+\label{interface_i_custom_destination_list}\index{I\+Custom\+Destination\+List@{I\+Custom\+Destination\+List}}
+类 I\+Custom\+Destination\+List 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_custom_destination_list}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_ad05f33d8f53955a833029ba7165b4f9b}\label{interface_i_custom_destination_list_ad05f33d8f53955a833029ba7165b4f9b}} 
+enum {\bfseries K\+N\+O\+W\+N\+D\+E\+S\+T\+C\+A\+T\+E\+G\+O\+RY} \{ {\bfseries K\+D\+C\+\_\+\+F\+R\+E\+Q\+U\+E\+NT} = 1, 
+{\bfseries K\+D\+C\+\_\+\+R\+E\+C\+E\+NT}
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a45b7b2d33d8b67e5bb5d5ac54a3bcd11}\label{interface_i_custom_destination_list_a45b7b2d33d8b67e5bb5d5ac54a3bcd11}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Custom\+Destination\+List\+::\+K\+N\+O\+W\+N\+D\+E\+S\+T\+C\+A\+T\+E\+G\+O\+RY {\bfseries K\+N\+O\+W\+N\+D\+E\+S\+T\+C\+A\+T\+E\+G\+O\+RY}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a68ae002ff5fd480a6051f2476d72acde}\label{interface_i_custom_destination_list_a68ae002ff5fd480a6051f2476d72acde}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+App\+ID} (\mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+App\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a1250349d9c100d2532d0aefa8c04e8ee}\label{interface_i_custom_destination_list_a1250349d9c100d2532d0aefa8c04e8ee}} 
+H\+R\+E\+S\+U\+LT {\bfseries Begin\+List} (\mbox{[}out\mbox{]} U\+I\+NT $\ast$pc\+Min\+Slots, \mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv)
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_add4f462bfd1784995a40b2b55781ced2}\label{interface_i_custom_destination_list_add4f462bfd1784995a40b2b55781ced2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Append\+Category} (\mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+Category, \mbox{[}in\mbox{]} \hyperlink{interface_i_object_array}{I\+Object\+Array} $\ast$poa)
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a1d3e5b9f841c5a29da0c3e3b5519151e}\label{interface_i_custom_destination_list_a1d3e5b9f841c5a29da0c3e3b5519151e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Append\+Known\+Category} (\mbox{[}in\mbox{]} K\+N\+O\+W\+N\+D\+E\+S\+T\+C\+A\+T\+E\+G\+O\+RY \hyperlink{structcategory}{category})
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a1db986eee1b89277f1dcbc617b25e7a0}\label{interface_i_custom_destination_list_a1db986eee1b89277f1dcbc617b25e7a0}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+User\+Tasks} (\mbox{[}in\mbox{]} \hyperlink{interface_i_object_array}{I\+Object\+Array} $\ast$poa)
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_ab33e3c53cb3b4b83b0108681c3c51660}\label{interface_i_custom_destination_list_ab33e3c53cb3b4b83b0108681c3c51660}} 
+H\+R\+E\+S\+U\+LT {\bfseries Commit\+List} ()
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a94998118ca587a06fce76d85ba620a60}\label{interface_i_custom_destination_list_a94998118ca587a06fce76d85ba620a60}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Removed\+Destinations} (\mbox{[}in\mbox{]} R\+E\+F\+I\+ID riid, \mbox{[}out, iid\+\_\+is(riid)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$$\ast$ppv)
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a40695a327ebc9bde6aafcbb191e1a5e5}\label{interface_i_custom_destination_list_a40695a327ebc9bde6aafcbb191e1a5e5}} 
+H\+R\+E\+S\+U\+LT {\bfseries Delete\+List} (\mbox{[}in, \hyperlink{interfaceunique}{unique}, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR psz\+App\+ID)
+\item 
+\mbox{\Hypertarget{interface_i_custom_destination_list_a7b3093115b12c24d10b7cf8e1cd55f2d}\label{interface_i_custom_destination_list_a7b3093115b12c24d10b7cf8e1cd55f2d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Abort\+List} ()
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

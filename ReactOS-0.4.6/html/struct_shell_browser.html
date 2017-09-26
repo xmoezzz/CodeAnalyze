@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ShellBrowser结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="struct_shell_browser-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ShellBrowser结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementation of <a class="el" href="struct_i_shell_browser_impl.html" title="Implementation of IShellBrowser and ICommDlgBrowser interfaces for explorer child windows (see ShellB...">IShellBrowserImpl</a> interface in explorer child windows  
+ <a href="struct_shell_browser.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="shellbrowser_8h_source.html">shellbrowser.h</a>&gt;</code></p>
+<div class="dynheader">
+类 ShellBrowser 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="struct_shell_browser.png" usemap="#ShellBrowser_map" alt=""/>
+  <map id="ShellBrowser_map" name="ShellBrowser_map">
+<area href="struct_i_shell_browser_impl.html" title="Implementation of IShellBrowser and ICommDlgBrowser interfaces for explorer child windows (see ShellB..." alt="IShellBrowserImpl" shape="rect" coords="478,168,787,192"/>
+<area href="class_i_com_srv_base.html" alt="IComSrvBase&lt; IShellFolderViewCB, ShellBrowser &gt;" shape="rect" coords="1276,168,1585,192"/>
+<area href="struct_simple_com_object.html" alt="SimpleComObject" shape="rect" coords="1595,168,1904,192"/>
+<area href="interface_i_shell_browser.html" alt="IShellBrowser" shape="rect" coords="0,112,309,136"/>
+<area href="interface_i_comm_dlg_browser.html" alt="ICommDlgBrowser" shape="rect" coords="319,112,628,136"/>
+<area href="interface_i_service_provider.html" alt="IServiceProvider" shape="rect" coords="638,112,947,136"/>
+<area href="interface_i_ole_command_target.html" alt="IOleCommandTarget" shape="rect" coords="957,112,1266,136"/>
+<area href="struct_i_com_srv_q_i.html" alt="IComSrvQI&lt; IShellFolderViewCB &gt;" shape="rect" coords="1276,112,1585,136"/>
+<area href="struct_com_srv_object.html" alt="ComSrvObject" shape="rect" coords="1595,112,1904,136"/>
+<area href="interface_i_ole_window.html" alt="IOleWindow" shape="rect" coords="0,56,309,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="319,56,628,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="638,56,947,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="957,56,1266,80"/>
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,309,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2c733275115abda08633c5b82ce94c8b"><td class="memItemLeft" align="right" valign="top"><a id="a2c733275115abda08633c5b82ce94c8b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShellBrowser</b> (<a class="el" href="interfacevoid.html">HWND</a> hwnd, <a class="el" href="interfacevoid.html">HWND</a> hwndFrame, <a class="el" href="interfacevoid.html">HWND</a> left_hwnd, WindowHandle &amp;right_hwnd, <a class="el" href="struct_shell_path_info.html">ShellPathInfo</a> &amp;create_info, <a class="el" href="struct_browser_callback.html">BrowserCallback</a> *cb, <a class="el" href="struct_ctx_menu_interfaces.html">CtxMenuInterfaces</a> &amp;cm_ifs)</td></tr>
+<tr class="separator:a2c733275115abda08633c5b82ce94c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ef9484f4cdbeaa56f5d263fac35b89"><td class="memItemLeft" align="right" valign="top"><a id="af2ef9484f4cdbeaa56f5d263fac35b89"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindow</b> (<a class="el" href="interfacevoid.html">HWND</a> *lphwnd)</td></tr>
+<tr class="separator:af2ef9484f4cdbeaa56f5d263fac35b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9789b5ddd529e03fedccf128e8f600aa"><td class="memItemLeft" align="right" valign="top"><a id="a9789b5ddd529e03fedccf128e8f600aa"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>QueryActiveShellView</b> (<a class="el" href="interface_i_shell_view.html">IShellView</a> **ppshv)</td></tr>
+<tr class="separator:a9789b5ddd529e03fedccf128e8f600aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726d30c8025a099982f719688a99549b"><td class="memItemLeft" align="right" valign="top"><a id="a726d30c8025a099982f719688a99549b"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>GetControlWindow</b> (UINT id, <a class="el" href="interfacevoid.html">HWND</a> *lphwnd)</td></tr>
+<tr class="separator:a726d30c8025a099982f719688a99549b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28923301e63179739c2158ef50a819e5"><td class="memItemLeft" align="right" valign="top"><a id="a28923301e63179739c2158ef50a819e5"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>SendControlMsg</b> (UINT id, UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT *pret)</td></tr>
+<tr class="separator:a28923301e63179739c2158ef50a819e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c3a1a56c5f4060abc9d073c70d54ef"><td class="memItemLeft" align="right" valign="top"><a id="ad4c3a1a56c5f4060abc9d073c70d54ef"></a>
+const <a class="el" href="struct_root.html">Root</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_root</b> () const</td></tr>
+<tr class="separator:ad4c3a1a56c5f4060abc9d073c70d54ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3c44d0da0b9be70d74f8ea38282c0d"><td class="memItemLeft" align="right" valign="top"><a id="afb3c44d0da0b9be70d74f8ea38282c0d"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnTreeGetDispInfo</b> (int idCtrl, <a class="el" href="structtag_n_m_h_d_r.html">LPNMHDR</a> pnmh)</td></tr>
+<tr class="separator:afb3c44d0da0b9be70d74f8ea38282c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8fac330db34ae5edc9030f08ad1f0f"><td class="memItemLeft" align="right" valign="top"><a id="a4f8fac330db34ae5edc9030f08ad1f0f"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnTreeItemExpanding</b> (int idCtrl, LPNMTREEVIEW pnmtv)</td></tr>
+<tr class="separator:a4f8fac330db34ae5edc9030f08ad1f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa37042bfb7f5e20f1c3b1a65300dcf9"><td class="memItemLeft" align="right" valign="top"><a id="afa37042bfb7f5e20f1c3b1a65300dcf9"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnTreeItemRClick</b> (int idCtrl, <a class="el" href="structtag_n_m_h_d_r.html">LPNMHDR</a> pnmh)</td></tr>
+<tr class="separator:afa37042bfb7f5e20f1c3b1a65300dcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112a8aa7190b838df1f5ab74fb462b87"><td class="memItemLeft" align="right" valign="top"><a id="a112a8aa7190b838df1f5ab74fb462b87"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnTreeItemSelected</b> (int idCtrl, LPNMTREEVIEW pnmtv)</td></tr>
+<tr class="separator:a112a8aa7190b838df1f5ab74fb462b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611547218b823ff90aa31fd24026878f"><td class="memItemLeft" align="right" valign="top"><a id="a611547218b823ff90aa31fd24026878f"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="separator:a611547218b823ff90aa31fd24026878f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b01490d5f4901e01211d542722275c"><td class="memItemLeft" align="right" valign="top"><a id="a52b01490d5f4901e01211d542722275c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>InsertSubitems</b> (<a class="el" href="struct___t_r_e_e_i_t_e_m.html">HTREEITEM</a> hParentItem, <a class="el" href="struct_entry.html">Entry</a> *entry, <a class="el" href="interface_i_shell_folder.html">IShellFolder</a> *pParentFolder)</td></tr>
+<tr class="separator:a52b01490d5f4901e01211d542722275c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fe50e7e93479f7aae02943b89d976f"><td class="memItemLeft" align="right" valign="top"><a id="ab2fe50e7e93479f7aae02943b89d976f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>jump_to_pidl</b> (LPCITEMIDLIST pidl)</td></tr>
+<tr class="separator:ab2fe50e7e93479f7aae02943b89d976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018b43673fbbf31294499cff061b61f3"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_shell_browser.html#a018b43673fbbf31294499cff061b61f3">OnDefaultCommand</a> (<a class="el" href="struct_c_i_d_a.html">LPIDA</a> pida)</td></tr>
+<tr class="separator:a018b43673fbbf31294499cff061b61f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d27fb5c1567834bb8425b6308fe1745"><td class="memItemLeft" align="right" valign="top"><a id="a1d27fb5c1567834bb8425b6308fe1745"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFolderView</b> (<a class="el" href="interface_i_shell_folder.html">IShellFolder</a> *<a class="el" href="structfolder.html">folder</a>)</td></tr>
+<tr class="separator:a1d27fb5c1567834bb8425b6308fe1745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17a78a2ebb2aab445e14c0885eb623b"><td class="memItemLeft" align="right" valign="top"><a id="ae17a78a2ebb2aab445e14c0885eb623b"></a>
+<a class="el" href="struct___t_r_e_e_i_t_e_m.html">HTREEITEM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>select_entry</b> (<a class="el" href="struct___t_r_e_e_i_t_e_m.html">HTREEITEM</a> hitem, <a class="el" href="struct_entry.html">Entry</a> *entry, bool expand=true)</td></tr>
+<tr class="separator:ae17a78a2ebb2aab445e14c0885eb623b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7c3d2a60c280d79fc0727a61de4a23"><td class="memItemLeft" align="right" valign="top"><a id="aba7c3d2a60c280d79fc0727a61de4a23"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>select_folder</b> (<a class="el" href="struct_entry.html">Entry</a> *entry, bool expand)</td></tr>
+<tr class="separator:aba7c3d2a60c280d79fc0727a61de4a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e95f07b38c8b2df3c3894a9dd2b690"><td class="memItemLeft" align="right" valign="top"><a id="a56e95f07b38c8b2df3c3894a9dd2b690"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>jump_to</b> (LPCITEMIDLIST pidl)</td></tr>
+<tr class="separator:a56e95f07b38c8b2df3c3894a9dd2b690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71051d5f6d6a426cf4da8f6d507249aa"><td class="memItemLeft" align="right" valign="top"><a id="a71051d5f6d6a426cf4da8f6d507249aa"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>invalidate_cache</b> ()</td></tr>
+<tr class="separator:a71051d5f6d6a426cf4da8f6d507249aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016576f064483ff13e4c22d3e2224612"><td class="memItemLeft" align="right" valign="top"><a id="a016576f064483ff13e4c22d3e2224612"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateAccelerator</b> (<a class="el" href="structtag_m_s_g.html">LPMSG</a> lpmsg)</td></tr>
+<tr class="separator:a016576f064483ff13e4c22d3e2224612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_i_shell_browser_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_i_shell_browser_impl')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="struct_i_shell_browser_impl.html">IShellBrowserImpl</a></td></tr>
+<tr class="memitem:a39e7e155a958cda84cfde558c555b65e inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a39e7e155a958cda84cfde558c555b65e"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> (REFIID iid, <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:a39e7e155a958cda84cfde558c555b65e inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868a528b187ca93e5a89abfd39121a5e inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a868a528b187ca93e5a89abfd39121a5e"></a>
+virtual ULONG STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a868a528b187ca93e5a89abfd39121a5e inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa136adf12349f35463f2bac200537f8e inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="aa136adf12349f35463f2bac200537f8e"></a>
+virtual ULONG STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:aa136adf12349f35463f2bac200537f8e inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574288187947ee7c61894e5df45935b9 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a574288187947ee7c61894e5df45935b9"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>ContextSensitiveHelp</b> (BOOL fEnterMode)</td></tr>
+<tr class="separator:a574288187947ee7c61894e5df45935b9 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6623a7bf4df5e4488f390fd217907b inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a3a6623a7bf4df5e4488f390fd217907b"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>OnDefaultCommand</b> (<a class="el" href="interface_i_shell_view.html">IShellView</a> *ppshv)</td></tr>
+<tr class="separator:a3a6623a7bf4df5e4488f390fd217907b inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22746566c42c1804be50a51f7a3b07e2 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a22746566c42c1804be50a51f7a3b07e2"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>OnStateChange</b> (<a class="el" href="interface_i_shell_view.html">IShellView</a> *ppshv, ULONG uChange)</td></tr>
+<tr class="separator:a22746566c42c1804be50a51f7a3b07e2 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4941f778509e2322b5d1d7b99b14086 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="af4941f778509e2322b5d1d7b99b14086"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>IncludeObject</b> (<a class="el" href="interface_i_shell_view.html">IShellView</a> *ppshv, LPCITEMIDLIST pidl)</td></tr>
+<tr class="separator:af4941f778509e2322b5d1d7b99b14086 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1b561d8ae572d65979a6222ade7a65 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a5f1b561d8ae572d65979a6222ade7a65"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>InsertMenusSB</b> (HMENU hmenuShared, LPOLEMENUGROUPWIDTHS lpMenuWidths)</td></tr>
+<tr class="separator:a5f1b561d8ae572d65979a6222ade7a65 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a25aafe01626bc2b1665ec50bf808c inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a07a25aafe01626bc2b1665ec50bf808c"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>SetMenuSB</b> (HMENU hmenuShared, HOLEMENU holemenuReserved, <a class="el" href="interfacevoid.html">HWND</a> hwndActiveObject)</td></tr>
+<tr class="separator:a07a25aafe01626bc2b1665ec50bf808c inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b408d03efe9edc8cdfab27839fe6829 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a2b408d03efe9edc8cdfab27839fe6829"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveMenusSB</b> (HMENU hmenuShared)</td></tr>
+<tr class="separator:a2b408d03efe9edc8cdfab27839fe6829 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e237cffca68d9cf86dcc5834f84188 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a83e237cffca68d9cf86dcc5834f84188"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>SetStatusTextSB</b> (LPCOLESTR lpszStatusText)</td></tr>
+<tr class="separator:a83e237cffca68d9cf86dcc5834f84188 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a29b6a6fd23a8c9cd66f9ee7fa18552 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a5a29b6a6fd23a8c9cd66f9ee7fa18552"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>EnableModelessSB</b> (BOOL fEnable)</td></tr>
+<tr class="separator:a5a29b6a6fd23a8c9cd66f9ee7fa18552 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342ce8353337fa96b9fd137117ed3fc2 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a342ce8353337fa96b9fd137117ed3fc2"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>BrowseObject</b> (LPCITEMIDLIST pidl, UINT wFlags)</td></tr>
+<tr class="separator:a342ce8353337fa96b9fd137117ed3fc2 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d567292e890153f10ff0ca618a66182 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a6d567292e890153f10ff0ca618a66182"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewStateStream</b> (DWORD grfMode, LPSTREAM *ppStrm)</td></tr>
+<tr class="separator:a6d567292e890153f10ff0ca618a66182 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cd99d031a950225873901d7c1a7023 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="ab5cd99d031a950225873901d7c1a7023"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>OnViewWindowActive</b> (<a class="el" href="interface_i_shell_view.html">IShellView</a> *ppshv)</td></tr>
+<tr class="separator:ab5cd99d031a950225873901d7c1a7023 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7840bb16e970c778d233d8f78a688fe inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="aa7840bb16e970c778d233d8f78a688fe"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>SetToolbarItems</b> (<a class="el" href="struct___t_b_b_u_t_t_o_n.html">LPTBBUTTON</a> lpButtons, UINT nButtons, UINT uFlags)</td></tr>
+<tr class="separator:aa7840bb16e970c778d233d8f78a688fe inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42fbde0a28398a93ee7855f0e1cff20 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="ac42fbde0a28398a93ee7855f0e1cff20"></a>
+virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateAcceleratorSB</b> (<a class="el" href="structtag_m_s_g.html">LPMSG</a> lpmsg, WORD wID)</td></tr>
+<tr class="separator:ac42fbde0a28398a93ee7855f0e1cff20 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25e872ce1179ccc7dd65a09820a2b6f inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top">virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_shell_browser_impl.html#ab25e872ce1179ccc7dd65a09820a2b6f">QueryService</a> (<a class="el" href="struct___g_u_i_d.html">REFGUID</a> guidService, REFIID riid, <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ab25e872ce1179ccc7dd65a09820a2b6f inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19313e52966de6bb5a99bccd7c4a61c inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top">virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_shell_browser_impl.html#ab19313e52966de6bb5a99bccd7c4a61c">QueryStatus</a> (const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pguidCmdGroup, ULONG cCmds, <a class="el" href="struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d.html">OLECMD</a> prgCmds[], <a class="el" href="struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d_t_e_x_t.html">OLECMDTEXT</a> *pCmdText)</td></tr>
+<tr class="separator:ab19313e52966de6bb5a99bccd7c4a61c inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031b9143340e0e0652e6985b8f0f5b75 inherit pub_methods_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top">virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_shell_browser_impl.html#a031b9143340e0e0652e6985b8f0f5b75">Exec</a> (const <a class="el" href="interface_g_u_i_d.html">GUID</a> *pguidCmdGroup, DWORD nCmdID, DWORD nCmdexecopt, <a class="el" href="structtag_v_a_r_i_a_n_t.html">VARIANT</a> *pvaIn, <a class="el" href="structtag_v_a_r_i_a_n_t.html">VARIANT</a> *pvaOut)</td></tr>
+<tr class="separator:a031b9143340e0e0652e6985b8f0f5b75 inherit pub_methods_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_shell_browser"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_shell_browser')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_shell_browser.html">IShellBrowser</a></td></tr>
+<tr class="memitem:aee6b35b6408ecbc43ee16ff17177487b inherit pub_methods_interface_i_shell_browser"><td class="memItemLeft" align="right" valign="top"><a id="aee6b35b6408ecbc43ee16ff17177487b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateAcceleratorSB</b> ([in] MSG *pmsg, [in] WORD wID)</td></tr>
+<tr class="separator:aee6b35b6408ecbc43ee16ff17177487b inherit pub_methods_interface_i_shell_browser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5844dfb048a4fdd41a90683fcf01ef inherit pub_methods_interface_i_shell_browser"><td class="memItemLeft" align="right" valign="top"><a id="a1e5844dfb048a4fdd41a90683fcf01ef"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewStateStream</b> ([in] DWORD grfMode, [out] <a class="el" href="interface_i_stream.html">IStream</a> **ppStrm)</td></tr>
+<tr class="separator:a1e5844dfb048a4fdd41a90683fcf01ef inherit pub_methods_interface_i_shell_browser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_service_provider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_service_provider')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_service_provider.html">IServiceProvider</a></td></tr>
+<tr class="memitem:a09ad94a8ca351236852d4272fc69829b inherit pub_methods_interface_i_service_provider"><td class="memItemLeft" align="right" valign="top"><a id="a09ad94a8ca351236852d4272fc69829b"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteQueryService</b> ([in] <a class="el" href="struct___g_u_i_d.html">REFGUID</a> guidService, [in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interface_i_unknown.html">IUnknown</a> **ppvObject)</td></tr>
+<tr class="separator:a09ad94a8ca351236852d4272fc69829b inherit pub_methods_interface_i_service_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_com_srv_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_com_srv_base')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_i_com_srv_base.html">IComSrvBase&lt; IShellFolderViewCB, ShellBrowser &gt;</a></td></tr>
+<tr class="memitem:a4775a7981a761749d88d977ba0cadcea inherit pub_methods_class_i_com_srv_base"><td class="memItemLeft" align="right" valign="top"><a id="a4775a7981a761749d88d977ba0cadcea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>STDMETHODIMP_</b> (ULONG) AddRef()</td></tr>
+<tr class="separator:a4775a7981a761749d88d977ba0cadcea inherit pub_methods_class_i_com_srv_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a5abeaa78dce250c6efaee9d028834 inherit pub_methods_class_i_com_srv_base"><td class="memItemLeft" align="right" valign="top"><a id="a55a5abeaa78dce250c6efaee9d028834"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>STDMETHODIMP_</b> (ULONG) Release()</td></tr>
+<tr class="separator:a55a5abeaa78dce250c6efaee9d028834 inherit pub_methods_class_i_com_srv_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_i_com_srv_q_i"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_i_com_srv_q_i')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="struct_i_com_srv_q_i.html">IComSrvQI&lt; IShellFolderViewCB &gt;</a></td></tr>
+<tr class="memitem:a3155a17854e16e01412e9c43c649e156 inherit pub_methods_struct_i_com_srv_q_i"><td class="memItemLeft" align="right" valign="top"><a id="a3155a17854e16e01412e9c43c649e156"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComSrvQI</b> (REFIID uuid_base)</td></tr>
+<tr class="separator:a3155a17854e16e01412e9c43c649e156 inherit pub_methods_struct_i_com_srv_q_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba55b62acb5d093a881f6badbb2d0b5 inherit pub_methods_struct_i_com_srv_q_i"><td class="memItemLeft" align="right" valign="top"><a id="a5ba55b62acb5d093a881f6badbb2d0b5"></a>
+STDMETHODIMP&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> (REFIID riid, <a class="el" href="interfacevoid.html">LPVOID</a> *ppv)</td></tr>
+<tr class="separator:a5ba55b62acb5d093a881f6badbb2d0b5 inherit pub_methods_struct_i_com_srv_q_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_simple_com_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_simple_com_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="struct_simple_com_object.html">SimpleComObject</a></td></tr>
+<tr class="memitem:a4456db197a5990c6554c939612ff432b inherit pub_methods_struct_simple_com_object"><td class="memItemLeft" align="right" valign="top"><a id="a4456db197a5990c6554c939612ff432b"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>IncRef</b> ()</td></tr>
+<tr class="separator:a4456db197a5990c6554c939612ff432b inherit pub_methods_struct_simple_com_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2806c08c4ca49fc26fe8aad291f0bfa4 inherit pub_methods_struct_simple_com_object"><td class="memItemLeft" align="right" valign="top"><a id="a2806c08c4ca49fc26fe8aad291f0bfa4"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>DecRef</b> ()</td></tr>
+<tr class="separator:a2806c08c4ca49fc26fe8aad291f0bfa4 inherit pub_methods_struct_simple_com_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a765693d54d34697e356ae6335cfd6be0"><td class="memItemLeft" align="right" valign="top"><a id="a765693d54d34697e356ae6335cfd6be0"></a>
+<a class="el" href="interface_i_shell_browser.html">IShellBrowser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IShellBrowser_iface</b></td></tr>
+<tr class="separator:a765693d54d34697e356ae6335cfd6be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac103c5694c48e4fb7efffc11ff33fc97"><td class="memItemLeft" align="right" valign="top"><a id="ac103c5694c48e4fb7efffc11ff33fc97"></a>
+<a class="el" href="interface_i_browser_service.html">IBrowserService</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IBrowserService_iface</b></td></tr>
+<tr class="separator:ac103c5694c48e4fb7efffc11ff33fc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435e07dfb0ed48fa6e75a2cf14e57f1c"><td class="memItemLeft" align="right" valign="top"><a id="a435e07dfb0ed48fa6e75a2cf14e57f1c"></a>
+<a class="el" href="interface_i_doc_object_service.html">IDocObjectService</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IDocObjectService_iface</b></td></tr>
+<tr class="separator:a435e07dfb0ed48fa6e75a2cf14e57f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a6e9971a15393f9eecac9241899298"><td class="memItemLeft" align="right" valign="top"><a id="a30a6e9971a15393f9eecac9241899298"></a>
+LONG&#160;</td><td class="memItemRight" valign="bottom"><b>ref</b></td></tr>
+<tr class="separator:a30a6e9971a15393f9eecac9241899298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4936c049fd72bf06be0eab68e2eb32"><td class="memItemLeft" align="right" valign="top"><a id="a6e4936c049fd72bf06be0eab68e2eb32"></a>
+<a class="el" href="struct_doc_host.html">DocHost</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>doc_host</b></td></tr>
+<tr class="separator:a6e4936c049fd72bf06be0eab68e2eb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_i_shell_browser_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_i_shell_browser_impl')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="struct_i_shell_browser_impl.html">IShellBrowserImpl</a></td></tr>
+<tr class="memitem:ab7912d53c2807d21fac8553036bcfe7e inherit pub_attribs_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="ab7912d53c2807d21fac8553036bcfe7e"></a>
+<a class="el" href="interface_i_shell_browser.html">IShellBrowser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IShellBrowser_iface</b></td></tr>
+<tr class="separator:ab7912d53c2807d21fac8553036bcfe7e inherit pub_attribs_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48dcbf987b0e21ba4b1ed8327c227038 inherit pub_attribs_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a48dcbf987b0e21ba4b1ed8327c227038"></a>
+<a class="el" href="interface_i_comm_dlg_browser.html">ICommDlgBrowser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ICommDlgBrowser_iface</b></td></tr>
+<tr class="separator:a48dcbf987b0e21ba4b1ed8327c227038 inherit pub_attribs_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224acec0ca1a72d8cd29b83770317512 inherit pub_attribs_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a224acec0ca1a72d8cd29b83770317512"></a>
+<a class="el" href="interface_i_service_provider.html">IServiceProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IServiceProvider_iface</b></td></tr>
+<tr class="separator:a224acec0ca1a72d8cd29b83770317512 inherit pub_attribs_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7709ae15f357a459269547e4f7e018ad inherit pub_attribs_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a7709ae15f357a459269547e4f7e018ad"></a>
+LONG&#160;</td><td class="memItemRight" valign="bottom"><b>ref</b></td></tr>
+<tr class="separator:a7709ae15f357a459269547e4f7e018ad inherit pub_attribs_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095f36011a5448196b4d16ddce048399 inherit pub_attribs_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="a095f36011a5448196b4d16ddce048399"></a>
+<a class="el" href="interfacevoid.html">HWND</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hwndOwner</b></td></tr>
+<tr class="separator:a095f36011a5448196b4d16ddce048399 inherit pub_attribs_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_interface_i_shell_browser"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_interface_i_shell_browser')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="interface_i_shell_browser.html">IShellBrowser</a></td></tr>
+<tr class="memitem:a3b52ec10dd0a7f2d94d7db0c96d46b63 inherit pub_attribs_interface_i_shell_browser"><td class="memItemLeft" align="right" valign="top"><a id="a3b52ec10dd0a7f2d94d7db0c96d46b63"></a>
+FCT_ADDTOEND typedef LPARAM&#160;</td><td class="memItemRight" valign="bottom"><b>LPTBBUTTONSB</b></td></tr>
+<tr class="separator:a3b52ec10dd0a7f2d94d7db0c96d46b63 inherit pub_attribs_interface_i_shell_browser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_interface_i_comm_dlg_browser"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_interface_i_comm_dlg_browser')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="interface_i_comm_dlg_browser.html">ICommDlgBrowser</a></td></tr>
+<tr class="memitem:a6bbb954eed39bec263adeb6a9601880a inherit pub_attribs_interface_i_comm_dlg_browser"><td class="memItemLeft" align="right" valign="top"><a id="a6bbb954eed39bec263adeb6a9601880a"></a>
+CDBOSC_STATECHANGE typedef <a class="el" href="interface_i_comm_dlg_browser.html">ICommDlgBrowser</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPCOMMDLGBROWSER</b></td></tr>
+<tr class="separator:a6bbb954eed39bec263adeb6a9601880a inherit pub_attribs_interface_i_comm_dlg_browser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a1bf51d8a9726fd9a26164cb46352756a"><td class="memItemLeft" align="right" valign="top"><a id="a1bf51d8a9726fd9a26164cb46352756a"></a>
+typedef <a class="el" href="class_i_com_srv_base.html">IComSrvBase</a>&lt; IShellFolderViewCB, <a class="el" href="struct_shell_browser.html">ShellBrowser</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>super</b></td></tr>
+<tr class="separator:a1bf51d8a9726fd9a26164cb46352756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a554e0fd943b73d136cd1a59d797d76da"><td class="memItemLeft" align="right" valign="top"><a id="a554e0fd943b73d136cd1a59d797d76da"></a>
+<a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeTree</b> ()</td></tr>
+<tr class="separator:a554e0fd943b73d136cd1a59d797d76da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abecd0ffb451385729555aa5ff972b958"><td class="memItemLeft" align="right" valign="top"><a id="abecd0ffb451385729555aa5ff972b958"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InitDragDrop</b> ()</td></tr>
+<tr class="separator:abecd0ffb451385729555aa5ff972b958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575ee8758d47796428a80c8ac2a66c49"><td class="memItemLeft" align="right" valign="top">virtual HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_shell_browser.html#a575ee8758d47796428a80c8ac2a66c49">MessageSFVCB</a> (UINT uMsg, WPARAM wParam, LPARAM lParam)</td></tr>
+<tr class="memdesc:a575ee8758d47796428a80c8ac2a66c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">shell view callback  <a href="#a575ee8758d47796428a80c8ac2a66c49">更多...</a><br /></td></tr>
+<tr class="separator:a575ee8758d47796428a80c8ac2a66c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5ca6981c4f92c5d02b2befba567686"><td class="memItemLeft" align="right" valign="top"><a id="afe5ca6981c4f92c5d02b2befba567686"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get_image_idx</b> (int icon_id)</td></tr>
+<tr class="separator:afe5ca6981c4f92c5d02b2befba567686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cc56ea36be84287a8e7d7d1ee0f7d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_shell_browser.html#ab8cc56ea36be84287a8e7d7d1ee0f7d5">refresh</a> ()</td></tr>
+<tr class="separator:ab8cc56ea36be84287a8e7d7d1ee0f7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_i_com_srv_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_i_com_srv_base')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_i_com_srv_base.html">IComSrvBase&lt; IShellFolderViewCB, ShellBrowser &gt;</a></td></tr>
+<tr class="memitem:a950198464dba72893d5a2120950173c8 inherit pro_methods_class_i_com_srv_base"><td class="memItemLeft" align="right" valign="top"><a id="a950198464dba72893d5a2120950173c8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComSrvBase</b> (REFIID uuid_base)</td></tr>
+<tr class="separator:a950198464dba72893d5a2120950173c8 inherit pro_methods_class_i_com_srv_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a1481d02713c14fbf738e981dfa0b6b2f"><td class="memItemLeft" align="right" valign="top"><a id="a1481d02713c14fbf738e981dfa0b6b2f"></a>
+<a class="el" href="interfacevoid.html">HWND</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_hwnd</b></td></tr>
+<tr class="separator:a1481d02713c14fbf738e981dfa0b6b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77ace4ee1a9956138df74861d25721d"><td class="memItemLeft" align="right" valign="top"><a id="ac77ace4ee1a9956138df74861d25721d"></a>
+<a class="el" href="interfacevoid.html">HWND</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_hwndFrame</b></td></tr>
+<tr class="separator:ac77ace4ee1a9956138df74861d25721d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2da123825de657cade11f491e6b9d3f"><td class="memItemLeft" align="right" valign="top"><a id="ac2da123825de657cade11f491e6b9d3f"></a>
+<a class="el" href="interfacevoid.html">HWND</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_left_hwnd</b></td></tr>
+<tr class="separator:ac2da123825de657cade11f491e6b9d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259a2af2f88b970ce014bb43298e3007"><td class="memItemLeft" align="right" valign="top"><a id="a259a2af2f88b970ce014bb43298e3007"></a>
+WindowHandle &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>_right_hwnd</b></td></tr>
+<tr class="separator:a259a2af2f88b970ce014bb43298e3007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b61671296daa57a9a6547e2536ca1b"><td class="memItemLeft" align="right" valign="top"><a id="ae3b61671296daa57a9a6547e2536ca1b"></a>
+<a class="el" href="struct_shell_path_info.html">ShellPathInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>_create_info</b></td></tr>
+<tr class="separator:ae3b61671296daa57a9a6547e2536ca1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f73ffd775531a4aa9d831056934ea7"><td class="memItemLeft" align="right" valign="top"><a id="a21f73ffd775531a4aa9d831056934ea7"></a>
+<a class="el" href="struct___i_m_a_g_e_l_i_s_t.html">HIMAGELIST</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_himl</b></td></tr>
+<tr class="separator:a21f73ffd775531a4aa9d831056934ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0317692ba93740c176d35abe99915297"><td class="memItemLeft" align="right" valign="top"><a id="a0317692ba93740c176d35abe99915297"></a>
+<a class="el" href="struct___i_m_a_g_e_l_i_s_t.html">HIMAGELIST</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_himl_old</b></td></tr>
+<tr class="separator:a0317692ba93740c176d35abe99915297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fae08e82be506ff3730c2a1e624e965"><td class="memItemLeft" align="right" valign="top"><a id="a6fae08e82be506ff3730c2a1e624e965"></a>
+<a class="el" href="struct_browser_callback.html">BrowserCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_callback</b></td></tr>
+<tr class="separator:a6fae08e82be506ff3730c2a1e624e965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c09e8681090829bce18e2c47f973c43"><td class="memItemLeft" align="right" valign="top"><a id="a4c09e8681090829bce18e2c47f973c43"></a>
+<a class="el" href="struct_shell_folder.html">ShellFolder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_folder</b></td></tr>
+<tr class="separator:a4c09e8681090829bce18e2c47f973c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac052d34e7dc7f359fc048e3a88dffceb"><td class="memItemLeft" align="right" valign="top"><a id="ac052d34e7dc7f359fc048e3a88dffceb"></a>
+<a class="el" href="interface_i_shell_view.html">IShellView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_pShellView</b></td></tr>
+<tr class="separator:ac052d34e7dc7f359fc048e3a88dffceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ab179040e2c7db86407607ef731bf8"><td class="memItemLeft" align="right" valign="top"><a id="a03ab179040e2c7db86407607ef731bf8"></a>
+<a class="el" href="class_tree_drop_target.html">TreeDropTarget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_pDropTarget</b></td></tr>
+<tr class="separator:a03ab179040e2c7db86407607ef731bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5746718f4fba462bc365d4209922d0b5"><td class="memItemLeft" align="right" valign="top"><a id="a5746718f4fba462bc365d4209922d0b5"></a>
+<a class="el" href="struct___t_r_e_e_i_t_e_m.html">HTREEITEM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_last_sel</b></td></tr>
+<tr class="separator:a5746718f4fba462bc365d4209922d0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5a5a628e76efe02896309fc065d20d"><td class="memItemLeft" align="right" valign="top"><a id="a0d5a5a628e76efe02896309fc065d20d"></a>
+<a class="el" href="struct_root.html">Root</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_root</b></td></tr>
+<tr class="separator:a0d5a5a628e76efe02896309fc065d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6552752d354536bf7b73a42c6c03c67"><td class="memItemLeft" align="right" valign="top"><a id="af6552752d354536bf7b73a42c6c03c67"></a>
+<a class="el" href="struct_shell_directory.html">ShellDirectory</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_cur_dir</b></td></tr>
+<tr class="separator:af6552752d354536bf7b73a42c6c03c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957c4d4b28fe6d30d79062a82db87bd6"><td class="memItemLeft" align="right" valign="top"><a id="a957c4d4b28fe6d30d79062a82db87bd6"></a>
+<a class="el" href="struct_ctx_menu_interfaces.html">CtxMenuInterfaces</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>_cm_ifs</b></td></tr>
+<tr class="separator:a957c4d4b28fe6d30d79062a82db87bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a2b697180d10f23eacaa27584d8e88"><td class="memItemLeft" align="right" valign="top"><a id="ab9a2b697180d10f23eacaa27584d8e88"></a>
+<a class="el" href="classmap.html">map</a>&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_image_map</b></td></tr>
+<tr class="separator:ab9a2b697180d10f23eacaa27584d8e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_struct_i_shell_browser_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_struct_i_shell_browser_impl')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="struct_i_shell_browser_impl.html">IShellBrowserImpl</a></td></tr>
+<tr class="memitem:aa43253e9ce3f1b4e229b3ad3d980e4e0 inherit pro_attribs_struct_i_shell_browser_impl"><td class="memItemLeft" align="right" valign="top"><a id="aa43253e9ce3f1b4e229b3ad3d980e4e0"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>_dwRef</b></td></tr>
+<tr class="separator:aa43253e9ce3f1b4e229b3ad3d980e4e0 inherit pro_attribs_struct_i_shell_browser_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_struct_i_com_srv_q_i"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_struct_i_com_srv_q_i')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="struct_i_com_srv_q_i.html">IComSrvQI&lt; IShellFolderViewCB &gt;</a></td></tr>
+<tr class="memitem:af12a08a0e176ddc462dbea8a2397431b inherit pro_attribs_struct_i_com_srv_q_i"><td class="memItemLeft" align="right" valign="top"><a id="af12a08a0e176ddc462dbea8a2397431b"></a>
+REFIID&#160;</td><td class="memItemRight" valign="bottom"><b>_uuid_base</b></td></tr>
+<tr class="separator:af12a08a0e176ddc462dbea8a2397431b inherit pro_attribs_struct_i_com_srv_q_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_struct_com_srv_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_struct_com_srv_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="struct_com_srv_object.html">ComSrvObject</a></td></tr>
+<tr class="memitem:a9387a721f386f12106aba79ba65217da inherit pro_attribs_struct_com_srv_object"><td class="memItemLeft" align="right" valign="top"><a id="a9387a721f386f12106aba79ba65217da"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>_ref</b></td></tr>
+<tr class="separator:a9387a721f386f12106aba79ba65217da inherit pro_attribs_struct_com_srv_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_interface_i_shell_browser"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_shell_browser')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_shell_browser.html">IShellBrowser</a></td></tr>
+<tr class="memitem:ae4e13f6156c997a1d9cfe6d73a48cfbc inherit pub_types_interface_i_shell_browser"><td class="memItemLeft" align="right" valign="top"><a id="ae4e13f6156c997a1d9cfe6d73a48cfbc"></a>
+typedef <a class="el" href="interface_i_shell_browser.html">IShellBrowser</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPSHELLBROWSER</b></td></tr>
+<tr class="separator:ae4e13f6156c997a1d9cfe6d73a48cfbc inherit pub_types_interface_i_shell_browser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd345798de223cc59ae3c3486de0b84 inherit pub_types_interface_i_shell_browser"><td class="memItemLeft" align="right" valign="top"><a id="a4bd345798de223cc59ae3c3486de0b84"></a>
+typedef <a class="el" href="struct___t_b_b_u_t_t_o_n.html">LPTBBUTTON</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LPTBBUTTONSB</b></td></tr>
+<tr class="separator:a4bd345798de223cc59ae3c3486de0b84 inherit pub_types_interface_i_shell_browser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_ole_window"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_ole_window')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_ole_window.html">IOleWindow</a></td></tr>
+<tr class="memitem:a97e2c5f6785b753d76eeb6300c8185fa inherit pub_types_interface_i_ole_window"><td class="memItemLeft" align="right" valign="top"><a id="a97e2c5f6785b753d76eeb6300c8185fa"></a>
+typedef <a class="el" href="interface_i_ole_window.html">IOleWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPOLEWINDOW</b></td></tr>
+<tr class="separator:a97e2c5f6785b753d76eeb6300c8185fa inherit pub_types_interface_i_ole_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_service_provider"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_service_provider')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_service_provider.html">IServiceProvider</a></td></tr>
+<tr class="memitem:aeed4b7b9e00880abfcd384b5752764ea inherit pub_types_interface_i_service_provider"><td class="memItemLeft" align="right" valign="top"><a id="aeed4b7b9e00880abfcd384b5752764ea"></a>
+typedef <a class="el" href="interface_i_service_provider.html">IServiceProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPSERVICEPROVIDER</b></td></tr>
+<tr class="separator:aeed4b7b9e00880abfcd384b5752764ea inherit pub_types_interface_i_service_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_ole_command_target"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_ole_command_target')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_ole_command_target.html">IOleCommandTarget</a></td></tr>
+<tr class="memitem:a65b579c2f0c1fe0906956077df076932 inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="a65b579c2f0c1fe0906956077df076932"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDF</b> { <br />
+&#160;&#160;<b>OLECMDF_SUPPORTED</b> = 0x1, 
+<b>OLECMDF_ENABLED</b> = 0x2, 
+<b>OLECMDF_LATCHED</b> = 0x4, 
+<b>OLECMDF_NINCHED</b> = 0x8, 
+<br />
+&#160;&#160;<b>OLECMDF_INVISIBLE</b> = 0x10, 
+<b>OLECMDF_DEFHIDEONCTXTMENU</b> = 0x20
+<br />
+ }</td></tr>
+<tr class="separator:a65b579c2f0c1fe0906956077df076932 inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c66103b836e47df850c3c5a24f8965 inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="ab3c66103b836e47df850c3c5a24f8965"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDTEXTF</b> { <b>OLECMDTEXTF_NONE</b> = 0, 
+<b>OLECMDTEXTF_NAME</b> = 1, 
+<b>OLECMDTEXTF_STATUS</b> = 2
+ }</td></tr>
+<tr class="separator:ab3c66103b836e47df850c3c5a24f8965 inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd47ce92815a6edeab4142cc5975350 inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="a4fd47ce92815a6edeab4142cc5975350"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDEXECOPT</b> { <b>OLECMDEXECOPT_DODEFAULT</b> = 0, 
+<b>OLECMDEXECOPT_PROMPTUSER</b> = 1, 
+<b>OLECMDEXECOPT_DONTPROMPTUSER</b> = 2, 
+<b>OLECMDEXECOPT_SHOWHELP</b> = 3
+ }</td></tr>
+<tr class="separator:a4fd47ce92815a6edeab4142cc5975350 inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e208db9dcdddb884238b15d55fb1846 inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="a4e208db9dcdddb884238b15d55fb1846"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDID</b> { <br />
+&#160;&#160;<b>OLECMDID_OPEN</b> = 1, 
+<b>OLECMDID_NEW</b> = 2, 
+<b>OLECMDID_SAVE</b> = 3, 
+<b>OLECMDID_SAVEAS</b> = 4, 
+<br />
+&#160;&#160;<b>OLECMDID_SAVECOPYAS</b> = 5, 
+<b>OLECMDID_PRINT</b> = 6, 
+<b>OLECMDID_PRINTPREVIEW</b> = 7, 
+<b>OLECMDID_PAGESETUP</b> = 8, 
+<br />
+&#160;&#160;<b>OLECMDID_SPELL</b> = 9, 
+<b>OLECMDID_PROPERTIES</b> = 10, 
+<b>OLECMDID_CUT</b> = 11, 
+<b>OLECMDID_COPY</b> = 12, 
+<br />
+&#160;&#160;<b>OLECMDID_PASTE</b> = 13, 
+<b>OLECMDID_PASTESPECIAL</b> = 14, 
+<b>OLECMDID_UNDO</b> = 15, 
+<b>OLECMDID_REDO</b> = 16, 
+<br />
+&#160;&#160;<b>OLECMDID_SELECTALL</b> = 17, 
+<b>OLECMDID_CLEARSELECTION</b> = 18, 
+<b>OLECMDID_ZOOM</b> = 19, 
+<b>OLECMDID_GETZOOMRANGE</b> = 20, 
+<br />
+&#160;&#160;<b>OLECMDID_UPDATECOMMANDS</b> = 21, 
+<b>OLECMDID_REFRESH</b> = 22, 
+<b>OLECMDID_STOP</b> = 23, 
+<b>OLECMDID_HIDETOOLBARS</b> = 24, 
+<br />
+&#160;&#160;<b>OLECMDID_SETPROGRESSMAX</b> = 25, 
+<b>OLECMDID_SETPROGRESSPOS</b> = 26, 
+<b>OLECMDID_SETPROGRESSTEXT</b> = 27, 
+<b>OLECMDID_SETTITLE</b> = 28, 
+<br />
+&#160;&#160;<b>OLECMDID_SETDOWNLOADSTATE</b> = 29, 
+<b>OLECMDID_STOPDOWNLOAD</b> = 30, 
+<b>OLECMDID_ONTOOLBARACTIVATED</b> = 31, 
+<b>OLECMDID_FIND</b> = 32, 
+<br />
+&#160;&#160;<b>OLECMDID_DELETE</b> = 33, 
+<b>OLECMDID_HTTPEQUIV</b> = 34, 
+<b>OLECMDID_HTTPEQUIV_DONE</b> = 35, 
+<b>OLECMDID_ENABLE_INTERACTION</b> = 36, 
+<br />
+&#160;&#160;<b>OLECMDID_ONUNLOAD</b> = 37, 
+<b>OLECMDID_PROPERTYBAG2</b> = 38, 
+<b>OLECMDID_PREREFRESH</b> = 39, 
+<b>OLECMDID_SHOWSCRIPTERROR</b> = 40, 
+<br />
+&#160;&#160;<b>OLECMDID_SHOWMESSAGE</b> = 41, 
+<b>OLECMDID_SHOWFIND</b> = 42, 
+<b>OLECMDID_SHOWPAGESETUP</b> = 43, 
+<b>OLECMDID_SHOWPRINT</b> = 44, 
+<br />
+&#160;&#160;<b>OLECMDID_CLOSE</b> = 45, 
+<b>OLECMDID_ALLOWUILESSSAVEAS</b> = 46, 
+<b>OLECMDID_DONTDOWNLOADCSS</b> = 47, 
+<b>OLECMDID_UPDATEPAGESTATUS</b> = 48, 
+<br />
+&#160;&#160;<b>OLECMDID_PRINT2</b> = 49, 
+<b>OLECMDID_PRINTPREVIEW2</b> = 50, 
+<b>OLECMDID_SETPRINTTEMPLATE</b> = 51, 
+<b>OLECMDID_GETPRINTTEMPLATE</b> = 52, 
+<br />
+&#160;&#160;<b>OLECMDID_PAGEACTIONBLOCKED</b> = 55, 
+<b>OLECMDID_PAGEACTIONUIQUERY</b> = 56, 
+<b>OLECMDID_FOCUSVIEWCONTROLS</b> = 57, 
+<b>OLECMDID_FOCUSVIEWCONTROLSQUERY</b> = 58, 
+<br />
+&#160;&#160;<b>OLECMDID_SHOWPAGEACTIONMENU</b> = 59, 
+<b>OLECMDID_ADDTRAVELENTRY</b> = 60, 
+<b>OLECMDID_UPDATETRAVELENTRY</b> = 61, 
+<b>OLECMDID_UPDATEBACKFORWARDSTATE</b> = 62, 
+<br />
+&#160;&#160;<b>OLECMDID_OPTICAL_ZOOM</b> = 63, 
+<b>OLECMDID_OPTICAL_GETZOOMRANGE</b> = 64, 
+<b>OLECMDID_WINDOWSTATECHANGED</b> = 65, 
+<b>OLECMDID_ACTIVEXINSTALLSCOPE</b> = 66, 
+<br />
+&#160;&#160;<b>OLECMDID_UPDATETRAVELENTRY_DATARECOVERY</b> = 67, 
+<b>OLECMDID_SHOWTASKDLG</b> = 68, 
+<b>OLECMDID_POPSTATEEVENT</b> = 69, 
+<b>OLECMDID_VIEWPORT_MODE</b> = 70, 
+<br />
+&#160;&#160;<b>OLECMDID_LAYOUT_VIEWPORT_WIDTH</b> = 71, 
+<b>OLECMDID_VISUAL_VIEWPORT_EXCLUDE_BOTTOM</b> = 72, 
+<b>OLECMDID_USER_OPTICAL_ZOOM</b> = 73, 
+<b>OLECMDID_PAGEAVAILABLE</b> = 74, 
+<br />
+&#160;&#160;<b>OLECMDID_GETUSERSCALABLE</b> = 75, 
+<b>OLECMDID_UPDATE_CARET</b> = 76, 
+<b>OLECMDID_ENABLE_VISIBILITY</b> = 77, 
+<b>OLECMDID_MEDIA_PLAYBACK</b> = 78
+<br />
+ }</td></tr>
+<tr class="separator:a4e208db9dcdddb884238b15d55fb1846 inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa000c6b56cb2c8e3216328cd59daeef7 inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="aa000c6b56cb2c8e3216328cd59daeef7"></a>
+typedef <a class="el" href="interface_i_ole_command_target.html">IOleCommandTarget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPOLECOMMANDTARGET</b></td></tr>
+<tr class="separator:aa000c6b56cb2c8e3216328cd59daeef7 inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93b78f4b0f536ead1e9ae795807f71c inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="ae93b78f4b0f536ead1e9ae795807f71c"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IOleCommandTarget::OLECMDF&#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDF</b></td></tr>
+<tr class="separator:ae93b78f4b0f536ead1e9ae795807f71c inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557a75a729bc40863a0611c255219d8f inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="a557a75a729bc40863a0611c255219d8f"></a>
+typedef <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d.html">IOleCommandTarget::_tagOLECMD</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OLECMD</b></td></tr>
+<tr class="separator:a557a75a729bc40863a0611c255219d8f inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531d269b2d9c7d82670fb4628d83d94d inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="a531d269b2d9c7d82670fb4628d83d94d"></a>
+typedef <a class="el" href="interfacestruct.html">struct</a> <a class="el" href="struct_i_ole_command_target_1_1__tag_o_l_e_c_m_d_t_e_x_t.html">IOleCommandTarget::_tagOLECMDTEXT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDTEXT</b></td></tr>
+<tr class="separator:a531d269b2d9c7d82670fb4628d83d94d inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d07128baf01db2c74e7d0037519484 inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="ad0d07128baf01db2c74e7d0037519484"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IOleCommandTarget::OLECMDTEXTF&#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDTEXTF</b></td></tr>
+<tr class="separator:ad0d07128baf01db2c74e7d0037519484 inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f3fc8cac067ab8138fb5b3258b28e4 inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="a39f3fc8cac067ab8138fb5b3258b28e4"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IOleCommandTarget::OLECMDEXECOPT&#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDEXECOPT</b></td></tr>
+<tr class="separator:a39f3fc8cac067ab8138fb5b3258b28e4 inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaf953172fe4a762d4a0c4c8453652c inherit pub_types_interface_i_ole_command_target"><td class="memItemLeft" align="right" valign="top"><a id="accaf953172fe4a762d4a0c4c8453652c"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> IOleCommandTarget::OLECMDID&#160;</td><td class="memItemRight" valign="bottom"><b>OLECMDID</b></td></tr>
+<tr class="separator:accaf953172fe4a762d4a0c4c8453652c inherit pub_types_interface_i_ole_command_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Implementation of <a class="el" href="struct_i_shell_browser_impl.html" title="Implementation of IShellBrowser and ICommDlgBrowser interfaces for explorer child windows (see ShellB...">IShellBrowserImpl</a> interface in explorer child windows </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a575ee8758d47796428a80c8ac2a66c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575ee8758d47796428a80c8ac2a66c49">&#9670;&nbsp;</a></span>MessageSFVCB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT STDMETHODCALLTYPE ShellBrowser::MessageSFVCB </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>uMsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM&#160;</td>
+          <td class="paramname"><em>wParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPARAM&#160;</td>
+          <td class="paramname"><em>lParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>shell view callback </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000044">待办事项:</a></b></dt><dd>never reached </dd></dl>
+
+</div>
+</div>
+<a id="a018b43673fbbf31294499cff061b61f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018b43673fbbf31294499cff061b61f3">&#9670;&nbsp;</a></span>OnDefaultCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT ShellBrowser::OnDefaultCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_c_i_d_a.html">LPIDA</a>&#160;</td>
+          <td class="paramname"><em>pida</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000045">待办事项:</a></b></dt><dd>look for hidden or new subfolders and refresh/add new entry instead of opening a new window </dd></dl>
+
+<p>重载 <a class="el" href="struct_i_shell_browser_impl.html">IShellBrowserImpl</a> .</p>
+
+</div>
+</div>
+<a id="ab8cc56ea36be84287a8e7d7d1ee0f7d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cc56ea36be84287a8e7d7d1ee0f7d5">&#9670;&nbsp;</a></span>refresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> ShellBrowser::refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000046">待办事项:</a></b></dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/win32/ieframe/<a class="el" href="ieframe_8h_source.html">ieframe.h</a></li>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/explorer-old/shell/<a class="el" href="shellbrowser_8h_source.html">shellbrowser.h</a></li>
+<li>E:/ReactOS-0.4.6/modules/rosapps/applications/explorer-old/shell/shellbrowser.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,68 @@
+\hypertarget{interface_i_cor_debug_managed_callback2}{}\section{I\+Cor\+Debug\+Managed\+Callback2接口 参考}
+\label{interface_i_cor_debug_managed_callback2}\index{I\+Cor\+Debug\+Managed\+Callback2@{I\+Cor\+Debug\+Managed\+Callback2}}
+类 I\+Cor\+Debug\+Managed\+Callback2 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_cor_debug_managed_callback2}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_a985ea7b191c22e83e588364ec851cc3a}\label{interface_i_cor_debug_managed_callback2_a985ea7b191c22e83e588364ec851cc3a}} 
+enum {\bfseries Cor\+Debug\+Exception\+Callback\+Type} \{ {\bfseries D\+E\+B\+U\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+H\+A\+N\+CE} = 1, 
+{\bfseries D\+E\+B\+U\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+R\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+H\+A\+N\+CE} = 2, 
+{\bfseries D\+E\+B\+U\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+C\+A\+T\+C\+H\+\_\+\+H\+A\+N\+D\+L\+E\+R\+\_\+\+F\+O\+U\+ND} = 3, 
+{\bfseries D\+E\+B\+U\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+U\+N\+H\+A\+N\+D\+L\+ED} = 4
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_a9db8f2b21bf5abd560d98c0d84af1ab5}\label{interface_i_cor_debug_managed_callback2_a9db8f2b21bf5abd560d98c0d84af1ab5}} 
+enum {\bfseries Cor\+Debug\+Exception\+Flags} \{ {\bfseries D\+E\+B\+U\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+C\+A\+N\+\_\+\+B\+E\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+ED} = 0x0001
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_a8232eae17811ea71d38a67619e1ebc1d}\label{interface_i_cor_debug_managed_callback2_a8232eae17811ea71d38a67619e1ebc1d}} 
+enum {\bfseries Cor\+Debug\+Exception\+Unwind\+Callback\+Type} \{ {\bfseries D\+E\+B\+U\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+U\+N\+W\+I\+N\+D\+\_\+\+B\+E\+G\+IN} = 1, 
+{\bfseries D\+E\+B\+U\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+I\+N\+T\+E\+R\+C\+E\+P\+T\+ED} = 2
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_aa353e75d1a7913d37601a1b8b5c57bbd}\label{interface_i_cor_debug_managed_callback2_aa353e75d1a7913d37601a1b8b5c57bbd}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Managed\+Callback2\+::\+Cor\+Debug\+Exception\+Callback\+Type {\bfseries Cor\+Debug\+Exception\+Callback\+Type}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_aa45910b8bd896ff04f44d6a51321d7e0}\label{interface_i_cor_debug_managed_callback2_aa45910b8bd896ff04f44d6a51321d7e0}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Managed\+Callback2\+::\+Cor\+Debug\+Exception\+Flags {\bfseries Cor\+Debug\+Exception\+Flags}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_a48354066754c7d3a82de4001e4ef1333}\label{interface_i_cor_debug_managed_callback2_a48354066754c7d3a82de4001e4ef1333}} 
+typedef \hyperlink{interfaceenum}{enum} I\+Cor\+Debug\+Managed\+Callback2\+::\+Cor\+Debug\+Exception\+Unwind\+Callback\+Type {\bfseries Cor\+Debug\+Exception\+Unwind\+Callback\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_ae6b540656013fc91631676863bbedff2}\label{interface_i_cor_debug_managed_callback2_ae6b540656013fc91631676863bbedff2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Function\+Remap\+Opportunity} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_app_domain}{I\+Cor\+Debug\+App\+Domain} $\ast$p\+App\+Domain, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$p\+Thread, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_function}{I\+Cor\+Debug\+Function} $\ast$p\+Old\+Function, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_function}{I\+Cor\+Debug\+Function} $\ast$p\+New\+Function, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 old\+I\+L\+Offset)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_a7ee981cacaae529a6dc7d04c9043836c}\label{interface_i_cor_debug_managed_callback2_a7ee981cacaae529a6dc7d04c9043836c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Create\+Connection} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$p\+Process, \mbox{[}in\mbox{]} C\+O\+N\+N\+ID dw\+Connection\+Id, \mbox{[}in\mbox{]} W\+C\+H\+AR $\ast$p\+Conn\+Name)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_aa46f77d8b433ad09ff84b6c83d4097eb}\label{interface_i_cor_debug_managed_callback2_aa46f77d8b433ad09ff84b6c83d4097eb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Change\+Connection} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$p\+Process, \mbox{[}in\mbox{]} C\+O\+N\+N\+ID dw\+Connection\+Id)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_ad44288eec33cd5138c12b996913d51ba}\label{interface_i_cor_debug_managed_callback2_ad44288eec33cd5138c12b996913d51ba}} 
+H\+R\+E\+S\+U\+LT {\bfseries Destroy\+Connection} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_process}{I\+Cor\+Debug\+Process} $\ast$p\+Process, \mbox{[}in\mbox{]} C\+O\+N\+N\+ID dw\+Connection\+Id)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_aa75712a6a0e0f6e84f3f73c145098363}\label{interface_i_cor_debug_managed_callback2_aa75712a6a0e0f6e84f3f73c145098363}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exception} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_app_domain}{I\+Cor\+Debug\+App\+Domain} $\ast$p\+App\+Domain, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$p\+Thread, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_frame}{I\+Cor\+Debug\+Frame} $\ast$p\+Frame, \mbox{[}in\mbox{]} U\+L\+O\+N\+G32 n\+Offset, \mbox{[}in\mbox{]} Cor\+Debug\+Exception\+Callback\+Type dw\+Event\+Type, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_a932b8980de99507ba43b538d8cbac735}\label{interface_i_cor_debug_managed_callback2_a932b8980de99507ba43b538d8cbac735}} 
+H\+R\+E\+S\+U\+LT {\bfseries Exception\+Unwind} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_app_domain}{I\+Cor\+Debug\+App\+Domain} $\ast$p\+App\+Domain, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$p\+Thread, \mbox{[}in\mbox{]} Cor\+Debug\+Exception\+Unwind\+Callback\+Type dw\+Event\+Type, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_a6bcd7be902beda64a9e65c041137cce1}\label{interface_i_cor_debug_managed_callback2_a6bcd7be902beda64a9e65c041137cce1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Function\+Remap\+Complete} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_app_domain}{I\+Cor\+Debug\+App\+Domain} $\ast$p\+App\+Domain, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$p\+Thread, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_function}{I\+Cor\+Debug\+Function} $\ast$p\+Function)
+\item 
+\mbox{\Hypertarget{interface_i_cor_debug_managed_callback2_aba46e6920ea195ae1edb17b6afd7d54f}\label{interface_i_cor_debug_managed_callback2_aba46e6920ea195ae1edb17b6afd7d54f}} 
+H\+R\+E\+S\+U\+LT {\bfseries M\+D\+A\+Notification} (\mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_controller}{I\+Cor\+Debug\+Controller} $\ast$p\+Controller, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_thread}{I\+Cor\+Debug\+Thread} $\ast$p\+Thread, \mbox{[}in\mbox{]} \hyperlink{interface_i_cor_debug_m_d_a}{I\+Cor\+Debug\+M\+DA} $\ast$p\+M\+DA)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/cordebug.\+idl\end{DoxyCompactItemize}

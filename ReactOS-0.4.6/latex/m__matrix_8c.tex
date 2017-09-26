@@ -1,0 +1,635 @@
+\hypertarget{m__matrix_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/math/m\+\_\+matrix.c 文件参考}
+\label{m__matrix_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/math/m\+\_\+matrix.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/math/m\+\_\+matrix.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga46c11f5e5ed8d400da4f5bb05aca0112}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+I\+D\+E\+N\+T\+I\+TY}~0
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_gafbc6bb67558ead333d77b39078073f43}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+E\+N\+E\+R\+AL}~0x1
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga3dd0c612ad9a4c9c4ed5e2ff0e879368}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+R\+O\+T\+A\+T\+I\+ON}~0x2
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga0abc46abbd9895235ab498ab31185f3b}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+ON}~0x4
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga5da236659e222eff1c0ebdb94c948f44}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+U\+N\+I\+F\+O\+R\+M\+\_\+\+S\+C\+A\+LE}~0x8
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga5f106ce9c0ec229289103dd5b7cdc65c}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+S\+C\+A\+LE}~0x10
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_gaa154aca726c0da4fe90f5ba95d2becec}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+3D}~0x20
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga94cf14e5c8dbb53cfac903e9f92f696c}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}~0x40
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga24714171aad96fb6b3a02e02384a0f0c}{M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+S\+I\+N\+G\+U\+L\+AR}~0x80
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga8e885b91f94c09a8b74bbd93acccc306}{M\+A\+T\+\_\+\+D\+I\+R\+T\+Y\+\_\+\+T\+Y\+PE}~0x100
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga94d6afafd36d74f41e089fe72d868a8f}{M\+A\+T\+\_\+\+D\+I\+R\+T\+Y\+\_\+\+F\+L\+A\+GS}~0x200
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga181bdf9c68ab249ba1de19e19ac7edb7}{M\+A\+T\+\_\+\+D\+I\+R\+T\+Y\+\_\+\+I\+N\+V\+E\+R\+SE}~0x400
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga0381a1be37902db79ae16d57059f8f25}{M\+A\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+N\+G\+L\+E\+\_\+\+P\+R\+E\+S\+E\+R\+V\+I\+NG}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_gabbfd3b9cd83257f3d28d089484b611ad}{M\+A\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+G\+E\+O\+M\+E\+T\+RY}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga1ff6f6732ace580b20fb74607bc94d15}{M\+A\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+P\+R\+E\+S\+E\+R\+V\+I\+NG}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_gaf9aae4e97635565e672763f258b2de1d}{M\+A\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+3D}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{group___mat_flags_ga61563a06605a889426fe5a9ab04d3f98}{M\+A\+T\+\_\+\+D\+I\+R\+TY}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{m__matrix_8c_a6bc055a2999580d23e8d433b181f5b2e}{T\+E\+S\+T\+\_\+\+M\+A\+T\+\_\+\+F\+L\+A\+GS}(mat,  a)~((\hyperlink{group___mat_flags_gabbfd3b9cd83257f3d28d089484b611ad}{M\+A\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+G\+E\+O\+M\+E\+T\+RY} \& ($\sim$(a)) \& ((mat)-\/$>$flags) ) == 0)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{m__matrix_8c_a04fad4ee8b40909b70143ff909580d07}{M\+AT}(m,  r,  c)~(m)\mbox{[}(c)$\ast$4+(r)\mbox{]}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}\label{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}} 
+\#\hyperlink{structdefine}{define} {\bfseries M}(row,  col)~m\mbox{[}col$\ast$4+row\mbox{]}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}\label{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}} 
+\#\hyperlink{structdefine}{define} {\bfseries M}(row,  col)~m\mbox{[}col$\ast$4+row\mbox{]}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}\label{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}} 
+\#\hyperlink{structdefine}{define} {\bfseries M}(row,  col)~m\mbox{[}col$\ast$4+row\mbox{]}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}\label{m__matrix_8c_ad1fefc30502b40fc6aebcb46d0a3b262}} 
+\#\hyperlink{structdefine}{define} {\bfseries M}(row,  col)~m\mbox{[}row + col$\ast$4\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lboolean \hyperlink{m__matrix_8c_a6540db69cb0fc02ba34be13a9e795f2b}{\+\_\+math\+\_\+matrix\+\_\+is\+\_\+length\+\_\+preserving} (const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\item 
+G\+Lboolean \hyperlink{m__matrix_8c_a229386960a58433c0839083f27b4bd48}{\+\_\+math\+\_\+matrix\+\_\+has\+\_\+rotation} (const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a259c8fc70e93438f30101dc5b1387e43}\label{m__matrix_8c_a259c8fc70e93438f30101dc5b1387e43}} 
+G\+Lboolean {\bfseries \+\_\+math\+\_\+matrix\+\_\+is\+\_\+general\+\_\+scale} (const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a4a6637e785f47429f32d8191b136ea84}\label{m__matrix_8c_a4a6637e785f47429f32d8191b136ea84}} 
+G\+Lboolean {\bfseries \+\_\+math\+\_\+matrix\+\_\+is\+\_\+dirty} (const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a76107f653a970333c78b6285ce3ede9e}{\+\_\+mesa\+\_\+transform\+\_\+vector} (G\+Lfloat u\mbox{[}4\mbox{]}, const G\+Lfloat v\mbox{[}4\mbox{]}, const G\+Lfloat m\mbox{[}16\mbox{]})
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Matrix output}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a1797c3f04a8b12319534ad8976b78bea}{\+\_\+math\+\_\+matrix\+\_\+print} (const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Matrix generation}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a91272919a1b1068bdff427b5766a21c6}{\+\_\+math\+\_\+matrix\+\_\+rotate} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat, G\+Lfloat angle, G\+Lfloat x, G\+Lfloat y, G\+Lfloat z)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a02426579330037dfaa19a4602ed03377}{\+\_\+math\+\_\+matrix\+\_\+frustum} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat, G\+Lfloat left, G\+Lfloat right, G\+Lfloat bottom, G\+Lfloat top, G\+Lfloat nearval, G\+Lfloat farval)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_aaa13fd3c18845d6a643a4d1101bf38b8}{\+\_\+math\+\_\+matrix\+\_\+ortho} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat, G\+Lfloat left, G\+Lfloat right, G\+Lfloat bottom, G\+Lfloat top, G\+Lfloat nearval, G\+Lfloat farval)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a2fb78815e44604a101a83a936774eae8}{\+\_\+math\+\_\+matrix\+\_\+scale} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat, G\+Lfloat x, G\+Lfloat y, G\+Lfloat z)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a3b3b58d8a82d466302f64ad873b04853}{\+\_\+math\+\_\+matrix\+\_\+translate} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat, G\+Lfloat x, G\+Lfloat y, G\+Lfloat z)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a450a36764f9f45fcbff7dc016818af2b}{\+\_\+math\+\_\+matrix\+\_\+viewport} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m, G\+Lint x, G\+Lint y, G\+Lint width, G\+Lint height, G\+Lfloat z\+Near, G\+Lfloat z\+Far, G\+Lfloat depth\+Max)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_abdc2d962dd4a5850afd72cf26cdeef36}{\+\_\+math\+\_\+matrix\+\_\+set\+\_\+identity} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Matrix setup}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_ac401f4e4b18dfb9249ff41b8f54452d8}{\+\_\+math\+\_\+matrix\+\_\+copy} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$to, const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$from)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a60d55b9bc3e3682179458e1cfd7ad9c8}{\+\_\+math\+\_\+matrix\+\_\+loadf} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat, const G\+Lfloat $\ast$m)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_aca778f328dc0a4627c3dd8b59985b4a2}{\+\_\+math\+\_\+matrix\+\_\+ctr} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a8fe74bd56f4f2dd4b9f202c690ba668b}{\+\_\+math\+\_\+matrix\+\_\+dtr} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a3d443b50346e5f57b379c576bbdee6c5}{\+\_\+math\+\_\+matrix\+\_\+alloc\+\_\+inv} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$m)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Matrix transpose}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a634b7f4af55678e5f96edba89afeed1a}{\+\_\+math\+\_\+transposef} (G\+Lfloat to\mbox{[}16\mbox{]}, const G\+Lfloat from\mbox{[}16\mbox{]})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_affa9590df3d6dbec72e7f384f618fc8c}{\+\_\+math\+\_\+transposed} (G\+Ldouble to\mbox{[}16\mbox{]}, const G\+Ldouble from\mbox{[}16\mbox{]})
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a64deb51a4d9b1a2533f0a2e48de007d5}{\+\_\+math\+\_\+transposefd} (G\+Lfloat to\mbox{[}16\mbox{]}, const G\+Ldouble from\mbox{[}16\mbox{]})
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Matrix multiplication}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a77187b94e6ac6de10299d1d23dd38618}\label{m__matrix_8c_a77187b94e6ac6de10299d1d23dd38618}} 
+\#\hyperlink{structdefine}{define} {\bfseries A}(row,  col)~a\mbox{[}(col$<$$<$2)+row\mbox{]}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a8ef327dc00409b9ad0c2f7f402c4d843}\label{m__matrix_8c_a8ef327dc00409b9ad0c2f7f402c4d843}} 
+\#\hyperlink{structdefine}{define} {\bfseries B}(row,  col)~b\mbox{[}(col$<$$<$2)+row\mbox{]}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a592aafc4689d3c4c6f226a0e0d71fded}\label{m__matrix_8c_a592aafc4689d3c4c6f226a0e0d71fded}} 
+\#\hyperlink{structdefine}{define} {\bfseries P}(row,  col)~product\mbox{[}(col$<$$<$2)+row\mbox{]}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_ab0a51de0408c7005807f5004abdf89d1}{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+matrix} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$dest, const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$a, const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$b)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a89c0aa9d2ddbc06be9c4c40d5488661d}{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+floats} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$dest, const G\+Lfloat $\ast$m)
+\end{DoxyCompactItemize}
+\subsection*{Matrix inversion}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{m__matrix_8c_ab05eff8e781b00b86776d167de0be400}{S\+W\+A\+P\+\_\+\+R\+O\+WS}(a,  b)~\{ G\+Lfloat $\ast$\+\_\+tmp = a; (a)=(b); (b)=\+\_\+tmp; \}
+\item 
+typedef G\+Lboolean($\ast$ \hyperlink{m__matrix_8c_a581d4a5d314f972400c9f04a497c46d4}{inv\+\_\+mat\+\_\+func}) (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat)
+\end{DoxyCompactItemize}
+\subsection*{Matrix analysis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a4e902ee4d3bb5bcf61e23119d53c6d73}\label{m__matrix_8c_a4e902ee4d3bb5bcf61e23119d53c6d73}} 
+\#\hyperlink{structdefine}{define} {\bfseries Z\+E\+RO}(x)~(1$<$$<$x)
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a7753b50341bd40cad76a49199f781c64}\label{m__matrix_8c_a7753b50341bd40cad76a49199f781c64}} 
+\#\hyperlink{structdefine}{define} {\bfseries O\+NE}(x)~(1$<$$<$(x+16))
+\item 
+\mbox{\Hypertarget{m__matrix_8c_a0f7570cdf78f7dab80af153828d05c4b}\label{m__matrix_8c_a0f7570cdf78f7dab80af153828d05c4b}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+\+N\+O\+\_\+\+T\+RX}~(Z\+E\+RO(12) $\vert$ Z\+E\+RO(13) $\vert$ Z\+E\+RO(14))
+\item 
+\mbox{\Hypertarget{m__matrix_8c_afb7b43458d53f448fed513b2f410d5d4}\label{m__matrix_8c_afb7b43458d53f448fed513b2f410d5d4}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+\+N\+O\+\_\+2\+D\+\_\+\+S\+C\+A\+LE}~( O\+NE(0)  $\vert$ O\+NE(5))
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+\+I\+D\+E\+N\+T\+I\+TY}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+2\+D\+\_\+\+N\+O\+\_\+\+R\+OT}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+2D}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+3\+D\+\_\+\+N\+O\+\_\+\+R\+OT}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+3D}
+\item 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+S\+K\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}
+\item 
+\mbox{\Hypertarget{m__matrix_8c_ac3644f84794a8bfdacf39c4b2c2495fc}\label{m__matrix_8c_ac3644f84794a8bfdacf39c4b2c2495fc}} 
+\#\hyperlink{structdefine}{define} {\bfseries SQ}(x)~((x)$\ast$(x))
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{m__matrix_8c_a2dbf9ed3e4980c01f46b5cd373e061c9}{\+\_\+math\+\_\+matrix\+\_\+analyse} (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{class_matrix}{Matrix} operations.
+
+\begin{DoxyNote}{注解}
+
+\begin{DoxyEnumerate}
+\item 4x4 transformation matrices are stored in memory in column major order.
+\item Points/vertices are to be thought of as column vectors.
+\item Transformation of a point p by a matrix M is\+: p\textquotesingle{} = M $\ast$ p 
+\end{DoxyEnumerate}
+\end{DoxyNote}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{m__matrix_8c_a7e6427b6a78e002a8e1c6f2149892155}\label{m__matrix_8c_a7e6427b6a78e002a8e1c6f2149892155}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!M\+A\+S\+K\+\_\+2D@{M\+A\+S\+K\+\_\+2D}}
+\index{M\+A\+S\+K\+\_\+2D@{M\+A\+S\+K\+\_\+2D}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+S\+K\+\_\+2D}{MASK\_2D}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+A\+S\+K\+\_\+2D}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(                      ZERO(8)  |           \(\backslash\)
+                                    ZERO(9)  |           \(\backslash\)
+              ZERO(2)  | ZERO(6)  |  ONE(10) | ZERO(14) |\(\backslash\)
+              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )
+\end{DoxyCode}
+\mbox{\Hypertarget{m__matrix_8c_aa1b003079026357983da8e7ac817cb1c}\label{m__matrix_8c_aa1b003079026357983da8e7ac817cb1c}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!M\+A\+S\+K\+\_\+2\+D\+\_\+\+N\+O\+\_\+\+R\+OT@{M\+A\+S\+K\+\_\+2\+D\+\_\+\+N\+O\+\_\+\+R\+OT}}
+\index{M\+A\+S\+K\+\_\+2\+D\+\_\+\+N\+O\+\_\+\+R\+OT@{M\+A\+S\+K\+\_\+2\+D\+\_\+\+N\+O\+\_\+\+R\+OT}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+S\+K\+\_\+2\+D\+\_\+\+N\+O\+\_\+\+R\+OT}{MASK\_2D\_NO\_ROT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+A\+S\+K\+\_\+2\+D\+\_\+\+N\+O\+\_\+\+R\+OT}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(           ZERO(4)  | ZERO(8)  |           \(\backslash\)
+              ZERO(1)  |            ZERO(9)  |           \(\backslash\)
+              ZERO(2)  | ZERO(6)  |  ONE(10) | ZERO(14) |\(\backslash\)
+              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )
+\end{DoxyCode}
+\mbox{\Hypertarget{m__matrix_8c_a20bbcdaa4432e5e3b245419f1e085e27}\label{m__matrix_8c_a20bbcdaa4432e5e3b245419f1e085e27}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!M\+A\+S\+K\+\_\+3D@{M\+A\+S\+K\+\_\+3D}}
+\index{M\+A\+S\+K\+\_\+3D@{M\+A\+S\+K\+\_\+3D}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+S\+K\+\_\+3D}{MASK\_3D}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+A\+S\+K\+\_\+3D}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(                                           \(\backslash\)
+                                                         \(\backslash\)
+                                                         \(\backslash\)
+              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )
+\end{DoxyCode}
+\mbox{\Hypertarget{m__matrix_8c_a595f6d12148a7e8acc9808c2134face4}\label{m__matrix_8c_a595f6d12148a7e8acc9808c2134face4}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!M\+A\+S\+K\+\_\+3\+D\+\_\+\+N\+O\+\_\+\+R\+OT@{M\+A\+S\+K\+\_\+3\+D\+\_\+\+N\+O\+\_\+\+R\+OT}}
+\index{M\+A\+S\+K\+\_\+3\+D\+\_\+\+N\+O\+\_\+\+R\+OT@{M\+A\+S\+K\+\_\+3\+D\+\_\+\+N\+O\+\_\+\+R\+OT}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+S\+K\+\_\+3\+D\+\_\+\+N\+O\+\_\+\+R\+OT}{MASK\_3D\_NO\_ROT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+A\+S\+K\+\_\+3\+D\+\_\+\+N\+O\+\_\+\+R\+OT}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(           ZERO(4)  | ZERO(8)  |           \(\backslash\)
+              ZERO(1)  |            ZERO(9)  |           \(\backslash\)
+              ZERO(2)  | ZERO(6)  |                      \(\backslash\)
+              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )
+\end{DoxyCode}
+\mbox{\Hypertarget{m__matrix_8c_afb26c9f23517af9a6ea3b3b1f2695c42}\label{m__matrix_8c_afb26c9f23517af9a6ea3b3b1f2695c42}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!M\+A\+S\+K\+\_\+\+I\+D\+E\+N\+T\+I\+TY@{M\+A\+S\+K\+\_\+\+I\+D\+E\+N\+T\+I\+TY}}
+\index{M\+A\+S\+K\+\_\+\+I\+D\+E\+N\+T\+I\+TY@{M\+A\+S\+K\+\_\+\+I\+D\+E\+N\+T\+I\+TY}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+S\+K\+\_\+\+I\+D\+E\+N\+T\+I\+TY}{MASK\_IDENTITY}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+A\+S\+K\+\_\+\+I\+D\+E\+N\+T\+I\+TY}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+( ONE(0)  | ZERO(4)  | ZERO(8)  | ZERO(12) |\(\backslash\)
+              ZERO(1)  |  ONE(5)  | ZERO(9)  | ZERO(13) |\(\backslash\)
+              ZERO(2)  | ZERO(6)  |  ONE(10) | ZERO(14) |\(\backslash\)
+              ZERO(3)  | ZERO(7)  | ZERO(11) |  ONE(15) )
+\end{DoxyCode}
+\mbox{\Hypertarget{m__matrix_8c_aface04bfa63f4e967a9b118e75660460}\label{m__matrix_8c_aface04bfa63f4e967a9b118e75660460}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!M\+A\+S\+K\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE@{M\+A\+S\+K\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}}
+\index{M\+A\+S\+K\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE@{M\+A\+S\+K\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+S\+K\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}{MASK\_PERSPECTIVE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+A\+S\+K\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+(           ZERO(4)  |            ZERO(12) |\(\backslash\)
+              ZERO(1)  |                       ZERO(13) |\(\backslash\)
+              ZERO(2)  | ZERO(6)  |                      \(\backslash\)
+              ZERO(3)  | ZERO(7)  |            ZERO(15) )
+\end{DoxyCode}
+\mbox{\Hypertarget{m__matrix_8c_a04fad4ee8b40909b70143ff909580d07}\label{m__matrix_8c_a04fad4ee8b40909b70143ff909580d07}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!M\+AT@{M\+AT}}
+\index{M\+AT@{M\+AT}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{M\+AT}{MAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+AT(\begin{DoxyParamCaption}\item[{}]{m,  }\item[{}]{r,  }\item[{}]{c }\end{DoxyParamCaption})~(m)\mbox{[}(c)$\ast$4+(r)\mbox{]}}
+
+References an element of 4x4 matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em m} & matrix array. \\
+\hline
+{\em c} & column of the desired element. \\
+\hline
+{\em r} & row of the desired element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+value of the desired element.
+\end{DoxyReturn}
+Calculate the linear storage index of the element and references it. \mbox{\Hypertarget{m__matrix_8c_ab05eff8e781b00b86776d167de0be400}\label{m__matrix_8c_ab05eff8e781b00b86776d167de0be400}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!S\+W\+A\+P\+\_\+\+R\+O\+WS@{S\+W\+A\+P\+\_\+\+R\+O\+WS}}
+\index{S\+W\+A\+P\+\_\+\+R\+O\+WS@{S\+W\+A\+P\+\_\+\+R\+O\+WS}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{S\+W\+A\+P\+\_\+\+R\+O\+WS}{SWAP\_ROWS}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+W\+A\+P\+\_\+\+R\+O\+WS(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~\{ G\+Lfloat $\ast$\+\_\+tmp = a; (a)=(b); (b)=\+\_\+tmp; \}}
+
+Swaps the values of two floating pointer variables.
+
+Used by invert\+\_\+matrix\+\_\+general() to swap the row pointers. \mbox{\Hypertarget{m__matrix_8c_a6bc055a2999580d23e8d433b181f5b2e}\label{m__matrix_8c_a6bc055a2999580d23e8d433b181f5b2e}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!T\+E\+S\+T\+\_\+\+M\+A\+T\+\_\+\+F\+L\+A\+GS@{T\+E\+S\+T\+\_\+\+M\+A\+T\+\_\+\+F\+L\+A\+GS}}
+\index{T\+E\+S\+T\+\_\+\+M\+A\+T\+\_\+\+F\+L\+A\+GS@{T\+E\+S\+T\+\_\+\+M\+A\+T\+\_\+\+F\+L\+A\+GS}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+M\+A\+T\+\_\+\+F\+L\+A\+GS}{TEST\_MAT\_FLAGS}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} T\+E\+S\+T\+\_\+\+M\+A\+T\+\_\+\+F\+L\+A\+GS(\begin{DoxyParamCaption}\item[{}]{mat,  }\item[{}]{a }\end{DoxyParamCaption})~((\hyperlink{group___mat_flags_gabbfd3b9cd83257f3d28d089484b611ad}{M\+A\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+G\+E\+O\+M\+E\+T\+RY} \& ($\sim$(a)) \& ((mat)-\/$>$flags) ) == 0)}
+
+\hyperlink{class_test}{Test} geometry related matrix flags.
+
+
+\begin{DoxyParams}{参数}
+{\em mat} & a pointer to a \hyperlink{struct_g_lmatrix}{G\+Lmatrix} structure. \\
+\hline
+{\em a} & flags mask.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+non-\/zero if all geometry related matrix flags are contained within the mask, or zero otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{类型定义说明}
+\mbox{\Hypertarget{m__matrix_8c_a581d4a5d314f972400c9f04a497c46d4}\label{m__matrix_8c_a581d4a5d314f972400c9f04a497c46d4}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!inv\+\_\+mat\+\_\+func@{inv\+\_\+mat\+\_\+func}}
+\index{inv\+\_\+mat\+\_\+func@{inv\+\_\+mat\+\_\+func}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{inv\+\_\+mat\+\_\+func}{inv\_mat\_func}}
+{\footnotesize\ttfamily typedef G\+Lboolean($\ast$ inv\+\_\+mat\+\_\+func) (\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$mat)}
+
+\hyperlink{class_matrix}{Matrix} inversion function pointer type. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{m__matrix_8c_a3d443b50346e5f57b379c576bbdee6c5}\label{m__matrix_8c_a3d443b50346e5f57b379c576bbdee6c5}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+alloc\+\_\+inv@{\+\_\+math\+\_\+matrix\+\_\+alloc\+\_\+inv}}
+\index{\+\_\+math\+\_\+matrix\+\_\+alloc\+\_\+inv@{\+\_\+math\+\_\+matrix\+\_\+alloc\+\_\+inv}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+alloc\+\_\+inv()}{\_math\_matrix\_alloc\_inv()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+alloc\+\_\+inv (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{m }\end{DoxyParamCaption})}
+
+Allocate a matrix inverse.
+
+
+\begin{DoxyParams}{参数}
+{\em m} & matrix.\\
+\hline
+\end{DoxyParams}
+Allocates the matrix inverse, \hyperlink{struct_g_lmatrix_a9db637b7b21b2bd9b320a5b1bb6dd4ac}{G\+Lmatrix\+::inv}, and sets it to Identity. \mbox{\Hypertarget{m__matrix_8c_a2dbf9ed3e4980c01f46b5cd373e061c9}\label{m__matrix_8c_a2dbf9ed3e4980c01f46b5cd373e061c9}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+analyse@{\+\_\+math\+\_\+matrix\+\_\+analyse}}
+\index{\+\_\+math\+\_\+matrix\+\_\+analyse@{\+\_\+math\+\_\+matrix\+\_\+analyse}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+analyse()}{\_math\_matrix\_analyse()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+analyse (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Analyze and update a matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em mat} & matrix.\\
+\hline
+\end{DoxyParams}
+If the matrix type is dirty then calls either analyse\+\_\+from\+\_\+scratch() or analyse\+\_\+from\+\_\+flags() to determine its type, according to whether the flags are dirty or not, respectively. If the matrix has an inverse and it\textquotesingle{}s dirty then calls matrix\+\_\+invert(). Finally clears the dirty flags. \mbox{\Hypertarget{m__matrix_8c_ac401f4e4b18dfb9249ff41b8f54452d8}\label{m__matrix_8c_ac401f4e4b18dfb9249ff41b8f54452d8}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+copy@{\+\_\+math\+\_\+matrix\+\_\+copy}}
+\index{\+\_\+math\+\_\+matrix\+\_\+copy@{\+\_\+math\+\_\+matrix\+\_\+copy}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+copy()}{\_math\_matrix\_copy()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+copy (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{to,  }\item[{const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{from }\end{DoxyParamCaption})}
+
+Copy a matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em to} & destination matrix. \\
+\hline
+{\em from} & source matrix.\\
+\hline
+\end{DoxyParams}
+Copies all fields in \hyperlink{struct_g_lmatrix}{G\+Lmatrix}, creating an inverse array if necessary. \mbox{\Hypertarget{m__matrix_8c_aca778f328dc0a4627c3dd8b59985b4a2}\label{m__matrix_8c_aca778f328dc0a4627c3dd8b59985b4a2}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+ctr@{\+\_\+math\+\_\+matrix\+\_\+ctr}}
+\index{\+\_\+math\+\_\+matrix\+\_\+ctr@{\+\_\+math\+\_\+matrix\+\_\+ctr}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+ctr()}{\_math\_matrix\_ctr()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+ctr (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\hyperlink{class_matrix}{Matrix} constructor.
+
+
+\begin{DoxyParams}{参数}
+{\em m} & matrix.\\
+\hline
+\end{DoxyParams}
+Initialize the \hyperlink{struct_g_lmatrix}{G\+Lmatrix} fields. \mbox{\Hypertarget{m__matrix_8c_a8fe74bd56f4f2dd4b9f202c690ba668b}\label{m__matrix_8c_a8fe74bd56f4f2dd4b9f202c690ba668b}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+dtr@{\+\_\+math\+\_\+matrix\+\_\+dtr}}
+\index{\+\_\+math\+\_\+matrix\+\_\+dtr@{\+\_\+math\+\_\+matrix\+\_\+dtr}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+dtr()}{\_math\_matrix\_dtr()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+dtr (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\hyperlink{class_matrix}{Matrix} destructor.
+
+
+\begin{DoxyParams}{参数}
+{\em m} & matrix.\\
+\hline
+\end{DoxyParams}
+Frees the data in a \hyperlink{struct_g_lmatrix}{G\+Lmatrix}. \mbox{\Hypertarget{m__matrix_8c_a02426579330037dfaa19a4602ed03377}\label{m__matrix_8c_a02426579330037dfaa19a4602ed03377}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+frustum@{\+\_\+math\+\_\+matrix\+\_\+frustum}}
+\index{\+\_\+math\+\_\+matrix\+\_\+frustum@{\+\_\+math\+\_\+matrix\+\_\+frustum}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+frustum()}{\_math\_matrix\_frustum()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+frustum (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat,  }\item[{G\+Lfloat}]{left,  }\item[{G\+Lfloat}]{right,  }\item[{G\+Lfloat}]{bottom,  }\item[{G\+Lfloat}]{top,  }\item[{G\+Lfloat}]{nearval,  }\item[{G\+Lfloat}]{farval }\end{DoxyParamCaption})}
+
+Apply a perspective projection matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em mat} & matrix to apply the projection. \\
+\hline
+{\em left} & left clipping plane coordinate. \\
+\hline
+{\em right} & right clipping plane coordinate. \\
+\hline
+{\em bottom} & bottom clipping plane coordinate. \\
+\hline
+{\em top} & top clipping plane coordinate. \\
+\hline
+{\em nearval} & distance to the near clipping plane. \\
+\hline
+{\em farval} & distance to the far clipping plane.\\
+\hline
+\end{DoxyParams}
+Creates the projection matrix and multiplies it with {\ttfamily mat}, marking the M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE flag. \mbox{\Hypertarget{m__matrix_8c_a229386960a58433c0839083f27b4bd48}\label{m__matrix_8c_a229386960a58433c0839083f27b4bd48}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+has\+\_\+rotation@{\+\_\+math\+\_\+matrix\+\_\+has\+\_\+rotation}}
+\index{\+\_\+math\+\_\+matrix\+\_\+has\+\_\+rotation@{\+\_\+math\+\_\+matrix\+\_\+has\+\_\+rotation}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+has\+\_\+rotation()}{\_math\_matrix\_has\_rotation()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+math\+\_\+matrix\+\_\+has\+\_\+rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\hyperlink{class_test}{Test} if the given matrix does any rotation. (or perhaps if the upper-\/left 3x3 is non-\/identity) \mbox{\Hypertarget{m__matrix_8c_a6540db69cb0fc02ba34be13a9e795f2b}\label{m__matrix_8c_a6540db69cb0fc02ba34be13a9e795f2b}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+is\+\_\+length\+\_\+preserving@{\+\_\+math\+\_\+matrix\+\_\+is\+\_\+length\+\_\+preserving}}
+\index{\+\_\+math\+\_\+matrix\+\_\+is\+\_\+length\+\_\+preserving@{\+\_\+math\+\_\+matrix\+\_\+is\+\_\+length\+\_\+preserving}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+is\+\_\+length\+\_\+preserving()}{\_math\_matrix\_is\_length\_preserving()}}
+{\footnotesize\ttfamily G\+Lboolean \+\_\+math\+\_\+matrix\+\_\+is\+\_\+length\+\_\+preserving (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\hyperlink{class_test}{Test} if the given matrix preserves vector lengths. \mbox{\Hypertarget{m__matrix_8c_a60d55b9bc3e3682179458e1cfd7ad9c8}\label{m__matrix_8c_a60d55b9bc3e3682179458e1cfd7ad9c8}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+loadf@{\+\_\+math\+\_\+matrix\+\_\+loadf}}
+\index{\+\_\+math\+\_\+matrix\+\_\+loadf@{\+\_\+math\+\_\+matrix\+\_\+loadf}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+loadf()}{\_math\_matrix\_loadf()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+loadf (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat,  }\item[{const G\+Lfloat $\ast$}]{m }\end{DoxyParamCaption})}
+
+Loads a matrix array into \hyperlink{struct_g_lmatrix}{G\+Lmatrix}.
+
+
+\begin{DoxyParams}{参数}
+{\em m} & matrix array. \\
+\hline
+{\em mat} & matrix.\\
+\hline
+\end{DoxyParams}
+Copies {\ttfamily m} into \hyperlink{struct_g_lmatrix_aed91ed72e8180733f0deb2807bf9afc5}{G\+Lmatrix\+::m} and marks the M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+E\+N\+E\+R\+AL and M\+A\+T\+\_\+\+D\+I\+R\+TY flags. \mbox{\Hypertarget{m__matrix_8c_a89c0aa9d2ddbc06be9c4c40d5488661d}\label{m__matrix_8c_a89c0aa9d2ddbc06be9c4c40d5488661d}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+floats@{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+floats}}
+\index{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+floats@{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+floats}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+floats()}{\_math\_matrix\_mul\_floats()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+mul\+\_\+floats (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{dest,  }\item[{const G\+Lfloat $\ast$}]{m }\end{DoxyParamCaption})}
+
+\hyperlink{class_matrix}{Matrix} multiplication.
+
+
+\begin{DoxyParams}{参数}
+{\em dest} & left and destination matrix. \\
+\hline
+{\em m} & right matrix array.\\
+\hline
+\end{DoxyParams}
+Marks the matrix flags with general flag, and type and inverse dirty flags. Calls matmul4() for the multiplication. \mbox{\Hypertarget{m__matrix_8c_ab0a51de0408c7005807f5004abdf89d1}\label{m__matrix_8c_ab0a51de0408c7005807f5004abdf89d1}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+matrix@{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+matrix}}
+\index{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+matrix@{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+matrix}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+mul\+\_\+matrix()}{\_math\_matrix\_mul\_matrix()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+mul\+\_\+matrix (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{dest,  }\item[{const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{a,  }\item[{const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{b }\end{DoxyParamCaption})}
+
+\hyperlink{class_matrix}{Matrix} multiplication.
+
+
+\begin{DoxyParams}{参数}
+{\em dest} & destination matrix. \\
+\hline
+{\em a} & left matrix. \\
+\hline
+{\em b} & right matrix.\\
+\hline
+\end{DoxyParams}
+Joins both flags and marks the type and inverse as dirty. Calls matmul34() if both matrices are 3D, or matmul4() otherwise. \mbox{\Hypertarget{m__matrix_8c_aaa13fd3c18845d6a643a4d1101bf38b8}\label{m__matrix_8c_aaa13fd3c18845d6a643a4d1101bf38b8}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+ortho@{\+\_\+math\+\_\+matrix\+\_\+ortho}}
+\index{\+\_\+math\+\_\+matrix\+\_\+ortho@{\+\_\+math\+\_\+matrix\+\_\+ortho}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+ortho()}{\_math\_matrix\_ortho()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+ortho (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat,  }\item[{G\+Lfloat}]{left,  }\item[{G\+Lfloat}]{right,  }\item[{G\+Lfloat}]{bottom,  }\item[{G\+Lfloat}]{top,  }\item[{G\+Lfloat}]{nearval,  }\item[{G\+Lfloat}]{farval }\end{DoxyParamCaption})}
+
+Apply an orthographic projection matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em mat} & matrix to apply the projection. \\
+\hline
+{\em left} & left clipping plane coordinate. \\
+\hline
+{\em right} & right clipping plane coordinate. \\
+\hline
+{\em bottom} & bottom clipping plane coordinate. \\
+\hline
+{\em top} & top clipping plane coordinate. \\
+\hline
+{\em nearval} & distance to the near clipping plane. \\
+\hline
+{\em farval} & distance to the far clipping plane.\\
+\hline
+\end{DoxyParams}
+Creates the projection matrix and multiplies it with {\ttfamily mat}, marking the M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+S\+C\+A\+LE and M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+ON flags. \mbox{\Hypertarget{m__matrix_8c_a1797c3f04a8b12319534ad8976b78bea}\label{m__matrix_8c_a1797c3f04a8b12319534ad8976b78bea}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+print@{\+\_\+math\+\_\+matrix\+\_\+print}}
+\index{\+\_\+math\+\_\+matrix\+\_\+print@{\+\_\+math\+\_\+matrix\+\_\+print}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+print()}{\_math\_matrix\_print()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+print (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{m }\end{DoxyParamCaption})}
+
+Dumps the contents of a \hyperlink{struct_g_lmatrix}{G\+Lmatrix} structure.
+
+
+\begin{DoxyParams}{参数}
+{\em m} & pointer to the \hyperlink{struct_g_lmatrix}{G\+Lmatrix} structure. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{m__matrix_8c_a91272919a1b1068bdff427b5766a21c6}\label{m__matrix_8c_a91272919a1b1068bdff427b5766a21c6}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+rotate@{\+\_\+math\+\_\+matrix\+\_\+rotate}}
+\index{\+\_\+math\+\_\+matrix\+\_\+rotate@{\+\_\+math\+\_\+matrix\+\_\+rotate}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+rotate()}{\_math\_matrix\_rotate()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+rotate (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat,  }\item[{G\+Lfloat}]{angle,  }\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y,  }\item[{G\+Lfloat}]{z }\end{DoxyParamCaption})}
+
+Generate a 4x4 transformation matrix from gl\+Rotate parameters, and post-\/multiply the input matrix by it.
+
+\begin{DoxyAuthor}{作者}
+\hyperlink{namespace_this}{This} function was contributed by Erich Boleyn (\href{mailto:erich@uruk.org}{\tt erich@uruk.\+org}). Optimizations contributed by Rudolf Opalla (\href{mailto:rudi@khm.de}{\tt rudi@khm.\+de}). 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{m__matrix_8c_a2fb78815e44604a101a83a936774eae8}\label{m__matrix_8c_a2fb78815e44604a101a83a936774eae8}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+scale@{\+\_\+math\+\_\+matrix\+\_\+scale}}
+\index{\+\_\+math\+\_\+matrix\+\_\+scale@{\+\_\+math\+\_\+matrix\+\_\+scale}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+scale()}{\_math\_matrix\_scale()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+scale (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat,  }\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y,  }\item[{G\+Lfloat}]{z }\end{DoxyParamCaption})}
+
+Multiply a matrix with a general scaling matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em mat} & matrix. \\
+\hline
+{\em x} & x axis scale factor. \\
+\hline
+{\em y} & y axis scale factor. \\
+\hline
+{\em z} & z axis scale factor.\\
+\hline
+\end{DoxyParams}
+Multiplies in-\/place the elements of {\ttfamily mat} by the scale factors. Checks if the scales factors are roughly the same, marking the M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+U\+N\+I\+F\+O\+R\+M\+\_\+\+S\+C\+A\+LE flag, or M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+S\+C\+A\+LE. Marks the M\+A\+T\+\_\+\+D\+I\+R\+T\+Y\+\_\+\+T\+Y\+PE and M\+A\+T\+\_\+\+D\+I\+R\+T\+Y\+\_\+\+I\+N\+V\+E\+R\+SE dirty flags. \mbox{\Hypertarget{m__matrix_8c_abdc2d962dd4a5850afd72cf26cdeef36}\label{m__matrix_8c_abdc2d962dd4a5850afd72cf26cdeef36}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+set\+\_\+identity@{\+\_\+math\+\_\+matrix\+\_\+set\+\_\+identity}}
+\index{\+\_\+math\+\_\+matrix\+\_\+set\+\_\+identity@{\+\_\+math\+\_\+matrix\+\_\+set\+\_\+identity}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+set\+\_\+identity()}{\_math\_matrix\_set\_identity()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+set\+\_\+identity (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+Set a matrix to the identity matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em mat} & matrix.\\
+\hline
+\end{DoxyParams}
+Copies \+::\+Identity into {\ttfamily \hyperlink{struct_g_lmatrix_aed91ed72e8180733f0deb2807bf9afc5}{G\+Lmatrix\+::m}}, and into \hyperlink{struct_g_lmatrix_a9db637b7b21b2bd9b320a5b1bb6dd4ac}{G\+Lmatrix\+::inv} if not N\+U\+LL. Sets the matrix type to identity, and clear the dirty flags. \mbox{\Hypertarget{m__matrix_8c_a3b3b58d8a82d466302f64ad873b04853}\label{m__matrix_8c_a3b3b58d8a82d466302f64ad873b04853}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+translate@{\+\_\+math\+\_\+matrix\+\_\+translate}}
+\index{\+\_\+math\+\_\+matrix\+\_\+translate@{\+\_\+math\+\_\+matrix\+\_\+translate}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+translate()}{\_math\_matrix\_translate()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+translate (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{mat,  }\item[{G\+Lfloat}]{x,  }\item[{G\+Lfloat}]{y,  }\item[{G\+Lfloat}]{z }\end{DoxyParamCaption})}
+
+Multiply a matrix with a translation matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em mat} & matrix. \\
+\hline
+{\em x} & translation vector x coordinate. \\
+\hline
+{\em y} & translation vector y coordinate. \\
+\hline
+{\em z} & translation vector z coordinate.\\
+\hline
+\end{DoxyParams}
+Adds the translation coordinates to the elements of {\ttfamily mat} in-\/place. Marks the M\+A\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+ON flag, and the M\+A\+T\+\_\+\+D\+I\+R\+T\+Y\+\_\+\+T\+Y\+PE and M\+A\+T\+\_\+\+D\+I\+R\+T\+Y\+\_\+\+I\+N\+V\+E\+R\+SE dirty flags. \mbox{\Hypertarget{m__matrix_8c_a450a36764f9f45fcbff7dc016818af2b}\label{m__matrix_8c_a450a36764f9f45fcbff7dc016818af2b}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+matrix\+\_\+viewport@{\+\_\+math\+\_\+matrix\+\_\+viewport}}
+\index{\+\_\+math\+\_\+matrix\+\_\+viewport@{\+\_\+math\+\_\+matrix\+\_\+viewport}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+matrix\+\_\+viewport()}{\_math\_matrix\_viewport()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+matrix\+\_\+viewport (\begin{DoxyParamCaption}\item[{\hyperlink{struct_g_lmatrix}{G\+Lmatrix} $\ast$}]{m,  }\item[{G\+Lint}]{x,  }\item[{G\+Lint}]{y,  }\item[{G\+Lint}]{width,  }\item[{G\+Lint}]{height,  }\item[{G\+Lfloat}]{z\+Near,  }\item[{G\+Lfloat}]{z\+Far,  }\item[{G\+Lfloat}]{depth\+Max }\end{DoxyParamCaption})}
+
+Set matrix to do viewport and depthrange mapping. Transforms Normalized Device Coords to window/Z values. \mbox{\Hypertarget{m__matrix_8c_affa9590df3d6dbec72e7f384f618fc8c}\label{m__matrix_8c_affa9590df3d6dbec72e7f384f618fc8c}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+transposed@{\+\_\+math\+\_\+transposed}}
+\index{\+\_\+math\+\_\+transposed@{\+\_\+math\+\_\+transposed}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+transposed()}{\_math\_transposed()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+transposed (\begin{DoxyParamCaption}\item[{G\+Ldouble}]{to\mbox{[}16\mbox{]},  }\item[{const G\+Ldouble}]{from\mbox{[}16\mbox{]} }\end{DoxyParamCaption})}
+
+Transpose a G\+Ldouble matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em to} & destination array. \\
+\hline
+{\em from} & source array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{m__matrix_8c_a634b7f4af55678e5f96edba89afeed1a}\label{m__matrix_8c_a634b7f4af55678e5f96edba89afeed1a}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+transposef@{\+\_\+math\+\_\+transposef}}
+\index{\+\_\+math\+\_\+transposef@{\+\_\+math\+\_\+transposef}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+transposef()}{\_math\_transposef()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+transposef (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{to\mbox{[}16\mbox{]},  }\item[{const G\+Lfloat}]{from\mbox{[}16\mbox{]} }\end{DoxyParamCaption})}
+
+Transpose a G\+Lfloat matrix.
+
+
+\begin{DoxyParams}{参数}
+{\em to} & destination array. \\
+\hline
+{\em from} & source array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{m__matrix_8c_a64deb51a4d9b1a2533f0a2e48de007d5}\label{m__matrix_8c_a64deb51a4d9b1a2533f0a2e48de007d5}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+math\+\_\+transposefd@{\+\_\+math\+\_\+transposefd}}
+\index{\+\_\+math\+\_\+transposefd@{\+\_\+math\+\_\+transposefd}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+math\+\_\+transposefd()}{\_math\_transposefd()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+math\+\_\+transposefd (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{to\mbox{[}16\mbox{]},  }\item[{const G\+Ldouble}]{from\mbox{[}16\mbox{]} }\end{DoxyParamCaption})}
+
+Transpose a G\+Ldouble matrix and convert to G\+Lfloat.
+
+
+\begin{DoxyParams}{参数}
+{\em to} & destination array. \\
+\hline
+{\em from} & source array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{m__matrix_8c_a76107f653a970333c78b6285ce3ede9e}\label{m__matrix_8c_a76107f653a970333c78b6285ce3ede9e}} 
+\index{m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}!\+\_\+mesa\+\_\+transform\+\_\+vector@{\+\_\+mesa\+\_\+transform\+\_\+vector}}
+\index{\+\_\+mesa\+\_\+transform\+\_\+vector@{\+\_\+mesa\+\_\+transform\+\_\+vector}!m\+\_\+matrix.\+c@{m\+\_\+matrix.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+transform\+\_\+vector()}{\_mesa\_transform\_vector()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+transform\+\_\+vector (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{u\mbox{[}4\mbox{]},  }\item[{const G\+Lfloat}]{v\mbox{[}4\mbox{]},  }\item[{const G\+Lfloat}]{m\mbox{[}16\mbox{]} }\end{DoxyParamCaption})}
+
+Transform a 4-\/element row vector (1x4 matrix) by a 4x4 matrix. \hyperlink{namespace_this}{This} function is used for transforming clipping plane equations and spotlight directions. Mathematically, u = v $\ast$ m. Input\+: v -\/ input vector m -\/ transformation matrix Output\+: u -\/ transformed vector 

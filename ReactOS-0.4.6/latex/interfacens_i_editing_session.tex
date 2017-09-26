@@ -1,0 +1,52 @@
+\hypertarget{interfacens_i_editing_session}{}\section{ns\+I\+Editing\+Session接口 参考}
+\label{interfacens_i_editing_session}\index{ns\+I\+Editing\+Session@{ns\+I\+Editing\+Session}}
+类 ns\+I\+Editing\+Session 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacens_i_editing_session}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a43c517e8cfd4534e76f6f0c300a9068b}\label{interfacens_i_editing_session_a43c517e8cfd4534e76f6f0c300a9068b}} 
+nsresult {\bfseries Get\+Editor\+Status} (uint32\+\_\+t $\ast$a\+Editor\+Status)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_afa04db20fef75621852786a63296573f}\label{interfacens_i_editing_session_afa04db20fef75621852786a63296573f}} 
+nsresult {\bfseries Make\+Window\+Editable} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$window, const char $\ast$a\+Editor\+Type, bool do\+After\+Uri\+Load, bool a\+Make\+Whole\+Document\+Editable, bool a\+Interactive)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a742279716b40314a8ef7fa320000e9b6}\label{interfacens_i_editing_session_a742279716b40314a8ef7fa320000e9b6}} 
+nsresult {\bfseries Window\+Is\+Editable} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$window, bool $\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_abeaa54b0674fe8a2a3dd21acd6e13dd6}\label{interfacens_i_editing_session_abeaa54b0674fe8a2a3dd21acd6e13dd6}} 
+nsresult {\bfseries Get\+Editor\+For\+Window} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$window, \hyperlink{interfacens_i_editor}{ns\+I\+Editor} $\ast$$\ast$\+\_\+retval)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_af68e6f584c356b9c4b4f1c5a7c6fc4f9}\label{interfacens_i_editing_session_af68e6f584c356b9c4b4f1c5a7c6fc4f9}} 
+nsresult {\bfseries Setup\+Editor\+On\+Window} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$window)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a2a8bf0a9f38169a4d3c9f8de45875717}\label{interfacens_i_editing_session_a2a8bf0a9f38169a4d3c9f8de45875717}} 
+nsresult {\bfseries Tear\+Down\+Editor\+On\+Window} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$window)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a364525e08006d61b9e5dc55c9aa51787}\label{interfacens_i_editing_session_a364525e08006d61b9e5dc55c9aa51787}} 
+nsresult {\bfseries Set\+Editor\+On\+Controllers} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$a\+Window, \hyperlink{interfacens_i_editor}{ns\+I\+Editor} $\ast$a\+Editor)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a07fe55886841af6ba5901a550d86d076}\label{interfacens_i_editing_session_a07fe55886841af6ba5901a550d86d076}} 
+nsresult {\bfseries Disable\+J\+S\+And\+Plugins} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$a\+Window)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_af4f99621f4eac9bed5025c399e0bac64}\label{interfacens_i_editing_session_af4f99621f4eac9bed5025c399e0bac64}} 
+nsresult {\bfseries Restore\+J\+S\+And\+Plugins} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$a\+Window)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a59d8db935d27608834c73b02c7fed23b}\label{interfacens_i_editing_session_a59d8db935d27608834c73b02c7fed23b}} 
+nsresult {\bfseries Detach\+From\+Window} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$a\+Window)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a4ab7c64328f33bad28dc94329e7b960c}\label{interfacens_i_editing_session_a4ab7c64328f33bad28dc94329e7b960c}} 
+nsresult {\bfseries Reattach\+To\+Window} (\hyperlink{interfacens_i_d_o_m_window}{ns\+I\+D\+O\+M\+Window} $\ast$a\+Window)
+\item 
+\mbox{\Hypertarget{interfacens_i_editing_session_a771a1f11634630eab5f2f786a343c2b2}\label{interfacens_i_editing_session_a771a1f11634630eab5f2f786a343c2b2}} 
+nsresult {\bfseries Get\+Js\+And\+Plugins\+Disabled} (bool $\ast$a\+Js\+And\+Plugins\+Disabled)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/mshtml/nsiface.\+idl\end{DoxyCompactItemize}

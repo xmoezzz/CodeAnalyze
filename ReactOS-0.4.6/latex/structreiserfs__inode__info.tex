@@ -1,0 +1,60 @@
+\hypertarget{structreiserfs__inode__info}{}\section{reiserfs\+\_\+inode\+\_\+info结构体 参考}
+\label{structreiserfs__inode__info}\index{reiserfs\+\_\+inode\+\_\+info@{reiserfs\+\_\+inode\+\_\+info}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_adee78f440abcf3b25e3b3dcc3d5da332}\label{structreiserfs__inode__info_adee78f440abcf3b25e3b3dcc3d5da332}} 
+\+\_\+\+\_\+u32 {\bfseries i\+\_\+key} \mbox{[}4\mbox{]}
+\item 
+\+\_\+\+\_\+u32 \hyperlink{structreiserfs__inode__info_a08045363dd99c56bf8a7b66697898e7c}{i\+\_\+flags}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_ae4a8d0bd6710a283584f657be4eeca02}\label{structreiserfs__inode__info_ae4a8d0bd6710a283584f657be4eeca02}} 
+\+\_\+\+\_\+u32 {\bfseries i\+\_\+first\+\_\+direct\+\_\+byte}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_a242e3200b7b8d64c221c38452017a6e6}\label{structreiserfs__inode__info_a242e3200b7b8d64c221c38452017a6e6}} 
+\+\_\+\+\_\+u32 {\bfseries i\+\_\+attrs}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_aad8e400d8cd5866bedaade711ced03f9}\label{structreiserfs__inode__info_aad8e400d8cd5866bedaade711ced03f9}} 
+int {\bfseries i\+\_\+prealloc\+\_\+block}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_ab7e656b6991c4ced1deabc8c8d4193e4}\label{structreiserfs__inode__info_ab7e656b6991c4ced1deabc8c8d4193e4}} 
+int {\bfseries i\+\_\+prealloc\+\_\+count}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_ab40cf95011bc71b40236e0fb583f0fa1}\label{structreiserfs__inode__info_ab40cf95011bc71b40236e0fb583f0fa1}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries i\+\_\+prealloc\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_a21435b7e15f15807ab5e5a586f0b4bf0}\label{structreiserfs__inode__info_a21435b7e15f15807ab5e5a586f0b4bf0}} 
+unsigned {\bfseries new\+\_\+packing\+\_\+locality}\+:1
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_a232aaec9f80456c189b29326b4c70423}\label{structreiserfs__inode__info_a232aaec9f80456c189b29326b4c70423}} 
+unsigned long {\bfseries i\+\_\+trans\+\_\+id}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_ad1a254fe26c2cee7ef823e8a215985ff}\label{structreiserfs__inode__info_ad1a254fe26c2cee7ef823e8a215985ff}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__list}{reiserfs\+\_\+journal\+\_\+list} $\ast$ {\bfseries i\+\_\+jl}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_a0838b801dd6b13655f3dfea0d8df2863}\label{structreiserfs__inode__info_a0838b801dd6b13655f3dfea0d8df2863}} 
+\hyperlink{interfacestruct}{struct} posix\+\_\+acl $\ast$ {\bfseries i\+\_\+acl\+\_\+access}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_a0e51774724ffe479325f7c3429c75bd6}\label{structreiserfs__inode__info_a0e51774724ffe479325f7c3429c75bd6}} 
+\hyperlink{interfacestruct}{struct} posix\+\_\+acl $\ast$ {\bfseries i\+\_\+acl\+\_\+default}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_abb3ef4fe14d62ea6f51f3bd096b66a36}\label{structreiserfs__inode__info_abb3ef4fe14d62ea6f51f3bd096b66a36}} 
+\hyperlink{interfacestruct}{struct} rw\+\_\+semaphore {\bfseries xattr\+\_\+sem}
+\item 
+\mbox{\Hypertarget{structreiserfs__inode__info_a9206d17789076687d2c00a5a1f759ac1}\label{structreiserfs__inode__info_a9206d17789076687d2c00a5a1f759ac1}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structinode}{inode} {\bfseries vfs\+\_\+inode}
+\end{DoxyCompactItemize}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structreiserfs__inode__info_a08045363dd99c56bf8a7b66697898e7c}\label{structreiserfs__inode__info_a08045363dd99c56bf8a7b66697898e7c}} 
+\index{reiserfs\+\_\+inode\+\_\+info@{reiserfs\+\_\+inode\+\_\+info}!i\+\_\+flags@{i\+\_\+flags}}
+\index{i\+\_\+flags@{i\+\_\+flags}!reiserfs\+\_\+inode\+\_\+info@{reiserfs\+\_\+inode\+\_\+info}}
+\subsubsection{\texorpdfstring{i\+\_\+flags}{i\_flags}}
+{\footnotesize\ttfamily \+\_\+\+\_\+u32 reiserfs\+\_\+inode\+\_\+info\+::i\+\_\+flags}
+
+transient inode flags that are never stored on disk. Bitmasks for this field are defined above. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/reiserfs/inc/linux/reiserfs\+\_\+fs\+\_\+i.\+h\end{DoxyCompactItemize}

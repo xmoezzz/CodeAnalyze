@@ -1,0 +1,58 @@
+\hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t}{}\section{\+\_\+\+L\+O\+W\+I\+O\+\_\+\+C\+O\+N\+T\+E\+X\+T结构体 参考}
+\label{struct___l_o_w_i_o___c_o_n_t_e_x_t}\index{\+\_\+\+L\+O\+W\+I\+O\+\_\+\+C\+O\+N\+T\+E\+XT@{\+\_\+\+L\+O\+W\+I\+O\+\_\+\+C\+O\+N\+T\+E\+XT}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t_a53fbbd5360f9e9a930cf1f8f2dbeebc9}\label{struct___l_o_w_i_o___c_o_n_t_e_x_t_a53fbbd5360f9e9a930cf1f8f2dbeebc9}} 
+U\+S\+H\+O\+RT {\bfseries Operation}
+\item 
+\mbox{\Hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t_a9583c5fb2887ffb903c7fbec424ba45e}\label{struct___l_o_w_i_o___c_o_n_t_e_x_t_a9583c5fb2887ffb903c7fbec424ba45e}} 
+U\+S\+H\+O\+RT {\bfseries Flags}
+\item 
+\mbox{\Hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t_af106b5daec00f1653880476a475941d6}\label{struct___l_o_w_i_o___c_o_n_t_e_x_t_af106b5daec00f1653880476a475941d6}} 
+P\+L\+O\+W\+I\+O\+\_\+\+C\+O\+M\+P\+L\+E\+T\+I\+O\+N\+\_\+\+R\+O\+U\+T\+I\+NE {\bfseries Completion\+Routine}
+\item 
+\mbox{\Hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t_a8dd702cd75919f3a7eadac560dbc200a}\label{struct___l_o_w_i_o___c_o_n_t_e_x_t_a8dd702cd75919f3a7eadac560dbc200a}} 
+P\+E\+R\+E\+S\+O\+U\+R\+CE {\bfseries Resource}
+\item 
+\mbox{\Hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t_a8a7be8329cd84c37405e86f931c75e3a}\label{struct___l_o_w_i_o___c_o_n_t_e_x_t_a8a7be8329cd84c37405e86f931c75e3a}} 
+E\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+T\+H\+R\+E\+AD {\bfseries Resource\+Thread\+Id}
+\item 
+\mbox{\Hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t_a3766271b0d4c2d22b6eacc3d0a7040e1}\label{struct___l_o_w_i_o___c_o_n_t_e_x_t_a3766271b0d4c2d22b6eacc3d0a7040e1}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>ULONG {\bfseries Flags}\\
+\>\>\hyperlink{interfacevoid}{PMDL} {\bfseries Buffer}\\
+\>\>RXVBO {\bfseries ByteOffset}\\
+\>\>ULONG {\bfseries ByteCount}\\
+\>\>ULONG {\bfseries Key}\\
+\>\>\hyperlink{struct___n_o_n___p_a_g_e_d___f_c_b}{PNON\_PAGED\_FCB} {\bfseries NonPagedFcb}\\
+\>\} {\bfseries ReadWrite}\\
+\>struct \{\\
+\mbox{\Hypertarget{struct___l_o_w_i_o___c_o_n_t_e_x_t_1_1_0D1702_1_1_0D1704_aa2c44f72764046b09bfa22fe77ad3685}\label{struct___l_o_w_i_o___c_o_n_t_e_x_t_1_1_0D1702_1_1_0D1704_aa2c44f72764046b09bfa22fe77ad3685}} 
+\>\>union \{\\
+\>\>\>\hyperlink{struct___l_o_w_i_o___l_o_c_k___l_i_s_t}{PLOWIO\_LOCK\_LIST} {\bfseries LockList}\\
+\>\>\>LONGLONG {\bfseries Length}\\
+\>\>\} \\
+\>\>ULONG {\bfseries Flags}\\
+\>\>RXVBO {\bfseries ByteOffset}\\
+\>\>ULONG {\bfseries Key}\\
+\>\} {\bfseries Locks}\\
+\>\hyperlink{struct___x_x_c_t_l___l_o_w_i_o___c_o_m_p_o_n_e_n_t}{XXCTL\_LOWIO\_COMPONENT} {\bfseries FsCtl}\\
+\>\hyperlink{struct___x_x_c_t_l___l_o_w_i_o___c_o_m_p_o_n_e_n_t}{XXCTL\_LOWIO\_COMPONENT} {\bfseries IoCtl}\\
+\>struct \{\\
+\>\>\hyperlink{_processor_bind_8h_a112e3146cb38b6ee95e64d85842e380a}{BOOLEAN} {\bfseries WatchTree}\\
+\>\>ULONG {\bfseries CompletionFilter}\\
+\>\>ULONG {\bfseries NotificationBufferLength}\\
+\>\>\hyperlink{interfacevoid}{PVOID} {\bfseries pNotificationBuffer}\\
+\>\} {\bfseries NotifyChangeDirectory}\\
+\} {\bfseries ParamsFor}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/ddk/mrx.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/include/reactos/libs/mbedtls/entropy_poll.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_f392f966fdfa958006dd89b2d26c104a.html">include</a></li><li class="navelem"><a class="el" href="dir_1fa98287edbac1d069b3283b7ba87594.html">reactos</a></li><li class="navelem"><a class="el" href="dir_a7bc96c4819f5914c1c3be6be3859db3.html">libs</a></li><li class="navelem"><a class="el" href="dir_8008c1c9e8177206b0a1fdb50589ccd4.html">mbedtls</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">entropy_poll.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Platform-specific and custom entropy polling functions  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;config.h&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div>
+<p><a href="entropy__poll_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a7bd03568eb4ced60c878a6adc46aa407"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy__poll_8h.html#a7bd03568eb4ced60c878a6adc46aa407">MBEDTLS_ENTROPY_MIN_PLATFORM</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a7bd03568eb4ced60c878a6adc46aa407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d41a7970cd0a899aa8528ec1b95aa36"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy__poll_8h.html#a7d41a7970cd0a899aa8528ec1b95aa36">MBEDTLS_ENTROPY_MIN_HAVEGE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a7d41a7970cd0a899aa8528ec1b95aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c4fbcd7f6e3617f3e595f267258475"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy__poll_8h.html#a65c4fbcd7f6e3617f3e595f267258475">MBEDTLS_ENTROPY_MIN_HARDCLOCK</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a65c4fbcd7f6e3617f3e595f267258475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e343b3c665b0bcda235401a6bfeca1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy__poll_8h.html#af2e343b3c665b0bcda235401a6bfeca1">MBEDTLS_ENTROPY_MIN_HARDWARE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:af2e343b3c665b0bcda235401a6bfeca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:add93967cb361ce9758800ba5a2017528"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy__poll_8h.html#add93967cb361ce9758800ba5a2017528">mbedtls_platform_entropy_poll</a> (<a class="el" href="interfacevoid.html">void</a> *data, unsigned char *output, size_t len, size_t *olen)</td></tr>
+<tr class="memdesc:add93967cb361ce9758800ba5a2017528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entropy poll callback that provides 0 entropy.  <a href="#add93967cb361ce9758800ba5a2017528">更多...</a><br /></td></tr>
+<tr class="separator:add93967cb361ce9758800ba5a2017528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a76132aecfd4d8e08d5ac7d16b2869"><td class="memItemLeft" align="right" valign="top"><a id="af0a76132aecfd4d8e08d5ac7d16b2869"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy__poll_8h.html#af0a76132aecfd4d8e08d5ac7d16b2869">mbedtls_hardclock_poll</a> (<a class="el" href="interfacevoid.html">void</a> *data, unsigned char *output, size_t len, size_t *olen)</td></tr>
+<tr class="memdesc:af0a76132aecfd4d8e08d5ac7d16b2869"><td class="mdescLeft">&#160;</td><td class="mdescRight">mbedtls_timing_hardclock-based entropy poll callback <br /></td></tr>
+<tr class="separator:af0a76132aecfd4d8e08d5ac7d16b2869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Platform-specific and custom entropy polling functions </p>
+<p>Copyright (<a class="el" href="struct_c.html">C</a>) 2006-2016, ARM Limited, All Rights Reserved SPDX-License-Identifier: GPL-2.0</p>
+<p><a class="el" href="namespace_this.html">This</a> program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+<p><a class="el" href="namespace_this.html">This</a> program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR <a class="el" href="struct_a.html">A</a> PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+<p><a class="el" href="namespace_this.html">This</a> file is part of mbed TLS (<a href="https://tls.mbed.org">https://tls.mbed.org</a>) </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a65c4fbcd7f6e3617f3e595f267258475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c4fbcd7f6e3617f3e595f267258475">&#9670;&nbsp;</a></span>MBEDTLS_ENTROPY_MIN_HARDCLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MBEDTLS_ENTROPY_MIN_HARDCLOCK&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Minimum for <a class="el" href="timing_8h.html#aeec9ae2577ce34ab01f2d213b99d07e1" title="Return the CPU cycle counter value ">mbedtls_timing_hardclock()</a> </p>
+
+</div>
+</div>
+<a id="af2e343b3c665b0bcda235401a6bfeca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e343b3c665b0bcda235401a6bfeca1">&#9670;&nbsp;</a></span>MBEDTLS_ENTROPY_MIN_HARDWARE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MBEDTLS_ENTROPY_MIN_HARDWARE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Minimum for the hardware source </p>
+
+</div>
+</div>
+<a id="a7d41a7970cd0a899aa8528ec1b95aa36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d41a7970cd0a899aa8528ec1b95aa36">&#9670;&nbsp;</a></span>MBEDTLS_ENTROPY_MIN_HAVEGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MBEDTLS_ENTROPY_MIN_HAVEGE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Minimum for HAVEGE </p>
+
+</div>
+</div>
+<a id="a7bd03568eb4ced60c878a6adc46aa407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd03568eb4ced60c878a6adc46aa407">&#9670;&nbsp;</a></span>MBEDTLS_ENTROPY_MIN_PLATFORM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> MBEDTLS_ENTROPY_MIN_PLATFORM&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Minimum for platform source </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="add93967cb361ce9758800ba5a2017528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add93967cb361ce9758800ba5a2017528">&#9670;&nbsp;</a></span>mbedtls_platform_entropy_poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mbedtls_platform_entropy_poll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>olen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Entropy poll callback that provides 0 entropy. </p>
+<p>Platform-specific entropy poll callback </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

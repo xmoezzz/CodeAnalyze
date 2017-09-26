@@ -1,0 +1,77 @@
+\hypertarget{interface_i_graph_config}{}\section{I\+Graph\+Config接口 参考}
+\label{interface_i_graph_config}\index{I\+Graph\+Config@{I\+Graph\+Config}}
+类 I\+Graph\+Config 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_graph_config}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a015d5bd4434bc5eb2584ca2b6dc55e3f}\label{interface_i_graph_config_a015d5bd4434bc5eb2584ca2b6dc55e3f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reconnect} (\mbox{[}in\mbox{]} \hyperlink{interface_i_pin}{I\+Pin} $\ast$p\+Output\+Pin, \mbox{[}in\mbox{]} \hyperlink{interface_i_pin}{I\+Pin} $\ast$p\+Input\+Pin, \mbox{[}in\mbox{]} const \hyperlink{struct_a_m___m_e_d_i_a___t_y_p_e}{A\+M\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE} $\ast$pmt\+First\+Connection, \mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Using\+Filter, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Abort\+Event, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a40ddb1a68fa11d577894deae82f710a1}\label{interface_i_graph_config_a40ddb1a68fa11d577894deae82f710a1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reconfigure} (\mbox{[}in\mbox{]} \hyperlink{interface_i_graph_config_callback}{I\+Graph\+Config\+Callback} $\ast$p\+Callback, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{P\+V\+O\+ID} pv\+Context, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Abort\+Event)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a62c0b4fecaa784fead04dca373d5358a}\label{interface_i_graph_config_a62c0b4fecaa784fead04dca373d5358a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Filter\+To\+Cache} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a7aa8423e976b639143b77a9c00af345b}\label{interface_i_graph_config_a7aa8423e976b639143b77a9c00af345b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Cache\+Filter} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_filters}{I\+Enum\+Filters} $\ast$$\ast$p\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a12fc0765c7d777567c037f39914b4ad9}\label{interface_i_graph_config_a12fc0765c7d777567c037f39914b4ad9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Filter\+From\+Cache} (\mbox{[}in\mbox{]}\hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a811672660c5c48bbe891828132b5472c}\label{interface_i_graph_config_a811672660c5c48bbe891828132b5472c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Start\+Time} (\mbox{[}out\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$prt\+Start)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a0091eb5cb2a9d87af4250f37f21632e1}\label{interface_i_graph_config_a0091eb5cb2a9d87af4250f37f21632e1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Push\+Through\+Data} (\mbox{[}in\mbox{]} \hyperlink{interface_i_pin}{I\+Pin} $\ast$p\+Output\+Pin, \mbox{[}in\mbox{]} \hyperlink{interface_i_pin_connection}{I\+Pin\+Connection} $\ast$p\+Connection, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Event\+Abort)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a7e0bed5c56daedf3d70bed46bfe38533}\label{interface_i_graph_config_a7e0bed5c56daedf3d70bed46bfe38533}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Filter\+Flags} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a9fcadce1181fd59311c5c1349dd1684a}\label{interface_i_graph_config_a9fcadce1181fd59311c5c1349dd1684a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Filter\+Flags} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a4cf4e7e83398f3ca827fa720ae43ee3a}\label{interface_i_graph_config_a4cf4e7e83398f3ca827fa720ae43ee3a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Filter\+Ex} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter, D\+W\+O\+RD Flags)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a015d5bd4434bc5eb2584ca2b6dc55e3f}\label{interface_i_graph_config_a015d5bd4434bc5eb2584ca2b6dc55e3f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reconnect} (\mbox{[}in\mbox{]} \hyperlink{interface_i_pin}{I\+Pin} $\ast$p\+Output\+Pin, \mbox{[}in\mbox{]} \hyperlink{interface_i_pin}{I\+Pin} $\ast$p\+Input\+Pin, \mbox{[}in\mbox{]} const \hyperlink{struct_a_m___m_e_d_i_a___t_y_p_e}{A\+M\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE} $\ast$pmt\+First\+Connection, \mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Using\+Filter, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Abort\+Event, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a40ddb1a68fa11d577894deae82f710a1}\label{interface_i_graph_config_a40ddb1a68fa11d577894deae82f710a1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Reconfigure} (\mbox{[}in\mbox{]} \hyperlink{interface_i_graph_config_callback}{I\+Graph\+Config\+Callback} $\ast$p\+Callback, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{P\+V\+O\+ID} pv\+Context, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Abort\+Event)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a62c0b4fecaa784fead04dca373d5358a}\label{interface_i_graph_config_a62c0b4fecaa784fead04dca373d5358a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Add\+Filter\+To\+Cache} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a7aa8423e976b639143b77a9c00af345b}\label{interface_i_graph_config_a7aa8423e976b639143b77a9c00af345b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Enum\+Cache\+Filter} (\mbox{[}out\mbox{]} \hyperlink{interface_i_enum_filters}{I\+Enum\+Filters} $\ast$$\ast$p\+Enum)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a12fc0765c7d777567c037f39914b4ad9}\label{interface_i_graph_config_a12fc0765c7d777567c037f39914b4ad9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Filter\+From\+Cache} (\mbox{[}in\mbox{]}\hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a811672660c5c48bbe891828132b5472c}\label{interface_i_graph_config_a811672660c5c48bbe891828132b5472c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Start\+Time} (\mbox{[}out\mbox{]} R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+T\+I\+ME $\ast$prt\+Start)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a0091eb5cb2a9d87af4250f37f21632e1}\label{interface_i_graph_config_a0091eb5cb2a9d87af4250f37f21632e1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Push\+Through\+Data} (\mbox{[}in\mbox{]} \hyperlink{interface_i_pin}{I\+Pin} $\ast$p\+Output\+Pin, \mbox{[}in\mbox{]} \hyperlink{interface_i_pin_connection}{I\+Pin\+Connection} $\ast$p\+Connection, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Event\+Abort)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a7e0bed5c56daedf3d70bed46bfe38533}\label{interface_i_graph_config_a7e0bed5c56daedf3d70bed46bfe38533}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Filter\+Flags} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a9fcadce1181fd59311c5c1349dd1684a}\label{interface_i_graph_config_a9fcadce1181fd59311c5c1349dd1684a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Filter\+Flags} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_graph_config_a4cf4e7e83398f3ca827fa720ae43ee3a}\label{interface_i_graph_config_a4cf4e7e83398f3ca827fa720ae43ee3a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remove\+Filter\+Ex} (\mbox{[}in\mbox{]} \hyperlink{interface_i_base_filter}{I\+Base\+Filter} $\ast$p\+Filter, D\+W\+O\+RD Flags)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/dxsdk/dyngraph.\+idl\end{DoxyCompactItemize}

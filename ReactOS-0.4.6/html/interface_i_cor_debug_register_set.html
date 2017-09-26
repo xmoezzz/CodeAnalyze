@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ICorDebugRegisterSet接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interface_i_cor_debug_register_set-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ICorDebugRegisterSet接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ICorDebugRegisterSet 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_cor_debug_register_set.png" usemap="#ICorDebugRegisterSet_map" alt=""/>
+  <map id="ICorDebugRegisterSet_map" name="ICorDebugRegisterSet_map">
+<area href="interface_i_unknown.html" alt="IUnknown" shape="rect" coords="0,0,137,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a30f2ef4d5a657f5aa003b9c887020eb2"><td class="memItemLeft" align="right" valign="top"><a id="a30f2ef4d5a657f5aa003b9c887020eb2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CorDebugRegister</b> { <br />
+&#160;&#160;<b>REGISTER_INSTRUCTION_POINTER</b> = 0, 
+<b>REGISTER_STACK_POINTER</b>, 
+<b>REGISTER_FRAME_POINTER</b>, 
+<b>REGISTER_X86_EIP</b> = 0, 
+<br />
+&#160;&#160;<b>REGISTER_X86_ESP</b>, 
+<b>REGISTER_X86_EBP</b>, 
+<b>REGISTER_X86_EAX</b>, 
+<b>REGISTER_X86_ECX</b>, 
+<br />
+&#160;&#160;<b>REGISTER_X86_EDX</b>, 
+<b>REGISTER_X86_EBX</b>, 
+<b>REGISTER_X86_ESI</b>, 
+<b>REGISTER_X86_EDI</b>, 
+<br />
+&#160;&#160;<b>REGISTER_X86_FPSTACK_0</b>, 
+<b>REGISTER_X86_FPSTACK_1</b>, 
+<b>REGISTER_X86_FPSTACK_2</b>, 
+<b>REGISTER_X86_FPSTACK_3</b>, 
+<br />
+&#160;&#160;<b>REGISTER_X86_FPSTACK_4</b>, 
+<b>REGISTER_X86_FPSTACK_5</b>, 
+<b>REGISTER_X86_FPSTACK_6</b>, 
+<b>REGISTER_X86_FPSTACK_7</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_RIP</b> = 0, 
+<b>REGISTER_AMD64_RSP</b>, 
+<b>REGISTER_AMD64_RBP</b>, 
+<b>REGISTER_AMD64_RAX</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_RCX</b>, 
+<b>REGISTER_AMD64_RDX</b>, 
+<b>REGISTER_AMD64_RBX</b>, 
+<b>REGISTER_AMD64_RSI</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_RDI</b>, 
+<b>REGISTER_AMD64_R8</b>, 
+<b>REGISTER_AMD64_R9</b>, 
+<b>REGISTER_AMD64_R10</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_R11</b>, 
+<b>REGISTER_AMD64_R12</b>, 
+<b>REGISTER_AMD64_R13</b>, 
+<b>REGISTER_AMD64_R14</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_R15</b>, 
+<b>REGISTER_AMD64_XMM0</b>, 
+<b>REGISTER_AMD64_XMM1</b>, 
+<b>REGISTER_AMD64_XMM2</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_XMM3</b>, 
+<b>REGISTER_AMD64_XMM4</b>, 
+<b>REGISTER_AMD64_XMM5</b>, 
+<b>REGISTER_AMD64_XMM6</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_XMM7</b>, 
+<b>REGISTER_AMD64_XMM8</b>, 
+<b>REGISTER_AMD64_XMM9</b>, 
+<b>REGISTER_AMD64_XMM10</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_XMM11</b>, 
+<b>REGISTER_AMD64_XMM12</b>, 
+<b>REGISTER_AMD64_XMM13</b>, 
+<b>REGISTER_AMD64_XMM14</b>, 
+<br />
+&#160;&#160;<b>REGISTER_AMD64_XMM15</b>, 
+<b>REGISTER_IA64_BSP</b> = REGISTER_FRAME_POINTER, 
+<b>REGISTER_IA64_R0</b> = REGISTER_IA64_BSP + 1, 
+<b>REGISTER_IA64_F0</b> = REGISTER_IA64_R0 + 128
+<br />
+ }</td></tr>
+<tr class="separator:a30f2ef4d5a657f5aa003b9c887020eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99e0d70dbc48f27ba5e7eb89b8973fd"><td class="memItemLeft" align="right" valign="top"><a id="ac99e0d70dbc48f27ba5e7eb89b8973fd"></a>
+typedef <a class="el" href="interfaceenum.html">enum</a> ICorDebugRegisterSet::CorDebugRegister&#160;</td><td class="memItemRight" valign="bottom"><b>CorDebugRegister</b></td></tr>
+<tr class="separator:ac99e0d70dbc48f27ba5e7eb89b8973fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_types_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ae77732707312c4aca19b0fe4de19eeee"></a>
+typedef <a class="el" href="interface_i_unknown.html">IUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>LPUNKNOWN</b></td></tr>
+<tr class="separator:ae77732707312c4aca19b0fe4de19eeee inherit pub_types_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aebea468e3a97a50da094249205dfc2f7"><td class="memItemLeft" align="right" valign="top"><a id="aebea468e3a97a50da094249205dfc2f7"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegistersAvailable</b> ([out] ULONG64 *pAvailable)</td></tr>
+<tr class="separator:aebea468e3a97a50da094249205dfc2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e24e5c70955048e4ff81b2078768173"><td class="memItemLeft" align="right" valign="top"><a id="a2e24e5c70955048e4ff81b2078768173"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegisters</b> ([in] ULONG64 mask, [in] ULONG32 regCount, [out] CORDB_REGISTER regBuffer[])</td></tr>
+<tr class="separator:a2e24e5c70955048e4ff81b2078768173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb802ee44e1dadeabf05e3316b6a1ec"><td class="memItemLeft" align="right" valign="top"><a id="a6cb802ee44e1dadeabf05e3316b6a1ec"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetRegisters</b> ([in] ULONG64 mask, [in] ULONG32 regCount, [in] CORDB_REGISTER regBuffer[])</td></tr>
+<tr class="separator:a6cb802ee44e1dadeabf05e3316b6a1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2415d5f3876d17dcc1c021d0596498"><td class="memItemLeft" align="right" valign="top"><a id="a9d2415d5f3876d17dcc1c021d0596498"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreadContext</b> ([in] ULONG32 contextSize, [in, out] BYTE context[])</td></tr>
+<tr class="separator:a9d2415d5f3876d17dcc1c021d0596498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1103d17c65d10cc196ba0ed11d4c4586"><td class="memItemLeft" align="right" valign="top"><a id="a1103d17c65d10cc196ba0ed11d4c4586"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>SetThreadContext</b> ([in] ULONG32 contextSize, [in] BYTE context[])</td></tr>
+<tr class="separator:a1103d17c65d10cc196ba0ed11d4c4586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_i_unknown"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_unknown')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_i_unknown.html">IUnknown</a></td></tr>
+<tr class="memitem:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="ad935cefb1fdf125d9000baf43e435ed1"></a>
+HRESULT&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterface</b> ([in] REFIID riid, [out, iid_is(riid)] <a class="el" href="interfacevoid.html">void</a> **ppvObject)</td></tr>
+<tr class="separator:ad935cefb1fdf125d9000baf43e435ed1 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="a1218106146984403b77b2f67254685f8"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="separator:a1218106146984403b77b2f67254685f8 inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memItemLeft" align="right" valign="top"><a id="af77dbe96fba78b12d9194661469a6e0e"></a>
+ULONG&#160;</td><td class="memItemRight" valign="bottom"><b>Release</b> ()</td></tr>
+<tr class="separator:af77dbe96fba78b12d9194661469a6e0e inherit pub_methods_interface_i_unknown"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/psdk/<a class="el" href="cordebug_8idl_source.html">cordebug.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,41 @@
+\hypertarget{interface_i_data_convert}{}\section{I\+Data\+Convert接口 参考}
+\label{interface_i_data_convert}\index{I\+Data\+Convert@{I\+Data\+Convert}}
+类 I\+Data\+Convert 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_data_convert}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_data_convert_a675e917deeae78dcba81690131ee9745}\label{interface_i_data_convert_a675e917deeae78dcba81690131ee9745}} 
+enum {\bfseries D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+R\+T\+E\+N\+UM} \{ \newline
+{\bfseries D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+R\+T\+\_\+\+D\+E\+F\+A\+U\+LT} = 0, 
+{\bfseries D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+T\+D\+A\+T\+A\+B\+E\+H\+A\+V\+I\+OR} = 1, 
+{\bfseries D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+R\+T\+\_\+\+L\+E\+N\+G\+T\+H\+F\+R\+O\+M\+N\+TS} = 2, 
+{\bfseries D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+R\+T\+\_\+\+D\+S\+T\+I\+S\+F\+I\+X\+E\+D\+L\+E\+N\+G\+TH} = 4, 
+\newline
+{\bfseries D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+R\+T\+\_\+\+D\+E\+C\+I\+M\+A\+L\+S\+C\+A\+LE} = 8
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_data_convert_a3ce8d1f2cdf1e9f3012b862ddff889b0}\label{interface_i_data_convert_a3ce8d1f2cdf1e9f3012b862ddff889b0}} 
+typedef D\+W\+O\+RD {\bfseries D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+RT}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_data_convert_ad834c40d388a6f807eef3b4adafb7f49}\label{interface_i_data_convert_ad834c40d388a6f807eef3b4adafb7f49}} 
+H\+R\+E\+S\+U\+LT {\bfseries Data\+Convert} (\mbox{[}in\mbox{]} D\+B\+T\+Y\+PE w\+Src\+Type, \mbox{[}in\mbox{]} D\+B\+T\+Y\+PE w\+Dst\+Type, \mbox{[}in\mbox{]} D\+B\+L\+E\+N\+G\+TH cb\+Src\+Length, \mbox{[}in, out\mbox{]} D\+B\+L\+E\+N\+G\+TH $\ast$pcb\+Dst\+Length, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Src, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Dst, \mbox{[}in\mbox{]} D\+B\+L\+E\+N\+G\+TH cb\+Dst\+Max\+Length, \mbox{[}in\mbox{]} D\+B\+S\+T\+A\+T\+US dbs\+Src\+Status, \mbox{[}out\mbox{]} D\+B\+S\+T\+A\+T\+US $\ast$pdbs\+Dst\+Status, \mbox{[}in\mbox{]} B\+Y\+TE b\+Precision, \mbox{[}in\mbox{]} B\+Y\+TE b\+Scale, \mbox{[}in\mbox{]} D\+B\+D\+A\+T\+A\+C\+O\+N\+V\+E\+RT dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_data_convert_a9de6b4122dd0283c0cb7eef78b2f2b1d}\label{interface_i_data_convert_a9de6b4122dd0283c0cb7eef78b2f2b1d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Can\+Convert} (\mbox{[}in\mbox{]} D\+B\+T\+Y\+PE w\+Src\+Type, \mbox{[}in\mbox{]} D\+B\+T\+Y\+PE w\+Dst\+Type)
+\item 
+\mbox{\Hypertarget{interface_i_data_convert_ac0249a30c2f59ea5c5a657ecf618fc73}\label{interface_i_data_convert_ac0249a30c2f59ea5c5a657ecf618fc73}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Conversion\+Size} (\mbox{[}in\mbox{]} D\+B\+T\+Y\+PE w\+Src\+Type, \mbox{[}in\mbox{]} D\+B\+T\+Y\+PE w\+Dst\+Type, \mbox{[}in\mbox{]} D\+B\+L\+E\+N\+G\+TH $\ast$pcb\+Src\+Length, \mbox{[}out\mbox{]} D\+B\+L\+E\+N\+G\+TH $\ast$pcb\+Dst\+Length, \mbox{[}in, size\+\_\+is($\ast$pcb\+Src\+Length)\mbox{]} \hyperlink{interfacevoid}{void} $\ast$p\+Src)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/msdadc.\+idl\end{DoxyCompactItemize}

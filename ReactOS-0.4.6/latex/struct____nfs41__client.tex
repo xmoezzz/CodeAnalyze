@@ -1,0 +1,65 @@
+\hypertarget{struct____nfs41__client}{}\section{\+\_\+\+\_\+nfs41\+\_\+client结构体 参考}
+\label{struct____nfs41__client}\index{\+\_\+\+\_\+nfs41\+\_\+client@{\+\_\+\+\_\+nfs41\+\_\+client}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a9588c14b88065c5c478793303853fbfc}\label{struct____nfs41__client_a9588c14b88065c5c478793303853fbfc}} 
+\hyperlink{struct____nfs41__server}{nfs41\+\_\+server} $\ast$ {\bfseries server}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a818e6475aa8b6a073d43dbfca8511c99}\label{struct____nfs41__client_a818e6475aa8b6a073d43dbfca8511c99}} 
+\hyperlink{struct____client__owner4}{client\+\_\+owner4} {\bfseries owner}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a733618361c65a2387460fb573f49c723}\label{struct____nfs41__client_a733618361c65a2387460fb573f49c723}} 
+uint64\+\_\+t {\bfseries clnt\+\_\+id}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_ae4fbbb7af2d9a91e10717f10dd8845dd}\label{struct____nfs41__client_ae4fbbb7af2d9a91e10717f10dd8845dd}} 
+uint32\+\_\+t {\bfseries seq\+\_\+id}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a4072f4c2ba63fdd1d3f92144d3ec9855}\label{struct____nfs41__client_a4072f4c2ba63fdd1d3f92144d3ec9855}} 
+uint32\+\_\+t {\bfseries roles}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_aadd893c19e4745c0be7ae5589a31e20c}\label{struct____nfs41__client_aadd893c19e4745c0be7ae5589a31e20c}} 
+S\+R\+W\+L\+O\+CK {\bfseries exid\+\_\+lock}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a9aa8477b8fb1e3daaa7157f8d41ddfb2}\label{struct____nfs41__client_a9aa8477b8fb1e3daaa7157f8d41ddfb2}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct____nfs41__session}{\+\_\+\+\_\+nfs41\+\_\+session} $\ast$ {\bfseries session}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_ae8bce275429b989fae1e206644829312}\label{struct____nfs41__client_ae8bce275429b989fae1e206644829312}} 
+S\+R\+W\+L\+O\+CK {\bfseries session\+\_\+lock}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a2b2d41615b81803ffdd4c105c84af7e6}\label{struct____nfs41__client_a2b2d41615b81803ffdd4c105c84af7e6}} 
+\hyperlink{struct____nfs41__rpc__clnt}{nfs41\+\_\+rpc\+\_\+clnt} $\ast$ {\bfseries rpc}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a7604f9288603a0123989c94c1efa1b97}\label{struct____nfs41__client_a7604f9288603a0123989c94c1efa1b97}} 
+bool\+\_\+t {\bfseries is\+\_\+data}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_ae9c265acfc3264bcb6ba53b9feccf64b}\label{struct____nfs41__client_ae9c265acfc3264bcb6ba53b9feccf64b}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structpnfs__layout__list}{pnfs\+\_\+layout\+\_\+list} $\ast$ {\bfseries layouts}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a69a55cc04ccb6bcc3cfc9d58a0172e68}\label{struct____nfs41__client_a69a55cc04ccb6bcc3cfc9d58a0172e68}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structpnfs__file__device__list}{pnfs\+\_\+file\+\_\+device\+\_\+list} $\ast$ {\bfseries devices}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_a833a0b32460f73898c5a579d226e7938}\label{struct____nfs41__client_a833a0b32460f73898c5a579d226e7938}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__entry}{list\+\_\+entry} {\bfseries root\+\_\+entry}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_ad503a3b4ea87ba499ea973d0d9e018d5}\label{struct____nfs41__client_ad503a3b4ea87ba499ea973d0d9e018d5}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{struct____nfs41__root}{\+\_\+\+\_\+nfs41\+\_\+root} $\ast$ {\bfseries root}
+\item 
+\mbox{\Hypertarget{struct____nfs41__client_aaa3c9a51bd6e15c00bc71811540bca05}\label{struct____nfs41__client_aaa3c9a51bd6e15c00bc71811540bca05}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>CONDITION\_VARIABLE {\bfseries cond}\\
+\>\hyperlink{struct___c_r_i_t_i_c_a_l___s_e_c_t_i_o_n}{CRITICAL\_SECTION} {\bfseries lock}\\
+\>bool\_t {\bfseries in\_recovery}\\
+\} {\bfseries recovery}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct____nfs41__client_ac5ab27edc35c812923581775960fce32}\label{struct____nfs41__client_ac5ab27edc35c812923581775960fce32}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structclient__state}{client\+\_\+state} {\bfseries state}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/base/services/nfsd/nfs41.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{class_e_h__allocator}{}\section{E\+H\+\_\+allocator$<$ \+\_\+\+Tp $>$ 模板类 参考}
+\label{class_e_h__allocator}\index{E\+H\+\_\+allocator$<$ \+\_\+\+Tp $>$@{E\+H\+\_\+allocator$<$ \+\_\+\+Tp $>$}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_aea9589af7c661642d0ffa2d14053ae31}\label{class_e_h__allocator_aea9589af7c661642d0ffa2d14053ae31}} 
+typedef \+\_\+\+Tp {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a756078f470ea0984b866cf495acb2851}\label{class_e_h__allocator_a756078f470ea0984b866cf495acb2851}} 
+typedef value\+\_\+type $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a351c52ebd9822c470c558a354c550684}\label{class_e_h__allocator_a351c52ebd9822c470c558a354c550684}} 
+typedef const \+\_\+\+Tp $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_aafb579221761474dfd4661a13fadf8b3}\label{class_e_h__allocator_aafb579221761474dfd4661a13fadf8b3}} 
+typedef \+\_\+\+Tp \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a8713204c12f60e19f0551f77ec7ec4bd}\label{class_e_h__allocator_a8713204c12f60e19f0551f77ec7ec4bd}} 
+typedef const \+\_\+\+Tp \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_ac85328eeadb94ca49e44b4c6c0ff9d3e}\label{class_e_h__allocator_ac85328eeadb94ca49e44b4c6c0ff9d3e}} 
+typedef E\+H\+\_\+\+C\+S\+T\+D\+::size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a02c10112a4087da5769cc5e5f4bf506f}\label{class_e_h__allocator_a02c10112a4087da5769cc5e5f4bf506f}} 
+typedef E\+H\+\_\+\+C\+S\+T\+D\+::ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a3bd38d81cd6cc9199bc6880ca9a5fde2}\label{class_e_h__allocator_a3bd38d81cd6cc9199bc6880ca9a5fde2}} 
+{\bfseries E\+H\+\_\+allocator} (const \hyperlink{class_e_h__allocator}{E\+H\+\_\+allocator}$<$ \+\_\+\+Tp $>$ \&) \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a27b9137bcf5ff08b0276762975675117}\label{class_e_h__allocator_a27b9137bcf5ff08b0276762975675117}} 
+pointer {\bfseries address} (reference \+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_aa64fa65fbe00a96c0d728c3e1d933623}\label{class_e_h__allocator_aa64fa65fbe00a96c0d728c3e1d933623}} 
+const\+\_\+pointer {\bfseries address} (const\+\_\+reference \+\_\+\+\_\+x) const
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a097e87703086462c74fb7d02876fcc20}\label{class_e_h__allocator_a097e87703086462c74fb7d02876fcc20}} 
+\+\_\+\+Tp $\ast$ {\bfseries allocate} (size\+\_\+type \+\_\+\+\_\+n, const \hyperlink{interfacevoid}{void} $\ast$=0) const
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_addbb8e85266c5eec905fa3c76d665212}\label{class_e_h__allocator_addbb8e85266c5eec905fa3c76d665212}} 
+\hyperlink{interfacevoid}{void} {\bfseries deallocate} (pointer \+\_\+\+\_\+p, size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a662a03e70524a5c7912ed1150a0f249c}\label{class_e_h__allocator_a662a03e70524a5c7912ed1150a0f249c}} 
+\hyperlink{interfacevoid}{void} {\bfseries deallocate} (pointer \+\_\+\+\_\+p) const
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a0b55f0e9b49a9cb72e9a8dfce2dc6e5d}\label{class_e_h__allocator_a0b55f0e9b49a9cb72e9a8dfce2dc6e5d}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const \+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+T\+H\+R\+OW
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a9849b8691aa5a3bf04fb01f20d8c3cbc}\label{class_e_h__allocator_a9849b8691aa5a3bf04fb01f20d8c3cbc}} 
+\hyperlink{interfacevoid}{void} {\bfseries construct} (pointer \+\_\+\+\_\+p, const \+\_\+\+Tp \&\+\_\+\+\_\+val) const
+\item 
+\mbox{\Hypertarget{class_e_h__allocator_a8d6198ab91dc4bbfdbcf8a2f4c03fbf6}\label{class_e_h__allocator_a8d6198ab91dc4bbfdbcf8a2f4c03fbf6}} 
+\hyperlink{interfacevoid}{void} {\bfseries destroy} (pointer \+\_\+\+\_\+p) const
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/3rdparty/stlport/test/eh/Prefix.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,635 @@
+\hypertarget{classdeque}{}\section{deque$<$ \+\_\+\+Tp, $>$ 模板类 参考}
+\label{classdeque}\index{deque$<$ \+\_\+\+Tp, $>$@{deque$<$ \+\_\+\+Tp, $>$}}
+类 deque$<$ \+\_\+\+Tp, $>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.417722cm]{classdeque}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdeque_a4beaa2826510a15103b4e01d1faa31df}\label{classdeque_a4beaa2826510a15103b4e01d1faa31df}} 
+typedef \+\_\+\+Tp {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_a6101907d1272b65463cc77121e94bef6}\label{classdeque_a6101907d1272b65463cc77121e94bef6}} 
+typedef value\+\_\+type $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classdeque_abe3f48b8db12ae2d2e1c8b732e3563b5}\label{classdeque_abe3f48b8db12ae2d2e1c8b732e3563b5}} 
+typedef const value\+\_\+type $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classdeque_a5763152ecaa38821b1dfb96f57964d22}\label{classdeque_a5763152ecaa38821b1dfb96f57964d22}} 
+typedef value\+\_\+type \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classdeque_a9be701298b98770dcf6e04597fdde160}\label{classdeque_a9be701298b98770dcf6e04597fdde160}} 
+typedef const value\+\_\+type \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classdeque_a78fc9a20c7832fb52ecb94ed854b00dd}\label{classdeque_a78fc9a20c7832fb52ecb94ed854b00dd}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_aa0a0ce4ae8792f5e47bb17bbf8c01e80}\label{classdeque_aa0a0ce4ae8792f5e47bb17bbf8c01e80}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_af1427a66623140cd21ce1754e732eae0}\label{classdeque_af1427a66623140cd21ce1754e732eae0}} 
+typedef \hyperlink{structrandom__access__iterator__tag}{random\+\_\+access\+\_\+iterator\+\_\+tag} {\bfseries \+\_\+\+Iterator\+\_\+category}
+\item 
+\mbox{\Hypertarget{classdeque_a990af1c421099a2454ee6ad80e728573}\label{classdeque_a990af1c421099a2454ee6ad80e728573}} 
+typedef \+\_\+\+Base\+::allocator\+\_\+type {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_a374bb507398b383b9414618b6e106249}\label{classdeque_a374bb507398b383b9414618b6e106249}} 
+typedef \+\_\+\+Base\+::iterator {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classdeque_a630e623af9631fae4c878b9bc32279a4}\label{classdeque_a630e623af9631fae4c878b9bc32279a4}} 
+typedef \+\_\+\+Base\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classdeque_a943efd290ef9a91732600341390fd1eb}\label{classdeque_a943efd290ef9a91732600341390fd1eb}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___d_b_g__iter}{\+\_\+\+D\+B\+G\+\_\+iter}$<$ \+\_\+\+Base, \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \+\_\+\+Dbg\+Traits$<$ \hyperlink{struct___nonconst__traits}{\+\_\+\+Nonconst\+\_\+traits}$<$ value\+\_\+type $>$ $>$ $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classdeque_ad889223d0a461e09f08b690a4efc6a3e}\label{classdeque_ad889223d0a461e09f08b690a4efc6a3e}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___d_b_g__iter}{\+\_\+\+D\+B\+G\+\_\+iter}$<$ \+\_\+\+Base, \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \+\_\+\+Dbg\+Traits$<$ \hyperlink{struct___const__traits}{\+\_\+\+Const\+\_\+traits}$<$ value\+\_\+type $>$ $>$ $>$ {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classdeque_a4beaa2826510a15103b4e01d1faa31df}\label{classdeque_a4beaa2826510a15103b4e01d1faa31df}} 
+typedef \+\_\+\+Tp {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_a6101907d1272b65463cc77121e94bef6}\label{classdeque_a6101907d1272b65463cc77121e94bef6}} 
+typedef value\+\_\+type $\ast$ {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classdeque_abe3f48b8db12ae2d2e1c8b732e3563b5}\label{classdeque_abe3f48b8db12ae2d2e1c8b732e3563b5}} 
+typedef const value\+\_\+type $\ast$ {\bfseries const\+\_\+pointer}
+\item 
+\mbox{\Hypertarget{classdeque_a5763152ecaa38821b1dfb96f57964d22}\label{classdeque_a5763152ecaa38821b1dfb96f57964d22}} 
+typedef value\+\_\+type \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classdeque_a9be701298b98770dcf6e04597fdde160}\label{classdeque_a9be701298b98770dcf6e04597fdde160}} 
+typedef const value\+\_\+type \& {\bfseries const\+\_\+reference}
+\item 
+\mbox{\Hypertarget{classdeque_a78fc9a20c7832fb52ecb94ed854b00dd}\label{classdeque_a78fc9a20c7832fb52ecb94ed854b00dd}} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_aa0a0ce4ae8792f5e47bb17bbf8c01e80}\label{classdeque_aa0a0ce4ae8792f5e47bb17bbf8c01e80}} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_af1427a66623140cd21ce1754e732eae0}\label{classdeque_af1427a66623140cd21ce1754e732eae0}} 
+typedef \hyperlink{structrandom__access__iterator__tag}{random\+\_\+access\+\_\+iterator\+\_\+tag} {\bfseries \+\_\+\+Iterator\+\_\+category}
+\item 
+\mbox{\Hypertarget{classdeque_a291e13a61cac62b06a51f09722be1b7d}\label{classdeque_a291e13a61cac62b06a51f09722be1b7d}} 
+typedef \hyperlink{struct___alloc__traits}{\+\_\+\+Alloc\+\_\+traits}$<$ value\+\_\+type, \+\_\+\+Alloc $>$\+::allocator\+\_\+type {\bfseries allocator\+\_\+type}
+\item 
+\mbox{\Hypertarget{classdeque_ab2a882c49bc8540cd3ce535690e7c7de}\label{classdeque_ab2a882c49bc8540cd3ce535690e7c7de}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___deque__iterator}{\+\_\+\+Deque\+\_\+iterator}$<$ value\+\_\+type, \hyperlink{struct___nonconst__traits}{\+\_\+\+Nonconst\+\_\+traits}$<$ value\+\_\+type $>$ $>$ {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classdeque_a9b8f6cf9650706b8c32a082d09d9d915}\label{classdeque_a9b8f6cf9650706b8c32a082d09d9d915}} 
+typedef \+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \hyperlink{struct___deque__iterator}{\+\_\+\+Deque\+\_\+iterator}$<$ value\+\_\+type, \hyperlink{struct___const__traits}{\+\_\+\+Const\+\_\+traits}$<$ value\+\_\+type $>$ $>$ {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdeque_a3f138e445edc68e29f8f8d338406ba89}\label{classdeque_a3f138e445edc68e29f8f8d338406ba89}} 
+\hyperlink{structiterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classdeque_a1391e9f01e6d240ae3a083e760ce284b}\label{classdeque_a1391e9f01e6d240ae3a083e760ce284b}} 
+\hyperlink{structiterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classdeque_abee8f8d17f37958b4f56d2f4c2f71edf}\label{classdeque_abee8f8d17f37958b4f56d2f4c2f71edf}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classdeque_a004885c837a83910ec104ceda37f0408}\label{classdeque_a004885c837a83910ec104ceda37f0408}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classdeque_a21b60cb0c9936e92371d5ad74a59619b}\label{classdeque_a21b60cb0c9936e92371d5ad74a59619b}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{classdeque_a6000323ead2caf0fb56c2ea65928702f}\label{classdeque_a6000323ead2caf0fb56c2ea65928702f}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{classdeque_a660e4820eb547ee737f5cfa9ca0f5372}\label{classdeque_a660e4820eb547ee737f5cfa9ca0f5372}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{classdeque_a413dcab1e427b0a5f81f14c6d3bdab1f}\label{classdeque_a413dcab1e427b0a5f81f14c6d3bdab1f}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rend} () const
+\item 
+\mbox{\Hypertarget{classdeque_a7c16a67c6054482aa1696308d7661937}\label{classdeque_a7c16a67c6054482aa1696308d7661937}} 
+reference {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_a7de0dc94b74d36c1f1666491f18abc77}\label{classdeque_a7de0dc94b74d36c1f1666491f18abc77}} 
+const\+\_\+reference {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classdeque_a0064f18379ca17a5ca53e01c05d45d6d}\label{classdeque_a0064f18379ca17a5ca53e01c05d45d6d}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+range\+\_\+check} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classdeque_ae77cf0a0716fd6930ec8799a00ec1e6b}\label{classdeque_ae77cf0a0716fd6930ec8799a00ec1e6b}} 
+reference {\bfseries at} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_aa61b2cf963a40af573a91a00d8231e00}\label{classdeque_aa61b2cf963a40af573a91a00d8231e00}} 
+const\+\_\+reference {\bfseries at} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classdeque_ae6d38eb626b619b2fb356f170b250d93}\label{classdeque_ae6d38eb626b619b2fb356f170b250d93}} 
+reference {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classdeque_a737db581f2ebbe096db0dddf7b8626db}\label{classdeque_a737db581f2ebbe096db0dddf7b8626db}} 
+reference {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{classdeque_a671d811eddb80d64a420e0449583a7bb}\label{classdeque_a671d811eddb80d64a420e0449583a7bb}} 
+const\+\_\+reference {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classdeque_a0306fdef6e078601dd982b4c22f5fd9f}\label{classdeque_a0306fdef6e078601dd982b4c22f5fd9f}} 
+const\+\_\+reference {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classdeque_a6742ae6f3d0500ddc63857116badf7b1}\label{classdeque_a6742ae6f3d0500ddc63857116badf7b1}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classdeque_a1d5b708bad53263dbcfce7569d66906b}\label{classdeque_a1d5b708bad53263dbcfce7569d66906b}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classdeque_a4629b471ae5aba7a88d2398fb78b87fa}\label{classdeque_a4629b471ae5aba7a88d2398fb78b87fa}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classdeque_aac4f51b1ebd3a9a96effbd7302b8c3e9}\label{classdeque_aac4f51b1ebd3a9a96effbd7302b8c3e9}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{classdeque_a5bbdb37e77ced88dce8da510457b67dd}\label{classdeque_a5bbdb37e77ced88dce8da510457b67dd}} 
+{\bfseries deque} (const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_ae315582b08dbf9ac98a7f7c44d022a2f}\label{classdeque_ae315582b08dbf9ac98a7f7c44d022a2f}} 
+{\bfseries deque} (const \hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a2032bedb8662f1aa7eaee5d0d6609aa5}\label{classdeque_a2032bedb8662f1aa7eaee5d0d6609aa5}} 
+{\bfseries deque} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_ae42bc5bbeaae902d4cca2f68c2d790ab}\label{classdeque_ae42bc5bbeaae902d4cca2f68c2d790ab}} 
+{\bfseries deque} (size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+val, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_ad02ccbea3f5ab0d9b2c30c33f83c8c50}\label{classdeque_ad02ccbea3f5ab0d9b2c30c33f83c8c50}} 
+{\bfseries deque} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a39fddb3c21bd676926040d9496fda161}\label{classdeque_a39fddb3c21bd676926040d9496fda161}} 
+{\bfseries deque} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a8047e4723c11c7098194f7d62353ad13}\label{classdeque_a8047e4723c11c7098194f7d62353ad13}} 
+{\bfseries deque} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classdeque}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{classdeque_a21d44f46bcf2ca8448ede05a56719c00}\label{classdeque_a21d44f46bcf2ca8448ede05a56719c00}} 
+\hyperlink{classdeque}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a33bb324e2a525a085c3a1df23990b184}\label{classdeque_a33bb324e2a525a085c3a1df23990b184}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a9d233a4b7184da8b29d69fa3fad8a483}\label{classdeque_a9d233a4b7184da8b29d69fa3fad8a483}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+fill\+\_\+assign} (size\+\_\+type \+\_\+\+\_\+n, const \+\_\+\+Tp \&\+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{classdeque_aac993d1af3e42bcc0ffc3644e545b49d}\label{classdeque_aac993d1af3e42bcc0ffc3644e545b49d}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (size\+\_\+type \+\_\+\+\_\+n, const \+\_\+\+Tp \&\+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{classdeque_abd118d8d021843fb731812c177a9d387}\label{classdeque_abd118d8d021843fb731812c177a9d387}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_ad31750de5d83743071b0ba68881f6e26}\label{classdeque_ad31750de5d83743071b0ba68881f6e26}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque_a365cc9bed82b9ce3baec754a2c5534c7}{push\+\_\+back} (const value\+\_\+type \&\+\_\+\+\_\+t=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(\+\_\+\+Tp))
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque_a5b7c21146c392ff2959d3ebaf498cf48}{push\+\_\+front} (const value\+\_\+type \&\+\_\+\+\_\+t=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(\+\_\+\+Tp))
+\item 
+\mbox{\Hypertarget{classdeque_ae7ae8102a53e4f72f853de9e79aa76df}\label{classdeque_ae7ae8102a53e4f72f853de9e79aa76df}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classdeque_a2d248dbded70706ad477b8548a9ffa7f}\label{classdeque_a2d248dbded70706ad477b8548a9ffa7f}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+front} ()
+\item 
+\hyperlink{structiterator}{iterator} \hyperlink{classdeque_a11db751b5a2c95c19f852703b6724591}{insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type \&\+\_\+\+\_\+x=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(\+\_\+\+Tp))
+\item 
+\mbox{\Hypertarget{classdeque_ac4bfac374cf3c088591ca63ad9855ed6}\label{classdeque_ac4bfac374cf3c088591ca63ad9855ed6}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a28b09601f9bfe385b4a813756b20bf4d}\label{classdeque_a28b09601f9bfe385b4a813756b20bf4d}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_a9d1bb677797bb0a66c9a3fd5ca02576f}\label{classdeque_a9d1bb677797bb0a66c9a3fd5ca02576f}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_ae7e21dc40af799077eac515304b8735d}\label{classdeque_ae7e21dc40af799077eac515304b8735d}} 
+\hyperlink{interfacevoid}{void} {\bfseries resize} (size\+\_\+type \+\_\+\+\_\+new\+\_\+size, const value\+\_\+type \&\+\_\+\+\_\+x=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(\+\_\+\+Tp))
+\item 
+\mbox{\Hypertarget{classdeque_a0c84b0b6e601140132de6324489f0b4d}\label{classdeque_a0c84b0b6e601140132de6324489f0b4d}} 
+\hyperlink{structiterator}{iterator} {\bfseries erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classdeque_a745e68373354ed0bab1ed5edec114c01}\label{classdeque_a745e68373354ed0bab1ed5edec114c01}} 
+\hyperlink{structiterator}{iterator} {\bfseries erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+first, \hyperlink{structiterator}{iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_a43508d2e46158dd2dd01ce2579894c9c}\label{classdeque_a43508d2e46158dd2dd01ce2579894c9c}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classdeque_aac4f51b1ebd3a9a96effbd7302b8c3e9}\label{classdeque_aac4f51b1ebd3a9a96effbd7302b8c3e9}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{classdeque_a3f138e445edc68e29f8f8d338406ba89}\label{classdeque_a3f138e445edc68e29f8f8d338406ba89}} 
+\hyperlink{structiterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classdeque_a1391e9f01e6d240ae3a083e760ce284b}\label{classdeque_a1391e9f01e6d240ae3a083e760ce284b}} 
+\hyperlink{structiterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classdeque_abee8f8d17f37958b4f56d2f4c2f71edf}\label{classdeque_abee8f8d17f37958b4f56d2f4c2f71edf}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classdeque_a004885c837a83910ec104ceda37f0408}\label{classdeque_a004885c837a83910ec104ceda37f0408}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classdeque_a21b60cb0c9936e92371d5ad74a59619b}\label{classdeque_a21b60cb0c9936e92371d5ad74a59619b}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{classdeque_a6000323ead2caf0fb56c2ea65928702f}\label{classdeque_a6000323ead2caf0fb56c2ea65928702f}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{classdeque_a660e4820eb547ee737f5cfa9ca0f5372}\label{classdeque_a660e4820eb547ee737f5cfa9ca0f5372}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{classdeque_a413dcab1e427b0a5f81f14c6d3bdab1f}\label{classdeque_a413dcab1e427b0a5f81f14c6d3bdab1f}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rend} () const
+\item 
+\mbox{\Hypertarget{classdeque_a7c16a67c6054482aa1696308d7661937}\label{classdeque_a7c16a67c6054482aa1696308d7661937}} 
+reference {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_a7de0dc94b74d36c1f1666491f18abc77}\label{classdeque_a7de0dc94b74d36c1f1666491f18abc77}} 
+const\+\_\+reference {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classdeque_ae77cf0a0716fd6930ec8799a00ec1e6b}\label{classdeque_ae77cf0a0716fd6930ec8799a00ec1e6b}} 
+reference {\bfseries at} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_aa61b2cf963a40af573a91a00d8231e00}\label{classdeque_aa61b2cf963a40af573a91a00d8231e00}} 
+const\+\_\+reference {\bfseries at} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classdeque_ae6d38eb626b619b2fb356f170b250d93}\label{classdeque_ae6d38eb626b619b2fb356f170b250d93}} 
+reference {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classdeque_a671d811eddb80d64a420e0449583a7bb}\label{classdeque_a671d811eddb80d64a420e0449583a7bb}} 
+const\+\_\+reference {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classdeque_a737db581f2ebbe096db0dddf7b8626db}\label{classdeque_a737db581f2ebbe096db0dddf7b8626db}} 
+reference {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{classdeque_a0306fdef6e078601dd982b4c22f5fd9f}\label{classdeque_a0306fdef6e078601dd982b4c22f5fd9f}} 
+const\+\_\+reference {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classdeque_a5bbdb37e77ced88dce8da510457b67dd}\label{classdeque_a5bbdb37e77ced88dce8da510457b67dd}} 
+{\bfseries deque} (const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_ae315582b08dbf9ac98a7f7c44d022a2f}\label{classdeque_ae315582b08dbf9ac98a7f7c44d022a2f}} 
+{\bfseries deque} (const \hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_ada788fa870ab2ef170a65f7252b4efb0}\label{classdeque_ada788fa870ab2ef170a65f7252b4efb0}} 
+{\bfseries deque} (size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+x=\+\_\+\+Tp(), const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a8047e4723c11c7098194f7d62353ad13}\label{classdeque_a8047e4723c11c7098194f7d62353ad13}} 
+{\bfseries deque} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classdeque}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{classdeque_ad02ccbea3f5ab0d9b2c30c33f83c8c50}\label{classdeque_ad02ccbea3f5ab0d9b2c30c33f83c8c50}} 
+{\bfseries deque} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a39fddb3c21bd676926040d9496fda161}\label{classdeque_a39fddb3c21bd676926040d9496fda161}} 
+{\bfseries deque} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a356d6145750aa80835244c8683878619}\label{classdeque_a356d6145750aa80835244c8683878619}} 
+\hyperlink{classdeque}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a4629b471ae5aba7a88d2398fb78b87fa}\label{classdeque_a4629b471ae5aba7a88d2398fb78b87fa}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classdeque_a6742ae6f3d0500ddc63857116badf7b1}\label{classdeque_a6742ae6f3d0500ddc63857116badf7b1}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classdeque_a1d5b708bad53263dbcfce7569d66906b}\label{classdeque_a1d5b708bad53263dbcfce7569d66906b}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classdeque_a33bb324e2a525a085c3a1df23990b184}\label{classdeque_a33bb324e2a525a085c3a1df23990b184}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_aac993d1af3e42bcc0ffc3644e545b49d}\label{classdeque_aac993d1af3e42bcc0ffc3644e545b49d}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (size\+\_\+type \+\_\+\+\_\+n, const \+\_\+\+Tp \&\+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{classdeque_ad31750de5d83743071b0ba68881f6e26}\label{classdeque_ad31750de5d83743071b0ba68881f6e26}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_abd118d8d021843fb731812c177a9d387}\label{classdeque_abd118d8d021843fb731812c177a9d387}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_a7e22cc3e68837513dbc503cc9f7b4dd1}\label{classdeque_a7e22cc3e68837513dbc503cc9f7b4dd1}} 
+\hyperlink{interfacevoid}{void} {\bfseries push\+\_\+back} (const value\+\_\+type \&\+\_\+\+\_\+t=\+\_\+\+Tp())
+\item 
+\mbox{\Hypertarget{classdeque_ac0c352c97b88b4a2699a3e3afd3f0c02}\label{classdeque_ac0c352c97b88b4a2699a3e3afd3f0c02}} 
+\hyperlink{interfacevoid}{void} {\bfseries push\+\_\+front} (const value\+\_\+type \&\+\_\+\+\_\+t=\+\_\+\+Tp())
+\item 
+\mbox{\Hypertarget{classdeque_ae7ae8102a53e4f72f853de9e79aa76df}\label{classdeque_ae7ae8102a53e4f72f853de9e79aa76df}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classdeque_a2d248dbded70706ad477b8548a9ffa7f}\label{classdeque_a2d248dbded70706ad477b8548a9ffa7f}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+front} ()
+\item 
+\mbox{\Hypertarget{classdeque_ae404110a7d92f989958139f8bff0fd19}\label{classdeque_ae404110a7d92f989958139f8bff0fd19}} 
+\hyperlink{structiterator}{iterator} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type \&\+\_\+\+\_\+x=\+\_\+\+Tp())
+\item 
+\mbox{\Hypertarget{classdeque_ac4bfac374cf3c088591ca63ad9855ed6}\label{classdeque_ac4bfac374cf3c088591ca63ad9855ed6}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_ab9e7e01d3af439329bd6c9b78f349645}\label{classdeque_ab9e7e01d3af439329bd6c9b78f349645}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_aeefb933214dbfacf968ebbe4fce9a154}\label{classdeque_aeefb933214dbfacf968ebbe4fce9a154}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_abd436c7a58c9b7d751f01714874b7b60}\label{classdeque_abd436c7a58c9b7d751f01714874b7b60}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, \hyperlink{structiterator}{iterator} \+\_\+\+\_\+first, \hyperlink{structiterator}{iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_a485aa69a9954cc2b00a7eed4e65affaf}\label{classdeque_a485aa69a9954cc2b00a7eed4e65affaf}} 
+\hyperlink{interfacevoid}{void} {\bfseries resize} (size\+\_\+type \+\_\+\+\_\+new\+\_\+size, const value\+\_\+type \&\+\_\+\+\_\+x=\+\_\+\+Tp())
+\item 
+\mbox{\Hypertarget{classdeque_a0c84b0b6e601140132de6324489f0b4d}\label{classdeque_a0c84b0b6e601140132de6324489f0b4d}} 
+\hyperlink{structiterator}{iterator} {\bfseries erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classdeque_a745e68373354ed0bab1ed5edec114c01}\label{classdeque_a745e68373354ed0bab1ed5edec114c01}} 
+\hyperlink{structiterator}{iterator} {\bfseries erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+first, \hyperlink{structiterator}{iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_acc5ec5ff14dce593a54256378d6bb15e}\label{classdeque_acc5ec5ff14dce593a54256378d6bb15e}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classdeque_a3f138e445edc68e29f8f8d338406ba89}\label{classdeque_a3f138e445edc68e29f8f8d338406ba89}} 
+\hyperlink{structiterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classdeque_a1391e9f01e6d240ae3a083e760ce284b}\label{classdeque_a1391e9f01e6d240ae3a083e760ce284b}} 
+\hyperlink{structiterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classdeque_abee8f8d17f37958b4f56d2f4c2f71edf}\label{classdeque_abee8f8d17f37958b4f56d2f4c2f71edf}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classdeque_a004885c837a83910ec104ceda37f0408}\label{classdeque_a004885c837a83910ec104ceda37f0408}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classdeque_a21b60cb0c9936e92371d5ad74a59619b}\label{classdeque_a21b60cb0c9936e92371d5ad74a59619b}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{classdeque_a6000323ead2caf0fb56c2ea65928702f}\label{classdeque_a6000323ead2caf0fb56c2ea65928702f}} 
+\hyperlink{classreverse__iterator}{reverse\+\_\+iterator} {\bfseries rend} ()
+\item 
+\mbox{\Hypertarget{classdeque_a660e4820eb547ee737f5cfa9ca0f5372}\label{classdeque_a660e4820eb547ee737f5cfa9ca0f5372}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{classdeque_a413dcab1e427b0a5f81f14c6d3bdab1f}\label{classdeque_a413dcab1e427b0a5f81f14c6d3bdab1f}} 
+const\+\_\+reverse\+\_\+iterator {\bfseries rend} () const
+\item 
+\mbox{\Hypertarget{classdeque_a7c16a67c6054482aa1696308d7661937}\label{classdeque_a7c16a67c6054482aa1696308d7661937}} 
+reference {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_a7de0dc94b74d36c1f1666491f18abc77}\label{classdeque_a7de0dc94b74d36c1f1666491f18abc77}} 
+const\+\_\+reference {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classdeque_ae77cf0a0716fd6930ec8799a00ec1e6b}\label{classdeque_ae77cf0a0716fd6930ec8799a00ec1e6b}} 
+reference {\bfseries at} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_aa61b2cf963a40af573a91a00d8231e00}\label{classdeque_aa61b2cf963a40af573a91a00d8231e00}} 
+const\+\_\+reference {\bfseries at} (size\+\_\+type \+\_\+\+\_\+n) const
+\item 
+\mbox{\Hypertarget{classdeque_ae6d38eb626b619b2fb356f170b250d93}\label{classdeque_ae6d38eb626b619b2fb356f170b250d93}} 
+reference {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classdeque_a737db581f2ebbe096db0dddf7b8626db}\label{classdeque_a737db581f2ebbe096db0dddf7b8626db}} 
+reference {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{classdeque_a671d811eddb80d64a420e0449583a7bb}\label{classdeque_a671d811eddb80d64a420e0449583a7bb}} 
+const\+\_\+reference {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classdeque_a0306fdef6e078601dd982b4c22f5fd9f}\label{classdeque_a0306fdef6e078601dd982b4c22f5fd9f}} 
+const\+\_\+reference {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classdeque_a6742ae6f3d0500ddc63857116badf7b1}\label{classdeque_a6742ae6f3d0500ddc63857116badf7b1}} 
+size\+\_\+type {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classdeque_a1d5b708bad53263dbcfce7569d66906b}\label{classdeque_a1d5b708bad53263dbcfce7569d66906b}} 
+size\+\_\+type {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classdeque_a4629b471ae5aba7a88d2398fb78b87fa}\label{classdeque_a4629b471ae5aba7a88d2398fb78b87fa}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classdeque_aac4f51b1ebd3a9a96effbd7302b8c3e9}\label{classdeque_aac4f51b1ebd3a9a96effbd7302b8c3e9}} 
+allocator\+\_\+type {\bfseries get\+\_\+allocator} () const
+\item 
+\mbox{\Hypertarget{classdeque_a5bbdb37e77ced88dce8da510457b67dd}\label{classdeque_a5bbdb37e77ced88dce8da510457b67dd}} 
+{\bfseries deque} (const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_ae315582b08dbf9ac98a7f7c44d022a2f}\label{classdeque_ae315582b08dbf9ac98a7f7c44d022a2f}} 
+{\bfseries deque} (const \hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a8fd0ac7e13a8aa7f63a113642bac5c57}\label{classdeque_a8fd0ac7e13a8aa7f63a113642bac5c57}} 
+{\bfseries deque} (size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+val=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(value\+\_\+type), const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a69c8a718d31e75363bf116e3e71f44e8}\label{classdeque_a69c8a718d31e75363bf116e3e71f44e8}} 
+{\bfseries deque} (const\+\_\+pointer \+\_\+\+\_\+first, const\+\_\+pointer \+\_\+\+\_\+last, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a39fddb3c21bd676926040d9496fda161}\label{classdeque_a39fddb3c21bd676926040d9496fda161}} 
+{\bfseries deque} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last, const allocator\+\_\+type \&\+\_\+\+\_\+a=allocator\+\_\+type())
+\item 
+\mbox{\Hypertarget{classdeque_a8047e4723c11c7098194f7d62353ad13}\label{classdeque_a8047e4723c11c7098194f7d62353ad13}} 
+{\bfseries deque} (\hyperlink{class____move__source}{\+\_\+\+\_\+move\+\_\+source}$<$ \hyperlink{classdeque}{\+\_\+\+Self} $>$ src)
+\item 
+\mbox{\Hypertarget{classdeque_a356d6145750aa80835244c8683878619}\label{classdeque_a356d6145750aa80835244c8683878619}} 
+\hyperlink{classdeque}{\+\_\+\+Self} \& {\bfseries operator=} (const \hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a33bb324e2a525a085c3a1df23990b184}\label{classdeque_a33bb324e2a525a085c3a1df23990b184}} 
+\hyperlink{interfacevoid}{void} {\bfseries swap} (\hyperlink{classdeque}{\+\_\+\+Self} \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_a0b4fe50f10526f395390705ebe5eebc4}\label{classdeque_a0b4fe50f10526f395390705ebe5eebc4}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+val)
+\item 
+\mbox{\Hypertarget{classdeque_a8d9ad6d448f4db90075b3baabb9696af}\label{classdeque_a8d9ad6d448f4db90075b3baabb9696af}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (const\+\_\+pointer \+\_\+\+\_\+first, const\+\_\+pointer \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_ad31750de5d83743071b0ba68881f6e26}\label{classdeque_ad31750de5d83743071b0ba68881f6e26}} 
+\hyperlink{interfacevoid}{void} {\bfseries assign} (const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque_ad0624acc579c05c1df04b107fe283bb9}{push\+\_\+back} (const value\+\_\+type \&\+\_\+\+\_\+t=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(value\+\_\+type))
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque_acb102fac10501dc695a496beca93a9da}{push\+\_\+front} (const value\+\_\+type \&\+\_\+\+\_\+t=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(value\+\_\+type))
+\item 
+\mbox{\Hypertarget{classdeque_ae7ae8102a53e4f72f853de9e79aa76df}\label{classdeque_ae7ae8102a53e4f72f853de9e79aa76df}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classdeque_a2d248dbded70706ad477b8548a9ffa7f}\label{classdeque_a2d248dbded70706ad477b8548a9ffa7f}} 
+\hyperlink{interfacevoid}{void} {\bfseries pop\+\_\+front} ()
+\item 
+\hyperlink{structiterator}{iterator} \hyperlink{classdeque_a74f0345cf9468b0700654de0845dfb00}{insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type \&\+\_\+\+\_\+x=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(value\+\_\+type))
+\item 
+\mbox{\Hypertarget{classdeque_ac4bfac374cf3c088591ca63ad9855ed6}\label{classdeque_ac4bfac374cf3c088591ca63ad9855ed6}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_aba5e9df16b3c18cae9628c7cc824880e}\label{classdeque_aba5e9df16b3c18cae9628c7cc824880e}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const\+\_\+pointer \+\_\+\+\_\+first, const\+\_\+pointer \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_aeefb933214dbfacf968ebbe4fce9a154}\label{classdeque_aeefb933214dbfacf968ebbe4fce9a154}} 
+\hyperlink{interfacevoid}{void} {\bfseries insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_a7239ec67868940d913e6ae389080c863}\label{classdeque_a7239ec67868940d913e6ae389080c863}} 
+\hyperlink{interfacevoid}{void} {\bfseries resize} (size\+\_\+type \+\_\+\+\_\+new\+\_\+size, const value\+\_\+type \&\+\_\+\+\_\+x=\+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+ED(value\+\_\+type))
+\item 
+\mbox{\Hypertarget{classdeque_a0c84b0b6e601140132de6324489f0b4d}\label{classdeque_a0c84b0b6e601140132de6324489f0b4d}} 
+\hyperlink{structiterator}{iterator} {\bfseries erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos)
+\item 
+\mbox{\Hypertarget{classdeque_a745e68373354ed0bab1ed5edec114c01}\label{classdeque_a745e68373354ed0bab1ed5edec114c01}} 
+\hyperlink{structiterator}{iterator} {\bfseries erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+first, \hyperlink{structiterator}{iterator} \+\_\+\+\_\+last)
+\item 
+\mbox{\Hypertarget{classdeque_acc5ec5ff14dce593a54256378d6bb15e}\label{classdeque_acc5ec5ff14dce593a54256378d6bb15e}} 
+\hyperlink{interfacevoid}{void} {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdeque_a805d2c23d1fe9d32eeb97766216743db}\label{classdeque_a805d2c23d1fe9d32eeb97766216743db}} 
+{\bfseries \+\_\+\+S\+T\+L\+P\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+T\+E\+R\+A\+T\+O\+RS}
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdeque_a8ae6ed4374a5dd47a89d2e309cbbddfa}\label{classdeque_a8ae6ed4374a5dd47a89d2e309cbbddfa}} 
+typedef pointer $\ast$ {\bfseries \+\_\+\+Map\+\_\+pointer}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdeque_a427d7619e13343730ab6332670c8dd83}\label{classdeque_a427d7619e13343730ab6332670c8dd83}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+fill\+\_\+insert\+\_\+aux} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+x, const \hyperlink{struct____true__type}{\+\_\+\+\_\+true\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_a2d8abfced406fdc56fcc4d9df9d942c7}\label{classdeque_a2d8abfced406fdc56fcc4d9df9d942c7}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+fill\+\_\+insert\+\_\+aux} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+x, const \hyperlink{struct____false__type}{\+\_\+\+\_\+false\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_adfccaff30b2f6902781d8616bf448677}\label{classdeque_adfccaff30b2f6902781d8616bf448677}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+fill\+\_\+insert} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, size\+\_\+type \+\_\+\+\_\+n, const value\+\_\+type \&\+\_\+\+\_\+x)
+\item 
+\mbox{\Hypertarget{classdeque_aef333ffc3e9332c4f100aa1dbb2f0dd5}\label{classdeque_aef333ffc3e9332c4f100aa1dbb2f0dd5}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+insert\+\_\+range\+\_\+aux} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last, size\+\_\+type \+\_\+\+\_\+n, const \hyperlink{struct____true__type}{\+\_\+\+\_\+true\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_af6f99625725bafb7d20d8555bb06edb2}\label{classdeque_af6f99625725bafb7d20d8555bb06edb2}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+insert\+\_\+range\+\_\+aux} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const value\+\_\+type $\ast$\+\_\+\+\_\+first, const value\+\_\+type $\ast$\+\_\+\+\_\+last, size\+\_\+type \+\_\+\+\_\+n, const \hyperlink{struct____false__type}{\+\_\+\+\_\+false\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_a1824b9198f5ec8f6da7d8b67b1d9a19e}\label{classdeque_a1824b9198f5ec8f6da7d8b67b1d9a19e}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+insert\+\_\+range\+\_\+aux} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last, size\+\_\+type \+\_\+\+\_\+n, const \hyperlink{struct____true__type}{\+\_\+\+\_\+true\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_ae929a1d70103425a4fd7e4b6fc428a5d}\label{classdeque_ae929a1d70103425a4fd7e4b6fc428a5d}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+insert\+\_\+range\+\_\+aux} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const\+\_\+iterator \+\_\+\+\_\+first, const\+\_\+iterator \+\_\+\+\_\+last, size\+\_\+type \+\_\+\+\_\+n, const \hyperlink{struct____false__type}{\+\_\+\+\_\+false\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_a9ba3e3698721556a0aa604a76fd13965}\label{classdeque_a9ba3e3698721556a0aa604a76fd13965}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const \hyperlink{struct____true__type}{\+\_\+\+\_\+true\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_a6fe5c189757b22ddef6d11691d38212a}\label{classdeque_a6fe5c189757b22ddef6d11691d38212a}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+pos, const \hyperlink{struct____false__type}{\+\_\+\+\_\+false\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_ad8a3c5c28467c3af3453016e916228b8}\label{classdeque_ad8a3c5c28467c3af3453016e916228b8}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+first, \hyperlink{structiterator}{iterator} \+\_\+\+\_\+last, const \hyperlink{struct____true__type}{\+\_\+\+\_\+true\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_a3dc66c596c6f37d0615f011bb15bfd13}\label{classdeque_a3dc66c596c6f37d0615f011bb15bfd13}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+erase} (\hyperlink{structiterator}{iterator} \+\_\+\+\_\+first, \hyperlink{structiterator}{iterator} \+\_\+\+\_\+last, const \hyperlink{struct____false__type}{\+\_\+\+\_\+false\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_ab3a4399f02dfaf305b7d80bfd839912a}\label{classdeque_ab3a4399f02dfaf305b7d80bfd839912a}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+fill\+\_\+initialize} (const value\+\_\+type \&\+\_\+\+\_\+val, const \hyperlink{struct____true__type}{\+\_\+\+\_\+true\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_a1b0aef24cc15a56d40b14eaeec65c5c8}\label{classdeque_a1b0aef24cc15a56d40b14eaeec65c5c8}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+fill\+\_\+initialize} (const value\+\_\+type \&\+\_\+\+\_\+val, const \hyperlink{struct____false__type}{\+\_\+\+\_\+false\+\_\+type} \&)
+\item 
+\mbox{\Hypertarget{classdeque_a3f9c30cb73ab0c51b605e7b424981f7c}\label{classdeque_a3f9c30cb73ab0c51b605e7b424981f7c}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+push\+\_\+back\+\_\+aux\+\_\+v} (const value\+\_\+type \&)
+\item 
+\mbox{\Hypertarget{classdeque_acc612edaf7a0cf84a9e50325202244c2}\label{classdeque_acc612edaf7a0cf84a9e50325202244c2}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+push\+\_\+front\+\_\+aux\+\_\+v} (const value\+\_\+type \&)
+\item 
+\mbox{\Hypertarget{classdeque_afd305a66ac1b6a6f76c05926c3db1e47}\label{classdeque_afd305a66ac1b6a6f76c05926c3db1e47}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+pop\+\_\+back\+\_\+aux} ()
+\item 
+\mbox{\Hypertarget{classdeque_a9b889af03611e37921d65cdfc658cb59}\label{classdeque_a9b889af03611e37921d65cdfc658cb59}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+pop\+\_\+front\+\_\+aux} ()
+\item 
+\mbox{\Hypertarget{classdeque_ab20158c55e6090cde38fdcef06db3fda}\label{classdeque_ab20158c55e6090cde38fdcef06db3fda}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+reserve\+\_\+elements\+\_\+at\+\_\+front} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_a945cf31b7d7d3bf1650887cff2a71fa2}\label{classdeque_a945cf31b7d7d3bf1650887cff2a71fa2}} 
+\hyperlink{structiterator}{iterator} {\bfseries \+\_\+\+M\+\_\+reserve\+\_\+elements\+\_\+at\+\_\+back} (size\+\_\+type \+\_\+\+\_\+n)
+\item 
+\mbox{\Hypertarget{classdeque_ad78ca6d06ee9fe298ed83f08872c8c1f}\label{classdeque_ad78ca6d06ee9fe298ed83f08872c8c1f}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+new\+\_\+elements\+\_\+at\+\_\+front} (size\+\_\+type \+\_\+\+\_\+new\+\_\+elements)
+\item 
+\mbox{\Hypertarget{classdeque_a472932717ea8ecaafeff1ec50f6f990b}\label{classdeque_a472932717ea8ecaafeff1ec50f6f990b}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+new\+\_\+elements\+\_\+at\+\_\+back} (size\+\_\+type \+\_\+\+\_\+new\+\_\+elements)
+\item 
+\mbox{\Hypertarget{classdeque_ab4e0e4642cd00ce0a136f02866a21987}\label{classdeque_ab4e0e4642cd00ce0a136f02866a21987}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+reserve\+\_\+map\+\_\+at\+\_\+back} (size\+\_\+type \+\_\+\+\_\+nodes\+\_\+to\+\_\+add=1)
+\item 
+\mbox{\Hypertarget{classdeque_a923ef04f6203145648a8d68d3058bf62}\label{classdeque_a923ef04f6203145648a8d68d3058bf62}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+reserve\+\_\+map\+\_\+at\+\_\+front} (size\+\_\+type \+\_\+\+\_\+nodes\+\_\+to\+\_\+add=1)
+\item 
+\mbox{\Hypertarget{classdeque_a8e95db5142763be58fed5569ac8d665d}\label{classdeque_a8e95db5142763be58fed5569ac8d665d}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+M\+\_\+reallocate\+\_\+map} (size\+\_\+type \+\_\+\+\_\+nodes\+\_\+to\+\_\+add, bool \+\_\+\+\_\+add\+\_\+at\+\_\+front)
+\item 
+\mbox{\Hypertarget{classdeque_a78179ad31e64bee7403e470d819b9f40}\label{classdeque_a78179ad31e64bee7403e470d819b9f40}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+Invalidate\+\_\+all} ()
+\item 
+\mbox{\Hypertarget{classdeque_a285c140323b3b127975cab845c731ebb}\label{classdeque_a285c140323b3b127975cab845c731ebb}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+Invalidate\+\_\+iterator} (const \hyperlink{structiterator}{iterator} \&\+\_\+\+\_\+it)
+\item 
+\mbox{\Hypertarget{classdeque_a152b6175bbb75f622d2b200ec730c8eb}\label{classdeque_a152b6175bbb75f622d2b200ec730c8eb}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+\+Invalidate\+\_\+iterators} (const \hyperlink{structiterator}{iterator} \&\+\_\+\+\_\+first, const \hyperlink{structiterator}{iterator} \&\+\_\+\+\_\+last)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdeque_a1d95b4cf3e5f27c64f2d05c4f62ca293}\label{classdeque_a1d95b4cf3e5f27c64f2d05c4f62ca293}} 
+\+\_\+\+Base {\bfseries \+\_\+\+M\+\_\+non\+\_\+dbg\+\_\+impl}
+\item 
+\mbox{\Hypertarget{classdeque_a9239c465370cf751efa43b2ab805b591}\label{classdeque_a9239c465370cf751efa43b2ab805b591}} 
+\+\_\+\+S\+T\+L\+P\+\_\+\+P\+R\+IV \+\_\+\+\_\+owned\+\_\+list {\bfseries \+\_\+\+M\+\_\+iter\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classdeque_a74f0345cf9468b0700654de0845dfb00}\label{classdeque_a74f0345cf9468b0700654de0845dfb00}} 
+\index{deque@{deque}!insert@{insert}}
+\index{insert@{insert}!deque@{deque}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class \+\_\+\+Tp, \+\_\+\+S\+T\+L\+P\+\_\+\+D\+F\+L\+\_\+\+T\+M\+P\+L\+\_\+\+P\+A\+R\+A\+M(\+\_\+\+Alloc, allocator$<$ \+\_\+\+Tp $>$) $>$ \\
+\hyperlink{structiterator}{iterator} \hyperlink{classdeque}{deque}$<$ \+\_\+\+Tp, $>$\+::insert (\begin{DoxyParamCaption}\item[{\hyperlink{structiterator}{iterator}}]{\+\_\+\+\_\+pos,  }\item[{const value\+\_\+type \&}]{\+\_\+\+\_\+x = {\ttfamily \+\_\+STLP\+\_\+DEFAULT\+\_\+CONSTRUCTED(value\+\_\+type)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\+\_\+\+S\+T\+L\+P\+\_\+\+D\+O\+N\+T\+\_\+\+S\+U\+P\+\_\+\+D\+F\+L\+T\+\_\+\+P\+A\+R\+AM \&\& !\+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+\_\+\+A\+N\+A\+C\+H\+R\+O\+N\+I\+S\+MS \mbox{\Hypertarget{classdeque_a11db751b5a2c95c19f852703b6724591}\label{classdeque_a11db751b5a2c95c19f852703b6724591}} 
+\index{deque@{deque}!insert@{insert}}
+\index{insert@{insert}!deque@{deque}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class \+\_\+\+Tp, \+\_\+\+S\+T\+L\+P\+\_\+\+D\+F\+L\+\_\+\+T\+M\+P\+L\+\_\+\+P\+A\+R\+A\+M(\+\_\+\+Alloc, allocator$<$ \+\_\+\+Tp $>$) $>$ \\
+\hyperlink{structiterator}{iterator} \hyperlink{classdeque}{deque}$<$ \+\_\+\+Tp, $>$\+::insert (\begin{DoxyParamCaption}\item[{\hyperlink{structiterator}{iterator}}]{\+\_\+\+\_\+pos,  }\item[{const value\+\_\+type \&}]{\+\_\+\+\_\+x = {\ttfamily \+\_\+STLP\+\_\+DEFAULT\+\_\+CONSTRUCTED(\+\_\+Tp)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\+\_\+\+S\+T\+L\+P\+\_\+\+D\+O\+N\+T\+\_\+\+S\+U\+P\+\_\+\+D\+F\+L\+T\+\_\+\+P\+A\+R\+AM \&\& !\+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+\_\+\+A\+N\+A\+C\+H\+R\+O\+N\+I\+S\+MS \mbox{\Hypertarget{classdeque_ad0624acc579c05c1df04b107fe283bb9}\label{classdeque_ad0624acc579c05c1df04b107fe283bb9}} 
+\index{deque@{deque}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!deque@{deque}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class \+\_\+\+Tp, \+\_\+\+S\+T\+L\+P\+\_\+\+D\+F\+L\+\_\+\+T\+M\+P\+L\+\_\+\+P\+A\+R\+A\+M(\+\_\+\+Alloc, allocator$<$ \+\_\+\+Tp $>$) $>$ \\
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque}{deque}$<$ \+\_\+\+Tp, $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const value\+\_\+type \&}]{\+\_\+\+\_\+t = {\ttfamily \+\_\+STLP\+\_\+DEFAULT\+\_\+CONSTRUCTED(value\+\_\+type)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\+\_\+\+S\+T\+L\+P\+\_\+\+D\+O\+N\+T\+\_\+\+S\+U\+P\+\_\+\+D\+F\+L\+T\+\_\+\+P\+A\+R\+AM \&\& !\+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+\_\+\+A\+N\+A\+C\+H\+R\+O\+N\+I\+S\+MS \mbox{\Hypertarget{classdeque_a365cc9bed82b9ce3baec754a2c5534c7}\label{classdeque_a365cc9bed82b9ce3baec754a2c5534c7}} 
+\index{deque@{deque}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!deque@{deque}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class \+\_\+\+Tp, \+\_\+\+S\+T\+L\+P\+\_\+\+D\+F\+L\+\_\+\+T\+M\+P\+L\+\_\+\+P\+A\+R\+A\+M(\+\_\+\+Alloc, allocator$<$ \+\_\+\+Tp $>$) $>$ \\
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque}{deque}$<$ \+\_\+\+Tp, $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const value\+\_\+type \&}]{\+\_\+\+\_\+t = {\ttfamily \+\_\+STLP\+\_\+DEFAULT\+\_\+CONSTRUCTED(\+\_\+Tp)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\+\_\+\+S\+T\+L\+P\+\_\+\+D\+O\+N\+T\+\_\+\+S\+U\+P\+\_\+\+D\+F\+L\+T\+\_\+\+P\+A\+R\+AM \&\& !\+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+\_\+\+A\+N\+A\+C\+H\+R\+O\+N\+I\+S\+MS \mbox{\Hypertarget{classdeque_acb102fac10501dc695a496beca93a9da}\label{classdeque_acb102fac10501dc695a496beca93a9da}} 
+\index{deque@{deque}!push\+\_\+front@{push\+\_\+front}}
+\index{push\+\_\+front@{push\+\_\+front}!deque@{deque}}
+\subsubsection{\texorpdfstring{push\+\_\+front()}{push\_front()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class \+\_\+\+Tp, \+\_\+\+S\+T\+L\+P\+\_\+\+D\+F\+L\+\_\+\+T\+M\+P\+L\+\_\+\+P\+A\+R\+A\+M(\+\_\+\+Alloc, allocator$<$ \+\_\+\+Tp $>$) $>$ \\
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque}{deque}$<$ \+\_\+\+Tp, $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const value\+\_\+type \&}]{\+\_\+\+\_\+t = {\ttfamily \+\_\+STLP\+\_\+DEFAULT\+\_\+CONSTRUCTED(value\+\_\+type)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\+\_\+\+S\+T\+L\+P\+\_\+\+D\+O\+N\+T\+\_\+\+S\+U\+P\+\_\+\+D\+F\+L\+T\+\_\+\+P\+A\+R\+AM \&\& !\+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+\_\+\+A\+N\+A\+C\+H\+R\+O\+N\+I\+S\+MS \mbox{\Hypertarget{classdeque_a5b7c21146c392ff2959d3ebaf498cf48}\label{classdeque_a5b7c21146c392ff2959d3ebaf498cf48}} 
+\index{deque@{deque}!push\+\_\+front@{push\+\_\+front}}
+\index{push\+\_\+front@{push\+\_\+front}!deque@{deque}}
+\subsubsection{\texorpdfstring{push\+\_\+front()}{push\_front()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class \+\_\+\+Tp, \+\_\+\+S\+T\+L\+P\+\_\+\+D\+F\+L\+\_\+\+T\+M\+P\+L\+\_\+\+P\+A\+R\+A\+M(\+\_\+\+Alloc, allocator$<$ \+\_\+\+Tp $>$) $>$ \\
+\hyperlink{interfacevoid}{void} \hyperlink{classdeque}{deque}$<$ \+\_\+\+Tp, $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const value\+\_\+type \&}]{\+\_\+\+\_\+t = {\ttfamily \+\_\+STLP\+\_\+DEFAULT\+\_\+CONSTRUCTED(\+\_\+Tp)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\+\_\+\+S\+T\+L\+P\+\_\+\+D\+O\+N\+T\+\_\+\+S\+U\+P\+\_\+\+D\+F\+L\+T\+\_\+\+P\+A\+R\+AM \&\& !\+\_\+\+S\+T\+L\+P\+\_\+\+N\+O\+\_\+\+A\+N\+A\+C\+H\+R\+O\+N\+I\+S\+MS 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+deque.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/c++/stlport/stl/\+\_\+deque.\+c\end{DoxyCompactItemize}

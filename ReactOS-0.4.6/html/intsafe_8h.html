@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/include/psdk/intsafe.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_f392f966fdfa958006dd89b2d26c104a.html">include</a></li><li class="navelem"><a class="el" href="dir_34052e9c0ca5f75cf91e0177bbed4ad1.html">psdk</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">intsafe.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Windows helper functions for integer overflow prevention  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;specstrings.h&gt;</code><br />
+</div>
+<p><a href="intsafe_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespace_this"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_this.html">This</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a3393a32ceabd1e7c71a5e9cf78fa43ed"><td class="memItemLeft" align="right" valign="top"><a id="a3393a32ceabd1e7c71a5e9cf78fa43ed"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_INTSAFE_H_INCLUDED_</b></td></tr>
+<tr class="separator:a3393a32ceabd1e7c71a5e9cf78fa43ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2d0b0636b4f79b0e4faad30997e684"><td class="memItemLeft" align="right" valign="top"><a id="a1b2d0b0636b4f79b0e4faad30997e684"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SUCCEEDED</b>(hr)&#160;&#160;&#160;(((HRESULT)(hr)) &gt;= 0)</td></tr>
+<tr class="separator:a1b2d0b0636b4f79b0e4faad30997e684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf71f8ef65478dbd871fd111685333ee"><td class="memItemLeft" align="right" valign="top"><a id="aaf71f8ef65478dbd871fd111685333ee"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FAILED</b>(hr)&#160;&#160;&#160;(((HRESULT)(hr)) &lt; 0)</td></tr>
+<tr class="separator:aaf71f8ef65478dbd871fd111685333ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bc2dfa42241600d567369cd25ddc70"><td class="memItemLeft" align="right" valign="top"><a id="a14bc2dfa42241600d567369cd25ddc70"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>S_OK</b>&#160;&#160;&#160;((HRESULT)0L)</td></tr>
+<tr class="separator:a14bc2dfa42241600d567369cd25ddc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b22f748e7abc3ed4f4acdd577398ef"><td class="memItemLeft" align="right" valign="top"><a id="a24b22f748e7abc3ed4f4acdd577398ef"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INTSAFE_RESULT</b>&#160;&#160;&#160;HRESULT</td></tr>
+<tr class="separator:a24b22f748e7abc3ed4f4acdd577398ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21304dd052e418c04c24df9403beb4a0"><td class="memItemLeft" align="right" valign="top"><a id="a21304dd052e418c04c24df9403beb4a0"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INTSAFE_SUCCESS</b>&#160;&#160;&#160;S_OK</td></tr>
+<tr class="separator:a21304dd052e418c04c24df9403beb4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64975bf3616acafa604568dfad9c95ce"><td class="memItemLeft" align="right" valign="top"><a id="a64975bf3616acafa604568dfad9c95ce"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INTSAFE_E_ARITHMETIC_OVERFLOW</b>&#160;&#160;&#160;((HRESULT)0x80070216L)</td></tr>
+<tr class="separator:a64975bf3616acafa604568dfad9c95ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d7437e2a69c71623f44218ee1ce139"><td class="memItemLeft" align="right" valign="top"><a id="a88d7437e2a69c71623f44218ee1ce139"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INTSAFE_NAME</b>(<a class="el" href="structname.html">name</a>)&#160;&#160;&#160;<a class="el" href="structname.html">name</a></td></tr>
+<tr class="separator:a88d7437e2a69c71623f44218ee1ce139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3730e9bd68460c3bea497352ee69b9ae"><td class="memItemLeft" align="right" valign="top"><a id="a3730e9bd68460c3bea497352ee69b9ae"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_W64</b></td></tr>
+<tr class="separator:a3730e9bd68460c3bea497352ee69b9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf28f80e90bef143796d9dfcf34dd239"><td class="memItemLeft" align="right" valign="top"><a id="abf28f80e90bef143796d9dfcf34dd239"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>C_ASSERT</b>(e)&#160;&#160;&#160;extern <a class="el" href="interfacevoid.html">void</a> __C_ASSERT__(int [(e)?1:-1])</td></tr>
+<tr class="separator:abf28f80e90bef143796d9dfcf34dd239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcf2a81af243df333b31efa6461ab8e"><td class="memItemLeft" align="right" valign="top"><a id="aadcf2a81af243df333b31efa6461ab8e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT8_MIN</b>&#160;&#160;&#160;((signed char)(-127 - 1))</td></tr>
+<tr class="separator:aadcf2a81af243df333b31efa6461ab8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa2f0097522f3458a80b26024764fa6"><td class="memItemLeft" align="right" valign="top"><a id="a1aa2f0097522f3458a80b26024764fa6"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SHORT_MIN</b>&#160;&#160;&#160;(-32768)</td></tr>
+<tr class="separator:a1aa2f0097522f3458a80b26024764fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e9955955b27624963643eac448118a"><td class="memItemLeft" align="right" valign="top"><a id="ad4e9955955b27624963643eac448118a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT16_MIN</b>&#160;&#160;&#160;((short)(-32767 - 1))</td></tr>
+<tr class="separator:ad4e9955955b27624963643eac448118a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21658776274b3d146c674318b635a334"><td class="memItemLeft" align="right" valign="top"><a id="a21658776274b3d146c674318b635a334"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT_MIN</b>&#160;&#160;&#160;(-2147483647 - 1)</td></tr>
+<tr class="separator:a21658776274b3d146c674318b635a334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688eb21a22db27c2b2bd5836943cdcbe"><td class="memItemLeft" align="right" valign="top"><a id="a688eb21a22db27c2b2bd5836943cdcbe"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT32_MIN</b>&#160;&#160;&#160;(-2147483647 - 1)</td></tr>
+<tr class="separator:a688eb21a22db27c2b2bd5836943cdcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a44c5a7436466221e0f3859d02420f"><td class="memItemLeft" align="right" valign="top"><a id="ae8a44c5a7436466221e0f3859d02420f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG_MIN</b>&#160;&#160;&#160;(-2147483647L - 1)</td></tr>
+<tr class="separator:ae8a44c5a7436466221e0f3859d02420f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65eb07a280141dab05420d9a4c6a6484"><td class="memItemLeft" align="right" valign="top"><a id="a65eb07a280141dab05420d9a4c6a6484"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONGLONG_MIN</b>&#160;&#160;&#160;(-9223372036854775807LL - 1)</td></tr>
+<tr class="separator:a65eb07a280141dab05420d9a4c6a6484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08f08e2083842596399e99a64d807b7"><td class="memItemLeft" align="right" valign="top"><a id="ab08f08e2083842596399e99a64d807b7"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG64_MIN</b>&#160;&#160;&#160;(-9223372036854775807LL - 1)</td></tr>
+<tr class="separator:ab08f08e2083842596399e99a64d807b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21f12f372f67b8ff0aa3432336ede67"><td class="memItemLeft" align="right" valign="top"><a id="ab21f12f372f67b8ff0aa3432336ede67"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT64_MIN</b>&#160;&#160;&#160;(-9223372036854775807LL - 1)</td></tr>
+<tr class="separator:ab21f12f372f67b8ff0aa3432336ede67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999401b12d60d6c3e1bfa7f3135ac6b1"><td class="memItemLeft" align="right" valign="top"><a id="a999401b12d60d6c3e1bfa7f3135ac6b1"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT128_MIN</b>&#160;&#160;&#160;(-170141183460469231731687303715884105727i128 - 1)</td></tr>
+<tr class="separator:a999401b12d60d6c3e1bfa7f3135ac6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6feb96415b2917d0a512688a80e93b5d"><td class="memItemLeft" align="right" valign="top"><a id="a6feb96415b2917d0a512688a80e93b5d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT_PTR_MIN</b>&#160;&#160;&#160;(-2147483647 - 1)</td></tr>
+<tr class="separator:a6feb96415b2917d0a512688a80e93b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7340a6290f84d99bf65605444f9f6b"><td class="memItemLeft" align="right" valign="top"><a id="a2d7340a6290f84d99bf65605444f9f6b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG_PTR_MIN</b>&#160;&#160;&#160;(-2147483647L - 1)</td></tr>
+<tr class="separator:a2d7340a6290f84d99bf65605444f9f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc8f29000d3eabff640b89ba62a888e"><td class="memItemLeft" align="right" valign="top"><a id="a2bc8f29000d3eabff640b89ba62a888e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PTRDIFF_T_MIN</b>&#160;&#160;&#160;(-2147483647 - 1)</td></tr>
+<tr class="separator:a2bc8f29000d3eabff640b89ba62a888e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bd7fef0819ea39c7790dfb5e23530e"><td class="memItemLeft" align="right" valign="top"><a id="ab3bd7fef0819ea39c7790dfb5e23530e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SSIZE_T_MIN</b>&#160;&#160;&#160;(-2147483647L - 1)</td></tr>
+<tr class="separator:ab3bd7fef0819ea39c7790dfb5e23530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7f29f45f1a513b4748a4e5014ddf6a"><td class="memItemLeft" align="right" valign="top"><a id="aaf7f29f45f1a513b4748a4e5014ddf6a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT8_MAX</b>&#160;&#160;&#160;((signed char)127)</td></tr>
+<tr class="separator:aaf7f29f45f1a513b4748a4e5014ddf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4e270a084ee26fe73e799861bd0252"><td class="memItemLeft" align="right" valign="top"><a id="aeb4e270a084ee26fe73e799861bd0252"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT8_MAX</b>&#160;&#160;&#160;((unsigned char)0xffU)</td></tr>
+<tr class="separator:aeb4e270a084ee26fe73e799861bd0252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e7264518a2ef08d338c7913ee72b9f"><td class="memItemLeft" align="right" valign="top"><a id="ac9e7264518a2ef08d338c7913ee72b9f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BYTE_MAX</b>&#160;&#160;&#160;((unsigned char)0xff)</td></tr>
+<tr class="separator:ac9e7264518a2ef08d338c7913ee72b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e9509c5546ef94a7c3d78e3441606a"><td class="memItemLeft" align="right" valign="top"><a id="aa6e9509c5546ef94a7c3d78e3441606a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SHORT_MAX</b>&#160;&#160;&#160;((short)32767)</td></tr>
+<tr class="separator:aa6e9509c5546ef94a7c3d78e3441606a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58f2c111cc9989c86db2a7dc4fd84ca"><td class="memItemLeft" align="right" valign="top"><a id="ac58f2c111cc9989c86db2a7dc4fd84ca"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT16_MAX</b>&#160;&#160;&#160;((short)32767)</td></tr>
+<tr class="separator:ac58f2c111cc9989c86db2a7dc4fd84ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9f5ac7b59f702350690c053aad1cf4"><td class="memItemLeft" align="right" valign="top"><a id="a4e9f5ac7b59f702350690c053aad1cf4"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>USHORT_MAX</b>&#160;&#160;&#160;((unsigned short)0xffff)</td></tr>
+<tr class="separator:a4e9f5ac7b59f702350690c053aad1cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea490c9b3617d4479bd80ef93cd5602"><td class="memItemLeft" align="right" valign="top"><a id="a3ea490c9b3617d4479bd80ef93cd5602"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT16_MAX</b>&#160;&#160;&#160;((unsigned short)0xffff)</td></tr>
+<tr class="separator:a3ea490c9b3617d4479bd80ef93cd5602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa679baa4df180fe5fadb94c0e985a470"><td class="memItemLeft" align="right" valign="top"><a id="aa679baa4df180fe5fadb94c0e985a470"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WORD_MAX</b>&#160;&#160;&#160;((unsigned short)0xffff)</td></tr>
+<tr class="separator:aa679baa4df180fe5fadb94c0e985a470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec306f36d50c7375e74f0d1c55a3a67"><td class="memItemLeft" align="right" valign="top"><a id="a9ec306f36d50c7375e74f0d1c55a3a67"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT_MAX</b>&#160;&#160;&#160;2147483647</td></tr>
+<tr class="separator:a9ec306f36d50c7375e74f0d1c55a3a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181807730d4a375f848ba139813ce04f"><td class="memItemLeft" align="right" valign="top"><a id="a181807730d4a375f848ba139813ce04f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT32_MAX</b>&#160;&#160;&#160;2147483647</td></tr>
+<tr class="separator:a181807730d4a375f848ba139813ce04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac998ea02fbd821fc123d60445ce76f38"><td class="memItemLeft" align="right" valign="top"><a id="ac998ea02fbd821fc123d60445ce76f38"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT_MAX</b>&#160;&#160;&#160;0xffffffff</td></tr>
+<tr class="separator:ac998ea02fbd821fc123d60445ce76f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5eb23180f7cc12b7d6c04a8ec067fdd"><td class="memItemLeft" align="right" valign="top"><a id="ab5eb23180f7cc12b7d6c04a8ec067fdd"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT32_MAX</b>&#160;&#160;&#160;0xffffffffU</td></tr>
+<tr class="separator:ab5eb23180f7cc12b7d6c04a8ec067fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fece4db74f09568b2938db583c5655"><td class="memItemLeft" align="right" valign="top"><a id="a50fece4db74f09568b2938db583c5655"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG_MAX</b>&#160;&#160;&#160;2147483647L</td></tr>
+<tr class="separator:a50fece4db74f09568b2938db583c5655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c51926a1997aab3503f9083935e06c"><td class="memItemLeft" align="right" valign="top"><a id="a41c51926a1997aab3503f9083935e06c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG_MAX</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a41c51926a1997aab3503f9083935e06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abb0f6238f0a835195ab874c15ec947"><td class="memItemLeft" align="right" valign="top"><a id="a5abb0f6238f0a835195ab874c15ec947"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD_MAX</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a5abb0f6238f0a835195ab874c15ec947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc857a28862106659c6720fdbb39b331"><td class="memItemLeft" align="right" valign="top"><a id="abc857a28862106659c6720fdbb39b331"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONGLONG_MAX</b>&#160;&#160;&#160;9223372036854775807LL</td></tr>
+<tr class="separator:abc857a28862106659c6720fdbb39b331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d725f9b654e5c3f2dc815b5a20767dd"><td class="memItemLeft" align="right" valign="top"><a id="a4d725f9b654e5c3f2dc815b5a20767dd"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG64_MAX</b>&#160;&#160;&#160;9223372036854775807LL</td></tr>
+<tr class="separator:a4d725f9b654e5c3f2dc815b5a20767dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d744f05898e32d01f73f8af3cd2071"><td class="memItemLeft" align="right" valign="top"><a id="ad0d744f05898e32d01f73f8af3cd2071"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT64_MAX</b>&#160;&#160;&#160;9223372036854775807LL</td></tr>
+<tr class="separator:ad0d744f05898e32d01f73f8af3cd2071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb917c05458ae022fb7870fda7b6c642"><td class="memItemLeft" align="right" valign="top"><a id="abb917c05458ae022fb7870fda7b6c642"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONGLONG_MAX</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:abb917c05458ae022fb7870fda7b6c642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c740a4d005bff5d360aefb60fcaa27"><td class="memItemLeft" align="right" valign="top"><a id="a44c740a4d005bff5d360aefb60fcaa27"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWORDLONG_MAX</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:a44c740a4d005bff5d360aefb60fcaa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53aef8d9a41bba0f784399d632f68bd8"><td class="memItemLeft" align="right" valign="top"><a id="a53aef8d9a41bba0f784399d632f68bd8"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG64_MAX</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:a53aef8d9a41bba0f784399d632f68bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b9e77b949e8249feaee6a4e1237874"><td class="memItemLeft" align="right" valign="top"><a id="ad8b9e77b949e8249feaee6a4e1237874"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD64_MAX</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:ad8b9e77b949e8249feaee6a4e1237874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30654b4b67d97c42ca3f9b6052dda916"><td class="memItemLeft" align="right" valign="top"><a id="a30654b4b67d97c42ca3f9b6052dda916"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT64_MAX</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:a30654b4b67d97c42ca3f9b6052dda916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7706db46d5f46c20fd6ed247bf716ebe"><td class="memItemLeft" align="right" valign="top"><a id="a7706db46d5f46c20fd6ed247bf716ebe"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT128_MAX</b>&#160;&#160;&#160;170141183460469231731687303715884105727i128</td></tr>
+<tr class="separator:a7706db46d5f46c20fd6ed247bf716ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4472310e03cc4d8569d897c19637067"><td class="memItemLeft" align="right" valign="top"><a id="ae4472310e03cc4d8569d897c19637067"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT128_MAX</b>&#160;&#160;&#160;0xffffffffffffffffffffffffffffffffui128</td></tr>
+<tr class="separator:ae4472310e03cc4d8569d897c19637067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5223de484fdc997e33c74194c054d71b"><td class="memItemLeft" align="right" valign="top"><a id="a5223de484fdc997e33c74194c054d71b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT_PTR_MAX</b>&#160;&#160;&#160;2147483647</td></tr>
+<tr class="separator:a5223de484fdc997e33c74194c054d71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec28072900c748547f99b9816d8cf6e"><td class="memItemLeft" align="right" valign="top"><a id="a0ec28072900c748547f99b9816d8cf6e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT_PTR_MAX</b>&#160;&#160;&#160;0xffffffff</td></tr>
+<tr class="separator:a0ec28072900c748547f99b9816d8cf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b7da3fe27efed012870780696e150b"><td class="memItemLeft" align="right" valign="top"><a id="a70b7da3fe27efed012870780696e150b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG_PTR_MAX</b>&#160;&#160;&#160;2147483647L</td></tr>
+<tr class="separator:a70b7da3fe27efed012870780696e150b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddc68a2401c3e2d9c964b9da3bb66ff"><td class="memItemLeft" align="right" valign="top"><a id="a8ddc68a2401c3e2d9c964b9da3bb66ff"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG_PTR_MAX</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a8ddc68a2401c3e2d9c964b9da3bb66ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b117ff2d82d3ae15afca567a09b736"><td class="memItemLeft" align="right" valign="top"><a id="a97b117ff2d82d3ae15afca567a09b736"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD_PTR_MAX</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a97b117ff2d82d3ae15afca567a09b736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fd68bd94ccd1b30af14a37529b0866"><td class="memItemLeft" align="right" valign="top"><a id="aa5fd68bd94ccd1b30af14a37529b0866"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PTRDIFF_T_MAX</b>&#160;&#160;&#160;2147483647</td></tr>
+<tr class="separator:aa5fd68bd94ccd1b30af14a37529b0866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa3af56d5e0045c1d7a5682fd1d2853"><td class="memItemLeft" align="right" valign="top"><a id="acfa3af56d5e0045c1d7a5682fd1d2853"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SIZE_T_MAX</b>&#160;&#160;&#160;0xffffffff</td></tr>
+<tr class="separator:acfa3af56d5e0045c1d7a5682fd1d2853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab89eada8d273a7e1f1447c5c0dffa3d"><td class="memItemLeft" align="right" valign="top"><a id="aab89eada8d273a7e1f1447c5c0dffa3d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SSIZE_T_MAX</b>&#160;&#160;&#160;2147483647L</td></tr>
+<tr class="separator:aab89eada8d273a7e1f1447c5c0dffa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67239eacedb78e67705819d20cb05281"><td class="memItemLeft" align="right" valign="top"><a id="a67239eacedb78e67705819d20cb05281"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_SIZE_T_MAX</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a67239eacedb78e67705819d20cb05281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8b74a5d0c7f6abe8a7ec0f6d510d5b"><td class="memItemLeft" align="right" valign="top"><a id="aee8b74a5d0c7f6abe8a7ec0f6d510d5b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT8_ERROR</b>&#160;&#160;&#160;((signed char)(-1))</td></tr>
+<tr class="separator:aee8b74a5d0c7f6abe8a7ec0f6d510d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b95e9dc8ede6f18afc8d3d2f51f7bf9"><td class="memItemLeft" align="right" valign="top"><a id="a1b95e9dc8ede6f18afc8d3d2f51f7bf9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT8_ERROR</b>&#160;&#160;&#160;((unsigned char)0xff)</td></tr>
+<tr class="separator:a1b95e9dc8ede6f18afc8d3d2f51f7bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2ef4b8feeb123ef0f784cb4483082b"><td class="memItemLeft" align="right" valign="top"><a id="aeb2ef4b8feeb123ef0f784cb4483082b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BYTE_ERROR</b>&#160;&#160;&#160;((unsigned char)0xff)</td></tr>
+<tr class="separator:aeb2ef4b8feeb123ef0f784cb4483082b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3360325288b6a3c934ff704d4da9c8e0"><td class="memItemLeft" align="right" valign="top"><a id="a3360325288b6a3c934ff704d4da9c8e0"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SHORT_ERROR</b>&#160;&#160;&#160;((short)(-1))</td></tr>
+<tr class="separator:a3360325288b6a3c934ff704d4da9c8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd42c21c4573f3333ff9b4ccf39ffdf6"><td class="memItemLeft" align="right" valign="top"><a id="afd42c21c4573f3333ff9b4ccf39ffdf6"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT16_ERROR</b>&#160;&#160;&#160;((short)(-1))</td></tr>
+<tr class="separator:afd42c21c4573f3333ff9b4ccf39ffdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4de3430482eb6c15379c3517bad7fa1"><td class="memItemLeft" align="right" valign="top"><a id="af4de3430482eb6c15379c3517bad7fa1"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>USHORT_ERROR</b>&#160;&#160;&#160;((unsigned short)0xffff)</td></tr>
+<tr class="separator:af4de3430482eb6c15379c3517bad7fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf1648101313b629b3478764f08d5c3"><td class="memItemLeft" align="right" valign="top"><a id="aaaf1648101313b629b3478764f08d5c3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT16_ERROR</b>&#160;&#160;&#160;((unsigned short)0xffff)</td></tr>
+<tr class="separator:aaaf1648101313b629b3478764f08d5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76ad785732863d96bb253a7e883d99e"><td class="memItemLeft" align="right" valign="top"><a id="ae76ad785732863d96bb253a7e883d99e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WORD_ERROR</b>&#160;&#160;&#160;((unsigned short)0xffff)</td></tr>
+<tr class="separator:ae76ad785732863d96bb253a7e883d99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4d57817be08fb859af44f3e9da6db6"><td class="memItemLeft" align="right" valign="top"><a id="a7f4d57817be08fb859af44f3e9da6db6"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT_ERROR</b>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:a7f4d57817be08fb859af44f3e9da6db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace204990e3443f759e945afd5e12184e"><td class="memItemLeft" align="right" valign="top"><a id="ace204990e3443f759e945afd5e12184e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT32_ERROR</b>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:ace204990e3443f759e945afd5e12184e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6602a3b123864d03059352ab0cf20758"><td class="memItemLeft" align="right" valign="top"><a id="a6602a3b123864d03059352ab0cf20758"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT_ERROR</b>&#160;&#160;&#160;0xffffffffU</td></tr>
+<tr class="separator:a6602a3b123864d03059352ab0cf20758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b88eb4c95f4bd56c8bc504de362de3"><td class="memItemLeft" align="right" valign="top"><a id="a31b88eb4c95f4bd56c8bc504de362de3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT32_ERROR</b>&#160;&#160;&#160;0xffffffffU</td></tr>
+<tr class="separator:a31b88eb4c95f4bd56c8bc504de362de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f2b394cce1e15c49a87de40cb9ba88"><td class="memItemLeft" align="right" valign="top"><a id="af8f2b394cce1e15c49a87de40cb9ba88"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG_ERROR</b>&#160;&#160;&#160;(-1L)</td></tr>
+<tr class="separator:af8f2b394cce1e15c49a87de40cb9ba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f2346eac70c29f362a70cab960f91a"><td class="memItemLeft" align="right" valign="top"><a id="a56f2346eac70c29f362a70cab960f91a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG_ERROR</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a56f2346eac70c29f362a70cab960f91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2251e2a3c1f8c1c149b3fa17beb50c"><td class="memItemLeft" align="right" valign="top"><a id="a7f2251e2a3c1f8c1c149b3fa17beb50c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD_ERROR</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a7f2251e2a3c1f8c1c149b3fa17beb50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad524ff075b7d827c28f748936bd5e123"><td class="memItemLeft" align="right" valign="top"><a id="ad524ff075b7d827c28f748936bd5e123"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONGLONG_ERROR</b>&#160;&#160;&#160;(-1LL)</td></tr>
+<tr class="separator:ad524ff075b7d827c28f748936bd5e123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c80b550ebc8659152a561cac217e8e"><td class="memItemLeft" align="right" valign="top"><a id="ad2c80b550ebc8659152a561cac217e8e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG64_ERROR</b>&#160;&#160;&#160;(-1LL)</td></tr>
+<tr class="separator:ad2c80b550ebc8659152a561cac217e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d122cf5eeed766b1d4f20732ee42834"><td class="memItemLeft" align="right" valign="top"><a id="a5d122cf5eeed766b1d4f20732ee42834"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT64_ERROR</b>&#160;&#160;&#160;(-1LL)</td></tr>
+<tr class="separator:a5d122cf5eeed766b1d4f20732ee42834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2886425895e66977a0092438560aad56"><td class="memItemLeft" align="right" valign="top"><a id="a2886425895e66977a0092438560aad56"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONGLONG_ERROR</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:a2886425895e66977a0092438560aad56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e0cf0ada59e0343e453f7dc710d024"><td class="memItemLeft" align="right" valign="top"><a id="af5e0cf0ada59e0343e453f7dc710d024"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWORDLONG_ERROR</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:af5e0cf0ada59e0343e453f7dc710d024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e04e6916fac25500956da4b871c671"><td class="memItemLeft" align="right" valign="top"><a id="ae1e04e6916fac25500956da4b871c671"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG64_ERROR</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:ae1e04e6916fac25500956da4b871c671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd10544a76b7987eef9462c07a888641"><td class="memItemLeft" align="right" valign="top"><a id="acd10544a76b7987eef9462c07a888641"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT64_ERROR</b>&#160;&#160;&#160;0xffffffffffffffffULL</td></tr>
+<tr class="separator:acd10544a76b7987eef9462c07a888641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae6f394693de76495bcd6647e921f67"><td class="memItemLeft" align="right" valign="top"><a id="acae6f394693de76495bcd6647e921f67"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>INT_PTR_ERROR</b>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:acae6f394693de76495bcd6647e921f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712413cb7b716e821e8ba1e722894a32"><td class="memItemLeft" align="right" valign="top"><a id="a712413cb7b716e821e8ba1e722894a32"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UINT_PTR_ERROR</b>&#160;&#160;&#160;0xffffffffU</td></tr>
+<tr class="separator:a712413cb7b716e821e8ba1e722894a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09235374e371bb1fa7e039eb606dbb3"><td class="memItemLeft" align="right" valign="top"><a id="aa09235374e371bb1fa7e039eb606dbb3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LONG_PTR_ERROR</b>&#160;&#160;&#160;(-1L)</td></tr>
+<tr class="separator:aa09235374e371bb1fa7e039eb606dbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7f7b66f4f088e17a1f360e283724e8"><td class="memItemLeft" align="right" valign="top"><a id="aae7f7b66f4f088e17a1f360e283724e8"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG_PTR_ERROR</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:aae7f7b66f4f088e17a1f360e283724e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1734ba57183bf479039242fbcca99a9"><td class="memItemLeft" align="right" valign="top"><a id="aa1734ba57183bf479039242fbcca99a9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD_PTR_ERROR</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:aa1734ba57183bf479039242fbcca99a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16788a508fbfb51d12a066411c722b5a"><td class="memItemLeft" align="right" valign="top"><a id="a16788a508fbfb51d12a066411c722b5a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PTRDIFF_T_ERROR</b>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:a16788a508fbfb51d12a066411c722b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a80d2809fbdd6fdcad7bae7b01b111"><td class="memItemLeft" align="right" valign="top"><a id="a11a80d2809fbdd6fdcad7bae7b01b111"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SIZE_T_ERROR</b>&#160;&#160;&#160;0xffffffffU</td></tr>
+<tr class="separator:a11a80d2809fbdd6fdcad7bae7b01b111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c718ee2545f7d801fce96f2d9ff628f"><td class="memItemLeft" align="right" valign="top"><a id="a4c718ee2545f7d801fce96f2d9ff628f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SSIZE_T_ERROR</b>&#160;&#160;&#160;(-1L)</td></tr>
+<tr class="separator:a4c718ee2545f7d801fce96f2d9ff628f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1d50daf634a81351425643c7b5ce3a"><td class="memItemLeft" align="right" valign="top"><a id="a3f1d50daf634a81351425643c7b5ce3a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_SIZE_T_ERROR</b>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a3f1d50daf634a81351425643c7b5ce3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fdb00c9b7793d3c290519607e228b8d"><td class="memItemLeft" align="right" valign="top"><a id="a6fdb00c9b7793d3c290519607e228b8d"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_INTSAFE_CHAR</b>&#160;&#160;&#160;CHAR</td></tr>
+<tr class="separator:a6fdb00c9b7793d3c290519607e228b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3df64af184f4328b25b508a5fd35f13"><td class="memItemLeft" align="right" valign="top"><a id="ad3df64af184f4328b25b508a5fd35f13"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_INTSAFE_CHAR_ERROR</b>&#160;&#160;&#160;((signed char)(-1))</td></tr>
+<tr class="separator:ad3df64af184f4328b25b508a5fd35f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f07de6578e7d180f56347bb3c43b3ce"><td class="memItemLeft" align="right" valign="top"><a id="a2f07de6578e7d180f56347bb3c43b3ce"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_INTSAFE_CHAR_MIN</b>&#160;&#160;&#160;((signed char)(-128))</td></tr>
+<tr class="separator:a2f07de6578e7d180f56347bb3c43b3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4deae02d71034a7ea0b32d876822c8"><td class="memItemLeft" align="right" valign="top"><a id="abf4deae02d71034a7ea0b32d876822c8"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_INTSAFE_CHAR_MAX</b>&#160;&#160;&#160;((signed char)127)</td></tr>
+<tr class="separator:abf4deae02d71034a7ea0b32d876822c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ab33a5a0c1e0bbadd6a84e84213405"><td class="memItemLeft" align="right" valign="top"><a id="a03ab33a5a0c1e0bbadd6a84e84213405"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>size_t_ERROR</b>&#160;&#160;&#160;SIZE_T_ERROR</td></tr>
+<tr class="separator:a03ab33a5a0c1e0bbadd6a84e84213405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518741a16b2fb55030b6426df4497d7e"><td class="memItemLeft" align="right" valign="top"><a id="a518741a16b2fb55030b6426df4497d7e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UCHAR_ERROR</b>&#160;&#160;&#160;'\0'</td></tr>
+<tr class="separator:a518741a16b2fb55030b6426df4497d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7555d869b0034eb4e3b8c7ce6c6590f"><td class="memItemLeft" align="right" valign="top"><a id="af7555d869b0034eb4e3b8c7ce6c6590f"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CHAR_ERROR</b>&#160;&#160;&#160;'\0'</td></tr>
+<tr class="separator:af7555d869b0034eb4e3b8c7ce6c6590f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440535b2c2bb53c8198cde3951967c6b"><td class="memItemLeft" align="right" valign="top"><a id="a440535b2c2bb53c8198cde3951967c6b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt32x32To64</b>(a,  b)&#160;&#160;&#160;((unsigned __int64)(unsigned int)(a)*(unsigned __int64)(unsigned int)(b))</td></tr>
+<tr class="separator:a440535b2c2bb53c8198cde3951967c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adf340ea75f40cee3e996cb31b434fa"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SAFE_CONVERT_UTOX</b>(_Name,  _TypeFrom,  _TypeTo)</td></tr>
+<tr class="separator:a7adf340ea75f40cee3e996cb31b434fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b5c7232aa7b947291cbb78afd80f13"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SAFE_CONVERT_STOU</b>(_Name,  _TypeFrom,  _TypeTo)</td></tr>
+<tr class="separator:a43b5c7232aa7b947291cbb78afd80f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d11b13bc4460ee526492912d60002e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SAFE_CONVERT_STOS</b>(_Name,  _TypeFrom,  _TypeTo)</td></tr>
+<tr class="separator:a47d11b13bc4460ee526492912d60002e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add62de2d0cb9c71e3fa94f7175054846"><td class="memItemLeft" align="right" valign="top"><a id="add62de2d0cb9c71e3fa94f7175054846"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToByte</b>&#160;&#160;&#160;Int8ToUInt8</td></tr>
+<tr class="separator:add62de2d0cb9c71e3fa94f7175054846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a74f7404be63d5fc4849f53a23ea91b"><td class="memItemLeft" align="right" valign="top"><a id="a0a74f7404be63d5fc4849f53a23ea91b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToUInt16</b>&#160;&#160;&#160;Int8ToUShort</td></tr>
+<tr class="separator:a0a74f7404be63d5fc4849f53a23ea91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b1e18064a74009a876a7021c492d93"><td class="memItemLeft" align="right" valign="top"><a id="a37b1e18064a74009a876a7021c492d93"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToWord</b>&#160;&#160;&#160;Int8ToUShort</td></tr>
+<tr class="separator:a37b1e18064a74009a876a7021c492d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a50d21fa3835214f35419f6cc3614e"><td class="memItemLeft" align="right" valign="top"><a id="af4a50d21fa3835214f35419f6cc3614e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToUInt32</b>&#160;&#160;&#160;Int8ToUInt</td></tr>
+<tr class="separator:af4a50d21fa3835214f35419f6cc3614e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd41681e7333731157fd17d13b8c8fe7"><td class="memItemLeft" align="right" valign="top"><a id="acd41681e7333731157fd17d13b8c8fe7"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToDWord</b>&#160;&#160;&#160;Int8ToULong</td></tr>
+<tr class="separator:acd41681e7333731157fd17d13b8c8fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb361ac7b2486373c084f371db1da5e3"><td class="memItemLeft" align="right" valign="top"><a id="afb361ac7b2486373c084f371db1da5e3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToDWordPtr</b>&#160;&#160;&#160;Int8ToULongPtr</td></tr>
+<tr class="separator:afb361ac7b2486373c084f371db1da5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f82432686ffa8ce1665fa8659c7c78"><td class="memItemLeft" align="right" valign="top"><a id="aa5f82432686ffa8ce1665fa8659c7c78"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToDWordLong</b>&#160;&#160;&#160;Int8ToULongLong</td></tr>
+<tr class="separator:aa5f82432686ffa8ce1665fa8659c7c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af831b78f75bf0ab45a0306f09c122c93"><td class="memItemLeft" align="right" valign="top"><a id="af831b78f75bf0ab45a0306f09c122c93"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToULong64</b>&#160;&#160;&#160;Int8ToULongLong</td></tr>
+<tr class="separator:af831b78f75bf0ab45a0306f09c122c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b587d1d86c273b71620c18025376545"><td class="memItemLeft" align="right" valign="top"><a id="a7b587d1d86c273b71620c18025376545"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToDWord64</b>&#160;&#160;&#160;Int8ToULongLong</td></tr>
+<tr class="separator:a7b587d1d86c273b71620c18025376545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796c3beffdd92addac0906b25c126d06"><td class="memItemLeft" align="right" valign="top"><a id="a796c3beffdd92addac0906b25c126d06"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToUInt64</b>&#160;&#160;&#160;Int8ToULongLong</td></tr>
+<tr class="separator:a796c3beffdd92addac0906b25c126d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8417032734bdb79fc698aa984ba7bbf"><td class="memItemLeft" align="right" valign="top"><a id="af8417032734bdb79fc698aa984ba7bbf"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToSizeT</b>&#160;&#160;&#160;Int8ToUIntPtr</td></tr>
+<tr class="separator:af8417032734bdb79fc698aa984ba7bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d3580e0362075bdb715cab456eef1e"><td class="memItemLeft" align="right" valign="top"><a id="a79d3580e0362075bdb715cab456eef1e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Int8ToSIZET</b>&#160;&#160;&#160;Int8ToULongPtr</td></tr>
+<tr class="separator:a79d3580e0362075bdb715cab456eef1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73b63c0075ebdaa30b4e8854f17af8b"><td class="memItemLeft" align="right" valign="top"><a id="ab73b63c0075ebdaa30b4e8854f17af8b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IntToSizeT</b>&#160;&#160;&#160;IntToUIntPtr</td></tr>
+<tr class="separator:ab73b63c0075ebdaa30b4e8854f17af8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458a3b1ee466c61270338d3b8a108bd4"><td class="memItemLeft" align="right" valign="top"><a id="a458a3b1ee466c61270338d3b8a108bd4"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IntToSIZET</b>&#160;&#160;&#160;IntToULongPtr</td></tr>
+<tr class="separator:a458a3b1ee466c61270338d3b8a108bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d2d63dc60541b4fe77bb937c313504"><td class="memItemLeft" align="right" valign="top"><a id="ae6d2d63dc60541b4fe77bb937c313504"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongToSSIZET</b>&#160;&#160;&#160;ULongToLongPtr</td></tr>
+<tr class="separator:ae6d2d63dc60541b4fe77bb937c313504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa710101c1afa9cb827b0c3b522d1d05e"><td class="memItemLeft" align="right" valign="top"><a id="aa710101c1afa9cb827b0c3b522d1d05e"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongToByte</b>&#160;&#160;&#160;ULongToUInt8</td></tr>
+<tr class="separator:aa710101c1afa9cb827b0c3b522d1d05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bd8f95cf60c88dfb0e3e5548062816"><td class="memItemLeft" align="right" valign="top"><a id="a78bd8f95cf60c88dfb0e3e5548062816"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToInt64</b>&#160;&#160;&#160;ULongLongToLongLong</td></tr>
+<tr class="separator:a78bd8f95cf60c88dfb0e3e5548062816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa815dc5987acd832478cf11e97c6252c"><td class="memItemLeft" align="right" valign="top"><a id="aa815dc5987acd832478cf11e97c6252c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToLong64</b>&#160;&#160;&#160;ULongLongToLongLong</td></tr>
+<tr class="separator:aa815dc5987acd832478cf11e97c6252c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb16c1487dde7dbeabffe2e1a0fc92b"><td class="memItemLeft" align="right" valign="top"><a id="abcb16c1487dde7dbeabffe2e1a0fc92b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToPtrdiffT</b>&#160;&#160;&#160;ULongLongToIntPtr</td></tr>
+<tr class="separator:abcb16c1487dde7dbeabffe2e1a0fc92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafad24ae552e3b45be83a50cb160a6b5"><td class="memItemLeft" align="right" valign="top"><a id="aafad24ae552e3b45be83a50cb160a6b5"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToSizeT</b>&#160;&#160;&#160;ULongLongToUIntPtr</td></tr>
+<tr class="separator:aafad24ae552e3b45be83a50cb160a6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23acc9807393de8a109b4a01dd7a7230"><td class="memItemLeft" align="right" valign="top"><a id="a23acc9807393de8a109b4a01dd7a7230"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToSSIZET</b>&#160;&#160;&#160;ULongLongToLongPtr</td></tr>
+<tr class="separator:a23acc9807393de8a109b4a01dd7a7230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8135b153585c50252b2bc7fc9456a080"><td class="memItemLeft" align="right" valign="top"><a id="a8135b153585c50252b2bc7fc9456a080"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToSIZET</b>&#160;&#160;&#160;ULongLongToULongPtr</td></tr>
+<tr class="separator:a8135b153585c50252b2bc7fc9456a080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b327618ed26d07482d6ac29e9342d3c"><td class="memItemLeft" align="right" valign="top"><a id="a7b327618ed26d07482d6ac29e9342d3c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SIZETToULong</b>&#160;&#160;&#160;ULongPtrToULong</td></tr>
+<tr class="separator:a7b327618ed26d07482d6ac29e9342d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1044579c7b76276e8e963c9055bcd8"><td class="memItemLeft" align="right" valign="top"><a id="acf1044579c7b76276e8e963c9055bcd8"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SSIZETToULongLong</b>&#160;&#160;&#160;LongPtrToULongLong</td></tr>
+<tr class="separator:acf1044579c7b76276e8e963c9055bcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0ff68d3544646c6d564232b7669a72"><td class="memItemLeft" align="right" valign="top"><a id="aad0ff68d3544646c6d564232b7669a72"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SSIZETToULong</b>&#160;&#160;&#160;LongPtrToULong</td></tr>
+<tr class="separator:aad0ff68d3544646c6d564232b7669a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c242da76e02fefd5424f95a9d737088"><td class="memItemLeft" align="right" valign="top"><a id="a9c242da76e02fefd5424f95a9d737088"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IntToUIntPtr</b>&#160;&#160;&#160;IntToUInt</td></tr>
+<tr class="separator:a9c242da76e02fefd5424f95a9d737088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee871497972648ec3603650f19fd048"><td class="memItemLeft" align="right" valign="top"><a id="abee871497972648ec3603650f19fd048"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToIntPtr</b>&#160;&#160;&#160;ULongLongToInt</td></tr>
+<tr class="separator:abee871497972648ec3603650f19fd048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86896717b64f3ed2740060b5000954b"><td class="memItemLeft" align="right" valign="top"><a id="ad86896717b64f3ed2740060b5000954b"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToUIntPtr</b>&#160;&#160;&#160;ULongLongToUInt</td></tr>
+<tr class="separator:ad86896717b64f3ed2740060b5000954b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a39ef4b00526f907ee181e4a199025"><td class="memItemLeft" align="right" valign="top"><a id="a29a39ef4b00526f907ee181e4a199025"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongToULongPtr</b>&#160;&#160;&#160;ULongLongToULong</td></tr>
+<tr class="separator:a29a39ef4b00526f907ee181e4a199025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4272312b4222a5e89f59aac59cdafe0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SAFE_ADD</b>(_Name,  _Type)</td></tr>
+<tr class="separator:aa4272312b4222a5e89f59aac59cdafe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92898d8b17be300c8303b2a4de637a47"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SAFE_SUB</b>(_Name,  _Type)</td></tr>
+<tr class="separator:a92898d8b17be300c8303b2a4de637a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bc93d91bbb7d6c0c23157772dfea64"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SAFE_MULT_U32</b>(_Name,  _Type,  _Convert)</td></tr>
+<tr class="separator:a28bc93d91bbb7d6c0c23157772dfea64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e663fe8a25e76cc247685de4339107e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SAFE_MULT_U16</b>(_Name,  _Type,  _Convert)</td></tr>
+<tr class="separator:a4e663fe8a25e76cc247685de4339107e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b9b06a29ba74600d83fc923955e9c3"><td class="memItemLeft" align="right" valign="top"><a id="a88b9b06a29ba74600d83fc923955e9c3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt16Add</b>&#160;&#160;&#160;UShortAdd</td></tr>
+<tr class="separator:a88b9b06a29ba74600d83fc923955e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae527241ebc4e612262aca64f8e000a9"><td class="memItemLeft" align="right" valign="top"><a id="aae527241ebc4e612262aca64f8e000a9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WordAdd</b>&#160;&#160;&#160;UShortAdd</td></tr>
+<tr class="separator:aae527241ebc4e612262aca64f8e000a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400d25c37b353977879da4e2c6e236db"><td class="memItemLeft" align="right" valign="top"><a id="a400d25c37b353977879da4e2c6e236db"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt32Add</b>&#160;&#160;&#160;UIntAdd</td></tr>
+<tr class="separator:a400d25c37b353977879da4e2c6e236db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9926a16fcae94f254ab7eae35056ed90"><td class="memItemLeft" align="right" valign="top"><a id="a9926a16fcae94f254ab7eae35056ed90"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWordAdd</b>&#160;&#160;&#160;ULongAdd</td></tr>
+<tr class="separator:a9926a16fcae94f254ab7eae35056ed90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d2da6c50a170dc5c97a9b6716722b0"><td class="memItemLeft" align="right" valign="top"><a id="a57d2da6c50a170dc5c97a9b6716722b0"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWordLongAdd</b>&#160;&#160;&#160;ULongLongAdd</td></tr>
+<tr class="separator:a57d2da6c50a170dc5c97a9b6716722b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa63d5662ecb5912c95c9dd3b8fed4f3"><td class="memItemLeft" align="right" valign="top"><a id="afa63d5662ecb5912c95c9dd3b8fed4f3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULong64Add</b>&#160;&#160;&#160;ULongLongAdd</td></tr>
+<tr class="separator:afa63d5662ecb5912c95c9dd3b8fed4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1332c9e58452d3e0211f678a828b52e1"><td class="memItemLeft" align="right" valign="top"><a id="a1332c9e58452d3e0211f678a828b52e1"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWord64Add</b>&#160;&#160;&#160;ULongLongAdd</td></tr>
+<tr class="separator:a1332c9e58452d3e0211f678a828b52e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced1e0d41c7cf039f35a98eb49236760"><td class="memItemLeft" align="right" valign="top"><a id="aced1e0d41c7cf039f35a98eb49236760"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt64Add</b>&#160;&#160;&#160;ULongLongAdd</td></tr>
+<tr class="separator:aced1e0d41c7cf039f35a98eb49236760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9681cc4e8943c7fd5eebcfe07473d7c"><td class="memItemLeft" align="right" valign="top"><a id="ac9681cc4e8943c7fd5eebcfe07473d7c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt16Sub</b>&#160;&#160;&#160;UShortSub</td></tr>
+<tr class="separator:ac9681cc4e8943c7fd5eebcfe07473d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18175dd7b774a3ca55a6e8a6559d55ad"><td class="memItemLeft" align="right" valign="top"><a id="a18175dd7b774a3ca55a6e8a6559d55ad"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WordSub</b>&#160;&#160;&#160;UShortSub</td></tr>
+<tr class="separator:a18175dd7b774a3ca55a6e8a6559d55ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af720d33dfb80a0f775d139fd401409d3"><td class="memItemLeft" align="right" valign="top"><a id="af720d33dfb80a0f775d139fd401409d3"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt32Sub</b>&#160;&#160;&#160;UIntSub</td></tr>
+<tr class="separator:af720d33dfb80a0f775d139fd401409d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b3b8c813321ee51e61e2db06fadcd0"><td class="memItemLeft" align="right" valign="top"><a id="af2b3b8c813321ee51e61e2db06fadcd0"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWordSub</b>&#160;&#160;&#160;ULongSub</td></tr>
+<tr class="separator:af2b3b8c813321ee51e61e2db06fadcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0883de3d5970359ec9140c4774bb61"><td class="memItemLeft" align="right" valign="top"><a id="a9c0883de3d5970359ec9140c4774bb61"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWordLongSub</b>&#160;&#160;&#160;ULongLongSub</td></tr>
+<tr class="separator:a9c0883de3d5970359ec9140c4774bb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0742b0aecda84604fe031d6edeb91ef4"><td class="memItemLeft" align="right" valign="top"><a id="a0742b0aecda84604fe031d6edeb91ef4"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ULong64Sub</b>&#160;&#160;&#160;ULongLongSub</td></tr>
+<tr class="separator:a0742b0aecda84604fe031d6edeb91ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ecfdafb3a3be6cce1282f9cadd6f93"><td class="memItemLeft" align="right" valign="top"><a id="ac4ecfdafb3a3be6cce1282f9cadd6f93"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DWord64Sub</b>&#160;&#160;&#160;ULongLongSub</td></tr>
+<tr class="separator:ac4ecfdafb3a3be6cce1282f9cadd6f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6817b451375374a9334dde7bff3dfeb9"><td class="memItemLeft" align="right" valign="top"><a id="a6817b451375374a9334dde7bff3dfeb9"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt64Sub</b>&#160;&#160;&#160;ULongLongSub</td></tr>
+<tr class="separator:a6817b451375374a9334dde7bff3dfeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2520452305c9b455e17dad71c5aebb5c"><td class="memItemLeft" align="right" valign="top"><a id="a2520452305c9b455e17dad71c5aebb5c"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UInt16Mult</b>&#160;&#160;&#160;UShortMult</td></tr>
+<tr class="separator:a2520452305c9b455e17dad71c5aebb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475633279a77a58ff788fa3f4786815a"><td class="memItemLeft" align="right" valign="top"><a id="a475633279a77a58ff788fa3f4786815a"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WordMult</b>&#160;&#160;&#160;UShortMult</td></tr>
+<tr class="separator:a475633279a77a58ff788fa3f4786815a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:aebb9e13210d88d43e32e735ada43a425"><td class="memItemLeft" align="right" valign="top"><a id="aebb9e13210d88d43e32e735ada43a425"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>CHAR</b></td></tr>
+<tr class="separator:aebb9e13210d88d43e32e735ada43a425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4bb67531a9bf6f0b9c6ad76aeba587"><td class="memItemLeft" align="right" valign="top"><a id="a4f4bb67531a9bf6f0b9c6ad76aeba587"></a>
+typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>UCHAR</b></td></tr>
+<tr class="separator:a4f4bb67531a9bf6f0b9c6ad76aeba587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27e9918b538ce9d8ca692479b375b6a"><td class="memItemLeft" align="right" valign="top"><a id="ab27e9918b538ce9d8ca692479b375b6a"></a>
+typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>UINT8</b></td></tr>
+<tr class="separator:ab27e9918b538ce9d8ca692479b375b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebe70ceca856797319175e30bcf003d"><td class="memItemLeft" align="right" valign="top"><a id="a7ebe70ceca856797319175e30bcf003d"></a>
+typedef signed char&#160;</td><td class="memItemRight" valign="bottom"><b>INT8</b></td></tr>
+<tr class="separator:a7ebe70ceca856797319175e30bcf003d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9909bd3cf05f0906045f2ee85be4eeac"><td class="memItemLeft" align="right" valign="top"><a id="a9909bd3cf05f0906045f2ee85be4eeac"></a>
+typedef short&#160;</td><td class="memItemRight" valign="bottom"><b>SHORT</b></td></tr>
+<tr class="separator:a9909bd3cf05f0906045f2ee85be4eeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f500129d8c688af07726d5d34ce52d"><td class="memItemLeft" align="right" valign="top"><a id="a30f500129d8c688af07726d5d34ce52d"></a>
+typedef signed short&#160;</td><td class="memItemRight" valign="bottom"><b>INT16</b></td></tr>
+<tr class="separator:a30f500129d8c688af07726d5d34ce52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5850d5316caf7f4cedd742fdf8cd7c02"><td class="memItemLeft" align="right" valign="top"><a id="a5850d5316caf7f4cedd742fdf8cd7c02"></a>
+typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>USHORT</b></td></tr>
+<tr class="separator:a5850d5316caf7f4cedd742fdf8cd7c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f1a1fb2293e33483cc8d44aefb1eb1"><td class="memItemLeft" align="right" valign="top"><a id="a09f1a1fb2293e33483cc8d44aefb1eb1"></a>
+typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>UINT16</b></td></tr>
+<tr class="separator:a09f1a1fb2293e33483cc8d44aefb1eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392e62da233ed3e2f7c3fd4f487a3896"><td class="memItemLeft" align="right" valign="top"><a id="a392e62da233ed3e2f7c3fd4f487a3896"></a>
+typedef int&#160;</td><td class="memItemRight" valign="bottom"><b>INT</b></td></tr>
+<tr class="separator:a392e62da233ed3e2f7c3fd4f487a3896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e6edbbc26d6fbc71a90190d0266018"><td class="memItemLeft" align="right" valign="top"><a id="ae1e6edbbc26d6fbc71a90190d0266018"></a>
+typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>UINT32</b></td></tr>
+<tr class="separator:ae1e6edbbc26d6fbc71a90190d0266018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1137216524060afd426c34677fed058b"><td class="memItemLeft" align="right" valign="top"><a id="a1137216524060afd426c34677fed058b"></a>
+typedef signed int&#160;</td><td class="memItemRight" valign="bottom"><b>INT32</b></td></tr>
+<tr class="separator:a1137216524060afd426c34677fed058b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3e0cda5f1249bef6db47c5eb8e3813"><td class="memItemLeft" align="right" valign="top"><a id="a2a3e0cda5f1249bef6db47c5eb8e3813"></a>
+typedef long&#160;</td><td class="memItemRight" valign="bottom"><b>LONG</b></td></tr>
+<tr class="separator:a2a3e0cda5f1249bef6db47c5eb8e3813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af632da489ebc3708ec3ab6791ee53fa4"><td class="memItemLeft" align="right" valign="top"><a id="af632da489ebc3708ec3ab6791ee53fa4"></a>
+typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG</b></td></tr>
+<tr class="separator:af632da489ebc3708ec3ab6791ee53fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af559a7ae68520d96f21d0655d6792508"><td class="memItemLeft" align="right" valign="top"><a id="af559a7ae68520d96f21d0655d6792508"></a>
+typedef long long&#160;</td><td class="memItemRight" valign="bottom"><b>LONGLONG</b></td></tr>
+<tr class="separator:af559a7ae68520d96f21d0655d6792508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57305825c7d329ad8a3065ae045e875"><td class="memItemLeft" align="right" valign="top"><a id="ae57305825c7d329ad8a3065ae045e875"></a>
+typedef long long&#160;</td><td class="memItemRight" valign="bottom"><b>LONG64</b></td></tr>
+<tr class="separator:ae57305825c7d329ad8a3065ae045e875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16992cf571ce4103a92355761cc471e"><td class="memItemLeft" align="right" valign="top"><a id="af16992cf571ce4103a92355761cc471e"></a>
+typedef signed long long&#160;</td><td class="memItemRight" valign="bottom"><b>INT64</b></td></tr>
+<tr class="separator:af16992cf571ce4103a92355761cc471e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9abb9ce956f1a9e5a4081ac40e5649"><td class="memItemLeft" align="right" valign="top"><a id="abb9abb9ce956f1a9e5a4081ac40e5649"></a>
+typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>ULONGLONG</b></td></tr>
+<tr class="separator:abb9abb9ce956f1a9e5a4081ac40e5649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720d365a9653d3fb60cdf78da40472b8"><td class="memItemLeft" align="right" valign="top"><a id="a720d365a9653d3fb60cdf78da40472b8"></a>
+typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>DWORDLONG</b></td></tr>
+<tr class="separator:a720d365a9653d3fb60cdf78da40472b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28961430434ccabca6862ea93fe9a15b"><td class="memItemLeft" align="right" valign="top"><a id="a28961430434ccabca6862ea93fe9a15b"></a>
+typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG64</b></td></tr>
+<tr class="separator:a28961430434ccabca6862ea93fe9a15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfeae90dcbc6d1e23fc52bb64339f46"><td class="memItemLeft" align="right" valign="top"><a id="adbfeae90dcbc6d1e23fc52bb64339f46"></a>
+typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD64</b></td></tr>
+<tr class="separator:adbfeae90dcbc6d1e23fc52bb64339f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57be03562867144161c1bfee95ca8f7c"><td class="memItemLeft" align="right" valign="top"><a id="a57be03562867144161c1bfee95ca8f7c"></a>
+typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>UINT64</b></td></tr>
+<tr class="separator:a57be03562867144161c1bfee95ca8f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8c961bdc5cb6ea73af035851c4227d"><td class="memItemLeft" align="right" valign="top"><a id="aae8c961bdc5cb6ea73af035851c4227d"></a>
+typedef _W64 int&#160;</td><td class="memItemRight" valign="bottom"><b>INT_PTR</b></td></tr>
+<tr class="separator:aae8c961bdc5cb6ea73af035851c4227d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296720e1fba775e0b1f4a26a958cb769"><td class="memItemLeft" align="right" valign="top"><a id="a296720e1fba775e0b1f4a26a958cb769"></a>
+typedef _W64 int&#160;</td><td class="memItemRight" valign="bottom"><b>ptrdiff_t</b></td></tr>
+<tr class="separator:a296720e1fba775e0b1f4a26a958cb769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510e0a09b707ec8f46d10c497014ab53"><td class="memItemLeft" align="right" valign="top"><a id="a510e0a09b707ec8f46d10c497014ab53"></a>
+typedef _W64 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>UINT_PTR</b></td></tr>
+<tr class="separator:a510e0a09b707ec8f46d10c497014ab53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2378aeebed25d40df9f89ec2cbf43d2e"><td class="memItemLeft" align="right" valign="top"><a id="a2378aeebed25d40df9f89ec2cbf43d2e"></a>
+typedef _W64 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size_t</b></td></tr>
+<tr class="separator:a2378aeebed25d40df9f89ec2cbf43d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab806494dc8904358e60aec7d1efc9331"><td class="memItemLeft" align="right" valign="top"><a id="ab806494dc8904358e60aec7d1efc9331"></a>
+typedef _W64 long&#160;</td><td class="memItemRight" valign="bottom"><b>LONG_PTR</b></td></tr>
+<tr class="separator:ab806494dc8904358e60aec7d1efc9331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1aa1989f34dbe44934b806ef70ba440"><td class="memItemLeft" align="right" valign="top"><a id="ac1aa1989f34dbe44934b806ef70ba440"></a>
+typedef _W64 long&#160;</td><td class="memItemRight" valign="bottom"><b>SSIZE_T</b></td></tr>
+<tr class="separator:ac1aa1989f34dbe44934b806ef70ba440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdedc624187898e693222864762e6944"><td class="memItemLeft" align="right" valign="top"><a id="abdedc624187898e693222864762e6944"></a>
+typedef _W64 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>ULONG_PTR</b></td></tr>
+<tr class="separator:abdedc624187898e693222864762e6944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670dda8909057618b242dcc1095ed945"><td class="memItemLeft" align="right" valign="top"><a id="a670dda8909057618b242dcc1095ed945"></a>
+typedef _W64 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD_PTR</b></td></tr>
+<tr class="separator:a670dda8909057618b242dcc1095ed945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0fc2ba5ae31a2df2035cc17bca3fc5"><td class="memItemLeft" align="right" valign="top"><a id="adb0fc2ba5ae31a2df2035cc17bca3fc5"></a>
+typedef _W64 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>SIZE_T</b></td></tr>
+<tr class="separator:adb0fc2ba5ae31a2df2035cc17bca3fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae1dab0fb4b072a66584546209e7d58"><td class="memItemLeft" align="right" valign="top"><a id="a4ae1dab0fb4b072a66584546209e7d58"></a>
+typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>BYTE</b></td></tr>
+<tr class="separator:a4ae1dab0fb4b072a66584546209e7d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197942eefa7db30960ae396d68339b97"><td class="memItemLeft" align="right" valign="top"><a id="a197942eefa7db30960ae396d68339b97"></a>
+typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>WORD</b></td></tr>
+<tr class="separator:a197942eefa7db30960ae396d68339b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memItemLeft" align="right" valign="top"><a id="a36cb3b01d81ffd844bbbfb54003e06ec"></a>
+typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>UINT</b></td></tr>
+<tr class="separator:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad342ac907eb044443153a22f964bf0af"><td class="memItemLeft" align="right" valign="top"><a id="ad342ac907eb044443153a22f964bf0af"></a>
+typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>DWORD</b></td></tr>
+<tr class="separator:ad342ac907eb044443153a22f964bf0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2a990bea63f94b5e0e1d2ccd47daed07"><td class="memItemLeft" align="right" valign="top"><a id="a2a990bea63f94b5e0e1d2ccd47daed07"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><b>_Return_type_success_</b> (return &gt;=0) long HRESULT</td></tr>
+<tr class="separator:a2a990bea63f94b5e0e1d2ccd47daed07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c63d673eed7f2e3d3a31cfe837e670"><td class="memItemLeft" align="right" valign="top"><a id="ad6c63d673eed7f2e3d3a31cfe837e670"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C_ASSERT</b> (sizeof(USHORT)==2)</td></tr>
+<tr class="separator:ad6c63d673eed7f2e3d3a31cfe837e670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffdca02879640e7deb1ef80c34625bc"><td class="memItemLeft" align="right" valign="top"><a id="a6ffdca02879640e7deb1ef80c34625bc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C_ASSERT</b> (sizeof(INT)==4)</td></tr>
+<tr class="separator:a6ffdca02879640e7deb1ef80c34625bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355d53089f9e1e5b7f98c96745cd7a61"><td class="memItemLeft" align="right" valign="top"><a id="a355d53089f9e1e5b7f98c96745cd7a61"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C_ASSERT</b> (sizeof(UINT)==4)</td></tr>
+<tr class="separator:a355d53089f9e1e5b7f98c96745cd7a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbf58772236c5f87ee0617b41ea5b74"><td class="memItemLeft" align="right" valign="top"><a id="a7bbf58772236c5f87ee0617b41ea5b74"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C_ASSERT</b> (sizeof(LONG)==4)</td></tr>
+<tr class="separator:a7bbf58772236c5f87ee0617b41ea5b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2074099b9b6483424444039cfa38c3"><td class="memItemLeft" align="right" valign="top"><a id="a7d2074099b9b6483424444039cfa38c3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C_ASSERT</b> (sizeof(DWORD)==4)</td></tr>
+<tr class="separator:a7d2074099b9b6483424444039cfa38c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9729f39d4a15fc62e8206877cb6c57ff"><td class="memItemLeft" align="right" valign="top"><a id="a9729f39d4a15fc62e8206877cb6c57ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>C_ASSERT</b> (sizeof(UINT_PTR)==sizeof(ULONG_PTR))</td></tr>
+<tr class="separator:a9729f39d4a15fc62e8206877cb6c57ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8309905c576a5e1bb640a4b4f320606e"><td class="memItemLeft" align="right" valign="top"><a id="a8309905c576a5e1bb640a4b4f320606e"></a>
+_Must_inspect_result_ __forceinline INTSAFE_RESULT INTSAFE_NAME()&#160;</td><td class="memItemRight" valign="bottom"><b>ULongLongMult</b> (_In_ ULONGLONG Multiplicand, _In_ ULONGLONG Multiplier, _Out_ _Deref_out_range_(==, Multiplicand *Multiplier) ULONGLONG *pOutput)</td></tr>
+<tr class="separator:a8309905c576a5e1bb640a4b4f320606e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Windows helper functions for integer overflow prevention </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aa4272312b4222a5e89f59aac59cdafe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4272312b4222a5e89f59aac59cdafe0">&#9670;&nbsp;</a></span>DEFINE_SAFE_ADD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DEFINE_SAFE_ADD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">_Must_inspect_result_ \</div><div class="line">__forceinline \</div><div class="line">INTSAFE_RESULT \</div><div class="line">INTSAFE_NAME(_Name)( \</div><div class="line">    _In_ _Type Augend, \</div><div class="line">    _In_ _Type Addend, \</div><div class="line">    _Out_ _Deref_out_range_(==, Augend + Addend) _Type *pOutput) \</div><div class="line">{ \</div><div class="line">    if ((_Type)(Augend + Addend) &gt;= Augend) \</div><div class="line">    { \</div><div class="line">        *pOutput = Augend + Addend; \</div><div class="line">        return INTSAFE_SUCCESS; \</div><div class="line">    } \</div><div class="line">    else \</div><div class="line">    { \</div><div class="line">        *pOutput = _Type ## _ERROR; \</div><div class="line">        return INTSAFE_E_ARITHMETIC_OVERFLOW; \</div><div class="line">    } \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a47d11b13bc4460ee526492912d60002e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d11b13bc4460ee526492912d60002e">&#9670;&nbsp;</a></span>DEFINE_SAFE_CONVERT_STOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DEFINE_SAFE_CONVERT_STOS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_TypeFrom, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_TypeTo&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">_Must_inspect_result_ \</div><div class="line">__forceinline \</div><div class="line">INTSAFE_RESULT \</div><div class="line">INTSAFE_NAME(_Name)( \</div><div class="line">    _In_ _TypeFrom Input, \</div><div class="line">    _Out_ _Deref_out_range_(==, Input) _TypeTo *pOutput) \</div><div class="line">{ \</div><div class="line">    if ((Input &gt;= _TypeTo ## _MIN) &amp;&amp; (Input &lt;= _TypeTo ## _MAX)) \</div><div class="line">    { \</div><div class="line">        *pOutput = (_TypeTo)Input; \</div><div class="line">        return INTSAFE_SUCCESS; \</div><div class="line">    } \</div><div class="line">    else \</div><div class="line">    { \</div><div class="line">        *pOutput = _TypeTo ## _ERROR; \</div><div class="line">        return INTSAFE_E_ARITHMETIC_OVERFLOW; \</div><div class="line">    } \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a43b5c7232aa7b947291cbb78afd80f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b5c7232aa7b947291cbb78afd80f13">&#9670;&nbsp;</a></span>DEFINE_SAFE_CONVERT_STOU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DEFINE_SAFE_CONVERT_STOU</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_TypeFrom, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_TypeTo&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">_Must_inspect_result_ \</div><div class="line">__forceinline \</div><div class="line">INTSAFE_RESULT \</div><div class="line">INTSAFE_NAME(_Name)( \</div><div class="line">    _In_ _TypeFrom Input, \</div><div class="line">    _Out_ _Deref_out_range_(==, Input) _TypeTo *pOutput) \</div><div class="line">{ \</div><div class="line">    if ((Input &gt;= 0) &amp;&amp; \</div><div class="line">        ((<span class="keyword">sizeof</span>(_TypeFrom) &lt;= <span class="keyword">sizeof</span>(_TypeTo)) || (Input &lt;= (_TypeFrom)_TypeTo ## _MAX))) \</div><div class="line">    { \</div><div class="line">        *pOutput = (_TypeTo)Input; \</div><div class="line">        return INTSAFE_SUCCESS; \</div><div class="line">    } \</div><div class="line">    else \</div><div class="line">    { \</div><div class="line">        *pOutput = _TypeTo ## _ERROR; \</div><div class="line">        return INTSAFE_E_ARITHMETIC_OVERFLOW; \</div><div class="line">    } \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7adf340ea75f40cee3e996cb31b434fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7adf340ea75f40cee3e996cb31b434fa">&#9670;&nbsp;</a></span>DEFINE_SAFE_CONVERT_UTOX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DEFINE_SAFE_CONVERT_UTOX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_TypeFrom, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_TypeTo&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">_Must_inspect_result_ \</div><div class="line">__forceinline \</div><div class="line">INTSAFE_RESULT \</div><div class="line">INTSAFE_NAME(_Name)( \</div><div class="line">    _In_ _TypeFrom Input, \</div><div class="line">    _Out_ _Deref_out_range_(==, Input) _TypeTo *pOutput) \</div><div class="line">{ \</div><div class="line">    if (Input &lt;= _TypeTo ## _MAX) \</div><div class="line">    { \</div><div class="line">        *pOutput = (_TypeTo)Input; \</div><div class="line">        return INTSAFE_SUCCESS; \</div><div class="line">    } \</div><div class="line">    else \</div><div class="line">    { \</div><div class="line">        *pOutput = _TypeTo ## _ERROR; \</div><div class="line">        return INTSAFE_E_ARITHMETIC_OVERFLOW; \</div><div class="line">    } \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a4e663fe8a25e76cc247685de4339107e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e663fe8a25e76cc247685de4339107e">&#9670;&nbsp;</a></span>DEFINE_SAFE_MULT_U16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DEFINE_SAFE_MULT_U16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Convert&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">_Must_inspect_result_ \</div><div class="line">__forceinline \</div><div class="line">INTSAFE_RESULT \</div><div class="line">INTSAFE_NAME(_Name)( \</div><div class="line">    _In_ _Type Multiplicand, \</div><div class="line">    _In_ _Type Multiplier, \</div><div class="line">    _Out_ _Deref_out_range_(==, Multiplicand * Multiplier) _Type* pOutput) \</div><div class="line">{ \</div><div class="line">    ULONG Result = ((ULONG)Multiplicand) * ((ULONG)Multiplier); \</div><div class="line">    return INTSAFE_NAME(_Convert)(Result, pOutput); \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a28bc93d91bbb7d6c0c23157772dfea64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bc93d91bbb7d6c0c23157772dfea64">&#9670;&nbsp;</a></span>DEFINE_SAFE_MULT_U32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DEFINE_SAFE_MULT_U32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Convert&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">_Must_inspect_result_ \</div><div class="line">__forceinline \</div><div class="line">INTSAFE_RESULT \</div><div class="line">INTSAFE_NAME(_Name)( \</div><div class="line">    _In_ _Type Multiplicand, \</div><div class="line">    _In_ _Type Multiplier, \</div><div class="line">    _Out_ _Deref_out_range_(==, Multiplicand * Multiplier) _Type* pOutput) \</div><div class="line">{ \</div><div class="line">    ULONGLONG Result = UInt32x32To64(Multiplicand, Multiplier); \</div><div class="line">    return INTSAFE_NAME(_Convert)(Result, pOutput); \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a92898d8b17be300c8303b2a4de637a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92898d8b17be300c8303b2a4de637a47">&#9670;&nbsp;</a></span>DEFINE_SAFE_SUB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="structdefine.html">define</a> DEFINE_SAFE_SUB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">_Must_inspect_result_ \</div><div class="line">__forceinline \</div><div class="line">INTSAFE_RESULT \</div><div class="line">INTSAFE_NAME(_Name)( \</div><div class="line">    _In_ _Type Minuend, \</div><div class="line">    _In_ _Type Subtrahend, \</div><div class="line">    _Out_ _Deref_out_range_(==, Minuend - Subtrahend) _Type* pOutput) \</div><div class="line">{ \</div><div class="line">    if (Minuend &gt;= Subtrahend) \</div><div class="line">    { \</div><div class="line">        *pOutput = Minuend - Subtrahend; \</div><div class="line">        return INTSAFE_SUCCESS; \</div><div class="line">    } \</div><div class="line">    else \</div><div class="line">    { \</div><div class="line">        *pOutput = _Type ## _ERROR; \</div><div class="line">        return INTSAFE_E_ARITHMETIC_OVERFLOW; \</div><div class="line">    } \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

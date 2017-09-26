@@ -1,0 +1,70 @@
+\hypertarget{interface_windows_installer_1_1_installer}{}\section{Windows\+Installer\+:\+:Installer接口 参考}
+\label{interface_windows_installer_1_1_installer}\index{Windows\+Installer\+::\+Installer@{Windows\+Installer\+::\+Installer}}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a49cb288da44b13177961f86ba15c9bf4}\label{interface_windows_installer_1_1_installer_a49cb288da44b13177961f86ba15c9bf4}} 
+\hyperlink{interface_windows_installer_1_1_record}{Record} $\ast$ {\bfseries Create\+Record} (\mbox{[}in\mbox{]} long Count)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a57a58be66e62749424c938f57a6f06af}\label{interface_windows_installer_1_1_installer_a57a58be66e62749424c938f57a6f06af}} 
+\hyperlink{interface_windows_installer_1_1_session}{Session} $\ast$ {\bfseries Open\+Package} (\mbox{[}in\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} Package\+Path, \mbox{[}in, defaultvalue(0)\mbox{]} long Options)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_aad2060abf7846263d962a9c19790a9b4}\label{interface_windows_installer_1_1_installer_aad2060abf7846263d962a9c19790a9b4}} 
+\hyperlink{interface_windows_installer_1_1_session}{Session} $\ast$ {\bfseries Open\+Product} (\mbox{[}in\mbox{]} B\+S\+TR Product\+Code)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_af3c905638b5bad6a3415e94f40af20e2}\label{interface_windows_installer_1_1_installer_af3c905638b5bad6a3415e94f40af20e2}} 
+Summary\+Info $\ast$ {\bfseries Summary\+Information} (\mbox{[}in\mbox{]} B\+S\+TR Package\+Path, \mbox{[}in, defaultvalue(0)\mbox{]} long Update\+Count)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a7f4958dc39868e4d867fd0bf5333d6d1}\label{interface_windows_installer_1_1_installer_a7f4958dc39868e4d867fd0bf5333d6d1}} 
+\hyperlink{struct_database}{Database} $\ast$ {\bfseries Open\+Database} (\mbox{[}in\mbox{]} B\+S\+TR Database\+Path, \mbox{[}in\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} Open\+Mode)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_ac2fd72fb734ef2a390652e1dd0c07b3a}\label{interface_windows_installer_1_1_installer_ac2fd72fb734ef2a390652e1dd0c07b3a}} 
+\hyperlink{interfacevoid}{void} {\bfseries Enable\+Log} (\mbox{[}in\mbox{]} B\+S\+TR Log\+Mode, \mbox{[}in\mbox{]} B\+S\+TR Log\+File)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_af24bc215ce2ba71a9ed5bd94304a45f3}\label{interface_windows_installer_1_1_installer_af24bc215ce2ba71a9ed5bd94304a45f3}} 
+\hyperlink{interfacevoid}{void} {\bfseries Install\+Product} (\mbox{[}in\mbox{]} B\+S\+TR Package\+Path, \mbox{[}in, defaultvalue(\char`\"{}0\char`\"{})\mbox{]} B\+S\+TR Property\+Values)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a27fbe83396772862f16c5c675f438474}\label{interface_windows_installer_1_1_installer_a27fbe83396772862f16c5c675f438474}} 
+B\+S\+TR {\bfseries Version} ()
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a1bcf90cd2eb97e50c718735a342d9562}\label{interface_windows_installer_1_1_installer_a1bcf90cd2eb97e50c718735a342d9562}} 
+\hyperlink{interface_windows_installer_1_1_record}{Record} $\ast$ {\bfseries Last\+Error\+Record} ()
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_ad312ce0934d3de206b82986b9c2fc5f5}\label{interface_windows_installer_1_1_installer_ad312ce0934d3de206b82986b9c2fc5f5}} 
+long {\bfseries File\+Attributes} (\mbox{[}in\mbox{]} B\+S\+TR File\+Path)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a62ef091c9894559a58b9b19e72cf86f0}\label{interface_windows_installer_1_1_installer_a62ef091c9894559a58b9b19e72cf86f0}} 
+long {\bfseries File\+Size} (\mbox{[}in\mbox{]} B\+S\+TR File\+Path)
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a2a2b64b4a6528fe4cd7bfbc5cbedc41b}\label{interface_windows_installer_1_1_installer_a2a2b64b4a6528fe4cd7bfbc5cbedc41b}} 
+B\+S\+TR {\bfseries File\+Version} (\mbox{[}in\mbox{]} B\+S\+TR File\+Path, \mbox{[}in, optional\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} Language)
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a23ae415950274351e42c3024638df386}\label{interface_windows_installer_1_1_installer_a23ae415950274351e42c3024638df386}} 
+Msi\+U\+I\+Level {\bfseries U\+I\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a145a178a9669450781148ed17903156c}\label{interface_windows_installer_1_1_installer_a145a178a9669450781148ed17903156c}} 
+\hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} {\bfseries Registry\+Value} (\mbox{[}in\mbox{]} \hyperlink{structtag_v_a_r_i_a_n_t}{V\+A\+R\+I\+A\+NT} \hyperlink{struct_root}{Root}, \mbox{[}in\mbox{]} B\+S\+TR \hyperlink{struct_key}{Key})\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a08701d07c05f5e7fcfd69153594933f7}\label{interface_windows_installer_1_1_installer_a08701d07c05f5e7fcfd69153594933f7}} 
+B\+S\+TR {\bfseries Environment}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_ae30e918e7446575ed002e5aac649e8e5}\label{interface_windows_installer_1_1_installer_ae30e918e7446575ed002e5aac649e8e5}} 
+B\+S\+TR {\bfseries Product\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_ab8461d756652139f8f459aaf7e47173f}\label{interface_windows_installer_1_1_installer_ab8461d756652139f8f459aaf7e47173f}} 
+B\+S\+TR {\bfseries Product\+Info} (\mbox{[}in\mbox{]} B\+S\+TR \hyperlink{interface_windows_installer_1_1_product}{Product})\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_a826ac15b7f761475a02bbeee12a13f5e}\label{interface_windows_installer_1_1_installer_a826ac15b7f761475a02bbeee12a13f5e}} 
+{\bfseries Products}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_windows_installer_1_1_installer_af884b5d6d7fd02652a5c884f99121fcc}\label{interface_windows_installer_1_1_installer_af884b5d6d7fd02652a5c884f99121fcc}} 
+B\+S\+TR {\bfseries Related\+Products}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/msi/msiserver.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{structgl__texture__unit}{}\section{gl\+\_\+texture\+\_\+unit结构体 参考}
+\label{structgl__texture__unit}\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+
+
+{\ttfamily \#include $<$mtypes.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lbitfield \hyperlink{structgl__texture__unit_a758637cfe342d7806ded54d6874a55e7}{Enabled}
+\item 
+G\+Lbitfield \hyperlink{structgl__texture__unit_afd0ba9b128aba251c3c5ba293af91449}{\+\_\+\+Really\+Enabled}
+\item 
+\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{structgl__texture__unit_ac318a89847b6c5a028ed920a36fe5029}{Env\+Mode}
+\item 
+\mbox{\Hypertarget{structgl__texture__unit_ab0fd84d1a90f05f18df9e9c25ab5e425}\label{structgl__texture__unit_ab0fd84d1a90f05f18df9e9c25ab5e425}} 
+G\+Lclampf {\bfseries Env\+Color} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{structgl__texture__unit_a74e40f648d3dc5d24170dd9b12a5cda2}\label{structgl__texture__unit_a74e40f648d3dc5d24170dd9b12a5cda2}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texgen}{gl\+\_\+texgen} {\bfseries GenS}
+\item 
+\mbox{\Hypertarget{structgl__texture__unit_a638f814615f57ea15c95e1fc850949a4}\label{structgl__texture__unit_a638f814615f57ea15c95e1fc850949a4}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texgen}{gl\+\_\+texgen} {\bfseries GenT}
+\item 
+\mbox{\Hypertarget{structgl__texture__unit_afd07d3a6ef1c01369f6207ba8ea3a992}\label{structgl__texture__unit_afd07d3a6ef1c01369f6207ba8ea3a992}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texgen}{gl\+\_\+texgen} {\bfseries GenR}
+\item 
+\mbox{\Hypertarget{structgl__texture__unit_a0501d3533b027aa31acf0fcd9858adab}\label{structgl__texture__unit_a0501d3533b027aa31acf0fcd9858adab}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texgen}{gl\+\_\+texgen} {\bfseries GenQ}
+\item 
+G\+Lbitfield \hyperlink{structgl__texture__unit_a0b23831e8691b933d73bc65cb0e7860a}{Tex\+Gen\+Enabled}
+\item 
+G\+Lbitfield \hyperlink{structgl__texture__unit_aab34963540ccb22d80e28accdbd13afb}{\+\_\+\+Gen\+Flags}
+\item 
+G\+Lfloat \hyperlink{structgl__texture__unit_a7fa1327fe818faaf0309b1320e594b13}{Lod\+Bias}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ G\+L\+\_\+\+E\+X\+T\+\_\+texture\+\_\+env\+\_\+combine}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgl__texture__unit_a051ceccc6f0acfd01b37c8a63142064d}\label{structgl__texture__unit_a051ceccc6f0acfd01b37c8a63142064d}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__tex__env__combine__state}{gl\+\_\+tex\+\_\+env\+\_\+combine\+\_\+state} {\bfseries Combine}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__tex__env__combine__state}{gl\+\_\+tex\+\_\+env\+\_\+combine\+\_\+state} \hyperlink{structgl__texture__unit_abd8e87a4b0420a6b8043fab2eedd8a82}{\+\_\+\+Env\+Mode}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__tex__env__combine__state}{gl\+\_\+tex\+\_\+env\+\_\+combine\+\_\+state} $\ast$ \hyperlink{structgl__texture__unit_a388597ea29b69b6ea4d86f3557e6b1f5}{\+\_\+\+Current\+Combine}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{structgl__texture__unit_af690bc7194923667d134f479ad6d747a}{Current\+Tex} \mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object} $\ast$ \hyperlink{structgl__texture__unit_a80d6bb086b878507d40ec6c815f78ac4}{\+\_\+\+Current}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{详细描述}
+Texture unit state. Contains enable flags, texture environment/function/ combiners, texgen state, and pointers to current texture objects. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structgl__texture__unit_a80d6bb086b878507d40ec6c815f78ac4}\label{structgl__texture__unit_a80d6bb086b878507d40ec6c815f78ac4}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!\+\_\+\+Current@{\+\_\+\+Current}}
+\index{\+\_\+\+Current@{\+\_\+\+Current}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{\+\_\+\+Current}{\_Current}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ gl\+\_\+texture\+\_\+unit\+::\+\_\+\+Current}
+
+Points to highest priority, complete and enabled texture object \mbox{\Hypertarget{structgl__texture__unit_a388597ea29b69b6ea4d86f3557e6b1f5}\label{structgl__texture__unit_a388597ea29b69b6ea4d86f3557e6b1f5}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!\+\_\+\+Current\+Combine@{\+\_\+\+Current\+Combine}}
+\index{\+\_\+\+Current\+Combine@{\+\_\+\+Current\+Combine}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{\+\_\+\+Current\+Combine}{\_CurrentCombine}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__tex__env__combine__state}{gl\+\_\+tex\+\_\+env\+\_\+combine\+\_\+state}$\ast$ gl\+\_\+texture\+\_\+unit\+::\+\_\+\+Current\+Combine}
+
+Currently enabled combiner state. \hyperlink{namespace_this}{This} will point to either {\ttfamily Combine} or {\ttfamily \+\_\+\+Env\+Mode}. \mbox{\Hypertarget{structgl__texture__unit_abd8e87a4b0420a6b8043fab2eedd8a82}\label{structgl__texture__unit_abd8e87a4b0420a6b8043fab2eedd8a82}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!\+\_\+\+Env\+Mode@{\+\_\+\+Env\+Mode}}
+\index{\+\_\+\+Env\+Mode@{\+\_\+\+Env\+Mode}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{\+\_\+\+Env\+Mode}{\_EnvMode}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__tex__env__combine__state}{gl\+\_\+tex\+\_\+env\+\_\+combine\+\_\+state} gl\+\_\+texture\+\_\+unit\+::\+\_\+\+Env\+Mode}
+
+Derived state based on {\ttfamily Env\+Mode} and the {\ttfamily Base\+Format} of the currently enabled texture. \mbox{\Hypertarget{structgl__texture__unit_aab34963540ccb22d80e28accdbd13afb}\label{structgl__texture__unit_aab34963540ccb22d80e28accdbd13afb}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!\+\_\+\+Gen\+Flags@{\+\_\+\+Gen\+Flags}}
+\index{\+\_\+\+Gen\+Flags@{\+\_\+\+Gen\+Flags}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{\+\_\+\+Gen\+Flags}{\_GenFlags}}
+{\footnotesize\ttfamily G\+Lbitfield gl\+\_\+texture\+\_\+unit\+::\+\_\+\+Gen\+Flags}
+
+Bitwise-\/\+OR of Gen\mbox{[}S\+T\+RQ\mbox{]}.\+\_\+\+Mode\+Bit \mbox{\Hypertarget{structgl__texture__unit_afd0ba9b128aba251c3c5ba293af91449}\label{structgl__texture__unit_afd0ba9b128aba251c3c5ba293af91449}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!\+\_\+\+Really\+Enabled@{\+\_\+\+Really\+Enabled}}
+\index{\+\_\+\+Really\+Enabled@{\+\_\+\+Really\+Enabled}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{\+\_\+\+Really\+Enabled}{\_ReallyEnabled}}
+{\footnotesize\ttfamily G\+Lbitfield gl\+\_\+texture\+\_\+unit\+::\+\_\+\+Really\+Enabled}
+
+0 or exactly one of T\+E\+X\+T\+U\+R\+E\+\_\+$\ast$\+\_\+\+B\+IT flags \mbox{\Hypertarget{structgl__texture__unit_af690bc7194923667d134f479ad6d747a}\label{structgl__texture__unit_af690bc7194923667d134f479ad6d747a}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!Current\+Tex@{Current\+Tex}}
+\index{Current\+Tex@{Current\+Tex}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{Current\+Tex}{CurrentTex}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structgl__texture__object}{gl\+\_\+texture\+\_\+object}$\ast$ gl\+\_\+texture\+\_\+unit\+::\+Current\+Tex\mbox{[}N\+U\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+TS\mbox{]}}
+
+Current texture object pointers \mbox{\Hypertarget{structgl__texture__unit_a758637cfe342d7806ded54d6874a55e7}\label{structgl__texture__unit_a758637cfe342d7806ded54d6874a55e7}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!Enabled@{Enabled}}
+\index{Enabled@{Enabled}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{Enabled}{Enabled}}
+{\footnotesize\ttfamily G\+Lbitfield gl\+\_\+texture\+\_\+unit\+::\+Enabled}
+
+bitmask of T\+E\+X\+T\+U\+R\+E\+\_\+$\ast$\+\_\+\+B\+IT flags \mbox{\Hypertarget{structgl__texture__unit_ac318a89847b6c5a028ed920a36fe5029}\label{structgl__texture__unit_ac318a89847b6c5a028ed920a36fe5029}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!Env\+Mode@{Env\+Mode}}
+\index{Env\+Mode@{Env\+Mode}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{Env\+Mode}{EnvMode}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{G\+Lenum} gl\+\_\+texture\+\_\+unit\+::\+Env\+Mode}
+
+G\+L\+\_\+\+M\+O\+D\+U\+L\+A\+TE, G\+L\+\_\+\+D\+E\+C\+AL, G\+L\+\_\+\+B\+L\+E\+ND, etc. \mbox{\Hypertarget{structgl__texture__unit_a7fa1327fe818faaf0309b1320e594b13}\label{structgl__texture__unit_a7fa1327fe818faaf0309b1320e594b13}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!Lod\+Bias@{Lod\+Bias}}
+\index{Lod\+Bias@{Lod\+Bias}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{Lod\+Bias}{LodBias}}
+{\footnotesize\ttfamily G\+Lfloat gl\+\_\+texture\+\_\+unit\+::\+Lod\+Bias}
+
+for biasing mipmap levels \mbox{\Hypertarget{structgl__texture__unit_a0b23831e8691b933d73bc65cb0e7860a}\label{structgl__texture__unit_a0b23831e8691b933d73bc65cb0e7860a}} 
+\index{gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}!Tex\+Gen\+Enabled@{Tex\+Gen\+Enabled}}
+\index{Tex\+Gen\+Enabled@{Tex\+Gen\+Enabled}!gl\+\_\+texture\+\_\+unit@{gl\+\_\+texture\+\_\+unit}}
+\subsubsection{\texorpdfstring{Tex\+Gen\+Enabled}{TexGenEnabled}}
+{\footnotesize\ttfamily G\+Lbitfield gl\+\_\+texture\+\_\+unit\+::\+Tex\+Gen\+Enabled}
+
+Bitwise-\/\+OR of \mbox{[}S\+T\+RQ\mbox{]}\+\_\+\+B\+IT values 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/\hyperlink{mtypes_8h}{mtypes.\+h}\end{DoxyCompactItemize}

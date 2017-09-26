@@ -1,0 +1,124 @@
+\hypertarget{structext3__inode}{}\section{ext3\+\_\+inode结构体 参考}
+\label{structext3__inode}\index{ext3\+\_\+inode@{ext3\+\_\+inode}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structext3__inode_a526d42f424fb12acbc5dcfc6efc8d7bb}\label{structext3__inode_a526d42f424fb12acbc5dcfc6efc8d7bb}} 
+\+\_\+\+\_\+le16 {\bfseries i\+\_\+mode}
+\item 
+\mbox{\Hypertarget{structext3__inode_a35848e91fe6cfc7f901a7366aa98bae2}\label{structext3__inode_a35848e91fe6cfc7f901a7366aa98bae2}} 
+\+\_\+\+\_\+le16 {\bfseries i\+\_\+uid}
+\item 
+\mbox{\Hypertarget{structext3__inode_a1473ae4866c6c70fac1d5177bf6997db}\label{structext3__inode_a1473ae4866c6c70fac1d5177bf6997db}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+size}
+\item 
+\mbox{\Hypertarget{structext3__inode_ac86f0970fafe39aae2ba4ea7a0e55e5a}\label{structext3__inode_ac86f0970fafe39aae2ba4ea7a0e55e5a}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+atime}
+\item 
+\mbox{\Hypertarget{structext3__inode_a51d7b9a68ebc8c72ea9e1eb713557675}\label{structext3__inode_a51d7b9a68ebc8c72ea9e1eb713557675}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+ctime}
+\item 
+\mbox{\Hypertarget{structext3__inode_acdae1685bceb3a68a75d4241535608a6}\label{structext3__inode_acdae1685bceb3a68a75d4241535608a6}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+mtime}
+\item 
+\mbox{\Hypertarget{structext3__inode_af4afbb3ad224bb0ca4275fd677d8376a}\label{structext3__inode_af4afbb3ad224bb0ca4275fd677d8376a}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+dtime}
+\item 
+\mbox{\Hypertarget{structext3__inode_a28a0616e36f584cf8b4bef6609d7dca9}\label{structext3__inode_a28a0616e36f584cf8b4bef6609d7dca9}} 
+\+\_\+\+\_\+le16 {\bfseries i\+\_\+gid}
+\item 
+\mbox{\Hypertarget{structext3__inode_aec2791e4e1458c75cf35fd11fa20cdee}\label{structext3__inode_aec2791e4e1458c75cf35fd11fa20cdee}} 
+\+\_\+\+\_\+le16 {\bfseries i\+\_\+links\+\_\+count}
+\item 
+\mbox{\Hypertarget{structext3__inode_ac6dc473483679a5102612cffc52c2cf8}\label{structext3__inode_ac6dc473483679a5102612cffc52c2cf8}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+blocks}
+\item 
+\mbox{\Hypertarget{structext3__inode_a60620f67adf58bf5af93b30cca5e2a6b}\label{structext3__inode_a60620f67adf58bf5af93b30cca5e2a6b}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+flags}
+\item 
+\mbox{\Hypertarget{structext3__inode_ae42c777ddd9f11f75f71c4591b078523}\label{structext3__inode_ae42c777ddd9f11f75f71c4591b078523}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_le32 {\bfseries l\_i\_version}\\
+\>\} {\bfseries linux1}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries h\_i\_translator}\\
+\>\} {\bfseries hurd1}\\
+\>struct \{\\
+\>\>\_\_u32 {\bfseries m\_i\_reserved1}\\
+\>\} {\bfseries masix1}\\
+\} {\bfseries osd1}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structext3__inode_a4771fcb6a0adc723924473ebbb6cd63c}\label{structext3__inode_a4771fcb6a0adc723924473ebbb6cd63c}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+block} \mbox{[}E\+X\+T3\+\_\+\+N\+\_\+\+B\+L\+O\+C\+KS\mbox{]}
+\item 
+\mbox{\Hypertarget{structext3__inode_a20cb4065b0fe54741659a5b89cd1c082}\label{structext3__inode_a20cb4065b0fe54741659a5b89cd1c082}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+generation}
+\item 
+\mbox{\Hypertarget{structext3__inode_aa8b86b8ac796512cfe66826d16e871d9}\label{structext3__inode_aa8b86b8ac796512cfe66826d16e871d9}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+file\+\_\+acl\+\_\+lo}
+\item 
+\mbox{\Hypertarget{structext3__inode_ae0ffbd5c268be37a6c493e3c5dd76cb5}\label{structext3__inode_ae0ffbd5c268be37a6c493e3c5dd76cb5}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+size\+\_\+high}
+\item 
+\mbox{\Hypertarget{structext3__inode_ae10b9fde075ff8b763d0dfd4cff7edde}\label{structext3__inode_ae10b9fde075ff8b763d0dfd4cff7edde}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+obso\+\_\+faddr}
+\item 
+\mbox{\Hypertarget{structext3__inode_aee92ea7dc39dab9497f711ef32f404a7}\label{structext3__inode_aee92ea7dc39dab9497f711ef32f404a7}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\_\_le16 {\bfseries l\_i\_blocks\_high}\\
+\>\>\_\_le16 {\bfseries l\_i\_file\_acl\_high}\\
+\>\>\_\_le16 {\bfseries l\_i\_uid\_high}\\
+\>\>\_\_le16 {\bfseries l\_i\_gid\_high}\\
+\>\>\_\_u32 {\bfseries l\_i\_reserved2}\\
+\>\} {\bfseries linux2}\\
+\>struct \{\\
+\>\>\_\_le16 {\bfseries h\_i\_reserved1}\\
+\>\>\_\_u16 {\bfseries h\_i\_mode\_high}\\
+\>\>\_\_u16 {\bfseries h\_i\_uid\_high}\\
+\>\>\_\_u16 {\bfseries h\_i\_gid\_high}\\
+\>\>\_\_u32 {\bfseries h\_i\_author}\\
+\>\} {\bfseries hurd2}\\
+\>struct \{\\
+\>\>\_\_le16 {\bfseries h\_i\_reserved1}\\
+\>\>\_\_le16 {\bfseries m\_i\_file\_acl\_high}\\
+\>\>\_\_u32 {\bfseries m\_i\_reserved2} \mbox{[}2\mbox{]}\\
+\>\} {\bfseries masix2}\\
+\} {\bfseries osd2}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structext3__inode_aa09ff6df1f86fec5ed80364f45f59b3c}\label{structext3__inode_aa09ff6df1f86fec5ed80364f45f59b3c}} 
+\+\_\+\+\_\+le16 {\bfseries i\+\_\+extra\+\_\+isize}
+\item 
+\mbox{\Hypertarget{structext3__inode_a89438e781531925f1e82bb357f044a68}\label{structext3__inode_a89438e781531925f1e82bb357f044a68}} 
+\+\_\+\+\_\+le16 {\bfseries i\+\_\+pad1}
+\item 
+\mbox{\Hypertarget{structext3__inode_a66ea2e7fafaa82be6a69cef783fb2e63}\label{structext3__inode_a66ea2e7fafaa82be6a69cef783fb2e63}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+ctime\+\_\+extra}
+\item 
+\mbox{\Hypertarget{structext3__inode_a462106fa2bc642183c98b096bb31f5b9}\label{structext3__inode_a462106fa2bc642183c98b096bb31f5b9}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+mtime\+\_\+extra}
+\item 
+\mbox{\Hypertarget{structext3__inode_a10d9383542bd3e774b2a7854615dd931}\label{structext3__inode_a10d9383542bd3e774b2a7854615dd931}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+atime\+\_\+extra}
+\item 
+\mbox{\Hypertarget{structext3__inode_aaf7f6c6568e537281135dc1108dcd9b4}\label{structext3__inode_aaf7f6c6568e537281135dc1108dcd9b4}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+crtime}
+\item 
+\mbox{\Hypertarget{structext3__inode_a32cf1fa2e023c448fda1af36d0d52bf7}\label{structext3__inode_a32cf1fa2e023c448fda1af36d0d52bf7}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+crtime\+\_\+extra}
+\item 
+\mbox{\Hypertarget{structext3__inode_a8bfabb3c4d226efca0ffd0d354f4dade}\label{structext3__inode_a8bfabb3c4d226efca0ffd0d354f4dade}} 
+\+\_\+\+\_\+le32 {\bfseries i\+\_\+version\+\_\+hi}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/ext2/inc/linux/ext3\+\_\+fs.\+h\end{DoxyCompactItemize}

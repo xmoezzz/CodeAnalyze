@@ -1,0 +1,378 @@
+\hypertarget{hmac__drbg_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/include/reactos/libs/mbedtls/hmac\+\_\+drbg.h 文件参考}
+\label{hmac__drbg_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/hmac\+\_\+drbg.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/hmac\+\_\+drbg.\+h}}
+
+
+H\+M\+A\+C\+\_\+\+D\+R\+BG (N\+I\+ST SP 800-\/90A)  
+
+
+{\ttfamily \#include \char`\"{}md.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_a9b2cc8521b7ac670ecf41c3788b0d847}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}~-\/0x0003
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_a0afd76b63cb8715577ba44de755af1fe}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}~-\/0x0005
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_ae5ccb23af2f8faf60deb292208af66f7}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR}~-\/0x0007
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_ac384cdd999b9733a5e4a8112c4f14291}{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED}~-\/0x0009
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_acbb59dffae4915b9a17142aaed752c57}{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF}~0
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_ac8c4bb0b84fb1c848cdb5fa240ef5e22}{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON}~1
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ S\+E\+C\+T\+I\+ON\+: Module settings}\par
+{\em The configuration options you can set for this module are in this section. Either change them in config.\+h or define them on the compiler command line. }\begin{DoxyCompactItemize}
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_aa7b7ad2ef442817cc4d48909c39a97e0}{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL}~10000
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_a10b5abc1576c6a9fa766ce1e01d6e54f}{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+UT}~256
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_a3d3785a3eef7b56ca25df77a3912fbb4}{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+Q\+U\+E\+ST}~1024
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{hmac__drbg_8h_a8d52d7d5113feb2f54eda19dfd97a942}{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+S\+E\+E\+D\+\_\+\+I\+N\+P\+UT}~384
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{hmac__drbg_8h_a10881c328300a9ddb7cd5fe359c18acd}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em H\+M\+A\+C\+\_\+\+D\+R\+BG context initialization Makes the context ready for \hyperlink{hmac__drbg_8h_a0af34e5c68f15dfe714b5da94bce8f74}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed()}, \hyperlink{hmac__drbg_8h_a45cb3ab23ff6058a4e14f4140ca9f0f4}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf()} or \hyperlink{hmac__drbg_8h_a41e1f127304b1228d9f134d38e200e8a}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free()}. \end{DoxyCompactList}\item 
+int \hyperlink{hmac__drbg_8h_a0af34e5c68f15dfe714b5da94bce8f74}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx, const \hyperlink{structmbedtls__md__info__t}{mbedtls\+\_\+md\+\_\+info\+\_\+t} $\ast$md\+\_\+info, int($\ast$f\+\_\+entropy)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t), \hyperlink{interfacevoid}{void} $\ast$p\+\_\+entropy, const unsigned char $\ast$custom, size\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em H\+M\+A\+C\+\_\+\+D\+R\+BG initial seeding Seed and setup entropy source for future reseeds. \end{DoxyCompactList}\item 
+int \hyperlink{hmac__drbg_8h_a45cb3ab23ff6058a4e14f4140ca9f0f4}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx, const \hyperlink{structmbedtls__md__info__t}{mbedtls\+\_\+md\+\_\+info\+\_\+t} $\ast$md\+\_\+info, const unsigned char $\ast$data, size\+\_\+t data\+\_\+len)
+\begin{DoxyCompactList}\small\item\em Initilisation of simpified H\+M\+A\+C\+\_\+\+D\+R\+BG (never reseeds). (For use with deterministic E\+C\+D\+SA.) \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{hmac__drbg_8h_a0a874c42e24bd02c9805be58b3f04083}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+prediction\+\_\+resistance} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx, int resistance)
+\begin{DoxyCompactList}\small\item\em Enable / disable prediction resistance (Default\+: Off) \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{hmac__drbg_8h_a6a396cfe0ab81e07dd676ff75163b474}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+entropy\+\_\+len} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx, size\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Set the amount of entropy grabbed on each reseed (Default\+: given by the security strength, which depends on the hash used, see {\ttfamily \hyperlink{hmac__drbg_8h_a10881c328300a9ddb7cd5fe359c18acd}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init()}} ) \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{hmac__drbg_8h_a17f9f894c4765e75d66b5b2fc8404fb2}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+reseed\+\_\+interval} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx, int interval)
+\begin{DoxyCompactList}\small\item\em Set the reseed interval (Default\+: M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL) \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{hmac__drbg_8h_a19bdd8733bf4ffdec688367c77f7befa}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+update} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx, const unsigned char $\ast$additional, size\+\_\+t add\+\_\+len)
+\begin{DoxyCompactList}\small\item\em H\+M\+A\+C\+\_\+\+D\+R\+BG update state \end{DoxyCompactList}\item 
+int \hyperlink{hmac__drbg_8h_a0bc680c3d03de1a82170a3831617b8cf}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+reseed} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx, const unsigned char $\ast$additional, size\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em H\+M\+A\+C\+\_\+\+D\+R\+BG reseeding (extracts data from entropy source) \end{DoxyCompactList}\item 
+int \hyperlink{hmac__drbg_8h_a8829c0b3f094edf8cc144c7185536cd8}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random\+\_\+with\+\_\+add} (\hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng, unsigned char $\ast$output, size\+\_\+t output\+\_\+len, const unsigned char $\ast$additional, size\+\_\+t add\+\_\+len)
+\begin{DoxyCompactList}\small\item\em H\+M\+A\+C\+\_\+\+D\+R\+BG generate random with additional update input \end{DoxyCompactList}\item 
+int \hyperlink{hmac__drbg_8h_aa66cb34019161010448c7e915a972ee6}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random} (\hyperlink{interfacevoid}{void} $\ast$p\+\_\+rng, unsigned char $\ast$output, size\+\_\+t out\+\_\+len)
+\begin{DoxyCompactList}\small\item\em H\+M\+A\+C\+\_\+\+D\+R\+BG generate random \end{DoxyCompactList}\item 
+\hyperlink{interfacevoid}{void} \hyperlink{hmac__drbg_8h_a41e1f127304b1228d9f134d38e200e8a}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free} (\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em Free an H\+M\+A\+C\+\_\+\+D\+R\+BG context \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+H\+M\+A\+C\+\_\+\+D\+R\+BG (N\+I\+ST SP 800-\/90A) 
+
+Copyright (\hyperlink{struct_c}{C}) 2006-\/2015, A\+RM Limited, All Rights Reserved S\+P\+D\+X-\/\+License-\/\+Identifier\+: G\+P\+L-\/2.\+0
+
+\hyperlink{namespace_this}{This} program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+\hyperlink{namespace_this}{This} program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR \hyperlink{struct_a}{A} P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301 U\+SA.
+
+\hyperlink{namespace_this}{This} file is part of mbed T\+LS (\href{https://tls.mbed.org}{\tt https\+://tls.\+mbed.\+org}) 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{hmac__drbg_8h_ac384cdd999b9733a5e4a8112c4f14291}\label{hmac__drbg_8h_ac384cdd999b9733a5e4a8112c4f14291}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED}{MBEDTLS\_ERR\_HMAC\_DRBG\_ENTROPY\_SOURCE\_FAILED}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED~-\/0x0009}
+
+The entropy source failed. \mbox{\Hypertarget{hmac__drbg_8h_ae5ccb23af2f8faf60deb292208af66f7}\label{hmac__drbg_8h_ae5ccb23af2f8faf60deb292208af66f7}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR}{MBEDTLS\_ERR\_HMAC\_DRBG\_FILE\_IO\_ERROR}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR~-\/0x0007}
+
+Read/write error in file. \mbox{\Hypertarget{hmac__drbg_8h_a0afd76b63cb8715577ba44de755af1fe}\label{hmac__drbg_8h_a0afd76b63cb8715577ba44de755af1fe}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}{MBEDTLS\_ERR\_HMAC\_DRBG\_INPUT\_TOO\_BIG}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG~-\/0x0005}
+
+Input too large (Entropy + additional). \mbox{\Hypertarget{hmac__drbg_8h_a9b2cc8521b7ac670ecf41c3788b0d847}\label{hmac__drbg_8h_a9b2cc8521b7ac670ecf41c3788b0d847}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG@{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG}{MBEDTLS\_ERR\_HMAC\_DRBG\_REQUEST\_TOO\_BIG}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG~-\/0x0003}
+
+Too many random requested in single call. \mbox{\Hypertarget{hmac__drbg_8h_a10b5abc1576c6a9fa766ce1e01d6e54f}\label{hmac__drbg_8h_a10b5abc1576c6a9fa766ce1e01d6e54f}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+UT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+UT}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+UT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+UT}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+UT}{MBEDTLS\_HMAC\_DRBG\_MAX\_INPUT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+UT~256}
+
+Maximum number of additional input bytes \mbox{\Hypertarget{hmac__drbg_8h_a3d3785a3eef7b56ca25df77a3912fbb4}\label{hmac__drbg_8h_a3d3785a3eef7b56ca25df77a3912fbb4}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+Q\+U\+E\+ST@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+Q\+U\+E\+ST}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+Q\+U\+E\+ST@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+Q\+U\+E\+ST}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+Q\+U\+E\+ST}{MBEDTLS\_HMAC\_DRBG\_MAX\_REQUEST}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+R\+E\+Q\+U\+E\+ST~1024}
+
+Maximum number of requested bytes per call \mbox{\Hypertarget{hmac__drbg_8h_a8d52d7d5113feb2f54eda19dfd97a942}\label{hmac__drbg_8h_a8d52d7d5113feb2f54eda19dfd97a942}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+S\+E\+E\+D\+\_\+\+I\+N\+P\+UT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+S\+E\+E\+D\+\_\+\+I\+N\+P\+UT}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+S\+E\+E\+D\+\_\+\+I\+N\+P\+UT@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+S\+E\+E\+D\+\_\+\+I\+N\+P\+UT}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+S\+E\+E\+D\+\_\+\+I\+N\+P\+UT}{MBEDTLS\_HMAC\_DRBG\_MAX\_SEED\_INPUT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+M\+A\+X\+\_\+\+S\+E\+E\+D\+\_\+\+I\+N\+P\+UT~384}
+
+Maximum size of (re)seed buffer \mbox{\Hypertarget{hmac__drbg_8h_acbb59dffae4915b9a17142aaed752c57}\label{hmac__drbg_8h_acbb59dffae4915b9a17142aaed752c57}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF}{MBEDTLS\_HMAC\_DRBG\_PR\_OFF}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF~0}
+
+No prediction resistance \mbox{\Hypertarget{hmac__drbg_8h_ac8c4bb0b84fb1c848cdb5fa240ef5e22}\label{hmac__drbg_8h_ac8c4bb0b84fb1c848cdb5fa240ef5e22}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON}{MBEDTLS\_HMAC\_DRBG\_PR\_ON}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON~1}
+
+Prediction resistance enabled \mbox{\Hypertarget{hmac__drbg_8h_aa7b7ad2ef442817cc4d48909c39a97e0}\label{hmac__drbg_8h_aa7b7ad2ef442817cc4d48909c39a97e0}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL}}
+\index{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL@{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL}{MBEDTLS\_HMAC\_DRBG\_RESEED\_INTERVAL}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL~10000}
+
+Interval before reseed is performed by default 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{hmac__drbg_8h_a41e1f127304b1228d9f134d38e200e8a}\label{hmac__drbg_8h_a41e1f127304b1228d9f134d38e200e8a}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free()}{mbedtls\_hmac\_drbg\_free()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Free an H\+M\+A\+C\+\_\+\+D\+R\+BG context 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context to free. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{hmac__drbg_8h_a10881c328300a9ddb7cd5fe359c18acd}\label{hmac__drbg_8h_a10881c328300a9ddb7cd5fe359c18acd}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init()}{mbedtls\_hmac\_drbg\_init()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+
+
+H\+M\+A\+C\+\_\+\+D\+R\+BG context initialization Makes the context ready for \hyperlink{hmac__drbg_8h_a0af34e5c68f15dfe714b5da94bce8f74}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed()}, \hyperlink{hmac__drbg_8h_a45cb3ab23ff6058a4e14f4140ca9f0f4}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf()} or \hyperlink{hmac__drbg_8h_a41e1f127304b1228d9f134d38e200e8a}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+free()}. 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context to be initialized \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{hmac__drbg_8h_aa66cb34019161010448c7e915a972ee6}\label{hmac__drbg_8h_aa66cb34019161010448c7e915a972ee6}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random()}{mbedtls\_hmac\_drbg\_random()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void} $\ast$}]{p\+\_\+rng,  }\item[{unsigned char $\ast$}]{output,  }\item[{size\+\_\+t}]{out\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+H\+M\+A\+C\+\_\+\+D\+R\+BG generate random 
+
+Note\+: Automatically reseeds if reseed\+\_\+counter is reached or PR is enabled.
+
+
+\begin{DoxyParams}{参数}
+{\em p\+\_\+rng} & H\+M\+A\+C\+\_\+\+D\+R\+BG context \\
+\hline
+{\em output} & \hyperlink{class_buffer}{Buffer} to fill \\
+\hline
+{\em out\+\_\+len} & Length of the buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hmac__drbg_8h_a8829c0b3f094edf8cc144c7185536cd8}\label{hmac__drbg_8h_a8829c0b3f094edf8cc144c7185536cd8}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random\+\_\+with\+\_\+add@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random\+\_\+with\+\_\+add}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random\+\_\+with\+\_\+add@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random\+\_\+with\+\_\+add}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random\+\_\+with\+\_\+add()}{mbedtls\_hmac\_drbg\_random\_with\_add()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+hmac\+\_\+drbg\+\_\+random\+\_\+with\+\_\+add (\begin{DoxyParamCaption}\item[{\hyperlink{interfacevoid}{void} $\ast$}]{p\+\_\+rng,  }\item[{unsigned char $\ast$}]{output,  }\item[{size\+\_\+t}]{output\+\_\+len,  }\item[{const unsigned char $\ast$}]{additional,  }\item[{size\+\_\+t}]{add\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+H\+M\+A\+C\+\_\+\+D\+R\+BG generate random with additional update input 
+
+Note\+: Automatically reseeds if reseed\+\_\+counter is reached or PR is enabled.
+
+
+\begin{DoxyParams}{参数}
+{\em p\+\_\+rng} & H\+M\+A\+C\+\_\+\+D\+R\+BG context \\
+\hline
+{\em output} & \hyperlink{class_buffer}{Buffer} to fill \\
+\hline
+{\em output\+\_\+len} & Length of the buffer \\
+\hline
+{\em additional} & Additional data to update with (can be N\+U\+LL) \\
+\hline
+{\em add\+\_\+len} & Length of additional data (can be 0)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+O\+O\+\_\+\+B\+IG. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hmac__drbg_8h_a0bc680c3d03de1a82170a3831617b8cf}\label{hmac__drbg_8h_a0bc680c3d03de1a82170a3831617b8cf}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+reseed@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+reseed}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+reseed@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+reseed}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+reseed()}{mbedtls\_hmac\_drbg\_reseed()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+hmac\+\_\+drbg\+\_\+reseed (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx,  }\item[{const unsigned char $\ast$}]{additional,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+H\+M\+A\+C\+\_\+\+D\+R\+BG reseeding (extracts data from entropy source) 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context \\
+\hline
+{\em additional} & Additional data to add to state (Can be N\+U\+LL) \\
+\hline
+{\em len} & Length of additional data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hmac__drbg_8h_a0af34e5c68f15dfe714b5da94bce8f74}\label{hmac__drbg_8h_a0af34e5c68f15dfe714b5da94bce8f74}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed()}{mbedtls\_hmac\_drbg\_seed()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx,  }\item[{const \hyperlink{structmbedtls__md__info__t}{mbedtls\+\_\+md\+\_\+info\+\_\+t} $\ast$}]{md\+\_\+info,  }\item[{int($\ast$)(\hyperlink{interfacevoid}{void} $\ast$, unsigned char $\ast$, size\+\_\+t)}]{f\+\_\+entropy,  }\item[{\hyperlink{interfacevoid}{void} $\ast$}]{p\+\_\+entropy,  }\item[{const unsigned char $\ast$}]{custom,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+H\+M\+A\+C\+\_\+\+D\+R\+BG initial seeding Seed and setup entropy source for future reseeds. 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context to be seeded \\
+\hline
+{\em md\+\_\+info} & MD algorithm to use for H\+M\+A\+C\+\_\+\+D\+R\+BG \\
+\hline
+{\em f\+\_\+entropy} & Entropy callback (p\+\_\+entropy, buffer to fill, buffer length) \\
+\hline
+{\em p\+\_\+entropy} & Entropy context \\
+\hline
+{\em custom} & Personalization data (Device specific identifiers) (Can be N\+U\+LL) \\
+\hline
+{\em len} & Length of personalization data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+The \char`\"{}security strength\char`\"{} as defined by N\+I\+ST is set to\+: 128 bits if md\+\_\+alg is S\+H\+A-\/1, 192 bits if md\+\_\+alg is S\+H\+A-\/224, 256 bits if md\+\_\+alg is S\+H\+A-\/256 or higher. Note that S\+H\+A-\/256 is just as efficient as S\+H\+A-\/224.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+0 if successful, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+M\+D\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+M\+D\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+E\+N\+T\+R\+O\+P\+Y\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+A\+I\+L\+ED. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hmac__drbg_8h_a45cb3ab23ff6058a4e14f4140ca9f0f4}\label{hmac__drbg_8h_a45cb3ab23ff6058a4e14f4140ca9f0f4}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf()}{mbedtls\_hmac\_drbg\_seed\_buf()}}
+{\footnotesize\ttfamily int mbedtls\+\_\+hmac\+\_\+drbg\+\_\+seed\+\_\+buf (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx,  }\item[{const \hyperlink{structmbedtls__md__info__t}{mbedtls\+\_\+md\+\_\+info\+\_\+t} $\ast$}]{md\+\_\+info,  }\item[{const unsigned char $\ast$}]{data,  }\item[{size\+\_\+t}]{data\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+Initilisation of simpified H\+M\+A\+C\+\_\+\+D\+R\+BG (never reseeds). (For use with deterministic E\+C\+D\+SA.) 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context to be initialised \\
+\hline
+{\em md\+\_\+info} & MD algorithm to use for H\+M\+A\+C\+\_\+\+D\+R\+BG \\
+\hline
+{\em data} & Concatenation of entropy string and additional data \\
+\hline
+{\em data\+\_\+len} & Length of data in bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0 if successful, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+M\+D\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA, or M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+M\+D\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hmac__drbg_8h_a6a396cfe0ab81e07dd676ff75163b474}\label{hmac__drbg_8h_a6a396cfe0ab81e07dd676ff75163b474}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+entropy\+\_\+len@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+entropy\+\_\+len}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+entropy\+\_\+len@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+entropy\+\_\+len}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+entropy\+\_\+len()}{mbedtls\_hmac\_drbg\_set\_entropy\_len()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+entropy\+\_\+len (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Set the amount of entropy grabbed on each reseed (Default\+: given by the security strength, which depends on the hash used, see {\ttfamily \hyperlink{hmac__drbg_8h_a10881c328300a9ddb7cd5fe359c18acd}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+init()}} ) 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context \\
+\hline
+{\em len} & Amount of entropy to grab, in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{hmac__drbg_8h_a0a874c42e24bd02c9805be58b3f04083}\label{hmac__drbg_8h_a0a874c42e24bd02c9805be58b3f04083}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+prediction\+\_\+resistance@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+prediction\+\_\+resistance}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+prediction\+\_\+resistance@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+prediction\+\_\+resistance}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+prediction\+\_\+resistance()}{mbedtls\_hmac\_drbg\_set\_prediction\_resistance()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+prediction\+\_\+resistance (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx,  }\item[{int}]{resistance }\end{DoxyParamCaption})}
+
+
+
+Enable / disable prediction resistance (Default\+: Off) 
+
+Note\+: If enabled, entropy is used for ctx-\/$>$entropy\+\_\+len before each call! Only use this if you have ample supply of good entropy!
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context \\
+\hline
+{\em resistance} & M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+ON or M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+P\+R\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{hmac__drbg_8h_a17f9f894c4765e75d66b5b2fc8404fb2}\label{hmac__drbg_8h_a17f9f894c4765e75d66b5b2fc8404fb2}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+reseed\+\_\+interval@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+reseed\+\_\+interval}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+reseed\+\_\+interval@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+reseed\+\_\+interval}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+reseed\+\_\+interval()}{mbedtls\_hmac\_drbg\_set\_reseed\_interval()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+hmac\+\_\+drbg\+\_\+set\+\_\+reseed\+\_\+interval (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx,  }\item[{int}]{interval }\end{DoxyParamCaption})}
+
+
+
+Set the reseed interval (Default\+: M\+B\+E\+D\+T\+L\+S\+\_\+\+H\+M\+A\+C\+\_\+\+D\+R\+B\+G\+\_\+\+R\+E\+S\+E\+E\+D\+\_\+\+I\+N\+T\+E\+R\+V\+AL) 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context \\
+\hline
+{\em interval} & Reseed interval \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{hmac__drbg_8h_a19bdd8733bf4ffdec688367c77f7befa}\label{hmac__drbg_8h_a19bdd8733bf4ffdec688367c77f7befa}} 
+\index{hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}!mbedtls\+\_\+hmac\+\_\+drbg\+\_\+update@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+update}}
+\index{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+update@{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+update}!hmac\+\_\+drbg.\+h@{hmac\+\_\+drbg.\+h}}
+\subsubsection{\texorpdfstring{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+update()}{mbedtls\_hmac\_drbg\_update()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} mbedtls\+\_\+hmac\+\_\+drbg\+\_\+update (\begin{DoxyParamCaption}\item[{\hyperlink{structmbedtls__hmac__drbg__context}{mbedtls\+\_\+hmac\+\_\+drbg\+\_\+context} $\ast$}]{ctx,  }\item[{const unsigned char $\ast$}]{additional,  }\item[{size\+\_\+t}]{add\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+H\+M\+A\+C\+\_\+\+D\+R\+BG update state 
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & H\+M\+A\+C\+\_\+\+D\+R\+BG context \\
+\hline
+{\em additional} & Additional data to update state with, or N\+U\+LL \\
+\hline
+{\em add\+\_\+len} & Length of additional data, or 0\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+Additional data is optional, pass N\+U\+LL and 0 as second third argument if no additional data is being used. 
+\end{DoxyNote}

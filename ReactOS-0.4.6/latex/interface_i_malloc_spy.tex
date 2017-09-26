@@ -1,0 +1,58 @@
+\hypertarget{interface_i_malloc_spy}{}\section{I\+Malloc\+Spy接口 参考}
+\label{interface_i_malloc_spy}\index{I\+Malloc\+Spy@{I\+Malloc\+Spy}}
+类 I\+Malloc\+Spy 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_malloc_spy}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_a6d752c1239483095077c1fc5f245217d}\label{interface_i_malloc_spy_a6d752c1239483095077c1fc5f245217d}} 
+typedef \hyperlink{interface_i_malloc_spy}{I\+Malloc\+Spy} $\ast$ {\bfseries L\+P\+M\+A\+L\+L\+O\+C\+S\+PY}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_a5e8189520eb839cdc55c411c2b1b508e}\label{interface_i_malloc_spy_a5e8189520eb839cdc55c411c2b1b508e}} 
+S\+I\+Z\+E\+\_\+T {\bfseries Pre\+Alloc} (\mbox{[}in\mbox{]} S\+I\+Z\+E\+\_\+T cb\+Request)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_aba87918e3099a612e13f63f3396b7dcc}\label{interface_i_malloc_spy_aba87918e3099a612e13f63f3396b7dcc}} 
+\hyperlink{interfacevoid}{L\+P\+V\+O\+ID} {\bfseries Post\+Alloc} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Actual)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_a279ff9ea6c886af762563719734632fa}\label{interface_i_malloc_spy_a279ff9ea6c886af762563719734632fa}} 
+\hyperlink{interfacevoid}{L\+P\+V\+O\+ID} {\bfseries Pre\+Free} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Request, \mbox{[}in\mbox{]} B\+O\+OL f\+Spyed)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_a6946c6ecabca89464edd24518b83ea43}\label{interface_i_malloc_spy_a6946c6ecabca89464edd24518b83ea43}} 
+\hyperlink{interfacevoid}{void} {\bfseries Post\+Free} (\mbox{[}in\mbox{]} B\+O\+OL f\+Spyed)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_aa7b72c3a2182970bd8f145cc90689a67}\label{interface_i_malloc_spy_aa7b72c3a2182970bd8f145cc90689a67}} 
+S\+I\+Z\+E\+\_\+T {\bfseries Pre\+Realloc} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Request, \mbox{[}in\mbox{]} S\+I\+Z\+E\+\_\+T cb\+Request, \mbox{[}out\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} $\ast$pp\+New\+Request, \mbox{[}in\mbox{]} B\+O\+OL f\+Spyed)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_ad8db364a89eccc00da6914bbee69d0e9}\label{interface_i_malloc_spy_ad8db364a89eccc00da6914bbee69d0e9}} 
+\hyperlink{interfacevoid}{L\+P\+V\+O\+ID} {\bfseries Post\+Realloc} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Actual, \mbox{[}in\mbox{]} B\+O\+OL f\+Spyed)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_ae13efe5769b9326c0248c481922506e7}\label{interface_i_malloc_spy_ae13efe5769b9326c0248c481922506e7}} 
+\hyperlink{interfacevoid}{L\+P\+V\+O\+ID} {\bfseries Pre\+Get\+Size} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Request, \mbox{[}in\mbox{]} B\+O\+OL f\+Spyed)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_acab165ffc9d5bc0114fd32c98a798512}\label{interface_i_malloc_spy_acab165ffc9d5bc0114fd32c98a798512}} 
+S\+I\+Z\+E\+\_\+T {\bfseries Post\+Get\+Size} (\mbox{[}in\mbox{]} S\+I\+Z\+E\+\_\+T cb\+Actual, \mbox{[}in\mbox{]} B\+O\+OL f\+Spyed)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_a7e69f2b6a0663bd8ab3ed9019500c8ec}\label{interface_i_malloc_spy_a7e69f2b6a0663bd8ab3ed9019500c8ec}} 
+\hyperlink{interfacevoid}{L\+P\+V\+O\+ID} {\bfseries Pre\+Did\+Alloc} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Request, \mbox{[}in\mbox{]} B\+O\+OL f\+Spyed)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_ad6898a967f6520bddf5c06257c01ba89}\label{interface_i_malloc_spy_ad6898a967f6520bddf5c06257c01ba89}} 
+int {\bfseries Post\+Did\+Alloc} (\mbox{[}in\mbox{]} \hyperlink{interfacevoid}{L\+P\+V\+O\+ID} p\+Request, \mbox{[}in\mbox{]} B\+O\+OL f\+Spyed, \mbox{[}in\mbox{]} int f\+Actual)
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_aaa2611f42c896996fc8cc6a49ed0ae78}\label{interface_i_malloc_spy_aaa2611f42c896996fc8cc6a49ed0ae78}} 
+\hyperlink{interfacevoid}{void} {\bfseries Pre\+Heap\+Minimize} ()
+\item 
+\mbox{\Hypertarget{interface_i_malloc_spy_a7d439b30033f76cad1a43f7ee01430f5}\label{interface_i_malloc_spy_a7d439b30033f76cad1a43f7ee01430f5}} 
+\hyperlink{interfacevoid}{void} {\bfseries Post\+Heap\+Minimize} ()
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/objidl.\+idl\end{DoxyCompactItemize}

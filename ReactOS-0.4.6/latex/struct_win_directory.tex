@@ -1,0 +1,45 @@
+\hypertarget{struct_win_directory}{}\section{Win\+Directory结构体 参考}
+\label{struct_win_directory}\index{Win\+Directory@{Win\+Directory}}
+
+
+Windows file system directory-\/entry  
+
+
+
+
+{\ttfamily \#include $<$winfs.\+h$>$}
+
+类 Win\+Directory 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_win_directory}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_win_directory_af6a7b2e6701853dfebb0f3122af3c13a}\label{struct_win_directory_af6a7b2e6701853dfebb0f3122af3c13a}} 
+{\bfseries Win\+Directory} (L\+P\+C\+T\+S\+TR root\+\_\+path)
+\item 
+\mbox{\Hypertarget{struct_win_directory_af24523810709e87423956ce01badc1f9}\label{struct_win_directory_af24523810709e87423956ce01badc1f9}} 
+{\bfseries Win\+Directory} (\hyperlink{struct_entry}{Entry} $\ast$parent, L\+P\+C\+T\+S\+TR \hyperlink{structpath}{path})
+\item 
+\mbox{\Hypertarget{struct_win_directory_a5af65181d64ec14e5c523b359c932bec}\label{struct_win_directory_a5af65181d64ec14e5c523b359c932bec}} 
+virtual \hyperlink{interfacevoid}{void} {\bfseries read\+\_\+directory} (int scan\+\_\+flags=0)
+\item 
+\mbox{\Hypertarget{struct_win_directory_a273b083cf2d727fc1426bfee52656692}\label{struct_win_directory_a273b083cf2d727fc1426bfee52656692}} 
+virtual const \hyperlink{interfacevoid}{void} $\ast$ {\bfseries get\+\_\+next\+\_\+path\+\_\+component} (const \hyperlink{interfacevoid}{void} $\ast$) const
+\item 
+\mbox{\Hypertarget{struct_win_directory_a55f3eb4302902464227538b3a5357d51}\label{struct_win_directory_a55f3eb4302902464227538b3a5357d51}} 
+virtual \hyperlink{struct_entry}{Entry} $\ast$ {\bfseries find\+\_\+entry} (const \hyperlink{interfacevoid}{void} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Windows file system directory-\/entry 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/winfs.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/winfs.\+cpp\end{DoxyCompactItemize}

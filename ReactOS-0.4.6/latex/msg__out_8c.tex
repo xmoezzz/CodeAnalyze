@@ -1,0 +1,13 @@
+\hypertarget{msg__out_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/snmp/msg\+\_\+out.c 文件参考}
+\label{msg__out_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/snmp/msg\+\_\+out.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/snmp/msg\+\_\+out.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+
+
+\subsection{详细描述}
+S\+N\+MP output message processing (R\+F\+C1157).
+
+Output responses and traps are build in two passes\+:
+
+Pass 0\+: iterate over the output message backwards to determine encoding lengths Pass 1\+: the actual forward encoding of internal form into A\+S\+N1
+
+The single-\/pass encoding method described by Comer \& Stevens requires extra buffer space and copying for reversal of the packet. The buffer requirement can be prohibitively large for big payloads ($>$= 484) therefore we use the two encoding passes. 

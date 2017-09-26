@@ -1,0 +1,71 @@
+\hypertarget{interface_i_audio_endpoint_volume}{}\section{I\+Audio\+Endpoint\+Volume接口 参考}
+\label{interface_i_audio_endpoint_volume}\index{I\+Audio\+Endpoint\+Volume@{I\+Audio\+Endpoint\+Volume}}
+类 I\+Audio\+Endpoint\+Volume 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_i_audio_endpoint_volume}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_addfc54b0d5a5262df34fdf37c9f08f34}\label{interface_i_audio_endpoint_volume_addfc54b0d5a5262df34fdf37c9f08f34}} 
+H\+R\+E\+S\+U\+LT {\bfseries Register\+Control\+Change\+Notify} (\mbox{[}in\mbox{]} \hyperlink{interface_i_audio_endpoint_volume_callback}{I\+Audio\+Endpoint\+Volume\+Callback} $\ast$p\+Notify)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a4e7985f9b44e223053f58f2428702592}\label{interface_i_audio_endpoint_volume_a4e7985f9b44e223053f58f2428702592}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unregister\+Control\+Change\+Notify} (\mbox{[}in\mbox{]} \hyperlink{interface_i_audio_endpoint_volume_callback}{I\+Audio\+Endpoint\+Volume\+Callback} $\ast$p\+Notify)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_adb5a2c52c24162582e83a1a98d65c9b2}\label{interface_i_audio_endpoint_volume_adb5a2c52c24162582e83a1a98d65c9b2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Channel\+Count} (\mbox{[}out\mbox{]} U\+I\+NT $\ast$pn\+Channel\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a8cafbfbfdf84d95317e38c20bdf2c847}\label{interface_i_audio_endpoint_volume_a8cafbfbfdf84d95317e38c20bdf2c847}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Master\+Volume\+Level} (\mbox{[}in\mbox{]} F\+L\+O\+AT f\+Level\+DB, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} pguid\+Event\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_ae7d5ec0cfe6ca60612370c742b2208b1}\label{interface_i_audio_endpoint_volume_ae7d5ec0cfe6ca60612370c742b2208b1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Master\+Volume\+Level\+Scalar} (\mbox{[}in\mbox{]} F\+L\+O\+AT f\+Level, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} pguid\+Event\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_afb035f4bfd45792638e5997255a542bf}\label{interface_i_audio_endpoint_volume_afb035f4bfd45792638e5997255a542bf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Master\+Volume\+Level} (\mbox{[}out\mbox{]} F\+L\+O\+AT $\ast$f\+Level\+DB)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_ac935293c1913ab707fabc36a65ecd305}\label{interface_i_audio_endpoint_volume_ac935293c1913ab707fabc36a65ecd305}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Master\+Volume\+Level\+Scalar} (\mbox{[}out\mbox{]} F\+L\+O\+AT $\ast$f\+Level)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_ae5a3f299a694baec68ce325e39a0fa9c}\label{interface_i_audio_endpoint_volume_ae5a3f299a694baec68ce325e39a0fa9c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Channel\+Volume\+Level} (\mbox{[}in\mbox{]} U\+I\+NT n\+Channel, \mbox{[}in\mbox{]} F\+L\+O\+AT f\+Level\+DB, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} pguid\+Event\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a4ba7ad45bd2445a96a3f9f69c9076c52}\label{interface_i_audio_endpoint_volume_a4ba7ad45bd2445a96a3f9f69c9076c52}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Channel\+Volume\+Level\+Scalar} (\mbox{[}in\mbox{]} U\+I\+NT n\+Channel, \mbox{[}in\mbox{]} F\+L\+O\+AT f\+Level, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} pguid\+Event\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a831242279853ba15f68989358394d521}\label{interface_i_audio_endpoint_volume_a831242279853ba15f68989358394d521}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Channel\+Volume\+Level} (\mbox{[}in\mbox{]} U\+I\+NT n\+Channel, \mbox{[}out\mbox{]} F\+L\+O\+AT $\ast$f\+Level\+DB)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a5c71763cef85a42e4a2bbee7694f3503}\label{interface_i_audio_endpoint_volume_a5c71763cef85a42e4a2bbee7694f3503}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Channel\+Volume\+Level\+Scalar} (\mbox{[}in\mbox{]} U\+I\+NT n\+Channel, \mbox{[}out\mbox{]} F\+L\+O\+AT $\ast$f\+Level)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a008d85a2fd8b43a7a9bde215916b2fb9}\label{interface_i_audio_endpoint_volume_a008d85a2fd8b43a7a9bde215916b2fb9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Mute} (\mbox{[}in\mbox{]} B\+O\+OL b\+Mute, \mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} pguid\+Event\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a0708d9dd870b3d360dfa059ad5430289}\label{interface_i_audio_endpoint_volume_a0708d9dd870b3d360dfa059ad5430289}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Mute} (\mbox{[}out\mbox{]} B\+O\+OL $\ast$b\+Mute)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_ad868382e9be97582bb611818c11aecc4}\label{interface_i_audio_endpoint_volume_ad868382e9be97582bb611818c11aecc4}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Volume\+Step\+Info} (\mbox{[}out\mbox{]} U\+I\+NT $\ast$pn\+Step, \mbox{[}out\mbox{]} U\+I\+NT $\ast$pn\+Step\+Count)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_ac77e4dc91702fe851cb5e6d07a61d46c}\label{interface_i_audio_endpoint_volume_ac77e4dc91702fe851cb5e6d07a61d46c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Volume\+Step\+Up} (\mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} pguid\+Event\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a1fe1b225ae2700b36451807ac19e9adc}\label{interface_i_audio_endpoint_volume_a1fe1b225ae2700b36451807ac19e9adc}} 
+H\+R\+E\+S\+U\+LT {\bfseries Volume\+Step\+Down} (\mbox{[}\hyperlink{interfaceunique}{unique}, in\mbox{]} \hyperlink{interface_g_u_i_d}{L\+P\+C\+G\+U\+ID} pguid\+Event\+Context)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_a098b2cc100381b36f803b278e9ac0121}\label{interface_i_audio_endpoint_volume_a098b2cc100381b36f803b278e9ac0121}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Hardware\+Support} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Hardware\+Support\+Mask)
+\item 
+\mbox{\Hypertarget{interface_i_audio_endpoint_volume_ac81d865a4f518024ba8771b8ce01a770}\label{interface_i_audio_endpoint_volume_ac81d865a4f518024ba8771b8ce01a770}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Volume\+Range} (\mbox{[}out\mbox{]} F\+L\+O\+AT $\ast$pfl\+Volume\+MindB, \mbox{[}out\mbox{]} F\+L\+O\+AT $\ast$pfl\+Volume\+MaxdB, \mbox{[}out\mbox{]} F\+L\+O\+AT $\ast$pfl\+Volume\+IncrementdB)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/endpointvolume.\+idl\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{unionacpi__object}{}\section{acpi\+\_\+object联合体 参考}
+\label{unionacpi__object}\index{acpi\+\_\+object@{acpi\+\_\+object}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{unionacpi__object_aa61067bff2fc99cf7f2e469dc92d0114}\label{unionacpi__object_aa61067bff2fc99cf7f2e469dc92d0114}} 
+A\+C\+P\+I\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE {\bfseries Type}
+\item 
+\mbox{\Hypertarget{unionacpi__object_aab2db84403ffc4bcbe6d31b5c5a1d181}\label{unionacpi__object_aab2db84403ffc4bcbe6d31b5c5a1d181}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>ACPI\_OBJECT\_TYPE {\bfseries Type}\\
+\>\hyperlink{_processor_bind_8h_a57be03562867144161c1bfee95ca8f7c}{UINT64} {\bfseries Value}\\
+\} {\bfseries Integer}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionacpi__object_a738373372ac397ad50173ba400cf0c75}\label{unionacpi__object_a738373372ac397ad50173ba400cf0c75}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>ACPI\_OBJECT\_TYPE {\bfseries Type}\\
+\>\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{UINT32} {\bfseries Length}\\
+\>char $\ast$ {\bfseries Pointer}\\
+\} {\bfseries String}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionacpi__object_ae8307ac80aa639ca010dfddce079bf82}\label{unionacpi__object_ae8307ac80aa639ca010dfddce079bf82}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>ACPI\_OBJECT\_TYPE {\bfseries Type}\\
+\>\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{UINT32} {\bfseries Length}\\
+\>\hyperlink{_processor_bind_8h_ab27e9918b538ce9d8ca692479b375b6a}{UINT8} $\ast$ {\bfseries Pointer}\\
+\} {\bfseries Buffer}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionacpi__object_aaefffbf22875e82644128ef4c6ced688}\label{unionacpi__object_aaefffbf22875e82644128ef4c6ced688}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>ACPI\_OBJECT\_TYPE {\bfseries Type}\\
+\>\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{UINT32} {\bfseries Count}\\
+\>union \hyperlink{unionacpi__object}{acpi\_object} $\ast$ {\bfseries Elements}\\
+\} {\bfseries Package}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionacpi__object_a0bb4df2840342f36cbeb529fb6ce5931}\label{unionacpi__object_a0bb4df2840342f36cbeb529fb6ce5931}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>ACPI\_OBJECT\_TYPE {\bfseries Type}\\
+\>ACPI\_OBJECT\_TYPE {\bfseries ActualType}\\
+\>\hyperlink{interfacevoid}{ACPI\_HANDLE} {\bfseries Handle}\\
+\} {\bfseries Reference}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionacpi__object_a6d3557527f1e50421a3270a2120b29c5}\label{unionacpi__object_a6d3557527f1e50421a3270a2120b29c5}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>ACPI\_OBJECT\_TYPE {\bfseries Type}\\
+\>\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{UINT32} {\bfseries ProcId}\\
+\>ACPI\_IO\_ADDRESS {\bfseries PblkAddress}\\
+\>\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{UINT32} {\bfseries PblkLength}\\
+\} {\bfseries Processor}\\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionacpi__object_a247b4757b4a0d32a6fa83eea31a50f35}\label{unionacpi__object_a247b4757b4a0d32a6fa83eea31a50f35}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>ACPI\_OBJECT\_TYPE {\bfseries Type}\\
+\>\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{UINT32} {\bfseries SystemLevel}\\
+\>\hyperlink{_processor_bind_8h_ae1e6edbbc26d6fbc71a90190d0266018}{UINT32} {\bfseries ResourceOrder}\\
+\} {\bfseries PowerResource}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+该联合体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/bus/acpi/acpica/include/actypes.\+h\end{DoxyCompactItemize}

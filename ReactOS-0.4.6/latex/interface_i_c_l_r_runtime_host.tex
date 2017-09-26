@@ -1,0 +1,44 @@
+\hypertarget{interface_i_c_l_r_runtime_host}{}\section{I\+C\+L\+R\+Runtime\+Host接口 参考}
+\label{interface_i_c_l_r_runtime_host}\index{I\+C\+L\+R\+Runtime\+Host@{I\+C\+L\+R\+Runtime\+Host}}
+类 I\+C\+L\+R\+Runtime\+Host 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_c_l_r_runtime_host}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_af77f0b838dcef1e16354e1a967b287c7}\label{interface_i_c_l_r_runtime_host_af77f0b838dcef1e16354e1a967b287c7}} 
+H\+R\+E\+S\+U\+LT {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_a45a272f2f6b8a8a34a5c57c64e0413d6}\label{interface_i_c_l_r_runtime_host_a45a272f2f6b8a8a34a5c57c64e0413d6}} 
+H\+R\+E\+S\+U\+LT {\bfseries Stop} ()
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_a5bf66203a08136a7f37404a7016a7f5f}\label{interface_i_c_l_r_runtime_host_a5bf66203a08136a7f37404a7016a7f5f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Host\+Control} (\mbox{[}in\mbox{]} \hyperlink{interface_i_host_control}{I\+Host\+Control} $\ast$p\+Host\+Control)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_a76c5f37c9e57ed451b957c33fbd23c2c}\label{interface_i_c_l_r_runtime_host_a76c5f37c9e57ed451b957c33fbd23c2c}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+C\+L\+R\+Control} (\mbox{[}out\mbox{]} \hyperlink{interface_i_c_l_r_control}{I\+C\+L\+R\+Control} $\ast$$\ast$p\+C\+L\+R\+Control)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_a42d40cab498f1bc0ce6b27f4b0b3e047}\label{interface_i_c_l_r_runtime_host_a42d40cab498f1bc0ce6b27f4b0b3e047}} 
+H\+R\+E\+S\+U\+LT {\bfseries Unload\+App\+Domain} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+App\+Domain\+Id, \mbox{[}in\mbox{]} B\+O\+OL f\+Wait\+Until\+Done)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_a31b1d3b2f67bbc80ae5b799b63ce4afe}\label{interface_i_c_l_r_runtime_host_a31b1d3b2f67bbc80ae5b799b63ce4afe}} 
+H\+R\+E\+S\+U\+LT {\bfseries Execute\+In\+App\+Domain} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+App\+Domain\+Id, \mbox{[}in\mbox{]} F\+Execute\+In\+App\+Domain\+Callback p\+Callback, \mbox{[}in\mbox{]} \hyperlink{interfacevoid}{void} $\ast$cookie)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_acfae374f2f7c8249176f6f32827bcbfb}\label{interface_i_c_l_r_runtime_host_acfae374f2f7c8249176f6f32827bcbfb}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Current\+App\+Domain\+Id} (\mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+App\+Domain\+Id)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_a422bd8ef26fb04f83c283917c3e2d58b}\label{interface_i_c_l_r_runtime_host_a422bd8ef26fb04f83c283917c3e2d58b}} 
+H\+R\+E\+S\+U\+LT {\bfseries Execute\+Application} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+App\+Full\+Name, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Manifest\+Paths, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR $\ast$ppwz\+Manifest\+Paths, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Activation\+Data, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR $\ast$ppwz\+Activation\+Data, \mbox{[}out\mbox{]} int $\ast$p\+Return\+Value)
+\item 
+\mbox{\Hypertarget{interface_i_c_l_r_runtime_host_ac01505199f107a973315e2bf8a25b1e2}\label{interface_i_c_l_r_runtime_host_ac01505199f107a973315e2bf8a25b1e2}} 
+H\+R\+E\+S\+U\+LT {\bfseries Execute\+In\+Default\+App\+Domain} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Assembly\+Path, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Type\+Name, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Method\+Name, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwz\+Argument, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$p\+Return\+Value)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/mscoree.\+idl\end{DoxyCompactItemize}

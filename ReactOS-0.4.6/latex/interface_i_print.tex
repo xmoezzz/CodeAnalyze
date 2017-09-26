@@ -1,0 +1,59 @@
+\hypertarget{interface_i_print}{}\section{I\+Print接口 参考}
+\label{interface_i_print}\index{I\+Print@{I\+Print}}
+类 I\+Print 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_print}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_print_1_1tag_p_a_g_e_r_a_n_g_e}{tag\+P\+A\+G\+E\+R\+A\+N\+GE}
+\item 
+struct \hyperlink{struct_i_print_1_1tag_p_a_g_e_s_e_t}{tag\+P\+A\+G\+E\+S\+ET}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_print_a70bdbbfe61682e73b237bc3c7cbefb1a}\label{interface_i_print_a70bdbbfe61682e73b237bc3c7cbefb1a}} 
+enum {\bfseries P\+R\+I\+N\+T\+F\+L\+AG} \{ \newline
+{\bfseries P\+R\+I\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+Y\+B\+O\+T\+H\+E\+R\+U\+S\+ER} = 1, 
+{\bfseries P\+R\+I\+N\+T\+F\+L\+A\+G\+\_\+\+P\+R\+O\+M\+P\+T\+U\+S\+ER} = 2, 
+{\bfseries P\+R\+I\+N\+T\+F\+L\+A\+G\+\_\+\+U\+S\+E\+R\+M\+A\+Y\+C\+H\+A\+N\+G\+E\+P\+R\+I\+N\+T\+ER} = 4, 
+{\bfseries P\+R\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+C\+O\+M\+P\+O\+S\+E\+T\+O\+D\+E\+V\+I\+CE} = 8, 
+\newline
+{\bfseries P\+R\+I\+N\+T\+F\+L\+A\+G\+\_\+\+D\+O\+N\+T\+A\+C\+T\+U\+A\+L\+L\+Y\+P\+R\+I\+NT} = 16, 
+{\bfseries P\+R\+I\+N\+T\+F\+L\+A\+G\+\_\+\+F\+O\+R\+C\+E\+P\+R\+O\+P\+E\+R\+T\+I\+ES} = 32, 
+{\bfseries P\+R\+I\+N\+T\+F\+L\+A\+G\+\_\+\+P\+R\+I\+N\+T\+T\+O\+F\+I\+LE} = 64
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_print_a7b92ecb0eb5432bac2582639466fc3ab}\label{interface_i_print_a7b92ecb0eb5432bac2582639466fc3ab}} 
+typedef \hyperlink{interface_i_print}{I\+Print} $\ast$ {\bfseries L\+P\+P\+R\+I\+NT}
+\item 
+\mbox{\Hypertarget{interface_i_print_a323ff605825aafb3fc954d4ed7ee59c8}\label{interface_i_print_a323ff605825aafb3fc954d4ed7ee59c8}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_print_1_1tag_p_a_g_e_r_a_n_g_e}{I\+Print\+::tag\+P\+A\+G\+E\+R\+A\+N\+GE} {\bfseries P\+A\+G\+E\+R\+A\+N\+GE}
+\item 
+\mbox{\Hypertarget{interface_i_print_adafbbc336e5ea2a758eec1cc4adf8453}\label{interface_i_print_adafbbc336e5ea2a758eec1cc4adf8453}} 
+typedef \hyperlink{interfacestruct}{struct} \hyperlink{struct_i_print_1_1tag_p_a_g_e_s_e_t}{I\+Print\+::tag\+P\+A\+G\+E\+S\+ET} {\bfseries P\+A\+G\+E\+S\+ET}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_print_a543710d263ed7fd6a4fca9cac997fc10}\label{interface_i_print_a543710d263ed7fd6a4fca9cac997fc10}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Initial\+Page\+Num} (\mbox{[}in\mbox{]} L\+O\+NG n\+First\+Page)
+\item 
+\mbox{\Hypertarget{interface_i_print_a9d47a35a2f553645f0eb2bf34b1f8698}\label{interface_i_print_a9d47a35a2f553645f0eb2bf34b1f8698}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Page\+Info} (\mbox{[}out\mbox{]} L\+O\+NG $\ast$pn\+First\+Page, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pc\+Pages)
+\item 
+\mbox{\Hypertarget{interface_i_print_ad24787e6c3ed361a33423579cfaac243}\label{interface_i_print_ad24787e6c3ed361a33423579cfaac243}} 
+H\+R\+E\+S\+U\+LT {\bfseries Print} (\mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Flags, \mbox{[}in, out\mbox{]} D\+V\+T\+A\+R\+G\+E\+T\+D\+E\+V\+I\+CE $\ast$$\ast$pptd, \mbox{[}in, out\mbox{]} \hyperlink{struct_i_print_1_1tag_p_a_g_e_s_e_t}{P\+A\+G\+E\+S\+ET} $\ast$$\ast$pp\+Page\+Set, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} S\+T\+G\+M\+E\+D\+I\+UM $\ast$pstgm\+Options, \mbox{[}in\mbox{]} \hyperlink{interface_i_continue_callback}{I\+Continue\+Callback} $\ast$pcallback, \mbox{[}in\mbox{]} L\+O\+NG n\+First\+Page, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pc\+Pages\+Printed, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pn\+Last\+Page)
+\item 
+\mbox{\Hypertarget{interface_i_print_acdd7bf2837194446fc17483e697a3090}\label{interface_i_print_acdd7bf2837194446fc17483e697a3090}} 
+H\+R\+E\+S\+U\+LT {\bfseries Remote\+Print} (\mbox{[}in\mbox{]} D\+W\+O\+RD grf\+Flags, \mbox{[}in, out\mbox{]} D\+V\+T\+A\+R\+G\+E\+T\+D\+E\+V\+I\+CE $\ast$$\ast$pptd, \mbox{[}in, out\mbox{]} \hyperlink{struct_i_print_1_1tag_p_a_g_e_s_e_t}{P\+A\+G\+E\+S\+ET} $\ast$$\ast$pppageset, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}\mbox{]} Rem\+S\+T\+G\+M\+E\+D\+I\+UM $\ast$pstgm\+Options, \mbox{[}in\mbox{]} \hyperlink{interface_i_continue_callback}{I\+Continue\+Callback} $\ast$pcallback, \mbox{[}in\mbox{]} L\+O\+NG n\+First\+Page, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pc\+Pages\+Printed, \mbox{[}out\mbox{]} L\+O\+NG $\ast$pn\+Last\+Page)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/docobj.\+idl\end{DoxyCompactItemize}

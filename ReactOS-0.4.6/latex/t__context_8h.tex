@@ -1,0 +1,156 @@
+\hypertarget{t__context_8h}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/tnl/t\+\_\+context.h 文件参考}
+\label{t__context_8h}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/tnl/t\+\_\+context.\+h@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/tnl/t\+\_\+context.\+h}}
+
+
+TnL module datatypes and definitions.  
+
+
+{\ttfamily \#include \char`\"{}main/glheader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main/imports.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main/mtypes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math/m\+\_\+vector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vbo/vbo.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvertex__buffer}{vertex\+\_\+buffer}
+\item 
+struct \hyperlink{structtnl__pipeline__stage}{tnl\+\_\+pipeline\+\_\+stage}
+\item 
+struct \hyperlink{structtnl__pipeline}{tnl\+\_\+pipeline}
+\item 
+struct \hyperlink{structtnl__clipspace__attr}{tnl\+\_\+clipspace\+\_\+attr}
+\item 
+struct \hyperlink{structtnl__attr__type}{tnl\+\_\+attr\+\_\+type}
+\item 
+struct \hyperlink{structtnl__clipspace__fastpath}{tnl\+\_\+clipspace\+\_\+fastpath}
+\item 
+struct \hyperlink{structtnl__clipspace}{tnl\+\_\+clipspace}
+\item 
+struct \hyperlink{structtnl__device__driver}{tnl\+\_\+device\+\_\+driver}
+\item 
+struct \hyperlink{struct_t_n_lcontext}{T\+N\+Lcontext}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{t__context_8h_afcb538cf41365e5b61a3bef3e3dd618e}\label{t__context_8h_afcb538cf41365e5b61a3bef3e3dd618e}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+X\+\_\+\+P\+I\+P\+E\+L\+I\+N\+E\+\_\+\+S\+T\+A\+G\+ES}~30
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{t__context_8h_ae3581ee725e8452f448a725504e1752e}{\+\_\+\+T\+N\+L\+\_\+\+F\+I\+R\+S\+T\+\_\+\+M\+AT}~\+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+A\+M\+B\+I\+E\+NT
+\item 
+\mbox{\Hypertarget{t__context_8h_a6b96e0fd1822068a0bf55f0ba368da19}\label{t__context_8h_a6b96e0fd1822068a0bf55f0ba368da19}} 
+\#\hyperlink{structdefine}{define} {\bfseries \+\_\+\+T\+N\+L\+\_\+\+L\+A\+S\+T\+\_\+\+M\+AT}~\+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+B\+A\+C\+K\+\_\+\+I\+N\+D\+E\+X\+ES
+\item 
+\mbox{\Hypertarget{t__context_8h_afaf304b2d9d24a532c0015f880959f45}\label{t__context_8h_afaf304b2d9d24a532c0015f880959f45}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+R\+I\+M\+\_\+\+B\+E\+G\+IN}~0x10
+\item 
+\mbox{\Hypertarget{t__context_8h_a9a53e593b2e77bc61769b11217cb9b28}\label{t__context_8h_a9a53e593b2e77bc61769b11217cb9b28}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+R\+I\+M\+\_\+\+E\+ND}~0x20
+\item 
+\mbox{\Hypertarget{t__context_8h_aff84afaa3378dc5c6ef1a795f30418c6}\label{t__context_8h_aff84afaa3378dc5c6ef1a795f30418c6}} 
+\#\hyperlink{structdefine}{define} {\bfseries P\+R\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK}~0x0f
+\item 
+\mbox{\Hypertarget{t__context_8h_a3ae5863312f2a83a9d944bf077a6e6be}\label{t__context_8h_a3ae5863312f2a83a9d944bf077a6e6be}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+N\+L\+\_\+\+C\+O\+N\+T\+E\+XT}(ctx)~((\hyperlink{struct_t_n_lcontext}{T\+N\+Lcontext} $\ast$)((ctx)-\/$>$swtnl\+\_\+context))
+\item 
+\mbox{\Hypertarget{t__context_8h_a78c3f7bc14f58a28eb4522efa6ac12ba}\label{t__context_8h_a78c3f7bc14f58a28eb4522efa6ac12ba}} 
+\#\hyperlink{structdefine}{define} {\bfseries T\+Y\+P\+E\+\_\+\+I\+DX}(t)~((t) \& 0xf)
+\item 
+\mbox{\Hypertarget{t__context_8h_aa30dc4b03b37928eb85a5a389728323b}\label{t__context_8h_aa30dc4b03b37928eb85a5a389728323b}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+X\+\_\+\+T\+Y\+P\+ES}~T\+Y\+P\+E\+\_\+\+I\+DX(G\+L\+\_\+\+D\+O\+U\+B\+LE)+1      /$\ast$ 0xa + 1 $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{t__context_8h_acf88796a1bf433e5e44e544fb55d3029}\label{t__context_8h_acf88796a1bf433e5e44e544fb55d3029}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+extract\+\_\+func}) (const \hyperlink{interfacestruct}{struct} \hyperlink{structtnl__clipspace__attr}{tnl\+\_\+clipspace\+\_\+attr} $\ast$a, G\+Lfloat $\ast$out, const G\+Lubyte $\ast$v)
+\item 
+\mbox{\Hypertarget{t__context_8h_a1141fff017b49c76cba976309bd79766}\label{t__context_8h_a1141fff017b49c76cba976309bd79766}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+insert\+\_\+func}) (const \hyperlink{interfacestruct}{struct} \hyperlink{structtnl__clipspace__attr}{tnl\+\_\+clipspace\+\_\+attr} $\ast$a, G\+Lubyte $\ast$v, const G\+Lfloat $\ast$in)
+\item 
+\mbox{\Hypertarget{t__context_8h_ad1e13ae7876e179c294a943b7912f0c4}\label{t__context_8h_ad1e13ae7876e179c294a943b7912f0c4}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+emit\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint count, G\+Lubyte $\ast$dest)
+\item 
+\mbox{\Hypertarget{t__context_8h_a2a800eb259a01886ead2c9bf62837790}\label{t__context_8h_a2a800eb259a01886ead2c9bf62837790}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+points\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint first, G\+Luint last)
+\item 
+\mbox{\Hypertarget{t__context_8h_a2307b4e6b00230f040751453b2071f31}\label{t__context_8h_a2307b4e6b00230f040751453b2071f31}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+line\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint v1, G\+Luint v2)
+\item 
+\mbox{\Hypertarget{t__context_8h_af3095b081d950a5a8c2071caed889026}\label{t__context_8h_af3095b081d950a5a8c2071caed889026}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+triangle\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint v1, G\+Luint v2, G\+Luint v3)
+\item 
+\mbox{\Hypertarget{t__context_8h_a05e22532dc0a7efe327be151ba1917f4}\label{t__context_8h_a05e22532dc0a7efe327be151ba1917f4}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+quad\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint v1, G\+Luint v2, G\+Luint v3, G\+Luint v4)
+\item 
+\mbox{\Hypertarget{t__context_8h_a7127620f90cd0393035c09ef8f5f65e7}\label{t__context_8h_a7127620f90cd0393035c09ef8f5f65e7}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+render\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint start, G\+Luint count, G\+Luint flags)
+\item 
+\mbox{\Hypertarget{t__context_8h_a2981102a17351d1e838f9b5910ee0865}\label{t__context_8h_a2981102a17351d1e838f9b5910ee0865}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+interp\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lfloat t, G\+Luint dst, G\+Luint out, G\+Luint in, G\+Lboolean force\+\_\+boundary)
+\item 
+\mbox{\Hypertarget{t__context_8h_aac29b3de6e9975b9bf9489de1a5a5590}\label{t__context_8h_aac29b3de6e9975b9bf9489de1a5a5590}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+copy\+\_\+pv\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint dst, G\+Luint src)
+\item 
+\mbox{\Hypertarget{t__context_8h_a622382ff0d6c3bbebc9228a222a2c4b1}\label{t__context_8h_a622382ff0d6c3bbebc9228a222a2c4b1}} 
+typedef \hyperlink{interfacevoid}{void}($\ast$ {\bfseries tnl\+\_\+setup\+\_\+func}) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Luint start, G\+Luint end, G\+Luint new\+\_\+inputs)
+\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{t__context_8h_a18efc29f05f292310db38a8c7e81dcda}\label{t__context_8h_a18efc29f05f292310db38a8c7e81dcda}} 
+enum \{ \newline
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+P\+OS} = 0, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+W\+E\+I\+G\+HT} = 1, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+N\+O\+R\+M\+AL} = 2, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+C\+O\+L\+OR} = 3, 
+\newline
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+F\+OG} = 4, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+EX} = 5, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+E\+D\+G\+E\+F\+L\+AG} = 6, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+T\+EX} = 7, 
+\newline
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+P\+O\+I\+N\+T\+S\+I\+ZE} = 8, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+A\+M\+B\+I\+E\+NT} = 9, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+B\+A\+C\+K\+\_\+\+A\+M\+B\+I\+E\+NT} = 10, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+D\+I\+F\+F\+U\+SE} = 11, 
+\newline
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+B\+A\+C\+K\+\_\+\+D\+I\+F\+F\+U\+SE} = 12, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+S\+P\+E\+C\+U\+L\+AR} = 13, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+B\+A\+C\+K\+\_\+\+S\+P\+E\+C\+U\+L\+AR} = 14, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+M\+I\+S\+S\+I\+ON} = 15, 
+\newline
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+B\+A\+C\+K\+\_\+\+E\+M\+I\+S\+S\+I\+ON} = 16, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+S\+H\+I\+N\+I\+N\+E\+SS} = 17, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+B\+A\+C\+K\+\_\+\+S\+H\+I\+N\+I\+N\+E\+SS} = 18, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+I\+N\+D\+E\+X\+ES} = 29, 
+\newline
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+B\+A\+C\+K\+\_\+\+I\+N\+D\+E\+X\+ES} = 20, 
+{\bfseries \+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+AX} = 21
+ \}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{t__context_8h_a3e70381663fac89d879cad7675056b27}\label{t__context_8h_a3e70381663fac89d879cad7675056b27}} 
+\hyperlink{interfacevoid}{void} {\bfseries tnl\+\_\+clip\+\_\+prepare} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+TnL module datatypes and definitions. 
+
+\begin{DoxyAuthor}{作者}
+Keith Whitwell 
+\end{DoxyAuthor}
+
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{t__context_8h_ae3581ee725e8452f448a725504e1752e}\label{t__context_8h_ae3581ee725e8452f448a725504e1752e}} 
+\index{t\+\_\+context.\+h@{t\+\_\+context.\+h}!\+\_\+\+T\+N\+L\+\_\+\+F\+I\+R\+S\+T\+\_\+\+M\+AT@{\+\_\+\+T\+N\+L\+\_\+\+F\+I\+R\+S\+T\+\_\+\+M\+AT}}
+\index{\+\_\+\+T\+N\+L\+\_\+\+F\+I\+R\+S\+T\+\_\+\+M\+AT@{\+\_\+\+T\+N\+L\+\_\+\+F\+I\+R\+S\+T\+\_\+\+M\+AT}!t\+\_\+context.\+h@{t\+\_\+context.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+T\+N\+L\+\_\+\+F\+I\+R\+S\+T\+\_\+\+M\+AT}{\_TNL\_FIRST\_MAT}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} \+\_\+\+T\+N\+L\+\_\+\+F\+I\+R\+S\+T\+\_\+\+M\+AT~\+\_\+\+T\+N\+L\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+A\+T\+\_\+\+F\+R\+O\+N\+T\+\_\+\+A\+M\+B\+I\+E\+NT}
+
+Handy attribute ranges\+: 

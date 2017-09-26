@@ -1,0 +1,147 @@
+\hypertarget{class_c_registry_key}{}\section{C\+Registry\+Key类 参考}
+\label{class_c_registry_key}\index{C\+Registry\+Key@{C\+Registry\+Key}}
+类 C\+Registry\+Key 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_registry_key}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a0934ed6e130866fc65cea317763e0e88}\label{class_c_registry_key_a0934ed6e130866fc65cea317763e0e88}} 
+S\+T\+D\+M\+E\+T\+H\+O\+D\+I\+MP {\bfseries Query\+Interface} (R\+E\+F\+I\+ID Interface\+Id, \hyperlink{interfacevoid}{P\+V\+O\+ID} $\ast$Interface)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_ab2cf7fcba5c3a910966a7a46eeb6db18}\label{class_c_registry_key_ab2cf7fcba5c3a910966a7a46eeb6db18}} 
+{\bfseries S\+T\+D\+M\+E\+T\+H\+O\+D\+I\+M\+P\+\_\+} (U\+L\+O\+NG) Add\+Ref()
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a783cb3d521dfea36a130671ab3c264ad}\label{class_c_registry_key_a783cb3d521dfea36a130671ab3c264ad}} 
+{\bfseries S\+T\+D\+M\+E\+T\+H\+O\+D\+I\+M\+P\+\_\+} (U\+L\+O\+NG) Release()
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a277c5685f5a9bedb12289c9126b4adde}\label{class_c_registry_key_a277c5685f5a9bedb12289c9126b4adde}} 
+{\bfseries C\+Registry\+Key} (\hyperlink{interface_i_unknown}{I\+Unknown} $\ast$Outer\+Unknown, \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Key, B\+O\+OL Can\+Delete)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_adca8004af3a4f5570158af9630e23ee3}\label{class_c_registry_key_adca8004af3a4f5570158af9630e23ee3}} 
+H\+R\+E\+S\+U\+LT {\bfseries Init\+Root} (const T\+C\+H\+AR $\ast$psz\+Machine\+Name=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_ac65eece70736d1fcd5630be36f932281}\label{class_c_registry_key_ac65eece70736d1fcd5630be36f932281}} 
+H\+R\+E\+S\+U\+LT {\bfseries Init} (\hyperlink{interfacevoid}{H\+K\+EY} h\+Key, const T\+C\+H\+AR $\ast$psz\+Path, const T\+C\+H\+AR $\ast$psz\+Key\+Name, R\+E\+G\+S\+AM Current\+Access)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a3ec1705c55332b32fa19f607bd340176}\label{class_c_registry_key_a3ec1705c55332b32fa19f607bd340176}} 
+H\+R\+E\+S\+U\+LT {\bfseries Uninit} ()
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a25b42ba050ec3f8c812ec7de35927b36}\label{class_c_registry_key_a25b42ba050ec3f8c812ec7de35927b36}} 
+const T\+C\+H\+AR $\ast$ {\bfseries Get\+Key\+Name} ()
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a75219ba143bccecb0ed65105914de0cb}\label{class_c_registry_key_a75219ba143bccecb0ed65105914de0cb}} 
+B\+O\+OL {\bfseries Is\+Root} ()
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a85dd460ca649ff58f5ff3e3f7f029409}\label{class_c_registry_key_a85dd460ca649ff58f5ff3e3f7f029409}} 
+L\+O\+NG {\bfseries Open\+Subkey} (R\+E\+G\+S\+AM sam\+Desired, const T\+C\+H\+AR $\ast$psz\+Subkey\+Name, \hyperlink{interfacevoid}{H\+K\+EY} \&rh\+Key)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a2d7302fab72f7db4f88a4e45754e8512}\label{class_c_registry_key_a2d7302fab72f7db4f88a4e45754e8512}} 
+L\+O\+NG {\bfseries Open\+Subkey} (R\+E\+G\+S\+AM sam\+Desired, const T\+C\+H\+AR $\ast$psz\+Subkey\+Name, \hyperlink{class_c_registry_key}{C\+Registry\+Key} \&r\+Key)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a0dad9418507691047a8527ff688806da}\label{class_c_registry_key_a0dad9418507691047a8527ff688806da}} 
+L\+O\+NG {\bfseries Get\+Subkey\+Name\+Max\+Length} (D\+W\+O\+RD \&rdw\+Max\+Subkey\+Name\+Length)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_ae85897ca768d7ee8b0299ce824f56462}\label{class_c_registry_key_ae85897ca768d7ee8b0299ce824f56462}} 
+\hyperlink{interfacevoid}{void} {\bfseries Init\+Subkey\+Enumeration} (T\+C\+H\+AR $\ast$pch\+Subkey\+Name\+Buffer, D\+W\+O\+RD dw\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a8c810bd3dd2c1eca1ad385b882adcab7}\label{class_c_registry_key_a8c810bd3dd2c1eca1ad385b882adcab7}} 
+L\+O\+NG {\bfseries Get\+Next\+Subkey\+Name} (D\+W\+O\+RD $\ast$pdw\+Actual\+Size=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a0fb0e21b6fd263ec613bb08cce091a49}\label{class_c_registry_key_a0fb0e21b6fd263ec613bb08cce091a49}} 
+L\+O\+NG {\bfseries Get\+Subkey\+Count} (D\+W\+O\+RD \&rdw\+Subkey\+Count)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a05d2836eb0fe0d25ab990415e2b0d56c}\label{class_c_registry_key_a05d2836eb0fe0d25ab990415e2b0d56c}} 
+L\+O\+NG {\bfseries Get\+Max\+Value\+Name\+Length} (D\+W\+O\+RD \&rdw\+Max\+Value\+Name\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_af70ff5645bc1e104bc45a1eb8380be1f}\label{class_c_registry_key_af70ff5645bc1e104bc45a1eb8380be1f}} 
+L\+O\+NG {\bfseries Get\+Max\+Value\+Data\+Size} (D\+W\+O\+RD \&rdw\+Max\+Value\+Data\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a80079bee698f91262d78baedc5798fa4}\label{class_c_registry_key_a80079bee698f91262d78baedc5798fa4}} 
+\hyperlink{interfacevoid}{void} {\bfseries Init\+Value\+Enumeration} (T\+C\+H\+AR $\ast$psz\+Value\+Name\+Buffer, D\+W\+O\+RD dw\+Value\+Name\+Buffer\+Size, B\+Y\+TE $\ast$pb\+Value\+Data\+Buffer, D\+W\+O\+RD dw\+Value\+Data\+Buffer\+Size, D\+W\+O\+RD $\ast$pdw\+Type)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a00f87e314648308ff9238fd573a47505}\label{class_c_registry_key_a00f87e314648308ff9238fd573a47505}} 
+L\+O\+NG {\bfseries Get\+Next\+Value} (D\+W\+O\+RD $\ast$pdw\+Name\+Actual\+Size=N\+U\+LL, D\+W\+O\+RD $\ast$pdw\+Data\+Actual\+Size=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a2fb7f65a8d6639d5da12eb6983ca8158}\label{class_c_registry_key_a2fb7f65a8d6639d5da12eb6983ca8158}} 
+L\+O\+NG {\bfseries Get\+Value\+Count} (D\+W\+O\+RD \&rdw\+Value\+Count)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_ae90aed7ab2934d65b8889d336424217b}\label{class_c_registry_key_ae90aed7ab2934d65b8889d336424217b}} 
+L\+O\+NG {\bfseries Get\+Default\+Value} (D\+W\+O\+RD $\ast$pdw\+Type, B\+Y\+TE $\ast$pb\+Value\+Data\+Buffer, D\+W\+O\+RD dw\+Value\+Data\+Buffer\+Size, D\+W\+O\+RD $\ast$pdw\+Value\+Data\+Actual\+Size)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a7d1a9e0b4b24996b955318f8e9219ab1}\label{class_c_registry_key_a7d1a9e0b4b24996b955318f8e9219ab1}} 
+D\+W\+O\+RD {\bfseries Get\+Value} (T\+C\+H\+AR $\ast$pch\+Value\+Name, D\+W\+O\+RD $\ast$pdw\+Type, L\+P\+B\+Y\+TE lp\+Value\+Data\+Buffer, D\+W\+O\+RD $\ast$pdw\+Value\+Data\+Size)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_ad604934484eb5a316d849be2090b0da1}\label{class_c_registry_key_ad604934484eb5a316d849be2090b0da1}} 
+L\+O\+NG {\bfseries Create\+Subkey} (R\+E\+G\+S\+AM sam\+Desired, const T\+C\+H\+AR $\ast$psz\+Key\+Name, \hyperlink{interfacevoid}{H\+K\+EY} \&rh\+Key, B\+O\+OL $\ast$pbln\+Opened=N\+U\+LL, B\+O\+OL bln\+Volatile=F\+A\+L\+SE)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_aa25c159545f6f8832dad8ba6670c4ce7}\label{class_c_registry_key_aa25c159545f6f8832dad8ba6670c4ce7}} 
+L\+O\+NG {\bfseries Get\+Last\+Write\+Time} (\hyperlink{struct___s_y_s_t_e_m_t_i_m_e}{S\+Y\+S\+T\+E\+M\+T\+I\+ME} \&st)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a69161e80c82b7af1ac946d40dadddea1}\label{class_c_registry_key_a69161e80c82b7af1ac946d40dadddea1}} 
+const T\+C\+H\+AR $\ast$ {\bfseries Get\+Last\+Write\+Time} ()
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a5ca4ab1e41bc9e7d72e0054c0004e3d3}\label{class_c_registry_key_a5ca4ab1e41bc9e7d72e0054c0004e3d3}} 
+L\+O\+NG {\bfseries Delete\+Value} (const T\+C\+H\+AR $\ast$psz\+Value\+Name)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a9e2c6bd026dcfdbaf4836285a7521e24}\label{class_c_registry_key_a9e2c6bd026dcfdbaf4836285a7521e24}} 
+L\+O\+NG {\bfseries Delete\+Subkey} (const T\+C\+H\+AR $\ast$psz\+Pattern\+Subkey\+Name)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_afa6d2d2e939740590c504abf96ab5e5f}\label{class_c_registry_key_afa6d2d2e939740590c504abf96ab5e5f}} 
+L\+O\+NG {\bfseries Set\+Value} (L\+P\+C\+T\+S\+TR psz\+Value\+Name, D\+W\+O\+RD dw\+Type, B\+Y\+TE $\ast$lp\+Data, D\+W\+O\+RD dw\+Data\+Size)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a3d04277738d6653c0f3cc8e065093c25}\label{class_c_registry_key_a3d04277738d6653c0f3cc8e065093c25}} 
+T\+C\+H\+AR $\ast$ {\bfseries Get\+Sub\+Key\+Name\+By\+Index} (D\+W\+O\+RD dw\+Index)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a3e92ce63b62efa3d3bafffcdbe7fdc77}\label{class_c_registry_key_a3e92ce63b62efa3d3bafffcdbe7fdc77}} 
+L\+O\+NG {\bfseries Get\+Security\+Descriptor} (S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON Security\+Information, \hyperlink{struct___s_e_c_u_r_i_t_y___d_e_s_c_r_i_p_t_o_r}{P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} p\+Security\+Descriptor, L\+P\+D\+W\+O\+RD lpcb\+Security\+Descriptor)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_aedacdaaf333ed1bf93db78073514d741}\label{class_c_registry_key_aedacdaaf333ed1bf93db78073514d741}} 
+L\+O\+NG {\bfseries Get\+Security\+Descriptor\+Length} (D\+W\+O\+RD $\ast$pdw\+Security\+Descriptor)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a923d7f4f1534850cd6f5d30566391590}\label{class_c_registry_key_a923d7f4f1534850cd6f5d30566391590}} 
+B\+O\+OL {\bfseries Is\+Predefined} ()
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a66d1b9f6585bf99dbb65fe848e3fae4a}\label{class_c_registry_key_a66d1b9f6585bf99dbb65fe848e3fae4a}} 
+{\bfseries operator H\+K\+EY} ()
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_registry_key_aa82ee4d9d87d7fb5eec0ea9c8f52382e}\label{class_c_registry_key_aa82ee4d9d87d7fb5eec0ea9c8f52382e}} 
+static B\+O\+OL {\bfseries Is\+Hive} (\hyperlink{interfacevoid}{H\+K\+EY} h\+Key)
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a3ed0b647661bc0ae921de5193900bfca}\label{class_c_registry_key_a3ed0b647661bc0ae921de5193900bfca}} 
+static const T\+C\+H\+AR $\ast$ {\bfseries Get\+Value\+Type\+Name} (D\+W\+O\+RD dw\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_registry_key_aa26503e73d352f83dbe67a1cfc598864}\label{class_c_registry_key_aa26503e73d352f83dbe67a1cfc598864}} 
+{\bfseries I\+M\+P\+\_\+\+I\+Registry\+Key}
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_registry_key_ac8591f7ccdaa95608bb2cb8c68c895ca}\label{class_c_registry_key_ac8591f7ccdaa95608bb2cb8c68c895ca}} 
+\hyperlink{interfacevoid}{H\+A\+N\+D\+LE} {\bfseries m\+\_\+h\+Key}
+\item 
+\mbox{\Hypertarget{class_c_registry_key_a20fd25f5c7146bcd61fe531df7cdd7ba}\label{class_c_registry_key_a20fd25f5c7146bcd61fe531df7cdd7ba}} 
+B\+O\+OL {\bfseries m\+\_\+\+Deleted}
+\item 
+\mbox{\Hypertarget{class_c_registry_key_abb6d4836fcb0a95e85f77d403737ced0}\label{class_c_registry_key_abb6d4836fcb0a95e85f77d403737ced0}} 
+B\+O\+OL {\bfseries m\+\_\+\+Can\+Delete}
+\item 
+\mbox{\Hypertarget{class_c_registry_key_aadf48834ab376c6a1a8942273f9bdaaf}\label{class_c_registry_key_aadf48834ab376c6a1a8942273f9bdaaf}} 
+L\+O\+NG {\bfseries m\+\_\+\+Ref}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/wdm/audio/backpln/portcls/registry.\+cpp\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/sysutils/regexpl/Registry\+Key.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/sysutils/regexpl/Registry\+Key.\+cpp\end{DoxyCompactItemize}

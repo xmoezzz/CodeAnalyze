@@ -1,0 +1,59 @@
+\hypertarget{interface_i_internet_security_manager}{}\section{I\+Internet\+Security\+Manager接口 参考}
+\label{interface_i_internet_security_manager}\index{I\+Internet\+Security\+Manager@{I\+Internet\+Security\+Manager}}
+类 I\+Internet\+Security\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_i_internet_security_manager}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_a8e1389559dcc282640b57bf2072a01a7}\label{interface_i_internet_security_manager_a8e1389559dcc282640b57bf2072a01a7}} 
+enum {\bfseries P\+U\+AF} \{ \newline
+{\bfseries P\+U\+A\+F\+\_\+\+D\+E\+F\+A\+U\+LT} = 0x00, 
+{\bfseries P\+U\+A\+F\+\_\+\+N\+O\+UI} = 0x01, 
+{\bfseries P\+U\+A\+F\+\_\+\+I\+S\+F\+I\+LE} = 0x02, 
+{\bfseries P\+U\+A\+F\+\_\+\+W\+A\+R\+N\+\_\+\+I\+F\+\_\+\+D\+E\+N\+I\+ED} = 0x04, 
+\newline
+{\bfseries P\+U\+A\+F\+\_\+\+F\+O\+R\+C\+E\+U\+I\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND} = 0x08, 
+{\bfseries P\+U\+A\+F\+\_\+\+C\+H\+E\+C\+K\+\_\+\+T\+I\+PS} = 0x10
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_aef1a2ab9df92555d61196eda370579a1}\label{interface_i_internet_security_manager_aef1a2ab9df92555d61196eda370579a1}} 
+enum {\bfseries S\+Z\+M\+\_\+\+F\+L\+A\+GS} \{ {\bfseries S\+Z\+M\+\_\+\+C\+R\+E\+A\+TE} = 0x0, 
+{\bfseries S\+Z\+M\+\_\+\+D\+E\+L\+E\+TE} = 0x1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_ad04b3840a936baf18e1c7697f9e805c9}\label{interface_i_internet_security_manager_ad04b3840a936baf18e1c7697f9e805c9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Security\+Site} (\mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} \hyperlink{interface_i_internet_security_mgr_site}{I\+Internet\+Security\+Mgr\+Site} $\ast$p\+Site)
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_a03ab37d31733aaec53f89ed1f94bf0bf}\label{interface_i_internet_security_manager_a03ab37d31733aaec53f89ed1f94bf0bf}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Security\+Site} (\mbox{[}out\mbox{]} \hyperlink{interface_i_internet_security_mgr_site}{I\+Internet\+Security\+Mgr\+Site} $\ast$$\ast$pp\+Site)
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_ad47ffa6a818d899e20fad6a775f3b78a}\label{interface_i_internet_security_manager_ad47ffa6a818d899e20fad6a775f3b78a}} 
+H\+R\+E\+S\+U\+LT {\bfseries Map\+Url\+To\+Zone} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwsz\+Url, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pdw\+Zone, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_a377e1793b02cc76a6bd5013f5f8605e5}\label{interface_i_internet_security_manager_a377e1793b02cc76a6bd5013f5f8605e5}} 
+M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+ID H\+R\+E\+S\+U\+LT {\bfseries Get\+Security\+Id} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwsz\+Url, \mbox{[}out, size\+\_\+is($\ast$pcb\+Security\+Id)\mbox{]} B\+Y\+TE $\ast$pb\+Security\+Id, \mbox{[}in, out\mbox{]} D\+W\+O\+RD $\ast$pcb\+Security\+Id, \mbox{[}in\mbox{]} D\+W\+O\+R\+D\+\_\+\+P\+TR dw\+Reserved)
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_a302b3f69501b52aefc1abe5a8120563d}\label{interface_i_internet_security_manager_a302b3f69501b52aefc1abe5a8120563d}} 
+H\+R\+E\+S\+U\+LT {\bfseries Process\+Url\+Action} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwsz\+Url, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Action, \mbox{[}out, size\+\_\+is(cb\+Policy)\mbox{]} B\+Y\+TE $\ast$p\+Policy, \mbox{[}in\mbox{]} D\+W\+O\+RD cb\+Policy, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} B\+Y\+TE $\ast$p\+Context, \mbox{[}in\mbox{]} D\+W\+O\+RD cb\+Context, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reserved)
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_a1344f85d16e4c154dfcb4d7fce9e433e}\label{interface_i_internet_security_manager_a1344f85d16e4c154dfcb4d7fce9e433e}} 
+H\+R\+E\+S\+U\+LT {\bfseries Query\+Custom\+Policy} (\mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR pwsz\+Url, \mbox{[}in\mbox{]} \hyperlink{struct___g_u_i_d}{R\+E\+F\+G\+U\+ID} guid\+Key, \mbox{[}out, size\+\_\+is(, $\ast$pcb\+Policy)\mbox{]} B\+Y\+TE $\ast$$\ast$pp\+Policy, \mbox{[}out\mbox{]} D\+W\+O\+RD $\ast$pcb\+Policy, \mbox{[}in\mbox{]} B\+Y\+TE $\ast$p\+Context, \mbox{[}in\mbox{]} D\+W\+O\+RD cb\+Context, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Reserved)
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_a9de3f203155787e5d2bdd0ea9d1f60ca}\label{interface_i_internet_security_manager_a9de3f203155787e5d2bdd0ea9d1f60ca}} 
+H\+R\+E\+S\+U\+LT {\bfseries Set\+Zone\+Mapping} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Zone, \mbox{[}in\mbox{]} L\+P\+C\+W\+S\+TR lpsz\+Pattern, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\item 
+\mbox{\Hypertarget{interface_i_internet_security_manager_aac5e2f9543291b9aeaea748a83ebd84f}\label{interface_i_internet_security_manager_aac5e2f9543291b9aeaea748a83ebd84f}} 
+H\+R\+E\+S\+U\+LT {\bfseries Get\+Zone\+Mappings} (\mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Zone, \mbox{[}out\mbox{]} \hyperlink{interface_i_enum_string}{I\+Enum\+String} $\ast$$\ast$ppenum\+String, \mbox{[}in\mbox{]} D\+W\+O\+RD dw\+Flags)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/urlmon.\+idl\end{DoxyCompactItemize}

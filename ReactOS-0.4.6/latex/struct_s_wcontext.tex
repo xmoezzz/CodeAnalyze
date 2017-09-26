@@ -1,0 +1,250 @@
+\hypertarget{struct_s_wcontext}{}\section{S\+Wcontext结构体 参考}
+\label{struct_s_wcontext}\index{S\+Wcontext@{S\+Wcontext}}
+
+
+Per-\/context state that\textquotesingle{}s private to the software rasterizer module.  
+
+
+
+
+{\ttfamily \#include $<$s\+\_\+context.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacestruct}{struct} \hyperlink{structswrast__device__driver}{swrast\+\_\+device\+\_\+driver} \hyperlink{struct_s_wcontext_a0c0417617fb1e6d6a2976aba09a486c2}{Driver}
+\item 
+G\+Lboolean \hyperlink{struct_s_wcontext_af59816052a82b37da0e8e1152715959a}{Allow\+Vertex\+Fog}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a0f9330dfa9ce2ac36e81ee86ad077159}\label{struct_s_wcontext_a0f9330dfa9ce2ac36e81ee86ad077159}} 
+G\+Lboolean {\bfseries Allow\+Pixel\+Fog}
+\item 
+G\+Lbitfield \hyperlink{struct_s_wcontext_ad2791c263e50ab089622ccef8cf998d1}{\+\_\+\+Raster\+Mask}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_ac037e4e4a941f4c47b896397fd95a4c7}\label{struct_s_wcontext_ac037e4e4a941f4c47b896397fd95a4c7}} 
+G\+Lfloat {\bfseries \+\_\+\+Backface\+Sign}
+\item 
+G\+Lfloat \hyperlink{struct_s_wcontext_a51f029169973219098add5f8345c6874}{\+\_\+\+Backface\+Cull\+Sign}
+\item 
+G\+Lboolean \hyperlink{struct_s_wcontext_a756b218b6199d933c784a1ce6e7878d8}{\+\_\+\+Prefer\+Pixel\+Fog}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_ab9fc6879eb7247c457792c56e00d4a71}\label{struct_s_wcontext_ab9fc6879eb7247c457792c56e00d4a71}} 
+G\+Lboolean {\bfseries \+\_\+\+Texture\+Combine\+Primary}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a307854f83ef0e3e4783c5755cf2ae5d8}\label{struct_s_wcontext_a307854f83ef0e3e4783c5755cf2ae5d8}} 
+G\+Lboolean {\bfseries \+\_\+\+Fog\+Enabled}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a6cab1dfcf882762b12d35f6dd51c2f06}\label{struct_s_wcontext_a6cab1dfcf882762b12d35f6dd51c2f06}} 
+G\+Lboolean {\bfseries \+\_\+\+Deferred\+Texture}
+\item 
+G\+Luint \hyperlink{struct_s_wcontext_a653cad931592d10b3e6ef19e7e384adc}{\+\_\+\+Active\+Attribs} \mbox{[}F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+AX\mbox{]}
+\item 
+G\+Lbitfield64 \hyperlink{struct_s_wcontext_adb8d34b28b62e801d44b46484391c89f}{\+\_\+\+Active\+Attrib\+Mask}
+\item 
+G\+Luint \hyperlink{struct_s_wcontext_ab03f1163c48935366e13e75248b8f67a}{\+\_\+\+Num\+Active\+Attribs}
+\item 
+\hyperlink{interfacevoid}{G\+Lenum} \hyperlink{struct_s_wcontext_ad59daf2ae1af19c2b09fe90a273971ca}{\+\_\+\+Interp\+Mode} \mbox{[}F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+AX\mbox{]}
+\item 
+G\+Luint \hyperlink{struct_s_wcontext_a8318f169b67f742b63fc3cd23f977f1c}{Stipple\+Counter}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_af44762626eb8ac14fa1f909ea6bd8bd8}\label{struct_s_wcontext_af44762626eb8ac14fa1f909ea6bd8bd8}} 
+G\+Lbitfield {\bfseries New\+State}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_ac9e606c2298a3f5feba76ba226817759}\label{struct_s_wcontext_ac9e606c2298a3f5feba76ba226817759}} 
+G\+Luint {\bfseries State\+Changes}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a3233ddb174395d328660ece403e4369b}\label{struct_s_wcontext_a3233ddb174395d328660ece403e4369b}} 
+\hyperlink{interfacevoid}{G\+Lenum} {\bfseries Primitive}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_acc0a8f501e14a56750c091182f85545d}\label{struct_s_wcontext_acc0a8f501e14a56750c091182f85545d}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries Invalidate\+State} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx, G\+Lbitfield new\+\_\+state)
+\item 
+\hyperlink{structsw__span__arrays}{S\+Wspanarrays} $\ast$ \hyperlink{struct_s_wcontext_af008f2ef3faa86a7f22b5821708f0367}{Span\+Arrays}
+\item 
+\hyperlink{structsw__span__arrays}{S\+Wspanarrays} $\ast$ \hyperlink{struct_s_wcontext_a353abb5ab97460323cbc47f335b5d34e}{Zoomed\+Arrays}
+\item 
+\hyperlink{structsw__span}{S\+Wspan} \hyperlink{struct_s_wcontext_a48d01783b4f7429df1a061ff2a0e93a8}{Point\+Span}
+\item 
+blend\+\_\+func \hyperlink{struct_s_wcontext_ad06b09a06a642e3009043b80227f68ba}{Blend\+Func}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_aceab65f003d5183e66e76a17afbbeb6e}\label{struct_s_wcontext_aceab65f003d5183e66e76a17afbbeb6e}} 
+texture\+\_\+sample\+\_\+func {\bfseries Texture\+Sample}
+\item 
+G\+Lfloat $\ast$ \hyperlink{struct_s_wcontext_acc5960e550aca2f44f43be2b111506d0}{Texel\+Buffer}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_abc0f1b3eba3d358876eb41561b7edc63}\label{struct_s_wcontext_abc0f1b3eba3d358876eb41561b7edc63}} 
+validate\+\_\+texture\+\_\+image\+\_\+func {\bfseries Validate\+Texture\+Image}
+\end{DoxyCompactItemize}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+G\+Lbitfield \hyperlink{struct_s_wcontext_ad1c8f5179f8a2433441f63e99461979c}{Invalidate\+Point\+Mask}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_af82d7ae44567563f5ddd63cb0540c3dd}\label{struct_s_wcontext_af82d7ae44567563f5ddd63cb0540c3dd}} 
+G\+Lbitfield {\bfseries Invalidate\+Line\+Mask}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a9138e0d622dec6cd16daf356d97db4bd}\label{struct_s_wcontext_a9138e0d622dec6cd16daf356d97db4bd}} 
+G\+Lbitfield {\bfseries Invalidate\+Triangle\+Mask}
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void}($\ast$ \hyperlink{struct_s_wcontext_a818d839abeda8d1525e472383c3278f7}{choose\+\_\+point} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$)
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_ada0d4f7d44bfda80559294afa4b5ac33}\label{struct_s_wcontext_ada0d4f7d44bfda80559294afa4b5ac33}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries choose\+\_\+line} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$)
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a154abdd9a5db6b236435d20d4cb6407c}\label{struct_s_wcontext_a154abdd9a5db6b236435d20d4cb6407c}} 
+\hyperlink{interfacevoid}{void}($\ast$ {\bfseries choose\+\_\+triangle} )(\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$)
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+swrast\+\_\+point\+\_\+func \hyperlink{struct_s_wcontext_ada44d3707a3f96b36294bab7e2a95501}{Point}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a0315a4d789a026ad5970a1e7f897adec}\label{struct_s_wcontext_a0315a4d789a026ad5970a1e7f897adec}} 
+swrast\+\_\+line\+\_\+func {\bfseries Line}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_ad29561999e2cf593576e20d84cc93eb7}\label{struct_s_wcontext_ad29561999e2cf593576e20d84cc93eb7}} 
+swrast\+\_\+tri\+\_\+func {\bfseries Triangle}
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+swrast\+\_\+point\+\_\+func \hyperlink{struct_s_wcontext_a47145fa59832830e48e42a33f8a08a69}{Spec\+Point}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a4fc3dafaa5e85c39510977c0e16331ad}\label{struct_s_wcontext_a4fc3dafaa5e85c39510977c0e16331ad}} 
+swrast\+\_\+line\+\_\+func {\bfseries Spec\+Line}
+\item 
+\mbox{\Hypertarget{struct_s_wcontext_a719509e39338dde37d0249305f5663ac}\label{struct_s_wcontext_a719509e39338dde37d0249305f5663ac}} 
+swrast\+\_\+tri\+\_\+func {\bfseries Spec\+Triangle}
+\end{DoxyCompactItemize}
+
+
+
+\subsection{详细描述}
+Per-\/context state that\textquotesingle{}s private to the software rasterizer module. 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{struct_s_wcontext_adb8d34b28b62e801d44b46484391c89f}\label{struct_s_wcontext_adb8d34b28b62e801d44b46484391c89f}} 
+\index{S\+Wcontext@{S\+Wcontext}!\+\_\+\+Active\+Attrib\+Mask@{\+\_\+\+Active\+Attrib\+Mask}}
+\index{\+\_\+\+Active\+Attrib\+Mask@{\+\_\+\+Active\+Attrib\+Mask}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{\+\_\+\+Active\+Attrib\+Mask}{\_ActiveAttribMask}}
+{\footnotesize\ttfamily G\+Lbitfield64 S\+Wcontext\+::\+\_\+\+Active\+Attrib\+Mask}
+
+Same info, but as a bitmask of F\+R\+A\+G\+\_\+\+B\+I\+T\+\_\+x bits \mbox{\Hypertarget{struct_s_wcontext_a653cad931592d10b3e6ef19e7e384adc}\label{struct_s_wcontext_a653cad931592d10b3e6ef19e7e384adc}} 
+\index{S\+Wcontext@{S\+Wcontext}!\+\_\+\+Active\+Attribs@{\+\_\+\+Active\+Attribs}}
+\index{\+\_\+\+Active\+Attribs@{\+\_\+\+Active\+Attribs}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{\+\_\+\+Active\+Attribs}{\_ActiveAttribs}}
+{\footnotesize\ttfamily G\+Luint S\+Wcontext\+::\+\_\+\+Active\+Attribs\mbox{[}F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+AX\mbox{]}}
+
+List/array of the fragment attributes to interpolate \mbox{\Hypertarget{struct_s_wcontext_a51f029169973219098add5f8345c6874}\label{struct_s_wcontext_a51f029169973219098add5f8345c6874}} 
+\index{S\+Wcontext@{S\+Wcontext}!\+\_\+\+Backface\+Cull\+Sign@{\+\_\+\+Backface\+Cull\+Sign}}
+\index{\+\_\+\+Backface\+Cull\+Sign@{\+\_\+\+Backface\+Cull\+Sign}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{\+\_\+\+Backface\+Cull\+Sign}{\_BackfaceCullSign}}
+{\footnotesize\ttfamily G\+Lfloat S\+Wcontext\+::\+\_\+\+Backface\+Cull\+Sign}
+
++1 or -\/1 \mbox{\Hypertarget{struct_s_wcontext_ad59daf2ae1af19c2b09fe90a273971ca}\label{struct_s_wcontext_ad59daf2ae1af19c2b09fe90a273971ca}} 
+\index{S\+Wcontext@{S\+Wcontext}!\+\_\+\+Interp\+Mode@{\+\_\+\+Interp\+Mode}}
+\index{\+\_\+\+Interp\+Mode@{\+\_\+\+Interp\+Mode}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{\+\_\+\+Interp\+Mode}{\_InterpMode}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{G\+Lenum} S\+Wcontext\+::\+\_\+\+Interp\+Mode\mbox{[}F\+R\+A\+G\+\_\+\+A\+T\+T\+R\+I\+B\+\_\+\+M\+AX\mbox{]}}
+
+Indicates how each attrib is to be interpolated (lines/tris) \mbox{\Hypertarget{struct_s_wcontext_ab03f1163c48935366e13e75248b8f67a}\label{struct_s_wcontext_ab03f1163c48935366e13e75248b8f67a}} 
+\index{S\+Wcontext@{S\+Wcontext}!\+\_\+\+Num\+Active\+Attribs@{\+\_\+\+Num\+Active\+Attribs}}
+\index{\+\_\+\+Num\+Active\+Attribs@{\+\_\+\+Num\+Active\+Attribs}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{\+\_\+\+Num\+Active\+Attribs}{\_NumActiveAttribs}}
+{\footnotesize\ttfamily G\+Luint S\+Wcontext\+::\+\_\+\+Num\+Active\+Attribs}
+
+Number of fragment attributes to interpolate \mbox{\Hypertarget{struct_s_wcontext_a756b218b6199d933c784a1ce6e7878d8}\label{struct_s_wcontext_a756b218b6199d933c784a1ce6e7878d8}} 
+\index{S\+Wcontext@{S\+Wcontext}!\+\_\+\+Prefer\+Pixel\+Fog@{\+\_\+\+Prefer\+Pixel\+Fog}}
+\index{\+\_\+\+Prefer\+Pixel\+Fog@{\+\_\+\+Prefer\+Pixel\+Fog}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{\+\_\+\+Prefer\+Pixel\+Fog}{\_PreferPixelFog}}
+{\footnotesize\ttfamily G\+Lboolean S\+Wcontext\+::\+\_\+\+Prefer\+Pixel\+Fog}
+
++1, 0, or -\/1 \mbox{\Hypertarget{struct_s_wcontext_ad2791c263e50ab089622ccef8cf998d1}\label{struct_s_wcontext_ad2791c263e50ab089622ccef8cf998d1}} 
+\index{S\+Wcontext@{S\+Wcontext}!\+\_\+\+Raster\+Mask@{\+\_\+\+Raster\+Mask}}
+\index{\+\_\+\+Raster\+Mask@{\+\_\+\+Raster\+Mask}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{\+\_\+\+Raster\+Mask}{\_RasterMask}}
+{\footnotesize\ttfamily G\+Lbitfield S\+Wcontext\+::\+\_\+\+Raster\+Mask}
+
+Derived values, invalidated on statechanges, updated from \+\_\+swrast\+\_\+validate\+\_\+derived()\+: \mbox{\Hypertarget{struct_s_wcontext_af59816052a82b37da0e8e1152715959a}\label{struct_s_wcontext_af59816052a82b37da0e8e1152715959a}} 
+\index{S\+Wcontext@{S\+Wcontext}!Allow\+Vertex\+Fog@{Allow\+Vertex\+Fog}}
+\index{Allow\+Vertex\+Fog@{Allow\+Vertex\+Fog}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Allow\+Vertex\+Fog}{AllowVertexFog}}
+{\footnotesize\ttfamily G\+Lboolean S\+Wcontext\+::\+Allow\+Vertex\+Fog}
+
+Configuration mechanisms to make software rasterizer match characteristics of the hardware rasterizer (if present)\+: \mbox{\Hypertarget{struct_s_wcontext_ad06b09a06a642e3009043b80227f68ba}\label{struct_s_wcontext_ad06b09a06a642e3009043b80227f68ba}} 
+\index{S\+Wcontext@{S\+Wcontext}!Blend\+Func@{Blend\+Func}}
+\index{Blend\+Func@{Blend\+Func}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Blend\+Func}{BlendFunc}}
+{\footnotesize\ttfamily blend\+\_\+func S\+Wcontext\+::\+Blend\+Func}
+
+Internal hooks, kept up to date by the same mechanism as above. \mbox{\Hypertarget{struct_s_wcontext_a818d839abeda8d1525e472383c3278f7}\label{struct_s_wcontext_a818d839abeda8d1525e472383c3278f7}} 
+\index{S\+Wcontext@{S\+Wcontext}!choose\+\_\+point@{choose\+\_\+point}}
+\index{choose\+\_\+point@{choose\+\_\+point}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{choose\+\_\+point}{choose\_point}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void}($\ast$ S\+Wcontext\+::choose\+\_\+point) (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$)}
+
+Device drivers plug in functions for these callbacks. Will be called when the GL state change mask intersects the above masks. \mbox{\Hypertarget{struct_s_wcontext_a0c0417617fb1e6d6a2976aba09a486c2}\label{struct_s_wcontext_a0c0417617fb1e6d6a2976aba09a486c2}} 
+\index{S\+Wcontext@{S\+Wcontext}!Driver@{Driver}}
+\index{Driver@{Driver}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Driver}{Driver}}
+{\footnotesize\ttfamily \hyperlink{interfacestruct}{struct} \hyperlink{structswrast__device__driver}{swrast\+\_\+device\+\_\+driver} S\+Wcontext\+::\+Driver}
+
+Driver interface\+: \mbox{\Hypertarget{struct_s_wcontext_ad1c8f5179f8a2433441f63e99461979c}\label{struct_s_wcontext_ad1c8f5179f8a2433441f63e99461979c}} 
+\index{S\+Wcontext@{S\+Wcontext}!Invalidate\+Point\+Mask@{Invalidate\+Point\+Mask}}
+\index{Invalidate\+Point\+Mask@{Invalidate\+Point\+Mask}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Invalidate\+Point\+Mask}{InvalidatePointMask}}
+{\footnotesize\ttfamily G\+Lbitfield S\+Wcontext\+::\+Invalidate\+Point\+Mask}
+
+When the New\+State mask intersects these masks, we invalidate the Point/\+Line/\+Triangle function pointers below. \mbox{\Hypertarget{struct_s_wcontext_ada44d3707a3f96b36294bab7e2a95501}\label{struct_s_wcontext_ada44d3707a3f96b36294bab7e2a95501}} 
+\index{S\+Wcontext@{S\+Wcontext}!Point@{Point}}
+\index{Point@{Point}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Point}{Point}}
+{\footnotesize\ttfamily swrast\+\_\+point\+\_\+func S\+Wcontext\+::\+Point}
+
+Current point, line and triangle drawing functions. \mbox{\Hypertarget{struct_s_wcontext_a48d01783b4f7429df1a061ff2a0e93a8}\label{struct_s_wcontext_a48d01783b4f7429df1a061ff2a0e93a8}} 
+\index{S\+Wcontext@{S\+Wcontext}!Point\+Span@{Point\+Span}}
+\index{Point\+Span@{Point\+Span}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Point\+Span}{PointSpan}}
+{\footnotesize\ttfamily \hyperlink{structsw__span}{S\+Wspan} S\+Wcontext\+::\+Point\+Span}
+
+Used to buffer N G\+L\+\_\+\+P\+O\+I\+N\+TS, instead of rendering one by one. \mbox{\Hypertarget{struct_s_wcontext_af008f2ef3faa86a7f22b5821708f0367}\label{struct_s_wcontext_af008f2ef3faa86a7f22b5821708f0367}} 
+\index{S\+Wcontext@{S\+Wcontext}!Span\+Arrays@{Span\+Arrays}}
+\index{Span\+Arrays@{Span\+Arrays}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Span\+Arrays}{SpanArrays}}
+{\footnotesize\ttfamily \hyperlink{structsw__span__arrays}{S\+Wspanarrays}$\ast$ S\+Wcontext\+::\+Span\+Arrays}
+
+Typically, we\textquotesingle{}ll allocate a \hyperlink{structsw__span}{sw\+\_\+span} structure as a local variable and set its \textquotesingle{}array\textquotesingle{} pointer to point to this object. The reason is this object is big and causes problems when allocated on the stack on some systems. \mbox{\Hypertarget{struct_s_wcontext_a47145fa59832830e48e42a33f8a08a69}\label{struct_s_wcontext_a47145fa59832830e48e42a33f8a08a69}} 
+\index{S\+Wcontext@{S\+Wcontext}!Spec\+Point@{Spec\+Point}}
+\index{Spec\+Point@{Spec\+Point}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Spec\+Point}{SpecPoint}}
+{\footnotesize\ttfamily swrast\+\_\+point\+\_\+func S\+Wcontext\+::\+Spec\+Point}
+
+Placeholders for when separate specular (or secondary color) is enabled but texturing is not. \mbox{\Hypertarget{struct_s_wcontext_a8318f169b67f742b63fc3cd23f977f1c}\label{struct_s_wcontext_a8318f169b67f742b63fc3cd23f977f1c}} 
+\index{S\+Wcontext@{S\+Wcontext}!Stipple\+Counter@{Stipple\+Counter}}
+\index{Stipple\+Counter@{Stipple\+Counter}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Stipple\+Counter}{StippleCounter}}
+{\footnotesize\ttfamily G\+Luint S\+Wcontext\+::\+Stipple\+Counter}
+
+\hyperlink{struct_line}{Line} stipple counter \mbox{\Hypertarget{struct_s_wcontext_acc5960e550aca2f44f43be2b111506d0}\label{struct_s_wcontext_acc5960e550aca2f44f43be2b111506d0}} 
+\index{S\+Wcontext@{S\+Wcontext}!Texel\+Buffer@{Texel\+Buffer}}
+\index{Texel\+Buffer@{Texel\+Buffer}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Texel\+Buffer}{TexelBuffer}}
+{\footnotesize\ttfamily G\+Lfloat$\ast$ S\+Wcontext\+::\+Texel\+Buffer}
+
+\hyperlink{class_buffer}{Buffer} for saving the sampled texture colors. Needed for G\+L\+\_\+\+A\+R\+B\+\_\+texture\+\_\+env\+\_\+crossbar implementation. \mbox{\Hypertarget{struct_s_wcontext_a353abb5ab97460323cbc47f335b5d34e}\label{struct_s_wcontext_a353abb5ab97460323cbc47f335b5d34e}} 
+\index{S\+Wcontext@{S\+Wcontext}!Zoomed\+Arrays@{Zoomed\+Arrays}}
+\index{Zoomed\+Arrays@{Zoomed\+Arrays}!S\+Wcontext@{S\+Wcontext}}
+\subsubsection{\texorpdfstring{Zoomed\+Arrays}{ZoomedArrays}}
+{\footnotesize\ttfamily \hyperlink{structsw__span__arrays}{S\+Wspanarrays}$\ast$ S\+Wcontext\+::\+Zoomed\+Arrays}
+
+For pixel zooming 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/swrast/\hyperlink{s__context_8h}{s\+\_\+context.\+h}\end{DoxyCompactItemize}

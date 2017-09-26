@@ -1,0 +1,601 @@
+\hypertarget{class_graphics}{}\section{Graphics类 参考}
+\label{class_graphics}\index{Graphics@{Graphics}}
+类 Graphics 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graphics}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graphics_ab0a95f60962944795ac49e987211710c}\label{class_graphics_ab0a95f60962944795ac49e987211710c}} 
+{\bfseries Graphics} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image})
+\item 
+\mbox{\Hypertarget{class_graphics_a6218674644fd871c694928478e0f25b5}\label{class_graphics_a6218674644fd871c694928478e0f25b5}} 
+{\bfseries Graphics} (H\+DC hdc)
+\item 
+\mbox{\Hypertarget{class_graphics_abaece6f05ef807d960542cdcb8e3fa03}\label{class_graphics_abaece6f05ef807d960542cdcb8e3fa03}} 
+{\bfseries Graphics} (H\+DC hdc, \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} hdevice)
+\item 
+\mbox{\Hypertarget{class_graphics_a23f6fd0d2081c55e3197f7a5849c3859}\label{class_graphics_a23f6fd0d2081c55e3197f7a5849c3859}} 
+{\bfseries Graphics} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, B\+O\+OL icm)
+\item 
+\mbox{\Hypertarget{class_graphics_a6f8fa8e5c091209e1d46968eb2da19f1}\label{class_graphics_a6f8fa8e5c091209e1d46968eb2da19f1}} 
+Status {\bfseries Add\+Metafile\+Comment} (const B\+Y\+TE $\ast$data, U\+I\+NT size\+Data)
+\item 
+\mbox{\Hypertarget{class_graphics_a19bed1c3c502415d4518f6f3664dab6e}\label{class_graphics_a19bed1c3c502415d4518f6f3664dab6e}} 
+Graphics\+Container {\bfseries Begin\+Container} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a8d1d58ea53bd857f3d8388666a786b2d}\label{class_graphics_a8d1d58ea53bd857f3d8388666a786b2d}} 
+Graphics\+Container {\bfseries Begin\+Container} (const \hyperlink{struct_rect_f}{RectF} \&dstrect, const \hyperlink{struct_rect_f}{RectF} \&srcrect, Unit unit)
+\item 
+\mbox{\Hypertarget{class_graphics_ae58b5eedbe8e7e8ec46a279fd23acfb7}\label{class_graphics_ae58b5eedbe8e7e8ec46a279fd23acfb7}} 
+Graphics\+Container {\bfseries Begin\+Container} (const \hyperlink{struct_rect}{Rect} \&dstrect, const \hyperlink{struct_rect}{Rect} \&srcrect, Unit unit)
+\item 
+\mbox{\Hypertarget{class_graphics_a2685553204b51b19859deb618fc21f92}\label{class_graphics_a2685553204b51b19859deb618fc21f92}} 
+Status {\bfseries Clear} (const \hyperlink{struct_color}{Color} \&color)
+\item 
+\mbox{\Hypertarget{class_graphics_a8d5e4395b1d8fc11535349dc79a4991e}\label{class_graphics_a8d5e4395b1d8fc11535349dc79a4991e}} 
+Status {\bfseries Draw\+Arc} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect}{Rect} \&rect, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_ac593fbd38229fba699dccc7f66366bd0}\label{class_graphics_ac593fbd38229fba699dccc7f66366bd0}} 
+Status {\bfseries Draw\+Arc} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect_f}{RectF} \&rect, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_a2237ccb9b7dd94834312c68aee04bbbc}\label{class_graphics_a2237ccb9b7dd94834312c68aee04bbbc}} 
+Status {\bfseries Draw\+Arc} (const \hyperlink{class_pen}{Pen} $\ast$pen, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_acd104e437ab886c3efb43c5ab4eebbed}\label{class_graphics_acd104e437ab886c3efb43c5ab4eebbed}} 
+Status {\bfseries Draw\+Arc} (const \hyperlink{class_pen}{Pen} $\ast$pen, I\+NT x, I\+NT y, I\+NT width, I\+NT height, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_aa27b653aea790fbb4b6b3e8aecd76fb2}\label{class_graphics_aa27b653aea790fbb4b6b3e8aecd76fb2}} 
+Status {\bfseries Draw\+Bezier} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} \&pt1, const \hyperlink{struct_point}{Point} \&pt2, const \hyperlink{struct_point}{Point} \&pt3, const \hyperlink{struct_point}{Point} \&pt4)
+\item 
+\mbox{\Hypertarget{class_graphics_a0cc7a62176bfb037e2f5bb93f8febd69}\label{class_graphics_a0cc7a62176bfb037e2f5bb93f8febd69}} 
+Status {\bfseries Draw\+Bezier} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} \&pt1, const \hyperlink{struct_point_f}{PointF} \&pt2, const \hyperlink{struct_point_f}{PointF} \&pt3, const \hyperlink{struct_point_f}{PointF} \&pt4)
+\item 
+\mbox{\Hypertarget{class_graphics_ae56d49be074eabb2e52b66f0d17fd39d}\label{class_graphics_ae56d49be074eabb2e52b66f0d17fd39d}} 
+Status {\bfseries Draw\+Bezier} (const \hyperlink{class_pen}{Pen} $\ast$pen, R\+E\+AL x1, R\+E\+AL y1, R\+E\+AL x2, R\+E\+AL y2, R\+E\+AL x3, R\+E\+AL y3, R\+E\+AL x4, R\+E\+AL y4)
+\item 
+\mbox{\Hypertarget{class_graphics_aa895d4c678ee22c950962d0e5df41f1e}\label{class_graphics_aa895d4c678ee22c950962d0e5df41f1e}} 
+Status {\bfseries Draw\+Bezier} (const \hyperlink{class_pen}{Pen} $\ast$pen, I\+NT x1, I\+NT y1, I\+NT x2, I\+NT y2, I\+NT x3, I\+NT y3, I\+NT x4, I\+NT y4)
+\item 
+\mbox{\Hypertarget{class_graphics_aa9e9e3f91c8d96d89f57767ee8b93dfb}\label{class_graphics_aa9e9e3f91c8d96d89f57767ee8b93dfb}} 
+Status {\bfseries Draw\+Beziers} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a9ebfc38e1d1e967fd986864d191542dc}\label{class_graphics_a9ebfc38e1d1e967fd986864d191542dc}} 
+Status {\bfseries Draw\+Beziers} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_ad47597ecf625f1a4a205d96e3378f186}\label{class_graphics_ad47597ecf625f1a4a205d96e3378f186}} 
+Status {\bfseries Draw\+Cached\+Bitmap} (\hyperlink{class_cached_bitmap}{Cached\+Bitmap} $\ast$cb, I\+NT x, I\+NT y)
+\item 
+\mbox{\Hypertarget{class_graphics_a8e9763123877b9e018df77ec08b9a02d}\label{class_graphics_a8e9763123877b9e018df77ec08b9a02d}} 
+Status {\bfseries Draw\+Closed\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_af5b9a4930c63c1992c80235ded2758c6}\label{class_graphics_af5b9a4930c63c1992c80235ded2758c6}} 
+Status {\bfseries Draw\+Closed\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a51c5c7099c8ac1eb4636afb63bbfa65a}\label{class_graphics_a51c5c7099c8ac1eb4636afb63bbfa65a}} 
+Status {\bfseries Draw\+Closed\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_a632da24914d79bcccdd575b05e5d18be}\label{class_graphics_a632da24914d79bcccdd575b05e5d18be}} 
+Status {\bfseries Draw\+Closed\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_a00f4a86bbf33a4d029da1f11ef93a454}\label{class_graphics_a00f4a86bbf33a4d029da1f11ef93a454}} 
+Status {\bfseries Draw\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a1e85c05297632a0d8e85fb82ab39fea4}\label{class_graphics_a1e85c05297632a0d8e85fb82ab39fea4}} 
+Status {\bfseries Draw\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a6483a09a621579e93a2ebb429b0c806d}\label{class_graphics_a6483a09a621579e93a2ebb429b0c806d}} 
+Status {\bfseries Draw\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_acb52b0090c019b12848b58fcd9f86f93}\label{class_graphics_acb52b0090c019b12848b58fcd9f86f93}} 
+Status {\bfseries Draw\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count, I\+NT offset, I\+NT number\+Of\+Segments, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_a274aff1a64d0861b0caa07ad434cf489}\label{class_graphics_a274aff1a64d0861b0caa07ad434cf489}} 
+Status {\bfseries Draw\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count, I\+NT offset, I\+NT number\+Of\+Segments, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_a4fa943942705d3102085495cede31b7e}\label{class_graphics_a4fa943942705d3102085495cede31b7e}} 
+Status {\bfseries Draw\+Curve} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_a702d90c86170db885638fb4d0ac3d59f}\label{class_graphics_a702d90c86170db885638fb4d0ac3d59f}} 
+Status {\bfseries Draw\+Driver\+String} (const \hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} $\ast$text, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point_f}{PointF} $\ast$positions, I\+NT flags, const \hyperlink{class_matrix}{Matrix} $\ast$matrix)
+\item 
+\mbox{\Hypertarget{class_graphics_af9a0023ba976e84ce2b67421d9619017}\label{class_graphics_af9a0023ba976e84ce2b67421d9619017}} 
+Status {\bfseries Draw\+Ellipse} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect}{Rect} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_abbbe881ba5f5c74ff9b5c6a938c667f7}\label{class_graphics_abbbe881ba5f5c74ff9b5c6a938c667f7}} 
+Status {\bfseries Draw\+Ellipse} (const \hyperlink{class_pen}{Pen} $\ast$pen, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height)
+\item 
+\mbox{\Hypertarget{class_graphics_adb398ce193e60ae694dac36d7ab0126a}\label{class_graphics_adb398ce193e60ae694dac36d7ab0126a}} 
+Status {\bfseries Draw\+Ellipse} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect_f}{RectF} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a2ba1a13437774a821109b761a159f310}\label{class_graphics_a2ba1a13437774a821109b761a159f310}} 
+Status {\bfseries Draw\+Ellipse} (const \hyperlink{class_pen}{Pen} $\ast$pen, I\+NT x, I\+NT y, I\+NT width, I\+NT height)
+\item 
+\mbox{\Hypertarget{class_graphics_ad4b31a7907bba5bce961145a1870b404}\label{class_graphics_ad4b31a7907bba5bce961145a1870b404}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_point}{Point} $\ast$dest\+Points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a1115598e500ef8024df97589cd67edc8}\label{class_graphics_a1115598e500ef8024df97589cd67edc8}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, I\+NT x, I\+NT y)
+\item 
+\mbox{\Hypertarget{class_graphics_aee126d29b49557169978eec8eb1f27bc}\label{class_graphics_aee126d29b49557169978eec8eb1f27bc}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_point}{Point} \&point)
+\item 
+\mbox{\Hypertarget{class_graphics_a212a10a1943478b660ede63cc4673157}\label{class_graphics_a212a10a1943478b660ede63cc4673157}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, R\+E\+AL x, R\+E\+AL y)
+\item 
+\mbox{\Hypertarget{class_graphics_aba41709d40d16e1b988dd5047e648261}\label{class_graphics_aba41709d40d16e1b988dd5047e648261}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_point_f}{PointF} \&point)
+\item 
+\mbox{\Hypertarget{class_graphics_aa6a43de4b4b34680bd4c67559d789b28}\label{class_graphics_aa6a43de4b4b34680bd4c67559d789b28}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_point_f}{PointF} $\ast$dest\+Points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a31a0274f5fbc4f54625d654803b1349b}\label{class_graphics_a31a0274f5fbc4f54625d654803b1349b}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, R\+E\+AL x, R\+E\+AL y, R\+E\+AL srcx, R\+E\+AL srcy, R\+E\+AL srcwidth, R\+E\+AL srcheight, Unit src\+Unit)
+\item 
+\mbox{\Hypertarget{class_graphics_a22a1f408001663a2f2ce44096b9641ff}\label{class_graphics_a22a1f408001663a2f2ce44096b9641ff}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_rect_f}{RectF} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a53a9d62d87b470ab7ee615cf03ec1ab0}\label{class_graphics_a53a9d62d87b470ab7ee615cf03ec1ab0}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, I\+NT x, I\+NT y, I\+NT width, I\+NT height)
+\item 
+\mbox{\Hypertarget{class_graphics_aa66f4868fb5e0c35439aa0c032c3baa3}\label{class_graphics_aa66f4868fb5e0c35439aa0c032c3baa3}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_point_f}{PointF} $\ast$dest\+Points, I\+NT count, R\+E\+AL srcx, R\+E\+AL srcy, R\+E\+AL srcwidth, R\+E\+AL srcheight, Unit src\+Unit, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes, Draw\+Image\+Abort callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data)
+\item 
+\mbox{\Hypertarget{class_graphics_a31f1143eaf443e03582d68a3dd42b2ab}\label{class_graphics_a31f1143eaf443e03582d68a3dd42b2ab}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_rect}{Rect} \&dest\+Rect, I\+NT srcx, I\+NT srcy, I\+NT srcwidth, I\+NT srcheight, Unit src\+Unit, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes, Draw\+Image\+Abort callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data)
+\item 
+\mbox{\Hypertarget{class_graphics_a89bbd693f65ed8724053c0eeb638e089}\label{class_graphics_a89bbd693f65ed8724053c0eeb638e089}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_point}{Point} $\ast$dest\+Points, I\+NT count, I\+NT srcx, I\+NT srcy, I\+NT srcwidth, I\+NT srcheight, Unit src\+Unit, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes, Draw\+Image\+Abort callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data)
+\item 
+\mbox{\Hypertarget{class_graphics_aae613c176263aeef5885e2153025660b}\label{class_graphics_aae613c176263aeef5885e2153025660b}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height)
+\item 
+\mbox{\Hypertarget{class_graphics_ab97bb65fbaaf0d075c3d69c685f2ecfe}\label{class_graphics_ab97bb65fbaaf0d075c3d69c685f2ecfe}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_rect}{Rect} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a1fe3d8557ea2804e9818a304538a0028}\label{class_graphics_a1fe3d8557ea2804e9818a304538a0028}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, I\+NT x, I\+NT y, I\+NT srcx, I\+NT srcy, I\+NT srcwidth, I\+NT srcheight, Unit src\+Unit)
+\item 
+\mbox{\Hypertarget{class_graphics_a6284b9dbc786f20a0247634fbbabad91}\label{class_graphics_a6284b9dbc786f20a0247634fbbabad91}} 
+Status {\bfseries Draw\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image}, const \hyperlink{struct_rect_f}{RectF} \&dest\+Rect, R\+E\+AL srcx, R\+E\+AL srcy, R\+E\+AL srcwidth, R\+E\+AL srcheight, Unit src\+Unit, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes, Draw\+Image\+Abort callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data)
+\item 
+\mbox{\Hypertarget{class_graphics_ac8e715c1cf23cbbc4ccbac54f2c09d98}\label{class_graphics_ac8e715c1cf23cbbc4ccbac54f2c09d98}} 
+Status {\bfseries Draw\+Line} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} \&pt1, const \hyperlink{struct_point}{Point} \&pt2)
+\item 
+\mbox{\Hypertarget{class_graphics_a1500bd09eee1bb5e7e875e65cf17fd5b}\label{class_graphics_a1500bd09eee1bb5e7e875e65cf17fd5b}} 
+Status {\bfseries Draw\+Line} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} \&pt1, const \hyperlink{struct_point}{Point} \&pt2)
+\item 
+\mbox{\Hypertarget{class_graphics_a559202e44ec74b5933f4d0b6364aa12b}\label{class_graphics_a559202e44ec74b5933f4d0b6364aa12b}} 
+Status {\bfseries Draw\+Line} (const \hyperlink{class_pen}{Pen} $\ast$pen, R\+E\+AL x1, R\+E\+AL y1, R\+E\+AL x2, R\+E\+AL y2)
+\item 
+\mbox{\Hypertarget{class_graphics_a3420da41b1573f9044d519f0f9801489}\label{class_graphics_a3420da41b1573f9044d519f0f9801489}} 
+Status {\bfseries Draw\+Line} (const \hyperlink{class_pen}{Pen} $\ast$pen, I\+NT x1, I\+NT y1, I\+NT x2, I\+NT y2)
+\item 
+\mbox{\Hypertarget{class_graphics_a9beb5b22c7dd87bf2a50bdc34cf71358}\label{class_graphics_a9beb5b22c7dd87bf2a50bdc34cf71358}} 
+Status {\bfseries Draw\+Lines} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a6f924472953344695a67dfbf17d065bb}\label{class_graphics_a6f924472953344695a67dfbf17d065bb}} 
+Status {\bfseries Draw\+Lines} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a7361cdd9a855e4837e600f6d78c7d337}\label{class_graphics_a7361cdd9a855e4837e600f6d78c7d337}} 
+Status {\bfseries Draw\+Path} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{class_graphics_path}{Graphics\+Path} $\ast$\hyperlink{structpath}{path})
+\item 
+\mbox{\Hypertarget{class_graphics_a7f3d25289d97fb66fab216402041d20e}\label{class_graphics_a7f3d25289d97fb66fab216402041d20e}} 
+Status {\bfseries Draw\+Pie} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect}{Rect} \&rect, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_a384f323d235aebcd6e9ac57c5446dc0f}\label{class_graphics_a384f323d235aebcd6e9ac57c5446dc0f}} 
+Status {\bfseries Draw\+Pie} (const \hyperlink{class_pen}{Pen} $\ast$pen, I\+NT x, I\+NT y, I\+NT width, I\+NT height, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_add9524f791ace49184aa914ecb3b70cb}\label{class_graphics_add9524f791ace49184aa914ecb3b70cb}} 
+Status {\bfseries Draw\+Pie} (const \hyperlink{class_pen}{Pen} $\ast$pen, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_a37899e7b1d34a124cb9dfcdf3c241b6c}\label{class_graphics_a37899e7b1d34a124cb9dfcdf3c241b6c}} 
+Status {\bfseries Draw\+Pie} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect_f}{RectF} \&rect, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_a98dbbbbddeb71bbbaef11335719c33e0}\label{class_graphics_a98dbbbbddeb71bbbaef11335719c33e0}} 
+Status {\bfseries Draw\+Polygon} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT $\ast$count)
+\item 
+\mbox{\Hypertarget{class_graphics_a7f25140d7702b263aa6491fb4d5fbdd0}\label{class_graphics_a7f25140d7702b263aa6491fb4d5fbdd0}} 
+Status {\bfseries Draw\+Polygon} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT $\ast$count)
+\item 
+\mbox{\Hypertarget{class_graphics_a7096e146ace4d8127dd512fa5794929e}\label{class_graphics_a7096e146ace4d8127dd512fa5794929e}} 
+Status {\bfseries Draw\+Rectangle} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect}{Rect} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a9b5616a3cde87ea45bc9ee68f54eaf3e}\label{class_graphics_a9b5616a3cde87ea45bc9ee68f54eaf3e}} 
+Status {\bfseries Draw\+Rectangle} (const \hyperlink{class_pen}{Pen} $\ast$pen, I\+NT x, I\+NT y, I\+NT width, I\+NT height)
+\item 
+\mbox{\Hypertarget{class_graphics_aea6ef4a41862d95a46e4dea495822dd9}\label{class_graphics_aea6ef4a41862d95a46e4dea495822dd9}} 
+Status {\bfseries Draw\+Rectangle} (const \hyperlink{class_pen}{Pen} $\ast$pen, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height)
+\item 
+\mbox{\Hypertarget{class_graphics_ab229b499892d1938e051a114d8b1af92}\label{class_graphics_ab229b499892d1938e051a114d8b1af92}} 
+Status {\bfseries Draw\+Rectangle} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect_f}{RectF} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a6ae320f7a8bd1585f72e7660490646aa}\label{class_graphics_a6ae320f7a8bd1585f72e7660490646aa}} 
+Status {\bfseries Draw\+Rectangles} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect}{Rect} $\ast$rects, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_aa029d5d1c8b2c4909cd82b5520a28b51}\label{class_graphics_aa029d5d1c8b2c4909cd82b5520a28b51}} 
+Status {\bfseries Draw\+Rectangles} (const \hyperlink{class_pen}{Pen} $\ast$pen, const \hyperlink{struct_rect_f}{RectF} $\ast$rects, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a399b3fc93f088d0b7eba045caa735b6e}\label{class_graphics_a399b3fc93f088d0b7eba045caa735b6e}} 
+Status {\bfseries Draw\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_rect_f}{RectF} \&layout\+Rect, const \hyperlink{class_string_format}{String\+Format} $\ast$string\+Format, const \hyperlink{class_brush}{Brush} $\ast$brush)
+\item 
+\mbox{\Hypertarget{class_graphics_a19a260abddd1020c388f821c2e3d0339}\label{class_graphics_a19a260abddd1020c388f821c2e3d0339}} 
+Status {\bfseries Draw\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_point_f}{PointF} \&origin, const \hyperlink{class_brush}{Brush} $\ast$brush)
+\item 
+\mbox{\Hypertarget{class_graphics_a5c985b1fa789b9664ed68c88d0a93092}\label{class_graphics_a5c985b1fa789b9664ed68c88d0a93092}} 
+Status {\bfseries Draw\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_point_f}{PointF} \&origin, const \hyperlink{class_string_format}{String\+Format} $\ast$string\+Format, const \hyperlink{class_brush}{Brush} $\ast$brush)
+\item 
+\mbox{\Hypertarget{class_graphics_ad9de62ec76c7bb0992cd0f20ab208d39}\label{class_graphics_ad9de62ec76c7bb0992cd0f20ab208d39}} 
+Status {\bfseries End\+Container} (Graphics\+Container state)
+\item 
+\mbox{\Hypertarget{class_graphics_ac031d693ae62a386e9bf169a8414bc96}\label{class_graphics_ac031d693ae62a386e9bf169a8414bc96}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{class_metafile}{Metafile} \&dest\+Point, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a06b8c918fdb2582928a6380b94fee77c}\label{class_graphics_a06b8c918fdb2582928a6380b94fee77c}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_point}{Point} $\ast$dest\+Points, I\+NT count, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_ae6af4288cf45244e3b9db0697eab0da7}\label{class_graphics_ae6af4288cf45244e3b9db0697eab0da7}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_point}{Point} \&dest\+Point, const \hyperlink{struct_rect}{Rect} \&src\+Rect, Unit src\+Unit, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a19386169e28931a7e6ca013ca6dba620}\label{class_graphics_a19386169e28931a7e6ca013ca6dba620}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_point_f}{PointF} $\ast$dest\+Points, I\+NT count, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a5ac88adc81dd3f6f82d217c30e6b6546}\label{class_graphics_a5ac88adc81dd3f6f82d217c30e6b6546}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_rect}{Rect} \&dest\+Rect, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a87ad850049ecd75dbd579aa96e1218a5}\label{class_graphics_a87ad850049ecd75dbd579aa96e1218a5}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_rect_f}{RectF} \&dest\+Rect, const \hyperlink{struct_rect_f}{RectF} \&src\+Rect, Unit src\+Unit, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_aa18cdc8781ad5dc18b5c93797a1bc944}\label{class_graphics_aa18cdc8781ad5dc18b5c93797a1bc944}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_rect_f}{RectF} \&dest\+Rect, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a0ea051e88046afd3a0b5e103b9b7f797}\label{class_graphics_a0ea051e88046afd3a0b5e103b9b7f797}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_point_f}{PointF} \&dest\+Point, const \hyperlink{struct_rect}{Rect} \&src\+Rect, Unit src\+Unit, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a68abc2fe24552cef03d1c9b0031534cc}\label{class_graphics_a68abc2fe24552cef03d1c9b0031534cc}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_point}{Point} $\ast$dest\+Points, I\+NT count, const \hyperlink{struct_rect}{Rect} \&src\+Rect, Unit src\+Unit, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a24bdd562206f74d2b9c362e53c6717e2}\label{class_graphics_a24bdd562206f74d2b9c362e53c6717e2}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_rect}{Rect} \&dest\+Rect, const \hyperlink{struct_rect}{Rect} \&src\+Rect, Unit src\+Unit, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a7a9e09cc34f422ebf435cd9f71be67ca}\label{class_graphics_a7a9e09cc34f422ebf435cd9f71be67ca}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_point}{Point} $\ast$dest\+Points, I\+NT count, const \hyperlink{struct_rect_f}{RectF} \&src\+Rect, Unit src\+Unit, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a64d923260d8753cceaa8ce3e4f76ad5e}\label{class_graphics_a64d923260d8753cceaa8ce3e4f76ad5e}} 
+Status {\bfseries Enumerate\+Metafile} (const \hyperlink{class_metafile}{Metafile} $\ast$metafile, const \hyperlink{struct_point_f}{PointF} \&dest\+Point, Enumerate\+Metafile\+Proc callback, \hyperlink{interfacevoid}{V\+O\+ID} $\ast$callback\+Data, \hyperlink{class_image_attributes}{Image\+Attributes} $\ast$image\+Attributes)
+\item 
+\mbox{\Hypertarget{class_graphics_a4796b3d839f4c91059d64cff2b4ac897}\label{class_graphics_a4796b3d839f4c91059d64cff2b4ac897}} 
+Status {\bfseries Exclude\+Clip} (const \hyperlink{struct_rect}{Rect} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a5104d0c0d79f3bc098b0dbe037c8ac66}\label{class_graphics_a5104d0c0d79f3bc098b0dbe037c8ac66}} 
+Status {\bfseries Exclude\+Clip} (const \hyperlink{struct_rect_f}{RectF} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a516133f4823947c6b3c2ce25bd2fa693}\label{class_graphics_a516133f4823947c6b3c2ce25bd2fa693}} 
+Status {\bfseries Exclude\+Clip} (const \hyperlink{class_region}{Region} $\ast$region)
+\item 
+\mbox{\Hypertarget{class_graphics_a429959aa7ce9eca8a5d77b81c4f2e9a7}\label{class_graphics_a429959aa7ce9eca8a5d77b81c4f2e9a7}} 
+Status {\bfseries Fill\+Closed\+Curve} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a877da762fbb6fb76b50a4019218e6b25}\label{class_graphics_a877da762fbb6fb76b50a4019218e6b25}} 
+Status {\bfseries Fill\+Closed\+Curve} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count, Fill\+Mode \hyperlink{interfacevoid}{fill\+Mode}, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_a02247696f148e4a2c1079eece4e1362a}\label{class_graphics_a02247696f148e4a2c1079eece4e1362a}} 
+Status {\bfseries Fill\+Closed\+Curve} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a02755ed3c686ab25a58d285ce6ae4012}\label{class_graphics_a02755ed3c686ab25a58d285ce6ae4012}} 
+Status {\bfseries Fill\+Closed\+Curve} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count, Fill\+Mode \hyperlink{interfacevoid}{fill\+Mode}, R\+E\+AL tension)
+\item 
+\mbox{\Hypertarget{class_graphics_a472a0ed7f0e5c0f6326f4c5d26080ac3}\label{class_graphics_a472a0ed7f0e5c0f6326f4c5d26080ac3}} 
+Status {\bfseries Fill\+Ellipse} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_rect}{Rect} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a905aadbb6ac4297fe5646af41296bb7a}\label{class_graphics_a905aadbb6ac4297fe5646af41296bb7a}} 
+Status {\bfseries Fill\+Ellipse} (const \hyperlink{class_brush}{Brush} $\ast$brush, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height)
+\item 
+\mbox{\Hypertarget{class_graphics_a3c5cc1a47904118a2dda890d5fe4171b}\label{class_graphics_a3c5cc1a47904118a2dda890d5fe4171b}} 
+Status {\bfseries Fill\+Ellipse} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_rect_f}{RectF} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a3abd21c0a5928db6c8414fa2c669ed34}\label{class_graphics_a3abd21c0a5928db6c8414fa2c669ed34}} 
+Status {\bfseries Fill\+Ellipse} (const \hyperlink{class_brush}{Brush} $\ast$brush, I\+NT x, I\+NT y, I\+NT width, I\+NT height)
+\item 
+\mbox{\Hypertarget{class_graphics_a6c004dbc56f2a399c720d25f229417a3}\label{class_graphics_a6c004dbc56f2a399c720d25f229417a3}} 
+Status {\bfseries Fill\+Path} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{class_graphics_path}{Graphics\+Path} $\ast$\hyperlink{structpath}{path})
+\item 
+\mbox{\Hypertarget{class_graphics_afbc092738da12d7d687a8f6ea483e4d0}\label{class_graphics_afbc092738da12d7d687a8f6ea483e4d0}} 
+Status {\bfseries Fill\+Pie} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_rect}{Rect} \&rect, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_aef7f333357e330543b1b6f55ab05d829}\label{class_graphics_aef7f333357e330543b1b6f55ab05d829}} 
+Status {\bfseries Fill\+Pie} (const \hyperlink{class_brush}{Brush} $\ast$brush, I\+NT x, I\+NT y, I\+NT width, I\+NT height, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_a4b749d1c5d149a2c67542fef6e30959b}\label{class_graphics_a4b749d1c5d149a2c67542fef6e30959b}} 
+Status {\bfseries Fill\+Pie} (const \hyperlink{class_brush}{Brush} $\ast$brush, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_aa6aa86090d59ad34204309657ea79c90}\label{class_graphics_aa6aa86090d59ad34204309657ea79c90}} 
+Status {\bfseries Fill\+Pie} (const \hyperlink{class_brush}{Brush} $\ast$brush, \hyperlink{struct_rect_f}{RectF} \&rect, R\+E\+AL start\+Angle, R\+E\+AL sweep\+Angle)
+\item 
+\mbox{\Hypertarget{class_graphics_aded42b5f60a6f6756cae4c69a30581ce}\label{class_graphics_aded42b5f60a6f6756cae4c69a30581ce}} 
+Status {\bfseries Fill\+Polygon} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a4a40dac25ed24e54a54831585ec7e72f}\label{class_graphics_a4a40dac25ed24e54a54831585ec7e72f}} 
+Status {\bfseries Fill\+Polygon} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_a7caadcd97899540584438030c0fa1822}\label{class_graphics_a7caadcd97899540584438030c0fa1822}} 
+Status {\bfseries Fill\+Polygon} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point}{Point} $\ast$points, I\+NT count, Fill\+Mode \hyperlink{interfacevoid}{fill\+Mode})
+\item 
+\mbox{\Hypertarget{class_graphics_a23f6c6486e2e0e8a57ecf65710a45eb5}\label{class_graphics_a23f6c6486e2e0e8a57ecf65710a45eb5}} 
+Status {\bfseries Fill\+Polygon} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_point_f}{PointF} $\ast$points, I\+NT count, Fill\+Mode \hyperlink{interfacevoid}{fill\+Mode})
+\item 
+\mbox{\Hypertarget{class_graphics_ab839af13e14ad65205efb98d247adc5b}\label{class_graphics_ab839af13e14ad65205efb98d247adc5b}} 
+Status {\bfseries Fill\+Rectangle} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_rect}{Rect} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_ad65f2ffbf5269b231ea33d7b25a96293}\label{class_graphics_ad65f2ffbf5269b231ea33d7b25a96293}} 
+Status {\bfseries Fill\+Rectangle} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_rect_f}{RectF} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_af13fe0b2829380954c4faed771a860a1}\label{class_graphics_af13fe0b2829380954c4faed771a860a1}} 
+Status {\bfseries Fill\+Rectangle} (const \hyperlink{class_brush}{Brush} $\ast$brush, R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height)
+\item 
+\mbox{\Hypertarget{class_graphics_abf1c69db81ae1f3cad001569e968eb70}\label{class_graphics_abf1c69db81ae1f3cad001569e968eb70}} 
+Status {\bfseries Fill\+Rectangle} (const \hyperlink{class_brush}{Brush} $\ast$brush, I\+NT x, I\+NT y, I\+NT width, I\+NT height)
+\item 
+\mbox{\Hypertarget{class_graphics_a86ba262a74e3ccb87f32569925a4cc76}\label{class_graphics_a86ba262a74e3ccb87f32569925a4cc76}} 
+Status {\bfseries Fill\+Rectangles} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_rect}{Rect} $\ast$rects, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_ac4a345833235b56e1078e37b1300f53d}\label{class_graphics_ac4a345833235b56e1078e37b1300f53d}} 
+Status {\bfseries Fill\+Rectangles} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{struct_rect_f}{RectF} $\ast$rects, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_acd9f4166637440526c79af082635f5c5}\label{class_graphics_acd9f4166637440526c79af082635f5c5}} 
+Status {\bfseries Fill\+Region} (const \hyperlink{class_brush}{Brush} $\ast$brush, const \hyperlink{class_region}{Region} $\ast$region)
+\item 
+\mbox{\Hypertarget{class_graphics_a78f9996d2b99f4a47e5812e04276aa2b}\label{class_graphics_a78f9996d2b99f4a47e5812e04276aa2b}} 
+\hyperlink{interfacevoid}{V\+O\+ID} {\bfseries Flush} (Flush\+Intention intention)
+\item 
+\mbox{\Hypertarget{class_graphics_aa7506d93a0462ea4f79d027ee3bb36bd}\label{class_graphics_aa7506d93a0462ea4f79d027ee3bb36bd}} 
+Status {\bfseries Get\+Clip} (\hyperlink{class_region}{Region} $\ast$region) const
+\item 
+\mbox{\Hypertarget{class_graphics_a4481a3ca4fa722d1ec17758df2dc9633}\label{class_graphics_a4481a3ca4fa722d1ec17758df2dc9633}} 
+Status {\bfseries Get\+Clip\+Bounds} (\hyperlink{struct_rect}{Rect} $\ast$rect) const
+\item 
+\mbox{\Hypertarget{class_graphics_a85ee563b609c2641bbc0a34d5abd1b76}\label{class_graphics_a85ee563b609c2641bbc0a34d5abd1b76}} 
+Status {\bfseries Get\+Clip\+Bounds} (\hyperlink{struct_rect_f}{RectF} $\ast$rect) const
+\item 
+\mbox{\Hypertarget{class_graphics_a01abbc341a9e8bf7ce3afff91c358d74}\label{class_graphics_a01abbc341a9e8bf7ce3afff91c358d74}} 
+Compositing\+Mode {\bfseries Get\+Compositing\+Mode} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a6ce56dfe909ea763dc3447d4d42727f8}\label{class_graphics_a6ce56dfe909ea763dc3447d4d42727f8}} 
+Compositing\+Quality {\bfseries Get\+Compositing\+Quality} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a6fb9f4762a88d07f2dfe13b29d540f87}\label{class_graphics_a6fb9f4762a88d07f2dfe13b29d540f87}} 
+R\+E\+AL {\bfseries Get\+DpiX} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a95f4dc2eb00216cec4f152e9c197368e}\label{class_graphics_a95f4dc2eb00216cec4f152e9c197368e}} 
+R\+E\+AL {\bfseries Get\+DpiY} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_aa01ae31a1cbb99bc394570ac77728058}\label{class_graphics_aa01ae31a1cbb99bc394570ac77728058}} 
+H\+DC {\bfseries Get\+H\+DC} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a50755568f639af88a52085563734bd8a}\label{class_graphics_a50755568f639af88a52085563734bd8a}} 
+Interpolation\+Mode {\bfseries Get\+Interpolation\+Mode} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_afebf8c47325ef58f3d896065241be504}\label{class_graphics_afebf8c47325ef58f3d896065241be504}} 
+Status {\bfseries Get\+Last\+Status} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a2e57eca68f61f2e0bdb38d199d32bb8d}\label{class_graphics_a2e57eca68f61f2e0bdb38d199d32bb8d}} 
+Status {\bfseries Get\+Nearest\+Color} (\hyperlink{struct_color}{Color} $\ast$color) const
+\item 
+\mbox{\Hypertarget{class_graphics_a50970bd0dc41edc2dd56a79ad94db7f2}\label{class_graphics_a50970bd0dc41edc2dd56a79ad94db7f2}} 
+R\+E\+AL {\bfseries Get\+Page\+Scale} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a8e1ae4657b0557b96de9fd29bf1fbe23}\label{class_graphics_a8e1ae4657b0557b96de9fd29bf1fbe23}} 
+Unit {\bfseries Get\+Page\+Unit} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a386ffd3f1c0faa83b35f53a73409236b}\label{class_graphics_a386ffd3f1c0faa83b35f53a73409236b}} 
+Pixel\+Offset\+Mode {\bfseries Get\+Pixel\+Offset\+Mode} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a758556be686264f83b9c4e0ef75972fa}\label{class_graphics_a758556be686264f83b9c4e0ef75972fa}} 
+Status {\bfseries Get\+Rendering\+Origin} (I\+NT $\ast$x, I\+NT $\ast$y)
+\item 
+\mbox{\Hypertarget{class_graphics_a6a16ed28f63194c08cdd9a807f669c5b}\label{class_graphics_a6a16ed28f63194c08cdd9a807f669c5b}} 
+Smoothing\+Mode {\bfseries Get\+Smoothing\+Mode} (\hyperlink{interfacevoid}{V\+O\+ID}) const
+\item 
+\mbox{\Hypertarget{class_graphics_a6df72f1714c23027c0c59d93057e4c7d}\label{class_graphics_a6df72f1714c23027c0c59d93057e4c7d}} 
+U\+I\+NT {\bfseries Get\+Text\+Contrast} (\hyperlink{interfacevoid}{V\+O\+ID}) const
+\item 
+\mbox{\Hypertarget{class_graphics_a87cf19c1ab006b7ab1a84bc6c0bc5a09}\label{class_graphics_a87cf19c1ab006b7ab1a84bc6c0bc5a09}} 
+Text\+Rendering\+Hint {\bfseries Get\+Text\+Rendering\+Hint} (\hyperlink{interfacevoid}{V\+O\+ID}) const
+\item 
+\mbox{\Hypertarget{class_graphics_a538dac5418519e6d109aee3e8eafe5ee}\label{class_graphics_a538dac5418519e6d109aee3e8eafe5ee}} 
+Status {\bfseries Get\+Transform} (\hyperlink{class_matrix}{Matrix} $\ast$matrix)
+\item 
+\mbox{\Hypertarget{class_graphics_a57ab3d16efa826a3c176cb0b0dd95366}\label{class_graphics_a57ab3d16efa826a3c176cb0b0dd95366}} 
+Status {\bfseries Get\+Visible\+Clip\+Bounds} (\hyperlink{struct_rect}{Rect} $\ast$rect) const
+\item 
+\mbox{\Hypertarget{class_graphics_ad5255e110e4ee273827042c4ea8236fb}\label{class_graphics_ad5255e110e4ee273827042c4ea8236fb}} 
+Status {\bfseries Get\+Visible\+Clip\+Bounds} (\hyperlink{struct_rect_f}{RectF} $\ast$rect) const
+\item 
+\mbox{\Hypertarget{class_graphics_a2c4a87400ee51f1ff9f1a6335270e7ef}\label{class_graphics_a2c4a87400ee51f1ff9f1a6335270e7ef}} 
+Status {\bfseries Intersect\+Clip} (const \hyperlink{struct_rect}{Rect} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_a9c706dfb908a779a6eaa01615b8a379d}\label{class_graphics_a9c706dfb908a779a6eaa01615b8a379d}} 
+Status {\bfseries Intersect\+Clip} (const \hyperlink{class_region}{Region} $\ast$region)
+\item 
+\mbox{\Hypertarget{class_graphics_a5233e39a82e47024369861410b9d53b4}\label{class_graphics_a5233e39a82e47024369861410b9d53b4}} 
+Status {\bfseries Intersect\+Clip} (const \hyperlink{struct_rect_f}{RectF} \&rect)
+\item 
+\mbox{\Hypertarget{class_graphics_af806d0e90da6ec8ed970518171ed9ef7}\label{class_graphics_af806d0e90da6ec8ed970518171ed9ef7}} 
+B\+O\+OL {\bfseries Is\+Clip\+Empty} (\hyperlink{interfacevoid}{V\+O\+ID}) const
+\item 
+\mbox{\Hypertarget{class_graphics_a1bb52bb6534db9f7edd2bbdf8dae7711}\label{class_graphics_a1bb52bb6534db9f7edd2bbdf8dae7711}} 
+B\+O\+OL {\bfseries Is\+Visible} (const \hyperlink{struct_point}{Point} \&point) const
+\item 
+\mbox{\Hypertarget{class_graphics_a2db22a7f034afc4685af679a6e627ad0}\label{class_graphics_a2db22a7f034afc4685af679a6e627ad0}} 
+B\+O\+OL {\bfseries Is\+Visible} (const \hyperlink{struct_rect}{Rect} \&rect) const
+\item 
+\mbox{\Hypertarget{class_graphics_a67ae8b16a54f0b310b39cbb7863be012}\label{class_graphics_a67ae8b16a54f0b310b39cbb7863be012}} 
+B\+O\+OL {\bfseries Is\+Visible} (R\+E\+AL x, R\+E\+AL y) const
+\item 
+\mbox{\Hypertarget{class_graphics_acada8b50f1c0f554c23eb9abee2d0a73}\label{class_graphics_acada8b50f1c0f554c23eb9abee2d0a73}} 
+B\+O\+OL {\bfseries Is\+Visible} (const \hyperlink{struct_rect_f}{RectF} \&rect) const
+\item 
+\mbox{\Hypertarget{class_graphics_aa5ec8a50274135bdbff353cb3c409eb1}\label{class_graphics_aa5ec8a50274135bdbff353cb3c409eb1}} 
+B\+O\+OL {\bfseries Is\+Visible} (I\+NT x, I\+NT y, I\+NT width, I\+NT height) const
+\item 
+\mbox{\Hypertarget{class_graphics_ad2ce2eec17da2edae732a81a2941f314}\label{class_graphics_ad2ce2eec17da2edae732a81a2941f314}} 
+B\+O\+OL {\bfseries Is\+Visible} (I\+NT x, I\+NT y) const
+\item 
+\mbox{\Hypertarget{class_graphics_ad2eca44203d7cc651116a4befdcfc6bb}\label{class_graphics_ad2eca44203d7cc651116a4befdcfc6bb}} 
+B\+O\+OL {\bfseries Is\+Visible} (const \hyperlink{struct_point_f}{PointF} \&point) const
+\item 
+\mbox{\Hypertarget{class_graphics_a5b547ac7c35ad672c7b38b3cf7711c34}\label{class_graphics_a5b547ac7c35ad672c7b38b3cf7711c34}} 
+B\+O\+OL {\bfseries Is\+Visible} (R\+E\+AL x, R\+E\+AL y, R\+E\+AL width, R\+E\+AL height) const
+\item 
+\mbox{\Hypertarget{class_graphics_a85069f0389f84aff32920b6aae9b89a4}\label{class_graphics_a85069f0389f84aff32920b6aae9b89a4}} 
+B\+O\+OL {\bfseries Is\+Visible\+Clip\+Empty} (\hyperlink{interfacevoid}{V\+O\+ID}) const
+\item 
+\mbox{\Hypertarget{class_graphics_acaaecb8e8e6b1d45691bf93610a82f96}\label{class_graphics_acaaecb8e8e6b1d45691bf93610a82f96}} 
+Status {\bfseries Measure\+Character\+Ranges} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_rect_f}{RectF} \&layout\+Rect, const \hyperlink{class_string_format}{String\+Format} $\ast$string\+Format, I\+NT region\+Count, \hyperlink{class_region}{Region} $\ast$regions) const
+\item 
+\mbox{\Hypertarget{class_graphics_a3361aa47be9c7a7d825c03b0cc26cb56}\label{class_graphics_a3361aa47be9c7a7d825c03b0cc26cb56}} 
+Status {\bfseries Measure\+Driver\+String} (const \hyperlink{_processor_bind_8h_a09f1a1fb2293e33483cc8d44aefb1eb1}{U\+I\+N\+T16} $\ast$text, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_point_f}{PointF} $\ast$positions, I\+NT flags, const \hyperlink{class_matrix}{Matrix} $\ast$matrix, \hyperlink{struct_rect_f}{RectF} $\ast$bounding\+Box) const
+\item 
+\mbox{\Hypertarget{class_graphics_a7b8f0247b626bd925fd2322d53e1b9d2}\label{class_graphics_a7b8f0247b626bd925fd2322d53e1b9d2}} 
+Status {\bfseries Measure\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_rect_f}{RectF} \&layout\+Rect, \hyperlink{struct_rect_f}{RectF} $\ast$bounding\+Box) const
+\item 
+\mbox{\Hypertarget{class_graphics_ac0608086a5b97ea4773f00b948dcb942}\label{class_graphics_ac0608086a5b97ea4773f00b948dcb942}} 
+Status {\bfseries Measure\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_point_f}{PointF} \&origin, const \hyperlink{class_string_format}{String\+Format} $\ast$string\+Format, \hyperlink{struct_rect_f}{RectF} $\ast$bounding\+Box) const
+\item 
+\mbox{\Hypertarget{class_graphics_aa92392823e1645651cd652ac3f4bc2d5}\label{class_graphics_aa92392823e1645651cd652ac3f4bc2d5}} 
+Status {\bfseries Measure\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_rect_f}{RectF} \&layout\+Rect, const \hyperlink{class_string_format}{String\+Format} $\ast$string\+Format, \hyperlink{struct_rect_f}{RectF} $\ast$bounding\+Box, I\+NT $\ast$codepoints\+Fitted, I\+NT $\ast$lines\+Filled) const
+\item 
+\mbox{\Hypertarget{class_graphics_a84cdcc1bb03355c178363af89521479c}\label{class_graphics_a84cdcc1bb03355c178363af89521479c}} 
+Status {\bfseries Measure\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const SizeF \&layout\+Rect\+Size, const \hyperlink{class_string_format}{String\+Format} $\ast$string\+Format, SizeF $\ast$size, I\+NT $\ast$codepoints\+Fitted, I\+NT $\ast$lines\+Filled) const
+\item 
+\mbox{\Hypertarget{class_graphics_a7b7b14f84daed5093a635683610d229b}\label{class_graphics_a7b7b14f84daed5093a635683610d229b}} 
+Status {\bfseries Measure\+String} (const W\+C\+H\+AR $\ast$\hyperlink{structstring}{string}, I\+NT length, const \hyperlink{class_font}{Font} $\ast$font, const \hyperlink{struct_point_f}{PointF} \&origin, \hyperlink{struct_rect_f}{RectF} $\ast$bounding\+Box) const
+\item 
+\mbox{\Hypertarget{class_graphics_a1d7d6e00b16420e964da6c4d4dc8da0b}\label{class_graphics_a1d7d6e00b16420e964da6c4d4dc8da0b}} 
+Status {\bfseries Multiply\+Transform} (\hyperlink{class_matrix}{Matrix} $\ast$matrix, Matrix\+Order order)
+\item 
+\mbox{\Hypertarget{class_graphics_a8d17b56b48300ca00016e8461af3327c}\label{class_graphics_a8d17b56b48300ca00016e8461af3327c}} 
+\hyperlink{interfacevoid}{V\+O\+ID} {\bfseries Release\+H\+DC} (H\+DC hdc)
+\item 
+\mbox{\Hypertarget{class_graphics_a4ec150c2646d1e213186ea5d78229fe4}\label{class_graphics_a4ec150c2646d1e213186ea5d78229fe4}} 
+Status {\bfseries Reset\+Clip} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a228c535e57ee64ea2f5b7ef5e577c959}\label{class_graphics_a228c535e57ee64ea2f5b7ef5e577c959}} 
+Status {\bfseries Reset\+Transform} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_a240b83042801e8c130e78ca3b76d149a}\label{class_graphics_a240b83042801e8c130e78ca3b76d149a}} 
+Status {\bfseries Restore} (Graphics\+State gstate)
+\item 
+\mbox{\Hypertarget{class_graphics_a65fbaf8f3e6ff7a75df424b8366a6de6}\label{class_graphics_a65fbaf8f3e6ff7a75df424b8366a6de6}} 
+Status {\bfseries Rotate\+Transform} (R\+E\+AL angle, Matrix\+Order order)
+\item 
+\mbox{\Hypertarget{class_graphics_a136c0a9e4a26de8ea5a026c096eb51c1}\label{class_graphics_a136c0a9e4a26de8ea5a026c096eb51c1}} 
+Graphics\+State {\bfseries Save} (\hyperlink{interfacevoid}{V\+O\+ID})
+\item 
+\mbox{\Hypertarget{class_graphics_ac2f0f29cf63e93222a0702fadca69efc}\label{class_graphics_ac2f0f29cf63e93222a0702fadca69efc}} 
+Status {\bfseries Scale\+Transform} (R\+E\+AL sx, R\+E\+AL sy, Matrix\+Order order)
+\item 
+\mbox{\Hypertarget{class_graphics_a1ee88ff0be97daa3d1e278125fd84f87}\label{class_graphics_a1ee88ff0be97daa3d1e278125fd84f87}} 
+Status {\bfseries Set\+Clip} (const \hyperlink{class_graphics}{Graphics} $\ast$g, Combine\+Mode combine\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_a7cc16190cbfc44053b2166e40f2ec936}\label{class_graphics_a7cc16190cbfc44053b2166e40f2ec936}} 
+Status {\bfseries Set\+Clip} (const \hyperlink{class_graphics_path}{Graphics\+Path} $\ast$\hyperlink{structpath}{path}, Combine\+Mode combine\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_aff502e465ddd2da4e2017ab356734725}\label{class_graphics_aff502e465ddd2da4e2017ab356734725}} 
+Status {\bfseries Set\+Clip} (const \hyperlink{class_region}{Region} $\ast$region, Combine\+Mode combine\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_ad5f7625e050bd3565335d707792fbcc8}\label{class_graphics_ad5f7625e050bd3565335d707792fbcc8}} 
+Status {\bfseries Set\+Clip} (const \hyperlink{struct_rect}{Rect} \&rect, Combine\+Mode combine\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_af956659dece7469fc1815647516e546f}\label{class_graphics_af956659dece7469fc1815647516e546f}} 
+Status {\bfseries Set\+Clip} (H\+R\+GN h\+Rgn, Combine\+Mode combine\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_aacbaa8cd3ceca05e63b561ae342dd400}\label{class_graphics_aacbaa8cd3ceca05e63b561ae342dd400}} 
+Status {\bfseries Set\+Clip} (const \hyperlink{struct_rect_f}{RectF} \&rect, Combine\+Mode combine\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_a11ba44c5e4ee08bee63f79c6d7125845}\label{class_graphics_a11ba44c5e4ee08bee63f79c6d7125845}} 
+Status {\bfseries Set\+Compositing\+Mode} (Compositing\+Mode compositing\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_ac1e675584d72a060e43777c4459ce7e4}\label{class_graphics_ac1e675584d72a060e43777c4459ce7e4}} 
+Status {\bfseries Set\+Compositing\+Quality} (Compositing\+Quality compositing\+Quality)
+\item 
+\mbox{\Hypertarget{class_graphics_ad6f3904e83848ce7dd4a674bbe9300a5}\label{class_graphics_ad6f3904e83848ce7dd4a674bbe9300a5}} 
+Status {\bfseries Set\+Interpolation\+Mode} (Interpolation\+Mode interpolation\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_a60ce99dc4e83b40dd45ccb1c7bf1294d}\label{class_graphics_a60ce99dc4e83b40dd45ccb1c7bf1294d}} 
+Status {\bfseries Set\+Page\+Scale} (R\+E\+AL scale)
+\item 
+\mbox{\Hypertarget{class_graphics_a2983375f573dead649511156d71189ad}\label{class_graphics_a2983375f573dead649511156d71189ad}} 
+Status {\bfseries Set\+Page\+Unit} (Unit unit)
+\item 
+\mbox{\Hypertarget{class_graphics_ab2864af9a8ecfaa6dd01f6b5c762f5bb}\label{class_graphics_ab2864af9a8ecfaa6dd01f6b5c762f5bb}} 
+Status {\bfseries Set\+Pixel\+Offset\+Mode} (Pixel\+Offset\+Mode pixel\+Offset\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_aef842228c28cbe316d077047609abce4}\label{class_graphics_aef842228c28cbe316d077047609abce4}} 
+Status {\bfseries Set\+Rendering\+Origin} (I\+NT x, I\+NT y)
+\item 
+\mbox{\Hypertarget{class_graphics_a63d14424775851ec8c46c4ae6d928e4d}\label{class_graphics_a63d14424775851ec8c46c4ae6d928e4d}} 
+Status {\bfseries Set\+Smoothing\+Mode} (Smoothing\+Mode smoothing\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_a5b08a4b810866b9a83125eea7aece5f6}\label{class_graphics_a5b08a4b810866b9a83125eea7aece5f6}} 
+Status {\bfseries Set\+Text\+Contrast} (U\+I\+NT contrast)
+\item 
+\mbox{\Hypertarget{class_graphics_a5422743ab848451121c575df949cb20f}\label{class_graphics_a5422743ab848451121c575df949cb20f}} 
+Status {\bfseries Set\+Text\+Rendering\+Hint} (Text\+Rendering\+Hint new\+Mode)
+\item 
+\mbox{\Hypertarget{class_graphics_aa215e8fa9533dcc6670f093f59ca1544}\label{class_graphics_aa215e8fa9533dcc6670f093f59ca1544}} 
+Status {\bfseries Set\+Transform} (const \hyperlink{class_matrix}{Matrix} $\ast$matrix)
+\item 
+\mbox{\Hypertarget{class_graphics_a12bcf820dc1c8b396eb8e51fd364d369}\label{class_graphics_a12bcf820dc1c8b396eb8e51fd364d369}} 
+Status {\bfseries Transform\+Points} (Coordinate\+Space dest\+Space, Coordinate\+Space src\+Space, \hyperlink{struct_point}{Point} $\ast$pts, I\+NT count)
+\item 
+\mbox{\Hypertarget{class_graphics_abf00fa6520a8328f2170563ef4fc2bab}\label{class_graphics_abf00fa6520a8328f2170563ef4fc2bab}} 
+Status {\bfseries Translate\+Clip} (I\+NT dx, I\+NT dy)
+\item 
+\mbox{\Hypertarget{class_graphics_a9f835ed3003a8fabe168ef867ba33c88}\label{class_graphics_a9f835ed3003a8fabe168ef867ba33c88}} 
+Status {\bfseries Translate\+Clip} (R\+E\+AL dx, R\+E\+AL dy)
+\item 
+\mbox{\Hypertarget{class_graphics_aa8000f1eb7126ac559a957daaeef2cd3}\label{class_graphics_aa8000f1eb7126ac559a957daaeef2cd3}} 
+Status {\bfseries Translate\+Transform} (R\+E\+AL dx, R\+E\+AL dy, Matrix\+Order order)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graphics_afcc31ff3fe279adb708ddaecf2f61573}\label{class_graphics_afcc31ff3fe279adb708ddaecf2f61573}} 
+static \hyperlink{class_graphics}{Graphics} $\ast$ {\bfseries From\+H\+DC} (H\+DC hdc)
+\item 
+\mbox{\Hypertarget{class_graphics_aea8b30df9252f547ac4a8d2e28dc1cb0}\label{class_graphics_aea8b30df9252f547ac4a8d2e28dc1cb0}} 
+static \hyperlink{class_graphics}{Graphics} $\ast$ {\bfseries From\+H\+DC} (H\+DC hdc, \hyperlink{interfacevoid}{H\+A\+N\+D\+LE} h\+Device)
+\item 
+\mbox{\Hypertarget{class_graphics_ac3a4d24f685d3b5dc86eb961adbc4822}\label{class_graphics_ac3a4d24f685d3b5dc86eb961adbc4822}} 
+static \hyperlink{class_graphics}{Graphics} $\ast$ {\bfseries From\+H\+W\+ND} (\hyperlink{interfacevoid}{H\+W\+ND} h\+Wnd, B\+O\+OL icm)
+\item 
+\mbox{\Hypertarget{class_graphics_aaf2b5bbe8ee86ab23f3d23fc3dd07627}\label{class_graphics_aaf2b5bbe8ee86ab23f3d23fc3dd07627}} 
+static \hyperlink{class_graphics}{Graphics} $\ast$ {\bfseries From\+Image} (\hyperlink{class_image}{Image} $\ast$\hyperlink{interfacevoid}{image})
+\item 
+\mbox{\Hypertarget{class_graphics_a73198deb78404de1b76774a01f1be97b}\label{class_graphics_a73198deb78404de1b76774a01f1be97b}} 
+static H\+P\+A\+L\+E\+T\+TE {\bfseries Get\+Halftone\+Palette} (\hyperlink{interfacevoid}{V\+O\+ID})
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graphics_aae6f9325706131f3b6fb8accb1508d76}\label{class_graphics_aae6f9325706131f3b6fb8accb1508d76}} 
+class {\bfseries Region}
+\item 
+\mbox{\Hypertarget{class_graphics_ad564b94b59dc295de3dfc4415d95cca8}\label{class_graphics_ad564b94b59dc295de3dfc4415d95cca8}} 
+class {\bfseries Font}
+\item 
+\mbox{\Hypertarget{class_graphics_a08f4603d248cce6ab74c80f858f877b0}\label{class_graphics_a08f4603d248cce6ab74c80f858f877b0}} 
+class {\bfseries Bitmap}
+\item 
+\mbox{\Hypertarget{class_graphics_aaa35f40f41b165fc13608e0c2e636f87}\label{class_graphics_aaa35f40f41b165fc13608e0c2e636f87}} 
+class {\bfseries Cached\+Bitmap}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/gdiplusgraphics.\+h\end{DoxyCompactItemize}

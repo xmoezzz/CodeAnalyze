@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: E:/ReactOS-0.4.6/sdk/lib/drivers/lwip/src/core/memp.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_885cc87fac2d91e269af0a5a959fa5f6.html">E:</a></li><li class="navelem"><a class="el" href="dir_feba3295545e8249e77d6dc9962d412f.html">ReactOS-0.4.6</a></li><li class="navelem"><a class="el" href="dir_1e270e90d6834e2fd7ae5b95d949c1ef.html">sdk</a></li><li class="navelem"><a class="el" href="dir_0f8d1118d569302bf27fdf8d4528cf84.html">lib</a></li><li class="navelem"><a class="el" href="dir_2c85cff4f1cef242b8656be9a8ac1f31.html">drivers</a></li><li class="navelem"><a class="el" href="dir_96ee20e854c60754e26b655afd09dbca.html">lwip</a></li><li class="navelem"><a class="el" href="dir_ead4725ee7eaa6e080332f3f984ccc64.html">src</a></li><li class="navelem"><a class="el" href="dir_22a6bd8b988ddbe67052e47417ed1651.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">memp.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="opt_8h_source.html">lwip/opt.h</a>&quot;</code><br />
+<code>#include &quot;lwip/memp.h&quot;</code><br />
+<code>#include &quot;lwip/pbuf.h&quot;</code><br />
+<code>#include &quot;lwip/udp.h&quot;</code><br />
+<code>#include &quot;lwip/raw.h&quot;</code><br />
+<code>#include &quot;lwip/tcp_impl.h&quot;</code><br />
+<code>#include &quot;lwip/igmp.h&quot;</code><br />
+<code>#include &quot;lwip/api.h&quot;</code><br />
+<code>#include &quot;lwip/api_msg.h&quot;</code><br />
+<code>#include &quot;lwip/tcpip.h&quot;</code><br />
+<code>#include &quot;lwip/sys.h&quot;</code><br />
+<code>#include &quot;lwip/timers.h&quot;</code><br />
+<code>#include &quot;lwip/stats.h&quot;</code><br />
+<code>#include &quot;netif/etharp.h&quot;</code><br />
+<code>#include &quot;lwip/ip_frag.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="snmp__structs_8h_source.html">lwip/snmp_structs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="snmp__msg_8h_source.html">lwip/snmp_msg.h</a>&quot;</code><br />
+<code>#include &quot;lwip/dns.h&quot;</code><br />
+<code>#include &quot;netif/ppp_oe.h&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;lwip/memp_std.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemp.html">memp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a7f8c378e0581aa2dc491cff52ae4fce2"><td class="memItemLeft" align="right" valign="top"><a id="a7f8c378e0581aa2dc491cff52ae4fce2"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MEMP_SIZE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a7f8c378e0581aa2dc491cff52ae4fce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e0cfbac9c8263e5a1fb319b92338e7"><td class="memItemLeft" align="right" valign="top"><a id="a12e0cfbac9c8263e5a1fb319b92338e7"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MEMP_ALIGN_SIZE</b>(x)&#160;&#160;&#160;(LWIP_MEM_ALIGN_SIZE(x))</td></tr>
+<tr class="separator:a12e0cfbac9c8263e5a1fb319b92338e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f75b6e9cf0c6df9e70b08b8e05a1835"><td class="memItemLeft" align="right" valign="top"><a id="a5f75b6e9cf0c6df9e70b08b8e05a1835"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEMPOOL</b>(<a class="el" href="structname.html">name</a>,  num,  size,  desc)&#160;&#160;&#160;LWIP_MEM_ALIGN_SIZE(size),</td></tr>
+<tr class="separator:a5f75b6e9cf0c6df9e70b08b8e05a1835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f75b6e9cf0c6df9e70b08b8e05a1835"><td class="memItemLeft" align="right" valign="top"><a id="a5f75b6e9cf0c6df9e70b08b8e05a1835"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEMPOOL</b>(<a class="el" href="structname.html">name</a>,  num,  size,  desc)&#160;&#160;&#160;(num),</td></tr>
+<tr class="separator:a5f75b6e9cf0c6df9e70b08b8e05a1835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f75b6e9cf0c6df9e70b08b8e05a1835"><td class="memItemLeft" align="right" valign="top"><a id="a5f75b6e9cf0c6df9e70b08b8e05a1835"></a>
+#<a class="el" href="structdefine.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LWIP_MEMPOOL</b>(<a class="el" href="structname.html">name</a>,  num,  size,  desc)&#160;&#160;&#160;+ ( (num) * (MEMP_SIZE + MEMP_ALIGN_SIZE(size) ) )</td></tr>
+<tr class="separator:a5f75b6e9cf0c6df9e70b08b8e05a1835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9693e5b1ac2c6b9c0e7870522d45efa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memp_8c.html#a9693e5b1ac2c6b9c0e7870522d45efa2">memp_init</a> (<a class="el" href="interfacevoid.html">void</a>)</td></tr>
+<tr class="separator:a9693e5b1ac2c6b9c0e7870522d45efa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b00593d086313c267b54a976bf67aa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memp_8c.html#a2b00593d086313c267b54a976bf67aa5">memp_malloc</a> (memp_t type)</td></tr>
+<tr class="separator:a2b00593d086313c267b54a976bf67aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd94926b7c2a0e23ae195f4ae97581f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacevoid.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memp_8c.html#aecd94926b7c2a0e23ae195f4ae97581f">memp_free</a> (memp_t type, <a class="el" href="interfacevoid.html">void</a> *<a class="el" href="structmem.html">mem</a>)</td></tr>
+<tr class="separator:aecd94926b7c2a0e23ae195f4ae97581f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Dynamic pool memory manager</p>
+<p>lwIP has dedicated pools for many structures (netconn, protocol control blocks, packet buffers, ...). All these pools are managed here. </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="aecd94926b7c2a0e23ae195f4ae97581f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd94926b7c2a0e23ae195f4ae97581f">&#9670;&nbsp;</a></span>memp_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> memp_free </td>
+          <td>(</td>
+          <td class="paramtype">memp_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a> *&#160;</td>
+          <td class="paramname"><em>mem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Put an element back into its pool.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the pool where to put mem </td></tr>
+    <tr><td class="paramname">mem</td><td>the memp element to free </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9693e5b1ac2c6b9c0e7870522d45efa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9693e5b1ac2c6b9c0e7870522d45efa2">&#9670;&nbsp;</a></span>memp_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a> memp_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacevoid.html">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize this module.</p>
+<p>Carves out memp_memory into linked lists for each pool-type. </p>
+
+</div>
+</div>
+<a id="a2b00593d086313c267b54a976bf67aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b00593d086313c267b54a976bf67aa5">&#9670;&nbsp;</a></span>memp_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacevoid.html">void</a>* memp_malloc </td>
+          <td>(</td>
+          <td class="paramtype">memp_t&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get an element from a specific pool.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the pool to get an element from</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>the debug version has two more parameters: </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>file name calling this function </td></tr>
+    <tr><td class="paramname">line</td><td>number of line where this function is called</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>a pointer to the allocated memory or a NULL pointer on error </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,50 @@
+\hypertarget{interface_i_transfer_advise_sink}{}\section{I\+Transfer\+Advise\+Sink接口 参考}
+\label{interface_i_transfer_advise_sink}\index{I\+Transfer\+Advise\+Sink@{I\+Transfer\+Advise\+Sink}}
+类 I\+Transfer\+Advise\+Sink 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_transfer_advise_sink}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_a896add4225b8ac4fbd6d8d0081a88e4f}\label{interface_i_transfer_advise_sink_a896add4225b8ac4fbd6d8d0081a88e4f}} 
+enum {\bfseries \+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+A\+D\+V\+I\+S\+E\+\_\+\+S\+T\+A\+TE} \{ {\bfseries T\+S\+\_\+\+N\+O\+NE} = 0, 
+{\bfseries T\+S\+\_\+\+P\+E\+R\+F\+O\+R\+M\+I\+NG} = 1, 
+{\bfseries T\+S\+\_\+\+P\+R\+E\+P\+A\+R\+I\+NG} = 2, 
+{\bfseries T\+S\+\_\+\+I\+N\+D\+E\+T\+E\+R\+M\+I\+N\+A\+TE} = 4
+ \}
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_a8ad2776707199779dc2e51594fec4422}\label{interface_i_transfer_advise_sink_a8ad2776707199779dc2e51594fec4422}} 
+typedef D\+W\+O\+RD {\bfseries T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+A\+D\+V\+I\+S\+E\+\_\+\+S\+T\+A\+TE}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_a7b44a887f4a382c144d5557bebf167f9}\label{interface_i_transfer_advise_sink_a7b44a887f4a382c144d5557bebf167f9}} 
+H\+R\+E\+S\+U\+LT {\bfseries Update\+Progress} (\mbox{[}in\mbox{]} U\+L\+O\+N\+G\+L\+O\+NG size\+\_\+current, \mbox{[}in\mbox{]} U\+L\+O\+N\+G\+L\+O\+NG size\+\_\+total, \mbox{[}in\mbox{]} I\+NT files\+\_\+current, \mbox{[}in\mbox{]} I\+NT files\+\_\+total, \mbox{[}in\mbox{]} I\+NT folders\+\_\+current, \mbox{[}in\mbox{]} I\+NT folders\+\_\+total)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_acbff1caea7c7a517d2904bdb88e780f1}\label{interface_i_transfer_advise_sink_acbff1caea7c7a517d2904bdb88e780f1}} 
+H\+R\+E\+S\+U\+LT {\bfseries Update\+Transfer\+State} (\mbox{[}in\mbox{]} T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+A\+D\+V\+I\+S\+E\+\_\+\+S\+T\+A\+TE state)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_a59cdbda9d779142b460203ce1d7d5977}\label{interface_i_transfer_advise_sink_a59cdbda9d779142b460203ce1d7d5977}} 
+H\+R\+E\+S\+U\+LT {\bfseries Confirm\+Overwrite} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source}, \mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$dest\+\_\+parent, \mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR \hyperlink{structname}{name})
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_acba7c816f760ac0a1571a80ba5bb5819}\label{interface_i_transfer_advise_sink_acba7c816f760ac0a1571a80ba5bb5819}} 
+H\+R\+E\+S\+U\+LT {\bfseries Confirm\+Encrypt\+Loss} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$\hyperlink{structsource}{source})
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_ac9d9ae1a3c79cac1429448729d2c377b}\label{interface_i_transfer_advise_sink_ac9d9ae1a3c79cac1429448729d2c377b}} 
+H\+R\+E\+S\+U\+LT {\bfseries File\+Failure} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$item, \mbox{[}in, \hyperlink{interfaceunique}{unique}, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR itemname, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr, \mbox{[}in, out, \hyperlink{interfaceunique}{unique}, size\+\_\+is(crename)\mbox{]} L\+P\+W\+S\+TR rename, \mbox{[}in\mbox{]} U\+L\+O\+NG crename)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_a642799992fb3168d4da4eabca470b341}\label{interface_i_transfer_advise_sink_a642799992fb3168d4da4eabca470b341}} 
+H\+R\+E\+S\+U\+LT {\bfseries Sub\+Stream\+Failure} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$item, \mbox{[}in, \hyperlink{structstring}{string}\mbox{]} L\+P\+C\+W\+S\+TR \hyperlink{structstream}{stream}, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr)
+\item 
+\mbox{\Hypertarget{interface_i_transfer_advise_sink_a8e90fc2693250a66322a659a396c2876}\label{interface_i_transfer_advise_sink_a8e90fc2693250a66322a659a396c2876}} 
+H\+R\+E\+S\+U\+LT {\bfseries Property\+Failure} (\mbox{[}in\mbox{]} \hyperlink{interface_i_shell_item}{I\+Shell\+Item} $\ast$item, \mbox{[}in, \hyperlink{interfaceunique}{unique}\mbox{]} const P\+R\+O\+P\+E\+R\+T\+Y\+K\+EY $\ast$\hyperlink{structkey}{key}, \mbox{[}in\mbox{]} H\+R\+E\+S\+U\+LT hr)
+\end{DoxyCompactItemize}
+
+
+该接口的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/psdk/shobjidl.\+idl\end{DoxyCompactItemize}

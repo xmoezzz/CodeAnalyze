@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: icmp结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structicmp-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">icmp结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa1e03d610e2391565d96ef5ace20caf6"><td class="memItemLeft" align="right" valign="top"><a id="aa1e03d610e2391565d96ef5ace20caf6"></a>
+u_char&#160;</td><td class="memItemRight" valign="bottom"><b>icmp_type</b></td></tr>
+<tr class="separator:aa1e03d610e2391565d96ef5ace20caf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db7a65d2113b9800928821b67494ee0"><td class="memItemLeft" align="right" valign="top"><a id="a4db7a65d2113b9800928821b67494ee0"></a>
+u_char&#160;</td><td class="memItemRight" valign="bottom"><b>icmp_code</b></td></tr>
+<tr class="separator:a4db7a65d2113b9800928821b67494ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1087f74d787650ed3b46ea777de030f"><td class="memItemLeft" align="right" valign="top"><a id="af1087f74d787650ed3b46ea777de030f"></a>
+u_short&#160;</td><td class="memItemRight" valign="bottom"><b>icmp_cksum</b></td></tr>
+<tr class="separator:af1087f74d787650ed3b46ea777de030f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0495c8f0af332ef2ec4e8972272d0f93"><td class="memItemLeft" ><a id="a0495c8f0af332ef2ec4e8972272d0f93"></a>
+union {</td></tr>
+<tr class="memitem:a79c04cdf8e8b4f58e2a91e38e5ee9cbc"><td class="memItemLeft" >
+&#160;&#160;&#160;u_char&#160;&#160;&#160;<b>ih_pptr</b></td></tr>
+<tr class="separator:a79c04cdf8e8b4f58e2a91e38e5ee9cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c616d40f473982a2bf4a28db8bd6d0d"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structin__addr.html">in_addr</a>&#160;&#160;&#160;<b>ih_gwaddr</b></td></tr>
+<tr class="separator:a0c616d40f473982a2bf4a28db8bd6d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc70fa429877a8e7bc87b37ed8de7a3"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <b>ih_idseq</b> {</td></tr>
+<tr class="memitem:a1cb088a0de29d8e5861db4b9713b6f6a"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;n_short&#160;&#160;&#160;<b>icd_id</b></td></tr>
+<tr class="separator:a1cb088a0de29d8e5861db4b9713b6f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704f835649a01920d3dff2afe7661119"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;n_short&#160;&#160;&#160;<b>icd_seq</b></td></tr>
+<tr class="separator:a704f835649a01920d3dff2afe7661119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc70fa429877a8e7bc87b37ed8de7a3"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>ih_idseq</b></td></tr>
+<tr class="separator:aebc70fa429877a8e7bc87b37ed8de7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cacd2dcacb84222819f1fc1f8c550f"><td class="memItemLeft" >
+&#160;&#160;&#160;int&#160;&#160;&#160;<b>ih_void</b></td></tr>
+<tr class="separator:ad5cacd2dcacb84222819f1fc1f8c550f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65220bd7d58dfbdc6e2d5da8a693d3ab"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <b>ih_pmtu</b> {</td></tr>
+<tr class="memitem:a02b592c3e9bb26349e56a48dfacefb64"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;n_short&#160;&#160;&#160;<b>ipm_void</b></td></tr>
+<tr class="separator:a02b592c3e9bb26349e56a48dfacefb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1403fec19c54c64443fdd15c0984c4a"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;n_short&#160;&#160;&#160;<b>ipm_nextmtu</b></td></tr>
+<tr class="separator:ab1403fec19c54c64443fdd15c0984c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65220bd7d58dfbdc6e2d5da8a693d3ab"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>ih_pmtu</b></td></tr>
+<tr class="separator:a65220bd7d58dfbdc6e2d5da8a693d3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bd4fa581b54891e1f263345d3557ca"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <b>ih_rtradv</b> {</td></tr>
+<tr class="memitem:a17a6d7e7a0b43e810d6b8be42e10f0d6"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;u_char&#160;&#160;&#160;<b>irt_num_addrs</b></td></tr>
+<tr class="separator:a17a6d7e7a0b43e810d6b8be42e10f0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ba9608cfe9ef70f837b139d8ba551e"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;u_char&#160;&#160;&#160;<b>irt_wpa</b></td></tr>
+<tr class="separator:a85ba9608cfe9ef70f837b139d8ba551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab724881ac64dcc85bb34bc8264dd84cc"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;u_int16_t&#160;&#160;&#160;<b>irt_lifetime</b></td></tr>
+<tr class="separator:ab724881ac64dcc85bb34bc8264dd84cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bd4fa581b54891e1f263345d3557ca"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>ih_rtradv</b></td></tr>
+<tr class="separator:a74bd4fa581b54891e1f263345d3557ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0495c8f0af332ef2ec4e8972272d0f93"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>icmp_hun</b></td></tr>
+<tr class="separator:a0495c8f0af332ef2ec4e8972272d0f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d63dad4b0f58bb56eb0b4e617408792"><td class="memItemLeft" ><a id="a5d63dad4b0f58bb56eb0b4e617408792"></a>
+union {</td></tr>
+<tr class="memitem:a9ea1657bd122e7f67a11682b50fd5824"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <b>id_ts</b> {</td></tr>
+<tr class="memitem:a3bfba8957265c4d582e127d7da870fca"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;n_time&#160;&#160;&#160;<b>its_otime</b></td></tr>
+<tr class="separator:a3bfba8957265c4d582e127d7da870fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddc9a4e9a4c237dc3559e023ec783f6"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;n_time&#160;&#160;&#160;<b>its_rtime</b></td></tr>
+<tr class="separator:adddc9a4e9a4c237dc3559e023ec783f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c247ad68595591bc1afc1120b97a16"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;n_time&#160;&#160;&#160;<b>its_ttime</b></td></tr>
+<tr class="separator:ad0c247ad68595591bc1afc1120b97a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea1657bd122e7f67a11682b50fd5824"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>id_ts</b></td></tr>
+<tr class="separator:a9ea1657bd122e7f67a11682b50fd5824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7578598b4c3d423ae181431017d4fb4"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <b>id_ip</b> {</td></tr>
+<tr class="memitem:a1e802750f55c897910d12a5daac9aec5"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structip.html">ip</a>&#160;&#160;&#160;<b>idi_ip</b></td></tr>
+<tr class="separator:a1e802750f55c897910d12a5daac9aec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7578598b4c3d423ae181431017d4fb4"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>id_ip</b></td></tr>
+<tr class="separator:aa7578598b4c3d423ae181431017d4fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7bf702f5fc623c1e71ef7b49fdf14e1"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="interfacestruct.html">struct</a> <a class="el" href="structicmp__ra__addr.html">icmp_ra_addr</a>&#160;&#160;&#160;<b>id_radv</b></td></tr>
+<tr class="separator:ad7bf702f5fc623c1e71ef7b49fdf14e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8e7194097d9c2f4bdfcc4cafd68a5e"><td class="memItemLeft" >
+&#160;&#160;&#160;u_int32_t&#160;&#160;&#160;<b>id_mask</b></td></tr>
+<tr class="separator:abf8e7194097d9c2f4bdfcc4cafd68a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc3c0c7cc207f45c6de22a6d67b1937"><td class="memItemLeft" >
+&#160;&#160;&#160;char&#160;&#160;&#160;<b>id_data</b> [1]</td></tr>
+<tr class="separator:acbc3c0c7cc207f45c6de22a6d67b1937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d63dad4b0f58bb56eb0b4e617408792"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>icmp_dun</b></td></tr>
+<tr class="separator:a5d63dad4b0f58bb56eb0b4e617408792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/dll/win32/iphlpapi/<a class="el" href="ip__icmp_8h_source.html">ip_icmp.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

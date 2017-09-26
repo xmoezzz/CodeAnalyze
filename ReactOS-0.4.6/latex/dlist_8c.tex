@@ -1,0 +1,343 @@
+\hypertarget{dlist_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/dll/opengl/mesa/main/dlist.c 文件参考}
+\label{dlist_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/dlist.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/opengl/mesa/main/dlist.\+c}}
+{\ttfamily \#include $<$precomp.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgl__list__instruction}{gl\+\_\+list\+\_\+instruction}
+\item 
+struct \hyperlink{structgl__list__extensions}{gl\+\_\+list\+\_\+extensions}
+\item 
+union \hyperlink{uniongl__dlist__node}{gl\+\_\+dlist\+\_\+node}
+\item 
+union \hyperlink{unionuint64__pair}{uint64\+\_\+pair}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dlist_8c_ad448524340efac5f0012e989cbd794a0}\label{dlist_8c_ad448524340efac5f0012e989cbd794a0}} 
+\#\hyperlink{structdefine}{define} {\bfseries M\+A\+X\+\_\+\+D\+L\+I\+S\+T\+\_\+\+E\+X\+T\+\_\+\+O\+P\+C\+O\+D\+ES}~16
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{dlist_8c_ad24ba8822253191bc87ef4ecc67368c0}{S\+A\+V\+E\+\_\+\+F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}(ctx)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{dlist_8c_a73a447a0f5cd773fa044e4ffe0e8f6a3}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}(ctx,  retval)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{dlist_8c_a31e13475acc8a404081c897fc0b0a53a}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}(ctx)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{dlist_8c_a7f5605a2616bf316d281ec6ee37d014c}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}(ctx)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{dlist_8c_a445537bb7e6926980db0c27774ce155a}{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}(ctx,  retval)
+\item 
+\#\hyperlink{structdefine}{define} \hyperlink{dlist_8c_ad51ded0bbd705f02f73fc60c0b721ced}{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}~256
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dlist_8c_a4e716c424801b7ba72d577bc9d54f142}\label{dlist_8c_a4e716c424801b7ba72d577bc9d54f142}} 
+typedef union \hyperlink{uniongl__dlist__node}{gl\+\_\+dlist\+\_\+node} {\bfseries Node}
+\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}{Op\+Code} \{ \newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+I\+N\+V\+A\+L\+ID} = -\/1, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+A\+C\+C\+UM}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+A\+L\+P\+H\+A\+\_\+\+F\+U\+NC}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+B\+I\+N\+D\+\_\+\+T\+E\+X\+T\+U\+RE}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+B\+I\+T\+M\+AP}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+F\+U\+NC}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+A\+L\+L\+\_\+\+L\+I\+ST}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+A\+L\+L\+\_\+\+L\+I\+S\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+AR}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+A\+R\+\_\+\+A\+C\+C\+UM}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+O\+L\+OR}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+A\+R\+\_\+\+D\+E\+P\+TH}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+N\+D\+EX}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+A\+R\+\_\+\+S\+T\+E\+N\+C\+IL}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+I\+P\+\_\+\+P\+L\+A\+NE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+M\+A\+SK}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+M\+A\+T\+E\+R\+I\+AL}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+P\+Y\+\_\+\+P\+I\+X\+E\+LS}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+I\+M\+A\+G\+E1D}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+I\+M\+A\+G\+E2D}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+U\+B\+\_\+\+I\+M\+A\+G\+E1D}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+P\+Y\+\_\+\+T\+E\+X\+\_\+\+S\+U\+B\+\_\+\+I\+M\+A\+G\+E2D}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+U\+L\+L\+\_\+\+F\+A\+CE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+D\+E\+P\+T\+H\+\_\+\+F\+U\+NC}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+D\+E\+P\+T\+H\+\_\+\+M\+A\+SK}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+D\+E\+P\+T\+H\+\_\+\+R\+A\+N\+GE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+D\+I\+S\+A\+B\+LE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+D\+R\+A\+W\+\_\+\+B\+U\+F\+F\+ER}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+D\+R\+A\+W\+\_\+\+P\+I\+X\+E\+LS}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+N\+A\+B\+LE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+V\+A\+L\+M\+E\+S\+H1}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+V\+A\+L\+M\+E\+S\+H2}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+F\+OG}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+F\+R\+O\+N\+T\+\_\+\+F\+A\+CE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+F\+R\+U\+S\+T\+UM}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+H\+I\+NT}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+I\+N\+D\+E\+X\+\_\+\+M\+A\+SK}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+I\+N\+I\+T\+\_\+\+N\+A\+M\+ES}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+I\+G\+HT}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+I\+G\+H\+T\+\_\+\+M\+O\+D\+EL}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+I\+P\+P\+LE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+I\+N\+E\+\_\+\+W\+I\+D\+TH}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+I\+S\+T\+\_\+\+B\+A\+SE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+O\+A\+D\+\_\+\+I\+D\+E\+N\+T\+I\+TY}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+O\+A\+D\+\_\+\+M\+A\+T\+R\+IX}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+O\+A\+D\+\_\+\+N\+A\+ME}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+\+OP}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+M\+A\+P1}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+M\+A\+P2}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+M\+A\+P\+G\+R\+I\+D1}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+M\+A\+P\+G\+R\+I\+D2}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+M\+O\+DE}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+M\+U\+L\+T\+\_\+\+M\+A\+T\+R\+IX}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+O\+R\+T\+HO}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+A\+S\+S\+T\+H\+R\+O\+U\+GH}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+I\+X\+E\+L\+\_\+\+M\+AP}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+I\+X\+E\+L\+\_\+\+T\+R\+A\+N\+S\+F\+ER}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+I\+X\+E\+L\+\_\+\+Z\+O\+OM}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+I\+ZE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+I\+N\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+L\+Y\+G\+O\+N\+\_\+\+M\+O\+DE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+L\+Y\+G\+O\+N\+\_\+\+S\+T\+I\+P\+P\+LE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+L\+Y\+G\+O\+N\+\_\+\+O\+F\+F\+S\+ET}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+P\+\_\+\+A\+T\+T\+R\+IB}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+P\+\_\+\+M\+A\+T\+R\+IX}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+O\+P\+\_\+\+N\+A\+ME}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+\_\+\+T\+E\+X\+T\+U\+RE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+U\+S\+H\+\_\+\+A\+T\+T\+R\+IB}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+U\+S\+H\+\_\+\+M\+A\+T\+R\+IX}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+P\+U\+S\+H\+\_\+\+N\+A\+ME}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+R\+A\+S\+T\+E\+R\+\_\+\+P\+OS}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+B\+U\+F\+F\+ER}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+R\+O\+T\+A\+TE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+C\+A\+LE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+C\+I\+S\+S\+OR}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+G\+IS}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+O\+O\+R\+D\+\_\+\+S\+ET}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+H\+A\+D\+E\+\_\+\+M\+O\+D\+EL}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+F\+U\+NC}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+M\+A\+SK}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+OP}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+E\+NV}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+G\+EN}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+P\+A\+R\+A\+M\+E\+T\+ER}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+\_\+\+I\+M\+A\+G\+E1D}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+\_\+\+I\+M\+A\+G\+E2D}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+\_\+\+S\+U\+B\+\_\+\+I\+M\+A\+G\+E1D}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+\_\+\+S\+U\+B\+\_\+\+I\+M\+A\+G\+E2D}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+R\+A\+N\+S\+L\+A\+TE}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+V\+I\+E\+W\+P\+O\+RT}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+P\+OS}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+C\+O\+V\+E\+R\+A\+GE}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+P\+O\+S\+\_\+\+A\+RB}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+O\+U\+N\+D\+S\+\_\+\+E\+XT}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+A\+T\+T\+R\+\_\+1\+F\+\_\+\+NV}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+A\+T\+T\+R\+\_\+2\+F\+\_\+\+NV}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+A\+T\+T\+R\+\_\+3\+F\+\_\+\+NV}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+A\+T\+T\+R\+\_\+4\+F\+\_\+\+NV}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+M\+A\+T\+E\+R\+I\+AL}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+B\+E\+G\+IN}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+ND}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+R\+E\+C\+TF}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+V\+A\+L\+\_\+\+C1}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+V\+A\+L\+\_\+\+C2}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+V\+A\+L\+\_\+\+P1}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+V\+A\+L\+\_\+\+P2}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+A\+R\+C\+O\+L\+O\+R\+\_\+I}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+L\+E\+A\+R\+C\+O\+L\+O\+R\+\_\+\+UI}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+I}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+T\+E\+X\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+UI}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+R\+R\+OR}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+C\+O\+N\+T\+I\+N\+UE}, 
+\newline
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+L\+I\+ST}, 
+{\bfseries O\+P\+C\+O\+D\+E\+\_\+\+E\+X\+T\+\_\+0}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{dlist_8c_a9fadf0d76923f085379e537006124322}{\+\_\+mesa\+\_\+init\+\_\+display\+\_\+list} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\item 
+\mbox{\Hypertarget{dlist_8c_abd9ab4d4ef352124c45feb179abda3d7}\label{dlist_8c_abd9ab4d4ef352124c45feb179abda3d7}} 
+\hyperlink{interfacevoid}{void} {\bfseries \+\_\+mesa\+\_\+free\+\_\+display\+\_\+list\+\_\+data} (\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Display lists management functions. 
+
+\subsection{宏定义说明}
+\mbox{\Hypertarget{dlist_8c_a31e13475acc8a404081c897fc0b0a53a}\label{dlist_8c_a31e13475acc8a404081c897fc0b0a53a}} 
+\index{dlist.\+c@{dlist.\+c}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND}{ASSERT\_OUTSIDE\_SAVE\_BEGIN\_END}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+ND(\begin{DoxyParamCaption}\item[{}]{ctx }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   if (ctx->Driver.CurrentSavePrimitive <= GL\_POLYGON ||        \(\backslash\)
+       ctx->Driver.CurrentSavePrimitive == PRIM\_INSIDE\_UNKNOWN\_PRIM) \{  \(\backslash\)
+      \_mesa\_compile\_error( ctx, GL\_INVALID\_OPERATION, \textcolor{stringliteral}{"begin/end"} );    \(\backslash\)
+      return;                               \(\backslash\)
+   \}                                    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dlist_8c_a7f5605a2616bf316d281ec6ee37d014c}\label{dlist_8c_a7f5605a2616bf316d281ec6ee37d014c}} 
+\index{dlist.\+c@{dlist.\+c}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH}{ASSERT\_OUTSIDE\_SAVE\_BEGIN\_END\_AND\_FLUSH}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+SH(\begin{DoxyParamCaption}\item[{}]{ctx }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   ASSERT\_OUTSIDE\_SAVE\_BEGIN\_END(ctx);                  \(\backslash\)
+   SAVE\_FLUSH\_VERTICES(ctx);                        \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair and flush the vertices.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dlist_8c_a445537bb7e6926980db0c27774ce155a}\label{dlist_8c_a445537bb7e6926980db0c27774ce155a}} 
+\index{dlist.\+c@{dlist.\+c}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}{ASSERT\_OUTSIDE\_SAVE\_BEGIN\_END\_AND\_FLUSH\_WITH\_RETVAL}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+A\+N\+D\+\_\+\+F\+L\+U\+S\+H\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{retval }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   ASSERT\_OUTSIDE\_SAVE\_BEGIN\_END\_WITH\_RETVAL(ctx, retval);      \(\backslash\)
+   SAVE\_FLUSH\_VERTICES(ctx);                        \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair and flush the vertices, with return value.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em retval} & value to return value in case the assertion fails. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dlist_8c_a73a447a0f5cd773fa044e4ffe0e8f6a3}\label{dlist_8c_a73a447a0f5cd773fa044e4ffe0e8f6a3}} 
+\index{dlist.\+c@{dlist.\+c}!A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}}
+\index{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL@{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL}{ASSERT\_OUTSIDE\_SAVE\_BEGIN\_END\_WITH\_RETVAL}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} A\+S\+S\+E\+R\+T\+\_\+\+O\+U\+T\+S\+I\+D\+E\+\_\+\+S\+A\+V\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+E\+N\+D\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+T\+V\+AL(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{retval }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                    \(\backslash\)
+   if (ctx->Driver.CurrentSavePrimitive <= GL\_POLYGON ||        \(\backslash\)
+       ctx->Driver.CurrentSavePrimitive == PRIM\_INSIDE\_UNKNOWN\_PRIM) \{  \(\backslash\)
+      \_mesa\_compile\_error( ctx, GL\_INVALID\_OPERATION, \textcolor{stringliteral}{"begin/end"} );    \(\backslash\)
+      return retval;                            \(\backslash\)
+   \}                                    \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Macro to assert that the A\+PI call was made outside the gl\+Begin()/gl\+End() pair, with return value.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context. \\
+\hline
+{\em retval} & value to return value in case the assertion fails. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dlist_8c_ad51ded0bbd705f02f73fc60c0b721ced}\label{dlist_8c_ad51ded0bbd705f02f73fc60c0b721ced}} 
+\index{dlist.\+c@{dlist.\+c}!B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}{BLOCK\_SIZE}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE~256}
+
+How many nodes to allocate at a time.
+
+\begin{DoxyNote}{注解}
+Reduced now that we hold vertices etc. elsewhere. 
+\end{DoxyNote}
+\mbox{\Hypertarget{dlist_8c_ad24ba8822253191bc87ef4ecc67368c0}\label{dlist_8c_ad24ba8822253191bc87ef4ecc67368c0}} 
+\index{dlist.\+c@{dlist.\+c}!S\+A\+V\+E\+\_\+\+F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES@{S\+A\+V\+E\+\_\+\+F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}}
+\index{S\+A\+V\+E\+\_\+\+F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES@{S\+A\+V\+E\+\_\+\+F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{S\+A\+V\+E\+\_\+\+F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES}{SAVE\_FLUSH\_VERTICES}}
+{\footnotesize\ttfamily \#\hyperlink{structdefine}{define} S\+A\+V\+E\+\_\+\+F\+L\+U\+S\+H\+\_\+\+V\+E\+R\+T\+I\+C\+ES(\begin{DoxyParamCaption}\item[{}]{ctx }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                        \(\backslash\)
+   if (ctx->Driver.SaveNeedFlush)       \(\backslash\)
+      ctx->Driver.SaveFlushVertices(ctx);   \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Flush vertices.
+
+
+\begin{DoxyParams}{参数}
+{\em ctx} & GL context.\\
+\hline
+\end{DoxyParams}
+Checks if dd\+\_\+function\+\_\+table\+::\+Save\+Need\+Flush is marked to flush stored (save) vertices, and calls dd\+\_\+function\+\_\+table\+::\+Save\+Flush\+Vertices if so. 
+
+\subsection{枚举类型说明}
+\mbox{\Hypertarget{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}\label{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}} 
+\index{dlist.\+c@{dlist.\+c}!Op\+Code@{Op\+Code}}
+\index{Op\+Code@{Op\+Code}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{Op\+Code}{OpCode}}
+{\footnotesize\ttfamily \hyperlink{interfaceenum}{enum} \hyperlink{dlist_8c_abeb7dfb0e9e2b3114e240a405d046ea7}{Op\+Code}}
+
+Display list opcodes.
+
+The fact that these identifiers are assigned consecutive integer values starting at 0 is very important, see Inst\+Size array usage) 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{dlist_8c_a9fadf0d76923f085379e537006124322}\label{dlist_8c_a9fadf0d76923f085379e537006124322}} 
+\index{dlist.\+c@{dlist.\+c}!\+\_\+mesa\+\_\+init\+\_\+display\+\_\+list@{\+\_\+mesa\+\_\+init\+\_\+display\+\_\+list}}
+\index{\+\_\+mesa\+\_\+init\+\_\+display\+\_\+list@{\+\_\+mesa\+\_\+init\+\_\+display\+\_\+list}!dlist.\+c@{dlist.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+mesa\+\_\+init\+\_\+display\+\_\+list()}{\_mesa\_init\_display\_list()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} \+\_\+mesa\+\_\+init\+\_\+display\+\_\+list (\begin{DoxyParamCaption}\item[{\hyperlink{interfacestruct}{struct} \hyperlink{structgl__context}{gl\+\_\+context} $\ast$}]{ctx }\end{DoxyParamCaption})}
+
+Initialize display list state for given context. 

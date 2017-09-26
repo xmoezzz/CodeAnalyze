@@ -1,0 +1,89 @@
+\hypertarget{def_8c}{}\section{E\+:/\+React\+O\+S-\/0.4.6/sdk/lib/drivers/lwip/src/core/def.c 文件参考}
+\label{def_8c}\index{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/def.\+c@{E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/lib/drivers/lwip/src/core/def.\+c}}
+{\ttfamily \#include \char`\"{}lwip/opt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lwip/def.\+h\char`\"{}}\newline
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+u16\+\_\+t \hyperlink{def_8c_ad637280639de4066392e6b5614fa3e56}{lwip\+\_\+htons} (u16\+\_\+t n)
+\item 
+u16\+\_\+t \hyperlink{def_8c_acc2802b5acb46f855414870b546683b8}{lwip\+\_\+ntohs} (u16\+\_\+t n)
+\item 
+u32\+\_\+t \hyperlink{def_8c_a14f94347a5b9b9e3602705b75b7ae524}{lwip\+\_\+htonl} (u32\+\_\+t n)
+\item 
+u32\+\_\+t \hyperlink{def_8c_a29d1e2f1f8c44cf9f28a0b1a5fe282b8}{lwip\+\_\+ntohl} (u32\+\_\+t n)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Common functions used throughout the stack. 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{def_8c_a14f94347a5b9b9e3602705b75b7ae524}\label{def_8c_a14f94347a5b9b9e3602705b75b7ae524}} 
+\index{def.\+c@{def.\+c}!lwip\+\_\+htonl@{lwip\+\_\+htonl}}
+\index{lwip\+\_\+htonl@{lwip\+\_\+htonl}!def.\+c@{def.\+c}}
+\subsubsection{\texorpdfstring{lwip\+\_\+htonl()}{lwip\_htonl()}}
+{\footnotesize\ttfamily u32\+\_\+t lwip\+\_\+htonl (\begin{DoxyParamCaption}\item[{u32\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Convert an u32\+\_\+t from host-\/ to network byte order.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & u32\+\_\+t in host byte order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+n in network byte order 
+\end{DoxyReturn}
+\mbox{\Hypertarget{def_8c_ad637280639de4066392e6b5614fa3e56}\label{def_8c_ad637280639de4066392e6b5614fa3e56}} 
+\index{def.\+c@{def.\+c}!lwip\+\_\+htons@{lwip\+\_\+htons}}
+\index{lwip\+\_\+htons@{lwip\+\_\+htons}!def.\+c@{def.\+c}}
+\subsubsection{\texorpdfstring{lwip\+\_\+htons()}{lwip\_htons()}}
+{\footnotesize\ttfamily u16\+\_\+t lwip\+\_\+htons (\begin{DoxyParamCaption}\item[{u16\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+These are reference implementations of the byte swapping functions. Again with the aim of being simple, correct and fully portable. Byte swapping is the second thing you would want to optimize. You will need to port it to your architecture and in your cc.\+h\+:
+
+\hyperlink{structdefine}{define} L\+W\+I\+P\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+Y\+T\+E\+S\+W\+AP 1 \hyperlink{structdefine}{define} L\+W\+I\+P\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+H\+T\+O\+N\+S(x) $<$your\+\_\+htons$>$ \hyperlink{structdefine}{define} L\+W\+I\+P\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+H\+T\+O\+N\+L(x) $<$your\+\_\+htonl$>$
+
+Note ntohs() and ntohl() are merely references to the htonx counterparts. Convert an u16\+\_\+t from host-\/ to network byte order.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & u16\+\_\+t in host byte order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+n in network byte order 
+\end{DoxyReturn}
+\mbox{\Hypertarget{def_8c_a29d1e2f1f8c44cf9f28a0b1a5fe282b8}\label{def_8c_a29d1e2f1f8c44cf9f28a0b1a5fe282b8}} 
+\index{def.\+c@{def.\+c}!lwip\+\_\+ntohl@{lwip\+\_\+ntohl}}
+\index{lwip\+\_\+ntohl@{lwip\+\_\+ntohl}!def.\+c@{def.\+c}}
+\subsubsection{\texorpdfstring{lwip\+\_\+ntohl()}{lwip\_ntohl()}}
+{\footnotesize\ttfamily u32\+\_\+t lwip\+\_\+ntohl (\begin{DoxyParamCaption}\item[{u32\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Convert an u32\+\_\+t from network-\/ to host byte order.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & u32\+\_\+t in network byte order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+n in host byte order 
+\end{DoxyReturn}
+\mbox{\Hypertarget{def_8c_acc2802b5acb46f855414870b546683b8}\label{def_8c_acc2802b5acb46f855414870b546683b8}} 
+\index{def.\+c@{def.\+c}!lwip\+\_\+ntohs@{lwip\+\_\+ntohs}}
+\index{lwip\+\_\+ntohs@{lwip\+\_\+ntohs}!def.\+c@{def.\+c}}
+\subsubsection{\texorpdfstring{lwip\+\_\+ntohs()}{lwip\_ntohs()}}
+{\footnotesize\ttfamily u16\+\_\+t lwip\+\_\+ntohs (\begin{DoxyParamCaption}\item[{u16\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Convert an u16\+\_\+t from network-\/ to host byte order.
+
+
+\begin{DoxyParams}{参数}
+{\em n} & u16\+\_\+t in network byte order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+n in host byte order 
+\end{DoxyReturn}

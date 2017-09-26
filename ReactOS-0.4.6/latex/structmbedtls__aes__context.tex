@@ -1,0 +1,58 @@
+\hypertarget{structmbedtls__aes__context}{}\section{mbedtls\+\_\+aes\+\_\+context结构体 参考}
+\label{structmbedtls__aes__context}\index{mbedtls\+\_\+aes\+\_\+context@{mbedtls\+\_\+aes\+\_\+context}}
+
+
+A\+ES context structure  
+
+
+
+
+{\ttfamily \#include $<$aes.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structmbedtls__aes__context_ad0b4f626fa3881c76f23a9a96812b69a}{nr}
+\item 
+uint32\+\_\+t $\ast$ \hyperlink{structmbedtls__aes__context_ac7e235e5b270daba3635f5e39949b7a4}{rk}
+\item 
+uint32\+\_\+t \hyperlink{structmbedtls__aes__context_ad9a8f020a5028732e2cf3c8e07b39795}{buf} \mbox{[}68\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A\+ES context structure 
+
+\begin{DoxyNote}{注解}
+buf is able to hold 32 extra bytes, which can be used\+:
+\begin{DoxyItemize}
+\item for alignment purposes if V\+IA padlock is used, and/or
+\item to simplify key expansion in the 256-\/bit case by generating an extra round key 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{structmbedtls__aes__context_ad9a8f020a5028732e2cf3c8e07b39795}\label{structmbedtls__aes__context_ad9a8f020a5028732e2cf3c8e07b39795}} 
+\index{mbedtls\+\_\+aes\+\_\+context@{mbedtls\+\_\+aes\+\_\+context}!buf@{buf}}
+\index{buf@{buf}!mbedtls\+\_\+aes\+\_\+context@{mbedtls\+\_\+aes\+\_\+context}}
+\subsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily uint32\+\_\+t mbedtls\+\_\+aes\+\_\+context\+::buf\mbox{[}68\mbox{]}}
+
+unaligned data \mbox{\Hypertarget{structmbedtls__aes__context_ad0b4f626fa3881c76f23a9a96812b69a}\label{structmbedtls__aes__context_ad0b4f626fa3881c76f23a9a96812b69a}} 
+\index{mbedtls\+\_\+aes\+\_\+context@{mbedtls\+\_\+aes\+\_\+context}!nr@{nr}}
+\index{nr@{nr}!mbedtls\+\_\+aes\+\_\+context@{mbedtls\+\_\+aes\+\_\+context}}
+\subsubsection{\texorpdfstring{nr}{nr}}
+{\footnotesize\ttfamily int mbedtls\+\_\+aes\+\_\+context\+::nr}
+
+number of rounds \mbox{\Hypertarget{structmbedtls__aes__context_ac7e235e5b270daba3635f5e39949b7a4}\label{structmbedtls__aes__context_ac7e235e5b270daba3635f5e39949b7a4}} 
+\index{mbedtls\+\_\+aes\+\_\+context@{mbedtls\+\_\+aes\+\_\+context}!rk@{rk}}
+\index{rk@{rk}!mbedtls\+\_\+aes\+\_\+context@{mbedtls\+\_\+aes\+\_\+context}}
+\subsubsection{\texorpdfstring{rk}{rk}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ mbedtls\+\_\+aes\+\_\+context\+::rk}
+
+A\+ES round keys 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/sdk/include/reactos/libs/mbedtls/\hyperlink{aes_8h}{aes.\+h}\end{DoxyCompactItemize}

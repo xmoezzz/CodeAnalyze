@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: svcctl接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacesvcctl-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">svcctl接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a78a0e9eba14f2d8b09d41812121a72c2"><td class="memItemLeft" align="right" valign="top"><a id="a78a0e9eba14f2d8b09d41812121a72c2"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RCloseServiceHandle</b> ([in, out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> hSCObject)</td></tr>
+<tr class="separator:a78a0e9eba14f2d8b09d41812121a72c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22042696d329808e90c6c79138e31ac"><td class="memItemLeft" align="right" valign="top"><a id="ae22042696d329808e90c6c79138e31ac"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RControlService</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwControl, [out] <a class="el" href="struct___s_e_r_v_i_c_e___s_t_a_t_u_s.html">LPSERVICE_STATUS</a> lpServiceStatus)</td></tr>
+<tr class="separator:ae22042696d329808e90c6c79138e31ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e3827cab0a64cf71b8602ed3978983"><td class="memItemLeft" align="right" valign="top"><a id="ac0e3827cab0a64cf71b8602ed3978983"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RDeleteService</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService)</td></tr>
+<tr class="separator:ac0e3827cab0a64cf71b8602ed3978983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf33e1c82e97c0cc9a77c59162419eb7"><td class="memItemLeft" align="right" valign="top"><a id="abf33e1c82e97c0cc9a77c59162419eb7"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RLockServiceDatabase</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_LOCK</a> lpLock)</td></tr>
+<tr class="separator:abf33e1c82e97c0cc9a77c59162419eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8024ca6d23a3a30fc0a6f45b420d99d7"><td class="memItemLeft" align="right" valign="top"><a id="a8024ca6d23a3a30fc0a6f45b420d99d7"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceObjectSecurity</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] SECURITY_INFORMATION dwSecurityInformation, [out, size_is(cbBufSize)] LPBYTE lpSecurityDescriptor, [in, range(0, 1024 *256)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded)</td></tr>
+<tr class="separator:a8024ca6d23a3a30fc0a6f45b420d99d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151bdc12e648b0e1427ed4cd54c0d390"><td class="memItemLeft" align="right" valign="top"><a id="a151bdc12e648b0e1427ed4cd54c0d390"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RSetServiceObjectSecurity</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwSecurityInformation, [in, size_is(dwSecuityDescriptorSize)] LPBYTE lpSecurityDescriptor, [in] DWORD dwSecuityDescriptorSize)</td></tr>
+<tr class="separator:a151bdc12e648b0e1427ed4cd54c0d390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45be2c0ed2b8fdaeb2989c95d606c069"><td class="memItemLeft" align="right" valign="top"><a id="a45be2c0ed2b8fdaeb2989c95d606c069"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceStatus</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [out] <a class="el" href="struct___s_e_r_v_i_c_e___s_t_a_t_u_s.html">LPSERVICE_STATUS</a> lpServiceStatus)</td></tr>
+<tr class="separator:a45be2c0ed2b8fdaeb2989c95d606c069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c4fc9164b9bcadfbd2b507ff16fd97"><td class="memItemLeft" align="right" valign="top"><a id="ab8c4fc9164b9bcadfbd2b507ff16fd97"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RSetServiceStatus</b> ([in] RPC_SERVICE_STATUS_HANDLE hServiceStatus, [in] <a class="el" href="struct___s_e_r_v_i_c_e___s_t_a_t_u_s.html">LPSERVICE_STATUS</a> lpServiceStatus)</td></tr>
+<tr class="separator:ab8c4fc9164b9bcadfbd2b507ff16fd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf5baa3de70ccc62dfb411993ce1b0f"><td class="memItemLeft" align="right" valign="top"><a id="aabf5baa3de70ccc62dfb411993ce1b0f"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RUnlockServiceDatabase</b> ([in, out] <a class="el" href="interfacevoid.html">LPSC_RPC_LOCK</a> Lock)</td></tr>
+<tr class="separator:aabf5baa3de70ccc62dfb411993ce1b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122fdaa6225e14b0742816d04f439c4c"><td class="memItemLeft" align="right" valign="top"><a id="a122fdaa6225e14b0742816d04f439c4c"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RNotifyBootConfigStatus</b> ([in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] SVCCTL_HANDLEW lpMachineName, [in] DWORD BootAcceptable)</td></tr>
+<tr class="separator:a122fdaa6225e14b0742816d04f439c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e00803baeb34ac58c1bc322f083e3de"><td class="memItemLeft" align="right" valign="top"><a id="a1e00803baeb34ac58c1bc322f083e3de"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RI_ScSetServiceBitsW</b> ([in] RPC_SERVICE_STATUS_HANDLE hServiceStatus, [in] DWORD dwServiceBits, [in] BOOL bSetBitsOn, [in] BOOL bUpdateImmediately, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpString)</td></tr>
+<tr class="separator:a1e00803baeb34ac58c1bc322f083e3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b224e8a469df9a8c045919c22079f2"><td class="memItemLeft" align="right" valign="top"><a id="a95b224e8a469df9a8c045919c22079f2"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RChangeServiceConfigW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwServiceType, [in] DWORD dwStartType, [in] DWORD dwErrorControl, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpBinaryPathName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpLoadOrderGroup, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPDWORD lpdwTagId, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwDependSize)] LPBYTE lpDependencies, [in, range(0, SC_MAX_DEPEND_SIZE)] DWORD dwDependSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpServiceStartName, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwPwSize)] LPBYTE lpPassword, [in, range(0, SC_MAX_PWD_SIZE)] DWORD dwPwSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpDisplayName)</td></tr>
+<tr class="separator:a95b224e8a469df9a8c045919c22079f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca78d7b20d6d33bc3bbbb7e8f0925bf"><td class="memItemLeft" align="right" valign="top"><a id="a2ca78d7b20d6d33bc3bbbb7e8f0925bf"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RCreateServiceW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPCWSTR lpServiceName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR lpDisplayName, [in] DWORD dwDesiredAccess, [in] DWORD dwServiceType, [in] DWORD dwStartType, [in] DWORD dwErrorControl, [in, <a class="el" href="structstring.html">string</a>] LPCWSTR lpBinaryPathName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR lpLoadOrderGroup, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPDWORD lpdwTagId, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwDependSize)] LPBYTE lpDependencies, [in, range(0, SC_MAX_DEPEND_SIZE)] DWORD dwDependSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR lpServiceStartName, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwPwSize)] LPBYTE lpPassword, [in, range(0, SC_MAX_PWD_SIZE)] DWORD dwPwSize, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpServiceHandle)</td></tr>
+<tr class="separator:a2ca78d7b20d6d33bc3bbbb7e8f0925bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039a1624d94db98d637507eadafc9473"><td class="memItemLeft" align="right" valign="top"><a id="a039a1624d94db98d637507eadafc9473"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>REnumDependentServicesW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwServiceState, [out, size_is(cbBufSize)] LPBYTE lpServices, [in, range(0, 1024 *256)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded, [out] LPBOUNDED_DWORD_256K lpServicesReturned)</td></tr>
+<tr class="separator:a039a1624d94db98d637507eadafc9473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab621b1b7af9a918713212404a01d2f6b"><td class="memItemLeft" align="right" valign="top"><a id="ab621b1b7af9a918713212404a01d2f6b"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>REnumServicesStatusW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in] DWORD dwServiceType, [in] DWORD dwServiceState, [out, size_is(dwBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *256)] DWORD dwBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded, [out] LPBOUNDED_DWORD_256K lpServicesReturned, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPBOUNDED_DWORD_256K lpResumeHandle)</td></tr>
+<tr class="separator:ab621b1b7af9a918713212404a01d2f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae542c7f28817b880d9d86c6a22630be"><td class="memItemLeft" align="right" valign="top"><a id="aae542c7f28817b880d9d86c6a22630be"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>ROpenSCManagerW</b> ([in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] SVCCTL_HANDLEW lpMachineName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpDatabaseName, [in] DWORD dwDesiredAccess, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpScHandle)</td></tr>
+<tr class="separator:aae542c7f28817b880d9d86c6a22630be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5737841bbef37d343c8082a2b504499"><td class="memItemLeft" align="right" valign="top"><a id="ad5737841bbef37d343c8082a2b504499"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>ROpenServiceW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPWSTR lpServiceName, [in] DWORD dwDesiredAccess, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpServiceHandle)</td></tr>
+<tr class="separator:ad5737841bbef37d343c8082a2b504499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01214631b67560b652cd09a1f5d3cb5"><td class="memItemLeft" align="right" valign="top"><a id="ac01214631b67560b652cd09a1f5d3cb5"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceConfigW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [out, size_is(cbBufSize)] LPBYTE lpServiceConfig, [in, range(0, 1024 *8)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_8K pcbBytesNeeded)</td></tr>
+<tr class="separator:ac01214631b67560b652cd09a1f5d3cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee08eec718fef7526f3d8846990c295"><td class="memItemLeft" align="right" valign="top"><a id="a1ee08eec718fef7526f3d8846990c295"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceLockStatusW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [out, size_is(cbBufSize)] LPBYTE lpLockStatus, [in, range(0, 1024 *4)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_4K pcbBytesNeeded)</td></tr>
+<tr class="separator:a1ee08eec718fef7526f3d8846990c295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cde7398ff17ce40cc57bca0244530a3"><td class="memItemLeft" align="right" valign="top"><a id="a5cde7398ff17ce40cc57bca0244530a3"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RStartServiceW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in, range(0, SC_MAX_ARGUMENTS)] DWORD argc, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(argc)] <a class="el" href="struct___s_t_r_i_n_g___p_t_r_s_w.html">LPSTRING_PTRSW</a> argv)</td></tr>
+<tr class="separator:a5cde7398ff17ce40cc57bca0244530a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f83030fb7fda82a48f2e03f0176ccc"><td class="memItemLeft" align="right" valign="top"><a id="ac5f83030fb7fda82a48f2e03f0176ccc"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RGetServiceDisplayNameW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPCWSTR lpServiceName, [out, <a class="el" href="structstring.html">string</a>, size_is(*lpcchBuffer+1)] LPWSTR lpDisplayName, [in, out] DWORD *lpcchBuffer)</td></tr>
+<tr class="separator:ac5f83030fb7fda82a48f2e03f0176ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838813a025e34c83b100cf19e7498cfa"><td class="memItemLeft" align="right" valign="top"><a id="a838813a025e34c83b100cf19e7498cfa"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RGetServiceKeyNameW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPCWSTR lpDisplayName, [out, <a class="el" href="structstring.html">string</a>, size_is(*lpcchBuffer+1)] LPWSTR lpServiceName, [in, out] DWORD *lpcchBuffer)</td></tr>
+<tr class="separator:a838813a025e34c83b100cf19e7498cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a63788560dbc03d22b9ff16d6c2cdf"><td class="memItemLeft" align="right" valign="top"><a id="ad1a63788560dbc03d22b9ff16d6c2cdf"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RI_ScSetServiceBitsA</b> ([in] RPC_SERVICE_STATUS_HANDLE hServiceStatus, [in] DWORD dwServiceBits, [in] BOOL bSetBitsOn, [in] BOOL bUpdateImmediately, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpString)</td></tr>
+<tr class="separator:ad1a63788560dbc03d22b9ff16d6c2cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba97192ed11777e67bec355324e2d789"><td class="memItemLeft" align="right" valign="top"><a id="aba97192ed11777e67bec355324e2d789"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RChangeServiceConfigA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwServiceType, [in] DWORD dwStartType, [in] DWORD dwErrorControl, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpBinaryPathName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpLoadOrderGroup, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPDWORD lpdwTagId, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwDependSize)] LPBYTE lpDependencies, [in, range(0, SC_MAX_DEPEND_SIZE)] DWORD dwDependSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpServiceStartName, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwPwSize)] LPBYTE lpPassword, [in, range(0, SC_MAX_PWD_SIZE)] DWORD dwPwSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpDisplayName)</td></tr>
+<tr class="separator:aba97192ed11777e67bec355324e2d789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346932827fc41b61b1e33227ac7e1719"><td class="memItemLeft" align="right" valign="top"><a id="a346932827fc41b61b1e33227ac7e1719"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RCreateServiceA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPSTR lpServiceName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpDisplayName, [in] DWORD dwDesiredAccess, [in] DWORD dwServiceType, [in] DWORD dwStartType, [in] DWORD dwErrorControl, [in, <a class="el" href="structstring.html">string</a>] LPSTR lpBinaryPathName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpLoadOrderGroup, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPDWORD lpdwTagId, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwDependSize)] LPBYTE lpDependencies, [in, range(0, SC_MAX_DEPEND_SIZE)] DWORD dwDependSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpServiceStartName, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwPwSize)] LPBYTE lpPassword, [in, range(0, SC_MAX_PWD_SIZE)] DWORD dwPwSize, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpServiceHandle)</td></tr>
+<tr class="separator:a346932827fc41b61b1e33227ac7e1719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ed91d30e3dbb6c0df8475b1697ac95"><td class="memItemLeft" align="right" valign="top"><a id="a25ed91d30e3dbb6c0df8475b1697ac95"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>REnumDependentServicesA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwServiceState, [out, size_is(cbBufSize)] LPBYTE lpServices, [in, range(0, 1024 *256)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded, [out] LPBOUNDED_DWORD_256K lpServicesReturned)</td></tr>
+<tr class="separator:a25ed91d30e3dbb6c0df8475b1697ac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564078256f69847553d6f79fdf004ec1"><td class="memItemLeft" align="right" valign="top"><a id="a564078256f69847553d6f79fdf004ec1"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>REnumServicesStatusA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in] DWORD dwServiceType, [in] DWORD dwServiceState, [out, size_is(dwBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *256)] DWORD dwBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded, [out] LPBOUNDED_DWORD_256K lpServicesReturned, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPBOUNDED_DWORD_256K lpResumeHandle)</td></tr>
+<tr class="separator:a564078256f69847553d6f79fdf004ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e3e785aeaf16b8ba71033dfc8f2750"><td class="memItemLeft" align="right" valign="top"><a id="ad6e3e785aeaf16b8ba71033dfc8f2750"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>ROpenSCManagerA</b> ([in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] SVCCTL_HANDLEA lpMachineName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpDatabaseName, [in] DWORD dwDesiredAccess, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpScHandle)</td></tr>
+<tr class="separator:ad6e3e785aeaf16b8ba71033dfc8f2750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc17a4d2bc60567a8b37024d4de0c75e"><td class="memItemLeft" align="right" valign="top"><a id="adc17a4d2bc60567a8b37024d4de0c75e"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>ROpenServiceA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPSTR lpServiceName, [in] DWORD dwDesiredAccess, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpServiceHandle)</td></tr>
+<tr class="separator:adc17a4d2bc60567a8b37024d4de0c75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ecf16e2173e71bc3bd6b64c67c0a96"><td class="memItemLeft" align="right" valign="top"><a id="ac2ecf16e2173e71bc3bd6b64c67c0a96"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceConfigA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [out, size_is(cbBufSize)] LPBYTE lpServiceConfig, [in, range(0, 1024 *8)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_8K pcbBytesNeeded)</td></tr>
+<tr class="separator:ac2ecf16e2173e71bc3bd6b64c67c0a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28dad56a269c1f3d02047faac837794c"><td class="memItemLeft" align="right" valign="top"><a id="a28dad56a269c1f3d02047faac837794c"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceLockStatusA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [out, size_is(cbBufSize)] LPBYTE lpLockStatus, [in, range(0, 1024 *4)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_4K pcbBytesNeeded)</td></tr>
+<tr class="separator:a28dad56a269c1f3d02047faac837794c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88d2d388cba8ef2e0610dc9e9f63bc9"><td class="memItemLeft" align="right" valign="top"><a id="ad88d2d388cba8ef2e0610dc9e9f63bc9"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RStartServiceA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in, range(0, SC_MAX_ARGUMENTS)] DWORD argc, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(argc)] <a class="el" href="struct___s_t_r_i_n_g___p_t_r_s_a.html">LPSTRING_PTRSA</a> argv)</td></tr>
+<tr class="separator:ad88d2d388cba8ef2e0610dc9e9f63bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdae316e6104beb8502425a559e43a5"><td class="memItemLeft" align="right" valign="top"><a id="abbdae316e6104beb8502425a559e43a5"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RGetServiceDisplayNameA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPCSTR lpServiceName, [out, <a class="el" href="structstring.html">string</a>, size_is(*lpcchBuffer)] LPSTR lpDisplayName, [in, out] LPBOUNDED_DWORD_4K lpcchBuffer)</td></tr>
+<tr class="separator:abbdae316e6104beb8502425a559e43a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90489039a0828b7a77b3041a36fea842"><td class="memItemLeft" align="right" valign="top"><a id="a90489039a0828b7a77b3041a36fea842"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RGetServiceKeyNameA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>] LPCSTR lpDisplayName, [out, <a class="el" href="structstring.html">string</a>, size_is(*lpcchBuffer)] LPSTR lpKeyName, [in, out] LPBOUNDED_DWORD_4K lpcchBuffer)</td></tr>
+<tr class="separator:a90489039a0828b7a77b3041a36fea842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcece2def17fbe4efdd43bff2915513"><td class="memItemLeft" align="right" valign="top"><a id="acbcece2def17fbe4efdd43bff2915513"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RI_ScGetCurrentGroupStateW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpLoadOrderGroup, [out] LPDWORD lpState)</td></tr>
+<tr class="separator:acbcece2def17fbe4efdd43bff2915513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7eb5a8f9d0a154717070c362d319f4"><td class="memItemLeft" align="right" valign="top"><a id="a2a7eb5a8f9d0a154717070c362d319f4"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>REnumServiceGroupW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in] DWORD dwServiceType, [in] DWORD dwServiceState, [out, size_is(cbBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *256)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded, [out] LPBOUNDED_DWORD_256K lpServicesReturned, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPBOUNDED_DWORD_256K lpResumeIndex, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR pszGroupName)</td></tr>
+<tr class="separator:a2a7eb5a8f9d0a154717070c362d319f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f19ec984a5c34d43fec95447439ee2"><td class="memItemLeft" align="right" valign="top"><a id="ad6f19ec984a5c34d43fec95447439ee2"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RChangeServiceConfig2A</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] <a class="el" href="struct___s_c___r_p_c___c_o_n_f_i_g___i_n_f_o_a.html">SC_RPC_CONFIG_INFOA</a> Info)</td></tr>
+<tr class="separator:ad6f19ec984a5c34d43fec95447439ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc83975443a3800569fe1f98563e8af"><td class="memItemLeft" align="right" valign="top"><a id="adcc83975443a3800569fe1f98563e8af"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RChangeServiceConfig2W</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] <a class="el" href="struct___s_c___r_p_c___c_o_n_f_i_g___i_n_f_o_w.html">SC_RPC_CONFIG_INFOW</a> Info)</td></tr>
+<tr class="separator:adcc83975443a3800569fe1f98563e8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c08b32e6242a27c2e714ea1696b4a04"><td class="memItemLeft" align="right" valign="top"><a id="a5c08b32e6242a27c2e714ea1696b4a04"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceConfig2A</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwInfoLevel, [out, size_is(cbBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *8)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_8K pcbBytesNeeded)</td></tr>
+<tr class="separator:a5c08b32e6242a27c2e714ea1696b4a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1bf62d227a9a5d5c588715c63a6a0e"><td class="memItemLeft" align="right" valign="top"><a id="a6b1bf62d227a9a5d5c588715c63a6a0e"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceConfig2W</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwInfoLevel, [out, size_is(cbBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *8)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_8K pcbBytesNeeded)</td></tr>
+<tr class="separator:a6b1bf62d227a9a5d5c588715c63a6a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85d0069282ce7a8607dbe3ac8f4162f"><td class="memItemLeft" align="right" valign="top"><a id="aa85d0069282ce7a8607dbe3ac8f4162f"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceStatusEx</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] SC_STATUS_TYPE InfoLevel, [out, size_is(cbBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *8)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_8K pcbBytesNeeded)</td></tr>
+<tr class="separator:aa85d0069282ce7a8607dbe3ac8f4162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacad9f364ee25495710474acd134ed1b"><td class="memItemLeft" align="right" valign="top"><a id="aacad9f364ee25495710474acd134ed1b"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>REnumServicesStatusExA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in] SC_ENUM_TYPE InfoLevel, [in] DWORD dwServiceType, [in] DWORD dwServiceState, [out, size_is(cbBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *256)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded, [out] LPBOUNDED_DWORD_256K lpServicesReturned, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPBOUNDED_DWORD_256K lpResumeIndex, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPCSTR pszGroupName)</td></tr>
+<tr class="separator:aacad9f364ee25495710474acd134ed1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adcf9f6dadad3c5e6500ecb3de9ba74"><td class="memItemLeft" align="right" valign="top"><a id="a6adcf9f6dadad3c5e6500ecb3de9ba74"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>REnumServicesStatusExW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hSCManager, [in] SC_ENUM_TYPE InfoLevel, [in] DWORD dwServiceType, [in] DWORD dwServiceState, [out, size_is(cbBufSize)] LPBYTE lpBuffer, [in, range(0, 1024 *256)] DWORD cbBufSize, [out] LPBOUNDED_DWORD_256K pcbBytesNeeded, [out] LPBOUNDED_DWORD_256K lpServicesReturned, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPBOUNDED_DWORD_256K lpResumeIndex, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPCWSTR pszGroupName)</td></tr>
+<tr class="separator:a6adcf9f6dadad3c5e6500ecb3de9ba74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6579432fa71b33aa6fc06efd6c7a07b0"><td class="memItemLeft" align="right" valign="top"><a id="a6579432fa71b33aa6fc06efd6c7a07b0"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RSendTSMessage</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a6579432fa71b33aa6fc06efd6c7a07b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72105e7cd7b33cb984061559c07b846"><td class="memItemLeft" align="right" valign="top"><a id="ac72105e7cd7b33cb984061559c07b846"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RCreateServiceWOW64A</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle, [in, <a class="el" href="structstring.html">string</a>] LPSTR lpServiceName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpDisplayName, [in] DWORD dwDesiredAccess, [in] DWORD dwServiceType, [in] DWORD dwStartType, [in] DWORD dwErrorControl, [in, <a class="el" href="structstring.html">string</a>] LPSTR lpBinaryPathName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpLoadOrderGroup, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPDWORD lpdwTagId, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwDependSize)] LPBYTE lpDependencies, [in, range(0, SC_MAX_DEPEND_SIZE)] DWORD dwDependSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPSTR lpServiceStartName, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwPwSize)] LPBYTE lpPassword, [in, range(0, SC_MAX_PWD_SIZE)] DWORD dwPwSize, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpServiceHandle)</td></tr>
+<tr class="separator:ac72105e7cd7b33cb984061559c07b846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86b25d492e15c289abe4a6a75e738a4"><td class="memItemLeft" align="right" valign="top"><a id="af86b25d492e15c289abe4a6a75e738a4"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RCreateServiceWOW64W</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle, [in, <a class="el" href="structstring.html">string</a>] LPWSTR lpServiceName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpDisplayName, [in] DWORD dwDesiredAccess, [in] DWORD dwServiceType, [in] DWORD dwStartType, [in] DWORD dwErrorControl, [in, <a class="el" href="structstring.html">string</a>] LPWSTR lpBinaryPathName, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpLoadOrderGroup, [in, out, <a class="el" href="interfaceunique.html">unique</a>] LPDWORD lpdwTagId, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwDependSize)] LPBYTE lpDependencies, [in, range(0, SC_MAX_DEPEND_SIZE)] DWORD dwDependSize, [in, <a class="el" href="structstring.html">string</a>, <a class="el" href="interfaceunique.html">unique</a>] LPWSTR lpServiceStartName, [in, <a class="el" href="interfaceunique.html">unique</a>, size_is(dwPwSize)] LPBYTE lpPassword, [in, range(0, SC_MAX_PWD_SIZE)] DWORD dwPwSize, [out] <a class="el" href="interfacevoid.html">LPSC_RPC_HANDLE</a> lpServiceHandle)</td></tr>
+<tr class="separator:af86b25d492e15c289abe4a6a75e738a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdef85c10b7016b9dd0aa04ae9e5b8c9"><td class="memItemLeft" align="right" valign="top"><a id="acdef85c10b7016b9dd0aa04ae9e5b8c9"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RQueryServiceTagInfo</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:acdef85c10b7016b9dd0aa04ae9e5b8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c56c63ba116415e3f21606928e82584"><td class="memItemLeft" align="right" valign="top"><a id="a8c56c63ba116415e3f21606928e82584"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RNotifyServiceStatusChange</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] <a class="el" href="struct___s_c___r_p_c___n_o_t_i_f_y___p_a_r_a_m_s.html">SC_RPC_NOTIFY_PARAMS</a> NotifyParams, [in] <a class="el" href="interface_g_u_i_d.html">GUID</a> *pClientProcessGuid, [out] <a class="el" href="interface_g_u_i_d.html">GUID</a> *pSCMProcessGuid, [out] PBOOL pfCreateRemoteQueue, [out] <a class="el" href="interfacevoid.html">LPSC_NOTIFY_RPC_HANDLE</a> phNotify)</td></tr>
+<tr class="separator:a8c56c63ba116415e3f21606928e82584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c5c175bcf2bb886af2207528f8dbac"><td class="memItemLeft" align="right" valign="top"><a id="ae5c5c175bcf2bb886af2207528f8dbac"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RGetNotifyResults</b> ([in] <a class="el" href="interfacevoid.html">SC_NOTIFY_RPC_HANDLE</a> hNotify, [out] <a class="el" href="struct___s_c___r_p_c___n_o_t_i_f_y___p_a_r_a_m_s___l_i_s_t.html">PSC_RPC_NOTIFY_PARAMS_LIST</a> *ppNotifyParams)</td></tr>
+<tr class="separator:ae5c5c175bcf2bb886af2207528f8dbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ff49109d42ebec54dea50fac8794b3"><td class="memItemLeft" align="right" valign="top"><a id="a55ff49109d42ebec54dea50fac8794b3"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RCloseNotifyHandle</b> ([in, out] <a class="el" href="interfacevoid.html">LPSC_NOTIFY_RPC_HANDLE</a> phNotify, [out] PBOOL pfApcFired)</td></tr>
+<tr class="separator:a55ff49109d42ebec54dea50fac8794b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb3041803a42ee358c4b9625e3a4a43"><td class="memItemLeft" align="right" valign="top"><a id="afeb3041803a42ee358c4b9625e3a4a43"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RControlServiceExA</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwControl, [in] DWORD dwInfoLevel)</td></tr>
+<tr class="separator:afeb3041803a42ee358c4b9625e3a4a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1c1ca01e72dee4f60b3f3c78194512"><td class="memItemLeft" align="right" valign="top"><a id="a4c1c1ca01e72dee4f60b3f3c78194512"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RControlServiceExW</b> ([in] <a class="el" href="interfacevoid.html">SC_RPC_HANDLE</a> hService, [in] DWORD dwControl, [in] DWORD dwInfoLevel)</td></tr>
+<tr class="separator:a4c1c1ca01e72dee4f60b3f3c78194512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0374f36b2c931c99313383df2765210c"><td class="memItemLeft" align="right" valign="top"><a id="a0374f36b2c931c99313383df2765210c"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RSendPnPMessage</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a0374f36b2c931c99313383df2765210c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1518f86807e432fe2211c03ecee1854"><td class="memItemLeft" align="right" valign="top"><a id="af1518f86807e432fe2211c03ecee1854"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RValidatePnPService</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:af1518f86807e432fe2211c03ecee1854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17166aa4961666eb9d58149c75718af5"><td class="memItemLeft" align="right" valign="top"><a id="a17166aa4961666eb9d58149c75718af5"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>ROpenServiceStatusHandle</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a17166aa4961666eb9d58149c75718af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a20d62d13f20ee2123c40cddcfad422"><td class="memItemLeft" align="right" valign="top"><a id="a9a20d62d13f20ee2123c40cddcfad422"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>RFunction55</b> ([in] <a class="el" href="interfacevoid.html">handle_t</a> BindingHandle)</td></tr>
+<tr class="separator:a9a20d62d13f20ee2123c40cddcfad422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/reactos/idl/<a class="el" href="svcctl_8idl_source.html">svcctl.idl</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

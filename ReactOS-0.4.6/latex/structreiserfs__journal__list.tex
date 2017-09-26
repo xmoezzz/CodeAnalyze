@@ -1,0 +1,64 @@
+\hypertarget{structreiserfs__journal__list}{}\section{reiserfs\+\_\+journal\+\_\+list结构体 参考}
+\label{structreiserfs__journal__list}\index{reiserfs\+\_\+journal\+\_\+list@{reiserfs\+\_\+journal\+\_\+list}}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a4ced38506f62d32a5e1f20f0303fc1ad}\label{structreiserfs__journal__list_a4ced38506f62d32a5e1f20f0303fc1ad}} 
+unsigned long {\bfseries j\+\_\+start}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a828da12b70cae73d79902525dfa598ab}\label{structreiserfs__journal__list_a828da12b70cae73d79902525dfa598ab}} 
+unsigned long {\bfseries j\+\_\+state}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a356f0500bbf8db47380ec8883e393095}\label{structreiserfs__journal__list_a356f0500bbf8db47380ec8883e393095}} 
+unsigned long {\bfseries j\+\_\+len}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_ad4407cbd60265908d2c96e94e9e310b6}\label{structreiserfs__journal__list_ad4407cbd60265908d2c96e94e9e310b6}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries j\+\_\+nonzerolen}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a62cc70db692abb27f2b0c4a2e2bed268}\label{structreiserfs__journal__list_a62cc70db692abb27f2b0c4a2e2bed268}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries j\+\_\+commit\+\_\+left}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_ad5da045675f31d561963819993f650f8}\label{structreiserfs__journal__list_ad5da045675f31d561963819993f650f8}} 
+\hyperlink{structatomic__t}{atomic\+\_\+t} {\bfseries j\+\_\+older\+\_\+commits\+\_\+done}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_aa2419e2002ee540add5b4dafb66487f2}\label{structreiserfs__journal__list_aa2419e2002ee540add5b4dafb66487f2}} 
+\hyperlink{interfacestruct}{struct} semaphore {\bfseries j\+\_\+commit\+\_\+lock}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_ab5d39b0e027a1c2a6168c366cfaee48e}\label{structreiserfs__journal__list_ab5d39b0e027a1c2a6168c366cfaee48e}} 
+unsigned long {\bfseries j\+\_\+trans\+\_\+id}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_ae7e1268a246897c28cee1fedd0a5c0e6}\label{structreiserfs__journal__list_ae7e1268a246897c28cee1fedd0a5c0e6}} 
+time\+\_\+t {\bfseries j\+\_\+timestamp}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_af611117da1d5c5cf104964b70b62ec3d}\label{structreiserfs__journal__list_af611117da1d5c5cf104964b70b62ec3d}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__list__bitmap}{reiserfs\+\_\+list\+\_\+bitmap} $\ast$ {\bfseries j\+\_\+list\+\_\+bitmap}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a5a18f4b4da8602337da5430db90e70e7}\label{structreiserfs__journal__list_a5a18f4b4da8602337da5430db90e70e7}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structbuffer__head}{buffer\+\_\+head} $\ast$ {\bfseries j\+\_\+commit\+\_\+bh}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a9f9936a49219dd995413557fc4c8ba84}\label{structreiserfs__journal__list_a9f9936a49219dd995413557fc4c8ba84}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+realblock}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a4446bca167e181dd29da7b7b6c94f3f2}\label{structreiserfs__journal__list_a4446bca167e181dd29da7b7b6c94f3f2}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structreiserfs__journal__cnode}{reiserfs\+\_\+journal\+\_\+cnode} $\ast$ {\bfseries j\+\_\+freedlist}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a74ce64d3eb9b8f24fcf5fd80658516dc}\label{structreiserfs__journal__list_a74ce64d3eb9b8f24fcf5fd80658516dc}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a20fab3a4749310046904c518c59a8b30}\label{structreiserfs__journal__list_a20fab3a4749310046904c518c59a8b30}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+working\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a0ba65f7e788fe32d7b1f790071ae87d4}\label{structreiserfs__journal__list_a0ba65f7e788fe32d7b1f790071ae87d4}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+tail\+\_\+bh\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a100babae1d479c534fed2d3d33d677f4}\label{structreiserfs__journal__list_a100babae1d479c534fed2d3d33d677f4}} 
+\hyperlink{interfacestruct}{struct} \hyperlink{structlist__head}{list\+\_\+head} {\bfseries j\+\_\+bh\+\_\+list}
+\item 
+\mbox{\Hypertarget{structreiserfs__journal__list_a33610a5057e3f04d7847ef191db2b649}\label{structreiserfs__journal__list_a33610a5057e3f04d7847ef191db2b649}} 
+int {\bfseries j\+\_\+refcount}
+\end{DoxyCompactItemize}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/drivers/filesystems/reiserfs/inc/linux/reiserfs\+\_\+fs\+\_\+sb.\+h\end{DoxyCompactItemize}

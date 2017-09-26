@@ -1,0 +1,216 @@
+\hypertarget{struct_shell_browser}{}\section{Shell\+Browser结构体 参考}
+\label{struct_shell_browser}\index{Shell\+Browser@{Shell\+Browser}}
+
+
+Implementation of \hyperlink{struct_i_shell_browser_impl}{I\+Shell\+Browser\+Impl} interface in explorer child windows  
+
+
+
+
+{\ttfamily \#include $<$shellbrowser.\+h$>$}
+
+类 Shell\+Browser 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.472135cm]{struct_shell_browser}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a2c733275115abda08633c5b82ce94c8b}\label{struct_shell_browser_a2c733275115abda08633c5b82ce94c8b}} 
+{\bfseries Shell\+Browser} (\hyperlink{interfacevoid}{H\+W\+ND} hwnd, \hyperlink{interfacevoid}{H\+W\+ND} hwnd\+Frame, \hyperlink{interfacevoid}{H\+W\+ND} left\+\_\+hwnd, Window\+Handle \&right\+\_\+hwnd, \hyperlink{struct_shell_path_info}{Shell\+Path\+Info} \&create\+\_\+info, \hyperlink{struct_browser_callback}{Browser\+Callback} $\ast$cb, \hyperlink{struct_ctx_menu_interfaces}{Ctx\+Menu\+Interfaces} \&cm\+\_\+ifs)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_af2ef9484f4cdbeaa56f5d263fac35b89}\label{struct_shell_browser_af2ef9484f4cdbeaa56f5d263fac35b89}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Window} (\hyperlink{interfacevoid}{H\+W\+ND} $\ast$lphwnd)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a9789b5ddd529e03fedccf128e8f600aa}\label{struct_shell_browser_a9789b5ddd529e03fedccf128e8f600aa}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Query\+Active\+Shell\+View} (\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$$\ast$ppshv)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a726d30c8025a099982f719688a99549b}\label{struct_shell_browser_a726d30c8025a099982f719688a99549b}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Get\+Control\+Window} (U\+I\+NT id, \hyperlink{interfacevoid}{H\+W\+ND} $\ast$lphwnd)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a28923301e63179739c2158ef50a819e5}\label{struct_shell_browser_a28923301e63179739c2158ef50a819e5}} 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE {\bfseries Send\+Control\+Msg} (U\+I\+NT id, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param, L\+R\+E\+S\+U\+LT $\ast$pret)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ad4c3a1a56c5f4060abc9d073c70d54ef}\label{struct_shell_browser_ad4c3a1a56c5f4060abc9d073c70d54ef}} 
+const \hyperlink{struct_root}{Root} \& {\bfseries get\+\_\+root} () const
+\item 
+\mbox{\Hypertarget{struct_shell_browser_afb3c44d0da0b9be70d74f8ea38282c0d}\label{struct_shell_browser_afb3c44d0da0b9be70d74f8ea38282c0d}} 
+\hyperlink{interfacevoid}{void} {\bfseries On\+Tree\+Get\+Disp\+Info} (int id\+Ctrl, \hyperlink{structtag_n_m_h_d_r}{L\+P\+N\+M\+H\+DR} pnmh)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a4f8fac330db34ae5edc9030f08ad1f0f}\label{struct_shell_browser_a4f8fac330db34ae5edc9030f08ad1f0f}} 
+\hyperlink{interfacevoid}{void} {\bfseries On\+Tree\+Item\+Expanding} (int id\+Ctrl, L\+P\+N\+M\+T\+R\+E\+E\+V\+I\+EW pnmtv)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_afa37042bfb7f5e20f1c3b1a65300dcf9}\label{struct_shell_browser_afa37042bfb7f5e20f1c3b1a65300dcf9}} 
+\hyperlink{interfacevoid}{void} {\bfseries On\+Tree\+Item\+R\+Click} (int id\+Ctrl, \hyperlink{structtag_n_m_h_d_r}{L\+P\+N\+M\+H\+DR} pnmh)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a112a8aa7190b838df1f5ab74fb462b87}\label{struct_shell_browser_a112a8aa7190b838df1f5ab74fb462b87}} 
+\hyperlink{interfacevoid}{void} {\bfseries On\+Tree\+Item\+Selected} (int id\+Ctrl, L\+P\+N\+M\+T\+R\+E\+E\+V\+I\+EW pnmtv)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a611547218b823ff90aa31fd24026878f}\label{struct_shell_browser_a611547218b823ff90aa31fd24026878f}} 
+\hyperlink{interfacevoid}{void} {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a52b01490d5f4901e01211d542722275c}\label{struct_shell_browser_a52b01490d5f4901e01211d542722275c}} 
+int {\bfseries Insert\+Subitems} (\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} h\+Parent\+Item, \hyperlink{struct_entry}{Entry} $\ast$entry, \hyperlink{interface_i_shell_folder}{I\+Shell\+Folder} $\ast$p\+Parent\+Folder)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ab2fe50e7e93479f7aae02943b89d976f}\label{struct_shell_browser_ab2fe50e7e93479f7aae02943b89d976f}} 
+bool {\bfseries jump\+\_\+to\+\_\+pidl} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{struct_shell_browser_a018b43673fbbf31294499cff061b61f3}{On\+Default\+Command} (\hyperlink{struct_c_i_d_a}{L\+P\+I\+DA} pida)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a1d27fb5c1567834bb8425b6308fe1745}\label{struct_shell_browser_a1d27fb5c1567834bb8425b6308fe1745}} 
+\hyperlink{interfacevoid}{void} {\bfseries Update\+Folder\+View} (\hyperlink{interface_i_shell_folder}{I\+Shell\+Folder} $\ast$\hyperlink{structfolder}{folder})
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ae17a78a2ebb2aab445e14c0885eb623b}\label{struct_shell_browser_ae17a78a2ebb2aab445e14c0885eb623b}} 
+\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} {\bfseries select\+\_\+entry} (\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} hitem, \hyperlink{struct_entry}{Entry} $\ast$entry, bool expand=true)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_aba7c3d2a60c280d79fc0727a61de4a23}\label{struct_shell_browser_aba7c3d2a60c280d79fc0727a61de4a23}} 
+bool {\bfseries select\+\_\+folder} (\hyperlink{struct_entry}{Entry} $\ast$entry, bool expand)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a56e95f07b38c8b2df3c3894a9dd2b690}\label{struct_shell_browser_a56e95f07b38c8b2df3c3894a9dd2b690}} 
+\hyperlink{interfacevoid}{void} {\bfseries jump\+\_\+to} (L\+P\+C\+I\+T\+E\+M\+I\+D\+L\+I\+ST pidl)
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a71051d5f6d6a426cf4da8f6d507249aa}\label{struct_shell_browser_a71051d5f6d6a426cf4da8f6d507249aa}} 
+\hyperlink{interfacevoid}{void} {\bfseries invalidate\+\_\+cache} ()
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a016576f064483ff13e4c22d3e2224612}\label{struct_shell_browser_a016576f064483ff13e4c22d3e2224612}} 
+bool {\bfseries Translate\+Accelerator} (\hyperlink{structtag_m_s_g}{L\+P\+M\+SG} lpmsg)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a765693d54d34697e356ae6335cfd6be0}\label{struct_shell_browser_a765693d54d34697e356ae6335cfd6be0}} 
+\hyperlink{interface_i_shell_browser}{I\+Shell\+Browser} {\bfseries I\+Shell\+Browser\+\_\+iface}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ac103c5694c48e4fb7efffc11ff33fc97}\label{struct_shell_browser_ac103c5694c48e4fb7efffc11ff33fc97}} 
+\hyperlink{interface_i_browser_service}{I\+Browser\+Service} {\bfseries I\+Browser\+Service\+\_\+iface}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a435e07dfb0ed48fa6e75a2cf14e57f1c}\label{struct_shell_browser_a435e07dfb0ed48fa6e75a2cf14e57f1c}} 
+\hyperlink{interface_i_doc_object_service}{I\+Doc\+Object\+Service} {\bfseries I\+Doc\+Object\+Service\+\_\+iface}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a30a6e9971a15393f9eecac9241899298}\label{struct_shell_browser_a30a6e9971a15393f9eecac9241899298}} 
+L\+O\+NG {\bfseries ref}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a6e4936c049fd72bf06be0eab68e2eb32}\label{struct_shell_browser_a6e4936c049fd72bf06be0eab68e2eb32}} 
+\hyperlink{struct_doc_host}{Doc\+Host} $\ast$ {\bfseries doc\+\_\+host}
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a1bf51d8a9726fd9a26164cb46352756a}\label{struct_shell_browser_a1bf51d8a9726fd9a26164cb46352756a}} 
+typedef \hyperlink{class_i_com_srv_base}{I\+Com\+Srv\+Base}$<$ I\+Shell\+Folder\+View\+CB, \hyperlink{struct_shell_browser}{Shell\+Browser} $>$ {\bfseries super}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a554e0fd943b73d136cd1a59d797d76da}\label{struct_shell_browser_a554e0fd943b73d136cd1a59d797d76da}} 
+\hyperlink{interfacevoid}{void} {\bfseries Initialize\+Tree} ()
+\item 
+\mbox{\Hypertarget{struct_shell_browser_abecd0ffb451385729555aa5ff972b958}\label{struct_shell_browser_abecd0ffb451385729555aa5ff972b958}} 
+bool {\bfseries Init\+Drag\+Drop} ()
+\item 
+virtual H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE \hyperlink{struct_shell_browser_a575ee8758d47796428a80c8ac2a66c49}{Message\+S\+F\+V\+CB} (U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\begin{DoxyCompactList}\small\item\em shell view callback \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_shell_browser_afe5ca6981c4f92c5d02b2befba567686}\label{struct_shell_browser_afe5ca6981c4f92c5d02b2befba567686}} 
+int {\bfseries get\+\_\+image\+\_\+idx} (int icon\+\_\+id)
+\item 
+\hyperlink{interfacevoid}{void} \hyperlink{struct_shell_browser_ab8cc56ea36be84287a8e7d7d1ee0f7d5}{refresh} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a1481d02713c14fbf738e981dfa0b6b2f}\label{struct_shell_browser_a1481d02713c14fbf738e981dfa0b6b2f}} 
+\hyperlink{interfacevoid}{H\+W\+ND} {\bfseries \+\_\+hwnd}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ac77ace4ee1a9956138df74861d25721d}\label{struct_shell_browser_ac77ace4ee1a9956138df74861d25721d}} 
+\hyperlink{interfacevoid}{H\+W\+ND} {\bfseries \+\_\+hwnd\+Frame}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ac2da123825de657cade11f491e6b9d3f}\label{struct_shell_browser_ac2da123825de657cade11f491e6b9d3f}} 
+\hyperlink{interfacevoid}{H\+W\+ND} {\bfseries \+\_\+left\+\_\+hwnd}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a259a2af2f88b970ce014bb43298e3007}\label{struct_shell_browser_a259a2af2f88b970ce014bb43298e3007}} 
+Window\+Handle \& {\bfseries \+\_\+right\+\_\+hwnd}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ae3b61671296daa57a9a6547e2536ca1b}\label{struct_shell_browser_ae3b61671296daa57a9a6547e2536ca1b}} 
+\hyperlink{struct_shell_path_info}{Shell\+Path\+Info} \& {\bfseries \+\_\+create\+\_\+info}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a21f73ffd775531a4aa9d831056934ea7}\label{struct_shell_browser_a21f73ffd775531a4aa9d831056934ea7}} 
+\hyperlink{struct___i_m_a_g_e_l_i_s_t}{H\+I\+M\+A\+G\+E\+L\+I\+ST} {\bfseries \+\_\+himl}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a0317692ba93740c176d35abe99915297}\label{struct_shell_browser_a0317692ba93740c176d35abe99915297}} 
+\hyperlink{struct___i_m_a_g_e_l_i_s_t}{H\+I\+M\+A\+G\+E\+L\+I\+ST} {\bfseries \+\_\+himl\+\_\+old}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a6fae08e82be506ff3730c2a1e624e965}\label{struct_shell_browser_a6fae08e82be506ff3730c2a1e624e965}} 
+\hyperlink{struct_browser_callback}{Browser\+Callback} $\ast$ {\bfseries \+\_\+callback}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a4c09e8681090829bce18e2c47f973c43}\label{struct_shell_browser_a4c09e8681090829bce18e2c47f973c43}} 
+\hyperlink{struct_shell_folder}{Shell\+Folder} {\bfseries \+\_\+folder}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ac052d34e7dc7f359fc048e3a88dffceb}\label{struct_shell_browser_ac052d34e7dc7f359fc048e3a88dffceb}} 
+\hyperlink{interface_i_shell_view}{I\+Shell\+View} $\ast$ {\bfseries \+\_\+p\+Shell\+View}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a03ab179040e2c7db86407607ef731bf8}\label{struct_shell_browser_a03ab179040e2c7db86407607ef731bf8}} 
+\hyperlink{class_tree_drop_target}{Tree\+Drop\+Target} $\ast$ {\bfseries \+\_\+p\+Drop\+Target}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a5746718f4fba462bc365d4209922d0b5}\label{struct_shell_browser_a5746718f4fba462bc365d4209922d0b5}} 
+\hyperlink{struct___t_r_e_e_i_t_e_m}{H\+T\+R\+E\+E\+I\+T\+EM} {\bfseries \+\_\+last\+\_\+sel}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a0d5a5a628e76efe02896309fc065d20d}\label{struct_shell_browser_a0d5a5a628e76efe02896309fc065d20d}} 
+\hyperlink{struct_root}{Root} {\bfseries \+\_\+root}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_af6552752d354536bf7b73a42c6c03c67}\label{struct_shell_browser_af6552752d354536bf7b73a42c6c03c67}} 
+\hyperlink{struct_shell_directory}{Shell\+Directory} $\ast$ {\bfseries \+\_\+cur\+\_\+dir}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_a957c4d4b28fe6d30d79062a82db87bd6}\label{struct_shell_browser_a957c4d4b28fe6d30d79062a82db87bd6}} 
+\hyperlink{struct_ctx_menu_interfaces}{Ctx\+Menu\+Interfaces} \& {\bfseries \+\_\+cm\+\_\+ifs}
+\item 
+\mbox{\Hypertarget{struct_shell_browser_ab9a2b697180d10f23eacaa27584d8e88}\label{struct_shell_browser_ab9a2b697180d10f23eacaa27584d8e88}} 
+\hyperlink{classmap}{map}$<$ int, int $>$ {\bfseries \+\_\+image\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Implementation of \hyperlink{struct_i_shell_browser_impl}{I\+Shell\+Browser\+Impl} interface in explorer child windows 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{struct_shell_browser_a575ee8758d47796428a80c8ac2a66c49}\label{struct_shell_browser_a575ee8758d47796428a80c8ac2a66c49}} 
+\index{Shell\+Browser@{Shell\+Browser}!Message\+S\+F\+V\+CB@{Message\+S\+F\+V\+CB}}
+\index{Message\+S\+F\+V\+CB@{Message\+S\+F\+V\+CB}!Shell\+Browser@{Shell\+Browser}}
+\subsubsection{\texorpdfstring{Message\+S\+F\+V\+C\+B()}{MessageSFVCB()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT S\+T\+D\+M\+E\+T\+H\+O\+D\+C\+A\+L\+L\+T\+Y\+PE Shell\+Browser\+::\+Message\+S\+F\+V\+CB (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{u\+Msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+shell view callback 
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000044}{待办事项}]never reached \end{DoxyRefDesc}
+\mbox{\Hypertarget{struct_shell_browser_a018b43673fbbf31294499cff061b61f3}\label{struct_shell_browser_a018b43673fbbf31294499cff061b61f3}} 
+\index{Shell\+Browser@{Shell\+Browser}!On\+Default\+Command@{On\+Default\+Command}}
+\index{On\+Default\+Command@{On\+Default\+Command}!Shell\+Browser@{Shell\+Browser}}
+\subsubsection{\texorpdfstring{On\+Default\+Command()}{OnDefaultCommand()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Shell\+Browser\+::\+On\+Default\+Command (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_i_d_a}{L\+P\+I\+DA}}]{pida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000045}{待办事项}]look for hidden or new subfolders and refresh/add new entry instead of opening a new window \end{DoxyRefDesc}
+
+
+重载 \hyperlink{struct_i_shell_browser_impl}{I\+Shell\+Browser\+Impl} .
+
+\mbox{\Hypertarget{struct_shell_browser_ab8cc56ea36be84287a8e7d7d1ee0f7d5}\label{struct_shell_browser_ab8cc56ea36be84287a8e7d7d1ee0f7d5}} 
+\index{Shell\+Browser@{Shell\+Browser}!refresh@{refresh}}
+\index{refresh@{refresh}!Shell\+Browser@{Shell\+Browser}}
+\subsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily \hyperlink{interfacevoid}{void} Shell\+Browser\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000046}{待办事项}]\end{DoxyRefDesc}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/dll/win32/ieframe/ieframe.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/shellbrowser.\+h\item 
+E\+:/\+React\+O\+S-\/0.\+4.\+6/modules/rosapps/applications/explorer-\/old/shell/shellbrowser.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ReactOS: ctype&lt; char &gt;类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ReactOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-static-methods">静态 Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classctype_3_01char_01_4-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ctype&lt; char &gt;类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ctype&lt; char &gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classctype_3_01char_01_4.png" usemap="#ctype_3C_20char_20_3E_map" alt=""/>
+  <map id="ctype_3C_20char_20_3E_map" name="ctype_3C_20char_20_3E_map">
+<area href="classlocale_1_1facet.html" alt="locale::facet" shape="rect" coords="0,56,144,80"/>
+<area href="classctype__base.html" alt="ctype_base" shape="rect" coords="154,56,298,80"/>
+<area href="class___refcount___base.html" alt="_Refcount_Base" shape="rect" coords="0,0,144,24"/>
+<area href="classctype__byname_3_01char_01_4.html" alt="ctype_byname&lt; char &gt;" shape="rect" coords="77,168,221,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1ad267f962d6bb3aeff82cce606a0220"><td class="memItemLeft" align="right" valign="top"><a id="a1ad267f962d6bb3aeff82cce606a0220"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>char_type</b></td></tr>
+<tr class="separator:a1ad267f962d6bb3aeff82cce606a0220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classctype__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classctype__base')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classctype__base.html">ctype_base</a></td></tr>
+<tr class="memitem:a83e04c75be1b3c080de63517f9935630 inherit pub_types_classctype__base"><td class="memItemLeft" align="right" valign="top"><a id="a83e04c75be1b3c080de63517f9935630"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>mask</b> { <br />
+&#160;&#160;<b>space</b> = _Locale_SPACE, 
+<b>print</b> = _Locale_PRINT, 
+<b>cntrl</b> = _Locale_CNTRL, 
+<b>upper</b> = _Locale_UPPER, 
+<br />
+&#160;&#160;<b>lower</b> = _Locale_LOWER, 
+<b>alpha</b> = _Locale_ALPHA, 
+<b>digit</b> = _Locale_DIGIT, 
+<b>punct</b> = _Locale_PUNCT, 
+<br />
+&#160;&#160;<b>xdigit</b> = _Locale_XDIGIT, 
+<b>alnum</b> = alpha | digit, 
+<b>graph</b> = alnum | punct
+<br />
+ }</td></tr>
+<tr class="separator:a83e04c75be1b3c080de63517f9935630 inherit pub_types_classctype__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aba54f64eb0b8c574bbdac73c1713007e"><td class="memItemLeft" align="right" valign="top"><a id="aba54f64eb0b8c574bbdac73c1713007e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ctype</b> (const mask *__tab=0, bool __del=false, size_t __refs=0)</td></tr>
+<tr class="separator:aba54f64eb0b8c574bbdac73c1713007e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4ced75dd84fb8d944ccd6d68752126"><td class="memItemLeft" align="right" valign="top"><a id="a2f4ced75dd84fb8d944ccd6d68752126"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is</b> (mask __m, char __c) const</td></tr>
+<tr class="separator:a2f4ced75dd84fb8d944ccd6d68752126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecf811df820029011ce36ed262c0da8"><td class="memItemLeft" align="right" valign="top"><a id="a0ecf811df820029011ce36ed262c0da8"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>is</b> (const char *__low, const char *__high, mask *__vec) const</td></tr>
+<tr class="separator:a0ecf811df820029011ce36ed262c0da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84bb82ccdb7d1e3e61ed2bb92d82c60b"><td class="memItemLeft" align="right" valign="top"><a id="a84bb82ccdb7d1e3e61ed2bb92d82c60b"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>scan_is</b> (mask __m, const char *__low, const char *__high) const</td></tr>
+<tr class="separator:a84bb82ccdb7d1e3e61ed2bb92d82c60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c4f9d8742e4e7b09c0f93d28c998b5"><td class="memItemLeft" align="right" valign="top"><a id="a08c4f9d8742e4e7b09c0f93d28c998b5"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>scan_not</b> (mask __m, const char *__low, const char *__high) const</td></tr>
+<tr class="separator:a08c4f9d8742e4e7b09c0f93d28c998b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114caf8f8d4bad4537d66e3495a6b72e"><td class="memItemLeft" align="right" valign="top"><a id="a114caf8f8d4bad4537d66e3495a6b72e"></a>
+char()&#160;</td><td class="memItemRight" valign="bottom"><b>toupper</b> (char __c) const</td></tr>
+<tr class="separator:a114caf8f8d4bad4537d66e3495a6b72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ca3909d9dada0a4f9fca4213c1ee2c"><td class="memItemLeft" align="right" valign="top"><a id="a35ca3909d9dada0a4f9fca4213c1ee2c"></a>
+const char *()&#160;</td><td class="memItemRight" valign="bottom"><b>toupper</b> (char *__low, const char *__high) const</td></tr>
+<tr class="separator:a35ca3909d9dada0a4f9fca4213c1ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70f2828d3673f3c8d28d4404d35cf5e"><td class="memItemLeft" align="right" valign="top"><a id="ab70f2828d3673f3c8d28d4404d35cf5e"></a>
+char()&#160;</td><td class="memItemRight" valign="bottom"><b>tolower</b> (char __c) const</td></tr>
+<tr class="separator:ab70f2828d3673f3c8d28d4404d35cf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2e5c38ab2cb0a5fe52acce9b6665cd"><td class="memItemLeft" align="right" valign="top"><a id="a3e2e5c38ab2cb0a5fe52acce9b6665cd"></a>
+const char *()&#160;</td><td class="memItemRight" valign="bottom"><b>tolower</b> (char *__low, const char *__high) const</td></tr>
+<tr class="separator:a3e2e5c38ab2cb0a5fe52acce9b6665cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92ffa5d0f9b8870a731ce757f0a5140"><td class="memItemLeft" align="right" valign="top"><a id="ac92ffa5d0f9b8870a731ce757f0a5140"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>widen</b> (char __c) const</td></tr>
+<tr class="separator:ac92ffa5d0f9b8870a731ce757f0a5140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fd71fb1e0f1ac2f391f879b58b5965"><td class="memItemLeft" align="right" valign="top"><a id="a18fd71fb1e0f1ac2f391f879b58b5965"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>widen</b> (const char *__low, const char *__high, char *__to) const</td></tr>
+<tr class="separator:a18fd71fb1e0f1ac2f391f879b58b5965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab2b2f3a7431342322e622f67194438"><td class="memItemLeft" align="right" valign="top"><a id="aaab2b2f3a7431342322e622f67194438"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>narrow</b> (char __c, char __dfault) const</td></tr>
+<tr class="separator:aaab2b2f3a7431342322e622f67194438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972d51a0fe2ff5db74250473e8af6720"><td class="memItemLeft" align="right" valign="top"><a id="a972d51a0fe2ff5db74250473e8af6720"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>narrow</b> (const char *__low, const char *__high, char __dfault, char *__to) const</td></tr>
+<tr class="separator:a972d51a0fe2ff5db74250473e8af6720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a985dcfa79f54620dd22ace15dcd1e"><td class="memItemLeft" align="right" valign="top"><a id="ac2a985dcfa79f54620dd22ace15dcd1e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_STLP_STATIC_CONSTANT</b> (size_t, table_size=256)</td></tr>
+<tr class="separator:ac2a985dcfa79f54620dd22ace15dcd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:ac32172f2cbec66cfaa76ce7c1077599b"><td class="memItemLeft" align="right" valign="top"><a id="ac32172f2cbec66cfaa76ce7c1077599b"></a>
+static _STLP_STATIC_DECLSPEC <a class="el" href="classlocale_1_1id.html">locale::id</a>&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> = { 2 }</td></tr>
+<tr class="separator:ac32172f2cbec66cfaa76ce7c1077599b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a152d036e95d15ed6a52e2a827df62930"><td class="memItemLeft" align="right" valign="top"><a id="a152d036e95d15ed6a52e2a827df62930"></a>
+const mask *&#160;</td><td class="memItemRight" valign="bottom"><b>table</b> () const _STLP_NOTHROW</td></tr>
+<tr class="separator:a152d036e95d15ed6a52e2a827df62930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5cd9da452858404140f145e2087f6c"><td class="memItemLeft" align="right" valign="top"><a id="aed5cd9da452858404140f145e2087f6c"></a>
+virtual char&#160;</td><td class="memItemRight" valign="bottom"><b>do_toupper</b> (char __c) const</td></tr>
+<tr class="separator:aed5cd9da452858404140f145e2087f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993e30e53dda1201d9dba8fa28f43191"><td class="memItemLeft" align="right" valign="top"><a id="a993e30e53dda1201d9dba8fa28f43191"></a>
+virtual char&#160;</td><td class="memItemRight" valign="bottom"><b>do_tolower</b> (char __c) const</td></tr>
+<tr class="separator:a993e30e53dda1201d9dba8fa28f43191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392236d234ad374fbd5a7f615f978806"><td class="memItemLeft" align="right" valign="top"><a id="a392236d234ad374fbd5a7f615f978806"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>do_toupper</b> (char *__low, const char *__high) const</td></tr>
+<tr class="separator:a392236d234ad374fbd5a7f615f978806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa5c6fd40675a88399de9bba453efac"><td class="memItemLeft" align="right" valign="top"><a id="a9aa5c6fd40675a88399de9bba453efac"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>do_tolower</b> (char *__low, const char *__high) const</td></tr>
+<tr class="separator:a9aa5c6fd40675a88399de9bba453efac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64bbd5d98ec39a89966a208ac805246c"><td class="memItemLeft" align="right" valign="top"><a id="a64bbd5d98ec39a89966a208ac805246c"></a>
+virtual char&#160;</td><td class="memItemRight" valign="bottom"><b>do_widen</b> (char __c) const</td></tr>
+<tr class="separator:a64bbd5d98ec39a89966a208ac805246c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa900d598c038ae67321d48697cf99e0a"><td class="memItemLeft" align="right" valign="top"><a id="aa900d598c038ae67321d48697cf99e0a"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>do_widen</b> (const char *__low, const char *__high, char *__to) const</td></tr>
+<tr class="separator:aa900d598c038ae67321d48697cf99e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4370abdc91c630f3f90fa67b92a2f86"><td class="memItemLeft" align="right" valign="top"><a id="af4370abdc91c630f3f90fa67b92a2f86"></a>
+virtual char&#160;</td><td class="memItemRight" valign="bottom"><b>do_narrow</b> (char __c, char) const</td></tr>
+<tr class="separator:af4370abdc91c630f3f90fa67b92a2f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef07212f6eb6f66c83aeac965f2b93c"><td class="memItemLeft" align="right" valign="top"><a id="a2ef07212f6eb6f66c83aeac965f2b93c"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>do_narrow</b> (const char *__low, const char *__high, char, char *__to) const</td></tr>
+<tr class="separator:a2ef07212f6eb6f66c83aeac965f2b93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classlocale_1_1facet"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classlocale_1_1facet')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classlocale_1_1facet.html">locale::facet</a></td></tr>
+<tr class="memitem:a5a52c48fe0b2ab6b8fb268534bf03220 inherit pro_methods_classlocale_1_1facet"><td class="memItemLeft" align="right" valign="top"><a id="a5a52c48fe0b2ab6b8fb268534bf03220"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>facet</b> (size_t __init_count=0)</td></tr>
+<tr class="separator:a5a52c48fe0b2ab6b8fb268534bf03220 inherit pro_methods_classlocale_1_1facet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class___refcount___base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class___refcount___base')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class___refcount___base.html">_Refcount_Base</a></td></tr>
+<tr class="memitem:ad9c78e56ae43fa185c38cd197d7d823c inherit pro_methods_class___refcount___base"><td class="memItemLeft" align="right" valign="top"><a id="ad9c78e56ae43fa185c38cd197d7d823c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_Refcount_Base</b> (__stl_atomic_t __n)</td></tr>
+<tr class="separator:ad9c78e56ae43fa185c38cd197d7d823c inherit pro_methods_class___refcount___base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad191898b3065b4b8e15fdb3879797741 inherit pro_methods_class___refcount___base"><td class="memItemLeft" align="right" valign="top"><a id="ad191898b3065b4b8e15fdb3879797741"></a>
+__stl_atomic_t&#160;</td><td class="memItemRight" valign="bottom"><b>_M_incr</b> ()</td></tr>
+<tr class="separator:ad191898b3065b4b8e15fdb3879797741 inherit pro_methods_class___refcount___base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e973793b022a734aef93fe119fe787 inherit pro_methods_class___refcount___base"><td class="memItemLeft" align="right" valign="top"><a id="ad6e973793b022a734aef93fe119fe787"></a>
+__stl_atomic_t&#160;</td><td class="memItemRight" valign="bottom"><b>_M_decr</b> ()</td></tr>
+<tr class="separator:ad6e973793b022a734aef93fe119fe787 inherit pro_methods_class___refcount___base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:af73d19313321e4ab8ff5243ecd09e108"><td class="memItemLeft" align="right" valign="top"><a id="af73d19313321e4ab8ff5243ecd09e108"></a>
+static const mask *_STLP_CALL&#160;</td><td class="memItemRight" valign="bottom"><b>classic_table</b> () _STLP_NOTHROW</td></tr>
+<tr class="separator:af73d19313321e4ab8ff5243ecd09e108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a40c9db8da0d5c2e4f0726474ee99d6fa"><td class="memItemLeft" align="right" valign="top"><a id="a40c9db8da0d5c2e4f0726474ee99d6fa"></a>
+const mask *&#160;</td><td class="memItemRight" valign="bottom"><b>_M_ctype_table</b></td></tr>
+<tr class="separator:a40c9db8da0d5c2e4f0726474ee99d6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aa8ee6573f33bbfcaf2bf929dc064273b"><td class="memItemLeft" align="right" valign="top"><a id="aa8ee6573f33bbfcaf2bf929dc064273b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ctype&lt; wchar_t &gt;</b></td></tr>
+<tr class="separator:aa8ee6573f33bbfcaf2bf929dc064273b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/ReactOS-0.4.6/sdk/include/c++/stlport/stl/<a class="el" href="__ctype_8h_source.html">_ctype.h</a></li>
+<li>E:/ReactOS-0.4.6/sdk/lib/3rdparty/stlport/src/ctype.cpp</li>
+<li>E:/ReactOS-0.4.6/sdk/lib/3rdparty/stlport/src/locale_impl.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
